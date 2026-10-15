@@ -33,15 +33,15 @@ export function Pattern() {
           <div className="flex flex-col gap-1 min-w-0">
             <div className="flex flex-wrap gap-2.5 items-center">
               <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                Plans
+                {"Plans"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                3 live
+                {"3 live"}
               </Badge>
             </div>
             <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-sm">
               <span>
-                5 plans
+                {"5 plans"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="flex gap-1.5 items-center">
@@ -49,11 +49,11 @@ export function Pattern() {
                   <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                 </Avatar>
                 <span>
-                  Mara Whitfield
+                  {"Mara Whitfield"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  edited 14 min ago
+                  {"edited 14 min ago"}
                 </span>
               </span>
             </div>
@@ -64,7 +64,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New plan
+              {"New plan"}
             </Button>
           </div>
         </div>
@@ -76,17 +76,17 @@ export function Pattern() {
               <path d="M12 17h.01"></path>
             </svg>
             <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-              Unsaved changes
+              {"Unsaved changes"}
             </AlertTitle>
             <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-              4 edits across the Scale and Enterprise plans are not published yet.
+              {"4 edits across the Scale and Enterprise plans are not published yet."}
             </AlertDescription>
             <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
               <Button type="button" tabIndex="0">
-                Discard
+                {"Discard"}
               </Button>
               <Button type="button" tabIndex="0">
-                Save changes
+                {"Save changes"}
               </Button>
             </AlertAction>
           </Alert>
@@ -97,13 +97,13 @@ export function Pattern() {
                   <div className="flex flex-col gap-1 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center">
                       <h3 className="font-semibold text-foreground text-sm">
-                        Starter
+                        {"Starter"}
                       </h3>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        PLAN-Starter
+                        {"PLAN-Starter"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -113,11 +113,11 @@ export function Pattern() {
                         <path d="M2 12h20"></path>
                       </svg>
                       <span>
-                        Public
+                        {"Public"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        1,840 subscribers
+                        {"1,840 subscribers"}
                       </span>
                     </div>
                   </div>
@@ -130,15 +130,15 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1 items-baseline">
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    $29
+                    {"$29"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    per seat / mo
+                    {"per seat / mo"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Features
+                    {"Features"}
                   </h4>
                   <ItemGroup className="gap-0!" role="list">
                     <div className="contents">
@@ -154,13 +154,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Seats
+                              {"Seats"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            5 included
+                            {"5 included"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -176,13 +176,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              API calls
+                              {"API calls"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            50k / month
+                            {"50k / month"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -200,13 +200,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Storage
+                              {"Storage"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            10 GB
+                            {"10 GB"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -224,13 +224,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Environments
+                              {"Environments"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            1
+                            {"1"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -242,22 +242,22 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add entitlement
+                  {"Add entitlement"}
                 </Button>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                   <span>
-                    4 entitlements
+                    {"4 entitlements"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    0 add-ons
+                    {"0 add-ons"}
                   </span>
                 </p>
               </FramePanel>
               <footer className="flex flex-col gap-2 p-3">
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_1_-label">
                   <span className="text-foreground">
-                    Active
+                    {"Active"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Toggle Starter active" aria-labelledby="base-ui-_r_1_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -266,7 +266,7 @@ export function Pattern() {
                 </label>
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_4_-label">
                   <span className="text-foreground">
-                    Public
+                    {"Public"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="true" size="default" aria-label="Toggle Starter public" aria-labelledby="base-ui-_r_4_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -281,13 +281,13 @@ export function Pattern() {
                   <div className="flex flex-col gap-1 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center">
                       <h3 className="font-semibold text-foreground text-sm">
-                        Growth
+                        {"Growth"}
                       </h3>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        PLAN-Growth
+                        {"PLAN-Growth"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -297,11 +297,11 @@ export function Pattern() {
                         <path d="M2 12h20"></path>
                       </svg>
                       <span>
-                        Public
+                        {"Public"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        1,120 subscribers
+                        {"1,120 subscribers"}
                       </span>
                     </div>
                   </div>
@@ -314,15 +314,15 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1 items-baseline">
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    $89
+                    {"$89"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    per seat / mo
+                    {"per seat / mo"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Features
+                    {"Features"}
                   </h4>
                   <ItemGroup className="gap-0!" role="list">
                     <div className="contents">
@@ -338,13 +338,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Seats
+                              {"Seats"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            20 included
+                            {"20 included"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -360,13 +360,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              API calls
+                              {"API calls"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            500k / month
+                            {"500k / month"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -384,13 +384,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Storage
+                              {"Storage"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            100 GB
+                            {"100 GB"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -408,13 +408,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Environments
+                              {"Environments"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            3
+                            {"3"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -423,7 +423,7 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Add-ons
+                    {"Add-ons"}
                   </h4>
                   <div className="flex flex-col gap-1.5">
                     <div className="flex gap-2 items-center justify-between text-sm">
@@ -435,11 +435,11 @@ export function Pattern() {
                           <circle cx="4" cy="20" r="2"></circle>
                         </svg>
                         <span className="truncate">
-                          Usage insights
+                          {"Usage insights"}
                         </span>
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground">
-                        $19 / month
+                        {"$19 / month"}
                       </span>
                     </div>
                   </div>
@@ -449,22 +449,22 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add entitlement
+                  {"Add entitlement"}
                 </Button>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                   <span>
-                    4 entitlements
+                    {"4 entitlements"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    1 add-on
+                    {"1 add-on"}
                   </span>
                 </p>
               </FramePanel>
               <footer className="flex flex-col gap-2 p-3">
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_9_-label">
                   <span className="text-foreground">
-                    Active
+                    {"Active"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_8_" aria-checked="true" size="default" aria-label="Toggle Growth active" aria-labelledby="base-ui-_r_9_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -473,7 +473,7 @@ export function Pattern() {
                 </label>
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_c_-label">
                   <span className="text-foreground">
-                    Public
+                    {"Public"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_b_" aria-checked="true" size="default" aria-label="Toggle Growth public" aria-labelledby="base-ui-_r_c_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -488,13 +488,13 @@ export function Pattern() {
                   <div className="flex flex-col gap-1 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center">
                       <h3 className="font-semibold text-foreground text-sm">
-                        Scale
+                        {"Scale"}
                       </h3>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        PLAN-Scale
+                        {"PLAN-Scale"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -504,11 +504,11 @@ export function Pattern() {
                         <path d="M2 12h20"></path>
                       </svg>
                       <span>
-                        Public
+                        {"Public"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        214 subscribers
+                        {"214 subscribers"}
                       </span>
                     </div>
                   </div>
@@ -521,15 +521,15 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1 items-baseline">
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    $249
+                    {"$249"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    per seat / mo
+                    {"per seat / mo"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Features
+                    {"Features"}
                   </h4>
                   <ItemGroup className="gap-0!" role="list">
                     <div className="contents">
@@ -545,13 +545,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Seats
+                              {"Seats"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            100 included
+                            {"100 included"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -567,13 +567,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              API calls
+                              {"API calls"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            5M / month
+                            {"5M / month"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -591,13 +591,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Storage
+                              {"Storage"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            1 TB
+                            {"1 TB"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -615,13 +615,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Environments
+                              {"Environments"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            10
+                            {"10"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -630,7 +630,7 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Add-ons
+                    {"Add-ons"}
                   </h4>
                   <div className="flex flex-col gap-1.5">
                     <div className="flex gap-2 items-center justify-between text-sm">
@@ -640,11 +640,11 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="truncate">
-                          SSO and SAML
+                          {"SSO and SAML"}
                         </span>
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground">
-                        $99 / month
+                        {"$99 / month"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center justify-between text-sm">
@@ -656,11 +656,11 @@ export function Pattern() {
                           <circle cx="4" cy="20" r="2"></circle>
                         </svg>
                         <span className="truncate">
-                          Usage insights
+                          {"Usage insights"}
                         </span>
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground">
-                        $19 / month
+                        {"$19 / month"}
                       </span>
                     </div>
                   </div>
@@ -670,22 +670,22 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add entitlement
+                  {"Add entitlement"}
                 </Button>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                   <span>
-                    4 entitlements
+                    {"4 entitlements"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    2 add-ons
+                    {"2 add-ons"}
                   </span>
                 </p>
               </FramePanel>
               <footer className="flex flex-col gap-2 p-3">
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_h_-label">
                   <span className="text-foreground">
-                    Active
+                    {"Active"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_g_" aria-checked="true" size="default" aria-label="Toggle Scale active" aria-labelledby="base-ui-_r_h_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -694,7 +694,7 @@ export function Pattern() {
                 </label>
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_k_-label">
                   <span className="text-foreground">
-                    Public
+                    {"Public"}
                   </span>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_j_" aria-checked="true" size="default" aria-label="Toggle Scale public" aria-labelledby="base-ui-_r_k_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -709,13 +709,13 @@ export function Pattern() {
                   <div className="flex flex-col gap-1 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center">
                       <h3 className="font-semibold text-foreground text-sm">
-                        Enterprise
+                        {"Enterprise"}
                       </h3>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Draft
+                        {"Draft"}
                       </Badge>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        PLAN-Enterprise
+                        {"PLAN-Enterprise"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -724,11 +724,11 @@ export function Pattern() {
                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                       </svg>
                       <span>
-                        Private
+                        {"Private"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        0 subscribers
+                        {"0 subscribers"}
                       </span>
                     </div>
                   </div>
@@ -741,15 +741,15 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1 items-baseline">
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    $1,200
+                    {"$1,200"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    / mo
+                    {"/ mo"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Features
+                    {"Features"}
                   </h4>
                   <ItemGroup className="gap-0!" role="list">
                     <div className="contents">
@@ -765,13 +765,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Seats
+                              {"Seats"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -787,13 +787,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              API calls
+                              {"API calls"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            50M / month
+                            {"50M / month"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -811,13 +811,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Storage
+                              {"Storage"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            10 TB
+                            {"10 TB"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -835,13 +835,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Environments
+                              {"Environments"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -850,7 +850,7 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Add-ons
+                    {"Add-ons"}
                   </h4>
                   <div className="flex flex-col gap-1.5">
                     <div className="flex gap-2 items-center justify-between text-sm">
@@ -860,11 +860,11 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="truncate">
-                          SSO and SAML
+                          {"SSO and SAML"}
                         </span>
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground">
-                        Included
+                        {"Included"}
                       </span>
                     </div>
                   </div>
@@ -874,22 +874,22 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add entitlement
+                  {"Add entitlement"}
                 </Button>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                   <span>
-                    4 entitlements
+                    {"4 entitlements"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    1 add-on
+                    {"1 add-on"}
                   </span>
                 </p>
               </FramePanel>
               <footer className="flex flex-col gap-2 p-3">
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_p_-label">
                   <span className="text-foreground">
-                    Active
+                    {"Active"}
                   </span>
                   <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_o_" aria-checked="false" size="default" aria-label="Toggle Enterprise active" aria-labelledby="base-ui-_r_p_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -898,7 +898,7 @@ export function Pattern() {
                 </label>
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_s_-label">
                   <span className="text-foreground">
-                    Public
+                    {"Public"}
                   </span>
                   <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_r_" aria-checked="false" size="default" aria-label="Toggle Enterprise public" aria-labelledby="base-ui-_r_s_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -913,13 +913,13 @@ export function Pattern() {
                   <div className="flex flex-col gap-1 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center">
                       <h3 className="font-semibold text-foreground text-sm">
-                        Team Legacy
+                        {"Team Legacy"}
                       </h3>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                        Archived
+                        {"Archived"}
                       </Badge>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        PLAN-Team-Legacy
+                        {"PLAN-Team-Legacy"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -928,11 +928,11 @@ export function Pattern() {
                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                       </svg>
                       <span>
-                        Private
+                        {"Private"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        38 subscribers
+                        {"38 subscribers"}
                       </span>
                     </div>
                   </div>
@@ -945,15 +945,15 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1 items-baseline">
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    $59
+                    {"$59"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    per seat / mo
+                    {"per seat / mo"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-muted-foreground text-xs">
-                    Features
+                    {"Features"}
                   </h4>
                   <ItemGroup className="gap-0!" role="list">
                     <div className="contents">
@@ -969,13 +969,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Seats
+                              {"Seats"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            10 included
+                            {"10 included"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -991,13 +991,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              API calls
+                              {"API calls"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            250k / month
+                            {"250k / month"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -1015,13 +1015,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Storage
+                              {"Storage"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            50 GB
+                            {"50 GB"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -1039,13 +1039,13 @@ export function Pattern() {
                         <ItemContent className="min-w-0">
                           <ItemTitle className="min-w-0 w-full">
                             <span className="font-medium leading-5 text-sm truncate">
-                              Environments
+                              {"Environments"}
                             </span>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions className="shrink-0">
                           <span className="leading-5 tabular-nums text-muted-foreground text-sm">
-                            2
+                            {"2"}
                           </span>
                         </ItemActions>
                       </Item>
@@ -1057,22 +1057,22 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add entitlement
+                  {"Add entitlement"}
                 </Button>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                   <span>
-                    4 entitlements
+                    {"4 entitlements"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    0 add-ons
+                    {"0 add-ons"}
                   </span>
                 </p>
               </FramePanel>
               <footer className="flex flex-col gap-2 p-3">
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_11_-label">
                   <span className="text-foreground">
-                    Active
+                    {"Active"}
                   </span>
                   <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_10_" aria-checked="false" size="default" aria-label="Toggle Team Legacy active" aria-labelledby="base-ui-_r_11_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -1081,7 +1081,7 @@ export function Pattern() {
                 </label>
                 <label className="flex gap-2 items-center justify-between text-sm" id="base-ui-_r_14_-label">
                   <span className="text-foreground">
-                    Public
+                    {"Public"}
                   </span>
                   <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_13_" aria-checked="false" size="default" aria-label="Toggle Team Legacy public" aria-labelledby="base-ui-_r_14_-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>

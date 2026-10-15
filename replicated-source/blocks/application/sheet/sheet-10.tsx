@@ -32,7 +32,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Ask NeUI support chat sheet
+        {"Ask NeUI support chat sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
@@ -42,7 +42,7 @@ export function Pattern() {
           <path d="M22 4h-4"></path>
           <circle cx="4" cy="20" r="2"></circle>
         </svg>
-        Open Ask NeUI
+        {"Open Ask NeUI"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -52,7 +52,7 @@ export function Pattern() {
         <div className="border-b flex gap-2 items-center justify-between min-h-12 px-4">
           <div className="flex gap-2 items-center min-w-0">
             <SheetTitle className="font-medium text-sm truncate" id="base-ui-_r_3_">
-              Ask NeUI
+              {"Ask NeUI"}
             </SheetTitle>
           </div>
           <div className="flex gap-1 items-center shrink-0">
@@ -63,7 +63,7 @@ export function Pattern() {
                 <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
               </svg>
               <span className="sr-only">
-                Start new Ask NeUI chat
+                {"Start new Ask NeUI chat"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -76,7 +76,7 @@ export function Pattern() {
                 <path d="M8 16H3v5"></path>
               </svg>
               <span className="sr-only">
-                Refresh Ask NeUI context
+                {"Refresh Ask NeUI context"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -98,7 +98,7 @@ export function Pattern() {
           </div>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_d_">
-          Ask NeUI support chat with scrollable conversation history.
+          {"Ask NeUI support chat with scrollable conversation history."}
         </SheetDescription>
       </SheetHeader>
       <div className="flex-1 min-h-0">
@@ -107,27 +107,27 @@ export function Pattern() {
             <div className="flex flex-col min-h-full pb-4 pt-3 px-4">
               <section className="flex flex-col gap-2.5">
                 <h2 className="font-medium leading-6 text-foreground text-lg">
-                  What can Ask NeUI help with?
+                  {"What can Ask NeUI help with?"}
                 </h2>
                 <div className="flex flex-wrap gap-2 items-center">
                   <Button type="button" tabIndex="0">
-                    Find NeUI issues related to sheets
+                    {"Find NeUI issues related to sheets"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    What should I work on?
+                    {"What should I work on?"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Show overdue review tasks
+                    {"Show overdue review tasks"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    What block areas are active?
+                    {"What block areas are active?"}
                   </Button>
                 </div>
               </section>
               <section className="flex flex-col gap-4 mt-5">
                 <article className="flex justify-end min-w-0">
                   <div className="bg-primary leading-5 max-w-[84%] min-w-0 px-3 py-1.5 rounded-xl text-primary-foreground text-sm">
-                    Can you review sheet-10 before handoff?
+                    {"Can you review sheet-10 before handoff?"}
                   </div>
                 </article>
                 <article className="flex gap-2 items-start min-w-0">
@@ -141,22 +141,22 @@ export function Pattern() {
                       <path d="M9 13v2"></path>
                     </svg>
                     <span className="sr-only">
-                      Ask NeUI reply
+                      {"Ask NeUI reply"}
                     </span>
                   </span>
                   <div className="leading-5 max-w-[calc(100%-1.5rem)] min-w-0 text-sm">
                     <div className="flex flex-col min-w-0">
                       <div className="flex gap-2 items-center leading-5 min-w-0 text-muted-foreground text-xs">
                         <span className="font-medium text-foreground">
-                          Ask NeUI
+                          {"Ask NeUI"}
                         </span>
                         <span>
-                          4 hours ago
+                          {"4 hours ago"}
                         </span>
                       </div>
                       <div className="mt-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Yes. I would check the sheet shell first: header density, body scroll ownership, and whether the composer stays pinned without adding a footer divider.
+                          {"Yes. I would check the sheet shell first: header density, body scroll ownership, and whether the composer stays pinned without adding a footer divider."}
                         </p>
                       </div>
                     </div>
@@ -164,7 +164,7 @@ export function Pattern() {
                 </article>
                 <article className="flex justify-end min-w-0">
                   <div className="bg-primary leading-5 max-w-[84%] min-w-0 px-3 py-1.5 rounded-xl text-primary-foreground text-sm">
-                    What should be fixed first?
+                    {"What should be fixed first?"}
                   </div>
                 </article>
                 <article className="flex gap-2 items-start min-w-0">
@@ -178,22 +178,22 @@ export function Pattern() {
                       <path d="M9 13v2"></path>
                     </svg>
                     <span className="sr-only">
-                      Ask NeUI reply
+                      {"Ask NeUI reply"}
                     </span>
                   </span>
                   <div className="leading-5 max-w-[calc(100%-1.5rem)] min-w-0 text-sm">
                     <div className="flex flex-col min-w-0">
                       <div className="flex gap-2 items-center leading-5 min-w-0 text-muted-foreground text-xs">
                         <span className="font-medium text-foreground">
-                          Ask NeUI
+                          {"Ask NeUI"}
                         </span>
                         <span>
-                          4 hours ago
+                          {"4 hours ago"}
                         </span>
                       </div>
                       <div className="mt-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Start with the footer. Keep the question entry form compact, remove extra footer actions, then confirm the chat still has enough context to feel useful.
+                          {"Start with the footer. Keep the question entry form compact, remove extra footer actions, then confirm the chat still has enough context to feel useful."}
                         </p>
                       </div>
                     </div>
@@ -212,7 +212,7 @@ export function Pattern() {
         <form className="w-full">
           <Field className="gap-2" role="group" data-orientation="vertical">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ask-neui-prompt">
-              Ask NeUI prompt
+              {"Ask NeUI prompt"}
             </FieldLabel>
             <InputGroup className="rounded-xl" role="group">
               <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" id="ask-neui-prompt" placeholder="Ask NeUI..." rows="2" aria-label="Ask NeUI prompt"></textarea>

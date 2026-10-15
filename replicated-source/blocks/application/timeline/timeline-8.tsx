@@ -43,7 +43,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Team activity timeline sheet
+        {"Team activity timeline sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
@@ -54,7 +54,7 @@ export function Pattern() {
           <path d="m3 17 2 2 4-4"></path>
           <path d="m3 7 2 2 4-4"></path>
         </svg>
-        Open timeline
+        {"Open timeline"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -65,14 +65,14 @@ export function Pattern() {
           <div className="flex-1 min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <SheetTitle className="truncate" id="base-ui-_r_3_">
-                Team Activity
+                {"Team Activity"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative rounded-full text-[0.6rem] text-primary-foreground transition-shadow">
-                12
+                {"12"}
               </Badge>
             </div>
             <SheetDescription className="sr-only" id="base-ui-_r_4_">
-              Launch work, reviews, approvals, and follow-ups from the last week.
+              {"Launch work, reviews, approvals, and follow-ups from the last week."}
             </SheetDescription>
           </div>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Dismiss activity timeline">
@@ -98,13 +98,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Dara Kim
+                        {"Dara Kim"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        shared
+                        {"shared"}
                       </span>
                       <span className="font-medium">
-                        Launch Timeline
+                        {"Launch Timeline"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -119,7 +119,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Uploaded the launch packet with milestone dates and planning files.
+                      {"Uploaded the launch packet with milestone dates and planning files."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 max-w-full">
                       <ButtonGroup className="max-w-full" role="group">
@@ -128,10 +128,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            timeline.pdf
+                            {"timeline.pdf"}
                           </span>
                           <span className="text-muted-foreground">
-                            (2 MB)
+                            {"(2 MB)"}
                           </span>
                         </Button>
                         <Button className="px-2" type="button" tabIndex="0" aria-label="Download timeline.pdf">
@@ -148,10 +148,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            scope-notes.csv
+                            {"scope-notes.csv"}
                           </span>
                           <span className="text-muted-foreground">
-                            (9 KB)
+                            {"(9 KB)"}
                           </span>
                         </Button>
                         <Button className="px-2" type="button" tabIndex="0" aria-label="Download scope-notes.csv">
@@ -165,14 +165,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-06T10:12:00+05:00">
-                        2 min ago
+                        {"2 min ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow" aria-label="Files 2">
                         <span className="font-normal opacity-70">
-                          Files
+                          {"Files"}
                         </span>
                         <span>
-                          2
+                          {"2"}
                         </span>
                       </Badge>
                     </div>
@@ -240,13 +240,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Product Operations
+                        {"Product Operations"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        scheduled
+                        {"scheduled"}
                       </span>
                       <span className="font-medium">
-                        Roadmap Review
+                        {"Roadmap Review"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -261,7 +261,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Confirmed the roadmap review agenda with product, design, and engineering leads.
+                      {"Confirmed the roadmap review agenda with product, design, and engineering leads."}
                     </p>
                     <AvatarGroup className="-space-x-1">
                       <Avatar className="size-5" size="default">
@@ -274,7 +274,7 @@ export function Pattern() {
                         <AvatarImage alt="Maya Singh" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=80&h=80&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                        +2
+                        {"+2"}
                       </AvatarGroupCount>
                     </AvatarGroup>
                     <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center px-2 py-1 rounded-sm text-[11px] text-muted-foreground">
@@ -285,22 +285,22 @@ export function Pattern() {
                         <path d="M3 10h18"></path>
                       </svg>
                       <span className="font-medium text-foreground">
-                        Today
+                        {"Today"}
                       </span>
                       <span className="opacity-70">
-                        10:00 - 11:00 AM
+                        {"10:00 - 11:00 AM"}
                       </span>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-06T09:51:00+05:00">
-                        23 min ago
+                        {"23 min ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow" aria-label="Room Huddle">
                         <span className="font-normal opacity-70">
-                          Room
+                          {"Room"}
                         </span>
                         <span>
-                          Huddle
+                          {"Huddle"}
                         </span>
                       </Badge>
                     </div>
@@ -316,13 +316,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Nora Patel
+                        {"Nora Patel"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        mentioned you in
+                        {"mentioned you in"}
                       </span>
                       <span className="font-medium">
-                        Partner Campaign
+                        {"Partner Campaign"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -341,22 +341,22 @@ export function Pattern() {
                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                       </svg>
                       <span className="flex-1 leading-5 min-w-0 text-left text-sm truncate">
-                        Partner guideline update
+                        {"Partner guideline update"}
                       </span>
                       <span className="font-medium shrink-0 text-primary">
-                        Open
+                        {"Open"}
                       </span>
                     </Button>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-06T09:14:00+05:00">
-                        1 hour ago
+                        {"1 hour ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow" aria-label="Thread Open">
                         <span className="font-normal opacity-70">
-                          Thread
+                          {"Thread"}
                         </span>
                         <span>
-                          Open
+                          {"Open"}
                         </span>
                       </Badge>
                     </div>
@@ -370,13 +370,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Task Management
+                        {"Task Management"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        assigned you
+                        {"assigned you"}
                       </span>
                       <span className="font-medium">
-                        Update Project Specs
+                        {"Update Project Specs"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -391,18 +391,18 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Added a task to revise project specs, acceptance criteria, and delivery notes.
+                      {"Added a task to revise project specs, acceptance criteria, and delivery notes."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-05T14:30:00+05:00">
-                        1 day ago
+                        {"1 day ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow" aria-label="Due Tomorrow">
                         <span className="font-normal opacity-70">
-                          Due
+                          {"Due"}
                         </span>
                         <span>
-                          Tomorrow
+                          {"Tomorrow"}
                         </span>
                       </Badge>
                     </div>
@@ -416,13 +416,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Engineering Team
+                        {"Engineering Team"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        started sprint
+                        {"started sprint"}
                       </span>
                       <span className="font-medium">
-                        Backend Optimization
+                        {"Backend Optimization"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -437,7 +437,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Opened API latency sprint work with schema cleanup and queue tuning.
+                      {"Opened API latency sprint work with schema cleanup and queue tuning."}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -448,7 +448,7 @@ export function Pattern() {
                           <path d="m3 17 2 2 4-4"></path>
                           <path d="m3 7 2 2 4-4"></path>
                         </svg>
-                        3 Tasks In Progress
+                        {"3 Tasks In Progress"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-focus-foreground text-xs transition-shadow">
                         <svg className="lucide lucide-rocket size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RocketIcon" tabler="IconRocket" hugeicons="RocketIcon" phosphor="RocketIcon" remixicon="RiRocketLine" aria-hidden="true">
@@ -457,7 +457,7 @@ export function Pattern() {
                           <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
                           <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
                         </svg>
-                        Sprint 18
+                        {"Sprint 18"}
                       </Badge>
                     </div>
                     <div className="bg-muted/55 h-1 max-w-48 overflow-hidden relative rounded-full w-full">
@@ -467,20 +467,20 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-04T15:40:00+05:00">
-                        2 days ago
+                        {"2 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-focus-foreground text-xs transition-shadow" aria-label="Focus API">
                         <span className="font-normal opacity-70">
-                          Focus
+                          {"Focus"}
                         </span>
                         <span>
-                          API
+                          {"API"}
                         </span>
                       </Badge>
                     </div>
@@ -494,13 +494,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Release Management
+                        {"Release Management"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        approved
+                        {"approved"}
                       </span>
                       <span className="font-medium">
-                        Feature Freeze
+                        {"Feature Freeze"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -515,7 +515,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Locked release scope after support, sales, and implementation reviewed remaining exceptions.
+                      {"Locked release scope after support, sales, and implementation reviewed remaining exceptions."}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -523,7 +523,7 @@ export function Pattern() {
                           <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        QA Signed
+                        {"QA Signed"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                         <svg className="lucide lucide-cloud-upload size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CloudUploadIcon" tabler="IconCloudUpload" hugeicons="CloudUploadIcon" phosphor="CloudArrowUpIcon" remixicon="RiUploadCloud2Line" aria-hidden="true">
@@ -531,7 +531,7 @@ export function Pattern() {
                           <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
                           <path d="m8 17 4-4 4 4"></path>
                         </svg>
-                        Release 24.8
+                        {"Release 24.8"}
                       </Badge>
                     </div>
                     <div className="bg-muted/55 h-1 max-w-48 overflow-hidden relative rounded-full w-full">
@@ -541,20 +541,20 @@ export function Pattern() {
                           <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-04T12:22:00+05:00">
-                        2 days ago
+                        {"2 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow" aria-label="Gate Passed">
                         <span className="font-normal opacity-70">
-                          Gate
+                          {"Gate"}
                         </span>
                         <span>
-                          Passed
+                          {"Passed"}
                         </span>
                       </Badge>
                     </div>
@@ -570,13 +570,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Jordan Lee
+                        {"Jordan Lee"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        opened
+                        {"opened"}
                       </span>
                       <span className="font-medium">
-                        Billing Export Review
+                        {"Billing Export Review"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -591,7 +591,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Flagged three enterprise invoices that need finance confirmation before the campaign close.
+                      {"Flagged three enterprise invoices that need finance confirmation before the campaign close."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 max-w-full">
                       <ButtonGroup className="max-w-full" role="group">
@@ -600,10 +600,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            export-audit.csv
+                            {"export-audit.csv"}
                           </span>
                           <span className="text-muted-foreground">
-                            (14 KB)
+                            {"(14 KB)"}
                           </span>
                         </Button>
                         <Button className="px-2" type="button" tabIndex="0" aria-label="Download export-audit.csv">
@@ -617,14 +617,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-03T17:18:00+05:00">
-                        3 days ago
+                        {"3 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow" aria-label="Owner Finance">
                         <span className="font-normal opacity-70">
-                          Owner
+                          {"Owner"}
                         </span>
                         <span>
-                          Finance
+                          {"Finance"}
                         </span>
                       </Badge>
                     </div>
@@ -638,13 +638,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Customer Ops
+                        {"Customer Ops"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        scheduled
+                        {"scheduled"}
                       </span>
                       <span className="font-medium">
-                        Beta Feedback Review
+                        {"Beta Feedback Review"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -659,7 +659,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Grouped top customer notes by onboarding, permissions, notifications, and reporting.
+                      {"Grouped top customer notes by onboarding, permissions, notifications, and reporting."}
                     </p>
                     <AvatarGroup className="-space-x-1">
                       <Avatar className="size-5" size="default">
@@ -669,7 +669,7 @@ export function Pattern() {
                         <AvatarImage alt="Leah Foster" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                        +4
+                        {"+4"}
                       </AvatarGroupCount>
                     </AvatarGroup>
                     <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center px-2 py-1 rounded-sm text-[11px] text-muted-foreground">
@@ -680,22 +680,22 @@ export function Pattern() {
                         <path d="M3 10h18"></path>
                       </svg>
                       <span className="font-medium text-foreground">
-                        Friday
+                        {"Friday"}
                       </span>
                       <span className="opacity-70">
-                        2:30 - 3:00 PM
+                        {"2:30 - 3:00 PM"}
                       </span>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-03T13:05:00+05:00">
-                        3 days ago
+                        {"3 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow" aria-label="Notes 18">
                         <span className="font-normal opacity-70">
-                          Notes
+                          {"Notes"}
                         </span>
                         <span>
-                          18
+                          {"18"}
                         </span>
                       </Badge>
                     </div>
@@ -711,13 +711,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Mira Chen
+                        {"Mira Chen"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        mentioned you in
+                        {"mentioned you in"}
                       </span>
                       <span className="font-medium">
-                        Churn Risk Review
+                        {"Churn Risk Review"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -736,22 +736,22 @@ export function Pattern() {
                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                       </svg>
                       <span className="flex-1 leading-5 min-w-0 text-left text-sm truncate">
-                        Adoption note
+                        {"Adoption note"}
                       </span>
                       <span className="font-medium shrink-0 text-primary">
-                        Reply
+                        {"Reply"}
                       </span>
                     </Button>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-02T16:44:00+05:00">
-                        4 days ago
+                        {"4 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow" aria-label="Risk Medium">
                         <span className="font-normal opacity-70">
-                          Risk
+                          {"Risk"}
                         </span>
                         <span>
-                          Medium
+                          {"Medium"}
                         </span>
                       </Badge>
                     </div>
@@ -765,13 +765,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Platform Team
+                        {"Platform Team"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        shipped
+                        {"shipped"}
                       </span>
                       <span className="font-medium">
-                        Edge Cache Rollout
+                        {"Edge Cache Rollout"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -786,7 +786,7 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Rolled cache invalidation updates to production and verified dashboard freshness.
+                      {"Rolled cache invalidation updates to production and verified dashboard freshness."}
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -795,7 +795,7 @@ export function Pattern() {
                           <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
                           <path d="m8 17 4-4 4 4"></path>
                         </svg>
-                        Deploy Complete
+                        {"Deploy Complete"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                         <svg className="lucide lucide-list-checks size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
@@ -805,7 +805,7 @@ export function Pattern() {
                           <path d="m3 17 2 2 4-4"></path>
                           <path d="m3 7 2 2 4-4"></path>
                         </svg>
-                        2 Follow-Ups
+                        {"2 Follow-Ups"}
                       </Badge>
                     </div>
                     <div className="bg-muted/55 h-1 max-w-48 overflow-hidden relative rounded-full w-full">
@@ -815,20 +815,20 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "86%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-05-01T11:28:00+05:00">
-                        5 days ago
+                        {"5 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow" aria-label="Region Global">
                         <span className="font-normal opacity-70">
-                          Region
+                          {"Region"}
                         </span>
                         <span>
-                          Global
+                          {"Global"}
                         </span>
                       </Badge>
                     </div>
@@ -842,13 +842,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Design QA
+                        {"Design QA"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        completed
+                        {"completed"}
                       </span>
                       <span className="font-medium">
-                        Dashboard Polish Pass
+                        {"Dashboard Polish Pass"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -863,18 +863,18 @@ export function Pattern() {
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[60ch] text-muted-foreground text-sm">
-                      Reviewed table density, empty states, mobile wrapping, and panel spacing.
+                      {"Reviewed table density, empty states, mobile wrapping, and panel spacing."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-04-30T18:10:00+05:00">
-                        6 days ago
+                        {"6 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow" aria-label="Issues 0">
                         <span className="font-normal opacity-70">
-                          Issues
+                          {"Issues"}
                         </span>
                         <span>
-                          0
+                          {"0"}
                         </span>
                       </Badge>
                     </div>
@@ -944,13 +944,13 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium">
-                        Sasha Reed
+                        {"Sasha Reed"}
                       </span>
                       <span className="font-normal text-muted-foreground">
-                        requested
+                        {"requested"}
                       </span>
                       <span className="font-medium">
-                        Launch Retro Notes
+                        {"Launch Retro Notes"}
                       </span>
                     </TimelineTitle>
                     <DropdownMenu>
@@ -969,22 +969,22 @@ export function Pattern() {
                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                       </svg>
                       <span className="flex-1 leading-5 min-w-0 text-left text-sm truncate">
-                        Capture retro blockers
+                        {"Capture retro blockers"}
                       </span>
                       <span className="font-medium shrink-0 text-primary">
-                        Note
+                        {"Note"}
                       </span>
                     </Button>
                     <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                       <TimelineDate className="mb-0" datetime="2026-04-29T09:35:00+05:00">
-                        1 week ago
+                        {"1 week ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow" aria-label="Due Monday">
                         <span className="font-normal opacity-70">
-                          Due
+                          {"Due"}
                         </span>
                         <span>
-                          Monday
+                          {"Monday"}
                         </span>
                       </Badge>
                     </div>

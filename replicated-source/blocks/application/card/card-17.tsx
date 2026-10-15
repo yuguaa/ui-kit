@@ -24,13 +24,13 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-3">
                 <span className="block font-medium leading-tight text-sm">
-                  Recent Orders Overview
+                  {"Recent Orders Overview"}
                 </span>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  Track and review all recent purchases, updates, and status changes in one place.
+                  {"Track and review all recent purchases, updates, and status changes in one place."}
                 </p>
                 <a className="gap-1 hover:underline inline-flex items-center text-primay text-xs underline-offset-2" href="#">
-                  View Orders
+                  {"View Orders"}
                   <svg className="lucide lucide-chevron-right shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
@@ -51,13 +51,13 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-3">
                 <span className="block font-medium leading-tight text-sm">
-                  Active Opportunities Pipeline
+                  {"Active Opportunities Pipeline"}
                 </span>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  Monitor ongoing deals, check potential revenue, and update opportunity stages.
+                  {"Monitor ongoing deals, check potential revenue, and update opportunity stages."}
                 </p>
                 <a className="gap-1 hover:underline inline-flex items-center text-primay text-xs underline-offset-2" href="#">
-                  Open Pipeline
+                  {"Open Pipeline"}
                   <svg className="lucide lucide-chevron-right shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
@@ -80,13 +80,13 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-3">
                 <span className="block font-medium leading-tight text-sm">
-                  Performance & Sales Reports
+                  {"Performance & Sales Reports"}
                 </span>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  Analyze weekly and monthly reports to gain deeper insights into performance trends.
+                  {"Analyze weekly and monthly reports to gain deeper insights into performance trends."}
                 </p>
                 <a className="gap-1 hover:underline inline-flex items-center text-primay text-xs underline-offset-2" href="#">
-                  View Reports
+                  {"View Reports"}
                   <svg className="lucide lucide-chevron-right shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
@@ -109,13 +109,13 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-3">
                 <span className="block font-medium leading-tight text-sm">
-                  Integration Settings & Sync
+                  {"Integration Settings & Sync"}
                 </span>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  Manage connections with third-party tools and ensure data stays in sync.
+                  {"Manage connections with third-party tools and ensure data stays in sync."}
                 </p>
                 <a className="gap-1 hover:underline inline-flex items-center text-primay text-xs underline-offset-2" href="#">
-                  Manage Integrations
+                  {"Manage Integrations"}
                   <svg className="lucide lucide-chevron-right shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>

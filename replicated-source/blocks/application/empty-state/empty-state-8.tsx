@@ -21,10 +21,10 @@ export function Pattern() {
         <div className="flex flex-col gap-4">
           <header className="flex flex-col gap-1">
             <h1 className="font-semibold text-2xl tracking-tight">
-              Projects
+              {"Projects"}
             </h1>
             <p className="max-w-lg text-muted-foreground text-sm/relaxed">
-              Manage the shared project fields your workspace uses to stay organized.
+              {"Manage the shared project fields your workspace uses to stay organized."}
             </p>
           </header>
           <Tabs className="gap-3 p-0 w-full" data-orientation="horizontal" activationDirection="none">
@@ -35,12 +35,12 @@ export function Pattern() {
                     <TabsList className="border-b border-border gap-5 h-auto justify-start p-0 py-1 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Project settings sections">
                       <TabsTrigger className="flex-none gap-2 justify-start px-0 py-1.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="" aria-controls="base-ui-_r_3_">
                         <span className="truncate">
-                          Project states
+                          {"Project states"}
                         </span>
                       </TabsTrigger>
                       <TabsTrigger className="flex-none gap-2 justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
                         <span className="truncate">
-                          Project labels
+                          {"Project labels"}
                         </span>
                       </TabsTrigger>
                     </TabsList>
@@ -82,14 +82,14 @@ export function Pattern() {
                       <div className="flex flex-col gap-3.5 items-start">
                         <div className="flex flex-col gap-2">
                           <EmptyTitle className="font-semibold text-lg tracking-tight">
-                            Set up project states
+                            {"Set up project states"}
                           </EmptyTitle>
                           <EmptyDescription className="text-sm/relaxed">
-                            Create a shared stage system so every project follows the same progress flow.
+                            {"Create a shared stage system so every project follows the same progress flow."}
                           </EmptyDescription>
                         </div>
                         <Button type="button" tabIndex="0">
-                          Enable
+                          {"Enable"}
                         </Button>
                       </div>
                     </EmptyHeader>

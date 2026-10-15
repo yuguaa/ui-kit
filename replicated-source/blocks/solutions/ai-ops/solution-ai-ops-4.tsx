@@ -55,16 +55,16 @@ export function Pattern() {
         <header className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="min-w-0 space-y-px">
             <h1 className="capitalize font-semibold leading-tight text-2xl tracking-tight">
-              Prompt Detail
+              {"Prompt Detail"}
             </h1>
             <p className="leading-relaxed max-w-2xl text-muted-foreground text-sm">
               <span className="gap-1.5 inline-flex items-center min-w-0">
                 <span className="shrink-0">
-                  PRM-4821
+                  {"PRM-4821"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="truncate">
-                  Renewal Risk Summary
+                  {"Renewal Risk Summary"}
                 </span>
               </span>
             </p>
@@ -72,13 +72,13 @@ export function Pattern() {
           <div className="shrink-0">
             <div className="flex gap-2 items-center shrink-0">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                Unsaved
+                {"Unsaved"}
               </Badge>
               <Button type="button" tabIndex="0" extracted="1">
-                Cancel
+                {"Cancel"}
               </Button>
               <Button type="button" tabIndex="0">
-                Update
+                {"Update"}
               </Button>
             </div>
           </div>
@@ -99,7 +99,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Overview
+                      {"Overview"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="after:bottom-[-1px] flex-none gap-2 justify-start px-0 py-3" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
@@ -112,7 +112,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Prompt Text
+                      {"Prompt Text"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="after:bottom-[-1px] flex-none gap-2 justify-start px-0 py-3" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -123,7 +123,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Safety
+                      {"Safety"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="after:bottom-[-1px] flex-none gap-2 justify-start px-0 py-3" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
@@ -133,7 +133,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Evaluations
+                      {"Evaluations"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="after:bottom-[-1px] flex-none gap-2 justify-start px-0 py-3" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
@@ -144,7 +144,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Access
+                      {"Access"}
                     </span>
                   </TabsTrigger>
                 </TabsList>
@@ -158,27 +158,27 @@ export function Pattern() {
                   <Card className="gap-0 p-0" size="default">
                     <CardHeader className="gap-1 px-5 py-4 sm:px-6">
                       <CardTitle>
-                        Prompt Basics
+                        {"Prompt Basics"}
                       </CardTitle>
                       <CardDescription>
-                        PRM-4821 changed at 09:42.
+                        {"PRM-4821 changed at 09:42."}
                       </CardDescription>
                     </CardHeader>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Prompt basics
+                          {"Prompt basics"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Prompt identity and ownership settings.
+                          {"Prompt identity and ownership settings."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="gap-3 grid md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] md:items-start px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="ai-ops-4-prompt-id">
-                                  Prompt ID
+                                  {"Prompt ID"}
                                 </FieldLabel>
                                 <Tooltip>
                                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" type="button" aria-label="Prompt ID info" id="base-ui-_r_8_" baseUiTooltipTrigger="">
@@ -196,7 +196,7 @@ export function Pattern() {
                                 <Input id="ai-ops-4-prompt-id" readOnly value="PRM-4821"></Input>
                               </Field>
                               <FieldDescription>
-                                Evaluation runs and SAFE-0914 logs keep this ID.
+                                {"Evaluation runs and SAFE-0914 logs keep this ID."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -207,14 +207,14 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="ai-ops-4-prompt-name">
-                                  Prompt name
+                                  {"Prompt name"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
                             <div className="flex flex-col gap-2 min-w-0">
                               <Input id="ai-ops-4-prompt-name" value="Renewal Risk Summary"></Input>
                               <FieldDescription>
-                                Shown in the prompt registry.
+                                {"Shown in the prompt registry."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -225,7 +225,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Owner
+                                  {"Owner"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
@@ -236,7 +236,7 @@ export function Pattern() {
                                     <Avatar className="size-4" size="default">
                                       <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
-                                    Mira Stone
+                                    {"Mira Stone"}
                                     <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                                       <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                                         <path d="M18 6 6 18"></path>
@@ -249,7 +249,7 @@ export function Pattern() {
                                 <input id="base-ui-_r_b_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                Mira Stone reviews production edits.
+                                {"Mira Stone reviews production edits."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -260,10 +260,10 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Status
+                                  {"Status"}
                                 </FieldLabel>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                  Unsaved
+                                  {"Unsaved"}
                                 </Badge>
                               </div>
                             </FieldContent>
@@ -274,23 +274,23 @@ export function Pattern() {
                                   <SelectValue>
                                     <span className="flex flex-col gap-px items-start">
                                       <span className="font-medium">
-                                        Editing
+                                        {"Editing"}
                                       </span>
                                       <small className="text-muted-foreground text-sm">
-                                        Unsaved draft from 09:42
+                                        {"Unsaved draft from 09:42"}
                                       </small>
                                     </span>
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
                                 <input id="base-ui-_r_e_-hidden-input" tabIndex="-1" aria-hidden="true" value="Editing" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                Controls production routing for this prompt.
+                                {"Controls production routing for this prompt."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -303,27 +303,27 @@ export function Pattern() {
                   <Card className="gap-0 p-0" size="default">
                     <CardHeader className="gap-1 px-5 py-4 sm:px-6">
                       <CardTitle>
-                        Runtime
+                        {"Runtime"}
                       </CardTitle>
                       <CardDescription>
-                        182K requests in 24h.
+                        {"182K requests in 24h."}
                       </CardDescription>
                     </CardHeader>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Runtime
+                          {"Runtime"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Provider routing and request budget settings.
+                          {"Provider routing and request budget settings."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="gap-3 grid md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] md:items-start px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Model provider
+                                  {"Model provider"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
@@ -334,23 +334,23 @@ export function Pattern() {
                                   <SelectValue>
                                     <span className="flex flex-col gap-px items-start">
                                       <span className="font-medium">
-                                        OpenRoute Primary
+                                        {"OpenRoute Primary"}
                                       </span>
                                       <small className="text-muted-foreground text-sm">
-                                        182K requests in 24h
+                                        {"182K requests in 24h"}
                                       </small>
                                     </span>
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
                                 <input id="base-ui-_r_h_-hidden-input" tabIndex="-1" aria-hidden="true" value="openroute-primary" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                OpenRoute Primary handles live traffic.
+                                {"OpenRoute Primary handles live traffic."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -361,7 +361,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Release channel
+                                  {"Release channel"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
@@ -370,18 +370,18 @@ export function Pattern() {
                                 <Select>
                                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="ai-ops-4-release-channel" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                   <SelectValue>
-                                    Canary
+                                    {"Canary"}
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
                                 <input id="base-ui-_r_k_-hidden-input" tabIndex="-1" aria-hidden="true" value="canary" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                Canary keeps 10 percent sampled traffic.
+                                {"Canary keeps 10 percent sampled traffic."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -392,7 +392,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="ai-ops-4-token-budget">
-                                  Token budget
+                                  {"Token budget"}
                                 </FieldLabel>
                                 <Tooltip>
                                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" type="button" aria-label="Token budget info" id="base-ui-_r_o_" baseUiTooltipTrigger="">
@@ -411,13 +411,13 @@ export function Pattern() {
                                   <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="ai-ops-4-token-budget" value="9600000" />
                                   <InputGroupAddon role="group" data-align="inline-end">
                                     <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                      tokens
+                                      {"tokens"}
                                     </span>
                                   </InputGroupAddon>
                                 </InputGroup>
                               </Field>
                               <FieldDescription>
-                                Current spend is 64 percent of the daily cap.
+                                {"Current spend is 64 percent of the daily cap."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -428,7 +428,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Trace retention
+                                  {"Trace retention"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
@@ -437,18 +437,18 @@ export function Pattern() {
                                 <Select>
                                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="ai-ops-4-retention" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                   <SelectValue>
-                                    90 days
+                                    {"90 days"}
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
                                 <input id="base-ui-_r_q_-hidden-input" tabIndex="-1" aria-hidden="true" value="90d" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                Audit logs stay attached to PRM-4821.
+                                {"Audit logs stay attached to PRM-4821."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -461,27 +461,27 @@ export function Pattern() {
                   <Card className="gap-0 p-0" size="default">
                     <CardHeader className="gap-1 px-5 py-4 sm:px-6">
                       <CardTitle>
-                        Readiness
+                        {"Readiness"}
                       </CardTitle>
                       <CardDescription>
-                        Release checks before the next update.
+                        {"Release checks before the next update."}
                       </CardDescription>
                     </CardHeader>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Readiness
+                          {"Readiness"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Evaluation status and review handoff for this prompt.
+                          {"Evaluation status and review handoff for this prompt."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="gap-3 grid md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] md:items-start px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Latest eval
+                                  {"Latest eval"}
                                 </FieldLabel>
                                 <Tooltip>
                                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" type="button" aria-label="Latest eval info" id="base-ui-_r_u_" baseUiTooltipTrigger="">
@@ -498,18 +498,18 @@ export function Pattern() {
                               <Field className="gap-2" role="group" data-orientation="vertical">
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                    Failed
+                                    {"Failed"}
                                   </Badge>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    2 blockers
+                                    {"2 blockers"}
                                   </Badge>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                    22 traces loaded
+                                    {"22 traces loaded"}
                                   </Badge>
                                 </div>
                               </Field>
                               <FieldDescription>
-                                Payment intent traces need redaction before production update.
+                                {"Payment intent traces need redaction before production update."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -520,7 +520,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-field-title items-center">
-                                  Reviewer
+                                  {"Reviewer"}
                                 </FieldLabel>
                               </div>
                             </FieldContent>
@@ -531,7 +531,7 @@ export function Pattern() {
                                     <Avatar className="size-4" size="default">
                                       <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
-                                    Nora Vale
+                                    {"Nora Vale"}
                                     <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                                       <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                                         <path d="M18 6 6 18"></path>
@@ -544,7 +544,7 @@ export function Pattern() {
                                 <input id="base-ui-_r_v_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <FieldDescription>
-                                Required before live traffic changes.
+                                {"Required before live traffic changes."}
                               </FieldDescription>
                             </div>
                           </Field>
@@ -555,7 +555,7 @@ export function Pattern() {
                             <FieldContent className="gap-0.5 md:pt-0.5">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="ai-ops-4-next-action">
-                                  Next action
+                                  {"Next action"}
                                 </FieldLabel>
                                 <Tooltip>
                                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" type="button" aria-label="Next action info" id="base-ui-_r_13_" baseUiTooltipTrigger="">
@@ -571,11 +571,11 @@ export function Pattern() {
                             <div className="flex flex-col gap-2 min-w-0">
                               <Field className="gap-2" role="group" data-orientation="vertical">
                                 <Textarea className="min-h-20 resize-none" id="ai-ops-4-next-action">
-                                  Patch PII rule, replay SAFE-0914, then update canary.
+                                  {"Patch PII rule, replay SAFE-0914, then update canary."}
                                 </Textarea>
                               </Field>
                               <FieldDescription>
-                                Keeps the review note attached to PRM-4821.
+                                {"Keeps the review note attached to PRM-4821."}
                               </FieldDescription>
                             </div>
                           </Field>

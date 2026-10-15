@@ -24,15 +24,15 @@ export function Pattern() {
         <header className="flex flex-row gap-(--frame-panel-header-gap) items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="space-y-px">
             <div className="font-semibold text-sm">
-              App Connections
+              {"App Connections"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Manage third-party services for workflow automation.
+              {"Manage third-party services for workflow automation."}
             </div>
           </div>
           <Button className="group/sliding overflow-hidden px-6 relative" type="button" tabIndex="0" aria-label="Add connection" extracted="1">
             <span className="duration-300 group-hover/sliding:-translate-x-2 inline-flex items-center transition-transform">
-              New Connection
+              {"New Connection"}
             </span>
             <svg className="absolute duration-300 group-hover/sliding:opacity-100 group-hover/sliding:translate-x-0 lucide lucide-plus opacity-0 right-2.5 transition-[opacity,transform] translate-x-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
               <path d="M5 12h14"></path>
@@ -43,10 +43,10 @@ export function Pattern() {
         <FramePanel className="space-y-2">
           <div>
             <h2 className="font-semibold text-sm">
-              Communication
+              {"Communication"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Channels and meetings for alerts and team updates.
+              {"Channels and meetings for alerts and team updates."}
             </p>
           </div>
           <div>
@@ -65,16 +65,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Slack
+                  {"Slack"}
                 </ItemTitle>
                 <ItemDescription>
-                  Route alerts and approvals to channels.
+                  {"Route alerts and approvals to channels."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-warning rounded-full size-1.5" aria-hidden="true"></span>
-                  Needs review
+                  {"Needs review"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Slack" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
@@ -111,16 +111,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Zoom
+                  {"Zoom"}
                 </ItemTitle>
                 <ItemDescription>
-                  Sync recordings and meeting summaries.
+                  {"Sync recordings and meeting summaries."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Zoom" aria-haspopup="menu" id="base-ui-_r_9_" aria-expanded="false">
@@ -143,16 +143,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Discord
+                  {"Discord"}
                 </ItemTitle>
                 <ItemDescription>
-                  Mirror updates and support escalations.
+                  {"Mirror updates and support escalations."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Discord" aria-haspopup="menu" id="base-ui-_r_e_" aria-expanded="false">
@@ -170,10 +170,10 @@ export function Pattern() {
         <FramePanel className="space-y-2">
           <div>
             <h2 className="font-semibold text-sm">
-              Collaboration
+              {"Collaboration"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Async video, dev context, and learning content.
+              {"Async video, dev context, and learning content."}
             </p>
           </div>
           <div>
@@ -187,16 +187,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Loom
+                  {"Loom"}
                 </ItemTitle>
                 <ItemDescription>
-                  Attach walkthroughs to tickets and notes.
+                  {"Attach walkthroughs to tickets and notes."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Loom" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
@@ -219,16 +219,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Cursor
+                  {"Cursor"}
                 </ItemTitle>
                 <ItemDescription>
-                  Link engineering context to active work.
+                  {"Link engineering context to active work."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-warning rounded-full size-1.5" aria-hidden="true"></span>
-                  Needs review
+                  {"Needs review"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Cursor" aria-haspopup="menu" id="base-ui-_r_o_" aria-expanded="false">
@@ -253,16 +253,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  LearnThis
+                  {"LearnThis"}
                 </ItemTitle>
                 <ItemDescription>
-                  Push guides and enable team learning.
+                  {"Push guides and enable team learning."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for LearnThis" aria-haspopup="menu" id="base-ui-_r_t_" aria-expanded="false">
@@ -280,10 +280,10 @@ export function Pattern() {
         <FramePanel className="space-y-2">
           <div>
             <h2 className="font-semibold text-sm">
-              Scheduling
+              {"Scheduling"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Calendar, video calls, and billing integrations.
+              {"Calendar, video calls, and billing integrations."}
             </p>
           </div>
           <div>
@@ -311,16 +311,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Google Calendar
+                  {"Google Calendar"}
                 </ItemTitle>
                 <ItemDescription>
-                  Create reminders from project changes.
+                  {"Create reminders from project changes."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Google Calendar" aria-haspopup="menu" id="base-ui-_r_12_" aria-expanded="false">
@@ -356,16 +356,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Google Meet
+                  {"Google Meet"}
                 </ItemTitle>
                 <ItemDescription>
-                  Auto-generate meeting links for events.
+                  {"Auto-generate meeting links for events."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Connected
+                  {"Connected"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Google Meet" aria-haspopup="menu" id="base-ui-_r_17_" aria-expanded="false">
@@ -388,16 +388,16 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Stripe
+                  {"Stripe"}
                 </ItemTitle>
                 <ItemDescription>
-                  Sync payments and subscription events.
+                  {"Sync payments and subscription events."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-warning rounded-full size-1.5" aria-hidden="true"></span>
-                  Needs review
+                  {"Needs review"}
                 </Badge>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Stripe" aria-haspopup="menu" id="base-ui-_r_1c_" aria-expanded="false">

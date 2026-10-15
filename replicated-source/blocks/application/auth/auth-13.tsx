@@ -47,10 +47,10 @@ export function Pattern() {
                   </Item>
                   <div className="flex flex-col gap-2">
                     <h1 className="font-semibold leading-tight text-3xl text-balance">
-                      Sign in
+                      {"Sign in"}
                     </h1>
                     <p className="text-base text-muted-foreground text-pretty">
-                      Enter your work email to get a secure magic link.
+                      {"Enter your work email to get a secure magic link."}
                     </p>
                   </div>
                 </div>
@@ -58,16 +58,16 @@ export function Pattern() {
                   <FieldGroup className="gap-4">
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-13-email">
-                        Work email
+                        {"Work email"}
                       </FieldLabel>
                       <Input className="bg-background" id="auth-13-email" autoComplete="email" placeholder="name@company.com" type="email"></Input>
                       <FieldDescription>
-                        Your sign-in link stays active for 15 minutes.
+                        {"Your sign-in link stays active for 15 minutes."}
                       </FieldDescription>
                     </Field>
                   </FieldGroup>
                   <Button className="w-full" type="submit" tabIndex="0">
-                    Send magic link
+                    {"Send magic link"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -77,7 +77,7 @@ export function Pattern() {
                 <div className="flex gap-3 items-center">
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <span className="text-muted-foreground text-xs">
-                    Or continue with
+                    {"Or continue with"}
                   </span>
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 </div>
@@ -185,7 +185,7 @@ export function Pattern() {
                         <path fill="url(#s)" d="M219.7 299.023v59.996c5.506.64 11.236 1.028 17.247 1.028 6.026 0 11.855-.307 17.52-.872v-59.748a105.119 105.119 0 0 1-17.477 1.461c-5.932 0-11.7-.686-17.29-1.865Z" filter="url(#k)" opacity=".5"></path>
                       </g>
                     </svg>
-                    Continue with Google
+                    {"Continue with Google"}
                   </Button>
                   <Button className="[&_svg:not([class*='size-'])]:size-4 px-4 w-full" type="button" tabIndex="0">
                     <span className="dark:hidden" aria-hidden="true">
@@ -198,7 +198,7 @@ export function Pattern() {
                         <path fill="#fff" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
                       </svg>
                     </span>
-                    Continue with Apple
+                    {"Continue with Apple"}
                   </Button>
                   <Button className="[&_svg:not([class*='size-'])]:size-4 px-4 w-full" type="button" tabIndex="0">
                     <span className="dark:hidden" aria-hidden="true">
@@ -211,7 +211,7 @@ export function Pattern() {
                         <path fillRule="evenodd" clipRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"></path>
                       </svg>
                     </span>
-                    Continue with GitHub
+                    {"Continue with GitHub"}
                   </Button>
                 </div>
               </div>

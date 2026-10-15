@@ -188,17 +188,17 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2">
                 <a className="font-medium hover:text-primary leading-none text-sm" href="#">
-                  Database Server
+                  {"Database Server"}
                 </a>
                 <div className="flex gap-2 items-center">
                   <div className="flex gap-1 items-center">
                     <div className="bg-green-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></div>
                     <span className="leading-none text-green-600 text-xs">
-                      Online
+                      {"Online"}
                     </span>
                   </div>
                   <p className="leading-none text-muted-foreground text-xs">
-                    Last backup 10 mins ago
+                    {"Last backup 10 mins ago"}
                   </p>
                 </div>
               </div>
@@ -380,17 +380,17 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2">
                 <a className="font-medium hover:text-primary leading-none text-sm" href="#">
-                  Storage Bucket
+                  {"Storage Bucket"}
                 </a>
                 <div className="flex gap-2 items-center">
                   <div className="flex gap-1 items-center">
                     <div className="bg-blue-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></div>
                     <span className="leading-none text-blue-600 text-xs">
-                      Synced
+                      {"Synced"}
                     </span>
                   </div>
                   <p className="leading-none text-muted-foreground text-xs">
-                    Last backup 10 mins ago
+                    {"Last backup 10 mins ago"}
                   </p>
                 </div>
               </div>
@@ -575,17 +575,17 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2">
                 <a className="font-medium hover:text-primary leading-none text-sm" href="#">
-                  Analytics Engine
+                  {"Analytics Engine"}
                 </a>
                 <div className="flex gap-2 items-center">
                   <div className="flex gap-1 items-center">
                     <div className="bg-violet-700 rounded-full shrink-0 size-1.5" aria-hidden="true"></div>
                     <span className="leading-none text-violet-700 text-xs">
-                      Idle
+                      {"Idle"}
                     </span>
                   </div>
                   <p className="leading-none text-muted-foreground text-xs">
-                    Last run 1 day ago
+                    {"Last run 1 day ago"}
                   </p>
                 </div>
               </div>

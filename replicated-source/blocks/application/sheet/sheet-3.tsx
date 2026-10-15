@@ -22,12 +22,12 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Keyboard shortcuts sheet
+        {"Keyboard shortcuts sheet"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
         <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-          Open keyboard shortcuts
+          {"Open keyboard shortcuts"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -38,10 +38,10 @@ export function Pattern() {
         <div className="flex gap-3 items-start justify-between">
           <div className="min-w-0">
             <SheetTitle className="truncate" id="base-ui-_r_3_">
-              Keyboard Shortcuts
+              {"Keyboard Shortcuts"}
             </SheetTitle>
             <SheetDescription className="sr-only" id="base-ui-_r_4_">
-              Move faster through the operations dashboard.
+              {"Move faster through the operations dashboard."}
             </SheetDescription>
           </div>
           <SheetClose className="-me-1.5 -mt-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close keyboard shortcuts sheet">
@@ -71,80 +71,80 @@ export function Pattern() {
                 <div className="flex flex-col">
                   <div className="pb-2">
                     <h3 className="font-medium text-muted-foreground text-xs tracking-normal uppercase" id="workspace-heading">
-                      Workspace
+                      {"Workspace"}
                     </h3>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Open command menu
+                        {"Open command menu"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Cmd plusK">
                           <Kbd>
-                            Cmd
+                            {"Cmd"}
                           </Kbd>
                           <Kbd>
-                            K
+                            {"K"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Quick capture
+                        {"Quick capture"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="C">
                           <Kbd>
-                            C
+                            {"C"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Switch workspace
+                        {"Switch workspace"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="O">
                           <Kbd>
-                            O
+                            {"O"}
                           </Kbd>
                         </KbdGroup>
                         <span className="text-muted-foreground text-xs">
-                          then
+                          {"then"}
                         </span>
                         <KbdGroup aria-label="W">
                           <Kbd>
-                            W
+                            {"W"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Toggle sidebar
+                        {"Toggle sidebar"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="S">
                           <Kbd>
-                            S
+                            {"S"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Open profile menu
+                        {"Open profile menu"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Shift plusP">
                           <Kbd>
-                            Shift
+                            {"Shift"}
                           </Kbd>
                           <Kbd>
-                            P
+                            {"P"}
                           </Kbd>
                         </KbdGroup>
                       </div>
@@ -156,93 +156,93 @@ export function Pattern() {
                 <div className="flex flex-col">
                   <div className="pb-2">
                     <h3 className="font-medium text-muted-foreground text-xs tracking-normal uppercase" id="navigation-heading">
-                      Navigation
+                      {"Navigation"}
                     </h3>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Go to dashboard
+                        {"Go to dashboard"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="G">
                           <Kbd>
-                            G
+                            {"G"}
                           </Kbd>
                         </KbdGroup>
                         <span className="text-muted-foreground text-xs">
-                          then
+                          {"then"}
                         </span>
                         <KbdGroup aria-label="D">
                           <Kbd>
-                            D
+                            {"D"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Go to projects
+                        {"Go to projects"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="G">
                           <Kbd>
-                            G
+                            {"G"}
                           </Kbd>
                         </KbdGroup>
                         <span className="text-muted-foreground text-xs">
-                          then
+                          {"then"}
                         </span>
                         <KbdGroup aria-label="P">
                           <Kbd>
-                            P
+                            {"P"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Go to calendar
+                        {"Go to calendar"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="G">
                           <Kbd>
-                            G
+                            {"G"}
                           </Kbd>
                         </KbdGroup>
                         <span className="text-muted-foreground text-xs">
-                          then
+                          {"then"}
                         </span>
                         <KbdGroup aria-label="C">
                           <Kbd>
-                            C
+                            {"C"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Open selected project
+                        {"Open selected project"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Enter">
                           <Kbd>
-                            Enter
+                            {"Enter"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Open in new window
+                        {"Open in new window"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Ctrl plusEnter">
                           <Kbd>
-                            Ctrl
+                            {"Ctrl"}
                           </Kbd>
                           <Kbd>
-                            Enter
+                            {"Enter"}
                           </Kbd>
                         </KbdGroup>
                       </div>
@@ -254,66 +254,66 @@ export function Pattern() {
                 <div className="flex flex-col">
                   <div className="pb-2">
                     <h3 className="font-medium text-muted-foreground text-xs tracking-normal uppercase" id="triage-heading">
-                      Triage
+                      {"Triage"}
                     </h3>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Assign owner
+                        {"Assign owner"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="A">
                           <Kbd>
-                            A
+                            {"A"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Set priority
+                        {"Set priority"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="P">
                           <Kbd>
-                            P
+                            {"P"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Set due date
+                        {"Set due date"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="D">
                           <Kbd>
-                            D
+                            {"D"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Add label
+                        {"Add label"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="L">
                           <Kbd>
-                            L
+                            {"L"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Mark as blocked
+                        {"Mark as blocked"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="B">
                           <Kbd>
-                            B
+                            {"B"}
                           </Kbd>
                         </KbdGroup>
                       </div>
@@ -325,75 +325,75 @@ export function Pattern() {
                 <div className="flex flex-col">
                   <div className="pb-2">
                     <h3 className="font-medium text-muted-foreground text-xs tracking-normal uppercase" id="board-heading">
-                      Board
+                      {"Board"}
                     </h3>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Move item
+                        {"Move item"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="M">
                           <Kbd>
-                            M
+                            {"M"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Move card up
+                        {"Move card up"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Alt plusUp">
                           <Kbd>
-                            Alt
+                            {"Alt"}
                           </Kbd>
                           <Kbd>
-                            Up
+                            {"Up"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Move card down
+                        {"Move card down"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Alt plusDown">
                           <Kbd>
-                            Alt
+                            {"Alt"}
                           </Kbd>
                           <Kbd>
-                            Down
+                            {"Down"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Toggle details panel
+                        {"Toggle details panel"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="I">
                           <Kbd>
-                            I
+                            {"I"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Archive item
+                        {"Archive item"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Shift plusA">
                           <Kbd>
-                            Shift
+                            {"Shift"}
                           </Kbd>
                           <Kbd>
-                            A
+                            {"A"}
                           </Kbd>
                         </KbdGroup>
                       </div>
@@ -405,60 +405,60 @@ export function Pattern() {
                 <div className="flex flex-col">
                   <div className="pb-2">
                     <h3 className="font-medium text-muted-foreground text-xs tracking-normal uppercase" id="messages-heading">
-                      Messages
+                      {"Messages"}
                     </h3>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Send update
+                        {"Send update"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Cmd plusEnter">
                           <Kbd>
-                            Cmd
+                            {"Cmd"}
                           </Kbd>
                           <Kbd>
-                            Enter
+                            {"Enter"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Reply to thread
+                        {"Reply to thread"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="R">
                           <Kbd>
-                            R
+                            {"R"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Clear read notifications
+                        {"Clear read notifications"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="Shift plusBackspace">
                           <Kbd>
-                            Shift
+                            {"Shift"}
                           </Kbd>
                           <Kbd>
-                            Backspace
+                            {"Backspace"}
                           </Kbd>
                         </KbdGroup>
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-between min-w-0 py-1.5">
                       <span className="min-w-0 text-sm truncate">
-                        Open shortcuts
+                        {"Open shortcuts"}
                       </span>
                       <div className="flex flex-wrap gap-1.5 items-center justify-end shrink-0">
                         <KbdGroup aria-label="?">
                           <Kbd>
-                            ?
+                            {"?"}
                           </Kbd>
                         </KbdGroup>
                       </div>

@@ -53,10 +53,10 @@ export function Pattern() {
       <div className="max-w-4xl space-y-8 w-full">
         <header className="px-1">
           <h1 className="font-semibold text-xl tracking-tight">
-            Account Settings
+            {"Account Settings"}
           </h1>
           <p className="leading-relaxed max-w-2xl text-muted-foreground text-sm">
-            Update your profile, access, notifications, and billing preferences.
+            {"Update your profile, access, notifications, and billing preferences."}
           </p>
         </header>
         <Tabs className="gap-4 lg:gap-8 w-full" data-orientation="vertical" activationDirection="none">
@@ -68,7 +68,7 @@ export function Pattern() {
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
                 <span className="truncate">
-                  My Profile
+                  {"My Profile"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
@@ -76,7 +76,7 @@ export function Pattern() {
                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 </svg>
                 <span className="truncate">
-                  Security
+                  {"Security"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
@@ -85,7 +85,7 @@ export function Pattern() {
                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                 </svg>
                 <span className="truncate">
-                  Notifications
+                  {"Notifications"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -94,7 +94,7 @@ export function Pattern() {
                   <line x1="2" x2="22" y1="10" y2="10"></line>
                 </svg>
                 <span className="truncate">
-                  Billing
+                  {"Billing"}
                 </span>
               </TabsTrigger>
             </TabsList>
@@ -108,47 +108,47 @@ export function Pattern() {
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                   <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                    Complete your profile.
+                    {"Complete your profile."}
                   </AlertTitle>
                   <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                    Add a photo and keep your role and timezone current.
+                    {"Add a photo and keep your role and timezone current."}
                   </AlertDescription>
                   <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
                     <Button type="button" tabIndex="0">
-                      Dismiss
+                      {"Dismiss"}
                     </Button>
                     <Button type="button" tabIndex="0">
-                      Update
+                      {"Update"}
                     </Button>
                   </AlertAction>
                 </Alert>
                 <Card className="gap-0 p-0" size="default">
                   <CardHeader className="border-b gap-0 px-5 py-3">
                     <CardTitle>
-                      My profile
+                      {"My profile"}
                     </CardTitle>
                     <CardDescription>
-                      Public account details
+                      {"Public account details"}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-0">
                     <FieldSet className="gap-0">
                       <FieldLegend className="sr-only" variant="legend">
-                        Profile fields
+                        {"Profile fields"}
                       </FieldLegend>
                       <FieldDescription className="sr-only">
-                        Update your personal profile details.
+                        {"Update your personal profile details."}
                       </FieldDescription>
                       <FieldGroup className="gap-0">
                         <Field className="gap-4 px-5 py-3" role="group" data-orientation="responsive">
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-field-title items-center">
-                                Photo
+                                {"Photo"}
                               </FieldLabel>
                             </div>
                             <FieldDescription>
-                              Shown in comments and mentions.
+                              {"Shown in comments and mentions."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -166,7 +166,7 @@ export function Pattern() {
                                       <path d="m17 8-5-5-5 5"></path>
                                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     </svg>
-                                    Change
+                                    {"Change"}
                                   </Button>
                                   <input className="sr-only" id="settings-7-profile-photo" accept="image/*" aria-label="Upload profile image" tabIndex="-1" type="file" />
                                 </div>
@@ -175,7 +175,7 @@ export function Pattern() {
                                     <path d="M18 6 6 18"></path>
                                     <path d="m6 6 12 12"></path>
                                   </svg>
-                                  Remove
+                                  {"Remove"}
                                 </Button>
                               </div>
                             </div>
@@ -188,11 +188,11 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-full-name">
-                                Full name
+                                {"Full name"}
                               </FieldLabel>
                             </div>
                             <FieldDescription>
-                              Used across the workspace.
+                              {"Used across the workspace."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -208,14 +208,14 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-email">
-                                Email address
+                                {"Email address"}
                               </FieldLabel>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                Verified
+                                {"Verified"}
                               </Badge>
                             </div>
                             <FieldDescription>
-                              Primary sign-in email.
+                              {"Primary sign-in email."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -231,11 +231,11 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-username">
-                                Username
+                                {"Username"}
                               </FieldLabel>
                             </div>
                             <FieldDescription>
-                              Visible in mentions and links.
+                              {"Visible in mentions and links."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -243,7 +243,7 @@ export function Pattern() {
                               <InputGroup role="group">
                                 <InputGroupAddon role="group" data-align="inline-start">
                                   <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                    @
+                                    {"@"}
                                   </span>
                                 </InputGroupAddon>
                                 <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="settings-7-username" value="alexmorgan" />
@@ -258,35 +258,35 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-field-title items-center">
-                                Profile details
+                                {"Profile details"}
                               </FieldLabel>
                             </div>
                             <FieldDescription>
-                              Public details shared across the workspace.
+                              {"Public details shared across the workspace."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-[22rem] min-w-0">
                             <div className="@md/field-group:justify-end flex justify-start w-full">
                               <FieldSet className="gap-3 w-full">
                                 <FieldLegend className="sr-only" variant="legend">
-                                  Profile details
+                                  {"Profile details"}
                                 </FieldLegend>
                                 <FieldDescription className="sr-only">
-                                  Public profile and workspace defaults.
+                                  {"Public profile and workspace defaults."}
                                 </FieldDescription>
                                 <FieldGroup className="gap-4">
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-role">
-                                      Role
+                                      {"Role"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-7-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue>
-                                        Engineering Lead
+                                        {"Engineering Lead"}
                                       </SelectValue>
                                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -294,16 +294,16 @@ export function Pattern() {
                                   </Field>
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-timezone">
-                                      Time zone
+                                      {"Time zone"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-7-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue>
-                                        UTC-8 (Pacific Time)
+                                        {"UTC-8 (Pacific Time)"}
                                       </SelectValue>
                                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -311,12 +311,12 @@ export function Pattern() {
                                   </Field>
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-website">
-                                      Website
+                                      {"Website"}
                                     </FieldLabel>
                                     <InputGroup role="group">
                                       <InputGroupAddon role="group" data-align="inline-start">
                                         <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                          https://
+                                          {"https://"}
                                         </span>
                                       </InputGroupAddon>
                                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="settings-7-website" value="alexmorgan.dev" />
@@ -334,17 +334,17 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-bio">
-                                Bio
+                                {"Bio"}
                               </FieldLabel>
                             </div>
                             <FieldDescription>
-                              Short profile summary.
+                              {"Short profile summary."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
                             <div className="@md/field-group:justify-end flex justify-start w-full">
                               <Textarea className="min-h-24 resize-none" id="settings-7-bio" rows="4">
-                                Building developer tools at Acme. Previously at Vercel and Stripe.
+                                {"Building developer tools at Acme. Previously at Vercel and Stripe."}
                               </Textarea>
                             </div>
                           </FieldContent>
@@ -354,10 +354,10 @@ export function Pattern() {
                   </CardContent>
                   <CardFooter className="border-t gap-2 justify-end px-5 py-3">
                     <Button type="button" tabIndex="0">
-                      Cancel
+                      {"Cancel"}
                     </Button>
                     <Button type="button" tabIndex="0">
-                      Save changes
+                      {"Save changes"}
                     </Button>
                   </CardFooter>
                 </Card>

@@ -18,7 +18,7 @@ export function Pattern() {
       <Card className="bg-slate-950 border-slate-800 max-w-lg rounded-3xl shadow-2xl text-white w-full" size="default">
         <CardHeader className="flex items-center justify-between">
           <CardTitle className="font-semibold text-lg text-slate-200">
-            Floor Price
+            {"Floor Price"}
           </CardTitle>
           <CardAction>
             <Button className="hover:bg-transparent hover:text-white text-slate-400" type="button" tabIndex="0" extracted="1">
@@ -33,25 +33,17 @@ export function Pattern() {
           <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
             <TabsList className="bg-slate-900/50 p-1 rounded-xl w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger className="data-active:bg-slate-800 data-active:text-emerald-400 hover:text-emerald-400 rounded-lg text-slate-400" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_">
-                Month
+                {"Month"}
               </TabsTrigger>
               <TabsTrigger className="data-active:bg-slate-800 data-active:text-emerald-400 hover:text-emerald-400 rounded-lg text-slate-400" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
-                Max
+                {"Max"}
               </TabsTrigger>
             </TabsList>
           </Tabs>
           <div className="h-40 w-full">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-full justify-center text-xs w-full" data-chart="chart-_r_2_">
-              <style>{`
- [data-chart=chart-_r_2_] {
-  --color-value: rgb(16 185 129);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-value: rgb(16 185 129);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-value: rgb(16 185 129);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-value: rgb(16 185 129);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="464" height="160" style={{position: "relative", cursor: "default", width: "464px", height: "160px"}}>
@@ -97,18 +89,19 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
           <div className="flex items-end justify-between">
             <div className="space-y-1">
               <div className="font-medium text-slate-400 text-sm">
-                Current Price (USD)
+                {"Current Price (USD)"}
               </div>
               <div className="flex gap-2 items-baseline">
                 <span className="font-bold text-4xl">
-                  6.4
+                  {"6.4"}
                 </span>
                 <span className="font-semibold text-emerald-400 text-sm">
-                  +$2.1
+                  {"+$2.1"}
                 </span>
               </div>
             </div>
@@ -117,7 +110,7 @@ export function Pattern() {
                 <path d="M16 7h6v6"></path>
                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
               </svg>
-              24.5%
+              {"24.5%"}
             </div>
           </div>
         </CardContent>

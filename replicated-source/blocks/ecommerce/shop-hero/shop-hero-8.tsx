@@ -2,11 +2,11 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Ecommerce shop hero
+        {"Ecommerce shop hero"}
       </h1>
       <section className="w-full" aria-labelledby="shop-hero-8-title">
         <h2 className="sr-only" id="shop-hero-8-title">
-          Active collections quilt
+          {"Active collections quilt"}
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2" role="list">
           <li className="flex">
@@ -18,33 +18,33 @@ export function Pattern() {
                 <div className="gap-2 inline-flex items-center">
                   <span className="bg-blue-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="font-semibold text-[10px] text-white tracking-[0.22em] uppercase">
-                    Just Released
+                    {"Just Released"}
                   </span>
                 </div>
                 <span className="font-medium tabular-nums text-[10px] text-white/65 tracking-wider uppercase">
-                  Released Today · FW26
+                  {"Released Today · FW26"}
                 </span>
               </div>
               <div className="absolute bottom-0 duration-500 ease-out flex flex-col gap-2 group-hover/tile:-translate-y-1 inset-x-0 lg:p-8 md:gap-2.5 md:p-7 p-5 transition-transform">
                 <h3 className="font-semibold leading-[1.05] lg:text-5xl md:text-4xl text-3xl text-balance text-white tracking-tight">
-                  The Outpost
+                  {"The Outpost"}
                 </h3>
                 <p className="flex flex-wrap gap-x-2 gap-y-0.5 items-center md:text-sm tabular-nums text-white/75 text-xs">
                   <span className="font-semibold text-white">
-                    32 Pieces
+                    {"32 Pieces"}
                   </span>
                   <span className="bg-white/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    $98
+                    {"$98"}
                     <span className="text-white/55">
-                      to
+                      {"to"}
                     </span>
-                    $284
+                    {"$284"}
                   </span>
                 </p>
                 <span className="font-semibold gap-1.5 inline-flex items-center md:text-sm mt-1 text-white text-xs tracking-wider underline-offset-4 uppercase">
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
-                    Shop The Collection
+                    {"Shop The Collection"}
                   </span>
                   <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
@@ -63,33 +63,33 @@ export function Pattern() {
                 <div className="gap-2 inline-flex items-center">
                   <span className="bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="font-semibold text-[10px] text-white tracking-[0.22em] uppercase">
-                    Live Now
+                    {"Live Now"}
                   </span>
                 </div>
                 <span className="font-medium tabular-nums text-[10px] text-white/65 tracking-wider uppercase">
-                  Restocked This Week
+                  {"Restocked This Week"}
                 </span>
               </div>
               <div className="absolute bottom-0 duration-500 ease-out flex flex-col gap-2 group-hover/tile:-translate-y-1 inset-x-0 lg:p-8 md:gap-2.5 md:p-7 p-5 transition-transform">
                 <h3 className="font-semibold leading-[1.05] lg:text-5xl md:text-4xl text-3xl text-balance text-white tracking-tight">
-                  The Carry-On Edit
+                  {"The Carry-On Edit"}
                 </h3>
                 <p className="flex flex-wrap gap-x-2 gap-y-0.5 items-center md:text-sm tabular-nums text-white/75 text-xs">
                   <span className="font-semibold text-white">
-                    24 Pieces
+                    {"24 Pieces"}
                   </span>
                   <span className="bg-white/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    $148
+                    {"$148"}
                     <span className="text-white/55">
-                      to
+                      {"to"}
                     </span>
-                    $224
+                    {"$224"}
                   </span>
                 </p>
                 <span className="font-semibold gap-1.5 inline-flex items-center md:text-sm mt-1 text-white text-xs tracking-wider underline-offset-4 uppercase">
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
-                    Shop The Collection
+                    {"Shop The Collection"}
                   </span>
                   <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
@@ -108,33 +108,33 @@ export function Pattern() {
                 <div className="gap-2 inline-flex items-center">
                   <span className="bg-amber-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="font-semibold text-[10px] text-white tracking-[0.22em] uppercase">
-                    Drops Friday
+                    {"Drops Friday"}
                   </span>
                 </div>
                 <span className="font-medium tabular-nums text-[10px] text-white/65 tracking-wider uppercase">
-                  Friday · 8AM PT
+                  {"Friday · 8AM PT"}
                 </span>
               </div>
               <div className="absolute bottom-0 duration-500 ease-out flex flex-col gap-2 group-hover/tile:-translate-y-1 inset-x-0 lg:p-8 md:gap-2.5 md:p-7 p-5 transition-transform">
                 <h3 className="font-semibold leading-[1.05] lg:text-5xl md:text-4xl text-3xl text-balance text-white tracking-tight">
-                  The Apparel Drop
+                  {"The Apparel Drop"}
                 </h3>
                 <p className="flex flex-wrap gap-x-2 gap-y-0.5 items-center md:text-sm tabular-nums text-white/75 text-xs">
                   <span className="font-semibold text-white">
-                    16 Pieces
+                    {"16 Pieces"}
                   </span>
                   <span className="bg-white/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    $185
+                    {"$185"}
                     <span className="text-white/55">
-                      to
+                      {"to"}
                     </span>
-                    $325
+                    {"$325"}
                   </span>
                 </p>
                 <span className="font-semibold gap-1.5 inline-flex items-center md:text-sm mt-1 text-white text-xs tracking-wider underline-offset-4 uppercase">
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
-                    Shop The Collection
+                    {"Shop The Collection"}
                   </span>
                   <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
@@ -153,33 +153,33 @@ export function Pattern() {
                 <div className="gap-2 inline-flex items-center">
                   <span className="bg-rose-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="font-semibold text-[10px] text-white tracking-[0.22em] uppercase">
-                    Up To 40% Off
+                    {"Up To 40% Off"}
                   </span>
                 </div>
                 <span className="font-medium tabular-nums text-[10px] text-white/65 tracking-wider uppercase">
-                  Through Sunday Only
+                  {"Through Sunday Only"}
                 </span>
               </div>
               <div className="absolute bottom-0 duration-500 ease-out flex flex-col gap-2 group-hover/tile:-translate-y-1 inset-x-0 lg:p-8 md:gap-2.5 md:p-7 p-5 transition-transform">
                 <h3 className="font-semibold leading-[1.05] lg:text-5xl md:text-4xl text-3xl text-balance text-white tracking-tight">
-                  The Sale Edit
+                  {"The Sale Edit"}
                 </h3>
                 <p className="flex flex-wrap gap-x-2 gap-y-0.5 items-center md:text-sm tabular-nums text-white/75 text-xs">
                   <span className="font-semibold text-white">
-                    18 Pieces
+                    {"18 Pieces"}
                   </span>
                   <span className="bg-white/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    $58
+                    {"$58"}
                     <span className="text-white/55">
-                      to
+                      {"to"}
                     </span>
-                    $185
+                    {"$185"}
                   </span>
                 </p>
                 <span className="font-semibold gap-1.5 inline-flex items-center md:text-sm mt-1 text-white text-xs tracking-wider underline-offset-4 uppercase">
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
-                    Shop The Collection
+                    {"Shop The Collection"}
                   </span>
                   <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>

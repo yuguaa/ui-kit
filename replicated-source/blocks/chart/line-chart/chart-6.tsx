@@ -14,75 +14,61 @@ export function Pattern() {
             <Button className="[border-radius:0] bg-muted/50 border-b border-r flex-col gap-1 h-auto items-stretch justify-start md:border-b-0 md:border-r md:last:border-r-0! md:nth-[2n]:border-r nth-[2n]:border-r-0 nth-[n+3]:border-b-0 p-4 text-left transition-colors w-full" type="button" tabIndex="0" aria-pressed="true" extracted="1">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-muted-foreground text-sm">
-                  Orders
+                  {"Orders"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  +18%
+                  {"+18%"}
                 </Badge>
               </div>
               <div className="font-semibold text-base text-foreground">
-                2,865
+                {"2,865"}
               </div>
             </Button>
             <Button className="[border-radius:0] border-b border-r flex-col gap-1 h-auto hover:bg-muted/30 items-stretch justify-start md:border-b-0 md:border-r md:last:border-r-0! md:nth-[2n]:border-r nth-[2n]:border-r-0 nth-[n+3]:border-b-0 p-4 text-left transition-colors w-full" type="button" tabIndex="0" aria-pressed="false">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-muted-foreground text-sm">
-                  Response
+                  {"Response"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                  14%
+                  {"14%"}
                 </Badge>
               </div>
               <div className="font-semibold text-base text-foreground">
-                135ms
+                {"135ms"}
               </div>
             </Button>
             <Button className="[border-radius:0] border-b border-r flex-col gap-1 h-auto hover:bg-muted/30 items-stretch justify-start md:border-b-0 md:border-r md:last:border-r-0! md:nth-[2n]:border-r nth-[2n]:border-r-0 nth-[n+3]:border-b-0 p-4 text-left transition-colors w-full" type="button" tabIndex="0" aria-pressed="false">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-muted-foreground text-sm">
-                  Revenue
+                  {"Revenue"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  +15%
+                  {"+15%"}
                 </Badge>
               </div>
               <div className="font-semibold text-base text-foreground">
-                $8.67k
+                {"$8.67k"}
               </div>
             </Button>
             <Button className="[border-radius:0] border-b border-r flex-col gap-1 h-auto hover:bg-muted/30 items-stretch justify-start md:border-b-0 md:border-r md:last:border-r-0! md:nth-[2n]:border-r nth-[2n]:border-r-0 nth-[n+3]:border-b-0 p-4 text-left transition-colors w-full" type="button" tabIndex="0" aria-pressed="false">
               <div className="flex items-center justify-between">
                 <span className="font-medium text-muted-foreground text-sm">
-                  Users
+                  {"Users"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  +15%
+                  {"+15%"}
                 </Badge>
               </div>
               <div className="font-semibold text-base text-foreground">
-                1,425
+                {"1,425"}
               </div>
             </Button>
           </div>
           <div className="pb-6 pt-8 px-2">
             <div className="w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[350px] justify-center text-xs w-full" data-chart="chart-_r_0_">
-                <style>{`
- [data-chart=chart-_r_0_] {
-  --color-orders: var(--color-teal-500);
-  --color-response: var(--color-violet-500);
-  --color-revenue: var(--color-lime-500);
-  --color-customers: var(--color-sky-500);
-}
-
-
-.dark [data-chart=chart-_r_0_] {
-  --color-orders: var(--color-teal-500);
-  --color-response: var(--color-violet-500);
-  --color-revenue: var(--color-lime-500);
-  --color-customers: var(--color-sky-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_0_] {\n  --color-orders: var(--color-teal-500);\n  --color-response: var(--color-violet-500);\n  --color-revenue: var(--color-lime-500);\n  --color-customers: var(--color-sky-500);\n}\n\n\n.dark [data-chart=chart-_r_0_] {\n  --color-orders: var(--color-teal-500);\n  --color-response: var(--color-violet-500);\n  --color-revenue: var(--color-lime-500);\n  --color-customers: var(--color-sky-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="870" height="350" style={{position: "relative", cursor: "default", width: "870px", height: "350px"}}>
@@ -177,35 +163,35 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="860" stroke="none" fontSize="11" x="25" y="331" textAnchor="middle" fill="#666">
                                 <tspan x="25" dy="0.71em">
-                                  Apr 1
+                                  {"Apr 1"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="860" stroke="none" fontSize="11" x="230" y="331" textAnchor="middle" fill="#666">
                                 <tspan x="230" dy="0.71em">
-                                  Apr 5
+                                  {"Apr 5"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="860" stroke="none" fontSize="11" x="435" y="331" textAnchor="middle" fill="#666">
                                 <tspan x="435" dy="0.71em">
-                                  Apr 10
+                                  {"Apr 10"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="860" stroke="none" fontSize="11" x="640" y="331" textAnchor="middle" fill="#666">
                                 <tspan x="640" dy="0.71em">
-                                  Apr 15
+                                  {"Apr 15"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="860" stroke="none" fontSize="11" x="845" y="331" textAnchor="middle" fill="#666">
                                 <tspan x="845" dy="0.71em">
-                                  Apr 18
+                                  {"Apr 18"}
                                 </tspan>
                               </text>
                             </g>
@@ -216,6 +202,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
         </FramePanel>

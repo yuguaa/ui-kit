@@ -28,22 +28,22 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1.5 items-baseline min-w-0">
                   <span className="font-medium text-2xl">
-                    1,562
+                    {"1,562"}
                   </span>
                   <span className="font-medium text-2xl text-muted-foreground/45">
-                    km
+                    {"km"}
                   </span>
                 </div>
               </div>
               <TabsList className="min-[520px]:w-[184px] w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_3_" extracted="1">
-                  Week
+                  {"Week"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                  Month
+                  {"Month"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                  Year
+                  {"Year"}
                 </TabsTrigger>
               </TabsList>
             </div>

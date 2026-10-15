@@ -33,7 +33,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        NeUI assistant sheet
+        {"NeUI assistant sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
@@ -43,7 +43,7 @@ export function Pattern() {
           <path d="M22 4h-4"></path>
           <circle cx="4" cy="20" r="2"></circle>
         </svg>
-        Open NeUI assistant
+        {"Open NeUI assistant"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -52,24 +52,24 @@ export function Pattern() {
       <SheetHeader className="p-0 shrink-0">
         <div className="border-b flex gap-2 items-center justify-between min-h-12 px-4">
           <SheetTitle className="sr-only" id="base-ui-_r_3_">
-            NeUI AI GPT-5.4
+            {"NeUI AI GPT-5.4"}
           </SheetTitle>
           <Select>
           <SelectTrigger className="border-transparent focus-visible:ring-0 hover:text-accent-foreground px-0 shadow-none w-auto" type="button" tabIndex="0" id="base-ui-_r_4_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Select assistant model">
             <span className="flex items-center min-w-0">
               <span className="shrink-0">
-                NeUI AI (
+                {"NeUI AI ("}
               </span>
               <SelectValue>
-                GPT-5.4
+                {"GPT-5.4"}
               </SelectValue>
               <span className="shrink-0">
-                )
+                {")"}
               </span>
             </span>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -82,7 +82,7 @@ export function Pattern() {
                 <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
               </svg>
               <span className="sr-only">
-                Start new assistant thread
+                {"Start new assistant thread"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -95,7 +95,7 @@ export function Pattern() {
                 <path d="M8 16H3v5"></path>
               </svg>
               <span className="sr-only">
-                Refresh assistant context
+                {"Refresh assistant context"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -107,7 +107,7 @@ export function Pattern() {
                 <circle cx="5" cy="12" r="1"></circle>
               </svg>
               <span className="sr-only">
-                Open assistant actions
+                {"Open assistant actions"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -120,7 +120,7 @@ export function Pattern() {
           </div>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_d_">
-          Ask NeUI AI to inspect workspace tasks, summarize changes, and draft next steps.
+          {"Ask NeUI AI to inspect workspace tasks, summarize changes, and draft next steps."}
         </SheetDescription>
       </SheetHeader>
       <div className="flex-1 min-h-0">
@@ -129,24 +129,24 @@ export function Pattern() {
             <div className="flex flex-col min-h-full px-4 py-4">
               <section className="flex flex-col gap-3">
                 <h2 className="font-medium leading-6 text-foreground text-lg">
-                  What can NeUI do for you?
+                  {"What can NeUI do for you?"}
                 </h2>
                 <div className="flex flex-wrap gap-2 items-center">
                   <Button type="button" tabIndex="0">
-                    Overdue items
+                    {"Overdue items"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Today's changes
+                    {"Today's changes"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    My active work
+                    {"My active work"}
                   </Button>
                 </div>
               </section>
               <section className="flex flex-col gap-2.5 mt-6">
                 <article className="flex justify-end">
                   <div className="bg-primary leading-5 max-w-[84%] px-3 py-1.5 rounded-xl text-primary-foreground text-sm">
-                    Show my open NeUI sheet tasks.
+                    {"Show my open NeUI sheet tasks."}
                   </div>
                 </article>
                 <article className="flex justify-start">
@@ -164,7 +164,7 @@ export function Pattern() {
                           <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
                         </svg>
                         <span>
-                          Thought for a few seconds
+                          {"Thought for a few seconds"}
                         </span>
                         <svg className="lucide lucide-chevron-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
@@ -172,7 +172,7 @@ export function Pattern() {
                       </button>
                       <div className="mt-2">
                         <p className="leading-5 text-foreground text-sm">
-                          You have three sheet tasks in review. Sheet 4 needs a spacing polish, Sheet 8 is ready for visual QA, and Sheet 9 is waiting on copy approval.
+                          {"You have three sheet tasks in review. Sheet 4 needs a spacing polish, Sheet 8 is ready for visual QA, and Sheet 9 is waiting on copy approval."}
                         </p>
                       </div>
                       <div className="flex gap-1 items-center mt-2">
@@ -183,7 +183,7 @@ export function Pattern() {
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                           </svg>
                           <span className="sr-only">
-                            Copy answer
+                            {"Copy answer"}
                           </span>
                         </TooltipTrigger>
                         </Tooltip>
@@ -194,7 +194,7 @@ export function Pattern() {
                             <path d="M7 10v12"></path>
                           </svg>
                           <span className="sr-only">
-                            Good response
+                            {"Good response"}
                           </span>
                         </TooltipTrigger>
                         </Tooltip>
@@ -205,7 +205,7 @@ export function Pattern() {
                             <path d="M7 10v12"></path>
                           </svg>
                           <span className="sr-only">
-                            Needs improvement
+                            {"Needs improvement"}
                           </span>
                         </TooltipTrigger>
                         </Tooltip>
@@ -218,7 +218,7 @@ export function Pattern() {
                             <path d="M8 16H3v5"></path>
                           </svg>
                           <span className="sr-only">
-                            Regenerate
+                            {"Regenerate"}
                           </span>
                         </TooltipTrigger>
                         </Tooltip>
@@ -232,7 +232,7 @@ export function Pattern() {
                             <path d="M16 17H8"></path>
                           </svg>
                           <span className="sr-only">
-                            Create note
+                            {"Create note"}
                           </span>
                         </TooltipTrigger>
                         </Tooltip>
@@ -242,7 +242,7 @@ export function Pattern() {
                 </article>
                 <article className="flex justify-end">
                   <div className="bg-primary leading-5 max-w-[84%] px-3 py-1.5 rounded-xl text-primary-foreground text-sm">
-                    Keep the chat composer ready for the next prompt.
+                    {"Keep the chat composer ready for the next prompt."}
                   </div>
                 </article>
               </section>
@@ -254,7 +254,7 @@ export function Pattern() {
         <form className="w-full">
           <Field className="gap-2" role="group" data-orientation="vertical">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="neui-assistant-prompt">
-              Prompt
+              {"Prompt"}
             </FieldLabel>
             <InputGroup className="rounded-xl" role="group">
               <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" id="neui-assistant-prompt" placeholder="How can I help you today?" rows="2" aria-label="Prompt"></textarea>

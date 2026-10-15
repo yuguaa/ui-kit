@@ -23,22 +23,22 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Sync Activity
+              {"Sync Activity"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Harbor Ops connections, last 24 hours
+              {"Harbor Ops connections, last 24 hours"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" spacing="0" aria-label="Columns measure" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="default" spacing="0" extracted="1">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Runs
+                  {"Runs"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Rows
+                  {"Rows"}
                 </span>
               </ToggleGroupItem>
             </ToggleGroup>
@@ -52,10 +52,10 @@ export function Pattern() {
                 <path d="m18 3-4 4h6l-4 4"></path>
               </svg>
               <span className="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">
-                Sources
+                {"Sources"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-normal tabular-nums text-muted-foreground">
-                4/4
+                {"4/4"}
               </span>
               <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -90,18 +90,18 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-3 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="flex h-5 items-center text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Runs
+                  {"Runs"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-3 min-w-0">
                 <span className="flex h-7 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                    727
+                    {"727"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    31 an hour on average
+                    {"31 an hour on average"}
                   </span>
                 </span>
               </dd>
@@ -109,18 +109,18 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-3 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="flex h-5 items-center text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Landed
+                  {"Landed"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-3 min-w-0">
                 <span className="flex h-7 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                    99.0%
+                    {"99.0%"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    720 of 727, 6 slow
+                    {"720 of 727, 6 slow"}
                   </span>
                 </span>
               </dd>
@@ -128,25 +128,25 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-3 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="flex h-5 items-center text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Failed
+                  {"Failed"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-3 min-w-0">
                 <span className="flex h-7 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                    7
+                    {"7"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                   <span className="flex gap-1.5 items-center min-w-0 text-foreground">
                     <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                      risk-feature-store
+                      {"risk-feature-store"}
                     </span>
                   </span>
                   <Tooltip>
                   <TooltipTrigger className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 inline-flex items-center justify-center min-w-5 outline-none px-1.25 py-0.5 relative shrink-0 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow w-fit whitespace-nowrap" tabIndex="0" aria-label="1 more failing connection" id="base-ui-_r_h_" baseUiTooltipTrigger="">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      +1
+                      {"+1"}
                     </span>
                   </TooltipTrigger>
                   </Tooltip>
@@ -156,18 +156,18 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-3 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="flex h-5 items-center text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Rows Synced
+                  {"Rows Synced"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-3 min-w-0">
                 <span className="flex h-7 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                    8.1M
+                    {"8.1M"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    Peak 1.4M at 18:00
+                    {"Peak 1.4M at 18:00"}
                   </span>
                 </span>
               </dd>
@@ -176,53 +176,30 @@ export function Pattern() {
         </FramePanel>
         <FramePanel>
           <div className="flex flex-col gap-4">
-            <style>{`
-@keyframes c45-rise { from { transform: scaleY(0); } }
-@keyframes c45-fade { from { opacity: 0; } }
-[data-c45-motion="rise"] { animation: c45-rise 400ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }
-[data-c45-motion="fade"] { animation: c45-fade 200ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }
-@media (prefers-reduced-motion: reduce) {
-  [data-c45-motion] { animation-name: c45-fade; animation-duration: 200ms; }
-}
-html[data-demo="frozen"] [data-c45-motion] { animation: none; }
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c45-rise { from { transform: scaleY(0); } }\n@keyframes c45-fade { from { opacity: 0; } }\n[data-c45-motion=\"rise\"] { animation: c45-rise 400ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }\n[data-c45-motion=\"fade\"] { animation: c45-fade 200ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }\n@media (prefers-reduced-motion: reduce) {\n  [data-c45-motion] { animation-name: c45-fade; animation-duration: 200ms; }\n}\nhtml[data-demo=\"frozen\"] [data-c45-motion] { animation: none; }\n" }} />
             <ul className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-end text-muted-foreground text-xs">
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Succeeded
+                  {"Succeeded"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Slow
+                  {"Slow"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Failed
+                  {"Failed"}
                 </span>
               </li>
             </ul>
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-60 has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-ring/50 justify-center min-w-0 ring-offset-card text-xs w-full" data-chart="chart-_r_j_" role="group" aria-label="Runs per hour by outcome, last 24 hours">
-              <style>{`
- [data-chart=chart-_r_j_] {
-  --color-succeeded: var(--success);
-  --color-partial: var(--warning);
-  --color-failed: var(--destructive);
-  --color-rows: var(--info);
-}
-
-
-.dark [data-chart=chart-_r_j_] {
-  --color-succeeded: var(--success);
-  --color-partial: var(--warning);
-  --color-failed: var(--destructive);
-  --color-rows: var(--info);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_j_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-rows: var(--info);\n}\n\n\n.dark [data-chart=chart-_r_j_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-rows: var(--info);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="726" height="240" style={{position: "relative", cursor: "default", width: "726px", height: "240px"}}>
@@ -864,42 +841,42 @@ html[data-demo="frozen"] [data-c45-motion] { animation: none; }
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="131.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="131.5" dy="0.71em">
-                                18:00
+                                {"18:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="247.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="247.5" dy="0.71em">
-                                22:00
+                                {"22:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="363.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="363.5" dy="0.71em">
-                                02:00
+                                {"02:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="479.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="479.5" dy="0.71em">
-                                06:00
+                                {"06:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="595.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="595.5" dy="0.71em">
-                                10:00
+                                {"10:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="696" stroke="none" x="711.5" y="228" textAnchor="middle" fill="#666">
                               <tspan x="711.5" dy="0.71em">
-                                Now
+                                {"Now"}
                               </tspan>
                             </text>
                           </g>
@@ -908,35 +885,35 @@ html[data-demo="frozen"] [data-c45-motion] { animation: none; }
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="30" orientation="left" height="206" stroke="none" x="20" y="214" textAnchor="end" fill="#666">
                               <tspan x="20" dy="0.355em">
-                                0
+                                {"0"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="30" orientation="left" height="206" stroke="none" x="20" y="162.5" textAnchor="end" fill="#666">
                               <tspan x="20" dy="0.355em">
-                                10
+                                {"10"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="30" orientation="left" height="206" stroke="none" x="20" y="111" textAnchor="end" fill="#666">
                               <tspan x="20" dy="0.355em">
-                                20
+                                {"20"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="30" orientation="left" height="206" stroke="none" x="20" y="59.5" textAnchor="end" fill="#666">
                               <tspan x="20" dy="0.355em">
-                                30
+                                {"30"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="30" orientation="left" height="206" stroke="none" x="20" y="9" textAnchor="end" fill="#666">
                               <tspan x="20" dy="0.355em">
-                                40
+                                {"40"}
                               </tspan>
                             </text>
                           </g>
@@ -947,79 +924,80 @@ html[data-demo="frozen"] [data-c45-motion] { animation: none; }
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
           <ul className="sr-only">
             <li>
-              15:00 to 16:00 UTC: 34 runs, 0 failed, 231.7K rows
+              {"15:00 to 16:00 UTC: 34 runs, 0 failed, 231.7K rows"}
             </li>
             <li>
-              16:00 to 17:00 UTC: 34 runs, 0 failed, 238.4K rows
+              {"16:00 to 17:00 UTC: 34 runs, 0 failed, 238.4K rows"}
             </li>
             <li>
-              17:00 to 18:00 UTC: 34 runs, 0 failed, 227K rows
+              {"17:00 to 18:00 UTC: 34 runs, 0 failed, 227K rows"}
             </li>
             <li>
-              18:00 to 19:00 UTC: 35 runs, 0 failed, 1.4M rows
+              {"18:00 to 19:00 UTC: 35 runs, 0 failed, 1.4M rows"}
             </li>
             <li>
-              19:00 to 20:00 UTC: 30 runs, 0 failed, 200.7K rows
+              {"19:00 to 20:00 UTC: 30 runs, 0 failed, 200.7K rows"}
             </li>
             <li>
-              20:00 to 21:00 UTC: 30 runs, 0 failed, 205.7K rows
+              {"20:00 to 21:00 UTC: 30 runs, 0 failed, 205.7K rows"}
             </li>
             <li>
-              21:00 to 22:00 UTC: 30 runs, 0 failed, 240.1K rows
+              {"21:00 to 22:00 UTC: 30 runs, 0 failed, 240.1K rows"}
             </li>
             <li>
-              22:00 to 23:00 UTC: 30 runs, 1 failed, 188.1K rows
+              {"22:00 to 23:00 UTC: 30 runs, 1 failed, 188.1K rows"}
             </li>
             <li>
-              23:00 to 00:00 UTC: 30 runs, 0 failed, 224.1K rows
+              {"23:00 to 00:00 UTC: 30 runs, 0 failed, 224.1K rows"}
             </li>
             <li>
-              00:00 to 01:00 UTC: 31 runs, 0 failed, 1.1M rows
+              {"00:00 to 01:00 UTC: 31 runs, 0 failed, 1.1M rows"}
             </li>
             <li>
-              01:00 to 02:00 UTC: 30 runs, 0 failed, 209.3K rows
+              {"01:00 to 02:00 UTC: 30 runs, 0 failed, 209.3K rows"}
             </li>
             <li>
-              02:00 to 03:00 UTC: 31 runs, 0 failed, 226.3K rows
+              {"02:00 to 03:00 UTC: 31 runs, 0 failed, 226.3K rows"}
             </li>
             <li>
-              03:00 to 04:00 UTC: 30 runs, 0 failed, 223.3K rows
+              {"03:00 to 04:00 UTC: 30 runs, 0 failed, 223.3K rows"}
             </li>
             <li>
-              04:00 to 05:00 UTC: 30 runs, 0 failed, 205.2K rows
+              {"04:00 to 05:00 UTC: 30 runs, 0 failed, 205.2K rows"}
             </li>
             <li>
-              05:00 to 06:00 UTC: 30 runs, 0 failed, 206.3K rows
+              {"05:00 to 06:00 UTC: 30 runs, 0 failed, 206.3K rows"}
             </li>
             <li>
-              06:00 to 07:00 UTC: 31 runs, 0 failed, 770.7K rows
+              {"06:00 to 07:00 UTC: 31 runs, 0 failed, 770.7K rows"}
             </li>
             <li>
-              07:00 to 08:00 UTC: 30 runs, 0 failed, 224.7K rows
+              {"07:00 to 08:00 UTC: 30 runs, 0 failed, 224.7K rows"}
             </li>
             <li>
-              08:00 to 09:00 UTC: 30 runs, 0 failed, 214.7K rows
+              {"08:00 to 09:00 UTC: 30 runs, 0 failed, 214.7K rows"}
             </li>
             <li>
-              09:00 to 10:00 UTC: 30 runs, 0 failed, 205.7K rows
+              {"09:00 to 10:00 UTC: 30 runs, 0 failed, 205.7K rows"}
             </li>
             <li>
-              10:00 to 11:00 UTC: 30 runs, 0 failed, 210K rows
+              {"10:00 to 11:00 UTC: 30 runs, 0 failed, 210K rows"}
             </li>
             <li>
-              11:00 to 12:00 UTC: 30 runs, 0 failed, 204.3K rows
+              {"11:00 to 12:00 UTC: 30 runs, 0 failed, 204.3K rows"}
             </li>
             <li>
-              12:00 to 13:00 UTC: 31 runs, 0 failed, 760.4K rows
+              {"12:00 to 13:00 UTC: 31 runs, 0 failed, 760.4K rows"}
             </li>
             <li>
-              13:00 to 14:00 UTC: 30 runs, 4 failed, 135.3K rows
+              {"13:00 to 14:00 UTC: 30 runs, 4 failed, 135.3K rows"}
             </li>
             <li>
-              14:00 to 14:20 UTC: 16 runs, 2 failed, 68.9K rows
+              {"14:00 to 14:20 UTC: 16 runs, 2 failed, 68.9K rows"}
             </li>
           </ul>
         </FramePanel>
@@ -1027,16 +1005,16 @@ html[data-demo="frozen"] [data-c45-motion] { animation: none; }
           <span className="flex gap-2 h-4 items-center">
             <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Synced 2 min ago
+              {"Synced 2 min ago"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-              12 of 13 connections active
+              {"12 of 13 connections active"}
             </span>
           </span>
           <span className="flex h-4 items-center">
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Times in UTC
+              {"Times in UTC"}
             </span>
           </span>
         </footer>

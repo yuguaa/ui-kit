@@ -42,10 +42,10 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold leading-tight text-3xl text-foreground">
-                    102.9k
+                    {"102.9k"}
                   </h3>
                   <p className="leading-relaxed text-muted-foreground text-sm">
-                    Account Followers
+                    {"Account Followers"}
                   </p>
                 </div>
               </div>
@@ -84,10 +84,10 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold leading-tight text-3xl text-foreground">
-                    23.7k
+                    {"23.7k"}
                   </h3>
                   <p className="leading-relaxed text-muted-foreground text-sm">
-                    Avg. Stream Viewers
+                    {"Avg. Stream Viewers"}
                   </p>
                 </div>
               </div>
@@ -127,10 +127,10 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold leading-tight text-3xl text-foreground">
-                    93.1k
+                    {"93.1k"}
                   </h3>
                   <p className="leading-relaxed text-muted-foreground text-sm">
-                    GitHub Stars
+                    {"GitHub Stars"}
                   </p>
                 </div>
               </div>
@@ -169,10 +169,10 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold leading-tight text-3xl text-foreground">
-                    5M+
+                    {"5M+"}
                   </h3>
                   <p className="leading-relaxed text-muted-foreground text-sm">
-                    Weekly Downloads
+                    {"Weekly Downloads"}
                   </p>
                 </div>
               </div>

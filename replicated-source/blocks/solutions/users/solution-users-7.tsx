@@ -49,10 +49,10 @@ export function Pattern() {
         <header className="flex flex-row gap-4 items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-2.5!">
           <div className="space-y-px">
             <div className="font-semibold text-sm">
-              SSO & SCIM
+              {"SSO & SCIM"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Enterprise sign-in for acmecloud.com
+              {"Enterprise sign-in for acmecloud.com"}
             </div>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
@@ -60,21 +60,21 @@ export function Pattern() {
               <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
             </svg>
-            View as Member
+            {"View as Member"}
           </Button>
         </header>
         <FramePanel className="p-0!">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-4! py-(--frame-panel-header-py) py-3!">
             <div className="font-semibold text-sm">
-              Single Sign-On
+              {"Single Sign-On"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                84% coverage
+                {"84% coverage"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                1 provider needs attention
+                {"1 provider needs attention"}
               </span>
             </div>
           </header>
@@ -93,7 +93,7 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="gap-1.5 min-w-0">
                       <span className="min-w-0 truncate">
-                        Okta
+                        {"Okta"}
                       </span>
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
@@ -106,13 +106,13 @@ export function Pattern() {
                         </Tooltip>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Connected
+                        {"Connected"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="min-w-0">
                       <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                         <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                          https://acmecloud.okta.com/app/metadata
+                          {"https://acmecloud.okta.com/app/metadata"}
                         </code>
                         <Tooltip>
                         <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Okta metadata URL" id="base-ui-_r_3_" baseUiTooltipTrigger="">
@@ -131,7 +131,7 @@ export function Pattern() {
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      Test
+                      {"Test"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Okta" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
@@ -162,7 +162,7 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="gap-1.5 min-w-0">
                       <span className="min-w-0 truncate">
-                        Microsoft Entra ID
+                        {"Microsoft Entra ID"}
                       </span>
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
@@ -176,13 +176,13 @@ export function Pattern() {
                         </Tooltip>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Error
+                        {"Error"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="min-w-0">
                       <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                         <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                          https://login.microsoftonline.com/acme/saml
+                          {"https://login.microsoftonline.com/acme/saml"}
                         </code>
                         <Tooltip>
                         <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Microsoft Entra ID metadata URL" id="base-ui-_r_c_" baseUiTooltipTrigger="">
@@ -201,7 +201,7 @@ export function Pattern() {
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      Test
+                      {"Test"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Microsoft Entra ID" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
@@ -230,7 +230,7 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="gap-1.5 min-w-0">
                       <span className="min-w-0 truncate">
-                        Google Workspace
+                        {"Google Workspace"}
                       </span>
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
@@ -244,13 +244,13 @@ export function Pattern() {
                         </Tooltip>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                        Not configured
+                        {"Not configured"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="min-w-0">
                       <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                         <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                          https://accounts.google.com/.well-known/openid
+                          {"https://accounts.google.com/.well-known/openid"}
                         </code>
                         <Tooltip>
                         <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Google Workspace metadata URL" id="base-ui-_r_l_" baseUiTooltipTrigger="">
@@ -269,7 +269,7 @@ export function Pattern() {
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                       </svg>
-                      Connect
+                      {"Connect"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Google Workspace" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
@@ -289,15 +289,15 @@ export function Pattern() {
         <FramePanel className="p-0!">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-4! py-(--frame-panel-header-py) py-3!">
             <div className="font-semibold text-sm">
-              SCIM Provisioning
+              {"SCIM Provisioning"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                Last sync 12 min ago
+                {"Last sync 12 min ago"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                57 members in scope
+                {"57 members in scope"}
               </span>
             </div>
           </header>
@@ -307,11 +307,11 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Endpoint URL
+                      {"Endpoint URL"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Point your identity provider at this SCIM v2 endpoint.
+                    {"Point your identity provider at this SCIM v2 endpoint."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
@@ -335,11 +335,11 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Bearer token
+                      {"Bearer token"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Rotate the token if it may have leaked. Okta must be updated within 24 hours.
+                    {"Rotate the token if it may have leaked. Okta must be updated within 24 hours."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
@@ -362,7 +362,7 @@ export function Pattern() {
                         <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
                         <path d="M8 16H3v5"></path>
                       </svg>
-                      Rotate
+                      {"Rotate"}
                     </Button>
                   </div>
                 </FieldContent>
@@ -374,29 +374,29 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Mapped attributes
+                      {"Mapped attributes"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Attributes pushed from your directory on each sync.
+                    {"Attributes pushed from your directory on each sync."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <div className="flex flex-wrap gap-1.5">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      userName
+                      {"userName"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      emails
+                      {"emails"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      displayName
+                      {"displayName"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      title
+                      {"title"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      department
+                      {"department"}
                     </Badge>
                   </div>
                 </FieldContent>
@@ -407,15 +407,15 @@ export function Pattern() {
         <FramePanel className="p-0!">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-4! py-(--frame-panel-header-py) py-3!">
             <div className="font-semibold text-sm">
-              Authentication Policy
+              {"Authentication Policy"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                2FA required
+                {"2FA required"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                78% of members enrolled
+                {"78% of members enrolled"}
               </span>
             </div>
           </header>
@@ -425,22 +425,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-two-factor">
-                      Require 2FA
+                      {"Require 2FA"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Set whether members must add a second factor to sign in.
+                    {"Set whether members must add a second factor to sign in."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-two-factor" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      Required
+                      {"Required"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -454,17 +454,17 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Allowed factors
+                      {"Allowed factors"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Choose which second factors members may enroll.
+                    {"Choose which second factors members may enroll."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-[22rem] gap-1.5 min-w-0">
                   <FieldSet className="gap-3 w-full">
                     <FieldLegend className="sr-only" variant="legend">
-                      Allowed factors
+                      {"Allowed factors"}
                     </FieldLegend>
                     <FieldGroup className="gap-3">
                       <Field className="gap-3" role="group" data-orientation="horizontal">
@@ -474,10 +474,10 @@ export function Pattern() {
                         <input id="sso-policy-totp" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-totp" id="sso-policy-totp-label">
-                            Authenticator (TOTP)
+                            {"Authenticator (TOTP)"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            One-time codes from an authenticator app.
+                            {"One-time codes from an authenticator app."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -488,10 +488,10 @@ export function Pattern() {
                         <input id="sso-policy-passkey" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-passkey" id="sso-policy-passkey-label">
-                            Passkey
+                            {"Passkey"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            Device-bound biometric or PIN sign-in.
+                            {"Device-bound biometric or PIN sign-in."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -502,10 +502,10 @@ export function Pattern() {
                         <input id="sso-policy-security-key" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-security-key" id="sso-policy-security-key-label">
-                            Security key
+                            {"Security key"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            Hardware FIDO2 keys for high-risk roles.
+                            {"Hardware FIDO2 keys for high-risk roles."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -516,10 +516,10 @@ export function Pattern() {
                         <input id="sso-policy-sms" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-sms" id="sso-policy-sms-label">
-                            SMS
+                            {"SMS"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            Codes sent by text as a last resort.
+                            {"Codes sent by text as a last resort."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -534,22 +534,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-password-policy">
-                      Password policy
+                      {"Password policy"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Minimum strength for members who still use a password.
+                    {"Minimum strength for members who still use a password."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-password-policy" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      Strong, 16 characters
+                      {"Strong, 16 characters"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -562,15 +562,15 @@ export function Pattern() {
         <FramePanel className="p-0!">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-4! py-(--frame-panel-header-py) py-3!">
             <div className="font-semibold text-sm">
-              Session Policy
+              {"Session Policy"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                Idle 30 min
+                {"Idle 30 min"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                sessions expire after 7 days
+                {"sessions expire after 7 days"}
               </span>
             </div>
           </header>
@@ -580,22 +580,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-idle-timeout">
-                      Idle timeout
+                      {"Idle timeout"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Sign members out after this long without activity.
+                    {"Sign members out after this long without activity."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-idle-timeout" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      30 minutes
+                      {"30 minutes"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -609,22 +609,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-max-session">
-                      Max session length
+                      {"Max session length"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Force a fresh sign-in once a session reaches this age.
+                    {"Force a fresh sign-in once a session reaches this age."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-max-session" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      7 days
+                      {"7 days"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -638,17 +638,17 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Re-authentication
+                      {"Re-authentication"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Add an extra check before high-risk changes.
+                    {"Add an extra check before high-risk changes."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-[22rem] gap-1.5 min-w-0">
                   <FieldSet className="gap-3 w-full">
                     <FieldLegend className="sr-only" variant="legend">
-                      Re-authentication
+                      {"Re-authentication"}
                     </FieldLegend>
                     <FieldGroup className="gap-3">
                       <Field className="gap-3" role="group" data-orientation="horizontal">
@@ -658,10 +658,10 @@ export function Pattern() {
                         <input id="sso-policy-force-reauth" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-force-reauth" id="sso-policy-force-reauth-label">
-                            Force re-auth on sensitive actions
+                            {"Force re-auth on sensitive actions"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            Re-prompt before role or billing changes.
+                            {"Re-prompt before role or billing changes."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -672,10 +672,10 @@ export function Pattern() {
                         <input id="sso-policy-single-session" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-single-session" id="sso-policy-single-session-label">
-                            One active session per member
+                            {"One active session per member"}
                           </FieldLabel>
                           <FieldDescription className="text-xs">
-                            Sign out other devices on new sign-in.
+                            {"Sign out other devices on new sign-in."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -689,11 +689,11 @@ export function Pattern() {
         <FramePanel className="p-0!">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-4! py-(--frame-panel-header-py) py-3!">
             <div className="font-semibold text-sm">
-              Allowed Email Domains
+              {"Allowed Email Domains"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                2 verified
+                {"2 verified"}
               </span>
             </div>
           </header>
@@ -703,20 +703,20 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-field-title items-center">
-                      Verified domains
+                      {"Verified domains"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Members with these email domains are matched to your org.
+                    {"Members with these email domains are matched to your org."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <div className="flex flex-wrap gap-1.5">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      acmecloud.com
+                      {"acmecloud.com"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      eng.acmecloud.com
+                      {"eng.acmecloud.com"}
                     </Badge>
                   </div>
                 </FieldContent>
@@ -728,11 +728,11 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-add-domain">
-                      Add a domain
+                      {"Add a domain"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Verify ownership with a DNS TXT record before it goes live.
+                    {"Verify ownership with a DNS TXT record before it goes live."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
@@ -745,7 +745,7 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      Add domain
+                      {"Add domain"}
                     </Button>
                   </div>
                 </FieldContent>
@@ -755,14 +755,14 @@ export function Pattern() {
         </FramePanel>
         <footer className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <span className="text-muted-foreground text-xs">
-            All changes saved
+            {"All changes saved"}
           </span>
           <div className="flex gap-3">
             <Button type="button" disabled="" tabIndex="0" disabled>
-              Discard
+              {"Discard"}
             </Button>
             <Button type="button" disabled="" tabIndex="0" disabled>
-              Save changes
+              {"Save changes"}
             </Button>
           </div>
         </footer>

@@ -38,13 +38,13 @@ export function Pattern() {
               <CardContent className="flex flex-col justify-center lg:p-10 min-w-0 p-5 sm:p-8">
                 <div className="flex flex-col gap-3 max-w-xl mb-7">
                   <Badge variant="outline">
-                    Project Inquiry
+                    {"Project Inquiry"}
                   </Badge>
                   <h1 className="font-semibold leading-tight sm:text-4xl text-3xl text-balance text-foreground tracking-tight" id="contact-2-title">
-                    Start A Project
+                    {"Start A Project"}
                   </h1>
                   <p className="leading-7 text-base text-muted-foreground text-pretty">
-                    Share the essentials. We will route the note and send a practical next step.
+                    {"Share the essentials. We will route the note and send a practical next step."}
                   </p>
                 </div>
                 <form className="max-w-xl w-full" id="contact-2-form" action="#">
@@ -52,42 +52,42 @@ export function Pattern() {
                     <FieldGroup className="gap-4 grid sm:grid-cols-2">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-first-name">
-                          First Name
+                          {"First Name"}
                         </FieldLabel>
                         <Input id="contact-2-first-name" autoComplete="given-name" placeholder="Mira" name="firstName"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-last-name">
-                          Last Name
+                          {"Last Name"}
                         </FieldLabel>
                         <Input id="contact-2-last-name" autoComplete="family-name" placeholder="Stone" name="lastName"></Input>
                       </Field>
                     </FieldGroup>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-email">
-                        Work Email
+                        {"Work Email"}
                       </FieldLabel>
                       <Input id="contact-2-email" autoComplete="email" placeholder="mira@northstar.co" type="email" name="email"></Input>
                     </Field>
                     <FieldGroup className="gap-4 grid sm:grid-cols-2">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-company">
-                          Company
+                          {"Company"}
                         </FieldLabel>
                         <Input id="contact-2-company" autoComplete="organization" placeholder="Northstar Labs" name="company"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-project-type">
-                          Project Type
+                          {"Project Type"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" placeholder="" tabIndex="0" id="contact-2-project-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                           <SelectValue placeholder="">
-                            Choose a surface
+                            {"Choose a surface"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -97,12 +97,12 @@ export function Pattern() {
                     <FieldGroup className="gap-4 grid sm:grid-cols-2">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-budget">
-                          Project Budget
+                          {"Project Budget"}
                         </FieldLabel>
                         <InputGroup role="group">
                           <InputGroupAddon role="group" data-align="inline-start">
                             <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                              $
+                              {"$"}
                             </span>
                           </InputGroupAddon>
                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="contact-2-budget" inputmode="numeric" placeholder="25,000 to 75,000" name="budget" />
@@ -110,16 +110,16 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-timeline">
-                          Timeline
+                          {"Timeline"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" placeholder="" tabIndex="0" id="contact-2-timeline" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue placeholder="">
-                            Choose timing
+                            {"Choose timing"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -128,12 +128,12 @@ export function Pattern() {
                     </FieldGroup>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-2-details">
-                        Project Details
+                        {"Project Details"}
                       </FieldLabel>
                       <Textarea className="min-h-28 resize-none" id="contact-2-details" name="details" placeholder="What are you launching, what is blocked, and what should we review?"></Textarea>
                     </Field>
                     <Button className="mt-1 w-fit" type="submit" tabIndex="0">
-                      Send Project Brief
+                      {"Send Project Brief"}
                     </Button>
                   </FieldGroup>
                 </form>
@@ -170,15 +170,15 @@ export function Pattern() {
                 <div className="flex flex-col gap-10 h-full justify-between min-w-0 relative">
                   <div className="flex flex-col gap-5 max-w-xl">
                     <Badge className="bg-[oklch(98%_0.006_260_/_16%)] text-[oklch(98%_0.006_260)]" variant="secondary">
-                      Scope Desk
+                      {"Scope Desk"}
                     </Badge>
                     <h2 className="font-semibold leading-none max-w-[11ch] sm:text-6xl text-5xl text-balance tracking-tight">
-                      Got A Launch In Motion?
+                      {"Got A Launch In Motion?"}
                     </h2>
                   </div>
                   <footer className="flex flex-col gap-7 max-w-lg">
                     <p className="leading-8 text-[oklch(98%_0.006_260_/_84%)] text-lg text-pretty">
-                      Plan adoption, registry setup, and launch polish before work drifts.
+                      {"Plan adoption, registry setup, and launch polish before work drifts."}
                     </p>
                     <ItemGroup className="gap-3 sm:flex-row sm:flex-wrap" role="list">
                       <Item className="bg-[oklch(98%_0.006_260_/_14%)] focus-visible:bg-[oklch(98%_0.006_260_/_20%)] hover:bg-[oklch(98%_0.006_260_/_20%)] max-w-full text-[oklch(98%_0.006_260)] w-fit" href="mailto:studio@neui.example" aria-label="Email the NeUI scope desk" variant="muted" size="xs">
@@ -190,7 +190,7 @@ export function Pattern() {
                         </ItemMedia>
                         <ItemContent className="min-w-0">
                           <ItemTitle className="text-[oklch(98%_0.006_260)]">
-                            studio@neui.example
+                            {"studio@neui.example"}
                           </ItemTitle>
                         </ItemContent>
                       </Item>
@@ -202,7 +202,7 @@ export function Pattern() {
                         </ItemMedia>
                         <ItemContent className="min-w-0">
                           <ItemTitle className="text-[oklch(98%_0.006_260)]">
-                            +1 415 555 0184
+                            {"+1 415 555 0184"}
                           </ItemTitle>
                         </ItemContent>
                       </Item>

@@ -42,23 +42,23 @@ export function Pattern() {
             <div className="flex flex-1 flex-col gap-px min-w-0">
               <div className="flex gap-2 items-center min-w-0">
                 <h1 className="font-medium text-base/5 truncate">
-                  Inbox Search Rollout
+                  {"Inbox Search Rollout"}
                 </h1>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary text-xs transition-shadow">
-                  3 suggestions
+                  {"3 suggestions"}
                 </Badge>
               </div>
               <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center text-muted-foreground text-xs">
                 <span>
-                  Rollout plan
+                  {"Rollout plan"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center max-sm:hidden">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  Lena Hoffmann
+                  {"Lena Hoffmann"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  Edited Sep 26
+                  {"Edited Sep 26"}
                 </span>
               </p>
             </div>
@@ -86,11 +86,11 @@ export function Pattern() {
                       <path d="m9 11-6 6v3h9l3-3"></path>
                       <path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"></path>
                     </svg>
-                    All Markup
+                    {"All Markup"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -106,7 +106,7 @@ export function Pattern() {
                   <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Share
+                  {"Share"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -153,7 +153,7 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="max-sm:hidden truncate">
-                  Heading 1
+                  {"Heading 1"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -349,105 +349,105 @@ export function Pattern() {
           <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_:is(h1,h2,h3)]:scroll-mt-32 [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_del+ins]:ms-1 [&_.tiptap_del_[data-suggestion-active]]:bg-destructive/20 [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_ins]:underline-offset-4 [&_.tiptap_ins_[data-suggestion-active]]:bg-success/20 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 [&_del]:bg-destructive/10 [&_del]:decoration-destructive/60 [&_del]:line-through [&_del]:text-destructive-foreground [&_ins]:bg-success/10 [&_ins]:decoration-success/60 [&_ins]:text-success-foreground [&_ins]:underline dark:[&_.tiptap_del_[data-suggestion-active]]:bg-destructive/30 dark:[&_.tiptap_ins_[data-suggestion-active]]:bg-success/30 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 dark:[&_del]:bg-destructive/15 dark:[&_del]:text-destructive dark:[&_ins]:bg-success/15 dark:[&_ins]:text-success flex flex-col min-h-full py-8 sm:py-10 text-base/7 text-foreground">
             <div className="ProseMirror tiptap" contentEditable="true" aria-label="Inbox Search Rollout rollout plan" aria-multiline="true" translate="no" tabIndex="0">
               <h1>
-                Inbox Search Rollout
+                {"Inbox Search Rollout"}
               </h1>
               <p>
                 <del data-id="s-intro" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                  At this point in time, the plan is to roll out the new inbox search to every workspace in a number of stages, in order to make sure that we are able to catch regressions well before they have a chance to reach our largest customers.
+                  {"At this point in time, the plan is to roll out the new inbox search to every workspace in a number of stages, in order to make sure that we are able to catch regressions well before they have a chance to reach our largest customers."}
                 </del>
                 <ins data-id="s-intro" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                  We will release inbox search in four stages, so regressions surface before they reach our largest customers.
+                  {"We will release inbox search in four stages, so regressions surface before they reach our largest customers."}
                 </ins>
               </p>
               <p>
-                Search ships with Loomwell 4.2 on October 14. This plan covers each stage, the metrics that gate it and who signs off.
+                {"Search ships with Loomwell 4.2 on October 14. This plan covers each stage, the metrics that gate it and who signs off."}
               </p>
               <h2>
-                Stages
+                {"Stages"}
               </h2>
               <ol>
                 <li>
                   <p>
                     <strong>
-                      Internal
+                      {"Internal"}
                     </strong>
-                    : the Kestrel Works support team, from September 29.
+                    {": the Kestrel Works support team, from September 29."}
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>
-                      Beta
+                      {"Beta"}
                     </strong>
-                    : 40 opt-in workspaces, from October 6. Beta admins will
+                    {": 40 opt-in workspaces, from October 6. Beta admins will"}
                     <del data-id="s-beta" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                      recieve
+                      {"recieve"}
                     </del>
                     <ins data-id="s-beta" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                      receive
+                      {"receive"}
                     </ins>
-                    a short survey after their first week.
+                    {"a short survey after their first week."}
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>
-                      General availability
+                      {"General availability"}
                     </strong>
-                    : every workspace on October 14.
+                    {": every workspace on October 14."}
                   </p>
                 </li>
                 <li>
                   <p>
                     <strong>
-                      Enterprise
+                      {"Enterprise"}
                     </strong>
-                    : workspaces over 500 seats, one week after GA.
+                    {": workspaces over 500 seats, one week after GA."}
                   </p>
                 </li>
               </ol>
               <h2>
-                Success metrics
+                {"Success metrics"}
               </h2>
               <p>
                 <del data-id="s-metrics" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                  It is important to note that a stage can only move forward when all of the numbers below have held steady for a period of three consecutive days.
+                  {"It is important to note that a stage can only move forward when all of the numbers below have held steady for a period of three consecutive days."}
                 </del>
                 <ins data-id="s-metrics" data-author="assist" data-time="2026-09-26T14:58:00.000Z">
-                  A stage moves forward only after these numbers hold for three straight days.
+                  {"A stage moves forward only after these numbers hold for three straight days."}
                 </ins>
               </p>
               <ul>
                 <li>
                   <p>
-                    Median query time under 300 ms, p95 under 900 ms.
+                    {"Median query time under 300 ms, p95 under 900 ms."}
                   </p>
                 </li>
                 <li>
                   <p>
-                    Zero result rate below 8 percent on the top 200 queries.
+                    {"Zero result rate below 8 percent on the top 200 queries."}
                   </p>
                 </li>
                 <li>
                   <p>
-                    No rise in tickets tagged search against the prior week.
+                    {"No rise in tickets tagged search against the prior week."}
                   </p>
                 </li>
               </ul>
               <p>
-                Any stage pauses on its own if a rollback has occured in the last 24 hours.
+                {"Any stage pauses on its own if a rollback has occured in the last 24 hours."}
               </p>
               <h2>
-                Risks
+                {"Risks"}
               </h2>
               <p>
-                Index rebuilds for the largest workspaces take up to 6 hours, so enterprise accounts move last. The rebuild runbook still needs an owner (TBD).
+                {"Index rebuilds for the largest workspaces take up to 6 hours, so enterprise accounts move last. The rebuild runbook still needs an owner (TBD)."}
               </p>
               <p>
-                Support needs a seperate macro for search feedback before beta starts. Who writes the macro copy, Daniel or Maya?
+                {"Support needs a seperate macro for search feedback before beta starts. Who writes the macro copy, Daniel or Maya?"}
               </p>
               <h2>
-                Sign-off
+                {"Sign-off"}
               </h2>
               <ul data-type="taskList">
                 <li className="node-taskItem react-renderer" data-checked="true">
@@ -465,7 +465,7 @@ export function Pattern() {
                     <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                       <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                         <p>
-                          Search quality review, Lena Hoffmann
+                          {"Search quality review, Lena Hoffmann"}
                         </p>
                       </div>
                     </div>
@@ -480,7 +480,7 @@ export function Pattern() {
                     <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                       <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                         <p>
-                          Support readiness, Daniel Okafor
+                          {"Support readiness, Daniel Okafor"}
                         </p>
                       </div>
                     </div>
@@ -495,7 +495,7 @@ export function Pattern() {
                     <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                       <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                         <p>
-                          Launch messaging, Maya Chen
+                          {"Launch messaging, Maya Chen"}
                         </p>
                       </div>
                     </div>
@@ -510,7 +510,7 @@ export function Pattern() {
                     <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                       <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                         <p>
-                          Result card design QA, Arjun Mehta
+                          {"Result card design QA, Arjun Mehta"}
                         </p>
                       </div>
                     </div>
@@ -542,11 +542,11 @@ export function Pattern() {
                   </IconTile>
                   <div className="flex flex-1 font-semibold gap-1.5 items-center min-w-0 text-sm">
                     <span className="truncate">
-                      Plan polished
+                      {"Plan polished"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="font-normal shrink-0 tabular-nums text-muted-foreground text-xs">
-                      3 edits
+                      {"3 edits"}
                     </span>
                   </div>
                   <Tooltip>
@@ -564,18 +564,18 @@ export function Pattern() {
                       <span className="[&_del]:bg-destructive/10 [&_del]:decoration-destructive/60 [&_del]:line-through [&_del]:text-destructive-foreground [&_ins]:bg-success/10 [&_ins]:decoration-success/60 [&_ins]:text-success-foreground [&_ins]:underline [&_ins]:underline-offset-2 dark:[&_del]:bg-destructive/15 dark:[&_del]:text-destructive dark:[&_ins]:bg-success/15 dark:[&_ins]:text-success flex flex-col gap-1 min-w-0">
                         <span className="flex gap-2 items-baseline min-w-0">
                           <span className="shrink-0 text-muted-foreground text-xs w-9">
-                            Was
+                            {"Was"}
                           </span>
                           <del className="truncate">
-                            At this point in time, the plan is to roll out the new inbox search to every workspace in a number of stages, in order to make sure that we are able to catch regressions well before they have a chance to reach our largest customers.
+                            {"At this point in time, the plan is to roll out the new inbox search to every workspace in a number of stages, in order to make sure that we are able to catch regressions well before they have a chance to reach our largest customers."}
                           </del>
                         </span>
                         <span className="flex gap-2 items-baseline min-w-0">
                           <span className="shrink-0 text-muted-foreground text-xs w-9">
-                            Now
+                            {"Now"}
                           </span>
                           <ins className="line-clamp-2 min-w-0">
-                            We will release inbox search in four stages, so regressions surface before they reach our largest customers.
+                            {"We will release inbox search in four stages, so regressions surface before they reach our largest customers."}
                           </ins>
                         </span>
                       </span>
@@ -591,7 +591,7 @@ export function Pattern() {
                       </TooltipTrigger>
                       </Tooltip>
                       <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-16 tabular-nums text-xs">
-                        1 of 3
+                        {"1 of 3"}
                       </div>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next edit" id="base-ui-_r_2m_" baseUiTooltipTrigger="">
@@ -617,13 +617,13 @@ export function Pattern() {
                           <path d="M18 6 6 18"></path>
                           <path d="m6 6 12 12"></path>
                         </svg>
-                        Reject
+                        {"Reject"}
                       </Button>
                       <Button type="button" tabIndex="0">
                         <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
-                        Accept
+                        {"Accept"}
                       </Button>
                     </div>
                   </div>

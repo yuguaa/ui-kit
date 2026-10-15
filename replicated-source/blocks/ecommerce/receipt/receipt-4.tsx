@@ -29,10 +29,10 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col">
               <span className="font-semibold text-foreground text-sm tracking-tight">
-                NeUI
+                {"NeUI"}
               </span>
               <span className="text-muted-foreground text-xs">
-                neui.io
+                {"neui.io"}
               </span>
             </div>
           </div>
@@ -43,7 +43,7 @@ export function Pattern() {
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
-              Download
+              {"Download"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Email receipt RCT-2026-018042">
               <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
@@ -70,30 +70,30 @@ export function Pattern() {
                       <circle cx="12" cy="12" r="10"></circle>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Delivered
+                    {"Delivered"}
                   </Badge>
                   <CardTitle className="md:text-2xl text-xl tracking-tight" id="receipt-heading">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#" aria-label="View order HLD-2026-18042">
-                      Order HLD-2026-18042
+                      {"Order HLD-2026-18042"}
                     </a>
                   </CardTitle>
                   <p className="leading-snug text-muted-foreground text-sm">
-                    Arrived May 23, 2026 to Brooklyn, NY. Sent to
+                    {"Arrived May 23, 2026 to Brooklyn, NY. Sent to"}
                     <span className="font-medium text-foreground">
-                      jordan@example.com
+                      {"jordan@example.com"}
                     </span>
-                    .
+                    {"."}
                   </p>
                 </div>
                 <div className="flex flex-col gap-1 md:items-end">
                   <span className="font-medium text-muted-foreground text-xs tracking-[0.16em] uppercase">
-                    Total Paid
+                    {"Total Paid"}
                   </span>
                   <span className="font-semibold leading-none md:text-3xl tabular-nums text-2xl text-foreground tracking-tight">
-                    $631.92
+                    {"$631.92"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs">
-                    Visa · 4242
+                    {"Visa · 4242"}
                   </span>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export function Pattern() {
           <Card size="default">
             <CardHeader>
               <CardTitle className="text-base">
-                3 Items
+                {"3 Items"}
               </CardTitle>
             </CardHeader>
             <CardContent className="divide-y flex flex-col">
@@ -116,20 +116,20 @@ export function Pattern() {
                   <div className="flex gap-3 items-baseline justify-between min-w-0">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Halden
+                        {"Halden"}
                       </span>
                       <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                         <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                          Field Shell Jacket
+                          {"Field Shell Jacket"}
                         </a>
                       </h3>
                       <p className="text-muted-foreground text-xs">
-                        Olive · M · Qty 1
+                        {"Olive · M · Qty 1"}
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                       <span className="font-semibold text-foreground">
-                        $185.00
+                        {"$185.00"}
                       </span>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ export function Pattern() {
                       </div>
                     </Rating>
                     <span className="text-muted-foreground">
-                      Your review · May 24, 2026
+                      {"Your review · May 24, 2026"}
                     </span>
                   </div>
                   <div className="flex flex-wrap gap-2 items-center mt-2">
@@ -199,7 +199,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Buy Again
+                      {"Buy Again"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Field Shell Jacket" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
@@ -223,20 +223,20 @@ export function Pattern() {
                   <div className="flex gap-3 items-baseline justify-between min-w-0">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Halden
+                        {"Halden"}
                       </span>
                       <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                         <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                          Compass Down Vest
+                          {"Compass Down Vest"}
                         </a>
                       </h3>
                       <p className="text-muted-foreground text-xs">
-                        Slate · M · Qty 1
+                        {"Slate · M · Qty 1"}
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                       <span className="font-semibold text-foreground">
-                        $228.00
+                        {"$228.00"}
                       </span>
                     </div>
                   </div>
@@ -245,7 +245,7 @@ export function Pattern() {
                       <svg className="lucide lucide-star size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                       </svg>
-                      Write Review
+                      {"Write Review"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Compass Down Vest" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
@@ -269,23 +269,23 @@ export function Pattern() {
                   <div className="flex gap-3 items-baseline justify-between min-w-0">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Halden
+                        {"Halden"}
                       </span>
                       <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                         <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                          Linen Field Shirt
+                          {"Linen Field Shirt"}
                         </a>
                       </h3>
                       <p className="text-muted-foreground text-xs">
-                        Sand · M · Qty 2
+                        {"Sand · M · Qty 2"}
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                       <span className="font-semibold text-foreground">
-                        $256.00
+                        {"$256.00"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        $128.00 each
+                        {"$128.00 each"}
                       </span>
                     </div>
                   </div>
@@ -345,7 +345,7 @@ export function Pattern() {
                       </div>
                     </Rating>
                     <span className="text-muted-foreground">
-                      Your review · May 25, 2026
+                      {"Your review · May 25, 2026"}
                     </span>
                   </div>
                   <div className="flex flex-wrap gap-2 items-center mt-2">
@@ -355,7 +355,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Buy Again
+                      {"Buy Again"}
                     </Button>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Linen Field Shirt" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
@@ -374,43 +374,43 @@ export function Pattern() {
               <dl className="flex flex-col gap-1.5 ml-auto sm:w-72 text-sm w-full">
                 <div className="flex gap-4 items-baseline justify-between">
                   <dt className="text-muted-foreground text-sm">
-                    Subtotal
+                    {"Subtotal"}
                   </dt>
                   <dd className="font-medium tabular-nums text-foreground text-sm">
-                    $669.00
+                    {"$669.00"}
                   </dd>
                 </div>
                 <div className="flex gap-4 items-baseline justify-between">
                   <dt className="text-muted-foreground text-sm">
-                    Shipping
+                    {"Shipping"}
                   </dt>
                   <dd className="font-medium tabular-nums text-foreground text-sm">
-                    $12.00
+                    {"$12.00"}
                   </dd>
                 </div>
                 <div className="flex gap-4 items-baseline justify-between">
                   <dt className="text-muted-foreground text-sm">
-                    Discount (WELCOME15)
+                    {"Discount (WELCOME15)"}
                   </dt>
                   <dd className="font-medium tabular-nums text-sm text-success">
-                    -$100.35
+                    {"-$100.35"}
                   </dd>
                 </div>
                 <div className="flex gap-4 items-baseline justify-between">
                   <dt className="text-muted-foreground text-sm">
-                    Estimated Tax
+                    {"Estimated Tax"}
                   </dt>
                   <dd className="font-medium tabular-nums text-foreground text-sm">
-                    $51.27
+                    {"$51.27"}
                   </dd>
                 </div>
                 <Separator className="my-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="flex gap-4 items-baseline justify-between">
                   <dt className="font-semibold text-base text-foreground">
-                    Total
+                    {"Total"}
                   </dt>
                   <dd className="font-semibold tabular-nums text-base text-foreground">
-                    $631.92
+                    {"$631.92"}
                   </dd>
                 </div>
               </dl>
@@ -428,12 +428,12 @@ export function Pattern() {
                 </svg>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium leading-snug text-foreground text-sm">
-                    UPS Ground · 1Z999AA10123456784
+                    {"UPS Ground · 1Z999AA10123456784"}
                   </p>
                   <p className="leading-snug text-muted-foreground text-xs">
-                    Delivered May 23, 2026.
+                    {"Delivered May 23, 2026."}
                     <a className="font-medium hover:text-primary hover:underline text-foreground transition-colors underline-offset-4" href="#" aria-label="View tracking for order HLD-2026-18042">
-                      View tracking history
+                      {"View tracking history"}
                     </a>
                   </p>
                 </div>
@@ -444,7 +444,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Reorder All
+                  {"Reorder All"}
                 </Button>
                 <Button href="#" aria-label="Contact NeUI support about order HLD-2026-18042" role="button" tabIndex="0" type="button">
                   <svg className="lucide lucide-life-buoy size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="LifebuoyIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
@@ -455,7 +455,7 @@ export function Pattern() {
                     <path d="m9.17 14.83-4.24 4.24"></path>
                     <circle cx="12" cy="12" r="4"></circle>
                   </svg>
-                  Get Help
+                  {"Get Help"}
                 </Button>
               </div>
             </CardContent>

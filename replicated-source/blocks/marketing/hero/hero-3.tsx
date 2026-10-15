@@ -92,24 +92,24 @@ export function Pattern() {
                   </lineargradient>
                 </defs>
               </svg>
-              Built for Next.js
+              {"Built for Next.js"}
             </Badge>
             <h1 className="@md:text-3xl @xl:leading-10 @xl:text-4xl font-semibold leading-tight text-2xl text-white" id="hero-3-title">
               <span className="@xl:block">
-                The complete shadcn registry
+                {"The complete shadcn registry"}
               </span>
               <span className="@xl:block">
-                for building
+                {"for building"}
                 <span className="[text-box:trim-both_cap_text] bg-black/30 inline-block px-2 py-0.5 rounded-sm">
-                  modern Next.js
+                  {"modern Next.js"}
                 </span>
               </span>
               <span className="@xl:block">
-                apps with AI agents
+                {"apps with AI agents"}
               </span>
             </h1>
             <p className="leading-6 text-base text-white/50">
-              Install production-ready components, blocks, and templates from a curated registry with MCP support and Agent Skills built into every workflow.
+              {"Install production-ready components, blocks, and templates from a curated registry with MCP support and Agent Skills built into every workflow."}
             </p>
             <div className="flex flex-wrap gap-5 items-center">
               <div className="flex gap-2 items-center">
@@ -120,7 +120,7 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <span className="font-medium text-sm text-white">
-                  MCP-ready
+                  {"MCP-ready"}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
@@ -133,22 +133,22 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <span className="font-medium text-sm text-white">
-                  Agent Skills
+                  {"Agent Skills"}
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:w-auto w-full">
               <Button className="bg-lime-400 hover:bg-lime-300 shadow-2xs text-lime-950" href="#" role="button" tabIndex="0">
-                Start Building
+                {"Start Building"}
               </Button>
               <Button className="bg-white/10 border-transparent hover:bg-white/15 shadow-xs text-white" href="#" role="button" tabIndex="0">
-                Read Docs
+                {"Read Docs"}
               </Button>
             </div>
             <Separator className="bg-white/10 max-w-md w-full" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-4">
               <span className="text-sm text-white/60">
-                Trusted by leading builders
+                {"Trusted by leading builders"}
               </span>
               <div className="flex flex-wrap gap-x-4 gap-y-4 items-center sm:gap-x-6 sm:gap-y-5">
                 <span className="text-white/90">
@@ -177,7 +177,7 @@ export function Pattern() {
                 <span className="text-white/90">
                   <svg className="h-3.5 sm:h-4 w-auto" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                   </svg>
@@ -188,131 +188,7 @@ export function Pattern() {
           <div className="@container lg:justify-self-end lg:max-w-[624px] w-full">
             <div className="aspect-[1020/600] lg:aspect-[624/600] relative w-full">
               <div className="[--hero3-scene-basis:1020px] [transform:translateX(-50%)_scale(calc(100cqw/var(--hero3-scene-basis)))] absolute hero3-scene left-1/2 lg:[--hero3-scene-basis:624px] origin-top top-0" role="img" aria-label="Isometric scene of registry blocks: an accessory permission dialog, a command palette, a payout slider, a button group, a team empty state, a code editor, a payment method menu, and a context menu" style={{width: "624px", height: "600px", "--background": "oklch(1 0 0)", "--color-background": "oklch(1 0 0)", "--foreground": "oklch(0.145 0 0)", "--color-foreground": "oklch(0.145 0 0)", "--card": "oklch(1 0 0)", "--color-card": "oklch(1 0 0)", "--card-foreground": "oklch(0.145 0 0)", "--color-card-foreground": "oklch(0.145 0 0)", "--popover": "oklch(1 0 0)", "--color-popover": "oklch(1 0 0)", "--popover-foreground": "oklch(0.145 0 0)", "--color-popover-foreground": "oklch(0.145 0 0)", "--primary": "oklch(0.205 0 0)", "--color-primary": "oklch(0.205 0 0)", "--primary-foreground": "oklch(0.985 0 0)", "--color-primary-foreground": "oklch(0.985 0 0)", "--secondary": "oklch(0.97 0 0)", "--color-secondary": "oklch(0.97 0 0)", "--secondary-foreground": "oklch(0.205 0 0)", "--color-secondary-foreground": "oklch(0.205 0 0)", "--muted": "oklch(0.97 0 0)", "--color-muted": "oklch(0.97 0 0)", "--muted-foreground": "oklch(0.556 0 0)", "--color-muted-foreground": "oklch(0.556 0 0)", "--accent": "oklch(0.97 0 0)", "--color-accent": "oklch(0.97 0 0)", "--accent-foreground": "oklch(0.205 0 0)", "--color-accent-foreground": "oklch(0.205 0 0)", "--destructive": "oklch(0.577 0.245 27.325)", "--color-destructive": "oklch(0.577 0.245 27.325)", "--border": "oklch(0.922 0 0)", "--color-border": "oklch(0.922 0 0)", "--input": "oklch(0.922 0 0)", "--color-input": "oklch(0.922 0 0)", "--ring": "oklch(0.708 0 0)", "--color-ring": "oklch(0.708 0 0)", "--success": "var(--color-emerald-500)", "--color-success": "var(--color-emerald-500)", "--success-foreground": "var(--color-emerald-900)", "--color-success-foreground": "var(--color-emerald-900)", "--destructive-foreground": "var(--color-red-800)", "--color-destructive-foreground": "var(--color-red-800)"}}>
-                <style>{`
-@keyframes hero3-rise {
-  from { opacity: 0; transform: translate3d(0, 34px, 0) }
-  to { opacity: 1; transform: translate3d(0, 0, 0) }
-}
-@keyframes hero3-bob {
-  0%, 100% { transform: translate3d(0, 0, 0) }
-  50% { transform: translate3d(0, -6px, 0) }
-}
-@keyframes hero3-ring { 0%, 100% { opacity: 0.6 } 50% { opacity: 1 } }
-@keyframes hero3-scan {
-  0% { scale: 0.28; opacity: 0 }
-  14% { opacity: 0.28 }
-  100% { scale: 1.18; opacity: 0 }
-}
-@keyframes hero3-packet {
-  0% { offset-distance: 0%; opacity: 0 }
-  10% { opacity: 1 }
-  80% { opacity: 1 }
-  100% { offset-distance: 100%; opacity: 0 }
-}
-@keyframes hero3-glow { 0%, 100% { opacity: 0.08 } 50% { opacity: 0.2 } }
-
-/* Entrance and ambient float sit on separate elements because both drive
-   \`transform\`; the pointer offset lives on the Motion wrapper above them. */
-.hero3-rise { animation: hero3-rise 900ms cubic-bezier(0.22,1,0.36,1) var(--hero3-delay) both }
-.hero3-bob { animation: hero3-bob var(--hero3-period) ease-in-out var(--hero3-delay) infinite }
-/* Depth feedback is the side going denser, never a filter: a filter forces the
-   face to rasterise at its pre-transform size and the scaled type turns soft. */
-.hero3-extrude {
-  opacity: var(--hero3-side-opacity, 0.62);
-  transition: opacity 620ms cubic-bezier(0.22,1,0.36,1);
-}
-.hero3-solid:hover { --hero3-side-opacity: 0.82 }
-
-/* Driven directly, not through \`rounded-*\`: the face corner and the swept side
-   beneath it must agree, or the solid reads misregistered. */
-.hero3-face [data-slot="card"] { border-radius: var(--hero3-radius) }
-.hero3-face [data-slot="button-group"] > :first-child {
-  border-start-start-radius: var(--hero3-radius);
-  border-end-start-radius: var(--hero3-radius);
-}
-.hero3-face [data-slot="button-group"] > :last-child {
-  border-start-end-radius: var(--hero3-radius);
-  border-end-end-radius: var(--hero3-radius);
-}
-.hero3-ring { animation: hero3-ring 11s ease-in-out var(--hero3-delay) infinite }
-.hero3-scan { animation: hero3-scan 9s cubic-bezier(0.33,0,0.2,1) var(--hero3-delay) infinite }
-.hero3-packet { animation: hero3-packet var(--hero3-period) linear var(--hero3-delay) infinite }
-.hero3-glow { animation: hero3-glow 5.6s ease-in-out infinite }
-
-/* Inside the faces. One cursor walks any menu: every row shares the keyframe
-   and offsets by its own slot, so the list needs no per-row animation. */
-@keyframes hero3-row { 0% { opacity: 0 } 6%, 26% { opacity: 0.07 } 34%, 100% { opacity: 0 } }
-@keyframes hero3-caret { 0%, 45% { opacity: 1 } 55%, 100% { opacity: 0 } }
-@keyframes hero3-sheen {
-  0% { transform: translateX(-110%); opacity: 0 }
-  22% { opacity: 0.75 }
-  62%, 100% { transform: translateX(360%); opacity: 0 }
-}
-@keyframes hero3-cta {
-  0%, 100% { box-shadow: 0 0 0 0 rgb(0 0 0 / 0) }
-  50% { box-shadow: 0 0 0 3px rgb(0 0 0 / 0.09) }
-}
-@keyframes hero3-connect { 0%, 58%, 100% { opacity: 0.55; scale: 1 } 70% { opacity: 1; scale: 1.22 } }
-/* Scale, not travel: the roster is authored at half size and scaled again, so a
-   few pixels of movement would land under one rendered pixel. */
-@keyframes hero3-roster {
-  0%, 55%, 100% { scale: 1 }
-  68% { scale: 1.18 }
-}
-@keyframes hero3-fill { 0%, 100% { width: 25% } 50% { width: 68% } }
-/* One wave reads across the adoption bars: each column shares the keyframe and
-   offsets by its own index, so the whole chart breathes left to right. */
-@keyframes hero3-bar { 0%, 100% { opacity: 0.5 } 45% { opacity: 1 } }
-
-.hero3-row::after {
-  content: ""; position: absolute; inset: 0; border-radius: inherit;
-  background: currentColor; opacity: 0; pointer-events: none;
-  animation: hero3-row calc(var(--hero3-count) * 1.5s) ease-in-out calc(var(--hero3-step) * 1.5s) infinite;
-}
-/* The scene re-scopes the tokens so its cards stay light in both themes, but
-   these controls carry their own dark-mode fill, which no re-scope reaches.
-   The select and tabs triggers are found by their data-slot. Outline buttons
-   are not: only the radix Button publishes data-variant, so the faces tag all
-   five of theirs with \`hero3-outline\` and both twins stay identical. */
-.hero3-scene .hero3-outline { background-color: var(--background) }
-.hero3-scene [data-slot="select-trigger"] { background-color: var(--background) }
-.hero3-scene [data-slot="tabs-trigger"] {
-  background-color: var(--background);
-  border-color: transparent;
-  color: color-mix(in oklab, var(--foreground) 60%, transparent);
-}
-.hero3-scene .hero3-outline:hover { background-color: var(--muted) }
-.hero3-caret { animation: hero3-caret 1.1s steps(1, end) infinite }
-.hero3-sheen { animation: hero3-sheen 4.6s ease-in-out infinite }
-.hero3-fill [data-slot="progress-indicator"] { animation: hero3-fill 6.4s ease-in-out infinite }
-.hero3-bar-col { animation: hero3-bar 2.6s ease-in-out infinite; animation-delay: calc(var(--hero3-bar-i) * 0.14s) }
-.hero3-cta { animation: hero3-cta 3.4s ease-in-out infinite }
-.hero3-connect { animation: hero3-connect 2.8s ease-in-out infinite }
-.hero3-roster > * { animation: hero3-roster 3.2s ease-in-out infinite; z-index: 0 }
-.hero3-roster > *:nth-child(2) { animation-delay: 0.26s }
-.hero3-roster > *:nth-child(3) { animation-delay: 0.52s }
-.hero3-roster > *:nth-child(4) { animation-delay: 0.78s }
-
-/* Same walking cursor as a menu row, for the segmented control. */
-.hero3-seg { position: relative }
-.hero3-seg::after {
-  content: ""; position: absolute; inset: 0; border-radius: inherit;
-  background: currentColor; opacity: 0; pointer-events: none;
-  animation: hero3-row calc(var(--hero3-count) * 1.5s) ease-in-out calc(var(--hero3-step) * 1.5s) infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero3-rise, .hero3-bob, .hero3-ring, .hero3-scan, .hero3-packet, .hero3-glow,
-  .hero3-row::after, .hero3-seg::after, .hero3-caret, .hero3-sheen, .hero3-cta,
-  .hero3-connect, .hero3-roster > *, .hero3-bar-col,
-  .hero3-fill [data-slot="progress-indicator"] {
-    animation: none;
-  }
-  .hero3-extrude { transition-duration: 1ms }
-  .hero3-scan, .hero3-packet, .hero3-sheen { opacity: 0 }
-  .hero3-rise, .hero3-caret { opacity: 1 }
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hero3-rise {\n  from { opacity: 0; transform: translate3d(0, 34px, 0) }\n  to { opacity: 1; transform: translate3d(0, 0, 0) }\n}\n@keyframes hero3-bob {\n  0%, 100% { transform: translate3d(0, 0, 0) }\n  50% { transform: translate3d(0, -6px, 0) }\n}\n@keyframes hero3-ring { 0%, 100% { opacity: 0.6 } 50% { opacity: 1 } }\n@keyframes hero3-scan {\n  0% { scale: 0.28; opacity: 0 }\n  14% { opacity: 0.28 }\n  100% { scale: 1.18; opacity: 0 }\n}\n@keyframes hero3-packet {\n  0% { offset-distance: 0%; opacity: 0 }\n  10% { opacity: 1 }\n  80% { opacity: 1 }\n  100% { offset-distance: 100%; opacity: 0 }\n}\n@keyframes hero3-glow { 0%, 100% { opacity: 0.08 } 50% { opacity: 0.2 } }\n\n/* Entrance and ambient float sit on separate elements because both drive\n   `transform`; the pointer offset lives on the Motion wrapper above them. */\n.hero3-rise { animation: hero3-rise 900ms cubic-bezier(0.22,1,0.36,1) var(--hero3-delay) both }\n.hero3-bob { animation: hero3-bob var(--hero3-period) ease-in-out var(--hero3-delay) infinite }\n/* Depth feedback is the side going denser, never a filter: a filter forces the\n   face to rasterise at its pre-transform size and the scaled type turns soft. */\n.hero3-extrude {\n  opacity: var(--hero3-side-opacity, 0.62);\n  transition: opacity 620ms cubic-bezier(0.22,1,0.36,1);\n}\n.hero3-solid:hover { --hero3-side-opacity: 0.82 }\n\n/* Driven directly, not through `rounded-*`: the face corner and the swept side\n   beneath it must agree, or the solid reads misregistered. */\n.hero3-face [data-slot=\"card\"] { border-radius: var(--hero3-radius) }\n.hero3-face [data-slot=\"button-group\"] > :first-child {\n  border-start-start-radius: var(--hero3-radius);\n  border-end-start-radius: var(--hero3-radius);\n}\n.hero3-face [data-slot=\"button-group\"] > :last-child {\n  border-start-end-radius: var(--hero3-radius);\n  border-end-end-radius: var(--hero3-radius);\n}\n.hero3-ring { animation: hero3-ring 11s ease-in-out var(--hero3-delay) infinite }\n.hero3-scan { animation: hero3-scan 9s cubic-bezier(0.33,0,0.2,1) var(--hero3-delay) infinite }\n.hero3-packet { animation: hero3-packet var(--hero3-period) linear var(--hero3-delay) infinite }\n.hero3-glow { animation: hero3-glow 5.6s ease-in-out infinite }\n\n/* Inside the faces. One cursor walks any menu: every row shares the keyframe\n   and offsets by its own slot, so the list needs no per-row animation. */\n@keyframes hero3-row { 0% { opacity: 0 } 6%, 26% { opacity: 0.07 } 34%, 100% { opacity: 0 } }\n@keyframes hero3-caret { 0%, 45% { opacity: 1 } 55%, 100% { opacity: 0 } }\n@keyframes hero3-sheen {\n  0% { transform: translateX(-110%); opacity: 0 }\n  22% { opacity: 0.75 }\n  62%, 100% { transform: translateX(360%); opacity: 0 }\n}\n@keyframes hero3-cta {\n  0%, 100% { box-shadow: 0 0 0 0 rgb(0 0 0 / 0) }\n  50% { box-shadow: 0 0 0 3px rgb(0 0 0 / 0.09) }\n}\n@keyframes hero3-connect { 0%, 58%, 100% { opacity: 0.55; scale: 1 } 70% { opacity: 1; scale: 1.22 } }\n/* Scale, not travel: the roster is authored at half size and scaled again, so a\n   few pixels of movement would land under one rendered pixel. */\n@keyframes hero3-roster {\n  0%, 55%, 100% { scale: 1 }\n  68% { scale: 1.18 }\n}\n@keyframes hero3-fill { 0%, 100% { width: 25% } 50% { width: 68% } }\n/* One wave reads across the adoption bars: each column shares the keyframe and\n   offsets by its own index, so the whole chart breathes left to right. */\n@keyframes hero3-bar { 0%, 100% { opacity: 0.5 } 45% { opacity: 1 } }\n\n.hero3-row::after {\n  content: \"\"; position: absolute; inset: 0; border-radius: inherit;\n  background: currentColor; opacity: 0; pointer-events: none;\n  animation: hero3-row calc(var(--hero3-count) * 1.5s) ease-in-out calc(var(--hero3-step) * 1.5s) infinite;\n}\n/* The scene re-scopes the tokens so its cards stay light in both themes, but\n   these controls carry their own dark-mode fill, which no re-scope reaches.\n   The select and tabs triggers are found by their data-slot. Outline buttons\n   are not: only the radix Button publishes data-variant, so the faces tag all\n   five of theirs with `hero3-outline` and both twins stay identical. */\n.hero3-scene .hero3-outline { background-color: var(--background) }\n.hero3-scene [data-slot=\"select-trigger\"] { background-color: var(--background) }\n.hero3-scene [data-slot=\"tabs-trigger\"] {\n  background-color: var(--background);\n  border-color: transparent;\n  color: color-mix(in oklab, var(--foreground) 60%, transparent);\n}\n.hero3-scene .hero3-outline:hover { background-color: var(--muted) }\n.hero3-caret { animation: hero3-caret 1.1s steps(1, end) infinite }\n.hero3-sheen { animation: hero3-sheen 4.6s ease-in-out infinite }\n.hero3-fill [data-slot=\"progress-indicator\"] { animation: hero3-fill 6.4s ease-in-out infinite }\n.hero3-bar-col { animation: hero3-bar 2.6s ease-in-out infinite; animation-delay: calc(var(--hero3-bar-i) * 0.14s) }\n.hero3-cta { animation: hero3-cta 3.4s ease-in-out infinite }\n.hero3-connect { animation: hero3-connect 2.8s ease-in-out infinite }\n.hero3-roster > * { animation: hero3-roster 3.2s ease-in-out infinite; z-index: 0 }\n.hero3-roster > *:nth-child(2) { animation-delay: 0.26s }\n.hero3-roster > *:nth-child(3) { animation-delay: 0.52s }\n.hero3-roster > *:nth-child(4) { animation-delay: 0.78s }\n\n/* Same walking cursor as a menu row, for the segmented control. */\n.hero3-seg { position: relative }\n.hero3-seg::after {\n  content: \"\"; position: absolute; inset: 0; border-radius: inherit;\n  background: currentColor; opacity: 0; pointer-events: none;\n  animation: hero3-row calc(var(--hero3-count) * 1.5s) ease-in-out calc(var(--hero3-step) * 1.5s) infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .hero3-rise, .hero3-bob, .hero3-ring, .hero3-scan, .hero3-packet, .hero3-glow,\n  .hero3-row::after, .hero3-seg::after, .hero3-caret, .hero3-sheen, .hero3-cta,\n  .hero3-connect, .hero3-roster > *, .hero3-bar-col,\n  .hero3-fill [data-slot=\"progress-indicator\"] {\n    animation: none;\n  }\n  .hero3-extrude { transition-duration: 1ms }\n  .hero3-scan, .hero3-packet, .hero3-sheen { opacity: 0 }\n  .hero3-rise, .hero3-caret { opacity: 1 }\n}\n" }} />
                 <div className="absolute border-dashed border-l w-px" style={{height: "1100px", borderColor: "rgba(255, 255, 255, 0.15)", left: "311px", top: "350px"}}>
                   <span className="-left-px absolute bg-lime-300 hero3-packet rounded-full size-0.5" style={{offsetPath: "path(\"M 0 0 L 0 1100\")", "--hero3-period": "7.4s", "--hero3-delay": "1.1s"}}></span>
                 </div>
@@ -353,7 +229,7 @@ export function Pattern() {
                                 <FramePanel className="flex flex-col gap-5">
                                   <div className="flex gap-3 items-center justify-between">
                                     <h3 className="font-medium text-muted-foreground text-sm">
-                                      All Orders
+                                      {"All Orders"}
                                     </h3>
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_4_" aria-expanded="false" extracted="1">
@@ -368,21 +244,21 @@ export function Pattern() {
                                   <div className="space-y-2.5">
                                     <div className="flex gap-2.5 items-center">
                                       <span className="font-medium text-2xl text-foreground tracking-tight">
-                                        122,380
+                                        {"122,380"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/10 dark:border-success/15 dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                           <path d="m5 12 7-7 7 7"></path>
                                           <path d="M12 19V5"></path>
                                         </svg>
-                                        15.1%
+                                        {"15.1%"}
                                       </Badge>
                                     </div>
                                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                                     <div className="text-muted-foreground text-xs">
-                                      Vs last month:
+                                      {"Vs last month:"}
                                       <span className="font-medium text-foreground">
-                                        105,922
+                                        {"105,922"}
                                       </span>
                                     </div>
                                   </div>
@@ -392,7 +268,7 @@ export function Pattern() {
                                 <FramePanel className="flex flex-col gap-5">
                                   <div className="flex gap-3 items-center justify-between">
                                     <h3 className="font-medium text-muted-foreground text-sm">
-                                      Order Created
+                                      {"Order Created"}
                                     </h3>
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_9_" aria-expanded="false">
@@ -407,21 +283,21 @@ export function Pattern() {
                                   <div className="space-y-2.5">
                                     <div className="flex gap-2.5 items-center">
                                       <span className="font-medium text-2xl text-foreground tracking-tight">
-                                        1.9M
+                                        {"1.9M"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/10 dark:border-destructive/15 dark:text-destructive-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                                         <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                           <path d="M12 5v14"></path>
                                           <path d="m19 12-7 7-7-7"></path>
                                         </svg>
-                                        -2%
+                                        {"-2%"}
                                       </Badge>
                                     </div>
                                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                                     <div className="text-muted-foreground text-xs">
-                                      Vs last month:
+                                      {"Vs last month:"}
                                       <span className="font-medium text-foreground">
-                                        2.0M
+                                        {"2.0M"}
                                       </span>
                                     </div>
                                   </div>
@@ -431,7 +307,7 @@ export function Pattern() {
                                 <FramePanel className="flex flex-col gap-5">
                                   <div className="flex gap-3 items-center justify-between">
                                     <h3 className="font-medium text-muted-foreground text-sm">
-                                      Organic Sales
+                                      {"Organic Sales"}
                                     </h3>
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_e_" aria-expanded="false">
@@ -446,21 +322,21 @@ export function Pattern() {
                                   <div className="space-y-2.5">
                                     <div className="flex gap-2.5 items-center">
                                       <span className="font-medium text-2xl text-foreground tracking-tight">
-                                        $98.1M
+                                        {"$98.1M"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/10 dark:border-success/15 dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                           <path d="m5 12 7-7 7 7"></path>
                                           <path d="M12 19V5"></path>
                                         </svg>
-                                        0.4%
+                                        {"0.4%"}
                                       </Badge>
                                     </div>
                                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                                     <div className="text-muted-foreground text-xs">
-                                      Vs last month:
+                                      {"Vs last month:"}
                                       <span className="font-medium text-foreground">
-                                        $97.8M
+                                        {"$97.8M"}
                                       </span>
                                     </div>
                                   </div>
@@ -470,7 +346,7 @@ export function Pattern() {
                                 <FramePanel className="flex flex-col gap-5">
                                   <div className="flex gap-3 items-center justify-between">
                                     <h3 className="font-medium text-muted-foreground text-sm">
-                                      Active Users
+                                      {"Active Users"}
                                     </h3>
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
@@ -485,21 +361,21 @@ export function Pattern() {
                                   <div className="space-y-2.5">
                                     <div className="flex gap-2.5 items-center">
                                       <span className="font-medium text-2xl text-foreground tracking-tight">
-                                        48,210
+                                        {"48,210"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/10 dark:border-success/15 dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                           <path d="m5 12 7-7 7 7"></path>
                                           <path d="M12 19V5"></path>
                                         </svg>
-                                        3.7%
+                                        {"3.7%"}
                                       </Badge>
                                     </div>
                                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                                     <div className="text-muted-foreground text-xs">
-                                      Vs last month:
+                                      {"Vs last month:"}
                                       <span className="font-medium text-foreground">
-                                        46,480
+                                        {"46,480"}
                                       </span>
                                     </div>
                                   </div>
@@ -542,10 +418,10 @@ export function Pattern() {
                                 <div className="flex gap-3 items-start justify-between mb-6">
                                   <div className="flex flex-col gap-0.5">
                                     <div className="font-semibold text-sm">
-                                      Feature Adoption
+                                      {"Feature Adoption"}
                                     </div>
                                     <div className="font-medium text-muted-foreground text-sm">
-                                      Best adoption report
+                                      {"Best adoption report"}
                                     </div>
                                   </div>
                                   <DropdownMenu>
@@ -560,7 +436,7 @@ export function Pattern() {
                                 </div>
                                 <div className="space-y-6">
                                   <div className="font-bold text-5xl text-foreground">
-                                    84%
+                                    {"84%"}
                                   </div>
                                   <div className="flex gap-2 h-32 items-end relative w-full">
                                     <div className="cursor-pointer flex flex-1 flex-col hero3-bar-col justify-end min-w-0 transition-all" style={{"--hero3-bar-i": "0"}}>
@@ -656,15 +532,15 @@ export function Pattern() {
                                   <AvatarImage alt="Nora Vale" width="96" height="96" loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                 </Avatar>
                                 <AvatarGroupCount className="size-9 text-xs">
-                                  +6
+                                  {"+6"}
                                 </AvatarGroupCount>
                               </AvatarGroup>
                               <EmptyHeader>
                                 <EmptyTitle>
-                                  No Team Members
+                                  {"No Team Members"}
                                 </EmptyTitle>
                                 <EmptyDescription>
-                                  Invite your team to collaborate on this project.
+                                  {"Invite your team to collaborate on this project."}
                                 </EmptyDescription>
                               </EmptyHeader>
                               <EmptyContent>
@@ -673,7 +549,7 @@ export function Pattern() {
                                     <path d="M5 12h14"></path>
                                     <path d="M12 5v14"></path>
                                   </svg>
-                                  Invite Members
+                                  {"Invite Members"}
                                 </Button>
                               </EmptyContent>
                             </Empty>
@@ -694,16 +570,16 @@ export function Pattern() {
                               <FramePanel className="border-0 flex flex-col gap-5 h-full justify-center">
                                 <div className="flex items-center justify-between">
                                   <h3 className="font-semibold text-base">
-                                    Tasks Overview
+                                    {"Tasks Overview"}
                                   </h3>
                                   <Select>
                                   <SelectTrigger className="w-32" type="button" tabIndex="0" id="base-ui-_r_q_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                     <SelectValue>
-                                      This Month
+                                      {"This Month"}
                                     </SelectValue>
                                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
-                                      ▼
+                                      {"▼"}
                                     </svg>
                                   </SelectTrigger>
                                   </Select>
@@ -713,10 +589,10 @@ export function Pattern() {
                                   <div className="grow mb-6">
                                     <div className="flex items-center justify-between mb-1">
                                       <span className="font-medium text-muted-foreground text-sm">
-                                        Tasks Done
+                                        {"Tasks Done"}
                                       </span>
                                       <span className="font-semibold text-muted-foreground text-sm">
-                                        12
+                                        {"12"}
                                       </span>
                                     </div>
                                     <div className="hero3-fill">
@@ -725,7 +601,7 @@ export function Pattern() {
                                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "66%"}}></ProgressIndicator>
                                         </ProgressTrack>
                                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                          x
+                                          {"x"}
                                         </span>
                                       </Progress>
                                     </div>
@@ -734,41 +610,41 @@ export function Pattern() {
                                     <div className="gap-2.5 grid grid-cols-4">
                                       <div className="bg-muted/60 flex flex-col gap-1 items-center justify-center px-2 py-3.5 rounded-lg">
                                         <span className="font-bold text-emerald-500 text-lg">
-                                          28
+                                          {"28"}
                                         </span>
                                         <span className="text-accent-foreground text-xs">
-                                          Backlog
+                                          {"Backlog"}
                                         </span>
                                       </div>
                                       <div className="bg-muted/60 flex flex-col gap-1 items-center justify-center px-2 py-3.5 rounded-lg">
                                         <span className="font-bold text-amber-500 text-lg">
-                                          14
+                                          {"14"}
                                         </span>
                                         <span className="text-accent-foreground text-xs">
-                                          In Progress
+                                          {"In Progress"}
                                         </span>
                                       </div>
                                       <div className="bg-muted/60 flex flex-col gap-1 items-center justify-center px-2 py-3.5 rounded-lg">
                                         <span className="font-bold text-indigo-500 text-lg">
-                                          8
+                                          {"8"}
                                         </span>
                                         <span className="text-accent-foreground text-xs">
-                                          In Review
+                                          {"In Review"}
                                         </span>
                                       </div>
                                       <div className="bg-muted/60 flex flex-col gap-1 items-center justify-center px-2 py-3.5 rounded-lg">
                                         <span className="font-bold text-lg text-sky-500">
-                                          42
+                                          {"42"}
                                         </span>
                                         <span className="text-accent-foreground text-xs">
-                                          Done
+                                          {"Done"}
                                         </span>
                                       </div>
                                     </div>
                                     <div className="text-center text-muted-foreground text-xs">
-                                      AI prediction to finish all tasks:
+                                      {"AI prediction to finish all tasks:"}
                                       <span className="font-semibold text-foreground">
-                                        1w 4d 2h
+                                        {"1w 4d 2h"}
                                       </span>
                                     </div>
                                   </div>
@@ -804,22 +680,22 @@ export function Pattern() {
                                       </div>
                                       <div className="flex gap-1.5 items-baseline min-w-0">
                                         <span className="font-medium text-2xl">
-                                          1,562
+                                          {"1,562"}
                                         </span>
                                         <span className="font-medium text-2xl text-muted-foreground/45">
-                                          km
+                                          {"km"}
                                         </span>
                                       </div>
                                     </div>
                                     <TabsList className="min-[520px]:w-[184px] w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                                       <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_t_" compositeItemActive="" aria-controls="base-ui-_r_10_">
-                                        Week
+                                        {"Week"}
                                       </TabsTrigger>
                                       <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_u_">
-                                        Month
+                                        {"Month"}
                                       </TabsTrigger>
                                       <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_v_">
-                                        Year
+                                        {"Year"}
                                       </TabsTrigger>
                                     </TabsList>
                                   </div>
@@ -859,7 +735,7 @@ export function Pattern() {
                         <div className="origin-top-left" inert="" style={{width: "240px", height: "144px", transform: "scale(0.5)"}}>
                           <Card className="gap-0 h-full justify-center p-1.5" size="default">
                             <span className="font-medium pb-1.5 pt-1 px-2 text-muted-foreground text-xs">
-                              Select Payment Method
+                              {"Select Payment Method"}
                             </span>
                             <Item className="hero3-row relative" variant="default" size="sm" style={{"--hero3-step": "0", "--hero3-count": "3"}}>
                               <ItemMedia variant="icon">
@@ -870,7 +746,7 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent>
                                 <ItemTitle>
-                                  Credit Card
+                                  {"Credit Card"}
                                 </ItemTitle>
                               </ItemContent>
                             </Item>
@@ -883,7 +759,7 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent>
                                 <ItemTitle>
-                                  PayPal
+                                  {"PayPal"}
                                 </ItemTitle>
                               </ItemContent>
                             </Item>
@@ -899,7 +775,7 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent>
                                 <ItemTitle>
-                                  Bank Transfer
+                                  {"Bank Transfer"}
                                 </ItemTitle>
                               </ItemContent>
                             </Item>
@@ -917,13 +793,13 @@ export function Pattern() {
                         <div className="origin-top-left" inert="" style={{width: "276px", height: "38px", transform: "scale(0.5)"}}>
                           <ButtonGroup className="*:h-full h-full w-full" role="group">
                             <Button className="flex-1 hero3-outline hero3-seg" type="button" tabIndex="0" style={{"--hero3-step": "0", "--hero3-count": "3"}}>
-                              Default
+                              {"Default"}
                             </Button>
                             <Button className="flex-1 hero3-outline hero3-seg" type="button" tabIndex="0" style={{"--hero3-step": "1", "--hero3-count": "3"}}>
-                              Button
+                              {"Button"}
                             </Button>
                             <Button className="flex-1 hero3-outline hero3-seg" type="button" tabIndex="0" style={{"--hero3-step": "2", "--hero3-count": "3"}}>
-                              Group
+                              {"Group"}
                             </Button>
                             <Button className="hero3-outline" type="button" tabIndex="0" aria-label="Add Item">
                               <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -953,18 +829,18 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-col gap-1.5">
                               <span className="font-semibold text-base">
-                                Allow accessory to connect?
+                                {"Allow accessory to connect?"}
                               </span>
                               <span className="text-balance text-muted-foreground text-sm">
-                                Do you want to allow the USB accessory to connect to this device?
+                                {"Do you want to allow the USB accessory to connect to this device?"}
                               </span>
                             </div>
                             <div className="flex gap-2 items-center">
                               <Button className="hero3-outline hero3-seg" type="button" tabIndex="0" style={{"--hero3-step": "0", "--hero3-count": "2"}}>
-                                Don't allow
+                                {"Don't allow"}
                               </Button>
                               <Button className="hero3-seg" type="button" tabIndex="0" style={{"--hero3-step": "1", "--hero3-count": "2"}}>
-                                Allow
+                                {"Allow"}
                               </Button>
                             </div>
                           </Card>

@@ -14,18 +14,18 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Traffic
+              {"Traffic"}
             </div>
             <div className="text-muted-foreground text-xs">
-              Requests per hour, last 24 hours
+              {"Requests per hour, last 24 hours"}
             </div>
           </div>
           <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Traffic shown" style={{"--gap": "0"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
-              All
+              {"All"}
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-              Threats
+              {"Threats"}
             </ToggleGroupItem>
           </ToggleGroup>
         </header>
@@ -34,40 +34,40 @@ export function Pattern() {
             <div className="gap-4 grid grid-cols-3 min-w-0 sm:flex-1 sm:gap-6 sm:max-w-md">
               <div className="flex flex-col gap-1 min-w-0">
                 <span className="text-muted-foreground text-xs">
-                  Requests
+                  {"Requests"}
                 </span>
                 <span className="font-semibold leading-none tabular-nums text-2xl text-foreground tracking-tight">
-                  1.2M
+                  {"1.2M"}
                 </span>
                 <span className="tabular-nums text-muted-foreground text-xs truncate">
-                  Last 24 hours
+                  {"Last 24 hours"}
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <span className="text-muted-foreground text-xs">
-                  Blocked
+                  {"Blocked"}
                 </span>
                 <span className="font-semibold leading-none tabular-nums text-2xl text-foreground tracking-tight">
-                  79.8K
+                  {"79.8K"}
                 </span>
                 <span className="tabular-nums text-muted-foreground text-xs truncate">
-                  6.5%
+                  {"6.5%"}
                   <span className="max-sm:sr-only">
-                    of requests
+                    {"of requests"}
                   </span>
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <span className="text-muted-foreground text-xs">
-                  Challenged
+                  {"Challenged"}
                 </span>
                 <span className="font-semibold leading-none tabular-nums text-2xl text-foreground tracking-tight">
-                  73.1K
+                  {"73.1K"}
                 </span>
                 <span className="tabular-nums text-muted-foreground text-xs truncate">
-                  5.9%
+                  {"5.9%"}
                   <span className="max-sm:sr-only">
-                    of requests
+                    {"of requests"}
                   </span>
                 </span>
               </div>
@@ -75,15 +75,15 @@ export function Pattern() {
             <div className="flex gap-3 items-center text-muted-foreground text-xs">
               <span className="flex gap-1.5 items-center">
                 <span className="bg-destructive h-2 rounded-full w-3" aria-hidden="true"></span>
-                Blocked
+                {"Blocked"}
               </span>
               <span className="flex gap-1.5 items-center">
                 <span className="bg-warning h-2 rounded-full w-3" aria-hidden="true"></span>
-                Challenged
+                {"Challenged"}
               </span>
               <span className="flex gap-1.5 items-center">
                 <span className="bg-success/45 h-2 rounded-full w-3" aria-hidden="true"></span>
-                Allowed
+                {"Allowed"}
               </span>
             </div>
           </div>
@@ -480,19 +480,19 @@ export function Pattern() {
             </div>
             <div className="gap-1 grid grid-cols-24 sm:gap-1.5 text-muted-foreground text-xs" aria-hidden="true">
               <span className="col-start-1 justify-self-start row-start-1 whitespace-nowrap">
-                24h ago
+                {"24h ago"}
               </span>
               <span className="col-start-6 justify-self-center row-start-1 whitespace-nowrap">
-                18h
+                {"18h"}
               </span>
               <span className="col-start-12 justify-self-center row-start-1 whitespace-nowrap">
-                12h
+                {"12h"}
               </span>
               <span className="col-start-18 justify-self-center row-start-1 whitespace-nowrap">
-                6h
+                {"6h"}
               </span>
               <span className="col-start-24 justify-self-end row-start-1 whitespace-nowrap">
-                Now
+                {"Now"}
               </span>
             </div>
           </div>

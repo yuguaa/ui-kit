@@ -46,10 +46,10 @@ export function Pattern() {
         <Gantt className="flex-1">
           <GanttNav>
             <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-              Today
+              {"Today"}
             </GanttNavToday>
             <GanttScaleSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
-              Month
+              {"Month"}
               <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
@@ -67,7 +67,7 @@ export function Pattern() {
               </GanttNavNext>
             </div>
             <GanttTitle aria-live="polite">
-              July 2026
+              {"July 2026"}
             </GanttTitle>
             <div className="grow"></div>
             <GanttToolbar>
@@ -87,7 +87,7 @@ export function Pattern() {
                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="size-5 text-[10px]">
-                    +1
+                    {"+1"}
                   </AvatarGroupCount>
                 </AvatarGroup>
               </PopoverTrigger>
@@ -98,7 +98,7 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add Task
+                  {"Add Task"}
                 </Button>
                 <ButtonGroupSeparator className="bg-primary/72 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
                 <DropdownMenu>
@@ -123,22 +123,22 @@ export function Pattern() {
                             <div className="flex flex-1 h-full min-w-0">
                               <div className="flex h-full items-center shrink-0" style={{width: "208px", paddingInlineStart: "3.125rem"}}>
                                 <span className="font-medium text-muted-foreground truncate">
-                                  Name
+                                  {"Name"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="status" style={{width: "96px"}}>
                                 <span className="truncate">
-                                  Status
+                                  {"Status"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="assignee" style={{width: "72px"}}>
                                 <span className="truncate">
-                                  Assignee
+                                  {"Assignee"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="due" style={{width: "72px"}}>
                                 <span className="truncate">
-                                  Due date
+                                  {"Due date"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="actions" style={{width: "32px"}}>
@@ -190,7 +190,7 @@ export function Pattern() {
                                       <path d="m3 7 2 2 4-4"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Bug Tracking
+                                      {"Bug Tracking"}
                                     </span>
                                     <Tooltip>
                                     <TooltipTrigger className="inline-flex ms-0.5" role="img" aria-label="49% complete" id="base-ui-_r_t_" baseUiTooltipTrigger="">
@@ -250,7 +250,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Login redirect
+                                      {"Login redirect"}
                                     </span>
                                   </span>
                                 </div>
@@ -258,7 +258,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                    Done
+                                    {"Done"}
                                   </Badge>
                                 </div>
                               </div>
@@ -281,7 +281,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 14
+                                    {"Jul 14"}
                                   </span>
                                 </div>
                               </div>
@@ -323,7 +323,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Access rules
+                                      {"Access rules"}
                                     </span>
                                   </span>
                                 </div>
@@ -331,7 +331,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-info-foreground text-xs transition-shadow">
-                                    In Progress
+                                    {"In Progress"}
                                   </Badge>
                                 </div>
                               </div>
@@ -351,7 +351,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 19
+                                    {"Jul 19"}
                                   </span>
                                 </div>
                               </div>
@@ -396,7 +396,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Mobile crash
+                                      {"Mobile crash"}
                                     </span>
                                     <Tooltip>
                                     <TooltipTrigger className="inline-flex ms-0.5" role="img" aria-label="27% complete" id="base-ui-_r_1o_" baseUiTooltipTrigger="">
@@ -412,7 +412,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-info-foreground text-xs transition-shadow">
-                                    In Progress
+                                    {"In Progress"}
                                   </Badge>
                                 </div>
                               </div>
@@ -476,7 +476,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      iOS audit
+                                      {"iOS audit"}
                                     </span>
                                   </span>
                                 </div>
@@ -484,7 +484,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-info-foreground text-xs transition-shadow">
-                                    In Progress
+                                    {"In Progress"}
                                   </Badge>
                                 </div>
                               </div>
@@ -504,7 +504,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 20
+                                    {"Jul 20"}
                                   </span>
                                 </div>
                               </div>
@@ -546,7 +546,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Android audit
+                                      {"Android audit"}
                                     </span>
                                   </span>
                                 </div>
@@ -554,7 +554,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -566,7 +566,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 25
+                                    {"Jul 25"}
                                   </span>
                                 </div>
                               </div>
@@ -608,7 +608,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Button truncation
+                                      {"Button truncation"}
                                     </span>
                                   </span>
                                 </div>
@@ -616,7 +616,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                                    In Review
+                                    {"In Review"}
                                   </Badge>
                                 </div>
                               </div>
@@ -636,7 +636,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-destructive truncate">
-                                    Jul 14
+                                    {"Jul 14"}
                                   </span>
                                 </div>
                               </div>
@@ -678,7 +678,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Offline sync
+                                      {"Offline sync"}
                                     </span>
                                   </span>
                                 </div>
@@ -686,7 +686,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -709,7 +709,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 27
+                                    {"Jul 27"}
                                   </span>
                                 </div>
                               </div>
@@ -751,7 +751,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      API key rotation
+                                      {"API key rotation"}
                                     </span>
                                   </span>
                                 </div>
@@ -759,7 +759,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                    Done
+                                    {"Done"}
                                   </Badge>
                                 </div>
                               </div>
@@ -779,7 +779,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 14
+                                    {"Jul 14"}
                                   </span>
                                 </div>
                               </div>
@@ -821,7 +821,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Session replay
+                                      {"Session replay"}
                                     </span>
                                   </span>
                                 </div>
@@ -829,7 +829,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -888,7 +888,7 @@ export function Pattern() {
                                       <path d="m3 7 2 2 4-4"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Release 2.4
+                                      {"Release 2.4"}
                                     </span>
                                     <Tooltip>
                                     <TooltipTrigger className="inline-flex ms-0.5" role="img" aria-label="21% complete" id="base-ui-_r_3p_" baseUiTooltipTrigger="">
@@ -948,7 +948,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Data export
+                                      {"Data export"}
                                     </span>
                                   </span>
                                 </div>
@@ -956,7 +956,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-info-foreground text-xs transition-shadow">
-                                    In Progress
+                                    {"In Progress"}
                                   </Badge>
                                 </div>
                               </div>
@@ -979,7 +979,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 22
+                                    {"Jul 22"}
                                   </span>
                                 </div>
                               </div>
@@ -1021,7 +1021,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Form validation
+                                      {"Form validation"}
                                     </span>
                                   </span>
                                 </div>
@@ -1029,7 +1029,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -1049,7 +1049,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 27
+                                    {"Jul 27"}
                                   </span>
                                 </div>
                               </div>
@@ -1091,7 +1091,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Nav focus
+                                      {"Nav focus"}
                                     </span>
                                   </span>
                                 </div>
@@ -1099,7 +1099,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -1111,7 +1111,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 28
+                                    {"Jul 28"}
                                   </span>
                                 </div>
                               </div>
@@ -1153,7 +1153,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Perf audit
+                                      {"Perf audit"}
                                     </span>
                                     <svg className="lucide lucide-lock shrink-0 size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
                                       <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
@@ -1165,7 +1165,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                                    In Review
+                                    {"In Review"}
                                   </Badge>
                                 </div>
                               </div>
@@ -1185,7 +1185,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Jul 22
+                                    {"Jul 22"}
                                   </span>
                                 </div>
                               </div>
@@ -1227,7 +1227,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Changelog
+                                      {"Changelog"}
                                     </span>
                                   </span>
                                 </div>
@@ -1235,7 +1235,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -1247,7 +1247,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="due" style={{width: "72px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Aug 4
+                                    {"Aug 4"}
                                   </span>
                                 </div>
                               </div>
@@ -1289,7 +1289,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="bg-transparent border-2 border-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     <span className="truncate">
-                                      Release notes
+                                      {"Release notes"}
                                     </span>
                                   </span>
                                 </div>
@@ -1297,7 +1297,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="status" style={{width: "96px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                                    To Do
+                                    {"To Do"}
                                   </Badge>
                                 </div>
                               </div>
@@ -1335,7 +1335,7 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span>
-                                Add task
+                                {"Add task"}
                               </span>
                             </span>
                           </button>
@@ -1379,72 +1379,72 @@ export function Pattern() {
                             <div className="flex h-full">
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "6 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W23 May 31 - 6
+                                  {"W23 May 31 - 6"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W24 Jun 7 - 13
+                                  {"W24 Jun 7 - 13"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W25 Jun 14 - 20
+                                  {"W25 Jun 14 - 20"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W26 Jun 21 - 27
+                                  {"W26 Jun 21 - 27"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W27 Jun 28 - 4
+                                  {"W27 Jun 28 - 4"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W28 Jul 5 - 11
+                                  {"W28 Jul 5 - 11"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W29 Jul 12 - 18
+                                  {"W29 Jul 12 - 18"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W30 Jul 19 - 25
+                                  {"W30 Jul 19 - 25"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W31 Jul 26 - 1
+                                  {"W31 Jul 26 - 1"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W32 Aug 2 - 8
+                                  {"W32 Aug 2 - 8"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W33 Aug 9 - 15
+                                  {"W33 Aug 9 - 15"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W34 Aug 16 - 22
+                                  {"W34 Aug 16 - 22"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W35 Aug 23 - 29
+                                  {"W35 Aug 23 - 29"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "2 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W36 Aug 30 - 5
+                                  {"W36 Aug 30 - 5"}
                                 </span>
                               </div>
                             </div>
@@ -1493,280 +1493,280 @@ export function Pattern() {
                             </div>
                             <div className="flex h-full">
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 1
+                                {"Mon 1"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 2
+                                {"Tue 2"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 3
+                                {"Wed 3"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 4
+                                {"Thu 4"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 5
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 6
+                                {"Fri 5"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 7
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 8
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 9
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 10
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 11
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 12
+                                {"Sat 6"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 13
+                                {"Sun 7"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 8"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 9"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 10"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 11"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 12"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 14
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 15
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 16
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 17
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 18
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 19
+                                {"Sat 13"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 20
+                                {"Sun 14"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 15"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 16"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 17"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 18"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 19"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 21
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 22
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 23
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 24
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 25
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 26
+                                {"Sat 20"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 27
+                                {"Sun 21"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 22"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 23"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 24"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 25"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 26"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 28
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 29
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 30
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 1
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 2
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 3
+                                {"Sat 27"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 4
+                                {"Sun 28"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 29"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 30"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 1"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 2"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 3"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 5
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 6
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 7
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 8
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 9
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 10
+                                {"Sat 4"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 11
+                                {"Sun 5"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 6"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 7"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 8"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 9"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 10"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 12
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 13
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 14
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 15
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 16
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 17
+                                {"Sat 11"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 18
+                                {"Sun 12"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 13"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 14"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 15"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 16"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 17"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 19
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 20
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 21
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 22
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 23
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 24
+                                {"Sat 18"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 25
+                                {"Sun 19"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 20"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 21"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 22"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 23"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 24"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 26
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 27
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 28
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 29
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 30
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 31
+                                {"Sat 25"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 1
+                                {"Sun 26"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 27"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 28"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 29"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 30"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 31"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 2
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 3
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 4
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 5
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 6
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 7
+                                {"Sat 1"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 8
+                                {"Sun 2"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 3"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 4"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 5"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 6"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 7"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 9
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 10
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 11
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 12
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 13
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 14
+                                {"Sat 8"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 15
+                                {"Sun 9"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 10"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 11"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 12"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 13"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 14"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 16
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 17
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 18
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 19
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 20
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 21
+                                {"Sat 15"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 22
+                                {"Sun 16"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 17"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 18"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 19"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 20"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 21"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 23
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 24
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 25
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 26
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 27
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 28
+                                {"Sat 22"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 29
-                              </div>
-                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 30
+                                {"Sun 23"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 31
+                                {"Mon 24"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Tue 25"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Wed 26"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Thu 27"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Fri 28"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
+                                {"Sat 29"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
+                                {"Sun 30"}
+                              </div>
+                              <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
+                                {"Mon 31"}
                               </div>
                             </div>
                             <span className="absolute bg-border inset-y-0 w-px" aria-hidden="true" data-axis="vertical" style={{insetInlineStart: "calc(1.08696% - 1px)"}}></span>
@@ -2131,7 +2131,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "49%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  49%
+                                  {"49%"}
                                 </span>
                               </div>
                             </div>
@@ -2152,7 +2152,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-4 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Login redirect
+                                  {"Login redirect"}
                                 </span>
                               </div>
                             </div>
@@ -2170,7 +2170,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Access rules
+                                  {"Access rules"}
                                 </span>
                               </div>
                             </div>
@@ -2184,7 +2184,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "27%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  27%
+                                  {"27%"}
                                 </span>
                               </div>
                             </div>
@@ -2202,7 +2202,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-4 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  iOS audit
+                                  {"iOS audit"}
                                 </span>
                               </div>
                             </div>
@@ -2219,7 +2219,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Android audit
+                                  {"Android audit"}
                                 </span>
                               </div>
                             </div>
@@ -2237,7 +2237,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Button truncation
+                                  {"Button truncation"}
                                 </span>
                               </div>
                             </div>
@@ -2255,7 +2255,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Offline sync
+                                  {"Offline sync"}
                                 </span>
                               </div>
                             </div>
@@ -2276,7 +2276,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  API key rotation
+                                  {"API key rotation"}
                                 </span>
                               </div>
                             </div>
@@ -2293,7 +2293,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "21%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  21%
+                                  {"21%"}
                                 </span>
                               </div>
                             </div>
@@ -2311,7 +2311,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-4 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Data export
+                                  {"Data export"}
                                 </span>
                               </div>
                             </div>
@@ -2329,7 +2329,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Form validation
+                                  {"Form validation"}
                                 </span>
                               </div>
                             </div>
@@ -2346,7 +2346,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-4 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Nav focus
+                                  {"Nav focus"}
                                 </span>
                               </div>
                             </div>
@@ -2358,7 +2358,7 @@ export function Pattern() {
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "50%"}}></span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-4 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Perf audit
+                                  {"Perf audit"}
                                 </span>
                               </div>
                             </div>
@@ -2375,7 +2375,7 @@ export function Pattern() {
                                   </span>
                                 </GanttBar>
                                 <span className="-translate-y-1/2 absolute font-medium group-data-[drag-kind^=resize]/gantt-seg:opacity-0 max-w-60 ms-2 pointer-events-none start-full text-foreground top-1/2 truncate z-10" data-placement="after">
-                                  Changelog
+                                  {"Changelog"}
                                 </span>
                               </div>
                             </div>

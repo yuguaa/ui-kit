@@ -15,14 +15,14 @@ export function Pattern() {
             </svg>
             <p className="flex flex-1 flex-wrap gap-x-3 gap-y-1 items-center min-w-0 text-sm" id="coupon-5-heading">
               <span className="text-foreground">
-                Always free shipping on orders over $50
+                {"Always free shipping on orders over $50"}
               </span>
               <span className="bg-background border border-border border-dashed font-mono font-semibold px-2 py-0.5 rounded-md select-all text-foreground text-xs tracking-[0.18em] uppercase">
-                FREESHIP50
+                {"FREESHIP50"}
               </span>
             </p>
             <Button type="button" tabIndex="0" aria-label="Copy code FREESHIP50" extracted="1">
-              Copy code
+              {"Copy code"}
             </Button>
             <button className="flex hover:bg-muted hover:text-foreground items-center justify-center rounded-md shrink-0 size-7 text-muted-foreground transition-colors" type="button" aria-label="Dismiss promotion">
               <svg className="lucide lucide-x size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">

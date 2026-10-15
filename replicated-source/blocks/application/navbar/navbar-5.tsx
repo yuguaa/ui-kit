@@ -19,13 +19,13 @@ export function Pattern() {
             </svg>
           </Button>
           <span className="text-muted-foreground text-sm">
-            Workflows
+            {"Workflows"}
           </span>
         </div>
         <div className="flex gap-2 items-center shrink-0">
           <Label className="cursor-pointer gap-2" id="base-ui-_r_1_-label">
             <span className="hidden md:block text-foreground text-sm">
-              Active
+              {"Active"}
             </span>
             <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="sm" aria-label="Activate workflow" aria-labelledby="base-ui-_r_1_-label">
               <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -45,7 +45,7 @@ export function Pattern() {
               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
             </svg>
             <span className="hidden md:block">
-              Test Run
+              {"Test Run"}
             </span>
           </Button>
           <DropdownMenu>

@@ -7,7 +7,7 @@ export function Pattern() {
     <div hidden></div>
     <main className="bg-background min-h-dvh overflow-hidden relative">
       <a className="focus:bg-background focus:fixed focus:left-4 focus:not-sr-only focus:outline-none focus:px-4 focus:py-2 focus:ring-2 focus:ring-primary/40 focus:rounded-full focus:text-foreground focus:text-sm focus:top-4 focus:z-50 sr-only" href="#main-content">
-        Skip To Content
+        {"Skip To Content"}
       </a>
       <div className="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className="absolute bg-background inset-0"></div>
@@ -985,7 +985,7 @@ export function Pattern() {
                   <path fill="currentColor" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
                 </svg>
                 <span className="sr-only">
-                  X
+                  {"X"}
                 </span>
               </Button>
               <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 backdrop-blur-md bg-black/20 bg-clip-padding border border-white/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-black/10 hover:text-foreground in-data-[slot=button-group]:rounded-lg px-2.5 rounded-full text-[0.8rem]" target="_blank" rel="noreferrer" aria-label="Open GitHub repository" variant="outline" size="sm" href="https://github.com/newcapec/neui">
@@ -993,7 +993,7 @@ export function Pattern() {
                   <path fill="currentColor" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path>
                 </svg>
                 <span className="tabular-nums text-white/68 text-xs w-8">
-                  3.2K
+                  {"3.2K"}
                 </span>
               </Button>
             </nav>
@@ -1004,19 +1004,19 @@ export function Pattern() {
             <div className="flex flex-col gap-8 items-center justify-center md:-mt-30 md:gap-11">
               <div className="bg-white/6 border border-white/10 font-semibold gap-2 inline-flex items-center px-3 py-1.5 rounded-full sm:text-sm text-white/84 text-xs">
                 <span className="bg-indigo-400 rounded-full size-2"></span>
-                Early access 40% discount
+                {"Early access 40% discount"}
               </div>
               <div className="space-y-6">
                 <h1 className="font-semibold leading-[1.3] lg:text-[3.15rem] max-w-5xl md:leading-tight md:text-[3rem] mx-auto text-balance text-xl">
                   <span className="block">
-                    A design-forward toolkit for
+                    {"A design-forward toolkit for"}
                   </span>
                   <span className="block">
-                    interfaces that stand out
+                    {"interfaces that stand out"}
                   </span>
                 </h1>
                 <p className="leading-7 max-w-xl md:max-w-2xl mx-auto sm:text-lg text-balance text-sm text-white/74">
-                  Go beyond generic defaults and ship polished, high-end products faster without rebuilding the basics.
+                  {"Go beyond generic defaults and ship polished, high-end products faster without rebuilding the basics."}
                 </p>
                 <div className="-mt-3 flex justify-center">
                   <div className="max-w-3xl overflow-hidden px-0 py-4 relative rounded-4xl sm:rounded-full w-full">
@@ -1031,7 +1031,7 @@ export function Pattern() {
                           <path d="M8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0z"></path>
                           <path d="M8.916 4.674a1 1 0 0 0 0 1.414l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z"></path>
                         </svg>
-                        1000+ UI Blocks
+                        {"1000+ UI Blocks"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
                         <svg className="lucide lucide-sparkles size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1040,7 +1040,7 @@ export function Pattern() {
                           <path d="M22 4h-4"></path>
                           <circle cx="4" cy="20" r="2"></circle>
                         </svg>
-                        2200+ Animated Icons
+                        {"2200+ Animated Icons"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
                         <svg className="lucide lucide-workflow size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1048,7 +1048,7 @@ export function Pattern() {
                           <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
                           <rect width="8" height="8" x="13" y="13" rx="2"></rect>
                         </svg>
-                        30+ Templates
+                        {"30+ Templates"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
                         <svg className="lucide lucide-bot-message-square size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1059,7 +1059,7 @@ export function Pattern() {
                           <path d="M20 16a2 2 0 0 1-2 2H8.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 4 20.286V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"></path>
                           <path d="M9 11v2"></path>
                         </svg>
-                        AI Tooling
+                        {"AI Tooling"}
                       </span>
                     </div>
                   </div>
@@ -1072,18 +1072,18 @@ export function Pattern() {
                   <form className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
                     <div className="hidden" aria-hidden="true">
                       <label htmlFor="waitlist-company">
-                        Company
+                        {"Company"}
                       </label>
                       <input id="waitlist-company" type="text" tabIndex="-1" autoComplete="off" name="company" value="" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <label className="sr-only" htmlFor="waitlist-email">
-                        Email Address
+                        {"Email Address"}
                       </label>
                       <Input className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent bg-transparent! border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 file:font-medium file:h-6 file:text-sm focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-10 md:text-sm outline-none! px-5 py-1 rounded-full shadow-none! text-base transition-colors" type="email" id="waitlist-email" inputmode="email" autoComplete="email" autocapitalize="none" autocorrect="off" spellCheck="false" placeholder="Enter your email" required name="email" value=""></Input>
                     </div>
                     <button className="active:translate-y-px bg-indigo-600 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-background font-medium gap-1.5 h-10 hover:bg-indigo-700 inline-flex items-center justify-center px-4 rounded-full shadow-black/30 shadow-lg shrink-0 sm:min-w-36 sm:w-auto text-sm text-white touch-manipulation transition-[background-color,transform]" type="submit">
-                      Join Waitlist
+                      {"Join Waitlist"}
                       <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
@@ -1092,7 +1092,7 @@ export function Pattern() {
                   </form>
                 </div>
                 <div className="font-normal mt-4 text-balance text-center text-white/82 text-xs">
-                  Waitlist members get 40% off at launch in the coming weeks.
+                  {"Waitlist members get 40% off at launch in the coming weeks."}
                 </div>
               </div>
             </div>
@@ -1111,10 +1111,10 @@ export function Pattern() {
           </div>
           <div className="flex flex-col">
             <div className="font-bold tabular-nums text-sm text-white">
-              2,431
+              {"2,431"}
             </div>
             <div className="font-medium text-white/42 text-xs">
-              People waiting
+              {"People waiting"}
             </div>
           </div>
         </div>

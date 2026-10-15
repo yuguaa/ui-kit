@@ -11,53 +11,53 @@ export function Pattern() {
           <FramePanel className="p-3.5 rounded-lg space-y-5">
             <div className="flex gap-0.5 items-baseline">
               <span className="leading-none text-[26px]">
-                72
+                {"72"}
               </span>
               <span className="leading-none text-lg text-muted-foreground/50">
-                bpm
+                {"bpm"}
               </span>
             </div>
             <span className="leading-relaxed text-muted-foreground text-sm">
-              Heart Rate
+              {"Heart Rate"}
             </span>
           </FramePanel>
           <FramePanel className="p-3.5 rounded-lg space-y-5">
             <div className="flex gap-0.5 items-baseline">
               <span className="leading-none text-[26px]">
-                6.2
+                {"6.2"}
               </span>
               <span className="leading-none text-lg text-muted-foreground/50">
-                km
+                {"km"}
               </span>
             </div>
             <span className="leading-relaxed text-muted-foreground text-sm">
-              Distance Run
+              {"Distance Run"}
             </span>
           </FramePanel>
           <FramePanel className="p-3.5 rounded-lg space-y-5">
             <div className="flex gap-0.5 items-baseline">
               <span className="leading-none text-[26px]">
-                480
+                {"480"}
               </span>
               <span className="leading-none text-lg text-muted-foreground/50">
-                kcal
+                {"kcal"}
               </span>
             </div>
             <span className="leading-relaxed text-muted-foreground text-sm">
-              Calories Burned
+              {"Calories Burned"}
             </span>
           </FramePanel>
           <FramePanel className="p-3.5 rounded-lg space-y-5">
             <div className="flex gap-0.5 items-baseline">
               <span className="leading-none text-[26px]">
-                120
+                {"120"}
               </span>
               <span className="leading-none text-lg text-muted-foreground/50">
-                reps
+                {"reps"}
               </span>
             </div>
             <span className="leading-relaxed text-muted-foreground text-sm">
-              Strength Reps
+              {"Strength Reps"}
             </span>
           </FramePanel>
         </div>

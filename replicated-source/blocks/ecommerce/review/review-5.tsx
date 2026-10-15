@@ -19,21 +19,23 @@ export function Pattern() {
       <section className="max-w-6xl md:py-14 mx-auto px-4 py-10 sm:px-6 w-full" aria-labelledby="reviews-heading">
         <header className="flex flex-col gap-2 items-center text-center">
           <span className="font-medium text-muted-foreground text-xs tracking-[0.22em] uppercase">
-            Reviews
+            {"Reviews"}
           </span>
           <h2 className="font-semibold md:leading-tight md:text-[28px] text-2xl text-foreground tracking-tight" id="reviews-heading">
-            Loved By Sound Obsessives
+            {"Loved By Sound Obsessives"}
           </h2>
           <p className="leading-relaxed max-w-xl text-muted-foreground text-sm">
             <a className="font-medium hover:text-primary hover:underline tabular-nums text-foreground transition-colors underline-offset-4" href="#all-reviews" aria-label="Read all 1,284 verified reviews for Halden Wave Pro">
-              1,284 verified buyers
+              {"1,284 verified buyers"}
             </a>
-            on what life with the Halden Wave Pro actually sounds like.
+            {"on what life with the Halden Wave Pro actually sounds like."}
           </p>
         </header>
         <Carousel className="md:mt-10 mt-8" role="region" aria-roledescription="carousel" aria-label="Customer testimonials for Halden Wave Pro">
+          <Carousel>
           <CarouselContent>
             <div className="-ml-4 flex" style={{transform: "translate3d(-1867px, 0px, 0px)"}}>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(2240px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -42,7 +44,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Cancellation handled the JFK engine wash without that pressurized ear feeling. Easy to recommend.”
+                        {"“Cancellation handled the JFK engine wash without that pressurized ear feeling. Easy to recommend.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -50,11 +52,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Mateo Halberg">
-                            Mateo Halberg
+                            {"Mateo Halberg"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Frequent flier
+                              {"Frequent flier"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -118,6 +120,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(2240px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -126,7 +130,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Codec switching is invisible between phone and laptop. The companion app remembers EQ per source.”
+                        {"“Codec switching is invisible between phone and laptop. The companion app remembers EQ per source.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -134,11 +138,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Yuki Tanaka">
-                            Yuki Tanaka
+                            {"Yuki Tanaka"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Product designer
+                              {"Product designer"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -202,6 +206,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -210,7 +216,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Battery beat the 38 hour claim on heavy ANC use. Fast charge brings them back in twelve minutes.”
+                        {"“Battery beat the 38 hour claim on heavy ANC use. Fast charge brings them back in twelve minutes.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -218,11 +224,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Priya Iyer">
-                            Priya Iyer
+                            {"Priya Iyer"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Researcher
+                              {"Researcher"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -286,6 +292,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -294,7 +302,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Clamping force is gentler than the heavier comparable models. Sits behind glasses without pinch.”
+                        {"“Clamping force is gentler than the heavier comparable models. Sits behind glasses without pinch.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -302,11 +310,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Jonas Brandt">
-                            Jonas Brandt
+                            {"Jonas Brandt"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Producer
+                              {"Producer"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -370,6 +378,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -378,7 +388,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Cups pop off without tools and replacement earpads arrived inside a week with no questions asked.”
+                        {"“Cups pop off without tools and replacement earpads arrived inside a week with no questions asked.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -386,11 +396,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Camille Avery">
-                            Camille Avery
+                            {"Camille Avery"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Audio engineer
+                              {"Audio engineer"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -454,6 +464,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="default">
@@ -462,7 +474,7 @@ export function Pattern() {
                         <path d="M0 22V12C0 5.4 5.4 0 12 0v4c-4.4 0-8 3.6-8 8h8v10H0zm20 0V12c0-6.6 5.4-12 12-12v4c-4.4 0-8 3.6-8 8h8v10H20z"></path>
                       </svg>
                       <blockquote className="leading-relaxed text-base text-foreground text-pretty">
-                        “Holds the low end without smearing the strings. Stage feels wide for a closed-back, not gimmicky.”
+                        {"“Holds the low end without smearing the strings. Stage feels wide for a closed-back, not gimmicky.”"}
                       </blockquote>
                       <footer className="flex gap-3 items-center mt-auto pt-2">
                         <Avatar size="default">
@@ -470,11 +482,11 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Aki Okafor">
-                            Aki Okafor
+                            {"Aki Okafor"}
                           </a>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
                             <span className="truncate">
-                              Composer
+                              {"Composer"}
                             </span>
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <Rating>
@@ -538,8 +550,10 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
             </div>
           </CarouselContent>
+          </Carousel>
         </Carousel>
         <div className="flex flex-col gap-3 items-center md:mt-8 mt-6">
           <ul className="flex gap-1.5 items-center" role="list">

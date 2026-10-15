@@ -41,7 +41,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Dataset preview
+        {"Dataset preview"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -51,7 +51,7 @@ export function Pattern() {
             <path d="M21 9H3"></path>
             <path d="M21 15H3"></path>
           </svg>
-          Preview Data
+          {"Preview Data"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -62,7 +62,7 @@ export function Pattern() {
         <div className="flex gap-2 items-center justify-between">
           <div className="flex gap-1 items-center min-w-0">
             <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-              CON-102
+              {"CON-102"}
             </span>
             <Tooltip>
             <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy connection ID" id="base-ui-_r_4_" baseUiTooltipTrigger="">
@@ -91,24 +91,24 @@ export function Pattern() {
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex flex-wrap gap-2 items-center min-w-0">
               <SheetTitle className="min-w-0 truncate" id="base-ui-_r_5_">
-                stripe-live
+                {"stripe-live"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Healthy
+                {"Healthy"}
               </Badge>
             </div>
             <SheetDescription id="base-ui-_r_6_">
               <span className="flex flex-wrap gap-1.5 items-center min-w-0">
                 <span>
-                  Stripe REST API
+                  {"Stripe REST API"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                  Production
+                  {"Production"}
                 </Badge>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  4 of 6 datasets linked
+                  {"4 of 6 datasets linked"}
                 </span>
               </span>
             </SheetDescription>
@@ -130,13 +130,13 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="font-mono truncate">
-                  charges
+                  {"charges"}
                 </span>
               </span>
             </SelectValue>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -150,7 +150,7 @@ export function Pattern() {
                     <path d="M21 9H3"></path>
                     <path d="M21 15H3"></path>
                   </svg>
-                  Rows
+                  {"Rows"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                   <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
@@ -158,7 +158,7 @@ export function Pattern() {
                     <path d="M9 3v18"></path>
                     <path d="M15 3v18"></path>
                   </svg>
-                  Schema
+                  {"Schema"}
                 </ToggleGroupItem>
               </ToggleGroup>
               <div className="flex gap-3 items-center">
@@ -168,7 +168,7 @@ export function Pattern() {
                   </Switch>
                   <input id="sheet-24-mask" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="text-xs" htmlFor="sheet-24-mask" id="sheet-24-mask-label">
-                    Mask PII
+                    {"Mask PII"}
                   </Label>
                 </div>
                 <div className="flex gap-1 items-center">
@@ -206,7 +206,7 @@ export function Pattern() {
                               <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                             </svg>
                           </span>
-                          id
+                          {"id"}
                         </span>
                       </TableHead>
                       <TableHead className="first:ps-4 last:pe-4 ps-3">
@@ -218,7 +218,7 @@ export function Pattern() {
                               <path d="M6 12h.01M18 12h.01"></path>
                             </svg>
                           </span>
-                          amount
+                          {"amount"}
                         </span>
                       </TableHead>
                       <TableHead className="first:ps-4 last:pe-4 ps-3">
@@ -233,7 +233,7 @@ export function Pattern() {
                               <path d="M8 19h13"></path>
                             </svg>
                           </span>
-                          currency
+                          {"currency"}
                         </span>
                       </TableHead>
                       <TableHead className="first:ps-4 last:pe-4 ps-3">
@@ -248,7 +248,7 @@ export function Pattern() {
                               <path d="M8 19h13"></path>
                             </svg>
                           </span>
-                          status
+                          {"status"}
                         </span>
                       </TableHead>
                       <TableHead className="first:ps-4 last:pe-4 ps-3">
@@ -260,7 +260,7 @@ export function Pattern() {
                               <path d="M9 20h6"></path>
                             </svg>
                           </span>
-                          receipt_email
+                          {"receipt_email"}
                           <span className="[&_svg:not([class*=size-])]:size-3 flex text-muted-foreground">
                             <svg className="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
                               <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
@@ -281,7 +281,7 @@ export function Pattern() {
                               <circle cx="16" cy="16" r="6"></circle>
                             </svg>
                           </span>
-                          created
+                          {"created"}
                         </span>
                       </TableHead>
                     </TableRow>
@@ -290,22 +290,22 @@ export function Pattern() {
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_Ekbqd9MUMk
+                          {"ch_Ekbqd9MUMk"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          635.92 EUR
+                          {"635.92 EUR"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          eur
+                          {"eur"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -314,34 +314,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          l•••••@example.org
+                          {"l•••••@example.org"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:19:58
+                          {"2026-09-29 14:19:58"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_dnfxiEKXkQ
+                          {"ch_dnfxiEKXkQ"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          7,726.39 GBP
+                          {"7,726.39 GBP"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          gbp
+                          {"gbp"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          pending
+                          {"pending"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -350,34 +350,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          h•••••@example.org
+                          {"h•••••@example.org"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:19:42
+                          {"2026-09-29 14:19:42"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_yenN4DnMcC
+                          {"ch_yenN4DnMcC"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          19,371.04 EUR
+                          {"19,371.04 EUR"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          eur
+                          {"eur"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -386,34 +386,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          l•••••@example.org
+                          {"l•••••@example.org"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:19:24
+                          {"2026-09-29 14:19:24"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_kDe5FJTF6X
+                          {"ch_kDe5FJTF6X"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          17,572.91 USD
+                          {"17,572.91 USD"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          usd
+                          {"usd"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -422,34 +422,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          j•••••@example.com
+                          {"j•••••@example.com"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:19:08
+                          {"2026-09-29 14:19:08"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_Wtkg3HNrAi
+                          {"ch_Wtkg3HNrAi"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          4,144.14 USD
+                          {"4,144.14 USD"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          usd
+                          {"usd"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          failed
+                          {"failed"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -458,34 +458,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          j•••••@example.com
+                          {"j•••••@example.com"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:19:00
+                          {"2026-09-29 14:19:00"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_nGfxSy6Hru
+                          {"ch_nGfxSy6Hru"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          16,189.68 EUR
+                          {"16,189.68 EUR"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          eur
+                          {"eur"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -494,34 +494,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          l•••••@example.org
+                          {"l•••••@example.org"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:18:42
+                          {"2026-09-29 14:18:42"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_w62BykePVJ
+                          {"ch_w62BykePVJ"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          16,850.16 EUR
+                          {"16,850.16 EUR"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          eur
+                          {"eur"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -530,34 +530,34 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          r•••••@example.net
+                          {"r•••••@example.net"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:18:28
+                          {"2026-09-29 14:18:28"}
                         </span>
                       </TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          ch_bJAN7bUA3u
+                          {"ch_bJAN7bUA3u"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums text-right whitespace-nowrap">
                         <span>
-                          13,499.09 GBP
+                          {"13,499.09 GBP"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          gbp
+                          {"gbp"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          succeeded
+                          {"succeeded"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
@@ -566,12 +566,12 @@ export function Pattern() {
                             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
-                          a•••••@example.com
+                          {"a•••••@example.com"}
                         </span>
                       </TableCell>
                       <TableCell className="first:ps-4 font-mono last:pe-4 ps-3 tabular-nums whitespace-nowrap">
                         <span>
-                          2026-09-29 14:18:13
+                          {"2026-09-29 14:18:13"}
                         </span>
                       </TableCell>
                     </TableRow>
@@ -581,7 +581,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-row flex-wrap gap-(--frame-panel-footer-gap) gap-x-2 gap-y-1 items-center px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
               <p className="tabular-nums text-muted-foreground text-xs" aria-live="polite">
-                8 of 7,120,554 rows, sampled 14:20 UTC
+                {"8 of 7,120,554 rows, sampled 14:20 UTC"}
               </p>
             </footer>
           </Frame>

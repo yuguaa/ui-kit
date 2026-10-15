@@ -18,7 +18,7 @@ export function Pattern() {
           <div className="flex flex-col items-stretch md:flex-row overflow-hidden">
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Created
+                {"Created"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <svg className="shrink-0 size-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
@@ -33,27 +33,27 @@ export function Pattern() {
                   </defs>
                 </svg>
                 <span className="text-sm">
-                  Conhodler
+                  {"Conhodler"}
                 </span>
                 <span className="text-muted-foreground text-sm">
-                  24m ago
+                  {"24m ago"}
                 </span>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Status
+                {"Status"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <span className="bg-green-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                 <span className="text-sm">
-                  Ready
+                  {"Ready"}
                 </span>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Mobile
+                {"Mobile"}
               </h3>
               <div className="flex gap-2">
                 <div className="flex gap-1 items-center">
@@ -62,17 +62,17 @@ export function Pattern() {
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span className="text-sm">
-                    49s
+                    {"49s"}
                   </span>
                 </div>
                 <span className="text-muted-foreground text-sm">
-                  24m ago
+                  {"24m ago"}
                 </span>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Email
+                {"Email"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <svg className="lucide lucide-eye size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
@@ -80,13 +80,13 @@ export function Pattern() {
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
                 <span className="text-sm">
-                  Preview
+                  {"Preview"}
                 </span>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Domain
+                {"Domain"}
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
                 <svg className="lucide lucide-globe size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
@@ -95,10 +95,10 @@ export function Pattern() {
                   <path d="M2 12h20"></path>
                 </svg>
                 <span className="text-sm">
-                  neui.io
+                  {"neui.io"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                  Main
+                  {"Main"}
                 </Badge>
               </div>
             </div>
@@ -270,7 +270,7 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2 justify-between md:gap-4 relative z-10">
                 <h3 className="m-0 text-muted-foreground text-sm">
-                  Team
+                  {"Team"}
                 </h3>
                 <AvatarGroup>
                   <Avatar className="size-6" size="default">
@@ -283,7 +283,7 @@ export function Pattern() {
                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="border size-6 text-[10px]">
-                    +1
+                    {"+1"}
                   </AvatarGroupCount>
                 </AvatarGroup>
               </div>

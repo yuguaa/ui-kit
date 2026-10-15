@@ -13,27 +13,27 @@ export function Pattern() {
           <div className="flex flex-col items-stretch md:flex-row overflow-hidden">
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="font-normal m-0 text-muted-foreground text-xs">
-                Applied for
+                {"Applied for"}
               </h3>
               <span className="text-xs">
-                Business Analyst
+                {"Business Analyst"}
               </span>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="font-normal m-0 text-muted-foreground text-xs">
-                Location
+                {"Location"}
               </h3>
               <span className="text-xs">
-                Amsterdam, NL
+                {"Amsterdam, NL"}
               </span>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="font-normal m-0 text-muted-foreground text-xs">
-                Mobile
+                {"Mobile"}
               </h3>
               <div className="-mb-1 flex gap-1.5 items-center">
                 <span className="text-xs">
-                  +31 6 9876 54 32
+                  {"+31 6 9876 54 32"}
                 </span>
                 <Button className="[&_svg]:opacity-60 hover:[&_svg]:opacity-100 transition-opacity" type="button" tabIndex="0" aria-label="Copy">
                   <svg className="lucide lucide-square size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -44,11 +44,11 @@ export function Pattern() {
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="font-normal m-0 text-muted-foreground text-xs">
-                Email
+                {"Email"}
               </h3>
               <div className="-mb-1 flex gap-1.5 items-center">
                 <span className="text-xs">
-                  jeroen.doe@neui.io
+                  {"jeroen.doe@neui.io"}
                 </span>
                 <Button className="[&_svg]:opacity-60 hover:[&_svg]:opacity-100 transition-opacity" type="button" tabIndex="0" aria-label="Copy">
                   <svg className="lucide lucide-square size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -225,26 +225,26 @@ export function Pattern() {
               </div>
               <div className="flex flex-1 flex-col gap-2 justify-between md:gap-4 min-h-0 relative w-full z-10">
                 <h3 className="font-normal m-0 text-muted-foreground text-xs">
-                  Skills
+                  {"Skills"}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
                     <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                     </svg>
-                    Analysis
+                    {"Analysis"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
                     <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                       <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                     </svg>
-                    Scrum
+                    {"Scrum"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
                     <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                       <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                     </svg>
-                    UX Research
+                    {"UX Research"}
                   </Badge>
                 </div>
               </div>

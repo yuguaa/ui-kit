@@ -31,20 +31,20 @@ export function Pattern() {
             <div className="flex flex-col gap-px min-w-0">
               <div className="flex gap-2 h-5 items-center min-w-0">
                 <div className="[text-box:trim-both_cap_alphabetic] font-semibold overflow-x-clip text-ellipsis text-sm whitespace-nowrap">
-                  Run Durations
+                  {"Run Durations"}
                 </div>
               </div>
               <div className="text-muted-foreground text-sm">
                 <span className="flex flex-wrap gap-x-1.5 items-center max-sm:flex-col max-sm:items-start min-w-0">
                   <span className="flex h-5 items-center min-w-0">
                     <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                      Refresh fraud model features
+                      {"Refresh fraud model features"}
                     </span>
                   </span>
                   <span className="bg-muted-foreground/40 max-sm:hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex h-5 items-center">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Hourly at :00 UTC
+                      {"Hourly at :00 UTC"}
                     </span>
                   </span>
                 </span>
@@ -55,12 +55,12 @@ export function Pattern() {
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Runs shown" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Last 20 runs" extracted="1">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  20
+                  {"20"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Last 50 runs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  50
+                  {"50"}
                 </span>
               </ToggleGroupItem>
             </ToggleGroup>
@@ -118,13 +118,13 @@ export function Pattern() {
             <div className="@xl/slo:first:ps-0 @xl/slo:last:pe-0 @xl/slo:px-5 flex flex-col gap-2 min-w-0">
               <dt className="flex h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Success Rate
+                  {"Success Rate"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="flex h-6 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-base text-foreground whitespace-nowrap">
-                    95.0%
+                    {"95.0%"}
                   </span>
                 </span>
                 <span className="flex gap-3 h-5 items-center min-w-0">
@@ -134,10 +134,10 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      +5.5 pts
+                      {"+5.5 pts"}
                     </span>
                     <span className="sr-only">
-                      , better than the previous 20 runs
+                      {", better than the previous 20 runs"}
                     </span>
                   </span>
                   <svg className="flex-1 h-5 min-w-0 overflow-visible text-muted-foreground" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
@@ -150,13 +150,13 @@ export function Pattern() {
             <div className="@xl/slo:first:ps-0 @xl/slo:last:pe-0 @xl/slo:px-5 flex flex-col gap-2 min-w-0">
               <dt className="flex h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  p50 Duration
+                  {"p50 Duration"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="flex h-6 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-base text-foreground whitespace-nowrap">
-                    8m 17s
+                    {"8m 17s"}
                   </span>
                 </span>
                 <span className="flex gap-3 h-5 items-center min-w-0">
@@ -166,10 +166,10 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      +36s
+                      {"+36s"}
                     </span>
                     <span className="sr-only">
-                      , worse than the previous 20 runs
+                      {", worse than the previous 20 runs"}
                     </span>
                   </span>
                   <svg className="flex-1 h-5 min-w-0 overflow-visible text-muted-foreground" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
@@ -182,13 +182,13 @@ export function Pattern() {
             <div className="@xl/slo:first:ps-0 @xl/slo:last:pe-0 @xl/slo:px-5 flex flex-col gap-2 min-w-0">
               <dt className="flex h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  p95 Duration
+                  {"p95 Duration"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="flex h-6 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-base text-foreground whitespace-nowrap">
-                    11m 33s
+                    {"11m 33s"}
                   </span>
                 </span>
                 <span className="flex gap-3 h-5 items-center min-w-0">
@@ -198,10 +198,10 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      +3m 31s
+                      {"+3m 31s"}
                     </span>
                     <span className="sr-only">
-                      , worse than the previous 20 runs
+                      {", worse than the previous 20 runs"}
                     </span>
                   </span>
                   <svg className="flex-1 h-5 min-w-0 overflow-visible text-muted-foreground" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
@@ -214,13 +214,13 @@ export function Pattern() {
             <div className="@xl/slo:first:ps-0 @xl/slo:last:pe-0 @xl/slo:px-5 flex flex-col gap-2 min-w-0">
               <dt className="flex h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Timeout Budget
+                  {"Timeout Budget"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="flex h-6 items-center">
                   <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-base text-foreground whitespace-nowrap">
-                    77.0%
+                    {"77.0%"}
                   </span>
                 </span>
                 <span className="flex gap-3 h-5 items-center min-w-0">
@@ -230,10 +230,10 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      +23.5 pts
+                      {"+23.5 pts"}
                     </span>
                     <span className="sr-only">
-                      , worse than the previous 20 runs
+                      {", worse than the previous 20 runs"}
                     </span>
                   </span>
                   <svg className="flex-1 h-5 min-w-0 overflow-visible text-muted-foreground" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
@@ -254,15 +254,15 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Succeeded
+                  {"Succeeded"}
                 </span>
               </Badge>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-foreground">
-                RUN-58418
+                {"RUN-58418"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                Oct 13, 09:00 UTC
+                {"Oct 13, 09:00 UTC"}
               </span>
             </span>
             <span className="flex gap-3 h-5 items-center">
@@ -280,10 +280,10 @@ export function Pattern() {
                   <rect width="12" height="12" rx="2.5" fill="url(#r10-queue-succeeded)"></rect>
                 </svg>
                 <span className="sr-only">
-                  Queue wait
+                  {"Queue wait"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                  40s
+                  {"40s"}
                 </span>
               </span>
               <span className="flex gap-1.5 items-center">
@@ -297,10 +297,10 @@ export function Pattern() {
                   <rect width="12" height="12" rx="2.5" fill="url(#r11-execute-succeeded)"></rect>
                 </svg>
                 <span className="sr-only">
-                  Execute
+                  {"Execute"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                  6m 40s
+                  {"6m 40s"}
                 </span>
               </span>
               <span className="flex gap-1.5 items-center">
@@ -314,31 +314,21 @@ export function Pattern() {
                   <rect width="12" height="12" rx="2.5" fill="url(#r12-teardown-succeeded)"></rect>
                 </svg>
                 <span className="sr-only">
-                  Teardown
+                  {"Teardown"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                  41s
+                  {"41s"}
                 </span>
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-foreground text-sm">
-                8m 01s
+                {"8m 01s"}
               </span>
             </span>
           </div>
           <div className="[&_.recharts-area,&_.recharts-line]:duration-200 [&_.recharts-area,&_.recharts-line]:transition-[opacity,visibility] [&_.recharts-reference-line]:duration-200 [&_.recharts-reference-line]:transition-[opacity,visibility] [&_.recharts-surface]:cursor-pointer [&_[data-status]]:duration-200 [&_[data-status]]:transition-opacity [&_g]:outline-hidden [-webkit-tap-highlight-color:transparent] data-[band=off]:[&_.recharts-area,&_.recharts-line]:invisible data-[band=off]:[&_.recharts-area,&_.recharts-line]:opacity-0 data-[show-failed=off]:[&_[data-status=failed]]:opacity-15 data-[show-running=off]:[&_[data-status=running]]:opacity-15 data-[show-skipped=off]:[&_[data-status=skipped]]:opacity-15 data-[show-succeeded=off]:[&_[data-status=succeeded]]:opacity-15 data-[show-timed-out=off]:[&_[data-status=timedOut]]:opacity-15 data-[timeout=off]:[&_.recharts-reference-line]:invisible data-[timeout=off]:[&_.recharts-reference-line]:opacity-0 group/plot has-[.recharts-surface:focus-visible]:outline-2 motion-reduce:[&_*]:transition-none outline-offset-4 outline-ring/50 w-full" data-band="on" data-outliers="on" data-deploys="on" data-timeout="on" data-show-succeeded="on" data-show-failed="on" data-show-timed-out="on" data-show-skipped="on" data-show-running="on">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-52 justify-center sm:h-60 text-xs w-full" data-chart="chart-_r_15_">
-              <style>{`
- [data-chart=chart-_r_15_] {
-  --color-total: var(--primary);
-  --color-band: var(--muted-foreground);
-}
-
-
-.dark [data-chart=chart-_r_15_] {
-  --color-total: var(--primary);
-  --color-band: var(--muted-foreground);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_15_] {\n  --color-total: var(--primary);\n  --color-band: var(--muted-foreground);\n}\n\n\n.dark [data-chart=chart-_r_15_] {\n  --color-total: var(--primary);\n  --color-band: var(--muted-foreground);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="726" height="240" style={{position: "relative", cursor: "default", width: "726px", height: "240px"}}>
@@ -346,7 +336,7 @@ export function Pattern() {
                     <svg className="recharts-surface" aria-label="Run durations for Refresh fraud model features" role="application" tabIndex="0" width="726" height="240" viewBox="0 0 726 240" style={{width: "100%", height: "100%", display: "block"}}>
                       <title></title>
                       <desc>
-                        Each run stacks its queue, execute and teardown time in its outcome tone; arrow keys move through runs and Enter opens one.
+                        {"Each run stacks its queue, execute and teardown time in its outcome tone; arrow keys move through runs and Enter opens one."}
                       </desc>
                       <g className="recharts-zIndex-layer_-100" tabIndex="-1">
                         <g className="recharts-cartesian-grid">
@@ -805,7 +795,7 @@ export function Pattern() {
                           <g role="img" aria-label="Deploy v2.14.0 before RUN-58408">
                             <line x1="343.5" x2="343.5" y1="4" y2="210" stroke="var(--foreground)" strokeOpacity="0.55" strokeDasharray="2 2"></line>
                             <text className="fill-foreground font-medium tabular-nums" x="349.5" y="6" dy="0.71em" textAnchor="start" stroke="var(--card)" strokeWidth="4" paint-order="stroke">
-                              v2.14.0
+                              {"v2.14.0"}
                             </text>
                           </g>
                         </g>
@@ -862,7 +852,7 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="118.25" y="224" dy="0.71em" textAnchor="middle">
-                              16:00
+                              {"16:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -876,7 +866,7 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="256.25" y="224" dy="0.71em" textAnchor="middle">
-                              20:00
+                              {"20:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -890,7 +880,7 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="394.25" y="224" dy="0.71em" textAnchor="middle">
-                              Oct 13
+                              {"Oct 13"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -904,7 +894,7 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="532.25" y="224" dy="0.71em" textAnchor="middle">
-                              04:00
+                              {"04:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -918,7 +908,7 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="670.25" y="224" dy="0.71em" textAnchor="middle">
-                              08:00
+                              {"08:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -929,28 +919,28 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="32" orientation="left" height="206" stroke="none" x="24" y="210" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                0
+                                {"0"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="32" orientation="left" height="206" stroke="none" x="24" y="147.5757575757576" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                5m
+                                {"5m"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="32" orientation="left" height="206" stroke="none" x="24" y="85.15151515151517" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                10m
+                                {"10m"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="32" orientation="left" height="206" stroke="none" x="24" y="22.72727272727276" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                15m
+                                {"15m"}
                               </tspan>
                             </text>
                           </g>
@@ -961,559 +951,560 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
           <div className="sr-only">
             <table>
               <caption>
-                The last 20 runs of Refresh fraud model features, oldest first
+                {"The last 20 runs of Refresh fraud model features, oldest first"}
               </caption>
               <thead>
                 <tr>
                   <th scope="col">
-                    Run
+                    {"Run"}
                   </th>
                   <th scope="col">
-                    Started
+                    {"Started"}
                   </th>
                   <th scope="col">
-                    Status
+                    {"Status"}
                   </th>
                   <th scope="col">
-                    Duration
+                    {"Duration"}
                   </th>
                   <th scope="col">
-                    Queue wait
+                    {"Queue wait"}
                   </th>
                   <th scope="col">
-                    Execute
+                    {"Execute"}
                   </th>
                   <th scope="col">
-                    Teardown
+                    {"Teardown"}
                   </th>
                   <th scope="col">
-                    Outlier
+                    {"Outlier"}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">
-                    RUN-58399
+                    {"RUN-58399"}
                   </th>
                   <td>
-                    Oct 12, 14:00 UTC
+                    {"Oct 12, 14:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    7m 36s
+                    {"7m 36s"}
                   </td>
                   <td>
-                    58s
+                    {"58s"}
                   </td>
                   <td>
-                    6m 02s
+                    {"6m 02s"}
                   </td>
                   <td>
-                    36s
+                    {"36s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58400
+                    {"RUN-58400"}
                   </th>
                   <td>
-                    Oct 12, 15:00 UTC
+                    {"Oct 12, 15:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 16s
+                    {"8m 16s"}
                   </td>
                   <td>
-                    1m 08s
+                    {"1m 08s"}
                   </td>
                   <td>
-                    6m 29s
+                    {"6m 29s"}
                   </td>
                   <td>
-                    39s
+                    {"39s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58401
+                    {"RUN-58401"}
                   </th>
                   <td>
-                    Oct 12, 16:00 UTC
+                    {"Oct 12, 16:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    7m 25s
+                    {"7m 25s"}
                   </td>
                   <td>
-                    42s
+                    {"42s"}
                   </td>
                   <td>
-                    5m 59s
+                    {"5m 59s"}
                   </td>
                   <td>
-                    44s
+                    {"44s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58402
+                    {"RUN-58402"}
                   </th>
                   <td>
-                    Oct 12, 17:00 UTC
+                    {"Oct 12, 17:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 04s
+                    {"8m 04s"}
                   </td>
                   <td>
-                    48s
+                    {"48s"}
                   </td>
                   <td>
-                    6m 31s
+                    {"6m 31s"}
                   </td>
                   <td>
-                    45s
+                    {"45s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58403
+                    {"RUN-58403"}
                   </th>
                   <td>
-                    Oct 12, 18:00 UTC
+                    {"Oct 12, 18:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    7m 39s
+                    {"7m 39s"}
                   </td>
                   <td>
-                    46s
+                    {"46s"}
                   </td>
                   <td>
-                    6m 13s
+                    {"6m 13s"}
                   </td>
                   <td>
-                    40s
+                    {"40s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58404
+                    {"RUN-58404"}
                   </th>
                   <td>
-                    Oct 12, 19:00 UTC
+                    {"Oct 12, 19:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    7m 58s
+                    {"7m 58s"}
                   </td>
                   <td>
-                    1m 03s
+                    {"1m 03s"}
                   </td>
                   <td>
-                    6m 18s
+                    {"6m 18s"}
                   </td>
                   <td>
-                    37s
+                    {"37s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58405
+                    {"RUN-58405"}
                   </th>
                   <td>
-                    Oct 12, 20:00 UTC
+                    {"Oct 12, 20:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    7m 09s
+                    {"7m 09s"}
                   </td>
                   <td>
-                    48s
+                    {"48s"}
                   </td>
                   <td>
-                    5m 43s
+                    {"5m 43s"}
                   </td>
                   <td>
-                    38s
+                    {"38s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58406
+                    {"RUN-58406"}
                   </th>
                   <td>
-                    Oct 12, 21:00 UTC
+                    {"Oct 12, 21:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 04s
+                    {"8m 04s"}
                   </td>
                   <td>
-                    55s
+                    {"55s"}
                   </td>
                   <td>
-                    6m 22s
+                    {"6m 22s"}
                   </td>
                   <td>
-                    47s
+                    {"47s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58407
+                    {"RUN-58407"}
                   </th>
                   <td>
-                    Oct 12, 22:00 UTC
+                    {"Oct 12, 22:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 12s
+                    {"8m 12s"}
                   </td>
                   <td>
-                    54s
+                    {"54s"}
                   </td>
                   <td>
-                    6m 29s
+                    {"6m 29s"}
                   </td>
                   <td>
-                    49s
+                    {"49s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58408
+                    {"RUN-58408"}
                   </th>
                   <td>
-                    Oct 12, 23:00 UTC
+                    {"Oct 12, 23:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 18s
+                    {"8m 18s"}
                   </td>
                   <td>
-                    35s
+                    {"35s"}
                   </td>
                   <td>
-                    7m 02s
+                    {"7m 02s"}
                   </td>
                   <td>
-                    41s
+                    {"41s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58409
+                    {"RUN-58409"}
                   </th>
                   <td>
-                    Oct 13, 00:00 UTC
+                    {"Oct 13, 00:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 43s
+                    {"8m 43s"}
                   </td>
                   <td>
-                    52s
+                    {"52s"}
                   </td>
                   <td>
-                    7m 14s
+                    {"7m 14s"}
                   </td>
                   <td>
-                    37s
+                    {"37s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58410
+                    {"RUN-58410"}
                   </th>
                   <td>
-                    Oct 13, 01:00 UTC
+                    {"Oct 13, 01:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    11m 22s
+                    {"11m 22s"}
                   </td>
                   <td>
-                    3m 16s
+                    {"3m 16s"}
                   </td>
                   <td>
-                    7m 15s
+                    {"7m 15s"}
                   </td>
                   <td>
-                    51s
+                    {"51s"}
                   </td>
                   <td>
-                    Yes
+                    {"Yes"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58411
+                    {"RUN-58411"}
                   </th>
                   <td>
-                    Oct 13, 02:00 UTC
+                    {"Oct 13, 02:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 43s
+                    {"8m 43s"}
                   </td>
                   <td>
-                    51s
+                    {"51s"}
                   </td>
                   <td>
-                    7m 14s
+                    {"7m 14s"}
                   </td>
                   <td>
-                    38s
+                    {"38s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58412
+                    {"RUN-58412"}
                   </th>
                   <td>
-                    Oct 13, 03:00 UTC
+                    {"Oct 13, 03:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    9m 02s
+                    {"9m 02s"}
                   </td>
                   <td>
-                    1m 00s
+                    {"1m 00s"}
                   </td>
                   <td>
-                    7m 14s
+                    {"7m 14s"}
                   </td>
                   <td>
-                    48s
+                    {"48s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58413
+                    {"RUN-58413"}
                   </th>
                   <td>
-                    Oct 13, 04:00 UTC
+                    {"Oct 13, 04:00 UTC"}
                   </td>
                   <td>
-                    Timed Out
+                    {"Timed Out"}
                   </td>
                   <td>
-                    15m 00s
+                    {"15m 00s"}
                   </td>
                   <td>
-                    31s
+                    {"31s"}
                   </td>
                   <td>
-                    14m 29s
+                    {"14m 29s"}
                   </td>
                   <td>
-                    0s
+                    {"0s"}
                   </td>
                   <td>
-                    Yes
+                    {"Yes"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58414
+                    {"RUN-58414"}
                   </th>
                   <td>
-                    Oct 13, 05:00 UTC
+                    {"Oct 13, 05:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    9m 08s
+                    {"9m 08s"}
                   </td>
                   <td>
-                    43s
+                    {"43s"}
                   </td>
                   <td>
-                    7m 38s
+                    {"7m 38s"}
                   </td>
                   <td>
-                    47s
+                    {"47s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58415
+                    {"RUN-58415"}
                   </th>
                   <td>
-                    Oct 13, 06:00 UTC
+                    {"Oct 13, 06:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 40s
+                    {"8m 40s"}
                   </td>
                   <td>
-                    49s
+                    {"49s"}
                   </td>
                   <td>
-                    6m 59s
+                    {"6m 59s"}
                   </td>
                   <td>
-                    52s
+                    {"52s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58416
+                    {"RUN-58416"}
                   </th>
                   <td>
-                    Oct 13, 07:00 UTC
+                    {"Oct 13, 07:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 35s
+                    {"8m 35s"}
                   </td>
                   <td>
-                    53s
+                    {"53s"}
                   </td>
                   <td>
-                    7m 01s
+                    {"7m 01s"}
                   </td>
                   <td>
-                    41s
+                    {"41s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58417
+                    {"RUN-58417"}
                   </th>
                   <td>
-                    Oct 13, 08:00 UTC
+                    {"Oct 13, 08:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 26s
+                    {"8m 26s"}
                   </td>
                   <td>
-                    59s
+                    {"59s"}
                   </td>
                   <td>
-                    6m 43s
+                    {"6m 43s"}
                   </td>
                   <td>
-                    44s
+                    {"44s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    RUN-58418
+                    {"RUN-58418"}
                   </th>
                   <td>
-                    Oct 13, 09:00 UTC
+                    {"Oct 13, 09:00 UTC"}
                   </td>
                   <td>
-                    Succeeded
+                    {"Succeeded"}
                   </td>
                   <td>
-                    8m 01s
+                    {"8m 01s"}
                   </td>
                   <td>
-                    40s
+                    {"40s"}
                   </td>
                   <td>
-                    6m 40s
+                    {"6m 40s"}
                   </td>
                   <td>
-                    41s
+                    {"41s"}
                   </td>
                   <td>
-                    No
+                    {"No"}
                   </td>
                 </tr>
               </tbody>
@@ -1538,7 +1529,7 @@ export function Pattern() {
                     <rect width="12" height="12" rx="2.5" fill="url(#r16-queue-neutral)"></rect>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Queue wait
+                    {"Queue wait"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center">
@@ -1552,7 +1543,7 @@ export function Pattern() {
                     <rect width="12" height="12" rx="2.5" fill="url(#r17-execute-neutral)"></rect>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Execute
+                    {"Execute"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center">
@@ -1566,7 +1557,7 @@ export function Pattern() {
                     <rect width="12" height="12" rx="2.5" fill="url(#r18-teardown-neutral)"></rect>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Teardown
+                    {"Teardown"}
                   </span>
                 </li>
               </ul>
@@ -1577,7 +1568,7 @@ export function Pattern() {
                     <line x1="0" x2="12" y1="3.5" y2="3.5" stroke="color-mix(in oklab, var(--muted-foreground) 70%, transparent)" strokeDasharray="3 3"></line>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    p50 to p95
+                    {"p50 to p95"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center">
@@ -1585,7 +1576,7 @@ export function Pattern() {
                     <path d="M2.5 4H9.5L6 9Z" fill="var(--foreground)" stroke="var(--card)" strokeWidth="2" paint-order="stroke" strokeLinejoin="round"></path>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Outlier
+                    {"Outlier"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center">
@@ -1593,7 +1584,7 @@ export function Pattern() {
                     <line x1="6" x2="6" y1="0" y2="12" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2"></line>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Deploy
+                    {"Deploy"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center">
@@ -1601,7 +1592,7 @@ export function Pattern() {
                     <line x1="0" x2="12" y1="6" y2="6" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2"></line>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                    Timeout
+                    {"Timeout"}
                   </span>
                 </li>
               </ul>

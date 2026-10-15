@@ -71,7 +71,7 @@ export function Pattern() {
           <Popover>
           <PopoverTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-medium gap-1.5 group/button inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shrink transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false">
             <span className="min-w-0 truncate">
-              Stripe webhook 500s on charge.refunded
+              {"Stripe webhook 500s on charge.refunded"}
             </span>
             <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
@@ -97,7 +97,7 @@ export function Pattern() {
         <DropdownMenu>
         <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_9_" aria-expanded="false">
           <span className="max-w-28 sm:max-w-none truncate">
-            Claude Sonnet 5
+            {"Claude Sonnet 5"}
           </span>
           <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
             <path d="m6 9 6 6 6-6"></path>
@@ -121,21 +121,21 @@ export function Pattern() {
               <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                 <div className="flex gap-2 items-center md:hidden">
                   <h1 className="flex-1 font-semibold min-w-0 text-base tracking-tight truncate">
-                    Stripe webhook 500s on charge.refunded
+                    {"Stripe webhook 500s on charge.refunded"}
                   </h1>
                 </div>
               </MessageScrollerItem>
               <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                 <Marker variant="separator">
                   <MarkerContent>
-                    Yesterday
+                    {"Yesterday"}
                   </MarkerContent>
                 </Marker>
               </MessageScrollerItem>
               <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                 <Marker variant="separator">
                   <MarkerContent>
-                    Earlier turns compacted to save context
+                    {"Earlier turns compacted to save context"}
                   </MarkerContent>
                 </Marker>
               </MessageScrollerItem>
@@ -151,7 +151,7 @@ export function Pattern() {
                       <Bubble variant="muted" data-align="end">
                         <BubbleContent className="space-y-2">
                           <p className="whitespace-pre-wrap">
-                            stripe-webhook.ts is returning 500 on charge.refunded since the 3.4 deploy. 41 events queued. any idea?
+                            {"stripe-webhook.ts is returning 500 on charge.refunded since the 3.4 deploy. 41 events queued. any idea?"}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -159,7 +159,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5 pe-0">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:12
+                          {"9:12"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy message">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -191,25 +191,27 @@ export function Pattern() {
                       <Bubble className="w-full" variant="ghost" data-align="start">
                         <BubbleContent className="space-y-3">
                           <p className="whitespace-pre-wrap">
-                            I read the handler and the last 20 failures in the events table. Every failing payload is a refund on a charge that was created outside a PaymentIntent, so
+                            {"I read the handler and the last 20 failures in the events table. Every failing payload is a refund on a charge that was created outside a PaymentIntent, so"}
                             <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                              payment_intent
+                              {"payment_intent"}
                             </code>
-                            is null. The 3.4 refactor stopped guarding it:
+                            {"is null. The 3.4 refactor stopped guarding it:"}
                           </p>
                           <CodeBlock className="[--code-block-bg:var(--card)] [--code-block-caret-color:var(--primary)] [--code-block-copy-inset:--spacing(2)] [--code-block-copy-top:var(--code-block-copy-inset)] [--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_8%,transparent)] [--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-error-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-expand-clearance:--spacing(9)] [--code-block-fold-width:--spacing(4.5)] [--code-block-font-size:0.8125rem] [--code-block-gutter-gap:--spacing(2.5)] [--code-block-gutter-width:--spacing(9)] [--code-block-header-height:--spacing(9)] [--code-block-highlight-bar:color-mix(in_oklch,var(--primary)_60%,transparent)] [--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_6%,transparent)] [--code-block-info-bg:color-mix(in_oklch,var(--info)_8%,transparent)] [--code-block-line-height:1.5rem] [--code-block-number-pad:var(--code-block-gutter-gap)] [--code-block-padding:--spacing(3)] [--code-block-warning-bg:color-mix(in_oklch,var(--warning)_10%,transparent)] bg-card bg-clip-padding border border-border dark:[--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_12%,transparent)] dark:[--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-error-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_12%,transparent)] dark:[--code-block-info-bg:color-mix(in_oklch,var(--info)_12%,transparent)] dark:[--code-block-warning-bg:color-mix(in_oklch,var(--warning)_14%,transparent)] data-[gutter-channel]:[--code-block-number-pad:calc(var(--code-block-gutter-gap)+var(--code-block-fold-width))] data-[has-diff]:[--code-block-gutter-gap:--spacing(4)] data-[has-header]:[--code-block-copy-top:calc(var(--code-block-header-height)+1px+var(--code-block-copy-inset))] flex flex-col group/code-block min-w-0 relative rounded-(--code-block-radius) style-luma:[--code-block-radius:var(--radius-2xl)] style-lyra:[--code-block-radius:0px] style-maia:[--code-block-radius:var(--radius-2xl)] style-mira:[--code-block-radius:var(--radius-lg)] style-nova:[--code-block-radius:var(--radius-lg)] style-rhea:[--code-block-radius:var(--radius-xl)] style-sera:[--code-block-radius:0px] style-vega:[--code-block-radius:var(--radius-lg)] text-card-foreground text-left w-full" variant="default" foldable="true" gutterChannel="true" hasHeader="true">
                             <CodeBlockHeader>
                               <CodeBlockTitle>
-                                stripe-webhook.ts
+                                {"stripe-webhook.ts"}
                               </CodeBlockTitle>
                               <div className="flex gap-1 items-center ms-auto">
                                 <Tooltip>
                                 <TooltipTrigger className="inline-flex" id="base-ui-_r_i_" baseUiTooltipTrigger="">
+                                  <CodeBlock>
                                   <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" data-position="inline" aria-label="Download file">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                       <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                                     </svg>
                                   </button>
+                                  </CodeBlock>
                                 </TooltipTrigger>
                                 </Tooltip>
                                 <Tooltip>
@@ -234,41 +236,41 @@ export function Pattern() {
                                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="1" id="_r_g_-L1" style={{counterReset: "cb-line 0"}}>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              const
+                                              {"const"}
                                             </span>
                                             <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                              intent
+                                              {"intent"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              =
+                                              {"="}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              event.data.object.payment_intent
+                                              {"event.data.object.payment_intent"}
                                             </span>
                                           </span>
                                         </span>
                                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="2" id="_r_g_-L2" style={{counterReset: "cb-line 1"}}>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              const
+                                              {"const"}
                                             </span>
                                             <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                              order
+                                              {"order"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              =
+                                              {"="}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              await
+                                              {"await"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              orders.
+                                              {"orders."}
                                             </span>
                                             <span style={{"--cb-c": "#6F42C1", "--cb-cd": "#B392F0"}}>
-                                              byIntent
+                                              {"byIntent"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              (intent)
+                                              {"(intent)"}
                                             </span>
                                           </span>
                                         </span>
@@ -280,11 +282,11 @@ export function Pattern() {
                             </ScrollArea>
                           </CodeBlock>
                           <p className="whitespace-pre-wrap">
-                            Line 2 calls
+                            {"Line 2 calls"}
                             <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                              orders.byIntent(null)
+                              {"orders.byIntent(null)"}
                             </code>
-                            , which throws before the handler ever reaches its retry wrapper. The 21 refunds that succeeded in the same window were all on PaymentIntent charges.
+                            {", which throws before the handler ever reaches its retry wrapper. The 21 refunds that succeeded in the same window were all on PaymentIntent charges."}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -292,7 +294,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:12
+                          {"9:12"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy reply">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -329,7 +331,7 @@ export function Pattern() {
                       <Bubble variant="muted" data-align="end">
                         <BubbleContent className="space-y-2">
                           <p className="whitespace-pre-wrap">
-                            makes sense. what's the smallest fix
+                            {"makes sense. what's the smallest fix"}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -337,7 +339,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5 pe-0">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:14
+                          {"9:14"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy message">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -369,21 +371,23 @@ export function Pattern() {
                       <Bubble className="w-full" variant="ghost" data-align="start">
                         <BubbleContent className="space-y-3">
                           <p className="whitespace-pre-wrap">
-                            Guard the lookup and fall back to the charge id, which is always present on a refund event:
+                            {"Guard the lookup and fall back to the charge id, which is always present on a refund event:"}
                           </p>
                           <CodeBlock className="[--code-block-bg:var(--card)] [--code-block-caret-color:var(--primary)] [--code-block-copy-inset:--spacing(2)] [--code-block-copy-top:var(--code-block-copy-inset)] [--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_8%,transparent)] [--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-error-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-expand-clearance:--spacing(9)] [--code-block-fold-width:--spacing(4.5)] [--code-block-font-size:0.8125rem] [--code-block-gutter-gap:--spacing(2.5)] [--code-block-gutter-width:--spacing(9)] [--code-block-header-height:--spacing(9)] [--code-block-highlight-bar:color-mix(in_oklch,var(--primary)_60%,transparent)] [--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_6%,transparent)] [--code-block-info-bg:color-mix(in_oklch,var(--info)_8%,transparent)] [--code-block-line-height:1.5rem] [--code-block-number-pad:var(--code-block-gutter-gap)] [--code-block-padding:--spacing(3)] [--code-block-warning-bg:color-mix(in_oklch,var(--warning)_10%,transparent)] bg-card bg-clip-padding border border-border dark:[--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_12%,transparent)] dark:[--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-error-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_12%,transparent)] dark:[--code-block-info-bg:color-mix(in_oklch,var(--info)_12%,transparent)] dark:[--code-block-warning-bg:color-mix(in_oklch,var(--warning)_14%,transparent)] data-[gutter-channel]:[--code-block-number-pad:calc(var(--code-block-gutter-gap)+var(--code-block-fold-width))] data-[has-diff]:[--code-block-gutter-gap:--spacing(4)] data-[has-header]:[--code-block-copy-top:calc(var(--code-block-header-height)+1px+var(--code-block-copy-inset))] flex flex-col group/code-block min-w-0 relative rounded-(--code-block-radius) style-luma:[--code-block-radius:var(--radius-2xl)] style-lyra:[--code-block-radius:0px] style-maia:[--code-block-radius:var(--radius-2xl)] style-mira:[--code-block-radius:var(--radius-lg)] style-nova:[--code-block-radius:var(--radius-lg)] style-rhea:[--code-block-radius:var(--radius-xl)] style-sera:[--code-block-radius:0px] style-vega:[--code-block-radius:var(--radius-lg)] text-card-foreground text-left w-full" variant="default" foldable="true" gutterChannel="true" hasHeader="true">
                             <CodeBlockHeader>
                               <CodeBlockTitle>
-                                stripe-webhook.ts
+                                {"stripe-webhook.ts"}
                               </CodeBlockTitle>
                               <div className="flex gap-1 items-center ms-auto">
                                 <Tooltip>
                                 <TooltipTrigger className="inline-flex" id="base-ui-_r_o_" baseUiTooltipTrigger="">
+                                  <CodeBlock>
                                   <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" data-position="inline" aria-label="Download file">
                                     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                       <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                                     </svg>
                                   </button>
+                                  </CodeBlock>
                                 </TooltipTrigger>
                                 </Tooltip>
                                 <Tooltip>
@@ -408,16 +412,16 @@ export function Pattern() {
                                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="1" id="_r_m_-L1" style={{counterReset: "cb-line 0"}}>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              const
+                                              {"const"}
                                             </span>
                                             <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                              intent
+                                              {"intent"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              =
+                                              {"="}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              event.data.object.payment_intent
+                                              {"event.data.object.payment_intent"}
                                             </span>
                                           </span>
                                         </span>
@@ -429,54 +433,54 @@ export function Pattern() {
                                           </button>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              const
+                                              {"const"}
                                             </span>
                                             <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                              order
+                                              {"order"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              =
+                                              {"="}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              intent
+                                              {"intent"}
                                             </span>
                                           </span>
                                         </span>
                                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="3" id="_r_m_-L3" style={{counterReset: "cb-line 2"}}>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              ?
+                                              {"?"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              await
+                                              {"await"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              orders.
+                                              {"orders."}
                                             </span>
                                             <span style={{"--cb-c": "#6F42C1", "--cb-cd": "#B392F0"}}>
-                                              byIntent
+                                              {"byIntent"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              (intent)
+                                              {"(intent)"}
                                             </span>
                                           </span>
                                         </span>
                                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="4" id="_r_m_-L4" style={{counterReset: "cb-line 3"}}>
                                           <span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              :
+                                              {":"}
                                             </span>
                                             <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                              await
+                                              {"await"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              orders.
+                                              {"orders."}
                                             </span>
                                             <span style={{"--cb-c": "#6F42C1", "--cb-cd": "#B392F0"}}>
-                                              byCharge
+                                              {"byCharge"}
                                             </span>
                                             <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                              (event.data.object.id)
+                                              {"(event.data.object.id)"}
                                             </span>
                                           </span>
                                         </span>
@@ -488,7 +492,7 @@ export function Pattern() {
                             </ScrollArea>
                           </CodeBlock>
                           <p className="whitespace-pre-wrap">
-                            That clears 39 of the 41 on replay. The other two are past Stripe's 3 day retry window, so they need a manual resend from the Dashboard.
+                            {"That clears 39 of the 41 on replay. The other two are past Stripe's 3 day retry window, so they need a manual resend from the Dashboard."}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -496,7 +500,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:15
+                          {"9:15"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy reply">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -533,14 +537,14 @@ export function Pattern() {
                       <Bubble variant="muted" data-align="end">
                         <BubbleContent className="space-y-2">
                           <p className="whitespace-pre-wrap">
-                            ok patch it
+                            {"ok patch it"}
                           </p>
                         </BubbleContent>
                       </Bubble>
                       <Bubble variant="muted" data-align="end">
                         <BubbleContent className="space-y-2">
                           <p className="whitespace-pre-wrap">
-                            and tell me what the retry backlog looks like after
+                            {"and tell me what the retry backlog looks like after"}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -548,7 +552,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5 pe-0">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:16
+                          {"9:16"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy message">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -580,11 +584,11 @@ export function Pattern() {
                       <Bubble className="w-full" variant="ghost" data-align="start">
                         <BubbleContent className="space-y-3">
                           <p className="whitespace-pre-wrap">
-                            Patched
+                            {"Patched"}
                             <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                              stripe-webhook.ts
+                              {"stripe-webhook.ts"}
                             </code>
-                            and started the replay. 39 of 41 have cleared so far, and the last two are outside the retry window and need a manual resend.
+                            {"and started the replay. 39 of 41 have cleared so far, and the last two are outside the retry window and need a manual resend."}
                           </p>
                         </BubbleContent>
                       </Bubble>
@@ -592,7 +596,7 @@ export function Pattern() {
                     <MessageFooter className="gap-0.5">
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                         <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                          9:17
+                          {"9:17"}
                         </span>
                         <Button type="button" tabIndex="0" aria-label="Copy reply">
                           <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -627,20 +631,20 @@ export function Pattern() {
               <path d="m19 12-7 7-7-7"></path>
             </svg>
             <span className="sr-only">
-              Scroll to end
+              {"Scroll to end"}
             </span>
           </MessageScrollerButton>
         </MessageScroller>
         <div className="pb-2 px-3 shrink-0 sm:px-4">
           <Alert className="[&>svg:not([class*=size-])]:size-4 [&_[data-slot=alert-action]]:col-start-3 [&_[data-slot=alert-action]]:mt-0 [&_[data-slot=alert-action]]:row-start-1 [&_[data-slot=alert-action]]:self-center bg-card border gap-3 grid grid-cols-[0_1fr] has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_[data-slot=alert-action]]:sm:row-end-3 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_svg]:translate-y-0.5 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:items-start has-[>svg]:gap-x-2.5 has-[>svg]:grid-cols-[calc(var(--spacing)*3)_1fr] items-center max-w-3xl mx-auto pe-2 ps-3 px-3 py-2 style-luma:rounded-2xl style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-lg text-card-foreground text-sm w-fit" role="alert">
             <AlertDescription className="[&_p]:leading-relaxed block col-start-2 gap-1 justify-items-start text-foreground text-sm">
-              Make sure you agree to our
+              {"Make sure you agree to our"}
               <a className="underline underline-offset-4" href="#terms">
-                Terms
+                {"Terms"}
               </a>
-              and our
+              {"and our"}
               <a className="underline underline-offset-4" href="#privacy">
-                Privacy Policy
+                {"Privacy Policy"}
               </a>
             </AlertDescription>
             <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
@@ -665,9 +669,9 @@ export function Pattern() {
                         <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                       </svg>
                       <span className="truncate">
-                        Context 64 percent full
+                        {"Context 64 percent full"}
                         <span className="align-middle bg-muted-foreground/40 inline-block mx-1.5 rounded-full size-1" aria-hidden="true"></span>
-                        Plan limit resets Friday 12:00 PM
+                        {"Plan limit resets Friday 12:00 PM"}
                       </span>
                       <svg className="group-data-[panel-open]/notice:rotate-180 lucide lucide-chevron-down shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
@@ -686,7 +690,7 @@ export function Pattern() {
               <FramePanel className="p-0">
                 <form className="relative">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-1-composer">
-                    Message NeUI Chat
+                    {"Message NeUI Chat"}
                   </FieldLabel>
                   <InputGroup className="bg-transparent border-0 shadow-none" role="group">
                     <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-48 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-1-composer" placeholder="Ask anything, or describe what you want changed..."></textarea>
@@ -710,7 +714,7 @@ export function Pattern() {
                           <path d="M6 18a4 4 0 0 1-2-7.464"></path>
                           <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
                         </svg>
-                        Think
+                        {"Think"}
                       </Button>
                       <Button className="cn-input-group-button cn-input-group-button-size-sm flex shadow-none" type="button" tabIndex="0" size="sm" aria-pressed="false">
                         <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" data-icon="inline-start" aria-hidden="true">
@@ -718,11 +722,11 @@ export function Pattern() {
                           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                           <path d="M2 12h20"></path>
                         </svg>
-                        Search
+                        {"Search"}
                       </Button>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full sm:inline-flex text-[0.625rem] transition-shadow">
                         <span className="bg-primary rounded-full size-1.5" aria-hidden="true"></span>
-                        1 tool
+                        {"1 tool"}
                       </Badge>
                       <div className="flex gap-1 items-center ms-auto">
                         <Tooltip>
@@ -749,7 +753,7 @@ export function Pattern() {
               </FramePanel>
             </Frame>
             <p className="text-center text-muted-foreground text-xs">
-              NeUI Chat can make mistakes. Check important info.
+              {"NeUI Chat can make mistakes. Check important info."}
             </p>
           </div>
         </div>

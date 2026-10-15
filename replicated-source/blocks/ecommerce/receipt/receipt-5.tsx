@@ -30,71 +30,71 @@ export function Pattern() {
                       <circle cx="12" cy="12" r="10"></circle>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Paid
+                    {"Paid"}
                   </Badge>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <span className="font-semibold text-[0.6875rem] text-muted-foreground tracking-[0.2em] uppercase" id="receipt-heading">
-                    Total Paid
+                    {"Total Paid"}
                   </span>
                   <span className="font-bold leading-none md:text-4xl tabular-nums text-3xl text-foreground tracking-tight">
-                    $631.92
+                    {"$631.92"}
                   </span>
                   <span className="text-muted-foreground text-xs">
-                    on May 18, 2026
+                    {"on May 18, 2026"}
                   </span>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                      Order
+                      {"Order"}
                     </span>
                     <div className="flex flex-col gap-0.5">
                       <a className="font-mono hover:text-primary hover:underline tabular-nums text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View order HLD-2026-18042">
-                        HLD-2026-18042
+                        {"HLD-2026-18042"}
                       </a>
                       <p className="text-muted-foreground text-xs">
-                        Receipt RCT-2026-018042
+                        {"Receipt RCT-2026-018042"}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                      Paid With
+                      {"Paid With"}
                     </span>
                     <div className="flex flex-col gap-0.5">
                       <p className="font-medium tabular-nums text-foreground text-sm">
-                        Visa · 4242
+                        {"Visa · 4242"}
                       </p>
                       <p className="text-muted-foreground text-xs">
-                        Expires 04 / 28
+                        {"Expires 04 / 28"}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                      Arrives
+                      {"Arrives"}
                     </span>
                     <div className="flex flex-col gap-0.5">
                       <p className="font-medium text-foreground text-sm">
-                        May 22 to May 25
+                        {"May 22 to May 25"}
                       </p>
                       <p className="text-muted-foreground text-xs">
-                        UPS Ground
+                        {"UPS Ground"}
                       </p>
                     </div>
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                      Ships To
+                      {"Ships To"}
                     </span>
                     <div className="flex flex-col gap-0.5">
                       <p className="font-medium text-foreground text-sm">
-                        Jordan Reeves
+                        {"Jordan Reeves"}
                       </p>
                       <p className="leading-snug text-muted-foreground text-xs">
-                        180 Bedford Avenue, Brooklyn, NY 11211
+                        {"180 Bedford Avenue, Brooklyn, NY 11211"}
                       </p>
                     </div>
                   </div>
@@ -108,17 +108,17 @@ export function Pattern() {
                     <circle cx="17" cy="18" r="2"></circle>
                     <circle cx="7" cy="18" r="2"></circle>
                   </svg>
-                  Track Your Shipment
+                  {"Track Your Shipment"}
                 </Button>
               </aside>
               <div className="flex flex-col gap-6 min-w-0">
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-3 items-baseline justify-between">
                     <span className="font-semibold text-[0.6875rem] text-muted-foreground tracking-[0.2em] uppercase">
-                      Order Items
+                      {"Order Items"}
                     </span>
                     <span className="text-muted-foreground text-xs">
-                      3 items · Confirmed May 18, 2026
+                      {"3 items · Confirmed May 18, 2026"}
                     </span>
                   </div>
                   <div className="divide-y flex flex-col">
@@ -130,20 +130,20 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                         <p className="font-medium text-[0.6875rem] text-muted-foreground tracking-wide uppercase">
-                          Halden
+                          {"Halden"}
                         </p>
                         <h3 className="font-semibold leading-snug min-w-0 text-foreground text-sm">
                           <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                            Field Shell Jacket
+                            {"Field Shell Jacket"}
                           </a>
                         </h3>
                         <p className="text-muted-foreground text-xs">
-                          Olive · M · Qty 1
+                          {"Olive · M · Qty 1"}
                         </p>
                       </div>
                       <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                         <span className="font-semibold text-foreground">
-                          $185.00
+                          {"$185.00"}
                         </span>
                       </div>
                     </article>
@@ -155,20 +155,20 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                         <p className="font-medium text-[0.6875rem] text-muted-foreground tracking-wide uppercase">
-                          Halden
+                          {"Halden"}
                         </p>
                         <h3 className="font-semibold leading-snug min-w-0 text-foreground text-sm">
                           <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                            Compass Down Vest
+                            {"Compass Down Vest"}
                           </a>
                         </h3>
                         <p className="text-muted-foreground text-xs">
-                          Slate · M · Qty 1
+                          {"Slate · M · Qty 1"}
                         </p>
                       </div>
                       <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                         <span className="font-semibold text-foreground">
-                          $228.00
+                          {"$228.00"}
                         </span>
                       </div>
                     </article>
@@ -180,23 +180,23 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                         <p className="font-medium text-[0.6875rem] text-muted-foreground tracking-wide uppercase">
-                          Halden
+                          {"Halden"}
                         </p>
                         <h3 className="font-semibold leading-snug min-w-0 text-foreground text-sm">
                           <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                            Linen Field Shirt
+                            {"Linen Field Shirt"}
                           </a>
                         </h3>
                         <p className="text-muted-foreground text-xs">
-                          Sand · M · Qty 2
+                          {"Sand · M · Qty 2"}
                         </p>
                       </div>
                       <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                         <span className="font-semibold text-foreground">
-                          $256.00
+                          {"$256.00"}
                         </span>
                         <span className="text-muted-foreground text-xs">
-                          $128.00 each
+                          {"$128.00 each"}
                         </span>
                       </div>
                     </article>
@@ -206,43 +206,43 @@ export function Pattern() {
                 <dl className="flex flex-col gap-1.5 ml-auto sm:w-72 text-sm w-full">
                   <div className="flex gap-4 items-baseline justify-between">
                     <dt className="text-muted-foreground text-sm">
-                      Subtotal
+                      {"Subtotal"}
                     </dt>
                     <dd className="font-medium tabular-nums text-foreground text-sm">
-                      $669.00
+                      {"$669.00"}
                     </dd>
                   </div>
                   <div className="flex gap-4 items-baseline justify-between">
                     <dt className="text-muted-foreground text-sm">
-                      Shipping
+                      {"Shipping"}
                     </dt>
                     <dd className="font-medium tabular-nums text-foreground text-sm">
-                      $12.00
+                      {"$12.00"}
                     </dd>
                   </div>
                   <div className="flex gap-4 items-baseline justify-between">
                     <dt className="text-muted-foreground text-sm">
-                      Discount (WELCOME15)
+                      {"Discount (WELCOME15)"}
                     </dt>
                     <dd className="font-medium tabular-nums text-sm text-success">
-                      -$100.35
+                      {"-$100.35"}
                     </dd>
                   </div>
                   <div className="flex gap-4 items-baseline justify-between">
                     <dt className="text-muted-foreground text-sm">
-                      Estimated Tax
+                      {"Estimated Tax"}
                     </dt>
                     <dd className="font-medium tabular-nums text-foreground text-sm">
-                      $51.27
+                      {"$51.27"}
                     </dd>
                   </div>
                   <Separator className="my-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <div className="flex gap-4 items-baseline justify-between">
                     <dt className="font-semibold text-base text-foreground">
-                      Total
+                      {"Total"}
                     </dt>
                     <dd className="font-bold tabular-nums text-foreground text-lg">
-                      $631.92
+                      {"$631.92"}
                     </dd>
                   </div>
                 </dl>
@@ -258,14 +258,14 @@ export function Pattern() {
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
-              Download
+              {"Download"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Email receipt RCT-2026-018042">
               <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
               </svg>
-              Email
+              {"Email"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Print receipt RCT-2026-018042">
               <svg className="lucide lucide-printer size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PrinterIcon" tabler="IconPrinter" hugeicons="PrinterIcon" phosphor="PrinterIcon" remixicon="RiPrinterLine" aria-hidden="true">
@@ -273,19 +273,19 @@ export function Pattern() {
                 <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
                 <rect x="6" y="14" width="12" height="8" rx="1"></rect>
               </svg>
-              Print
+              {"Print"}
             </Button>
           </div>
           <p className="text-muted-foreground text-xs">
-            Tracking updates go to
+            {"Tracking updates go to"}
             <span className="font-medium text-foreground">
-              jordan@example.com
+              {"jordan@example.com"}
             </span>
-            . Need help?
+            {". Need help?"}
             <a className="font-medium hover:text-primary hover:underline text-foreground transition-colors underline-offset-4" href="#" aria-label="Contact NeUI support">
-              Contact NeUI support
+              {"Contact NeUI support"}
             </a>
-            .
+            {"."}
           </p>
         </div>
       </section>

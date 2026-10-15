@@ -8,26 +8,26 @@ export function Pattern() {
           <div className="bg-background border border-border flex max-w-[464px] overflow-hidden rounded-lg w-full">
             <div className="after:absolute after:bg-border/60 after:bottom-5 after:pointer-events-none after:right-0 after:top-5 after:w-px flex flex-1 flex-col gap-1 items-center justify-center min-w-0 p-3.5 relative">
               <span className="font-semibold leading-tight relative text-2xl text-center text-foreground z-[1]">
-                $9k+
+                {"$9k+"}
               </span>
               <span className="relative text-center text-muted-foreground text-sm z-[1]">
-                Earned
+                {"Earned"}
               </span>
             </div>
             <div className="after:absolute after:bg-border/60 after:bottom-5 after:pointer-events-none after:right-0 after:top-5 after:w-px flex flex-1 flex-col gap-1 items-center justify-center min-w-0 p-3.5 relative">
               <span className="font-semibold leading-tight relative text-2xl text-center text-foreground z-[1]">
-                4x
+                {"4x"}
               </span>
               <span className="relative text-center text-muted-foreground text-sm z-[1]">
-                Hired
+                {"Hired"}
               </span>
             </div>
             <div className="after:absolute after:bg-border/60 after:bottom-5 after:pointer-events-none after:right-0 after:top-5 after:w-px flex flex-1 flex-col gap-1 items-center justify-center min-w-0 p-3.5 relative">
               <span className="font-semibold leading-tight relative text-2xl text-center text-foreground z-[1]">
-                4.93
+                {"4.93"}
               </span>
               <span className="relative text-center text-muted-foreground text-sm z-[1]">
-                Rating
+                {"Rating"}
               </span>
             </div>
             <div className="flex flex-1 flex-col gap-1 items-center justify-center min-w-0 p-3.5 relative">
@@ -197,10 +197,10 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-semibold leading-tight relative text-2xl text-center text-foreground z-[1]">
-                106
+                {"106"}
               </span>
               <span className="relative text-center text-muted-foreground text-sm z-[1]">
-                Followers
+                {"Followers"}
               </span>
             </div>
           </div>

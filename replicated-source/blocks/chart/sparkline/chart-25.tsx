@@ -16,33 +16,25 @@ export function Pattern() {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <span className="font-semibold text-base">
-                      1,246
+                      {"1,246"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-0 border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      23.08%
+                      {"23.08%"}
                     </Badge>
                   </div>
                   <p className="mt-1 text-muted-foreground text-xs">
-                    Cumulative Orders
+                    {"Cumulative Orders"}
                   </p>
                 </div>
                 <div className="h-11 relative shrink-0 sm:w-40 w-32">
                   <span className="[background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:12px_12px] [mask-image:linear-gradient(to_right,transparent,black_14%,black_86%,transparent)] absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true"></span>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto! aspect-video cn-chart flex h-11 justify-center relative text-xs w-full z-10" data-chart="chart-_r_0_">
-                    <style>{`
- [data-chart=chart-_r_0_] {
-  --color-value: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_0_] {
-  --color-value: var(--success);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_0_] {\n  --color-value: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_0_] {\n  --color-value: var(--success);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="160" height="44" style={{position: "relative", cursor: "default", width: "160px", height: "44px"}}>
@@ -77,6 +69,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -86,9 +79,9 @@ export function Pattern() {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <span className="font-semibold text-base">
-                      $89.3
+                      {"$89.3"}
                       <span className="text-muted-foreground/45">
-                        k
+                        {"k"}
                       </span>
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-0 border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -96,26 +89,18 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      3.82%
+                      {"3.82%"}
                     </Badge>
                   </div>
                   <p className="mt-1 text-muted-foreground text-xs">
-                    Cumulative Spend
+                    {"Cumulative Spend"}
                   </p>
                 </div>
                 <div className="h-11 relative shrink-0 sm:w-40 w-32">
                   <span className="[background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:12px_12px] [mask-image:linear-gradient(to_right,transparent,black_14%,black_86%,transparent)] absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true"></span>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto! aspect-video cn-chart flex h-11 justify-center relative text-xs w-full z-10" data-chart="chart-_r_1_">
-                    <style>{`
- [data-chart=chart-_r_1_] {
-  --color-value: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-value: var(--success);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-value: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-value: var(--success);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="160" height="44" style={{position: "relative", cursor: "default", width: "160px", height: "44px"}}>
@@ -150,6 +135,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -159,33 +145,25 @@ export function Pattern() {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <span className="font-semibold text-base">
-                      $68.1
+                      {"$68.1"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      0.39%
+                      {"0.39%"}
                     </Badge>
                   </div>
                   <p className="mt-1 text-muted-foreground text-xs">
-                    Avg. Order Value
+                    {"Avg. Order Value"}
                   </p>
                 </div>
                 <div className="h-11 relative shrink-0 sm:w-40 w-32">
                   <span className="[background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:12px_12px] [mask-image:linear-gradient(to_right,transparent,black_14%,black_86%,transparent)] absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true"></span>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto! aspect-video cn-chart flex h-11 justify-center relative text-xs w-full z-10" data-chart="chart-_r_2_">
-                    <style>{`
- [data-chart=chart-_r_2_] {
-  --color-value: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-value: var(--destructive);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-value: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-value: var(--destructive);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="160" height="44" style={{position: "relative", cursor: "default", width: "160px", height: "44px"}}>
@@ -220,6 +198,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -229,9 +208,9 @@ export function Pattern() {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <span className="font-semibold text-base">
-                      $2,3
+                      {"$2,3"}
                       <span className="text-muted-foreground/45">
-                        k
+                        {"k"}
                       </span>
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-0 border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -239,26 +218,18 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      1.04%
+                      {"1.04%"}
                     </Badge>
                   </div>
                   <p className="mt-1 text-muted-foreground text-xs">
-                    Account Balance
+                    {"Account Balance"}
                   </p>
                 </div>
                 <div className="h-11 relative shrink-0 sm:w-40 w-32">
                   <span className="[background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:12px_12px] [mask-image:linear-gradient(to_right,transparent,black_14%,black_86%,transparent)] absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true"></span>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto! aspect-video cn-chart flex h-11 justify-center relative text-xs w-full z-10" data-chart="chart-_r_3_">
-                    <style>{`
- [data-chart=chart-_r_3_] {
-  --color-value: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-value: var(--success);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--success);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="160" height="44" style={{position: "relative", cursor: "default", width: "160px", height: "44px"}}>
@@ -293,6 +264,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -302,9 +274,9 @@ export function Pattern() {
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <span className="font-semibold text-base">
-                      $271.9
+                      {"$271.9"}
                       <span className="text-muted-foreground/45">
-                        k
+                        {"k"}
                       </span>
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
@@ -312,26 +284,18 @@ export function Pattern() {
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      0.39%
+                      {"0.39%"}
                     </Badge>
                   </div>
                   <p className="mt-1 text-muted-foreground text-xs">
-                    Avg. Monthly Income
+                    {"Avg. Monthly Income"}
                   </p>
                 </div>
                 <div className="h-11 relative shrink-0 sm:w-40 w-32">
                   <span className="[background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:12px_12px] [mask-image:linear-gradient(to_right,transparent,black_14%,black_86%,transparent)] absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true"></span>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto! aspect-video cn-chart flex h-11 justify-center relative text-xs w-full z-10" data-chart="chart-_r_4_">
-                    <style>{`
- [data-chart=chart-_r_4_] {
-  --color-value: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_4_] {
-  --color-value: var(--destructive);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_4_] {\n  --color-value: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_4_] {\n  --color-value: var(--destructive);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="160" height="44" style={{position: "relative", cursor: "default", width: "160px", height: "44px"}}>
@@ -366,6 +330,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
             </li>

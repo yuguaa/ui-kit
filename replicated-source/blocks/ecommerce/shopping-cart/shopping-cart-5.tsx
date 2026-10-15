@@ -39,26 +39,26 @@ export function Pattern() {
         <Card className="overflow-hidden" size="default">
           <CardHeader>
             <CardTitle className="font-semibold sm:text-2xl text-foreground text-xl tracking-tight" id="cart-5-title">
-              Shopping Cart
+              {"Shopping Cart"}
             </CardTitle>
             <CardDescription className="text-muted-foreground text-sm">
               <span className="flex-wrap gap-x-1.5 inline-flex items-center">
                 <span className="font-medium tabular-nums text-foreground">
-                  5
+                  {"5"}
                 </span>
                 <span>
-                  items in review
+                  {"items in review"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  ORD-48291
+                  {"ORD-48291"}
                 </span>
               </span>
             </CardDescription>
             <CardAction>
               <a className="gap-1 hidden hover:text-primary hover:underline items-center sm:inline-flex text-muted-foreground text-sm transition-colors underline-offset-4" href="#continue-shopping">
                 <span>
-                  Continue shopping
+                  {"Continue shopping"}
                 </span>
                 <svg className="lucide lucide-chevron-right shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
@@ -69,13 +69,13 @@ export function Pattern() {
           <CardContent className="flex flex-col gap-0 p-0">
             <div className="border-y font-semibold gap-5 grid-cols-[minmax(0,1fr)_auto_minmax(96px,auto)_auto] hidden items-center px-6 py-1.5 sm:grid text-[10px] text-muted-foreground tracking-widest uppercase">
               <span>
-                Product
+                {"Product"}
               </span>
               <span className="justify-self-center">
-                Quantity
+                {"Quantity"}
               </span>
               <span className="justify-self-end">
-                Price
+                {"Price"}
               </span>
               <span className="size-8" aria-hidden="true"></span>
             </div>
@@ -90,17 +90,17 @@ export function Pattern() {
                     </a>
                     <div className="flex flex-col min-w-0">
                       <p className="font-semibold text-[10px] text-muted-foreground tracking-widest uppercase">
-                        Audio
+                        {"Audio"}
                       </p>
                       <h3 className="font-medium leading-snug mt-0.5 text-[15px] text-foreground truncate">
                         <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#product-atlas-compact-headphones">
-                          Atlas Compact Studio Headphones
+                          {"Atlas Compact Studio Headphones"}
                         </a>
                       </h3>
                       <p className="flex gap-1.5 items-center mt-1 text-muted-foreground text-xs">
                         <span className="bg-stone-900 border border-border/70 dark:bg-stone-800 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <span className="text-foreground/80 truncate">
-                          Midnight Black
+                          {"Midnight Black"}
                         </span>
                       </p>
                     </div>
@@ -112,7 +112,7 @@ export function Pattern() {
                       </svg>
                     </Button>
                     <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
-                      1
+                      {"1"}
                     </div>
                     <Button type="button" tabIndex="0" aria-label="Increase quantity for Atlas Compact Studio Headphones">
                       <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -123,7 +123,7 @@ export function Pattern() {
                   </ButtonGroup>
                   <div className="flex flex-col gap-0.5 items-end justify-self-end row-start-2 sm:row-start-auto">
                     <p className="font-semibold tabular-nums text-base text-foreground">
-                      $249.99
+                      {"$249.99"}
                     </p>
                   </div>
                   <Button className="-mr-1 col-start-3 hover:text-foreground row-start-1 sm:col-start-auto sm:mr-0 sm:row-start-auto text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Atlas Compact Studio Headphones from cart">
@@ -147,17 +147,17 @@ export function Pattern() {
                     </a>
                     <div className="flex flex-col min-w-0">
                       <p className="font-semibold text-[10px] text-muted-foreground tracking-widest uppercase">
-                        Wearables
+                        {"Wearables"}
                       </p>
                       <h3 className="font-medium leading-snug mt-0.5 text-[15px] text-foreground truncate">
                         <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#product-trail-beacon-gps-watch">
-                          Trail Beacon GPS Field Watch
+                          {"Trail Beacon GPS Field Watch"}
                         </a>
                       </h3>
                       <p className="flex gap-1.5 items-center mt-1 text-muted-foreground text-xs">
                         <span className="bg-zinc-500 border border-border/70 dark:bg-zinc-400 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <span className="text-foreground/80 truncate">
-                          Carbon Grey
+                          {"Carbon Grey"}
                         </span>
                       </p>
                     </div>
@@ -169,7 +169,7 @@ export function Pattern() {
                       </svg>
                     </Button>
                     <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
-                      1
+                      {"1"}
                     </div>
                     <Button type="button" tabIndex="0" aria-label="Increase quantity for Trail Beacon GPS Field Watch">
                       <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -180,7 +180,7 @@ export function Pattern() {
                   </ButtonGroup>
                   <div className="flex flex-col gap-0.5 items-end justify-self-end row-start-2 sm:row-start-auto">
                     <p className="font-semibold tabular-nums text-base text-foreground">
-                      $329.99
+                      {"$329.99"}
                     </p>
                   </div>
                   <Button className="-mr-1 col-start-3 hover:text-foreground row-start-1 sm:col-start-auto sm:mr-0 sm:row-start-auto text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Trail Beacon GPS Field Watch from cart">
@@ -204,17 +204,17 @@ export function Pattern() {
                     </a>
                     <div className="flex flex-col min-w-0">
                       <p className="font-semibold text-[10px] text-muted-foreground tracking-widest uppercase">
-                        Audio
+                        {"Audio"}
                       </p>
                       <h3 className="font-medium leading-snug mt-0.5 text-[15px] text-foreground truncate">
                         <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#product-pulse-field-speaker">
-                          Pulse Field Bluetooth Speaker
+                          {"Pulse Field Bluetooth Speaker"}
                         </a>
                       </h3>
                       <p className="flex gap-1.5 items-center mt-1 text-muted-foreground text-xs">
                         <span className="bg-slate-700 border border-border/70 dark:bg-slate-500 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <span className="text-foreground/80 truncate">
-                          Deep Slate
+                          {"Deep Slate"}
                         </span>
                       </p>
                     </div>
@@ -226,7 +226,7 @@ export function Pattern() {
                       </svg>
                     </Button>
                     <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
-                      1
+                      {"1"}
                     </div>
                     <Button type="button" tabIndex="0" aria-label="Increase quantity for Pulse Field Bluetooth Speaker">
                       <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -237,7 +237,7 @@ export function Pattern() {
                   </ButtonGroup>
                   <div className="flex flex-col gap-0.5 items-end justify-self-end row-start-2 sm:row-start-auto">
                     <p className="font-semibold tabular-nums text-base text-foreground">
-                      $109.99
+                      {"$109.99"}
                     </p>
                   </div>
                   <Button className="-mr-1 col-start-3 hover:text-foreground row-start-1 sm:col-start-auto sm:mr-0 sm:row-start-auto text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Pulse Field Bluetooth Speaker from cart">
@@ -261,17 +261,17 @@ export function Pattern() {
                     </a>
                     <div className="flex flex-col min-w-0">
                       <p className="font-semibold text-[10px] text-muted-foreground tracking-widest uppercase">
-                        Audio
+                        {"Audio"}
                       </p>
                       <h3 className="font-medium leading-snug mt-0.5 text-[15px] text-foreground truncate">
                         <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#product-helix-air-earbuds">
-                          Helix Air Sport Wireless Earbuds
+                          {"Helix Air Sport Wireless Earbuds"}
                         </a>
                       </h3>
                       <p className="flex gap-1.5 items-center mt-1 text-muted-foreground text-xs">
                         <span className="bg-blue-600 border border-border/70 dark:bg-blue-500 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <span className="text-foreground/80 truncate">
-                          Cobalt
+                          {"Cobalt"}
                         </span>
                       </p>
                     </div>
@@ -283,7 +283,7 @@ export function Pattern() {
                       </svg>
                     </Button>
                     <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
-                      2
+                      {"2"}
                     </div>
                     <Button type="button" tabIndex="0" aria-label="Increase quantity for Helix Air Sport Wireless Earbuds">
                       <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -294,10 +294,10 @@ export function Pattern() {
                   </ButtonGroup>
                   <div className="flex flex-col gap-0.5 items-end justify-self-end row-start-2 sm:row-start-auto">
                     <p className="font-semibold tabular-nums text-base text-foreground">
-                      $359.98
+                      {"$359.98"}
                     </p>
                     <p className="tabular-nums text-[11px] text-muted-foreground">
-                      $179.99 each
+                      {"$179.99 each"}
                     </p>
                   </div>
                   <Button className="-mr-1 col-start-3 hover:text-foreground row-start-1 sm:col-start-auto sm:mr-0 sm:row-start-auto text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Helix Air Sport Wireless Earbuds from cart">
@@ -318,7 +318,7 @@ export function Pattern() {
           <Card size="sm">
             <CardHeader>
               <CardTitle className="font-semibold text-sm">
-                Coupon Code
+                {"Coupon Code"}
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -336,12 +336,12 @@ export function Pattern() {
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="cart-5-coupon" placeholder="Enter your code" aria-label="Coupon code" aria-invalid="false" value="" />
                     <InputGroupAddon className="pr-0" role="group" data-align="inline-end">
                       <Button className="cn-input-group-button cn-input-group-button-size-sm flex shadow-none" type="submit" tabIndex="0" size="sm">
-                        Apply
+                        {"Apply"}
                       </Button>
                     </InputGroupAddon>
                   </InputGroup>
                   <FieldDescription className="text-xs" id="cart-5-coupon-help">
-                    Discount applies before tax.
+                    {"Discount applies before tax."}
                   </FieldDescription>
                 </Field>
               </form>
@@ -350,29 +350,29 @@ export function Pattern() {
           <Card size="sm">
             <CardHeader>
               <CardTitle className="font-semibold text-sm">
-                Order Summary
+                {"Order Summary"}
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-2.5">
               <div className="flex gap-3 items-center justify-between text-sm">
                 <span className="gap-1 inline-flex items-center text-muted-foreground">
-                  Subtotal
+                  {"Subtotal"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $1,049.95
+                  {"$1,049.95"}
                 </span>
               </div>
               <div className="flex gap-3 items-center justify-between text-sm">
                 <span className="gap-1 inline-flex items-center text-muted-foreground">
-                  Discount
+                  {"Discount"}
                 </span>
                 <span className="tabular-nums text-muted-foreground">
-                  $0.00
+                  {"$0.00"}
                 </span>
               </div>
               <div className="flex gap-3 items-center justify-between text-sm">
                 <span className="gap-1 inline-flex items-center text-muted-foreground">
-                  Delivery
+                  {"Delivery"}
                   <Tooltip>
                   <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground/70 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Delivery details" id="base-ui-_r_2_" baseUiTooltipTrigger="">
                     <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -384,12 +384,12 @@ export function Pattern() {
                   </Tooltip>
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $19.99
+                  {"$19.99"}
                 </span>
               </div>
               <div className="flex gap-3 items-center justify-between text-sm">
                 <span className="gap-1 inline-flex items-center text-muted-foreground">
-                  Tax
+                  {"Tax"}
                   <Tooltip>
                   <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground/70 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Tax details" id="base-ui-_r_4_" baseUiTooltipTrigger="">
                     <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -401,7 +401,7 @@ export function Pattern() {
                   </Tooltip>
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $88.27
+                  {"$88.27"}
                 </span>
               </div>
               <Separator className="my-0.5" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -409,7 +409,7 @@ export function Pattern() {
                 <div className="flex flex-col gap-1">
                   <span className="gap-1 inline-flex items-center text-muted-foreground">
                     <span className="font-semibold text-[10px] tracking-widest uppercase">
-                      Order Total
+                      {"Order Total"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground/70 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Order Total details" id="base-ui-_r_6_" baseUiTooltipTrigger="">
@@ -424,10 +424,10 @@ export function Pattern() {
                 </div>
                 <p className="gap-1 inline-flex items-baseline text-foreground">
                   <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                    $1,158.21
+                    {"$1,158.21"}
                   </span>
                   <span className="font-semibold text-[10px] text-muted-foreground tracking-widest uppercase">
-                    USD
+                    {"USD"}
                   </span>
                 </p>
               </div>
@@ -436,7 +436,7 @@ export function Pattern() {
           <Card size="sm">
             <CardHeader>
               <CardTitle className="font-semibold text-sm">
-                Payment Method
+                {"Payment Method"}
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-3">
@@ -461,7 +461,7 @@ export function Pattern() {
                           </svg>
                         </ItemMedia>
                         <span className="sr-only">
-                          PayPal
+                          {"PayPal"}
                         </span>
                       </FieldLabel>
                     </Field>
@@ -482,7 +482,7 @@ export function Pattern() {
                           </svg>
                         </ItemMedia>
                         <span className="sr-only">
-                          Stripe
+                          {"Stripe"}
                         </span>
                       </FieldLabel>
                     </Field>
@@ -500,7 +500,7 @@ export function Pattern() {
                           </svg>
                         </ItemMedia>
                         <span className="sr-only">
-                          Mastercard
+                          {"Mastercard"}
                         </span>
                       </FieldLabel>
                     </Field>
@@ -544,7 +544,7 @@ export function Pattern() {
                           </svg>
                         </ItemMedia>
                         <span className="sr-only">
-                          Bitcoin
+                          {"Bitcoin"}
                         </span>
                       </FieldLabel>
                     </Field>
@@ -553,15 +553,15 @@ export function Pattern() {
               </RadioGroup>
               <p className="flex flex-wrap gap-x-1.5 items-center text-muted-foreground text-xs" aria-live="polite">
                 <span className="font-medium text-foreground">
-                  PayPal
+                  {"PayPal"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Pay with your PayPal balance.
+                  {"Pay with your PayPal balance."}
                 </span>
               </p>
               <Button className="w-full" type="button" tabIndex="0">
-                Check Out
+                {"Check Out"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -573,7 +573,7 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span>
-                  Encrypted payment · Card details never stored
+                  {"Encrypted payment · Card details never stored"}
                 </span>
               </p>
             </CardContent>

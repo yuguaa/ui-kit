@@ -30,7 +30,7 @@ export function Pattern() {
             <div className="@container flex flex-1 flex-col gap-4 items-start min-w-72">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 hover:bg-accent min-w-5 outline-none px-2 py-0.5 relative rounded-full text-foreground text-sm transition-colors" href="#">
                 <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                Explore 495+ NeUI Blocks
+                {"Explore 495+ NeUI Blocks"}
                 <svg className="lucide lucide-arrow-up-right size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                   <path d="M7 7h10v10"></path>
                   <path d="M7 17 17 7"></path>
@@ -38,23 +38,23 @@ export function Pattern() {
               </Badge>
               <h1 className="@2xl:text-6xl @lg:text-5xl @sm:text-4xl font-semibold leading-[1.05] text-3xl text-foreground tracking-tight" id="hero-14-title">
                 <span className="block">
-                  Design-ready shadcn
+                  {"Design-ready shadcn"}
                 </span>
                 <span className="block text-muted-foreground">
-                  MCP native
+                  {"MCP native"}
                 </span>
               </h1>
             </div>
             <div className="flex flex-1 flex-col gap-4 items-start max-w-md min-w-72">
               <p className="leading-6 text-base text-muted-foreground">
-                Build faster with production-ready blocks, MCP support, and a curated shadcn registry.
+                {"Build faster with production-ready blocks, MCP support, and a curated shadcn registry."}
               </p>
               <div className="flex flex-wrap gap-2 items-center">
                 <Button href="#" role="button" tabIndex="0">
-                  Buy Now
+                  {"Buy Now"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
-                  Explore
+                  {"Explore"}
                 </Button>
               </div>
             </div>
@@ -65,84 +65,7 @@ export function Pattern() {
             <div className="absolute inset-0">
               <div className="absolute h-[1060px] left-[6.25cqw] origin-top-left top-[6.25cqw] w-[1400px]" style={{transform: "scale(calc(100cqw / 1600px))"}}>
                 <Card className="[--card-spacing:--spacing(1.5)] bg-white border-0 dark:bg-neutral-900 dark:ring-white/10 dark:text-neutral-50 gap-0 overflow-hidden px-1.5 ring-neutral-900/10 shadow-2xl size-full text-neutral-900" size="default" role="img" aria-label="Crew coverage console showing open gaps, coverage review by crew lead, the action queue and supply against forecast">
-                  <style>{`
-@keyframes hero14-grow {
-  0%, 54% { transform: scaleY(1) }
-  66% { transform: scaleY(0.3) }
-  100% { transform: scaleY(1) }
-}
-@keyframes hero14-rise {
-  0%, 60% { opacity: 1; transform: translateY(0) }
-  72% { opacity: 0.4; transform: translateY(4px) }
-  100% { opacity: 1; transform: translateY(0) }
-}
-@keyframes hero14-fill {
-  0%, 52% { transform: scaleX(1) }
-  64% { transform: scaleX(0.1) }
-  100% { transform: scaleX(1) }
-}
-@keyframes hero14-blink {
-  0%, 100% { opacity: 1 }
-  50% { opacity: 0.4 }
-}
-@keyframes hero14-draw {
-  0%, 50% { stroke-dashoffset: 0 }
-  62% { stroke-dashoffset: 1200 }
-  100% { stroke-dashoffset: 0 }
-}
-/* The specular pass over the whole shot. Off-canvas for most of the cycle, so
-   what registers is an occasional glint rather than a shimmer. */
-@keyframes hero14-sweep {
-  0%, 62% { opacity: 0; transform: translateX(-60%) skewX(-12deg) }
-  70% { opacity: 1 }
-  100% { opacity: 0; transform: translateX(560%) skewX(-12deg) }
-}
-
-/* Set \`--hero14-delay\` per element to stagger siblings; keep it a custom property,
-   because an inline \`animation\` shorthand would outrank the reduced-motion rule. */
-.hero14-grow,
-.hero14-rise,
-.hero14-draw,
-.hero14-track [data-slot="progress-indicator"] {
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-delay: var(--hero14-delay, 0s);
-}
-
-.hero14-grow { animation-name: hero14-grow; animation-duration: 11.3s; }
-.hero14-rise { animation-name: hero14-rise; animation-duration: 13.7s; }
-.hero14-draw { animation-name: hero14-draw; animation-duration: 16.3s; }
-
-/* The primitive owns the indicator node, so the fill is reached through its
-   data-slot instead of a class on the element itself. */
-.hero14-track [data-slot="progress-indicator"] {
-  transform-origin: left center;
-  animation-name: hero14-fill;
-  animation-duration: 10.1s;
-}
-
-.hero14-blink {
-  animation: hero14-blink 3.7s ease-in-out var(--hero14-delay, 0s) infinite;
-}
-
-.hero14-sweep {
-  opacity: 0;
-  animation: hero14-sweep 9.7s ease-in-out var(--hero14-delay, 0s) infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero14-grow,
-  .hero14-rise,
-  .hero14-draw,
-  .hero14-blink,
-  .hero14-sweep,
-  .hero14-track [data-slot="progress-indicator"] {
-    animation: none;
-  }
-  .hero14-sweep { opacity: 0; }
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hero14-grow {\n  0%, 54% { transform: scaleY(1) }\n  66% { transform: scaleY(0.3) }\n  100% { transform: scaleY(1) }\n}\n@keyframes hero14-rise {\n  0%, 60% { opacity: 1; transform: translateY(0) }\n  72% { opacity: 0.4; transform: translateY(4px) }\n  100% { opacity: 1; transform: translateY(0) }\n}\n@keyframes hero14-fill {\n  0%, 52% { transform: scaleX(1) }\n  64% { transform: scaleX(0.1) }\n  100% { transform: scaleX(1) }\n}\n@keyframes hero14-blink {\n  0%, 100% { opacity: 1 }\n  50% { opacity: 0.4 }\n}\n@keyframes hero14-draw {\n  0%, 50% { stroke-dashoffset: 0 }\n  62% { stroke-dashoffset: 1200 }\n  100% { stroke-dashoffset: 0 }\n}\n/* The specular pass over the whole shot. Off-canvas for most of the cycle, so\n   what registers is an occasional glint rather than a shimmer. */\n@keyframes hero14-sweep {\n  0%, 62% { opacity: 0; transform: translateX(-60%) skewX(-12deg) }\n  70% { opacity: 1 }\n  100% { opacity: 0; transform: translateX(560%) skewX(-12deg) }\n}\n\n/* Set `--hero14-delay` per element to stagger siblings; keep it a custom property,\n   because an inline `animation` shorthand would outrank the reduced-motion rule. */\n.hero14-grow,\n.hero14-rise,\n.hero14-draw,\n.hero14-track [data-slot=\"progress-indicator\"] {\n  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);\n  animation-iteration-count: infinite;\n  animation-fill-mode: both;\n  animation-delay: var(--hero14-delay, 0s);\n}\n\n.hero14-grow { animation-name: hero14-grow; animation-duration: 11.3s; }\n.hero14-rise { animation-name: hero14-rise; animation-duration: 13.7s; }\n.hero14-draw { animation-name: hero14-draw; animation-duration: 16.3s; }\n\n/* The primitive owns the indicator node, so the fill is reached through its\n   data-slot instead of a class on the element itself. */\n.hero14-track [data-slot=\"progress-indicator\"] {\n  transform-origin: left center;\n  animation-name: hero14-fill;\n  animation-duration: 10.1s;\n}\n\n.hero14-blink {\n  animation: hero14-blink 3.7s ease-in-out var(--hero14-delay, 0s) infinite;\n}\n\n.hero14-sweep {\n  opacity: 0;\n  animation: hero14-sweep 9.7s ease-in-out var(--hero14-delay, 0s) infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .hero14-grow,\n  .hero14-rise,\n  .hero14-draw,\n  .hero14-blink,\n  .hero14-sweep,\n  .hero14-track [data-slot=\"progress-indicator\"] {\n    animation: none;\n  }\n  .hero14-sweep { opacity: 0; }\n}\n" }} />
                   <Card className="[--card-spacing:0px] bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 flex-1 gap-0 min-h-0 overflow-hidden relative ring-0 shadow-none text-neutral-900" size="default">
                     <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-9 items-center px-2.5 shrink-0">
                       <IconTile className="bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 text-white" variant="solid" size="xs">
@@ -159,7 +82,7 @@ export function Pattern() {
                       <div className="contents">
                         <span className="flex font-medium gap-1.5 items-center text-sm">
                           <span className="bg-violet-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                          Acme Inc
+                          {"Acme Inc"}
                           <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                             <path d="m7 15 5 5 5-5"></path>
                             <path d="m7 9 5-5 5 5"></path>
@@ -168,10 +91,10 @@ export function Pattern() {
                       </div>
                       <div className="contents">
                         <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                          /
+                          {"/"}
                         </span>
                         <span className="flex font-medium gap-1.5 items-center text-sm">
-                          Web App
+                          {"Web App"}
                           <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                             <path d="m7 15 5 5 5-5"></path>
                             <path d="m7 9 5-5 5 5"></path>
@@ -180,10 +103,10 @@ export function Pattern() {
                       </div>
                       <div className="contents">
                         <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                          /
+                          {"/"}
                         </span>
                         <span className="flex font-medium gap-1.5 items-center text-sm">
-                          Production
+                          {"Production"}
                           <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                             <path d="m7 15 5 5 5-5"></path>
                             <path d="m7 9 5-5 5 5"></path>
@@ -194,9 +117,9 @@ export function Pattern() {
                         <svg className="lucide lucide-activity size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                           <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                         </svg>
-                        System
+                        {"System"}
                         <span className="dark:text-emerald-400 text-emerald-600">
-                          Normal
+                          {"Normal"}
                         </span>
                       </Badge>
                     </div>
@@ -207,13 +130,13 @@ export function Pattern() {
                             <path d="m21 21-4.34-4.34"></path>
                             <circle cx="11" cy="11" r="8"></circle>
                           </svg>
-                          Search...
+                          {"Search..."}
                           <Kbd className="bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-500 h-5 min-w-5 ms-auto px-1.5 text-neutral-400 text-xs">
-                            ⌘K
+                            {"⌘K"}
                           </Kbd>
                         </Item>
                         <div className="dark:text-neutral-500 font-medium pt-1.5 px-2 text-neutral-400 text-xs">
-                          Platform
+                          {"Platform"}
                         </div>
                         <div className="flex flex-col gap-0.5">
                           <div className="contents">
@@ -224,7 +147,7 @@ export function Pattern() {
                                 <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                               </svg>
-                              Overview
+                              {"Overview"}
                             </Item>
                           </div>
                           <div className="contents">
@@ -235,20 +158,20 @@ export function Pattern() {
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                               </svg>
-                              Users
+                              {"Users"}
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-down ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                             </Item>
                             <div className="border-l border-neutral-200 dark:border-neutral-800 flex flex-col gap-0.5 ms-4 ps-1">
                               <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                All Users
+                                {"All Users"}
                               </Item>
                               <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                Invitations
+                                {"Invitations"}
                               </Item>
                               <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                Roles
+                                {"Roles"}
                               </Item>
                             </div>
                           </div>
@@ -261,7 +184,7 @@ export function Pattern() {
                                 <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
                                 <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                               </svg>
-                              Organizations
+                              {"Organizations"}
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
                               </svg>
@@ -273,7 +196,7 @@ export function Pattern() {
                                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Security
+                              {"Security"}
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
                               </svg>
@@ -286,7 +209,7 @@ export function Pattern() {
                                 <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
                                 <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
                               </svg>
-                              Webhooks
+                              {"Webhooks"}
                             </Item>
                           </div>
                           <div className="contents">
@@ -295,25 +218,25 @@ export function Pattern() {
                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
                                 <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                               </svg>
-                              API Keys
+                              {"API Keys"}
                             </Item>
                           </div>
                         </div>
                         <Card className="[--card-spacing:--spacing(2.5)] bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:ring-white/10 dark:text-neutral-50 gap-2 mt-auto ring-0 ring-neutral-900/8 shadow-sm text-neutral-900" size="sm">
                           <CardContent className="flex flex-col gap-2">
                             <span className="font-semibold text-sm">
-                              Multi-theme support is here
+                              {"Multi-theme support is here"}
                             </span>
                             <span className="dark:text-neutral-400 leading-5 text-neutral-500 text-sm">
-                              Switch between Vega, Nova, Maia, Lyra, and Mira themes.
+                              {"Switch between Vega, Nova, Maia, Lyra, and Mira themes."}
                             </span>
                             <span className="bg-[radial-gradient(120%_90%_at_12%_18%,var(--color-orange-400)_0%,transparent_46%),radial-gradient(120%_120%_at_88%_8%,var(--color-fuchsia-500)_0%,transparent_55%),linear-gradient(160deg,var(--color-violet-600)_0%,var(--color-sky-400)_58%,var(--color-cyan-400)_100%)] block h-20 w-full" aria-hidden="true"></span>
                             <div className="dark:text-neutral-400 flex items-center justify-between text-neutral-500 text-xs">
                               <span>
-                                Read more
+                                {"Read more"}
                               </span>
                               <span>
-                                Dismiss
+                                {"Dismiss"}
                               </span>
                             </div>
                           </CardContent>
@@ -335,16 +258,16 @@ export function Pattern() {
                                   </svg>
                                 </IconTile>
                                 <span className="font-semibold text-base truncate">
-                                  Open Gaps
+                                  {"Open Gaps"}
                                 </span>
                               </div>
                               <div className="flex gap-2 items-end justify-between">
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <span className="font-semibold hero14-rise leading-none tabular-nums text-3xl tracking-tight truncate">
-                                    11
+                                    {"11"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    before kickoff
+                                    {"before kickoff"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-50 border border-amber-200 dark:bg-amber-500/15 dark:border-amber-500/25 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-amber-700 text-xs transition-shadow">
@@ -352,7 +275,7 @@ export function Pattern() {
                                     <path d="M16 17h6v-6"></path>
                                     <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                   </svg>
-                                  -4%
+                                  {"-4%"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -369,16 +292,16 @@ export function Pattern() {
                                   </svg>
                                 </IconTile>
                                 <span className="font-semibold text-base truncate">
-                                  Standby Pool
+                                  {"Standby Pool"}
                                 </span>
                               </div>
                               <div className="flex gap-2 items-end justify-between">
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <span className="font-semibold hero14-rise leading-none tabular-nums text-3xl tracking-tight truncate">
-                                    24
+                                    {"24"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    ready workers
+                                    {"ready workers"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
@@ -386,7 +309,7 @@ export function Pattern() {
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                   </svg>
-                                  +7
+                                  {"+7"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -402,16 +325,16 @@ export function Pattern() {
                                   </svg>
                                 </IconTile>
                                 <span className="font-semibold text-base truncate">
-                                  Swap Risk
+                                  {"Swap Risk"}
                                 </span>
                               </div>
                               <div className="flex gap-2 items-end justify-between">
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <span className="font-semibold hero14-rise leading-none tabular-nums text-3xl tracking-tight truncate">
-                                    8%
+                                    {"8%"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    open requests
+                                    {"open requests"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-rose-50 border border-rose-200 dark:bg-rose-500/15 dark:border-rose-500/25 dark:text-rose-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-rose-700 text-xs transition-shadow">
@@ -419,7 +342,7 @@ export function Pattern() {
                                     <path d="M16 17h6v-6"></path>
                                     <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                   </svg>
-                                  -2%
+                                  {"-2%"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -434,16 +357,16 @@ export function Pattern() {
                                   </svg>
                                 </IconTile>
                                 <span className="font-semibold text-base truncate">
-                                  Check Score
+                                  {"Check Score"}
                                 </span>
                               </div>
                               <div className="flex gap-2 items-end justify-between">
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <span className="font-semibold hero14-rise leading-none tabular-nums text-3xl tracking-tight truncate">
-                                    4.8
+                                    {"4.8"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    site average
+                                    {"site average"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-50 border border-violet-200 dark:bg-violet-500/15 dark:border-violet-500/25 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-violet-700 text-xs transition-shadow">
@@ -451,7 +374,7 @@ export function Pattern() {
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                   </svg>
-                                  +0.3
+                                  {"+0.3"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -465,16 +388,16 @@ export function Pattern() {
                                   </svg>
                                 </IconTile>
                                 <span className="font-semibold text-base truncate">
-                                  Crew Tenure
+                                  {"Crew Tenure"}
                                 </span>
                               </div>
                               <div className="flex gap-2 items-end justify-between">
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <span className="font-semibold hero14-rise leading-none tabular-nums text-3xl tracking-tight truncate">
-                                    146d
+                                    {"146d"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    rolling median
+                                    {"rolling median"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-neutral-50 border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-600 text-xs transition-shadow">
@@ -482,7 +405,7 @@ export function Pattern() {
                                     <path d="M16 7h6v6"></path>
                                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                   </svg>
-                                  +6d
+                                  {"+6d"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -492,33 +415,33 @@ export function Pattern() {
                           <Card className="[--card-spacing:--spacing(4)] bg-white border-0 dark:bg-neutral-900 dark:ring-white/10 dark:text-neutral-50 flex-[1.55] min-h-0 ring-neutral-900/8 text-neutral-900" size="sm">
                             <CardHeader>
                               <CardTitle className="leading-none text-base">
-                                Coverage Review
+                                {"Coverage Review"}
                               </CardTitle>
                               <CardDescription className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                Crew health by district
+                                {"Crew health by district"}
                               </CardDescription>
                               <CardAction>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-50 border border-violet-200 dark:bg-violet-500/15 dark:border-violet-500/25 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-violet-700 text-xs transition-shadow">
-                                  6 crews
+                                  {"6 crews"}
                                 </Badge>
                               </CardAction>
                             </CardHeader>
                             <CardContent className="border border-neutral-200 dark:border-neutral-800 flex flex-1 flex-col min-h-0 overflow-hidden">
                               <div className="border-b border-neutral-200 dark:border-neutral-800 font-medium gap-3 grid grid-cols-[1.7fr_2fr_0.6fr_0.8fr_0.9fr] items-center px-3 py-2 shrink-0 text-sm">
                                 <span>
-                                  Crew Lead
+                                  {"Crew Lead"}
                                 </span>
                                 <span>
-                                  Coverage
+                                  {"Coverage"}
                                 </span>
                                 <span>
-                                  Relief
+                                  {"Relief"}
                                 </span>
                                 <span>
-                                  Handoffs
+                                  {"Handoffs"}
                                 </span>
                                 <span>
-                                  Status
+                                  {"Status"}
                                 </span>
                               </div>
                               <div className="flex flex-1 flex-col min-h-0">
@@ -529,20 +452,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Harbor lead
+                                        {"Harbor lead"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        94%
+                                        {"94%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Adds two closers
+                                        {"Adds two closers"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-emerald-500 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="94" aria-valuetext="94%" role="progressbar" aria-label="Mira Stone coverage">
@@ -550,19 +473,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "94%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    6h
+                                    {"6h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    2
+                                    {"2"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      Stable
+                                      {"Stable"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -573,20 +496,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Dispatch owner
+                                        {"Dispatch owner"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        81%
+                                        {"81%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Driver window tight
+                                        {"Driver window tight"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-amber-400 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="81" aria-valuetext="81%" role="progressbar" aria-label="Leo Grant coverage">
@@ -594,19 +517,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "81%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    3h
+                                    {"3h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    5
+                                    {"5"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-50 border border-amber-200 dark:bg-amber-500/15 dark:border-amber-500/25 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-amber-700 text-xs transition-shadow">
-                                      Watch
+                                      {"Watch"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -617,20 +540,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Nora Vale
+                                        {"Nora Vale"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Inventory coach
+                                        {"Inventory coach"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        72%
+                                        {"72%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Cycle count open
+                                        {"Cycle count open"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-rose-500 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="72" aria-valuetext="72%" role="progressbar" aria-label="Nora Vale coverage">
@@ -638,19 +561,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "72%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    2h
+                                    {"2h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    6
+                                    {"6"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-rose-50 border border-rose-200 dark:bg-rose-500/15 dark:border-rose-500/25 dark:text-rose-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-rose-700 text-xs transition-shadow">
-                                      Critical
+                                      {"Critical"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -661,20 +584,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Theo Park
+                                        {"Theo Park"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Ramp lead
+                                        {"Ramp lead"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        89%
+                                        {"89%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Training overlap
+                                        {"Training overlap"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-emerald-500 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="89" aria-valuetext="89%" role="progressbar" aria-label="Theo Park coverage">
@@ -682,19 +605,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "89%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    5h
+                                    {"5h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    3
+                                    {"3"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      Stable
+                                      {"Stable"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -705,20 +628,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Uptown floater
+                                        {"Uptown floater"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        78%
+                                        {"78%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Awaiting confirm
+                                        {"Awaiting confirm"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-violet-500 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" aria-valuetext="78%" role="progressbar" aria-label="Sana Qureshi coverage">
@@ -726,19 +649,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "78%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    4h
+                                    {"4h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    4
+                                    {"4"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-50 border border-violet-200 dark:bg-violet-500/15 dark:border-violet-500/25 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-violet-700 text-xs transition-shadow">
-                                      Pending
+                                      {"Pending"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -749,20 +672,20 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Harbor stock
+                                        {"Harbor stock"}
                                       </span>
                                     </div>
                                   </div>
                                   <div className="flex flex-col gap-1.5 min-w-0">
                                     <div className="flex gap-2 items-baseline justify-between">
                                       <span className="font-semibold tabular-nums text-sm">
-                                        91%
+                                        {"91%"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                        Backfill locked
+                                        {"Backfill locked"}
                                       </span>
                                     </div>
                                     <Progress className="[&_[data-slot=progress-indicator]]:bg-emerald-500 [&_[data-slot=progress-track]]:bg-neutral-200 [&_[data-slot=progress-track]]:h-1.5 dark:[&_[data-slot=progress-track]]:bg-neutral-800 gap-0 hero14-track w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="91" aria-valuetext="91%" role="progressbar" aria-label="Alex Johnson coverage">
@@ -770,19 +693,19 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "91%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                   </div>
                                   <span className="tabular-nums text-sm">
-                                    7h
+                                    {"7h"}
                                   </span>
                                   <span className="tabular-nums text-sm">
-                                    1
+                                    {"1"}
                                   </span>
                                   <span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      Stable
+                                      {"Stable"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -792,10 +715,10 @@ export function Pattern() {
                           <Card className="[--card-spacing:--spacing(4)] bg-white border-0 dark:bg-neutral-900 dark:ring-white/10 dark:text-neutral-50 flex-1 min-h-0 ring-neutral-900/8 text-neutral-900" size="sm">
                             <CardHeader>
                               <CardTitle className="leading-none text-base">
-                                Action Queue
+                                {"Action Queue"}
                               </CardTitle>
                               <CardDescription className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                Issues before cutoff
+                                {"Issues before cutoff"}
                               </CardDescription>
                               <CardAction>
                                 <svg className="dark:text-neutral-500 lucide lucide-ellipsis size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
@@ -817,14 +740,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    3 swap approvals
+                                    {"3 swap approvals"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    before 2 PM
+                                    {"before 2 PM"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Review
+                                  {"Review"}
                                 </Badge>
                               </div>
                               <div className="border-b border-neutral-100 dark:border-neutral-800/70 flex flex-1 gap-2.5 items-center last:border-b-0 min-w-0 px-3">
@@ -836,14 +759,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    6 standby invites
+                                    {"6 standby invites"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    north route
+                                    {"north route"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Invite
+                                  {"Invite"}
                                 </Badge>
                               </div>
                               <div className="border-b border-neutral-100 dark:border-neutral-800/70 flex flex-1 gap-2.5 items-center last:border-b-0 min-w-0 px-3">
@@ -855,14 +778,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    1 lead missing
+                                    {"1 lead missing"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    Uptown close
+                                    {"Uptown close"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Assign
+                                  {"Assign"}
                                 </Badge>
                               </div>
                               <div className="border-b border-neutral-100 dark:border-neutral-800/70 flex flex-1 gap-2.5 items-center last:border-b-0 min-w-0 px-3">
@@ -874,14 +797,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    Timecard sync
+                                    {"Timecard sync"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    after approvals
+                                    {"after approvals"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Sync
+                                  {"Sync"}
                                 </Badge>
                               </div>
                               <div className="border-b border-neutral-100 dark:border-neutral-800/70 flex flex-1 gap-2.5 items-center last:border-b-0 min-w-0 px-3">
@@ -897,14 +820,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    2 route gaps
+                                    {"2 route gaps"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    airport noon
+                                    {"airport noon"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Fill
+                                  {"Fill"}
                                 </Badge>
                               </div>
                               <div className="border-b border-neutral-100 dark:border-neutral-800/70 flex flex-1 gap-2.5 items-center last:border-b-0 min-w-0 px-3">
@@ -916,14 +839,14 @@ export function Pattern() {
                                 </IconTile>
                                 <div className="flex flex-1 flex-col min-w-0">
                                   <span className="font-medium text-sm truncate">
-                                    Break audit
+                                    {"Break audit"}
                                   </span>
                                   <span className="dark:text-neutral-400 text-neutral-500 text-sm truncate">
-                                    two sites
+                                    {"two sites"}
                                   </span>
                                 </div>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-neutral-700 text-xs transition-shadow">
-                                  Check
+                                  {"Check"}
                                 </Badge>
                               </div>
                             </CardContent>
@@ -932,37 +855,37 @@ export function Pattern() {
                         <Card className="[--card-spacing:--spacing(4)] bg-white border-0 dark:bg-neutral-900 dark:ring-white/10 dark:text-neutral-50 flex-1 min-h-0 ring-neutral-900/8 text-neutral-900" size="sm">
                           <CardHeader>
                             <CardTitle className="leading-none text-base">
-                              Demand Mix
+                              {"Demand Mix"}
                             </CardTitle>
                             <CardDescription className="dark:text-neutral-400 text-neutral-500 text-sm">
-                              Coverage supply against forecast
+                              {"Coverage supply against forecast"}
                             </CardDescription>
                             <CardAction className="flex gap-2 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-neutral-50 border border-neutral-200 dark:bg-neutral-800/50 dark:border-neutral-800 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-2 h-6 h-auto! min-w-6 outline-none px-2.5 py-1.5 relative rounded-full text-sm transition-shadow">
                                 <span className="bg-teal-400 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                                 <span className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                  Supply
+                                  {"Supply"}
                                 </span>
                                 <span className="font-semibold ms-2 tabular-nums text-sm">
-                                  3,294
+                                  {"3,294"}
                                 </span>
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-neutral-50 border border-neutral-200 dark:bg-neutral-800/50 dark:border-neutral-800 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-2 h-6 h-auto! min-w-6 outline-none px-2.5 py-1.5 relative rounded-full text-sm transition-shadow">
                                 <span className="bg-rose-500 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                                 <span className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                  Forecast
+                                  {"Forecast"}
                                 </span>
                                 <span className="font-semibold ms-2 tabular-nums text-sm">
-                                  3,043
+                                  {"3,043"}
                                 </span>
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-neutral-50 border border-neutral-200 dark:bg-neutral-800/50 dark:border-neutral-800 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-2 h-6 h-auto! min-w-6 outline-none px-2.5 py-1.5 relative rounded-full text-sm transition-shadow">
                                 <span className="bg-emerald-400 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                                 <span className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                  Gap
+                                  {"Gap"}
                                 </span>
                                 <span className="dark:text-emerald-400 font-semibold ms-2 tabular-nums text-emerald-600 text-sm">
-                                  +251
+                                  {"+251"}
                                 </span>
                               </Badge>
                             </CardAction>
@@ -972,19 +895,19 @@ export function Pattern() {
                               <div className="flex gap-4 items-center">
                                 <span className="dark:text-neutral-400 flex gap-1.5 items-center text-neutral-500 text-sm">
                                   <span className="bg-teal-400 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                                  Scheduled
+                                  {"Scheduled"}
                                 </span>
                                 <span className="dark:text-neutral-400 flex gap-1.5 items-center text-neutral-500 text-sm">
                                   <span className="bg-[repeating-linear-gradient(45deg,var(--color-teal-400)_0px,var(--color-teal-400)_2px,transparent_2px,transparent_6px)] rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                                  Standby
+                                  {"Standby"}
                                 </span>
                                 <span className="dark:text-neutral-400 flex gap-1.5 items-center text-neutral-500 text-sm">
                                   <span className="bg-rose-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                                  Forecast
+                                  {"Forecast"}
                                 </span>
                               </div>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-50 border border-violet-200 dark:bg-violet-500/15 dark:border-violet-500/25 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-violet-700 text-xs transition-shadow">
-                                21 day view
+                                {"21 day view"}
                               </Badge>
                             </div>
                             <div className="flex-1 min-h-0 relative">
@@ -1081,16 +1004,16 @@ export function Pattern() {
                             </div>
                             <div className="dark:text-neutral-500 flex items-center justify-between shrink-0 text-neutral-400 text-xs">
                               <span>
-                                Mar 1
+                                {"Mar 1"}
                               </span>
                               <span>
-                                Mar 7
+                                {"Mar 7"}
                               </span>
                               <span>
-                                Mar 14
+                                {"Mar 14"}
                               </span>
                               <span>
-                                Mar 21
+                                {"Mar 21"}
                               </span>
                             </div>
                           </CardContent>

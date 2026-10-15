@@ -42,10 +42,10 @@ export function Pattern() {
         <Gantt className="flex-1">
           <GanttNav>
             <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-              Today
+              {"Today"}
             </GanttNavToday>
             <GanttScaleSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
-              Month
+              {"Month"}
               <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
@@ -63,7 +63,7 @@ export function Pattern() {
               </GanttNavNext>
             </div>
             <GanttTitle aria-live="polite">
-              August 2026
+              {"August 2026"}
             </GanttTitle>
             <div className="grow"></div>
             <GanttToolbar>
@@ -72,7 +72,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filter
+                {"Filter"}
               </PopoverTrigger>
               </Popover>
               <Button type="button" tabIndex="0">
@@ -80,7 +80,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New Booking
+                {"New Booking"}
               </Button>
             </GanttToolbar>
           </GanttNav>
@@ -96,17 +96,17 @@ export function Pattern() {
                             <div className="flex flex-1 h-full min-w-0">
                               <div className="flex h-full items-center shrink-0" style={{width: "208px", paddingInlineStart: "2.25rem"}}>
                                 <span className="font-medium text-muted-foreground truncate">
-                                  Resources
+                                  {"Resources"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="role" style={{width: "132px"}}>
                                 <span className="truncate">
-                                  Role
+                                  {"Role"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center justify-end px-2 shrink-0 text-muted-foreground" data-column="load" style={{width: "96px"}}>
                                 <span className="truncate">
-                                  Load
+                                  {"Load"}
                                 </span>
                               </div>
                               <div className="flex-1 min-w-0"></div>
@@ -140,10 +140,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-2 items-center min-w-0">
                                     <span className="font-medium truncate">
-                                      Experience
+                                      {"Experience"}
                                     </span>
                                     <span className="shrink-0 text-muted-foreground">
-                                      3
+                                      {"3"}
                                     </span>
                                   </span>
                                 </div>
@@ -151,14 +151,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Lead Mira Stone
+                                    {"Lead Mira Stone"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    220/280
+                                    {"220/280"}
                                   </Badge>
                                 </div>
                               </div>
@@ -177,10 +177,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Design Lead
+                                        {"Design Lead"}
                                       </span>
                                     </span>
                                   </span>
@@ -189,14 +189,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Design Lead
+                                    {"Design Lead"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    60/100
+                                    {"60/100"}
                                   </Badge>
                                 </div>
                               </div>
@@ -215,10 +215,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Nora Vale
+                                        {"Nora Vale"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Product Designer
+                                        {"Product Designer"}
                                       </span>
                                     </span>
                                   </span>
@@ -227,14 +227,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Product Designer
+                                    {"Product Designer"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    70/100
+                                    {"70/100"}
                                   </Badge>
                                 </div>
                               </div>
@@ -253,10 +253,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Theo Park
+                                        {"Theo Park"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Frontend Engineer
+                                        {"Frontend Engineer"}
                                       </span>
                                     </span>
                                   </span>
@@ -265,14 +265,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Frontend Engineer
+                                    {"Frontend Engineer"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                    90/80
+                                    {"90/80"}
                                   </Badge>
                                 </div>
                               </div>
@@ -293,10 +293,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-2 items-center min-w-0">
                                     <span className="font-medium truncate">
-                                      Platform
+                                      {"Platform"}
                                     </span>
                                     <span className="shrink-0 text-muted-foreground">
-                                      3
+                                      {"3"}
                                     </span>
                                   </span>
                                 </div>
@@ -304,14 +304,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Lead Leo Grant
+                                    {"Lead Leo Grant"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    190/260
+                                    {"190/260"}
                                   </Badge>
                                 </div>
                               </div>
@@ -330,10 +330,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Staff Engineer
+                                        {"Staff Engineer"}
                                       </span>
                                     </span>
                                   </span>
@@ -342,14 +342,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Staff Engineer
+                                    {"Staff Engineer"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    50/100
+                                    {"50/100"}
                                   </Badge>
                                 </div>
                               </div>
@@ -368,10 +368,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Backend Engineer
+                                        {"Backend Engineer"}
                                       </span>
                                     </span>
                                   </span>
@@ -380,14 +380,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Backend Engineer
+                                    {"Backend Engineer"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    80/100
+                                    {"80/100"}
                                   </Badge>
                                 </div>
                               </div>
@@ -406,10 +406,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Priya Patel
+                                        {"Priya Patel"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Platform Engineer
+                                        {"Platform Engineer"}
                                       </span>
                                     </span>
                                   </span>
@@ -418,14 +418,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Platform Engineer
+                                    {"Platform Engineer"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    60/60
+                                    {"60/60"}
                                   </Badge>
                                 </div>
                               </div>
@@ -446,10 +446,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-2 items-center min-w-0">
                                     <span className="font-medium truncate">
-                                      Insights
+                                      {"Insights"}
                                     </span>
                                     <span className="shrink-0 text-muted-foreground">
-                                      2
+                                      {"2"}
                                     </span>
                                   </span>
                                 </div>
@@ -457,14 +457,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Lead Sana Qureshi
+                                    {"Lead Sana Qureshi"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    110/180
+                                    {"110/180"}
                                   </Badge>
                                 </div>
                               </div>
@@ -483,10 +483,10 @@ export function Pattern() {
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Research Lead
+                                        {"Research Lead"}
                                       </span>
                                     </span>
                                   </span>
@@ -495,14 +495,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Research Lead
+                                    {"Research Lead"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    60/100
+                                    {"60/100"}
                                   </Badge>
                                 </div>
                               </div>
@@ -518,15 +518,15 @@ export function Pattern() {
                                   <span className="flex gap-2 items-center min-w-0">
                                     <Avatar className="size-6" size="default">
                                       <AvatarFallback className="text-[10px]">
-                                        DO
+                                        {"DO"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="flex flex-col min-w-0">
                                       <span className="font-medium truncate">
-                                        Devin Okoye
+                                        {"Devin Okoye"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        Data Analyst
+                                        {"Data Analyst"}
                                       </span>
                                     </span>
                                   </span>
@@ -535,14 +535,14 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="role" style={{width: "132px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="text-muted-foreground truncate">
-                                    Data Analyst
+                                    {"Data Analyst"}
                                   </span>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="load" style={{width: "96px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    50/80
+                                    {"50/80"}
                                   </Badge>
                                 </div>
                               </div>
@@ -589,32 +589,32 @@ export function Pattern() {
                             <div className="flex h-full">
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "1 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W31 Jul 26 - 1
+                                  {"W31 Jul 26 - 1"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W32 Aug 2 - 8
+                                  {"W32 Aug 2 - 8"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W33 Aug 9 - 15
+                                  {"W33 Aug 9 - 15"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W34 Aug 16 - 22
+                                  {"W34 Aug 16 - 22"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "7 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W35 Aug 23 - 29
+                                  {"W35 Aug 23 - 29"}
                                 </span>
                               </div>
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "2 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  W36 Aug 30 - 5
+                                  {"W36 Aug 30 - 5"}
                                 </span>
                               </div>
                             </div>
@@ -639,97 +639,97 @@ export function Pattern() {
                             </div>
                             <div className="flex h-full">
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 1
+                                {"Sat 1"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 2
+                                {"Sun 2"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 3
+                                {"Mon 3"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 4
+                                {"Tue 4"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 5
+                                {"Wed 5"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 6
+                                {"Thu 6"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 7
+                                {"Fri 7"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 8
+                                {"Sat 8"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 9
+                                {"Sun 9"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 10
+                                {"Mon 10"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 11
+                                {"Tue 11"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 12
+                                {"Wed 12"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 13
+                                {"Thu 13"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 14
+                                {"Fri 14"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 15
+                                {"Sat 15"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 16
+                                {"Sun 16"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 17
+                                {"Mon 17"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 18
+                                {"Tue 18"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 19
+                                {"Wed 19"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 20
+                                {"Thu 20"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 21
+                                {"Fri 21"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 22
+                                {"Sat 22"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 23
+                                {"Sun 23"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 24
+                                {"Mon 24"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Tue 25
+                                {"Tue 25"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Wed 26
+                                {"Wed 26"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Thu 27
+                                {"Thu 27"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Fri 28
+                                {"Fri 28"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sat 29
+                                {"Sat 29"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                Sun 30
+                                {"Sun 30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                Mon 31
+                                {"Mon 31"}
                               </div>
                             </div>
                             <span className="absolute bg-border inset-y-0 w-px" aria-hidden="true" data-axis="vertical" style={{insetInlineStart: "calc(3.22581% - 1px)"}}></span>
@@ -856,7 +856,7 @@ export function Pattern() {
                                     <span className="absolute bg-success inset-y-0 start-0" style={{width: "81%"}}></span>
                                   </div>
                                   <span className="font-medium shrink-0 tabular-nums text-[10px] text-success-foreground">
-                                    81%
+                                    {"81%"}
                                   </span>
                                 </div>
                               </div>
@@ -871,7 +871,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Checkout Audit
+                                          {"Checkout Audit"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -886,18 +886,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Northwind Retail
+                                          {"Northwind Retail"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 3
+                                          {"Aug 3"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Discovery
+                                            {"Discovery"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                            High
+                                            {"High"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -918,7 +918,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Design System
+                                          {"Design System"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -930,18 +930,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Internal
+                                          {"Internal"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 8
+                                          {"Aug 8"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Design
+                                            {"Design"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                            Medium
+                                            {"Medium"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -966,7 +966,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Onboarding Flow
+                                          {"Onboarding Flow"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -981,18 +981,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Kestrel Health
+                                          {"Kestrel Health"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 4
+                                          {"Aug 4"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Design
+                                            {"Design"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                            High
+                                            {"High"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1022,7 +1022,7 @@ export function Pattern() {
                                           <path d="M12 17h.01"></path>
                                         </svg>
                                         <span className="font-medium truncate">
-                                          Billing Rewrite
+                                          {"Billing Rewrite"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1037,18 +1037,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Kestrel Health
+                                          {"Kestrel Health"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 3
+                                          {"Aug 3"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Build
+                                            {"Build"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                            High
+                                            {"High"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1069,7 +1069,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Launch Review
+                                          {"Launch Review"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1081,18 +1081,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Northwind Retail
+                                          {"Northwind Retail"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 11
+                                          {"Aug 11"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Launch
+                                            {"Launch"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                            Low
+                                            {"Low"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1116,7 +1116,7 @@ export function Pattern() {
                                     <span className="absolute bg-success inset-y-0 start-0" style={{width: "77%"}}></span>
                                   </div>
                                   <span className="font-medium shrink-0 tabular-nums text-[10px] text-success-foreground">
-                                    77%
+                                    {"77%"}
                                   </span>
                                 </div>
                               </div>
@@ -1131,7 +1131,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Search Rollout
+                                          {"Search Rollout"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1149,18 +1149,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Northwind Retail
+                                          {"Northwind Retail"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 6
+                                          {"Aug 6"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Launch
+                                            {"Launch"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                            Medium
+                                            {"Medium"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1181,7 +1181,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Event Pipeline
+                                          {"Event Pipeline"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1193,18 +1193,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Meridian Logistics
+                                          {"Meridian Logistics"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 13
+                                          {"Aug 13"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Build
+                                            {"Build"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                            Low
+                                            {"Low"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1229,7 +1229,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Ledger Sync
+                                          {"Ledger Sync"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1241,18 +1241,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Meridian Logistics
+                                          {"Meridian Logistics"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 3
+                                          {"Aug 3"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Build
+                                            {"Build"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                            Medium
+                                            {"Medium"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1280,24 +1280,24 @@ export function Pattern() {
                                           <path d="M20 6 9 17l-5-5"></path>
                                         </svg>
                                         <span className="font-medium truncate">
-                                          Cache Tuning
+                                          {"Cache Tuning"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0"></span>
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Internal
+                                          {"Internal"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 4
+                                          {"Aug 4"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Build
+                                            {"Build"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                            Low
+                                            {"Low"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1321,7 +1321,7 @@ export function Pattern() {
                                     <span className="absolute bg-success inset-y-0 start-0" style={{width: "61%"}}></span>
                                   </div>
                                   <span className="font-medium shrink-0 tabular-nums text-[10px] text-success-foreground">
-                                    61%
+                                    {"61%"}
                                   </span>
                                 </div>
                               </div>
@@ -1336,13 +1336,13 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Pricing Study
+                                          {"Pricing Study"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
                                             <Avatar className="size-5" size="default">
                                               <AvatarFallback className="text-[9px]">
-                                                DO
+                                                {"DO"}
                                               </AvatarFallback>
                                             </Avatar>
                                             <Avatar className="size-5" size="default">
@@ -1353,18 +1353,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Northwind Retail
+                                          {"Northwind Retail"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 5
+                                          {"Aug 5"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Discovery
+                                            {"Discovery"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                            High
+                                            {"High"}
                                           </Badge>
                                         </span>
                                       </div>
@@ -1389,7 +1389,7 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
                                         <span className="font-medium truncate">
-                                          Churn Model
+                                          {"Churn Model"}
                                         </span>
                                         <span className="ms-auto ps-1 shrink-0">
                                           <AvatarGroup>
@@ -1401,18 +1401,18 @@ export function Pattern() {
                                       </div>
                                       <div className="@[11rem]:flex gap-1.5 hidden items-center min-w-0">
                                         <span className="text-muted-foreground truncate">
-                                          Kestrel Health
+                                          {"Kestrel Health"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="shrink-0 text-muted-foreground">
-                                          Aug 7
+                                          {"Aug 7"}
                                         </span>
                                         <span className="@[16rem]:flex gap-1 hidden items-center ps-0.5 shrink-0">
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                            Discovery
+                                            {"Discovery"}
                                           </Badge>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                            Medium
+                                            {"Medium"}
                                           </Badge>
                                         </span>
                                       </div>

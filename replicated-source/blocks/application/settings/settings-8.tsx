@@ -30,10 +30,10 @@ export function Pattern() {
         <header className="flex flex-row gap-4 items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-2.5!">
           <div className="space-y-px">
             <div className="font-semibold text-sm">
-              Webhook Endpoints
+              {"Webhook Endpoints"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Routes and status
+              {"Routes and status"}
             </div>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
@@ -41,7 +41,7 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add Endpoint
+            {"Add Endpoint"}
           </Button>
         </header>
         <FramePanel className="p-0!">
@@ -58,7 +58,7 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Billing Pipeline
+                    {"Billing Pipeline"}
                   </span>
                   <span className="flex gap-1 items-center shrink-0">
                     <Tooltip>
@@ -71,13 +71,13 @@ export function Pattern() {
                     </Tooltip>
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Delivering
+                    {"Delivering"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                     <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                      https://events.acme.dev/webhooks/billing
+                      {"https://events.acme.dev/webhooks/billing"}
                     </code>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy endpoint URL for Billing Pipeline" id="base-ui-_r_3_" baseUiTooltipTrigger="">
@@ -123,7 +123,7 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Customer Ledger
+                    {"Customer Ledger"}
                   </span>
                   <span className="flex gap-1 items-center shrink-0">
                     <Tooltip>
@@ -137,13 +137,13 @@ export function Pattern() {
                     </Tooltip>
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Delivering
+                    {"Delivering"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                     <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                      https://ingest.acme.dev/webhooks/customers
+                      {"https://ingest.acme.dev/webhooks/customers"}
                     </code>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy endpoint URL for Customer Ledger" id="base-ui-_r_f_" baseUiTooltipTrigger="">
@@ -189,7 +189,7 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Subscription Orchestrator
+                    {"Subscription Orchestrator"}
                   </span>
                   <span className="flex gap-1 items-center shrink-0">
                     <Tooltip>
@@ -212,13 +212,13 @@ export function Pattern() {
                     </Tooltip>
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Retrying
+                    {"Retrying"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                     <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                      https://ops.acme.dev/webhooks/subscriptions
+                      {"https://ops.acme.dev/webhooks/subscriptions"}
                     </code>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy endpoint URL for Subscription Orchestrator" id="base-ui-_r_t_" baseUiTooltipTrigger="">
@@ -263,7 +263,7 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Finance Reconciliation
+                    {"Finance Reconciliation"}
                   </span>
                   <span className="flex gap-1 items-center shrink-0">
                     <Tooltip>
@@ -277,13 +277,13 @@ export function Pattern() {
                     </Tooltip>
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Paused
+                    {"Paused"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                     <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                      https://ledger.acme.dev/webhooks/payouts
+                      {"https://ledger.acme.dev/webhooks/payouts"}
                     </code>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy endpoint URL for Finance Reconciliation" id="base-ui-_r_19_" baseUiTooltipTrigger="">
@@ -328,7 +328,7 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Risk Intake
+                    {"Risk Intake"}
                   </span>
                   <span className="flex gap-1 items-center shrink-0">
                     <Tooltip>
@@ -342,13 +342,13 @@ export function Pattern() {
                     </Tooltip>
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Delivering
+                    {"Delivering"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="align-top gap-1 group/url inline-flex items-center max-w-full">
                     <code className="max-w-full min-w-0 text-foreground/90 text-xs truncate">
-                      https://risk.acme.dev/webhooks/disputes
+                      {"https://risk.acme.dev/webhooks/disputes"}
                     </code>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy endpoint URL for Risk Intake" id="base-ui-_r_1l_" baseUiTooltipTrigger="">

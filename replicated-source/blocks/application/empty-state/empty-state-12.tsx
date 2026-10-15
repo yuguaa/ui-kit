@@ -20,24 +20,24 @@ export function Pattern() {
   return (
     <main className="flex items-center justify-center md:p-10 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Activity exports empty state
+        {"Activity exports empty state"}
       </h1>
       <section className="flex flex-col max-w-4xl min-h-[430px] w-full" aria-labelledby="export-ledger-heading">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between pb-4">
           <div className="flex flex-col gap-5 min-w-0">
             <div className="flex flex-col gap-0.5">
               <h2 className="font-semibold text-2xl tracking-tight" id="export-ledger-heading">
-                Activity Exports
+                {"Activity Exports"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Download scoped activity packets for billing review, staffing audits, and client handoffs.
+                {"Download scoped activity packets for billing review, staffing audits, and client handoffs."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Audience: Everyone" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
                 <span className="truncate">
-                  Everyone
+                  {"Everyone"}
                 </span>
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -47,7 +47,7 @@ export function Pattern() {
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Workspace: All workspaces" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
                 <span className="truncate">
-                  All workspaces
+                  {"All workspaces"}
                 </span>
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -57,7 +57,7 @@ export function Pattern() {
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Date range: Last 30 days" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
                 <span className="truncate">
-                  Last 30 days
+                  {"Last 30 days"}
                 </span>
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -72,7 +72,7 @@ export function Pattern() {
                 <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
               </svg>
               <span>
-                Execute
+                {"Execute"}
               </span>
             </Button>
             <ButtonGroupSeparator className="bg-primary/72 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
@@ -117,10 +117,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <EmptyTitle className="font-semibold text-base tracking-tight">
-                  No exportable activity yet
+                  {"No exportable activity yet"}
                 </EmptyTitle>
                 <EmptyDescription className="max-w-sm text-sm/relaxed">
-                  Capture approved activity and this view will assemble your next review packet.
+                  {"Capture approved activity and this view will assemble your next review packet."}
                 </EmptyDescription>
               </div>
             </EmptyHeader>

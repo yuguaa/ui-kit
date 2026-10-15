@@ -43,30 +43,30 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Launch runbook spreadsheet
+        {"Launch runbook spreadsheet"}
       </h1>
       <Frame className="w-full" spacing="sm">
         <header className="flex flex-row gap-3 items-center justify-between max-sm:flex-col max-sm:items-start px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px">
             <div className="font-semibold text-balance text-sm">
-              Launch Runbook
+              {"Launch Runbook"}
             </div>
             <div className="text-muted-foreground text-xs">
               <span className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center">
                 <span className="tabular-nums">
-                  8 of 60 done
+                  {"8 of 60 done"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center tabular-nums">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  218 points open
+                  {"218 points open"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center tabular-nums text-destructive">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  4 blocked
+                  {"4 blocked"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center tabular-nums">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  11 days to launch
+                  {"11 days to launch"}
                 </span>
               </span>
             </div>
@@ -77,7 +77,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New Task
+              {"New Task"}
             </Button>
           </div>
         </header>
@@ -97,18 +97,18 @@ export function Pattern() {
                       </svg>
                       <span className="flex items-center">
                         <span>
-                          Task
+                          {"Task"}
                         </span>
                       </span>
                     </div>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3_" aria-haspopup="dialog" aria-expanded="false">
-                      contains
+                      {"contains"}
                     </PopoverTrigger>
                     </Popover>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" aria-label="Search tasks..." tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
-                      Search tasks...
+                      {"Search tasks..."}
                     </PopoverTrigger>
                     </Popover>
                     <DropdownMenu>
@@ -127,7 +127,7 @@ export function Pattern() {
                   <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                   </svg>
-                  Filter
+                  {"Filter"}
                 </PopoverTrigger>
                 </Popover>
                 <div className="sr-only" aria-live="polite" role="status">
@@ -142,9 +142,9 @@ export function Pattern() {
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
-                Columns
+                {"Columns"}
                 <span className="tabular-nums text-muted-foreground">
-                  6
+                  {"6"}
                 </span>
               </CascaderTrigger>
               <input id="base-ui-_r_e_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
@@ -156,7 +156,7 @@ export function Pattern() {
                   <circle cx="17" cy="17" r="3"></circle>
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
-                Settings
+                {"Settings"}
               </DropdownMenuTrigger>
               </DropdownMenu>
             </div>
@@ -167,10 +167,13 @@ export function Pattern() {
             <DataGrid>
               <div>
                 <div className="relative">
+                  <DataGridProvider>
                   <DataGridScrollArea className="h-140" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="" overflowVertical="true">
                     <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_q_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "505px"}} data-has-overflow-y="" data-overflow-y-end="">
                       <div role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-y="" data-overflow-y-end="">
+                        <DataGridProvider>
                         <DataGridTableViewport style={{width: "calc(1214px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                          <DataGridProvider>
                           <DataGridTable role="grid" aria-multiselectable="true" aria-rowcount="61" style={{"--header-title-size": "426", "--col-title-size": "426", "--header-status-size": "140", "--col-status-size": "140", "--header-assignees-size": "272", "--col-assignees-size": "272", "--header-due-size": "116", "--col-due-size": "116", "--header-priority-size": "132", "--col-priority-size": "132", "--header-effort-size": "128", "--col-effort-size": "128", width: "calc(1214px + var(--data-grid-fill-size, 0px))", outline: "none"}} tabIndex="0">
                             <colgroup>
                               <col style={{width: "calc(var(--col-title-size) * 1px)"}} />
@@ -194,7 +197,7 @@ export function Pattern() {
                                         <path d="M16 13H8"></path>
                                         <path d="M16 17H8"></path>
                                       </svg>
-                                      Task
+                                      {"Task"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -212,7 +215,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <circle cx="12" cy="12" r="1"></circle>
                                       </svg>
-                                      Status
+                                      {"Status"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -232,7 +235,7 @@ export function Pattern() {
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                                         <circle cx="9" cy="7" r="4"></circle>
                                       </svg>
-                                      Assignees
+                                      {"Assignees"}
                                     </DropdownMenuTrigger>
                                     </DropdownMenu>
                                   </div>
@@ -248,7 +251,7 @@ export function Pattern() {
                                         <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                         <path d="M3 10h18"></path>
                                       </svg>
-                                      Due
+                                      {"Due"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -266,7 +269,7 @@ export function Pattern() {
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
                                       </svg>
-                                      Priority
+                                      {"Priority"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -286,7 +289,7 @@ export function Pattern() {
                                         <line x1="10" x2="8" y1="3" y2="21"></line>
                                         <line x1="16" x2="14" y1="3" y2="21"></line>
                                       </svg>
-                                      Points
+                                      {"Points"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -299,6 +302,7 @@ export function Pattern() {
                                 <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                               </tr>
                             </thead>
+                            <DataGridProvider>
                             <DataGridTableBody>
                               <tr className="*:last:border-e-0 [&:not(:last-child)>td]:border-b data-[context-open]:[&>td[data-pinned]]:bg-[color-mix(in_oklab,var(--muted)_50%,var(--background))] data-[context-open]:bg-muted/50 data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 group/row hover:bg-muted/40" data-index="0" data-row-id="t1" aria-rowindex="2">
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] last:pe-4 min-w-0 px-3 py-2 relative select-none" id="_r_0_c-t1-title" aria-colindex="1" aria-selected="false" data-col-id="title" style={{width: "calc(var(--col-title-size) * 1px)"}}>
@@ -313,7 +317,7 @@ export function Pattern() {
                                       </Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="decoration-1 decoration-current/55 font-medium line-through min-w-0 text-muted-foreground truncate">
-                                        Freeze the release branch and cut rc.1
+                                        {"Freeze the release branch and cut rc.1"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -324,7 +328,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Shipped
+                                        {"Shipped"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -336,7 +340,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -354,7 +358,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_23_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 8
+                                        {"Sep 8"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -368,7 +372,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -377,9 +381,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t1-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      2
+                                      {"2"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -393,7 +397,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_24_" aria-checked="false" aria-label="Complete Run the full regression suite against staging"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Run the full regression suite against staging
+                                        {"Run the full regression suite against staging"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -404,7 +408,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                                         <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In progress
+                                        {"In progress"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -416,7 +420,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -428,7 +432,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -446,7 +450,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_2b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="font-medium tabular-nums text-sm text-warning truncate">
-                                        Sep 15
+                                        {"Sep 15"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -460,7 +464,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -469,9 +473,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t2-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      8
+                                      {"8"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -485,7 +489,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2c_" aria-checked="false" aria-label="Complete Publish the migration guide for the v3 ingest API"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Publish the migration guide for the v3 ingest API
+                                        {"Publish the migration guide for the v3 ingest API"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -496,7 +500,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In review
+                                        {"In review"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -508,7 +512,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Nora
+                                        {"Nora"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Nora Vale">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -526,7 +530,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_2j_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 17
+                                        {"Sep 17"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -540,7 +544,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -549,9 +553,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t3-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      5
+                                      {"5"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -565,7 +569,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2k_" aria-checked="false" aria-label="Complete Load test the ingest pipeline at three times peak"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Load test the ingest pipeline at three times peak
+                                        {"Load test the ingest pipeline at three times peak"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -576,7 +580,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                                         <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Blocked
+                                        {"Blocked"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -588,7 +592,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -600,7 +604,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -618,7 +622,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_2r_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="font-medium tabular-nums text-destructive text-sm truncate">
-                                        Sep 11
+                                        {"Sep 11"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -632,7 +636,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -641,9 +645,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t4-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      13
+                                      {"13"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -657,7 +661,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2s_" aria-checked="false" aria-label="Complete Rotate signing keys and refresh CI secrets"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Rotate signing keys and refresh CI secrets
+                                        {"Rotate signing keys and refresh CI secrets"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -668,7 +672,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -680,7 +684,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -698,7 +702,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_33_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 18
+                                        {"Sep 18"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -712,7 +716,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -721,9 +725,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t5-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -737,7 +741,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_34_" aria-checked="false" aria-label="Complete Draft the changelog and the in-app release note"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Draft the changelog and the in-app release note
+                                        {"Draft the changelog and the in-app release note"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -748,7 +752,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                                         <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In progress
+                                        {"In progress"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -760,7 +764,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Mira
+                                        {"Mira"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Mira Stone">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -772,7 +776,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Nora
+                                        {"Nora"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Nora Vale">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -790,7 +794,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 19
+                                        {"Sep 19"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -804,7 +808,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -813,9 +817,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t6-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -829,7 +833,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3c_" aria-checked="false" aria-label="Complete Verify proration on annual plan upgrades"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Verify proration on annual plan upgrades
+                                        {"Verify proration on annual plan upgrades"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -840,7 +844,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -852,7 +856,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Priya Patel" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Priya
+                                        {"Priya"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Priya Patel">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -870,7 +874,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3j_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="font-medium tabular-nums text-sm text-warning truncate">
-                                        Sep 16
+                                        {"Sep 16"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -884,7 +888,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -893,9 +897,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t7-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      5
+                                      {"5"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -909,7 +913,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3k_" aria-checked="false" aria-label="Complete Update the status page components and runbook links"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Update the status page components and runbook links
+                                        {"Update the status page components and runbook links"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -920,7 +924,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Backlog
+                                        {"Backlog"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -938,7 +942,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3r_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="text-muted-foreground/70 text-xs">
-                                        No date
+                                        {"No date"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -952,7 +956,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Low
+                                          {"Low"}
                                         </span>
                                       </span>
                                     </span>
@@ -961,9 +965,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t8-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      2
+                                      {"2"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -977,7 +981,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3s_" aria-checked="false" aria-label="Complete Localize onboarding strings for German and Japanese"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Localize onboarding strings for German and Japanese
+                                        {"Localize onboarding strings for German and Japanese"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -988,7 +992,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                                         <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In progress
+                                        {"In progress"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1000,7 +1004,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Sana
+                                        {"Sana"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Sana Qureshi">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1018,7 +1022,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_43_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 22
+                                        {"Sep 22"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1032,7 +1036,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -1041,9 +1045,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t9-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      8
+                                      {"8"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1057,7 +1061,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_44_" aria-checked="false" aria-label="Complete Dry run the rollback procedure end to end"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Dry run the rollback procedure end to end
+                                        {"Dry run the rollback procedure end to end"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1068,7 +1072,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1080,7 +1084,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1092,7 +1096,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1104,7 +1108,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1122,7 +1126,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_4b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 23
+                                        {"Sep 23"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1136,7 +1140,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -1145,9 +1149,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t10-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      8
+                                      {"8"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1161,7 +1165,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4c_" aria-checked="false" aria-label="Complete Collect SOC 2 evidence for the new subprocessor"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Collect SOC 2 evidence for the new subprocessor
+                                        {"Collect SOC 2 evidence for the new subprocessor"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1172,7 +1176,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In review
+                                        {"In review"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1184,7 +1188,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Sana
+                                        {"Sana"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Sana Qureshi">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1202,7 +1206,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_4j_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 20
+                                        {"Sep 20"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1216,7 +1220,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -1225,9 +1229,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t11-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      5
+                                      {"5"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1241,7 +1245,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4k_" aria-checked="false" aria-label="Complete Schedule the customer webinar and send invites"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Schedule the customer webinar and send invites
+                                        {"Schedule the customer webinar and send invites"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1252,7 +1256,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Backlog
+                                        {"Backlog"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1264,7 +1268,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Mira
+                                        {"Mira"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Mira Stone">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1282,7 +1286,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_4r_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 24
+                                        {"Sep 24"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1296,7 +1300,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -1305,9 +1309,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t12-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1321,7 +1325,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4s_" aria-checked="false" aria-label="Complete Enable the flag for the five percent canary"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Enable the flag for the five percent canary
+                                        {"Enable the flag for the five percent canary"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1332,7 +1336,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1344,7 +1348,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1362,7 +1366,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_53_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 25
+                                        {"Sep 25"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1376,7 +1380,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -1385,9 +1389,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t13-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      2
+                                      {"2"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1407,7 +1411,7 @@ export function Pattern() {
                                       </Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="decoration-1 decoration-current/55 font-medium line-through min-w-0 text-muted-foreground truncate">
-                                        Archive the deprecated v2 dashboards
+                                        {"Archive the deprecated v2 dashboards"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1418,7 +1422,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Shipped
+                                        {"Shipped"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1430,7 +1434,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1448,7 +1452,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 9
+                                        {"Sep 9"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1462,7 +1466,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Low
+                                          {"Low"}
                                         </span>
                                       </span>
                                     </span>
@@ -1471,9 +1475,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t14-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      1
+                                      {"1"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1487,7 +1491,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_5c_" aria-checked="false" aria-label="Complete Cut rc.2 with the ingest hotfix"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Cut rc.2 with the ingest hotfix
+                                        {"Cut rc.2 with the ingest hotfix"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1498,7 +1502,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1510,7 +1514,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1528,7 +1532,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5j_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="font-medium tabular-nums text-sm text-warning truncate">
-                                        Sep 16
+                                        {"Sep 16"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1542,7 +1546,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -1551,9 +1555,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t15-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1567,7 +1571,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_5k_" aria-checked="false" aria-label="Complete Drain the legacy queue before the cutover window"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Drain the legacy queue before the cutover window
+                                        {"Drain the legacy queue before the cutover window"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1578,7 +1582,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Backlog
+                                        {"Backlog"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1590,7 +1594,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1608,7 +1612,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5r_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 22
+                                        {"Sep 22"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1622,7 +1626,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -1631,9 +1635,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t16-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      5
+                                      {"5"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1647,7 +1651,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_5s_" aria-checked="false" aria-label="Complete Verify blue green routing weights in staging"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Verify blue green routing weights in staging
+                                        {"Verify blue green routing weights in staging"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1658,7 +1662,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                                         <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In progress
+                                        {"In progress"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1670,7 +1674,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1688,7 +1692,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_63_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 17
+                                        {"Sep 17"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1702,7 +1706,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          High
+                                          {"High"}
                                         </span>
                                       </span>
                                     </span>
@@ -1711,9 +1715,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t17-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1727,7 +1731,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_64_" aria-checked="false" aria-label="Complete Rehearse the database migration on a restored snapshot"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Rehearse the database migration on a restored snapshot
+                                        {"Rehearse the database migration on a restored snapshot"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1738,7 +1742,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Ready
+                                        {"Ready"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1750,7 +1754,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1762,7 +1766,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1780,7 +1784,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_6b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 18
+                                        {"Sep 18"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1794,7 +1798,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </span>
                                     </span>
@@ -1803,9 +1807,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t18-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      8
+                                      {"8"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1825,7 +1829,7 @@ export function Pattern() {
                                       </Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="decoration-1 decoration-current/55 font-medium line-through min-w-0 text-muted-foreground truncate">
-                                        Raise the connection pool ceiling for launch traffic
+                                        {"Raise the connection pool ceiling for launch traffic"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1836,7 +1840,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Shipped
+                                        {"Shipped"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1848,7 +1852,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Ivo Brandt" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Ivo
+                                        {"Ivo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Ivo Brandt">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1866,7 +1870,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_6j_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 11
+                                        {"Sep 11"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1880,7 +1884,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -1889,9 +1893,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t19-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      2
+                                      {"2"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1905,7 +1909,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6k_" aria-checked="false" aria-label="Complete Pin the CDN cache rules for the new asset paths"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Pin the CDN cache rules for the new asset paths
+                                        {"Pin the CDN cache rules for the new asset paths"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1916,7 +1920,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        In review
+                                        {"In review"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -1928,7 +1932,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Theo Park" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Theo
+                                        {"Theo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Theo Park">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -1946,7 +1950,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_6r_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 19
+                                        {"Sep 19"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -1960,7 +1964,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -1969,9 +1973,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t20-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      2
+                                      {"2"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -1985,7 +1989,7 @@ export function Pattern() {
                                       <Checkbox className="rounded-full" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6s_" aria-checked="false" aria-label="Complete Add a synthetic check for the checkout callback"></Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="font-medium min-w-0 truncate">
-                                        Add a synthetic check for the checkout callback
+                                        {"Add a synthetic check for the checkout callback"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -1996,7 +2000,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Backlog
+                                        {"Backlog"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -2014,7 +2018,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_73_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 24
+                                        {"Sep 24"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -2028,7 +2032,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Normal
+                                          {"Normal"}
                                         </span>
                                       </span>
                                     </span>
@@ -2037,9 +2041,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t21-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      3
+                                      {"3"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -2059,7 +2063,7 @@ export function Pattern() {
                                       </Checkbox>
                                       <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="decoration-1 decoration-current/55 font-medium line-through min-w-0 text-muted-foreground truncate">
-                                        Rotate the staging service account keys
+                                        {"Rotate the staging service account keys"}
                                       </span>
                                       <span className="absolute bg-gradient-to-l end-0 flex from-background gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-background/90 z-10" data-cell-interactive=""></span>
                                     </span>
@@ -2070,7 +2074,7 @@ export function Pattern() {
                                     <span className="flex h-6 items-center px-1 w-full" data-cell-control="" aria-label="Status">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Shipped
+                                        {"Shipped"}
                                       </Badge>
                                     </span>
                                   </div>
@@ -2082,7 +2086,7 @@ export function Pattern() {
                                         <Avatar className="size-3.5" size="default">
                                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
-                                        Leo
+                                        {"Leo"}
                                         <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove Leo Grant">
                                           <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                             <path d="M18 6 6 18"></path>
@@ -2100,7 +2104,7 @@ export function Pattern() {
                                     <Popover>
                                     <PopoverTrigger className="cursor-pointer flex items-center min-h-6 text-start w-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_7b_" aria-haspopup="dialog" aria-expanded="false" cellControl="" aria-label="Due date">
                                       <span className="tabular-nums text-foreground text-sm truncate">
-                                        Sep 9
+                                        {"Sep 9"}
                                       </span>
                                     </PopoverTrigger>
                                     </Popover>
@@ -2114,7 +2118,7 @@ export function Pattern() {
                                           <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                         </svg>
                                         <span className="truncate">
-                                          Low
+                                          {"Low"}
                                         </span>
                                       </span>
                                     </span>
@@ -2123,9 +2127,9 @@ export function Pattern() {
                                 <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle border-e-0 data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-4 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden justify-end last:[--data-grid-overlay-end:0px] last:pe-4 px-3 py-2 relative select-none" id="_r_0_c-t22-effort" aria-colindex="6" aria-selected="false" data-col-id="effort" style={{width: "calc(var(--col-effort-size) * 1px)"}}>
                                   <div className="-mx-3 -my-2 px-3 py-2 truncate">
                                     <span className="tabular-nums text-sm">
-                                      1
+                                      {"1"}
                                       <span className="ms-0.5 text-muted-foreground text-xs">
-                                        pt
+                                        {"pt"}
                                       </span>
                                     </span>
                                   </div>
@@ -2137,11 +2141,15 @@ export function Pattern() {
                                 <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                               </tr>
                             </DataGridTableBody>
+                            </DataGridProvider>
                           </DataGridTable>
+                          </DataGridProvider>
                         </DataGridTableViewport>
+                        </DataGridProvider>
                       </div>
                     </div>
                   </DataGridScrollArea>
+                  </DataGridProvider>
                   <div className="absolute h-(--data-grid-scrollbar-track-height) inset-e-px pointer-events-none top-(--data-grid-scrollbar-header-height) z-20" aria-hidden="true" style={{"--data-grid-scrollbar-header-height": "40px", "--data-grid-scrollbar-thumb-height": "263.8048780487805px", "--data-grid-scrollbar-thumb-top": "0px", "--data-grid-scrollbar-track-height": "520px"}}>
                     <div className="h-full p-px pointer-events-auto relative touch-none w-[var(--data-grid-scrollbar-size,0.625rem)]">
                       <div className="absolute before:-inset-0.5 before:absolute bg-border end-px h-(--data-grid-scrollbar-thumb-height) rounded-full top-(--data-grid-scrollbar-thumb-top) w-[calc(var(--data-grid-scrollbar-size,0.625rem)-0.1875rem)]"></div>
@@ -2157,16 +2165,16 @@ export function Pattern() {
           <footer className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs">
               <span className="font-medium text-foreground">
-                25
+                {"25"}
               </span>
-              of 60 tasks
+              {"of 60 tasks"}
             </span>
             <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs">
               <span className="font-medium text-destructive">
-                1 overdue
+                {"1 overdue"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-              27 due this week
+              {"27 due this week"}
             </span>
           </footer>
         </FramePanel>

@@ -28,18 +28,18 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex flex-wrap gap-1.5 items-baseline min-w-0">
                     <p className="font-semibold leading-none text-foreground text-xl">
-                      1,246
+                      {"1,246"}
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      23.08%
+                      {"23.08%"}
                     </Badge>
                   </div>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Total Orders
+                    {"Total Orders"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0" aria-label="Open Total Orders details">
@@ -64,9 +64,9 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex flex-wrap gap-1.5 items-baseline min-w-0">
                     <p className="font-semibold leading-none text-foreground text-xl">
-                      $89.3
+                      {"$89.3"}
                       <span className="text-muted-foreground/45">
-                        k
+                        {"k"}
                       </span>
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -74,11 +74,11 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      3.82%
+                      {"3.82%"}
                     </Badge>
                   </div>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Net Spend
+                    {"Net Spend"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0" aria-label="Open Net Spend details">
@@ -105,18 +105,18 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex flex-wrap gap-1.5 items-baseline min-w-0">
                     <p className="font-semibold leading-none text-foreground text-xl">
-                      $68.1
+                      {"$68.1"}
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      0.39%
+                      {"0.39%"}
                     </Badge>
                   </div>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Avg. Basket Value
+                    {"Avg. Basket Value"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0" aria-label="Open Avg. Basket Value details">
@@ -143,9 +143,9 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex flex-wrap gap-1.5 items-baseline min-w-0">
                     <p className="font-semibold leading-none text-foreground text-xl">
-                      $2.3
+                      {"$2.3"}
                       <span className="text-muted-foreground/45">
-                        k
+                        {"k"}
                       </span>
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -153,11 +153,11 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      1.04%
+                      {"1.04%"}
                     </Badge>
                   </div>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Account Balance
+                    {"Account Balance"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0" aria-label="Open Account Balance details">

@@ -14,7 +14,7 @@ export function Pattern() {
         <div className="flex flex-col gap-6 items-center max-w-7xl mx-auto text-center w-full">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 hover:bg-accent min-w-5 outline-none px-2 py-0.5 relative rounded-full text-foreground text-sm transition-colors" href="#">
             <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-            Agent Skills Available
+            {"Agent Skills Available"}
             <svg className="lucide lucide-arrow-up-right size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
               <path d="M7 7h10v10"></path>
               <path d="M7 17 17 7"></path>
@@ -22,15 +22,15 @@ export function Pattern() {
           </Badge>
           <h1 className="font-semibold md:leading-[1.05] md:text-5xl sm:text-4xl text-3xl text-foreground tracking-tight" id="hero-13-title">
             <span className="block">
-              First-class shadcn
+              {"First-class shadcn"}
             </span>
             <span className="block">
-              for AI agents
+              {"for AI agents"}
             </span>
           </h1>
           <div className="flex flex-col gap-6 items-center max-w-2xl w-full">
             <p className="leading-6 text-base text-muted-foreground">
-              A curated shadcn registry with polished components, blocks, templates, MCP tools, and Agent Skills for building modern interfaces with developers and AI agents.
+              {"A curated shadcn registry with polished components, blocks, templates, MCP tools, and Agent Skills for building modern interfaces with developers and AI agents."}
             </p>
             <div className="flex flex-wrap gap-x-3 gap-y-2 items-center justify-center">
               <AvatarGroup>
@@ -114,15 +114,15 @@ export function Pattern() {
                 <div className="flex gap-1 items-center">
                   <p className="flex font-medium gap-1 items-center leading-4 text-foreground text-xs">
                     <span>
-                      4.5
+                      {"4.5"}
                     </span>
                     <span className="bg-muted-foreground rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      13.9k Ratings
+                      {"13.9k Ratings"}
                     </span>
                   </p>
                   <a className="font-medium hover:text-foreground leading-4 text-muted-foreground text-xs transition-colors underline underline-offset-4" href="#">
-                    27 reviews
+                    {"27 reviews"}
                   </a>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export function Pattern() {
                   <path d="M4.88889 0H7.33332C8.68265 0 9.77777 1.09511 9.77777 2.44444C9.77777 3.79378 8.68265 4.88889 7.33332 4.88889L4.88889 4.88886V0Z" fill="#FF7262"></path>
                   <path d="M9.77777 7.3333C9.77777 8.68263 8.68265 9.77774 7.33332 9.77774C5.98398 9.77774 4.88887 8.68263 4.88887 7.3333C4.88887 5.98397 5.98398 4.88889 7.33332 4.88889C8.68265 4.88889 9.77777 5.98397 9.77777 7.3333Z" fill="#1ABCFE"></path>
                 </svg>
-                Preview in Figma
+                {"Preview in Figma"}
               </Button>
               <Button href="#" role="button" tabIndex="0">
                 <svg className="dark:hidden size-4" aria-hidden="true" id="Ebene_1" version="1.1" viewBox="0 0 466.73 532.09">
@@ -145,7 +145,7 @@ export function Pattern() {
                 <svg className="dark:block hidden size-4" aria-hidden="true" id="Ebene_1" version="1.1" viewBox="0 0 466.73 532.09">
                   <path d="M457.43,125.94L244.42,2.96c-6.84-3.95-15.28-3.95-22.12,0L9.3,125.94c-5.75,3.32-9.3,9.46-9.3,16.11v247.99c0,6.65,3.55,12.79,9.3,16.11l213.01,122.98c6.84,3.95,15.28,3.95,22.12,0l213.01-122.98c5.75-3.32,9.3-9.46,9.3-16.11v-247.99c0-6.65-3.55-12.79-9.3-16.11h-.01ZM444.05,151.99l-205.63,356.16c-1.39,2.4-5.06,1.42-5.06-1.36v-233.21c0-4.66-2.49-8.97-6.53-11.31L24.87,145.67c-2.4-1.39-1.42-5.06,1.36-5.06h411.26c5.84,0,9.49,6.33,6.57,11.39h-.01Z"></path>
                 </svg>
-                Start with Cursor
+                {"Start with Cursor"}
               </Button>
             </div>
             <a className="font-medium gap-1.5 hover:text-foreground inline-flex items-center mt-2 text-muted-foreground text-sm transition-colors" href="#">
@@ -153,7 +153,7 @@ export function Pattern() {
                 <path d="M12 5v14"></path>
                 <path d="m19 12-7 7-7-7"></path>
               </svg>
-              Scroll Down
+              {"Scroll Down"}
             </a>
           </div>
         </div>

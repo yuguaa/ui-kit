@@ -23,7 +23,7 @@ export function Pattern() {
       <section className="flex flex-col gap-8 max-w-5xl w-full" aria-labelledby="organizations-heading">
         <div className="flex flex-col gap-6">
           <h2 className="font-semibold text-2xl tracking-tight" id="organizations-heading">
-            Organizations
+            {"Organizations"}
           </h2>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
         </div>
@@ -61,16 +61,16 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2 items-center">
                   <EmptyTitle className="font-semibold text-base tracking-tight">
-                    Enable organizations
+                    {"Enable organizations"}
                   </EmptyTitle>
                   <EmptyDescription className="max-w-sm text-sm/relaxed">
-                    Enable your users to create organizations, manage team members, and control access with role-based permissions.
+                    {"Enable your users to create organizations, manage team members, and control access with role-based permissions."}
                   </EmptyDescription>
                 </div>
               </EmptyHeader>
               <EmptyContent className="gap-0 max-w-none mt-5">
                 <Button type="button" tabIndex="0">
-                  Enable organizations
+                  {"Enable organizations"}
                 </Button>
               </EmptyContent>
             </Empty>
@@ -84,9 +84,9 @@ export function Pattern() {
                 <path d="M12 8h.01"></path>
               </svg>
               <span>
-                Learn more about
+                {"Learn more about"}
                 <span className="text-primary">
-                  Organizations
+                  {"Organizations"}
                 </span>
               </span>
             </TooltipTrigger>

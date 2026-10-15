@@ -24,7 +24,7 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-semibold hidden sm:inline text-sm">
-              NeUI
+              {"NeUI"}
             </span>
           </div>
           <Separator className="h-4 hidden md:block my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -33,7 +33,7 @@ export function Pattern() {
               <NavigationMenuItem>
                 <NavigationMenu>
                 <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex="0" aria-expanded="false" baseUiNavigationMenuTrigger="">
-                  Product
+                  {"Product"}
                   <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -43,7 +43,7 @@ export function Pattern() {
               <NavigationMenuItem>
                 <NavigationMenu>
                 <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex="0" aria-expanded="false" baseUiNavigationMenuTrigger="">
-                  Company
+                  {"Company"}
                   <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -52,7 +52,7 @@ export function Pattern() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink className="cn-navigation-menu-trigger disabled:pointer-events-none group/navigation-menu-trigger h-9 inline-flex items-center justify-center outline-none w-max" href="#">
-                  Pricing
+                  {"Pricing"}
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -61,7 +61,7 @@ export function Pattern() {
         <div className="flex items-center">
           <Button className="group/sliding overflow-hidden px-6 relative" type="button" tabIndex="0">
             <span className="duration-300 group-hover/sliding:-translate-x-2 inline-flex items-center transition-transform">
-              Get Started
+              {"Get Started"}
             </span>
             <svg className="absolute duration-300 group-hover/sliding:opacity-100 group-hover/sliding:translate-x-0 lucide lucide-arrow-right opacity-0 right-2.5 transition-all translate-x-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
               <path d="M5 12h14"></path>

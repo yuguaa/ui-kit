@@ -42,7 +42,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        SLO detail
+        {"SLO detail"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -52,7 +52,7 @@ export function Pattern() {
             <circle cx="12" cy="12" r="6"></circle>
             <circle cx="12" cy="12" r="2"></circle>
           </svg>
-          Open SLO
+          {"Open SLO"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -63,7 +63,7 @@ export function Pattern() {
         <div className="flex gap-2 items-center justify-between">
           <div className="flex gap-1 items-center min-w-0">
             <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-              SLO-104
+              {"SLO-104"}
             </span>
             <Button type="button" tabIndex="0" aria-label="Copy SLO ID">
               <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -82,7 +82,7 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-16 tabular-nums text-xs">
-                1 of 18
+                {"1 of 18"}
               </div>
               <Tooltip>
               <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next SLO" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -111,10 +111,10 @@ export function Pattern() {
         </div>
         <div className="flex flex-wrap gap-2 items-center min-w-0 mt-1">
           <SheetTitle className="min-w-0 text-lg" id="base-ui-_r_d_">
-            Ledger write success
+            {"Ledger write success"}
           </SheetTitle>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-            Exhausted
+            {"Exhausted"}
           </Badge>
         </div>
         <SheetDescription className="mt-1" id="base-ui-_r_e_">
@@ -127,12 +127,12 @@ export function Pattern() {
                 </svg>
               </span>
               <span className="truncate">
-                Correctness
+                {"Correctness"}
               </span>
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="tabular-nums">
-              99.99% over 30 days
+              {"99.99% over 30 days"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="[&_svg:not([class*=size-])]:size-3.5 flex gap-1.5 items-center min-w-0">
@@ -144,7 +144,7 @@ export function Pattern() {
                 </svg>
               </span>
               <span className="truncate">
-                ledger-worker
+                {"ledger-worker"}
               </span>
             </span>
           </span>
@@ -157,14 +157,14 @@ export function Pattern() {
               <path d="m2 2 20 20"></path>
               <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05"></path>
             </svg>
-            Mute Alerts
+            {"Mute Alerts"}
           </Button>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
               <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
               <path d="m15 5 4 4"></path>
             </svg>
-            Edit
+            {"Edit"}
           </Button>
         </div>
       </div>
@@ -172,19 +172,19 @@ export function Pattern() {
         <div className="border-b px-5 shrink-0">
           <TabsList className="-mb-px gap-5 h-10! no-scrollbar overflow-x-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_f_" compositeItemActive="" aria-controls="base-ui-_r_j_">
-              Overview
+              {"Overview"}
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_g_">
-              Burn Rate
+              {"Burn Rate"}
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_h_">
-              Events
+              {"Events"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                2
+                {"2"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_i_">
-              Settings
+              {"Settings"}
             </TabsTrigger>
           </TabsList>
         </div>
@@ -198,10 +198,10 @@ export function Pattern() {
                   <path d="m9 9 6 6"></path>
                 </svg>
                 <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                  Deploy Freeze
+                  {"Deploy Freeze"}
                 </AlertTitle>
                 <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                  The budget is 42% over. Releases to ledger-worker need SRE approval until it recovers.
+                  {"The budget is 42% over. Releases to ledger-worker need SRE approval until it recovers."}
                 </AlertDescription>
               </Alert>
               <Frame className="min-w-0" spacing="default">
@@ -216,11 +216,11 @@ export function Pattern() {
                     <div className="flex flex-col gap-px min-w-0">
                       <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                         <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                          Burn-Down
+                          {"Burn-Down"}
                         </div>
                       </div>
                       <div className="text-muted-foreground text-sm truncate">
-                        Budget left, day by day
+                        {"Budget left, day by day"}
                       </div>
                     </div>
                   </div>
@@ -229,14 +229,14 @@ export function Pattern() {
                   <div className="flex gap-4 items-center min-w-0">
                     <p className="flex gap-1.5 items-baseline shrink-0">
                       <span className="font-semibold tabular-nums text-3xl text-destructive tracking-tight">
-                        42%
+                        {"42%"}
                       </span>
                       <span className="text-muted-foreground text-sm">
-                        over budget
+                        {"over budget"}
                       </span>
                     </p>
                     <p className="min-w-0 text-muted-foreground text-pretty text-sm">
-                      Two incidents spent 112% in six days.
+                      {"Two incidents spent 112% in six days."}
                     </p>
                   </div>
                   <div className="flex flex-col min-w-0">
@@ -245,6 +245,7 @@ export function Pattern() {
                         <div className="-bottom-1.5 absolute bg-linear-to-b from-foreground/2 left-0 pointer-events-none to-foreground/8 top-3.5" aria-hidden="true" style={{width: "26px", borderRadius: "13px", transform: "translateX(379.311px)"}}></div>
                         <div className="h-8 shrink-0" aria-hidden="true"></div>
                         <div className="flex-1 min-h-0 relative">
+                          <ChartContainer>
                           <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible [&_[class*=recharts-zIndex-layer]]:outline-hidden absolute aspect-auto cn-chart flex focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring/50 focus-visible:outline-solid h-auto inset-0 justify-center min-w-0 outline-hidden text-xs" data-chart="chart-_r_l_" role="group" aria-label="Ledger write success error budget, last 30 days: 42% over budget. Arrow keys move, Enter selects a day, Shift+Enter extends, Escape clears." tabIndex="0">
                             <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                               <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -631,13 +632,13 @@ export function Pattern() {
                                     <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
                                     <g className="recharts-zIndex-layer_2000" tabIndex="-1">
                                       <text className="dark:fill-warning fill-warning-foreground font-medium text-xs" aria-hidden="true" x="12" y="64.75" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                        Warn 25%
+                                        {"Warn 25%"}
                                       </text>
                                       <text className="fill-muted-foreground font-medium text-xs" aria-hidden="true" x="12" y="85" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                        0%
+                                        {"0%"}
                                       </text>
                                       <text className="fill-destructive font-medium text-xs" aria-hidden="true" x="12" y="106" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                        Over budget
+                                        {"Over budget"}
                                       </text>
                                     </g>
                                   </svg>
@@ -645,6 +646,7 @@ export function Pattern() {
                               </div>
                             </div>
                           </div>
+                          </ChartContainer>
                         </div>
                         <div className="@container h-6 mt-2 relative shrink-0" aria-hidden="true">
                           <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "70.0135px"}}></span>
@@ -662,34 +664,34 @@ export function Pattern() {
                           <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "418.095px"}}></span>
                           <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "430.986px"}}></span>
                           <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-2 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 31.3378px, -100% + 100cqw))"}}>
-                            Sep 1
+                            {"Sep 1"}
                           </span>
                           <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 121.581px, -100% + 100cqw))"}}>
-                            8
+                            {"8"}
                           </span>
                           <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 211.824px, -100% + 100cqw))"}}>
-                            15
+                            {"15"}
                           </span>
                           <span className="absolute bg-destructive/10 flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 ring-1 ring-destructive/25 ring-inset rounded-full tabular-nums text-destructive text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 289.176px, -100% + 100cqw))"}}>
-                            21
+                            {"21"}
                           </span>
                           <span className="absolute bg-destructive/10 flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 ring-1 ring-destructive/25 ring-inset rounded-full tabular-nums text-destructive text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 353.635px, -100% + 100cqw))"}}>
-                            26
+                            {"26"}
                           </span>
                           <span className="absolute bg-foreground flex font-semibold h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-background text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 392.311px, -100% + 100cqw))"}}>
-                            29
+                            {"29"}
                           </span>
                           <span className="absolute flex font-medium h-6 items-center justify-center left-0 min-w-6 px-2 ring-1 ring-border ring-inset rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 482.554px, -100% + 100cqw))"}}>
-                            Oct 6
+                            {"Oct 6"}
                           </span>
                         </div>
                         <div className="@container absolute h-7 inset-x-0 pointer-events-none top-1" aria-hidden="true">
                           <div className="absolute flex left-0 top-0" style={{transform: "translateX(clamp(0px, -50% + 503.135px, -100% + 100cqw))"}}>
                             <span className="bg-foreground font-semibold gap-1.5 h-7 inline-flex items-center px-3 rounded-full tabular-nums text-background text-xs whitespace-nowrap" aria-hidden="true">
-                              42% over
+                              {"42% over"}
                               <span className="bg-background/40 rounded-full size-1"></span>
                               <span className="font-medium text-background/65">
-                                Today
+                                {"Today"}
                               </span>
                             </span>
                           </div>
@@ -705,77 +707,77 @@ export function Pattern() {
                       <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                         <line x1="2.5" x2="9.5" y1="6" y2="6" stroke="var(--muted-foreground)" strokeOpacity="0.55" strokeWidth="1.5" strokeLinecap="round"></line>
                       </svg>
-                      Even burn
+                      {"Even burn"}
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                         <circle cx="6" cy="6" r="3.5" fill="var(--card)" stroke="var(--muted-foreground)" strokeWidth="1.5"></circle>
                       </svg>
-                      Forecast
+                      {"Forecast"}
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-destructive/10 ring-1 ring-destructive/25 ring-inset rounded-full shrink-0 size-3" aria-hidden="true"></span>
-                      Incident
+                      {"Incident"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center min-w-0 sm:ms-auto" aria-live="off" aria-busy="false">
                     <span>
-                      Drag across days to sum spend
+                      {"Drag across days to sum spend"}
                     </span>
                   </div>
                 </footer>
               </Frame>
               <section className="flex flex-col gap-3 min-w-0">
                 <h3 className="font-medium text-muted-foreground text-xs">
-                  Budget
+                  {"Budget"}
                 </h3>
                 <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Attainment
+                      {"Attainment"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="font-medium">
-                        99.986%
+                        {"99.986%"}
                       </span>
                       <span className="text-muted-foreground truncate">
-                        target 99.99%
+                        {"target 99.99%"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Allowance
+                      {"Allowance"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span>
-                        4m 19s
+                        {"4m 19s"}
                       </span>
                       <span className="text-muted-foreground truncate">
-                        or 25.8K records
+                        {"or 25.8K records"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Spent
+                      {"Spent"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span>
-                        142%
+                        {"142%"}
                       </span>
                       <span className="text-muted-foreground truncate">
-                        36.8K bad records
+                        {"36.8K bad records"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Runs out
+                      {"Runs out"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="text-destructive">
-                        Already spent
+                        {"Already spent"}
                       </span>
                     </dd>
                   </div>
@@ -783,12 +785,12 @@ export function Pattern() {
               </section>
               <section className="flex flex-col gap-3 min-w-0">
                 <h3 className="font-medium text-muted-foreground text-xs">
-                  Definition
+                  {"Definition"}
                 </h3>
                 <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Indicator
+                      {"Indicator"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0">
@@ -799,24 +801,24 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          Correctness
+                          {"Correctness"}
                         </span>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Good event
+                      {"Good event"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="text-pretty">
-                        Share of ledger writes committed on the first attempt
+                        {"Share of ledger writes committed on the first attempt"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Service
+                      {"Service"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0">
@@ -828,14 +830,14 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          ledger-worker
+                          {"ledger-worker"}
                         </span>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Owner
+                      {"Owner"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="flex gap-2 items-center min-w-0">
@@ -843,17 +845,17 @@ export function Pattern() {
                           <AvatarImage alt="" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="truncate">
-                          Alex Johnson
+                          {"Alex Johnson"}
                         </span>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Created
+                      {"Created"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
-                      Feb 20
+                      {"Feb 20"}
                     </dd>
                   </div>
                 </dl>

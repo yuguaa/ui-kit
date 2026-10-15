@@ -38,9 +38,9 @@ export function Pattern() {
             </svg>
           </MarkerIcon>
           <MarkerContent>
-            Read 4 sources and 2 files
+            {"Read 4 sources and 2 files"}
             <span className="sr-only">
-              . Searched for stripe webhook 500 on charge.refunded.
+              {". Searched for stripe webhook 500 on charge.refunded."}
             </span>
           </MarkerContent>
         </Marker>
@@ -50,7 +50,7 @@ export function Pattern() {
             <TimelineSeparator className="after:absolute after:bg-border after:content-[''] after:duration-300 after:ease-[cubic-bezier(0.23,1,0.32,1)] after:inset-0 after:origin-top after:scale-y-0 after:transition-transform bg-border/40 h-[calc(100%-1.5rem)]! motion-reduce:after:transition-none translate-y-5.5! w-px!" aria-hidden="true"></TimelineSeparator>
             <TimelineHeader className="flex h-5 items-center">
               <TimelineTitle className="text-foreground">
-                Searching
+                {"Searching"}
               </TimelineTitle>
             </TimelineHeader>
             <TimelineContent className="pt-1.5">
@@ -63,7 +63,7 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <span className="text-foreground text-sm truncate">
-                    stripe webhook 500 on charge.refunded
+                    {"stripe webhook 500 on charge.refunded"}
                   </span>
                 </ItemContent>
               </Item>
@@ -74,10 +74,10 @@ export function Pattern() {
             <TimelineSeparator className="after:absolute after:bg-border after:content-[''] after:duration-300 after:ease-[cubic-bezier(0.23,1,0.32,1)] after:inset-0 after:origin-top after:scale-y-0 after:transition-transform bg-border/40 h-[calc(100%-1.5rem)]! motion-reduce:after:transition-none translate-y-5.5! w-px!" aria-hidden="true"></TimelineSeparator>
             <TimelineHeader className="flex flex-row gap-2 h-5 items-center">
               <TimelineTitle className="text-foreground">
-                Reviewing sources
+                {"Reviewing sources"}
               </TimelineTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                4
+                {"4"}
               </Badge>
             </TimelineHeader>
             <TimelineContent className="pt-1.5">
@@ -85,11 +85,11 @@ export function Pattern() {
                 <CardContent className="flex flex-col px-0 py-1.5">
                   <Item className="animate-in duration-300 ease-out fade-in-50 gap-2.5 group/row motion-reduce:animate-none py-1.5 slide-in-from-bottom-1" variant="default" size="xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow w-5">
-                      1
+                      {"1"}
                     </Badge>
                     <ItemContent className="flex-row gap-2 items-center min-w-0">
                       <a className="hover:underline text-foreground text-sm truncate" href="#">
-                        Retry behaviour for failed webhook endpoints
+                        {"Retry behaviour for failed webhook endpoints"}
                       </a>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -116,18 +116,18 @@ export function Pattern() {
                           <path fill="#533afd" fillRule="evenodd" d="m120 392 272-57.683V120l-272 58.357z" clipRule="evenodd"></path>
                         </svg>
                         <span className="max-sm:sr-only">
-                          Stripe
+                          {"Stripe"}
                         </span>
                       </span>
                     </ItemContent>
                   </Item>
                   <Item className="animate-in duration-300 ease-out fade-in-50 gap-2.5 group/row motion-reduce:animate-none py-1.5 slide-in-from-bottom-1" variant="default" size="xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow w-5">
-                      2
+                      {"2"}
                     </Badge>
                     <ItemContent className="flex-row gap-2 items-center min-w-0">
                       <a className="hover:underline text-foreground text-sm truncate" href="#">
-                        charge.refunded double delivery in stripe-node
+                        {"charge.refunded double delivery in stripe-node"}
                       </a>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -157,18 +157,18 @@ export function Pattern() {
                           <path fillRule="evenodd" clipRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"></path>
                         </svg>
                         <span className="max-sm:sr-only">
-                          GitHub
+                          {"GitHub"}
                         </span>
                       </span>
                     </ItemContent>
                   </Item>
                   <Item className="animate-in duration-300 ease-out fade-in-50 gap-2.5 group/row motion-reduce:animate-none py-1.5 slide-in-from-bottom-1" variant="default" size="xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow w-5">
-                      3
+                      {"3"}
                     </Badge>
                     <ItemContent className="flex-row gap-2 items-center min-w-0">
                       <a className="hover:underline text-foreground text-sm truncate" href="#">
-                        Function timeouts on long running handlers
+                        {"Function timeouts on long running handlers"}
                       </a>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -198,18 +198,18 @@ export function Pattern() {
                           <path fill="#fff" d="m128 0 128 221.705H0z"></path>
                         </svg>
                         <span className="max-sm:sr-only">
-                          Vercel
+                          {"Vercel"}
                         </span>
                       </span>
                     </ItemContent>
                   </Item>
                   <Item className="animate-in duration-300 ease-out fade-in-50 gap-2.5 group/row motion-reduce:animate-none py-1.5 slide-in-from-bottom-1" variant="default" size="xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow w-5">
-                      4
+                      {"4"}
                     </Badge>
                     <ItemContent className="flex-row gap-2 items-center min-w-0">
                       <a className="hover:underline text-foreground text-sm truncate" href="#">
-                        Statement timeouts on long transactions
+                        {"Statement timeouts on long transactions"}
                       </a>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -248,7 +248,7 @@ export function Pattern() {
                           </defs>
                         </svg>
                         <span className="max-sm:sr-only">
-                          Supabase
+                          {"Supabase"}
                         </span>
                       </span>
                     </ItemContent>
@@ -262,10 +262,10 @@ export function Pattern() {
             <TimelineSeparator className="after:absolute after:bg-border after:content-[''] after:duration-300 after:ease-[cubic-bezier(0.23,1,0.32,1)] after:inset-0 after:origin-top after:scale-y-0 after:transition-transform bg-border/40 h-[calc(100%-1.5rem)]! motion-reduce:after:transition-none translate-y-5.5! w-px!" aria-hidden="true"></TimelineSeparator>
             <TimelineHeader className="flex flex-row gap-2 h-5 items-center">
               <TimelineTitle className="text-foreground">
-                Checking the repo
+                {"Checking the repo"}
               </TimelineTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                2
+                {"2"}
               </Badge>
             </TimelineHeader>
             <TimelineContent className="pt-1.5">
@@ -283,7 +283,7 @@ export function Pattern() {
                     </span>
                     <ItemContent className="flex-row gap-2 h-5 items-center min-w-0">
                       <span className="font-mono text-foreground text-xs truncate">
-                        src/api/stripe-webhook.ts
+                        {"src/api/stripe-webhook.ts"}
                       </span>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -306,7 +306,7 @@ export function Pattern() {
                         <span className="sr-only" aria-live="polite"></span>
                       </span>
                       <span className="ms-auto shrink-0 tabular-nums text-muted-foreground text-xs">
-                        412 lines
+                        {"412 lines"}
                       </span>
                     </ItemContent>
                   </Item>
@@ -322,7 +322,7 @@ export function Pattern() {
                     </span>
                     <ItemContent className="flex-row gap-2 h-5 items-center min-w-0">
                       <span className="font-mono text-foreground text-xs truncate">
-                        src/queue/events-worker.ts
+                        {"src/queue/events-worker.ts"}
                       </span>
                       <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                         <Tooltip>
@@ -345,7 +345,7 @@ export function Pattern() {
                         <span className="sr-only" aria-live="polite"></span>
                       </span>
                       <span className="ms-auto shrink-0 tabular-nums text-muted-foreground text-xs">
-                        146 lines
+                        {"146 lines"}
                       </span>
                     </ItemContent>
                   </Item>
@@ -358,15 +358,15 @@ export function Pattern() {
             <TimelineSeparator className="after:absolute after:bg-border after:content-[''] after:duration-300 after:ease-[cubic-bezier(0.23,1,0.32,1)] after:inset-0 after:origin-top after:scale-y-0 after:transition-transform bg-border/40 h-[calc(100%-1.5rem)]! motion-reduce:after:transition-none translate-y-5.5! w-px!" aria-hidden="true"></TimelineSeparator>
             <TimelineHeader className="flex flex-row gap-2 h-5 items-center">
               <TimelineTitle className="text-foreground">
-                Answer
+                {"Answer"}
               </TimelineTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                High confidence
+                {"High confidence"}
               </Badge>
             </TimelineHeader>
             <TimelineContent className="pt-1.5">
               <span className="block text-foreground">
-                The handler acknowledges after the write, so a refund write that hits the statement timeout throws a 500 and Stripe retries it.
+                {"The handler acknowledges after the write, so a refund write that hits the statement timeout throws a 500 and Stripe retries it."}
               </span>
             </TimelineContent>
           </TimelineItem>

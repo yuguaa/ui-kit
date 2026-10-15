@@ -13,7 +13,7 @@ export function Pattern() {
       <Card className="bg-zinc-900 border-0 max-w-md rounded-2xl text-white w-full" size="default">
         <CardHeader className="flex gap-3 items-center justify-between mb-4">
           <CardTitle className="font-semibold text-lg text-zinc-400">
-            Balance
+            {"Balance"}
           </CardTitle>
           <CardAction>
             <Button className="bg-zinc-800 border-zinc-800 hover:bg-zinc-700 hover:text-zinc-100 text-zinc-100" type="button" tabIndex="0" extracted="1">
@@ -22,17 +22,17 @@ export function Pattern() {
                 <circle cx="12" cy="12" r="2"></circle>
                 <path d="M6 12h.01M18 12h.01"></path>
               </svg>
-              Topup
+              {"Topup"}
             </Button>
           </CardAction>
         </CardHeader>
         <CardContent>
           <div className="flex gap-2 items-end mb-5">
             <span className="font-bold text-3xl text-white tracking-tight">
-              $10,976.95
+              {"$10,976.95"}
             </span>
             <span className="font-semibold ms-2 text-base text-emerald-400">
-              +5.7%
+              {"+5.7%"}
             </span>
           </div>
           <div className="border-b border-zinc-700 mb-6"></div>
@@ -41,10 +41,10 @@ export function Pattern() {
               <div className="bg-white h-2.5 overflow-hidden rounded-sm transition-all w-full"></div>
               <div className="flex flex-1 flex-col items-start">
                 <span className="font-medium text-xs text-zinc-400">
-                  USD
+                  {"USD"}
                 </span>
                 <span className="font-semibold text-base text-white">
-                  30%
+                  {"30%"}
                 </span>
               </div>
             </div>
@@ -52,10 +52,10 @@ export function Pattern() {
               <div className="bg-indigo-400 h-2.5 overflow-hidden rounded-sm transition-all w-full"></div>
               <div className="flex flex-1 flex-col items-start">
                 <span className="font-medium text-xs text-zinc-400">
-                  GBP
+                  {"GBP"}
                 </span>
                 <span className="font-semibold text-base text-white">
-                  20%
+                  {"20%"}
                 </span>
               </div>
             </div>
@@ -63,10 +63,10 @@ export function Pattern() {
               <div className="bg-blue-500 h-2.5 overflow-hidden rounded-sm transition-all w-full"></div>
               <div className="flex flex-1 flex-col items-start">
                 <span className="font-medium text-xs text-zinc-400">
-                  EUR
+                  {"EUR"}
                 </span>
                 <span className="font-semibold text-base text-white">
-                  15%
+                  {"15%"}
                 </span>
               </div>
             </div>
@@ -74,10 +74,10 @@ export function Pattern() {
               <div className="bg-violet-600 h-2.5 overflow-hidden rounded-sm transition-all w-full"></div>
               <div className="flex flex-1 flex-col items-start">
                 <span className="font-medium text-xs text-zinc-400">
-                  JPY
+                  {"JPY"}
                 </span>
                 <span className="font-semibold text-base text-white">
-                  20%
+                  {"20%"}
                 </span>
               </div>
             </div>
@@ -85,10 +85,10 @@ export function Pattern() {
               <div className="bg-fuchsia-600 h-2.5 overflow-hidden rounded-sm transition-all w-full"></div>
               <div className="flex flex-1 flex-col items-start">
                 <span className="font-medium text-xs text-zinc-400">
-                  CNY
+                  {"CNY"}
                 </span>
                 <span className="font-semibold text-base text-white">
-                  15%
+                  {"15%"}
                 </span>
               </div>
             </div>

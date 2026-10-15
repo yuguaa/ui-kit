@@ -57,3 +57,4 @@ dev-server.log
 
 # 源码还原的中间索引
 .component-index.json
+.slot-providers.json

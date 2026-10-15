@@ -34,13 +34,13 @@ export function Pattern() {
               </IconTile>
               <div className="flex flex-col gap-px min-w-0">
                 <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                  Run History
+                  {"Run History"}
                 </div>
                 <div className="text-muted-foreground text-sm truncate">
                   <span className="gap-1.5 inline-flex items-center tabular-nums whitespace-nowrap">
-                    7 cron jobs
+                    {"7 cron jobs"}
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                    As of Sep 29, 14:20 UTC
+                    {"As of Sep 29, 14:20 UTC"}
                   </span>
                 </div>
               </div>
@@ -51,31 +51,31 @@ export function Pattern() {
               <section className="@4xl/summary:pe-6 flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Success Rate
+                    {"Success Rate"}
                   </h4>
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="font-semibold tabular-nums text-3xl tracking-tight">
-                    93.5%
+                    {"93.5%"}
                   </p>
                   <p className="tabular-nums text-muted-foreground text-pretty text-sm">
-                    130 of 139 timed runs succeeded across 7 jobs.
+                    {"130 of 139 timed runs succeeded across 7 jobs."}
                   </p>
                 </div>
                 <p className="mt-auto tabular-nums text-muted-foreground text-pretty text-xs">
                   <span className="font-medium text-foreground">
-                    88.6%
+                    {"88.6%"}
                   </span>
-                  over each job's newest 10 runs, down from 98.6%
+                  {"over each job's newest 10 runs, down from 98.6%"}
                 </p>
               </section>
               <section className="@4xl/summary:px-6 flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Outcomes
+                    {"Outcomes"}
                   </h4>
                   <span className="min-w-0 tabular-nums text-muted-foreground text-xs truncate">
-                    140 runs
+                    {"140 runs"}
                   </span>
                 </div>
                 <div className="flex gap-0.5 h-2" aria-hidden="true">
@@ -89,44 +89,44 @@ export function Pattern() {
                     <span className="flex gap-2 items-center min-w-0">
                       <span className="bg-success/40 shrink-0 size-2.5" aria-hidden="true"></span>
                       <span className="text-muted-foreground truncate">
-                        Succeeded
+                        {"Succeeded"}
                       </span>
                     </span>
                     <span className="font-medium tabular-nums">
-                      130
+                      {"130"}
                     </span>
                   </li>
                   <li className="flex gap-3 items-center justify-between text-sm">
                     <span className="flex gap-2 items-center min-w-0">
                       <span className="bg-destructive shrink-0 size-2.5" aria-hidden="true"></span>
                       <span className="text-muted-foreground truncate">
-                        Failed
+                        {"Failed"}
                       </span>
                     </span>
                     <span className="font-medium tabular-nums">
-                      7
+                      {"7"}
                     </span>
                   </li>
                   <li className="flex gap-3 items-center justify-between text-sm">
                     <span className="flex gap-2 items-center min-w-0">
                       <span className="bg-warning shrink-0 size-2.5" aria-hidden="true"></span>
                       <span className="text-muted-foreground truncate">
-                        Timed Out
+                        {"Timed Out"}
                       </span>
                     </span>
                     <span className="font-medium tabular-nums">
-                      2
+                      {"2"}
                     </span>
                   </li>
                   <li className="flex gap-3 items-center justify-between text-sm">
                     <span className="flex gap-2 items-center min-w-0">
                       <span className="bg-info/40 dark:bg-info/70 shrink-0 size-2.5" aria-hidden="true"></span>
                       <span className="text-muted-foreground truncate">
-                        Skipped
+                        {"Skipped"}
                       </span>
                     </span>
                     <span className="font-medium tabular-nums">
-                      1
+                      {"1"}
                     </span>
                   </li>
                 </ul>
@@ -134,10 +134,10 @@ export function Pattern() {
               <section className="@2xl/summary:col-span-2 @4xl/summary:col-span-1 @4xl/summary:ps-6 flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Failing Jobs
+                    {"Failing Jobs"}
                   </h4>
                   <span className="min-w-0 tabular-nums text-muted-foreground text-xs truncate">
-                    3 of 7 jobs
+                    {"3 of 7 jobs"}
                   </span>
                 </div>
                 <ItemGroup className="gap-2" role="list">
@@ -145,22 +145,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Import bank settlement files
+                          {"Import bank settlement files"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="shrink-0">
-                          4 in a row
+                          {"4 in a row"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          exit 137
+                          {"exit 137"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Failed
+                        {"Failed"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -168,22 +168,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Drain webhook retry queue
+                          {"Drain webhook retry queue"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="shrink-0">
-                          2 in a row
+                          {"2 in a row"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          exit 1
+                          {"exit 1"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Failed
+                        {"Failed"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -191,22 +191,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Rebuild merchant search index
+                          {"Rebuild merchant search index"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="shrink-0">
-                          2 in a row
+                          {"2 in a row"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          killed at 1h 00m
+                          {"killed at 1h 00m"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Timed Out
+                        {"Timed Out"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -217,21 +217,21 @@ export function Pattern() {
           <FramePanel className="@container/runs p-0">
             <Item className="@3xl/runs:flex font-medium hidden px-(--frame-panel-px) text-muted-foreground text-xs" variant="default" size="sm" aria-hidden="true">
               <span className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 flex-1">
-                Job
+                {"Job"}
               </span>
               <span className="shrink-0 w-36">
-                Last Run
+                {"Last Run"}
               </span>
               <span className="@3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full flex gap-3 justify-between min-w-0 order-last">
                 <span>
-                  Last 20 Runs
+                  {"Last 20 Runs"}
                 </span>
                 <span className="font-normal">
-                  Oldest to newest
+                  {"Oldest to newest"}
                 </span>
               </span>
               <span className="ms-auto shrink-0 text-right w-20">
-                Success
+                {"Success"}
               </span>
             </Item>
             <ItemSeparator className="@3xl/runs:block bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:self-stretch data-vertical:w-px hidden my-0 shrink-0" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></ItemSeparator>
@@ -240,22 +240,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Drain webhook retry queue
+                      {"Drain webhook retry queue"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    retries:drain --max=5000
+                    {"retries:drain --max=5000"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                      Failed
+                      {"Failed"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      5m ago
+                      {"5m ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      52s
+                      {"52s"}
                     </span>
                   </div>
                 </div>
@@ -364,10 +364,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      90.0%
+                      {"90.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 1m 00s
+                      {"p95 1m 00s"}
                     </span>
                   </div>
                 </div>
@@ -377,22 +377,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Import bank settlement files
+                      {"Import bank settlement files"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    settlements:import --banks=all
+                    {"settlements:import --banks=all"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                      Failed
+                      {"Failed"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      50m ago
+                      {"50m ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      4m 12s
+                      {"4m 12s"}
                     </span>
                   </div>
                 </div>
@@ -501,10 +501,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      80.0%
+                      {"80.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 4m 52s
+                      {"p95 4m 52s"}
                     </span>
                   </div>
                 </div>
@@ -514,22 +514,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Rebuild merchant search index
+                      {"Rebuild merchant search index"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    reindex merchants --shards=12
+                    {"reindex merchants --shards=12"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      Timed Out
+                      {"Timed Out"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      10h 50m ago
+                      {"10h 50m ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      1h 00m
+                      {"1h 00m"}
                     </span>
                   </div>
                 </div>
@@ -638,10 +638,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      90.0%
+                      {"90.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 1h 00m
+                      {"p95 1h 00m"}
                     </span>
                   </div>
                 </div>
@@ -651,22 +651,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Expire stale payout holds
+                      {"Expire stale payout holds"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    holds:expire --older-than=72h
+                    {"holds:expire --older-than=72h"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Succeeded
+                      {"Succeeded"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      5m ago
+                      {"5m ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      20s
+                      {"20s"}
                     </span>
                   </div>
                 </div>
@@ -775,10 +775,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      100.0%
+                      {"100.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 21s
+                      {"p95 21s"}
                     </span>
                   </div>
                 </div>
@@ -788,22 +788,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Retry failed payouts
+                      {"Retry failed payouts"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    payouts:retry --max-attempts=3
+                    {"payouts:retry --max-attempts=3"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Succeeded
+                      {"Succeeded"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      20m ago
+                      {"20m ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      1m 57s
+                      {"1m 57s"}
                     </span>
                   </div>
                 </div>
@@ -912,10 +912,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      95.0%
+                      {"95.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 1m 57s
+                      {"p95 1m 57s"}
                     </span>
                   </div>
                 </div>
@@ -925,25 +925,25 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Compact ledger partitions
+                      {"Compact ledger partitions"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                      Paused
+                      {"Paused"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    partitions:compact --keep=90d
+                    {"partitions:compact --keep=90d"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Succeeded
+                      {"Succeeded"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      9d ago
+                      {"9d ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      47m 28s
+                      {"47m 28s"}
                     </span>
                   </div>
                 </div>
@@ -1052,10 +1052,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      100.0%
+                      {"100.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 54m 03s
+                      {"p95 54m 03s"}
                     </span>
                   </div>
                 </div>
@@ -1065,22 +1065,22 @@ export function Pattern() {
                 <ItemContent className="@3xl/runs:basis-auto @3xl/runs:flex-none @3xl/runs:w-60 basis-full gap-0.5 min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="min-w-0 truncate">
-                      Rotate webhook signing keys
+                      {"Rotate webhook signing keys"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="font-mono text-xs truncate">
-                    keys:rotate --grace=48h
+                    {"keys:rotate --grace=48h"}
                   </ItemDescription>
                 </ItemContent>
                 <div className="shrink-0 w-36">
                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Succeeded
+                      {"Succeeded"}
                     </Badge>
                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                      1d ago
+                      {"1d ago"}
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                      46s
+                      {"46s"}
                     </span>
                   </div>
                 </div>
@@ -1189,10 +1189,10 @@ export function Pattern() {
                 <div className="ms-auto shrink-0 text-right w-20">
                   <div className="flex flex-col gap-0.5 items-end tabular-nums">
                     <span className="font-medium text-sm">
-                      100.0%
+                      {"100.0%"}
                     </span>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      p95 47s
+                      {"p95 47s"}
                     </span>
                   </div>
                 </div>
@@ -1203,23 +1203,23 @@ export function Pattern() {
             <ul className="flex flex-wrap gap-x-4 gap-y-1 items-center" aria-label="Bar tones">
               <li className="flex gap-1.5 items-center">
                 <span className="bg-success/40 shrink-0 size-2.5" aria-hidden="true"></span>
-                Succeeded
+                {"Succeeded"}
               </li>
               <li className="flex gap-1.5 items-center">
                 <span className="bg-destructive shrink-0 size-2.5" aria-hidden="true"></span>
-                Failed
+                {"Failed"}
               </li>
               <li className="flex gap-1.5 items-center">
                 <span className="bg-warning shrink-0 size-2.5" aria-hidden="true"></span>
-                Timed Out
+                {"Timed Out"}
               </li>
               <li className="flex gap-1.5 items-center">
                 <span className="bg-info/40 dark:bg-info/70 shrink-0 size-2.5" aria-hidden="true"></span>
-                Skipped
+                {"Skipped"}
               </li>
             </ul>
             <span>
-              Bar height is run duration
+              {"Bar height is run duration"}
             </span>
           </footer>
         </Frame>

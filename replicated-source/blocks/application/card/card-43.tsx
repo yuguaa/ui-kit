@@ -24,7 +24,7 @@ export function Pattern() {
             <div className="flex flex-col gap-1 mb-2 min-h-0 min-w-0 pl-0.5">
               <div className="flex gap-1.5 items-center min-w-0">
                 <h2 className="font-semibold leading-none m-0 shrink-0 text-sm">
-                  Ralph Edwards
+                  {"Ralph Edwards"}
                 </h2>
                 <svg className="lucide lucide-badge-check shrink-0 size-3 text-[oklch(0.62_0.22_258)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-label="Verified profile">
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
@@ -32,7 +32,7 @@ export function Pattern() {
                 </svg>
               </div>
               <p className="leading-none m-0 text-muted-foreground text-xs truncate">
-                Sacramento, California
+                {"Sacramento, California"}
               </p>
             </div>
             <Button className="mb-1.5 rounded-sm" type="button" tabIndex="0">
@@ -41,7 +41,7 @@ export function Pattern() {
                 <circle cx="12" cy="10" r="3"></circle>
                 <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
               </svg>
-              View Profile
+              {"View Profile"}
             </Button>
           </div>
           <ScrollArea className="-mx-1 pb-3 px-1" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
@@ -53,12 +53,12 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-0.5 p-2">
                     <h3 className="font-medium leading-tight text-sm truncate">
-                      Analytics Suite
+                      {"Analytics Suite"}
                     </h3>
                     <p className="leading-none text-muted-foreground text-xs">
-                      Project ID:
+                      {"Project ID:"}
                       <span className="font-medium text-xs">
-                        PX-102
+                        {"PX-102"}
                       </span>
                     </p>
                   </div>
@@ -69,12 +69,12 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-0.5 p-2">
                     <h3 className="font-medium leading-tight text-sm truncate">
-                      Mobile Checkout
+                      {"Mobile Checkout"}
                     </h3>
                     <p className="leading-none text-muted-foreground text-xs">
-                      Project ID:
+                      {"Project ID:"}
                       <span className="font-medium text-xs">
-                        UX-384
+                        {"UX-384"}
                       </span>
                     </p>
                   </div>
@@ -85,12 +85,12 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-0.5 p-2">
                     <h3 className="font-medium leading-tight text-sm truncate">
-                      Metrics Console
+                      {"Metrics Console"}
                     </h3>
                     <p className="leading-none text-muted-foreground text-xs">
-                      Project ID:
+                      {"Project ID:"}
                       <span className="font-medium text-xs">
-                        DS-471
+                        {"DS-471"}
                       </span>
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export function Pattern() {
             </div>
           </ScrollArea>
           <Button className="bg-invert hover:bg-invert/90 rounded-sm text-invert-foreground w-full" type="button" tabIndex="0">
-            Get in Touch
+            {"Get in Touch"}
           </Button>
         </FramePanel>
       </Frame>

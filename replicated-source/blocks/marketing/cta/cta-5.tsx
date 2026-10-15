@@ -9,14 +9,14 @@ export function Pattern() {
         <div className="flex flex-col gap-8 items-center lg:py-32 px-6 py-20 relative sm:px-10 sm:py-28 text-center">
           <h2 className="font-semibold leading-[1.05] lg:text-6xl sm:text-5xl text-4xl text-[oklch(0.98_0.012_255)] tracking-tight">
             <span className="block">
-              Build Your Interface
+              {"Build Your Interface"}
             </span>
             <span className="block">
-              In An Afternoon.
+              {"In An Afternoon."}
             </span>
           </h2>
           <Button className="bg-[oklch(0.98_0.012_255)] hover:bg-[oklch(0.92_0.02_255)] hover:text-[oklch(0.2_0.03_264)] px-8 rounded-full text-[oklch(0.2_0.03_264)]" href="#" role="button" tabIndex="0">
-            Start Building
+            {"Start Building"}
           </Button>
         </div>
       </Card>

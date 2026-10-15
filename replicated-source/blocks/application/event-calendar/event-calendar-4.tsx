@@ -42,10 +42,10 @@ export function Pattern() {
           <div className="flex flex-wrap gap-x-2 items-center pe-2">
             <EventCalendarNav className="flex-1 flex-nowrap">
               <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                Today
+                {"Today"}
               </EventCalendarNavToday>
               <EventCalendarViewSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
-                Week
+                {"Week"}
                 <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -63,7 +63,7 @@ export function Pattern() {
                 </EventCalendarNavNext>
               </div>
               <EventCalendarTitle className="ms-3" aria-live="polite">
-                September 14 - 20, 2026
+                {"September 14 - 20, 2026"}
               </EventCalendarTitle>
               <div className="grow"></div>
             </EventCalendarNav>
@@ -87,7 +87,7 @@ export function Pattern() {
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-indigo-500)"}}></span>
                 </span>
                 <span className="hidden sm:inline">
-                  Departments
+                  {"Departments"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -97,7 +97,7 @@ export function Pattern() {
               <Toggle className="gap-2 shrink-0" type="button" tabIndex="0" aria-pressed="false">
                 <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  17 Open
+                  {"17 Open"}
                 </span>
               </Toggle>
               <Button type="button" tabIndex="0">
@@ -105,7 +105,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New shift
+                {"New shift"}
               </Button>
             </EventCalendarToolbar>
           </div>
@@ -115,32 +115,32 @@ export function Pattern() {
                 <div className="border-e shrink-0 w-(--ec-gutter-width,4.5rem)"></div>
                 <div className="flex-1 grid min-w-0" style={{gridTemplateColumns: "repeat(7, minmax(var(--ec-day-col-min,0px), 1fr))"}}>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Mon 14
+                    {"Mon 14"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Tue 15
+                    {"Tue 15"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Wed 16
+                    {"Wed 16"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Thu 17
+                    {"Thu 17"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Fri 18
+                    {"Fri 18"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Sat 19
+                    {"Sat 19"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Sun 20
+                    {"Sun 20"}
                   </div>
                 </div>
               </div>
               <div className="border-b flex pe-(--ec-scrollbar-w,0px)">
                 <div className="border-e pe-2.5 ps-2 pt-1.5 shrink-0 text-muted-foreground w-(--ec-gutter-width,4.5rem)">
                   <span className="flex h-[calc(var(--ec-month-bar-h,1.625rem)-0.125rem)] items-center justify-end">
-                    All day
+                    {"All day"}
                   </span>
                 </div>
                 <div className="flex-1 min-w-0 relative">
@@ -158,11 +158,11 @@ export function Pattern() {
                       <EventCalendarEvent className="h-[calc(var(--ec-month-bar-h,1.625rem)-0.125rem)]" type="button" view="week" allDay="true" past="true" title="On Call, All day" aria-label="On Call, All day" aria-pressed="false" style={{"--ec-event-color": "var(--color-indigo-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          On Call
+                          {"On Call"}
                         </span>
                         <span className="ms-auto shrink-0">
                           <span className="shrink-0 tabular-nums text-muted-foreground">
-                            1/1
+                            {"1/1"}
                           </span>
                         </span>
                       </EventCalendarEvent>
@@ -171,11 +171,11 @@ export function Pattern() {
                       <EventCalendarEvent className="h-[calc(var(--ec-month-bar-h,1.625rem)-0.125rem)]" type="button" view="week" allDay="true" past="true" title="On Call, All day" aria-label="On Call, All day" aria-pressed="false" style={{"--ec-event-color": "var(--color-indigo-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          On Call
+                          {"On Call"}
                         </span>
                         <span className="ms-auto shrink-0">
                           <span className="shrink-0 tabular-nums text-muted-foreground">
-                            1/1
+                            {"1/1"}
                           </span>
                         </span>
                       </EventCalendarEvent>
@@ -191,92 +191,92 @@ export function Pattern() {
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}></div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            6 AM
+                            {"6 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            7 AM
+                            {"7 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            8 AM
+                            {"8 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            9 AM
+                            {"9 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            10 AM
+                            {"10 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            11 AM
+                            {"11 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            12 PM
+                            {"12 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            1 PM
+                            {"1 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            2 PM
+                            {"2 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            3 PM
+                            {"3 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            4 PM
+                            {"4 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            5 PM
+                            {"5 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            6 PM
+                            {"6 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            7 PM
+                            {"7 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            8 PM
+                            {"8 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            9 PM
+                            {"9 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            10 PM
+                            {"10 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            11 PM
+                            {"11 PM"}
                           </span>
                         </div>
                       </EventCalendarTimeGutter>
@@ -285,10 +285,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 6:00 AM - 2:00 PM" aria-label="Dock AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -302,25 +302,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                4/4
+                                {"4/4"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Rafe, Tobias, Yuki
+                                {"Ines, Rafe, Tobias, Yuki"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 6:00 AM - 2:00 PM" aria-label="Pick AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -334,25 +334,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                2 open
+                                {"2 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta, Dara
+                                {"Emeka, Amara, Greta, Dara"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 9)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 1)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start" type="button" view="week" past="true" title="Pick PM, 2:00 PM - 10:00 PM" aria-label="Pick PM, 2:00 PM - 10:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick PM
+                                {"Pick PM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                2:00 PM - 10:00 PM
+                                {"2:00 PM - 10:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -364,19 +364,19 @@ export function Pattern() {
                                   </Avatar>
                                   <Avatar className="size-4" size="default">
                                     <AvatarFallback className="text-[8px]">
-                                      RD
+                                      {"RD"}
                                     </AvatarFallback>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +2
+                                    {"+2"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                5/5
+                                {"5/5"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Nikolai, Bram, Rosa, Casey, Marisol
+                                {"Nikolai, Bram, Rosa, Casey, Marisol"}
                               </span>
                             </EventCalendarEvent>
                           </div>
@@ -385,10 +385,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 6:00 AM - 2:00 PM" aria-label="Dock AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -404,20 +404,20 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Rafe, Tobias
+                                {"Ines, Rafe, Tobias"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 6:00 AM - 2:00 PM" aria-label="Pick AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -431,25 +431,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +3
+                                    {"+3"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                6/6
+                                {"6/6"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta, Dara, Yuki, Marisol
+                                {"Emeka, Amara, Greta, Dara, Yuki, Marisol"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 9)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 1)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start" type="button" view="week" past="true" title="Pick PM, 2:00 PM - 10:00 PM" aria-label="Pick PM, 2:00 PM - 10:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick PM
+                                {"Pick PM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                2:00 PM - 10:00 PM
+                                {"2:00 PM - 10:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -458,7 +458,7 @@ export function Pattern() {
                                   </Avatar>
                                   <Avatar className="size-4" size="default">
                                     <AvatarFallback className="text-[8px]">
-                                      RD
+                                      {"RD"}
                                     </AvatarFallback>
                                   </Avatar>
                                   <Avatar className="size-4" size="default">
@@ -467,10 +467,10 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                2 open
+                                {"2 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Nikolai, Rosa, Otto
+                                {"Nikolai, Rosa, Otto"}
                               </span>
                             </EventCalendarEvent>
                           </div>
@@ -479,10 +479,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 6:00 AM - 2:00 PM" aria-label="Dock AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -496,25 +496,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                4/4
+                                {"4/4"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Rafe, Tobias, Yuki
+                                {"Ines, Rafe, Tobias, Yuki"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 6:00 AM - 2:00 PM" aria-label="Pick AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -528,28 +528,28 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +2
+                                    {"+2"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta, Dara, Marisol
+                                {"Emeka, Amara, Greta, Dara, Marisol"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 11)", height: "calc(var(--ec-hour-height) * 6)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 1)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start" type="button" view="week" past="true" title="Load Out, 4:00 PM - 10:00 PM" aria-label="Load Out, 4:00 PM - 10:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-emerald-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Load Out
+                                {"Load Out"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                4:00 PM - 10:00 PM
+                                {"4:00 PM - 10:00 PM"}
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                3 open
+                                {"3 open"}
                               </span>
                               <span className="absolute cursor-ns-resize duration-150 flex group-hover/ec-event:opacity-100 h-1.5 inset-x-1 items-center justify-center opacity-0 top-0 transition-opacity" data-edge="start">
                                 <span className="bg-foreground/40 h-0.5 rounded-full w-2.5" aria-hidden="true"></span>
@@ -564,10 +564,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 6:00 AM - 2:00 PM" aria-label="Dock AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -581,25 +581,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                4/4
+                                {"4/4"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Rafe, Tobias, Yuki
+                                {"Ines, Rafe, Tobias, Yuki"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 6:00 AM - 2:00 PM" aria-label="Pick AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -613,25 +613,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                2 open
+                                {"2 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta, Dara
+                                {"Emeka, Amara, Greta, Dara"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 9)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 1)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start" type="button" view="week" past="true" title="Cold PM, 2:00 PM - 10:00 PM" aria-label="Cold PM, 2:00 PM - 10:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-rose-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Cold PM
+                                {"Cold PM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                2:00 PM - 10:00 PM
+                                {"2:00 PM - 10:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -641,10 +641,10 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Bram
+                                {"Bram"}
                               </span>
                             </EventCalendarEvent>
                           </div>
@@ -653,10 +653,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 6:00 AM - 2:00 PM" aria-label="Dock AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -670,25 +670,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +2
+                                    {"+2"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                5/5
+                                {"5/5"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Rafe, Tobias, Yuki, Marisol
+                                {"Ines, Rafe, Tobias, Yuki, Marisol"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 1)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 6:00 AM - 2:00 PM" aria-label="Pick AM, 6:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                6:00 AM - 2:00 PM
+                                {"6:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -702,25 +702,25 @@ export function Pattern() {
                                     <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +1
+                                    {"+1"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                2 open
+                                {"2 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta, Dara
+                                {"Emeka, Amara, Greta, Dara"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 9)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 1)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start" type="button" view="week" past="true" title="Pick PM, 2:00 PM - 10:00 PM" aria-label="Pick PM, 2:00 PM - 10:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick PM
+                                {"Pick PM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                2:00 PM - 10:00 PM
+                                {"2:00 PM - 10:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -732,19 +732,19 @@ export function Pattern() {
                                   </Avatar>
                                   <Avatar className="size-4" size="default">
                                     <AvatarFallback className="text-[8px]">
-                                      RD
+                                      {"RD"}
                                     </AvatarFallback>
                                   </Avatar>
                                   <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                                    +2
+                                    {"+2"}
                                   </AvatarGroupCount>
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Nikolai, Bram, Rosa, Casey, Otto
+                                {"Nikolai, Bram, Rosa, Casey, Otto"}
                               </span>
                             </EventCalendarEvent>
                           </div>
@@ -753,10 +753,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 2)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Pick AM, 7:00 AM - 3:00 PM" aria-label="Pick AM, 7:00 AM - 3:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Pick AM
+                                {"Pick AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                7:00 AM - 3:00 PM
+                                {"7:00 AM - 3:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -772,26 +772,26 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Emeka, Amara, Greta
+                                {"Emeka, Amara, Greta"}
                               </span>
                             </EventCalendarEvent>
                           </div>
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 3)", height: "calc(var(--ec-hour-height) * 8)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Site Cover, 8:00 AM - 4:00 PM" aria-label="Site Cover, 8:00 AM - 4:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-indigo-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Site Cover
+                                {"Site Cover"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                8:00 AM - 4:00 PM
+                                {"8:00 AM - 4:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
                                   <Avatar className="size-4" size="default">
                                     <AvatarFallback className="text-[8px]">
-                                      CM
+                                      {"CM"}
                                     </AvatarFallback>
                                   </Avatar>
                                   <Avatar className="size-4" size="default">
@@ -800,10 +800,10 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                2/2
+                                {"2/2"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Casey, Marisol
+                                {"Casey, Marisol"}
                               </span>
                             </EventCalendarEvent>
                           </div>
@@ -812,10 +812,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 3)", height: "calc(var(--ec-hour-height) * 6)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "10"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Dock AM, 8:00 AM - 2:00 PM" aria-label="Dock AM, 8:00 AM - 2:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-sky-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Dock AM
+                                {"Dock AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                8:00 AM - 2:00 PM
+                                {"8:00 AM - 2:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -828,10 +828,10 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="font-medium shrink-0 tabular-nums text-warning-foreground">
-                                1 open
+                                {"1 open"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Ines, Tobias
+                                {"Ines, Tobias"}
                               </span>
                               <span className="absolute cursor-ns-resize duration-150 flex group-hover/ec-event:opacity-100 h-1.5 inset-x-1 items-center justify-center opacity-0 top-0 transition-opacity" data-edge="start">
                                 <span className="bg-foreground/40 h-0.5 rounded-full w-2.5" aria-hidden="true"></span>
@@ -844,10 +844,10 @@ export function Pattern() {
                           <div className="absolute hover:z-40 min-h-(--ec-event-min-h,1.5rem) px-0.5 z-(--ec-z)" style={{top: "calc(var(--ec-hour-height) * 4)", height: "calc(var(--ec-hour-height) * 6)", left: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", width: "calc((100% - var(--ec-event-gutter, 0.75rem)) * 0.5)", "--ec-z": "11"}}>
                             <EventCalendarEvent className="flex-col gap-0 h-full items-start justify-start ring-1 ring-background" type="button" view="week" past="true" title="Cold AM, 9:00 AM - 3:00 PM" aria-label="Cold AM, 9:00 AM - 3:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-rose-500)"}}>
                               <span className="@max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip font-medium truncate w-full">
-                                Cold AM
+                                {"Cold AM"}
                               </span>
                               <span className="@[8rem]:inline @max-[10rem]:[mask-image:linear-gradient(to_right,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:rtl:[mask-image:linear-gradient(to_left,#000_calc(100%-0.75rem),transparent)] @max-[10rem]:text-clip hidden text-muted-foreground truncate w-full">
-                                9:00 AM - 3:00 PM
+                                {"9:00 AM - 3:00 PM"}
                               </span>
                               <span className="@[4.5rem]:flex hidden pt-0.5">
                                 <AvatarGroup>
@@ -860,10 +860,10 @@ export function Pattern() {
                                 </AvatarGroup>
                               </span>
                               <span className="shrink-0 tabular-nums text-muted-foreground">
-                                2/2
+                                {"2/2"}
                               </span>
                               <span className="@[16rem]:inline hidden text-muted-foreground truncate w-full">
-                                Bram, Yuki
+                                {"Bram, Yuki"}
                               </span>
                             </EventCalendarEvent>
                           </div>

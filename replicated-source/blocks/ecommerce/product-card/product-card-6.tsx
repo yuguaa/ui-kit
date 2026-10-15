@@ -27,7 +27,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -37,7 +37,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Apparel
+                  {"Apparel"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -47,7 +47,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Studio Mosaic
+                  {"Studio Mosaic"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -55,10 +55,10 @@ export function Pattern() {
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex flex-wrap gap-3 items-center">
               <h2 className="font-semibold md:text-3xl text-2xl text-balance">
-                Studio Mosaic
+                {"Studio Mosaic"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                8 pieces
+                {"8 pieces"}
               </Badge>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
@@ -70,20 +70,20 @@ export function Pattern() {
                   <circle cx="17" cy="17" r="3"></circle>
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
-                Show Filters
+                {"Show Filters"}
               </PopoverTrigger>
               </Popover>
               <Select>
               <SelectTrigger className="w-[174px]" type="button" tabIndex="0" id="base-ui-_r_2_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm">
                 <span className="text-muted-foreground">
-                  Sort by:
+                  {"Sort by:"}
                 </span>
                 <SelectValue>
-                  Newest
+                  {"Newest"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -108,25 +108,25 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Studio Outerwear
+                          {"Studio Outerwear"}
                         </span>
                       </a>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                        New
+                        {"New"}
                       </Badge>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Leather Biker Jacket
+                        {"Leather Biker Jacket"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Polished leather with a sharp stance, cropped sleeve line, and enough structure for cool-weather styling.
+                      {"Polished leather with a sharp stance, cropped sleeve line, and enough structure for cool-weather styling."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $248.00
+                          {"$248.00"}
                         </span>
                       </div>
                     </div>
@@ -151,7 +151,7 @@ export function Pattern() {
                 <div className="-translate-y-0 duration-200 flex gap-2 items-start justify-between sm:-translate-y-2 sm:group-focus-within:translate-y-0 sm:group-hover:translate-y-0 transition-transform">
                   <div className="bg-background flex items-center min-w-0 p-1.5 relative rounded-md shadow-xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                      -25%
+                      {"-25%"}
                     </Badge>
                   </div>
                 </div>
@@ -164,28 +164,28 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Cold Weather
+                          {"Cold Weather"}
                         </span>
                       </a>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                        4 left
+                        {"4 left"}
                       </Badge>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Gloss Puffer Jacket
+                        {"Gloss Puffer Jacket"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      High-shine warmth with a clean fit, soft collar, and compact winter volume that still layers easily.
+                      {"High-shine warmth with a clean fit, soft collar, and compact winter volume that still layers easily."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span className="font-normal line-through text-muted-foreground">
-                          $198.00
+                          {"$198.00"}
                         </span>
                         <span>
-                          $148.00
+                          {"$148.00"}
                         </span>
                       </div>
                     </div>
@@ -217,22 +217,22 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Travel Set
+                          {"Travel Set"}
                         </span>
                       </a>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Ribbed Tank Set
+                        {"Ribbed Tank Set"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Soft ribbed tank paired with tapered pull-on pants for long flights, weekend plans, and easy packing.
+                      {"Soft ribbed tank paired with tapered pull-on pants for long flights, weekend plans, and easy packing."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $86.00
+                          {"$86.00"}
                         </span>
                       </div>
                     </div>
@@ -264,25 +264,25 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Denim Studio
+                          {"Denim Studio"}
                         </span>
                       </a>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                        Trending
+                        {"Trending"}
                       </Badge>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Wide-Leg Denim Set
+                        {"Wide-Leg Denim Set"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Easy tank styling with wide-leg denim, a relaxed studio line, and a balanced fit through the waist.
+                      {"Easy tank styling with wide-leg denim, a relaxed studio line, and a balanced fit through the waist."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $132.00
+                          {"$132.00"}
                         </span>
                       </div>
                     </div>
@@ -314,22 +314,22 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Studio Outerwear
+                          {"Studio Outerwear"}
                         </span>
                       </a>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Cognac Crop Jacket
+                        {"Cognac Crop Jacket"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Cropped structure in warm polished leather with a close fit, clean hardware, and sharp everyday proportion.
+                      {"Cropped structure in warm polished leather with a close fit, clean hardware, and sharp everyday proportion."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $226.00
+                          {"$226.00"}
                         </span>
                       </div>
                     </div>
@@ -361,25 +361,25 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Travel Set
+                          {"Travel Set"}
                         </span>
                       </a>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                        New
+                        {"New"}
                       </Badge>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Sage Utility Set
+                        {"Sage Utility Set"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Soft utility layers with an easy profile, roomy pockets, and all-day movement for city travel.
+                      {"Soft utility layers with an easy profile, roomy pockets, and all-day movement for city travel."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $154.00
+                          {"$154.00"}
                         </span>
                       </div>
                     </div>
@@ -404,7 +404,7 @@ export function Pattern() {
                 <div className="-translate-y-0 duration-200 flex gap-2 items-start justify-between sm:-translate-y-2 sm:group-focus-within:translate-y-0 sm:group-hover:translate-y-0 transition-transform">
                   <div className="bg-background flex items-center min-w-0 p-1.5 relative rounded-md shadow-xs">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                      -18%
+                      {"-18%"}
                     </Badge>
                   </div>
                 </div>
@@ -417,25 +417,25 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Cold Weather
+                          {"Cold Weather"}
                         </span>
                       </a>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Navy Padded Coat
+                        {"Navy Padded Coat"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Insulated volume with a clean city profile, warm collar shape, and a finish that keeps outfits refined.
+                      {"Insulated volume with a clean city profile, warm collar shape, and a finish that keeps outfits refined."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span className="font-normal line-through text-muted-foreground">
-                          $228.00
+                          {"$228.00"}
                         </span>
                         <span>
-                          $186.00
+                          {"$186.00"}
                         </span>
                       </div>
                     </div>
@@ -467,22 +467,22 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <span className="group-hover/category:underline truncate underline-offset-4">
-                          Denim Studio
+                          {"Denim Studio"}
                         </span>
                       </a>
                     </div>
                     <h3 className="font-semibold text-sm truncate">
                       <a className="hover:text-primary hover:underline pointer-events-auto transition-colors underline-offset-4" href="#">
-                        Black Rinse Denim
+                        {"Black Rinse Denim"}
                       </a>
                     </h3>
                     <p className="leading-5 line-clamp-2 min-h-10 mt-1 text-muted-foreground text-xs">
-                      Dark rinse denim with an easy straight leg, softened finish, and just enough polish for repeat wear.
+                      {"Dark rinse denim with an easy straight leg, softened finish, and just enough polish for repeat wear."}
                     </p>
                     <div className="flex justify-start mt-3">
                       <div className="flex font-semibold gap-1.5 items-baseline tabular-nums text-sm">
                         <span>
-                          $118.00
+                          {"$118.00"}
                         </span>
                       </div>
                     </div>

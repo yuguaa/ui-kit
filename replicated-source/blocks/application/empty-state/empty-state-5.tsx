@@ -29,14 +29,14 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <EmptyTitle className="font-semibold sm:text-2xl text-xl tracking-tight">
-                      No Brief Is Ready Yet
+                      {"No Brief Is Ready Yet"}
                     </EmptyTitle>
                     <EmptyDescription className="text-sm/relaxed">
                       <span className="block">
-                        Pull open signals, notes, and decisions into one
+                        {"Pull open signals, notes, and decisions into one"}
                       </span>
                       <span className="block">
-                        clear brief before the review starts.
+                        {"clear brief before the review starts."}
                       </span>
                     </EmptyDescription>
                   </div>
@@ -50,14 +50,14 @@ export function Pattern() {
                         <path d="M22 4h-4"></path>
                         <circle cx="4" cy="20" r="2"></circle>
                       </svg>
-                      Draft Brief
+                      {"Draft Brief"}
                     </Button>
                     <Button type="button" tabIndex="0">
                       <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" data-icon="inline-start" aria-hidden="true">
                         <path d="m21 21-4.34-4.34"></path>
                         <circle cx="11" cy="11" r="8"></circle>
                       </svg>
-                      Browse Signals
+                      {"Browse Signals"}
                     </Button>
                   </div>
                 </EmptyContent>

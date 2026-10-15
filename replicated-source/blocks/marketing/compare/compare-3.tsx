@@ -19,21 +19,21 @@ export function Pattern() {
                 <path d="M22 4h-4"></path>
                 <circle cx="4" cy="20" r="2"></circle>
               </svg>
-              NeUI for AI Agents
+              {"NeUI for AI Agents"}
               <svg className="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
             </Badge>
             <h2 className="@xl/block:text-4xl font-semibold max-w-[27ch] text-3xl text-pretty tracking-tight" id="compare-3-title">
-              Build Truly Production-Ready UI
+              {"Build Truly Production-Ready UI"}
               <span className="-my-1.5 [text-box:trim-both_cap_alphabetic] bg-amber-300 inline-block px-1.5 py-1.5 rounded-sm text-neutral-950">
-                10x Faster
+                {"10x Faster"}
               </span>
-              with NeUI MCP
+              {"with NeUI MCP"}
             </h2>
             <p className="max-w-160 text-muted-foreground text-sm">
-              Give your coding agent registry search, real APIs, exact install steps, and ready-made blocks, so you can build polished UI with less prompting and rework.
+              {"Give your coding agent registry search, real APIs, exact install steps, and ready-made blocks, so you can build polished UI with less prompting and rework."}
             </p>
           </div>
           <div className="@2xl/block:gap-0 @2xl/block:grid-cols-2 @2xl/block:max-w-192 gap-8 grid max-w-96 mx-auto w-full" style={{"--compare-rows": "7", "--compare-tracks": "8"}}>
@@ -41,7 +41,7 @@ export function Pattern() {
               <span className="-z-10 absolute bg-[radial-gradient(circle_at_1.5px_1.5px,rgba(255,255,255,0.07)_0.5px,transparent_0)] bg-[size:3px_3px] inset-0 pointer-events-none" aria-hidden="true"></span>
               <span className="-left-20 -top-25 -z-10 absolute bg-lime-400/14 blur-[100px] pointer-events-none rounded-full size-[250px]" aria-hidden="true"></span>
               <h3 className="font-medium pb-4 pt-6 px-6 text-center text-lg">
-                NeUI Approach
+                {"NeUI Approach"}
               </h3>
               <ul className="@2xl/block:grid @2xl/block:grid-rows-subgrid @2xl/block:row-span-(--compare-rows)" role="list">
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
@@ -52,9 +52,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Intent-Based Registry
+                    {"Intent-Based Registry"}
                     <span className="whitespace-nowrap">
-                      Search
+                      {"Search"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" aria-label="About Intent-Based Registry Search" extracted="1">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -78,9 +78,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Ranked Matches with
+                    {"Ranked Matches with"}
                     <span className="whitespace-nowrap">
-                      Context
+                      {"Context"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" aria-label="About Ranked Matches with Context">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -102,9 +102,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Whole-Page UI
+                    {"Whole-Page UI"}
                     <span className="whitespace-nowrap">
-                      Planning
+                      {"Planning"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" aria-label="About Whole-Page UI Planning">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -126,9 +126,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Real Component API
+                    {"Real Component API"}
                     <span className="whitespace-nowrap">
-                      Access
+                      {"Access"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" aria-label="About Real Component API Access">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -151,9 +151,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Working UI
+                    {"Working UI"}
                     <span className="whitespace-nowrap">
-                      Examples
+                      {"Examples"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" aria-label="About Working UI Examples">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -174,9 +174,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Exact Install
+                    {"Exact Install"}
                     <span className="whitespace-nowrap">
-                      Commands
+                      {"Commands"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" aria-label="About Exact Install Commands">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -197,9 +197,9 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
-                    Props and Usage
+                    {"Props and Usage"}
                     <span className="whitespace-nowrap">
-                      Checks
+                      {"Checks"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" aria-label="About Props and Usage Checks">
                         <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -216,7 +216,7 @@ export function Pattern() {
             </Card>
             <div className="@2xl/block:grid @2xl/block:grid-rows-subgrid @2xl/block:row-span-(--compare-tracks)">
               <h3 className="font-medium pb-4 pt-6 px-6 text-center text-lg">
-                Prompt-Only Approach
+                {"Prompt-Only Approach"}
               </h3>
               <ul className="@2xl/block:grid @2xl/block:grid-rows-subgrid @2xl/block:row-span-(--compare-rows)" role="list">
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -227,7 +227,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Search and compare items by hand
+                    {"Search and compare items by hand"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -238,7 +238,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Pick results with little context
+                    {"Pick results with little context"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -249,7 +249,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Plan each page from scratch
+                    {"Plan each page from scratch"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -260,7 +260,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Guess props, states, and APIs
+                    {"Guess props, states, and APIs"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -271,7 +271,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Build and test examples yourself
+                    {"Build and test examples yourself"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -282,7 +282,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Find and copy each command
+                    {"Find and copy each command"}
                   </p>
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
@@ -293,7 +293,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="flex-1 font-medium min-w-0 text-muted-foreground text-sm">
-                    Spot issues after writing code
+                    {"Spot issues after writing code"}
                   </p>
                 </li>
               </ul>

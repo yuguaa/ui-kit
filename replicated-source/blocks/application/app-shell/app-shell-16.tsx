@@ -34,10 +34,14 @@ import { SidebarMenuButton } from "@/registry/bases/radix/ui/sidebar"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="[--header-height:60px] [--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar md:[--header-height:80px] min-h-svh w-full" style={{"--sidebar-width": "76px", "--sidebar-width-icon": "3rem", "--sidebar-width-inner": "240px"}}>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="inset" data-side="left">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="bg-muted border-0 bottom-0 dark:bg-background data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-0 top-0 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <div className="bg-muted dark:bg-background flex grow h-full">
               <div className="bg-black flex flex-col gap-3 items-center me-2.5 ms-2.5 my-2.5 py-3 rounded-2xl shrink-0 text-zinc-400 w-14">
@@ -55,11 +59,17 @@ export function Pattern() {
                     </span>
                   </a>
                 </SidebarHeader>
+                <SidebarProvider>
                 <SidebarContent className="flex-row md:flex-col pt-2" sidebar="content">
+                  <SidebarProvider>
                   <SidebarGroup className="p-0" sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent className="justify-center" sidebar="group-content">
+                      <SidebarProvider>
                       <SidebarMenu className="gap-1.5 items-center" sidebar="menu">
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Profile">
                             <svg className="lucide lucide-circle-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserCircle" tabler="IconUserCircle" hugeicons="UserCircleIcon" phosphor="UserCircleIcon" remixicon="RiUserLine" aria-hidden="true">
                               <circle cx="12" cy="12" r="10"></circle>
@@ -67,8 +77,12 @@ export function Pattern() {
                               <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="" aria-label="Updates">
                             <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                               <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
@@ -77,16 +91,24 @@ export function Pattern() {
                               <path d="M8 17v-3"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Account">
                             <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                               <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Network">
                             <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -95,23 +117,35 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Access">
                             <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                               <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                               <path d="m9 12 2 2 4-4"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Files">
                             <svg className="lucide lucide-folder" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FolderIcon" tabler="IconFolder" hugeicons="FolderIcon" phosphor="FolderIcon" remixicon="RiFolderLine" aria-hidden="true">
                               <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="data-[active=true]:bg-zinc-800 data-[active=true]:text-white hover:bg-zinc-800 hover:text-white justify-center size-9 text-zinc-400" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Notes">
                             <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                               <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
@@ -121,11 +155,17 @@ export function Pattern() {
                               <path d="M16 17H8"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
                       </SidebarMenu>
+                      </SidebarProvider>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                 </SidebarContent>
+                </SidebarProvider>
                 <SidebarFooter className="gap-1 items-center p-0 pb-1" sidebar="footer">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-zinc-800 hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 text-zinc-400 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Inbox" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
@@ -180,10 +220,10 @@ export function Pattern() {
                     </span>
                     <span className="flex-1 grid min-w-0">
                       <span className="font-semibold text-foreground text-sm truncate">
-                        Thunder AI
+                        {"Thunder AI"}
                       </span>
                       <span className="text-muted-foreground text-xs truncate">
-                        8 members
+                        {"8 members"}
                       </span>
                     </span>
                     <svg className="lucide lucide-chevrons-up-down shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
@@ -208,7 +248,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Home
+                                  {"Home"}
                                 </span>
                               </Button>
                               <Button className="bg-background font-normal gap-2 h-8 hover:bg-background justify-start px-2 rounded-md shadow-xs text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -220,7 +260,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Updates
+                                  {"Updates"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -231,7 +271,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Inbox
+                                  {"Inbox"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -251,10 +291,10 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Clients
+                                  {"Clients"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                  Beta
+                                  {"Beta"}
                                 </Badge>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -267,7 +307,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  My Tasks
+                                  {"My Tasks"}
                                 </span>
                               </Button>
                             </div>
@@ -276,7 +316,7 @@ export function Pattern() {
                         <div className="flex flex-col gap-1">
                           <div className="flex h-6 items-center px-2 text-muted-foreground text-xs">
                             <span>
-                              Workspaces
+                              {"Workspaces"}
                             </span>
                             <span className="flex items-center ml-auto">
                               <DropdownMenu>
@@ -301,7 +341,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Business Concepts
+                                  {"Business Concepts"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -315,7 +355,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Newcapec Studio
+                                  {"Newcapec Studio"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -328,10 +368,10 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Teams
+                                  {"Teams"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                  Pro
+                                  {"Pro"}
                                 </Badge>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -344,7 +384,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Reports
+                                  {"Reports"}
                                 </span>
                               </Button>
                             </div>
@@ -353,7 +393,7 @@ export function Pattern() {
                         <div className="flex flex-col gap-1">
                           <Button className="font-normal h-6 hover:bg-transparent hover:text-foreground justify-start px-2 text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-expanded="true" aria-controls="inner-section-communities">
                             <span>
-                              Communities
+                              {"Communities"}
                             </span>
                             <svg className="duration-200 lucide lucide-chevron-up ml-auto opacity-70 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
                               <path d="m18 15-6-6-6 6"></path>
@@ -369,7 +409,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Create a community
+                                  {"Create a community"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -380,7 +420,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Designers Hub
+                                  {"Designers Hub"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -391,7 +431,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  React Js
+                                  {"React Js"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -404,7 +444,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Node Js
+                                  {"Node Js"}
                                 </span>
                               </Button>
                             </div>
@@ -413,7 +453,7 @@ export function Pattern() {
                         <div className="flex flex-col gap-1">
                           <Button className="font-normal h-6 hover:bg-transparent hover:text-foreground justify-start px-2 text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-expanded="true" aria-controls="inner-section-resources">
                             <span>
-                              Resources
+                              {"Resources"}
                             </span>
                             <svg className="duration-200 lucide lucide-chevron-up ml-auto opacity-70 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
                               <path d="m18 15-6-6-6 6"></path>
@@ -430,7 +470,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  About Metronic
+                                  {"About Metronic"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -444,10 +484,10 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Advertise
+                                  {"Advertise"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                  Pro
+                                  {"Pro"}
                                 </Badge>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -459,7 +499,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Help
+                                  {"Help"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -470,7 +510,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Blog
+                                  {"Blog"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -483,7 +523,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Careers
+                                  {"Careers"}
                                 </span>
                               </Button>
                               <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -495,7 +535,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Press
+                                  {"Press"}
                                 </span>
                               </Button>
                             </div>
@@ -508,8 +548,11 @@ export function Pattern() {
               </div>
             </div>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <aside className="bg-muted dark:bg-background hidden md:flex overflow-hidden shrink-0 w-(--sidebar-width-inner)" aria-label="Updates navigation">
         <div className="flex flex-col overflow-hidden shrink-0 w-(--sidebar-width-inner)">
           <div className="flex pb-2 pt-4 px-2 shrink-0">
@@ -522,10 +565,10 @@ export function Pattern() {
               </span>
               <span className="flex-1 grid min-w-0">
                 <span className="font-semibold text-foreground text-sm truncate">
-                  Thunder AI
+                  {"Thunder AI"}
                 </span>
                 <span className="text-muted-foreground text-xs truncate">
-                  8 members
+                  {"8 members"}
                 </span>
               </span>
               <svg className="lucide lucide-chevrons-up-down shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
@@ -550,7 +593,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Home
+                            {"Home"}
                           </span>
                         </Button>
                         <Button className="bg-background font-normal gap-2 h-8 hover:bg-background justify-start px-2 rounded-md shadow-xs text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -562,7 +605,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Updates
+                            {"Updates"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -573,7 +616,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Inbox
+                            {"Inbox"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -593,10 +636,10 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Clients
+                            {"Clients"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                            Beta
+                            {"Beta"}
                           </Badge>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -609,7 +652,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            My Tasks
+                            {"My Tasks"}
                           </span>
                         </Button>
                       </div>
@@ -618,7 +661,7 @@ export function Pattern() {
                   <div className="flex flex-col gap-1">
                     <div className="flex h-6 items-center px-2 text-muted-foreground text-xs">
                       <span>
-                        Workspaces
+                        {"Workspaces"}
                       </span>
                       <span className="flex items-center ml-auto">
                         <DropdownMenu>
@@ -643,7 +686,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Business Concepts
+                            {"Business Concepts"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -657,7 +700,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Newcapec Studio
+                            {"Newcapec Studio"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -670,10 +713,10 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Teams
+                            {"Teams"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            Pro
+                            {"Pro"}
                           </Badge>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -686,7 +729,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Reports
+                            {"Reports"}
                           </span>
                         </Button>
                       </div>
@@ -695,7 +738,7 @@ export function Pattern() {
                   <div className="flex flex-col gap-1">
                     <Button className="font-normal h-6 hover:bg-transparent hover:text-foreground justify-start px-2 text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-expanded="true" aria-controls="inner-section-communities">
                       <span>
-                        Communities
+                        {"Communities"}
                       </span>
                       <svg className="duration-200 lucide lucide-chevron-up ml-auto opacity-70 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
                         <path d="m18 15-6-6-6 6"></path>
@@ -711,7 +754,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Create a community
+                            {"Create a community"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -722,7 +765,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Designers Hub
+                            {"Designers Hub"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -733,7 +776,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            React Js
+                            {"React Js"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -746,7 +789,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Node Js
+                            {"Node Js"}
                           </span>
                         </Button>
                       </div>
@@ -755,7 +798,7 @@ export function Pattern() {
                   <div className="flex flex-col gap-1">
                     <Button className="font-normal h-6 hover:bg-transparent hover:text-foreground justify-start px-2 text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-expanded="true" aria-controls="inner-section-resources">
                       <span>
-                        Resources
+                        {"Resources"}
                       </span>
                       <svg className="duration-200 lucide lucide-chevron-up ml-auto opacity-70 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
                         <path d="m18 15-6-6-6 6"></path>
@@ -772,7 +815,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            About Metronic
+                            {"About Metronic"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -786,10 +829,10 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Advertise
+                            {"Advertise"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            Pro
+                            {"Pro"}
                           </Badge>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -801,7 +844,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Help
+                            {"Help"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -812,7 +855,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Blog
+                            {"Blog"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -825,7 +868,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Careers
+                            {"Careers"}
                           </span>
                         </Button>
                         <Button className="font-normal gap-2 h-8 hover:bg-background/70 justify-start px-2 rounded-md text-foreground text-sm w-full" type="button" tabIndex="0">
@@ -837,7 +880,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Press
+                            {"Press"}
                           </span>
                         </Button>
                       </div>
@@ -856,35 +899,37 @@ export function Pattern() {
         <header className="bg-background flex gap-2 h-(--header-height) items-center md:px-6 px-4 shrink-0 sticky top-0 w-full z-40">
           <div className="flex flex-1 gap-3 items-center min-w-0">
             <div className="flex gap-2 items-center md:hidden">
+              <SidebarProvider>
               <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
                 <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
                   <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                   <path d="M9 3v18"></path>
                 </svg>
                 <span className="sr-only">
-                  Toggle Sidebar
+                  {"Toggle Sidebar"}
                 </span>
               </SidebarTrigger>
+              </SidebarProvider>
             </div>
             <div className="flex-col gap-0.5 hidden md:flex min-w-0">
               <h1 className="font-semibold leading-5 text-base truncate">
-                Updates
+                {"Updates"}
               </h1>
               <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                 <a className="hidden hover:text-foreground lg:inline truncate" href="#">
-                  Home
+                  {"Home"}
                 </a>
                 <span className="hidden lg:inline shrink-0" aria-hidden="true">
-                  /
+                  {"/"}
                 </span>
                 <a className="hover:text-foreground truncate" href="#">
-                  Account
+                  {"Account"}
                 </a>
                 <span className="shrink-0" aria-hidden="true">
-                  /
+                  {"/"}
                 </span>
                 <span className="shrink-0 text-foreground">
-                  Updates
+                  {"Updates"}
                 </span>
               </div>
             </div>
@@ -905,10 +950,10 @@ export function Pattern() {
             </Button>
             <DialogHeader className="sr-only">
               <DialogTitle id="base-ui-_r_1r_">
-                Search
+                {"Search"}
               </DialogTitle>
               <DialogDescription id="base-ui-_r_1s_">
-                Search updates and accounts.
+                {"Search updates and accounts."}
               </DialogDescription>
             </DialogHeader>
             <DropdownMenu>
@@ -921,7 +966,7 @@ export function Pattern() {
                 <path d="M8 11h.01"></path>
                 <path d="M8 16h.01"></path>
               </svg>
-              Reports
+              {"Reports"}
             </DropdownMenuTrigger>
             </DropdownMenu>
             <DropdownMenu>
@@ -931,7 +976,7 @@ export function Pattern() {
                 <path d="M12 5v14"></path>
               </svg>
               <span className="hidden sm:inline">
-                Add
+                {"Add"}
               </span>
             </DropdownMenuTrigger>
             </DropdownMenu>
@@ -940,23 +985,23 @@ export function Pattern() {
         <main className="flex flex-1 flex-col gap-4 md:pb-5 md:pt-4 md:px-6 min-h-0 overflow-y-auto px-4 py-3">
           <div className="flex flex-col gap-1 md:hidden">
             <h1 className="font-semibold text-base">
-              Updates
+              {"Updates"}
             </h1>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                Home
+                {"Home"}
               </span>
               <span aria-hidden="true">
-                /
+                {"/"}
               </span>
               <span>
-                Account
+                {"Account"}
               </span>
               <span aria-hidden="true">
-                /
+                {"/"}
               </span>
               <span className="text-foreground">
-                Updates
+                {"Updates"}
               </span>
             </div>
           </div>
@@ -972,5 +1017,6 @@ export function Pattern() {
         </main>
       </SidebarInset>
     </div>
+    </SidebarProvider>
   )
 }

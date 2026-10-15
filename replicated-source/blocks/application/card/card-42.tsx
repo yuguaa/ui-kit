@@ -46,14 +46,14 @@ export function Pattern() {
               <div className="bg-[oklch(0.84_0.16_82)] relative rounded-full">
                 <Avatar className="after:rounded-full rounded-full size-20" size="default">
                   <AvatarFallback className="rounded-full text-xl">
-                    JK
+                    {"JK"}
                   </AvatarFallback>
                   <AvatarBadge className="bg-[oklch(0.68_0.2_148)] bottom-auto right-1.5 ring-[3px] ring-background size-3.5 top-1.5"></AvatarBadge>
                 </Avatar>
               </div>
               <div className="flex gap-1.5 items-center justify-center max-w-full mt-3">
                 <h2 className="font-semibold leading-tight text-base truncate">
-                  Jenny Klabber
+                  {"Jenny Klabber"}
                 </h2>
                 <svg className="lucide lucide-badge-check shrink-0 size-4 text-[oklch(0.62_0.22_258)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-label="Verified profile">
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
@@ -69,7 +69,7 @@ export function Pattern() {
                     <path d="m7.5 4.27 9 5.15"></path>
                   </svg>
                   <span className="truncate">
-                    Newcapec
+                    {"Newcapec"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0">
@@ -78,28 +78,28 @@ export function Pattern() {
                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                   </svg>
                   <span className="truncate">
-                    jenny@kteam.com
+                    {"jenny@kteam.com"}
                   </span>
                 </span>
               </div>
               <div className="flex flex-col gap-2 items-center mt-4">
                 <span className="leading-none text-muted-foreground/60 text-xs">
-                  TEAM
+                  {"TEAM"}
                 </span>
                 <AvatarGroup>
                   <Avatar className="after:rounded-full rounded-full size-7" size="default">
                     <AvatarFallback className="bg-background font-medium rounded-full">
-                      AL
+                      {"AL"}
                     </AvatarFallback>
                   </Avatar>
                   <Avatar className="after:rounded-full rounded-full size-7" size="default">
                     <AvatarFallback className="bg-background font-medium rounded-full">
-                      MS
+                      {"MS"}
                     </AvatarFallback>
                   </Avatar>
                   <Avatar className="after:rounded-full rounded-full size-7" size="default">
                     <AvatarFallback className="bg-background font-medium rounded-full">
-                      K
+                      {"K"}
                     </AvatarFallback>
                   </Avatar>
                   <Avatar className="after:rounded-full rounded-full size-7" size="default">
@@ -112,10 +112,10 @@ export function Pattern() {
                   <Item className="bg-transparent px-2 py-2" variant="muted" size="sm">
                     <ItemContent className="gap-1.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                        92
+                        {"92"}
                       </ItemTitle>
                       <ItemDescription className="leading-tight text-[11px] text-center w-full whitespace-nowrap">
-                        Orders
+                        {"Orders"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -125,10 +125,10 @@ export function Pattern() {
                   <Item className="bg-transparent px-2 py-2" variant="muted" size="sm">
                     <ItemContent className="gap-1.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                        $69
+                        {"$69"}
                       </ItemTitle>
                       <ItemDescription className="leading-tight text-[11px] text-center w-full whitespace-nowrap">
-                        Avg. Price
+                        {"Avg. Price"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -138,10 +138,10 @@ export function Pattern() {
                   <Item className="bg-transparent px-2 py-2" variant="muted" size="sm">
                     <ItemContent className="gap-1.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                        $6,240
+                        {"$6,240"}
                       </ItemTitle>
                       <ItemDescription className="leading-tight text-[11px] text-center w-full whitespace-nowrap">
-                        Total Spent
+                        {"Total Spent"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -155,7 +155,7 @@ export function Pattern() {
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
-              Connected
+              {"Connected"}
             </Button>
           </footer>
         </Frame>

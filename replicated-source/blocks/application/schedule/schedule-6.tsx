@@ -39,17 +39,17 @@ export function Pattern() {
       <Frame className="max-w-lg w-full">
         <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-1!">
           <div className="font-semibold text-sm">
-            Create schedule
+            {"Create schedule"}
           </div>
           <div className="text-muted-foreground text-sm">
-            Complete the form below to create a schedule
+            {"Complete the form below to create a schedule"}
           </div>
         </header>
         <FramePanel className="p-0!">
           <div className="flex flex-col gap-5 p-5">
             <Field className="gap-1" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                Schedule name
+                {"Schedule name"}
               </FieldLabel>
               <FieldContent>
                 <InputGroup role="group">
@@ -59,14 +59,14 @@ export function Pattern() {
             </Field>
             <Field className="gap-1" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                Members
+                {"Members"}
               </FieldLabel>
               <ComboboxChips className="has-data-[slot=combobox-chip]:pl-1" role="toolbar">
                 <ComboboxChip className="gap-1.5 rounded-full" tabIndex="-1">
                   <Avatar className="size-4" size="default">
                     <AvatarImage alt="Michael Rodriguez" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
-                  Michael Rodriguez
+                  {"Michael Rodriguez"}
                   <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false" data-extracted="1">
                     <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                       <path d="M18 6 6 18"></path>
@@ -80,13 +80,13 @@ export function Pattern() {
             </Field>
             <Field className="gap-1" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                Date
+                {"Date"}
               </FieldLabel>
               <FieldContent>
                 <Popover>
                 <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
                   <span className="text-muted-foreground truncate">
-                    Select the date
+                    {"Select the date"}
                   </span>
                   <svg className="lucide lucide-calendar opacity-30 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                     <path d="M8 2v4"></path>
@@ -101,16 +101,16 @@ export function Pattern() {
             <div className="gap-5 grid md:grid-cols-2">
               <div className="flex flex-col gap-2">
                 <Label htmlFor="start-time">
-                  Start time
+                  {"Start time"}
                 </Label>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    09:00 AM
+                    {"09:00 AM"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -118,16 +118,16 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2">
                 <Label htmlFor="end-time">
-                  End time
+                  {"End time"}
                 </Label>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="base-ui-_r_9_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    10:00 AM
+                    {"10:00 AM"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -142,18 +142,18 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add files
+                  {"Add files"}
                 </Button>
                 <div className="flex flex-1 gap-2 items-center">
                   <p className="text-muted-foreground text-sm">
-                    Drop files here (max 3 files)
+                    {"Drop files here (max 3 files)"}
                   </p>
                 </div>
               </div>
             </div>
             <Field className="gap-1" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                Add link
+                {"Add link"}
               </FieldLabel>
               <FieldContent>
                 <InputGroup role="group">
@@ -169,7 +169,7 @@ export function Pattern() {
             </Field>
             <Field className="gap-1" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                Description
+                {"Description"}
               </FieldLabel>
               <FieldContent>
                 <Textarea placeholder="(e.g: Work from mountain)" rows="3"></Textarea>
@@ -179,10 +179,10 @@ export function Pattern() {
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="flex gap-5 px-5 py-2.5">
             <Button className="flex-1" type="button" tabIndex="0">
-              Cancel
+              {"Cancel"}
             </Button>
             <Button className="flex-1" type="button" tabIndex="0">
-              Create schedule
+              {"Create schedule"}
             </Button>
           </div>
         </FramePanel>

@@ -31,14 +31,14 @@ export function Pattern() {
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
-                    Audio
+                    {"Audio"}
                   </a>
                   <Tooltip>
                   <TooltipTrigger className="appearance-none bg-transparent focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring inline-flex outline-none p-0 rounded-full" type="button" aria-label="6 left. Only 6 Pearl units left for this drop." id="base-ui-_r_2_" baseUiTooltipTrigger="" extracted="1">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 cursor-help dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                      Popular
+                      {"Popular"}
                       <span className="font-semibold">
-                        6 left
+                        {"6 left"}
                       </span>
                     </Badge>
                   </TooltipTrigger>
@@ -46,11 +46,11 @@ export function Pattern() {
                 </div>
                 <CardTitle className="leading-tight md:text-2xl min-w-0 text-balance text-xl">
                   <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                    AirBuds White
+                    {"AirBuds White"}
                   </a>
                 </CardTitle>
                 <CardDescription className="leading-6 line-clamp-2 max-w-md text-sm">
-                  White wireless earbuds with open-fit comfort, fast pairing, and a slim pocket charging case.
+                  {"White wireless earbuds with open-fit comfort, fast pairing, and a slim pocket charging case."}
                 </CardDescription>
                 <div className="flex flex-wrap gap-x-3 gap-y-2 items-center">
                   <div aria-label="Rated 4.7 out of 5">
@@ -108,26 +108,26 @@ export function Pattern() {
                         </div>
                       </div>
                       <span className="text-muted-foreground text-xs w-5">
-                        4.7
+                        {"4.7"}
                       </span>
                     </Rating>
                   </div>
                   <a className="hover:text-primary hover:underline text-muted-foreground text-sm transition-colors underline-offset-4" href="#">
-                    362 reviews
+                    {"362 reviews"}
                   </a>
                 </div>
               </div>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                18% OFF
+                {"18% OFF"}
               </Badge>
               <div className="flex font-semibold gap-2 items-baseline tabular-nums text-xl">
                 <span>
-                  $119.00
+                  {"$119.00"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $149.00
+                  {"$149.00"}
                 </span>
               </div>
             </div>
@@ -137,7 +137,7 @@ export function Pattern() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <span className="truncate">
-                  Open-Fit Comfort
+                  {"Open-Fit Comfort"}
                 </span>
               </li>
               <li className="flex gap-1.5 items-center min-w-0">
@@ -145,7 +145,7 @@ export function Pattern() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <span className="truncate">
-                  Low-Latency Pairing
+                  {"Low-Latency Pairing"}
                 </span>
               </li>
               <li className="flex gap-1.5 items-center min-w-0">
@@ -153,17 +153,17 @@ export function Pattern() {
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
                 <span className="truncate">
-                  Slim Charging Case
+                  {"Slim Charging Case"}
                 </span>
               </li>
             </ul>
             <div className="gap-3 grid mt-auto pt-2">
               <div className="flex gap-3 items-center justify-between">
                 <p className="font-medium text-sm">
-                  Finish
+                  {"Finish"}
                 </p>
                 <a className="hover:text-primary hover:underline text-muted-foreground text-sm transition-colors underline-offset-4" href="#">
-                  Tech Specs
+                  {"Tech Specs"}
                 </a>
               </div>
               <div className="@container/field-group cn-field-group flex-col gap-2 grid grid-cols-5 group/field-group w-full" role="group" aria-label="Choose Finish">
@@ -178,7 +178,7 @@ export function Pattern() {
                     </Checkbox>
                     <input id="feature-card-finish-pearl" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-field-title font-medium items-center justify-center text-sm w-full">
-                      Pearl
+                      {"Pearl"}
                     </FieldLabel>
                   </Field>
                 </FieldLabel>
@@ -187,7 +187,7 @@ export function Pattern() {
                     <Checkbox className="-right-2 -top-2 absolute border-none opacity-0 rounded-full shadow-none size-5 transition-opacity" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" aria-label="Choose Frost finish" aria-labelledby="feature-card-finish-frost-label"></Checkbox>
                     <input id="feature-card-finish-frost" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-field-title font-medium items-center justify-center text-sm w-full">
-                      Frost
+                      {"Frost"}
                     </FieldLabel>
                   </Field>
                 </FieldLabel>
@@ -196,7 +196,7 @@ export function Pattern() {
                     <Checkbox className="-right-2 -top-2 absolute border-none opacity-0 rounded-full shadow-none size-5 transition-opacity" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-label="Choose Cloud finish" aria-labelledby="feature-card-finish-cloud-label"></Checkbox>
                     <input id="feature-card-finish-cloud" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-field-title font-medium items-center justify-center text-sm w-full">
-                      Cloud
+                      {"Cloud"}
                     </FieldLabel>
                   </Field>
                 </FieldLabel>
@@ -205,7 +205,7 @@ export function Pattern() {
                     <Checkbox className="-right-2 -top-2 absolute border-none opacity-0 rounded-full shadow-none size-5 transition-opacity" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-label="Choose Sand finish" aria-labelledby="feature-card-finish-sand-label"></Checkbox>
                     <input id="feature-card-finish-sand" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-field-title font-medium items-center justify-center text-sm w-full">
-                      Sand
+                      {"Sand"}
                     </FieldLabel>
                   </Field>
                 </FieldLabel>
@@ -214,7 +214,7 @@ export function Pattern() {
                     <Checkbox className="-right-2 -top-2 absolute border-none opacity-0 rounded-full shadow-none size-5 transition-opacity" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-label="Choose Mist finish" aria-labelledby="feature-card-finish-mist-label"></Checkbox>
                     <input id="feature-card-finish-mist" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-field-title font-medium items-center justify-center text-sm w-full">
-                      Mist
+                      {"Mist"}
                     </FieldLabel>
                   </Field>
                 </FieldLabel>
@@ -226,13 +226,13 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Add to Bag
+                  {"Add to Bag"}
                 </Button>
                 <Button type="button" tabIndex="0" aria-pressed="false" aria-label="Add AirBuds White to wishlist">
                   <svg className="lucide lucide-heart size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                   </svg>
-                  Wishlist
+                  {"Wishlist"}
                 </Button>
               </div>
             </div>

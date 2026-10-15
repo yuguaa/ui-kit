@@ -26,18 +26,18 @@ export function Pattern() {
         <div className="gap-8 grid grid-cols-1 items-center lg:grid-cols-2 lg:max-w-7xl max-w-[624px] mx-auto relative w-full">
           <div className="@container flex flex-col gap-7 items-start justify-center">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-white/10 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-[#fafafa] text-sm transition-shadow">
-              Your Ecosystem
+              {"Your Ecosystem"}
             </Badge>
             <h1 className="@md:text-4xl @xl:text-5xl font-semibold leading-none text-3xl text-[#fafafa] tracking-tight" id="hero-5-title">
               <span className="@xl:block">
-                Connect Your
+                {"Connect Your"}
               </span>
               <span className="@xl:block">
-                Developer Stack
+                {"Developer Stack"}
               </span>
             </h1>
             <p className="leading-6 max-w-md text-[#a1a1a1] text-base">
-              Connect your development tools through MCP and give AI agents access to the services they need across your workflow.
+              {"Connect your development tools through MCP and give AI agents access to the services they need across your workflow."}
             </p>
             <div className="flex flex-wrap gap-4 items-center">
               <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex="0">
@@ -48,7 +48,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect MCP
+                {"Connect MCP"}
               </Button>
               <Button className="bg-white/10 border-transparent hover:bg-white/15 hover:text-white text-[#fafafa]" href="#" role="button" tabIndex="0">
                 <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
@@ -57,7 +57,7 @@ export function Pattern() {
                   <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                   <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                 </svg>
-                Browse integrations
+                {"Browse integrations"}
               </Button>
             </div>
             <Separator className="bg-white/10 max-w-md w-full" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -68,7 +68,7 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
-                  Live integrations
+                  {"Live integrations"}
                 </span>
               </li>
               <li className="flex gap-1.5 items-center">
@@ -77,7 +77,7 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
-                  Agent ready
+                  {"Agent ready"}
                 </span>
               </li>
               <li className="flex gap-1.5 items-center">
@@ -86,7 +86,7 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
-                  Open standards
+                  {"Open standards"}
                 </span>
               </li>
             </ul>
@@ -148,7 +148,7 @@ export function Pattern() {
                   <line x1="398.42" y1="250" x2="441.72130000000004" y2="275" stroke="url(#_r_1_-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.6"></line>
                   <g transform="translate(401.277 374) matrix(0.866025,-0.5,0.866025,0.5,0,0)">
                     <text textAnchor="middle" dominantBaseline="central" fontSize="36" fontWeight="400" fill="#d0d6d8" fillOpacity="0.9">
-                      Built for Every Stack
+                      {"Built for Every Stack"}
                     </text>
                   </g>
                 </svg>

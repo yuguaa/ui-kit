@@ -21,11 +21,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Collaborator invite dialog
+        {"Collaborator invite dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[60px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open collaborator invite dialog
+          {"Open collaborator invite dialog"}
         </Button>
       </div>
     </main>
@@ -33,10 +33,10 @@ export function Pattern() {
     <DialogContent className="sm:max-w-2xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader>
         <DialogTitle id="base-ui-_r_2_">
-          Invite Collaborators
+          {"Invite Collaborators"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Add each person with the access they need.
+          {"Add each person with the access they need."}
         </DialogDescription>
       </DialogHeader>
       <form className="contents py-3">
@@ -49,11 +49,11 @@ export function Pattern() {
               <Select>
               <SelectTrigger className="w-full" type="button" tabIndex="0" id="invite-row-1-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Role for invite 1">
                 <SelectValue>
-                  Member
+                  {"Member"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -67,19 +67,19 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add new member
+            {"Add new member"}
           </Button>
         </div>
         <DialogFooter>
           <Button type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </Button>
           <Button type="submit" disabled="" tabIndex="0" disabled>
             <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" data-icon="inline-start" aria-hidden="true">
               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
               <path d="m21.854 2.147-10.94 10.939"></path>
             </svg>
-            Send invitations
+            {"Send invitations"}
           </Button>
         </DialogFooter>
       </form>
@@ -89,7 +89,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

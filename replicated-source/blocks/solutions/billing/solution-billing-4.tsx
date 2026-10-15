@@ -62,30 +62,30 @@ export function Pattern() {
             <div className="flex flex-col gap-0 min-w-0">
               <div className="flex flex-wrap gap-2 items-center">
                 <h1 className="font-semibold text-foreground text-lg tracking-tight truncate">
-                  Slack
+                  {"Slack"}
                 </h1>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                  ACC-3092
+                  {"ACC-3092"}
                 </Badge>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                  Scale
+                  {"Scale"}
                 </Badge>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                  Past due
+                  {"Past due"}
                 </Badge>
               </div>
               <p className="leading-5 text-muted-foreground text-sm truncate">
-                Customer since Mar 2024, owner Andre Costa
+                {"Customer since Mar 2024, owner Andre Costa"}
               </p>
             </div>
           </div>
           <div className="flex flex-col gap-3 shrink-0 sm:flex-row sm:items-center sm:justify-end">
             <div className="flex gap-2 items-center sm:border-r sm:pr-3">
               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                Balance due
+                {"Balance due"}
               </span>
               <span className="font-semibold tabular-nums text-foreground text-lg tracking-tight">
-                $890.00
+                {"$890.00"}
               </span>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
@@ -94,14 +94,14 @@ export function Pattern() {
                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                   <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                 </svg>
-                Send reminder
+                {"Send reminder"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New invoice
+                {"New invoice"}
               </Button>
             </div>
           </div>
@@ -110,13 +110,13 @@ export function Pattern() {
           <Tabs className="gap-3 min-w-0" data-orientation="horizontal" activationDirection="none">
             <TabsList className="grid grid-cols-3 sm:w-fit w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Billing detail sections">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_5_">
-                Invoices
+                {"Invoices"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                Subscription
+                {"Subscription"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                Payments
+                {"Payments"}
               </TabsTrigger>
             </TabsList>
             <TabsContent className="flex flex-col gap-3 min-w-0 mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_5_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
@@ -124,10 +124,10 @@ export function Pattern() {
                 <header className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex flex-col gap-px min-w-0">
                     <h2 className="capitalize font-semibold text-base text-foreground tracking-tight">
-                      Invoices
+                      {"Invoices"}
                     </h2>
                     <p className="text-muted-foreground text-sm">
-                      History and current collection state.
+                      {"History and current collection state."}
                     </p>
                   </div>
                   <div className="shrink-0">
@@ -138,14 +138,14 @@ export function Pattern() {
                           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                           <path d="m7 10 5 5 5-5"></path>
                         </svg>
-                        Download
+                        {"Download"}
                       </Button>
                       <Button type="button" tabIndex="0">
                         <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" data-icon="inline-start" aria-hidden="true">
                           <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                           <path d="m21.854 2.147-10.94 10.939"></path>
                         </svg>
-                        Remind
+                        {"Remind"}
                       </Button>
                     </div>
                   </div>
@@ -158,23 +158,23 @@ export function Pattern() {
                           <TableHeader>
                             <TableRow>
                               <TableHead className="w-[20%]">
-                                Invoice
+                                {"Invoice"}
                               </TableHead>
                               <TableHead className="w-[24%]">
-                                Period
+                                {"Period"}
                               </TableHead>
                               <TableHead className="w-[17%]">
-                                Date
+                                {"Date"}
                               </TableHead>
                               <TableHead className="w-[15%]">
-                                Total
+                                {"Total"}
                               </TableHead>
                               <TableHead className="text-right w-[14%]">
-                                Status
+                                {"Status"}
                               </TableHead>
                               <TableHead className="text-right w-[10%]">
                                 <span className="sr-only">
-                                  Actions
+                                  {"Actions"}
                                 </span>
                               </TableHead>
                             </TableRow>
@@ -183,21 +183,21 @@ export function Pattern() {
                             <TableRow>
                               <TableCell className="font-medium whitespace-nowrap">
                                 <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                                  INV-20418
+                                  {"INV-20418"}
                                 </a>
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                May usage · seats
+                                {"May usage · seats"}
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                May 12, 2026
+                                {"May 12, 2026"}
                               </TableCell>
                               <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                                $890.00
+                                {"$890.00"}
                               </TableCell>
                               <TableCell className="text-right">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                  Past due
+                                  {"Past due"}
                                 </Badge>
                               </TableCell>
                               <TableCell className="text-right">
@@ -215,21 +215,21 @@ export function Pattern() {
                             <TableRow>
                               <TableCell className="font-medium whitespace-nowrap">
                                 <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                                  INV-20290
+                                  {"INV-20290"}
                                 </a>
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Apr usage · seats
+                                {"Apr usage · seats"}
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Apr 12, 2026
+                                {"Apr 12, 2026"}
                               </TableCell>
                               <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                                $840.00
+                                {"$840.00"}
                               </TableCell>
                               <TableCell className="text-right">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Paid
+                                  {"Paid"}
                                 </Badge>
                               </TableCell>
                               <TableCell className="text-right">
@@ -247,21 +247,21 @@ export function Pattern() {
                             <TableRow>
                               <TableCell className="font-medium whitespace-nowrap">
                                 <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                                  INV-19980
+                                  {"INV-19980"}
                                 </a>
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Annual renewal · Scale
+                                {"Annual renewal · Scale"}
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Mar 1, 2026
+                                {"Mar 1, 2026"}
                               </TableCell>
                               <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                                $18,000.00
+                                {"$18,000.00"}
                               </TableCell>
                               <TableCell className="text-right">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Paid
+                                  {"Paid"}
                                 </Badge>
                               </TableCell>
                               <TableCell className="text-right">
@@ -279,21 +279,21 @@ export function Pattern() {
                             <TableRow>
                               <TableCell className="font-medium whitespace-nowrap">
                                 <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                                  INV-19844
+                                  {"INV-19844"}
                                 </a>
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Feb usage · seats
+                                {"Feb usage · seats"}
                               </TableCell>
                               <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                                Feb 12, 2026
+                                {"Feb 12, 2026"}
                               </TableCell>
                               <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                                $760.00
+                                {"$760.00"}
                               </TableCell>
                               <TableCell className="text-right">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Paid
+                                  {"Paid"}
                                 </Badge>
                               </TableCell>
                               <TableCell className="text-right">
@@ -346,10 +346,10 @@ export function Pattern() {
                           </div>
                           <div className="flex flex-col gap-1.5 items-center">
                             <EmptyTitle>
-                              No Open Invoices
+                              {"No Open Invoices"}
                             </EmptyTitle>
                             <EmptyDescription className="max-w-80">
-                              The current cycle on SUB-4821 is fully collected. The next invoice issues at renewal on Mar 1, 2027.
+                              {"The current cycle on SUB-4821 is fully collected. The next invoice issues at renewal on Mar 1, 2027."}
                             </EmptyDescription>
                           </div>
                         </EmptyHeader>
@@ -359,7 +359,7 @@ export function Pattern() {
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
-                            New invoice
+                            {"New invoice"}
                           </Button>
                         </EmptyContent>
                       </Empty>
@@ -374,10 +374,10 @@ export function Pattern() {
               <header className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-px min-w-0">
                   <h2 className="capitalize font-semibold text-base text-foreground tracking-tight">
-                    Account Activity
+                    {"Account Activity"}
                   </h2>
                   <p className="text-muted-foreground text-sm">
-                    Recent billing events on ACC-3092.
+                    {"Recent billing events on ACC-3092."}
                   </p>
                 </div>
               </header>
@@ -391,10 +391,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Backup method added
+                            {"Backup method added"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 22, 2026
+                            {"May 22, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -405,23 +405,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          ACH Mercury Bank is available for fallback collection.
+                          {"ACH Mercury Bank is available for fallback collection."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Method
+                              {"Method"}
                             </span>
                             <span className="font-normal opacity-75">
-                              PM-7610
+                              {"PM-7610"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Added
+                              {"Added"}
                             </span>
                             <span className="font-normal opacity-75">
-                              backup
+                              {"backup"}
                             </span>
                           </Badge>
                         </div>
@@ -432,10 +432,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Finance owner notified
+                            {"Finance owner notified"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 21, 2026
+                            {"May 21, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -446,23 +446,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Andre Costa received the expiring-card notice.
+                          {"Andre Costa received the expiring-card notice."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Owner
+                              {"Owner"}
                             </span>
                             <span className="font-normal opacity-75">
-                              Andre
+                              {"Andre"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Email
+                              {"Email"}
                             </span>
                             <span className="font-normal opacity-75">
-                              opened
+                              {"opened"}
                             </span>
                           </Badge>
                         </div>
@@ -473,10 +473,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Review queued
+                            {"Review queued"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 20, 2026
+                            {"May 20, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-muted/40 border border-border flex items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -487,23 +487,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Collections review waits for the retry result.
+                          {"Collections review waits for the retry result."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Queue
+                              {"Queue"}
                             </span>
                             <span className="font-normal opacity-75">
-                              billing
+                              {"billing"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              SLA
+                              {"SLA"}
                             </span>
                             <span className="font-normal opacity-75">
-                              24h
+                              {"24h"}
                             </span>
                           </Badge>
                         </div>
@@ -514,10 +514,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Card expiry flagged
+                            {"Card expiry flagged"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 20, 2026
+                            {"May 20, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -528,23 +528,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Visa ending 4242 expires 07/26 and needs a replacement.
+                          {"Visa ending 4242 expires 07/26 and needs a replacement."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Checked
+                              {"Checked"}
                             </span>
                             <span className="font-normal opacity-75">
-                              request sent
+                              {"request sent"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Method
+                              {"Method"}
                             </span>
                             <span className="font-normal opacity-75">
-                              PM-7741
+                              {"PM-7741"}
                             </span>
                           </Badge>
                         </div>
@@ -555,10 +555,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Smart retry scheduled
+                            {"Smart retry scheduled"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 18, 2026
+                            {"May 18, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary border border-primary flex items-center justify-center ring-2 ring-current/20 size-5 text-primary-foreground" aria-hidden="true">
@@ -569,23 +569,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Retry runs against the saved Visa method.
+                          {"Retry runs against the saved Visa method."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                             <span>
-                              Scheduled
+                              {"Scheduled"}
                             </span>
                             <span className="font-normal opacity-75">
-                              May 18
+                              {"May 18"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Invoice
+                              {"Invoice"}
                             </span>
                             <span className="font-normal opacity-75">
-                              INV-20418
+                              {"INV-20418"}
                             </span>
                           </Badge>
                         </div>
@@ -596,10 +596,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Payment reminder sent
+                            {"Payment reminder sent"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 16, 2026
+                            {"May 16, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -610,23 +610,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Reminder sent to billing@slack.example.
+                          {"Reminder sent to billing@slack.example."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Email
+                              {"Email"}
                             </span>
                             <span className="font-normal opacity-75">
-                              delivered
+                              {"delivered"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Balance
+                              {"Balance"}
                             </span>
                             <span className="font-normal opacity-75">
-                              $890
+                              {"$890"}
                             </span>
                           </Badge>
                         </div>
@@ -637,10 +637,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Renewal charge declined
+                            {"Renewal charge declined"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 14, 2026
+                            {"May 14, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-destructive/10 border border-destructive/40 dark:bg-destructive/20 flex items-center justify-center size-5 text-destructive" aria-hidden="true">
@@ -653,23 +653,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Visa ending 4242 failed collection on INV-20418.
+                          {"Visa ending 4242 failed collection on INV-20418."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                             <span>
-                              Issue
+                              {"Issue"}
                             </span>
                             <span className="font-normal opacity-75">
-                              insufficient funds
+                              {"insufficient funds"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Amount
+                              {"Amount"}
                             </span>
                             <span className="font-normal opacity-75">
-                              $890
+                              {"$890"}
                             </span>
                           </Badge>
                         </div>
@@ -680,10 +680,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Invoice issued
+                            {"Invoice issued"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 12, 2026
+                            {"May 12, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -694,23 +694,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          INV-20418 posted for May usage seats.
+                          {"INV-20418 posted for May usage seats."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Invoice
+                              {"Invoice"}
                             </span>
                             <span className="font-normal opacity-75">
-                              INV-20418
+                              {"INV-20418"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Amount
+                              {"Amount"}
                             </span>
                             <span className="font-normal opacity-75">
-                              $890
+                              {"$890"}
                             </span>
                           </Badge>
                         </div>
@@ -721,10 +721,10 @@ export function Pattern() {
                         <TimelineSeparator className="group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                           <TimelineTitle className="font-semibold">
-                            Seat true-up posted
+                            {"Seat true-up posted"}
                           </TimelineTitle>
                           <span className="text-muted-foreground text-xs">
-                            May 10, 2026
+                            {"May 10, 2026"}
                           </span>
                         </div>
                         <TimelineIndicator className="bg-primary/10 border border-primary/30 flex items-center justify-center size-5 text-primary" aria-hidden="true">
@@ -735,23 +735,23 @@ export function Pattern() {
                       </TimelineHeader>
                       <TimelineContent className="mt-1.5 pb-0.5 space-y-1.5">
                         <p className="leading-5 text-foreground text-sm">
-                          Usage true-up added four seats to the cycle.
+                          {"Usage true-up added four seats to the cycle."}
                         </p>
                         <div className="flex flex-wrap gap-1.5 items-center">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Usage
+                              {"Usage"}
                             </span>
                             <span className="font-normal opacity-75">
-                              +4 seats
+                              {"+4 seats"}
                             </span>
                           </Badge>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                             <span>
-                              Plan
+                              {"Plan"}
                             </span>
                             <span className="font-normal opacity-75">
-                              Scale
+                              {"Scale"}
                             </span>
                           </Badge>
                         </div>

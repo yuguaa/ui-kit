@@ -45,18 +45,21 @@ import {
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="[--sidebar-border:var(--color-border)] bg-background flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh overflow-hidden w-full" style={{"--sidebar-width": "256px", "--sidebar-width-icon": "3rem", "--app-topbar-height": "52px"}}>
       <header className="bg-muted/50 border-b fixed flex h-(--app-topbar-height) inset-x-0 items-center pe-[var(--removed-body-scroll-bar-size,0px)] text-foreground top-0 z-30">
         <div className="flex gap-4 items-center px-4 sm:px-6 w-full">
+          <SidebarProvider>
           <SidebarTrigger className="-me-2 -ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
             <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
-              Toggle Sidebar
+              {"Toggle Sidebar"}
             </span>
           </SidebarTrigger>
+          </SidebarProvider>
           <a className="flex gap-1.75 items-center shrink-0 text-foreground" href="#" aria-label="NeUI home">
             <svg className="h-6 w-auto" viewBox="0 0 24.084 24" fill="none" aria-hidden="true">
               <path opacity=".2" fillRule="evenodd" clipRule="evenodd" d="M16.0554 0.92308H8.02772C4.1057 0.92308 0.926278 4.09152 0.926278 8V16C0.926278 19.9085 4.1057 23.0769 8.02772 23.0769H16.0554C19.9774 23.0769 23.1569 19.9085 23.1569 16V8C23.1569 4.09152 19.9774 0.92308 16.0554 0.92308ZM8.02772 0C3.59413 0 0 3.58172 0 8V16C0 20.4183 3.59413 24 8.02772 24H16.0554C20.489 24 24.0832 20.4183 24.0832 16V8C24.0832 3.58172 20.489 0 16.0554 0H8.02772Z" fill="currentColor"></path>
@@ -77,7 +80,7 @@ export function Pattern() {
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
                   <span className="truncate">
-                    Operations Team
+                    {"Operations Team"}
                   </span>
                   <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
@@ -87,13 +90,13 @@ export function Pattern() {
                 </DropdownMenu>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="shrink-0 text-foreground/10 text-xs" role="presentation" aria-hidden="true">
-                /
+                {"/"}
               </BreadcrumbSeparator>
               <BreadcrumbItem className="min-w-0">
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
                   <span className="truncate">
-                    Fleet Control
+                    {"Fleet Control"}
                   </span>
                   <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
@@ -135,7 +138,7 @@ export function Pattern() {
             <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-1 outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open account menu" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
               <Avatar className="size-6" size="sm">
                 <AvatarFallback className="text-[10px]">
-                  CN
+                  {"CN"}
                 </AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
@@ -144,10 +147,10 @@ export function Pattern() {
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-xs shrink-0 text-xs transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_u_" aria-expanded="false">
                 <span className="sm:hidden">
-                  New
+                  {"New"}
                 </span>
                 <span className="hidden sm:inline">
-                  New Mission
+                  {"New Mission"}
                 </span>
               </DropdownMenuTrigger>
               </DropdownMenu>
@@ -155,15 +158,18 @@ export function Pattern() {
           </div>
         </div>
       </header>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-[calc(100svh-var(--app-topbar-height))] hidden inset-y-0 md:flex top-(--app-topbar-height) transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="gap-1 md:hidden pb-0 pt-4 px-4" sidebar="header">
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_13_" aria-expanded="false">
                 <span className="truncate">
-                  Operations Team
+                  {"Operations Team"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -174,7 +180,7 @@ export function Pattern() {
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_18_" aria-expanded="false">
                 <span className="truncate">
-                  Fleet Control
+                  {"Fleet Control"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -183,8 +189,11 @@ export function Pattern() {
               </DropdownMenuTrigger>
               </DropdownMenu>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="[--scroll-fade-reveal:--spacing(8)] gap-0 px-4 py-4 scroll-fade-y scroll-py-10 sm:px-6 sm:py-6" sidebar="content">
+              <SidebarProvider>
               <SidebarGroup className="p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
                   <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                     <path d="M12 8V4H8"></path>
@@ -195,61 +204,71 @@ export function Pattern() {
                     <path d="M9 13v2"></path>
                   </svg>
                   <span>
-                    Robot Fleet
+                    {"Robot Fleet"}
                   </span>
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroupContent sidebar="group-content">
+                  <SidebarProvider>
                   <SidebarMenu sidebar="menu">
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
                       <SidebarMenuSub className="border-l-0 gap-0.5 mx-0 pl-4 pr-0 py-0" sidebar="menu-sub">
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Overview
+                              {"Overview"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Robots
+                              {"Robots"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" data-active="" href="#">
                             <span>
-                              Stations
+                              {"Stations"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Fleet Map
+                              {"Fleet Map"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Device Groups
+                              {"Device Groups"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Robot Health
+                              {"Robot Health"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       </SidebarMenuSub>
                     </SidebarMenuItem>
+                    </SidebarProvider>
                   </SidebarMenu>
+                  </SidebarProvider>
                 </SidebarGroupContent>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
+              <SidebarProvider>
               <SidebarGroup className="p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
                   <svg className="lucide lucide-route" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
                     <circle cx="6" cy="19" r="3"></circle>
@@ -257,47 +276,57 @@ export function Pattern() {
                     <circle cx="18" cy="5" r="3"></circle>
                   </svg>
                   <span>
-                    Mission Control
+                    {"Mission Control"}
                   </span>
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroupContent sidebar="group-content">
+                  <SidebarProvider>
                   <SidebarMenu sidebar="menu">
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
                       <SidebarMenuSub className="border-l-0 gap-0.5 mx-0 pl-4 pr-0 py-0" sidebar="menu-sub">
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Missions
+                              {"Missions"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Requests
+                              {"Requests"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Schedules
+                              {"Schedules"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Issue Reports
+                              {"Issue Reports"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       </SidebarMenuSub>
                     </SidebarMenuItem>
+                    </SidebarProvider>
                   </SidebarMenu>
+                  </SidebarProvider>
                 </SidebarGroupContent>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
+              <SidebarProvider>
               <SidebarGroup className="p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
                   <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
                     <rect width="8" height="8" x="3" y="3" rx="2"></rect>
@@ -305,54 +334,63 @@ export function Pattern() {
                     <rect width="8" height="8" x="13" y="13" rx="2"></rect>
                   </svg>
                   <span>
-                    System Tools
+                    {"System Tools"}
                   </span>
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroupContent sidebar="group-content">
+                  <SidebarProvider>
                   <SidebarMenu sidebar="menu">
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
                       <SidebarMenuSub className="border-l-0 gap-0.5 mx-0 pl-4 pr-0 py-0" sidebar="menu-sub">
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Integrations
+                              {"Integrations"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Automations
+                              {"Automations"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Team Access
+                              {"Team Access"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              Activity Logs
+                              {"Activity Logs"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="border border-transparent data-active:border-input/40 data-active:text-foreground font-medium h-7.5 hover:text-sidebar-accent-foreground text-muted-foreground" sidebar="menu-sub-button" size="sm" href="#">
                             <span>
-                              API Keys
+                              {"API Keys"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       </SidebarMenuSub>
                     </SidebarMenuItem>
+                    </SidebarProvider>
                   </SidebarMenu>
+                  </SidebarProvider>
                 </SidebarGroupContent>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="pb-4 px-4 sm:pb-6 sm:px-6" sidebar="footer">
               <Card className="border border-border gap-0 overflow-hidden relative ring-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.1)]" size="default">
                 <div className="absolute bg-[length:10px_10px] bg-[url(/assets/card-grid.svg?v=2)] bg-repeat dark:invert inset-0" aria-hidden="true"></div>
@@ -370,22 +408,25 @@ export function Pattern() {
                     </IconTile>
                     <div className="flex flex-col gap-1">
                       <p className="font-medium text-sm">
-                        Integrations
+                        {"Integrations"}
                       </p>
                       <p className="text-muted-foreground text-xs">
-                        Connect more tools to your fleet on Pro
+                        {"Connect more tools to your fleet on Pro"}
                       </p>
                     </div>
                   </div>
                   <Button className="text-xs" type="button" tabIndex="0">
-                    Upgrade
+                    {"Upgrade"}
                   </Button>
                 </CardContent>
               </Card>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <SidebarInset className="h-screen min-h-0 overflow-hidden pt-(--app-topbar-height)">
         <main className="@container bg-muted/50 flex flex-1 flex-col gap-6 min-h-0 overflow-y-auto p-4 sm:p-6">
           <div className="@2xl:grid-cols-2 @4xl:grid-cols-3 gap-6 grid" aria-hidden="true">
@@ -474,5 +515,6 @@ export function Pattern() {
         </main>
       </SidebarInset>
     </div>
+    </SidebarProvider>
   )
 }

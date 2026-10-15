@@ -50,16 +50,16 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        CRM contacts data grid
+        {"CRM contacts data grid"}
       </h1>
       <Frame className="w-full" spacing="sm">
         <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5">
             <div className="font-semibold text-balance text-sm" id="page-heading">
-              Contacts
+              {"Contacts"}
             </div>
             <div className="text-muted-foreground text-pretty text-xs">
-              22 CRM pipeline
+              {"22 CRM pipeline"}
             </div>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
@@ -69,7 +69,7 @@ export function Pattern() {
               <line x1="19" x2="19" y1="8" y2="14"></line>
               <line x1="22" x2="16" y1="11" y2="11"></line>
             </svg>
-            Add contact
+            {"Add contact"}
           </Button>
         </header>
         <FramePanel className="p-0 shadow-none">
@@ -84,18 +84,18 @@ export function Pattern() {
                     </svg>
                     <span className="flex items-center">
                       <span>
-                        Name
+                        {"Name"}
                       </span>
                     </span>
                   </div>
                   <Popover>
                   <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3_" aria-haspopup="dialog" aria-expanded="false">
-                    contains
+                    {"contains"}
                   </PopoverTrigger>
                   </Popover>
                   <Popover>
                   <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" aria-label="Search..." tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
-                    Search...
+                    {"Search..."}
                   </PopoverTrigger>
                   </Popover>
                   <DropdownMenu>
@@ -114,7 +114,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </PopoverTrigger>
               </Popover>
               <div className="sr-only" aria-live="polite" role="status">
@@ -130,10 +130,10 @@ export function Pattern() {
                     <path d="m2 2 20 20"></path>
                     <path d="M9 9v1.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h11"></path>
                   </svg>
-                  Unpin all
+                  {"Unpin all"}
                 </Button>
                 <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center px-3 text-muted-foreground text-sm">
-                  2 contacts pinned
+                  {"2 contacts pinned"}
                 </div>
               </ButtonGroup>
               <Button type="button" tabIndex="0">
@@ -142,7 +142,7 @@ export function Pattern() {
                   <path d="m16.5 3.5 5 5"></path>
                   <path d="m21.5 3.5-5 5"></path>
                 </svg>
-                Clear
+                {"Clear"}
               </Button>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Table actions" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
@@ -151,17 +151,20 @@ export function Pattern() {
                   <circle cx="19" cy="12" r="1"></circle>
                   <circle cx="5" cy="12" r="1"></circle>
                 </svg>
-                Actions
+                {"Actions"}
               </DropdownMenuTrigger>
               </DropdownMenu>
             </div>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_i_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1206px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                    <DataGridProvider>
                     <DataGridTable style={{"--header-pin-size": "40", "--col-pin-size": "40", "--header-name-size": "270", "--col-name-size": "270", "--header-company-size": "140", "--col-company-size": "140", "--header-tags-size": "220", "--col-tags-size": "220", "--header-score-size": "148", "--col-score-size": "148", "--header-stock-size": "108", "--col-stock-size": "108", "--header-revenue-size": "110", "--col-revenue-size": "110", "--header-status-size": "110", "--col-status-size": "110", "--header-actions-size": "60", "--col-actions-size": "60", width: "calc(1206px + var(--data-grid-fill-size, 0px))"}}>
                       <colgroup>
                         <col style={{width: "calc(var(--col-pin-size) * 1px)"}} />
@@ -182,7 +185,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_m_" aria-expanded="false">
-                                Contact
+                                {"Contact"}
                                 <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                   <path d="m5 12 7-7 7 7"></path>
                                   <path d="M12 19V5"></path>
@@ -196,7 +199,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_r_" aria-expanded="false">
-                                Company
+                                {"Company"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -210,7 +213,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
-                                Category
+                                {"Category"}
                               </DropdownMenuTrigger>
                               </DropdownMenu>
                             </div>
@@ -220,7 +223,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_15_" aria-expanded="false">
-                                Score
+                                {"Score"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -234,7 +237,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1a_" aria-expanded="false">
-                                Stock
+                                {"Stock"}
                               </DropdownMenuTrigger>
                               </DropdownMenu>
                             </div>
@@ -244,7 +247,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1f_" aria-expanded="false">
-                                Amount
+                                {"Amount"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -258,7 +261,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1k_" aria-expanded="false">
-                                Status
+                                {"Status"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -272,6 +275,7 @@ export function Pattern() {
                           <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b bg-muted/30 data-[state=selected]:[&>td[data-pinned]]:bg-[color-mix(in_oklab,var(--muted)_50%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[state=selected]:bg-muted/50 hover:[&>td[data-pinned]]:bg-[color-mix(in_oklab,var(--muted)_40%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] hover:bg-muted/50" data-row-id="1" data-row-pinned="top">
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-pin-size) * 1px)"}}>
@@ -291,10 +295,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Theresa Webb
+                                  {"Theresa Webb"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="theresa@stripe.com">
-                                  theresa@stripe.com
+                                  {"theresa@stripe.com"}
                                 </div>
                               </div>
                             </div>
@@ -309,33 +313,33 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                Stripe
+                                {"Stripe"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-100 border-0 border-transparent dark:bg-amber-950/50 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-amber-800 text-xs transition-shadow">
-                                E-commerce
+                                {"E-commerce"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-rose-100 border-0 border-transparent dark:bg-rose-950/50 dark:text-rose-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-rose-800 text-xs transition-shadow">
-                                Enterprise
+                                {"Enterprise"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" aria-valuetext="92%" role="progressbar" aria-labelledby="base-ui-_r_1m_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1m_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                92%
+                                {"92%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "92%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -346,13 +350,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $48,500.00
+                              {"$48,500.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -386,10 +390,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Cameron Williamson
+                                  {"Cameron Williamson"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="cameron@mintlify.com">
-                                  cameron@mintlify.com
+                                  {"cameron@mintlify.com"}
                                 </div>
                               </div>
                             </div>
@@ -406,36 +410,36 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                Mintlify
+                                {"Mintlify"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-100 border-0 border-transparent dark:bg-emerald-950/50 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-emerald-800 text-xs transition-shadow">
-                                P2P
+                                {"P2P"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-100 border-0 border-transparent dark:bg-violet-950/50 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-violet-800 text-xs transition-shadow">
-                                AI
+                                {"AI"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-indigo-100 border-0 border-transparent dark:bg-indigo-950/50 dark:text-indigo-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-indigo-800 text-xs transition-shadow">
-                                Developer tools
+                                {"Developer tools"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="93" aria-valuetext="93%" role="progressbar" aria-labelledby="base-ui-_r_1t_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1t_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                93%
+                                {"93%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "93%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -446,13 +450,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $62,300.00
+                              {"$62,300.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -487,10 +491,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Annette Black
+                                  {"Annette Black"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="annette@slack.com">
-                                  annette@slack.com
+                                  {"annette@slack.com"}
                                 </div>
                               </div>
                             </div>
@@ -510,36 +514,36 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                Slack
+                                {"Slack"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-yellow-100 border-0 border-transparent dark:bg-yellow-950/50 dark:text-yellow-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs text-yellow-800 transition-shadow">
-                                Automation
+                                {"Automation"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-sky-100 border-0 border-transparent dark:bg-sky-950/50 dark:text-sky-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-sky-800 text-xs transition-shadow">
-                                Digital
+                                {"Digital"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-rose-100 border-0 border-transparent dark:bg-rose-950/50 dark:text-rose-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-rose-800 text-xs transition-shadow">
-                                Enterprise
+                                {"Enterprise"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="81" aria-valuetext="81%" role="progressbar" aria-labelledby="base-ui-_r_24_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_24_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                81%
+                                {"81%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "81%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -550,13 +554,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $67,800.00
+                              {"$67,800.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -591,10 +595,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Bessie Cooper
+                                  {"Bessie Cooper"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="bessie@modelcontextprotocol.io">
-                                  bessie@modelcontextprotocol.io
+                                  {"bessie@modelcontextprotocol.io"}
                                 </div>
                               </div>
                             </div>
@@ -606,7 +610,7 @@ export function Pattern() {
                                   <span className="dark:hidden" aria-hidden="true">
                                     <svg className="size-5" fill="#000000" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        ModelContextProtocol
+                                        {"ModelContextProtocol"}
                                       </title>
                                       <path d="M15.688 2.343a2.588 2.588 0 00-3.61 0l-9.626 9.44a.863.863 0 01-1.203 0 .823.823 0 010-1.18l9.626-9.44a4.313 4.313 0 016.016 0 4.116 4.116 0 011.204 3.54 4.3 4.3 0 013.609 1.18l.05.05a4.115 4.115 0 010 5.9l-8.706 8.537a.274.274 0 000 .393l1.788 1.754a.823.823 0 010 1.18.863.863 0 01-1.203 0l-1.788-1.753a1.92 1.92 0 010-2.754l8.706-8.538a2.47 2.47 0 000-3.54l-.05-.049a2.588 2.588 0 00-3.607-.003l-7.172 7.034-.002.002-.098.097a.863.863 0 01-1.204 0 .823.823 0 010-1.18l7.273-7.133a2.47 2.47 0 00-.003-3.537z"></path>
                                       <path d="M14.485 4.703a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a4.115 4.115 0 000 5.9 4.314 4.314 0 006.016 0l7.12-6.982a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a2.588 2.588 0 01-3.61 0 2.47 2.47 0 010-3.54l7.12-6.982z"></path>
@@ -615,7 +619,7 @@ export function Pattern() {
                                   <span className="dark:block hidden" aria-hidden="true">
                                     <svg className="size-5" fill="#ffffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        ModelContextProtocol
+                                        {"ModelContextProtocol"}
                                       </title>
                                       <path d="M15.688 2.343a2.588 2.588 0 00-3.61 0l-9.626 9.44a.863.863 0 01-1.203 0 .823.823 0 010-1.18l9.626-9.44a4.313 4.313 0 016.016 0 4.116 4.116 0 011.204 3.54 4.3 4.3 0 013.609 1.18l.05.05a4.115 4.115 0 010 5.9l-8.706 8.537a.274.274 0 000 .393l1.788 1.754a.823.823 0 010 1.18.863.863 0 01-1.203 0l-1.788-1.753a1.92 1.92 0 010-2.754l8.706-8.538a2.47 2.47 0 000-3.54l-.05-.049a2.588 2.588 0 00-3.607-.003l-7.172 7.034-.002.002-.098.097a.863.863 0 01-1.204 0 .823.823 0 010-1.18l7.273-7.133a2.47 2.47 0 00-.003-3.537z"></path>
                                       <path d="M14.485 4.703a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a4.115 4.115 0 000 5.9 4.314 4.314 0 006.016 0l7.12-6.982a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a2.588 2.588 0 01-3.61 0 2.47 2.47 0 010-3.54l7.12-6.982z"></path>
@@ -624,36 +628,36 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                Model Context Protocol
+                                {"Model Context Protocol"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-100 border-0 border-transparent dark:bg-violet-950/50 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-violet-800 text-xs transition-shadow">
-                                AI
+                                {"AI"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-100 border-0 border-transparent dark:bg-amber-950/50 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-amber-800 text-xs transition-shadow">
-                                E-commerce
+                                {"E-commerce"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-indigo-100 border-0 border-transparent dark:bg-indigo-950/50 dark:text-indigo-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-indigo-800 text-xs transition-shadow">
-                                Developer tools
+                                {"Developer tools"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="84" aria-valuetext="84%" role="progressbar" aria-labelledby="base-ui-_r_2b_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2b_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                84%
+                                {"84%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "84%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -664,13 +668,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $41,200.00
+                              {"$41,200.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -705,10 +709,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Brooklyn Simmons
+                                  {"Brooklyn Simmons"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="brooklyn@paypal.com">
-                                  brooklyn@paypal.com
+                                  {"brooklyn@paypal.com"}
                                 </div>
                               </div>
                             </div>
@@ -727,30 +731,30 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                PayPal
+                                {"PayPal"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-100 border-0 border-transparent dark:bg-amber-950/50 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-amber-800 text-xs transition-shadow">
-                                E-commerce
+                                {"E-commerce"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="12" aria-valuetext="12%" role="progressbar" aria-labelledby="base-ui-_r_2i_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2i_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                12%
+                                {"12%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "12%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -761,13 +765,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $0.00
+                              {"$0.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full! shrink-0 size-1.5"></span>
-                              Churned
+                              {"Churned"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -802,10 +806,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium line-clamp-1 text-foreground">
-                                  Cody Fisher
+                                  {"Cody Fisher"}
                                 </div>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="cody@zoom.us">
-                                  cody@zoom.us
+                                  {"cody@zoom.us"}
                                 </div>
                               </div>
                             </div>
@@ -834,36 +838,36 @@ export function Pattern() {
                                 </ItemMedia>
                               </Item>
                               <span className="font-medium min-w-0 text-foreground truncate">
-                                Zoom
+                                {"Zoom"}
                               </span>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-sky-100 border-0 border-transparent dark:bg-sky-950/50 dark:text-sky-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-sky-800 text-xs transition-shadow">
-                                Digital
+                                {"Digital"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-rose-100 border-0 border-transparent dark:bg-rose-950/50 dark:text-rose-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-rose-800 text-xs transition-shadow">
-                                Enterprise
+                                {"Enterprise"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-yellow-100 border-0 border-transparent dark:bg-yellow-950/50 dark:text-yellow-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs text-yellow-800 transition-shadow">
-                                Automation
+                                {"Automation"}
                               </Badge>
                             </div>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="55%" role="progressbar" aria-labelledby="base-ui-_r_2q_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2q_" role="presentation">
-                                Lead score
+                                {"Lead score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                55%
+                                {"55%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "55%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -874,13 +878,13 @@ export function Pattern() {
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-revenue-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              $38,900.00
+                              {"$38,900.00"}
                             </span>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="[&[data-pinned=end][data-last-col=end]]:shadow-[inset_calc(1px*var(--data-grid-dir,1))_0_0_0_var(--border)] [&[data-pinned=start][data-last-col=start]]:shadow-[inset_calc(-1px*var(--data-grid-dir,1))_0_0_0_var(--border)] align-middle data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] data-pinned:isolate px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -897,27 +901,32 @@ export function Pattern() {
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_31_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    5
+                    {"5"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -925,35 +934,35 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 5 of 22
+                  {"1 - 5 of 22"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
-                    3
+                    {"3"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 4">
-                    4
+                    {"4"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 5">
-                    5
+                    {"5"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -962,6 +971,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </FramePanel>
       </Frame>

@@ -44,29 +44,29 @@ export function Pattern() {
             <div className="flex flex-1 flex-col gap-px min-w-0">
               <div className="flex gap-2 items-center min-w-0">
                 <h1 className="font-medium text-base/5 truncate">
-                  Shared Drafts
+                  {"Shared Drafts"}
                 </h1>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-sm:sr-only min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  Live
+                  {"Live"}
                 </Badge>
               </div>
               <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center text-muted-foreground text-xs">
                 <span>
-                  Loomwell 4.3
+                  {"Loomwell 4.3"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center max-sm:hidden">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  Product spec
+                  {"Product spec"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center max-sm:hidden">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  Edited just now
+                  {"Edited just now"}
                 </span>
               </p>
             </div>
             <div className="flex gap-2 items-center">
               <span className="max-md:hidden tabular-nums text-muted-foreground text-xs">
-                3 here
+                {"3 here"}
               </span>
               <AvatarGroup role="group" aria-label="3 teammates here, 0 editing">
                 <Tooltip>
@@ -99,7 +99,7 @@ export function Pattern() {
                 </Switch>
                 <input id="base-ui-_r_1i_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <span className="max-sm:sr-only">
-                  Online
+                  {"Online"}
                 </span>
               </Label>
               <DropdownMenu>
@@ -144,7 +144,7 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="max-sm:hidden truncate">
-                  Text
+                  {"Text"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -249,181 +249,181 @@ export function Pattern() {
             <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_[data-comment-id]]:scroll-mt-[calc(var(--spec-header)+--spacing(6))] [&_.tiptap_[data-comment=active]:not([data-peer-selection])]:bg-warning/25 [&_.tiptap_[data-comment=open]:not([data-peer-selection])]:bg-warning/10 [&_.tiptap_[data-comment]]:decoration-2 [&_.tiptap_[data-comment]]:decoration-warning/70 [&_.tiptap_[data-comment]]:underline [&_.tiptap_[data-comment]]:underline-offset-4 [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 dark:[&_.tiptap_[data-comment=active]:not([data-peer-selection])]:bg-warning/30 dark:[&_.tiptap_[data-comment=open]:not([data-peer-selection])]:bg-warning/15 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 flex flex-col max-w-3xl min-h-full mx-auto py-8 sm:py-10 text-base/7 text-foreground w-full">
               <div className="ProseMirror tiptap" contentEditable="true" aria-label="Shared Drafts" aria-multiline="true" translate="no" tabIndex="0">
                 <p>
-                  Loomwell 4.3 lets two support agents write one customer reply together before it goes out. This spec covers the first release, planned for general availability on November 18. A private beta opens to 40 accounts on October 28.
+                  {"Loomwell 4.3 lets two support agents write one customer reply together before it goes out. This spec covers the first release, planned for general availability on November 18. A private beta opens to 40 accounts on October 28."}
                 </p>
                 <h2>
-                  Problem
+                  {"Problem"}
                 </h2>
                 <p>
-                  Hard tickets pull in a second agent on 22% of escalations. Today the helper pastes a draft into an internal note, waits for a thumbs up, and the owner copies the final text back into the reply. Across 1,840 escalations in August, that loop added
+                  {"Hard tickets pull in a second agent on 22% of escalations. Today the helper pastes a draft into an internal note, waits for a thumbs up, and the owner copies the final text back into the reply. Across 1,840 escalations in August, that loop added"}
                   <span data-comment-id="t-handoff">
                     <span data-comment="open">
-                      a median of 14 minutes
+                      {"a median of 14 minutes"}
                     </span>
                   </span>
-                  to first response.
+                  {"to first response."}
                 </p>
                 <h2>
-                  Goals
+                  {"Goals"}
                 </h2>
                 <ul>
                   <li>
                     <p>
-                      Two agents edit the same reply draft at once, with
+                      {"Two agents edit the same reply draft at once, with"}
                       <span data-comment-id="t-cursors">
                         <span data-comment="open">
-                          named cursors
+                          {"named cursors"}
                         </span>
                       </span>
                       <span className="-mx-px ProseMirror-widget border-violet-600 border-x border-y-0 break-normal dark:border-violet-400 pointer-events-none relative" data-peer="maya" aria-hidden="true" contentEditable="false">
-                        ⁠
+                        {"⁠"}
                         <span className="-translate-x-1/2 absolute bg-violet-600 bottom-full dark:bg-violet-400 dark:text-violet-950 font-medium px-1.5 py-0.5 rounded-sm select-none start-0 text-white text-xs/none whitespace-nowrap" data-caret-label="">
-                          Maya
+                          {"Maya"}
                         </span>
-                        ⁠
+                        {"⁠"}
                       </span>
-                      , and see each other’s changes as they type.
+                      {", and see each other’s changes as they type."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Cut the median handoff on escalations from 14 minutes to under 5
+                      {"Cut the median handoff on escalations from 14 minutes to under 5"}
                       <span className="-mx-px ProseMirror-widget border-sky-700 border-x border-y-0 break-normal dark:border-sky-400 pointer-events-none relative" data-peer="lena" aria-hidden="true" contentEditable="false">
-                        ⁠
+                        {"⁠"}
                         <span className="-translate-x-1/2 absolute bg-sky-700 bottom-full dark:bg-sky-400 dark:text-sky-950 font-medium px-1.5 py-0.5 rounded-sm select-none start-0 text-white text-xs/none whitespace-nowrap" data-caret-label="">
-                          Lena
+                          {"Lena"}
                         </span>
-                        ⁠
+                        {"⁠"}
                       </span>
-                      , measured from invite to send.
+                      {", measured from invite to send."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Every draft keeps one owner, and only the owner sends it.
+                      {"Every draft keeps one owner, and only the owner sends it."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Nothing typed is lost when an agent drops offline.
+                      {"Nothing typed is lost when an agent drops offline."}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  Non-Goals
+                  {"Non-Goals"}
                 </h2>
                 <ul>
                   <li>
                     <p>
-                      Co-editing internal notes, macros or help center articles.
+                      {"Co-editing internal notes, macros or help center articles."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Suggesting mode or tracked changes inside a reply.
+                      {"Suggesting mode or tracked changes inside a reply."}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  How It Works
+                  {"How It Works"}
                 </h2>
                 <p>
-                  Any agent on a ticket can invite a teammate from the reply box. The teammate joins the draft in place, and a presence row above the composer shows everyone in it.
+                  {"Any agent on a ticket can invite a teammate from the reply box. The teammate joins the draft in place, and a presence row above the composer shows everyone in it."}
                   <span data-comment-id="t-owner">
                     <span data-comment="open">
-                      Only the owner can press Send
+                      {"Only the owner can press Send"}
                     </span>
                   </span>
-                  ; a teammate can ask for ownership and the owner approves it in one click.
+                  {"; a teammate can ask for ownership and the owner approves it in one click."}
                 </p>
                 <p>
-                  Drafts sync through the existing realtime gateway. If an agent drops offline, edits queue locally and merge on reconnect, so no one loses text.
+                  {"Drafts sync through the existing realtime gateway. If an agent drops offline, edits queue locally and merge on reconnect, so no one loses text."}
                 </p>
                 <p>
-                  Access follows the ticket: anyone who can reply can join, light agents can watch but not type, and every join and ownership change lands in the ticket’s audit log.
+                  {"Access follows the ticket: anyone who can reply can join, light agents can watch but not type, and every join and ownership change lands in the ticket’s audit log."}
                 </p>
                 <h2>
-                  Success Metrics
+                  {"Success Metrics"}
                 </h2>
                 <ul>
                   <li>
                     <p>
-                      Median escalation handoff under 5 minutes by the end of the beta.
+                      {"Median escalation handoff under 5 minutes by the end of the beta."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      At least 30% of escalations on beta accounts use a shared draft within four weeks.
+                      {"At least 30% of escalations on beta accounts use a shared draft within four weeks."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      No rise in replies sent by the wrong owner, checked weekly by support operations.
+                      {"No rise in replies sent by the wrong owner, checked weekly by support operations."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Satisfaction on shared replies at or above the team average of 91%.
+                      {"Satisfaction on shared replies at or above the team average of 91%."}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  Rollout
+                  {"Rollout"}
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      October 28: private beta for 40 accounts, English only.
+                      {"October 28: private beta for 40 accounts, English only."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      November 4: every Growth and Scale workspace, behind a workspace setting.
+                      {"November 4: every Growth and Scale workspace, behind a workspace setting."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      November 18: general availability, on by default for new workspaces.
+                      {"November 18: general availability, on by default for new workspaces."}
                     </p>
                   </li>
                 </ol>
                 <h2>
-                  Risks
+                  {"Risks"}
                 </h2>
                 <p>
-                  Two agents can still promise different things in different paragraphs. The composer shows who changed each paragraph last, and the owner reads the whole draft before sending.
+                  {"Two agents can still promise different things in different paragraphs. The composer shows who changed each paragraph last, and the owner reads the whole draft before sending."}
                 </p>
                 <p>
-                  Offline merges never conflict at the text level, but edits that land in a burst on reconnect can surprise the owner. Merged paragraphs stay marked for ten seconds after a sync.
+                  {"Offline merges never conflict at the text level, but edits that land in a burst on reconnect can surprise the owner. Merged paragraphs stay marked for ten seconds after a sync."}
                 </p>
                 <h2>
-                  Open Questions
+                  {"Open Questions"}
                 </h2>
                 <ul>
                   <li>
                     <p>
-                      Does a shared reply count toward both agents’ response time targets?
+                      {"Does a shared reply count toward both agents’ response time targets?"}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Should the draft lock once the owner opens the send confirmation?
+                      {"Should the draft lock once the owner opens the send confirmation?"}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Do we show live cursors to
+                      {"Do we show live cursors to"}
                       <span data-comment-id="t-free">
                         <span data-comment="open">
-                          agents on the free plan
+                          {"agents on the free plan"}
                         </span>
                       </span>
-                      ?
+                      {"?"}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  Launch Checklist
+                  {"Launch Checklist"}
                 </h2>
                 <ul data-type="taskList">
                   <li className="node-taskItem react-renderer" data-checked="true">
@@ -441,7 +441,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Presence row design review
+                            {"Presence row design review"}
                           </p>
                         </div>
                       </div>
@@ -456,7 +456,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Load test the gateway at 3,000 concurrent drafts
+                            {"Load test the gateway at 3,000 concurrent drafts"}
                           </p>
                         </div>
                       </div>
@@ -471,7 +471,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Macro audit with support operations
+                            {"Macro audit with support operations"}
                           </p>
                         </div>
                       </div>
@@ -486,7 +486,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Help center article and in-app tour
+                            {"Help center article and in-app tour"}
                           </p>
                         </div>
                       </div>
@@ -494,7 +494,7 @@ export function Pattern() {
                   </li>
                 </ul>
                 <p>
-                  Owner: Arjun Mehta. Engineering: Lena Hoffmann. Launch: Maya Chen.
+                  {"Owner: Arjun Mehta. Engineering: Lena Hoffmann. Launch: Maya Chen."}
                 </p>
               </div>
             </div>
@@ -504,10 +504,10 @@ export function Pattern() {
               <CardHeader>
                 <CardTitle className="flex gap-2 items-center">
                   <h2 className="outline-none" id="_r_2r_" tabIndex="-1">
-                    Comments
+                    {"Comments"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                    4
+                    {"4"}
                   </Badge>
                 </CardTitle>
               </CardHeader>
@@ -525,21 +525,21 @@ export function Pattern() {
                           <ItemTitle className="w-full">
                             <button className="after:absolute after:inset-0 aria-[current=true]:font-medium font-normal min-w-0 outline-none text-start truncate" type="button" aria-labelledby="_r_2s_ _r_2t_" data-thread-select="">
                               <span id="_r_2s_">
-                                Daniel Okafor
+                                {"Daniel Okafor"}
                               </span>
                             </button>
                             <span className="font-normal shrink-0 tabular-nums text-muted-foreground text-xs">
-                              Sep 25
+                              {"Sep 25"}
                             </span>
                           </ItemTitle>
                           <ItemDescription className="line-clamp-1" id="_r_2t_">
-                            “a median of 14 minutes”
+                            {"“a median of 14 minutes”"}
                           </ItemDescription>
                           <p className="line-clamp-2 text-sm">
-                            These numbers come from the August export. Is queue wait counted once here, or twice?
+                            {"These numbers come from the August export. Is queue wait counted once here, or twice?"}
                           </p>
                           <p className="text-muted-foreground text-xs">
-                            1 reply
+                            {"1 reply"}
                           </p>
                           <p className="empty:hidden text-muted-foreground text-xs" aria-live="polite"></p>
                         </ItemContent>
@@ -565,18 +565,18 @@ export function Pattern() {
                           <ItemTitle className="w-full">
                             <button className="after:absolute after:inset-0 aria-[current=true]:font-medium font-normal min-w-0 outline-none text-start truncate" type="button" aria-labelledby="_r_3p_ _r_3q_" data-thread-select="">
                               <span id="_r_3p_">
-                                Maya Chen
+                                {"Maya Chen"}
                               </span>
                             </button>
                             <span className="font-normal shrink-0 tabular-nums text-muted-foreground text-xs">
-                              Just now
+                              {"Just now"}
                             </span>
                           </ItemTitle>
                           <ItemDescription className="line-clamp-1" id="_r_3q_">
-                            “named cursors”
+                            {"“named cursors”"}
                           </ItemDescription>
                           <p className="line-clamp-2 text-sm">
-                            Admins read cursor as jargon. Could this say who is typing instead?
+                            {"Admins read cursor as jargon. Could this say who is typing instead?"}
                           </p>
                           <p className="empty:hidden text-muted-foreground text-xs" aria-live="polite"></p>
                         </ItemContent>
@@ -602,21 +602,21 @@ export function Pattern() {
                           <ItemTitle className="w-full">
                             <button className="after:absolute after:inset-0 aria-[current=true]:font-medium font-normal min-w-0 outline-none text-start truncate" type="button" aria-labelledby="_r_30_ _r_31_" data-thread-select="">
                               <span id="_r_30_">
-                                Maya Chen
+                                {"Maya Chen"}
                               </span>
                             </button>
                             <span className="font-normal shrink-0 tabular-nums text-muted-foreground text-xs">
-                              9:12 AM
+                              {"9:12 AM"}
                             </span>
                           </ItemTitle>
                           <ItemDescription className="line-clamp-1" id="_r_31_">
-                            “Only the owner can press Send”
+                            {"“Only the owner can press Send”"}
                           </ItemDescription>
                           <p className="line-clamp-2 text-sm">
-                            What does the teammate see if the owner goes offline halfway through?
+                            {"What does the teammate see if the owner goes offline halfway through?"}
                           </p>
                           <p className="text-muted-foreground text-xs">
-                            1 reply
+                            {"1 reply"}
                           </p>
                           <p className="empty:hidden text-muted-foreground text-xs" aria-live="polite"></p>
                         </ItemContent>
@@ -642,18 +642,18 @@ export function Pattern() {
                           <ItemTitle className="w-full">
                             <button className="after:absolute after:inset-0 aria-[current=true]:font-medium font-normal min-w-0 outline-none text-start truncate" type="button" aria-labelledby="_r_34_ _r_35_" data-thread-select="">
                               <span id="_r_34_">
-                                Daniel Okafor
+                                {"Daniel Okafor"}
                               </span>
                             </button>
                             <span className="font-normal shrink-0 tabular-nums text-muted-foreground text-xs">
-                              11:30 AM
+                              {"11:30 AM"}
                             </span>
                           </ItemTitle>
                           <ItemDescription className="line-clamp-1" id="_r_35_">
-                            “agents on the free plan”
+                            {"“agents on the free plan”"}
                           </ItemDescription>
                           <p className="line-clamp-2 text-sm">
-                            Pricing needs this settled before the beta invite list goes out.
+                            {"Pricing needs this settled before the beta invite list goes out."}
                           </p>
                           <p className="empty:hidden text-muted-foreground text-xs" aria-live="polite"></p>
                         </ItemContent>

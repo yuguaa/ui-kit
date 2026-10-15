@@ -41,7 +41,7 @@ export function Pattern() {
         <Gantt className="flex-1">
           <GanttNav>
             <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-              Today
+              {"Today"}
             </GanttNavToday>
             <GanttNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous" id="base-ui-_r_3_" baseUiTooltipTrigger="">
               <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
@@ -54,7 +54,7 @@ export function Pattern() {
               </svg>
             </GanttNavNext>
             <GanttTitle aria-live="polite">
-              Sunday, July 19, 2026
+              {"Sunday, July 19, 2026"}
             </GanttTitle>
             <div className="flex-1" aria-hidden="true"></div>
             <GanttToolbar>
@@ -67,7 +67,7 @@ export function Pattern() {
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-rose-500)"}}></span>
                 </span>
                 <span className="max-sm:sr-only">
-                  Job Types
+                  {"Job Types"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -80,7 +80,7 @@ export function Pattern() {
                   <path d="M12 5v14"></path>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Book Job
+                  {"Book Job"}
                 </span>
               </Button>
             </GanttToolbar>
@@ -97,22 +97,22 @@ export function Pattern() {
                             <div className="flex flex-1 h-full min-w-0">
                               <div className="flex h-full items-center shrink-0" style={{width: "280px", paddingInlineStart: "3.125rem"}}>
                                 <span className="font-medium text-muted-foreground truncate">
-                                  Technician
+                                  {"Technician"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="shift" style={{width: "104px"}}>
                                 <span className="truncate">
-                                  Shift
+                                  {"Shift"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="load" style={{width: "132px"}}>
                                 <span className="truncate">
-                                  Booked
+                                  {"Booked"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center justify-end px-2 shrink-0 text-muted-foreground" data-column="gap" style={{width: "88px"}}>
                                 <span className="truncate">
-                                  Next Free
+                                  {"Next Free"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="actions" style={{width: "32px"}}>
@@ -147,16 +147,16 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium text-sm truncate">
-                                      North Crew
+                                      {"North Crew"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="shrink-0 text-muted-foreground text-xs">
-                                      Zone 1
+                                      {"Zone 1"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow" title="1h 30m double booked">
-                                      Clash
+                                      {"Clash"}
                                       <span className="sr-only">
-                                        , 1h 30m double booked
+                                        {", 1h 30m double booked"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -173,11 +173,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      22h 30m
+                                      {"22h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -185,7 +185,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    12 jobs
+                                    {"12 jobs"}
                                   </span>
                                 </div>
                               </div>
@@ -219,11 +219,11 @@ export function Pattern() {
                                       <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Mira Stone
+                                      {"Mira Stone"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="max-w-20 shrink text-muted-foreground text-xs truncate">
-                                      HVAC Lead
+                                      {"HVAC Lead"}
                                     </span>
                                   </span>
                                 </div>
@@ -231,7 +231,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am to 5pm
+                                    {"8am to 5pm"}
                                   </span>
                                 </div>
                               </div>
@@ -243,11 +243,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      7h 30m
+                                      {"7h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -255,7 +255,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    11:30am
+                                    {"11:30am"}
                                   </span>
                                 </div>
                               </div>
@@ -299,13 +299,13 @@ export function Pattern() {
                                       <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Alex Johnson
+                                      {"Alex Johnson"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow" title="1h 30m double booked">
-                                      Clash
+                                      {"Clash"}
                                       <span className="sr-only">
-                                        , 1h 30m double booked
+                                        {", 1h 30m double booked"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -314,7 +314,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am to 5pm
+                                    {"8am to 5pm"}
                                   </span>
                                 </div>
                               </div>
@@ -326,11 +326,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      7h 30m
+                                      {"7h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -338,7 +338,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am
+                                    {"8am"}
                                   </span>
                                 </div>
                               </div>
@@ -382,11 +382,11 @@ export function Pattern() {
                                       <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Sarah Chen
+                                      {"Sarah Chen"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="max-w-20 shrink text-muted-foreground text-xs truncate">
-                                      Plumbing
+                                      {"Plumbing"}
                                     </span>
                                   </span>
                                 </div>
@@ -394,7 +394,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am to 5pm
+                                    {"8am to 5pm"}
                                   </span>
                                 </div>
                               </div>
@@ -406,11 +406,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      7h 30m
+                                      {"7h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -418,7 +418,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    12:30pm
+                                    {"12:30pm"}
                                   </span>
                                 </div>
                               </div>
@@ -462,16 +462,16 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium text-sm truncate">
-                                      South Crew
+                                      {"South Crew"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="shrink-0 text-muted-foreground text-xs">
-                                      Zone 4
+                                      {"Zone 4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow" title="1h 30m double booked">
-                                      Clash
+                                      {"Clash"}
                                       <span className="sr-only">
-                                        , 1h 30m double booked
+                                        {", 1h 30m double booked"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -488,11 +488,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "78%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      25h
+                                      {"25h"}
                                     </span>
                                   </span>
                                 </div>
@@ -500,7 +500,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    14 jobs
+                                    {"14 jobs"}
                                   </span>
                                 </div>
                               </div>
@@ -534,11 +534,11 @@ export function Pattern() {
                                       <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Leo Grant
+                                      {"Leo Grant"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="max-w-20 shrink text-muted-foreground text-xs truncate">
-                                      HVAC
+                                      {"HVAC"}
                                     </span>
                                   </span>
                                 </div>
@@ -546,7 +546,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    9am to 6pm
+                                    {"9am to 6pm"}
                                   </span>
                                 </div>
                               </div>
@@ -558,11 +558,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "67%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      6h
+                                      {"6h"}
                                     </span>
                                   </span>
                                 </div>
@@ -570,7 +570,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    1pm
+                                    {"1pm"}
                                   </span>
                                 </div>
                               </div>
@@ -612,15 +612,15 @@ export function Pattern() {
                                   <span className="flex gap-2 items-center min-w-0">
                                     <Avatar className="size-6" size="default">
                                       <AvatarFallback className="text-[10px]">
-                                        SR
+                                        {"SR"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Sofia Romero
+                                      {"Sofia Romero"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="max-w-20 shrink text-muted-foreground text-xs truncate">
-                                      Electrical
+                                      {"Electrical"}
                                     </span>
                                   </span>
                                 </div>
@@ -628,7 +628,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am to 5pm
+                                    {"8am to 5pm"}
                                   </span>
                                 </div>
                               </div>
@@ -640,11 +640,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "72%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      6h 30m
+                                      {"6h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -652,7 +652,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    11am
+                                    {"11am"}
                                   </span>
                                 </div>
                               </div>
@@ -696,13 +696,13 @@ export function Pattern() {
                                       <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Theo Park
+                                      {"Theo Park"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow" title="1h 30m double booked">
-                                      Clash
+                                      {"Clash"}
                                       <span className="sr-only">
-                                        , 1h 30m double booked
+                                        {", 1h 30m double booked"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -711,7 +711,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am to 5pm
+                                    {"8am to 5pm"}
                                   </span>
                                 </div>
                               </div>
@@ -723,11 +723,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "94%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      8h 30m
+                                      {"8h 30m"}
                                     </span>
                                   </span>
                                 </div>
@@ -735,7 +735,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    8am
+                                    {"8am"}
                                   </span>
                                 </div>
                               </div>
@@ -777,15 +777,15 @@ export function Pattern() {
                                   <span className="flex gap-2 items-center min-w-0">
                                     <Avatar className="size-6" size="default">
                                       <AvatarFallback className="text-[10px]">
-                                        JB
+                                        {"JB"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Jonas Beck
+                                      {"Jonas Beck"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="max-w-20 shrink text-muted-foreground text-xs truncate">
-                                      Apprentice
+                                      {"Apprentice"}
                                     </span>
                                   </span>
                                 </div>
@@ -793,7 +793,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="shift" style={{width: "104px"}}>
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    10am to 3pm
+                                    {"10am to 3pm"}
                                   </span>
                                 </div>
                               </div>
@@ -805,11 +805,11 @@ export function Pattern() {
                                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "80%"}}></ProgressIndicator>
                                       </ProgressTrack>
                                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                        x
+                                        {"x"}
                                       </span>
                                     </Progress>
                                     <span className="shrink-0 tabular-nums text-foreground text-xs">
-                                      4h
+                                      {"4h"}
                                     </span>
                                   </span>
                                 </div>
@@ -817,7 +817,7 @@ export function Pattern() {
                               <div className="flex items-start px-2 shrink-0" data-column="gap" style={{width: "88px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    12pm
+                                    {"12pm"}
                                   </span>
                                 </div>
                               </div>
@@ -874,7 +874,7 @@ export function Pattern() {
                             <div className="flex h-full">
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "48 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  Sunday, July 19, 2026
+                                  {"Sunday, July 19, 2026"}
                                 </span>
                               </div>
                             </div>
@@ -932,148 +932,148 @@ export function Pattern() {
                             </div>
                             <div className="flex h-full">
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                12:00
+                                {"12:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                12:30
+                                {"12:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                1:00
+                                {"1:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                1:30
+                                {"1:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                2:00
+                                {"2:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                2:30
+                                {"2:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                3:00
+                                {"3:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                3:30
+                                {"3:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                4:00
+                                {"4:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                4:30
+                                {"4:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                5:00
+                                {"5:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                5:30
+                                {"5:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                6:00
+                                {"6:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                6:30
+                                {"6:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                7:00
+                                {"7:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                7:30
+                                {"7:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                8:00
+                                {"8:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                8:30
+                                {"8:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                9:00
+                                {"9:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                9:30
+                                {"9:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                10:00
+                                {"10:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                10:30
+                                {"10:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                11:00
+                                {"11:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                11:30
+                                {"11:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                12:00
+                                {"12:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                12:30
+                                {"12:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                1:00
+                                {"1:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                1:30
+                                {"1:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                2:00
+                                {"2:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                2:30
+                                {"2:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                3:00
+                                {"3:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                3:30
+                                {"3:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                4:00
+                                {"4:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                4:30
+                                {"4:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                5:00
+                                {"5:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                5:30
+                                {"5:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                6:00
+                                {"6:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                6:30
+                                {"6:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                7:00
+                                {"7:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                7:30
+                                {"7:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                8:00
+                                {"8:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                8:30
+                                {"8:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                9:00
+                                {"9:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                9:30
+                                {"9:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                10:00
+                                {"10:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                10:30
+                                {"10:30"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                11:00
+                                {"11:00"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" data-off="true" style={{flex: "1 0 0px"}}>
-                                11:30
+                                {"11:30"}
                               </div>
                             </div>
                             <span className="absolute bg-[repeating-linear-gradient(to_bottom,var(--color-border)_0,var(--color-border)_3px,transparent_3px,transparent_6px)] inset-y-0 w-px" aria-hidden="true" data-axis="vertical" style={{insetInlineStart: "calc(2.08333% - 1px)"}}></span>
@@ -1328,10 +1328,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Harbor Dental, 8:00 AM - 10:00 AM, Mira Stone, 100% complete" id="base-ui-_r_2e_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-blue-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Harbor Dental
+                                    {"Harbor Dental"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    8am
+                                    {"8am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1345,10 +1345,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Lakeside Deli, 10:00 AM - 11:30 AM, Mira Stone, 100% complete" id="base-ui-_r_2k_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Lakeside Deli
+                                    {"Lakeside Deli"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    10am
+                                    {"10am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1362,10 +1362,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Rowan Apartments, 1:00 PM - 3:00 PM, Mira Stone, 0% complete" id="base-ui-_r_2q_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Rowan Apartments
+                                    {"Rowan Apartments"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    1pm
+                                    {"1pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1379,10 +1379,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Cedar Clinic, 3:00 PM - 5:00 PM, Mira Stone, 0% complete" id="base-ui-_r_30_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Cedar Clinic
+                                    {"Cedar Clinic"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    3pm
+                                    {"3pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1400,10 +1400,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Fenwick Bakery, 8:30 AM - 10:00 AM, Alex Johnson, 100% complete" id="base-ui-_r_36_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Fenwick Bakery
+                                    {"Fenwick Bakery"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    8:30am
+                                    {"8:30am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1417,10 +1417,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Halsey Court, 9:00 AM - 10:30 AM, Alex Johnson, 100% complete" id="base-ui-_r_3c_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-rose-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Halsey Court
+                                    {"Halsey Court"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    9am
+                                    {"9am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1438,10 +1438,10 @@ export function Pattern() {
                                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                   </svg>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Ridgeway School
+                                    {"Ridgeway School"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    10am
+                                    {"10am"}
                                   </span>
                                 </GanttBar>
                               </div>
@@ -1449,10 +1449,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Ash Street Lofts, 1:30 PM - 4:00 PM, Alex Johnson, 0% complete" id="base-ui-_r_3o_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Ash Street Lofts
+                                    {"Ash Street Lofts"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    1:30pm
+                                    {"1:30pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1470,10 +1470,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Copper Kettle, 8:00 AM - 9:30 AM, Sarah Chen, 100% complete" id="base-ui-_r_3u_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Copper Kettle
+                                    {"Copper Kettle"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    8am
+                                    {"8am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1487,10 +1487,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Nia Okafor, 9:30 AM - 11:00 AM, Sarah Chen, 100% complete" id="base-ui-_r_44_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Nia Okafor
+                                    {"Nia Okafor"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    9:30am
+                                    {"9:30am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1504,10 +1504,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="33" aria-label="Marlow Gym, 11:00 AM - 12:30 PM, Sarah Chen, 33% complete" id="base-ui-_r_4a_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-blue-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "33%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Marlow Gym
+                                    {"Marlow Gym"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    11am
+                                    {"11am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1521,10 +1521,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Bay View Hotel, 2:00 PM - 5:00 PM, Sarah Chen, 0% complete" id="base-ui-_r_4g_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Bay View Hotel
+                                    {"Bay View Hotel"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    2pm
+                                    {"2pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1545,10 +1545,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Alder Offices, 9:00 AM - 11:00 AM, Leo Grant, 100% complete" id="base-ui-_r_4m_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-blue-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Alder Offices
+                                    {"Alder Offices"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    9am
+                                    {"9am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1562,10 +1562,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="25" aria-label="Priya Raman, 11:00 AM - 1:00 PM, Leo Grant, 25% complete" id="base-ui-_r_4s_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "25%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Priya Raman
+                                    {"Priya Raman"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    11am
+                                    {"11am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1579,10 +1579,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Stonebridge Mall, 2:30 PM - 4:30 PM, Leo Grant, 0% complete" id="base-ui-_r_52_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Stonebridge Mall
+                                    {"Stonebridge Mall"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    2:30pm
+                                    {"2:30pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1600,10 +1600,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Grant Medical, 8:00 AM - 11:00 AM, Sofia Romero, 100% complete" id="base-ui-_r_58_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-rose-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Grant Medical
+                                    {"Grant Medical"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    8am
+                                    {"8am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1617,10 +1617,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Bramble Cafe, 12:00 PM - 2:00 PM, Sofia Romero, 0% complete" id="base-ui-_r_5e_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Bramble Cafe
+                                    {"Bramble Cafe"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    12pm
+                                    {"12pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1634,10 +1634,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Olive Court, 2:00 PM - 3:30 PM, Sofia Romero, 0% complete" id="base-ui-_r_5k_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Olive Court
+                                    {"Olive Court"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    2pm
+                                    {"2pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1655,10 +1655,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Sunset Laundry, 8:30 AM - 9:30 AM, Theo Park, 100% complete" id="base-ui-_r_5q_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Sunset Laundry
+                                    {"Sunset Laundry"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    8:30am
+                                    {"8:30am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1672,10 +1672,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Kwan Residence, 10:00 AM - 11:30 AM, Theo Park, 100% complete" id="base-ui-_r_60_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-blue-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Kwan Residence
+                                    {"Kwan Residence"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    10am
+                                    {"10am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1689,10 +1689,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="100" completed="true" aria-label="Ivy Lane Cafe, 10:30 AM - 11:30 AM, Theo Park, 100% complete" id="base-ui-_r_66_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" data-full="true" style={{width: "100%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Ivy Lane Cafe
+                                    {"Ivy Lane Cafe"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    10:30am
+                                    {"10:30am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1706,10 +1706,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="33" aria-label="Dunmore Court, 11:00 AM - 12:30 PM, Theo Park, 33% complete" id="base-ui-_r_6c_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "33%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Dunmore Court
+                                    {"Dunmore Court"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    11am
+                                    {"11am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1723,10 +1723,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Ferry Road Diner, 1:00 PM - 2:30 PM, Theo Park, 0% complete" id="base-ui-_r_6i_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Ferry Road Diner
+                                    {"Ferry Road Diner"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    1pm
+                                    {"1pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1740,10 +1740,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Northgate Flats, 3:00 PM - 5:00 PM, Theo Park, 0% complete" id="base-ui-_r_6o_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Northgate Flats
+                                    {"Northgate Flats"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    3pm
+                                    {"3pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1761,10 +1761,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="75" aria-label="Willow Terrace, 10:00 AM - 12:00 PM, Jonas Beck, 75% complete" id="base-ui-_r_6u_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-cyan-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "75%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Willow Terrace
+                                    {"Willow Terrace"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    10am
+                                    {"10am"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -1778,10 +1778,10 @@ export function Pattern() {
                                 <GanttBar className="cn-context-menu-trigger h-full" type="button" past="true" progress="0" aria-label="Ambrose Hardware, 1:00 PM - 3:00 PM, Jonas Beck, 0% complete" id="base-ui-_r_74_" baseUiTooltipTrigger="" style={{"--gantt-event-color": "var(--color-amber-500)"}}>
                                   <span className="absolute bg-(--gantt-event-color)/40 border-(--gantt-event-color)/65 border-e data-full:border-e-0 inset-y-0 pointer-events-none start-0" aria-hidden="true" style={{width: "0%"}}></span>
                                   <span className="flex-1 font-medium min-w-0 truncate">
-                                    Ambrose Hardware
+                                    {"Ambrose Hardware"}
                                   </span>
                                   <span className="@[9rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                    1pm
+                                    {"1pm"}
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
                                     <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>

@@ -20,14 +20,14 @@ export function Pattern() {
         <Frame className="@container w-full">
           <FramePanel className="flex gap-4 items-center justify-between p-3.5!">
             <h2 className="font-medium text-base text-foreground">
-              Transactions
+              {"Transactions"}
             </h2>
             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
-                Weekly
+                {"Weekly"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                All Time
+                {"All Time"}
               </TabsTrigger>
             </TabsList>
           </FramePanel>
@@ -62,20 +62,20 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <p className="font-medium text-base text-foreground">
-                        Received
+                        {"Received"}
                       </p>
                       <p className="text-sm">
                         <span className="text-muted-foreground">
-                          From:
+                          {"From:"}
                         </span>
                         <span className="text-foreground/85">
-                          0x8a44...72Da
+                          {"0x8a44...72Da"}
                         </span>
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 text-right">
                       <span className="font-medium text-[#0B5C22] text-base">
-                        + 8.4910 AVAX
+                        {"+ 8.4910 AVAX"}
                       </span>
                     </div>
                   </div>
@@ -120,20 +120,20 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <p className="font-medium text-base text-foreground">
-                        Sent
+                        {"Sent"}
                       </p>
                       <p className="text-sm">
                         <span className="text-muted-foreground">
-                          To:
+                          {"To:"}
                         </span>
                         <span className="text-foreground/85">
-                          0x41c9...0B33
+                          {"0x41c9...0B33"}
                         </span>
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 text-right">
                       <span className="font-medium text-[#B88800] text-base">
-                        - 0.342 BTC
+                        {"- 0.342 BTC"}
                       </span>
                     </div>
                   </div>
@@ -153,23 +153,23 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <p className="font-medium text-base text-foreground">
-                        Swapped
+                        {"Swapped"}
                       </p>
                       <p className="text-sm">
                         <span className="text-muted-foreground">
-                          On:
+                          {"On:"}
                         </span>
                         <span className="text-foreground/85">
-                          Uniswap
+                          {"Uniswap"}
                         </span>
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 text-right">
                       <span className="font-medium text-[#0B5C22] text-base">
-                        + 42.8 MATIC
+                        {"+ 42.8 MATIC"}
                       </span>
                       <span className="font-medium text-[#B88800] text-base">
-                        - $280.00 USDT
+                        {"- $280.00 USDT"}
                       </span>
                     </div>
                   </div>
@@ -223,20 +223,20 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <p className="font-medium text-[#991930] text-base">
-                        Failed
+                        {"Failed"}
                       </p>
                       <p className="text-sm">
                         <span className="text-muted-foreground">
-                          To:
+                          {"To:"}
                         </span>
                         <span className="text-foreground/85">
-                          0x19e4...B7c2
+                          {"0x19e4...B7c2"}
                         </span>
                       </p>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 text-right">
                       <span className="font-medium text-[#B88800] text-base">
-                        - 1.24 ETH
+                        {"- 1.24 ETH"}
                       </span>
                     </div>
                   </div>
@@ -251,7 +251,7 @@ export function Pattern() {
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               </svg>
-              View All
+              {"View All"}
             </Button>
           </FramePanel>
         </Frame>

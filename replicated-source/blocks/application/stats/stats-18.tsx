@@ -26,10 +26,10 @@ export function Pattern() {
                 </IconTile>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <h3 className="font-medium text-sm truncate">
-                    Invoices Collected
+                    {"Invoices Collected"}
                   </h3>
                   <p className="text-muted-foreground text-xs truncate">
-                    October billing run
+                    {"October billing run"}
                   </p>
                 </div>
               </div>
@@ -47,14 +47,14 @@ export function Pattern() {
               <div className="flex gap-3 items-baseline justify-between">
                 <p className="flex gap-1.5 items-baseline min-w-0">
                   <span className="font-semibold tabular-nums text-2xl tracking-tight">
-                    608
+                    {"608"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-sm truncate">
-                    of 691 invoices
+                    {"of 691 invoices"}
                   </span>
                 </p>
                 <span className="font-medium tabular-nums text-sm">
-                  88%
+                  {"88%"}
                 </span>
               </div>
               <div className="flex gap-0.75 h-5" aria-hidden="true">
@@ -114,10 +114,10 @@ export function Pattern() {
                 </IconTile>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <h3 className="font-medium text-sm truncate">
-                    Stock Replenished
+                    {"Stock Replenished"}
                   </h3>
                   <p className="text-muted-foreground text-xs truncate">
-                    Across 4 warehouses
+                    {"Across 4 warehouses"}
                   </p>
                 </div>
               </div>
@@ -135,14 +135,14 @@ export function Pattern() {
               <div className="flex gap-3 items-baseline justify-between">
                 <p className="flex gap-1.5 items-baseline min-w-0">
                   <span className="font-semibold tabular-nums text-2xl tracking-tight">
-                    7,420
+                    {"7,420"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-sm truncate">
-                    of 12,300 units
+                    {"of 12,300 units"}
                   </span>
                 </p>
                 <span className="font-medium tabular-nums text-sm">
-                  60%
+                  {"60%"}
                 </span>
               </div>
               <div className="flex gap-0.75 h-5" aria-hidden="true">
@@ -204,10 +204,10 @@ export function Pattern() {
                 </IconTile>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <h3 className="font-medium text-sm truncate">
-                    Budget Utilized
+                    {"Budget Utilized"}
                   </h3>
                   <p className="text-muted-foreground text-xs truncate">
-                    Q4 operating budget
+                    {"Q4 operating budget"}
                   </p>
                 </div>
               </div>
@@ -225,14 +225,14 @@ export function Pattern() {
               <div className="flex gap-3 items-baseline justify-between">
                 <p className="flex gap-1.5 items-baseline min-w-0">
                   <span className="font-semibold tabular-nums text-2xl tracking-tight">
-                    $1.4M
+                    {"$1.4M"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-sm truncate">
-                    of $2.6M
+                    {"of $2.6M"}
                   </span>
                 </p>
                 <span className="font-medium tabular-nums text-sm">
-                  55%
+                  {"55%"}
                 </span>
               </div>
               <div className="flex gap-0.75 h-5" aria-hidden="true">

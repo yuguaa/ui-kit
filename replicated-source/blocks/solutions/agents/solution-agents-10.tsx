@@ -40,14 +40,14 @@ export function Pattern() {
           <div className="min-w-0 space-y-px">
             <div className="flex flex-wrap gap-2 items-center">
               <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                Agent Settings
+                {"Agent Settings"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Saved
+                {"Saved"}
               </Badge>
             </div>
             <p className="text-muted-foreground text-sm">
-              Refund Resolver · 4 concurrent runs
+              {"Refund Resolver · 4 concurrent runs"}
             </p>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
@@ -62,21 +62,21 @@ export function Pattern() {
                 <path d="M9 13v2"></path>
               </svg>
               <SelectValue>
-                Refund Resolver
+                {"Refund Resolver"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
             <input id="base-ui-_r_0_-hidden-input" tabIndex="-1" aria-hidden="true" value="refund-resolver" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             <div className="flex gap-2">
               <Button type="button" disabled="" tabIndex="0" disabled>
-                Discard
+                {"Discard"}
               </Button>
               <Button type="button" tabIndex="0">
-                Save
+                {"Save"}
               </Button>
             </div>
           </div>
@@ -84,10 +84,10 @@ export function Pattern() {
         <Frame className="w-full">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-2.5!">
             <div className="font-semibold text-sm">
-              Run Controls
+              {"Run Controls"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Maya Perez · about 120 runs daily
+              {"Maya Perez · about 120 runs daily"}
             </div>
           </header>
           <FramePanel className="p-0">
@@ -96,22 +96,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="agent-settings-model">
-                      Reasoning Model
+                      {"Reasoning Model"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Model used for refunds and retries.
+                    {"Model used for refunds and retries."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="agent-settings-model" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      GPT-4o · refunds
+                      {"GPT-4o · refunds"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -125,22 +125,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="agent-settings-concurrency">
-                      Max Concurrent Runs
+                      {"Max Concurrent Runs"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Refund Resolver can run 4 jobs at once.
+                    {"Refund Resolver can run 4 jobs at once."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="agent-settings-concurrency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      4 runs
+                      {"4 runs"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -154,11 +154,11 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="agent-settings-timeout">
-                      Run Timeout
+                      {"Run Timeout"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    RUN-4822 validates 30 to 900 seconds.
+                    {"RUN-4822 validates 30 to 900 seconds."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -167,7 +167,7 @@ export function Pattern() {
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="agent-settings-timeout" inputmode="numeric" aria-invalid="false" value="120" />
                       <InputGroupAddon role="group" data-align="inline-end">
                         <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                          sec
+                          {"sec"}
                         </span>
                       </InputGroupAddon>
                     </InputGroup>
@@ -181,22 +181,22 @@ export function Pattern() {
                 <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="agent-settings-autonomy">
-                      Autonomy Level
+                      {"Autonomy Level"}
                     </FieldLabel>
                   </div>
                   <FieldDescription className="text-xs">
-                    Controls writes above the 500 USD threshold.
+                    {"Controls writes above the 500 USD threshold."}
                   </FieldDescription>
                 </div>
                 <FieldContent className="@md/field-group:w-78 min-w-0">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="agent-settings-autonomy" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      Approve writes
+                      {"Approve writes"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -209,15 +209,15 @@ export function Pattern() {
         <Frame className="w-full">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              Operating Policies
+              {"Operating Policies"}
             </div>
             <div className="flex gap-2 items-center text-muted-foreground text-sm">
               <span>
-                3 policies
+                {"3 policies"}
               </span>
               <span className="bg-muted-foreground/50 rounded-full size-1" aria-hidden="true"></span>
               <span>
-                1 org locked
+                {"1 org locked"}
               </span>
             </div>
           </header>
@@ -232,13 +232,13 @@ export function Pattern() {
               </IconTile>
               <ItemContent className="min-w-0">
                 <ItemTitle className="gap-2">
-                  Sandbox Untrusted Tools
+                  {"Sandbox Untrusted Tools"}
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Tool Safety
+                    {"Tool Safety"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription>
-                  Unverified tools run sandboxed for 25 calls.
+                  {"Unverified tools run sandboxed for 25 calls."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
@@ -259,13 +259,13 @@ export function Pattern() {
               </IconTile>
               <ItemContent className="min-w-0">
                 <ItemTitle className="gap-2">
-                  Halt Repeated Failures
+                  {"Halt Repeated Failures"}
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Retry Guard
+                    {"Retry Guard"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription>
-                  Stops after 3 failed tool calls.
+                  {"Stops after 3 failed tool calls."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
@@ -287,20 +287,20 @@ export function Pattern() {
               </IconTile>
               <ItemContent className="min-w-0">
                 <ItemTitle className="gap-2">
-                  PII Redaction
+                  {"PII Redaction"}
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                     <span className="bg-info rounded-full size-1.5" aria-hidden="true"></span>
-                    Org Locked
+                    {"Org Locked"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription>
-                  Masks emails and card numbers in 120 daily runs.
+                  {"Masks emails and card numbers in 120 daily runs."}
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="gap-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                  Required
+                  {"Required"}
                 </Badge>
                 <Switch disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_j_" aria-checked="true" size="default" aria-label="PII Redaction">
                   <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
@@ -317,15 +317,15 @@ export function Pattern() {
         <Frame className="@container w-full">
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              Related Controls
+              {"Related Controls"}
             </div>
             <div className="flex gap-2 items-center text-muted-foreground text-sm">
               <span>
-                4 linked settings
+                {"4 linked settings"}
               </span>
               <span className="bg-muted-foreground/50 rounded-full size-1" aria-hidden="true"></span>
               <span>
-                updated today
+                {"updated today"}
               </span>
             </div>
           </header>
@@ -339,10 +339,10 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <a className="font-medium group-hover/card:text-primary hover:text-primary leading-tight text-sm transition-colors" href="#">
-                  Approval Rules
+                  {"Approval Rules"}
                 </a>
                 <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                  500 USD refunds require finance review
+                  {"500 USD refunds require finance review"}
                 </p>
               </div>
             </FramePanel>
@@ -356,10 +356,10 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <a className="font-medium group-hover/card:text-primary hover:text-primary leading-tight text-sm transition-colors" href="#">
-                  Tool Matrix
+                  {"Tool Matrix"}
                 </a>
                 <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                  5 tools inherit sandbox defaults
+                  {"5 tools inherit sandbox defaults"}
                 </p>
               </div>
             </FramePanel>
@@ -372,10 +372,10 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <a className="font-medium group-hover/card:text-primary hover:text-primary leading-tight text-sm transition-colors" href="#">
-                  Failure Routing
+                  {"Failure Routing"}
                 </a>
                 <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                  3 failed calls page Jonas Reed
+                  {"3 failed calls page Jonas Reed"}
                 </p>
               </div>
             </FramePanel>
@@ -388,10 +388,10 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <a className="font-medium group-hover/card:text-primary hover:text-primary leading-tight text-sm transition-colors" href="#">
-                  Audit Export
+                  {"Audit Export"}
                 </a>
                 <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                  RUN-4822 keeps 90 days of logs
+                  {"RUN-4822 keeps 90 days of logs"}
                 </p>
               </div>
             </FramePanel>

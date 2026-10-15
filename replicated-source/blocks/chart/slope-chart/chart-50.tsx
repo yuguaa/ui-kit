@@ -24,26 +24,26 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between min-w-0 px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex font-semibold gap-2 items-center text-sm">
-              Error Budget Runway
+              {"Error Budget Runway"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                 <span className="flex relative size-1.5" aria-hidden="true">
                   <span className="absolute animate-ping bg-success inset-0 motion-reduce:animate-none opacity-60 rounded-full"></span>
                   <span className="bg-success relative rounded-full size-1.5"></span>
                 </span>
-                Live
+                {"Live"}
               </Badge>
             </div>
             <div className="text-muted-foreground text-sm">
-              Days until each service breaks its 30-day SLO
+              {"Days until each service breaks its 30-day SLO"}
             </div>
           </div>
           <div className="flex gap-2 items-center">
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Runway at" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
-                Current
+                {"Current"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                Baseline
+                {"Baseline"}
               </ToggleGroupItem>
             </ToggleGroup>
             <DropdownMenu>
@@ -58,90 +58,85 @@ export function Pattern() {
           </div>
         </header>
         <FramePanel>
-          <style>{`
-@keyframes c50-settle { from { transform: translateY(3px); opacity: 0.35; } }
-.c50-settle { animation: c50-settle 420ms cubic-bezier(0.22, 1, 0.36, 1); }
-@media (prefers-reduced-motion: reduce) { .c50-settle { animation: none; } }
-html[data-demo="frozen"] .c50-settle { animation: none; }
-`}</style>
+          <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c50-settle { from { transform: translateY(3px); opacity: 0.35; } }\n.c50-settle { animation: c50-settle 420ms cubic-bezier(0.22, 1, 0.36, 1); }\n@media (prefers-reduced-motion: reduce) { .c50-settle { animation: none; } }\nhtml[data-demo=\"frozen\"] .c50-settle { animation: none; }\n" }} />
           <div className="@3xl:grid-cols-4 gap-x-6 gap-y-5 grid grid-cols-2">
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 flex flex-col gap-2 min-w-0">
               <div className="flex gap-2 items-center justify-between min-h-5">
                 <span className="font-medium text-muted-foreground text-xs truncate">
-                  At Risk
+                  {"At Risk"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                  Steady
+                  {"Steady"}
                 </Badge>
               </div>
               <div className="flex gap-1 items-baseline">
                 <span className="c50-settle font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  5
+                  {"5"}
                 </span>
                 <span className="tabular-nums text-muted-foreground text-sm">
-                  / 14
+                  {"/ 14"}
                 </span>
               </div>
               <div className="flex gap-1.5 h-5 items-center min-w-0 overflow-hidden tabular-nums text-muted-foreground text-xs whitespace-nowrap">
                 <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                3 watch
+                {"3 watch"}
                 <span className="bg-success ms-1.5 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                6 healthy
+                {"6 healthy"}
               </div>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 flex flex-col gap-2 min-w-0">
               <div className="flex gap-2 items-center justify-between min-h-5">
                 <span className="font-medium text-muted-foreground text-xs truncate">
-                  Runs Out First
+                  {"Runs Out First"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-warning-foreground text-xs transition-shadow">
-                  -0.1d
+                  {"-0.1d"}
                 </Badge>
               </div>
               <div className="flex gap-1 items-baseline">
                 <span className="c50-settle font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  1.9d
+                  {"1.9d"}
                 </span>
               </div>
               <div className="flex gap-1.5 h-5 items-center min-w-0 overflow-hidden tabular-nums text-muted-foreground text-xs whitespace-nowrap">
                 <span className="font-mono text-foreground truncate">
-                  billing-api
+                  {"billing-api"}
                 </span>
                 <span className="shrink-0">
-                  at 3.6×
+                  {"at 3.6×"}
                 </span>
               </div>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 flex flex-col gap-2 min-w-0">
               <div className="flex gap-2 items-center justify-between min-h-5">
                 <span className="font-medium text-muted-foreground text-xs truncate">
-                  Traffic at Risk
+                  {"Traffic at Risk"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                  Steady
+                  {"Steady"}
                 </Badge>
               </div>
               <div className="flex gap-1 items-baseline">
                 <span className="c50-settle font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  54%
+                  {"54%"}
                 </span>
               </div>
               <div className="flex gap-1.5 h-5 items-center min-w-0 overflow-hidden tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                of 1,456M req/day
+                {"of 1,456M req/day"}
               </div>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 flex flex-col gap-2 min-w-0">
               <div className="flex gap-2 items-center justify-between min-h-5">
                 <span className="font-medium text-muted-foreground text-xs truncate">
-                  Budget Left
+                  {"Budget Left"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                  Steady
+                  {"Steady"}
                 </Badge>
               </div>
               <div className="flex gap-1 items-baseline">
                 <span className="c50-settle font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  52%
+                  {"52%"}
                 </span>
               </div>
               <div className="flex gap-1.5 h-5 items-center min-w-0 overflow-hidden tabular-nums text-muted-foreground text-xs whitespace-nowrap">
@@ -159,7 +154,7 @@ html[data-demo="frozen"] .c50-settle { animation: none; }
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "51.5282%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -172,36 +167,28 @@ html[data-demo="frozen"] .c50-settle { animation: none; }
             <div className="min-w-3xl">
               <div className="flex gap-4 items-center justify-between text-muted-foreground text-xs">
                 <span className="text-end w-36">
-                  Service, by traffic
+                  {"Service, by traffic"}
                 </span>
                 <span className="flex gap-3 items-center">
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Critical
+                    {"Critical"}
                   </span>
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Watch
+                    {"Watch"}
                   </span>
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Healthy
+                    {"Healthy"}
                   </span>
                 </span>
                 <span className="w-40">
-                  Runway, current burn
+                  {"Runway, current burn"}
                 </span>
               </div>
-              <style>{`
-@keyframes c50-bead {
-  0% { offset-distance: 0%; opacity: 0; }
-  12%, 88% { opacity: 1; }
-  100% { offset-distance: 100%; opacity: 0; }
-}
-.c50-bead { offset-rotate: 0deg; animation: c50-bead var(--c50-dur) linear var(--c50-delay) infinite; }
-@media (prefers-reduced-motion: reduce) { .c50-bead { display: none; } }
-html[data-demo="frozen"] .c50-bead { display: none; }
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c50-bead {\n  0% { offset-distance: 0%; opacity: 0; }\n  12%, 88% { opacity: 1; }\n  100% { offset-distance: 100%; opacity: 0; }\n}\n.c50-bead { offset-rotate: 0deg; animation: c50-bead var(--c50-dur) linear var(--c50-delay) infinite; }\n@media (prefers-reduced-motion: reduce) { .c50-bead { display: none; } }\nhtml[data-demo=\"frozen\"] .c50-bead { display: none; }\n" }} />
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-118 justify-center text-xs w-full" data-chart="chart-_r_9_" role="img" aria-label="Error budget runway for 14 services: traffic order on the left, runway order on the right">
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -459,17 +446,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="37.7143" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="53.7143" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  auth
+                                  {"auth"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  268M
+                                  {"268M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="336" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="352" dominantBaseline="central">
-                                24d
+                                {"24d"}
                               </text>
                               <rect className="fill-muted" x="988" y="349" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="349" width="76" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -481,17 +468,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="170.2857" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="186.2857" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  ingest-worker
+                                  {"ingest-worker"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  96M
+                                  {"96M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="369.1429" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="385.1429" dominantBaseline="central">
-                                27d
+                                {"27d"}
                               </text>
                               <rect className="fill-muted" x="988" y="382.1429" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="382.1429" width="96" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -503,17 +490,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="236.5714" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="252.5714" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  notifications
+                                  {"notifications"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  61M
+                                  {"61M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="402.2857" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="418.2857" dominantBaseline="central">
-                                30d+
+                                {"30d+"}
                               </text>
                               <rect className="fill-muted" x="988" y="415.2857" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="415.2857" width="96" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -525,17 +512,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="269.7143" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="285.7143" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  file-storage
+                                  {"file-storage"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  47M
+                                  {"47M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="269.7143" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="285.7143" dominantBaseline="central">
-                                17d
+                                {"17d"}
                               </text>
                               <rect className="fill-muted" x="988" y="282.7143" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="282.7143" width="75" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -547,17 +534,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="302.8571" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="318.8571" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  reports
+                                  {"reports"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  33M
+                                  {"33M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="302.8571" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="318.8571" dominantBaseline="central">
-                                24d
+                                {"24d"}
                               </text>
                               <rect className="fill-muted" x="988" y="315.8571" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="315.8571" width="91" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -569,17 +556,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="435.4286" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="451.4286" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  audit-log
+                                  {"audit-log"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  4M
+                                  {"4M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="435.4286" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="451.4286" dominantBaseline="central">
-                                30d+
+                                {"30d+"}
                               </text>
                               <rect className="fill-muted" x="988" y="448.4286" width="96" height="6" rx="3"></rect>
                               <rect className="fill-success" x="988" y="448.4286" width="96" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -591,17 +578,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="104" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="120" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  search
+                                  {"search"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  131M
+                                  {"131M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="236.5714" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="252.5714" dominantBaseline="central">
-                                13d
+                                {"13d"}
                               </text>
                               <rect className="fill-muted" x="988" y="249.5714" width="96" height="6" rx="3"></rect>
                               <rect className="fill-warning" x="988" y="249.5714" width="77" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -613,17 +600,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="369.1429" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="385.1429" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  ledger-sync
+                                  {"ledger-sync"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  14M
+                                  {"14M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="203.4286" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="219.4286" dominantBaseline="central">
-                                8.1d
+                                {"8.1d"}
                               </text>
                               <rect className="fill-muted" x="988" y="216.4286" width="96" height="6" rx="3"></rect>
                               <rect className="fill-warning" x="988" y="216.4286" width="55" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -635,17 +622,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="402.2857" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="418.2857" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  sync-engine
+                                  {"sync-engine"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  9M
+                                  {"9M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="170.2857" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="186.2857" dominantBaseline="central">
-                                8.1d
+                                {"8.1d"}
                               </text>
                               <rect className="fill-muted" x="988" y="183.2857" width="96" height="6" rx="3"></rect>
                               <rect className="fill-warning" x="988" y="183.2857" width="36" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -657,17 +644,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="4.571400000000001" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="20.5714" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  api-gateway
+                                  {"api-gateway"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  412M
+                                  {"412M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="104" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="120" dominantBaseline="central">
-                                4.2d
+                                {"4.2d"}
                               </text>
                               <rect className="fill-muted" x="988" y="117" width="96" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="988" y="117" width="33" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -679,17 +666,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="70.8571" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="86.8571" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  billing-api
+                                  {"billing-api"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  154M
+                                  {"154M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="4.571400000000001" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="20.5714" dominantBaseline="central">
-                                1.9d
+                                {"1.9d"}
                               </text>
                               <rect className="fill-muted" x="988" y="17.5714" width="96" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="988" y="17.5714" width="15" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -701,17 +688,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="137.1429" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="153.1429" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  webhooks
+                                  {"webhooks"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  118M
+                                  {"118M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="137.1429" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="153.1429" dominantBaseline="central">
-                                7.0d
+                                {"7.0d"}
                               </text>
                               <rect className="fill-muted" x="988" y="150.1429" width="96" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="988" y="150.1429" width="38" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -723,17 +710,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="203.4286" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="219.4286" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  realtime
+                                  {"realtime"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  88M
+                                  {"88M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="70.8571" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="86.8571" dominantBaseline="central">
-                                3.4d
+                                {"3.4d"}
                               </text>
                               <rect className="fill-muted" x="988" y="83.8571" width="96" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="988" y="83.8571" width="28" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -745,17 +732,17 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                               <rect x="0" y="336" width="156" height="32" fill="transparent"></rect>
                               <text className="text-xs" x="146" y="352" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground font-mono">
-                                  exports
+                                  {"exports"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums" dx="6">
-                                  21M
+                                  {"21M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
                               <rect x="934" y="37.7143" width="184" height="32" fill="transparent"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="944" y="53.7143" dominantBaseline="central">
-                                3.2d
+                                {"3.2d"}
                               </text>
                               <rect className="fill-muted" x="988" y="50.7143" width="96" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="988" y="50.7143" width="19" height="6" rx="3" fillOpacity="0.25"></rect>
@@ -772,79 +759,80 @@ html[data-demo="frozen"] .c50-bead { display: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              api-gateway, Critical: 4.2d of error budget left at current burn, 10d at baseline
+              {"api-gateway, Critical: 4.2d of error budget left at current burn, 10d at baseline"}
             </li>
             <li>
-              auth, Healthy: 24d of error budget left at current burn, 24d at baseline
+              {"auth, Healthy: 24d of error budget left at current burn, 24d at baseline"}
             </li>
             <li>
-              billing-api, Critical: 1.9d of error budget left at current burn, 4.7d at baseline
+              {"billing-api, Critical: 1.9d of error budget left at current burn, 4.7d at baseline"}
             </li>
             <li>
-              search, Watch: 13d of error budget left at current burn, 24d at baseline
+              {"search, Watch: 13d of error budget left at current burn, 24d at baseline"}
             </li>
             <li>
-              webhooks, Critical: 7.0d of error budget left at current burn, 12d at baseline
+              {"webhooks, Critical: 7.0d of error budget left at current burn, 12d at baseline"}
             </li>
             <li>
-              ingest-worker, Healthy: 27d of error budget left at current burn, 30d+ at baseline
+              {"ingest-worker, Healthy: 27d of error budget left at current burn, 30d+ at baseline"}
             </li>
             <li>
-              realtime, Critical: 3.4d of error budget left at current burn, 8.7d at baseline
+              {"realtime, Critical: 3.4d of error budget left at current burn, 8.7d at baseline"}
             </li>
             <li>
-              notifications, Healthy: 30d+ of error budget left at current burn, 30d+ at baseline
+              {"notifications, Healthy: 30d+ of error budget left at current burn, 30d+ at baseline"}
             </li>
             <li>
-              file-storage, Healthy: 17d of error budget left at current burn, 24d at baseline
+              {"file-storage, Healthy: 17d of error budget left at current burn, 24d at baseline"}
             </li>
             <li>
-              reports, Healthy: 24d of error budget left at current burn, 29d at baseline
+              {"reports, Healthy: 24d of error budget left at current burn, 29d at baseline"}
             </li>
             <li>
-              exports, Critical: 3.2d of error budget left at current burn, 6.0d at baseline
+              {"exports, Critical: 3.2d of error budget left at current burn, 6.0d at baseline"}
             </li>
             <li>
-              ledger-sync, Watch: 8.1d of error budget left at current burn, 17d at baseline
+              {"ledger-sync, Watch: 8.1d of error budget left at current burn, 17d at baseline"}
             </li>
             <li>
-              sync-engine, Watch: 8.1d of error budget left at current burn, 11d at baseline
+              {"sync-engine, Watch: 8.1d of error budget left at current burn, 11d at baseline"}
             </li>
             <li>
-              audit-log, Healthy: 30d+ of error budget left at current burn, 30d+ at baseline
+              {"audit-log, Healthy: 30d+ of error budget left at current burn, 30d+ at baseline"}
             </li>
           </ul>
         </FramePanel>
         <footer className="flex flex-row gap-4 items-center justify-between min-w-0 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <div className="flex gap-2 items-center min-w-0">
             <span className="font-medium font-mono text-foreground text-xs truncate">
-              billing-api
+              {"billing-api"}
             </span>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
               <span className="gap-1.5 inline-flex items-center">
                 <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                Critical
+                {"Critical"}
               </span>
             </Badge>
           </div>
           <div className="flex gap-4 items-center shrink-0 tabular-nums text-muted-foreground text-xs">
             <span className="@2xl:inline hidden">
-              Payments
+              {"Payments"}
             </span>
             <span className="@xl:inline hidden">
-              Burning
+              {"Burning"}
               <span className="font-medium text-foreground">
-                3.6×
+                {"3.6×"}
               </span>
             </span>
             <span>
-              Out in
+              {"Out in"}
               <span className="font-medium text-foreground">
-                1.9d
+                {"1.9d"}
               </span>
             </span>
           </div>

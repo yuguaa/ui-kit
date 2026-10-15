@@ -13,17 +13,17 @@ export function Pattern() {
             <div className="@min-[900px]:flex-row @min-[900px]:gap-x-6 @min-[900px]:items-center @min-[900px]:p-0 flex flex-col gap-8 px-6 py-10 relative">
               <div className="@min-[1240px]:px-12 @min-[1240px]:py-20 @min-[900px]:flex-1 @min-[900px]:justify-center @min-[900px]:min-w-72 @min-[900px]:px-8 @min-[900px]:py-14 flex flex-col gap-6">
                 <h2 className="@min-[1240px]:text-5xl @min-[940px]:text-4xl font-semibold text-3xl text-white" id="cta-15-title">
-                  Build Production-Ready Interfaces with NeUI
+                  {"Build Production-Ready Interfaces with NeUI"}
                 </h2>
                 <p className="leading-6 text-base text-white/50">
-                  Build production-ready interfaces with flexible NeUI blocks, AI-friendly workflows, and components designed for fast customization.
+                  {"Build production-ready interfaces with flexible NeUI blocks, AI-friendly workflows, and components designed for fast customization."}
                 </p>
                 <div className="[--primary-foreground:var(--color-amber-950)] [--primary:var(--color-amber-300)] [--secondary-foreground:var(--color-white)] [--secondary:oklch(1_0_0_/_0.1)] flex flex-wrap gap-x-4 gap-y-2 items-center">
                   <Button className="shadow-2xs" href="#" role="button" tabIndex="0">
-                    Start Building
+                    {"Start Building"}
                   </Button>
                   <Button className="shadow-xs" href="#" role="button" tabIndex="0">
-                    Read Docs
+                    {"Read Docs"}
                   </Button>
                 </div>
               </div>
@@ -33,7 +33,7 @@ export function Pattern() {
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
-                    Ship polished pages without rebuilding
+                    {"Ship polished pages without rebuilding"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
@@ -41,7 +41,7 @@ export function Pattern() {
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
-                    Connect AI agents through built-in MCP support
+                    {"Connect AI agents through built-in MCP support"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
@@ -49,7 +49,7 @@ export function Pattern() {
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
-                    Maintain accessible interfaces across every screen and workflow
+                    {"Maintain accessible interfaces across every screen and workflow"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
@@ -57,7 +57,7 @@ export function Pattern() {
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
-                    Keep design systems consistent as your product grows
+                    {"Keep design systems consistent as your product grows"}
                   </span>
                 </li>
               </ul>

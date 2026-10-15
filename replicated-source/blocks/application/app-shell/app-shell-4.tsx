@@ -43,12 +43,17 @@ import { SidebarMenuButton } from "@/registry/bases/radix/ui/sidebar"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="[--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "440px", "--sidebar-width-icon": "3rem", "--header-height": "50px"}}>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="*:data-[sidebar=sidebar]:flex-row data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-svh hidden inset-y-0 md:flex overflow-hidden transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <div className="flex min-h-full">
+              <SidebarProvider>
               <Sidebar className="border-r w-[calc(var(--sidebar-width-icon)+1px)]!">
                 <SidebarHeader className="items-center justify-center py-3" sidebar="header">
                   <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default" aria-hidden="true">
@@ -60,11 +65,17 @@ export function Pattern() {
                     </ItemMedia>
                   </Item>
                 </SidebarHeader>
+                <SidebarProvider>
                 <SidebarContent sidebar="content">
+                  <SidebarProvider>
                   <SidebarGroup sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent sidebar="group-content">
+                      <SidebarProvider>
                       <SidebarMenu className="gap-0.5" sidebar="menu">
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="">
                             <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
                               <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
@@ -72,23 +83,35 @@ export function Pattern() {
                             </svg>
                             <span className="absolute bg-primary right-0.5 rounded-full size-1.5 top-0.5" aria-hidden="true"></span>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                               <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
                               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                               <path d="m21.854 2.147-10.94 10.939"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                               <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
@@ -98,8 +121,12 @@ export function Pattern() {
                               <path d="M16 17H8"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-archive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArchiveIcon" tabler="IconArchive" hugeicons="Archive01Icon" phosphor="ArchiveIcon" remixicon="RiArchiveLine" aria-hidden="true">
                               <rect width="20" height="5" x="2" y="3" rx="1"></rect>
@@ -107,8 +134,12 @@ export function Pattern() {
                               <path d="M10 12h4"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-shield-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldAlertIcon" tabler="IconShieldExclamation" hugeicons="ShieldEnergyIcon" phosphor="ShieldWarningIcon" remixicon="RiShieldLine" aria-hidden="true">
                               <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
@@ -116,8 +147,12 @@ export function Pattern() {
                               <path d="M12 16h.01"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                               <path d="M10 11v6"></path>
@@ -127,11 +162,17 @@ export function Pattern() {
                               <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
                       </SidebarMenu>
+                      </SidebarProvider>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                 </SidebarContent>
+                </SidebarProvider>
                 <SidebarFooter sidebar="footer">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
@@ -142,14 +183,15 @@ export function Pattern() {
                   </DropdownMenu>
                 </SidebarFooter>
               </Sidebar>
+              </SidebarProvider>
               <div className="bg-background flex flex-1 flex-col overflow-hidden">
                 <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                   <div className="flex gap-2 items-center">
                     <span className="font-semibold leading-relaxed text-sm">
-                      Inbox
+                      {"Inbox"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                      4
+                      {"4"}
                     </Badge>
                   </div>
                   <div className="flex gap-0.5 items-center">
@@ -193,24 +235,24 @@ export function Pattern() {
                   <div className="border-b border-border/60 flex items-center md:px-2 overflow-x-auto px-1.5 py-1.5 shrink-0">
                     <TabsList className="gap-0.5 h-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                       <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_t_" compositeItemActive="" aria-controls="base-ui-_r_11_">
-                        All
+                        {"All"}
                       </TabsTrigger>
                       <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_u_">
-                        Unread
+                        {"Unread"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
-                          4
+                          {"4"}
                         </Badge>
                       </TabsTrigger>
                       <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_v_">
-                        Starred
+                        {"Starred"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
-                          3
+                          {"3"}
                         </Badge>
                       </TabsTrigger>
                       <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_10_">
-                        Files
+                        {"Files"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
-                          2
+                          {"2"}
                         </Badge>
                       </TabsTrigger>
                     </TabsList>
@@ -229,10 +271,10 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-semibold leading-tight text-foreground text-sm truncate">
-                                  Sarah Chen
+                                  {"Sarah Chen"}
                                 </span>
                                 <span className="font-bold leading-none shrink-0 text-[10px] text-destructive" aria-label="High priority">
-                                  !
+                                  {"!"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
@@ -240,18 +282,18 @@ export function Pattern() {
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
-                                  10:42 AM
+                                  {"10:42 AM"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="font-medium leading-tight min-w-0 text-foreground/90 text-xs truncate">
-                                Design review · component library v2.0
+                                {"Design review · component library v2.0"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Hey Nick, I've gone through the latest Figma handoff and left detailed comments on the spacing tokens. The button hierarchy looks great but we should revisit the hover states...
+                                {"Hey Nick, I've gone through the latest Figma handoff and left detailed comments on the spacing tokens. The button hierarchy looks great but we should revisit the hover states..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
@@ -267,7 +309,7 @@ export function Pattern() {
                                 </Avatar>
                               </AvatarGroup>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                Design
+                                {"Design"}
                               </Badge>
                             </div>
                           </div>
@@ -283,7 +325,7 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-semibold leading-tight text-foreground text-sm truncate">
-                                  Marcus Lee
+                                  {"Marcus Lee"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
@@ -291,23 +333,23 @@ export function Pattern() {
                                   <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
-                                  9:15 AM
+                                  {"9:15 AM"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="font-medium leading-tight min-w-0 text-foreground/90 text-xs truncate">
-                                Q4 Sprint planning, your input needed
+                                {"Q4 Sprint planning, your input needed"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Hey team, sharing the draft sprint board for Q4. We have 3 major milestones: the public launch of NeUI Pro, the icon pack update, and onboarding improvements...
+                                {"Hey team, sharing the draft sprint board for Q4. We have 3 major milestones: the public launch of NeUI Pro, the icon pack update, and onboarding improvements..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                Work
+                                {"Work"}
                               </Badge>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
@@ -317,10 +359,10 @@ export function Pattern() {
                                     <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Q4-Sprint-Board.pdf
+                                    {"Q4-Sprint-Board.pdf"}
                                   </span>
                                   <span className="hidden md:inline-block opacity-50 shrink-0">
-                                    (1.2 MB)
+                                    {"(1.2 MB)"}
                                   </span>
                                 </Button>
                                 <Button type="button" tabIndex="0" aria-label="Download attachment">
@@ -345,36 +387,36 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-semibold leading-tight text-foreground text-sm truncate">
-                                  Emma Wilson
+                                  {"Emma Wilson"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
-                                  Yesterday
+                                  {"Yesterday"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="font-medium leading-tight min-w-0 text-foreground/90 text-xs truncate">
-                                Partnership proposal · NeUI integration
+                                {"Partnership proposal · NeUI integration"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Hi Nick, reaching out because we've been using NeUI for 6 months and it's transformed our design workflow. We'd love to explore a formal partnership...
+                                {"Hi Nick, reaching out because we've been using NeUI for 6 months and it's transformed our design workflow. We'd love to explore a formal partnership..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                                Business
+                                {"Business"}
                               </Badge>
                             </div>
                             <div className="flex flex-wrap gap-1 items-center mt-2">
                               <Button type="button" tabIndex="0">
-                                Schedule Call
+                                {"Schedule Call"}
                               </Button>
                               <Button type="button" tabIndex="0">
-                                View Proposal
+                                {"View Proposal"}
                               </Button>
                             </div>
                           </div>
@@ -388,40 +430,40 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  GitHub
+                                  {"GitHub"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Yesterday
+                                  {"Yesterday"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                [newcapec] Security advisory on rollup affects your repositories
+                                {"[newcapec] Security advisory on rollup affects your repositories"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                A security advisory on rollup affects at least one of your repositories. neui/core · newcapec/GHSA-mw96-cpmx-2vgc · +1 other
+                                {"A security advisory on rollup affects at least one of your repositories. neui/core · newcapec/GHSA-mw96-cpmx-2vgc · +1 other"}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <span className="border border-border font-medium h-[18px] inline-flex items-center overflow-hidden rounded-full shrink-0 text-[10px]">
                                 <span className="bg-muted/60 border-border border-r flex h-full items-center leading-none px-1.5">
-                                  repo
+                                  {"repo"}
                                 </span>
                                 <span className="flex h-full items-center leading-none px-1.5 text-foreground/60">
-                                  neui/core
+                                  {"neui/core"}
                                 </span>
                               </span>
                               <span className="border border-border font-medium h-[18px] inline-flex items-center overflow-hidden rounded-full shrink-0 text-[10px]">
                                 <span className="bg-muted/60 border-border border-r flex h-full items-center leading-none px-1.5">
-                                  type
+                                  {"type"}
                                 </span>
                                 <span className="flex h-full items-center leading-none px-1.5 text-destructive" style={{backgroundColor: "color-mix(in oklch, currentcolor 5%, transparent 95%)"}}>
-                                  security
+                                  {"security"}
                                 </span>
                               </span>
                             </div>
@@ -440,28 +482,28 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  Stripe
+                                  {"Stripe"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Mon
+                                  {"Mon"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                Payment received · $299 from Acme Corp
+                                {"Payment received · $299 from Acme Corp"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                A payment of $299.00 has been received from Acme Corp on November 28, 2024. Your current balance is $1,248.00. View your dashboard for full details...
+                                {"A payment of $299.00 has been received from Acme Corp on November 28, 2024. Your current balance is $1,248.00. View your dashboard for full details..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                Finance
+                                {"Finance"}
                               </Badge>
                             </div>
                           </div>
@@ -475,7 +517,7 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  Alex Martin
+                                  {"Alex Martin"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
@@ -483,27 +525,27 @@ export function Pattern() {
                                   <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                 </svg>
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Mon
+                                  {"Mon"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                Invoice #1024 · November services
+                                {"Invoice #1024 · November services"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Please find attached the invoice for November consulting services. Total: $2,400.00. Payment due December 15th. Thank you for the continued partnership...
+                                {"Please find attached the invoice for November consulting services. Total: $2,400.00. Payment due December 15th. Thank you for the continued partnership..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <span className="border border-border font-medium h-[18px] inline-flex items-center overflow-hidden rounded-full shrink-0 text-[10px]">
                                 <span className="bg-muted/60 border-border border-r flex h-full items-center leading-none px-1.5">
-                                  #
+                                  {"#"}
                                 </span>
                                 <span className="flex h-full items-center leading-none px-1.5 text-warning" style={{backgroundColor: "color-mix(in oklch, currentcolor 5%, transparent 95%)"}}>
-                                  1024
+                                  {"1024"}
                                 </span>
                               </span>
                             </div>
@@ -514,10 +556,10 @@ export function Pattern() {
                                     <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Invoice-1024.pdf
+                                    {"Invoice-1024.pdf"}
                                   </span>
                                   <span className="hidden md:inline-block opacity-50 shrink-0">
-                                    (243 KB)
+                                    {"(243 KB)"}
                                   </span>
                                 </Button>
                                 <Button type="button" tabIndex="0" aria-label="Download attachment">
@@ -540,40 +582,40 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  Vercel
+                                  {"Vercel"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Sun
+                                  {"Sun"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                ✓ Deployment successful · neui.io/pro
+                                {"✓ Deployment successful · neui.io/pro"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Your latest deployment to production is live. Build time: 47s. All checks passed. Deployment ID: dpl_AbC123xyz...
+                                {"Your latest deployment to production is live. Build time: 47s. All checks passed. Deployment ID: dpl_AbC123xyz..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <span className="border border-border font-medium h-[18px] inline-flex items-center overflow-hidden rounded-full shrink-0 text-[10px]">
                                 <span className="bg-muted/60 border-border border-r flex h-full items-center leading-none px-1.5">
-                                  env
+                                  {"env"}
                                 </span>
                                 <span className="flex h-full items-center leading-none px-1.5 text-success" style={{backgroundColor: "color-mix(in oklch, currentcolor 5%, transparent 95%)"}}>
-                                  production
+                                  {"production"}
                                 </span>
                               </span>
                               <span className="border border-border font-medium h-[18px] inline-flex items-center overflow-hidden rounded-full shrink-0 text-[10px]">
                                 <span className="bg-muted/60 border-border border-r flex h-full items-center leading-none px-1.5">
-                                  build
+                                  {"build"}
                                 </span>
                                 <span className="flex h-full items-center leading-none px-1.5 text-primary" style={{backgroundColor: "color-mix(in oklch, currentcolor 5%, transparent 95%)"}}>
-                                  47s
+                                  {"47s"}
                                 </span>
                               </span>
                             </div>
@@ -590,10 +632,10 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-semibold leading-tight text-foreground text-sm truncate">
-                                  Jessica Brooks
+                                  {"Jessica Brooks"}
                                 </span>
                                 <span className="font-bold leading-none shrink-0 text-[10px] text-destructive" aria-label="High priority">
-                                  !
+                                  {"!"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
@@ -601,18 +643,18 @@ export function Pattern() {
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
-                                  Nov 22
+                                  {"Nov 22"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="font-medium leading-tight min-w-0 text-foreground/90 text-xs truncate">
-                                Following up on your Config 2024 talk
+                                {"Following up on your Config 2024 talk"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Hi Nick! I attended your talk and was blown away by the design system workflow. I'd love to chat about how you manage component tokens across themes...
+                                {"Hi Nick! I attended your talk and was blown away by the design system workflow. I'd love to chat about how you manage component tokens across themes..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2"></div>
@@ -631,30 +673,30 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  Linear
+                                  {"Linear"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Nov 21
+                                  {"Nov 21"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                Sprint review: 18 issues closed this week
+                                {"Sprint review: 18 issues closed this week"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Great work this sprint. Your team closed 18 issues, moved 5 to In Review, and created 8 new ones. Top contributors: Nick Bold (6), Sarah Chen (5)...
+                                {"Great work this sprint. Your team closed 18 issues, moved 5 to In Review, and created 8 new ones. Top contributors: Nick Bold (6), Sarah Chen (5)..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <AvatarGroup className="-space-x-1">
                                 <Avatar className="size-4" size="default">
                                   <AvatarFallback className="bg-primary font-bold text-[8px] text-white">
-                                    NB
+                                    {"NB"}
                                   </AvatarFallback>
                                 </Avatar>
                                 <Avatar className="size-4" size="default">
@@ -664,7 +706,7 @@ export function Pattern() {
                                   <AvatarImage alt="ML" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                 </Avatar>
                                 <AvatarGroupCount className="leading-none size-4 text-[8px]">
-                                  +1
+                                  {"+1"}
                                 </AvatarGroupCount>
                               </AvatarGroup>
                             </div>
@@ -679,7 +721,7 @@ export function Pattern() {
                             <div className="flex gap-1 items-center justify-between mb-1">
                               <div className="flex gap-1 items-center min-w-0">
                                 <span className="font-medium leading-tight text-foreground/75 text-sm truncate">
-                                  James Kim
+                                  {"James Kim"}
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
@@ -687,28 +729,28 @@ export function Pattern() {
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
-                                  Nov 20
+                                  {"Nov 20"}
                                 </span>
                               </div>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-tight min-w-0 text-foreground/70 text-xs truncate">
-                                Figma Config 2025 · Speaker confirmation
+                                {"Figma Config 2025 · Speaker confirmation"}
                               </p>
                             </div>
                             <div className="grid mb-1">
                               <p className="leading-snug text-muted-foreground text-xs truncate">
-                                Congratulations! We're thrilled to confirm your spot as a speaker at Figma Config 2025. Your talk 'Production-Ready Design Systems' has been approved...
+                                {"Congratulations! We're thrilled to confirm your spot as a speaker at Figma Config 2025. Your talk 'Production-Ready Design Systems' has been approved..."}
                               </p>
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-focus-foreground transition-shadow">
-                                Events
+                                {"Events"}
                               </Badge>
                             </div>
                             <div className="flex flex-wrap gap-1 items-center mt-2">
                               <Button type="button" tabIndex="0">
-                                Confirm Attendance
+                                {"Confirm Attendance"}
                               </Button>
                             </div>
                           </div>
@@ -728,23 +770,28 @@ export function Pattern() {
                 <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
               </span>
               <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-                Collapse
+                {"Collapse"}
               </span>
             </button>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <SidebarInset>
         <header className="border-b border-border flex gap-1 h-(--header-height) items-center min-w-0 px-2 py-1.5 shrink-0 sm:gap-1.5 sm:px-4">
+          <SidebarProvider>
           <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
             <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
-              Toggle Sidebar
+              {"Toggle Sidebar"}
             </span>
           </SidebarTrigger>
+          </SidebarProvider>
           <Button className="hidden sm:flex text-muted-foreground" type="button" tabIndex="0" aria-label="Previous message">
             <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
               <path d="m15 18-6-6 6-6"></path>
@@ -759,7 +806,7 @@ export function Pattern() {
             <Separator className="h-5" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           </div>
           <h3 className="flex-1 font-semibold leading-snug text-foreground text-sm truncate w-0">
-            Design review · component library v2.0
+            {"Design review · component library v2.0"}
           </h3>
           <div className="flex gap-0.5 items-center ml-auto shrink-0" role="toolbar" aria-label="Message actions">
             <Button className="gap-1.5 hidden sm:flex" type="button" tabIndex="0" aria-label="Reply all">
@@ -767,7 +814,7 @@ export function Pattern() {
                 <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
                 <path d="M9 14 4 9l5-5"></path>
               </svg>
-              Reply all
+              {"Reply all"}
             </Button>
             <div className="hidden items-center me-0.5 ml-2 sm:flex">
               <Separator className="h-5" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -815,5 +862,6 @@ export function Pattern() {
         </div>
       </SidebarInset>
     </div>
+    </SidebarProvider>
   )
 }

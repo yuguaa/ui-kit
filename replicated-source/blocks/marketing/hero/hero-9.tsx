@@ -24,7 +24,7 @@ export function Pattern() {
             <div className="flex flex-col gap-4 items-start max-w-xl">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 hover:bg-accent min-w-6 outline-none px-2.5 py-0.75 relative rounded-full text-sm transition-colors" href="#">
                 <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                Browse NeUI Blocks
+                {"Browse NeUI Blocks"}
                 <svg className="lucide lucide-external-link size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                   <path d="M15 3h6v6"></path>
                   <path d="M10 14 21 3"></path>
@@ -32,16 +32,16 @@ export function Pattern() {
                 </svg>
               </Badge>
               <h1 className="font-semibold leading-tight sm:text-4xl text-3xl text-foreground tracking-tight" id="hero-9-title">
-                The complete shadcn registry for building modern
+                {"The complete shadcn registry for building modern"}
                 <span className="bg-amber-300 box-decoration-clone pb-1 px-1.5 rounded-sm text-amber-950">
-                  Next.js apps
+                  {"Next.js apps"}
                 </span>
                 <span className="sm:block">
-                  with AI agents
+                  {"with AI agents"}
                 </span>
               </h1>
               <p className="leading-6 text-base text-muted-foreground">
-                Build faster with production-ready blocks, MCP support, and a curated shadcn registry.
+                {"Build faster with production-ready blocks, MCP support, and a curated shadcn registry."}
               </p>
             </div>
             <div className="flex flex-col gap-6 lg:max-w-sm w-full">
@@ -104,10 +104,10 @@ export function Pattern() {
                 </span>
                 <div className="flex gap-2 items-center text-xs">
                   <span className="font-medium text-foreground">
-                    4.5 · 13.9k Ratings
+                    {"4.5 · 13.9k Ratings"}
                   </span>
                   <a className="border-b border-muted-foreground/50 hover:text-foreground text-muted-foreground" href="#">
-                    27 reviews
+                    {"27 reviews"}
                   </a>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export function Pattern() {
                   <svg className="dark:block hidden size-4" aria-hidden="true" id="Ebene_1" version="1.1" viewBox="0 0 466.73 532.09">
                     <path d="M457.43,125.94L244.42,2.96c-6.84-3.95-15.28-3.95-22.12,0L9.3,125.94c-5.75,3.32-9.3,9.46-9.3,16.11v247.99c0,6.65,3.55,12.79,9.3,16.11l213.01,122.98c6.84,3.95,15.28,3.95,22.12,0l213.01-122.98c5.75-3.32,9.3-9.46,9.3-16.11v-247.99c0-6.65-3.55-12.79-9.3-16.11h-.01ZM444.05,151.99l-205.63,356.16c-1.39,2.4-5.06,1.42-5.06-1.36v-233.21c0-4.66-2.49-8.97-6.53-11.31L24.87,145.67c-2.4-1.39-1.42-5.06,1.36-5.06h411.26c5.84,0,9.49,6.33,6.57,11.39h-.01Z"></path>
                   </svg>
-                  Open in Cursor
+                  {"Open in Cursor"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
                   <svg className="h-4 w-auto" viewBox="0 0 9.77777 14.6667" fill="none" aria-hidden="true">
@@ -129,112 +129,32 @@ export function Pattern() {
                     <path d="M4.88889 0H7.33332C8.68265 0 9.77777 1.09511 9.77777 2.44444C9.77777 3.79378 8.68265 4.88889 7.33332 4.88889L4.88889 4.88886V0Z" fill="#FF7262"></path>
                     <path d="M9.77777 7.3333C9.77777 8.68263 8.68265 9.77774 7.33332 9.77774C5.98398 9.77774 4.88887 8.68263 4.88887 7.3333C4.88887 5.98397 5.98398 4.88889 7.33332 4.88889C8.68265 4.88889 9.77777 5.98397 9.77777 7.3333Z" fill="#1ABCFE"></path>
                   </svg>
-                  View in Figma
+                  {"View in Figma"}
                 </Button>
               </div>
             </div>
           </div>
           <Card className="gap-0 overflow-hidden p-0 w-full" size="default">
-            <style>{`
-@keyframes hero9-grow {
-  0%, 54% { transform: scaleY(1) }
-  66% { transform: scaleY(0.3) }
-  100% { transform: scaleY(1) }
-}
-/* Opacity only. This rides on figures, and moving text a few pixels inside a
-   canvas that is itself scaled lands every frame on a fractional device pixel,
-   so the glyphs re-rasterise and shimmer. A dip reads as a refresh either way. */
-@keyframes hero9-rise {
-  0%, 60% { opacity: 1 }
-  72% { opacity: 0.35 }
-  100% { opacity: 1 }
-}
-@keyframes hero9-fill {
-  0%, 52% { transform: scaleX(1) }
-  64% { transform: scaleX(0.1) }
-  100% { transform: scaleX(1) }
-}
-@keyframes hero9-blink {
-  0%, 100% { opacity: 1 }
-  50% { opacity: 0.4 }
-}
-@keyframes hero9-draw {
-  0%, 50% { stroke-dashoffset: 0 }
-  62% { stroke-dashoffset: 1200 }
-  100% { stroke-dashoffset: 0 }
-}
-/* Activating a tab mounts its panel fresh, so this replays on every switch,
-   which is what gives the self-advancing bar something to land on. */
-@keyframes hero9-enter {
-  from { opacity: 0; transform: translateY(8px) }
-  to { opacity: 1; transform: translateY(0) }
-}
-/* No scale here: it would resample every glyph in the card on the way in. The lift
-   stays, promoted to its own layer so the text is rasterised once and carried by
-   the compositor rather than repainted each frame. */
-.hero9-enter {
-  animation: hero9-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) var(--hero9-delay, 0s) both;
-  will-change: opacity, transform;
-}
-.hero9-grow,
-.hero9-rise,
-.hero9-draw,
-.hero9-track [data-slot="progress-indicator"] {
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-delay: var(--hero9-delay, 0s);
-}
-.hero9-grow { animation-name: hero9-grow; animation-duration: 11.3s; }
-/* Promoted for the whole cycle. A fading text node switches from subpixel to
-   greyscale antialiasing while its opacity is off 1 and back again at the ends,
-   and that switch reads as the glyphs changing weight. Holding the layer holds
-   one rendering path. */
-.hero9-rise {
-  animation-name: hero9-rise;
-  animation-duration: 13.7s;
-  will-change: opacity;
-}
-.hero9-draw { animation-name: hero9-draw; animation-duration: 16.3s; }
-.hero9-track [data-slot="progress-indicator"] {
-  transform-origin: left center;
-  animation-name: hero9-fill;
-  animation-duration: 10.1s;
-}
-.hero9-blink {
-  animation: hero9-blink 3.7s ease-in-out var(--hero9-delay, 0s) infinite;
-  will-change: opacity;
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero9-grow,
-  .hero9-rise,
-  .hero9-draw,
-  .hero9-blink,
-  .hero9-enter,
-  .hero9-track [data-slot="progress-indicator"] {
-    animation: none;
-  }
-}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hero9-grow {\n  0%, 54% { transform: scaleY(1) }\n  66% { transform: scaleY(0.3) }\n  100% { transform: scaleY(1) }\n}\n/* Opacity only. This rides on figures, and moving text a few pixels inside a\n   canvas that is itself scaled lands every frame on a fractional device pixel,\n   so the glyphs re-rasterise and shimmer. A dip reads as a refresh either way. */\n@keyframes hero9-rise {\n  0%, 60% { opacity: 1 }\n  72% { opacity: 0.35 }\n  100% { opacity: 1 }\n}\n@keyframes hero9-fill {\n  0%, 52% { transform: scaleX(1) }\n  64% { transform: scaleX(0.1) }\n  100% { transform: scaleX(1) }\n}\n@keyframes hero9-blink {\n  0%, 100% { opacity: 1 }\n  50% { opacity: 0.4 }\n}\n@keyframes hero9-draw {\n  0%, 50% { stroke-dashoffset: 0 }\n  62% { stroke-dashoffset: 1200 }\n  100% { stroke-dashoffset: 0 }\n}\n/* Activating a tab mounts its panel fresh, so this replays on every switch,\n   which is what gives the self-advancing bar something to land on. */\n@keyframes hero9-enter {\n  from { opacity: 0; transform: translateY(8px) }\n  to { opacity: 1; transform: translateY(0) }\n}\n/* No scale here: it would resample every glyph in the card on the way in. The lift\n   stays, promoted to its own layer so the text is rasterised once and carried by\n   the compositor rather than repainted each frame. */\n.hero9-enter {\n  animation: hero9-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) var(--hero9-delay, 0s) both;\n  will-change: opacity, transform;\n}\n.hero9-grow,\n.hero9-rise,\n.hero9-draw,\n.hero9-track [data-slot=\"progress-indicator\"] {\n  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);\n  animation-iteration-count: infinite;\n  animation-fill-mode: both;\n  animation-delay: var(--hero9-delay, 0s);\n}\n.hero9-grow { animation-name: hero9-grow; animation-duration: 11.3s; }\n/* Promoted for the whole cycle. A fading text node switches from subpixel to\n   greyscale antialiasing while its opacity is off 1 and back again at the ends,\n   and that switch reads as the glyphs changing weight. Holding the layer holds\n   one rendering path. */\n.hero9-rise {\n  animation-name: hero9-rise;\n  animation-duration: 13.7s;\n  will-change: opacity;\n}\n.hero9-draw { animation-name: hero9-draw; animation-duration: 16.3s; }\n.hero9-track [data-slot=\"progress-indicator\"] {\n  transform-origin: left center;\n  animation-name: hero9-fill;\n  animation-duration: 10.1s;\n}\n.hero9-blink {\n  animation: hero9-blink 3.7s ease-in-out var(--hero9-delay, 0s) infinite;\n  will-change: opacity;\n}\n@media (prefers-reduced-motion: reduce) {\n  .hero9-grow,\n  .hero9-rise,\n  .hero9-draw,\n  .hero9-blink,\n  .hero9-enter,\n  .hero9-track [data-slot=\"progress-indicator\"] {\n    animation: none;\n  }\n}\n" }} />
             <Tabs className="gap-0 w-full" data-orientation="horizontal" activationDirection="right">
               <TabsList className="border-b gap-0 grid! grid-cols-3 h-auto! md:flex! md:flex-nowrap md:flex-row md:items-center md:justify-start md:overflow-x-auto p-0! rounded-none w-full" data-orientation="horizontal" activationDirection="right" role="tablist" variant="line">
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_" extracted="1">
-                  Overview
+                  {"Overview"}
                 </TabsTrigger>
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                  Components
+                  {"Components"}
                 </TabsTrigger>
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                  Workflows
+                  {"Workflows"}
                 </TabsTrigger>
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                  Integrations
+                  {"Integrations"}
                 </TabsTrigger>
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                  Templates
+                  {"Templates"}
                 </TabsTrigger>
                 <TabsTrigger className="[&:nth-child(3n)]:border-r-0 [&:nth-child(n+4)]:border-b-0 after:hidden border-b border-border! border-l-0 border-r border-t-0 data-active:bg-muted! flex-none font-medium h-12! md:border-b-0! md:border-r! md:flex-1 md:last:border-r-0! md:min-w-28 md:px-3 px-2 rounded-none text-muted-foreground text-sm transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_5_" data-active="" compositeItemActive="" aria-controls="base-ui-_r_d_">
-                  Docs
+                  {"Docs"}
                 </TabsTrigger>
               </TabsList>
               <div className="@container w-full">
@@ -329,7 +249,7 @@ export function Pattern() {
                               <div className="contents">
                                 <span className="flex font-medium gap-1.5 items-center text-sm">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                                  NeUI Pro
+                                  {"NeUI Pro"}
                                   <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -338,10 +258,10 @@ export function Pattern() {
                               </div>
                               <div className="contents">
                                 <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                                  /
+                                  {"/"}
                                 </span>
                                 <span className="flex font-medium gap-1.5 items-center text-sm">
-                                  Registry
+                                  {"Registry"}
                                   <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -350,10 +270,10 @@ export function Pattern() {
                               </div>
                               <div className="contents">
                                 <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                                  /
+                                  {"/"}
                                 </span>
                                 <span className="flex font-medium gap-1.5 items-center text-sm">
-                                  Live
+                                  {"Live"}
                                   <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -364,9 +284,9 @@ export function Pattern() {
                                 <svg className="lucide lucide-activity size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                                   <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                                 </svg>
-                                System
+                                {"System"}
                                 <span className="dark:text-emerald-400 text-emerald-600">
-                                  Normal
+                                  {"Normal"}
                                 </span>
                               </Badge>
                             </div>
@@ -379,13 +299,13 @@ export function Pattern() {
                                     <path d="m21 21-4.34-4.34"></path>
                                     <circle cx="11" cy="11" r="8"></circle>
                                   </svg>
-                                  Search...
+                                  {"Search..."}
                                   <Kbd className="bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-500 h-5 min-w-5 ms-auto px-1.5 text-neutral-400 text-xs">
-                                    ⌘K
+                                    {"⌘K"}
                                   </Kbd>
                                 </Item>
                                 <div className="dark:text-neutral-500 font-medium pt-1.5 px-2 text-neutral-400 text-xs">
-                                  Platform
+                                  {"Platform"}
                                 </div>
                                 <div className="flex flex-col gap-0.5">
                                   <div className="contents">
@@ -396,7 +316,7 @@ export function Pattern() {
                                         <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                                         <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                                       </svg>
-                                      Overview
+                                      {"Overview"}
                                     </Item>
                                   </div>
                                   <div className="contents">
@@ -406,20 +326,20 @@ export function Pattern() {
                                         <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                         <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                                       </svg>
-                                      Blocks
+                                      {"Blocks"}
                                       <svg className="dark:text-neutral-500 lucide lucide-chevron-down ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                       </svg>
                                     </Item>
                                     <div className="border-l border-neutral-200 dark:border-neutral-800 flex flex-col gap-0.5 ms-4 ps-1">
                                       <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                        Marketing
+                                        {"Marketing"}
                                       </Item>
                                       <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                        Application
+                                        {"Application"}
                                       </Item>
                                       <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                        Ecommerce
+                                        {"Ecommerce"}
                                       </Item>
                                     </div>
                                   </div>
@@ -428,7 +348,7 @@ export function Pattern() {
                                       <svg className="lucide lucide-puzzle size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PuzzleIcon" tabler="IconPuzzle" hugeicons="PuzzleIcon" phosphor="PuzzlePieceIcon" remixicon="RiPuzzleLine" aria-hidden="true">
                                         <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path>
                                       </svg>
-                                      Components
+                                      {"Components"}
                                       <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
@@ -441,7 +361,7 @@ export function Pattern() {
                                         <rect width="9" height="7" x="3" y="14" rx="1"></rect>
                                         <rect width="5" height="7" x="16" y="14" rx="1"></rect>
                                       </svg>
-                                      Templates
+                                      {"Templates"}
                                       <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
@@ -455,7 +375,7 @@ export function Pattern() {
                                         <path d="M13 17V5"></path>
                                         <path d="M8 17v-3"></path>
                                       </svg>
-                                      Analytics
+                                      {"Analytics"}
                                     </Item>
                                   </div>
                                   <div className="contents">
@@ -464,17 +384,17 @@ export function Pattern() {
                                         <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                                         <circle cx="12" cy="12" r="3"></circle>
                                       </svg>
-                                      Settings
+                                      {"Settings"}
                                     </Item>
                                   </div>
                                 </div>
                                 <Card className="[--card-spacing:--spacing(2.5)] bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:ring-white/10 dark:text-neutral-50 gap-2 mt-auto ring-0 ring-neutral-900/8 shadow-sm text-neutral-900" size="sm">
                                   <CardContent className="flex flex-col gap-2">
                                     <span className="font-semibold text-sm">
-                                      Multi-theme support is here
+                                      {"Multi-theme support is here"}
                                     </span>
                                     <span className="dark:text-neutral-400 leading-5 text-neutral-500 text-sm">
-                                      Switch between Vega, Nova, Maia, Lyra, and Mira themes.
+                                      {"Switch between Vega, Nova, Maia, Lyra, and Mira themes."}
                                     </span>
                                     <span className="bg-[radial-gradient(120%_90%_at_12%_18%,var(--color-orange-400)_0%,transparent_46%),radial-gradient(120%_120%_at_88%_8%,var(--color-fuchsia-500)_0%,transparent_55%),linear-gradient(160deg,var(--color-violet-600)_0%,var(--color-sky-400)_58%,var(--color-cyan-400)_100%)] block h-20 overflow-hidden relative w-full" aria-hidden="true">
                                       <svg className="absolute inset-0 size-full" viewBox="0 0 96 34" preserveAspectRatio="none" aria-hidden="true">
@@ -489,10 +409,10 @@ export function Pattern() {
                                     </span>
                                     <div className="dark:text-neutral-400 flex items-center justify-between text-neutral-500 text-xs">
                                       <span>
-                                        Read more
+                                        {"Read more"}
                                       </span>
                                       <span>
-                                        Dismiss
+                                        {"Dismiss"}
                                       </span>
                                     </div>
                                   </CardContent>
@@ -511,10 +431,10 @@ export function Pattern() {
                                     </IconTile>
                                     <div className="flex flex-col gap-1">
                                       <span className="font-semibold text-base">
-                                        Documentation
+                                        {"Documentation"}
                                       </span>
                                       <span className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                        Coming soon
+                                        {"Coming soon"}
                                       </span>
                                     </div>
                                   </div>

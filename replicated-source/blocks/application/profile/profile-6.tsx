@@ -48,14 +48,14 @@ export function Pattern() {
           <div className="flex flex-col gap-0.5 max-w-lg">
             <div className="flex flex-wrap gap-2 items-center">
               <h1 className="font-semibold text-xl">
-                Partner Rewards
+                {"Partner Rewards"}
               </h1>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Active Program
+                {"Active Program"}
               </Badge>
             </div>
             <p className="text-muted-foreground text-sm">
-              Share one private invite and track the credits your referrals unlock.
+              {"Share one private invite and track the credits your referrals unlock."}
             </p>
           </div>
           <Button className="self-start sm:self-auto" type="button" tabIndex="0" extracted="1">
@@ -63,17 +63,17 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Back to Profile
+            {"Back to Profile"}
           </Button>
         </div>
         <section className="flex flex-col gap-3">
           <div className="flex flex-col gap-px sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Referral Link
+                {"Referral Link"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Share one invite and keep the offer clear.
+                {"Share one invite and keep the offer clear."}
               </p>
             </div>
           </div>
@@ -95,10 +95,10 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <p className="font-medium text-sm">
-                          Offer
+                          {"Offer"}
                         </p>
                         <p className="text-muted-foreground text-sm truncate">
-                          First paid quarter
+                          {"First paid quarter"}
                         </p>
                       </div>
                     </div>
@@ -113,20 +113,20 @@ export function Pattern() {
                     </Tooltip>
                   </div>
                   <p className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                    15%
+                    {"15%"}
                   </p>
                   <Progress className="**:data-[slot=progress-indicator]:bg-success **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-labelledby="base-ui-_r_2_">
                     <ProgressLabel className="sr-only" complete="" id="base-ui-_r_2_" role="presentation">
-                      Offer progress
+                      {"Offer progress"}
                     </ProgressLabel>
                     <ProgressValue className="leading-none shrink-0 tabular-nums text-muted-foreground text-xs" complete="" aria-hidden="true">
-                      100%
+                      {"100%"}
                     </ProgressValue>
                     <ProgressTrack complete="">
                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -145,10 +145,10 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <p className="font-medium text-sm">
-                          Qualified Teams
+                          {"Qualified Teams"}
                         </p>
                         <p className="text-muted-foreground text-sm truncate">
-                          This cycle
+                          {"This cycle"}
                         </p>
                       </div>
                     </div>
@@ -163,20 +163,20 @@ export function Pattern() {
                     </Tooltip>
                   </div>
                   <p className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                    14
+                    {"14"}
                   </p>
                   <Progress className="**:data-[slot=progress-indicator]:bg-info **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="70%" role="progressbar" aria-labelledby="base-ui-_r_5_">
                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5_" role="presentation">
-                      Qualified Teams progress
+                      {"Qualified Teams progress"}
                     </ProgressLabel>
                     <ProgressValue className="leading-none shrink-0 tabular-nums text-muted-foreground text-xs" progressing="" aria-hidden="true">
-                      70%
+                      {"70%"}
                     </ProgressValue>
                     <ProgressTrack progressing="">
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "70%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -194,10 +194,10 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <p className="font-medium text-sm">
-                          Credits Applied
+                          {"Credits Applied"}
                         </p>
                         <p className="text-muted-foreground text-sm truncate">
-                          Ready for billing
+                          {"Ready for billing"}
                         </p>
                       </div>
                     </div>
@@ -212,20 +212,20 @@ export function Pattern() {
                     </Tooltip>
                   </div>
                   <p className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                    $620
+                    {"$620"}
                   </p>
                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" aria-valuetext="62%" role="progressbar" aria-labelledby="base-ui-_r_8_">
                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8_" role="presentation">
-                      Credits Applied progress
+                      {"Credits Applied progress"}
                     </ProgressLabel>
                     <ProgressValue className="leading-none shrink-0 tabular-nums text-muted-foreground text-xs" progressing="" aria-hidden="true">
-                      62%
+                      {"62%"}
                     </ProgressValue>
                     <ProgressTrack progressing="">
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "62%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -235,15 +235,15 @@ export function Pattern() {
               <CardHeader className="border-b items-center px-5 py-3.5 sm:px-6">
                 <div className="min-w-0">
                   <CardTitle>
-                    Personal Link
+                    {"Personal Link"}
                   </CardTitle>
                   <CardDescription>
-                    One private invite for every channel.
+                    {"One private invite for every channel."}
                   </CardDescription>
                 </div>
                 <CardAction>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                    April Cycle
+                    {"April Cycle"}
                   </Badge>
                 </CardAction>
               </CardHeader>
@@ -286,10 +286,10 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <div className="font-medium leading-5 max-w-full text-sm truncate">
-                        14 active days
+                        {"14 active days"}
                       </div>
                       <p className="leading-5 text-balance text-muted-foreground text-sm">
-                        New workspaces qualify after two weeks of active usage.
+                        {"New workspaces qualify after two weeks of active usage."}
                       </p>
                     </div>
                   </div>
@@ -306,10 +306,10 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <div className="font-medium leading-5 max-w-full text-sm truncate">
-                        First invoice cleared
+                        {"First invoice cleared"}
                       </div>
                       <p className="leading-5 text-balance text-muted-foreground text-sm">
-                        Credits and points unlock when the first paid invoice lands.
+                        {"Credits and points unlock when the first paid invoice lands."}
                       </p>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ export function Pattern() {
               </CardContent>
               <CardFooter className="border-t flex-col gap-3 items-start justify-between px-5 py-3.5 sm:flex-row sm:items-center sm:px-6">
                 <p className="max-w-xl text-muted-foreground text-sm">
-                  Use this link for partner emails, community posts, and handoffs.
+                  {"Use this link for partner emails, community posts, and handoffs."}
                 </p>
                 <div className="flex flex-wrap gap-2 items-center">
                   <Button type="button" tabIndex="0">
@@ -325,14 +325,14 @@ export function Pattern() {
                       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Terms
+                    {"Terms"}
                   </Button>
                   <Button type="button" tabIndex="0">
                     <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" data-icon="inline-start" aria-hidden="true">
                       <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                     </svg>
-                    Copy Note
+                    {"Copy Note"}
                   </Button>
                 </div>
               </CardFooter>
@@ -343,10 +343,10 @@ export function Pattern() {
           <div className="flex flex-col gap-px sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Reward Progress
+                {"Reward Progress"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Track points and the next unlock.
+                {"Track points and the next unlock."}
               </p>
             </div>
           </div>
@@ -355,35 +355,35 @@ export function Pattern() {
               <CardHeader className="border-b items-center px-5 py-3.5 sm:px-6">
                 <div className="min-w-0">
                   <CardTitle>
-                    Next Unlock
+                    {"Next Unlock"}
                   </CardTitle>
                   <CardDescription>
-                    Advisory Sprint
+                    {"Advisory Sprint"}
                   </CardDescription>
                 </div>
                 <CardAction className="self-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    58% ready
+                    {"58% ready"}
                   </Badge>
                 </CardAction>
               </CardHeader>
               <CardContent className="px-5 py-4 sm:px-6">
                 <div className="flex flex-col gap-3">
                   <p className="text-muted-foreground text-sm">
-                    Unlock a rollout review with planning and one focused strategy call.
+                    {"Unlock a rollout review with planning and one focused strategy call."}
                   </p>
                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-2 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2.5 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-labelledby="base-ui-_r_a_">
                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_a_" role="presentation">
-                      Next unlock progress
+                      {"Next unlock progress"}
                     </ProgressLabel>
                     <ProgressValue className="leading-none shrink-0 tabular-nums text-muted-foreground text-xs" progressing="" aria-hidden="true">
-                      58%
+                      {"58%"}
                     </ProgressValue>
                     <ProgressTrack progressing="">
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -405,15 +405,15 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="font-medium leading-5 max-w-full text-sm truncate">
-                          Workspace Credit
+                          {"Workspace Credit"}
                         </div>
                         <p className="leading-5 text-balance text-muted-foreground text-sm">
-                          Apply billing credit to the next paid workspace cycle.
+                          {"Apply billing credit to the next paid workspace cycle."}
                         </p>
                       </div>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Unlocked
+                      {"Unlocked"}
                     </Badge>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -431,15 +431,15 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="font-medium leading-5 max-w-full text-sm truncate">
-                          Advisory Sprint
+                          {"Advisory Sprint"}
                         </div>
                         <p className="leading-5 text-balance text-muted-foreground text-sm">
-                          Book a rollout review for onboarding and activation.
+                          {"Book a rollout review for onboarding and activation."}
                         </p>
                       </div>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                      Next
+                      {"Next"}
                     </Badge>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -457,15 +457,15 @@ export function Pattern() {
                       </Item>
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="font-medium leading-5 max-w-full text-sm truncate">
-                          Migration Concierge
+                          {"Migration Concierge"}
                         </div>
                         <p className="leading-5 text-balance text-muted-foreground text-sm">
-                          Unlock hands-on setup support for the next referred team.
+                          {"Unlock hands-on setup support for the next referred team."}
                         </p>
                       </div>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      Locked
+                      {"Locked"}
                     </Badge>
                   </div>
                 </div>
@@ -473,7 +473,7 @@ export function Pattern() {
               <CardFooter className="border-t px-5 py-3.5 sm:px-6">
                 <div className="flex gap-1.5 items-center">
                   <p className="min-w-0 text-muted-foreground text-sm">
-                    Points post after activation and the first paid invoice.
+                    {"Points post after activation and the first paid invoice."}
                   </p>
                   <Tooltip>
                   <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reward qualification details" id="base-ui-_r_c_" baseUiTooltipTrigger="">
@@ -493,10 +493,10 @@ export function Pattern() {
           <div className="flex flex-col gap-px sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Recent Referrals
+                {"Recent Referrals"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Qualified, pending, and under review.
+                {"Qualified, pending, and under review."}
               </p>
             </div>
           </div>
@@ -511,20 +511,20 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <FieldLabel className="cn-field-title items-center min-w-0 w-full">
                         <span className="truncate">
-                          Northwind Labs
+                          {"Northwind Labs"}
                         </span>
                       </FieldLabel>
                       <FieldDescription className="flex flex-wrap gap-1.5 items-center leading-5 min-w-0 text-sm">
                         <span>
-                          18 seats active
+                          {"18 seats active"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Qualified
+                          {"Qualified"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          4 days ago
+                          {"4 days ago"}
                         </span>
                       </FieldDescription>
                     </div>
@@ -532,7 +532,7 @@ export function Pattern() {
                   <FieldContent className="@md/field-group:flex-none min-w-0">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Qualified
+                        {"Qualified"}
                       </Badge>
                     </div>
                   </FieldContent>
@@ -548,20 +548,20 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <FieldLabel className="cn-field-title items-center min-w-0 w-full">
                         <span className="truncate">
-                          Relay Grid
+                          {"Relay Grid"}
                         </span>
                       </FieldLabel>
                       <FieldDescription className="flex flex-wrap gap-1.5 items-center leading-5 min-w-0 text-sm">
                         <span>
-                          6 seats live
+                          {"6 seats live"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Invoice pending
+                          {"Invoice pending"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Today
+                          {"Today"}
                         </span>
                       </FieldDescription>
                     </div>
@@ -569,7 +569,7 @@ export function Pattern() {
                   <FieldContent className="@md/field-group:flex-none min-w-0">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Pending
+                        {"Pending"}
                       </Badge>
                     </div>
                   </FieldContent>
@@ -585,20 +585,20 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <FieldLabel className="cn-field-title items-center min-w-0 w-full">
                         <span className="truncate">
-                          Studio Harbor
+                          {"Studio Harbor"}
                         </span>
                       </FieldLabel>
                       <FieldDescription className="flex flex-wrap gap-1.5 items-center leading-5 min-w-0 text-sm">
                         <span>
-                          Enterprise review
+                          {"Enterprise review"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Security review
+                          {"Security review"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Open
+                          {"Open"}
                         </span>
                       </FieldDescription>
                     </div>
@@ -606,7 +606,7 @@ export function Pattern() {
                   <FieldContent className="@md/field-group:flex-none min-w-0">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        In Review
+                        {"In Review"}
                       </Badge>
                     </div>
                   </FieldContent>
@@ -615,7 +615,7 @@ export function Pattern() {
             </CardContent>
             <CardFooter className="border-t flex-col gap-3 items-start justify-between px-5 py-3 sm:flex-row sm:items-center sm:px-6">
               <p className="max-w-xl text-muted-foreground text-sm">
-                Export a clean referral snapshot for finance or growth.
+                {"Export a clean referral snapshot for finance or growth."}
               </p>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" data-icon="inline-start" aria-hidden="true">
@@ -623,7 +623,7 @@ export function Pattern() {
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <path d="m7 10 5 5 5-5"></path>
                 </svg>
-                Export Activity
+                {"Export Activity"}
               </Button>
             </CardFooter>
           </Card>

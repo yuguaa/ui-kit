@@ -25,23 +25,23 @@ export function Pattern() {
         <CardHeader className="border-b">
           <CardTitle className="flex gap-2 items-center min-w-0">
             <span className="truncate">
-              Pipeline Leakage
+              {"Pipeline Leakage"}
             </span>
           </CardTitle>
           <CardDescription className="col-start-1">
-            Deals lost at each stage, by source
+            {"Deals lost at each stage, by source"}
           </CardDescription>
           <CardAction className="@md/card-header:col-start-2 @md/card-header:justify-self-end @md/card-header:mt-0 @md/card-header:row-span-2 @md/card-header:row-start-1 col-start-1 justify-self-start mt-2 row-span-1 row-start-3">
             <div className="flex gap-2 items-center">
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Date range" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="30D, last 30 days" extracted="1">
-                  30D
+                  {"30D"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="90D, last 90 days">
-                  90D
+                  {"90D"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="12M, last 12 months">
-                  12M
+                  {"12M"}
                 </ToggleGroupItem>
               </ToggleGroup>
               <DropdownMenu>
@@ -61,12 +61,12 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-2.5 min-w-0">
               <dt className="flex font-medium gap-1.5 h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Lead to Won
+                  {"Lead to Won"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2.5 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  4.9%
+                  {"4.9%"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -75,11 +75,11 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      +0.6 pts
+                      {"+0.6 pts"}
                     </span>
                   </Badge>
                   <span className="@max-sm:sr-only [text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    vs prior 90D
+                    {"vs prior 90D"}
                   </span>
                 </span>
               </dd>
@@ -87,12 +87,12 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-2.5 min-w-0">
               <dt className="flex font-medium gap-1.5 h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Leads
+                  {"Leads"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2.5 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  3,620
+                  {"3,620"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -101,7 +101,7 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      +1.7%
+                      {"+1.7%"}
                     </span>
                   </Badge>
                 </span>
@@ -110,12 +110,12 @@ export function Pattern() {
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-2.5 min-w-0">
               <dt className="flex font-medium gap-1.5 h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Deals Won
+                  {"Deals Won"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2.5 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  176
+                  {"176"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -124,7 +124,7 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      +17%
+                      {"+17%"}
                     </span>
                   </Badge>
                 </span>
@@ -134,16 +134,16 @@ export function Pattern() {
               <dt className="flex font-medium gap-1.5 h-4 items-center text-muted-foreground text-xs">
                 <span className="bg-destructive h-3 rounded-full shrink-0 w-0.5" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Biggest Leak
+                  {"Biggest Leak"}
                 </span>
               </dt>
               <dd className="flex flex-col gap-2.5 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl text-destructive tracking-tight">
-                  60%
+                  {"60%"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Proposal to Won
+                    {"Proposal to Won"}
                   </span>
                 </span>
               </dd>
@@ -153,68 +153,54 @@ export function Pattern() {
         <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
         <CardContent>
           <div className="flex flex-col gap-2">
-            <style>{`
-@keyframes c53-leak {
-  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.4); }
-  16% { opacity: 0.9; }
-  100% { opacity: 0; transform: translate(calc(-50% + var(--c53-dx)), calc(-50% + var(--c53-dy))) scale(1); }
-}
-@keyframes c53-appear { from { opacity: 0; } }
-.c53-drops { animation: c53-appear 600ms ease-out backwards; }
-.c53-drop { animation: c53-leak var(--c53-dur) cubic-bezier(0.4, 0, 1, 1) var(--c53-delay) infinite backwards; }
-[data-c53-paused] .c53-drop { animation-play-state: paused; }
-@media (prefers-reduced-motion: reduce) {
-  .c53-drops { display: none; }
-}
-html[data-demo="frozen"] .c53-drops { display: none; }
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c53-leak {\n  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.4); }\n  16% { opacity: 0.9; }\n  100% { opacity: 0; transform: translate(calc(-50% + var(--c53-dx)), calc(-50% + var(--c53-dy))) scale(1); }\n}\n@keyframes c53-appear { from { opacity: 0; } }\n.c53-drops { animation: c53-appear 600ms ease-out backwards; }\n.c53-drop { animation: c53-leak var(--c53-dur) cubic-bezier(0.4, 0, 1, 1) var(--c53-delay) infinite backwards; }\n[data-c53-paused] .c53-drop { animation-play-state: paused; }\n@media (prefers-reduced-motion: reduce) {\n  .c53-drops { display: none; }\n}\nhtml[data-demo=\"frozen\"] .c53-drops { display: none; }\n" }} />
             <ol className="grid" aria-hidden="true" style={{gridTemplateColumns: "repeat(6, minmax(0px, 1fr))"}}>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  Leads
+                  {"Leads"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  100%
+                  {"100%"}
                 </span>
               </li>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  MQL
+                  {"MQL"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  50%
+                  {"50%"}
                 </span>
               </li>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  SQL
+                  {"SQL"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  30%
+                  {"30%"}
                 </span>
               </li>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  Demo
+                  {"Demo"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  21%
+                  {"21%"}
                 </span>
               </li>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  Proposal
+                  {"Proposal"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  12%
+                  {"12%"}
                 </span>
               </li>
               <li className="flex flex-col gap-0.5 items-center">
                 <span className="duration-200 text-muted-foreground text-xs transition-colors whitespace-nowrap">
-                  Won
+                  {"Won"}
                 </span>
                 <span className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] font-medium motion-reduce:transition-none opacity-100 tabular-nums text-sm transition-[opacity,translate,color]">
-                  4.9%
+                  {"4.9%"}
                 </span>
               </li>
             </ol>
@@ -279,21 +265,9 @@ html[data-demo="frozen"] .c53-drops { display: none; }
                 <span className="absolute bg-destructive c53-drop rounded-full size-1.5" style={{left: "87.85%", top: "106.506px", "--c53-dx": "-3.040000000000009px", "--c53-dy": "-34.06px", "--c53-dur": "3.1s", "--c53-delay": "-4.5625s"}}></span>
                 <span className="absolute bg-destructive c53-drop rounded-full size-1" style={{left: "87.2858%", top: "117.723px", "--c53-dx": "6.400000000000001px", "--c53-dy": "20.2px", "--c53-dur": "2.3s", "--c53-delay": "-4.00625s"}}></span>
               </div>
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-56 justify-center text-xs w-full" data-chart="chart-_r_8_">
-                <style>{`
- [data-chart=chart-_r_8_] {
-  --color-inbound: var(--color-emerald-300);
-  --color-outbound: var(--color-emerald-500);
-  --color-partner: var(--color-emerald-700);
-}
-
-
-.dark [data-chart=chart-_r_8_] {
-  --color-inbound: var(--color-emerald-300);
-  --color-outbound: var(--color-emerald-500);
-  --color-partner: var(--color-emerald-700);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_8_] {\n  --color-inbound: var(--color-emerald-300);\n  --color-outbound: var(--color-emerald-500);\n  --color-partner: var(--color-emerald-700);\n}\n\n\n.dark [data-chart=chart-_r_8_] {\n  --color-inbound: var(--color-emerald-300);\n  --color-outbound: var(--color-emerald-500);\n  --color-partner: var(--color-emerald-700);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="736" height="224" style={{position: "relative", cursor: "default", width: "736px", height: "224px"}}>
@@ -373,42 +347,43 @@ html[data-demo="frozen"] .c53-drops { display: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
             <div className="h-4 relative" aria-hidden="true">
               <span className="-translate-x-1/2 absolute duration-200 motion-reduce:transition-none opacity-100 tabular-nums text-muted-foreground text-xs top-0 transition-opacity whitespace-nowrap" style={{left: "16.6667%"}}>
-                -50%
+                {"-50%"}
               </span>
               <span className="-translate-x-1/2 absolute duration-200 motion-reduce:transition-none opacity-100 tabular-nums text-muted-foreground text-xs top-0 transition-opacity whitespace-nowrap" style={{left: "33.3333%"}}>
-                -40%
+                {"-40%"}
               </span>
               <span className="-translate-x-1/2 absolute duration-200 motion-reduce:transition-none opacity-100 tabular-nums text-muted-foreground text-xs top-0 transition-opacity whitespace-nowrap" style={{left: "50%"}}>
-                -31%
+                {"-31%"}
               </span>
               <span className="-translate-x-1/2 absolute duration-200 motion-reduce:transition-none opacity-100 tabular-nums text-muted-foreground text-xs top-0 transition-opacity whitespace-nowrap" style={{left: "66.6667%"}}>
-                -42%
+                {"-42%"}
               </span>
               <span className="-translate-x-1/2 absolute duration-200 font-medium motion-reduce:transition-none opacity-100 tabular-nums text-destructive text-xs top-0 transition-opacity whitespace-nowrap" style={{left: "83.3333%"}}>
-                -60%
+                {"-60%"}
               </span>
             </div>
             <ol className="sr-only" aria-label="Deals by stage">
               <li>
-                New Leads: 3,620 deals, 100% of leads
+                {"New Leads: 3,620 deals, 100% of leads"}
               </li>
               <li>
-                Marketing Qualified: 1,824 deals, 50% of leads
+                {"Marketing Qualified: 1,824 deals, 50% of leads"}
               </li>
               <li>
-                Sales Qualified: 1,095 deals, 30% of leads
+                {"Sales Qualified: 1,095 deals, 30% of leads"}
               </li>
               <li>
-                Demo Held: 751 deals, 21% of leads
+                {"Demo Held: 751 deals, 21% of leads"}
               </li>
               <li>
-                Proposal Sent: 439 deals, 12% of leads
+                {"Proposal Sent: 439 deals, 12% of leads"}
               </li>
               <li>
-                Closed Won: 176 deals, 4.9% of leads
+                {"Closed Won: 176 deals, 4.9% of leads"}
               </li>
             </ol>
           </div>
@@ -417,25 +392,25 @@ html[data-demo="frozen"] .c53-drops { display: none; }
           <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" size="sm" spacing="2" aria-label="Focus a lead source" style={{"--gap": "2"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-300 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Inbound
+              {"Inbound"}
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Outbound
+              {"Outbound"}
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-700 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Partner
+              {"Partner"}
             </ToggleGroupItem>
           </ToggleGroup>
           <span className="flex gap-1.5 items-center text-muted-foreground text-xs">
             <span className="flex gap-1.5 items-center motion-reduce:hidden">
               <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-              Lost deals
+              {"Lost deals"}
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             </span>
             <span className="tabular-nums">
-              Through Oct 12, 2026
+              {"Through Oct 12, 2026"}
             </span>
           </span>
         </CardFooter>

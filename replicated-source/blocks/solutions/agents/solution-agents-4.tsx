@@ -47,7 +47,7 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-start justify-center max-w-[1320px] md:p-4 min-h-svh mx-auto p-3 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Tool Matrix
+        {"Tool Matrix"}
       </h1>
       <div className="@container space-y-5 w-full">
         <Frame className="w-full" spacing="sm">
@@ -55,38 +55,38 @@ export function Pattern() {
             <div className="flex-col min-w-0">
               <div className="flex gap-2 items-center">
                 <div className="font-semibold text-base tracking-tight">
-                  Tool Access Matrix
+                  {"Tool Access Matrix"}
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
-                  Saved
+                  {"Saved"}
                 </Badge>
               </div>
               <div className="mt-0 text-muted-foreground text-xs">
-                15 tools, 4 hour SLA
+                {"15 tools, 4 hour SLA"}
               </div>
             </div>
             <div className="flex flex-wrap gap-2 items-center shrink-0">
               <Select>
               <SelectTrigger className="w-36" type="button" tabIndex="0" id="base-ui-_r_1_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Environment scope" extracted="1">
                 <SelectValue>
-                  Production
+                  {"Production"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
               <input id="base-ui-_r_1_-hidden-input" tabIndex="-1" aria-hidden="true" value="Production" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <Button type="button" tabIndex="0">
-                Discard
+                {"Discard"}
               </Button>
               <Button type="button" tabIndex="0" aria-label="Save tool matrix">
-                Save
+                {"Save"}
               </Button>
             </div>
           </header>
@@ -105,18 +105,18 @@ export function Pattern() {
                       </svg>
                       <span className="flex items-center">
                         <span>
-                          Tool
+                          {"Tool"}
                         </span>
                       </span>
                     </div>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_6_" aria-haspopup="dialog" aria-expanded="false">
-                      contains
+                      {"contains"}
                     </PopoverTrigger>
                     </Popover>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" aria-label="Search..." tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_8_" aria-haspopup="dialog" aria-expanded="false">
-                      Search...
+                      {"Search..."}
                     </PopoverTrigger>
                     </Popover>
                     <DropdownMenu>
@@ -135,7 +135,7 @@ export function Pattern() {
                   <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                     <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                   </svg>
-                  Filters
+                  {"Filters"}
                 </PopoverTrigger>
                 </Popover>
                 <div className="sr-only" aria-live="polite" role="status">
@@ -149,7 +149,7 @@ export function Pattern() {
                     <path d="m16.5 3.5 5 5"></path>
                     <path d="m21.5 3.5-5 5"></path>
                   </svg>
-                  Clear
+                  {"Clear"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Manage columns" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
@@ -158,9 +158,9 @@ export function Pattern() {
                     <path d="M9 3v18"></path>
                     <path d="M15 3v18"></path>
                   </svg>
-                  Columns
+                  {"Columns"}
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                    8
+                    {"8"}
                   </Badge>
                 </DropdownMenuTrigger>
                 </DropdownMenu>
@@ -168,10 +168,13 @@ export function Pattern() {
             </div>
             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="relative">
+              <DataGridProvider>
               <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
                 <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_l_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "37px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
                   <div role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-overflow-x-end="">
+                    <DataGridProvider>
                     <DataGridTableViewport style={{width: "calc(1275px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                      <DataGridProvider>
                       <DataGridTable style={{"--header-agentLabel-size": "145", "--col-agentLabel-size": "145", "--header-tool-size": "300", "--col-tool-size": "300", "--header-scope-size": "100", "--col-scope-size": "100", "--header-auto-size": "82", "--col-auto-size": "82", "--header-approval-size": "82", "--col-approval-size": "82", "--header-blocked-size": "82", "--col-blocked-size": "82", "--header-rateLimit-size": "112", "--col-rateLimit-size": "112", "--header-reviewedAt-size": "140", "--col-reviewedAt-size": "140", "--header-approverId-size": "232", "--col-approverId-size": "232", width: "calc(1275px + var(--data-grid-fill-size, 0px))"}}>
                         <colgroup>
                           <col style={{width: "calc(var(--col-agentLabel-size) * 1px)"}} />
@@ -191,7 +194,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
-                                  Agent
+                                  {"Agent"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -205,7 +208,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_u_" aria-expanded="false">
-                                  Tool
+                                  {"Tool"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -219,7 +222,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_13_" aria-expanded="false">
-                                  Scope
+                                  {"Scope"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -232,7 +235,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="auto" data-header-id="auto" data-header-depth="0" style={{width: "calc(var(--header-auto-size) * 1px)"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Auto Run
+                                  {"Auto Run"}
                                 </Button>
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
@@ -240,7 +243,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="approval" data-header-id="approval" data-header-depth="0" style={{width: "calc(var(--header-approval-size) * 1px)"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Approval
+                                  {"Approval"}
                                 </Button>
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
@@ -248,7 +251,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="blocked" data-header-id="blocked" data-header-depth="0" style={{width: "calc(var(--header-blocked-size) * 1px)"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Blocked
+                                  {"Blocked"}
                                 </Button>
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
@@ -257,7 +260,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_18_" aria-expanded="false">
-                                  Rate Limit
+                                  {"Rate Limit"}
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
                               </div>
@@ -267,7 +270,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1d_" aria-expanded="false">
-                                  Last Review
+                                  {"Last Review"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -281,7 +284,7 @@ export function Pattern() {
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
                                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1i_" aria-expanded="false">
-                                  Approver
+                                  {"Approver"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -294,15 +297,16 @@ export function Pattern() {
                             <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                           </tr>
                         </thead>
+                        <DataGridProvider>
                         <DataGridTableBody>
                           <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="stripe-refunds-create">
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-agentLabel-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Refund Resolver
+                                  {"Refund Resolver"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Payments
+                                  {"Payments"}
                                 </span>
                               </div>
                             </td>
@@ -310,17 +314,17 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="min-w-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-w-full min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate">
-                                    stripe.refunds.create
+                                    {"stripe.refunds.create"}
                                   </Badge>
                                 </div>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Refunds above 500 USD need finance
+                                  {"Refunds above 500 USD need finance"}
                                 </span>
                               </div>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-scope-size) * 1px)"}}>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Write
+                                {"Write"}
                               </Badge>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-auto-size) * 1px)"}}>
@@ -353,10 +357,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-reviewedAt-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Maya Perez
+                                  {"Maya Perez"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Jun 10
+                                  {"Jun 10"}
                                 </span>
                               </div>
                             </td>
@@ -364,11 +368,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="w-52" type="button" tabIndex="0" id="base-ui-_r_1u_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="stripe.refunds.create approver">
                                 <SelectValue>
-                                  Finance Approvals
+                                  {"Finance Approvals"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -380,10 +384,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-agentLabel-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Refund Resolver
+                                  {"Refund Resolver"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Payments
+                                  {"Payments"}
                                 </span>
                               </div>
                             </td>
@@ -391,17 +395,17 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="min-w-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-w-full min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate">
-                                    payments.refunds.capture
+                                    {"payments.refunds.capture"}
                                   </Badge>
                                 </div>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Manual review after INC-208 errors
+                                  {"Manual review after INC-208 errors"}
                                 </span>
                               </div>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-scope-size) * 1px)"}}>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                Admin
+                                {"Admin"}
                               </Badge>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-auto-size) * 1px)"}}>
@@ -434,10 +438,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-reviewedAt-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Jonas Reed
+                                  {"Jonas Reed"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Jun 09
+                                  {"Jun 09"}
                                 </span>
                               </div>
                             </td>
@@ -445,11 +449,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="w-52" type="button" tabIndex="0" id="base-ui-_r_2b_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="payments.refunds.capture approver">
                                 <SelectValue>
-                                  Finance Approvals
+                                  {"Finance Approvals"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -461,10 +465,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-agentLabel-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Refund Resolver
+                                  {"Refund Resolver"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Orders
+                                  {"Orders"}
                                 </span>
                               </div>
                             </td>
@@ -472,17 +476,17 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="min-w-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-w-full min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate">
-                                    orders.lookup
+                                    {"orders.lookup"}
                                   </Badge>
                                 </div>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Reads ORD-99102 line items
+                                  {"Reads ORD-99102 line items"}
                                 </span>
                               </div>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-scope-size) * 1px)"}}>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                Read
+                                {"Read"}
                               </Badge>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-auto-size) * 1px)"}}>
@@ -515,10 +519,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-reviewedAt-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Lara Chen
+                                  {"Lara Chen"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Jun 11
+                                  {"Jun 11"}
                                 </span>
                               </div>
                             </td>
@@ -526,11 +530,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="w-52" type="button" tabIndex="0" id="base-ui-_r_2o_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="orders.lookup approver">
                                 <SelectValue>
-                                  Ops Desk
+                                  {"Ops Desk"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -542,10 +546,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-agentLabel-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Refund Resolver
+                                  {"Refund Resolver"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Orders
+                                  {"Orders"}
                                 </span>
                               </div>
                             </td>
@@ -553,17 +557,17 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="min-w-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-w-full min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate">
-                                    orders.update
+                                    {"orders.update"}
                                   </Badge>
                                 </div>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Writes refund status in 60/h window
+                                  {"Writes refund status in 60/h window"}
                                 </span>
                               </div>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-scope-size) * 1px)"}}>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Write
+                                {"Write"}
                               </Badge>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-auto-size) * 1px)"}}>
@@ -596,10 +600,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-reviewedAt-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Maya Perez
+                                  {"Maya Perez"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Jun 10
+                                  {"Jun 10"}
                                 </span>
                               </div>
                             </td>
@@ -607,11 +611,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="w-52" type="button" tabIndex="0" id="base-ui-_r_35_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="orders.update approver">
                                 <SelectValue>
-                                  Ops Desk
+                                  {"Ops Desk"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -623,10 +627,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-agentLabel-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Refund Resolver
+                                  {"Refund Resolver"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Knowledge
+                                  {"Knowledge"}
                                 </span>
                               </div>
                             </td>
@@ -634,17 +638,17 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="min-w-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-w-full min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate">
-                                    kb.search
+                                    {"kb.search"}
                                   </Badge>
                                 </div>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Finds Refund Escalation PB-31
+                                  {"Finds Refund Escalation PB-31"}
                                 </span>
                               </div>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-scope-size) * 1px)"}}>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                Read
+                                {"Read"}
                               </Badge>
                             </td>
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-auto-size) * 1px)"}}>
@@ -677,10 +681,10 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-reviewedAt-size) * 1px)"}}>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Noa Kim
+                                  {"Noa Kim"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Jun 12
+                                  {"Jun 12"}
                                 </span>
                               </div>
                             </td>
@@ -688,11 +692,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="w-52" type="button" tabIndex="0" id="base-ui-_r_3i_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="kb.search approver">
                                 <SelectValue>
-                                  Ops Desk
+                                  {"Ops Desk"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -701,30 +705,35 @@ export function Pattern() {
                             <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                           </tr>
                         </DataGridTableBody>
+                        </DataGridProvider>
                       </DataGridTable>
+                      </DataGridProvider>
                     </DataGridTableViewport>
+                    </DataGridProvider>
                   </div>
                 </div>
                 <div className="data-[orientation=horizontal]:border-t data-[orientation=horizontal]:border-t-transparent data-[orientation=horizontal]:flex-col data-[orientation=horizontal]:h-[var(--data-grid-scrollbar-size,0.625rem)] data-[orientation=horizontal]:mb-px data-[orientation=vertical]:border-s data-[orientation=vertical]:border-s-transparent data-[orientation=vertical]:h-full data-[orientation=vertical]:me-px data-[orientation=vertical]:w-[var(--data-grid-scrollbar-size,0.625rem)] flex p-px select-none touch-none transition-colors" data-orientation="horizontal" data-has-overflow-x="" data-overflow-x-end="" data-id="base-ui-_r_l_-scrollbar" style={{position: "absolute", touchAction: "none", userSelect: "none", insetInlineStart: "0px", insetInlineEnd: "var(--scroll-area-corner-width)", bottom: "0px", "--scroll-area-thumb-width": "1200.1317647058822px"}}>
                   <div className="before:-inset-0.5 before:absolute bg-border flex-1 relative rounded-full" data-orientation="horizontal" style={{width: "var(--scroll-area-thumb-width)", transform: "translate3d(0px, 0px, 0px)"}}></div>
                 </div>
               </DataGridScrollArea>
+              </DataGridProvider>
             </div>
           </FramePanel>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_3l_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    5
+                    {"5"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -732,29 +741,29 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 5 of 15
+                  {"1 - 5 of 15"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
-                    3
+                    {"3"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -763,6 +772,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </Frame>
         <div className="@5xl:grid-cols-3 gap-5 grid">
@@ -770,10 +780,10 @@ export function Pattern() {
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold leading-5 text-sm">
-                  Run Policies
+                  {"Run Policies"}
                 </div>
                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                  RUN-4822 calls use every policy.
+                  {"RUN-4822 calls use every policy."}
                 </div>
               </div>
             </header>
@@ -790,13 +800,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Dry Run
+                    {"Dry Run"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                      10 calls
+                      {"10 calls"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    First 10 calls stay in sandbox.
+                    {"First 10 calls stay in sandbox."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -819,13 +829,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Domain Block
+                    {"Domain Block"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      Hosts
+                      {"Hosts"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Unknown hosts are refused before run.
+                    {"Unknown hosts are refused before run."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -850,13 +860,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Call Logs
+                    {"Call Logs"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      30 days
+                      {"30 days"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Requests are retained for 30 days.
+                    {"Requests are retained for 30 days."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -879,13 +889,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Failure Pause
+                    {"Failure Pause"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      3 fails
+                      {"3 fails"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Agents pause after 3 failed calls.
+                    {"Agents pause after 3 failed calls."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -901,10 +911,10 @@ export function Pattern() {
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold leading-5 text-sm">
-                  Approval Routing
+                  {"Approval Routing"}
                 </div>
                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                  3 routes use approver teams.
+                  {"3 routes use approver teams."}
                 </div>
               </div>
             </header>
@@ -920,15 +930,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Finance Approvals
+                    {"Finance Approvals"}
                   </ItemTitle>
                   <ItemDescription>
-                    Refund writes above 500 USD route here.
+                    {"Refund writes above 500 USD route here."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    4h SLA
+                    {"4h SLA"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -946,15 +956,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Safety Review
+                    {"Safety Review"}
                   </ItemTitle>
                   <ItemDescription>
-                    Campaign sends and data exports need review.
+                    {"Campaign sends and data exports need review."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    2 reviewers
+                    {"2 reviewers"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -971,15 +981,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Ops Desk
+                    {"Ops Desk"}
                   </ItemTitle>
                   <ItemDescription>
-                    Low-risk reads and staging edits route by default.
+                    {"Low-risk reads and staging edits route by default."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Auto route
+                    {"Auto route"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -989,10 +999,10 @@ export function Pattern() {
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold leading-5 text-sm">
-                  Rate Windows
+                  {"Rate Windows"}
                 </div>
                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                  4 limits mirror matrix caps.
+                  {"4 limits mirror matrix caps."}
                 </div>
               </div>
             </header>
@@ -1009,15 +1019,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Refund Writes
+                    {"Refund Writes"}
                   </ItemTitle>
                   <ItemDescription>
-                    stripe.refunds.create stays at 30/h.
+                    {"stripe.refunds.create stays at 30/h."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Finance
+                    {"Finance"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -1033,15 +1043,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Outreach Sends
+                    {"Outreach Sends"}
                   </ItemTitle>
                   <ItemDescription>
-                    sendgrid.mail.send is capped at 200/h.
+                    {"sendgrid.mail.send is capped at 200/h."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Safety
+                    {"Safety"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -1059,15 +1069,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Vector Rebuild
+                    {"Vector Rebuild"}
                   </ItemTitle>
                   <ItemDescription>
-                    embeddings.rebuild can run 4/d.
+                    {"embeddings.rebuild can run 4/d."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Ops
+                    {"Ops"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -1084,15 +1094,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle>
-                    Hard Delete
+                    {"Hard Delete"}
                   </ItemTitle>
                   <ItemDescription>
-                    db.purge remains blocked in production.
+                    {"db.purge remains blocked in production."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Blocked
+                    {"Blocked"}
                   </Badge>
                 </ItemActions>
               </Item>

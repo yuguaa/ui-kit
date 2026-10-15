@@ -154,27 +154,29 @@ export function Pattern() {
                 </ItemMedia>
               </Item>
               <span className="font-medium text-[0.9375rem]">
-                NeUI
+                {"NeUI"}
               </span>
             </div>
             <div className="flex flex-col gap-3.5 items-center max-w-2xl">
               <h1 className="font-semibold leading-tight lg:text-[2.75rem] sm:text-3xl text-2xl text-balance text-slate-50">
-                Access With Trust
+                {"Access With Trust"}
               </h1>
               <p className="leading-5 lg:leading-6 lg:max-w-2xl lg:text-base max-w-xl sm:text-sm text-pretty text-slate-300 text-xs">
                 <span className="block sm:whitespace-nowrap">
-                  Give teams a calm, confident first touch before work begins.
+                  {"Give teams a calm, confident first touch before work begins."}
                 </span>
                 <span className="block sm:whitespace-nowrap">
-                  Secure access, backed by trusted proof.
+                  {"Secure access, backed by trusted proof."}
                 </span>
               </p>
             </div>
           </header>
           <div className="hidden lg:block py-1 sm:py-2">
             <Carousel className="mx-auto w-full" role="region" aria-roledescription="carousel" aria-label="Founder testimonials">
+              <Carousel>
               <CarouselContent>
                 <div className="-ml-3 flex py-1.5" style={{transform: "translate3d(186px, 0px, 0px)"}}>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                     <div className="h-full origin-center w-full" style={{opacity: "1", transform: "none"}}>
                       <Card className="bg-card duration-300 ease-out min-h-64 relative ring-1 ring-white/20 text-card-foreground transition-colors" size="sm" data-active="true">
@@ -186,24 +188,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              NeUI helped us turn a rough dashboard sketch into a shipped portal in one focused week.
+                              {"NeUI helped us turn a rough dashboard sketch into a shipped portal in one focused week."}
                             </p>
                             <p>
-                              The structure was ready. We tuned copy and made it feel like our product.
+                              {"The structure was ready. We tuned copy and made it feel like our product."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                MC
+                                {"MC"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Mira Chen
+                                {"Mira Chen"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Founder at AtlasForge
+                                {"Founder at AtlasForge"}
                               </p>
                             </div>
                           </div>
@@ -211,6 +213,8 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                     <div className="h-full origin-center w-full" style={{opacity: "0.66", transform: "translateY(3px) scale(0.9)"}}>
                       <Card className="backdrop-blur-sm bg-card/45 duration-300 ease-out min-h-64 relative ring-1 ring-white/10 text-card-foreground/75 transition-colors" size="sm" data-active="false">
@@ -222,24 +226,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              The auth and settings patterns gave our team shared language fast.
+                              {"The auth and settings patterns gave our team shared language fast."}
                             </p>
                             <p>
-                              We stopped debating screen basics and got back to the workflow.
+                              {"We stopped debating screen basics and got back to the workflow."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                JP
+                                {"JP"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Jonah Price
+                                {"Jonah Price"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Product Lead at NimbleStack
+                                {"Product Lead at NimbleStack"}
                               </p>
                             </div>
                           </div>
@@ -247,6 +251,8 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide">
                     <div className="h-full origin-center w-full" style={{opacity: "0.66", transform: "translateY(3px) scale(0.9)"}}>
                       <Card className="backdrop-blur-sm bg-card/45 duration-300 ease-out min-h-64 relative ring-1 ring-white/10 text-card-foreground/75 transition-colors" size="sm" data-active="false">
@@ -258,24 +264,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              Labels, states, keyboard paths, spacing, and responsive behavior were already handled.
+                              {"Labels, states, keyboard paths, spacing, and responsive behavior were already handled."}
                             </p>
                             <p>
-                              The copy was close enough that we avoided a launch rewrite.
+                              {"The copy was close enough that we avoided a launch rewrite."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                EM
+                                {"EM"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Elena Marquez
+                                {"Elena Marquez"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Design Systems Lead at CoilStack
+                                {"Design Systems Lead at CoilStack"}
                               </p>
                             </div>
                           </div>
@@ -283,6 +289,8 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide">
                     <div className="h-full origin-center w-full" style={{opacity: "0.66", transform: "translateY(3px) scale(0.9)"}}>
                       <Card className="backdrop-blur-sm bg-card/45 duration-300 ease-out min-h-64 relative ring-1 ring-white/10 text-card-foreground/75 transition-colors" size="sm" data-active="false">
@@ -294,24 +302,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              Our launch build finally felt like one connected product.
+                              {"Our launch build finally felt like one connected product."}
                             </p>
                             <p>
-                              The defaults were calm, practical, and easy for customers to trust.
+                              {"The defaults were calm, practical, and easy for customers to trust."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                PN
+                                {"PN"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Priya Nair
+                                {"Priya Nair"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Co-founder at PilotDesk
+                                {"Co-founder at PilotDesk"}
                               </p>
                             </div>
                           </div>
@@ -319,6 +327,8 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide">
                     <div className="h-full origin-center w-full" style={{opacity: "0.66", transform: "translateY(3px) scale(0.9)"}}>
                       <Card className="backdrop-blur-sm bg-card/45 duration-300 ease-out min-h-64 relative ring-1 ring-white/10 text-card-foreground/75 transition-colors" size="sm" data-active="false">
@@ -330,24 +340,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              The components landed without a cleanup sprint.
+                              {"The components landed without a cleanup sprint."}
                             </p>
                             <p>
-                              Engineers wired real data and the interface stayed composed.
+                              {"Engineers wired real data and the interface stayed composed."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                OH
+                                {"OH"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Owen Hart
+                                {"Owen Hart"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Engineering Manager at RelayKit
+                                {"Engineering Manager at RelayKit"}
                               </p>
                             </div>
                           </div>
@@ -355,6 +365,8 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="basis-[90%] flex items-center lg:basis-[43%] pl-3 sm:basis-[56%]" role="group" aria-roledescription="slide" style={{transform: "translate3d(-1682px, 0px, 0px)"}}>
                     <div className="h-full origin-center w-full" style={{opacity: "0.66", transform: "translateY(3px) scale(0.9)"}}>
                       <Card className="backdrop-blur-sm bg-card/45 duration-300 ease-out min-h-64 relative ring-1 ring-white/10 text-card-foreground/75 transition-colors" size="sm" data-active="false">
@@ -366,24 +378,24 @@ export function Pattern() {
                         <CardContent className="flex flex-1 flex-col gap-5 justify-between min-h-0 p-5 relative z-10">
                           <blockquote className="flex flex-col gap-2 leading-5 text-[0.8125rem] text-pretty">
                             <p>
-                              We replaced three uneven account screens with one polished flow.
+                              {"We replaced three uneven account screens with one polished flow."}
                             </p>
                             <p>
-                              The proof points felt ready for review, so we shipped faster.
+                              {"The proof points felt ready for review, so we shipped faster."}
                             </p>
                           </blockquote>
                           <div className="flex gap-2.5 items-center">
                             <Avatar className="size-8" size="default">
                               <AvatarFallback>
-                                SR
+                                {"SR"}
                               </AvatarFallback>
                             </Avatar>
                             <div className="min-w-0">
                               <p className="font-semibold text-sm truncate">
-                                Sofia Romero
+                                {"Sofia Romero"}
                               </p>
                               <p className="text-muted-foreground text-xs truncate">
-                                Operations Lead at Northstar Labs
+                                {"Operations Lead at Northstar Labs"}
                               </p>
                             </div>
                           </div>
@@ -391,8 +403,10 @@ export function Pattern() {
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
                 </div>
               </CarouselContent>
+              </Carousel>
               <div className="flex gap-1.5 items-center justify-center mt-4">
                 <button className="bg-white/35 data-[active=true]:bg-white data-[active=true]:ring-2 data-[active=true]:ring-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 focus-visible:ring-white/70 hover:bg-white/55 rounded-full size-1.5 transition-colors" type="button" aria-label="Go to testimonial 1" aria-current="true" data-active="true"></button>
                 <button className="bg-white/35 data-[active=true]:bg-white data-[active=true]:ring-2 data-[active=true]:ring-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 focus-visible:ring-white/70 hover:bg-white/55 rounded-full size-1.5 transition-colors" type="button" aria-label="Go to testimonial 2" data-active="false"></button>
@@ -407,7 +421,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 items-center text-center">
               <div className="flex-wrap font-medium gap-x-2.5 gap-y-2 inline-flex items-center justify-center leading-none max-w-full text-sm" aria-label="Rated Excellent by Trustpilot">
                 <span className="shrink-0 text-slate-100">
-                  Excellent
+                  {"Excellent"}
                 </span>
                 <span className="flex gap-0.5 items-center shrink-0" aria-hidden="true">
                   <Item className="bg-emerald-500 p-0 size-5 text-white" variant="default" size="default">
@@ -447,7 +461,7 @@ export function Pattern() {
                   </Item>
                 </span>
                 <span className="shrink-0 text-slate-300">
-                  by
+                  {"by"}
                 </span>
                 <svg className="[&>path:first-child]:fill-current h-[1.125rem] shrink-0 text-slate-50 w-auto" aria-hidden="true" viewBox="20.5 248.5 600 147.3">
                   <path fill="currentColor" d="M178.2 300.7h60.7V312H215v63.7h-13.1V312h-23.8zm58.1 20.7h11.2v10.5h.2c.4-1.5 1.1-2.9 2.1-4.3s2.2-2.7 3.7-3.8c1.4-1.2 3-2.1 4.8-2.8 1.7-.7 3.5-1.1 5.3-1.1 1.4 0 2.4.1 2.9.1.5.1 1.1.2 1.6.2v11.5c-.8-.2-1.7-.3-2.6-.4s-1.7-.2-2.6-.2c-2 0-3.9.4-5.7 1.2s-3.3 2-4.7 3.5c-1.3 1.6-2.4 3.5-3.2 5.8s-1.2 5-1.2 8v25.8h-12zm86.8 54.3h-11.8v-7.6h-.2c-1.5 2.8-3.7 4.9-6.6 6.6s-5.9 2.5-8.9 2.5c-7.1 0-12.3-1.7-15.5-5.3-3.2-3.5-4.8-8.9-4.8-16v-34.5h12v33.3c0 4.8.9 8.2 2.8 10.1 1.8 2 4.4 3 7.7 3 2.5 0 4.6-.4 6.3-1.2s3.1-1.8 4.1-3.1c1.1-1.3 1.8-2.9 2.3-4.7s.7-3.8.7-5.9v-31.5h12v54.3zm20.4-17.4c.4 3.5 1.7 5.9 4 7.4 2.3 1.4 5.1 2.1 8.3 2.1 1.1 0 2.4-.1 3.8-.3s2.8-.5 4-1c1.3-.5 2.3-1.2 3.1-2.2s1.2-2.2 1.1-3.7-.6-2.8-1.7-3.8-2.4-1.7-4-2.4c-1.6-.6-3.5-1.1-5.6-1.5s-4.2-.9-6.4-1.4-4.4-1.1-6.5-1.8-3.9-1.6-5.6-2.9c-1.6-1.2-3-2.7-3.9-4.6-1-1.9-1.5-4.1-1.5-6.9 0-3 .7-5.4 2.2-7.4 1.4-2 3.3-3.6 5.5-4.8s4.7-2.1 7.4-2.6 5.3-.7 7.7-.7c2.8 0 5.5.3 8 .9s4.9 1.5 6.9 2.9c2.1 1.3 3.8 3.1 5.1 5.2 1.4 2.1 2.2 4.7 2.6 7.7h-12.5c-.6-2.9-1.9-4.8-3.9-5.8-2.1-1-4.4-1.5-7.1-1.5-.8 0-1.9.1-3 .2-1.2.2-2.2.4-3.3.8-1 .4-1.9 1-2.6 1.7s-1.1 1.7-1.1 2.9c0 1.5.5 2.6 1.5 3.5s2.3 1.6 4 2.3c1.6.6 3.5 1.1 5.6 1.5s4.3.9 6.5 1.4 4.3 1.1 6.4 1.8 4 1.6 5.6 2.9c1.6 1.2 3 2.7 4 4.5s1.5 4.1 1.5 6.7c0 3.2-.7 5.9-2.2 8.2-1.5 2.2-3.4 4.1-5.7 5.5s-5 2.4-7.8 3.1c-2.9.6-5.7 1-8.5 1-3.4 0-6.6-.4-9.5-1.2s-5.5-2-7.6-3.5c-2.1-1.6-3.8-3.5-5-5.9-1.2-2.3-1.9-5.1-2-8.4h12.1v.1zm39.5-36.9h9.1V305h12v16.3h10.8v8.9h-10.8v29c0 1.3.1 2.3.2 3.3.1.9.4 1.7.7 2.3.4.6 1 1.1 1.7 1.4.8.3 1.8.5 3.2.5.8 0 1.7 0 2.5-.1s1.7-.2 2.5-.4v9.3c-1.3.2-2.6.3-3.9.4-1.3.2-2.5.2-3.9.2-3.2 0-5.7-.3-7.6-.9s-3.4-1.5-4.5-2.6c-1.1-1.2-1.8-2.6-2.2-4.3s-.6-3.8-.7-6v-32H383v-9.1zm40.3 0h11.3v7.4h.2c1.7-3.2 4-5.4 7-6.8s6.2-2.1 9.8-2.1c4.3 0 8 .7 11.2 2.3 3.2 1.5 5.8 3.5 7.9 6.2 2.1 2.6 3.7 5.7 4.7 9.2s1.6 7.3 1.6 11.2c0 3.7-.5 7.2-1.4 10.6-1 3.4-2.4 6.5-4.3 9.1s-4.3 4.7-7.3 6.3-6.4 2.4-10.4 2.4c-1.7 0-3.5-.2-5.2-.5s-3.4-.8-5-1.5-3.1-1.6-4.4-2.7c-1.4-1.1-2.5-2.4-3.4-3.8h-.2v27.1h-12v-74.4zm41.9 27.2c0-2.4-.3-4.8-1-7.1-.6-2.3-1.6-4.3-2.9-6.1s-2.9-3.2-4.7-4.3c-1.9-1.1-4.1-1.6-6.5-1.6-5 0-8.8 1.7-11.4 5.2-2.5 3.5-3.8 8.2-3.8 14 0 2.8.3 5.3 1 7.6s1.6 4.3 3 6c1.3 1.7 2.9 3 4.8 4s4 1.5 6.5 1.5c2.8 0 5-.6 6.9-1.7s3.4-2.6 4.7-4.3c1.2-1.8 2.1-3.8 2.6-6.1.5-2.4.8-4.7.8-7.1zm21.1-47.9h12V312h-12zm0 20.7h12v54.3h-12zm22.7-20.7h12v75h-12zm48.6 76.5c-4.3 0-8.2-.7-11.6-2.2s-6.2-3.4-8.6-5.9c-2.3-2.5-4.1-5.6-5.3-9.1s-1.9-7.4-1.9-11.5.6-7.9 1.9-11.4c1.2-3.5 3-6.5 5.3-9.1 2.3-2.5 5.2-4.5 8.6-5.9s7.3-2.2 11.6-2.2 8.2.7 11.6 2.2c3.4 1.4 6.2 3.4 8.6 5.9 2.3 2.5 4.1 5.6 5.3 9.1s1.9 7.3 1.9 11.4c0 4.2-.6 8-1.9 11.5s-3 6.5-5.3 9.1c-2.3 2.5-5.2 4.5-8.6 5.9s-7.2 2.2-11.6 2.2zm0-9.5c2.6 0 5-.6 6.9-1.7 2-1.1 3.5-2.6 4.8-4.4s2.2-3.9 2.8-6.1c.6-2.3.9-4.6.9-7 0-2.3-.3-4.6-.9-6.9s-1.5-4.3-2.8-6.1-2.9-3.2-4.8-4.3c-2-1.1-4.3-1.7-6.9-1.7s-5 .6-6.9 1.7c-2 1.1-3.5 2.6-4.8 4.3-1.3 1.8-2.2 3.8-2.8 6.1s-.9 4.6-.9 6.9c0 2.4.3 4.7.9 7s1.5 4.3 2.8 6.1 2.9 3.3 4.8 4.4c2 1.2 4.3 1.7 6.9 1.7zm31-46.3h9.1V305h12v16.3h10.8v8.9h-10.8v29c0 1.3.1 2.3.2 3.3.1.9.4 1.7.7 2.3.4.6 1 1.1 1.7 1.4.8.3 1.8.5 3.2.5.8 0 1.7 0 2.5-.1s1.7-.2 2.5-.4v9.3c-1.3.2-2.6.3-3.9.4-1.3.2-2.5.2-3.9.2-3.2 0-5.7-.3-7.6-.9s-3.4-1.5-4.5-2.6c-1.1-1.2-1.8-2.6-2.2-4.3s-.6-3.8-.7-6v-32h-9.1v-9.1z"></path>
@@ -456,7 +470,7 @@ export function Pattern() {
                 </svg>
               </div>
               <p className="leading-6 text-slate-300 text-sm">
-                Trusted by 14,800+ founders building production software.
+                {"Trusted by 14,800+ founders building production software."}
               </p>
             </div>
           </div>
@@ -469,10 +483,10 @@ export function Pattern() {
               <div className="flex flex-col gap-2 items-center text-center">
                 <div className="flex flex-col gap-1">
                   <h2 className="font-semibold text-xl tracking-tight">
-                    Welcome back
+                    {"Welcome back"}
                   </h2>
                   <p className="text-muted-foreground text-pretty text-sm">
-                    Sign in with your workspace credentials.
+                    {"Sign in with your workspace credentials."}
                   </p>
                 </div>
               </div>
@@ -480,17 +494,17 @@ export function Pattern() {
                 <FieldGroup className="gap-3.5">
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-2-identifier">
-                      Email or username
+                      {"Email or username"}
                     </FieldLabel>
                     <Input className="bg-background" id="auth-2-identifier" autoComplete="username" placeholder="Email or username" type="text"></Input>
                   </Field>
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <div className="flex gap-3 items-center justify-between">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-2-password">
-                        Password
+                        {"Password"}
                       </FieldLabel>
                       <Button className="cursor-pointer font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex="0">
-                        Forgot password?
+                        {"Forgot password?"}
                       </Button>
                     </div>
                     <InputGroup className="bg-background" role="group">
@@ -507,13 +521,13 @@ export function Pattern() {
                   </Field>
                 </FieldGroup>
                 <Button className="w-full" type="submit" tabIndex="0">
-                  Sign in
+                  {"Sign in"}
                 </Button>
               </form>
               <div className="flex gap-3 items-center">
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <span className="text-muted-foreground text-xs">
-                  Or continue with
+                  {"Or continue with"}
                 </span>
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               </div>
@@ -621,7 +635,7 @@ export function Pattern() {
                       <path fill="url(#s)" d="M219.7 299.023v59.996c5.506.64 11.236 1.028 17.247 1.028 6.026 0 11.855-.307 17.52-.872v-59.748a105.119 105.119 0 0 1-17.477 1.461c-5.932 0-11.7-.686-17.29-1.865Z" filter="url(#k)" opacity=".5"></path>
                     </g>
                   </svg>
-                  Google
+                  {"Google"}
                 </Button>
                 <Button className="w-full" type="button" tabIndex="0">
                   <span className="dark:hidden" aria-hidden="true">
@@ -634,7 +648,7 @@ export function Pattern() {
                       <path fill="#fff" d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
                     </svg>
                   </span>
-                  Apple
+                  {"Apple"}
                 </Button>
                 <Button className="w-full" type="button" tabIndex="0">
                   <span className="dark:hidden" aria-hidden="true">
@@ -647,36 +661,36 @@ export function Pattern() {
                       <path fillRule="evenodd" clipRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"></path>
                     </svg>
                   </span>
-                  GitHub
+                  {"GitHub"}
                 </Button>
               </div>
               <p className="text-center text-muted-foreground text-sm">
-                Need an account?
+                {"Need an account?"}
                 <Button className="cursor-pointer h-auto p-0" type="button" tabIndex="0">
-                  Sign up
+                  {"Sign up"}
                 </Button>
               </p>
             </div>
           </div>
           <footer className="flex flex-col gap-3 items-center justify-center leading-6 max-w-[38rem] mx-auto shrink-0 sm:flex-row sm:gap-4 text-center text-muted-foreground text-pretty text-xs">
             <p>
-              © 2026 NeUI
+              {"© 2026 NeUI"}
             </p>
             <nav aria-label="Authentication footer links">
               <ul className="flex gap-4 items-center justify-center">
                 <li>
                   <a className="hover:text-primary hover:underline hover:underline-offset-4 transition-colors" href="#">
-                    Terms
+                    {"Terms"}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary hover:underline hover:underline-offset-4 transition-colors" href="#">
-                    Privacy
+                    {"Privacy"}
                   </a>
                 </li>
                 <li>
                   <a className="hover:text-primary hover:underline hover:underline-offset-4 transition-colors" href="#">
-                    Help
+                    {"Help"}
                   </a>
                 </li>
               </ul>

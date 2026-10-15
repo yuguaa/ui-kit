@@ -24,11 +24,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Project create sheet
+        {"Project create sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-        Open project sheet
+        {"Open project sheet"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -36,10 +36,10 @@ export function Pattern() {
     <SheetContent className="h-[calc(100svh-2rem)] inset-y-4 left-auto max-w-none outline-none overflow-hidden right-4 rounded-xl w-[min(34rem,calc(100vw-2rem))]" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <SheetHeader className="p-0 shrink-0">
         <SheetTitle className="sr-only" id="base-ui-_r_3_">
-          Create project
+          {"Create project"}
         </SheetTitle>
         <SheetDescription className="sr-only" id="base-ui-_r_4_">
-          Add a project title, description, owners, labels, and planning metadata.
+          {"Add a project title, description, owners, labels, and planning metadata."}
         </SheetDescription>
       </SheetHeader>
       <div className="flex-1 min-h-0">
@@ -49,13 +49,13 @@ export function Pattern() {
               <FieldGroup className="gap-0">
                 <Field className="gap-0" role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="sheet-1-project-title">
-                    Project name
+                    {"Project name"}
                   </FieldLabel>
                   <Input className="bg-transparent border-0 focus-visible:ring-0 font-semibold h-auto px-0 py-0 rounded-none shadow-none text-2xl" id="sheet-1-project-title" placeholder="Project name" value=""></Input>
                 </Field>
                 <Field className="gap-0 mt-4" role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="sheet-1-project-description">
-                    Project description
+                    {"Project description"}
                   </FieldLabel>
                   <Textarea className="bg-transparent border-0 focus-visible:ring-0 min-h-12 px-0 py-0 resize-none rounded-none shadow-none text-muted-foreground" id="sheet-1-project-description" placeholder="Write a description, project brief, or collect ideas..." rows="2"></Textarea>
                 </Field>
@@ -67,7 +67,7 @@ export function Pattern() {
                       <circle cx="12" cy="12" r="10"></circle>
                     </svg>
                     <span className="truncate">
-                      Planned
+                      {"Planned"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -83,7 +83,7 @@ export function Pattern() {
                       <circle cx="5" cy="12" r="1"></circle>
                     </svg>
                     <span className="text-foreground! truncate">
-                      No priority
+                      {"No priority"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -98,7 +98,7 @@ export function Pattern() {
                       <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                     <span className="text-muted-foreground truncate">
-                      No lead
+                      {"No lead"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -115,7 +115,7 @@ export function Pattern() {
                       <circle cx="9" cy="7" r="4"></circle>
                     </svg>
                     <span className="text-muted-foreground truncate">
-                      Members
+                      {"Members"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -129,7 +129,7 @@ export function Pattern() {
                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                     </svg>
                     <span className="text-muted-foreground truncate">
-                      No milestone
+                      {"No milestone"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -146,7 +146,7 @@ export function Pattern() {
                       <path d="M3 10h18"></path>
                     </svg>
                     <span className="text-muted-foreground truncate">
-                      Set target date
+                      {"Set target date"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -161,7 +161,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="text-muted-foreground truncate">
-                      Add labels
+                      {"Add labels"}
                     </span>
                   </span>
                   <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -177,11 +177,11 @@ export function Pattern() {
                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                     </svg>
                     <span className="font-medium text-sm truncate">
-                      Quick Tips
+                      {"Quick Tips"}
                     </span>
                   </div>
                   <Button href="#" role="button" tabIndex="0">
-                    View Guide
+                    {"View Guide"}
                     <svg className="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
                       <path d="M10 14 21 3"></path>
@@ -192,26 +192,26 @@ export function Pattern() {
                 <div className="flex flex-col gap-1 mt-2">
                   <div className="flex gap-2 items-start leading-snug min-w-0 py-0.5 text-muted-foreground text-sm">
                     <span className="leading-none mt-0.5 shrink-0 text-[13px]" aria-hidden="true">
-                      ✨
+                      {"✨"}
                     </span>
                     <span>
-                      Start with the outcome, not every task.
+                      {"Start with the outcome, not every task."}
                     </span>
                   </div>
                   <div className="flex gap-2 items-start leading-snug min-w-0 py-0.5 text-muted-foreground text-sm">
                     <span className="leading-none mt-0.5 shrink-0 text-[13px]" aria-hidden="true">
-                      🎯
+                      {"🎯"}
                     </span>
                     <span>
-                      Choose one lead before adding members.
+                      {"Choose one lead before adding members."}
                     </span>
                   </div>
                   <div className="flex gap-2 items-start leading-snug min-w-0 py-0.5 text-muted-foreground text-sm">
                     <span className="leading-none mt-0.5 shrink-0 text-[13px]" aria-hidden="true">
-                      ⏱️
+                      {"⏱️"}
                     </span>
                     <span>
-                      Set timing when it affects launch or review.
+                      {"Set timing when it affects launch or review."}
                     </span>
                   </div>
                 </div>
@@ -223,10 +223,10 @@ export function Pattern() {
       <SheetFooter className="bg-muted border-t gap-3 shrink-0">
         <div className="flex flex-col gap-2">
           <Button className="w-full" type="submit" disabled="" tabIndex="0" disabled form="sheet-1-project-form">
-            Create project
+            {"Create project"}
           </Button>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0">
-            Close
+            {"Close"}
           </SheetClose>
         </div>
       </SheetFooter>
@@ -236,7 +236,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </SheetClose>
     </SheetContent>

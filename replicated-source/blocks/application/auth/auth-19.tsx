@@ -33,15 +33,15 @@ export function Pattern() {
             </ItemMedia>
           </Item>
           <span className="font-medium text-[0.9375rem]">
-            NeUI
+            {"NeUI"}
           </span>
         </div>
         <div className="flex gap-2 items-center text-sm">
           <span className="hidden sm:inline text-muted-foreground">
-            Need workspace access?
+            {"Need workspace access?"}
           </span>
           <Button className="font-medium h-auto p-0" href="#" role="button" tabIndex="0">
-            Request invite
+            {"Request invite"}
           </Button>
         </div>
       </header>
@@ -51,10 +51,10 @@ export function Pattern() {
             <CardHeader className="pb-5 pt-8 px-7 sm:pb-6 sm:pt-9 sm:px-9">
               <div className="space-y-1">
                 <CardTitle className="font-semibold text-2xl text-balance tracking-tight">
-                  Welcome back
+                  {"Welcome back"}
                 </CardTitle>
                 <CardDescription className="text-pretty">
-                  Use your approved workspace email to receive a secure sign-in link.
+                  {"Use your approved workspace email to receive a secure sign-in link."}
                 </CardDescription>
               </div>
             </CardHeader>
@@ -164,7 +164,7 @@ export function Pattern() {
                     </g>
                   </svg>
                   <span>
-                    Continue with Google
+                    {"Continue with Google"}
                   </span>
                 </Button>
                 <Button className="[&_svg:not([class*='size-'])]:size-4 px-4 w-full" type="button" tabIndex="0">
@@ -179,14 +179,14 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span>
-                    Continue with GitHub
+                    {"Continue with GitHub"}
                   </span>
                 </Button>
               </div>
               <div className="flex gap-3 items-center">
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <span className="text-muted-foreground text-xs">
-                  or
+                  {"or"}
                 </span>
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               </div>
@@ -194,7 +194,7 @@ export function Pattern() {
                 <FieldGroup>
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-19-email">
-                      Work email
+                      {"Work email"}
                     </FieldLabel>
                     <InputGroup role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
@@ -208,7 +208,7 @@ export function Pattern() {
                   </Field>
                 </FieldGroup>
                 <Button className="w-full" type="submit" tabIndex="0">
-                  Continue with email
+                  {"Continue with email"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -219,15 +219,15 @@ export function Pattern() {
           </Card>
           <footer className="flex flex-col gap-2 items-center leading-5 max-w-[26rem] text-center text-muted-foreground text-pretty text-xs">
             <p>
-              By continuing, you agree to NeUI's
+              {"By continuing, you agree to NeUI's"}
               <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                Terms
+                {"Terms"}
               </a>
-              and
+              {"and"}
               <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                Privacy Policy
+                {"Privacy Policy"}
               </a>
-              .
+              {"."}
             </p>
           </footer>
         </div>

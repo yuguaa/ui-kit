@@ -13,37 +13,29 @@ export function Pattern() {
             <div className="p-5">
               <div className="flex gap-3 items-start justify-between mb-3 min-w-0">
                 <h3 className="text-muted-foreground text-sm">
-                  Net worth
+                  {"Net worth"}
                 </h3>
                 <span className="leading-none text-muted-foreground text-xs">
-                  1w
+                  {"1w"}
                 </span>
               </div>
               <div className="flex gap-2 items-center min-w-0">
                 <span className="font-semibold text-2xl text-foreground">
-                  $6.8M
+                  {"$6.8M"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
-                  +$185k
+                  {"+$185k"}
                 </Badge>
               </div>
             </div>
             <div className="mt-auto w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-16 justify-center text-xs w-full" data-chart="chart-_r_0_" aria-label="Net worth trend" role="img">
-                <style>{`
- [data-chart=chart-_r_0_] {
-  --color-value: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-_r_0_] {
-  --color-value: var(--color-emerald-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_0_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_0_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
@@ -90,13 +82,14 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
           <FramePanel className="flex flex-col min-h-38 p-0!">
             <div className="p-5">
               <div className="flex gap-3 items-start justify-between mb-3 min-w-0">
                 <h3 className="text-muted-foreground text-sm">
-                  Portfolio
+                  {"Portfolio"}
                 </h3>
                 <div className="flex gap-1 items-center shrink-0" aria-hidden="true">
                   <span className="contents" title="Google">
@@ -222,29 +215,21 @@ export function Pattern() {
               </div>
               <div className="flex gap-2 items-center min-w-0">
                 <span className="font-semibold text-2xl text-foreground">
-                  $4.2M
+                  {"$4.2M"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                     <path d="M16 17h6v-6"></path>
                     <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                   </svg>
-                  -$96k
+                  {"-$96k"}
                 </Badge>
               </div>
             </div>
             <div className="mt-auto w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-16 justify-center text-xs w-full" data-chart="chart-_r_1_" aria-label="Portfolio trend" role="img">
-                <style>{`
- [data-chart=chart-_r_1_] {
-  --color-value: var(--color-rose-500);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-value: var(--color-rose-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-value: var(--color-rose-500);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-value: var(--color-rose-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
@@ -291,13 +276,14 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
           <FramePanel className="flex flex-col min-h-38 p-0!">
             <div className="p-5">
               <div className="flex gap-3 items-start justify-between mb-3 min-w-0">
                 <h3 className="text-muted-foreground text-sm">
-                  Investments
+                  {"Investments"}
                 </h3>
                 <div className="flex gap-1 items-center shrink-0" aria-hidden="true">
                   <span className="contents" title="OpenAI">
@@ -355,7 +341,7 @@ export function Pattern() {
               </div>
               <div className="flex gap-2 items-center min-w-0">
                 <span className="font-semibold text-2xl text-foreground">
-                  +0.14%
+                  {"+0.14%"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
@@ -363,22 +349,14 @@ export function Pattern() {
                     <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                     <path d="M12 18V6"></path>
                   </svg>
-                  +$89k
+                  {"+$89k"}
                 </Badge>
               </div>
             </div>
             <div className="mt-auto w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-16 justify-center text-xs w-full" data-chart="chart-_r_2_" aria-label="Investments trend" role="img">
-                <style>{`
- [data-chart=chart-_r_2_] {
-  --color-value: var(--color-amber-500);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-value: var(--color-amber-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-value: var(--color-amber-500);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-value: var(--color-amber-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
@@ -425,43 +403,36 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
           <FramePanel className="flex flex-col min-h-38 p-0!">
             <div className="p-5">
               <div className="flex gap-3 items-start justify-between mb-3 min-w-0">
                 <h3 className="text-muted-foreground text-sm">
-                  Cashflow
+                  {"Cashflow"}
                 </h3>
                 <span className="leading-none text-muted-foreground text-xs">
-                  1w
+                  {"1w"}
                 </span>
               </div>
               <div className="flex gap-2 items-center min-w-0">
                 <span className="font-semibold text-2xl text-foreground">
-                  $320k
+                  {"$320k"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
-                  +$73k
+                  {"+$73k"}
                 </Badge>
               </div>
             </div>
             <div className="mt-auto w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-16 justify-center text-xs w-full" data-chart="chart-_r_3_" aria-label="Cashflow trend" role="img">
-                <style>{`
- [data-chart=chart-_r_3_] {
-  --color-value: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-value: var(--color-emerald-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
@@ -508,6 +479,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
         </div>

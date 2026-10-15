@@ -34,11 +34,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Support hub dialog
+        {"Support hub dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open support hub
+          {"Open support hub"}
         </Button>
       </div>
     </main>
@@ -46,10 +46,10 @@ export function Pattern() {
     <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col gap-0 max-h-[min(88vh,44rem)] overflow-hidden p-0 sm:max-w-2xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="gap-1 pb-3 pt-4 px-5 text-left">
         <DialogTitle id="base-ui-_r_2_">
-          Need a hand with setup?
+          {"Need a hand with setup?"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Choose the fastest path to the right team.
+          {"Choose the fastest path to the right team."}
         </DialogDescription>
       </DialogHeader>
       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -68,15 +68,15 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="truncate">
-                        Setup guides
+                        {"Setup guides"}
                       </span>
                     </ItemTitle>
                     <ItemDescription className="text-sm">
-                      Admin and onboarding references.
+                      {"Admin and onboarding references."}
                     </ItemDescription>
                   </ItemContent>
                   <Button type="button" tabIndex="0">
-                    Open guides
+                    {"Open guides"}
                   </Button>
                 </div>
                 <div className="border-b border-border border-dashed first:pt-0 flex gap-3 items-center last:border-b-0 last:pb-0 py-3">
@@ -89,15 +89,15 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="truncate">
-                        Short walkthroughs
+                        {"Short walkthroughs"}
                       </span>
                     </ItemTitle>
                     <ItemDescription className="text-sm">
-                      Quick lessons for rollout.
+                      {"Quick lessons for rollout."}
                     </ItemDescription>
                   </ItemContent>
                   <Button type="button" tabIndex="0">
-                    Watch videos
+                    {"Watch videos"}
                   </Button>
                 </div>
                 <div className="border-b border-border border-dashed first:pt-0 flex gap-3 items-center last:border-b-0 last:pb-0 py-3">
@@ -112,15 +112,15 @@ export function Pattern() {
                   <ItemContent className="gap-0.5 min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="truncate">
-                        Product feedback
+                        {"Product feedback"}
                       </span>
                     </ItemTitle>
                     <ItemDescription className="text-sm">
-                      Share missing patterns.
+                      {"Share missing patterns."}
                     </ItemDescription>
                   </ItemContent>
                   <Button type="button" tabIndex="0">
-                    Send feedback
+                    {"Send feedback"}
                   </Button>
                 </div>
               </ItemGroup>
@@ -128,7 +128,7 @@ export function Pattern() {
           </Card>
           <section className="flex flex-col gap-2.5">
             <p className="font-medium text-muted-foreground text-xs">
-              Escalation paths
+              {"Escalation paths"}
             </p>
             <div className="gap-5 grid items-stretch md:grid-cols-2">
               <Card className="gap-0 h-full p-0" size="default">
@@ -136,32 +136,32 @@ export function Pattern() {
                   <div className="flex gap-2 items-center min-w-0">
                     <Avatar className="size-10" size="default">
                       <AvatarFallback>
-                        MC
+                        {"MC"}
                       </AvatarFallback>
                     </Avatar>
                     <div className="flex flex-col">
                       <div className="flex gap-2 items-center">
                         <CardTitle>
-                          Advisor office hours
+                          {"Advisor office hours"}
                         </CardTitle>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                          Office hours
+                          {"Office hours"}
                         </Badge>
                       </div>
                       <CardDescription>
-                        Guided setup review.
+                        {"Guided setup review."}
                       </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="px-3">
                   <p className="text-muted-foreground text-sm">
-                    Bring setup questions for a faster next step.
+                    {"Bring setup questions for a faster next step."}
                   </p>
                 </CardContent>
                 <CardFooter className="border-t mt-auto p-3">
                   <Button className="w-full" type="button" tabIndex="0">
-                    Reserve a session
+                    {"Reserve a session"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -176,22 +176,22 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-col">
                       <CardTitle>
-                        Direct support desk
+                        {"Direct support desk"}
                       </CardTitle>
                       <CardDescription>
-                        Account and product help.
+                        {"Account and product help."}
                       </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="px-3">
                   <p className="text-muted-foreground text-sm">
-                    Replies usually land within one business day.
+                    {"Replies usually land within one business day."}
                   </p>
                 </CardContent>
                 <CardFooter className="border-t mt-auto p-3">
                   <Button className="w-full" type="button" tabIndex="0">
-                    Email support
+                    {"Email support"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -205,7 +205,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

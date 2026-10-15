@@ -176,10 +176,10 @@ export function Pattern() {
             </div>
             <div className="relative space-y-4 z-10">
               <h3 className="leading-tight text-accent-foreground text-xs">
-                Reminder!
+                {"Reminder!"}
               </h3>
               <p className="leading-relaxed text-sm">
-                Renewal coming up in 3 days on February 28th
+                {"Renewal coming up in 3 days on February 28th"}
               </p>
             </div>
           </FramePanel>
@@ -351,10 +351,10 @@ export function Pattern() {
             </div>
             <div className="relative space-y-4 z-10">
               <h3 className="leading-tight text-accent-foreground text-xs">
-                Tip!
+                {"Tip!"}
               </h3>
               <p className="leading-relaxed text-sm">
-                Try dark mode for better night viewing
+                {"Try dark mode for better night viewing"}
               </p>
             </div>
           </FramePanel>
@@ -526,10 +526,10 @@ export function Pattern() {
             </div>
             <div className="relative space-y-4 z-10">
               <h3 className="leading-tight text-accent-foreground text-xs">
-                Update!
+                {"Update!"}
               </h3>
               <p className="leading-relaxed text-sm">
-                New features added to your dashboard
+                {"New features added to your dashboard"}
               </p>
             </div>
           </FramePanel>
@@ -701,10 +701,10 @@ export function Pattern() {
             </div>
             <div className="relative space-y-4 z-10">
               <h3 className="leading-tight text-accent-foreground text-xs">
-                Alert!
+                {"Alert!"}
               </h3>
               <p className="leading-relaxed text-sm">
-                Renewal is coming up in 3 days on May 28th
+                {"Renewal is coming up in 3 days on May 28th"}
               </p>
             </div>
           </FramePanel>

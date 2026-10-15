@@ -46,7 +46,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-10 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Create project dialog
+        {"Create project dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
@@ -55,7 +55,7 @@ export function Pattern() {
             <path d="M9 13h6"></path>
             <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
           </svg>
-          Open project dialog
+          {"Open project dialog"}
         </Button>
       </div>
     </main>
@@ -69,10 +69,10 @@ export function Pattern() {
                 <path d="m12 19-7-7 7-7"></path>
                 <path d="M19 12H5"></path>
               </svg>
-              Back
+              {"Back"}
             </DialogClose>
             <Button href="#" role="button" tabIndex="0">
-              Support
+              {"Support"}
               <svg className="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M15 3h6v6"></path>
                 <path d="M10 14 21 3"></path>
@@ -88,7 +88,7 @@ export function Pattern() {
                 <div className="flex flex-col gap-0.5 py-2">
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <DialogTitle className="leading-6 text-lg" id="base-ui-_r_3_">
-                      Create Project
+                      {"Create Project"}
                     </DialogTitle>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-secondary disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button h-7 inline-flex items-center justify-center outline-none px-2.5 select-none shrink-0 text-xs transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
@@ -99,7 +99,7 @@ export function Pattern() {
                         <path d="M16 13H8"></path>
                         <path d="M16 17H8"></path>
                       </svg>
-                      Select template
+                      {"Select template"}
                       <svg className="lucide lucide-chevron-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -107,14 +107,14 @@ export function Pattern() {
                     </DropdownMenu>
                   </div>
                   <DialogDescription className="leading-5 max-w-xl text-sm" id="base-ui-_r_9_">
-                    Set details, owner, timing, and labels.
+                    {"Set details, owner, timing, and labels."}
                   </DialogDescription>
                 </div>
                 <FieldGroup className="gap-4">
                   <div className="gap-3 grid sm:grid-cols-[minmax(0,1fr)_8rem]">
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-name">
-                        Project name
+                        {"Project name"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <InputGroupAddon role="group" data-align="inline-start">
@@ -129,7 +129,7 @@ export function Pattern() {
                     </Field>
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-key">
-                        Key
+                        {"Key"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground uppercase w-full" id="project-key" value="BEC" />
@@ -139,7 +139,7 @@ export function Pattern() {
                   <Field className="gap-1.5" role="group" data-orientation="vertical">
                     <div className="flex gap-1.5 items-center leading-none w-fit">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-summary">
-                        Project brief
+                        {"Project brief"}
                       </FieldLabel>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center rounded-sm shrink-0 size-4 text-muted-foreground transition-colors" type="button" aria-label="Project brief help" id="base-ui-_r_d_" baseUiTooltipTrigger="">
@@ -152,13 +152,13 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <Textarea className="min-h-20 resize-none" id="project-summary">
-                      Audit subscription event mapping before the partner beta opens to billing admins.
+                      {"Audit subscription event mapping before the partner beta opens to billing admins."}
                     </Textarea>
                   </Field>
                   <div className="gap-3 grid sm:grid-cols-2">
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-status">
-                        Status
+                        {"Status"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="project-status" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -166,13 +166,13 @@ export function Pattern() {
                           <span className="flex gap-2 items-center min-w-0">
                             <span className="bg-sky-500 rounded-full size-2" aria-hidden="true"></span>
                             <span className="truncate">
-                              Planned
+                              {"Planned"}
                             </span>
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -180,7 +180,7 @@ export function Pattern() {
                     </Field>
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-assignee">
-                        Assigned
+                        {"Assigned"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="project-assignee" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -191,14 +191,14 @@ export function Pattern() {
                             </Avatar>
                             <span className="flex flex-col gap-px items-start min-w-0">
                               <span className="truncate">
-                                Maya Stone
+                                {"Maya Stone"}
                               </span>
                             </span>
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -207,7 +207,7 @@ export function Pattern() {
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <div className="flex gap-1.5 items-center leading-none w-fit">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-due-date">
-                          Due date
+                          {"Due date"}
                         </FieldLabel>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center rounded-sm shrink-0 size-4 text-muted-foreground transition-colors" type="button" aria-label="Due date help" id="base-ui-_r_l_" baseUiTooltipTrigger="">
@@ -230,13 +230,13 @@ export function Pattern() {
                               <path d="M3 10h18"></path>
                             </svg>
                             <span className="truncate">
-                              Next Friday
+                              {"Next Friday"}
                             </span>
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -245,7 +245,7 @@ export function Pattern() {
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <div className="flex gap-1.5 items-center leading-none w-fit">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="project-priority">
-                          Priority
+                          {"Priority"}
                         </FieldLabel>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center rounded-sm shrink-0 size-4 text-muted-foreground transition-colors" type="button" aria-label="Priority help" id="base-ui-_r_q_" baseUiTooltipTrigger="">
@@ -267,13 +267,13 @@ export function Pattern() {
                               <span className="bg-current h-3.5 rounded-sm w-1"></span>
                             </span>
                             <span className="truncate">
-                              High
+                              {"High"}
                             </span>
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -285,7 +285,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0">
                         <div className="flex gap-1.5 items-center leading-none w-fit">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-                            Labels
+                            {"Labels"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center rounded-sm shrink-0 size-4 text-muted-foreground transition-colors" type="button" aria-label="Labels help" id="base-ui-_r_v_" baseUiTooltipTrigger="">
@@ -298,11 +298,11 @@ export function Pattern() {
                           </Tooltip>
                         </div>
                         <FieldDescription>
-                          Tag the project for planning and reporting.
+                          {"Tag the project for planning and reporting."}
                         </FieldDescription>
                       </FieldContent>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                        2 selected
+                        {"2 selected"}
                       </Badge>
                     </div>
                     <FieldGroup className="gap-2 grid sm:grid-cols-2">
@@ -317,10 +317,10 @@ export function Pattern() {
                         <input id="project-label-feature" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5 min-w-0">
                           <span className="font-medium text-sm truncate">
-                            Feature
+                            {"Feature"}
                           </span>
                           <FieldDescription className="truncate">
-                            Product-facing capability.
+                            {"Product-facing capability."}
                           </FieldDescription>
                         </FieldContent>
                       </FieldLabel>
@@ -335,10 +335,10 @@ export function Pattern() {
                         <input id="project-label-billing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5 min-w-0">
                           <span className="font-medium text-sm truncate">
-                            Billing
+                            {"Billing"}
                           </span>
                           <FieldDescription className="truncate">
-                            Revenue or plan logic.
+                            {"Revenue or plan logic."}
                           </FieldDescription>
                         </FieldContent>
                       </FieldLabel>
@@ -347,10 +347,10 @@ export function Pattern() {
                         <input id="project-label-design" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5 min-w-0">
                           <span className="font-medium text-sm truncate">
-                            Design
+                            {"Design"}
                           </span>
                           <FieldDescription className="truncate">
-                            Interface or UX work.
+                            {"Interface or UX work."}
                           </FieldDescription>
                         </FieldContent>
                       </FieldLabel>
@@ -359,10 +359,10 @@ export function Pattern() {
                         <input id="project-label-ops" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5 min-w-0">
                           <span className="font-medium text-sm truncate">
-                            Operations
+                            {"Operations"}
                           </span>
                           <FieldDescription className="truncate">
-                            Process and rollout tasks.
+                            {"Process and rollout tasks."}
                           </FieldDescription>
                         </FieldContent>
                       </FieldLabel>
@@ -389,15 +389,15 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <span className="font-medium truncate">
-                Project draft
+                {"Project draft"}
               </span>
             </div>
             <div className="flex gap-2 items-center justify-end shrink-0 sm:w-auto w-full">
               <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-                Cancel
+                {"Cancel"}
               </DialogClose>
               <Button type="submit" tabIndex="0">
-                Create project
+                {"Create project"}
               </Button>
             </div>
           </div>

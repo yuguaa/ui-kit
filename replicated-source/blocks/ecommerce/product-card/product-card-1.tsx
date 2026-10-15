@@ -18,7 +18,7 @@ export function Pattern() {
             <BreadcrumbList className="justify-center">
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -28,7 +28,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Apparel
+                  {"Apparel"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -38,13 +38,13 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Studio Capsule
+                  {"Studio Capsule"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
           <h2 className="font-semibold md:text-4xl text-3xl tracking-tight">
-            New Season Apparel
+            {"New Season Apparel"}
           </h2>
         </div>
         <div className="gap-5 grid lg:grid-cols-4 sm:grid-cols-2">
@@ -62,24 +62,24 @@ export function Pattern() {
             <div className="flex flex-col gap-1 min-w-0">
               <div className="flex gap-2 items-center min-h-5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline leading-5 min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#" aria-label="View Studio Outerwear products">
-                  Studio Outerwear
+                  {"Studio Outerwear"}
                 </a>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                  New
+                  {"New"}
                 </Badge>
               </div>
               <h3 className="font-semibold text-base truncate">
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Leather Biker Jacket
+                  {"Leather Biker Jacket"}
                 </a>
               </h3>
               <p className="line-clamp-1 text-muted-foreground text-sm">
-                Polished leather with a sharp stance.
+                {"Polished leather with a sharp stance."}
               </p>
             </div>
             <div className="flex font-semibold gap-2 items-center min-w-0 tabular-nums text-sm">
               <span>
-                $248.00
+                {"$248.00"}
               </span>
             </div>
           </article>
@@ -90,7 +90,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-2 top-2">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  -25%
+                  {"-25%"}
                 </Badge>
               </div>
               <Button className="absolute right-2 top-2" type="button" tabIndex="0" aria-label="Remove Gloss Puffer Jacket from wishlist" aria-pressed="true">
@@ -102,24 +102,24 @@ export function Pattern() {
             <div className="flex flex-col gap-1 min-w-0">
               <div className="flex gap-2 items-center min-h-5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline leading-5 min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#" aria-label="View Winter Layers products">
-                  Winter Layers
+                  {"Winter Layers"}
                 </a>
               </div>
               <h3 className="font-semibold text-base truncate">
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Gloss Puffer Jacket
+                  {"Gloss Puffer Jacket"}
                 </a>
               </h3>
               <p className="line-clamp-1 text-muted-foreground text-sm">
-                High-shine warmth with a clean fit.
+                {"High-shine warmth with a clean fit."}
               </p>
             </div>
             <div className="flex font-semibold gap-2 items-center min-w-0 tabular-nums text-sm">
               <span className="font-normal line-through text-muted-foreground">
-                $198.00
+                {"$198.00"}
               </span>
               <span>
-                $148.00
+                {"$148.00"}
               </span>
             </div>
           </article>
@@ -137,24 +137,24 @@ export function Pattern() {
             <div className="flex flex-col gap-1 min-w-0">
               <div className="flex gap-2 items-center min-h-5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline leading-5 min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#" aria-label="View Travel Essentials products">
-                  Travel Essentials
+                  {"Travel Essentials"}
                 </a>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Trending
+                  {"Trending"}
                 </Badge>
               </div>
               <h3 className="font-semibold text-base truncate">
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Airline Tank Set
+                  {"Airline Tank Set"}
                 </a>
               </h3>
               <p className="line-clamp-1 text-muted-foreground text-sm">
-                Relaxed tank and tapered joggers.
+                {"Relaxed tank and tapered joggers."}
               </p>
             </div>
             <div className="flex font-semibold gap-2 items-center min-w-0 tabular-nums text-sm">
               <span>
-                $86.00
+                {"$86.00"}
               </span>
             </div>
           </article>
@@ -172,21 +172,21 @@ export function Pattern() {
             <div className="flex flex-col gap-1 min-w-0">
               <div className="flex gap-2 items-center min-h-5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline leading-5 min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#" aria-label="View Denim Studio products">
-                  Denim Studio
+                  {"Denim Studio"}
                 </a>
               </div>
               <h3 className="font-semibold text-base truncate">
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Wide-Leg Denim Set
+                  {"Wide-Leg Denim Set"}
                 </a>
               </h3>
               <p className="line-clamp-1 text-muted-foreground text-sm">
-                Easy tank styling with wide-leg jeans.
+                {"Easy tank styling with wide-leg jeans."}
               </p>
             </div>
             <div className="flex font-semibold gap-2 items-center min-w-0 tabular-nums text-sm">
               <span>
-                $132.00
+                {"$132.00"}
               </span>
             </div>
           </article>

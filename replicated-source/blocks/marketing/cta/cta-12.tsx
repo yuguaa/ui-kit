@@ -16,48 +16,28 @@ export function Pattern() {
             </div>
             <div className="@min-[640px]:max-w-none @min-[640px]:p-[3.75cqw] @min-[640px]:w-[48.75cqw] flex flex-col gap-6 items-start max-w-md pb-[48cqw] pt-8 px-6 relative">
               <h2 className="@min-[1120px]:text-4xl font-semibold text-3xl text-balance text-white" id="cta-12-title">
-                Build Modern Apps
+                {"Build Modern Apps"}
                 <span className="font-bold">
-                  Faster
+                  {"Faster"}
                 </span>
                 <span className="block">
-                  With NeUI Blocks
+                  {"With NeUI Blocks"}
                 </span>
               </h2>
               <p className="text-white/60">
-                Install production-ready components and templates from the NeUI registry, then customize them for your product.
+                {"Install production-ready components and templates from the NeUI registry, then customize them for your product."}
               </p>
               <div className="[--secondary-foreground:var(--color-white)] [--secondary:#ffffff1a] flex flex-wrap gap-x-4 gap-y-2 items-center">
                 <Button href="#" role="button" tabIndex="0">
-                  Start Building
+                  {"Start Building"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
-                  Read Docs
+                  {"Read Docs"}
                 </Button>
               </div>
               <Separator className="[--border:#ffffff1a] max-w-md" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <div className="flex flex-wrap gap-x-5 gap-y-2 items-center">
-                <style>{`
-@keyframes cta12-proof-ring {
-  0%, 100% { transform: scale(0.9); opacity: 0; }
-  12% { opacity: 0.5; }
-  70%, 99% { transform: scale(2.2); opacity: 0; }
-}
-
-.cta12-proof-ring {
-  animation-name: cta12-proof-ring;
-  animation-duration: 5.4s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  animation-delay: var(--cta12-ring-delay, 0s);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta12-proof-ring {
-    animation: none;
-  }
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n@keyframes cta12-proof-ring {\n  0%, 100% { transform: scale(0.9); opacity: 0; }\n  12% { opacity: 0.5; }\n  70%, 99% { transform: scale(2.2); opacity: 0; }\n}\n\n.cta12-proof-ring {\n  animation-name: cta12-proof-ring;\n  animation-duration: 5.4s;\n  animation-timing-function: ease-out;\n  animation-iteration-count: infinite;\n  animation-delay: var(--cta12-ring-delay, 0s);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .cta12-proof-ring {\n    animation: none;\n  }\n}\n" }} />
                 <div className="flex gap-1.5 items-center">
                   <span className="flex items-center justify-center relative shrink-0 size-4">
                     <span className="absolute border border-indigo-500 cta12-proof-ring inset-0 opacity-0 rounded-full" aria-hidden="true" style={{"--cta12-ring-delay": "0s"}}></span>
@@ -67,7 +47,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="text-sm">
-                    Live integrations
+                    {"Live integrations"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
@@ -79,7 +59,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="text-sm">
-                    Agent ready
+                    {"Agent ready"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
@@ -91,7 +71,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="text-sm">
-                    Open standards
+                    {"Open standards"}
                   </span>
                 </div>
               </div>

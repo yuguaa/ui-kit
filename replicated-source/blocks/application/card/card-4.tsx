@@ -44,7 +44,7 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2.5">
                 <a className="font-medium hover:text-white/80 leading-none text-3xl text-white transition-colors" href="#">
-                  $28.5k
+                  {"$28.5k"}
                 </a>
                 <div className="flex gap-1.5 items-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-black/20 border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
@@ -53,11 +53,11 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span>
-                      23.08%
+                      {"23.08%"}
                     </span>
                   </Badge>
                   <span className="text-white/80 text-xs">
-                    Annual trend
+                    {"Annual trend"}
                   </span>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export function Pattern() {
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) p-0! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <a className="flex flex-row font-medium gap-2 group items-center justify-between no-underline px-2 py-2 text-xs w-full" href="#">
               <span className="group-hover:text-zinc-400 text-white transition-colors">
-                Full Sales Report
+                {"Full Sales Report"}
               </span>
               <svg className="group-hover:text-zinc-400 lucide lucide-arrow-right shrink-0 size-4 text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
@@ -107,7 +107,7 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2.5">
                 <a className="font-medium hover:text-white/80 leading-none text-3xl text-white transition-colors" href="#">
-                  2.3k
+                  {"2.3k"}
                 </a>
                 <div className="flex gap-1.5 items-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-black/20 border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
@@ -116,11 +116,11 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span>
-                      12%
+                      {"12%"}
                     </span>
                   </Badge>
                   <span className="text-white/80 text-xs">
-                    More Signups
+                    {"More Signups"}
                   </span>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export function Pattern() {
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) p-0! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <a className="flex flex-row font-medium gap-2 group items-center justify-between no-underline px-2 py-2 text-xs w-full" href="#">
               <span className="group-hover:text-zinc-400 text-white transition-colors">
-                Full Customer Report
+                {"Full Customer Report"}
               </span>
               <svg className="group-hover:text-zinc-400 lucide lucide-arrow-right shrink-0 size-4 text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
@@ -173,7 +173,7 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2.5">
                 <a className="font-medium hover:text-white/80 leading-none text-3xl text-white transition-colors" href="#">
-                  84%
+                  {"84%"}
                 </a>
                 <div className="flex gap-1.5 items-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-black/20 border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
@@ -182,11 +182,11 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span>
-                      18.4%
+                      {"18.4%"}
                     </span>
                   </Badge>
                   <span className="text-white/80 text-xs">
-                    Conversion Lift
+                    {"Conversion Lift"}
                   </span>
                 </div>
               </div>
@@ -195,7 +195,7 @@ export function Pattern() {
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) p-0! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <a className="flex flex-row font-medium gap-2 group items-center justify-between no-underline px-2 py-2 text-xs w-full" href="#">
               <span className="group-hover:text-zinc-400 text-white transition-colors">
-                Full Growth Report
+                {"Full Growth Report"}
               </span>
               <svg className="group-hover:text-zinc-400 lucide lucide-arrow-right shrink-0 size-4 text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
@@ -236,7 +236,7 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-2.5">
                 <a className="font-medium hover:text-white/80 leading-none text-3xl text-white transition-colors" href="#">
-                  1.2k
+                  {"1.2k"}
                 </a>
                 <div className="flex gap-1.5 items-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-black/20 border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
@@ -245,11 +245,11 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span>
-                      9.7%
+                      {"9.7%"}
                     </span>
                   </Badge>
                   <span className="text-white/80 text-xs">
-                    Active Runs
+                    {"Active Runs"}
                   </span>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export function Pattern() {
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) p-0! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <a className="flex flex-row font-medium gap-2 group items-center justify-between no-underline px-2 py-2 text-xs w-full" href="#">
               <span className="group-hover:text-zinc-400 text-white transition-colors">
-                Full Activity Report
+                {"Full Activity Report"}
               </span>
               <svg className="group-hover:text-zinc-400 lucide lucide-arrow-right shrink-0 size-4 text-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>

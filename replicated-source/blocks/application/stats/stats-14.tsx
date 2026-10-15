@@ -15,10 +15,10 @@ export function Pattern() {
           <div className="flex gap-3 items-start justify-between mb-6">
             <div className="flex flex-col gap-0.5">
               <div className="font-semibold text-sm">
-                Feature Adoption
+                {"Feature Adoption"}
               </div>
               <div className="font-medium text-muted-foreground text-sm">
-                Best adoption report
+                {"Best adoption report"}
               </div>
             </div>
             <DropdownMenu>
@@ -33,7 +33,7 @@ export function Pattern() {
           </div>
           <div className="space-y-6">
             <div className="font-bold text-5xl text-foreground">
-              84%
+              {"84%"}
             </div>
             <div className="flex gap-2 h-32 items-end relative w-full">
               <div className="cursor-pointer flex flex-1 flex-col justify-end min-w-0 transition-all">

@@ -90,35 +90,23 @@ export function Pattern() {
                 <polyline points="0.0,474.0 19.0,475.1 38.1,476.2 57.1,477.3 76.2,478.4 95.2,479.4 114.3,480.3 133.3,481.2 152.4,482.0 171.4,482.8 190.5,483.4 209.5,484.0 228.6,484.4 247.6,484.8 266.7,485.0 285.7,485.2 304.8,485.2 323.8,485.1 342.9,484.9 361.9,484.6 381.0,484.2 400.0,483.7 419.0,483.1 438.1,482.4 457.1,481.6 476.2,480.8 495.2,479.8 514.3,478.9 533.3,477.8 552.4,476.8 571.4,475.7 590.5,474.6 609.5,473.4 628.6,472.3 647.6,471.2 666.7,470.2 685.7,469.1 704.8,468.2 723.8,467.2 742.9,466.4 761.9,465.6 781.0,464.9 800.0,464.3 819.0,463.8 838.1,463.4 857.1,463.1 876.2,462.9 895.2,462.8 914.3,462.8 933.3,463.0 952.4,463.2 971.4,463.6 990.5,464.0 1009.5,464.6 1028.6,465.2 1047.6,466.0 1066.7,466.8 1085.7,467.7 1104.8,468.6 1123.8,469.6 1142.9,470.7 1161.9,471.8 1181.0,472.9 1200.0,474.0" opacity="0.12"></polyline>
               </g>
             </g>
-            <style>{`
-  .cta6-flow {
-    animation: cta6-stream-flow 22s linear infinite;
-    will-change: transform;
-  }
-  @keyframes cta6-stream-flow {
-    from { transform: translateX(0); }
-    to { transform: translateX(-1200px); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .cta6-flow { animation: none; }
-  }
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n  .cta6-flow {\n    animation: cta6-stream-flow 22s linear infinite;\n    will-change: transform;\n  }\n  @keyframes cta6-stream-flow {\n    from { transform: translateX(0); }\n    to { transform: translateX(-1200px); }\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .cta6-flow { animation: none; }\n  }\n" }} />
           </svg>
           <div className="absolute inset-0" aria-hidden="true" style={{background: "radial-gradient(72% 82% at 50% 46%, oklch(0.12 0.02 285 / 0.66) 0%, transparent 72%)"}}></div>
           <div className="flex flex-col gap-6 items-center lg:py-32 px-6 py-20 relative sm:px-10 sm:py-28 text-center">
             <h2 className="font-semibold leading-[1.08] lg:text-6xl max-w-3xl sm:text-5xl text-4xl text-[oklch(0.98_0.01_285)] tracking-tight" id="cta-6-title">
               <span className="block">
-                Ship Interfaces
+                {"Ship Interfaces"}
               </span>
               <span className="block">
-                Worth Showing
+                {"Worth Showing"}
               </span>
             </h2>
             <p className="leading-7 max-w-xl sm:leading-8 sm:text-lg text-[oklch(0.83_0.02_285)] text-balance text-base">
-              Production-grade NeUI blocks make every release look considered from day one, so you ship polished UI without a redesign pass.
+              {"Production-grade NeUI blocks make every release look considered from day one, so you ship polished UI without a redesign pass."}
             </p>
             <Button className="bg-[oklch(0.97_0.01_285)] hover:bg-[oklch(0.9_0.02_285)] hover:text-[oklch(0.2_0.03_285)] mt-2 px-8 rounded-full text-[oklch(0.2_0.03_285)]" href="#" role="button" tabIndex="0">
-              Start Building
+              {"Start Building"}
             </Button>
           </div>
         </Card>

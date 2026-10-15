@@ -17,14 +17,14 @@ export function Pattern() {
       <section className="flex flex-col gap-10 items-center max-w-4xl mx-auto px-6 py-14 sm:py-16 w-full" aria-labelledby="faq-2-title">
         <div className="flex flex-col gap-4 items-center max-w-2xl text-center">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-            FAQs
+            {"FAQs"}
           </Badge>
           <div className="flex flex-col gap-2">
             <h2 className="font-semibold sm:text-3xl text-2xl text-balance text-foreground tracking-tight" id="faq-2-title">
-              Questions Teams Ask
+              {"Questions Teams Ask"}
             </h2>
             <p className="max-w-sm text-balance text-muted-foreground text-sm">
-              Straight answers about adapting, owning, and shipping NeUI blocks to production.
+              {"Straight answers about adapting, owning, and shipping NeUI blocks to production."}
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-index="0" data-open="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_1_" aria-expanded="true" id="base-ui-_r_2_" tabIndex="0" extracted="1">
                   <span className="text-balance">
-                    Can I ship these blocks in client products?
+                    {"Can I ship these blocks in client products?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -47,7 +47,7 @@ export function Pattern() {
               <AccordionContent data-orientation="vertical" index="0" data-open="" id="base-ui-_r_1_" aria-labelledby="base-ui-_r_2_" role="region" style={{"--accordion-panel-height": "auto", "--accordion-panel-width": "auto", animationName: "none"}}>
                 <div className="[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 cn-accordion-content-inner data-ending-style:h-0 data-starting-style:h-0 h-(--accordion-panel-height) leading-6 pb-4 text-muted-foreground text-pretty text-sm">
                   <p>
-                    These blocks ship as production React surfaces, so your team adapts copy, tokens, and data without rebuilding the interaction model from scratch.
+                    {"These blocks ship as production React surfaces, so your team adapts copy, tokens, and data without rebuilding the interaction model from scratch."}
                   </p>
                 </div>
               </AccordionContent>
@@ -56,7 +56,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="1" data-closed="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" hidden="" index="1" aria-disabled="false" aria-expanded="false" id="base-ui-_r_5_" tabIndex="0">
                   <span className="text-balance">
-                    How much work is needed to match our brand?
+                    {"How much work is needed to match our brand?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -71,7 +71,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="2" data-closed="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" hidden="" index="2" aria-disabled="false" aria-expanded="false" id="base-ui-_r_8_" tabIndex="0">
                   <span className="text-balance">
-                    What happens when our content gets longer?
+                    {"What happens when our content gets longer?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -88,7 +88,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-index="3" data-open="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" index="3" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_a_" aria-expanded="true" id="base-ui-_r_b_" tabIndex="0">
                   <span className="text-balance">
-                    Are the blocks locked to a single app framework?
+                    {"Are the blocks locked to a single app framework?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -101,7 +101,7 @@ export function Pattern() {
               <AccordionContent data-orientation="vertical" index="3" data-open="" id="base-ui-_r_a_" aria-labelledby="base-ui-_r_b_" role="region" style={{"--accordion-panel-height": "auto", "--accordion-panel-width": "auto", animationName: "none"}}>
                 <div className="[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 cn-accordion-content-inner data-ending-style:h-0 data-starting-style:h-0 h-(--accordion-panel-height) leading-6 pb-4 text-muted-foreground text-pretty text-sm">
                   <p>
-                    No. Registry blocks avoid Next runtime primitives and use portable React, shadcn components, and local demo data that can be swapped for your stack.
+                    {"No. Registry blocks avoid Next runtime primitives and use portable React, shadcn components, and local demo data that can be swapped for your stack."}
                   </p>
                 </div>
               </AccordionContent>
@@ -110,7 +110,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="4" data-closed="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" hidden="" index="4" aria-disabled="false" aria-expanded="false" id="base-ui-_r_e_" tabIndex="0">
                   <span className="text-balance">
-                    Will updates overwrite our custom changes?
+                    {"Will updates overwrite our custom changes?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -125,7 +125,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="5" data-closed="">
                 <AccordionTrigger className="[&>svg]:my-auto font-semibold gap-4 hover:no-underline leading-6 py-4 text-[15px] text-left tracking-tight" type="button" value="client-projects,framework-lock" data-orientation="vertical" hidden="" index="5" aria-disabled="false" aria-expanded="false" id="base-ui-_r_h_" tabIndex="0">
                   <span className="text-balance">
-                    Can designers review the same source engineers use?
+                    {"Can designers review the same source engineers use?"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -316,15 +316,15 @@ export function Pattern() {
               </span>
               <div className="flex flex-col gap-1">
                 <p className="font-medium text-foreground text-sm">
-                  Still have a question?
+                  {"Still have a question?"}
                 </p>
                 <p className="leading-5 text-muted-foreground text-sm">
-                  Bring your edge case to review and map it to one block and one owner.
+                  {"Bring your edge case to review and map it to one block and one owner."}
                 </p>
               </div>
             </div>
             <Button className="relative z-10" href="#" role="button" tabIndex="0">
-              Book a review
+              {"Book a review"}
             </Button>
           </FramePanel>
         </Frame>

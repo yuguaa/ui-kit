@@ -24,15 +24,15 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-medium text-[0.9375rem]">
-              NeUI
+              {"NeUI"}
             </span>
           </div>
           <div className="flex gap-2 items-center text-sm">
             <span className="hidden sm:inline text-muted-foreground">
-              Not on NeUI yet?
+              {"Not on NeUI yet?"}
             </span>
             <Button className="font-medium h-auto p-0" type="button" tabIndex="0">
-              Create a workspace
+              {"Create a workspace"}
             </Button>
           </div>
         </header>
@@ -40,10 +40,10 @@ export function Pattern() {
           <div className="flex flex-col gap-6 max-w-sm w-full">
             <div className="flex flex-col gap-1.5 text-center">
               <h1 className="font-semibold sm:text-[1.6875rem] text-2xl text-balance tracking-tight">
-                Back to building.
+                {"Back to building."}
               </h1>
               <p className="text-muted-foreground text-pretty text-sm">
-                Sign in to sync your team, tasks, and timelines across every surface.
+                {"Sign in to sync your team, tasks, and timelines across every surface."}
               </p>
             </div>
             <div className="gap-2.5 grid">
@@ -150,7 +150,7 @@ export function Pattern() {
                     <path fill="url(#s)" d="M219.7 299.023v59.996c5.506.64 11.236 1.028 17.247 1.028 6.026 0 11.855-.307 17.52-.872v-59.748a105.119 105.119 0 0 1-17.477 1.461c-5.932 0-11.7-.686-17.29-1.865Z" filter="url(#k)" opacity=".5"></path>
                   </g>
                 </svg>
-                Continue with Google
+                {"Continue with Google"}
               </Button>
               <Button className="[&_svg:not([class*='size-'])]:size-4 px-4 w-full" type="button" tabIndex="0">
                 <span className="dark:hidden" aria-hidden="true">
@@ -163,20 +163,20 @@ export function Pattern() {
                     <path fillRule="evenodd" clipRule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"></path>
                   </svg>
                 </span>
-                Continue with GitHub
+                {"Continue with GitHub"}
               </Button>
               <Button className="[&_svg:not([class*='size-'])]:size-4 px-4 w-full" type="button" tabIndex="0">
                 <svg className="lucide lucide-key-round" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" data-icon="inline-start">
                   <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
                   <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                 </svg>
-                Use Single Sign-On
+                {"Use Single Sign-On"}
               </Button>
             </div>
             <div className="flex gap-3 items-center">
               <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <span className="text-muted-foreground text-xs">
-                or
+                {"or"}
               </span>
               <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             </div>
@@ -184,13 +184,13 @@ export function Pattern() {
               <FieldGroup>
                 <Field className="gap-2" role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-16-email">
-                    Work email
+                    {"Work email"}
                   </FieldLabel>
                   <Input id="auth-16-email" autoComplete="email" placeholder="you@company.com" type="email"></Input>
                 </Field>
               </FieldGroup>
               <Button className="w-full" type="submit" tabIndex="0">
-                Continue
+                {"Continue"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -198,28 +198,28 @@ export function Pattern() {
               </Button>
             </form>
             <p className="leading-5 text-center text-muted-foreground text-pretty text-xs">
-              By continuing, you agree to NeUI's
+              {"By continuing, you agree to NeUI's"}
               <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                Terms of Service
+                {"Terms of Service"}
               </a>
-              and
+              {"and"}
               <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                Privacy Policy
+                {"Privacy Policy"}
               </a>
-              .
+              {"."}
             </p>
           </div>
         </main>
         <footer className="flex flex-col gap-6 items-center px-6 py-10 sm:px-8 sm:py-12">
           <p className="sm:text-sm text-muted-foreground text-xs">
-            Joining 14,000+ product teams shipping faster with NeUI
+            {"Joining 14,000+ product teams shipping faster with NeUI"}
           </p>
           <div className="flex flex-wrap gap-x-8 gap-y-4 items-center justify-center opacity-70 sm:gap-x-10" role="list" aria-label="Customers building with NeUI">
             <div role="listitem" aria-label="Anthropic">
               <span className="dark:hidden" aria-hidden="true">
                 <svg className="h-3 w-auto" aria-hidden="true" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                   <title>
-                    Anthropic
+                    {"Anthropic"}
                   </title>
                   <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                 </svg>
@@ -227,7 +227,7 @@ export function Pattern() {
               <span className="dark:block hidden" aria-hidden="true">
                 <svg className="h-3 w-auto" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                   <title>
-                    Anthropic
+                    {"Anthropic"}
                   </title>
                   <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                 </svg>

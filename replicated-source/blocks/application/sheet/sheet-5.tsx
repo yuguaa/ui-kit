@@ -44,14 +44,14 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Client comments sheet
+        {"Client comments sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
         <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" data-icon="inline-start" aria-hidden="true">
           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
         </svg>
-        Open comments
+        {"Open comments"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -69,10 +69,10 @@ export function Pattern() {
             </Item>
             <div className="flex gap-2 items-center min-w-0">
               <SheetTitle className="leading-5 text-sm truncate" id="base-ui-_r_3_">
-                All comments for Stripe
+                {"All comments for Stripe"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                6
+                {"6"}
               </Badge>
             </div>
           </div>
@@ -83,7 +83,7 @@ export function Pattern() {
                 <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
               </svg>
               <span className="sr-only">
-                Show open comments
+                {"Show open comments"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -105,7 +105,7 @@ export function Pattern() {
           </div>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_b_">
-          Command thread for Stripe
+          {"Command thread for Stripe"}
         </SheetDescription>
       </SheetHeader>
       <div className="flex-1 min-h-0">
@@ -122,14 +122,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        Emily Parker
+                        {"Emily Parker"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        4 minutes ago
+                        {"4 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      Can we name the SSO owner before the client review?
+                      {"Can we name the SSO owner before the client review?"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center min-w-0 mt-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
@@ -139,7 +139,7 @@ export function Pattern() {
                           <line x1="9" x2="9.01" y1="9" y2="9"></line>
                           <line x1="15" x2="15.01" y1="9" y2="9"></line>
                         </svg>
-                        2
+                        {"2"}
                       </Badge>
                     </div>
                   </ItemContent>
@@ -189,14 +189,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        James Miller
+                        {"James Miller"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        8 minutes ago
+                        {"8 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      Moved the procurement note above the renewal risk summary.
+                      {"Moved the procurement note above the renewal risk summary."}
                     </p>
                   </ItemContent>
                   <ItemActions className="absolute bg-background/95 border gap-0.5 group-focus-within/comment:opacity-100 group-hover/comment:opacity-100 opacity-0 p-0.5 right-2 rounded-lg shadow-xs top-2 transition-opacity" role="toolbar" aria-label="Actions for James Miller's comment">
@@ -245,14 +245,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        Daniel Brooks
+                        {"Daniel Brooks"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        14 minutes ago
+                        {"14 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      Call out SCIM separately from SAML in the diagram.
+                      {"Call out SCIM separately from SAML in the diagram."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center min-w-0 mt-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
@@ -262,7 +262,7 @@ export function Pattern() {
                           <line x1="9" x2="9.01" y1="9" y2="9"></line>
                           <line x1="15" x2="15.01" y1="9" y2="9"></line>
                         </svg>
-                        1
+                        {"1"}
                       </Badge>
                     </div>
                   </ItemContent>
@@ -312,14 +312,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        Olivia Carter
+                        {"Olivia Carter"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        22 minutes ago
+                        {"22 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      Keep the executive summary to two sharp sentences.
+                      {"Keep the executive summary to two sharp sentences."}
                     </p>
                   </ItemContent>
                   <ItemActions className="absolute bg-background/95 border gap-0.5 group-focus-within/comment:opacity-100 group-hover/comment:opacity-100 opacity-0 p-0.5 right-2 rounded-lg shadow-xs top-2 transition-opacity" role="toolbar" aria-label="Actions for Olivia Carter's comment">
@@ -368,14 +368,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        James Miller
+                        {"James Miller"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        31 minutes ago
+                        {"31 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      I’ll move the budget note into the renewal section.
+                      {"I’ll move the budget note into the renewal section."}
                     </p>
                   </ItemContent>
                   <ItemActions className="absolute bg-background/95 border gap-0.5 group-focus-within/comment:opacity-100 group-hover/comment:opacity-100 opacity-0 p-0.5 right-2 rounded-lg shadow-xs top-2 transition-opacity" role="toolbar" aria-label="Actions for James Miller's comment">
@@ -424,14 +424,14 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0">
                       <ItemTitle className="font-medium leading-5 text-sm truncate">
-                        Hannah Stone
+                        {"Hannah Stone"}
                       </ItemTitle>
                       <span className="text-muted-foreground text-xs">
-                        44 minutes ago
+                        {"44 minutes ago"}
                       </span>
                     </div>
                     <p className="leading-5 text-sm">
-                      Retention copy is approved with the exception note attached.
+                      {"Retention copy is approved with the exception note attached."}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center min-w-0 mt-1.5">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
@@ -441,7 +441,7 @@ export function Pattern() {
                           <line x1="9" x2="9.01" y1="9" y2="9"></line>
                           <line x1="15" x2="15.01" y1="9" y2="9"></line>
                         </svg>
-                        3
+                        {"3"}
                       </Badge>
                     </div>
                   </ItemContent>
@@ -494,7 +494,7 @@ export function Pattern() {
         <form className="w-full">
           <Field className="gap-2" role="group" data-orientation="vertical">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="sheet-5-comment">
-              Add comment
+              {"Add comment"}
             </FieldLabel>
             <InputGroup className="rounded-xl" role="group">
               <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" id="sheet-5-comment" placeholder="Add a comment..." rows="2" aria-label="Add comment"></textarea>
@@ -510,7 +510,7 @@ export function Pattern() {
                   </Button>
                   <Button className="cn-input-group-button cn-input-group-button-size-icon-sm flex shadow-none" type="button" tabIndex="0" size="icon-sm" aria-label="Mention teammate">
                     <span aria-hidden="true">
-                      @
+                      {"@"}
                     </span>
                   </Button>
                   <Button className="cn-input-group-button cn-input-group-button-size-icon-sm flex shadow-none" type="button" tabIndex="0" size="icon-sm" aria-label="Attach file">
@@ -520,10 +520,10 @@ export function Pattern() {
                   </Button>
                 </div>
                 <Button className="cn-input-group-button cn-input-group-button-size-sm flex ml-auto shadow-none" type="button" tabIndex="0" size="sm">
-                  Cancel
+                  {"Cancel"}
                 </Button>
                 <Button className="cn-input-group-button cn-input-group-button-size-sm flex shadow-none" type="submit" tabIndex="0" size="sm">
-                  Post Comment
+                  {"Post Comment"}
                 </Button>
               </InputGroupAddon>
             </InputGroup>

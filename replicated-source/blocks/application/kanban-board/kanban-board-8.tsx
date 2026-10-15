@@ -36,17 +36,17 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center p-4 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Release readiness kanban board
+        {"Release readiness kanban board"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1280px] mx-auto w-full">
         <header className="px-1 py-1" aria-label="Release readiness toolbar">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div className="min-w-0">
               <h2 className="font-semibold leading-7 text-lg truncate">
-                Release Readiness Board
+                {"Release Readiness Board"}
               </h2>
               <p className="leading-5 line-clamp-1 max-w-[44ch] mt-0.5 text-muted-foreground text-sm">
-                Readiness, risk, and launch checks.
+                {"Readiness, risk, and launch checks."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full" role="group" aria-label="Release board actions">
@@ -54,7 +54,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" data-icon="inline-start" aria-hidden="true">
@@ -65,14 +65,14 @@ export function Pattern() {
                   <path d="M8 2v4"></path>
                   <circle cx="16" cy="16" r="6"></circle>
                 </svg>
-                Windows
+                {"Windows"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New change
+                {"New change"}
               </Button>
             </div>
           </div>
@@ -87,10 +87,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-muted-foreground/45 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Intake">
-                          Intake
+                          {"Intake"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          3
+                          {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add intake change" title="Add intake change">
@@ -118,15 +118,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8429
+                                    {"REL-8429"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Enable saved cards for guest checkout">
-                                    Enable saved cards for guest checkout
+                                    {"Enable saved cards for guest checkout"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                    Medium
+                                    {"Medium"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -143,10 +143,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Checkout
+                                        {"Checkout"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -167,7 +167,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        Apr 30, 20:00 UTC
+                                        {"Apr 30, 20:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -182,7 +182,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Nina Santos
+                                      {"Nina Santos"}
                                     </span>
                                   </div>
                                 </div>
@@ -191,21 +191,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      1/4 - 25%
+                                      {"1/4 - 25%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-chart-2 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" aria-valuetext="25%" role="progressbar" aria-labelledby="base-ui-_r_1_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1_" role="presentation">
-                                      REL-8429 checklist progress
+                                      {"REL-8429 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "25%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -219,15 +219,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8427
+                                    {"REL-8427"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Add resend controls to login recovery">
-                                    Add resend controls to login recovery
+                                    {"Add resend controls to login recovery"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -244,10 +244,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Identity
+                                        {"Identity"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Staging
+                                        {"Staging"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -268,7 +268,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 1, 16:30 UTC
+                                        {"May 1, 16:30 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -283,7 +283,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Jonah Lee
+                                      {"Jonah Lee"}
                                     </span>
                                   </div>
                                 </div>
@@ -292,21 +292,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      2/4 - 50%
+                                      {"2/4 - 50%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-muted-foreground/35 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" aria-valuetext="50%" role="progressbar" aria-labelledby="base-ui-_r_2_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2_" role="presentation">
-                                      REL-8427 checklist progress
+                                      {"REL-8427 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "50%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -320,15 +320,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8425
+                                    {"REL-8425"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Log receipt resend events for admins">
-                                    Log receipt resend events for admins
+                                    {"Log receipt resend events for admins"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -346,10 +346,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Billing
+                                        {"Billing"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Staging
+                                        {"Staging"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -370,7 +370,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 1, 19:00 UTC
+                                        {"May 1, 19:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -385,7 +385,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Theo Vincent
+                                      {"Theo Vincent"}
                                     </span>
                                   </div>
                                 </div>
@@ -394,21 +394,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      1/3 - 33%
+                                      {"1/3 - 33%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-muted-foreground/35 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="33" aria-valuetext="33%" role="progressbar" aria-labelledby="base-ui-_r_3_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_3_" role="presentation">
-                                      REL-8425 checklist progress
+                                      {"REL-8425 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "33%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -424,10 +424,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-info rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Review Needed">
-                          Review Needed
+                          {"Review Needed"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          3
+                          {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add review change" title="Add review change">
@@ -455,15 +455,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8421
+                                    {"REL-8421"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Split EU checkout traffic by processor">
-                                    Split EU checkout traffic by processor
+                                    {"Split EU checkout traffic by processor"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                    Critical
+                                    {"Critical"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -480,10 +480,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Checkout
+                                        {"Checkout"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -504,7 +504,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        Apr 30, 22:00 UTC
+                                        {"Apr 30, 22:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -519,7 +519,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Maya Patel
+                                      {"Maya Patel"}
                                     </span>
                                   </div>
                                 </div>
@@ -528,21 +528,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      2/5 - 40%
+                                      {"2/5 - 40%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" aria-valuetext="40%" role="progressbar" aria-labelledby="base-ui-_r_4_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_4_" role="presentation">
-                                      REL-8421 checklist progress
+                                      {"REL-8421 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "40%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -556,15 +556,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8418
+                                    {"REL-8418"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Raise webhook retry ceiling for partners">
-                                    Raise webhook retry ceiling for partners
+                                    {"Raise webhook retry ceiling for partners"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    High
+                                    {"High"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -582,10 +582,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Webhooks
+                                        {"Webhooks"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -606,7 +606,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 1, 18:30 UTC
+                                        {"May 1, 18:30 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -621,7 +621,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </span>
                                   </div>
                                 </div>
@@ -630,21 +630,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      3/5 - 60%
+                                      {"3/5 - 60%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="60%" role="progressbar" aria-labelledby="base-ui-_r_5_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5_" role="presentation">
-                                      REL-8418 checklist progress
+                                      {"REL-8418 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "60%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -658,15 +658,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8417
+                                    {"REL-8417"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Confirm processor failover limits">
-                                    Confirm processor failover limits
+                                    {"Confirm processor failover limits"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    High
+                                    {"High"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -683,10 +683,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Checkout
+                                        {"Checkout"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -707,7 +707,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 1, 21:00 UTC
+                                        {"May 1, 21:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -722,7 +722,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Priya Menon
+                                      {"Priya Menon"}
                                     </span>
                                   </div>
                                 </div>
@@ -731,21 +731,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      2/5 - 40%
+                                      {"2/5 - 40%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" aria-valuetext="40%" role="progressbar" aria-labelledby="base-ui-_r_6_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6_" role="presentation">
-                                      REL-8417 checklist progress
+                                      {"REL-8417 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "40%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -761,10 +761,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-destructive rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Blocked">
-                          Blocked
+                          {"Blocked"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          2
+                          {"2"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add blocked change" title="Add blocked change">
@@ -792,15 +792,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8416
+                                    {"REL-8416"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Rotate signing keys for session tokens">
-                                    Rotate signing keys for session tokens
+                                    {"Rotate signing keys for session tokens"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    High
+                                    {"High"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -817,10 +817,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Identity
+                                        {"Identity"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -841,7 +841,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 2, 19:30 UTC
+                                        {"May 2, 19:30 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -856,7 +856,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Priya Menon
+                                      {"Priya Menon"}
                                     </span>
                                   </div>
                                 </div>
@@ -865,21 +865,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      2/4 - 50%
+                                      {"2/4 - 50%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" aria-valuetext="50%" role="progressbar" aria-labelledby="base-ui-_r_7_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_7_" role="presentation">
-                                      REL-8416 checklist progress
+                                      {"REL-8416 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "50%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -893,15 +893,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8413
+                                    {"REL-8413"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Rebuild analytics partitions for exports">
-                                    Rebuild analytics partitions for exports
+                                    {"Rebuild analytics partitions for exports"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                    Critical
+                                    {"Critical"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -920,10 +920,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Analytics
+                                        {"Analytics"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Staging
+                                        {"Staging"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -944,7 +944,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 2, 23:00 UTC
+                                        {"May 2, 23:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -959,7 +959,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Theo Vincent
+                                      {"Theo Vincent"}
                                     </span>
                                   </div>
                                 </div>
@@ -968,21 +968,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      1/5 - 20%
+                                      {"1/5 - 20%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" aria-valuetext="20%" role="progressbar" aria-labelledby="base-ui-_r_8_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8_" role="presentation">
-                                      REL-8413 checklist progress
+                                      {"REL-8413 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "20%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -998,10 +998,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-chart-2 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Scheduled">
-                          Scheduled
+                          {"Scheduled"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          3
+                          {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add scheduled change" title="Add scheduled change">
@@ -1029,15 +1029,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8408
+                                    {"REL-8408"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Move invoice workers to new queues">
-                                    Move invoice workers to new queues
+                                    {"Move invoice workers to new queues"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                    Medium
+                                    {"Medium"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1055,10 +1055,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Billing
+                                        {"Billing"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Staging
+                                        {"Staging"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1079,7 +1079,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 3, 21:00 UTC
+                                        {"May 3, 21:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1094,7 +1094,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Theo Vincent
+                                      {"Theo Vincent"}
                                     </span>
                                   </div>
                                 </div>
@@ -1103,21 +1103,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      4/5 - 80%
+                                      {"4/5 - 80%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-chart-2 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="80%" role="progressbar" aria-labelledby="base-ui-_r_9_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_9_" role="presentation">
-                                      REL-8408 checklist progress
+                                      {"REL-8408 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "80%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1131,15 +1131,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8405
+                                    {"REL-8405"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Expand partner delivery event schema">
-                                    Expand partner delivery event schema
+                                    {"Expand partner delivery event schema"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                    Medium
+                                    {"Medium"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1157,10 +1157,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Webhooks
+                                        {"Webhooks"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1181,7 +1181,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 4, 17:30 UTC
+                                        {"May 4, 17:30 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1196,7 +1196,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </span>
                                   </div>
                                 </div>
@@ -1205,21 +1205,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      3/4 - 75%
+                                      {"3/4 - 75%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-info **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="75%" role="progressbar" aria-labelledby="base-ui-_r_a_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_a_" role="presentation">
-                                      REL-8405 checklist progress
+                                      {"REL-8405 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "75%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1233,15 +1233,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8402
+                                    {"REL-8402"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Reshard billing export queue">
-                                    Reshard billing export queue
+                                    {"Reshard billing export queue"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                    Medium
+                                    {"Medium"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1259,10 +1259,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Billing
+                                        {"Billing"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1283,7 +1283,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 4, 23:00 UTC
+                                        {"May 4, 23:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1298,7 +1298,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Nina Santos
+                                      {"Nina Santos"}
                                     </span>
                                   </div>
                                 </div>
@@ -1307,21 +1307,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      3/5 - 60%
+                                      {"3/5 - 60%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-chart-2 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="60%" role="progressbar" aria-labelledby="base-ui-_r_b_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_b_" role="presentation">
-                                      REL-8402 checklist progress
+                                      {"REL-8402 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "60%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1337,10 +1337,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-success rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Ready">
-                          Ready
+                          {"Ready"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          2
+                          {"2"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add ready change" title="Add ready change">
@@ -1368,15 +1368,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8399
+                                    {"REL-8399"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Open LATAM webhook fanout">
-                                    Open LATAM webhook fanout
+                                    {"Open LATAM webhook fanout"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1394,10 +1394,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Webhooks
+                                        {"Webhooks"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1418,7 +1418,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 5, 18:00 UTC
+                                        {"May 5, 18:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1433,7 +1433,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </span>
                                   </div>
                                 </div>
@@ -1442,21 +1442,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      5/5 - 100%
+                                      {"5/5 - 100%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-success **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-labelledby="base-ui-_r_c_">
                                     <ProgressLabel className="sr-only" complete="" id="base-ui-_r_c_" role="presentation">
-                                      REL-8399 checklist progress
+                                      {"REL-8399 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1470,15 +1470,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8394
+                                    {"REL-8394"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Ship invoice PDF branding controls">
-                                    Ship invoice PDF branding controls
+                                    {"Ship invoice PDF branding controls"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1496,10 +1496,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Billing
+                                        {"Billing"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1520,7 +1520,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        May 5, 20:30 UTC
+                                        {"May 5, 20:30 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1535,7 +1535,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Nina Santos
+                                      {"Nina Santos"}
                                     </span>
                                   </div>
                                 </div>
@@ -1544,21 +1544,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      4/4 - 100%
+                                      {"4/4 - 100%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-success **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-labelledby="base-ui-_r_d_">
                                     <ProgressLabel className="sr-only" complete="" id="base-ui-_r_d_" role="presentation">
-                                      REL-8394 checklist progress
+                                      {"REL-8394 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1574,10 +1574,10 @@ export function Pattern() {
                       <header className="flex flex-row gap-2 items-center min-h-10 px-2 py-1.5">
                         <span className="bg-success/70 rounded-full shrink-0 size-2.5" aria-hidden="true"></span>
                         <div className="font-semibold leading-5 text-sm truncate" title="Shipped">
-                          Shipped
+                          {"Shipped"}
                         </div>
                         <span className="font-medium shrink-0 tabular-nums text-muted-foreground text-sm">
-                          2
+                          {"2"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 shrink-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add shipped change" title="Add shipped change">
@@ -1605,15 +1605,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8379
+                                    {"REL-8379"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Reduce invite session TTL">
-                                    Reduce invite session TTL
+                                    {"Reduce invite session TTL"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1630,10 +1630,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Identity
+                                        {"Identity"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1654,7 +1654,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        Apr 29, 17:00 UTC
+                                        {"Apr 29, 17:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1669,7 +1669,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Maya Patel
+                                      {"Maya Patel"}
                                     </span>
                                   </div>
                                 </div>
@@ -1678,21 +1678,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      3/3 - 100%
+                                      {"3/3 - 100%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-success **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-labelledby="base-ui-_r_e_">
                                     <ProgressLabel className="sr-only" complete="" id="base-ui-_r_e_" role="presentation">
-                                      REL-8379 checklist progress
+                                      {"REL-8379 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1706,15 +1706,15 @@ export function Pattern() {
                               <ItemHeader className="gap-2.5 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemDescription className="font-medium leading-4 tabular-nums text-muted-foreground text-xs tracking-normal">
-                                    REL-8372
+                                    {"REL-8372"}
                                   </ItemDescription>
                                   <ItemTitle className="font-medium leading-5 line-clamp-2 text-[0.9375rem]" title="Archive legacy checkout experiment flags">
-                                    Archive legacy checkout experiment flags
+                                    {"Archive legacy checkout experiment flags"}
                                   </ItemTitle>
                                 </ItemContent>
                                 <ItemActions className="shrink-0">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                    Low
+                                    {"Low"}
                                   </Badge>
                                 </ItemActions>
                               </ItemHeader>
@@ -1731,10 +1731,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="font-medium truncate">
-                                        Checkout
+                                        {"Checkout"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                        Production
+                                        {"Production"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -1755,7 +1755,7 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-2 items-center min-w-0">
                                       <span className="tabular-nums truncate">
-                                        Apr 28, 15:00 UTC
+                                        {"Apr 28, 15:00 UTC"}
                                       </span>
                                     </div>
                                   </div>
@@ -1770,7 +1770,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="font-medium truncate">
-                                      Jonah Lee
+                                      {"Jonah Lee"}
                                     </span>
                                   </div>
                                 </div>
@@ -1779,21 +1779,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2">
                                   <div className="flex gap-2 items-center justify-between leading-5 text-sm">
                                     <span className="text-muted-foreground">
-                                      Checklist
+                                      {"Checklist"}
                                     </span>
                                     <span className="leading-4 tabular-nums text-foreground text-xs">
-                                      4/4 - 100%
+                                      {"4/4 - 100%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-success **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-labelledby="base-ui-_r_f_">
                                     <ProgressLabel className="sr-only" complete="" id="base-ui-_r_f_" role="presentation">
-                                      REL-8372 checklist progress
+                                      {"REL-8372 checklist progress"}
                                     </ProgressLabel>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1813,9 +1813,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

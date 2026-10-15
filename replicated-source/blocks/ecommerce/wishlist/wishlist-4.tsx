@@ -14,10 +14,10 @@ export function Pattern() {
         <header className="flex flex-wrap gap-x-6 gap-y-3 items-baseline justify-between pb-5">
           <div className="flex flex-wrap gap-x-3 gap-y-1 items-baseline">
             <h1 className="font-semibold text-2xl text-foreground tracking-tight" id="collections-title">
-              Wishlist Collections
+              {"Wishlist Collections"}
             </h1>
             <span className="tabular-nums text-muted-foreground text-sm">
-              83 items across 6 collections
+              {"83 items across 6 collections"}
             </span>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
@@ -25,33 +25,33 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            New Collection
+            {"New Collection"}
           </Button>
         </header>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList className="gap-6 h-10! justify-start overflow-x-auto w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Filter collections">
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-label="All Collections (6)">
               <span>
-                All Collections
+                {"All Collections"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                6
+                {"6"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_" aria-label="Recently Updated (3)">
               <span>
-                Recently Updated
+                {"Recently Updated"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                3
+                {"3"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Shared (2)">
               <span>
-                Shared
+                {"Shared"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                2
+                {"2"}
               </Badge>
             </TabsTrigger>
           </TabsList>
@@ -77,7 +77,7 @@ export function Pattern() {
                       </span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +20
+                      {"+20"}
                     </Badge>
                   </Item>
                 </a>
@@ -105,16 +105,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-spring-capsule">
-                    Spring Capsule
+                    {"Spring Capsule"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    24 items
+                    {"24 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated 2 days ago
+                    {"Updated 2 days ago"}
                   </span>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export function Pattern() {
                       </span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +4
+                      {"+4"}
                     </Badge>
                   </Item>
                 </a>
@@ -168,16 +168,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-wedding-guest-looks">
-                    Wedding Guest Looks
+                    {"Wedding Guest Looks"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    8 items
+                    {"8 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated a week ago
+                    {"Updated a week ago"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex gap-1 items-center text-foreground/80">
@@ -187,7 +187,7 @@ export function Pattern() {
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                       <circle cx="9" cy="7" r="4"></circle>
                     </svg>
-                    Shared
+                    {"Shared"}
                   </span>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export function Pattern() {
                       </span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +11
+                      {"+11"}
                     </Badge>
                   </Item>
                 </a>
@@ -241,16 +241,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-cold-weather-essentials">
-                    Cold Weather Essentials
+                    {"Cold Weather Essentials"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    15 items
+                    {"15 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated 3 days ago
+                    {"Updated 3 days ago"}
                   </span>
                 </div>
               </div>
@@ -276,7 +276,7 @@ export function Pattern() {
                       </span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +8
+                      {"+8"}
                     </Badge>
                   </Item>
                 </a>
@@ -304,16 +304,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-studio-workwear">
-                    Studio Workwear
+                    {"Studio Workwear"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    12 items
+                    {"12 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated yesterday
+                    {"Updated yesterday"}
                   </span>
                 </div>
               </div>
@@ -337,7 +337,7 @@ export function Pattern() {
                       <span className="bg-muted-foreground/5" aria-hidden="true"></span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +3
+                      {"+3"}
                     </Badge>
                   </Item>
                 </a>
@@ -365,16 +365,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-gifts-for-mom">
-                    Gifts For Mom
+                    {"Gifts For Mom"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    6 items
+                    {"6 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated 5 days ago
+                    {"Updated 5 days ago"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex gap-1 items-center text-foreground/80">
@@ -384,7 +384,7 @@ export function Pattern() {
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
                       <circle cx="9" cy="7" r="4"></circle>
                     </svg>
-                    Shared
+                    {"Shared"}
                   </span>
                 </div>
               </div>
@@ -410,7 +410,7 @@ export function Pattern() {
                       </span>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent bottom-3 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 right-3 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-primary-foreground text-xs transition-shadow">
-                      +14
+                      {"+14"}
                     </Badge>
                   </Item>
                 </a>
@@ -438,16 +438,16 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <h3 className="font-semibold leading-tight text-base text-foreground tracking-tight">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#collection-vacation-edit">
-                    Vacation Edit
+                    {"Vacation Edit"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-2 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    18 items
+                    {"18 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Updated 2 weeks ago
+                    {"Updated 2 weeks ago"}
                   </span>
                 </div>
               </div>
@@ -460,7 +460,7 @@ export function Pattern() {
                 <path d="M12 5v14"></path>
               </svg>
               <span className="font-medium">
-                New Collection
+                {"New Collection"}
               </span>
             </Item>
           </li>

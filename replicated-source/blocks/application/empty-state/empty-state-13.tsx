@@ -15,20 +15,20 @@ export function Pattern() {
   return (
     <main className="flex items-center justify-center md:p-10 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        File sources empty state
+        {"File sources empty state"}
       </h1>
       <section className="flex flex-col justify-center max-w-4xl min-h-[560px] w-full" aria-labelledby="file-sources-heading">
         <div className="flex flex-col gap-1.5 pb-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex flex-col gap-1 min-w-0">
             <h2 className="font-semibold text-2xl tracking-tight" id="file-sources-heading">
-              File Sources
+              {"File Sources"}
             </h2>
             <p className="text-muted-foreground text-sm/6">
-              Connect governed folders for contracts, exports, and client delivery packets.
+              {"Connect governed folders for contracts, exports, and client delivery packets."}
             </p>
           </div>
           <a className="focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1.5 hover:text-foreground hover:underline inline-flex items-center outline-none rounded-sm text-muted-foreground text-sm underline-offset-4 w-fit" href="#connector-guide">
-            Connector guide
+            {"Connector guide"}
             <svg className="lucide lucide-external-link size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
               <path d="M15 3h6v6"></path>
               <path d="M10 14 21 3"></path>
@@ -66,10 +66,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <EmptyTitle className="font-semibold text-base tracking-tight">
-                  No file sources are linked
+                  {"No file sources are linked"}
                 </EmptyTitle>
                 <EmptyDescription className="max-w-sm text-sm/relaxed">
-                  Attach a storage workspace before review files, billing exports, or signed packets can land in this queue.
+                  {"Attach a storage workspace before review files, billing exports, or signed packets can land in this queue."}
                 </EmptyDescription>
               </div>
             </EmptyHeader>
@@ -84,7 +84,7 @@ export function Pattern() {
                   <path fill="#F7F5F2" d="M43.7 32 23.404 44.75 43.701 57.5 64 44.75 84.3 57.5l20.298-12.75L84.299 32 64.002 44.75 43.7 32Zm0 51L23.404 70.25 43.701 57.5 64 70.25 43.702 83Zm20.302-12.75L84.299 57.5l20.298 12.75L84.299 83 64.002 70.25Zm0 29.75L43.7 87.25 64 74.5l20.3 12.75L64.002 100Z"></path>
                 </svg>
                 <span className="truncate">
-                  Dropbox
+                  {"Dropbox"}
                 </span>
               </a>
             </FramePanel>
@@ -92,11 +92,11 @@ export function Pattern() {
               <a className="flex focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-2 h-11 hover:bg-muted/50 items-center justify-center min-w-0 outline-none px-3 rounded-lg text-sm transition-colors" href="#box">
                 <svg className="h-5 shrink-0 w-8" aria-hidden="true" viewBox="0 0 64 40">
                   <text x="1" y="29" fill="#0061D5" fontFamily="Arial, Helvetica, sans-serif" fontSize="30" fontWeight="700" letter-spacing="0">
-                    box
+                    {"box"}
                   </text>
                 </svg>
                 <span className="truncate">
-                  Box
+                  {"Box"}
                 </span>
               </a>
             </FramePanel>
@@ -110,7 +110,7 @@ export function Pattern() {
                   <path fill="#1967D2" d="M177.2 136.4H256l-59.4 68.2-19.4-68.2Z"></path>
                 </svg>
                 <span className="truncate">
-                  Google Drive
+                  {"Google Drive"}
                 </span>
               </a>
             </FramePanel>
@@ -123,7 +123,7 @@ export function Pattern() {
                   <path fill="#28A8EA" d="m200.6 59.9-36.6 15.3 42.5 65.2h15.2c20-6.3 34.3-25 34.3-47 0-19.9-11.8-37-28.7-44.7-9.1.9-18 4.7-26.7 11.2Z"></path>
                 </svg>
                 <span className="truncate">
-                  Microsoft OneDrive
+                  {"Microsoft OneDrive"}
                 </span>
               </a>
             </FramePanel>

@@ -31,7 +31,7 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-col gap-1">
                   <h1 className="font-semibold text-xl tracking-tight">
-                    Sign in to NeUI Control
+                    {"Sign in to NeUI Control"}
                   </h1>
                 </div>
               </div>
@@ -39,17 +39,17 @@ export function Pattern() {
                 <FieldGroup className="gap-3.5">
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-14-identifier">
-                      Work email
+                      {"Work email"}
                     </FieldLabel>
                     <Input className="bg-background" id="auth-14-identifier" autoComplete="email" placeholder="name@company.com" type="email"></Input>
                   </Field>
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <div className="flex gap-3 items-center justify-between">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-14-password">
-                        Password
+                        {"Password"}
                       </FieldLabel>
                       <Button className="font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex="0">
-                        Forgot password?
+                        {"Forgot password?"}
                       </Button>
                     </div>
                     <InputGroup className="bg-background" role="group">
@@ -66,13 +66,13 @@ export function Pattern() {
                   </Field>
                 </FieldGroup>
                 <Button className="w-full" type="submit" tabIndex="0">
-                  Sign in
+                  {"Sign in"}
                 </Button>
               </form>
               <div className="flex gap-3 items-center">
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <span className="text-muted-foreground text-xs">
-                  Or continue with
+                  {"Or continue with"}
                 </span>
                 <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               </div>
@@ -181,7 +181,7 @@ export function Pattern() {
                     </g>
                   </svg>
                   <span className="truncate">
-                    Google
+                    {"Google"}
                   </span>
                 </Button>
                 <Button className="min-w-0 px-3 w-full" type="button" tabIndex="0">
@@ -196,7 +196,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    Apple
+                    {"Apple"}
                   </span>
                 </Button>
                 <Button className="min-w-0 px-3 w-full" type="button" tabIndex="0">
@@ -211,14 +211,14 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    GitHub
+                    {"GitHub"}
                   </span>
                 </Button>
               </div>
               <p className="text-center text-muted-foreground text-sm">
-                Need access?
+                {"Need access?"}
                 <Button className="h-auto p-0" type="button" tabIndex="0">
-                  Request an invite
+                  {"Request an invite"}
                 </Button>
               </p>
             </div>

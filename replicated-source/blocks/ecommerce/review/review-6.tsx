@@ -20,22 +20,24 @@ export function Pattern() {
       <section className="max-w-6xl md:py-14 mx-auto px-4 py-10 sm:px-6 w-full" aria-labelledby="reviews-heading">
         <header className="flex flex-col gap-2 items-center text-center">
           <span className="font-medium text-muted-foreground text-xs tracking-[0.22em] uppercase">
-            Reviews
+            {"Reviews"}
           </span>
           <h2 className="font-semibold md:leading-tight md:text-[28px] text-2xl text-foreground tracking-tight" id="reviews-heading">
-            Trusted By Owners
+            {"Trusted By Owners"}
           </h2>
           <p className="leading-relaxed max-w-xl text-muted-foreground text-sm">
-            Real impressions from
+            {"Real impressions from"}
             <a className="font-medium hover:text-primary hover:underline tabular-nums text-foreground transition-colors underline-offset-4" href="#all-reviews" aria-label="Read all 1,284 verified reviews for Halden Wave Pro">
-              1,284 verified reviews
+              {"1,284 verified reviews"}
             </a>
-            of the Halden Wave Pro.
+            {"of the Halden Wave Pro."}
           </p>
         </header>
         <Carousel className="md:mt-10 mt-8" role="region" aria-roledescription="carousel" aria-label="Customer testimonials for Halden Wave Pro">
+          <Carousel>
           <CarouselContent>
             <div className="-ml-4 flex" style={{transform: "translate3d(-747px, 0px, 0px)"}}>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -95,7 +97,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “The cancellation finally turns a JFK red-eye into a calm cabin. My old pair never came close to this.”
+                        {"“The cancellation finally turns a JFK red-eye into a calm cabin. My old pair never came close to this.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -104,10 +106,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Mateo Halberg">
-                            Mateo Halberg
+                            {"Mateo Halberg"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            Frequent flier
+                            {"Frequent flier"}
                           </span>
                         </div>
                       </div>
@@ -115,6 +117,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -174,7 +178,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “Multipoint handoff between phone and laptop is silent. The EQ presets remember themselves per source.”
+                        {"“Multipoint handoff between phone and laptop is silent. The EQ presets remember themselves per source.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -183,10 +187,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Yuki Tanaka">
-                            Yuki Tanaka
+                            {"Yuki Tanaka"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            Product designer
+                            {"Product designer"}
                           </span>
                         </div>
                       </div>
@@ -194,6 +198,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide" style={{transform: "translate3d(0px, 0px, 0px)"}}>
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -253,7 +259,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “Battery outlasted a week of meetings and a long commute. Fast charge tops them up while I make coffee.”
+                        {"“Battery outlasted a week of meetings and a long commute. Fast charge tops them up while I make coffee.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -262,10 +268,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Priya Iyer">
-                            Priya Iyer
+                            {"Priya Iyer"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            UX researcher
+                            {"UX researcher"}
                           </span>
                         </div>
                       </div>
@@ -273,6 +279,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -332,7 +340,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “I forget they are on after four hours of back-to-back calls. Clamping force is gentler than I expected.”
+                        {"“I forget they are on after four hours of back-to-back calls. Clamping force is gentler than I expected.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -341,10 +349,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Jonas Brandt">
-                            Jonas Brandt
+                            {"Jonas Brandt"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            Podcast producer
+                            {"Podcast producer"}
                           </span>
                         </div>
                       </div>
@@ -352,6 +360,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -411,7 +421,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “Cups pop off without tools and replacement earpads arrived inside a week. That earns my next purchase.”
+                        {"“Cups pop off without tools and replacement earpads arrived inside a week. That earns my next purchase.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -420,10 +430,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Camille Avery">
-                            Camille Avery
+                            {"Camille Avery"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            Audio engineer
+                            {"Audio engineer"}
                           </span>
                         </div>
                       </div>
@@ -431,6 +441,8 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
+              <Carousel>
               <CarouselItem className="lg:basis-1/3 sm:basis-1/2" role="group" aria-roledescription="slide">
                 <div className="p-2">
                   <Card className="h-full" size="sm">
@@ -490,7 +502,7 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <blockquote className="flex-1 leading-relaxed text-[15px] text-foreground/90 text-pretty">
-                        “Holds the low end without smearing the strings. Stage feels wide for a closed-back, not gimmicky.”
+                        {"“Holds the low end without smearing the strings. Stage feels wide for a closed-back, not gimmicky.”"}
                       </blockquote>
                       <Separator className="bg-border/60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <div className="flex gap-3 items-center">
@@ -499,10 +511,10 @@ export function Pattern() {
                         </Avatar>
                         <div className="flex flex-1 flex-col min-w-0">
                           <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#" aria-label="View reviews by Aki Okafor">
-                            Aki Okafor
+                            {"Aki Okafor"}
                           </a>
                           <span className="text-muted-foreground text-xs truncate">
-                            Composer
+                            {"Composer"}
                           </span>
                         </div>
                       </div>
@@ -510,8 +522,10 @@ export function Pattern() {
                   </Card>
                 </div>
               </CarouselItem>
+              </Carousel>
             </div>
           </CarouselContent>
+          </Carousel>
         </Carousel>
         <div className="flex flex-col gap-3 items-center md:mt-8 mt-6">
           <ul className="flex gap-1.5 items-center" role="list">

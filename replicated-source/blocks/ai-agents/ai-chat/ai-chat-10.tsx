@@ -34,7 +34,7 @@ export function Pattern() {
           <Popover>
           <PopoverTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-medium gap-1.5 group/button inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shrink transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false">
             <span className="min-w-0 truncate">
-              New chat
+              {"New chat"}
             </span>
             <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
@@ -80,7 +80,7 @@ export function Pattern() {
                 </ItemMedia>
               </Item>
               <h1 className="font-medium text-3xl/9 text-balance tracking-tight">
-                Good morning, Maya.
+                {"Good morning, Maya."}
               </h1>
             </div>
             <div className="flex flex-col gap-3">
@@ -95,7 +95,7 @@ export function Pattern() {
                         <path d="M8 17v-3"></path>
                       </svg>
                       <span className="max-w-40 min-w-0 truncate">
-                        churn-q3.csv
+                        {"churn-q3.csv"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:shadow-xs data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center min-w-0 outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
@@ -104,7 +104,7 @@ export function Pattern() {
                         <path d="m8 6-6 6 6 6"></path>
                       </svg>
                       <span className="max-w-40 min-w-0 truncate">
-                        stripe-webhook.ts
+                        {"stripe-webhook.ts"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:shadow-xs data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center min-w-0 outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
@@ -116,7 +116,7 @@ export function Pattern() {
                         <path d="M16 17H8"></path>
                       </svg>
                       <span className="max-w-40 min-w-0 truncate">
-                        release-notes-3.4.md
+                        {"release-notes-3.4.md"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:shadow-xs data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center min-w-0 outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
@@ -125,7 +125,7 @@ export function Pattern() {
                         <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                       </svg>
                       <span className="max-w-40 min-w-0 truncate">
-                        onboarding-research.md
+                        {"onboarding-research.md"}
                       </span>
                     </ToggleGroupItem>
                   </ToggleGroup>
@@ -133,7 +133,7 @@ export function Pattern() {
                 <FramePanel className="p-0">
                   <form>
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-10-composer">
-                      Message NeUI Chat
+                      {"Message NeUI Chat"}
                     </FieldLabel>
                     <InputGroup className="bg-transparent border-0 shadow-none" role="group">
                       <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-48 min-h-20 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-10-composer" placeholder="Ask about churn, the webhook, or anything you connected..."></textarea>
@@ -151,19 +151,19 @@ export function Pattern() {
                             <span className="inline-flex shrink-0 size-4" aria-hidden="true">
                               <svg className="dark:hidden size-4" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                 <title>
-                                  Anthropic
+                                  {"Anthropic"}
                                 </title>
                                 <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                               </svg>
                               <svg className="dark:block hidden size-4" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                 <title>
-                                  Anthropic
+                                  {"Anthropic"}
                                 </title>
                                 <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                               </svg>
                             </span>
                             <span className="max-w-24 sm:max-w-none truncate">
-                              Claude Sonnet 5
+                              {"Claude Sonnet 5"}
                             </span>
                             <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
@@ -188,39 +188,39 @@ export function Pattern() {
                 <Item className="h-full hover:bg-accent/50 items-start text-start" type="button" variant="outline" size="default">
                   <span className="text-muted-foreground text-sm/5">
                     <span>
-                      Read
+                      {"Read"}
                     </span>
                     <strong className="font-medium tabular-nums text-foreground">
-                      12,480 churn records
+                      {"12,480 churn records"}
                     </strong>
                     <span>
-                      and rank the plans losing the most accounts.
+                      {"and rank the plans losing the most accounts."}
                     </span>
                   </span>
                 </Item>
                 <Item className="h-full hover:bg-accent/50 items-start text-start" type="button" variant="outline" size="default">
                   <span className="text-muted-foreground text-sm/5">
                     <span>
-                      Trace the
+                      {"Trace the"}
                     </span>
                     <strong className="font-medium tabular-nums text-foreground">
-                      charge.refunded 500s
+                      {"charge.refunded 500s"}
                     </strong>
                     <span>
-                      to the line in stripe-webhook.ts that throws.
+                      {"to the line in stripe-webhook.ts that throws."}
                     </span>
                   </span>
                 </Item>
                 <Item className="h-full hover:bg-accent/50 items-start text-start" type="button" variant="outline" size="default">
                   <span className="text-muted-foreground text-sm/5">
                     <span>
-                      Sit
+                      {"Sit"}
                     </span>
                     <strong className="font-medium tabular-nums text-foreground">
-                      18 onboarding interviews
+                      {"18 onboarding interviews"}
                     </strong>
                     <span>
-                      next to the accounts that cancel first.
+                      {"next to the accounts that cancel first."}
                     </span>
                   </span>
                 </Item>

@@ -56,14 +56,14 @@ export function Pattern() {
             <footer className="flex flex-col gap-1.5 items-start mt-auto px-3 py-3">
               <div className="flex gap-2 items-center justify-between w-full">
                 <a className="font-medium hover:text-primary leading-snug text-foreground text-sm" href="#">
-                  Resend Email Flow
+                  {"Resend Email Flow"}
                 </a>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                  Premium
+                  {"Premium"}
                 </Badge>
               </div>
               <p className="leading-relaxed line-clamp-2 text-muted-foreground text-xs">
-                Transactional email delivery tuned for speed, observability, and reliable event handling.
+                {"Transactional email delivery tuned for speed, observability, and reliable event handling."}
               </p>
             </footer>
           </Frame>
@@ -104,14 +104,14 @@ export function Pattern() {
             <footer className="flex flex-col gap-1.5 items-start mt-auto px-3 py-3">
               <div className="flex gap-2 items-center justify-between w-full">
                 <a className="font-medium hover:text-primary leading-snug text-foreground text-sm" href="#">
-                  PayPal Checkout Flow
+                  {"PayPal Checkout Flow"}
                 </a>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                  Regular
+                  {"Regular"}
                 </Badge>
               </div>
               <p className="leading-relaxed line-clamp-2 text-muted-foreground text-xs">
-                Optimized payment processing for speed, reliability, and global reach.
+                {"Optimized payment processing for speed, reliability, and global reach."}
               </p>
             </footer>
           </Frame>
@@ -162,14 +162,14 @@ export function Pattern() {
             <footer className="flex flex-col gap-1.5 items-start mt-auto px-3 py-3">
               <div className="flex gap-2 items-center justify-between w-full">
                 <a className="font-medium hover:text-primary leading-snug text-foreground text-sm" href="#">
-                  Supabase Auth Integration
+                  {"Supabase Auth Integration"}
                 </a>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  Enterprise
+                  {"Enterprise"}
                 </Badge>
               </div>
               <p className="leading-relaxed line-clamp-2 text-muted-foreground text-xs">
-                Authentication and data access wired together for secure product onboarding and account recovery.
+                {"Authentication and data access wired together for secure product onboarding and account recovery."}
               </p>
             </footer>
           </Frame>

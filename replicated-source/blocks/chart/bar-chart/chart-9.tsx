@@ -25,10 +25,10 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between min-w-0 px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="font-semibold text-sm">
-              Capital Inflows
+              {"Capital Inflows"}
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Net new capital by year across 6 funds
+              {"Net new capital by year across 6 funds"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
@@ -41,7 +41,7 @@ export function Pattern() {
                   <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                   <path d="M3 10h18"></path>
                 </svg>
-                All Years
+                {"All Years"}
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -52,7 +52,7 @@ export function Pattern() {
                 <span className="flex items-center justify-center size-4">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--primary)"}}></span>
                 </span>
-                All Funds
+                {"All Funds"}
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -67,7 +67,7 @@ export function Pattern() {
                 <circle cx="17" cy="17" r="3"></circle>
                 <circle cx="7" cy="7" r="3"></circle>
               </svg>
-              Display
+              {"Display"}
               <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
@@ -100,11 +100,11 @@ export function Pattern() {
           <dl className="@3xl:-my-(--frame-panel-py) @3xl:gap-0 @3xl:grid-cols-4 gap-x-6 gap-y-5 grid grid-cols-2">
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                2025 Inflows
+                {"2025 Inflows"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  $14.3M
+                  {"$14.3M"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -113,22 +113,22 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="tabular-nums">
-                      +22.1%
+                      {"+22.1%"}
                     </span>
                   </Badge>
                   <span className="truncate">
-                    vs 2024
+                    {"vs 2024"}
                   </span>
                 </span>
               </dd>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Top Fund
+                {"Top Fund"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  55.3%
+                  {"55.3%"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <IconTile variant="outline" size="xs">
@@ -138,18 +138,18 @@ export function Pattern() {
                     </svg>
                   </IconTile>
                   <span className="truncate">
-                    WaveMark Capital
+                    {"WaveMark Capital"}
                   </span>
                 </span>
               </dd>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                2026 Run-rate
+                {"2026 Run-rate"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  $15.9M
+                  {"$15.9M"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -158,26 +158,26 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="tabular-nums">
-                      +10.7%
+                      {"+10.7%"}
                     </span>
                   </Badge>
                   <span className="truncate">
-                    vs 2025
+                    {"vs 2025"}
                   </span>
                 </span>
               </dd>
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Yearly Growth
+                {"Yearly Growth"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  +17.2%
+                  {"+17.2%"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Compounded since 2021
+                    {"Compounded since 2021"}
                   </span>
                 </span>
               </dd>
@@ -186,32 +186,24 @@ export function Pattern() {
         </FramePanel>
         <FramePanel>
           <div className="flex flex-col gap-2 min-w-0">
-            <style>{`
-@keyframes c9-rise { from { transform: translateY(0) scaleY(0); } }
-@keyframes c9-lift { from { transform: translateY(100%); } }
-[data-c9-rise] { animation: c9-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-[data-c9-lift] { animation: c9-lift 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-@media (prefers-reduced-motion: reduce) {
-  [data-c9-rise], [data-c9-lift] { animation: none; }
-}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c9-rise { from { transform: translateY(0) scaleY(0); } }\n@keyframes c9-lift { from { transform: translateY(100%); } }\n[data-c9-rise] { animation: c9-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }\n[data-c9-lift] { animation: c9-lift 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }\n@media (prefers-reduced-motion: reduce) {\n  [data-c9-rise], [data-c9-lift] { animation: none; }\n}\n" }} />
             <div className="@3xl:[--depth:--spacing(3.5)] @3xl:[--prism-w:--spacing(20)] @3xl:h-88 [--depth:--spacing(2.5)] [--prism-w:--spacing(14)] flex h-72 min-w-0 relative">
               <div className="relative shrink-0 w-11" aria-hidden="true">
                 <div className="absolute bottom-10 inset-x-0 top-10">
                   <span className="absolute right-3 tabular-nums text-muted-foreground text-xs translate-y-1/2" style={{bottom: "0%"}}>
-                    $0
+                    {"$0"}
                   </span>
                   <span className="absolute right-3 tabular-nums text-muted-foreground text-xs translate-y-1/2" style={{bottom: "25%"}}>
-                    $5M
+                    {"$5M"}
                   </span>
                   <span className="absolute right-3 tabular-nums text-muted-foreground text-xs translate-y-1/2" style={{bottom: "50%"}}>
-                    $10M
+                    {"$10M"}
                   </span>
                   <span className="absolute right-3 tabular-nums text-muted-foreground text-xs translate-y-1/2" style={{bottom: "75%"}}>
-                    $15M
+                    {"$15M"}
                   </span>
                   <span className="absolute right-3 tabular-nums text-muted-foreground text-xs translate-y-1/2" style={{bottom: "100%"}}>
-                    $20M
+                    {"$20M"}
                   </span>
                 </div>
               </div>
@@ -249,7 +241,7 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "color-mix(in oklab, var(--color-slate-400) 35%, var(--background))", animationDelay: "0ms", transform: "translateY(61.977%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap) bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="@3xl:block absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium hidden left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $7.6M
+                              {"$7.6M"}
                             </span>
                           </span>
                         </span>
@@ -258,7 +250,7 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="group-hover/year:text-foreground text-muted-foreground transition-colors">
-                        2021
+                        {"2021"}
                       </span>
                     </span>
                   </button>
@@ -283,7 +275,7 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "color-mix(in oklab, var(--color-slate-400) 35%, var(--background))", animationDelay: "70ms", transform: "translateY(66.495%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap) bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="@3xl:block absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium hidden left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $6.7M
+                              {"$6.7M"}
                             </span>
                           </span>
                         </span>
@@ -292,7 +284,7 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="group-hover/year:text-foreground text-muted-foreground transition-colors">
-                        2022
+                        {"2022"}
                       </span>
                     </span>
                   </button>
@@ -317,7 +309,7 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "color-mix(in oklab, var(--color-slate-400) 35%, var(--background))", animationDelay: "140ms", transform: "translateY(54.4915%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap) bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="@3xl:block absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium hidden left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $9.1M
+                              {"$9.1M"}
                             </span>
                           </span>
                         </span>
@@ -326,7 +318,7 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="group-hover/year:text-foreground text-muted-foreground transition-colors">
-                        2023
+                        {"2023"}
                       </span>
                     </span>
                   </button>
@@ -351,7 +343,7 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "color-mix(in oklab, var(--color-slate-400) 35%, var(--background))", animationDelay: "210ms", transform: "translateY(41.287%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap) bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="@3xl:block absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium hidden left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $11.7M
+                              {"$11.7M"}
                             </span>
                           </span>
                         </span>
@@ -360,7 +352,7 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="group-hover/year:text-foreground text-muted-foreground transition-colors">
-                        2024
+                        {"2024"}
                       </span>
                     </span>
                   </button>
@@ -385,7 +377,7 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "color-mix(in oklab, var(--color-slate-400) 35%, var(--background))", animationDelay: "280ms", transform: "translateY(28.3239%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap) bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $14.3M
+                              {"$14.3M"}
                             </span>
                           </span>
                         </span>
@@ -394,7 +386,7 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="font-medium text-foreground transition-colors">
-                        2025
+                        {"2025"}
                       </span>
                     </span>
                   </button>
@@ -428,9 +420,9 @@ export function Pattern() {
                           <span className="absolute duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] inset-0 motion-reduce:transition-none transition-transform" data-c9-lift="" style={{"--cap": "var(--foreground)", animationDelay: "350ms", transform: "translateY(20.6693%)"}}>
                             <span className="-skew-x-45 absolute bg-(--cap)/14 bottom-full h-(--depth) left-0 origin-bottom w-full"></span>
                             <span className="@3xl:block absolute bottom-[calc(100%+var(--depth)+--spacing(1))] font-medium hidden left-0 tabular-nums text-center text-foreground text-xs w-[calc(100%+var(--depth))] whitespace-nowrap">
-                              $15.9M
+                              {"$15.9M"}
                               <span className="font-normal text-muted-foreground">
-                                est.
+                                {"est."}
                               </span>
                             </span>
                           </span>
@@ -440,10 +432,10 @@ export function Pattern() {
                     <span className="h-2 shrink-0"></span>
                     <span className="@3xl:flex-row @3xl:gap-1 @3xl:justify-center flex flex-col h-8 items-center leading-4 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) shrink-0 tabular-nums text-xs w-full">
                       <span className="group-hover/year:text-foreground text-muted-foreground transition-colors">
-                        2026
+                        {"2026"}
                       </span>
                       <span className="text-muted-foreground">
-                        YTD
+                        {"YTD"}
                       </span>
                     </span>
                   </button>
@@ -454,27 +446,27 @@ export function Pattern() {
               <ToggleGroup className="@3xl:flex @3xl:flex-wrap @3xl:justify-center grid grid-cols-2" data-orientation="horizontal" aria-orientation="horizontal" role="group" size="sm" spacing="1" aria-label="Isolate a fund" style={{"--gap": "1"}}>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-teal-500)"}}></span>
-                  WaveMark Capital
+                  {"WaveMark Capital"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-amber-400)"}}></span>
-                  Envato Finances
+                  {"Envato Finances"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></span>
-                  QBridge Tech
+                  {"QBridge Tech"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
-                  Neon Liquidity
+                  {"Neon Liquidity"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-rose-400)"}}></span>
-                  Stripe Treasury
+                  {"Stripe Treasury"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-slate-400)"}}></span>
-                  ETH Reserve Pool
+                  {"ETH Reserve Pool"}
                 </ToggleGroupItem>
               </ToggleGroup>
             </div>
@@ -482,14 +474,14 @@ export function Pattern() {
         </FramePanel>
         <footer className="flex flex-row flex-wrap gap-(--frame-panel-footer-gap) gap-x-4 gap-y-1 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) text-xs">
           <span className="flex gap-1.5 items-center text-muted-foreground">
-            USD
+            {"USD"}
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-            Demo figures, unaudited
+            {"Demo figures, unaudited"}
           </span>
           <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground">
-            Booked through Sep 30, 2026
+            {"Booked through Sep 30, 2026"}
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-            Synced 2h ago
+            {"Synced 2h ago"}
           </span>
         </footer>
       </Frame>

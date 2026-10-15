@@ -37,18 +37,18 @@ export function Pattern() {
       <section className="@container bg-background text-foreground w-full" aria-labelledby="pricing-3-title">
         <div className="@4xl:gap-16 @4xl:py-16 @min-[40rem]:px-6 @min-[64rem]:px-8 flex flex-col gap-12 max-w-6xl mx-auto px-4 py-12 w-full">
           <h2 className="sr-only" id="pricing-3-title">
-            Pricing
+            {"Pricing"}
           </h2>
           <figure className="flex flex-col items-center text-center">
             <p className="font-mono mb-5 text-muted-foreground text-xs tracking-widest uppercase">
-              Used by 1,284 product teams
+              {"Used by 1,284 product teams"}
             </p>
             <blockquote className="@2xl:text-2xl font-semibold leading-snug text-balance text-xl">
               <p>
                 <span className="@2xl:block">
-                  “Our funnel review went from a week to a morning.
+                  {"“Our funnel review went from a week to a morning."}
                 </span>
-                Adding seats never meant a new contract.”
+                {"Adding seats never meant a new contract.”"}
               </p>
             </blockquote>
             <figcaption className="flex gap-3 items-center mt-6 text-sm text-start">
@@ -57,12 +57,12 @@ export function Pattern() {
               </Avatar>
               <span className="flex flex-col gap-1">
                 <span className="font-semibold leading-none">
-                  Nora Vale
+                  {"Nora Vale"}
                 </span>
                 <span className="text-muted-foreground">
-                  Head of Growth at
+                  {"Head of Growth at"}
                   <a className="hover:text-foreground transition-colors underline underline-offset-4" href="#">
-                    Fernhill
+                    {"Fernhill"}
                   </a>
                 </span>
               </span>
@@ -83,26 +83,26 @@ export function Pattern() {
                       <TableCell className="align-top pb-[calc(var(--card-spacing)+--spacing(4))] pe-3 ps-(--card-spacing) pt-[calc(var(--card-spacing)+--spacing(4))] whitespace-normal" rowSpan="4">
                         <div className="flex flex-col gap-3">
                           <h3 className="font-semibold text-base" id="_r_0_">
-                            Choose your team size
+                            {"Choose your team size"}
                           </h3>
                           <Tabs className="gap-4" data-orientation="horizontal" activationDirection="none">
                             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-labelledby="_r_0_">
                               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_" extracted="1">
-                                Solo
+                                {"Solo"}
                               </TabsTrigger>
                               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2_" compositeItemActive="" aria-controls="base-ui-_r_6_">
-                                Startup
+                                {"Startup"}
                               </TabsTrigger>
                               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                                Growth
+                                {"Growth"}
                               </TabsTrigger>
                               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                                Enterprise
+                                {"Enterprise"}
                               </TabsTrigger>
                             </TabsList>
                             <TabsContent className="flex flex-col gap-4" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_6_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_2_">
                               <p className="text-muted-foreground truncate">
-                                For a first product team
+                                {"For a first product team"}
                               </p>
                               <ul className="flex flex-col gap-2" role="list">
                                 <li className="flex gap-2 items-center">
@@ -110,7 +110,7 @@ export function Pattern() {
                                     <path d="M20 6 9 17l-5-5"></path>
                                   </svg>
                                   <span className="font-semibold min-w-0 tabular-nums truncate">
-                                    5 seats on paid plans
+                                    {"5 seats on paid plans"}
                                   </span>
                                 </li>
                                 <li className="flex gap-2 items-center">
@@ -118,7 +118,7 @@ export function Pattern() {
                                     <path d="M20 6 9 17l-5-5"></path>
                                   </svg>
                                   <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                    Shared workspaces
+                                    {"Shared workspaces"}
                                   </span>
                                 </li>
                                 <li className="flex gap-2 items-center">
@@ -126,7 +126,7 @@ export function Pattern() {
                                     <path d="M20 6 9 17l-5-5"></path>
                                   </svg>
                                   <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                    Editor and viewer roles
+                                    {"Editor and viewer roles"}
                                   </span>
                                 </li>
                                 <li className="flex gap-2 items-center">
@@ -134,7 +134,7 @@ export function Pattern() {
                                     <path d="M20 6 9 17l-5-5"></path>
                                   </svg>
                                   <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                    Comments on charts
+                                    {"Comments on charts"}
                                   </span>
                                 </li>
                               </ul>
@@ -144,20 +144,20 @@ export function Pattern() {
                       </TableCell>
                       <TableHead className="align-top border-s font-semibold h-auto pb-1 pt-[calc(var(--card-spacing)+--spacing(4))] px-3 relative text-base text-center whitespace-normal" scope="col" abbr="Free">
                         <span className="block min-w-full w-0">
-                          Free
+                          {"Free"}
                         </span>
                       </TableHead>
                       <TableHead className="align-top border-s font-semibold h-auto pb-1 pt-[calc(var(--card-spacing)+--spacing(4))] px-3 relative text-base text-center whitespace-normal" scope="col" abbr="Pro">
                         <span className="block min-w-full w-0">
-                          Pro
+                          {"Pro"}
                         </span>
                       </TableHead>
                       <TableHead className="align-top bg-primary/2 border-s font-semibold h-auto pb-1 pe-(--card-spacing) pt-[calc(var(--card-spacing)+--spacing(4))] px-3 relative text-base text-center whitespace-normal" scope="col" abbr="Ultimate">
                         <Badge className="-top-px -translate-x-1/2 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 left-1/2 min-w-5 outline-none px-1.25 py-0.5 rounded-t-none! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                          Best Value
+                          {"Best Value"}
                         </Badge>
                         <span className="block min-w-full w-0">
-                          Ultimate
+                          {"Ultimate"}
                         </span>
                       </TableHead>
                     </TableRow>
@@ -165,21 +165,21 @@ export function Pattern() {
                       <TableCell className="align-top border-s pb-5 pt-0 px-3 text-center text-muted-foreground whitespace-normal">
                         <div className="min-w-full w-0">
                           <p className="max-w-45 mx-auto text-balance text-xs/relaxed">
-                            Core charts and funnels for a single product.
+                            {"Core charts and funnels for a single product."}
                           </p>
                         </div>
                       </TableCell>
                       <TableCell className="align-top border-s pb-5 pt-0 px-3 text-center text-muted-foreground whitespace-normal">
                         <div className="min-w-full w-0">
                           <p className="max-w-45 mx-auto text-balance text-xs/relaxed">
-                            Session replays, hourly alerts and a year of data.
+                            {"Session replays, hourly alerts and a year of data."}
                           </p>
                         </div>
                       </TableCell>
                       <TableCell className="align-top bg-primary/2 border-s pb-5 pe-(--card-spacing) pt-0 px-3 text-center text-muted-foreground whitespace-normal">
                         <div className="min-w-full w-0">
                           <p className="max-w-45 mx-auto text-balance text-xs/relaxed">
-                            Warehouse sync, SSO and replies within a day.
+                            {"Warehouse sync, SSO and replies within a day."}
                           </p>
                         </div>
                       </TableCell>
@@ -189,14 +189,14 @@ export function Pattern() {
                         <div className="flex flex-col gap-2 items-center min-w-full w-0">
                           <p className="flex flex-wrap gap-x-1.5 items-baseline justify-center">
                             <span className="font-bold tabular-nums text-3xl tracking-tight">
-                              $0
+                              {"$0"}
                             </span>
                             <span className="font-medium text-muted-foreground text-xs">
-                              Forever
+                              {"Forever"}
                             </span>
                           </p>
                           <p className="tabular-nums text-muted-foreground text-xs">
-                            No card needed
+                            {"No card needed"}
                           </p>
                         </div>
                       </TableCell>
@@ -205,22 +205,22 @@ export function Pattern() {
                           <p className="flex flex-wrap gap-x-1.5 items-baseline justify-center">
                             <s className="font-semibold tabular-nums text-lg text-muted-foreground">
                               <span className="sr-only">
-                                Regular price
+                                {"Regular price"}
                               </span>
-                              $140
+                              {"$140"}
                             </s>
                             <span className="font-bold tabular-nums text-3xl tracking-tight">
                               <span className="sr-only">
-                                , now
+                                {", now"}
                               </span>
-                              $130
+                              {"$130"}
                             </span>
                             <span className="font-medium text-muted-foreground text-xs">
-                              a month
+                              {"a month"}
                             </span>
                           </p>
                           <p className="tabular-nums text-muted-foreground text-xs">
-                            $26 a seat, billed yearly
+                            {"$26 a seat, billed yearly"}
                           </p>
                         </div>
                       </TableCell>
@@ -229,22 +229,22 @@ export function Pattern() {
                           <p className="flex flex-wrap gap-x-1.5 items-baseline justify-center">
                             <s className="font-semibold tabular-nums text-lg text-muted-foreground">
                               <span className="sr-only">
-                                Regular price
+                                {"Regular price"}
                               </span>
-                              $240
+                              {"$240"}
                             </s>
                             <span className="font-bold tabular-nums text-3xl tracking-tight">
                               <span className="sr-only">
-                                , now
+                                {", now"}
                               </span>
-                              $225
+                              {"$225"}
                             </span>
                             <span className="font-medium text-muted-foreground text-xs">
-                              a month
+                              {"a month"}
                             </span>
                           </p>
                           <p className="tabular-nums text-muted-foreground text-xs">
-                            $45 a seat, billed yearly
+                            {"$45 a seat, billed yearly"}
                           </p>
                         </div>
                       </TableCell>
@@ -252,17 +252,17 @@ export function Pattern() {
                     <TableRow className="hover:bg-transparent">
                       <TableCell className="align-top border-s pb-[calc(var(--card-spacing)+--spacing(4))] pt-5 px-3 text-center whitespace-normal">
                         <Button className="min-w-full rounded-sm w-0" href="#" role="button" tabIndex="0">
-                          Start Free
+                          {"Start Free"}
                         </Button>
                       </TableCell>
                       <TableCell className="align-top border-s pb-[calc(var(--card-spacing)+--spacing(4))] pt-5 px-3 text-center whitespace-normal">
                         <Button className="leading-none min-w-full rounded-sm text-balance w-0 whitespace-normal" type="button" disabled="" tabIndex="0" disabled>
-                          Included in your package
+                          {"Included in your package"}
                         </Button>
                       </TableCell>
                       <TableCell className="align-top bg-primary/2 border-s pb-[calc(var(--card-spacing)+--spacing(4))] pe-(--card-spacing) pt-5 px-3 text-center whitespace-normal">
                         <Button className="leading-none min-w-full rounded-sm text-balance w-0 whitespace-normal" type="button" disabled="" tabIndex="0" disabled>
-                          Current Package
+                          {"Current Package"}
                         </Button>
                       </TableCell>
                     </TableRow>
@@ -278,7 +278,7 @@ export function Pattern() {
                             <circle cx="9" cy="7" r="4"></circle>
                           </svg>
                           <span className="truncate">
-                            Analyst seats
+                            {"Analyst seats"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Analyst seats" id="base-ui-_r_a_" baseUiTooltipTrigger="">
@@ -294,21 +294,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            1 seat
+                            {"1 seat"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            5 seats
+                            {"5 seats"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            5 seats
+                            {"5 seats"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -320,7 +320,7 @@ export function Pattern() {
                             <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                           </svg>
                           <span className="truncate">
-                            Monthly events
+                            {"Monthly events"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Monthly events" id="base-ui-_r_c_" baseUiTooltipTrigger="">
@@ -336,21 +336,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            50,000
+                            {"50,000"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            2 million
+                            {"2 million"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            10 million
+                            {"10 million"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -364,7 +364,7 @@ export function Pattern() {
                             <path d="M10 12h4"></path>
                           </svg>
                           <span className="truncate">
-                            Data retention
+                            {"Data retention"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Data retention" id="base-ui-_r_e_" baseUiTooltipTrigger="">
@@ -376,7 +376,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Data retention, policy" role="button" tabIndex="0">
-                            Policy
+                            {"Policy"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -387,21 +387,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            30 days
+                            {"30 days"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            12 months
+                            {"12 months"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            36 months
+                            {"36 months"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -417,10 +417,10 @@ export function Pattern() {
                             <path d="m18 3-4 4h6l-4 4"></path>
                           </svg>
                           <span className="truncate">
-                            Source integrations
+                            {"Source integrations"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                            140
+                            {"140"}
                           </Badge>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Source integrations" id="base-ui-_r_g_" baseUiTooltipTrigger="">
@@ -432,7 +432,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Source integrations, browse" role="button" tabIndex="0">
-                            Browse
+                            {"Browse"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -447,7 +447,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -459,7 +459,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -471,7 +471,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -488,10 +488,10 @@ export function Pattern() {
                             <path d="M16 17H8"></path>
                           </svg>
                           <span className="truncate">
-                            Report templates
+                            {"Report templates"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                            36
+                            {"36"}
                           </Badge>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Report templates" id="base-ui-_r_i_" baseUiTooltipTrigger="">
@@ -503,7 +503,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Report templates, browse" role="button" tabIndex="0">
-                            Browse
+                            {"Browse"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -518,7 +518,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -530,7 +530,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -542,7 +542,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -558,7 +558,7 @@ export function Pattern() {
                             <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                           </svg>
                           <span className="truncate">
-                            Saved dashboards
+                            {"Saved dashboards"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Saved dashboards" id="base-ui-_r_k_" baseUiTooltipTrigger="">
@@ -570,7 +570,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Saved dashboards, examples" role="button" tabIndex="0">
-                            Examples
+                            {"Examples"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -581,21 +581,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            3
+                            {"3"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            50
+                            {"50"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            500
+                            {"500"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -608,7 +608,7 @@ export function Pattern() {
                             <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                           </svg>
                           <span className="truncate">
-                            Alert checks
+                            {"Alert checks"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Alert checks" id="base-ui-_r_m_" baseUiTooltipTrigger="">
@@ -624,21 +624,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            Daily
+                            {"Daily"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            Hourly
+                            {"Hourly"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            Every 15 minutes
+                            {"Every 15 minutes"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -650,7 +650,7 @@ export function Pattern() {
                             <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                           </svg>
                           <span className="truncate">
-                            Session replay
+                            {"Session replay"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Session replay" id="base-ui-_r_o_" baseUiTooltipTrigger="">
@@ -662,7 +662,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Session replay, watch" role="button" tabIndex="0">
-                            Watch
+                            {"Watch"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -678,7 +678,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -690,7 +690,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -702,7 +702,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -717,7 +717,7 @@ export function Pattern() {
                             <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                           </svg>
                           <span className="truncate">
-                            Shared workspaces
+                            {"Shared workspaces"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Shared workspaces" id="base-ui-_r_q_" baseUiTooltipTrigger="">
@@ -738,7 +738,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -750,7 +750,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -762,7 +762,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -785,7 +785,7 @@ export function Pattern() {
                             <circle cx="18" cy="18" r="3"></circle>
                           </svg>
                           <span className="truncate">
-                            Seat management
+                            {"Seat management"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Seat management" id="base-ui-_r_s_" baseUiTooltipTrigger="">
@@ -806,7 +806,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -818,7 +818,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -830,7 +830,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -845,7 +845,7 @@ export function Pattern() {
                             <path d="M3 12A9 3 0 0 0 21 12"></path>
                           </svg>
                           <span className="truncate">
-                            Warehouse sync
+                            {"Warehouse sync"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Warehouse sync" id="base-ui-_r_u_" baseUiTooltipTrigger="">
@@ -857,7 +857,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Warehouse sync, docs" role="button" tabIndex="0">
-                            Docs
+                            {"Docs"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -873,7 +873,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -886,7 +886,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -898,7 +898,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -912,7 +912,7 @@ export function Pattern() {
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                           </svg>
                           <span className="truncate">
-                            Single sign-on
+                            {"Single sign-on"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Single sign-on" id="base-ui-_r_10_" baseUiTooltipTrigger="">
@@ -924,7 +924,7 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Button className="focus-visible:opacity-100 focus-visible:translate-x-0 group-hover:opacity-100 group-hover:translate-x-0 motion-reduce:transition-none ms-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:translate-x-0 px-0 translate-x-1" href="#" aria-label="Single sign-on, docs" role="button" tabIndex="0">
-                            Docs
+                            {"Docs"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -940,7 +940,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -953,7 +953,7 @@ export function Pattern() {
                               <path d="m6 6 12 12"></path>
                             </svg>
                             <span className="sr-only">
-                              Not included
+                              {"Not included"}
                             </span>
                           </span>
                         </span>
@@ -965,7 +965,7 @@ export function Pattern() {
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                             <span className="sr-only">
-                              Included
+                              {"Included"}
                             </span>
                           </span>
                         </span>
@@ -978,7 +978,7 @@ export function Pattern() {
                             <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                           </svg>
                           <span className="truncate">
-                            Support reply time
+                            {"Support reply time"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Support reply time" id="base-ui-_r_12_" baseUiTooltipTrigger="">
@@ -994,21 +994,21 @@ export function Pattern() {
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            Best effort
+                            {"Best effort"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle border-s px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            2 days
+                            {"2 days"}
                           </Badge>
                         </span>
                       </TableCell>
                       <TableCell className="align-middle bg-primary/2 border-s pe-(--card-spacing) px-3 py-3.5 text-center whitespace-normal">
                         <span className="flex justify-center min-w-full w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-secondary-foreground text-xs transition-shadow">
-                            1 day
+                            {"1 day"}
                           </Badge>
                         </span>
                       </TableCell>
@@ -1020,26 +1020,26 @@ export function Pattern() {
             <div className="@5xl:hidden flex flex-col gap-10">
               <div className="flex flex-col gap-3 items-center">
                 <h3 className="font-semibold sr-only text-base" id="_r_13_">
-                  Choose your team size
+                  {"Choose your team size"}
                 </h3>
                 <Tabs className="gap-2" data-orientation="horizontal" activationDirection="none">
                   <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-labelledby="_r_13_">
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_14_">
-                      Solo
+                      {"Solo"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_15_" compositeItemActive="" aria-controls="base-ui-_r_19_">
-                      Startup
+                      {"Startup"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_16_">
-                      Growth
+                      {"Growth"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_17_">
-                      Enterprise
+                      {"Enterprise"}
                     </TabsTrigger>
                   </TabsList>
                   <TabsContent className="flex flex-col gap-4" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_19_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_15_">
                     <p className="text-muted-foreground truncate">
-                      For a first product team
+                      {"For a first product team"}
                     </p>
                   </TabsContent>
                 </Tabs>
@@ -1049,29 +1049,29 @@ export function Pattern() {
                   <Card size="default">
                     <CardHeader>
                       <CardTitle className="flex font-semibold gap-2 items-center text-lg" role="heading" aria-level="3">
-                        Free
+                        {"Free"}
                       </CardTitle>
                       <CardDescription>
-                        Core charts and funnels for a single product.
+                        {"Core charts and funnels for a single product."}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-5">
                       <div className="flex flex-col gap-2">
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <span className="font-bold tabular-nums text-3xl tracking-tight">
-                            $0
+                            {"$0"}
                           </span>
                           <span className="text-muted-foreground text-sm">
-                            Forever
+                            {"Forever"}
                           </span>
                         </p>
                       </div>
                       <div className="flex flex-col gap-3">
                         <Button className="h-10 rounded-sm w-full" href="#" role="button" tabIndex="0">
-                          Start Free
+                          {"Start Free"}
                         </Button>
                         <p className="tabular-nums text-center text-muted-foreground text-xs">
-                          No card needed
+                          {"No card needed"}
                         </p>
                       </div>
                     </CardContent>
@@ -1087,12 +1087,12 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                             <span className="truncate">
-                              Analyst seats
+                              {"Analyst seats"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              1 seat
+                              {"1 seat"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1105,12 +1105,12 @@ export function Pattern() {
                               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                             </svg>
                             <span className="truncate">
-                              Monthly events
+                              {"Monthly events"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              50,000
+                              {"50,000"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1125,7 +1125,7 @@ export function Pattern() {
                               <path d="M10 12h4"></path>
                             </svg>
                             <span className="truncate">
-                              Data retention
+                              {"Data retention"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1134,7 +1134,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              30 days
+                              {"30 days"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1151,10 +1151,10 @@ export function Pattern() {
                               <path d="m18 3-4 4h6l-4 4"></path>
                             </svg>
                             <span className="truncate">
-                              Source integrations
+                              {"Source integrations"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              140
+                              {"140"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1167,7 +1167,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1182,10 +1182,10 @@ export function Pattern() {
                               <path d="M16 17H8"></path>
                             </svg>
                             <span className="truncate">
-                              Report templates
+                              {"Report templates"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              36
+                              {"36"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1198,7 +1198,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1212,7 +1212,7 @@ export function Pattern() {
                               <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                             </svg>
                             <span className="truncate">
-                              Saved dashboards
+                              {"Saved dashboards"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1221,7 +1221,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              3
+                              {"3"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1235,12 +1235,12 @@ export function Pattern() {
                               <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                             </svg>
                             <span className="truncate">
-                              Alert checks
+                              {"Alert checks"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              Daily
+                              {"Daily"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1253,7 +1253,7 @@ export function Pattern() {
                               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                             </svg>
                             <span className="truncate">
-                              Session replay
+                              {"Session replay"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1267,7 +1267,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1280,7 +1280,7 @@ export function Pattern() {
                               <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                             </svg>
                             <span className="truncate">
-                              Shared workspaces
+                              {"Shared workspaces"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -1290,7 +1290,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1311,7 +1311,7 @@ export function Pattern() {
                               <circle cx="18" cy="18" r="3"></circle>
                             </svg>
                             <span className="truncate">
-                              Seat management
+                              {"Seat management"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -1321,7 +1321,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1334,7 +1334,7 @@ export function Pattern() {
                               <path d="M3 12A9 3 0 0 0 21 12"></path>
                             </svg>
                             <span className="truncate">
-                              Warehouse sync
+                              {"Warehouse sync"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1348,7 +1348,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1360,7 +1360,7 @@ export function Pattern() {
                               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                             <span className="truncate">
-                              Single sign-on
+                              {"Single sign-on"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1374,7 +1374,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1385,12 +1385,12 @@ export function Pattern() {
                               <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                             </svg>
                             <span className="truncate">
-                              Support reply time
+                              {"Support reply time"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              Best effort
+                              {"Best effort"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1405,10 +1405,10 @@ export function Pattern() {
                   <Card size="default">
                     <CardHeader>
                       <CardTitle className="flex font-semibold gap-2 items-center text-lg" role="heading" aria-level="3">
-                        Pro
+                        {"Pro"}
                       </CardTitle>
                       <CardDescription>
-                        Session replays, hourly alerts and a year of data.
+                        {"Session replays, hourly alerts and a year of data."}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-5">
@@ -1416,27 +1416,27 @@ export function Pattern() {
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <s className="font-semibold tabular-nums text-lg text-muted-foreground">
                             <span className="sr-only">
-                              Regular price
+                              {"Regular price"}
                             </span>
-                            $140
+                            {"$140"}
                           </s>
                           <span className="font-bold tabular-nums text-3xl tracking-tight">
                             <span className="sr-only">
-                              , now
+                              {", now"}
                             </span>
-                            $130
+                            {"$130"}
                           </span>
                           <span className="text-muted-foreground text-sm">
-                            a month
+                            {"a month"}
                           </span>
                         </p>
                       </div>
                       <div className="flex flex-col gap-3">
                         <Button className="h-10 leading-none rounded-sm text-balance w-full whitespace-normal" type="button" disabled="" tabIndex="0" disabled>
-                          Included in your package
+                          {"Included in your package"}
                         </Button>
                         <p className="tabular-nums text-center text-muted-foreground text-xs">
-                          $26 a seat, billed yearly
+                          {"$26 a seat, billed yearly"}
                         </p>
                       </div>
                     </CardContent>
@@ -1452,12 +1452,12 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                             <span className="truncate">
-                              Analyst seats
+                              {"Analyst seats"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              5 seats
+                              {"5 seats"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1470,12 +1470,12 @@ export function Pattern() {
                               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                             </svg>
                             <span className="truncate">
-                              Monthly events
+                              {"Monthly events"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              2 million
+                              {"2 million"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1490,7 +1490,7 @@ export function Pattern() {
                               <path d="M10 12h4"></path>
                             </svg>
                             <span className="truncate">
-                              Data retention
+                              {"Data retention"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1499,7 +1499,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              12 months
+                              {"12 months"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1516,10 +1516,10 @@ export function Pattern() {
                               <path d="m18 3-4 4h6l-4 4"></path>
                             </svg>
                             <span className="truncate">
-                              Source integrations
+                              {"Source integrations"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              140
+                              {"140"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1532,7 +1532,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1547,10 +1547,10 @@ export function Pattern() {
                               <path d="M16 17H8"></path>
                             </svg>
                             <span className="truncate">
-                              Report templates
+                              {"Report templates"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              36
+                              {"36"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1563,7 +1563,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1577,7 +1577,7 @@ export function Pattern() {
                               <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                             </svg>
                             <span className="truncate">
-                              Saved dashboards
+                              {"Saved dashboards"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1586,7 +1586,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              50
+                              {"50"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1600,12 +1600,12 @@ export function Pattern() {
                               <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                             </svg>
                             <span className="truncate">
-                              Alert checks
+                              {"Alert checks"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              Hourly
+                              {"Hourly"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1618,7 +1618,7 @@ export function Pattern() {
                               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                             </svg>
                             <span className="truncate">
-                              Session replay
+                              {"Session replay"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1631,7 +1631,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1644,7 +1644,7 @@ export function Pattern() {
                               <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                             </svg>
                             <span className="truncate">
-                              Shared workspaces
+                              {"Shared workspaces"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -1653,7 +1653,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1674,7 +1674,7 @@ export function Pattern() {
                               <circle cx="18" cy="18" r="3"></circle>
                             </svg>
                             <span className="truncate">
-                              Seat management
+                              {"Seat management"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -1683,7 +1683,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1696,7 +1696,7 @@ export function Pattern() {
                               <path d="M3 12A9 3 0 0 0 21 12"></path>
                             </svg>
                             <span className="truncate">
-                              Warehouse sync
+                              {"Warehouse sync"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1710,7 +1710,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1722,7 +1722,7 @@ export function Pattern() {
                               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                             <span className="truncate">
-                              Single sign-on
+                              {"Single sign-on"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1736,7 +1736,7 @@ export function Pattern() {
                                 <path d="m6 6 12 12"></path>
                               </svg>
                               <span className="sr-only">
-                                Not included
+                                {"Not included"}
                               </span>
                             </span>
                           </span>
@@ -1747,12 +1747,12 @@ export function Pattern() {
                               <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                             </svg>
                             <span className="truncate">
-                              Support reply time
+                              {"Support reply time"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              2 days
+                              {"2 days"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1767,13 +1767,13 @@ export function Pattern() {
                   <Card className="ring-primary/30" size="default">
                     <CardHeader>
                       <CardTitle className="flex font-semibold gap-2 items-center text-lg" role="heading" aria-level="3">
-                        Ultimate
+                        {"Ultimate"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                          Best Value
+                          {"Best Value"}
                         </Badge>
                       </CardTitle>
                       <CardDescription>
-                        Warehouse sync, SSO and replies within a day.
+                        {"Warehouse sync, SSO and replies within a day."}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-5">
@@ -1781,27 +1781,27 @@ export function Pattern() {
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <s className="font-semibold tabular-nums text-lg text-muted-foreground">
                             <span className="sr-only">
-                              Regular price
+                              {"Regular price"}
                             </span>
-                            $240
+                            {"$240"}
                           </s>
                           <span className="font-bold tabular-nums text-3xl tracking-tight">
                             <span className="sr-only">
-                              , now
+                              {", now"}
                             </span>
-                            $225
+                            {"$225"}
                           </span>
                           <span className="text-muted-foreground text-sm">
-                            a month
+                            {"a month"}
                           </span>
                         </p>
                       </div>
                       <div className="flex flex-col gap-3">
                         <Button className="h-10 leading-none rounded-sm text-balance w-full whitespace-normal" type="button" disabled="" tabIndex="0" disabled>
-                          Current Package
+                          {"Current Package"}
                         </Button>
                         <p className="tabular-nums text-center text-muted-foreground text-xs">
-                          $45 a seat, billed yearly
+                          {"$45 a seat, billed yearly"}
                         </p>
                       </div>
                     </CardContent>
@@ -1817,12 +1817,12 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                             <span className="truncate">
-                              Analyst seats
+                              {"Analyst seats"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              5 seats
+                              {"5 seats"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1835,12 +1835,12 @@ export function Pattern() {
                               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                             </svg>
                             <span className="truncate">
-                              Monthly events
+                              {"Monthly events"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              10 million
+                              {"10 million"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1855,7 +1855,7 @@ export function Pattern() {
                               <path d="M10 12h4"></path>
                             </svg>
                             <span className="truncate">
-                              Data retention
+                              {"Data retention"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1864,7 +1864,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              36 months
+                              {"36 months"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1881,10 +1881,10 @@ export function Pattern() {
                               <path d="m18 3-4 4h6l-4 4"></path>
                             </svg>
                             <span className="truncate">
-                              Source integrations
+                              {"Source integrations"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              140
+                              {"140"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1897,7 +1897,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1912,10 +1912,10 @@ export function Pattern() {
                               <path d="M16 17H8"></path>
                             </svg>
                             <span className="truncate">
-                              Report templates
+                              {"Report templates"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                              36
+                              {"36"}
                             </Badge>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1928,7 +1928,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -1942,7 +1942,7 @@ export function Pattern() {
                               <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                             </svg>
                             <span className="truncate">
-                              Saved dashboards
+                              {"Saved dashboards"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1951,7 +1951,7 @@ export function Pattern() {
                           </a>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              500
+                              {"500"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1965,12 +1965,12 @@ export function Pattern() {
                               <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                             </svg>
                             <span className="truncate">
-                              Alert checks
+                              {"Alert checks"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              Every 15 minutes
+                              {"Every 15 minutes"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -1983,7 +1983,7 @@ export function Pattern() {
                               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                             </svg>
                             <span className="truncate">
-                              Session replay
+                              {"Session replay"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -1996,7 +1996,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -2009,7 +2009,7 @@ export function Pattern() {
                               <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                             </svg>
                             <span className="truncate">
-                              Shared workspaces
+                              {"Shared workspaces"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -2018,7 +2018,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -2039,7 +2039,7 @@ export function Pattern() {
                               <circle cx="18" cy="18" r="3"></circle>
                             </svg>
                             <span className="truncate">
-                              Seat management
+                              {"Seat management"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
@@ -2048,7 +2048,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -2061,7 +2061,7 @@ export function Pattern() {
                               <path d="M3 12A9 3 0 0 0 21 12"></path>
                             </svg>
                             <span className="truncate">
-                              Warehouse sync
+                              {"Warehouse sync"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -2074,7 +2074,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -2086,7 +2086,7 @@ export function Pattern() {
                               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                             <span className="truncate">
-                              Single sign-on
+                              {"Single sign-on"}
                             </span>
                             <svg className="lucide lucide-arrow-up-right shrink-0 size-4 text-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -2099,7 +2099,7 @@ export function Pattern() {
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
-                                Included
+                                {"Included"}
                               </span>
                             </span>
                           </span>
@@ -2110,12 +2110,12 @@ export function Pattern() {
                               <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                             </svg>
                             <span className="truncate">
-                              Support reply time
+                              {"Support reply time"}
                             </span>
                           </span>
                           <span className="flex justify-end shrink-0">
                             <span className="flex font-medium gap-1.5 items-center tabular-nums whitespace-nowrap">
-                              1 day
+                              {"1 day"}
                               <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
@@ -2135,18 +2135,18 @@ export function Pattern() {
                     <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
-                  Encrypted card checkout
+                  {"Encrypted card checkout"}
                 </span>
                 <a className="flex gap-1.5 hover:text-primary/80 items-center text-primary transition-colors underline underline-offset-4" href="#">
                   <svg className="lucide lucide-shield-check shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
-                  30-day refunds
+                  {"30-day refunds"}
                 </a>
               </p>
               <p className="text-balance">
-                Local sales tax is added at checkout, where your country requires it.
+                {"Local sales tax is added at checkout, where your country requires it."}
               </p>
             </div>
           </div>

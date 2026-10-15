@@ -47,7 +47,7 @@ export function Pattern() {
           <BreadcrumbList className="flex-nowrap">
             <BreadcrumbItem>
               <BreadcrumbLink href="#">
-                Workflows
+                {"Workflows"}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -58,23 +58,23 @@ export function Pattern() {
           </BreadcrumbList>
         </Breadcrumb>
         <h1 className="font-semibold min-w-0 text-sm truncate">
-          Lead Routing
+          {"Lead Routing"}
         </h1>
         <Separator className="data-vertical:self-center h-4 max-md:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
         <p className="flex gap-1.5 items-center max-md:sr-only min-w-0 text-muted-foreground text-xs">
           <span className="shrink-0 tabular-nums">
-            5 steps, 4 connections
+            {"5 steps, 4 connections"}
           </span>
           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span className="flex gap-1.5 items-center shrink-0">
             <span className="sr-only">
-              Edited 2h ago by Ines Marchetti
+              {"Edited 2h ago by Ines Marchetti"}
             </span>
             <Avatar className="size-4" size="default" aria-hidden="true">
               <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
             </Avatar>
             <span aria-hidden="true">
-              2h ago
+              {"2h ago"}
             </span>
           </span>
         </p>
@@ -93,13 +93,13 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add step
+            {"Add step"}
           </Button>
           <Button type="button" disabled="" tabIndex="0" disabled>
             <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
               <path d="M20 6 9 17l-5-5"></path>
             </svg>
-            Update
+            {"Update"}
           </Button>
           <DropdownMenu>
           <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Workflow actions" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
@@ -146,10 +146,10 @@ export function Pattern() {
                   </div>
                   <div className="react-flow__edgelabel-renderer">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 nodrag nopan outline-none px-1.25 py-0.5 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow" style={{transform: "translate(-50%, -50%) translate(570.5px, 141.5px)"}}>
-                      Yes
+                      {"Yes"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 nodrag nopan outline-none px-1.25 py-0.5 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow" style={{transform: "translate(-50%, -50%) translate(570.5px, 261.5px)"}}>
-                      No
+                      {"No"}
                     </Badge>
                   </div>
                   <div className="react-flow__nodes" style={{position: "absolute", width: "100%", height: "100%", top: "0px", left: "0px"}}>
@@ -167,11 +167,11 @@ export function Pattern() {
                           <ItemContent className="gap-0 min-w-0">
                             <ItemTitle className="leading-4 w-full">
                               <span className="truncate">
-                                Form submitted
+                                {"Form submitted"}
                               </span>
                             </ItemTitle>
                             <ItemDescription className="leading-4 line-clamp-1">
-                              Webhook: demo.request
+                              {"Webhook: demo.request"}
                             </ItemDescription>
                           </ItemContent>
                           <ItemFooter className="-mb-2 -mx-2 border-t gap-2 grow px-2 py-1.5">
@@ -180,7 +180,7 @@ export function Pattern() {
                                 <AvatarImage alt="Ines Marchetti" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                0.2s
+                                {"0.2s"}
                               </span>
                             </div>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -188,7 +188,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Success
+                              {"Success"}
                             </Badge>
                           </ItemFooter>
                           <div className="connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-nodeid="trigger" data-handlepos="right" data-id="1-trigger-null-source"></div>
@@ -211,11 +211,11 @@ export function Pattern() {
                           <ItemContent className="gap-0 min-w-0">
                             <ItemTitle className="leading-4 w-full">
                               <span className="truncate">
-                                Plan is Enterprise
+                                {"Plan is Enterprise"}
                               </span>
                             </ItemTitle>
                             <ItemDescription className="leading-4 line-clamp-1">
-                              company.size &gt; 200
+                              {"company.size > 200"}
                             </ItemDescription>
                           </ItemContent>
                           <ItemFooter className="-mb-2 -mx-2 border-t gap-2 grow px-2 py-1.5">
@@ -224,7 +224,7 @@ export function Pattern() {
                                 <AvatarImage alt="Ines Marchetti" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                0.1s
+                                {"0.1s"}
                               </span>
                             </div>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -232,7 +232,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Success
+                              {"Success"}
                             </Badge>
                           </ItemFooter>
                           <div className="connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-nodeid="filter" data-handlepos="right" data-id="1-filter-null-source"></div>
@@ -255,11 +255,11 @@ export function Pattern() {
                           <ItemContent className="gap-0 min-w-0">
                             <ItemTitle className="leading-4 w-full">
                               <span className="truncate">
-                                Enrich company
+                                {"Enrich company"}
                               </span>
                             </ItemTitle>
                             <ItemDescription className="leading-4 line-clamp-1">
-                              Clearbit lookup
+                              {"Clearbit lookup"}
                             </ItemDescription>
                           </ItemContent>
                           <ItemFooter className="-mb-2 -mx-2 border-t gap-2 grow px-2 py-1.5">
@@ -268,7 +268,7 @@ export function Pattern() {
                                 <AvatarImage alt="Tomas Lindqvist" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                8.0s
+                                {"8.0s"}
                               </span>
                             </div>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
@@ -277,7 +277,7 @@ export function Pattern() {
                                 <path d="m15 9-6 6"></path>
                                 <path d="m9 9 6 6"></path>
                               </svg>
-                              Failed
+                              {"Failed"}
                             </Badge>
                           </ItemFooter>
                           <div className="connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-nodeid="enrich" data-handlepos="right" data-id="1-enrich-null-source"></div>
@@ -299,11 +299,11 @@ export function Pattern() {
                           <ItemContent className="gap-0 min-w-0">
                             <ItemTitle className="leading-4 w-full">
                               <span className="truncate">
-                                Notify sales
+                                {"Notify sales"}
                               </span>
                             </ItemTitle>
                             <ItemDescription className="leading-4 line-clamp-1">
-                              Slack #inbound-leads
+                              {"Slack #inbound-leads"}
                             </ItemDescription>
                           </ItemContent>
                           <ItemFooter className="-mb-2 -mx-2 border-t gap-2 grow px-2 py-1.5">
@@ -312,14 +312,14 @@ export function Pattern() {
                                 <AvatarImage alt="Hanna Berg" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                Not run
+                                {"Not run"}
                               </span>
                             </div>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
-                              Skipped
+                              {"Skipped"}
                             </Badge>
                           </ItemFooter>
                           <div className="connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-nodeid="notify" data-handlepos="right" data-id="1-notify-null-source"></div>
@@ -340,11 +340,11 @@ export function Pattern() {
                           <ItemContent className="gap-0 min-w-0">
                             <ItemTitle className="leading-4 w-full">
                               <span className="truncate">
-                                Create deal
+                                {"Create deal"}
                               </span>
                             </ItemTitle>
                             <ItemDescription className="leading-4 line-clamp-1">
-                              HubSpot pipeline: Inbound
+                              {"HubSpot pipeline: Inbound"}
                             </ItemDescription>
                           </ItemContent>
                           <ItemFooter className="-mb-2 -mx-2 border-t gap-2 grow px-2 py-1.5">
@@ -353,7 +353,7 @@ export function Pattern() {
                                 <AvatarImage alt="Tomas Lindqvist" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                Not run
+                                {"Not run"}
                               </span>
                             </div>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
@@ -361,7 +361,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <circle cx="12" cy="12" r="1"></circle>
                               </svg>
-                              Idle
+                              {"Idle"}
                             </Badge>
                           </ItemFooter>
                           <div className="connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-nodeid="deal" data-handlepos="right" data-id="1-deal-null-source"></div>
@@ -383,7 +383,7 @@ export function Pattern() {
             <div className="bottom max-md:hidden react-flow__minimap react-flow__panel right" data-testid="rf__minimap">
               <svg className="react-flow__minimap-svg" width="200" height="150" viewBox="-102 -310.5 1344 1024" role="img" aria-labelledby="react-flow__minimap-desc-1">
                 <title id="react-flow__minimap-desc-1">
-                  Mini Map
+                  {"Mini Map"}
                 </title>
                 <rect className="react-flow__minimap-node" x="0" y="160" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
                 <rect className="react-flow__minimap-node" x="300" y="160" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
@@ -425,7 +425,7 @@ export function Pattern() {
                   </Tooltip>
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 tabular-nums transition-all w-12 whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom level 100%" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
-                    100%
+                    {"100%"}
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <Tooltip>
@@ -469,14 +469,14 @@ export function Pattern() {
             </div>
             <div className="bottom center react-flow__attribution react-flow__panel" data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev?utm_source=attribution">
               <a href="https://reactflow.dev?utm_source=attribution" target="_blank" rel="noopener noreferrer" aria-label="React Flow attribution">
-                React Flow
+                {"React Flow"}
               </a>
             </div>
             <div id="react-flow__node-desc-1" style={{display: "none"}}>
-              Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.
+              {"Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel."}
             </div>
             <div id="react-flow__edge-desc-1" style={{display: "none"}}>
-              Press enter or space to select an edge. You can then press delete to remove it or escape to cancel.
+              {"Press enter or space to select an edge. You can then press delete to remove it or escape to cancel."}
             </div>
             <div id="react-flow__aria-live-1" aria-live="assertive" aria-atomic="true" style={{position: "absolute", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)"}}></div>
           </div>
@@ -493,7 +493,7 @@ export function Pattern() {
                 <h2 className="font-semibold text-sm truncate"></h2>
                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Action
+                    {"Action"}
                   </Badge>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate"></span>
@@ -509,68 +509,68 @@ export function Pattern() {
             <div className="flex flex-1 flex-col gap-5 min-h-0 overflow-y-auto p-4">
               <section className="flex flex-col gap-3" aria-labelledby="step-facts">
                 <h3 className="font-semibold text-sm" id="step-facts">
-                  Step
+                  {"Step"}
                 </h3>
                 <dl className="flex flex-col gap-3">
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Detail
+                      {"Detail"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right"></dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Category
+                      {"Category"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right"></dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Owner
+                      {"Owner"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right"></dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Incoming
+                      {"Incoming"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right">
-                      0
+                      {"0"}
                     </dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Outgoing
+                      {"Outgoing"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right">
-                      0
+                      {"0"}
                     </dd>
                   </div>
                 </dl>
               </section>
               <section className="flex flex-col gap-3" aria-labelledby="run-facts">
                 <h3 className="font-semibold text-sm" id="run-facts">
-                  Last Run
+                  {"Last Run"}
                 </h3>
                 <dl className="flex flex-col gap-3">
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Status
+                      {"Status"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right"></dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Duration
+                      {"Duration"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right"></dd>
                   </div>
                   <div className="flex gap-4 items-start justify-between text-sm">
                     <dt className="min-w-0 text-muted-foreground">
-                      Run
+                      {"Run"}
                     </dt>
                     <dd className="break-words font-medium min-w-0 tabular-nums text-right">
-                      run_3f9a1c
+                      {"run_3f9a1c"}
                     </dd>
                   </div>
                 </dl>
@@ -578,7 +578,7 @@ export function Pattern() {
             </div>
             <footer className="border-t p-4 shrink-0">
               <Button className="w-full" type="button" tabIndex="0">
-                Edit step
+                {"Edit step"}
               </Button>
             </footer>
           </div>

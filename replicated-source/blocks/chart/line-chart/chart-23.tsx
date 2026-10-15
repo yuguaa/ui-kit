@@ -15,37 +15,25 @@ export function Pattern() {
         <FramePanel className="space-y-8">
           <div className="flex gap-2 items-center justify-between p-2">
             <h3 className="font-semibold text-base">
-              Social Media Activity
+              {"Social Media Activity"}
             </h3>
             <Select>
             <SelectTrigger className="min-w-[140px]" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
               <SelectValue>
-                Last 24 hours
+                {"Last 24 hours"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
             <input id="base-ui-_r_0_-hidden-input" tabIndex="-1" aria-hidden="true" value="24h" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
           </div>
           <div className="space-y-6">
+            <ChartContainer>
             <div className="-ms-4 [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[300px] justify-center text-xs w-full" data-chart="chart-_r_3_">
-              <style>{`
- [data-chart=chart-_r_3_] {
-  --color-facebook: var(--color-blue-600);
-  --color-instagram: var(--color-orange-500);
-  --color-linkedin: var(--color-slate-600);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-facebook: var(--color-blue-600);
-  --color-instagram: var(--color-orange-500);
-  --color-linkedin: var(--color-slate-600);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-facebook: var(--color-blue-600);\n  --color-instagram: var(--color-orange-500);\n  --color-linkedin: var(--color-slate-600);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-facebook: var(--color-blue-600);\n  --color-instagram: var(--color-orange-500);\n  --color-linkedin: var(--color-slate-600);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="630" height="300" style={{position: "relative", cursor: "default", width: "630px", height: "300px"}}>
@@ -124,42 +112,42 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="65" y="281" textAnchor="middle" fill="#666">
                               <tspan x="65" dy="0.71em">
-                                6AM
+                                {"6AM"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="177" y="281" textAnchor="middle" fill="#666">
                               <tspan x="177" dy="0.71em">
-                                9AM
+                                {"9AM"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="289" y="281" textAnchor="middle" fill="#666">
                               <tspan x="289" dy="0.71em">
-                                12PM
+                                {"12PM"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="401" y="281" textAnchor="middle" fill="#666">
                               <tspan x="401" dy="0.71em">
-                                3PM
+                                {"3PM"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="513" y="281" textAnchor="middle" fill="#666">
                               <tspan x="513" dy="0.71em">
-                                6PM
+                                {"6PM"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="560" stroke="none" fontSize="11" x="618.1015625" y="281" textAnchor="middle" fill="#666">
                               <tspan x="618.1015625" dy="0.71em">
-                                9PM
+                                {"9PM"}
                               </tspan>
                             </text>
                           </g>
@@ -168,35 +156,35 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="260" stroke="none" fontSize="11" x="49" y="265" textAnchor="end" fill="#666">
                               <tspan x="49" dy="0.355em">
-                                0%
+                                {"0%"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="260" stroke="none" fontSize="11" x="49" y="200" textAnchor="end" fill="#666">
                               <tspan x="49" dy="0.355em">
-                                15%
+                                {"15%"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="260" stroke="none" fontSize="11" x="49" y="135" textAnchor="end" fill="#666">
                               <tspan x="49" dy="0.355em">
-                                30%
+                                {"30%"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="260" stroke="none" fontSize="11" x="49" y="70" textAnchor="end" fill="#666">
                               <tspan x="49" dy="0.355em">
-                                45%
+                                {"45%"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="260" stroke="none" fontSize="11" x="49" y="8.25" textAnchor="end" fill="#666">
                               <tspan x="49" dy="0.355em">
-                                60%
+                                {"60%"}
                               </tspan>
                             </text>
                           </g>
@@ -207,23 +195,24 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
             <div className="flex gap-6 items-center justify-center mb-2.5">
               <div className="flex gap-2 items-center">
                 <div className="rounded-full size-2" style={{backgroundColor: "var(--color-blue-600)"}}></div>
                 <span className="font-medium text-muted-foreground text-xs">
-                  Facebook
+                  {"Facebook"}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
                 <div className="rounded-full size-2" style={{backgroundColor: "var(--color-orange-500)"}}></div>
                 <span className="font-medium text-muted-foreground text-xs">
-                  Instagram
+                  {"Instagram"}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
                 <div className="rounded-full size-2" style={{backgroundColor: "var(--color-slate-600)"}}></div>
                 <span className="font-medium text-muted-foreground text-xs">
-                  LinkedIn
+                  {"LinkedIn"}
                 </span>
               </div>
             </div>

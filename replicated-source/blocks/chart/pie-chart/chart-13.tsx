@@ -17,37 +17,14 @@ import {
 export function Pattern() {
   return (
     <div className="flex items-center justify-center min-h-svh p-6 w-full">
-      <style>{`
-@keyframes chart-13-reveal-up {
-  from {
-    clip-path: inset(100% 0 0 0);
-    opacity: 0.75;
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-  }
-}
-
-.chart-13-reveal-up {
-  animation: chart-13-reveal-up 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .chart-13-reveal-up {
-    animation: none;
-    clip-path: none;
-    opacity: 1;
-  }
-}
-`}</style>
+      <style dangerouslySetInnerHTML={{ __html: "\n@keyframes chart-13-reveal-up {\n  from {\n    clip-path: inset(100% 0 0 0);\n    opacity: 0.75;\n  }\n  to {\n    clip-path: inset(0 0 0 0);\n    opacity: 1;\n  }\n}\n\n.chart-13-reveal-up {\n  animation: chart-13-reveal-up 680ms cubic-bezier(0.22, 1, 0.36, 1) both;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .chart-13-reveal-up {\n    animation: none;\n    clip-path: none;\n    opacity: 1;\n  }\n}\n" }} />
       <Frame className="@container max-w-[29rem] w-full">
         <FramePanel className="pb-3.5! pe-5! ps-3.5! pt-5!">
           <Tabs className="gap-6" data-orientation="horizontal" activationDirection="none">
             <div className="flex flex-wrap gap-4 items-center justify-between">
               <div className="flex gap-0.5 items-center min-w-0 ps-1.5">
                 <h2 className="font-medium text-sm">
-                  Capital Inflows
+                  {"Capital Inflows"}
                 </h2>
                 <Tooltip>
                 <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground/70 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Capital Inflows" id="base-ui-_r_1_" baseUiTooltipTrigger="" extracted="1">
@@ -61,36 +38,22 @@ export function Pattern() {
               </div>
               <TabsList className="@sm:w-auto w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2_" compositeItemActive="" aria-controls="base-ui-_r_5_">
-                  Week
+                  {"Week"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                  Month
+                  {"Month"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                  Year
+                  {"Year"}
                 </TabsTrigger>
               </TabsList>
             </div>
             <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_5_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_2_">
               <div className="@sm:grid-cols-[8.25rem_minmax(0,1fr)] @sm:items-center gap-6 grid">
                 <div className="chart-13-reveal-up relative shrink-0 size-[8.25rem]">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-square cn-chart flex justify-center size-[8.25rem] text-xs" data-chart="chart-_r_6_" aria-label="Capital Inflows: $12,4M total for Week">
-                    <style>{`
- [data-chart=chart-_r_6_] {
-  --color-northline: oklch(0.6 0.145 181.2);
-  --color-copper: oklch(0.76 0.161 80.1);
-  --color-bridgewell: oklch(0.66 0.19 42.8);
-  --color-reserve: var(--muted);
-}
-
-
-.dark [data-chart=chart-_r_6_] {
-  --color-northline: oklch(0.6 0.145 181.2);
-  --color-copper: oklch(0.76 0.161 80.1);
-  --color-bridgewell: oklch(0.66 0.19 42.8);
-  --color-reserve: var(--muted);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_6_] {\n  --color-northline: oklch(0.6 0.145 181.2);\n  --color-copper: oklch(0.76 0.161 80.1);\n  --color-bridgewell: oklch(0.66 0.19 42.8);\n  --color-reserve: var(--muted);\n}\n\n\n.dark [data-chart=chart-_r_6_] {\n  --color-northline: oklch(0.6 0.145 181.2);\n  --color-copper: oklch(0.76 0.161 80.1);\n  --color-bridgewell: oklch(0.66 0.19 42.8);\n  --color-reserve: var(--muted);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="132" height="132" style={{position: "relative", cursor: "default", width: "132px", height: "132px"}}>
@@ -145,13 +108,14 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                   <div className="absolute flex inset-0 items-center justify-center pointer-events-none" aria-hidden="true">
                     <div className="bg-background/90 border border-border/70 border-dashed flex flex-col items-center justify-center rounded-full size-[5.25rem]">
                       <span className="text-muted-foreground/70 text-xs">
-                        Capital
+                        {"Capital"}
                       </span>
                       <span className="font-semibold mt-0.5 text-sm">
-                        $12,4M
+                        {"$12,4M"}
                       </span>
                     </div>
                   </div>
@@ -162,14 +126,14 @@ export function Pattern() {
                       <div className="flex gap-2.5 items-center min-w-0">
                         <span className="border-2 border-background rounded-full shadow-sm shrink-0 size-3" aria-hidden="true" style={{backgroundColor: "oklch(0.6 0.145 181.2)"}}></span>
                         <span className="font-medium text-sm">
-                          WaveMark Capital
+                          {"WaveMark Capital"}
                         </span>
                       </div>
                       <span className="font-medium text-sm">
-                        $7,6M
+                        {"$7,6M"}
                       </span>
                       <span className="text-muted-foreground/70 text-right text-xs w-8">
-                        35%
+                        {"35%"}
                       </span>
                     </div>
                     <Separator className="w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -179,14 +143,14 @@ export function Pattern() {
                       <div className="flex gap-2.5 items-center min-w-0">
                         <span className="border-2 border-background rounded-full shadow-sm shrink-0 size-3" aria-hidden="true" style={{backgroundColor: "oklch(0.76 0.161 80.1)"}}></span>
                         <span className="font-medium text-sm">
-                          Envato Market
+                          {"Envato Market"}
                         </span>
                       </div>
                       <span className="font-medium text-sm">
-                        $3,4M
+                        {"$3,4M"}
                       </span>
                       <span className="text-muted-foreground/70 text-right text-xs w-8">
-                        34%
+                        {"34%"}
                       </span>
                     </div>
                     <Separator className="w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -196,14 +160,14 @@ export function Pattern() {
                       <div className="flex gap-2.5 items-center min-w-0">
                         <span className="border-2 border-background rounded-full shadow-sm shrink-0 size-3" aria-hidden="true" style={{backgroundColor: "oklch(0.66 0.19 42.8)"}}></span>
                         <span className="font-medium text-sm">
-                          QBridge Investment
+                          {"QBridge Investment"}
                         </span>
                       </div>
                       <span className="font-medium text-sm">
-                        $1,2M
+                        {"$1,2M"}
                       </span>
                       <span className="text-muted-foreground/70 text-right text-xs w-8">
-                        14%
+                        {"14%"}
                       </span>
                     </div>
                   </li>

@@ -26,18 +26,18 @@ export function Pattern() {
               </IconTile>
               <div className="min-w-0 pt-0.5">
                 <span className="block font-medium text-sm truncate">
-                  Active Jobs
+                  {"Active Jobs"}
                 </span>
                 <span className="block text-muted-foreground text-xs truncate">
-                  5 paused
+                  {"5 paused"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold tabular-nums text-xl tracking-tight">
-                27
+                {"27"}
                 <span className="font-normal text-muted-foreground text-sm">
-                  of 32
+                  {"of 32"}
                 </span>
               </div>
             </div>
@@ -80,19 +80,19 @@ export function Pattern() {
                 <span className="flex gap-1 items-center">
                   <span className="bg-success h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    24 Healthy
+                    {"24 Healthy"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center">
                   <span className="bg-destructive h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    3 Failing
+                    {"3 Failing"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center">
                   <span className="bg-info h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    5 Paused
+                    {"5 Paused"}
                   </span>
                 </span>
               </div>
@@ -109,34 +109,26 @@ export function Pattern() {
               </IconTile>
               <div className="min-w-0 pt-0.5">
                 <span className="block font-medium text-sm truncate">
-                  Success Rate
+                  {"Success Rate"}
                 </span>
                 <span className="block text-muted-foreground text-xs truncate">
-                  995 of 1,004 runs
+                  {"995 of 1,004 runs"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold tabular-nums text-xl tracking-tight">
-                99.1%
+                {"99.1%"}
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                Below SLO
+                {"Below SLO"}
               </Badge>
             </div>
             <div className="flex flex-col gap-2 mt-auto">
               <div className="min-w-0" role="img" aria-label="Success rate by hour, last 24 hours: 17 of 24 hours in SLO, lowest 86.7% at 14:00 UTC">
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-11.5 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_1_">
-                  <style>{`
- [data-chart=chart-_r_1_] {
-  --color-rate: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-rate: var(--success);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-rate: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-rate: var(--success);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="257" height="46" style={{position: "relative", cursor: "default", width: "257px", height: "46px"}}>
@@ -194,7 +186,7 @@ export function Pattern() {
                           <g className="recharts-zIndex-layer_2000" tabIndex="-1">
                             <text className="recharts-label recharts-text" offset="5" x="8" y="15.865743204640431" textAnchor="start" fill="var(--muted-foreground)">
                               <tspan x="8" dy="0.71em">
-                                SLO 99.5%
+                                {"SLO 99.5%"}
                               </tspan>
                             </text>
                           </g>
@@ -203,18 +195,19 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </div>
               <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
                 <span className="flex gap-1 items-center">
                   <span className="bg-success h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    17 of 24 hours in SLO
+                    {"17 of 24 hours in SLO"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center">
                   <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    7 below
+                    {"7 below"}
                   </span>
                 </span>
               </div>
@@ -233,21 +226,21 @@ export function Pattern() {
               </IconTile>
               <div className="min-w-0 pt-0.5">
                 <span className="block font-medium text-sm truncate">
-                  Failed Runs
+                  {"Failed Runs"}
                 </span>
                 <span className="block text-muted-foreground text-xs truncate">
-                  across 5 jobs
+                  {"across 5 jobs"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold tabular-nums text-xl tracking-tight">
-                9
+                {"9"}
               </div>
             </div>
             <div className="flex gap-2 h-5 items-center min-w-0">
               <span className="shrink-0 text-muted-foreground text-xs">
-                Worst
+                {"Worst"}
               </span>
               <span className="[&_svg:not([class*=size-])]:size-3.5 flex font-medium gap-1.5 items-center min-w-0 text-foreground text-sm">
                 <span className="flex shrink-0 text-muted-foreground">
@@ -258,11 +251,11 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="truncate">
-                  Import bank settlement files
+                  {"Import bank settlement files"}
                 </span>
               </span>
               <span className="ml-auto shrink-0 tabular-nums text-muted-foreground text-xs">
-                4 of 9
+                {"4 of 9"}
               </span>
             </div>
             <div className="flex flex-col gap-2 mt-auto">
@@ -274,13 +267,13 @@ export function Pattern() {
                 <span className="flex gap-1 items-center">
                   <span className="bg-destructive h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    7 Failed
+                    {"7 Failed"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center">
                   <span className="bg-warning h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                   <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                    2 Timed Out
+                    {"2 Timed Out"}
                   </span>
                 </span>
               </div>
@@ -302,18 +295,18 @@ export function Pattern() {
               </IconTile>
               <div className="min-w-0 pt-0.5">
                 <span className="block font-medium text-sm truncate">
-                  Next Run
+                  {"Next Run"}
                 </span>
                 <span className="block text-muted-foreground text-xs truncate">
-                  42 runs in the next hour
+                  {"42 runs in the next hour"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold tabular-nums text-xl tracking-tight">
-                in 5m
+                {"in 5m"}
                 <span className="font-normal text-muted-foreground text-sm">
-                  14:25 UTC
+                  {"14:25 UTC"}
                 </span>
               </div>
             </div>
@@ -327,11 +320,11 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="truncate">
-                  Drain webhook retry queue
+                  {"Drain webhook retry queue"}
                 </span>
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                Failing
+                {"Failing"}
               </Badge>
             </div>
             <div className="flex flex-col gap-2 mt-auto">
@@ -341,7 +334,7 @@ export function Pattern() {
                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "50%"}}></ProgressIndicator>
                   </ProgressTrack>
                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                    x
+                    {"x"}
                   </span>
                 </Progress>
               </div>
@@ -355,14 +348,14 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="shrink-0">
-                    14:15
+                    {"14:15"}
                   </span>
                   <span className="text-destructive truncate">
-                    Failed
+                    {"Failed"}
                   </span>
                 </span>
                 <span className="shrink-0">
-                  14:25
+                  {"14:25"}
                 </span>
               </div>
             </div>

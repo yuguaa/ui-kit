@@ -18,10 +18,10 @@ export function Pattern() {
       <div className="flex flex-col gap-3 max-w-2xl w-full">
         <div className="flex flex-col gap-1 max-w-xl">
           <h1 className="font-semibold sm:text-2xl text-xl tracking-tight">
-            Blueprint Library
+            {"Blueprint Library"}
           </h1>
           <p className="text-muted-foreground text-xs/5">
-            Turn repeatable launches, onboarding flows, and reports into reusable project blueprints.
+            {"Turn repeatable launches, onboarding flows, and reports into reusable project blueprints."}
           </p>
         </div>
         <Card size="sm">
@@ -56,18 +56,18 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-2.5 items-start min-w-0">
                 <EmptyHeader className="gap-1.5 items-start max-w-96 text-left">
                   <EmptyTitle className="font-semibold text-base tracking-tight">
-                    No blueprints yet
+                    {"No blueprints yet"}
                   </EmptyTitle>
                   <EmptyDescription className="text-sm/6">
-                    Create a reusable starting point so every new project starts structured.
+                    {"Create a reusable starting point so every new project starts structured."}
                   </EmptyDescription>
                 </EmptyHeader>
                 <EmptyContent className="flex-row flex-wrap gap-2 justify-start max-w-none">
                   <Button type="button" tabIndex="0">
-                    Create blueprint
+                    {"Create blueprint"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Import blueprint
+                    {"Import blueprint"}
                   </Button>
                 </EmptyContent>
               </div>

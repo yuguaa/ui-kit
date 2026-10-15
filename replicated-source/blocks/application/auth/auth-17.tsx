@@ -18,34 +18,34 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col items-center max-w-[20rem] w-full">
               <h1 className="font-medium leading-tight text-balance text-xl">
-                Log in to NeUI
+                {"Log in to NeUI"}
               </h1>
               <div className="flex flex-col min-h-[23.5rem] mt-8 w-full">
                 <div className="gap-4 grid w-full">
                   <Button type="button" tabIndex="0">
-                    Continue with Google
+                    {"Continue with Google"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Continue with email
+                    {"Continue with email"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Continue with SAML SSO
+                    {"Continue with SAML SSO"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Log in with passkey
+                    {"Log in with passkey"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Use backup code
+                    {"Use backup code"}
                   </Button>
                 </div>
                 <p className="lg:whitespace-nowrap mt-6 text-muted-foreground text-sm">
-                  Don't have an account?
+                  {"Don't have an account?"}
                   <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                    Sign up
+                    {"Sign up"}
                   </a>
-                  or
+                  {"or"}
                   <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                    learn more
+                    {"learn more"}
                   </a>
                 </p>
               </div>

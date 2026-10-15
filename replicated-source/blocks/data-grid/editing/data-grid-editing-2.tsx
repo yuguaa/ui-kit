@@ -29,17 +29,17 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Inline editable product inventory data grid
+        {"Inline editable product inventory data grid"}
       </h1>
       <section className="flex flex-col lg:px-8 max-w-6xl px-4 py-8 sm:px-6 w-full">
         <Frame>
           <header className="flex flex-col gap-3 items-start lg:flex-row lg:items-center lg:justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="flex flex-col gap-1 min-w-0">
               <div className="font-semibold text-sm">
-                Product Inventory
+                {"Product Inventory"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Edit pricing and stock inline.
+                {"Edit pricing and stock inline."}
               </div>
             </div>
             <Button type="button" tabIndex="0" extracted="1">
@@ -47,7 +47,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              Add product
+              {"Add product"}
             </Button>
           </header>
           <FramePanel className="bg-card p-0! shadow-none!">
@@ -67,17 +67,20 @@ export function Pattern() {
                   <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                   </svg>
-                  Status
+                  {"Status"}
                 </DropdownMenuTrigger>
                 </DropdownMenu>
               </div>
             </div>
             <DataGrid>
               <div className="relative">
+                <DataGridProvider>
                 <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                   <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_7_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                     <div role="presentation" style={{minWidth: "fit-content"}}>
+                      <DataGridProvider>
                       <DataGridTableViewport>
+                        <DataGridProvider>
                         <DataGridTable>
                           <colgroup>
                             <col style={{width: "240px"}} />
@@ -92,37 +95,38 @@ export function Pattern() {
                             <tr className="[&>th]:border-b bg-transparent">
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-3 font-medium h-10 last:pe-3 lg:first:ps-4 lg:last:pe-4 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="product" data-header-id="product" data-header-depth="0" style={{width: "240px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Product
+                                  {"Product"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="category" data-header-id="category" data-header-depth="0" style={{width: "170px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Category
+                                  {"Category"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left text-right!" scope="col" data-col-id="price" data-header-id="price" data-header-depth="0" style={{width: "130px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                  Price
+                                  {"Price"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left text-right!" scope="col" data-col-id="stock" data-header-id="stock" data-header-depth="0" style={{width: "130px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                  Stock
+                                  {"Stock"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "130px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Status
+                                  {"Status"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="visible" data-header-id="visible" data-header-depth="0" style={{width: "96px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-center text-secondary-foreground/80 w-full">
-                                  Visible
+                                  {"Visible"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-3 font-medium h-10 last:pe-3 lg:first:ps-4 lg:last:pe-4 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" style={{width: "56px"}}></th>
                             </tr>
                           </thead>
+                          <DataGridProvider>
                           <DataGridTableBody>
                             <tr className="[&:not(:last-child)>td]:border-b [&>td]:h-12 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="prd-1042">
                               <td className="align-middle first:ps-3 last:pe-3 lg:first:ps-4 lg:last:pe-4 px-3 py-2">
@@ -130,10 +134,10 @@ export function Pattern() {
                                   <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit name for Everyday Cotton Tee">
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Everyday Cotton Tee
+                                        {"Everyday Cotton Tee"}
                                       </span>
                                       <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                        APP-1042
+                                        {"APP-1042"}
                                       </span>
                                     </div>
                                   </button>
@@ -142,14 +146,14 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit category for Everyday Cotton Tee">
                                   <span className="text-foreground text-sm truncate">
-                                    Apparel
+                                    {"Apparel"}
                                   </span>
                                 </button>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit price for Everyday Cotton Tee">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $28.00
+                                    {"$28.00"}
                                   </span>
                                 </button>
                               </td>
@@ -157,7 +161,7 @@ export function Pattern() {
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit stock for Everyday Cotton Tee">
                                   <span className="flex gap-1.5 items-center justify-end">
                                     <span className="tabular-nums text-foreground text-sm">
-                                      320
+                                      {"320"}
                                     </span>
                                   </span>
                                 </button>
@@ -165,7 +169,7 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit status for Everyday Cotton Tee">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    Active
+                                    {"Active"}
                                   </Badge>
                                 </button>
                               </td>
@@ -197,10 +201,10 @@ export function Pattern() {
                                   <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit name for Suede Chelsea Boot">
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Suede Chelsea Boot
+                                        {"Suede Chelsea Boot"}
                                       </span>
                                       <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                        FTW-3502
+                                        {"FTW-3502"}
                                       </span>
                                     </div>
                                   </button>
@@ -209,14 +213,14 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit category for Suede Chelsea Boot">
                                   <span className="text-foreground text-sm truncate">
-                                    Footwear
+                                    {"Footwear"}
                                   </span>
                                 </button>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit price for Suede Chelsea Boot">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $189.00
+                                    {"$189.00"}
                                   </span>
                                 </button>
                               </td>
@@ -224,7 +228,7 @@ export function Pattern() {
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit stock for Suede Chelsea Boot">
                                   <span className="flex gap-1.5 items-center justify-end">
                                     <span className="tabular-nums text-foreground text-sm">
-                                      14
+                                      {"14"}
                                     </span>
                                   </span>
                                 </button>
@@ -232,7 +236,7 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit status for Suede Chelsea Boot">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                    Draft
+                                    {"Draft"}
                                   </Badge>
                                 </button>
                               </td>
@@ -264,10 +268,10 @@ export function Pattern() {
                                   <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit name for Aviator Sunglasses">
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Aviator Sunglasses
+                                        {"Aviator Sunglasses"}
                                       </span>
                                       <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                        ACC-5260
+                                        {"ACC-5260"}
                                       </span>
                                     </div>
                                   </button>
@@ -276,14 +280,14 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit category for Aviator Sunglasses">
                                   <span className="text-foreground text-sm truncate">
-                                    Accessories
+                                    {"Accessories"}
                                   </span>
                                 </button>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit price for Aviator Sunglasses">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $120.00
+                                    {"$120.00"}
                                   </span>
                                 </button>
                               </td>
@@ -291,7 +295,7 @@ export function Pattern() {
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit stock for Aviator Sunglasses">
                                   <span className="flex gap-1.5 items-center justify-end">
                                     <span className="tabular-nums text-foreground text-sm">
-                                      64
+                                      {"64"}
                                     </span>
                                   </span>
                                 </button>
@@ -299,7 +303,7 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit status for Aviator Sunglasses">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    Active
+                                    {"Active"}
                                   </Badge>
                                 </button>
                               </td>
@@ -331,10 +335,10 @@ export function Pattern() {
                                   <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit name for Trail Runner GTX">
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Trail Runner GTX
+                                        {"Trail Runner GTX"}
                                       </span>
                                       <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                        FTW-3381
+                                        {"FTW-3381"}
                                       </span>
                                     </div>
                                   </button>
@@ -343,14 +347,14 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit category for Trail Runner GTX">
                                   <span className="text-foreground text-sm truncate">
-                                    Footwear
+                                    {"Footwear"}
                                   </span>
                                 </button>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit price for Trail Runner GTX">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $145.00
+                                    {"$145.00"}
                                   </span>
                                 </button>
                               </td>
@@ -367,7 +371,7 @@ export function Pattern() {
                                     </TooltipTrigger>
                                     </Tooltip>
                                     <span className="tabular-nums text-foreground text-sm">
-                                      7
+                                      {"7"}
                                     </span>
                                   </span>
                                 </button>
@@ -375,7 +379,7 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit status for Trail Runner GTX">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    Active
+                                    {"Active"}
                                   </Badge>
                                 </button>
                               </td>
@@ -407,10 +411,10 @@ export function Pattern() {
                                   <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit name for Linen Camp Shirt">
                                     <div className="flex flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Linen Camp Shirt
+                                        {"Linen Camp Shirt"}
                                       </span>
                                       <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                        APP-2380
+                                        {"APP-2380"}
                                       </span>
                                     </div>
                                   </button>
@@ -419,14 +423,14 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit category for Linen Camp Shirt">
                                   <span className="text-foreground text-sm truncate">
-                                    Apparel
+                                    {"Apparel"}
                                   </span>
                                 </button>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit price for Linen Camp Shirt">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $64.00
+                                    {"$64.00"}
                                   </span>
                                 </button>
                               </td>
@@ -434,7 +438,7 @@ export function Pattern() {
                                 <button className="-mx-1.5 cursor-text flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center justify-end outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit stock for Linen Camp Shirt">
                                   <span className="flex gap-1.5 items-center justify-end">
                                     <span className="tabular-nums text-foreground text-sm">
-                                      0
+                                      {"0"}
                                     </span>
                                   </span>
                                 </button>
@@ -442,7 +446,7 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <button className="-mx-1.5 cursor-pointer flex focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring/60 h-8 hover:bg-muted/60 items-center outline-none px-1.5 text-left transition-colors w-[calc(100%+0.75rem)]" type="button" aria-label="Edit status for Linen Camp Shirt">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                    Archived
+                                    {"Archived"}
                                   </Badge>
                                 </button>
                               </td>
@@ -469,11 +473,15 @@ export function Pattern() {
                               </td>
                             </tr>
                           </DataGridTableBody>
+                          </DataGridProvider>
                         </DataGridTable>
+                        </DataGridProvider>
                       </DataGridTableViewport>
+                      </DataGridProvider>
                     </div>
                   </div>
                 </DataGridScrollArea>
+                </DataGridProvider>
               </div>
             </DataGrid>
           </FramePanel>
@@ -483,14 +491,14 @@ export function Pattern() {
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
-              All changes saved
+              {"All changes saved"}
             </span>
             <div className="flex gap-2 items-center">
               <Button type="button" disabled="" tabIndex="0" disabled>
-                Discard
+                {"Discard"}
               </Button>
               <Button type="button" disabled="" tabIndex="0" disabled>
-                Save changes
+                {"Save changes"}
               </Button>
             </div>
           </footer>

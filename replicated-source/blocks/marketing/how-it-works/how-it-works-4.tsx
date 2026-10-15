@@ -21,109 +21,31 @@ export function Pattern() {
           <Card className="gap-0 overflow-hidden p-0 w-full" size="default">
             <div className="border-b flex flex-col gap-6 items-center p-6">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-sm transition-shadow">
-                How It Works
+                {"How It Works"}
               </Badge>
               <h2 className="@2xl:text-4xl font-semibold text-3xl text-balance text-center text-foreground" id="how-it-works-4-title">
-                From Idea to UI
+                {"From Idea to UI"}
               </h2>
               <p className="max-w-[40rem] text-center text-muted-foreground text-pretty text-sm">
-                Pick the right pieces, add them with the shadcn CLI, fit them to your app, and ship with less guesswork from the first step onward.
+                {"Pick the right pieces, add them with the shadcn CLI, fit them to your app, and ship with less guesswork from the first step onward."}
               </p>
             </div>
-            <style>{`
-@keyframes hiw4-grow {
-  0%, 54% { transform: scaleY(1) }
-  66% { transform: scaleY(0.3) }
-  100% { transform: scaleY(1) }
-}
-/* Opacity only: moving text inside a scaled canvas lands on fractional device
-   pixels and shimmers. A dip reads as a refresh either way. */
-@keyframes hiw4-rise {
-  0%, 60% { opacity: 1 }
-  72% { opacity: 0.35 }
-  100% { opacity: 1 }
-}
-/* The scale property, not transform: radix carries the bar's value in an inline
-   transform, and scale composes with it instead of replacing it. */
-@keyframes hiw4-fill {
-  0%, 52% { scale: 1 1 }
-  64% { scale: 0.1 1 }
-  100% { scale: 1 1 }
-}
-@keyframes hiw4-blink {
-  0%, 100% { opacity: 1 }
-  50% { opacity: 0.4 }
-}
-@keyframes hiw4-draw {
-  0%, 50% { stroke-dashoffset: 0 }
-  62% { stroke-dashoffset: 1200 }
-  100% { stroke-dashoffset: 0 }
-}
-/* Activating a tab mounts its panel fresh, so this replays on every switch,
-   which is what gives the self-advancing bar something to land on. */
-@keyframes hiw4-enter {
-  from { opacity: 0; transform: translateY(8px) }
-  to { opacity: 1; transform: translateY(0) }
-}
-/* No scale: it would resample every glyph on the way in. The lift keeps its own
-   layer, so the text is rasterised once and carried by the compositor. */
-.hiw4-enter {
-  animation: hiw4-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) var(--hiw4-delay, 0s) both;
-  will-change: opacity, transform;
-}
-.hiw4-grow,
-.hiw4-rise,
-.hiw4-draw,
-.hiw4-track [data-slot="progress-indicator"] {
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-delay: var(--hiw4-delay, 0s);
-}
-.hiw4-grow { animation-name: hiw4-grow; animation-duration: 11.3s; }
-/* Promoted for the whole cycle: a text node off opacity 1 swaps antialiasing
-   mode, which reads as the glyphs changing weight. */
-.hiw4-rise {
-  animation-name: hiw4-rise;
-  animation-duration: 13.7s;
-  will-change: opacity;
-}
-.hiw4-draw { animation-name: hiw4-draw; animation-duration: 16.3s; }
-.hiw4-track [data-slot="progress-indicator"] {
-  transform-origin: left center;
-  animation-name: hiw4-fill;
-  animation-duration: 10.1s;
-}
-.hiw4-blink {
-  animation: hiw4-blink 3.7s ease-in-out var(--hiw4-delay, 0s) infinite;
-  will-change: opacity;
-}
-@media (prefers-reduced-motion: reduce) {
-  .hiw4-grow,
-  .hiw4-rise,
-  .hiw4-draw,
-  .hiw4-blink,
-  .hiw4-enter,
-  .hiw4-track [data-slot="progress-indicator"] {
-    animation: none;
-  }
-}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hiw4-grow {\n  0%, 54% { transform: scaleY(1) }\n  66% { transform: scaleY(0.3) }\n  100% { transform: scaleY(1) }\n}\n/* Opacity only: moving text inside a scaled canvas lands on fractional device\n   pixels and shimmers. A dip reads as a refresh either way. */\n@keyframes hiw4-rise {\n  0%, 60% { opacity: 1 }\n  72% { opacity: 0.35 }\n  100% { opacity: 1 }\n}\n/* The scale property, not transform: radix carries the bar's value in an inline\n   transform, and scale composes with it instead of replacing it. */\n@keyframes hiw4-fill {\n  0%, 52% { scale: 1 1 }\n  64% { scale: 0.1 1 }\n  100% { scale: 1 1 }\n}\n@keyframes hiw4-blink {\n  0%, 100% { opacity: 1 }\n  50% { opacity: 0.4 }\n}\n@keyframes hiw4-draw {\n  0%, 50% { stroke-dashoffset: 0 }\n  62% { stroke-dashoffset: 1200 }\n  100% { stroke-dashoffset: 0 }\n}\n/* Activating a tab mounts its panel fresh, so this replays on every switch,\n   which is what gives the self-advancing bar something to land on. */\n@keyframes hiw4-enter {\n  from { opacity: 0; transform: translateY(8px) }\n  to { opacity: 1; transform: translateY(0) }\n}\n/* No scale: it would resample every glyph on the way in. The lift keeps its own\n   layer, so the text is rasterised once and carried by the compositor. */\n.hiw4-enter {\n  animation: hiw4-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) var(--hiw4-delay, 0s) both;\n  will-change: opacity, transform;\n}\n.hiw4-grow,\n.hiw4-rise,\n.hiw4-draw,\n.hiw4-track [data-slot=\"progress-indicator\"] {\n  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);\n  animation-iteration-count: infinite;\n  animation-fill-mode: both;\n  animation-delay: var(--hiw4-delay, 0s);\n}\n.hiw4-grow { animation-name: hiw4-grow; animation-duration: 11.3s; }\n/* Promoted for the whole cycle: a text node off opacity 1 swaps antialiasing\n   mode, which reads as the glyphs changing weight. */\n.hiw4-rise {\n  animation-name: hiw4-rise;\n  animation-duration: 13.7s;\n  will-change: opacity;\n}\n.hiw4-draw { animation-name: hiw4-draw; animation-duration: 16.3s; }\n.hiw4-track [data-slot=\"progress-indicator\"] {\n  transform-origin: left center;\n  animation-name: hiw4-fill;\n  animation-duration: 10.1s;\n}\n.hiw4-blink {\n  animation: hiw4-blink 3.7s ease-in-out var(--hiw4-delay, 0s) infinite;\n  will-change: opacity;\n}\n@media (prefers-reduced-motion: reduce) {\n  .hiw4-grow,\n  .hiw4-rise,\n  .hiw4-draw,\n  .hiw4-blink,\n  .hiw4-enter,\n  .hiw4-track [data-slot=\"progress-indicator\"] {\n    animation: none;\n  }\n}\n" }} />
             <Tabs className="gap-0 w-full" data-orientation="horizontal" activationDirection="right">
               <TabsList className="@2xl:grid-cols-2 @3xl:grid-cols-4 border-b gap-0 grid! grid-cols-1 h-auto! items-stretch! p-0! rounded-none w-full" data-orientation="horizontal" activationDirection="right" role="tablist" variant="line">
                 <TabsTrigger className="@2xl:[&:nth-child(-n+2)]:border-t-0 @2xl:[&:nth-child(odd)]:border-r! @3xl:[&:nth-child(2)]:border-r! @3xl:border-t-0! after:hidden border-b-0 border-border! border-l-0 border-r-0 border-t cursor-pointer data-active:bg-muted! first:border-t-0 flex-none h-auto! hover:bg-muted/50 justify-start p-3 rounded-none text-start transition-colors w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_" extracted="1">
                   <span className="flex gap-2.5 items-start px-3 py-2.5 w-full">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                       <span className="font-medium tabular-nums text-base text-foreground">
-                        1
+                        {"1"}
                       </span>
                     </IconTile>
                     <span className="flex flex-1 flex-col gap-px min-w-0 text-sm">
                       <span className="font-medium text-foreground">
-                        Set Up NeUI
+                        {"Set Up NeUI"}
                       </span>
                       <span className="font-normal text-muted-foreground text-wrap">
-                        Add the @neui registry and pick the style for your stack.
+                        {"Add the @neui registry and pick the style for your stack."}
                       </span>
                     </span>
                   </span>
@@ -132,15 +54,15 @@ export function Pattern() {
                   <span className="flex gap-2.5 items-start px-3 py-2.5 w-full">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                       <span className="font-medium tabular-nums text-base text-foreground">
-                        2
+                        {"2"}
                       </span>
                     </IconTile>
                     <span className="flex flex-1 flex-col gap-px min-w-0 text-sm">
                       <span className="font-medium text-foreground">
-                        Pick Your UI
+                        {"Pick Your UI"}
                       </span>
                       <span className="font-normal text-muted-foreground text-wrap">
-                        Browse parts and blocks for the right UI fit.
+                        {"Browse parts and blocks for the right UI fit."}
                       </span>
                     </span>
                   </span>
@@ -149,15 +71,15 @@ export function Pattern() {
                   <span className="flex gap-2.5 items-start px-3 py-2.5 w-full">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                       <span className="font-medium tabular-nums text-base text-foreground">
-                        3
+                        {"3"}
                       </span>
                     </IconTile>
                     <span className="flex flex-1 flex-col gap-px min-w-0 text-sm">
                       <span className="font-medium text-foreground">
-                        Add with CLI
+                        {"Add with CLI"}
                       </span>
                       <span className="font-normal text-muted-foreground text-wrap">
-                        Run the shadcn command to add each item and its files.
+                        {"Run the shadcn command to add each item and its files."}
                       </span>
                     </span>
                   </span>
@@ -166,15 +88,15 @@ export function Pattern() {
                   <span className="flex gap-2.5 items-start px-3 py-2.5 w-full">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                       <span className="font-medium tabular-nums text-base text-foreground">
-                        4
+                        {"4"}
                       </span>
                     </IconTile>
                     <span className="flex flex-1 flex-col gap-px min-w-0 text-sm">
                       <span className="font-medium text-foreground">
-                        Fit and Ship
+                        {"Fit and Ship"}
                       </span>
                       <span className="font-normal text-muted-foreground text-wrap">
-                        Link real data, match your theme, check the API, and ship.
+                        {"Link real data, match your theme, check the API, and ship."}
                       </span>
                     </span>
                   </span>
@@ -215,7 +137,7 @@ export function Pattern() {
                                 <div className="contents">
                                   <span className="flex font-medium gap-1.5 items-center text-sm">
                                     <span className="bg-violet-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                                    NeUI Pro
+                                    {"NeUI Pro"}
                                     <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -224,10 +146,10 @@ export function Pattern() {
                                 </div>
                                 <div className="contents">
                                   <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                                    /
+                                    {"/"}
                                   </span>
                                   <span className="flex font-medium gap-1.5 items-center text-sm">
-                                    Registry
+                                    {"Registry"}
                                     <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -236,10 +158,10 @@ export function Pattern() {
                                 </div>
                                 <div className="contents">
                                   <span className="dark:text-neutral-600 text-neutral-300" aria-hidden="true">
-                                    /
+                                    {"/"}
                                   </span>
                                   <span className="flex font-medium gap-1.5 items-center text-sm">
-                                    Live
+                                    {"Live"}
                                     <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -250,9 +172,9 @@ export function Pattern() {
                                   <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                                     <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                                   </svg>
-                                  System
+                                  {"System"}
                                   <span className="dark:text-emerald-400 text-emerald-600">
-                                    Normal
+                                    {"Normal"}
                                   </span>
                                 </Badge>
                               </div>
@@ -265,13 +187,13 @@ export function Pattern() {
                                       <path d="m21 21-4.34-4.34"></path>
                                       <circle cx="11" cy="11" r="8"></circle>
                                     </svg>
-                                    Search...
+                                    {"Search..."}
                                     <Kbd className="bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-500 h-5 min-w-5 ms-auto px-1.5 text-neutral-400 text-xs">
-                                      ⌘K
+                                      {"⌘K"}
                                     </Kbd>
                                   </Item>
                                   <div className="dark:text-neutral-500 font-medium pt-1.5 px-2 text-neutral-400 text-xs">
-                                    Platform
+                                    {"Platform"}
                                   </div>
                                   <div className="flex flex-col gap-0.5">
                                     <div className="contents">
@@ -282,7 +204,7 @@ export function Pattern() {
                                           <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                                           <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                                         </svg>
-                                        Overview
+                                        {"Overview"}
                                       </Item>
                                     </div>
                                     <div className="contents">
@@ -292,20 +214,20 @@ export function Pattern() {
                                           <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                           <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                                         </svg>
-                                        Blocks
+                                        {"Blocks"}
                                         <svg className="dark:text-neutral-500 lucide lucide-chevron-down ms-auto text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                           <path d="m6 9 6 6 6-6"></path>
                                         </svg>
                                       </Item>
                                       <div className="border-l border-neutral-200 dark:border-neutral-800 flex flex-col gap-0.5 ms-4 ps-1">
                                         <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                          Marketing
+                                          {"Marketing"}
                                         </Item>
                                         <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                          Application
+                                          {"Application"}
                                         </Item>
                                         <Item className="border-transparent dark:text-neutral-400 px-2 py-1.5 text-neutral-500 text-sm" variant="default" size="xs">
-                                          Ecommerce
+                                          {"Ecommerce"}
                                         </Item>
                                       </div>
                                     </div>
@@ -314,7 +236,7 @@ export function Pattern() {
                                         <svg className="lucide lucide-puzzle size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PuzzleIcon" tabler="IconPuzzle" hugeicons="PuzzleIcon" phosphor="PuzzlePieceIcon" remixicon="RiPuzzleLine" aria-hidden="true">
                                           <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path>
                                         </svg>
-                                        Components
+                                        {"Components"}
                                         <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                           <path d="m9 18 6-6-6-6"></path>
                                         </svg>
@@ -327,7 +249,7 @@ export function Pattern() {
                                           <rect width="9" height="7" x="3" y="14" rx="1"></rect>
                                           <rect width="5" height="7" x="16" y="14" rx="1"></rect>
                                         </svg>
-                                        Templates
+                                        {"Templates"}
                                         <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                           <path d="m9 18 6-6-6-6"></path>
                                         </svg>
@@ -341,7 +263,7 @@ export function Pattern() {
                                           <path d="M13 17V5"></path>
                                           <path d="M8 17v-3"></path>
                                         </svg>
-                                        Analytics
+                                        {"Analytics"}
                                       </Item>
                                     </div>
                                     <div className="contents">
@@ -350,17 +272,17 @@ export function Pattern() {
                                           <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                                           <circle cx="12" cy="12" r="3"></circle>
                                         </svg>
-                                        Settings
+                                        {"Settings"}
                                       </Item>
                                     </div>
                                   </div>
                                   <Card className="[--card-spacing:--spacing(2.5)] bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:ring-white/10 dark:text-neutral-50 gap-2 mt-auto ring-0 ring-neutral-900/8 shadow-sm text-neutral-900" size="sm">
                                     <CardContent className="flex flex-col gap-2">
                                       <span className="font-semibold text-sm">
-                                        Multi-theme support is here
+                                        {"Multi-theme support is here"}
                                       </span>
                                       <span className="dark:text-neutral-400 leading-5 text-neutral-500 text-sm">
-                                        Switch between Vega, Nova, Maia, Lyra, and Mira themes.
+                                        {"Switch between Vega, Nova, Maia, Lyra, and Mira themes."}
                                       </span>
                                       <span className="bg-[radial-gradient(120%_90%_at_12%_18%,var(--color-orange-400)_0%,transparent_46%),radial-gradient(120%_120%_at_88%_8%,var(--color-fuchsia-500)_0%,transparent_55%),linear-gradient(160deg,var(--color-violet-600)_0%,var(--color-sky-400)_58%,var(--color-cyan-400)_100%)] block h-20 overflow-hidden relative w-full" aria-hidden="true">
                                         <svg className="absolute inset-0 size-full" viewBox="0 0 96 34" preserveAspectRatio="none" aria-hidden="true">
@@ -375,10 +297,10 @@ export function Pattern() {
                                       </span>
                                       <div className="dark:text-neutral-400 flex items-center justify-between text-neutral-500 text-xs">
                                         <span>
-                                          Read more
+                                          {"Read more"}
                                         </span>
                                         <span>
-                                          Dismiss
+                                          {"Dismiss"}
                                         </span>
                                       </div>
                                     </CardContent>
@@ -391,10 +313,10 @@ export function Pattern() {
                                     <div className="flex gap-3 items-center justify-between shrink-0">
                                       <div className="flex flex-col gap-1">
                                         <span className="font-semibold leading-none text-base tracking-tight">
-                                          Integrations
+                                          {"Integrations"}
                                         </span>
                                         <span className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                          Link your data sources and go live.
+                                          {"Link your data sources and go live."}
                                         </span>
                                       </div>
                                     </div>
@@ -419,12 +341,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Releases, on-call alerts, and approvals in your channels.
+                                            {"Releases, on-call alerts, and approvals in your channels."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "0s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>
@@ -446,7 +368,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Charges, retries, and payouts across connected tools.
+                                            {"Charges, retries, and payouts across connected tools."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -458,7 +380,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-0.6s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -492,12 +414,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Database and auth events for live dashboards.
+                                            {"Database and auth events for live dashboards."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-1.2s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>
@@ -519,12 +441,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Automation runs: successes and failures in one place.
+                                            {"Automation runs: successes and failures in one place."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-1.7999999999999998s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>
@@ -560,7 +482,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Recordings, attendance, and follow-ups synced.
+                                            {"Recordings, attendance, and follow-ups synced."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -572,7 +494,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-2.4s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -594,12 +516,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Async walkthroughs and feedback in one queue.
+                                            {"Async walkthroughs and feedback in one queue."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-3s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>
@@ -621,7 +543,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Community signals and mod flags to internal channels.
+                                            {"Community signals and mod flags to internal channels."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -633,7 +555,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-3.5999999999999996s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -717,7 +639,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            AI for documents and content workflows.
+                                            {"AI for documents and content workflows."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -729,7 +651,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-4.2s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -751,7 +673,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Playlists and listening data for workspace apps.
+                                            {"Playlists and listening data for workspace apps."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -763,7 +685,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-4.8s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -799,12 +721,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Shift schedules and reminders synced across crews.
+                                            {"Shift schedules and reminders synced across crews."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-5.3999999999999995s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>
@@ -830,7 +752,7 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Docs and assets shared to every project.
+                                            {"Docs and assets shared to every project."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
@@ -842,7 +764,7 @@ export function Pattern() {
                                               <path d="M10.5 16.5 13 14"></path>
                                               <path d="m18 3-4 4h6l-4 4"></path>
                                             </svg>
-                                            Connect
+                                            {"Connect"}
                                           </Badge>
                                           <span className="bg-neutral-200 dark:bg-neutral-700 h-5 inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-6s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-0.5"></span>
@@ -877,12 +799,12 @@ export function Pattern() {
                                             </svg>
                                           </div>
                                           <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                            Standups and reviews with auto notes.
+                                            {"Standups and reviews with auto notes."}
                                           </p>
                                         </div>
                                         <div className="border-neutral-100 border-t dark:border-neutral-800 flex gap-2 items-center justify-between px-3 py-2.5">
                                           <span className="dark:text-neutral-300 font-medium text-neutral-600 text-sm">
-                                            Disconnect
+                                            {"Disconnect"}
                                           </span>
                                           <span className="bg-neutral-900 dark:bg-white h-5 hiw4-blink inline-flex items-center relative rounded-full shrink-0 w-9" aria-hidden="true" style={{"--hiw4-delay": "-6.6s"}}>
                                             <span className="absolute bg-white dark:bg-neutral-900 rounded-full shadow-sm size-4 translate-x-[18px]"></span>

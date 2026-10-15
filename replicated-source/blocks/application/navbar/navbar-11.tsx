@@ -30,27 +30,27 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-semibold hidden md:inline text-sm">
-              DesignOps
+              {"DesignOps"}
             </span>
           </div>
           <Separator className="h-4 hidden my-auto sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-            v3.2.1
+            {"v3.2.1"}
           </Badge>
         </div>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
             <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
-              Patterns
+              {"Patterns"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-              Tokens
+              {"Tokens"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-              Icons
+              {"Icons"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-              Motion
+              {"Motion"}
             </TabsTrigger>
           </TabsList>
         </Tabs>
@@ -62,7 +62,7 @@ export function Pattern() {
               <path fill="none" stroke="currentColor" strokeWidth="25" strokeLinecap="round" d="M208 128l-80 80M192 40L40 192"></path>
             </svg>
             <span className="hidden md:inline">
-              shadcn/ui Tokens
+              {"shadcn/ui Tokens"}
             </span>
           </DropdownMenuTrigger>
           </DropdownMenu>

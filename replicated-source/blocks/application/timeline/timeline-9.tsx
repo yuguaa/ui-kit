@@ -32,14 +32,14 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Finance activity timeline sheet
+        {"Finance activity timeline sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
         <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" data-icon="inline-start" aria-hidden="true">
           <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
         </svg>
-        Open timeline
+        {"Open timeline"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -50,14 +50,14 @@ export function Pattern() {
           <div className="flex-1 min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <SheetTitle className="truncate" id="base-ui-_r_3_">
-                Finance Activity
+                {"Finance Activity"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative rounded-full text-[0.6rem] text-primary-foreground transition-shadow">
-                12
+                {"12"}
               </Badge>
             </div>
             <SheetDescription className="sr-only" id="base-ui-_r_4_">
-              Payouts, reviews, invoices, and ledger updates from the finance queue.
+              {"Payouts, reviews, invoices, and ledger updates from the finance queue."}
             </SheetDescription>
           </div>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Dismiss finance activity timeline">
@@ -86,29 +86,29 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Nadia Flores
+                          {"Nadia Flores"}
                         </span>
                         <span className="text-muted-foreground">
-                          approved payout batch
+                          {"approved payout batch"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          ACH-4182
+                          {"ACH-4182"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      $142,800 routed to 38 merchant accounts
+                      {"$142,800 routed to 38 merchant accounts"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T15:35:00+05:00">
-                        5 minutes ago
+                        {"5 minutes ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Payout
+                        {"Payout"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Same Day
+                        {"Same Day"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -126,38 +126,38 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Theo Ramsey
+                          {"Theo Ramsey"}
                         </span>
                         <span className="text-muted-foreground">
-                          flagged review on
+                          {"flagged review on"}
                         </span>
-                        Transfer
+                        {"Transfer"}
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          TX-9041
+                          {"TX-9041"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Velocity threshold exceeded for new payee
+                      {"Velocity threshold exceeded for new payee"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <Button type="button" tabIndex="0">
-                        Review
+                        {"Review"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Clear
+                        {"Clear"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T15:22:00+05:00">
-                        18 minutes ago
+                        {"18 minutes ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Risk
+                        {"Risk"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        High
+                        {"High"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -175,18 +175,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Iris Chen
+                          {"Iris Chen"}
                         </span>
                         <span className="text-muted-foreground">
-                          reconciled ledger entry
+                          {"reconciled ledger entry"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          LDG-7749
+                          {"LDG-7749"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Subscription invoice matched to bank settlement
+                      {"Subscription invoice matched to bank settlement"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
@@ -195,10 +195,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            settlement-match.csv
+                            {"settlement-match.csv"}
                           </span>
                           <span className="opacity-60 shrink-0">
-                            (48kb)
+                            {"(48kb)"}
                           </span>
                         </Button>
                         <Button type="button" tabIndex="0" aria-label="Download settlement-match.csv">
@@ -212,11 +212,11 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T14:58:00+05:00">
-                        42 minutes ago
+                        {"42 minutes ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Ledger
+                        {"Ledger"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -234,18 +234,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Marcus Bell
+                          {"Marcus Bell"}
                         </span>
                         <span className="text-muted-foreground">
-                          raised limit for
+                          {"raised limit for"}
                         </span>
                         <span className="font-medium">
-                          Northstar Workspace
+                          {"Northstar Workspace"}
                         </span>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Monthly card volume increased to $850K
+                      {"Monthly card volume increased to $850K"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <AvatarGroup className="-space-x-1">
@@ -256,17 +256,17 @@ export function Pattern() {
                           <AvatarImage alt="MR" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                          +2
+                          {"+2"}
                         </AvatarGroupCount>
                       </AvatarGroup>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T14:40:00+05:00">
-                        1 hour ago
+                        {"1 hour ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Limit Raised
+                        {"Limit Raised"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -284,18 +284,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Amara Okafor
+                          {"Amara Okafor"}
                         </span>
                         <span className="text-muted-foreground">
-                          sent invoice reminder
+                          {"sent invoice reminder"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          INV-2098
+                          {"INV-2098"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Net 7 renewal balance due tomorrow
+                      {"Net 7 renewal balance due tomorrow"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
@@ -304,10 +304,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            invoice-2098.pdf
+                            {"invoice-2098.pdf"}
                           </span>
                           <span className="opacity-60 shrink-0">
-                            (76kb)
+                            {"(76kb)"}
                           </span>
                         </Button>
                         <Button type="button" tabIndex="0" aria-label="Download invoice-2098.pdf">
@@ -321,14 +321,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T13:40:00+05:00">
-                        2 hours ago
+                        {"2 hours ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Invoice
+                        {"Invoice"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Due Tomorrow
+                        {"Due Tomorrow"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -346,18 +346,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Priya Shah
+                          {"Priya Shah"}
                         </span>
                         <span className="text-muted-foreground">
-                          verified onboarding documents for
+                          {"verified onboarding documents for"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          KYC-1872
+                          {"KYC-1872"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Business ownership file cleared after manual review
+                      {"Business ownership file cleared after manual review"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <AvatarGroup className="-space-x-1">
@@ -371,14 +371,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T12:40:00+05:00">
-                        3 hours ago
+                        {"3 hours ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-focus rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        KYC
+                        {"KYC"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Cleared
+                        {"Cleared"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -396,37 +396,37 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Evan Brooks
+                          {"Evan Brooks"}
                         </span>
                         <span className="text-muted-foreground">
-                          opened dispute packet
+                          {"opened dispute packet"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          CASE-427
+                          {"CASE-427"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Cardholder evidence requested before processor deadline
+                      {"Cardholder evidence requested before processor deadline"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <Button type="button" tabIndex="0">
-                        Upload
+                        {"Upload"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Assign
+                        {"Assign"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T11:40:00+05:00">
-                        4 hours ago
+                        {"4 hours ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Dispute
+                        {"Dispute"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Needs Evidence
+                        {"Needs Evidence"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -444,18 +444,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Leah Foster
+                          {"Leah Foster"}
                         </span>
                         <span className="text-muted-foreground">
-                          matched reserve release
+                          {"matched reserve release"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          RSV-3301
+                          {"RSV-3301"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      $28,400 released after risk window expired
+                      {"$28,400 released after risk window expired"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
@@ -464,10 +464,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            reserve-release.pdf
+                            {"reserve-release.pdf"}
                           </span>
                           <span className="opacity-60 shrink-0">
-                            (112kb)
+                            {"(112kb)"}
                           </span>
                         </Button>
                         <Button type="button" tabIndex="0" aria-label="Download reserve-release.pdf">
@@ -481,14 +481,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-09T09:40:00+05:00">
-                        6 hours ago
+                        {"6 hours ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Reserve
+                        {"Reserve"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Released
+                        {"Released"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -506,18 +506,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Caleb Stone
+                          {"Caleb Stone"}
                         </span>
                         <span className="text-muted-foreground">
-                          updated tax profile for
+                          {"updated tax profile for"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          TIN-6150
+                          {"TIN-6150"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      W-9 details synced to the annual reporting workspace
+                      {"W-9 details synced to the annual reporting workspace"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <AvatarGroup className="-space-x-1">
@@ -528,17 +528,17 @@ export function Pattern() {
                           <AvatarImage alt="MC" src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                          +1
+                          {"+1"}
                         </AvatarGroupCount>
                       </AvatarGroup>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-08T17:05:00+05:00">
-                        Yesterday
+                        {"Yesterday"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-info rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Tax
+                        {"Tax"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -556,35 +556,35 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Maya Singh
+                          {"Maya Singh"}
                         </span>
                         <span className="text-muted-foreground">
-                          scheduled settlement hold for
+                          {"scheduled settlement hold for"}
                         </span>
-                        Merchant
+                        {"Merchant"}
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          MCH-8824
+                          {"MCH-8824"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Hold expires after processor review on Monday
+                      {"Hold expires after processor review on Monday"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <Button type="button" tabIndex="0">
-                        View Hold
+                        {"View Hold"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-08T13:20:00+05:00">
-                        Yesterday
+                        {"Yesterday"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Settlement
+                        {"Settlement"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Timed
+                        {"Timed"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -602,18 +602,18 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Jon Bell
+                          {"Jon Bell"}
                         </span>
                         <span className="text-muted-foreground">
-                          exported compliance packet
+                          {"exported compliance packet"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          AUD-5108
+                          {"AUD-5108"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Quarterly transaction sample prepared for audit
+                      {"Quarterly transaction sample prepared for audit"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
@@ -622,10 +622,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            audit-sample.zip
+                            {"audit-sample.zip"}
                           </span>
                           <span className="opacity-60 shrink-0">
-                            (4.2mb)
+                            {"(4.2mb)"}
                           </span>
                         </Button>
                         <Button type="button" tabIndex="0" aria-label="Download audit-sample.zip">
@@ -639,14 +639,14 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-07T16:45:00+05:00">
-                        2 days ago
+                        {"2 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-focus rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Audit
+                        {"Audit"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                        Ready
+                        {"Ready"}
                       </Badge>
                     </div>
                   </TimelineContent>
@@ -664,29 +664,29 @@ export function Pattern() {
                     <div className="min-w-0">
                       <p className="leading-5 text-sm">
                         <span className="font-medium hover:text-primary text-foreground">
-                          Sofia Marin
+                          {"Sofia Marin"}
                         </span>
                         <span className="text-muted-foreground">
-                          closed risk exception
+                          {"closed risk exception"}
                         </span>
                         <a className="font-medium hover:text-primary text-foreground underline underline-offset-2" href="#">
-                          RISK-2906
+                          {"RISK-2906"}
                         </a>
                       </p>
                     </div>
                     <p className="leading-4 mt-1 text-muted-foreground text-xs">
-                      Merchant monitoring returned to the standard review cadence
+                      {"Merchant monitoring returned to the standard review cadence"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center mt-2">
                       <TimelineDate className="mb-0 mt-0" datetime="2026-05-06T10:10:00+05:00">
-                        3 days ago
+                        {"3 days ago"}
                       </TimelineDate>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                         <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        Risk
+                        {"Risk"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Closed
+                        {"Closed"}
                       </Badge>
                     </div>
                   </TimelineContent>

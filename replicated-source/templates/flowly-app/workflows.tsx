@@ -65,10 +65,14 @@ import { SidebarMenuButton } from "@/registry/bases/radix/ui/sidebar"
 export function Pattern() {
   return (
   <>
+    <SidebarProvider>
     <div className="[--header-height:50px] [--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "63px", "--sidebar-width-icon": "3rem"}}>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="inset" data-side="left">
         <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="bottom-0 data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 top-0 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
             <div className="flex grow h-full">
               <nav className="flex flex-col h-full" aria-label="Main">
@@ -82,11 +86,17 @@ export function Pattern() {
                     </ItemMedia>
                   </Item>
                 </SidebarHeader>
+                <SidebarProvider>
                 <SidebarContent className="flex-row gap-0 md:flex-col no-scrollbar" sidebar="content">
+                  <SidebarProvider>
                   <SidebarGroup className="p-2" sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent className="justify-center text-sm" sidebar="group-content">
+                      <SidebarProvider>
                       <SidebarMenu className="gap-0.5" sidebar="menu">
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_f6cpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Dashboard" href="/dashboard">
                             <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <rect width="7" height="9" x="3" y="3" rx="1"></rect>
@@ -95,8 +105,12 @@ export function Pattern() {
                               <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_facpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflow Editor" href="/workflow-editor">
                             <svg className="lucide lucide-spline-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"></path>
@@ -105,8 +119,12 @@ export function Pattern() {
                               <circle cx="5" cy="19" r="2"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fecpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="AI Agent Builder" href="/agent-builder">
                             <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 8V4H8"></path>
@@ -117,8 +135,12 @@ export function Pattern() {
                               <path d="M9 13v2"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_ficpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflows" href="/workflows" data-active="" aria-current="page">
                             <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <rect width="8" height="8" x="3" y="3" rx="2"></rect>
@@ -126,8 +148,12 @@ export function Pattern() {
                               <rect width="8" height="8" x="13" y="13" rx="2"></rect>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fmcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Agents" href="/agents">
                             <svg className="lucide lucide-brain-circuit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
@@ -145,19 +171,29 @@ export function Pattern() {
                               <circle cx="20" cy="8" r=".5"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fqcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Settings" href="/settings">
                             <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                               <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
                       </SidebarMenu>
+                      </SidebarProvider>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                 </SidebarContent>
+                </SidebarProvider>
                 <SidebarFooter className="gap-2 p-2" sidebar="footer">
                   <Popover>
                   <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none relative rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Notifications, 4 unread" baseUiClickTrigger="" id="base-ui-_R_7ncpflb_" aria-haspopup="dialog" aria-expanded="false">
@@ -179,20 +215,25 @@ export function Pattern() {
               </nav>
             </div>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <SidebarInset className="bg-background border border-border md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-none overflow-hidden shadow-none">
         <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center pe-2 ps-3 sticky top-0 w-full z-50">
           <div className="flex flex-1 gap-2 items-center md:flex-none min-w-0">
+            <SidebarProvider>
             <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
               <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
-                Toggle Sidebar
+                {"Toggle Sidebar"}
               </span>
             </SidebarTrigger>
+            </SidebarProvider>
             <span className="-ml-2 md:hidden shrink-0">
               <Item className="[a]:hover:bg-primary bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" aria-label="Flowly home" variant="default" size="default" href="/dashboard">
                 <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
@@ -207,7 +248,7 @@ export function Pattern() {
               <BreadcrumbList className="flex-nowrap gap-1.5 text-muted-foreground text-sm">
                 <BreadcrumbItem className="gap-1 min-w-0">
                   <BreadcrumbPage className="font-normal text-foreground truncate" role="link" aria-disabled="true" aria-current="page">
-                    Workflows
+                    {"Workflows"}
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -222,7 +263,7 @@ export function Pattern() {
                     <path d="M12 5v14"></path>
                   </svg>
                   <span className="md:not-sr-only sr-only">
-                    New workflow
+                    {"New workflow"}
                   </span>
                 </Button>
                 <DropdownMenu>
@@ -246,7 +287,7 @@ export function Pattern() {
             <div className="-m-4 flex flex-1 flex-col">
               <main className="flex flex-1 flex-col gap-4 p-4 w-full" aria-labelledby="page-heading">
                 <h1 className="sr-only" id="page-heading">
-                  Workflows
+                  {"Workflows"}
                 </h1>
                 <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm w-full" size="default">
                   <div className="flex flex-col gap-3 lg:flex-row lg:gap-4 lg:items-center lg:min-h-12 lg:py-0 px-4 py-3">
@@ -257,7 +298,7 @@ export function Pattern() {
                         <rect width="8" height="8" x="13" y="13" rx="2"></rect>
                       </svg>
                       <h2 className="font-medium text-foreground text-sm truncate">
-                        Workflows
+                        {"Workflows"}
                       </h2>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center lg:flex-nowrap lg:ml-auto min-w-0">
@@ -294,7 +335,7 @@ export function Pattern() {
                           <circle cx="17" cy="17" r="3"></circle>
                           <circle cx="7" cy="7" r="3"></circle>
                         </svg>
-                        Display
+                        {"Display"}
                       </PopoverTrigger>
                       </Popover>
                     </div>
@@ -304,16 +345,16 @@ export function Pattern() {
                     <div className="[&::-webkit-scrollbar]:hidden [scrollbar-width:none] overflow-x-auto overflow-y-visible px-4">
                       <TabsList className="data-[variant=line]:rounded-none gap-6 group-data-horizontal/tabs:h-8 p-[3px] rounded-lg w-max" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                         <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 after:bottom-[-1px] border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 pb-3 pt-3 px-0 py-0.5 rounded-md text-sm" type="button" data-active="" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_7s_" compositeItemActive="">
-                          All
+                          {"All"}
                         </TabsTrigger>
                         <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 after:bottom-[-1px] border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 pb-3 pt-3 px-0 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7t_">
-                          Active
+                          {"Active"}
                         </TabsTrigger>
                         <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 after:bottom-[-1px] border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 pb-3 pt-3 px-0 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7u_">
-                          Paused
+                          {"Paused"}
                         </TabsTrigger>
                         <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 after:bottom-[-1px] border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 pb-3 pt-3 px-0 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7v_">
-                          Failing
+                          {"Failing"}
                         </TabsTrigger>
                       </TabsList>
                     </div>
@@ -326,18 +367,18 @@ export function Pattern() {
                           <div className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none bg-background border cursor-default dark:bg-input/30 flex font-medium gap-1.5 items-center px-2.5 rounded-lg text-sm" title="Last run">
                             <span className="flex items-center">
                               <span>
-                                Last run
+                                {"Last run"}
                               </span>
                             </span>
                           </div>
                           <Popover>
                           <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none bg-background border cursor-default dark:bg-input/30 flex font-medium gap-2 hover:bg-accent items-center px-2.5 rounded-lg text-muted-foreground text-sm" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_82_" aria-haspopup="dialog" aria-expanded="false">
-                            is
+                            {"is"}
                           </PopoverTrigger>
                           </Popover>
                           <Popover>
                           <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none bg-background border cursor-default dark:bg-input/30 flex font-medium gap-2 hover:bg-accent items-center px-2.5 rounded-lg text-muted-foreground text-sm" type="button" aria-label="Select..." tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_84_" aria-haspopup="dialog" aria-expanded="false">
-                            Select
+                            {"Select"}
                           </PopoverTrigger>
                           </Popover>
                           <DropdownMenu>
@@ -365,15 +406,18 @@ export function Pattern() {
                       </div>
                     </Filters>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg self-start sm:self-auto text-sm" type="button" tabIndex="0">
-                      Clear all
+                      {"Clear all"}
                     </Button>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <div className="relative">
+                    <DataGridProvider>
                     <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                       <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_8c_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                         <div role="presentation" style={{minWidth: "fit-content"}}>
+                          <DataGridProvider>
                           <DataGridTableViewport>
+                            <DataGridProvider>
                             <DataGridTable>
                               <colgroup>
                                 <col style={{width: "280px"}} />
@@ -389,7 +433,7 @@ export function Pattern() {
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-4 font-medium h-8 last:pe-4 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="name" style={{width: "280px"}}>
                                     <div className="-ms-2 flex h-full items-center">
                                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
-                                        Workflow
+                                        {"Workflow"}
                                         <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
@@ -400,7 +444,7 @@ export function Pattern() {
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" style={{width: "200px"}}>
                                     <div className="-ms-2 flex h-full items-center">
                                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
-                                        Owner
+                                        {"Owner"}
                                         <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
@@ -411,7 +455,7 @@ export function Pattern() {
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="enabled" style={{width: "104px"}}>
                                     <div className="-ms-2 flex h-full items-center">
                                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
-                                        Status
+                                        {"Status"}
                                         <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
@@ -421,13 +465,13 @@ export function Pattern() {
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="tags" style={{width: "180px"}}>
                                     <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                      Tags
+                                      {"Tags"}
                                     </div>
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="descending" data-col-id="lastRun" style={{width: "140px"}}>
                                     <div className="-ms-2 flex h-full items-center">
                                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
-                                        Last run
+                                        {"Last run"}
                                         <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 5v14"></path>
                                           <path d="m19 12-7 7-7-7"></path>
@@ -438,7 +482,7 @@ export function Pattern() {
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="runs" style={{width: "90px"}}>
                                     <div className="-ms-2 flex h-full items-center">
                                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
-                                        Runs
+                                        {"Runs"}
                                         <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
@@ -448,25 +492,26 @@ export function Pattern() {
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-4 font-medium h-8 last:pe-4 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="actions" style={{width: "112px"}}>
                                     <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                      Actions
+                                      {"Actions"}
                                     </div>
                                   </th>
                                 </tr>
                               </thead>
+                              <DataGridProvider>
                               <DataGridTableBody>
                                 <tr className="[&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/work-row hover:bg-muted/40" data-row-id="wf_6k5m1n">
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Order Fulfillment
+                                        {"Order Fulfillment"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Event
+                                          {"Event"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On paid order
+                                          {"On paid order"}
                                         </span>
                                       </div>
                                     </div>
@@ -478,10 +523,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Tomas Lindqvist
+                                          {"Tomas Lindqvist"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Solutions Engineer
+                                          {"Solutions Engineer"}
                                         </div>
                                       </div>
                                     </div>
@@ -493,7 +538,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_8e_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -501,12 +546,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Operations, Critical">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Operations
+                                          {"Operations"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Critical
+                                          {"Critical"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -516,17 +561,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:44
+                                        {"Oct 6, 09:44"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      3,946
+                                      {"3,946"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -562,15 +607,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Lead Routing
+                                        {"Lead Routing"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Webhook
+                                          {"Webhook"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On new lead
+                                          {"On new lead"}
                                         </span>
                                       </div>
                                     </div>
@@ -582,10 +627,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Ines Marchetti
+                                          {"Ines Marchetti"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Head of Operations
+                                          {"Head of Operations"}
                                         </div>
                                       </div>
                                     </div>
@@ -597,7 +642,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_8m_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -605,12 +650,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Sales, AI">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Sales
+                                          {"Sales"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          AI
+                                          {"AI"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -620,17 +665,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:42
+                                        {"Oct 6, 09:42"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      1,208
+                                      {"1,208"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -666,15 +711,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Support Triage
+                                        {"Support Triage"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Event
+                                          {"Event"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On new ticket
+                                          {"On new ticket"}
                                         </span>
                                       </div>
                                     </div>
@@ -686,10 +731,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Hanna Berg
+                                          {"Hanna Berg"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Support Lead
+                                          {"Support Lead"}
                                         </div>
                                       </div>
                                     </div>
@@ -701,7 +746,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_8u_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -709,16 +754,16 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Support, AI, Critical">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Support
+                                          {"Support"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          AI
+                                          {"AI"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                        +1
+                                        {"+1"}
                                       </Badge>
                                     </div>
                                   </td>
@@ -727,17 +772,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-destructive-foreground text-xs transition-shadow">
                                         <span className="bg-rose-500 dark:bg-rose-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Failed
+                                          {"Failed"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:37
+                                        {"Oct 6, 09:37"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      904
+                                      {"904"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -773,15 +818,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Social Mentions Alert
+                                        {"Social Mentions Alert"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Event
+                                          {"Event"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On brand mention
+                                          {"On brand mention"}
                                         </span>
                                       </div>
                                     </div>
@@ -793,10 +838,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Ines Marchetti
+                                          {"Ines Marchetti"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Head of Operations
+                                          {"Head of Operations"}
                                         </div>
                                       </div>
                                     </div>
@@ -808,7 +853,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_96_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -816,12 +861,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Marketing, AI">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Marketing
+                                          {"Marketing"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          AI
+                                          {"AI"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -831,17 +876,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-destructive-foreground text-xs transition-shadow">
                                         <span className="bg-rose-500 dark:bg-rose-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Failed
+                                          {"Failed"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:31
+                                        {"Oct 6, 09:31"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      397
+                                      {"397"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -877,15 +922,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Onboarding Emails
+                                        {"Onboarding Emails"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Event
+                                          {"Event"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On signup
+                                          {"On signup"}
                                         </span>
                                       </div>
                                     </div>
@@ -897,10 +942,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Hanna Berg
+                                          {"Hanna Berg"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Support Lead
+                                          {"Support Lead"}
                                         </div>
                                       </div>
                                     </div>
@@ -912,7 +957,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_9e_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -920,12 +965,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Marketing, Growth">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Marketing
+                                          {"Marketing"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Growth
+                                          {"Growth"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -935,17 +980,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:28
+                                        {"Oct 6, 09:28"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      465
+                                      {"465"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -981,15 +1026,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Meeting Notes to CRM
+                                        {"Meeting Notes to CRM"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Event
+                                          {"Event"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          On call ended
+                                          {"On call ended"}
                                         </span>
                                       </div>
                                     </div>
@@ -1001,10 +1046,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Nick Bold
+                                          {"Nick Bold"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Workspace Admin
+                                          {"Workspace Admin"}
                                         </div>
                                       </div>
                                     </div>
@@ -1016,7 +1061,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_9m_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -1024,12 +1069,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Sales, AI">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Sales
+                                          {"Sales"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          AI
+                                          {"AI"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -1039,17 +1084,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-destructive-foreground text-xs transition-shadow">
                                         <span className="bg-rose-500 dark:bg-rose-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Failed
+                                          {"Failed"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:10
+                                        {"Oct 6, 09:10"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      184
+                                      {"184"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -1085,15 +1130,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Data Warehouse Export
+                                        {"Data Warehouse Export"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Schedule
+                                          {"Schedule"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Every hour
+                                          {"Every hour"}
                                         </span>
                                       </div>
                                     </div>
@@ -1105,10 +1150,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Omar Haddad
+                                          {"Omar Haddad"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Data Engineer
+                                          {"Data Engineer"}
                                         </div>
                                       </div>
                                     </div>
@@ -1120,7 +1165,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_9u_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -1128,7 +1173,7 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Data">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Data
+                                          {"Data"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -1138,17 +1183,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 09:00
+                                        {"Oct 6, 09:00"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      672
+                                      {"672"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -1184,15 +1229,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Invoice Reminders
+                                        {"Invoice Reminders"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Schedule
+                                          {"Schedule"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Daily at 08:00
+                                          {"Daily at 08:00"}
                                         </span>
                                       </div>
                                     </div>
@@ -1204,10 +1249,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Tomas Lindqvist
+                                          {"Tomas Lindqvist"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Solutions Engineer
+                                          {"Solutions Engineer"}
                                         </div>
                                       </div>
                                     </div>
@@ -1219,7 +1264,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_a6_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -1227,7 +1272,7 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Finance">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Finance
+                                          {"Finance"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -1237,17 +1282,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 08:00
+                                        {"Oct 6, 08:00"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      28
+                                      {"28"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -1283,15 +1328,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Inventory Restock
+                                        {"Inventory Restock"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Schedule
+                                          {"Schedule"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Daily at 06:00
+                                          {"Daily at 06:00"}
                                         </span>
                                       </div>
                                     </div>
@@ -1303,10 +1348,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Tomas Lindqvist
+                                          {"Tomas Lindqvist"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Solutions Engineer
+                                          {"Solutions Engineer"}
                                         </div>
                                       </div>
                                     </div>
@@ -1318,7 +1363,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_ae_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -1326,7 +1371,7 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Operations">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Operations
+                                          {"Operations"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -1336,17 +1381,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 6, 06:00
+                                        {"Oct 6, 06:00"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      28
+                                      {"28"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -1382,15 +1427,15 @@ export function Pattern() {
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex flex-col gap-1 min-w-0">
                                       <span className="font-medium leading-5 text-foreground text-sm truncate">
-                                        Churn Risk Digest
+                                        {"Churn Risk Digest"}
                                       </span>
                                       <div className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                                         <span className="truncate">
-                                          Schedule
+                                          {"Schedule"}
                                         </span>
                                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Mondays at 07:00
+                                          {"Mondays at 07:00"}
                                         </span>
                                       </div>
                                     </div>
@@ -1402,10 +1447,10 @@ export function Pattern() {
                                       </Avatar>
                                       <div className="flex-1 min-w-0">
                                         <div className="font-medium text-sm truncate">
-                                          Omar Haddad
+                                          {"Omar Haddad"}
                                         </div>
                                         <div className="text-muted-foreground text-sm truncate">
-                                          Data Engineer
+                                          {"Data Engineer"}
                                         </div>
                                       </div>
                                     </div>
@@ -1417,7 +1462,7 @@ export function Pattern() {
                                       </Switch>
                                       <input id="base-ui-_r_am_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       <span className="text-foreground text-sm">
-                                        On
+                                        {"On"}
                                       </span>
                                     </div>
                                   </td>
@@ -1425,12 +1470,12 @@ export function Pattern() {
                                     <div className="flex gap-1 items-center min-w-0" title="Growth, Data">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Growth
+                                          {"Growth"}
                                         </span>
                                       </Badge>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-xs transition-shadow">
                                         <span className="truncate">
-                                          Data
+                                          {"Data"}
                                         </span>
                                       </Badge>
                                     </div>
@@ -1440,17 +1485,17 @@ export function Pattern() {
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 justify-start max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-sm shrink text-success-foreground text-xs transition-shadow">
                                         <span className="bg-emerald-500 dark:bg-emerald-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                         <span className="truncate">
-                                          Succeeded
+                                          {"Succeeded"}
                                         </span>
                                       </Badge>
                                       <span className="leading-4 tabular-nums text-muted-foreground text-xs truncate">
-                                        Oct 5, 07:00
+                                        {"Oct 5, 07:00"}
                                       </span>
                                     </div>
                                   </td>
                                   <td className="align-middle px-2 py-1.5">
                                     <span className="block tabular-nums text-sm truncate">
-                                      4
+                                      {"4"}
                                     </span>
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
@@ -1483,27 +1528,32 @@ export function Pattern() {
                                   </td>
                                 </tr>
                               </DataGridTableBody>
+                              </DataGridProvider>
                             </DataGridTable>
+                            </DataGridProvider>
                           </DataGridTableViewport>
+                          </DataGridProvider>
                         </div>
                       </div>
                     </DataGridScrollArea>
+                    </DataGridProvider>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <div className="px-4 py-3">
+                    <DataGridProvider>
                     <DataGridPagination className="py-0">
                       <div className="flex flex-wrap gap-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                         <div className="text-muted-foreground text-sm">
-                          Rows per page
+                          {"Rows per page"}
                         </div>
                         <Select>
                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-16" type="button" tabIndex="0" id="base-ui-_r_at_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm">
                           <SelectValue className="flex flex-1 text-left">
-                            10
+                            {"10"}
                           </SelectValue>
                           <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -1511,26 +1561,26 @@ export function Pattern() {
                       </div>
                       <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                         <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                          1 - 10 of 12 workflows
+                          {"1 - 10 of 12 workflows"}
                         </div>
                         <div className="flex gap-1 items-center order-1">
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" disabled="" tabIndex="0" disabled>
                             <span className="sr-only">
-                              Go to previous page
+                              {"Go to previous page"}
                             </span>
                             <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m15 18-6-6 6-6"></path>
                             </svg>
                           </Button>
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-accent bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-accent-foreground text-sm" type="button" tabIndex="0">
-                            1
+                            {"1"}
                           </Button>
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-muted-foreground text-sm" type="button" tabIndex="0">
-                            2
+                            {"2"}
                           </Button>
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" tabIndex="0">
                             <span className="sr-only">
-                              Go to next page
+                              {"Go to next page"}
                             </span>
                             <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m9 18 6-6-6-6"></path>
@@ -1539,6 +1589,7 @@ export function Pattern() {
                         </div>
                       </div>
                     </DataGridPagination>
+                    </DataGridProvider>
                   </div>
                 </Card>
               </main>
@@ -1547,10 +1598,11 @@ export function Pattern() {
         </div>
       </SidebarInset>
     </div>
+    </SidebarProvider>
     <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section>
     <next-route-announcer style={{position: "absolute"}}></next-route-announcer>
     <span id="recharts_measurement_span" aria-hidden="true" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "12px", letterSpacing: "normal"}}>
-      0
+      {"0"}
     </span>
   </>
   )

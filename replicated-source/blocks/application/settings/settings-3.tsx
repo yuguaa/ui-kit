@@ -37,10 +37,10 @@ export function Pattern() {
       <Frame className="max-w-3xl w-full">
         <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-2.5!">
           <div className="font-semibold text-sm">
-            General Settings
+            {"General Settings"}
           </div>
           <div className="text-muted-foreground text-sm">
-            Core app preferences.
+            {"Core app preferences."}
           </div>
         </header>
         <FramePanel className="p-0">
@@ -49,11 +49,11 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-project-name">
-                    Project name
+                    {"Project name"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  The display name for your project across the platform.
+                  {"The display name for your project across the platform."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -67,21 +67,21 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-api-endpoint">
-                    API endpoint
+                    {"API endpoint"}
                   </FieldLabel>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                    Required
+                    {"Required"}
                   </Badge>
                 </div>
                 <FieldDescription className="text-xs">
-                  Set the base URL for your project API.
+                  {"Set the base URL for your project API."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <InputGroup role="group">
                   <InputGroupAddon role="group" data-align="inline-start">
                     <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                      https://
+                      {"https://"}
                     </span>
                   </InputGroupAddon>
                   <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="settings-3-api-endpoint" value="api.acme.io" />
@@ -95,22 +95,22 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-start-of-week">
-                    Start of week
+                    {"Start of week"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  Choose which day marks the start of your week.
+                  {"Choose which day marks the start of your week."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-start-of-week" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                   <SelectValue>
-                    Monday
+                    {"Monday"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -124,11 +124,11 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-field-title items-center">
-                    Allowed origins
+                    {"Allowed origins"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  Define the trusted domains for CORS requests.
+                  {"Define the trusted domains for CORS requests."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -138,7 +138,7 @@ export function Pattern() {
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
-                    Add origin
+                    {"Add origin"}
                   </Button>
                   <Button type="button" tabIndex="0">
                     <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" aria-hidden="true">
@@ -146,7 +146,7 @@ export function Pattern() {
                       <path d="m17 8-5-5-5 5"></path>
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     </svg>
-                    Import from file
+                    {"Import from file"}
                   </Button>
                 </div>
               </FieldContent>
@@ -158,20 +158,20 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-field-title items-center">
-                    Accent color
+                    {"Accent color"}
                   </FieldLabel>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                    Upgrade to Pro
+                    {"Upgrade to Pro"}
                   </Badge>
                 </div>
                 <FieldDescription className="text-xs">
-                  Select a color to represent your brand.
+                  {"Select a color to represent your brand."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <FieldSet className="gap-0">
                   <FieldLegend className="sr-only" variant="legend">
-                    Accent color
+                    {"Accent color"}
                   </FieldLegend>
                   <div className="flex gap-3 items-center">
                     <button className="flex items-center justify-center ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full size-7 transition-shadow" type="button" aria-label="Slate" style={{backgroundColor: "rgb(100, 116, 139)"}}>
@@ -195,25 +195,25 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-field-title items-center">
-                    Region & currency
+                    {"Region & currency"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  Adjust your regional preferences and currency.
+                  {"Adjust your regional preferences and currency."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-[22rem] min-w-0">
                 <FieldSet className="gap-3 w-full">
                   <FieldLegend className="sr-only" variant="legend">
-                    Region and currency
+                    {"Region and currency"}
                   </FieldLegend>
                   <FieldDescription className="sr-only">
-                    Regional and financial formatting preferences.
+                    {"Regional and financial formatting preferences."}
                   </FieldDescription>
                   <FieldGroup className="gap-3">
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-region">
-                        Region
+                        {"Region"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-region" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -223,11 +223,11 @@ export function Pattern() {
                           <path d="M2 12h20"></path>
                         </svg>
                         <SelectValue>
-                          United States
+                          {"United States"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -235,7 +235,7 @@ export function Pattern() {
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-currency">
-                        Currency
+                        {"Currency"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -245,11 +245,11 @@ export function Pattern() {
                           <path d="M12 18V6"></path>
                         </svg>
                         <SelectValue>
-                          USD · US Dollar
+                          {"USD · US Dollar"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -266,23 +266,23 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-field-title items-center">
-                    Date display format
+                    {"Date display format"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  Choose your preferred format for dates.
+                  {"Choose your preferred format for dates."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Date display format" style={{"--gap": "2"}}>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2">
-                    MM/DD/YYYY
+                    {"MM/DD/YYYY"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                    DD/MM/YYYY
+                    {"DD/MM/YYYY"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                    YYYY/MM/DD
+                    {"YYYY/MM/DD"}
                   </ToggleGroupItem>
                 </ToggleGroup>
               </FieldContent>
@@ -294,20 +294,20 @@ export function Pattern() {
               <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center">
                   <FieldLabel className="cn-field-title items-center">
-                    Editor preferences
+                    {"Editor preferences"}
                   </FieldLabel>
                 </div>
                 <FieldDescription className="text-xs">
-                  Adjust your editing environment and display options.
+                  {"Adjust your editing environment and display options."}
                 </FieldDescription>
               </div>
               <FieldContent className="@md/field-group:w-[22rem] min-w-0">
                 <FieldSet className="gap-3 w-full">
                   <FieldLegend className="sr-only" variant="legend">
-                    Editor preferences
+                    {"Editor preferences"}
                   </FieldLegend>
                   <FieldDescription className="sr-only">
-                    Configure editing behavior and interface density.
+                    {"Configure editing behavior and interface density."}
                   </FieldDescription>
                   <FieldGroup className="gap-3">
                     <Field className="gap-3" role="group" data-orientation="horizontal">
@@ -317,10 +317,10 @@ export function Pattern() {
                       <input id="settings-3-keyboard-shortcuts" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-keyboard-shortcuts" id="settings-3-keyboard-shortcuts-label">
-                          Enable keyboard shortcuts.
+                          {"Enable keyboard shortcuts."}
                         </FieldLabel>
                         <FieldDescription className="text-xs">
-                          Use shortcuts to speed up your workflow.
+                          {"Use shortcuts to speed up your workflow."}
                         </FieldDescription>
                       </FieldContent>
                     </Field>
@@ -331,10 +331,10 @@ export function Pattern() {
                       <input id="settings-3-spellcheck" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-spellcheck" id="settings-3-spellcheck-label">
-                          Auto spell-check.
+                          {"Auto spell-check."}
                         </FieldLabel>
                         <FieldDescription className="text-xs">
-                          Highlight spelling errors in text fields.
+                          {"Highlight spelling errors in text fields."}
                         </FieldDescription>
                       </FieldContent>
                     </Field>
@@ -345,10 +345,10 @@ export function Pattern() {
                       <input id="settings-3-compact-mode" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-compact-mode" id="settings-3-compact-mode-label">
-                          Compact Mode.
+                          {"Compact Mode."}
                         </FieldLabel>
                         <FieldDescription className="text-xs">
-                          Reduce spacing for a denser interface layout.
+                          {"Reduce spacing for a denser interface layout."}
                         </FieldDescription>
                       </FieldContent>
                     </Field>
@@ -359,10 +359,10 @@ export function Pattern() {
                       <input id="settings-3-animations" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-animations" id="settings-3-animations-label">
-                          Reduce animations.
+                          {"Reduce animations."}
                         </FieldLabel>
                         <FieldDescription className="text-xs">
-                          Minimize motion effects throughout the UI.
+                          {"Minimize motion effects throughout the UI."}
                         </FieldDescription>
                       </FieldContent>
                     </Field>
@@ -374,10 +374,10 @@ export function Pattern() {
         </FramePanel>
         <footer className="flex flex-row gap-3 justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <Button type="button" tabIndex="0">
-            Reset
+            {"Reset"}
           </Button>
           <Button type="button" tabIndex="0">
-            Save changes
+            {"Save changes"}
           </Button>
         </footer>
       </Frame>

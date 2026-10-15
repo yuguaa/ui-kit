@@ -80,13 +80,17 @@ import {
 export function Pattern() {
   return (
   <>
+    <SidebarProvider>
     <div className="**:data-[sidebar=menu-button]:hover:text-foreground **:data-[sidebar=menu-button]:text-accent-foreground/80 **:data-[sidebar=menu-sub-button]:hover:text-foreground **:data-[sidebar=menu-sub-button]:text-accent-foreground/80 [&_[data-sidebar=menu-button]:hover>svg]:opacity-100 [&_[data-sidebar=menu-button]:hover]:bg-sidebar-accent/80! [&_[data-sidebar=menu-button]:hover]:border-border/60! [&_[data-sidebar=menu-button]:hover]:text-foreground! [&_[data-sidebar=menu-button]>svg]:opacity-60 [&_[data-sidebar=menu-button][data-active]>svg]:opacity-100 [&_[data-sidebar=menu-button][data-active]>svg]:text-primary [&_[data-sidebar=menu-button][data-active]]:bg-sidebar-accent! [&_[data-sidebar=menu-button][data-active]]:border [&_[data-sidebar=menu-button][data-active]]:border-border/60! [&_[data-sidebar=menu-button][data-active]]:hover:bg-sidebar-accent! [&_[data-sidebar=menu-button][data-active]]:text-foreground [&_[data-sidebar=menu-button]]:border! [&_[data-sidebar=menu-button]]:border-transparent! [&_[data-sidebar=menu-sub-button]:hover>svg]:opacity-100 [&_[data-sidebar=menu-sub-button]:hover]:bg-sidebar-accent/80! [&_[data-sidebar=menu-sub-button]:hover]:border-border/60! [&_[data-sidebar=menu-sub-button]:hover]:text-foreground! [&_[data-sidebar=menu-sub-button]>svg]:opacity-60 [&_[data-sidebar=menu-sub-button][data-active]>svg]:opacity-100 [&_[data-sidebar=menu-sub-button][data-active]>svg]:text-primary [&_[data-sidebar=menu-sub-button][data-active]]:bg-sidebar-accent! [&_[data-sidebar=menu-sub-button][data-active]]:border [&_[data-sidebar=menu-sub-button][data-active]]:border-border/60! [&_[data-sidebar=menu-sub-button][data-active]]:hover:bg-sidebar-accent! [&_[data-sidebar=menu-sub-button][data-active]]:text-foreground [&_[data-sidebar=menu-sub-button]]:border! [&_[data-sidebar=menu-sub-button]]:border-transparent! [--sidebar-border:transparent] [--sidebar-width:260px] [--sidebar:transparent] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "16rem", "--sidebar-width-icon": "3rem"}}>
       <a className="-translate-y-[300%] bg-background border fixed focus:border-ring focus:outline-none focus:ring-3 focus:ring-ring/50 focus:translate-y-0 font-medium left-3 px-3 py-2 rounded-lg shadow-sm text-sm top-3 transition-transform z-50" href="#main-content">
-        Skip to content
+        {"Skip to content"}
       </a>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="inset" data-side="left">
         <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-2xl group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
             <button className="-translate-y-1/2 cursor-pointer duration-200 ease-linear fixed flex group/rail h-12 items-center motion-reduce:transition-none outline-none pl-2 top-1/2 transition-[left] w-7 z-30" type="button" aria-label="Collapse sidebar" style={{left: "var(--sidebar-width)"}}>
               <span className="flex flex-col items-center">
@@ -94,7 +98,7 @@ export function Pattern() {
                 <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
               </span>
               <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-                Collapse
+                {"Collapse"}
               </span>
             </button>
             <SidebarHeader className="[--radius:var(--radius-xl)] flex-row gap-2 in-data-[state=collapsed]:flex-col in-data-[state=collapsed]:items-start in-data-[state=collapsed]:justify-center items-center justify-between p-2" sidebar="header">
@@ -110,7 +114,7 @@ export function Pattern() {
                   </Item>
                 </span>
                 <span className="font-medium in-data-[state=collapsed]:hidden text-sm">
-                  AgentOps
+                  {"AgentOps"}
                 </span>
               </div>
               <div className="gap-0.5 in-data-[state=collapsed]:flex-col inline-flex items-center">
@@ -125,10 +129,13 @@ export function Pattern() {
                 </Popover>
               </div>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="[--radius:var(--radius-xl)] gap-2 no-scrollbar" sidebar="content">
               <div className="pt-2 py-2">
                 <form>
+                  <SidebarProvider>
                   <SidebarGroup className="p-2 py-0" sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent className="in-data-[state=collapsed]:flex in-data-[state=collapsed]:justify-center relative text-sm" sidebar="group-content">
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border/60 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 duration-200 ease-linear focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-normal gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:bg-sidebar-accent/80! hover:text-foreground in-data-[state=collapsed]:gap-0 in-data-[state=collapsed]:justify-center in-data-[state=collapsed]:mx-auto in-data-[state=collapsed]:px-0! in-data-[state=collapsed]:w-8! justify-start overflow-hidden pl-2 px-3 rounded-4xl shadow-none text-sm transition-[width,padding] w-full" type="button" tabIndex="0" id="search">
                         <svg className="opacity-50 pointer-events-none select-none shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -136,31 +143,40 @@ export function Pattern() {
                           <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span className="in-data-[state=collapsed]:hidden">
-                          Search...
+                          {"Search..."}
                         </span>
                       </Button>
                       <Kbd className="-translate-y-1/2 [&_svg:not([class*='size-'])]:size-3 absolute bg-muted dark:in-data-[slot=tooltip-content]:bg-background/10 font-medium font-sans gap-1 h-5.5 in-data-[slot=input-group]:bg-input in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background in-data-[state=collapsed]:hidden min-w-5.5 px-1.5 right-2 rounded-lg text-muted-foreground text-xs top-1/2 w-fit">
-                        /
+                        {"/"}
                       </Kbd>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                   <DialogHeader className="gap-1.5 sr-only">
                     <DialogTitle className="font-heading font-medium leading-none text-base" id="base-ui-_R_2r9ej5udb_">
-                      Search
+                      {"Search"}
                     </DialogTitle>
                     <DialogDescription className="*:[a]:hover:text-foreground *:[a]:underline *:[a]:underline-offset-3 text-muted-foreground text-sm" id="base-ui-_R_4r9ej5udb_">
-                      Search your workspace content.
+                      {"Search your workspace content."}
                     </DialogDescription>
                   </DialogHeader>
                 </form>
               </div>
+              <SidebarProvider>
               <SidebarGroup className="p-2" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:size-4 duration-200 ease-linear focus-visible:ring-2 font-medium group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 h-8 in-data-[state=collapsed]:hidden px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground/70 text-xs transition-[margin,opacity]" sidebar="group-label">
-                  Workspace
+                  {"Workspace"}
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroupContent className="text-sm" sidebar="group-content">
+                  <SidebarProvider>
                   <SidebarMenu className="gap-0.25" sidebar="menu">
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qhiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M13.6903 19.4567C13.5 18.9973 13.5 18.4149 13.5 17.25C13.5 16.0851 13.5 15.5027 13.6903 15.0433C13.944 14.4307 14.4307 13.944 15.0433 13.6903C15.5027 13.5 16.0851 13.5 17.25 13.5C18.4149 13.5 18.9973 13.5 19.4567 13.6903C20.0693 13.944 20.556 14.4307 20.8097 15.0433C21 15.5027 21 16.0851 21 17.25C21 18.4149 21 18.9973 20.8097 19.4567C20.556 20.0693 20.0693 20.556 19.4567 20.8097C18.9973 21 18.4149 21 17.25 21C16.0851 21 15.5027 21 15.0433 20.8097C14.4307 20.556 13.944 20.0693 13.6903 19.4567Z" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -169,54 +185,66 @@ export function Pattern() {
                           <path d="M3.1903 8.95671C3 8.49728 3 7.91485 3 6.75C3 5.58515 3 5.00272 3.1903 4.54329C3.44404 3.93072 3.93072 3.44404 4.54329 3.1903C5.00272 3 5.58515 3 6.75 3C7.91485 3 8.49728 3 8.95671 3.1903C9.56928 3.44404 10.056 3.93072 10.3097 4.54329C10.5 5.00272 10.5 5.58515 10.5 6.75C10.5 7.91485 10.5 8.49728 10.3097 8.95671C10.056 9.56928 9.56928 10.056 8.95671 10.3097C8.49728 10.5 7.91485 10.5 6.75 10.5C5.58515 10.5 5.00272 10.5 4.54329 10.3097C3.93072 10.056 3.44404 9.56928 3.1903 8.95671Z" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span>
-                          Overview
+                          {"Overview"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_qiiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="true" aria-controls="subnav-runs">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span className="truncate">
-                          Runs
+                          {"Runs"}
                         </span>
                         <svg className="duration-200 ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M9.00005 18C9.00005 18 15 13.5811 15 12C15 10.4188 9 6 9 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                       <SidebarMenuSub className="border-l border-sidebar-border gap-1 group-data-[collapsible=icon]:hidden mx-3.5 px-2.5 py-0.5 translate-x-px" sidebar="menu-sub" id="subnav-runs">
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="[&>svg]:size-4 [&>svg]:text-sidebar-accent-foreground active:bg-sidebar-accent active:text-sidebar-accent-foreground data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 h-7 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground" sidebar="menu-sub-button" size="md" href="/runs/all-runs">
                             <span>
-                              All runs
+                              {"All runs"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="[&>svg]:size-4 [&>svg]:text-sidebar-accent-foreground active:bg-sidebar-accent active:text-sidebar-accent-foreground data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 h-7 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground" sidebar="menu-sub-button" size="md" href="/runs/failures">
                             <span>
-                              Failures
+                              {"Failures"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       </SidebarMenuSub>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qjiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/approvals">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M18.7088 3.49534C16.8165 2.55382 14.5009 2 12 2C9.4991 2 7.1835 2.55382 5.29116 3.49534C4.36318 3.95706 3.89919 4.18792 3.4496 4.91378C3 5.63965 3 6.34248 3 7.74814V11.2371C3 16.9205 7.54236 20.0804 10.173 21.4338C10.9067 21.8113 11.2735 22 12 22C12.7265 22 13.0933 21.8113 13.8269 21.4338C16.4576 20.0804 21 16.9205 21 11.2371L21 7.74814C21 6.34249 21 5.63966 20.5504 4.91378C20.1008 4.18791 19.6368 3.95706 18.7088 3.49534Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                           <path d="M9 11.5C9 11.5 10.4079 11.7519 11 13.5C11 13.5 12.5 10.5 15 9.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span>
-                          Approvals
+                          {"Approvals"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                       <SidebarMenuBadge className="absolute font-medium h-5 min-w-5 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 peer-data-[size=sm]/menu-button:top-1 peer-data-active/menu-button:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground pointer-events-none px-1 right-1 rounded-xl text-sidebar-foreground text-xs" sidebar="menu-badge">
-                        8
+                        {"8"}
                       </SidebarMenuBadge>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qkiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/evals">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M14.4725 2V7.86783C14.4725 8.43028 14.4725 8.71151 14.5473 8.9786C14.6221 9.2457 14.7679 9.48521 15.0594 9.96422L18.6743 15.9036C20.3166 18.602 21.1377 19.9512 20.5716 20.9756C20.0054 22 18.4386 22 15.305 22H8.69496C5.56136 22 3.99455 22 3.42841 20.9756C2.86227 19.9512 3.68343 18.602 5.32575 15.9036L8.94061 9.96422C9.23215 9.48521 9.37792 9.2457 9.45269 8.9786C9.52746 8.71151 9.52746 8.43028 9.52746 7.86783V2" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -224,32 +252,44 @@ export function Pattern() {
                           <path d="M19 16.7232C18.4694 16.8939 17.8143 17 17 17C14 17 11 14 8 14C7.65244 14 7.31998 14.0181 7 14.0512" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span>
-                          Evals
+                          {"Evals"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qliej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/flags">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M5.0249 21C5.04385 19.2643 5.04366 17.5541 5.0366 15.9209M5.0366 15.9209C5.01301 10.4614 4.91276 5.86186 5.19475 4.04271C5.5611 1.67939 9.39301 3.82993 13.9703 5.59842L16.0328 6.48729C17.5508 7.1415 19.7187 8.30352 18.7662 9.66084C18.3738 10.22 17.56 10.8596 16.0575 11.567L5.0366 15.9209Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span>
-                          Flags
+                          {"Flags"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qmiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/memory">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M16.998 7.12652C17.3182 7.04393 17.654 7 18 7C20.2091 7 22 8.79086 22 11C22 13.2091 20.2091 15 18 15C17.6451 15 17.3009 14.9538 16.9733 14.867M16.998 7.12652C16.9993 7.08451 17 7.04233 17 7C17 4.79086 15.2091 3 13 3C11.0824 3 9.47994 4.34939 9.09041 6.15043M16.998 7.12652C16.9769 7.80763 16.7854 8.44584 16.4649 9M16.9733 14.867C16.9909 14.7472 17 14.6247 17 14.5C17 13.2905 16.1411 12.2816 15 12.05M16.9733 14.867C16.7957 16.0737 15.756 17 14.5 17H14C11.7909 17 10 18.7909 10 21M9.09041 6.15043C8.74377 6.05243 8.37801 6 8 6C5.79086 6 4 7.79086 4 10C4 10.3886 4.05542 10.7643 4.15878 11.1195M9.09041 6.15043C10.1015 6.43625 10.9498 7.10965 11.4649 8M4.15878 11.1195C2.9114 11.4832 2 12.6352 2 14C2 15.6569 3.34315 17 5 17C6.30622 17 7.41746 16.1652 7.82929 15M4.15878 11.1195C4.24921 11.4303 4.37632 11.7255 4.53513 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                           <path d="M11.8361 11.7435C11.3257 12.2353 10.453 12.3202 9.70713 11.9008C8.9612 11.4814 8.58031 10.6917 8.73535 10" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5"></path>
                         </svg>
                         <span>
-                          Memory
+                          {"Memory"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_qniej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/tools">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M20.3584 13.3567C19.1689 14.546 16.9308 14.4998 13.4992 14.4998C11.2914 14.4998 9.50138 12.7071 9.50024 10.4993C9.50024 7.07001 9.454 4.83065 10.6435 3.64138C11.8329 2.45212 12.3583 2.50027 17.6274 2.50027C18.1366 2.49809 18.3929 3.11389 18.0329 3.47394L15.3199 6.18714C14.6313 6.87582 14.6294 7.99233 15.3181 8.68092C16.0068 9.36952 17.1234 9.36959 17.8122 8.68109L20.5259 5.96855C20.886 5.60859 21.5019 5.86483 21.4997 6.37395C21.4997 11.6422 21.5479 12.1675 20.3584 13.3567Z" stroke="currentColor" strokeWidth="1.5"></path>
@@ -257,11 +297,15 @@ export function Pattern() {
                           <path d="M5.50896 18.5H5.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
                         </svg>
                         <span>
-                          Tools
+                          {"Tools"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_qoiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="true" aria-controls="subnav-providers" data-active="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M19 4H5C4.06812 4 3.60218 4 3.23463 4.15224C2.74458 4.35523 2.35523 4.74458 2.15224 5.23463C2 5.60218 2 6.06812 2 7C2 7.93188 2 8.39782 2.15224 8.76537C2.35523 9.25542 2.74458 9.64477 3.23463 9.84776C3.60218 10 4.06812 10 5 10H19C19.9319 10 20.3978 10 20.7654 9.84776C21.2554 9.64477 21.6448 9.25542 21.8478 8.76537C22 8.39782 22 7.93188 22 7C22 6.06812 22 5.60218 21.8478 5.23463C21.6448 4.74458 21.2554 4.35523 20.7654 4.15224C20.3978 4 19.9319 4 19 4Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -272,37 +316,41 @@ export function Pattern() {
                           <path d="M10.125 17H10M10.25 17C10.25 17.1381 10.1381 17.25 10 17.25C9.86193 17.25 9.75 17.1381 9.75 17C9.75 16.8619 9.86193 16.75 10 16.75C10.1381 16.75 10.25 16.8619 10.25 17Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span className="truncate">
-                          Providers
+                          {"Providers"}
                         </span>
                         <svg className="duration-200 ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M9.00005 18C9.00005 18 15 13.5811 15 12C15 10.4188 9 6 9 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                       <SidebarMenuSub className="border-l border-sidebar-border gap-1 group-data-[collapsible=icon]:hidden mx-3.5 px-2.5 py-0.5 translate-x-px" sidebar="menu-sub" id="subnav-providers">
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="[&>svg]:size-4 [&>svg]:text-sidebar-accent-foreground active:bg-sidebar-accent active:text-sidebar-accent-foreground data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 h-7 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground" sidebar="menu-sub-button" size="md" href="/providers/connections">
                             <span>
-                              Connections
+                              {"Connections"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="[&>svg]:size-4 [&>svg]:text-sidebar-accent-foreground active:bg-sidebar-accent active:text-sidebar-accent-foreground data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 h-7 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground" sidebar="menu-sub-button" size="md" href="/providers/routing-rules" data-active="" aria-current="page">
                             <span>
-                              Routing rules
+                              {"Routing rules"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                         <SidebarMenuSubItem sidebar="menu-sub-item">
                           <SidebarMenuSubButton className="[&>svg]:size-4 [&>svg]:text-sidebar-accent-foreground active:bg-sidebar-accent active:text-sidebar-accent-foreground data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 h-7 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground" sidebar="menu-sub-button" size="md" href="/providers/failover">
                             <span>
-                              Failover
+                              {"Failover"}
                             </span>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>
                       </SidebarMenuSub>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_qpiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="false" aria-controls="subnav-costs">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -310,40 +358,56 @@ export function Pattern() {
                           <path d="M12 6L12 18" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                         <span className="truncate">
-                          Costs
+                          {"Costs"}
                         </span>
                         <svg className="duration-200 ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M9.00005 18C9.00005 18 15 13.5811 15 12C15 10.4188 9 6 9 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_qqiej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="false" aria-controls="subnav-settings">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M21.3175 7.14139L20.8239 6.28479C20.4506 5.63696 20.264 5.31305 19.9464 5.18388C19.6288 5.05472 19.2696 5.15664 18.5513 5.36048L17.3311 5.70418C16.8725 5.80994 16.3913 5.74994 15.9726 5.53479L15.6357 5.34042C15.2766 5.11043 15.0004 4.77133 14.8475 4.37274L14.5136 3.37536C14.294 2.71534 14.1842 2.38533 13.9228 2.19657C13.6615 2.00781 13.3143 2.00781 12.6199 2.00781H11.5051C10.8108 2.00781 10.4636 2.00781 10.2022 2.19657C9.94085 2.38533 9.83106 2.71534 9.61149 3.37536L9.27753 4.37274C9.12465 4.77133 8.84845 5.11043 8.48937 5.34042L8.15249 5.53479C7.73374 5.74994 7.25259 5.80994 6.79398 5.70418L5.57375 5.36048C4.85541 5.15664 4.49625 5.05472 4.17867 5.18388C3.86109 5.31305 3.67445 5.63696 3.30115 6.28479L2.80757 7.14139C2.45766 7.74864 2.2827 8.05227 2.31666 8.37549C2.35061 8.69871 2.58483 8.95918 3.05326 9.48012L4.0843 10.6328C4.3363 10.9518 4.51521 11.5078 4.51521 12.0077C4.51521 12.5078 4.33636 13.0636 4.08433 13.3827L3.05326 14.5354C2.58483 15.0564 2.35062 15.3168 2.31666 15.6401C2.2827 15.9633 2.45766 16.2669 2.80757 16.8741L3.30114 17.7307C3.67443 18.3785 3.86109 18.7025 4.17867 18.8316C4.49625 18.9608 4.85542 18.8589 5.57377 18.655L6.79394 18.3113C7.25263 18.2055 7.73387 18.2656 8.15267 18.4808L8.4895 18.6752C8.84851 18.9052 9.12464 19.2442 9.2775 19.6428L9.61149 20.6403C9.83106 21.3003 9.94085 21.6303 10.2022 21.8191C10.4636 22.0078 10.8108 22.0078 11.5051 22.0078H12.6199C13.3143 22.0078 13.6615 22.0078 13.9228 21.8191C14.1842 21.6303 14.294 21.3003 14.5136 20.6403L14.8476 19.6428C15.0004 19.2442 15.2765 18.9052 15.6356 18.6752L15.9724 18.4808C16.3912 18.2656 16.8724 18.2055 17.3311 18.3113L18.5513 18.655C19.2696 18.8589 19.6288 18.9608 19.9464 18.8316C20.264 18.7025 20.4506 18.3785 20.8239 17.7307L21.3175 16.8741C21.6674 16.2669 21.8423 15.9633 21.8084 15.6401C21.7744 15.3168 21.5402 15.0564 21.0718 14.5354L20.0407 13.3827C19.7887 13.0636 19.6098 12.5078 19.6098 12.0077C19.6098 11.5078 19.7888 10.9518 20.0407 10.6328L21.0718 9.48012C21.5402 8.95918 21.7744 8.69871 21.8084 8.37549C21.8423 8.05227 21.6674 7.74864 21.3175 7.14139Z" stroke="currentColor" strokeLinecap="round" strokeWidth="1.5"></path>
                           <path d="M15.5195 12C15.5195 13.933 13.9525 15.5 12.0195 15.5C10.0865 15.5 8.51953 13.933 8.51953 12C8.51953 10.067 10.0865 8.5 12.0195 8.5C13.9525 8.5 15.5195 10.067 15.5195 12Z" stroke="currentColor" strokeWidth="1.5"></path>
                         </svg>
                         <span className="truncate">
-                          Settings
+                          {"Settings"}
                         </span>
                         <svg className="duration-200 ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                           <path d="M9.00005 18C9.00005 18 15 13.5811 15 12C15 10.4188 9 6 9 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                         </svg>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
                   </SidebarMenu>
+                  </SidebarProvider>
                 </SidebarGroupContent>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
+              <SidebarProvider>
               <SidebarGroup className="group-data-[collapsible=icon]:hidden p-2" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:size-4 cursor-pointer duration-200 ease-linear focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sidebar-ring font-medium group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 h-8 px-3 ring-sidebar-ring rounded-xl text-sidebar-foreground/70 text-xs transition-[margin,opacity] w-full whitespace-nowrap" aria-expanded="true" aria-controls="shortcuts-list" sidebar="group-label">
-                  Quick links
+                  {"Quick links"}
                   <svg className="duration-200 ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                     <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                   </svg>
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroupContent className="text-sm" sidebar="group-content" id="shortcuts-list">
+                  <SidebarProvider>
                   <SidebarMenu className="gap-0.25" sidebar="menu">
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_39jej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/runs/failures">
                         <span className="[&_svg]:opacity-100! [&_svg]:size-4 text-rose-500">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -353,11 +417,15 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Failures
+                          {"Failures"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_3ajej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/providers/connections">
                         <span className="[&_svg]:opacity-100! [&_svg]:size-4 text-sky-500">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -369,11 +437,15 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Connections
+                          {"Connections"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_3bjej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/providers/routing-rules">
                         <span className="[&_svg]:opacity-100! [&_svg]:size-4 text-violet-500">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -383,11 +455,15 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Routing rules
+                          {"Routing rules"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_3cjej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/costs/spend-overview">
                         <span className="[&_svg]:opacity-100! [&_svg]:size-4 text-emerald-500">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -397,11 +473,15 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Spend overview
+                          {"Spend overview"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenuItem sidebar="menu-item">
+                      <SidebarProvider>
                       <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding]" id="base-ui-_R_3djej5udb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/costs/token-audit">
                         <span className="[&_svg]:opacity-100! [&_svg]:size-4 text-amber-500">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
@@ -412,25 +492,31 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Token audit
+                          {"Token audit"}
                         </span>
                       </SidebarMenuButton>
+                      </SidebarProvider>
                     </SidebarMenuItem>
+                    </SidebarProvider>
                   </SidebarMenu>
+                  </SidebarProvider>
                 </SidebarGroupContent>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
               <div className="mt-auto">
+                <SidebarProvider>
                 <SidebarGroup className="group-data-[collapsible=icon]:hidden overflow-hidden p-2" sidebar="group">
                   <div className="group/card mt-5 overflow-hidden">
                     <Frame className="(--radius-2xl)] (--radius-lg)] (--radius-none)] (--radius-xl)] (0.5)] (1)] (1.25)] (1.5)] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)_+_var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)_+_var(--frame-panel-footer-py-adjust))] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)_+_var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)_+_var(--frame-panel-header-py-adjust))] [--frame-panel-px:calc(var(--frame-panel-px-base)_+_var(--frame-panel-px-adjust))] [--frame-panel-py:calc(var(--frame-panel-py-base)_+_var(--frame-panel-py-adjust))] [--frame-radius:var(--radius-xl)] border-border md:w-[222px] shrink-0" spacing="xs">
                       <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                         <div className="font-semibold text-warning text-xs">
-                          Spending Limit
+                          {"Spending Limit"}
                         </div>
                       </header>
                       <FramePanel className="before:rounded-[calc(var(--frame-panel-radius)_-_1px)] space-y-2">
                         <p className="leading-snug text-muted-foreground text-xs">
-                          $95.10 of $144.09 this period. Resets Oct 16.
+                          {"$95.10 of $144.09 this period. Resets Oct 16."}
                         </p>
                         <div className="bg-muted/55 h-1.5 overflow-hidden relative rounded-sm">
                           <div className="absolute inset-0 opacity-20 pointer-events-none text-muted-foreground" aria-hidden="true" style={{backgroundImage: "repeating-linear-gradient(-45deg, currentcolor 0px, currentcolor 1px, transparent 0px, transparent 4px)"}}></div>
@@ -439,25 +525,25 @@ export function Pattern() {
                               <ProgressIndicator className="bg-primary" progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "66%"}}></ProgressIndicator>
                             </ProgressTrack>
                             <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                              x
+                              {"x"}
                             </span>
                           </Progress>
                         </div>
                         <div className="flex items-center justify-between leading-none text-xs">
                           <div className="flex gap-1 items-center">
                             <span className="font-semibold text-foreground">
-                              66%
+                              {"66%"}
                             </span>
                             <span className="text-muted-foreground">
-                              Used
+                              {"Used"}
                             </span>
                           </div>
                           <div className="flex gap-1 items-center">
                             <span className="font-semibold text-foreground">
-                              34%
+                              {"34%"}
                             </span>
                             <span className="text-muted-foreground">
-                              Free
+                              {"Free"}
                             </span>
                           </div>
                         </div>
@@ -465,10 +551,14 @@ export function Pattern() {
                     </Frame>
                   </div>
                 </SidebarGroup>
+                </SidebarProvider>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="gap-2 p-2" sidebar="footer">
+              <SidebarProvider>
               <SidebarMenu className="gap-0.5" sidebar="menu">
+                <SidebarProvider>
                 <SidebarMenuItem sidebar="menu-item">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="-ml-1 [&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 active:bg-sidebar-accent active:text-sidebar-accent-foreground aria-disabled:opacity-50 aria-disabled:pointer-events-none bg-transparent data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground disabled:opacity-50 disabled:pointer-events-none flex focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:ml-0! group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 group/menu-button h-9 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground items-center outline-hidden overflow-hidden peer/menu-button pr-0! px-3 py-2 ring-sidebar-ring rounded-xl text-left text-sm transition-[width,height,padding] w-full" type="button" sidebar="menu-button" size="default" aria-label="Open workspace menu" tabIndex="0" aria-haspopup="menu" id="base-ui-_R_3ij5udb_" aria-expanded="false">
@@ -478,7 +568,7 @@ export function Pattern() {
                       </Avatar>
                       <div className="flex flex-col in-data-[state=collapsed]:hidden min-w-0">
                         <span className="font-medium text-xs truncate">
-                          Nick Bold
+                          {"Nick Bold"}
                         </span>
                         <span className="gap-1 inline-flex items-center">
                           <svg className="shrink-0 size-3!" viewBox="0 0 28 28" fill="none" width="100%" height="100%" aria-hidden="true">
@@ -492,7 +582,7 @@ export function Pattern() {
                             <circle cx="14" cy="14" r="14" fill="url(#_R_1krij5udb_)"></circle>
                           </svg>
                           <span className="text-[10px] text-muted-foreground truncate">
-                            Atlas
+                            {"Atlas"}
                           </span>
                         </span>
                       </div>
@@ -503,23 +593,30 @@ export function Pattern() {
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                 </SidebarMenuItem>
+                </SidebarProvider>
               </SidebarMenu>
+              </SidebarProvider>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <SidebarInset className="bg-background border dark:shadow-[0_1px_3px_0_rgba(0,0,0,0.35)]! md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-2xl md:peer-data-[variant=inset]:shadow-sm ml-0! overflow-hidden shadow-[0_1px_3px_0_rgba(0,0,0,0.08)]!">
         <header className="backdrop-blur-sm bg-background/95 border-b border-border/60 flex gap-4 h-12 items-center justify-between px-4 shrink-0 sticky top-0 z-10">
           <div className="flex gap-2 items-center min-w-0">
+            <SidebarProvider>
             <SidebarTrigger className="-ml-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-4xl select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor">
                 <path d="M13 3H11C7.22876 3 5.34315 3 4.17157 4.17157C3 5.34315 3 7.22876 3 11V13C3 16.7712 3 18.6569 4.17157 19.8284C5.34315 21 7.22876 21 11 21H13C16.7712 21 18.6569 21 19.8284 19.8284C21 18.6569 21 16.7712 21 13V11C21 7.22876 21 5.34315 19.8284 4.17157C18.6569 3 16.7712 3 13 3Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                 <path d="M9 3V21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
               </svg>
               <span className="sr-only">
-                Toggle Sidebar
+                {"Toggle Sidebar"}
               </span>
             </SidebarTrigger>
+            </SidebarProvider>
             <Breadcrumb className="min-w-0" aria-label="breadcrumb">
               <BreadcrumbList className="flex-nowrap gap-1.5 sm:gap-2.5 text-muted-foreground text-sm">
                 <BreadcrumbItem className="flex gap-1.5 min-w-0">
@@ -537,7 +634,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="hidden lg:inline truncate">
-                      Atlas
+                      {"Atlas"}
                     </span>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -552,7 +649,7 @@ export function Pattern() {
                       <AvatarImage className="rounded-full" alt="Nick Bold" src="https://images.unsplash.com/photo-1543299750-19d1d6297053?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
                     <span className="hidden md:inline truncate">
-                      Nick Bold
+                      {"Nick Bold"}
                     </span>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -563,7 +660,7 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="gap-1.5 min-w-0">
                   <span className="truncate">
-                    Providers
+                    {"Providers"}
                   </span>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="[&>svg]:size-3.5 shrink-0" role="presentation" aria-hidden="true">
@@ -573,7 +670,7 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="gap-1.5 min-w-0">
                   <BreadcrumbPage className="font-normal text-foreground truncate" role="link" aria-disabled="true" aria-current="page">
-                    Routing rules
+                    {"Routing rules"}
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -589,7 +686,7 @@ export function Pattern() {
                 <span className="absolute animate-ping bg-destructive/25 inset-0 rounded-full" aria-hidden="true"></span>
               </span>
               <span className="font-medium hidden sm:inline text-foreground text-xs">
-                System Status
+                {"System Status"}
               </span>
             </PopoverTrigger>
             </Popover>
@@ -598,36 +695,36 @@ export function Pattern() {
         <div className="flex flex-1 flex-col gap-4 min-h-0 outline-none overflow-y-auto" id="main-content" tabIndex="-1">
           <main className="p-4 w-full" aria-labelledby="page-heading">
             <h1 className="sr-only" id="page-heading">
-              Routing rules
+              {"Routing rules"}
             </h1>
             <div className="flex flex-col gap-4 min-w-0 w-full">
               <div className="flex flex-wrap gap-3 items-center justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <div className="flex flex-wrap gap-2.5 items-center min-w-0">
                     <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                      Routing Rules
+                      {"Routing Rules"}
                     </h2>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-4xl text-success-foreground text-xs transition-shadow">
-                      Active
+                      {"Active"}
                     </Badge>
                   </div>
                   <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-sm">
                     <span className="flex gap-1.5 items-center">
                       <span className="tabular-nums">
-                        4 routes
+                        {"4 routes"}
                       </span>
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        2 with locked controls
+                        {"2 with locked controls"}
                       </span>
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
                         <span className="text-destructive">
-                          1 restricted
+                          {"1 restricted"}
                         </span>
                       </span>
                     </span>
@@ -639,7 +736,7 @@ export function Pattern() {
                       <path d="M2.99969 17.0002C2.99969 17.9302 2.99969 18.3952 3.10192 18.7767C3.37932 19.8119 4.18796 20.6206 5.22324 20.898C5.60474 21.0002 6.06972 21.0002 6.99969 21.0002L16.9997 21.0002C17.9297 21.0002 18.3947 21.0002 18.7762 20.898C19.8114 20.6206 20.6201 19.8119 20.8975 18.7767C20.9997 18.3952 20.9997 17.9302 20.9997 17.0002" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                       <path d="M16.4998 11.5002C16.4998 11.5002 13.1856 16.0002 11.9997 16.0002C10.8139 16.0002 7.49976 11.5002 7.49976 11.5002M11.9997 15.0002V3.00016" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                     </svg>
-                    Export Summary
+                    {"Export Summary"}
                   </Button>
                 </div>
               </div>
@@ -647,16 +744,16 @@ export function Pattern() {
                 <header className="flex flex-col gap-4 items-start justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:gap-6 sm:items-center">
                   <div className="space-y-px">
                     <div className="font-semibold text-sm">
-                      Routing Rules
+                      {"Routing Rules"}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      ROUTE-318 · 4 risk tiers
+                      {"ROUTE-318 · 4 risk tiers"}
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2.5 items-center shrink-0">
                     <Label className="cursor-pointer font-medium gap-2 group-data-[disabled=true]:opacity-50 leading-none peer-disabled:opacity-50 text-sm" id="base-ui-_r_kl_-label">
                       <span className="hidden md:block text-foreground text-sm">
-                        Active
+                        {"Active"}
                       </span>
                       <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_kk_" aria-checked="true" size="sm" aria-label="Activate routing rules" aria-labelledby="base-ui-_r_kl_-label">
                         <span className="bg-background block dark:data-checked:bg-primary-foreground dark:data-unchecked:bg-foreground data-checked:translate-x-[calc(100%-8px)] data-unchecked:translate-x-0 group-data-[size=default]/switch:h-4 group-data-[size=default]/switch:w-6 group-data-[size=sm]/switch:h-3 group-data-[size=sm]/switch:w-4 not-dark:bg-clip-padding pointer-events-none ring-0 rounded-full shadow-sm transition-transform" data-checked=""></span>
@@ -670,7 +767,7 @@ export function Pattern() {
                         <path d="M19.002 12.002L4.99998 12.002" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                       </svg>
                       <span className="hidden md:block">
-                        Add
+                        {"Add"}
                       </span>
                     </Button>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-3 rounded-4xl text-sm" type="button" tabIndex="0">
@@ -678,7 +775,7 @@ export function Pattern() {
                         <path d="M20.0092 2V5.13219C20.0092 5.42605 19.6418 5.55908 19.4537 5.33333C17.6226 3.2875 14.9617 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                       </svg>
                       <span className="hidden md:block">
-                        Reset
+                        {"Reset"}
                       </span>
                     </Button>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-3 rounded-4xl text-primary-foreground text-sm" type="button" tabIndex="0">
@@ -688,7 +785,7 @@ export function Pattern() {
                         <path d="M17 20.5V17C17 15.1144 17 14.1716 16.4142 13.5858C15.8284 13 14.8856 13 13 13H11C9.11438 13 8.17157 13 7.58579 13.5858C7 14.1716 7 15.1144 7 17V20.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
                       </svg>
                       <span className="hidden md:block">
-                        Save
+                        {"Save"}
                       </span>
                     </Button>
                     <DropdownMenu>
@@ -707,16 +804,16 @@ export function Pattern() {
                         <div className="min-w-0 space-y-px">
                           <ItemTitle className="font-medium gap-2 leading-snug text-sm underline-offset-4">
                             <button className="cursor-pointer focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:text-primary min-w-0 outline-none rounded-sm text-start transition-colors truncate" type="button">
-                              Support Reply Drafts
+                              {"Support Reply Drafts"}
                             </button>
                           </ItemTitle>
                           <ItemDescription className="text-left text-muted-foreground text-sm">
-                            1.8M requests/day use VectorEdge fallback.
+                            {"1.8M requests/day use VectorEdge fallback."}
                           </ItemDescription>
                         </div>
                         <div className="flex gap-1.5 items-center shrink-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-4xl text-success-foreground text-xs transition-shadow">
-                            Low
+                            {"Low"}
                           </Badge>
                           <DropdownMenu>
                           <DropdownMenuTrigger className="-me-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Support Reply Drafts actions" aria-haspopup="menu" id="base-ui-_r_kv_" aria-expanded="false">
@@ -731,10 +828,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Provider fallback
+                              {"Provider fallback"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Move traffic after 12s p95.
+                              {"Move traffic after 12s p95."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_l1_" aria-checked="true" size="sm" aria-label="Support Reply Drafts Provider fallback">
@@ -745,10 +842,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Long context
+                              {"Long context"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Allow 64M token peak days.
+                              {"Allow 64M token peak days."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_l4_" aria-checked="false" size="sm" aria-label="Support Reply Drafts Long context">
@@ -759,10 +856,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Safety review
+                              {"Safety review"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Route SAFE-0914 before send.
+                              {"Route SAFE-0914 before send."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_l7_" aria-checked="false" size="sm" aria-label="Support Reply Drafts Safety review">
@@ -773,10 +870,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Low cost mode
+                              {"Low cost mode"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Prefer sub $0.18 per MTok.
+                              {"Prefer sub $0.18 per MTok."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_la_" aria-checked="true" size="sm" aria-label="Support Reply Drafts Low cost mode">
@@ -787,12 +884,12 @@ export function Pattern() {
                       </div>
                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="*:data-[slot=field]:p-4 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-2xl has-data-checked:bg-input/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="support-reply-drafts-fallback">
-                          Fallback priority
+                          {"Fallback priority"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-input/50 border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-9 data-[size=sm]:h-8 data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 gap-1.5 px-3 py-2 rounded-3xl text-sm transition-[color,box-shadow,background-color] w-full" type="button" tabIndex="0" id="support-reply-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-invalid="false">
                           <SelectValue className="flex flex-1 text-left">
-                            VectorEdge Small
+                            {"VectorEdge Small"}
                           </SelectValue>
                           <svg className="pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                             <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -801,7 +898,7 @@ export function Pattern() {
                         </Select>
                         <input id="base-ui-_r_ld_-hidden-input" tabIndex="-1" aria-hidden="true" value="vectoredge-small" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                          Mira Stone allows low risk cost routing.
+                          {"Mira Stone allows low risk cost routing."}
                         </FieldDescription>
                       </Field>
                     </ItemContent>
@@ -812,16 +909,16 @@ export function Pattern() {
                         <div className="min-w-0 space-y-px">
                           <ItemTitle className="font-medium gap-2 leading-snug text-sm underline-offset-4">
                             <button className="cursor-pointer focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:text-primary min-w-0 outline-none rounded-sm text-start transition-colors truncate" type="button">
-                              Renewal Risk Summaries
+                              {"Renewal Risk Summaries"}
                             </button>
                           </ItemTitle>
                           <ItemDescription className="text-left text-muted-foreground text-sm">
-                            Northstar handles 22M to 64M token days.
+                            {"Northstar handles 22M to 64M token days."}
                           </ItemDescription>
                         </div>
                         <div className="flex gap-1.5 items-center shrink-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-4xl text-info-foreground text-xs transition-shadow">
-                            Medium
+                            {"Medium"}
                           </Badge>
                           <DropdownMenu>
                           <DropdownMenuTrigger className="-me-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Renewal Risk Summaries actions" aria-haspopup="menu" id="base-ui-_r_lj_" aria-expanded="false">
@@ -836,10 +933,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Provider fallback
+                              {"Provider fallback"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Move traffic after 12s p95.
+                              {"Move traffic after 12s p95."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_ll_" aria-checked="true" size="sm" aria-label="Renewal Risk Summaries Provider fallback">
@@ -850,10 +947,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Long context
+                              {"Long context"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Allow 64M token peak days.
+                              {"Allow 64M token peak days."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_lo_" aria-checked="true" size="sm" aria-label="Renewal Risk Summaries Long context">
@@ -864,10 +961,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Safety review
+                              {"Safety review"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Route SAFE-0914 before send.
+                              {"Route SAFE-0914 before send."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_lr_" aria-checked="false" size="sm" aria-label="Renewal Risk Summaries Safety review">
@@ -878,10 +975,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Low cost mode
+                              {"Low cost mode"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Prefer sub $0.18 per MTok.
+                              {"Prefer sub $0.18 per MTok."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_lu_" aria-checked="false" size="sm" aria-label="Renewal Risk Summaries Low cost mode">
@@ -892,12 +989,12 @@ export function Pattern() {
                       </div>
                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="*:data-[slot=field]:p-4 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-2xl has-data-checked:bg-input/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="renewal-risk-summaries-fallback">
-                          Fallback priority
+                          {"Fallback priority"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-input/50 border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-9 data-[size=sm]:h-8 data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 gap-1.5 px-3 py-2 rounded-3xl text-sm transition-[color,box-shadow,background-color] w-full" type="button" tabIndex="0" id="renewal-risk-summaries-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-invalid="false">
                           <SelectValue className="flex flex-1 text-left">
-                            Northstar Claude Pool
+                            {"Northstar Claude Pool"}
                           </SelectValue>
                           <svg className="pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                             <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -906,7 +1003,7 @@ export function Pattern() {
                         </Select>
                         <input id="base-ui-_r_m1_-hidden-input" tabIndex="-1" aria-hidden="true" value="northstar-claude-pool" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                          Leo Grant reviews latency drift weekly.
+                          {"Leo Grant reviews latency drift weekly."}
                         </FieldDescription>
                       </Field>
                     </ItemContent>
@@ -917,16 +1014,16 @@ export function Pattern() {
                         <div className="min-w-0 space-y-px">
                           <ItemTitle className="font-medium gap-2 leading-snug text-sm underline-offset-4">
                             <button className="cursor-pointer focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:text-primary min-w-0 outline-none rounded-sm text-start transition-colors truncate" type="button">
-                              Invoice Variance Explainers
+                              {"Invoice Variance Explainers"}
                             </button>
                           </ItemTitle>
                           <ItemDescription className="text-left text-muted-foreground text-sm">
-                            Nora Vale requires review inside 6 hours.
+                            {"Nora Vale requires review inside 6 hours."}
                           </ItemDescription>
                         </div>
                         <div className="flex gap-1.5 items-center shrink-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-4xl text-warning-foreground text-xs transition-shadow">
-                            High
+                            {"High"}
                           </Badge>
                           <DropdownMenu>
                           <DropdownMenuTrigger className="-me-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Invoice Variance Explainers actions" aria-haspopup="menu" id="base-ui-_r_m7_" aria-expanded="false">
@@ -941,10 +1038,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Provider fallback
+                              {"Provider fallback"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Move traffic after 12s p95.
+                              {"Move traffic after 12s p95."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_m9_" aria-checked="true" size="sm" aria-label="Invoice Variance Explainers Provider fallback">
@@ -955,10 +1052,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Long context
+                              {"Long context"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Allow 64M token peak days.
+                              {"Allow 64M token peak days."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" checked="" role="switch" tabIndex="0" id="base-ui-_r_mc_" aria-checked="true" size="sm" aria-label="Invoice Variance Explainers Long context">
@@ -969,10 +1066,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Safety review
+                              {"Safety review"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Permission denied by Elijah Morgan.
+                              {"Permission denied by Elijah Morgan."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_mf_" aria-checked="true" size="sm" aria-label="Invoice Variance Explainers Safety review">
@@ -983,10 +1080,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Low cost mode
+                              {"Low cost mode"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Prefer sub $0.18 per MTok.
+                              {"Prefer sub $0.18 per MTok."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_mi_" aria-checked="false" size="sm" aria-label="Invoice Variance Explainers Low cost mode">
@@ -997,12 +1094,12 @@ export function Pattern() {
                       </div>
                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="*:data-[slot=field]:p-4 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-2xl has-data-checked:bg-input/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="invoice-variance-explainers-fallback">
-                          Fallback priority
+                          {"Fallback priority"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-input/50 border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-9 data-[size=sm]:h-8 data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 gap-1.5 px-3 py-2 rounded-3xl text-sm transition-[color,box-shadow,background-color] w-full" type="button" tabIndex="0" id="invoice-variance-explainers-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-invalid="false">
                           <SelectValue className="flex flex-1 text-left">
-                            Local Guardrail Runner
+                            {"Local Guardrail Runner"}
                           </SelectValue>
                           <svg className="pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                             <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -1011,7 +1108,7 @@ export function Pattern() {
                         </Select>
                         <input id="base-ui-_r_ml_-hidden-input" tabIndex="-1" aria-hidden="true" value="local-guardrail-runner" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                          SAFE-0914 keeps finance copy gated.
+                          {"SAFE-0914 keeps finance copy gated."}
                         </FieldDescription>
                       </Field>
                     </ItemContent>
@@ -1022,16 +1119,16 @@ export function Pattern() {
                         <div className="min-w-0 space-y-px">
                           <ItemTitle className="font-medium gap-2 leading-snug text-sm underline-offset-4">
                             <button className="cursor-pointer focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:text-primary min-w-0 outline-none rounded-sm text-start transition-colors truncate" type="button">
-                              Payment Action Drafts
+                              {"Payment Action Drafts"}
                             </button>
                           </ItemTitle>
                           <ItemDescription className="text-left text-muted-foreground text-sm">
-                            Elijah Morgan blocks unsafe fallback edits.
+                            {"Elijah Morgan blocks unsafe fallback edits."}
                           </ItemDescription>
                         </div>
                         <div className="flex gap-1.5 items-center shrink-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-4xl text-destructive-foreground text-xs transition-shadow">
-                            Restricted
+                            {"Restricted"}
                           </Badge>
                           <DropdownMenu>
                           <DropdownMenuTrigger className="-me-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Payment Action Drafts actions" aria-haspopup="menu" id="base-ui-_r_mr_" aria-expanded="false">
@@ -1046,10 +1143,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Provider fallback
+                              {"Provider fallback"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Move traffic after 12s p95.
+                              {"Move traffic after 12s p95."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_mt_" aria-checked="false" size="sm" aria-label="Payment Action Drafts Provider fallback">
@@ -1060,10 +1157,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Long context
+                              {"Long context"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Allow 64M token peak days.
+                              {"Allow 64M token peak days."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_n0_" aria-checked="false" size="sm" aria-label="Payment Action Drafts Long context">
@@ -1074,10 +1171,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Safety review
+                              {"Safety review"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Permission denied by Elijah Morgan.
+                              {"Permission denied by Elijah Morgan."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" disabled="" unchecked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_n3_" aria-checked="false" size="sm" aria-label="Payment Action Drafts Safety review">
@@ -1088,10 +1185,10 @@ export function Pattern() {
                         <div className="flex gap-4 items-center justify-between">
                           <div className="space-y-px">
                             <div className="font-medium text-sm">
-                              Low cost mode
+                              {"Low cost mode"}
                             </div>
                             <div className="text-muted-foreground text-xs">
-                              Permission denied by Elijah Morgan.
+                              {"Permission denied by Elijah Morgan."}
                             </div>
                           </div>
                           <Switch className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 border-2 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-5 data-[size=default]:w-11 data-[size=sm]:h-4 data-[size=sm]:w-7 data-checked:bg-primary data-checked:border-primary data-unchecked:bg-input/90 data-unchecked:border-transparent focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 rounded-full shrink-0" disabled="" unchecked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_n6_" aria-checked="false" size="sm" aria-label="Payment Action Drafts Low cost mode">
@@ -1102,12 +1199,12 @@ export function Pattern() {
                       </div>
                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="*:data-[slot=field]:p-4 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-2xl has-data-checked:bg-input/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="payment-action-drafts-fallback">
-                          Fallback priority
+                          {"Fallback priority"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-input/50 border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-[size=default]:h-9 data-[size=sm]:h-8 data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 gap-1.5 px-3 py-2 rounded-3xl text-sm transition-[color,box-shadow,background-color] w-full" type="button" tabIndex="0" id="payment-action-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-invalid="true">
                           <SelectValue className="flex flex-1 text-left">
-                            No fallback
+                            {"No fallback"}
                           </SelectValue>
                           <svg className="pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" color="currentColor" aria-hidden="true">
                             <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></path>
@@ -1116,7 +1213,7 @@ export function Pattern() {
                         </Select>
                         <input id="base-ui-_r_n9_-hidden-input" tabIndex="-1" aria-hidden="true" value="none" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldError className="text-destructive text-sm" role="alert">
-                          A Restricted route needs somewhere to fall back to.
+                          {"A Restricted route needs somewhere to fall back to."}
                         </FieldError>
                       </Field>
                     </ItemContent>
@@ -1128,10 +1225,11 @@ export function Pattern() {
         </div>
       </SidebarInset>
     </div>
+    </SidebarProvider>
     <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
     <next-route-announcer style={{position: "absolute"}}></next-route-announcer>
     <span id="recharts_measurement_span" aria-hidden="true" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "12px", letterSpacing: "normal"}}>
-      Sep 16
+      {"Sep 16"}
     </span>
   </>
   )

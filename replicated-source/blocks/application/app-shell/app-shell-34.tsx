@@ -170,16 +170,16 @@ export function Pattern() {
               </Button>
             </div>
             <h1 className="font-medium max-sm:basis-0 max-sm:flex-1 max-sm:min-w-0 max-sm:truncate text-sm">
-              3WIM Queue
+              {"3WIM Queue"}
             </h1>
             <Separator className="-me-px bg-input data-vertical:h-3.5 data-vertical:self-center max-sm:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             <Tabs className="max-sm:order-last max-sm:w-full" data-orientation="horizontal" activationDirection="none">
               <TabsList className="bg-input/40 h-7 p-0 rounded-md" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                 <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_j_" compositeItemActive="">
-                  Matching Queue
+                  {"Matching Queue"}
                 </TabsTrigger>
                 <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_k_">
-                  Completed Matches
+                  {"Completed Matches"}
                 </TabsTrigger>
               </TabsList>
             </Tabs>
@@ -191,7 +191,7 @@ export function Pattern() {
                   <path d="M22 4h-4"></path>
                   <circle cx="4" cy="20" r="2"></circle>
                 </svg>
-                Ask AI
+                {"Ask AI"}
               </Button>
               <Button className="pl-1.25 pr-2.25 text-xs" type="button" tabIndex="0">
                 <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" data-icon="inline-start" aria-hidden="true">
@@ -200,9 +200,9 @@ export function Pattern() {
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 </svg>
                 <span>
-                  Upload
+                  {"Upload"}
                   <span className="max-sm:hidden">
-                    New
+                    {"New"}
                   </span>
                 </span>
               </Button>
@@ -234,7 +234,7 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-1 flex-col min-h-0 no-scrollbar overflow-y-auto scroll-fade-y">
                   <p className="font-medium text-ring text-xs">
-                    31 orders
+                    {"31 orders"}
                   </p>
                   <ul className="flex flex-col">
                     <li>
@@ -245,10 +245,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10021
+                            {"PO-2026-10021"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/20 border-0 border-warning/15 dark:bg-warning/20 dark:border-warning/25 dark:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                            Review
+                            {"Review"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -264,7 +264,7 @@ export function Pattern() {
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="truncate">
-                                  3WIM
+                                  {"3WIM"}
                                 </span>
                               </CollapsibleTrigger>
                               </Collapsible>
@@ -320,13 +320,13 @@ export function Pattern() {
                                   <li className="relative">
                                     <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start pr-7 px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0" data-active="true" aria-current="page">
                                       <span className="truncate">
-                                        Document validation
+                                        {"Document validation"}
                                       </span>
                                       <span className="sr-only">
-                                        , Failed
+                                        {", Failed"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/10 dark:border-destructive/25 dark:text-destructive-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive transition-shadow">
-                                        1
+                                        {"1"}
                                       </Badge>
                                     </Button>
                                     <DropdownMenu>
@@ -342,23 +342,23 @@ export function Pattern() {
                                   <li className="relative">
                                     <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0">
                                       <span className="truncate">
-                                        3-way line match
+                                        {"3-way line match"}
                                       </span>
                                       <span className="sr-only">
-                                        , Failed
+                                        {", Failed"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/10 dark:border-destructive/25 dark:text-destructive-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive transition-shadow">
-                                        2
+                                        {"2"}
                                       </Badge>
                                     </Button>
                                   </li>
                                   <li className="relative">
                                     <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0">
                                       <span className="truncate">
-                                        Approve payment
+                                        {"Approve payment"}
                                       </span>
                                       <span className="sr-only">
-                                        , Pending
+                                        {", Pending"}
                                       </span>
                                     </Button>
                                   </li>
@@ -377,7 +377,7 @@ export function Pattern() {
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="truncate">
-                                  More
+                                  {"More"}
                                 </span>
                               </CollapsibleTrigger>
                               </Collapsible>
@@ -394,10 +394,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10001
+                            {"PO-2026-10001"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/20 border-0 border-success/15 dark:bg-success/20 dark:border-success/25 dark:text-emerald-400 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            Ready
+                            {"Ready"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -411,7 +411,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10024
+                            {"PO-2026-10024"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -425,7 +425,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10032
+                            {"PO-2026-10032"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -439,7 +439,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10011
+                            {"PO-2026-10011"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -453,10 +453,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10033
+                            {"PO-2026-10033"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/20 border-0 border-warning/15 dark:bg-warning/20 dark:border-warning/25 dark:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                            Review
+                            {"Review"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -470,7 +470,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10022
+                            {"PO-2026-10022"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -484,7 +484,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10051
+                            {"PO-2026-10051"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -498,10 +498,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10053
+                            {"PO-2026-10053"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/20 border-0 border-warning/15 dark:bg-warning/20 dark:border-warning/25 dark:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                            Review
+                            {"Review"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -515,7 +515,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10070
+                            {"PO-2026-10070"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -529,10 +529,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10020
+                            {"PO-2026-10020"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/10 dark:border-destructive/25 dark:text-destructive-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive transition-shadow">
-                            Overdue
+                            {"Overdue"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -546,10 +546,10 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10023
+                            {"PO-2026-10023"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/20 border-0 border-success/15 dark:bg-success/20 dark:border-success/25 dark:text-emerald-400 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            Ready
+                            {"Ready"}
                           </Badge>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -563,7 +563,7 @@ export function Pattern() {
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
-                            PO-2026-10090
+                            {"PO-2026-10090"}
                           </span>
                         </CollapsibleTrigger>
                         </Collapsible>
@@ -578,7 +578,7 @@ export function Pattern() {
                     <path d="M12 12v6"></path>
                     <path d="m15 15-3-3-3 3"></path>
                   </svg>
-                  New 3WIM
+                  {"New 3WIM"}
                 </Button>
               </div>
             </aside>

@@ -47,90 +47,126 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Ecommerce checkout
+        {"Ecommerce checkout"}
       </h1>
       <div className="flex flex-col gap-6 lg:px-8 max-w-5xl mx-auto px-4 py-6 sm:px-6 w-full">
         <header className="flex flex-col gap-5">
           <div className="min-w-0">
             <nav className="flex flex-wrap gap-1.5 items-center mb-2 text-muted-foreground text-sm" aria-label="Breadcrumb">
               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                Store
+                {"Store"}
               </a>
               <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                Bag
+                {"Bag"}
               </a>
               <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
               <span className="text-foreground">
-                Checkout
+                {"Checkout"}
               </span>
             </nav>
             <h1 className="font-semibold sm:text-2xl text-xl tracking-tight">
-              Checkout
+              {"Checkout"}
             </h1>
           </div>
           <div className="flex flex-col gap-2 min-w-0">
+            <StepperItem>
             <Stepper className="max-w-3xl mx-auto" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Checkout steps">
+              <Stepper>
               <StepperNav className="items-center justify-center mx-auto w-full" data-state="1" data-orientation="horizontal">
+                <Stepper>
                 <StepperItem className="min-w-0 not-last:flex-none relative sm:not-last:flex-1" data-state="active">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-2 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false" aria-label="Customer: Your contact details" extracted="1">
+                    <Stepper>
                     <StepperIndicator className="border data-[state=active]:bg-primary/10 data-[state=active]:border-primary/20 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground size-7" data-state="active">
                       <div className="absolute">
-                        1
+                        {"1"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground text-xs truncate" data-state="active">
-                      Customer
+                      {"Customer"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border flex-none group-data-[state=completed]/step:bg-primary mx-2 sm:w-auto w-8" data-state="active"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 not-last:flex-none relative sm:not-last:flex-1" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-2 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" aria-label="Delivery: Where and how to ship">
+                    <Stepper>
                     <StepperIndicator className="border data-[state=active]:bg-primary/10 data-[state=active]:border-primary/20 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground size-7" data-state="inactive">
                       <div className="absolute">
-                        2
+                        {"2"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground text-xs truncate" data-state="inactive">
-                      Delivery
+                      {"Delivery"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border flex-none group-data-[state=completed]/step:bg-primary mx-2 sm:w-auto w-8" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 not-last:flex-none relative sm:not-last:flex-1" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-2 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" aria-label="Payment: How you want to pay">
+                    <Stepper>
                     <StepperIndicator className="border data-[state=active]:bg-primary/10 data-[state=active]:border-primary/20 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground size-7" data-state="inactive">
                       <div className="absolute">
-                        3
+                        {"3"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground text-xs truncate" data-state="inactive">
-                      Payment
+                      {"Payment"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border flex-none group-data-[state=completed]/step:bg-primary mx-2 sm:w-auto w-8" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 not-last:flex-none relative sm:not-last:flex-1" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-2 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false" aria-label="Review: Confirm and place order">
+                    <Stepper>
                     <StepperIndicator className="border data-[state=active]:bg-primary/10 data-[state=active]:border-primary/20 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground size-7" data-state="inactive">
                       <div className="absolute">
-                        4
+                        {"4"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground text-xs truncate" data-state="inactive">
-                      Review
+                      {"Review"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                 </StepperItem>
+                </Stepper>
               </StepperNav>
+              </Stepper>
             </Stepper>
+            </StepperItem>
             <p className="sm:hidden text-center text-muted-foreground text-xs">
-              Step 1 of 4: Customer
+              {"Step 1 of 4: Customer"}
             </p>
           </div>
         </header>
@@ -139,63 +175,63 @@ export function Pattern() {
             <div className="mb-5">
               <div className="min-w-0">
                 <h2 className="font-semibold text-base">
-                  Customer
+                  {"Customer"}
                 </h2>
                 <p className="leading-5 mt-0.5 text-muted-foreground text-sm">
-                  Your contact details
+                  {"Your contact details"}
                 </p>
               </div>
             </div>
             <FieldSet className="gap-0">
               <FieldLegend className="sr-only" variant="legend">
-                Checkout Steps
+                {"Checkout Steps"}
               </FieldLegend>
               <FieldDescription className="sr-only">
-                Enter customer details, choose delivery, select payment, and review the order.
+                {"Enter customer details, choose delivery, select payment, and review the order."}
               </FieldDescription>
               <div className="flex flex-col min-w-0" style={{opacity: "1", transform: "none"}}>
                 <section className="flex flex-col gap-5 min-w-0" aria-labelledby="checkout-2-contact-title">
                   <h2 className="sr-only" id="checkout-2-contact-title">
-                    Customer Details
+                    {"Customer Details"}
                   </h2>
                   <FieldSet className="gap-0">
                     <FieldLegend className="sr-only" variant="legend">
-                      Customer information
+                      {"Customer information"}
                     </FieldLegend>
                     <FieldGroup className="gap-3 grid sm:grid-cols-2">
                       <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-first-name">
-                          First Name
+                          {"First Name"}
                         </FieldLabel>
                         <Input id="checkout-2-first-name" autoComplete="given-name" aria-invalid="false" value="Morgan"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-last-name">
-                          Last Name
+                          {"Last Name"}
                         </FieldLabel>
                         <Input id="checkout-2-last-name" autoComplete="family-name" aria-invalid="false" value="Lee"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-email">
-                          Email
+                          {"Email"}
                         </FieldLabel>
                         <Input id="checkout-2-email" autoComplete="email" aria-invalid="false" type="email" value="morgan.lee@example.com"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-phone">
-                          Phone
+                          {"Phone"}
                         </FieldLabel>
                         <Input id="checkout-2-phone" autoComplete="tel" value="(415) 555-0148"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-country">
-                          Country
+                          {"Country"}
                         </FieldLabel>
                         <ComboboxTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="checkout-2-country" role="combobox" aria-expanded="false" aria-haspopup="dialog">
                           <span className="flex gap-2 items-center min-w-0">
                             <img className="block h-3 object-cover rounded-xs shrink-0 w-4" alt="" width="16" height="12" loading="eager" src="https://flagcdn.com/w40/us.png" />
                             <span className="truncate">
-                              United States
+                              {"United States"}
                             </span>
                           </span>
                           <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -211,10 +247,10 @@ export function Pattern() {
                     <input id="checkout-2-create-account" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldContent className="gap-1">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-create-account" id="checkout-2-create-account-label">
-                        Create an account
+                        {"Create an account"}
                       </FieldLabel>
                       <FieldDescription>
-                        Save your details for faster checkout next time.
+                        {"Save your details for faster checkout next time."}
                       </FieldDescription>
                     </FieldContent>
                   </Field>
@@ -223,7 +259,7 @@ export function Pattern() {
             </FieldSet>
             <div className="border-t flex gap-3 items-center justify-end mt-7 pt-5">
               <Button type="submit" tabIndex="0">
-                Continue
+                {"Continue"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -235,11 +271,11 @@ export function Pattern() {
             <Card size="sm">
               <CardHeader>
                 <CardTitle>
-                  Order Summary
+                  {"Order Summary"}
                 </CardTitle>
                 <CardAction>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                    2 items
+                    {"2 items"}
                   </Badge>
                 </CardAction>
               </CardHeader>
@@ -257,31 +293,31 @@ export function Pattern() {
                       <div className="flex gap-2 items-start justify-between min-w-0">
                         <ItemTitle className="min-w-0 truncate">
                           <a className="block hover:text-primary hover:underline min-w-0 text-foreground transition-colors truncate underline-offset-4" href="#">
-                            Leather Biker Jacket
+                            {"Leather Biker Jacket"}
                           </a>
                         </ItemTitle>
                         <span className="flex gap-1.5 items-baseline shrink-0">
                           <span className="font-medium tabular-nums text-sm">
-                            $248.00
+                            {"$248.00"}
                           </span>
                         </span>
                       </div>
                       <div className="flex gap-2 items-center justify-between min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center min-w-0 overflow-hidden" aria-label="Black, M, quantity 1">
                           <span className="shrink-0">
-                            Black
+                            {"Black"}
                           </span>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="shrink-0">
-                            M
+                            {"M"}
                           </span>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="shrink-0">
-                            Qty 1
+                            {"Qty 1"}
                           </span>
                         </ItemDescription>
                         <button className="hover:text-destructive hover:underline shrink-0 text-muted-foreground text-xs transition-colors underline-offset-4" type="button" aria-label="Remove Leather Biker Jacket">
-                          Remove
+                          {"Remove"}
                         </button>
                       </div>
                     </ItemContent>
@@ -298,34 +334,34 @@ export function Pattern() {
                       <div className="flex gap-2 items-start justify-between min-w-0">
                         <ItemTitle className="min-w-0 truncate">
                           <a className="block hover:text-primary hover:underline min-w-0 text-foreground transition-colors truncate underline-offset-4" href="#">
-                            Ribbed Tank Set
+                            {"Ribbed Tank Set"}
                           </a>
                         </ItemTitle>
                         <span className="flex gap-1.5 items-baseline shrink-0">
                           <span className="font-medium tabular-nums text-sm">
-                            $86.00
+                            {"$86.00"}
                           </span>
                           <span className="line-through tabular-nums text-muted-foreground text-xs">
-                            $118.00
+                            {"$118.00"}
                           </span>
                         </span>
                       </div>
                       <div className="flex gap-2 items-center justify-between min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center min-w-0 overflow-hidden" aria-label="Chalk, S, quantity 1">
                           <span className="shrink-0">
-                            Chalk
+                            {"Chalk"}
                           </span>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="shrink-0">
-                            S
+                            {"S"}
                           </span>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="shrink-0">
-                            Qty 1
+                            {"Qty 1"}
                           </span>
                         </ItemDescription>
                         <button className="hover:text-destructive hover:underline shrink-0 text-muted-foreground text-xs transition-colors underline-offset-4" type="button" aria-label="Remove Ribbed Tank Set">
-                          Remove
+                          {"Remove"}
                         </button>
                       </div>
                     </ItemContent>
@@ -334,7 +370,7 @@ export function Pattern() {
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-2-promo">
-                    Promo Code
+                    {"Promo Code"}
                   </FieldLabel>
                   <InputGroup role="group">
                     <InputGroupAddon role="group" data-align="inline-start">
@@ -348,7 +384,7 @@ export function Pattern() {
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="checkout-2-promo" placeholder="Enter code" aria-invalid="false" value="SPRING15" />
                     <InputGroupAddon role="group" data-align="inline-end">
                       <Button type="button" tabIndex="0">
-                        Apply
+                        {"Apply"}
                       </Button>
                     </InputGroupAddon>
                   </InputGroup>
@@ -357,36 +393,36 @@ export function Pattern() {
                 <div className="flex flex-col gap-1.5">
                   <div className="flex gap-3 items-center justify-between min-w-0 text-sm">
                     <span className="text-muted-foreground truncate">
-                      Subtotal
+                      {"Subtotal"}
                     </span>
                     <span className="shrink-0 tabular-nums">
-                      $334.00
+                      {"$334.00"}
                     </span>
                   </div>
                   <div className="flex gap-3 items-center justify-between min-w-0 text-sm">
                     <span className="text-muted-foreground truncate">
-                      Delivery
+                      {"Delivery"}
                     </span>
                     <span className="shrink-0 tabular-nums">
-                      $12.00
+                      {"$12.00"}
                     </span>
                   </div>
                   <div className="flex gap-3 items-center justify-between min-w-0 text-sm">
                     <span className="text-muted-foreground truncate">
-                      Tax
+                      {"Tax"}
                     </span>
                     <span className="shrink-0 tabular-nums">
-                      $30.28
+                      {"$30.28"}
                     </span>
                   </div>
                 </div>
               </CardContent>
               <CardFooter className="border-t justify-between">
                 <span className="font-medium">
-                  Total
+                  {"Total"}
                 </span>
                 <span className="font-semibold tabular-nums text-lg">
-                  $376.28
+                  {"$376.28"}
                 </span>
               </CardFooter>
             </Card>
@@ -399,7 +435,7 @@ export function Pattern() {
                 <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
               </svg>
-              Secure checkout
+              {"Secure checkout"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="flex gap-1.5 items-center">
@@ -407,7 +443,7 @@ export function Pattern() {
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
-              14-day returns
+              {"14-day returns"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="flex gap-1.5 items-center">
@@ -418,7 +454,7 @@ export function Pattern() {
                 <circle cx="17" cy="18" r="2"></circle>
                 <circle cx="7" cy="18" r="2"></circle>
               </svg>
-              Free shipping over $150
+              {"Free shipping over $150"}
             </span>
           </div>
         </section>

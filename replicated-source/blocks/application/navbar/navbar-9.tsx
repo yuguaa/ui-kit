@@ -29,7 +29,7 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-semibold hidden sm:inline text-sm">
-              CodeLive
+              {"CodeLive"}
             </span>
           </div>
           <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -41,16 +41,16 @@ export function Pattern() {
                     <path fill="#533afd" fillRule="evenodd" d="m120 392 272-57.683V120l-272 58.357z" clipRule="evenodd"></path>
                   </svg>
                   <span className="hidden md:block">
-                    acme-org
+                    {"acme-org"}
                   </span>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                /
+                {"/"}
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  payments-api
+                  {"payments-api"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -66,7 +66,7 @@ export function Pattern() {
               <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
             </svg>
             <span className="hidden sm:inline">
-              Share
+              {"Share"}
             </span>
           </Button>
           <Button type="button" tabIndex="0">
@@ -74,7 +74,7 @@ export function Pattern() {
               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
             </svg>
             <span className="hidden sm:inline">
-              Run
+              {"Run"}
             </span>
           </Button>
           <DropdownMenu>
@@ -85,7 +85,7 @@ export function Pattern() {
               <circle cx="6" cy="18" r="3"></circle>
             </svg>
             <span className="hidden md:inline">
-              main
+              {"main"}
             </span>
           </DropdownMenuTrigger>
           </DropdownMenu>

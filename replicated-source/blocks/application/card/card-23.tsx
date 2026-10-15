@@ -30,18 +30,18 @@ export function Pattern() {
           <div className="flex gap-6 items-center justify-center relative z-10">
             <div className="flex gap-3.5 items-center text-center">
               <h3 className="font-semibold leading-tight text-6xl">
-                24
+                {"24"}
               </h3>
               <div className="flex flex-col items-start">
                 <h3 className="leading-relaxed text-muted-foreground text-xs">
-                  Monitoring
+                  {"Monitoring"}
                 </h3>
                 <div className="flex font-semibold gap-0.5 items-center leading-none text-muted-foreground/50">
                   <span className="text-2xl">
-                    /
+                    {"/"}
                   </span>
                   <span className="text-3xl">
-                    7
+                    {"7"}
                   </span>
                 </div>
               </div>
@@ -137,14 +137,14 @@ export function Pattern() {
         <FramePanel className="before:hidden flex flex-col gap-3.5 items-center justify-center p-7.5! z-10">
           <div className="flex flex-col gap-3.5 items-center text-center">
             <h3 className="font-medium leading-tight text-lg">
-              Always On Watch
+              {"Always On Watch"}
             </h3>
             <p className="leading-relaxed text-accent-foreground text-sm">
-              Get continuous oversight of market activity with automated tools running day and night.
+              {"Get continuous oversight of market activity with automated tools running day and night."}
             </p>
           </div>
           <Button className="w-fit" type="button" tabIndex="0">
-            Start Monitoring
+            {"Start Monitoring"}
           </Button>
         </FramePanel>
       </Frame>

@@ -14,10 +14,10 @@ export function Pattern() {
         <header className="flex flex-wrap gap-x-6 gap-y-3 items-baseline justify-between pb-5">
           <div className="flex flex-wrap gap-x-3 gap-y-1 items-baseline">
             <h1 className="font-semibold text-2xl text-foreground tracking-tight" id="wishlist-title">
-              Wishlist
+              {"Wishlist"}
             </h1>
             <span className="tabular-nums text-muted-foreground text-sm">
-              6 saved
+              {"6 saved"}
             </span>
           </div>
           <div className="flex gap-2 items-center">
@@ -29,7 +29,7 @@ export function Pattern() {
                 <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                 <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
               </svg>
-              Share
+              {"Share"}
             </Button>
             <Button type="button" tabIndex="0">
               <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
@@ -37,9 +37,9 @@ export function Pattern() {
                 <path d="M3.103 6.034h17.794"></path>
                 <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
               </svg>
-              Move All To Cart
+              {"Move All To Cart"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                5
+                {"5"}
               </Badge>
             </Button>
           </div>
@@ -51,10 +51,10 @@ export function Pattern() {
                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
               </svg>
               <span>
-                All
+                {"All"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                6
+                {"6"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_" aria-label="Back In Stock (1)">
@@ -65,10 +65,10 @@ export function Pattern() {
                 <circle cx="4" cy="20" r="2"></circle>
               </svg>
               <span>
-                Back In Stock
+                {"Back In Stock"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                1
+                {"1"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Price Drop (1)">
@@ -77,10 +77,10 @@ export function Pattern() {
                 <path d="m22 17-8.5-8.5-5 5L2 7"></path>
               </svg>
               <span>
-                Price Drop
+                {"Price Drop"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                1
+                {"1"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_" aria-label="Low Stock (1)">
@@ -90,10 +90,10 @@ export function Pattern() {
                 <path d="M12 17h.01"></path>
               </svg>
               <span>
-                Low Stock
+                {"Low Stock"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                1
+                {"1"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_" aria-label="Sale (1)">
@@ -102,10 +102,10 @@ export function Pattern() {
                 <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
               </svg>
               <span>
-                Sale
+                {"Sale"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                1
+                {"1"}
               </Badge>
             </TabsTrigger>
           </TabsList>
@@ -119,7 +119,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 pointer-events-none top-3 z-10">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    $14.00 Off
+                    {"$14.00 Off"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 hover:bg-background opacity-100 right-2.5 shadow-sm sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10" type="button" tabIndex="0" aria-label="Remove Atelier Tulle Blouse from wishlist">
@@ -131,23 +131,23 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-atelier" aria-label="Shop Atelier">
-                  Atelier
+                  {"Atelier"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-atelier-tulle-blouse">
-                    Atelier Tulle Blouse
+                    {"Atelier Tulle Blouse"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $48.00
+                    {"$48.00"}
                   </span>
                   <span className="font-normal line-through text-muted-foreground text-xs">
-                    $62.00
+                    {"$62.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Dropped $14 since you saved it
+                  {"Dropped $14 since you saved it"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -156,7 +156,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Move To Cart
+                {"Move To Cart"}
               </Button>
             </article>
           </li>
@@ -168,7 +168,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 pointer-events-none top-3 z-10">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary-foreground text-xs transition-shadow">
-                    Back In Stock
+                    {"Back In Stock"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 hover:bg-background opacity-100 right-2.5 shadow-sm sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10" type="button" tabIndex="0" aria-label="Remove Heritage Suede Mules from wishlist">
@@ -180,20 +180,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-heritage" aria-label="Shop Heritage">
-                  Heritage
+                  {"Heritage"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-heritage-suede-mules">
-                    Heritage Suede Mules
+                    {"Heritage Suede Mules"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $168.00
+                    {"$168.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Restocked in your size today
+                  {"Restocked in your size today"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -202,7 +202,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Move To Cart
+                {"Move To Cart"}
               </Button>
             </article>
           </li>
@@ -214,7 +214,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 pointer-events-none top-3 z-10">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    Only 2 Left
+                    {"Only 2 Left"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 hover:bg-background opacity-100 right-2.5 shadow-sm sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10" type="button" tabIndex="0" aria-label="Remove Atelier Quilted Crossbody Bag from wishlist">
@@ -226,20 +226,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-atelier" aria-label="Shop Atelier">
-                  Atelier
+                  {"Atelier"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-atelier-quilted-crossbody-bag">
-                    Atelier Quilted Crossbody Bag
+                    {"Atelier Quilted Crossbody Bag"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $138.00
+                    {"$138.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Only 2 left in Sage
+                  {"Only 2 left in Sage"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -248,7 +248,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Move To Cart
+                {"Move To Cart"}
               </Button>
             </article>
           </li>
@@ -260,7 +260,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 pointer-events-none top-3 z-10">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    Sale
+                    {"Sale"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 hover:bg-background opacity-100 right-2.5 shadow-sm sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10" type="button" tabIndex="0" aria-label="Remove Linen Field Shirt from wishlist">
@@ -272,23 +272,23 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-halden" aria-label="Shop Halden">
-                  Halden
+                  {"Halden"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-linen-field-shirt">
-                    Linen Field Shirt
+                    {"Linen Field Shirt"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $96.00
+                    {"$96.00"}
                   </span>
                   <span className="font-normal line-through text-muted-foreground text-xs">
-                    $128.00
+                    {"$128.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Final markdown, no further reductions
+                  {"Final markdown, no further reductions"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -297,7 +297,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Move To Cart
+                {"Move To Cart"}
               </Button>
             </article>
           </li>
@@ -316,20 +316,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-atelier" aria-label="Shop Atelier">
-                  Atelier
+                  {"Atelier"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-studio-wool-coat">
-                    Atelier Studio Wool Coat
+                    {"Atelier Studio Wool Coat"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $285.00
+                    {"$285.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Quiet pick, waiting for the moment
+                  {"Quiet pick, waiting for the moment"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -338,7 +338,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Move To Cart
+                {"Move To Cart"}
               </Button>
             </article>
           </li>
@@ -350,7 +350,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 pointer-events-none top-3 z-10">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                    Out Of Stock
+                    {"Out Of Stock"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 hover:bg-background opacity-100 right-2.5 shadow-sm sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10" type="button" tabIndex="0" aria-label="Remove Pleated Wide Trouser from wishlist">
@@ -362,20 +362,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="block font-medium hover:text-primary hover:underline max-w-full text-muted-foreground text-xs tracking-wider transition-colors truncate underline-offset-4 uppercase" href="#brand-halden" aria-label="Shop Halden">
-                  Halden
+                  {"Halden"}
                 </a>
                 <h3 className="font-semibold leading-tight sm:text-[15px] text-foreground text-sm">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#shop-pleated-wide-trouser">
-                    Pleated Wide Trouser
+                    {"Pleated Wide Trouser"}
                   </a>
                 </h3>
                 <div className="flex font-semibold gap-2 items-baseline mt-0.5 tabular-nums text-[15px]">
                   <span className="text-foreground">
-                    $178.00
+                    {"$178.00"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs truncate">
-                  Out in your size. Notify when restocked
+                  {"Out in your size. Notify when restocked"}
                 </p>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -383,7 +383,7 @@ export function Pattern() {
                   <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                 </svg>
-                Notify When Restocked
+                {"Notify When Restocked"}
               </Button>
             </article>
           </li>

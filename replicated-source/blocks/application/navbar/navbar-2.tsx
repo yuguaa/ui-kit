@@ -35,12 +35,12 @@ export function Pattern() {
                   <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 </svg>
                 <span className="hidden md:block">
-                  Home
+                  {"Home"}
                 </span>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
-              /
+              {"/"}
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink className="flex gap-1.5 items-center" href="#">
@@ -51,16 +51,16 @@ export function Pattern() {
                   <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                 </svg>
                 <span className="hidden md:block">
-                  Projects
+                  {"Projects"}
                 </span>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
-              /
+              {"/"}
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                Sprint
+                {"Sprint"}
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -78,7 +78,7 @@ export function Pattern() {
                 <AvatarImage alt="Sarah Chen" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
               </Avatar>
               <AvatarGroupCount>
-                +8
+                {"+8"}
               </AvatarGroupCount>
             </AvatarGroup>
             <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -91,7 +91,7 @@ export function Pattern() {
                 <line x1="22" x2="16" y1="11" y2="11"></line>
               </svg>
               <span className="hidden md:block">
-                Invite
+                {"Invite"}
               </span>
             </PopoverTrigger>
             </Popover>

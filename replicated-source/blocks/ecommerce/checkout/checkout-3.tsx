@@ -32,28 +32,29 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center lg:p-10 min-h-svh p-4 pb-20 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        AI token checkout
+        {"AI token checkout"}
       </h1>
       <form className="flex flex-col max-w-2xl w-full" aria-label="AI token checkout">
+        <StepperItem>
         <Stepper role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
           <Frame className="w-full">
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="flex gap-3 items-start justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <div className="font-semibold leading-tight text-sm">
-                    AI Token Checkout
+                    {"AI Token Checkout"}
                   </div>
                   <div className="flex-wrap gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-sm">
                     <span className="truncate">
-                      OpenAI
+                      {"OpenAI"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0">
-                      5M tokens
+                      {"5M tokens"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="font-semibold shrink-0 tabular-nums text-foreground">
-                      $119
+                      {"$119"}
                     </span>
                   </div>
                 </div>
@@ -63,67 +64,95 @@ export function Pattern() {
                     <path d="M12 16v-4"></path>
                     <path d="M12 8h.01"></path>
                   </svg>
-                  Guide
+                  {"Guide"}
                 </Button>
               </div>
             </header>
             <FramePanel className="flex items-center overflow-x-auto">
+              <Stepper>
               <StepperNav className="items-center min-w-full" data-state="1" data-orientation="horizontal">
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="active">
+                  <Stepper>
                   <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                       <div className="absolute">
-                        1
+                        {"1"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground truncate" data-state="active">
-                      Provider
+                      {"Provider"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="active"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
-                        2
+                        {"2"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground truncate" data-state="inactive">
-                      Tokens
+                      {"Tokens"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
-                        3
+                        {"3"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
+                    <Stepper>
                     <StepperTitle className="hidden sm:block text-foreground truncate" data-state="inactive">
-                      Pay
+                      {"Pay"}
                     </StepperTitle>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                 </StepperItem>
+                </Stepper>
               </StepperNav>
+              </Stepper>
             </FramePanel>
             <FramePanel>
+              <Stepper>
               <StepperPanel className="text-sm" data-state="1">
+                <Stepper>
                 <StepperContent data-state="1">
                   <section className="flex flex-col gap-5 min-w-0" aria-labelledby="checkout-3-provider-title">
                     <div className="flex flex-col gap-1 min-w-0">
                       <h2 className="font-semibold text-base" id="checkout-3-provider-title">
-                        Provider Balance
+                        {"Provider Balance"}
                       </h2>
                       <p className="leading-5 max-w-xl text-muted-foreground text-sm">
-                        Fund one AI provider balance for the selected workspace.
+                        {"Fund one AI provider balance for the selected workspace."}
                       </p>
                     </div>
                     <FieldSet className="gap-3" invalid="false">
                       <FieldLegend className="sr-only" variant="legend">
-                        AI provider
+                        {"AI provider"}
                       </FieldLegend>
                       <RadioGroup className="gap-2 grid sm:grid-cols-2" role="radiogroup" aria-label="Select AI provider">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center p-0 peer-disabled:cursor-not-allowed relative select-none" htmlFor="checkout-3-provider-openai" id="checkout-3-provider-openai-label">
@@ -152,14 +181,14 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 items-start min-w-0">
                                 <span className="flex flex-wrap gap-2 items-center min-w-0">
                                   <span className="font-semibold text-sm">
-                                    OpenAI
+                                    {"OpenAI"}
                                   </span>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                    Default
+                                    {"Default"}
                                   </Badge>
                                 </span>
                                 <span className="text-muted-foreground text-xs">
-                                  Text, image, and embedding usage for product workflows.
+                                  {"Text, image, and embedding usage for product workflows."}
                                 </span>
                               </div>
                             </FieldLabel>
@@ -180,11 +209,11 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 items-start min-w-0">
                                 <span className="flex flex-wrap gap-2 items-center min-w-0">
                                   <span className="font-semibold text-sm">
-                                    Claude
+                                    {"Claude"}
                                   </span>
                                 </span>
                                 <span className="text-muted-foreground text-xs">
-                                  Long-form drafting, research review, and support notes.
+                                  {"Long-form drafting, research review, and support notes."}
                                 </span>
                               </div>
                             </FieldLabel>
@@ -267,14 +296,14 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 items-start min-w-0">
                                 <span className="flex flex-wrap gap-2 items-center min-w-0">
                                   <span className="font-semibold text-sm">
-                                    Gemini
+                                    {"Gemini"}
                                   </span>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                    Media
+                                    {"Media"}
                                   </Badge>
                                 </span>
                                 <span className="text-muted-foreground text-xs">
-                                  Multimodal analysis for documents, media, and search.
+                                  {"Multimodal analysis for documents, media, and search."}
                                 </span>
                               </div>
                             </FieldLabel>
@@ -310,11 +339,11 @@ export function Pattern() {
                               <div className="flex flex-col gap-0.5 items-start min-w-0">
                                 <span className="flex flex-wrap gap-2 items-center min-w-0">
                                   <span className="font-semibold text-sm">
-                                    Mistral
+                                    {"Mistral"}
                                   </span>
                                 </span>
                                 <span className="text-muted-foreground text-xs">
-                                  Low-latency credits for compact automation agents.
+                                  {"Low-latency credits for compact automation agents."}
                                 </span>
                               </div>
                             </FieldLabel>
@@ -324,7 +353,9 @@ export function Pattern() {
                     </FieldSet>
                   </section>
                 </StepperContent>
+                </Stepper>
               </StepperPanel>
+              </Stepper>
             </FramePanel>
             <footer className="flex flex-col gap-3 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="gap-1.5 hidden items-center min-w-0 sm:flex text-muted-foreground text-sm">
@@ -334,11 +365,11 @@ export function Pattern() {
                   <path d="M22 4h-4"></path>
                   <circle cx="4" cy="20" r="2"></circle>
                 </svg>
-                Choose the AI balance to fund.
+                {"Choose the AI balance to fund."}
               </div>
               <div className="flex gap-2 items-center justify-end sm:w-auto w-full">
                 <Button type="submit" tabIndex="0">
-                  Next Step
+                  {"Next Step"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -348,6 +379,7 @@ export function Pattern() {
             </footer>
           </Frame>
         </Stepper>
+        </StepperItem>
       </form>
     </main>
   )

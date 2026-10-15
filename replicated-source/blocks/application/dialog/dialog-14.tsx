@@ -33,11 +33,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-10 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Connection process dialog
+        {"Connection process dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open connector
+          {"Open connector"}
         </Button>
       </div>
     </main>
@@ -173,10 +173,10 @@ export function Pattern() {
         </div>
         <DialogHeader className="gap-1! items-center text-center">
           <DialogTitle id="base-ui-_r_2_">
-            Connect Gmail
+            {"Connect Gmail"}
           </DialogTitle>
           <DialogDescription id="base-ui-_r_3_">
-            Choose what Gmail can share.
+            {"Choose what Gmail can share."}
           </DialogDescription>
         </DialogHeader>
       </div>
@@ -192,10 +192,10 @@ export function Pattern() {
             </Item>
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle>
-                Google Review
+                {"Google Review"}
               </ItemTitle>
               <ItemDescription>
-                Approve permissions on Google's page.
+                {"Approve permissions on Google's page."}
               </ItemDescription>
             </ItemContent>
           </Item>
@@ -208,10 +208,10 @@ export function Pattern() {
             </Item>
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle>
-                Data Control
+                {"Data Control"}
               </ItemTitle>
               <ItemDescription>
-                Disconnect anytime from settings.
+                {"Disconnect anytime from settings."}
               </ItemDescription>
             </ItemContent>
           </Item>
@@ -219,7 +219,7 @@ export function Pattern() {
         <ItemSeparator className="bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></ItemSeparator>
         <section className="gap-2 grid" aria-labelledby="scope-heading">
           <h2 className="font-semibold text-sm" id="scope-heading">
-            Sync Scope
+            {"Sync Scope"}
           </h2>
           <RadioGroup className="gap-2 grid" role="radiogroup" aria-labelledby="scope-heading">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none has-[[data-checked]]:bg-transparent! has-[[data-checked]]:border-primary! items-center p-0 peer-disabled:cursor-not-allowed select-none" htmlFor="dialog-14-scope-headers" id="dialog-14-scope-headers-label">
@@ -233,14 +233,14 @@ export function Pattern() {
                 <FieldContent className="gap-1 min-w-0">
                   <FieldLabel className="cn-field-title gap-2 items-center justify-between w-full">
                     <span className="min-w-0 truncate">
-                      Headers Only
+                      {"Headers Only"}
                     </span>
                     <span className="font-normal shrink-0 text-muted-foreground text-xs">
-                      Recommended
+                      {"Recommended"}
                     </span>
                   </FieldLabel>
                   <FieldDescription>
-                    Sender, subject, and dates.
+                    {"Sender, subject, and dates."}
                   </FieldDescription>
                 </FieldContent>
               </Field>
@@ -252,14 +252,14 @@ export function Pattern() {
                 <FieldContent className="gap-1 min-w-0">
                   <FieldLabel className="cn-field-title gap-2 items-center justify-between w-full">
                     <span className="min-w-0 truncate">
-                      Messages
+                      {"Messages"}
                     </span>
                     <span className="font-normal shrink-0 text-muted-foreground text-xs">
-                      Better context
+                      {"Better context"}
                     </span>
                   </FieldLabel>
                   <FieldDescription>
-                    Thread text for answers.
+                    {"Thread text for answers."}
                   </FieldDescription>
                 </FieldContent>
               </Field>
@@ -270,10 +270,10 @@ export function Pattern() {
       <DialogFooter className="shrink-0">
         <div className="gap-2 grid grid-cols-2 w-full">
           <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </DialogClose>
           <Button className="w-full" type="button" tabIndex="0">
-            Continue
+            {"Continue"}
           </Button>
         </div>
       </DialogFooter>
@@ -283,7 +283,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

@@ -32,7 +32,7 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-semibold hidden sm:inline text-sm">
-              DevPortal
+              {"DevPortal"}
             </span>
           </div>
           <Separator className="h-4 hidden my-auto sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -49,7 +49,7 @@ export function Pattern() {
               </svg>
             </span>
             <span className="hidden sm:inline">
-              OpenAI API
+              {"OpenAI API"}
             </span>
             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
@@ -62,11 +62,11 @@ export function Pattern() {
             <Select>
             <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
               <SelectValue>
-                GET
+                {"GET"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -75,7 +75,7 @@ export function Pattern() {
               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_8_" placeholder="/models/{id}" />
             </InputGroup>
             <Button type="button" tabIndex="0">
-              Send
+              {"Send"}
             </Button>
           </ButtonGroup>
           <Separator className="h-4 hidden my-auto sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>

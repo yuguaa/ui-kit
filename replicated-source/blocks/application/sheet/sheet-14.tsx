@@ -27,7 +27,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Audit event
+        {"Audit event"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -35,7 +35,7 @@ export function Pattern() {
           <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" data-icon="inline-start" aria-hidden="true">
             <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
           </svg>
-          Open Event
+          {"Open Event"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -47,7 +47,7 @@ export function Pattern() {
           <div className="flex gap-2 items-center justify-between">
             <span className="flex gap-1 items-center min-w-0">
               <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                EVT-9f3a21
+                {"EVT-9f3a21"}
               </span>
               <Button type="button" tabIndex="0" aria-label="Copy event ID">
                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -58,7 +58,7 @@ export function Pattern() {
             </span>
             <div className="flex gap-1 items-center shrink-0">
               <span className="tabular-nums text-muted-foreground text-xs">
-                1 of 65
+                {"1 of 65"}
               </span>
               <Tooltip>
               <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:opacity-50 aria-disabled:pointer-events-none cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" aria-disabled="true" aria-label="Previous event" aria-keyshortcuts="K" id="base-ui-_r_4_" baseUiTooltipTrigger="">
@@ -80,7 +80,7 @@ export function Pattern() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <span className="sr-only">
-                  Close
+                  {"Close"}
                 </span>
               </Button>
             </div>
@@ -88,11 +88,11 @@ export function Pattern() {
           <div className="flex flex-wrap gap-2 items-center min-w-0">
             <SheetTitle className="min-w-0 text-base truncate" id="base-ui-_r_7_">
               <span className="font-mono">
-                deployment.promote
+                {"deployment.promote"}
               </span>
             </SheetTitle>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-              Success
+              {"Success"}
             </Badge>
           </div>
           <SheetDescription id="base-ui-_r_8_">
@@ -102,35 +102,35 @@ export function Pattern() {
                   <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                 </Avatar>
                 <span className="truncate">
-                  Emma Wilson
+                  {"Emma Wilson"}
                 </span>
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="tabular-nums">
-                Sep 29, 2026, 14:12:08 UTC
+                {"Sep 29, 2026, 14:12:08 UTC"}
               </span>
             </span>
           </SheetDescription>
         </div>
         <p className="text-foreground text-sm">
-          Promoted payments-api v2.41.0 from the 50% canary to all production traffic.
+          {"Promoted payments-api v2.41.0 from the 50% canary to all production traffic."}
         </p>
       </div>
       <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
         <TabsList className="border-b gap-5 h-auto justify-start px-5 py-0 shrink-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_9_" compositeItemActive="" aria-controls="base-ui-_r_d_">
-            Details
+            {"Details"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_a_">
-            Changes
+            {"Changes"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_b_">
-            Raw
+            {"Raw"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_c_">
-            Related
+            {"Related"}
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-              3
+              {"3"}
             </Badge>
           </TabsTrigger>
         </TabsList>
@@ -140,12 +140,12 @@ export function Pattern() {
               <div className="flex flex-col gap-5">
                 <section className="flex flex-col gap-3 min-w-0">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Actor
+                    {"Actor"}
                   </h3>
                   <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Name
+                        {"Name"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-2 items-center min-w-0">
@@ -153,39 +153,39 @@ export function Pattern() {
                             <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                           </Avatar>
                           <span className="truncate">
-                            Emma Wilson
+                            {"Emma Wilson"}
                           </span>
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Role
+                        {"Role"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="min-w-0 wrap-break-word">
-                          Release manager, Platform
+                          {"Release manager, Platform"}
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Auth
+                        {"Auth"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="min-w-0 wrap-break-word">
-                          SSO with WebAuthn
+                          {"SSO with WebAuthn"}
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Session
+                        {"Session"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-1 items-center min-w-0">
                           <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                            ses_4QmT8x
+                            {"ses_4QmT8x"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy session ID">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -198,26 +198,26 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        IP address
+                        {"IP address"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex flex-wrap gap-x-2 items-center min-w-0">
                           <span className="font-mono tabular-nums text-xs">
-                            203.0.113.24
+                            {"203.0.113.24"}
                           </span>
                           <span className="text-muted-foreground">
-                            Corporate VPN
+                            {"Corporate VPN"}
                           </span>
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        User agent
+                        {"User agent"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="font-mono min-w-0 text-xs wrap-break-word">
-                          Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 Chrome/129.0.0.0 Safari/537.36
+                          {"Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/537.36 Chrome/129.0.0.0 Safari/537.36"}
                         </span>
                       </dd>
                     </div>
@@ -225,12 +225,12 @@ export function Pattern() {
                 </section>
                 <section className="flex flex-col gap-3 min-w-0">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Target
+                    {"Target"}
                   </h3>
                   <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Resource
+                        {"Resource"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-2 items-center min-w-0">
@@ -242,19 +242,19 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="text-sm truncate">
-                            payments-api
+                            {"payments-api"}
                           </span>
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Resource ID
+                        {"Resource ID"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-1 items-center min-w-0">
                           <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                            DEP-4127
+                            {"DEP-4127"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy resource ID">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -267,27 +267,27 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Environment
+                        {"Environment"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Production
+                          {"Production"}
                         </Badge>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Cluster
+                        {"Cluster"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="font-mono min-w-0 text-xs wrap-break-word">
-                          prod-us-east-1
+                          {"prod-us-east-1"}
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Source
+                        {"Source"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-2 items-center min-w-0">
@@ -299,7 +299,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="text-muted-foreground text-sm truncate">
-                            Console
+                            {"Console"}
                           </span>
                         </span>
                       </dd>
@@ -308,17 +308,17 @@ export function Pattern() {
                 </section>
                 <section className="flex flex-col gap-3 min-w-0">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Request
+                    {"Request"}
                   </h3>
                   <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Request ID
+                        {"Request ID"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-1 items-center min-w-0">
                           <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                            req_01J8ZK4M2Q
+                            {"req_01J8ZK4M2Q"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy request ID">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -331,12 +331,12 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Trace ID
+                        {"Trace ID"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex gap-1 items-center min-w-0">
                           <span className="font-mono min-w-0 text-foreground text-xs truncate" title="4bf92f3577b34da6a3ce929d0e0e4736">
-                            4bf92f35…0e4736
+                            {"4bf92f35…0e4736"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy trace ID">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -349,26 +349,26 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Recorded
+                        {"Recorded"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="flex flex-wrap gap-x-2 items-center min-w-0">
                           <span className="tabular-nums">
-                            Sep 29, 2026, 14:12:08 UTC
+                            {"Sep 29, 2026, 14:12:08 UTC"}
                           </span>
                           <span className="text-muted-foreground">
-                            7m ago
+                            {"7m ago"}
                           </span>
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground">
-                        Review
+                        {"Review"}
                       </dt>
                       <dd className="flex items-center leading-5 min-w-0">
                         <span className="text-muted-foreground text-sm">
-                          Not required
+                          {"Not required"}
                         </span>
                       </dd>
                     </div>
@@ -384,14 +384,14 @@ export function Pattern() {
           <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
             <path d="M20 6 9 17l-5-5"></path>
           </svg>
-          Mark reviewed
+          {"Mark reviewed"}
         </Button>
         <Button type="button" tabIndex="0">
           <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
           </svg>
-          Copy link
+          {"Copy link"}
         </Button>
         <Button className="ms-auto" type="button" tabIndex="0">
           <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HistoryIcon" tabler="IconHistory" hugeicons="Clock01Icon" phosphor="ClockCounterClockwiseIcon" remixicon="RiHistoryLine" aria-hidden="true">
@@ -399,7 +399,7 @@ export function Pattern() {
             <path d="M3 3v5h5"></path>
             <path d="M12 7v5l4 2"></path>
           </svg>
-          Resource history
+          {"Resource history"}
         </Button>
       </div>
     </SheetContent>

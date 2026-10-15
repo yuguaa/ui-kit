@@ -41,7 +41,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        New firewall rule
+        {"New firewall rule"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -50,7 +50,7 @@ export function Pattern() {
             <path d="M5 12h14"></path>
             <path d="M12 5v14"></path>
           </svg>
-          New Rule
+          {"New Rule"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -60,7 +60,7 @@ export function Pattern() {
       <div className="border-b flex flex-col gap-1 px-5 py-3.5 shrink-0">
         <div className="flex gap-2 items-center justify-between">
           <SheetTitle className="min-w-0 text-lg" id="base-ui-_r_3_">
-            New Rule
+            {"New Rule"}
           </SheetTitle>
           <SheetClose className="-me-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -70,7 +70,7 @@ export function Pattern() {
           </SheetClose>
         </div>
         <SheetDescription id="base-ui-_r_4_">
-          Judged in priority order, before managed protections.
+          {"Judged in priority order, before managed protections."}
         </SheetDescription>
       </div>
       <div className="flex-1 min-h-0 no-scrollbar overflow-y-auto scroll-fade-y scroll-py-10">
@@ -79,20 +79,20 @@ export function Pattern() {
             <FieldGroup className="gap-4">
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-rule-name">
-                  Name
+                  {"Name"}
                 </FieldLabel>
                 <Input id="sheet-17-rule-name" autoComplete="off" placeholder="Block card testing bursts" value=""></Input>
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-rule-description">
-                  Description
+                  {"Description"}
                 </FieldLabel>
                 <Input id="sheet-17-rule-description" autoComplete="off" placeholder="What this rule protects" value=""></Input>
               </Field>
             </FieldGroup>
             <FieldSet className="gap-3">
               <FieldLegend variant="label">
-                When
+                {"When"}
               </FieldLegend>
               <FiltersAdvanced className="flex flex-col gap-2 min-w-0 py-(--filter-panel-pad) w-full" role="group" aria-label="Advanced filter" aria-description="0 conditions" style={{"--filter-panel-pad": "0px"}}>
                 <div className="flex flex-col gap-1 items-center justify-center px-(--filter-panel-pad) py-8 text-center">
@@ -104,10 +104,10 @@ export function Pattern() {
                     </svg>
                   </span>
                   <p className="font-medium text-sm">
-                    No conditions yet
+                    {"No conditions yet"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Add a condition to choose the requests this rule meets.
+                    {"Add a condition to choose the requests this rule meets."}
                   </p>
                 </div>
                 <div className="data-drop-into:after:absolute data-drop-into:after:bg-primary data-drop-into:after:end-[calc(var(--filter-panel-pad)+4px)] data-drop-into:after:h-0.5 data-drop-into:after:rounded-full data-drop-into:after:start-(--filter-panel-pad) data-drop-into:after:top-0 flex flex-wrap gap-2 items-center pe-[calc(var(--filter-panel-pad)+4px)] px-(--filter-panel-pad) relative" data-drop-parent="root" data-drop-index="0">
@@ -116,7 +116,7 @@ export function Pattern() {
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
-                    Add condition
+                    {"Add condition"}
                   </Button>
                   <Button className="font-normal" type="button" tabIndex="0">
                     <svg className="lucide lucide-folder-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="FolderPlusIcon" tabler="IconFolderPlus" hugeicons="FolderAddIcon" phosphor="FolderPlusIcon" remixicon="RiFolderAddLine">
@@ -124,7 +124,7 @@ export function Pattern() {
                       <path d="M9 13h6"></path>
                       <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                     </svg>
-                    Add group
+                    {"Add group"}
                   </Button>
                 </div>
                 <div className="sr-only" aria-live="polite" role="status">
@@ -134,7 +134,7 @@ export function Pattern() {
               <CodeBlock className="[--code-block-bg:var(--card)] [--code-block-caret-color:var(--primary)] [--code-block-copy-inset:--spacing(2)] [--code-block-copy-top:var(--code-block-copy-inset)] [--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_8%,transparent)] [--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-error-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-expand-clearance:--spacing(9)] [--code-block-fold-width:--spacing(4.5)] [--code-block-font-size:0.8125rem] [--code-block-gutter-gap:--spacing(2.5)] [--code-block-gutter-width:--spacing(9)] [--code-block-header-height:--spacing(8)] [--code-block-highlight-bar:color-mix(in_oklch,var(--primary)_60%,transparent)] [--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_6%,transparent)] [--code-block-info-bg:color-mix(in_oklch,var(--info)_8%,transparent)] [--code-block-line-height:1.125rem] [--code-block-number-pad:var(--code-block-gutter-gap)] [--code-block-padding:--spacing(2)] [--code-block-warning-bg:color-mix(in_oklch,var(--warning)_10%,transparent)] bg-card bg-clip-padding border border-border dark:[--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_12%,transparent)] dark:[--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-error-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_12%,transparent)] dark:[--code-block-info-bg:color-mix(in_oklch,var(--info)_12%,transparent)] dark:[--code-block-warning-bg:color-mix(in_oklch,var(--warning)_14%,transparent)] data-[gutter-channel]:[--code-block-number-pad:calc(var(--code-block-gutter-gap)+var(--code-block-fold-width))] data-[has-diff]:[--code-block-gutter-gap:--spacing(4)] data-[has-header]:[--code-block-copy-top:calc(var(--code-block-header-height)+1px+var(--code-block-copy-inset))] flex flex-col group/code-block min-w-0 relative rounded-(--code-block-radius) style-luma:[--code-block-radius:var(--radius-2xl)] style-lyra:[--code-block-radius:0px] style-maia:[--code-block-radius:var(--radius-2xl)] style-mira:[--code-block-radius:var(--radius-lg)] style-nova:[--code-block-radius:var(--radius-lg)] style-rhea:[--code-block-radius:var(--radius-xl)] style-sera:[--code-block-radius:0px] style-vega:[--code-block-radius:var(--radius-lg)] text-card-foreground text-left w-full" variant="default" hasHeader="true">
                 <CodeBlockHeader className="min-h-8 px-2.5">
                   <CodeBlockTitle>
-                    Expression
+                    {"Expression"}
                   </CodeBlockTitle>
                   <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" data-position="inline" aria-label="Copy expression">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -151,7 +151,7 @@ export function Pattern() {
                         <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="1" id="_r_8_-L1" style={{counterReset: "cb-line 0"}}>
                           <span>
                             <span>
-                              No conditions yet
+                              {"No conditions yet"}
                             </span>
                           </span>
                         </span>
@@ -163,7 +163,7 @@ export function Pattern() {
             </FieldSet>
             <FieldSet className="gap-3">
               <FieldLegend variant="label">
-                Then
+                {"Then"}
               </FieldLegend>
               <RadioGroup className="gap-2 grid sm:grid-cols-2" role="radiogroup" aria-label="Action">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-action-block" id="sheet-17-action-block-label">
@@ -176,10 +176,10 @@ export function Pattern() {
                             <path d="M4.929 4.929 19.07 19.071"></path>
                           </svg>
                         </span>
-                        Block
+                        {"Block"}
                       </FieldLabel>
                       <FieldDescription className="text-xs">
-                        Refuse the request with a 403
+                        {"Refuse the request with a 403"}
                       </FieldDescription>
                     </FieldContent>
                     <RadioGroupItem checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_a_" aria-labelledby="sheet-17-action-block-label">
@@ -199,10 +199,10 @@ export function Pattern() {
                             <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path>
                           </svg>
                         </span>
-                        Challenge
+                        {"Challenge"}
                       </FieldLabel>
                       <FieldDescription className="text-xs">
-                        Ask the client to prove it is human
+                        {"Ask the client to prove it is human"}
                       </FieldDescription>
                     </FieldContent>
                     <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_d_" aria-labelledby="sheet-17-action-challenge-label"></RadioGroupItem>
@@ -219,10 +219,10 @@ export function Pattern() {
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                         </span>
-                        Allow
+                        {"Allow"}
                       </FieldLabel>
                       <FieldDescription className="text-xs">
-                        Skip every later rule and protection
+                        {"Skip every later rule and protection"}
                       </FieldDescription>
                     </FieldContent>
                     <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_g_" aria-labelledby="sheet-17-action-allow-label"></RadioGroupItem>
@@ -239,10 +239,10 @@ export function Pattern() {
                             <circle cx="12" cy="12" r="3"></circle>
                           </svg>
                         </span>
-                        Log
+                        {"Log"}
                       </FieldLabel>
                       <FieldDescription className="text-xs">
-                        Record the match and keep evaluating
+                        {"Record the match and keep evaluating"}
                       </FieldDescription>
                     </FieldContent>
                     <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_j_" aria-labelledby="sheet-17-action-log-label"></RadioGroupItem>
@@ -254,16 +254,16 @@ export function Pattern() {
             <FieldGroup className="gap-4 grid sm:grid-cols-2">
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-rule-expiry">
-                  Expires
+                  {"Expires"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-17-rule-expiry" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    Never
+                    {"Never"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -271,16 +271,16 @@ export function Pattern() {
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-rule-placement">
-                  Priority
+                  {"Priority"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-17-rule-placement" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    Top of the list
+                    {"Top of the list"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -290,10 +290,10 @@ export function Pattern() {
             <Field role="group" data-orientation="horizontal">
               <FieldContent>
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-17-rule-enabled" id="sheet-17-rule-enabled-label">
-                  Enabled
+                  {"Enabled"}
                 </FieldLabel>
                 <FieldDescription className="text-xs">
-                  A disabled rule keeps its place but meets nothing
+                  {"A disabled rule keeps its place but meets nothing"}
                 </FieldDescription>
               </FieldContent>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_s_" aria-checked="true" size="default" aria-labelledby="sheet-17-rule-enabled-label">
@@ -305,10 +305,10 @@ export function Pattern() {
               <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                 <div className="flex flex-col gap-px min-w-0">
                   <div className="font-semibold text-sm">
-                    Recent Traffic
+                    {"Recent Traffic"}
                   </div>
                   <div className="tabular-nums text-muted-foreground text-xs">
-                    Add a condition to preview matches
+                    {"Add a condition to preview matches"}
                   </div>
                 </div>
               </header>
@@ -318,18 +318,18 @@ export function Pattern() {
       </div>
       <div className="bg-muted border-t flex flex-wrap gap-2 items-center px-5 py-3 shrink-0">
         <span className="min-w-0 tabular-nums text-muted-foreground text-xs truncate" aria-live="polite">
-          No conditions yet
+          {"No conditions yet"}
         </span>
         <div className="flex gap-2 items-center ms-auto">
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </SheetClose>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Create Rule
+            {"Create Rule"}
           </Button>
         </div>
       </div>

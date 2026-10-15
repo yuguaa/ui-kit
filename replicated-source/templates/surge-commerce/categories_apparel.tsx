@@ -67,18 +67,21 @@ export function Pattern() {
         <div className="-translate-y-px absolute h-full right-0 rotate-2 shadow-[0_0_8px_var(--primary),0_0_4px_var(--primary)] top-0 w-24"></div>
       </div>
     </div>
+    <SidebarProvider>
     <div className="[--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] [--sidebar:var(--color-background)] flex flex-col group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "260px", "--sidebar-width-icon": "62px", "--header-height": "50px"}}>
       <header className="bg-background border-b flex items-center sticky top-0 w-full z-50">
         <div className="flex gap-2 h-(--header-height) items-center px-4 w-full">
+          <SidebarProvider>
           <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center md:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
             <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
-              Toggle Sidebar
+              {"Toggle Sidebar"}
             </span>
           </SidebarTrigger>
+          </SidebarProvider>
           <div className="hidden items-center md:flex pl-0.5">
             <Item className="[a]:hover:bg-muted bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" variant="default" size="default" aria-hidden="true">
               <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
@@ -106,7 +109,7 @@ export function Pattern() {
                     <circle cx="14" cy="14" r="14" fill="url(#ws-acme)"></circle>
                   </svg>
                   <span className="sm:not-sr-only sr-only">
-                    Manifest Store
+                    {"Manifest Store"}
                   </span>
                   <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
@@ -116,19 +119,19 @@ export function Pattern() {
                 </DropdownMenu>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="[&>svg]:size-3.5 text-muted-foreground text-xs" role="presentation" aria-hidden="true">
-                /
+                {"/"}
               </BreadcrumbSeparator>
               <BreadcrumbItem className="gap-1 hidden sm:inline-flex">
                 <BreadcrumbLink className="active hover:text-foreground transition-colors" href="/categories" status="active" aria-current="page">
-                  Categories
+                  {"Categories"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="[&>svg]:size-3.5 hidden sm:block text-muted-foreground text-xs" role="presentation" aria-hidden="true">
-                /
+                {"/"}
               </BreadcrumbSeparator>
               <BreadcrumbItem className="gap-1 min-w-0">
                 <BreadcrumbPage className="font-normal text-foreground truncate" role="link" aria-disabled="true" aria-current="page">
-                  Apparel
+                  {"Apparel"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -141,10 +144,10 @@ export function Pattern() {
                 <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
               </svg>
               <span className="font-medium text-foreground text-xs">
-                Store
+                {"Store"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-warning-foreground text-xs transition-shadow">
-                Attention
+                {"Attention"}
               </Badge>
             </PopoverTrigger>
             </Popover>
@@ -152,46 +155,61 @@ export function Pattern() {
         </div>
       </header>
       <div className="flex flex-1">
+        <SidebarProvider>
         <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
           <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+          <SidebarProvider>
           <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-[calc(100svh-var(--header-height))]! h-svh hidden inset-y-0 md:flex top-(--header-height) transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+            <SidebarProvider>
             <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
               <SidebarHeader className="flex-row gap-2 in-data-[state=collapsed]:flex-col in-data-[state=collapsed]:items-start in-data-[state=collapsed]:justify-center items-center p-2 px-4" sidebar="header">
                 <div className="flex-1 pt-2 w-full">
                   <form>
+                    <SidebarProvider>
                     <SidebarGroup className="p-0" sidebar="group">
+                      <SidebarProvider>
                       <SidebarGroupContent className="relative text-sm" sidebar="group-content">
                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 duration-200 ease-linear focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-background hover:text-foreground in-data-[state=collapsed]:pl-4! in-data-[state=collapsed]:text-transparent in-data-[state=collapsed]:w-8! justify-start pl-7 px-2.5 rounded-lg text-sm transition-[width] w-full" type="button" tabIndex="0" id="search">
-                          Search...
+                          {"Search..."}
                         </Button>
                         <svg className="-translate-y-1/2 absolute left-2 lucide lucide-search opacity-50 pointer-events-none select-none size-3.5 top-1/2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="m21 21-4.34-4.34"></path>
                           <circle cx="11" cy="11" r="8"></circle>
                         </svg>
                         <Kbd className="-translate-y-1/2 [&_svg:not([class*='size-'])]:size-3 absolute bg-muted dark:in-data-[slot=tooltip-content]:bg-background/10 font-medium font-sans gap-1 h-5 in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background in-data-[state=collapsed]:hidden min-w-5 px-1 right-2 rounded-sm text-muted-foreground text-xs top-1/2 w-fit">
-                          ⌘K
+                          {"⌘K"}
                         </Kbd>
                       </SidebarGroupContent>
+                      </SidebarProvider>
                     </SidebarGroup>
+                    </SidebarProvider>
                     <DialogHeader className="gap-2 sr-only">
                       <DialogTitle className="font-heading font-medium leading-none text-base" id="base-ui-_R_bd6clla_">
-                        Search
+                        {"Search"}
                       </DialogTitle>
                       <DialogDescription className="*:[a]:hover:text-foreground *:[a]:underline *:[a]:underline-offset-3 text-muted-foreground text-sm" id="base-ui-_R_jd6clla_">
-                        Search your workspace content.
+                        {"Search your workspace content."}
                       </DialogDescription>
                     </DialogHeader>
                   </form>
                 </div>
               </SidebarHeader>
+              <SidebarProvider>
               <SidebarContent className="gap-2 no-scrollbar px-2" sidebar="content">
+                <SidebarProvider>
                 <SidebarGroup className="p-2" sidebar="group">
+                  <SidebarProvider>
                   <SidebarGroupLabel className="[&>svg]:size-4 duration-200 ease-linear focus-visible:ring-2 font-medium group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 h-8 in-data-[state=collapsed]:hidden px-2 ring-sidebar-ring rounded-md text-sidebar-foreground/70 text-xs transition-[margin,opacity]" sidebar="group-label">
-                    Store
+                    {"Store"}
                   </SidebarGroupLabel>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarGroupContent className="text-sm" sidebar="group-content">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.25" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_d35aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/">
                           <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <rect width="7" height="9" x="3" y="3" rx="1"></rect>
@@ -200,11 +218,15 @@ export function Pattern() {
                             <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                           </svg>
                           <span>
-                            Dashboard
+                            {"Dashboard"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_d55aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/orders">
                           <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -212,22 +234,30 @@ export function Pattern() {
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
                           <span>
-                            Orders
+                            {"Orders"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_d75aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/products">
                           <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span>
-                            Products
+                            {"Products"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1l95aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="false" aria-controls="subnav-inventory">
                           <svg className="lucide lucide-boxes" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path>
@@ -244,14 +274,18 @@ export function Pattern() {
                             <path d="M12 13.5V8"></path>
                           </svg>
                           <span>
-                            Inventory
+                            {"Inventory"}
                           </span>
                           <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1lb5aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="false" aria-controls="subnav-customers">
                           <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -260,14 +294,18 @@ export function Pattern() {
                             <circle cx="9" cy="7" r="4"></circle>
                           </svg>
                           <span>
-                            Customers
+                            {"Customers"}
                           </span>
                           <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_dd5aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="" href="/categories" status="active" aria-current="page">
                           <svg className="lucide lucide-folder-tree" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z"></path>
@@ -276,11 +314,15 @@ export function Pattern() {
                             <path d="M3 3v13a2 2 0 0 0 2 2h3"></path>
                           </svg>
                           <span>
-                            Categories
+                            {"Categories"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_df5aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/promotions">
                           <svg className="lucide lucide-ticket-percent" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
@@ -289,30 +331,46 @@ export function Pattern() {
                             <path d="M15 15h.01"></path>
                           </svg>
                           <span>
-                            Promotions
+                            {"Promotions"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_dh5aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/reviews">
                           <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                           </svg>
                           <span>
-                            Reviews
+                            {"Reviews"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarGroupContent>
+                  </SidebarProvider>
                 </SidebarGroup>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarGroup className="p-2" sidebar="group">
+                  <SidebarProvider>
                   <SidebarGroupLabel className="[&>svg]:size-4 duration-200 ease-linear focus-visible:ring-2 font-medium group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 h-8 in-data-[state=collapsed]:hidden px-2 ring-sidebar-ring rounded-md text-sidebar-foreground/70 text-xs transition-[margin,opacity]" sidebar="group-label">
-                    System
+                    {"System"}
                   </SidebarGroupLabel>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarGroupContent className="text-sm" sidebar="group-content">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.25" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_3b9aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/analytics">
                           <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
@@ -321,27 +379,36 @@ export function Pattern() {
                             <path d="M8 17v-3"></path>
                           </svg>
                           <span>
-                            Analytics
+                            {"Analytics"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_dd9aclla_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="false" aria-controls="subnav-settings">
                           <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                           </svg>
                           <span>
-                            Settings
+                            {"Settings"}
                           </span>
                           <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarGroupContent>
+                  </SidebarProvider>
                 </SidebarGroup>
+                </SidebarProvider>
                 <div className="mt-auto">
                   <div className="group in-data-[state=collapsed]:hidden px-3" data-active="true">
                     <div className="relative size-full">
@@ -350,10 +417,10 @@ export function Pattern() {
                           <div className="invisible">
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Sidebar layout patterns guide
+                                {"Sidebar layout patterns guide"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Learn best practices for building responsive sidebar layouts with collapsible navigation.
+                                {"Learn best practices for building responsive sidebar layouts with collapsible navigation."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -363,10 +430,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="https://pro.neui.io/changelog?v=2.0.1" target="_blank" rel="noopener noreferrer">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -379,10 +446,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Icon library v2 released
+                                {"Icon library v2 released"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Five icon libraries unified under a single API with automatic mapping.
+                                {"Five icon libraries unified under a single API with automatic mapping."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -392,10 +459,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="https://pro.neui.io/changelog?v=2.0.2" target="_blank" rel="noopener noreferrer">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -408,10 +475,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Multi-theme support is here
+                                {"Multi-theme support is here"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Switch between Vega, Nova, Maia, Lyra, and Mira themes across all components.
+                                {"Switch between Vega, Nova, Maia, Lyra, and Mira themes across all components."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -421,10 +488,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="https://pro.neui.io/changelog?v=2.0.3" target="_blank" rel="noopener noreferrer">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -437,10 +504,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Title
+                                {"Title"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Description
+                                {"Description"}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full"></div>
@@ -448,10 +515,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="#" target="_blank" rel="noopener noreferrer">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -463,8 +530,11 @@ export function Pattern() {
                   </div>
                 </div>
               </SidebarContent>
+              </SidebarProvider>
               <SidebarFooter className="gap-2 mt-2 p-2 px-4" sidebar="footer">
+                <SidebarProvider>
                 <SidebarMenu className="gap-0" sidebar="menu">
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 active:bg-sidebar-accent active:text-sidebar-accent-foreground aria-disabled:opacity-50 aria-disabled:pointer-events-none data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground disabled:opacity-50 disabled:pointer-events-none flex focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:p-0! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 group/menu-button h-12 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground items-center outline-hidden overflow-hidden p-2 peer/menu-button ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding] w-full" type="button" sidebar="menu-button" size="lg" tabIndex="0" aria-haspopup="menu" id="base-ui-_R_3eclla_" aria-expanded="false">
@@ -473,10 +543,10 @@ export function Pattern() {
                       </Avatar>
                       <div className="flex-1 grid group-data-[collapsible=icon]:hidden leading-tight text-left text-sm">
                         <span className="font-medium truncate">
-                          Nick Bold
+                          {"Nick Bold"}
                         </span>
                         <span className="text-muted-foreground text-xs truncate">
-                          nick@neui.io
+                          {"nick@neui.io"}
                         </span>
                       </div>
                       <svg className="group-data-[collapsible=icon]:hidden lucide lucide-chevrons-up-down ml-auto opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -486,7 +556,9 @@ export function Pattern() {
                     </DropdownMenuTrigger>
                     </DropdownMenu>
                   </SidebarMenuItem>
+                  </SidebarProvider>
                 </SidebarMenu>
+                </SidebarProvider>
               </SidebarFooter>
               <button className="-translate-y-1/2 cursor-pointer duration-200 ease-linear fixed flex focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-ring focus-visible:rounded-sm group/rail h-12 items-center outline-none pl-2 top-[calc(var(--header-height)+50%)] transition-[left] w-7 z-30" type="button" aria-label="Collapse sidebar" style={{left: "var(--sidebar-width)"}}>
                 <span className="flex flex-col items-center">
@@ -494,12 +566,15 @@ export function Pattern() {
                   <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
                 </span>
                 <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-background text-xs transition-all whitespace-nowrap">
-                  Collapse
+                  {"Collapse"}
                 </span>
               </button>
             </div>
+            </SidebarProvider>
           </div>
+          </SidebarProvider>
         </Sidebar>
+        </SidebarProvider>
         <SidebarInset className="bg-background md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm min-w-0">
           <div className="max-w-7xl md:p-6 mx-auto p-4 w-full">
             <div className="flex flex-col gap-4">
@@ -507,18 +582,18 @@ export function Pattern() {
                 <div className="flex-col min-w-0">
                   <div className="flex gap-2 items-center">
                     <h1 className="font-semibold sm:text-xl text-foreground text-lg tracking-tight">
-                      Apparel
+                      {"Apparel"}
                     </h1>
                   </div>
                   <p className="mt-0.5 text-muted-foreground text-sm">
-                    6 products
+                    {"6 products"}
                   </p>
                 </div>
                 <div className="flex gap-2 items-center shrink-0">
                   <div className="flex gap-3 items-center">
                     <span className="flex flex-wrap gap-1.5 items-center">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                     </span>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" tabIndex="0" href="/categories" status="active" aria-current="page">
@@ -526,7 +601,7 @@ export function Pattern() {
                         <path d="m12 19-7-7 7-7"></path>
                         <path d="M19 12H5"></path>
                       </svg>
-                      Back
+                      {"Back"}
                     </Button>
                     <Sheet>
                     <SheetTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none px-2.5 rounded-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false">
@@ -534,7 +609,7 @@ export function Pattern() {
                         <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                         <path d="m15 5 4 4"></path>
                       </svg>
-                      Edit
+                      {"Edit"}
                     </SheetTrigger>
                     </Sheet>
                   </div>
@@ -545,14 +620,14 @@ export function Pattern() {
                   <Frame className="(--radius-2xl)] (--radius-lg)] (--radius-none)] (--radius-xl)] (0.5)] (1)] (1.25)] (1.5)] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)_+_var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)_+_var(--frame-panel-footer-py-adjust))] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)_+_var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)_+_var(--frame-panel-header-py-adjust))] [--frame-panel-px:calc(var(--frame-panel-px-base)_+_var(--frame-panel-px-adjust))] [--frame-panel-py:calc(var(--frame-panel-py-base)_+_var(--frame-panel-py-adjust))] [--frame-radius:var(--radius-xl)] w-full">
                     <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                       <div className="font-semibold text-sm">
-                        Products
+                        {"Products"}
                       </div>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
                         <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
-                        Assign products
+                        {"Assign products"}
                       </Button>
                     </header>
                     <FramePanel className="before:rounded-[calc(var(--frame-radius)-1px)] p-0! rounded-(--frame-radius) shadow-none!">
@@ -563,7 +638,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/boxy-pocket-tee">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_4_" baseUiTooltipTrigger="">
-                                Boxy Pocket Tee
+                                {"Boxy Pocket Tee"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -572,11 +647,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Aster Goods
+                              {"Aster Goods"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $33.00 - $37.00
+                            {"$33.00 - $37.00"}
                           </span>
                         </div>
                         <div className="border-b flex gap-3 hover:bg-muted/40 items-center last:border-b-0 px-4 py-2.5 transition-colors">
@@ -585,7 +660,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/brushed-flannel-shirt">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_6_" baseUiTooltipTrigger="">
-                                Brushed Flannel Shirt
+                                {"Brushed Flannel Shirt"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -594,11 +669,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Field Supply
+                              {"Field Supply"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $89.00 - $95.00
+                            {"$89.00 - $95.00"}
                           </span>
                         </div>
                         <div className="border-b flex gap-3 hover:bg-muted/40 items-center last:border-b-0 px-4 py-2.5 transition-colors">
@@ -607,7 +682,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/garment-dyed-henley">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_8_" baseUiTooltipTrigger="">
-                                Garment-Dyed Henley
+                                {"Garment-Dyed Henley"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -616,11 +691,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Field Supply
+                              {"Field Supply"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $65.00 - $71.00
+                            {"$65.00 - $71.00"}
                           </span>
                         </div>
                         <div className="border-b flex gap-3 hover:bg-muted/40 items-center last:border-b-0 px-4 py-2.5 transition-colors">
@@ -629,7 +704,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/linen-camp-shirt">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_a_" baseUiTooltipTrigger="">
-                                Linen Camp Shirt
+                                {"Linen Camp Shirt"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -638,11 +713,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Aster Goods
+                              {"Aster Goods"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $85.00 - $91.00
+                            {"$85.00 - $91.00"}
                           </span>
                         </div>
                         <div className="border-b flex gap-3 hover:bg-muted/40 items-center last:border-b-0 px-4 py-2.5 transition-colors">
@@ -651,7 +726,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/pima-cotton-crewneck">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_c_" baseUiTooltipTrigger="">
-                                Pima Cotton Crewneck
+                                {"Pima Cotton Crewneck"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -660,11 +735,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Field Supply
+                              {"Field Supply"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $45.00 - $51.00
+                            {"$45.00 - $51.00"}
                           </span>
                         </div>
                         <div className="border-b flex gap-3 hover:bg-muted/40 items-center last:border-b-0 px-4 py-2.5 transition-colors">
@@ -673,7 +748,7 @@ export function Pattern() {
                             <a className="font-medium gap-1 group/ref hover:text-primary inline-flex items-center min-w-0 text-foreground text-sm transition-colors" href="/products/recycled-wool-overshirt">
                               <Tooltip>
                               <TooltipTrigger className="border-b border-transparent group-hover/ref:border-primary py-0.25 transition-colors truncate" id="base-ui-_r_e_" baseUiTooltipTrigger="">
-                                Recycled Wool Overshirt
+                                {"Recycled Wool Overshirt"}
                               </TooltipTrigger>
                               </Tooltip>
                               <svg className="-translate-x-1 group-hover/ref:opacity-100 group-hover/ref:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-3 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -682,11 +757,11 @@ export function Pattern() {
                               </svg>
                             </a>
                             <span className="text-muted-foreground text-sm truncate">
-                              Manifest Atelier
+                              {"Manifest Atelier"}
                             </span>
                           </div>
                           <span className="shrink-0 tabular-nums text-foreground text-sm">
-                            $195.00 - $198.00
+                            {"$195.00 - $198.00"}
                           </span>
                         </div>
                       </div>
@@ -697,37 +772,37 @@ export function Pattern() {
                   <Frame className="(--radius-2xl)] (--radius-lg)] (--radius-none)] (--radius-xl)] (0.5)] (1)] (1.25)] (1.5)] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)_+_var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)_+_var(--frame-panel-footer-py-adjust))] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)_+_var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)_+_var(--frame-panel-header-py-adjust))] [--frame-panel-px:calc(var(--frame-panel-px-base)_+_var(--frame-panel-px-adjust))] [--frame-panel-py:calc(var(--frame-panel-py-base)_+_var(--frame-panel-py-adjust))] [--frame-radius:var(--radius-xl)] w-full">
                     <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                       <div className="font-semibold text-sm">
-                        Details
+                        {"Details"}
                       </div>
                     </header>
                     <FramePanel className="before:rounded-[calc(var(--frame-radius)-1px)] flex flex-col gap-3 rounded-(--frame-radius) shadow-none!">
                       <div className="flex gap-3 items-center justify-between">
                         <span className="text-muted-foreground text-sm">
-                          Parent
+                          {"Parent"}
                         </span>
                         <span className="font-medium text-foreground text-sm truncate">
-                          Top level
+                          {"Top level"}
                         </span>
                       </div>
                       <div className="flex gap-3 items-center justify-between">
                         <span className="text-muted-foreground text-sm">
-                          Status
+                          {"Status"}
                         </span>
                         <span className="font-medium text-foreground text-sm truncate">
-                          Active
+                          {"Active"}
                         </span>
                       </div>
                       <div className="flex gap-3 items-center justify-between">
                         <span className="text-muted-foreground text-sm">
-                          Visibility
+                          {"Visibility"}
                         </span>
                         <span className="font-medium text-foreground text-sm truncate">
-                          Storefront
+                          {"Storefront"}
                         </span>
                       </div>
                       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                       <p className="leading-relaxed text-muted-foreground text-sm">
-                        Tees, shirts, knits, and everyday layers.
+                        {"Tees, shirts, knits, and everyday layers."}
                       </p>
                     </FramePanel>
                   </Frame>
@@ -738,6 +813,7 @@ export function Pattern() {
         </SidebarInset>
       </div>
     </div>
+    </SidebarProvider>
     <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
   </>
   )

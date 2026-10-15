@@ -17,18 +17,18 @@ export function Pattern() {
               </div>
               <div className="flex flex-col grow items-start justify-center px-6">
                 <div className="font-semibold mb-6 text-3xl text-white">
-                  27.3%
+                  {"27.3%"}
                 </div>
                 <div className="font-semibold mb-1 text-base text-white">
-                  NPS Improvement
+                  {"NPS Improvement"}
                 </div>
                 <div className="mb-2 text-sm text-white/80">
-                  Our new onboarding flow increased Net Promoter Score by 27.3% in Q2.
+                  {"Our new onboarding flow increased Net Promoter Score by 27.3% in Q2."}
                 </div>
               </div>
               <a className="bg-black/90 dark:bg-zinc-800 flex group/card items-center justify-between mt-6 px-6 py-4 w-full" href="#">
                 <span className="font-medium text-sm text-white">
-                  Read full story
+                  {"Read full story"}
                 </span>
                 <span className="[&_svg]:size-5 duration-300 group-hover/card:translate-x-1 text-white transition-transform">
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
@@ -51,18 +51,18 @@ export function Pattern() {
               </div>
               <div className="flex flex-col grow items-start justify-center px-6">
                 <div className="font-semibold mb-6 text-3xl text-white">
-                  8,200
+                  {"8,200"}
                 </div>
                 <div className="font-semibold mb-1 text-base text-white">
-                  Active Users
+                  {"Active Users"}
                 </div>
                 <div className="mb-2 text-sm text-white/80">
-                  Highest monthly active users since launch. Engagement up 12% MoM.
+                  {"Highest monthly active users since launch. Engagement up 12% MoM."}
                 </div>
               </div>
               <a className="bg-black/90 dark:bg-zinc-800 flex group/card items-center justify-between mt-6 px-6 py-4 w-full" href="#">
                 <span className="font-medium text-sm text-white">
-                  See user insights
+                  {"See user insights"}
                 </span>
                 <span className="[&_svg]:size-5 duration-300 group-hover/card:translate-x-1 text-white transition-transform">
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
@@ -83,18 +83,18 @@ export function Pattern() {
               </div>
               <div className="flex flex-col grow items-start justify-center px-6">
                 <div className="font-semibold mb-6 text-3xl text-white">
-                  $1.4M
+                  {"$1.4M"}
                 </div>
                 <div className="font-semibold mb-1 text-base text-white">
-                  ARR Growth
+                  {"ARR Growth"}
                 </div>
                 <div className="mb-2 text-sm text-white/80">
-                  Annual recurring revenue grew by $1.4M in the last quarter.
+                  {"Annual recurring revenue grew by $1.4M in the last quarter."}
                 </div>
               </div>
               <a className="bg-black/90 dark:bg-zinc-800 flex group/card items-center justify-between mt-6 px-6 py-4 w-full" href="#">
                 <span className="font-medium text-sm text-white">
-                  View ARR breakdown
+                  {"View ARR breakdown"}
                 </span>
                 <span className="[&_svg]:size-5 duration-300 group-hover/card:translate-x-1 text-white transition-transform">
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">

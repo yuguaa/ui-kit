@@ -15,7 +15,7 @@ export function Pattern() {
           </Button>
           <Separator className="h-4 ml-2 mr-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <h1 className="font-medium text-base text-foreground truncate">
-            Invoice draft
+            {"Invoice draft"}
           </h1>
         </div>
         <div className="flex gap-2 items-center shrink-0">
@@ -25,19 +25,19 @@ export function Pattern() {
               <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path>
               <path d="M8 6v8"></path>
             </svg>
-            Send feedback
+            {"Send feedback"}
           </Button>
           <Button className="hidden sm:inline-flex" type="button" tabIndex="0" aria-pressed="false">
-            Collapse preview
+            {"Collapse preview"}
           </Button>
           <Button type="button" tabIndex="0" aria-live="polite">
-            Submit invoice
+            {"Submit invoice"}
           </Button>
         </div>
       </header>
       <main className="flex flex-1 p-4">
         <Card className="border-dashed flex-1 items-center justify-center min-h-64 text-muted-foreground text-sm" size="default" aria-label="Content area">
-          Content area
+          {"Content area"}
         </Card>
       </main>
     </div>

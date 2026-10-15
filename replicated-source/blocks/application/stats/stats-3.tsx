@@ -23,17 +23,17 @@ export function Pattern() {
       <Card className="gap-8 sm:max-w-md w-full" size="default">
         <CardHeader className="flex gap-3 items-center justify-between">
           <CardTitle>
-            Subscription Alerts
+            {"Subscription Alerts"}
           </CardTitle>
           <CardAction>
             <Select>
             <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
               <SelectValue>
-                This Month
+                {"This Month"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -44,18 +44,18 @@ export function Pattern() {
           <div className="flex gap-2.5 items-center mb-4">
             <div className="flex flex-1 flex-col gap-1.5">
               <div className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                Total Revenue
+                {"Total Revenue"}
               </div>
               <div className="font-bold text-2xl text-foreground">
-                $128,400
+                {"$128,400"}
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-1.5">
               <div className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                Subscriptions
+                {"Subscriptions"}
               </div>
               <div className="font-bold text-2xl text-foreground">
-                312
+                {"312"}
               </div>
             </div>
           </div>
@@ -67,15 +67,15 @@ export function Pattern() {
           <div className="flex gap-5 items-center mb-6">
             <div className="flex gap-1 items-center text-teal-600 text-xs">
               <span className="bg-teal-400 inline-block rounded-full size-2"></span>
-              Free
+              {"Free"}
             </div>
             <div className="flex gap-1 items-center text-destructive text-xs">
               <span className="bg-destructive inline-block rounded-full size-2"></span>
-              Pro
+              {"Pro"}
             </div>
             <div className="flex gap-1 items-center text-amber-600 text-xs">
               <span className="bg-amber-400 inline-block rounded-full size-2"></span>
-              Enterprise
+              {"Enterprise"}
               <span className="ms-1">
                 <Tooltip>
                 <TooltipTrigger className="cursor-help focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:text-foreground inline-flex items-center outline-none rounded-full text-muted-foreground" type="button" aria-label="About Enterprise plans" id="base-ui-_r_4_" baseUiTooltipTrigger="">
@@ -91,72 +91,72 @@ export function Pattern() {
           </div>
           <div className="flex items-center justify-between mb-2.5">
             <div className="text-muted-foreground text-sm tracking-wide">
-              Expiring Soon
+              {"Expiring Soon"}
             </div>
           </div>
           <div className="bg-muted/40 border border-border/40 flex items-center justify-between last:mb-0 mb-2 px-3 py-2.5 rounded-md">
             <div className="flex gap-2.5 items-center">
               <span className="font-medium text-foreground text-sm">
-                Acme Corp
+                {"Acme Corp"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                Enterprise
+                {"Enterprise"}
               </Badge>
             </div>
             <div className="flex gap-2.5 items-center">
               <span className="text-muted-foreground text-xs">
-                in
+                {"in"}
                 <span className="font-semibold text-foreground">
-                  3d
+                  {"3d"}
                 </span>
               </span>
               <Separator className="bg-accent-foreground/20 h-3" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <a className="font-medium hover:underline text-primary text-xs" href="#">
-                Renew
+                {"Renew"}
               </a>
             </div>
           </div>
           <div className="bg-muted/40 border border-border/40 flex items-center justify-between last:mb-0 mb-2 px-3 py-2.5 rounded-md">
             <div className="flex gap-2.5 items-center">
               <span className="font-medium text-foreground text-sm">
-                Beta LLC
+                {"Beta LLC"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Pro
+                {"Pro"}
               </Badge>
             </div>
             <div className="flex gap-2.5 items-center">
               <span className="text-muted-foreground text-xs">
-                in
+                {"in"}
                 <span className="font-semibold text-foreground">
-                  5d
+                  {"5d"}
                 </span>
               </span>
               <Separator className="bg-accent-foreground/20 h-3" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <a className="font-medium hover:underline text-primary text-xs" href="#">
-                Renew
+                {"Renew"}
               </a>
             </div>
           </div>
           <div className="bg-muted/40 border border-border/40 flex items-center justify-between last:mb-0 mb-2 px-3 py-2.5 rounded-md">
             <div className="flex gap-2.5 items-center">
               <span className="font-medium text-foreground text-sm">
-                Gamma Inc
+                {"Gamma Inc"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Pro
+                {"Pro"}
               </Badge>
             </div>
             <div className="flex gap-2.5 items-center">
               <span className="text-muted-foreground text-xs">
-                in
+                {"in"}
                 <span className="font-semibold text-foreground">
-                  7d
+                  {"7d"}
                 </span>
               </span>
               <Separator className="bg-accent-foreground/20 h-3" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <a className="font-medium hover:underline text-primary text-xs" href="#">
-                Renew
+                {"Renew"}
               </a>
             </div>
           </div>

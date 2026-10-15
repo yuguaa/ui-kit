@@ -23,13 +23,13 @@ export function Pattern() {
           <div className="@2xl:flex-row @2xl:items-end flex flex-col gap-8">
             <div className="flex flex-1 flex-col gap-4 items-start min-w-0">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-secondary-foreground text-sm transition-shadow">
-                How It Works
+                {"How It Works"}
               </Badge>
               <h2 className="@xl:text-4xl font-semibold text-3xl" id="how-it-works-3-title">
-                Five Steps to Ship
+                {"Five Steps to Ship"}
               </h2>
               <p className="max-w-[40rem] text-base text-muted-foreground">
-                Set up the registry, pick your parts, wire them to real data, and take a polished interface to production.
+                {"Set up the registry, pick your parts, wire them to real data, and take a polished interface to production."}
               </p>
               <div className="flex flex-wrap gap-x-2.5 gap-y-2 items-center">
                 <Button className="bg-amber-300 border-amber-400 focus-visible:border-ring hover:bg-amber-400 hover:border-amber-500 text-amber-950" href="#" role="button" tabIndex="0">
@@ -39,14 +39,14 @@ export function Pattern() {
                     <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                     <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                   </svg>
-                  Browse Registry
+                  {"Browse Registry"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
                   <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M12 7v14"></path>
                     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                   </svg>
-                  View Docs
+                  {"View Docs"}
                 </Button>
               </div>
             </div>
@@ -63,10 +63,10 @@ export function Pattern() {
                     </IconTile>
                     <ItemContent className="gap-px">
                       <ItemTitle className="leading-5 line-clamp-none">
-                        Ready-Made Blocks
+                        {"Ready-Made Blocks"}
                       </ItemTitle>
                       <ItemDescription className="leading-5 line-clamp-none">
-                        Start from polished screen patterns with consistent shadcn/ui styling.
+                        {"Start from polished screen patterns with consistent shadcn/ui styling."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -83,10 +83,10 @@ export function Pattern() {
                     </IconTile>
                     <ItemContent className="gap-px">
                       <ItemTitle className="leading-5 line-clamp-none">
-                        Build with MCP
+                        {"Build with MCP"}
                       </ItemTitle>
                       <ItemDescription className="leading-5 line-clamp-none">
-                        Search components, inspect APIs, and get commands inside your agent.
+                        {"Search components, inspect APIs, and get commands inside your agent."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -102,14 +102,14 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-4 items-start relative">
                   <IconTile className="after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 overflow-clip" variant="frame" size="default">
                     <span className="font-medium text-lg" aria-hidden="true">
-                      1
+                      {"1"}
                     </span>
                   </IconTile>
                   <CardTitle className="leading-6">
-                    Install NeUI
+                    {"Install NeUI"}
                   </CardTitle>
                   <CardDescription className="text-white/70">
-                    Add the NeUI registry to your app, then pick the style that fits your stack and get set up in minutes.
+                    {"Add the NeUI registry to your app, then pick the style that fits your stack and get set up in minutes."}
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -121,14 +121,14 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-4 items-start relative">
                   <IconTile className="after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 overflow-clip" variant="frame" size="default">
                     <span className="font-medium text-lg" aria-hidden="true">
-                      2
+                      {"2"}
                     </span>
                   </IconTile>
                   <CardTitle className="leading-6">
-                    Find Components
+                    {"Find Components"}
                   </CardTitle>
                   <CardDescription className="text-white/70">
-                    Browse UI parts, blocks, icons, and kits, then pick the pieces for each page for a clear and smooth flow.
+                    {"Browse UI parts, blocks, icons, and kits, then pick the pieces for each page for a clear and smooth flow."}
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -140,14 +140,14 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-4 items-start relative">
                   <IconTile className="after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 overflow-clip" variant="frame" size="default">
                     <span className="font-medium text-lg" aria-hidden="true">
-                      3
+                      {"3"}
                     </span>
                   </IconTile>
                   <CardTitle className="leading-6">
-                    Add to Project
+                    {"Add to Project"}
                   </CardTitle>
                   <CardDescription className="text-white/70">
-                    Run the shadcn command to add each item and all the files it needs to your app with no extra setup work.
+                    {"Run the shadcn command to add each item and all the files it needs to your app with no extra setup work."}
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -159,14 +159,14 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-4 items-start relative">
                   <IconTile className="after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 overflow-clip" variant="frame" size="default">
                     <span className="font-medium text-lg" aria-hidden="true">
-                      4
+                      {"4"}
                     </span>
                   </IconTile>
                   <CardTitle className="leading-6">
-                    Customize
+                    {"Customize"}
                   </CardTitle>
                   <CardDescription className="text-white/70">
-                    Edit the source, link your data, and align each part with your theme and brand so it feels made for you.
+                    {"Edit the source, link your data, and align each part with your theme and brand so it feels made for you."}
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -178,14 +178,14 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-4 items-start relative">
                   <IconTile className="after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 overflow-clip" variant="frame" size="default">
                     <span className="font-medium text-lg" aria-hidden="true">
-                      5
+                      {"5"}
                     </span>
                   </IconTile>
                   <CardTitle className="leading-6">
-                    Ship Faster
+                    {"Ship Faster"}
                   </CardTitle>
                   <CardDescription className="text-white/70">
-                    Check each API, fix bad props, and ship clean UI with less time from first build to final launch.
+                    {"Check each API, fix bad props, and ship clean UI with less time from first build to final launch."}
                   </CardDescription>
                 </CardContent>
               </Card>

@@ -14,16 +14,16 @@ export function Pattern() {
       <Frame className="max-w-3xl w-full">
         <header className="flex flex-row gap-2 items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-1.5!">
           <div className="font-semibold text-sm">
-            Cashflow
+            {"Cashflow"}
           </div>
           <Select>
           <SelectTrigger className="min-w-[140px]" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
             <SelectValue>
-              12 months
+              {"12 months"}
             </SelectValue>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -32,32 +32,24 @@ export function Pattern() {
         <FramePanel className="space-y-4">
           <div className="flex flex-col gap-1">
             <div className="font-medium text-muted-foreground text-xs">
-              Total (Jan 01 - Dec 31, 2024)
+              {"Total (Jan 01 - Dec 31, 2024)"}
             </div>
             <div className="flex gap-2.5 items-center">
               <span className="font-semibold leading-none text-2xl">
-                $81,000
+                {"$81,000"}
               </span>
               <span className="[&_svg]:size-4 font-medium gap-1 inline-flex items-center text-emerald-500 text-xs">
                 <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                   <path d="M16 7h6v6"></path>
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
-                12.5%
+                {"12.5%"}
               </span>
             </div>
           </div>
+          <ChartContainer>
           <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[300px] justify-center text-xs w-full" data-chart="chart-_r_3_">
-            <style>{`
- [data-chart=chart-_r_3_] {
-  --color-value: var(--color-violet-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-value: var(--color-violet-500);
-}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--color-violet-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--color-violet-500);\n}\n" }} />
             <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
               <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                 <div className="recharts-wrapper" width="726" height="300" style={{position: "relative", cursor: "default", width: "726px", height: "300px"}}>
@@ -148,77 +140,77 @@ export function Pattern() {
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="74.18181818181819" y="276" textAnchor="middle" fill="#666">
                             <tspan x="74.18181818181819" dy="0.71em">
-                              FEB
+                              {"FEB"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="138.36363636363637" y="276" textAnchor="middle" fill="#666">
                             <tspan x="138.36363636363637" dy="0.71em">
-                              MAR
+                              {"MAR"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="202.54545454545456" y="276" textAnchor="middle" fill="#666">
                             <tspan x="202.54545454545456" dy="0.71em">
-                              APR
+                              {"APR"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="266.72727272727275" y="276" textAnchor="middle" fill="#666">
                             <tspan x="266.72727272727275" dy="0.71em">
-                              MAY
+                              {"MAY"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="330.90909090909093" y="276" textAnchor="middle" fill="#666">
                             <tspan x="330.90909090909093" dy="0.71em">
-                              JUN
+                              {"JUN"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="395.0909090909091" y="276" textAnchor="middle" fill="#666">
                             <tspan x="395.0909090909091" dy="0.71em">
-                              JUL
+                              {"JUL"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="459.2727272727273" y="276" textAnchor="middle" fill="#666">
                             <tspan x="459.2727272727273" dy="0.71em">
-                              AUG
+                              {"AUG"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="523.4545454545455" y="276" textAnchor="middle" fill="#666">
                             <tspan x="523.4545454545455" dy="0.71em">
-                              SEP
+                              {"SEP"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="587.6363636363637" y="276" textAnchor="middle" fill="#666">
                             <tspan x="587.6363636363637" dy="0.71em">
-                              OCT
+                              {"OCT"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="651.8181818181819" y="276" textAnchor="middle" fill="#666">
                             <tspan x="651.8181818181819" dy="0.71em">
-                              NOV
+                              {"NOV"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="12" x="713.6796875" y="276" textAnchor="middle" fill="#666">
                             <tspan x="713.6796875" dy="0.71em">
-                              DEC
+                              {"DEC"}
                             </tspan>
                           </text>
                         </g>
@@ -229,6 +221,7 @@ export function Pattern() {
               </div>
             </div>
           </div>
+          </ChartContainer>
         </FramePanel>
       </Frame>
     </div>

@@ -11,14 +11,14 @@ export function Pattern() {
             </svg>
             <p className="flex flex-1 flex-wrap gap-x-3 gap-y-1 items-center min-w-0 text-sm" id="coupon-6-heading">
               <span className="text-background">
-                20% off sitewide this weekend, ends Sunday at midnight
+                {"20% off sitewide this weekend, ends Sunday at midnight"}
               </span>
               <span className="bg-background/5 border border-background/30 border-dashed font-mono font-semibold px-2 py-0.5 rounded-md select-all text-background text-xs tracking-[0.18em] uppercase">
-                WEEKEND20
+                {"WEEKEND20"}
               </span>
             </p>
             <Button className="bg-background hover:bg-background/90 text-foreground" type="button" tabIndex="0" aria-label="Copy code WEEKEND20" extracted="1">
-              Copy code
+              {"Copy code"}
             </Button>
             <button className="flex hover:bg-background/10 hover:text-background items-center justify-center rounded-md shrink-0 size-7 text-background/70 transition-colors" type="button" aria-label="Dismiss promotion">
               <svg className="lucide lucide-x size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">

@@ -41,26 +41,26 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Permissions data grid
+        {"Permissions data grid"}
       </h1>
       <Frame className="w-full" spacing="sm">
         <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px">
             <div className="font-semibold text-balance text-sm">
-              Workspace Access Review
+              {"Workspace Access Review"}
             </div>
             <div className="text-muted-foreground text-xs">
               <span className="flex-wrap gap-1.5 inline-flex items-center">
                 <span>
-                  10 members
+                  {"10 members"}
                 </span>
                 <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  5 online
+                  {"5 online"}
                 </span>
                 <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  5 with review access
+                  {"5 with review access"}
                 </span>
               </span>
             </div>
@@ -71,7 +71,7 @@ export function Pattern() {
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <path d="m7 10 5 5 5-5"></path>
             </svg>
-            Export review
+            {"Export review"}
           </Button>
         </header>
         <FramePanel className="bg-card p-0! shadow-none!">
@@ -80,26 +80,26 @@ export function Pattern() {
               <TabsList className="gap-5" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                 <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
                   <span>
-                    General
+                    {"General"}
                   </span>
                   <span className="bg-muted inline-flex items-center justify-center min-w-5 px-1.5 py-0.5 rounded-md tabular-nums text-muted-foreground text-xs">
-                    5
+                    {"5"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
                   <span>
-                    Tags
+                    {"Tags"}
                   </span>
                   <span className="bg-muted inline-flex items-center justify-center min-w-5 px-1.5 py-0.5 rounded-md tabular-nums text-muted-foreground text-xs">
-                    6
+                    {"6"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_3_" compositeItemActive="">
                   <span>
-                    Permissions
+                    {"Permissions"}
                   </span>
                   <span className="bg-muted inline-flex items-center justify-center min-w-5 px-1.5 py-0.5 rounded-md tabular-nums text-muted-foreground text-xs">
-                    5
+                    {"5"}
                   </span>
                 </TabsTrigger>
               </TabsList>
@@ -111,11 +111,11 @@ export function Pattern() {
               <Select>
               <SelectTrigger className="w-[168px]" type="button" tabIndex="0" id="base-ui-_r_4_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                 <SelectValue>
-                  All roles
+                  {"All roles"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -139,20 +139,23 @@ export function Pattern() {
                     <path d="m2 2 20 20"></path>
                     <path d="M9 9v1.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h11"></path>
                   </svg>
-                  Unpin all
+                  {"Unpin all"}
                 </Button>
                 <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center px-3 text-muted-foreground text-sm">
-                  2 rows pinned
+                  {"2 rows pinned"}
                 </div>
               </ButtonGroup>
             </div>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_8_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport>
+                    <DataGridProvider>
                     <DataGridTable>
                       <colgroup>
                         <col style={{width: "40px"}} />
@@ -170,7 +173,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-foreground text-left text-left!" scope="col" aria-sort="ascending" data-col-id="member" data-header-id="member" data-header-depth="0" style={{width: "256px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                Member
+                                {"Member"}
                                 <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                   <path d="m5 12 7-7 7 7"></path>
                                   <path d="M12 19V5"></path>
@@ -181,7 +184,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" aria-sort="none" data-col-id="workspaceSettings" data-header-id="workspaceSettings" data-header-depth="0" style={{width: "148px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-medium h-6 hover:bg-secondary hover:text-foreground leading-4 max-w-[112px] mx-auto px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-balance text-center text-secondary-foreground/80 text-xs" type="button" tabIndex="0">
-                                Settings
+                                {"Settings"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -192,7 +195,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" aria-sort="none" data-col-id="workspaceBilling" data-header-id="workspaceBilling" data-header-depth="0" style={{width: "148px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-medium h-6 hover:bg-secondary hover:text-foreground leading-4 max-w-[112px] mx-auto px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-balance text-center text-secondary-foreground/80 text-xs" type="button" tabIndex="0">
-                                Billing
+                                {"Billing"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -203,7 +206,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" aria-sort="none" data-col-id="integrationSettings" data-header-id="integrationSettings" data-header-depth="0" style={{width: "148px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-medium h-6 hover:bg-secondary hover:text-foreground leading-4 max-w-[112px] mx-auto px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-balance text-center text-secondary-foreground/80 text-xs" type="button" tabIndex="0">
-                                Integrations
+                                {"Integrations"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -214,7 +217,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" aria-sort="none" data-col-id="workspaceUsers" data-header-id="workspaceUsers" data-header-depth="0" style={{width: "148px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-medium h-6 hover:bg-secondary hover:text-foreground leading-4 max-w-[112px] mx-auto px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-balance text-center text-secondary-foreground/80 text-xs" type="button" tabIndex="0">
-                                Users
+                                {"Users"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -225,7 +228,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" aria-sort="none" data-col-id="workspacePermissions" data-header-id="workspacePermissions" data-header-depth="0" style={{width: "148px"}}>
                             <div className="-ms-2 flex h-full items-center">
                               <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-medium h-6 hover:bg-secondary hover:text-foreground leading-4 max-w-[112px] mx-auto px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-balance text-center text-secondary-foreground/80 text-xs" type="button" tabIndex="0">
-                                Permissions
+                                {"Permissions"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -236,6 +239,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-foreground text-right" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" style={{width: "48px"}}></th>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="*:last:border-e-0 [&:not(:last-child)>td]:border-b bg-muted/30 data-[state=selected]:bg-muted/50 hover:bg-muted/50" data-row-id="leila-cole" data-row-pinned="top">
                           <td className="align-middle border-e px-2 py-1.5">
@@ -255,15 +259,15 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium text-foreground text-sm truncate">
-                                  Leila Cole
+                                  {"Leila Cole"}
                                 </div>
                                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs truncate">
                                   <span className="truncate">
-                                    Workspace owner
+                                    {"Workspace owner"}
                                   </span>
                                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Online
+                                    {"Online"}
                                   </span>
                                 </div>
                               </div>
@@ -339,15 +343,15 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium text-foreground text-sm truncate">
-                                  Aiden Brooks
+                                  {"Aiden Brooks"}
                                 </div>
                                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs truncate">
                                   <span className="truncate">
-                                    Platform admin
+                                    {"Platform admin"}
                                   </span>
                                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Last active 3m ago
+                                    {"Last active 3m ago"}
                                   </span>
                                 </div>
                               </div>
@@ -424,15 +428,15 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium text-foreground text-sm truncate">
-                                  Jonah Voss
+                                  {"Jonah Voss"}
                                 </div>
                                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs truncate">
                                   <span className="truncate">
-                                    Integrations lead
+                                    {"Integrations lead"}
                                   </span>
                                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Online
+                                    {"Online"}
                                   </span>
                                 </div>
                               </div>
@@ -509,15 +513,15 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium text-foreground text-sm truncate">
-                                  Kira Santos
+                                  {"Kira Santos"}
                                 </div>
                                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs truncate">
                                   <span className="truncate">
-                                    Growth ops lead
+                                    {"Growth ops lead"}
                                   </span>
                                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Online
+                                    {"Online"}
                                   </span>
                                 </div>
                               </div>
@@ -589,22 +593,22 @@ export function Pattern() {
                               <div className="relative shrink-0">
                                 <Avatar className="size-8" size="default">
                                   <AvatarFallback>
-                                    KO
+                                    {"KO"}
                                   </AvatarFallback>
                                 </Avatar>
                                 <span className="absolute bg-gray-500 bottom-0.5 right-0 ring-2 ring-background rounded-full size-2" aria-hidden="true"></span>
                               </div>
                               <div className="min-w-0">
                                 <div className="font-medium text-foreground text-sm truncate">
-                                  Kris Owens
+                                  {"Kris Owens"}
                                 </div>
                                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs truncate">
                                   <span className="truncate">
-                                    Support lead
+                                    {"Support lead"}
                                   </span>
                                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Last active 2d ago
+                                    {"Last active 2d ago"}
                                   </span>
                                 </div>
                               </div>
@@ -663,27 +667,32 @@ export function Pattern() {
                           </td>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_3d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    5
+                    {"5"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -691,26 +700,26 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 5 of 10
+                  {"1 - 5 of 10"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -719,6 +728,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </FramePanel>
       </Frame>

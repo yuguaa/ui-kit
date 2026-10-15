@@ -31,15 +31,15 @@ export function Pattern() {
         <header className="flex flex-col gap-3">
           <div className="flex flex-wrap gap-x-3 gap-y-1 items-end">
             <h1 className="font-semibold text-2xl tracking-tight">
-              Overview
+              {"Overview"}
             </h1>
             <span className="font-medium gap-1.5 inline-flex items-center pb-1 text-muted-foreground text-xs">
               <svg className="dark:text-blue-400 lucide lucide-headphones size-3.5 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
                 <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
               </svg>
-              Active Calls
+              {"Active Calls"}
               <span className="tabular-nums text-foreground">
-                294
+                {"294"}
               </span>
             </span>
           </div>
@@ -54,11 +54,11 @@ export function Pattern() {
                   <path d="M3 10h18"></path>
                 </svg>
                 <SelectValue>
-                  Last 7 days
+                  {"Last 7 days"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -66,11 +66,11 @@ export function Pattern() {
               <Select>
               <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Aggregation interval">
                 <SelectValue>
-                  Daily
+                  {"Daily"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -78,11 +78,11 @@ export function Pattern() {
               <Select>
               <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent scope">
                 <SelectValue>
-                  All agents
+                  {"All agents"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -93,7 +93,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Add Filter
+                {"Add Filter"}
               </DropdownMenuTrigger>
               </DropdownMenu>
             </div>
@@ -103,7 +103,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Add
+                {"Add"}
               </Button>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
@@ -111,7 +111,7 @@ export function Pattern() {
                   <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
-                Configure
+                {"Configure"}
               </DropdownMenuTrigger>
               </DropdownMenu>
             </div>
@@ -122,57 +122,57 @@ export function Pattern() {
             <div className="grid lg:grid-cols-6 sm:grid-cols-3">
               <button className="bg-muted/60 border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center lg:border-e min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 sm:border-e text-foreground text-start transition-colors" type="button" aria-pressed="true">
                 <span className="text-foreground text-xs transition-colors">
-                  Calls
+                  {"Calls"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  482,032
+                  {"482,032"}
                 </span>
                 <span className="absolute bg-foreground bottom-0 h-0.5 inset-x-4" aria-hidden="true"></span>
               </button>
               <button className="border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center lg:border-e min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 sm:border-e text-foreground text-start transition-colors" type="button" aria-pressed="false">
                 <span className="group-hover:text-foreground text-muted-foreground text-xs transition-colors">
-                  Avg. duration
+                  {"Avg. duration"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  2:55
+                  {"2:55"}
                 </span>
               </button>
               <button className="border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center lg:border-e min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 text-foreground text-start transition-colors" type="button" aria-pressed="false">
                 <span className="group-hover:text-foreground text-muted-foreground text-xs transition-colors">
-                  Total cost
+                  {"Total cost"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  207,732
+                  {"207,732"}
                   <span className="font-normal ms-1 text-muted-foreground text-xs transition-colors">
-                    credits
+                    {"credits"}
                   </span>
                 </span>
               </button>
               <button className="border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center lg:border-e min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 sm:border-e text-foreground text-start transition-colors" type="button" aria-pressed="false">
                 <span className="group-hover:text-foreground text-muted-foreground text-xs transition-colors">
-                  Avg. cost per call
+                  {"Avg. cost per call"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  0.43
+                  {"0.43"}
                   <span className="font-normal ms-1 text-muted-foreground text-xs transition-colors">
-                    credits
+                    {"credits"}
                   </span>
                 </span>
               </button>
               <button className="border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center lg:border-e min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 sm:border-e text-foreground text-start transition-colors" type="button" aria-pressed="false">
                 <span className="group-hover:text-foreground text-muted-foreground text-xs transition-colors">
-                  Total LLM cost
+                  {"Total LLM cost"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  $46,342
+                  {"$46,342"}
                 </span>
               </button>
               <button className="border-b flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 gap-1 group hover:bg-muted/40 hover:text-foreground items-start justify-center min-h-18 min-w-0 outline-none px-4 py-3 relative sm:border-b-0 text-foreground text-start transition-colors" type="button" aria-pressed="false">
                 <span className="group-hover:text-foreground text-muted-foreground text-xs transition-colors">
-                  Avg. LLM cost
+                  {"Avg. LLM cost"}
                 </span>
                 <span className="font-semibold tabular-nums text-sm transition-colors">
-                  $0.096
+                  {"$0.096"}
                 </span>
               </button>
             </div>
@@ -181,40 +181,22 @@ export function Pattern() {
             <div className="pb-3 pt-6 px-4">
               <div className="flex flex-wrap gap-2 items-center justify-end mb-5 text-muted-foreground text-xs">
                 <span>
-                  Min
+                  {"Min"}
                   <span className="font-medium tabular-nums text-foreground">
-                    43,457
+                    {"43,457"}
                   </span>
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Max
+                  {"Max"}
                   <span className="font-medium tabular-nums text-foreground">
-                    81,036
+                    {"81,036"}
                   </span>
                 </span>
               </div>
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[400px] justify-center text-xs w-full" data-chart="chart-_r_j_">
-                <style>{`
- [data-chart=chart-_r_j_] {
-  --color-calls: var(--color-blue-600);
-  --color-avgDuration: var(--color-blue-600);
-  --color-totalCost: var(--color-blue-600);
-  --color-avgCost: var(--color-blue-600);
-  --color-llmCost: var(--color-blue-600);
-  --color-avgLlmCost: var(--color-blue-600);
-}
-
-
-.dark [data-chart=chart-_r_j_] {
-  --color-calls: var(--color-blue-600);
-  --color-avgDuration: var(--color-blue-600);
-  --color-totalCost: var(--color-blue-600);
-  --color-avgCost: var(--color-blue-600);
-  --color-llmCost: var(--color-blue-600);
-  --color-avgLlmCost: var(--color-blue-600);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_j_] {\n  --color-calls: var(--color-blue-600);\n  --color-avgDuration: var(--color-blue-600);\n  --color-totalCost: var(--color-blue-600);\n  --color-avgCost: var(--color-blue-600);\n  --color-llmCost: var(--color-blue-600);\n  --color-avgLlmCost: var(--color-blue-600);\n}\n\n\n.dark [data-chart=chart-_r_j_] {\n  --color-calls: var(--color-blue-600);\n  --color-avgDuration: var(--color-blue-600);\n  --color-totalCost: var(--color-blue-600);\n  --color-avgCost: var(--color-blue-600);\n  --color-llmCost: var(--color-blue-600);\n  --color-avgLlmCost: var(--color-blue-600);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="1110" height="400" style={{position: "relative", cursor: "default", width: "1110px", height: "400px"}}>
@@ -285,49 +267,49 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="19.2109375" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="19.2109375" dy="0.71em">
-                                  18 Aug
+                                  {"18 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="183.66666666666666" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="183.66666666666666" dy="0.71em">
-                                  19 Aug
+                                  {"19 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="367.3333333333333" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="367.3333333333333" dy="0.71em">
-                                  20 Aug
+                                  {"20 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="551" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="551" dy="0.71em">
-                                  21 Aug
+                                  {"21 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="734.6666666666666" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="734.6666666666666" dy="0.71em">
-                                  22 Aug
+                                  {"22 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="918.3333333333333" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="918.3333333333333" dy="0.71em">
-                                  23 Aug
+                                  {"23 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="1089.5" y="384" textAnchor="middle" fill="#666">
                                 <tspan x="1089.5" dy="0.71em">
-                                  24 Aug
+                                  {"24 Aug"}
                                 </tspan>
                               </text>
                             </g>
@@ -338,9 +320,10 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
               <div className="flex justify-end mt-2">
                 <Button type="button" tabIndex="0">
-                  View more
+                  {"View more"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -356,7 +339,7 @@ export function Pattern() {
               <div className="min-w-0">
                 <div className="flex gap-1.5 items-center">
                   <div className="font-semibold text-sm">
-                    Most Called Agents
+                    {"Most Called Agents"}
                   </div>
                   <svg className="lucide lucide-circle-question-mark size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
@@ -365,17 +348,17 @@ export function Pattern() {
                   </svg>
                 </div>
                 <div className="text-muted-foreground text-xs">
-                  Call volume by agent
+                  {"Call volume by agent"}
                 </div>
               </div>
               <Select>
               <SelectTrigger className="min-w-28 shrink-0" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent metric">
                 <SelectValue>
-                  Calls
+                  {"Calls"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -389,12 +372,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Docs Support Agent
+                        {"Docs Support Agent"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-blue-400 font-semibold justify-self-end tabular-nums text-blue-600 text-end text-xs">
-                    190,241
+                    {"190,241"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -403,12 +386,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-violet-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Website Agent
+                        {"Website Agent"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-violet-400 font-semibold justify-self-end tabular-nums text-end text-violet-600 text-xs">
-                    114,921
+                    {"114,921"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -417,12 +400,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-amber-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Billing Triage Agent
+                        {"Billing Triage Agent"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-amber-400 font-semibold justify-self-end tabular-nums text-amber-600 text-end text-xs">
-                    53,908
+                    {"53,908"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -431,12 +414,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Acme Co.
+                        {"Acme Co."}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-emerald-400 font-semibold justify-self-end tabular-nums text-emerald-600 text-end text-xs">
-                    34,656
+                    {"34,656"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -445,12 +428,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-rose-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Store Assistant
+                        {"Store Assistant"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-rose-400 font-semibold justify-self-end tabular-nums text-end text-rose-600 text-xs">
-                    32,024
+                    {"32,024"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -459,12 +442,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-cyan-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Onboarding Coach v2.4 Advanced
+                        {"Onboarding Coach v2.4 Advanced"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-cyan-400 font-semibold justify-self-end tabular-nums text-cyan-600 text-end text-xs">
-                    29,591
+                    {"29,591"}
                   </span>
                 </div>
                 <div className="gap-3 grid grid-cols-[minmax(0,1fr)_3.5rem] items-center min-w-0">
@@ -473,12 +456,12 @@ export function Pattern() {
                     <span className="flex font-medium gap-2 h-full items-center min-w-0 px-3 relative text-xs z-10">
                       <span className="bg-indigo-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="truncate">
-                        Returns Concierge Agent
+                        {"Returns Concierge Agent"}
                       </span>
                     </span>
                   </div>
                   <span className="dark:text-indigo-400 font-semibold justify-self-end tabular-nums text-end text-indigo-600 text-xs">
-                    26,691
+                    {"26,691"}
                   </span>
                 </div>
               </div>
@@ -488,14 +471,14 @@ export function Pattern() {
             <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="min-w-0">
                 <div className="font-semibold text-sm">
-                  Integrations
+                  {"Integrations"}
                 </div>
                 <div className="text-muted-foreground text-sm">
-                  Connections for voice ops
+                  {"Connections for voice ops"}
                 </div>
               </div>
               <Button type="button" tabIndex="0">
-                Manage
+                {"Manage"}
                 <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                   <path d="M15 3h6v6"></path>
                   <path d="M10 14 21 3"></path>
@@ -517,18 +500,18 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium text-sm">
-                        OpenAI
+                        {"OpenAI"}
                       </ItemTitle>
                       <ItemDescription className="text-xs truncate">
-                        Transcripts and response traces
+                        {"Transcripts and response traces"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-wrap gap-2 justify-end ms-auto">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Live
+                        {"Live"}
                       </Badge>
                       <Button type="button" tabIndex="0">
-                        Disconnect
+                        {"Disconnect"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -548,18 +531,18 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium text-sm">
-                        Slack
+                        {"Slack"}
                       </ItemTitle>
                       <ItemDescription className="text-xs truncate">
-                        Escalation alerts and handoffs
+                        {"Escalation alerts and handoffs"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-wrap gap-2 justify-end ms-auto">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Live
+                        {"Live"}
                       </Badge>
                       <Button type="button" tabIndex="0">
-                        Disconnect
+                        {"Disconnect"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -580,18 +563,18 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium text-sm">
-                        Voice Gateway
+                        {"Voice Gateway"}
                       </ItemTitle>
                       <ItemDescription className="text-xs truncate">
-                        SIP routing and failover
+                        {"SIP routing and failover"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-wrap gap-2 justify-end ms-auto">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Live
+                        {"Live"}
                       </Badge>
                       <Button type="button" tabIndex="0">
-                        Disconnect
+                        {"Disconnect"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -619,18 +602,18 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium text-sm">
-                        Google Meet
+                        {"Google Meet"}
                       </ItemTitle>
                       <ItemDescription className="text-xs truncate">
-                        Meetings and call context
+                        {"Meetings and call context"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-wrap gap-2 justify-end ms-auto">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Syncing
+                        {"Syncing"}
                       </Badge>
                       <Button type="button" tabIndex="0">
-                        Disconnect
+                        {"Disconnect"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -659,18 +642,18 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium text-sm">
-                        Zoom
+                        {"Zoom"}
                       </ItemTitle>
                       <ItemDescription className="text-xs truncate">
-                        Voice sessions and recordings
+                        {"Voice sessions and recordings"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-wrap gap-2 justify-end ms-auto">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Expired
+                        {"Expired"}
                       </Badge>
                       <Button type="button" tabIndex="0">
-                        Reconnect
+                        {"Reconnect"}
                       </Button>
                     </ItemActions>
                   </Item>

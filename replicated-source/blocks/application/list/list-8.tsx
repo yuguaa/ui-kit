@@ -11,7 +11,7 @@ export function Pattern() {
       <Frame className="@container max-w-md w-full">
         <FramePanel className="px-3.5! py-4!">
           <h2 className="font-medium text-base text-foreground">
-            Integrations
+            {"Integrations"}
           </h2>
         </FramePanel>
         <FramePanel className="p-5!">
@@ -37,14 +37,14 @@ export function Pattern() {
                 </svg>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Zoom
+                    {"Zoom"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Schedule and host video meetings
+                    {"Schedule and host video meetings"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
-                  Connect
+                  {"Connect"}
                 </Button>
               </div>
               <Separator className="bg-transparent border-dashed border-t my-3.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -61,14 +61,14 @@ export function Pattern() {
                 </svg>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Slack
+                    {"Slack"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Alerts and slash commands
+                    {"Alerts and slash commands"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
-                  Connect
+                  {"Connect"}
                 </Button>
               </div>
               <Separator className="bg-transparent border-dashed border-t my-3.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -131,14 +131,14 @@ export function Pattern() {
                 </svg>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Reddit
+                    {"Reddit"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Publish posts and track engagement
+                    {"Publish posts and track engagement"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
-                  Connect
+                  {"Connect"}
                 </Button>
               </div>
               <Separator className="bg-transparent border-dashed border-t my-3.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -162,14 +162,14 @@ export function Pattern() {
                 </svg>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Supabase
+                    {"Supabase"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Manage backend database and auth
+                    {"Manage backend database and auth"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
-                  Connect
+                  {"Connect"}
                 </Button>
               </div>
               <Separator className="bg-transparent border-dashed border-t my-3.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -192,14 +192,14 @@ export function Pattern() {
                 </span>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Clerk
+                    {"Clerk"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Enable user authentication and SSO
+                    {"Enable user authentication and SSO"}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
-                  Connect
+                  {"Connect"}
                 </Button>
               </div>
             </li>
@@ -212,7 +212,7 @@ export function Pattern() {
               <path d="M10 14 21 3"></path>
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             </svg>
-            See All Integrations
+            {"See All Integrations"}
           </Button>
         </FramePanel>
       </Frame>

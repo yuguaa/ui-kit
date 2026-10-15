@@ -26,7 +26,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-1.5! py-(--frame-panel-footer-py) py-2.5! text-center">
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Resend
+                {"Resend"}
               </a>
             </footer>
           </Frame>
@@ -40,7 +40,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-1.5! py-(--frame-panel-footer-py) py-2.5! text-center">
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Stripe
+                {"Stripe"}
               </a>
             </footer>
           </Frame>
@@ -66,7 +66,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-1.5! py-(--frame-panel-footer-py) py-2.5! text-center">
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Supabase
+                {"Supabase"}
               </a>
             </footer>
           </Frame>
@@ -87,7 +87,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-1.5! py-(--frame-panel-footer-py) py-2.5! text-center">
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                OpenAI
+                {"OpenAI"}
               </a>
             </footer>
           </Frame>
@@ -97,7 +97,7 @@ export function Pattern() {
                 <span className="dark:hidden" aria-hidden="true">
                   <svg className="size-7" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                   </svg>
@@ -105,7 +105,7 @@ export function Pattern() {
                 <span className="dark:block hidden" aria-hidden="true">
                   <svg className="size-7" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                   </svg>
@@ -114,7 +114,7 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-1.5! py-(--frame-panel-footer-py) py-2.5! text-center">
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Anthropic
+                {"Anthropic"}
               </a>
             </footer>
           </Frame>

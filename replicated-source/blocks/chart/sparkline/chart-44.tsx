@@ -51,16 +51,16 @@ export function Pattern() {
             </IconTile>
             <div className="flex flex-col gap-px min-w-0">
               <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                Objectives
+                {"Objectives"}
               </div>
               <div className="text-muted-foreground text-sm truncate">
                 <span className="flex gap-1.5 items-center min-w-0 tabular-nums">
                   <span className="shrink-0">
-                    7 SLOs
+                    {"7 SLOs"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    4 need attention
+                    {"4 need attention"}
                   </span>
                 </span>
               </div>
@@ -70,19 +70,19 @@ export function Pattern() {
             <ToggleGroup className="@max-lg/head:w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Filter SLOs" style={{"--gap": "0"}}>
               <ToggleGroupItem className="@max-lg/head:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline dark:data-pressed:bg-muted data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  All
+                  {"All"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                  7
+                  {"7"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="@max-lg/head:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline dark:data-pressed:bg-muted data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                 <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Needs attention
+                  {"Needs attention"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                  4
+                  {"4"}
                 </span>
               </ToggleGroupItem>
             </ToggleGroup>
@@ -98,11 +98,11 @@ export function Pattern() {
                       <path d="M7 4v16"></path>
                     </svg>
                   </span>
-                  Budget left
+                  {"Budget left"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -113,7 +113,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New SLO
+                {"New SLO"}
               </DialogTrigger>
               </Dialog>
               <DropdownMenu>
@@ -134,7 +134,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Ledger write success
+                    {"Ledger write success"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -148,12 +148,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        ledger-worker
+                        {"ledger-worker"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99.99% over 30d
+                      {"99.99% over 30d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -180,10 +180,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="font-medium text-destructive text-sm">
-                        42%
+                        {"42%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        over
+                        {"over"}
                       </span>
                     </span>
                   </div>
@@ -233,7 +233,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    SMS provider availability
+                    {"SMS provider availability"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -246,12 +246,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        notifications
+                        {"notifications"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99.5% over 28d
+                      {"99.5% over 28d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -278,10 +278,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="font-medium text-destructive text-sm">
-                        20%
+                        {"20%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        over
+                        {"over"}
                       </span>
                     </span>
                   </div>
@@ -330,7 +330,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Index freshness
+                    {"Index freshness"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -343,12 +343,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        search-indexer
+                        {"search-indexer"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99% over 7d
+                      {"99% over 7d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -372,10 +372,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="dark:text-warning font-medium text-sm text-warning-foreground">
-                        15%
+                        {"15%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        left
+                        {"left"}
                       </span>
                     </span>
                   </div>
@@ -424,7 +424,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Payout batch on time
+                    {"Payout batch on time"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -437,12 +437,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        payouts-scheduler
+                        {"payouts-scheduler"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99.5% over 30d
+                      {"99.5% over 30d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -466,10 +466,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="dark:text-warning font-medium text-sm text-warning-foreground">
-                        15%
+                        {"15%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        left
+                        {"left"}
                       </span>
                     </span>
                   </div>
@@ -518,7 +518,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Charge API availability
+                    {"Charge API availability"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -532,12 +532,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        payments-api
+                        {"payments-api"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99.95% over 28d
+                      {"99.95% over 28d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -564,10 +564,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="font-medium text-foreground text-sm">
-                        48%
+                        {"48%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        left
+                        {"left"}
                       </span>
                     </span>
                   </div>
@@ -617,7 +617,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Push delivery latency
+                    {"Push delivery latency"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -630,12 +630,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        notifications
+                        {"notifications"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99% over 7d
+                      {"99% over 7d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -662,10 +662,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="font-medium text-foreground text-sm">
-                        70%
+                        {"70%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        left
+                        {"left"}
                       </span>
                     </span>
                   </div>
@@ -715,7 +715,7 @@ export function Pattern() {
               <ItemContent className="@lg/slos:basis-0 basis-full gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    Refund API availability
+                    {"Refund API availability"}
                   </span>
                 </ItemTitle>
                 <ItemDescription className="text-xs">
@@ -729,12 +729,12 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        payments-api
+                        {"payments-api"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 tabular-nums">
-                      99.9% over 28d
+                      {"99.9% over 28d"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -761,10 +761,10 @@ export function Pattern() {
                     </svg>
                     <span className="flex gap-1 items-baseline tabular-nums">
                       <span className="font-medium text-foreground text-sm">
-                        88%
+                        {"88%"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        left
+                        {"left"}
                       </span>
                     </span>
                   </div>

@@ -19,13 +19,13 @@ export function Pattern() {
       <Card className="gap-0 max-w-[360px] overflow-hidden py-0 w-full" size="default">
         <CardHeader className="border-b flex items-center justify-between p-4! relative z-10">
           <CardTitle className="font-medium text-sm">
-            Capital Inflows
+            {"Capital Inflows"}
           </CardTitle>
           <CardAction>
             <DropdownMenu>
             <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button inline-flex items-center justify-between min-w-24 outline-none px-3 select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Change inflow range" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false" extracted="1">
               <span>
-                Last Week
+                {"Last Week"}
               </span>
               <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -42,21 +42,9 @@ export function Pattern() {
           </div>
           <div className="pb-4 pt-5 px-5 relative">
             <div className="h-[158px] max-w-[300px] mx-auto relative w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-full justify-center overflow-visible text-xs w-full" data-chart="chart-_r_5_" role="img" aria-label="Capital inflows for Last Week: $12.4M">
-                <style>{`
- [data-chart=chart-_r_5_] {
-  --color-wavemark: oklch(57% 0.13 184);
-  --color-envato: oklch(76% 0.17 84);
-  --color-qbridge: oklch(65% 0.21 45);
-}
-
-
-.dark [data-chart=chart-_r_5_] {
-  --color-wavemark: oklch(57% 0.13 184);
-  --color-envato: oklch(76% 0.17 84);
-  --color-qbridge: oklch(65% 0.21 45);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_5_] {\n  --color-wavemark: oklch(57% 0.13 184);\n  --color-envato: oklch(76% 0.17 84);\n  --color-qbridge: oklch(65% 0.21 45);\n}\n\n\n.dark [data-chart=chart-_r_5_] {\n  --color-wavemark: oklch(57% 0.13 184);\n  --color-envato: oklch(76% 0.17 84);\n  --color-qbridge: oklch(65% 0.21 45);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="300" height="158" style={{position: "relative", cursor: "default", width: "300px", height: "158px"}}>
@@ -106,12 +94,13 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
               <div className="absolute flex flex-col inset-x-0 items-center pointer-events-none top-[82px]">
                 <span className="text-muted-foreground text-xs">
-                  Capital In
+                  {"Capital In"}
                 </span>
                 <span className="font-medium text-2xl">
-                  $12.4M
+                  {"$12.4M"}
                 </span>
               </div>
             </div>
@@ -132,10 +121,10 @@ export function Pattern() {
                   </Item>
                   <div className="min-w-0">
                     <div className="text-muted-foreground text-xs">
-                      WaveMark
+                      {"WaveMark"}
                     </div>
                     <div className="font-medium text-base">
-                      $7.6M
+                      {"$7.6M"}
                     </div>
                   </div>
                 </div>
@@ -157,10 +146,10 @@ export function Pattern() {
                   </Item>
                   <div className="min-w-0">
                     <div className="text-muted-foreground text-xs">
-                      Envato Inc.
+                      {"Envato Inc."}
                     </div>
                     <div className="font-medium text-base">
-                      $3.4M
+                      {"$3.4M"}
                     </div>
                   </div>
                 </div>
@@ -181,10 +170,10 @@ export function Pattern() {
                   </Item>
                   <div className="min-w-0">
                     <div className="text-muted-foreground text-xs">
-                      QBridge B.V.
+                      {"QBridge B.V."}
                     </div>
                     <div className="font-medium text-base">
-                      $1.2M
+                      {"$1.2M"}
                     </div>
                   </div>
                 </div>

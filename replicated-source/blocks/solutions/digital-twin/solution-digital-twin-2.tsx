@@ -14,7 +14,7 @@ export function Pattern() {
   return (
     <main className="md:h-svh min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Kart Live Timing
+        {"Kart Live Timing"}
       </h1>
       <div className="bg-zinc-950 dark isolate md:h-svh min-h-svh overflow-hidden relative text-foreground w-full">
         <div className="hidden" aria-hidden="true">
@@ -57,17 +57,17 @@ export function Pattern() {
                   <div className="flex gap-1.5 h-4 items-center text-xs">
                     <span className="bg-red-500 motion-safe:animate-pulse rounded-full size-1.5" aria-hidden="true"></span>
                     <span className="[text-box:trim-both_cap_alphabetic] text-foreground">
-                      Live
+                      {"Live"}
                     </span>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                      09:35
+                      {"09:35"}
                     </span>
                   </div>
                   <div className="flex gap-2 items-center">
                     <span className="font-extralight leading-none tabular-nums text-2xl">
-                      Lap 13
+                      {"Lap 13"}
                       <span className="text-base text-muted-foreground">
-                        /20
+                        {"/20"}
                       </span>
                     </span>
                     <Button type="button" tabIndex="0" aria-label="Pause race" extracted="1">
@@ -81,7 +81,7 @@ export function Pattern() {
                 <div className="@3xl/stage:mx-6 flex-1 min-w-0 relative">
                   <div className="flex h-4 items-center justify-between mb-1 text-muted-foreground text-xs">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Gap to Leader
+                      {"Gap to Leader"}
                     </span>
                   </div>
                   <div className="h-14 relative" role="toolbar" aria-label="Karts by interval to the leader">
@@ -89,7 +89,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(0%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-red-500 w-6" type="button" aria-pressed="false" aria-label="P1, kart 7, Rafa Okoye">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          7
+                          {"7"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -97,7 +97,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(4.91586%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-sky-400 w-6" type="button" aria-pressed="false" aria-label="P2, kart 23, Lena Brandt">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          23
+                          {"23"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -105,7 +105,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(11.7521%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-green-500 w-6" type="button" aria-pressed="false" aria-label="P3, kart 11, Kai Moreno">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          11
+                          {"11"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -113,7 +113,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(14.8085%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-amber-400 w-6" type="button" aria-pressed="false" aria-label="P4, kart 4, Amira Hale">
                         <span className="-translate-y-5 font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          4
+                          {"4"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -121,7 +121,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(21.4239%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-orange-500 w-6" type="button" aria-pressed="false" aria-label="P5, kart 31, Jonas Vik">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          31
+                          {"31"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -129,7 +129,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(23.7955%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-blue-500 w-6" type="button" aria-pressed="false" aria-label="P6, kart 9, Mei Arata">
                         <span className="-translate-y-5 font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          9
+                          {"9"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -137,7 +137,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(30.4266%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-zinc-100 w-6" type="button" aria-pressed="false" aria-label="P7, kart 16, Dario Kell">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          16
+                          {"16"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -145,7 +145,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(33.9449%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-emerald-500 w-6" type="button" aria-pressed="false" aria-label="P8, kart 42, Ines Duval">
                         <span className="-translate-y-5 font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          42
+                          {"42"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -153,7 +153,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(39.6616%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-yellow-400 w-6" type="button" aria-pressed="false" aria-label="P9, kart 3, Tomas Reyes">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          3
+                          {"3"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -161,7 +161,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(45.2186%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-rose-400 w-6" type="button" aria-pressed="false" aria-label="P10, kart 88, Zara Holm">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          88
+                          {"88"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -169,7 +169,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(51.0905%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-teal-400 w-6" type="button" aria-pressed="false" aria-label="P11, kart 12, Niko Saar">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          12
+                          {"12"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -177,7 +177,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(55.1116%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-stone-300 w-6" type="button" aria-pressed="false" aria-label="P12, kart 27, Ayla Brook">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          27
+                          {"27"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -185,7 +185,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(62.8378%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-cyan-500 w-6" type="button" aria-pressed="false" aria-label="P13, kart 55, Hugo Lane">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          55
+                          {"55"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -193,7 +193,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(65.1548%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-orange-300 w-6" type="button" aria-pressed="false" aria-label="P14, kart 19, Vera Quist">
                         <span className="-translate-y-5 font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          19
+                          {"19"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -201,7 +201,7 @@ export function Pattern() {
                     <div className="absolute bottom-0 duration-300 ease-out inset-x-0 motion-reduce:transition-none pointer-events-none transition-transform" style={{transform: "translateX(75.8449%)"}}>
                       <button className="-translate-x-1/2 flex flex-col gap-1 group/kart items-center outline-none pointer-events-auto text-zinc-400 w-6" type="button" aria-pressed="false" aria-label="P15, kart 70, Sami Roux">
                         <span className="font-light leading-none opacity-85 tabular-nums text-sm text-white">
-                          70
+                          {"70"}
                         </span>
                         <span className="bg-current duration-150 group-focus-visible/kart:ring-2 group-focus-visible/kart:ring-ring group-hover/kart:scale-125 ring-current/30 rounded-full size-2 transition-transform" aria-hidden="true"></span>
                       </button>
@@ -209,33 +209,33 @@ export function Pattern() {
                   </div>
                   <div className="h-3 mt-1 relative tabular-nums text-muted-foreground text-xs" aria-hidden="true">
                     <span className="-translate-x-1/2 absolute" style={{left: "0%"}}>
-                      0
+                      {"0"}
                     </span>
                     <span className="-translate-x-1/2 absolute" style={{left: "22%"}}>
-                      +5s
+                      {"+5s"}
                     </span>
                     <span className="-translate-x-1/2 absolute" style={{left: "44%"}}>
-                      +10s
+                      {"+10s"}
                     </span>
                     <span className="-translate-x-1/2 absolute" style={{left: "66%"}}>
-                      +15s
+                      {"+15s"}
                     </span>
                     <span className="-translate-x-1/2 absolute" style={{left: "88%"}}>
-                      +20s
+                      {"+20s"}
                     </span>
                   </div>
                 </div>
                 <div className="@3xl/stage:flex-col @3xl/stage:items-end @3xl/stage:justify-center @3xl/stage:w-36 flex gap-3 items-center justify-between shrink-0">
                   <span className="text-muted-foreground text-xs">
-                    Fastest Lap
+                    {"Fastest Lap"}
                   </span>
                   <span className="flex gap-2 items-center">
                     <span className="font-extralight leading-none tabular-nums text-lg">
-                      0:47.117
+                      {"0:47.117"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        23
+                        {"23"}
                       </span>
                     </Badge>
                   </span>
@@ -246,20 +246,20 @@ export function Pattern() {
               <div className="flex gap-4 items-start justify-between">
                 <div className="flex flex-col gap-2 min-w-0">
                   <h2 className="@3xl/stage:text-6xl font-extralight leading-none text-4xl text-white/15 tracking-tight">
-                    Kenari Kart Circuit
+                    {"Kenari Kart Circuit"}
                   </h2>
                   <p className="@max-lg/stage:flex-col @max-lg/stage:items-start flex gap-1.5 items-center text-white/45 text-xs">
                     <span>
-                      Sepang, Selangor
+                      {"Sepang, Selangor"}
                     </span>
                     <span className="@max-lg/stage:hidden bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="flex gap-1.5 items-center">
                       <span className="tabular-nums">
-                        1,200 m
+                        {"1,200 m"}
                       </span>
                       <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span>
-                        14 corners
+                        {"14 corners"}
                       </span>
                     </span>
                   </p>
@@ -268,12 +268,12 @@ export function Pattern() {
                   <ToggleGroup className="backdrop-blur-xl bg-white/10 p-0.5" data-orientation="horizontal" aria-orientation="horizontal" role="group" spacing="1" aria-label="Map view" style={{"--gap": "1"}}>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="default" size="default" spacing="1">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        3D
+                        {"3D"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="1">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        2D
+                        {"2D"}
                       </span>
                     </ToggleGroupItem>
                   </ToggleGroup>
@@ -301,15 +301,15 @@ export function Pattern() {
               <div className="flex flex-1 items-center justify-center"></div>
               <p className="flex gap-1.5 items-center max-md:hidden self-start text-muted-foreground text-xs">
                 <span>
-                  Click a helmet to follow
+                  {"Click a helmet to follow"}
                 </span>
                 <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Drag to orbit
+                  {"Drag to orbit"}
                 </span>
                 <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Scroll to zoom
+                  {"Scroll to zoom"}
                 </span>
               </p>
             </div>
@@ -320,370 +320,370 @@ export function Pattern() {
                 <div className="flex gap-2 h-6 items-center justify-between">
                   <h2 className="font-medium text-sm">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Standings
+                      {"Standings"}
                     </span>
                   </h2>
                   <span className="tabular-nums text-muted-foreground text-xs">
-                    Lap 13 of 20
+                    {"Lap 13 of 20"}
                   </span>
                 </div>
                 <div className="gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] items-center px-2 text-foreground/70 text-xs" aria-hidden="true">
                   <span>
-                    Pos
+                    {"Pos"}
                   </span>
                   <span>
-                    Driver
+                    {"Driver"}
                   </span>
                   <span className="text-right">
-                    Laps
+                    {"Laps"}
                   </span>
                   <span className="text-right">
-                    Best
+                    {"Best"}
                   </span>
                 </div>
                 <ol className="-mx-1 flex flex-1 flex-col gap-0.5 min-h-0 overflow-y-auto px-1 scroll-fade">
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-white">
-                        1
+                        {"1"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            7
+                            {"7"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Rafa Okoye
+                          {"Rafa Okoye"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        12
+                        {"12"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.148
+                        {"0:47.148"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-white">
-                        2
+                        {"2"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            23
+                            {"23"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Lena Brandt
+                          {"Lena Brandt"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        12
+                        {"12"}
                       </span>
                       <span className="font-medium tabular-nums text-foreground text-right text-xs">
-                        0:47.117
+                        {"0:47.117"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-white">
-                        3
+                        {"3"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            11
+                            {"11"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Kai Moreno
+                          {"Kai Moreno"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        12
+                        {"12"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.448
+                        {"0:47.448"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        4
+                        {"4"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            4
+                            {"4"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Amira Hale
+                          {"Amira Hale"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        12
+                        {"12"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.473
+                        {"0:47.473"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        5
+                        {"5"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            31
+                            {"31"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Jonas Vik
+                          {"Jonas Vik"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.514
+                        {"0:47.514"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        6
+                        {"6"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            9
+                            {"9"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Mei Arata
+                          {"Mei Arata"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.641
+                        {"0:47.641"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        7
+                        {"7"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            16
+                            {"16"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Dario Kell
+                          {"Dario Kell"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.517
+                        {"0:47.517"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        8
+                        {"8"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            42
+                            {"42"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Ines Duval
+                          {"Ines Duval"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.802
+                        {"0:47.802"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        9
+                        {"9"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            3
+                            {"3"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Tomas Reyes
+                          {"Tomas Reyes"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.696
+                        {"0:47.696"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        10
+                        {"10"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            88
+                            {"88"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Zara Holm
+                          {"Zara Holm"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.830
+                        {"0:47.830"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        11
+                        {"11"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            12
+                            {"12"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Niko Saar
+                          {"Niko Saar"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:47.838
+                        {"0:47.838"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        12
+                        {"12"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            27
+                            {"27"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Ayla Brook
+                          {"Ayla Brook"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:48.193
+                        {"0:48.193"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        13
+                        {"13"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            55
+                            {"55"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Hugo Lane
+                          {"Hugo Lane"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:48.236
+                        {"0:48.236"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        14
+                        {"14"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            19
+                            {"19"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Vera Quist
+                          {"Vera Quist"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:48.321
+                        {"0:48.321"}
                       </span>
                     </button>
                   </li>
                   <li>
                     <button className="duration-150 focus-visible:ring-2 focus-visible:ring-ring gap-2 grid grid-cols-[1.75rem_minmax(0,1fr)_2.5rem_4.25rem] h-9 hover:bg-white/[0.06] items-center motion-reduce:transition-none outline-none px-2 rounded-full text-left text-sm transition-colors w-full" type="button" aria-pressed="false">
                       <span className="font-light tabular-nums text-muted-foreground">
-                        15
+                        {"15"}
                       </span>
                       <span className="flex gap-2 items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/5 border border-white/15 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-light gap-1 h-5 min-w-7 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-white text-xs transition-shadow">
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            70
+                            {"70"}
                           </span>
                         </Badge>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          Sami Roux
+                          {"Sami Roux"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right">
-                        11
+                        {"11"}
                       </span>
                       <span className="tabular-nums text-muted-foreground text-right text-xs">
-                        0:48.356
+                        {"0:48.356"}
                       </span>
                     </button>
                   </li>
@@ -698,33 +698,33 @@ export function Pattern() {
                 <div className="flex gap-3 items-start justify-between">
                   <div className="flex flex-col">
                     <span className="font-extralight leading-none tabular-nums text-5xl">
-                      P1
+                      {"P1"}
                     </span>
                     <span className="font-extralight mt-1 tabular-nums text-sm text-white/80">
-                      #7
+                      {"#7"}
                     </span>
                   </div>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-white/40 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Leader
+                      {"Leader"}
                     </span>
                   </Badge>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <span className="font-light leading-tight text-2xl">
-                    Rafa Okoye
+                    {"Rafa Okoye"}
                   </span>
                   <span className="flex flex-wrap gap-1.5 items-center tabular-nums text-white/75 text-xs">
                     <span>
-                      Best 0:47.148
+                      {"Best 0:47.148"}
                     </span>
                     <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      Leader
+                      {"Leader"}
                     </span>
                     <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      12 laps
+                      {"12 laps"}
                     </span>
                   </span>
                 </div>

@@ -19,7 +19,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Sale
+                  {"Sale"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Field Shell Jacket to wishlist" aria-pressed="false" extracted="1">
@@ -34,7 +34,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_0_" aria-checked="false" aria-label="Size XS, out of stock" aria-labelledby="pg5-field-shell-jacket-size-xs-label"></Checkbox>
                       <input disabled id="pg5-field-shell-jacket-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -43,7 +43,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" aria-label="Size S, in stock" aria-labelledby="pg5-field-shell-jacket-size-s-label"></Checkbox>
                       <input id="pg5-field-shell-jacket-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -58,7 +58,7 @@ export function Pattern() {
                       </Checkbox>
                       <input id="pg5-field-shell-jacket-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -67,7 +67,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-label="Size L, in stock" aria-labelledby="pg5-field-shell-jacket-size-l-label"></Checkbox>
                       <input id="pg5-field-shell-jacket-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -76,7 +76,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-label="Size XL, low stock" aria-labelledby="pg5-field-shell-jacket-size-xl-label"></Checkbox>
                       <input id="pg5-field-shell-jacket-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-warning text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -87,29 +87,29 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Add to Bag
+                  {"Add to Bag"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Halden products">
-                Halden
+                {"Halden"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Field Shell Jacket
+                  {"Field Shell Jacket"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $185
+                  {"$185"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $228
+                  {"$228"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Free shipping · Ships in 2-3 days
+                {"Free shipping · Ships in 2-3 days"}
               </p>
             </div>
           </article>
@@ -120,7 +120,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Bestseller
+                  {"Bestseller"}
                 </Badge>
               </div>
               <Button className="absolute right-3 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Remove Compass Down Vest from wishlist" aria-pressed="true">
@@ -135,7 +135,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-label="Size XS, in stock" aria-labelledby="pg5-compass-down-vest-size-xs-label"></Checkbox>
                       <input id="pg5-compass-down-vest-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -144,7 +144,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_i_" aria-checked="false" aria-label="Size S, in stock" aria-labelledby="pg5-compass-down-vest-size-s-label"></Checkbox>
                       <input id="pg5-compass-down-vest-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -153,7 +153,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_l_" aria-checked="false" aria-label="Size M, in stock" aria-labelledby="pg5-compass-down-vest-size-m-label"></Checkbox>
                       <input id="pg5-compass-down-vest-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -162,7 +162,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_o_" aria-checked="false" aria-label="Size L, in stock" aria-labelledby="pg5-compass-down-vest-size-l-label"></Checkbox>
                       <input id="pg5-compass-down-vest-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -171,7 +171,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_r_" aria-checked="false" aria-label="Size XL, in stock" aria-labelledby="pg5-compass-down-vest-size-xl-label"></Checkbox>
                       <input id="pg5-compass-down-vest-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -182,26 +182,26 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Select Size
+                  {"Select Size"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Halden products">
-                Halden
+                {"Halden"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Compass Down Vest
+                  {"Compass Down Vest"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $228
+                  {"$228"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Free shipping · Ships tomorrow
+                {"Free shipping · Ships tomorrow"}
               </p>
             </div>
           </article>
@@ -212,7 +212,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                  New
+                  {"New"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Trailhead Anorak to wishlist" aria-pressed="false">
@@ -227,7 +227,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_u_" aria-checked="false" aria-label="Size XS, in stock" aria-labelledby="pg5-trailhead-anorak-size-xs-label"></Checkbox>
                       <input id="pg5-trailhead-anorak-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -236,7 +236,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_11_" aria-checked="false" aria-label="Size S, in stock" aria-labelledby="pg5-trailhead-anorak-size-s-label"></Checkbox>
                       <input id="pg5-trailhead-anorak-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -245,7 +245,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_14_" aria-checked="false" aria-label="Size M, in stock" aria-labelledby="pg5-trailhead-anorak-size-m-label"></Checkbox>
                       <input id="pg5-trailhead-anorak-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -254,7 +254,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_17_" aria-checked="false" aria-label="Size L, low stock" aria-labelledby="pg5-trailhead-anorak-size-l-label"></Checkbox>
                       <input id="pg5-trailhead-anorak-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-warning text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -263,7 +263,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1a_" aria-checked="false" aria-label="Size XL, out of stock" aria-labelledby="pg5-trailhead-anorak-size-xl-label"></Checkbox>
                       <input disabled id="pg5-trailhead-anorak-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -274,26 +274,26 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Select Size
+                  {"Select Size"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Marlow Goods products">
-                Marlow Goods
+                {"Marlow Goods"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Trailhead Anorak
+                  {"Trailhead Anorak"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $148
+                  {"$148"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Free shipping · Ships in 3-5 days
+                {"Free shipping · Ships in 3-5 days"}
               </p>
             </div>
           </article>
@@ -314,7 +314,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1d_" aria-checked="false" aria-label="Size XS, out of stock" aria-labelledby="pg5-cumulus-rain-jacket-size-xs-label"></Checkbox>
                       <input disabled id="pg5-cumulus-rain-jacket-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -323,7 +323,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1g_" aria-checked="false" aria-label="Size S, low stock" aria-labelledby="pg5-cumulus-rain-jacket-size-s-label"></Checkbox>
                       <input id="pg5-cumulus-rain-jacket-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-warning text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -332,7 +332,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1j_" aria-checked="false" aria-label="Size M, in stock" aria-labelledby="pg5-cumulus-rain-jacket-size-m-label"></Checkbox>
                       <input id="pg5-cumulus-rain-jacket-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -341,7 +341,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1m_" aria-checked="false" aria-label="Size L, in stock" aria-labelledby="pg5-cumulus-rain-jacket-size-l-label"></Checkbox>
                       <input id="pg5-cumulus-rain-jacket-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -350,7 +350,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1p_" aria-checked="false" aria-label="Size XL, out of stock" aria-labelledby="pg5-cumulus-rain-jacket-size-xl-label"></Checkbox>
                       <input disabled id="pg5-cumulus-rain-jacket-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -361,26 +361,26 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Select Size
+                  {"Select Size"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Marlow Goods products">
-                Marlow Goods
+                {"Marlow Goods"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Cumulus Rain Jacket
+                  {"Cumulus Rain Jacket"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $268
+                  {"$268"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Free returns · Ships in 2-3 days
+                {"Free returns · Ships in 2-3 days"}
               </p>
             </div>
           </article>
@@ -391,7 +391,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Limited
+                  {"Limited"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Refuge Wool Overcoat to wishlist" aria-pressed="false">
@@ -406,7 +406,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1s_" aria-checked="false" aria-label="Size XS, out of stock" aria-labelledby="pg5-refuge-wool-overcoat-size-xs-label"></Checkbox>
                       <input disabled id="pg5-refuge-wool-overcoat-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -415,7 +415,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1v_" aria-checked="false" aria-label="Size S, out of stock" aria-labelledby="pg5-refuge-wool-overcoat-size-s-label"></Checkbox>
                       <input disabled id="pg5-refuge-wool-overcoat-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -424,7 +424,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_22_" aria-checked="false" aria-label="Size M, low stock" aria-labelledby="pg5-refuge-wool-overcoat-size-m-label"></Checkbox>
                       <input id="pg5-refuge-wool-overcoat-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-warning text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -433,7 +433,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_25_" aria-checked="false" aria-label="Size L, in stock" aria-labelledby="pg5-refuge-wool-overcoat-size-l-label"></Checkbox>
                       <input id="pg5-refuge-wool-overcoat-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -442,7 +442,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_28_" aria-checked="false" aria-label="Size XL, low stock" aria-labelledby="pg5-refuge-wool-overcoat-size-xl-label"></Checkbox>
                       <input id="pg5-refuge-wool-overcoat-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-warning text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -453,26 +453,26 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Select Size
+                  {"Select Size"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Wren & Field products">
-                Wren & Field
+                {"Wren & Field"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Refuge Wool Overcoat
+                  {"Refuge Wool Overcoat"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $398
+                  {"$398"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Limited release · Ships in a week
+                {"Limited release · Ships in a week"}
               </p>
             </div>
           </article>
@@ -493,7 +493,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2b_" aria-checked="false" aria-label="Size XS, in stock" aria-labelledby="pg5-pivot-softshell-size-xs-label"></Checkbox>
                       <input id="pg5-pivot-softshell-size-xs" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        XS
+                        {"XS"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -502,7 +502,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2e_" aria-checked="false" aria-label="Size S, in stock" aria-labelledby="pg5-pivot-softshell-size-s-label"></Checkbox>
                       <input id="pg5-pivot-softshell-size-s" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        S
+                        {"S"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -511,7 +511,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2h_" aria-checked="false" aria-label="Size M, in stock" aria-labelledby="pg5-pivot-softshell-size-m-label"></Checkbox>
                       <input id="pg5-pivot-softshell-size-m" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        M
+                        {"M"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -520,7 +520,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2k_" aria-checked="false" aria-label="Size L, in stock" aria-labelledby="pg5-pivot-softshell-size-l-label"></Checkbox>
                       <input id="pg5-pivot-softshell-size-l" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        L
+                        {"L"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -529,7 +529,7 @@ export function Pattern() {
                       <Checkbox className="-right-1.5 -top-1.5 absolute border-none rounded-full shadow-none size-4" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2n_" aria-checked="false" aria-label="Size XL, in stock" aria-labelledby="pg5-pivot-softshell-size-xl-label"></Checkbox>
                       <input id="pg5-pivot-softshell-size-xl" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-xs w-full">
-                        XL
+                        {"XL"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -540,26 +540,26 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Select Size
+                  {"Select Size"}
                 </Button>
               </Item>
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Wren & Field products">
-                Wren & Field
+                {"Wren & Field"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Pivot Softshell
+                  {"Pivot Softshell"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $158
+                  {"$158"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Members ship free · 2-3 days
+                {"Members ship free · 2-3 days"}
               </p>
             </div>
           </article>

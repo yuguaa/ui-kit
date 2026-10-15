@@ -26,16 +26,16 @@ export function Pattern() {
   return (
     <div className="flex items-start justify-center min-h-svh p-6 pt-16 w-full">
       <span className="sr-only" role="status" aria-live="polite">
-        Completed with issues. 2 of 5 succeeded.
+        {"Completed with issues. 2 of 5 succeeded."}
       </span>
       <Frame className="max-w-2xl w-full" spacing="default" aria-busy="false">
         <header className="flex flex-row gap-3 h-9 items-center px-(--frame-panel-header-px) py-0">
           <div className="flex-1 font-semibold min-w-0 text-sm truncate">
-            Reproduce webhook failure
+            {"Reproduce webhook failure"}
           </div>
           <div className="flex gap-1 items-center ms-auto shrink-0">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 animate-in bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none duration-300 ease-out fade-in-50 focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 motion-reduce:animate-none outline-none px-1.25 py-0.5 relative slide-in-from-bottom-1 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-              Completed with issues
+              {"Completed with issues"}
             </Badge>
             <DropdownMenu>
             <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Run actions" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
@@ -60,11 +60,11 @@ export function Pattern() {
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle className="flex-wrap font-normal gap-y-1 leading-5 min-w-0 overflow-visible text-[13px] w-full">
                 <span className="min-w-0 text-foreground">
-                  Reproduce the 500 on charge.refunded
+                  {"Reproduce the 500 on charge.refunded"}
                 </span>
                 <span className="flex gap-2 items-center shrink-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Done
+                    {"Done"}
                   </Badge>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -79,11 +79,11 @@ export function Pattern() {
                 </span>
               </ItemTitle>
               <ItemDescription className="break-all font-mono min-w-0 text-xs">
-                pnpm test src/api/__tests__/stripe-webhook.test.ts
+                {"pnpm test src/api/__tests__/stripe-webhook.test.ts"}
               </ItemDescription>
             </ItemContent>
             <span className="leading-5 self-start shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-              2m 28s
+              {"2m 28s"}
             </span>
           </Item>
           <Item className="animate-in duration-300 ease-out fade-in-50 flex-nowrap gap-2.5 group/row items-start motion-reduce:animate-none px-2 py-1.5 slide-in-from-bottom-1 text-left" variant="default" size="xs">
@@ -97,14 +97,14 @@ export function Pattern() {
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle className="flex-wrap font-normal gap-y-1 leading-5 min-w-0 overflow-visible text-[13px] w-full">
                 <span className="min-w-0 text-foreground">
-                  Patch the refund branch in stripe-webhook.ts
+                  {"Patch the refund branch in stripe-webhook.ts"}
                 </span>
                 <span className="flex gap-2 items-center shrink-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Done
+                    {"Done"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Unsupported
+                    {"Unsupported"}
                   </Badge>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -119,11 +119,11 @@ export function Pattern() {
                 </span>
               </ItemTitle>
               <ItemDescription className="min-w-0 text-xs">
-                Nothing checked this
+                {"Nothing checked this"}
               </ItemDescription>
             </ItemContent>
             <span className="leading-5 self-start shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-              1m 32s
+              {"1m 32s"}
             </span>
           </Item>
           <Item className="animate-in duration-300 ease-out fade-in-50 flex-nowrap gap-2.5 group/row items-start motion-reduce:animate-none px-2 py-1.5 slide-in-from-bottom-1 text-left" variant="default" size="xs">
@@ -138,11 +138,11 @@ export function Pattern() {
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle className="flex-wrap font-normal gap-y-1 leading-5 min-w-0 overflow-visible text-[13px] w-full">
                 <span className="min-w-0 text-foreground">
-                  Drain the 41 queued events
+                  {"Drain the 41 queued events"}
                 </span>
                 <span className="flex gap-2 items-center shrink-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Failed
+                    {"Failed"}
                   </Badge>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -167,11 +167,11 @@ export function Pattern() {
                 </span>
               </ItemTitle>
               <ItemDescription className="min-w-0 text-xs">
-                Stripe returned 429 on the replay endpoint. The limit resets in 60s
+                {"Stripe returned 429 on the replay endpoint. The limit resets in 60s"}
               </ItemDescription>
             </ItemContent>
             <span className="leading-5 self-start shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-              31s
+              {"31s"}
             </span>
           </Item>
           <Item className="animate-in duration-300 ease-out fade-in-50 flex-nowrap gap-2.5 group/row items-start motion-reduce:animate-none px-2 py-1.5 slide-in-from-bottom-1 text-left" variant="default" size="xs">
@@ -181,11 +181,11 @@ export function Pattern() {
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle className="flex-wrap font-normal gap-y-1 leading-5 min-w-0 overflow-visible text-[13px] w-full">
                 <span className="min-w-0 text-foreground">
-                  Restart the events worker
+                  {"Restart the events worker"}
                 </span>
                 <span className="flex gap-2 items-center shrink-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Skipped
+                    {"Skipped"}
                   </Badge>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -200,11 +200,11 @@ export function Pattern() {
                 </span>
               </ItemTitle>
               <ItemDescription className="min-w-0 text-xs">
-                Waiting on the queue drain above
+                {"Waiting on the queue drain above"}
               </ItemDescription>
             </ItemContent>
             <span className="leading-5 self-start shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-              0s
+              {"0s"}
             </span>
           </Item>
           <Item className="animate-in duration-300 ease-out fade-in-50 flex-nowrap gap-2.5 group/row items-start motion-reduce:animate-none px-2 py-1.5 slide-in-from-bottom-1 text-left" variant="default" size="xs">
@@ -219,11 +219,11 @@ export function Pattern() {
             <ItemContent className="gap-0.5 min-w-0">
               <ItemTitle className="flex-wrap font-normal gap-y-1 leading-5 min-w-0 overflow-visible text-[13px] w-full">
                 <span className="min-w-0 text-foreground">
-                  File the regression in Linear
+                  {"File the regression in Linear"}
                 </span>
                 <span className="flex gap-2 items-center shrink-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Failed
+                    {"Failed"}
                   </Badge>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -238,35 +238,35 @@ export function Pattern() {
                 </span>
               </ItemTitle>
               <ItemDescription className="line-clamp-none min-w-0 text-sm">
-                A workspace admin has to grant the scope. A retry alone will fail again.
+                {"A workspace admin has to grant the scope. A retry alone will fail again."}
               </ItemDescription>
               <ItemActions className="mt-1 self-start">
                 <Button type="button" tabIndex="0">
-                  Grant issues:create
+                  {"Grant issues:create"}
                 </Button>
               </ItemActions>
             </ItemContent>
             <span className="leading-5 self-start shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-              12s
+              {"12s"}
             </span>
           </Item>
         </FramePanel>
         <footer className="flex flex-row flex-wrap gap-2 items-center px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <ButtonGroup role="group" aria-label="Retry decision">
             <Button type="button" tabIndex="0">
-              Retry 1 failed
+              {"Retry 1 failed"}
             </Button>
             <Button type="button" tabIndex="0">
-              Keep what succeeded
+              {"Keep what succeeded"}
             </Button>
           </ButtonGroup>
           <div className="flex gap-1.5 items-center ms-auto text-muted-foreground text-xs">
             <span className="tabular-nums">
-              5 settled, 2 succeeded
+              {"5 settled, 2 succeeded"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="shrink-0 tabular-nums">
-              ran 4m 43s
+              {"ran 4m 43s"}
             </span>
           </div>
         </footer>

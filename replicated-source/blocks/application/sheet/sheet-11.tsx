@@ -36,7 +36,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Metric detail
+        {"Metric detail"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -45,7 +45,7 @@ export function Pattern() {
             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
             <path d="M15 3v18"></path>
           </svg>
-          Open Sheet
+          {"Open Sheet"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -60,7 +60,7 @@ export function Pattern() {
               <circle cx="12" cy="12" r="6"></circle>
               <circle cx="12" cy="12" r="2"></circle>
             </svg>
-            MET-609
+            {"MET-609"}
           </span>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close metric detail">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -72,14 +72,14 @@ export function Pattern() {
         <div className="flex flex-col gap-2 min-w-0 pb-4 pt-1 px-5">
           <div className="flex gap-2 items-center min-w-0">
             <SheetTitle className="flex-1 font-semibold min-w-0 text-lg tracking-tight truncate" id="base-ui-_r_3_">
-              Activation rate
+              {"Activation rate"}
             </SheetTitle>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-              On track
+              {"On track"}
             </Badge>
           </div>
           <SheetDescription className="text-muted-foreground text-xs" id="base-ui-_r_4_">
-            801 of 1,284 workspaces activated in 28 days.
+            {"801 of 1,284 workspaces activated in 28 days."}
           </SheetDescription>
         </div>
       </SheetHeader>
@@ -90,14 +90,14 @@ export function Pattern() {
               <div className="flex gap-3 items-end justify-between">
                 <div className="flex gap-2 items-baseline">
                   <span className="font-semibold tabular-nums text-4xl text-foreground tracking-tight">
-                    62.4%
+                    {"62.4%"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    +3.1 pts
+                    {"+3.1 pts"}
                   </Badge>
                 </div>
                 <span className="pb-1 text-muted-foreground text-xs">
-                  vs 59.3% prior 28 days
+                  {"vs 59.3% prior 28 days"}
                 </span>
               </div>
               <div className="bg-muted/55 h-1 mt-1.5 overflow-hidden relative rounded-full">
@@ -107,76 +107,76 @@ export function Pattern() {
                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "89%"}}></ProgressIndicator>
                   </ProgressTrack>
                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                    x
+                    {"x"}
                   </span>
                 </Progress>
               </div>
               <div className="flex gap-2 items-center justify-between text-muted-foreground text-xs">
                 <span>
-                  Target 70%
+                  {"Target 70%"}
                 </span>
                 <span className="tabular-nums">
-                  89% ready
+                  {"89% ready"}
                 </span>
               </div>
               <p className="text-muted-foreground text-sm">
-                801 of 1,284 new workspaces activated
+                {"801 of 1,284 new workspaces activated"}
               </p>
             </div>
             <Separator className="opacity-60" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Definition
+                  {"Definition"}
                 </h3>
               </div>
               <dl className="gap-x-4 gap-y-2.5 grid grid-cols-[7.5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Activation event
+                    {"Activation event"}
                   </dt>
                   <dd className="font-mono min-w-0 text-foreground text-xs">
-                    template_applied
+                    {"template_applied"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Source feature
+                    {"Source feature"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Template gallery (FEA-118)
+                    {"Template gallery (FEA-118)"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Segment
+                    {"Segment"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Trial workspaces over 20 seats
+                    {"Trial workspaces over 20 seats"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Window
+                    {"Window"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Last 28 days
+                    {"Last 28 days"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Definition
+                    {"Definition"}
                   </dt>
                   <dd className="font-mono min-w-0 text-foreground text-xs">
-                    activated / new workspaces
+                    {"activated / new workspaces"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Refreshed
+                    {"Refreshed"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Hourly · 2h ago
+                    {"Hourly · 2h ago"}
                   </dd>
                 </div>
               </dl>
@@ -185,7 +185,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Owners
+                  {"Owners"}
                 </h3>
               </div>
               <div className="flex gap-3 items-center justify-between">
@@ -201,17 +201,17 @@ export function Pattern() {
                   </Avatar>
                   <Avatar className="size-6" size="default">
                     <AvatarFallback className="text-[10px]">
-                      IV
+                      {"IV"}
                     </AvatarFallback>
                   </Avatar>
                 </AvatarGroup>
                 <p className="flex-wrap gap-x-1.5 inline-flex items-center justify-end min-w-0 text-muted-foreground text-xs">
                   <span className="font-medium text-foreground">
-                    Mira Stone
+                    {"Mira Stone"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    leads
+                    {"leads"}
                   </span>
                 </p>
               </div>
@@ -220,7 +220,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Alert Rule
+                  {"Alert Rule"}
                 </h3>
               </div>
               <div className="flex gap-3 items-start">
@@ -235,19 +235,19 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex gap-2 items-start justify-between">
                     <p className="font-medium leading-5 min-w-0 text-foreground text-sm">
-                      Activation drop
+                      {"Activation drop"}
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Armed
+                      {"Armed"}
                     </Badge>
                   </div>
                   <p className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
                     <span>
-                      Fires below 55%
+                      {"Fires below 55%"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      2 day window
+                      {"2 day window"}
                     </span>
                   </p>
                   <div className="flex gap-1.5 items-center mt-0.5 text-muted-foreground text-xs">
@@ -255,7 +255,7 @@ export function Pattern() {
                       <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
                     <span>
-                      Sana Qureshi
+                      {"Sana Qureshi"}
                     </span>
                   </div>
                 </div>
@@ -265,40 +265,40 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Readout
+                  {"Readout"}
                 </h3>
               </div>
               <div className="gap-x-4 gap-y-2.5 grid grid-cols-[7.5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Decision
+                    {"Decision"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Keep rollout at 50%
+                    {"Keep rollout at 50%"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Next review
+                    {"Next review"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Jun 18, 9:00 AM
+                    {"Jun 18, 9:00 AM"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Guardrail
+                    {"Guardrail"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    +1.6% ticket volume
+                    {"+1.6% ticket volume"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Export
+                    {"Export"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Ready for June report
+                    {"Ready for June report"}
                   </dd>
                 </div>
               </div>
@@ -307,7 +307,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Recent Changes
+                  {"Recent Changes"}
                 </h3>
               </div>
               <Timeline data-orientation="vertical">
@@ -323,23 +323,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Target raised to 70%
+                        {"Target raised to 70%"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      2 days ago
+                      {"2 days ago"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Leo Grant lifted the goal from 65% after the Q3 onboarding push.
+                      {"Leo Grant lifted the goal from 65% after the Q3 onboarding push."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Leo Grant
+                        {"Leo Grant"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -355,23 +355,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Alert threshold set to 55%
+                        {"Alert threshold set to 55%"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 9
+                      {"Jun 9"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Sana Qureshi widened the activation drop guard to a 2 day window.
+                      {"Sana Qureshi widened the activation drop guard to a 2 day window."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Sana Qureshi
+                        {"Sana Qureshi"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -387,23 +387,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Definition updated
+                        {"Definition updated"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 2
+                      {"Jun 2"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      template_applied (EVT-1842) replaced first_report_viewed as the activation event.
+                      {"template_applied (EVT-1842) replaced first_report_viewed as the activation event."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Mira Stone
+                        {"Mira Stone"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -421,23 +421,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Nora Vale added as owner
+                        {"Nora Vale added as owner"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      May 28
+                      {"May 28"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Lifecycle analyst joined the week four retention review.
+                      {"Lifecycle analyst joined the week four retention review."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Nora Vale
+                        {"Nora Vale"}
                       </span>
                     </div>
                   </TimelineContent>

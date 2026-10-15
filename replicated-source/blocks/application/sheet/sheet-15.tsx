@@ -37,7 +37,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Deploy rollout
+        {"Deploy rollout"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -48,7 +48,7 @@ export function Pattern() {
             <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
           </svg>
-          Open Rollout
+          {"Open Rollout"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -56,14 +56,14 @@ export function Pattern() {
     <Sheet>
     <SheetContent className="flex flex-col gap-0 h-[calc(100svh-2rem)] inset-y-4 left-auto max-w-none outline-none overflow-hidden p-0 right-4 rounded-xl w-[min(36rem,calc(100vw-2rem))]" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_8_" aria-describedby="base-ui-_r_9_" style={{"--nested-dialogs": "0"}}>
       <p className="sr-only" role="status" aria-live="polite">
-        Waiting for Promote at Canary 50%
+        {"Waiting for Promote at Canary 50%"}
       </p>
       <div className="flex flex-col gap-3 px-5 py-3.5 shrink-0">
         <div className="flex flex-col gap-1 min-w-0">
           <div className="flex gap-2 items-center justify-between">
             <span className="flex gap-1 items-center min-w-0">
               <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                DEP-4128
+                {"DEP-4128"}
               </span>
               <Button type="button" tabIndex="0" aria-label="Copy deploy ID">
                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -74,7 +74,7 @@ export function Pattern() {
             </span>
             <div className="flex gap-1 items-center shrink-0">
               <span className="tabular-nums text-muted-foreground text-xs">
-                1 of 23
+                {"1 of 23"}
               </span>
               <Tooltip>
               <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:opacity-50 aria-disabled:pointer-events-none cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" aria-disabled="true" aria-label="Previous deploy" aria-keyshortcuts="K" id="base-ui-_r_5_" baseUiTooltipTrigger="">
@@ -96,30 +96,30 @@ export function Pattern() {
                   <path d="m6 6 12 12"></path>
                 </svg>
                 <span className="sr-only">
-                  Close
+                  {"Close"}
                 </span>
               </Button>
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center min-w-0">
             <SheetTitle className="min-w-0 text-base truncate" id="base-ui-_r_8_">
-              fraud-scorer
+              {"fraud-scorer"}
               <span className="font-mono font-normal text-muted-foreground">
-                v3.9.0
+                {"v3.9.0"}
               </span>
             </SheetTitle>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-              Waiting
+              {"Waiting"}
             </Badge>
           </div>
           <SheetDescription id="base-ui-_r_9_">
             <span className="flex flex-wrap gap-1.5 items-center min-w-0">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                Production
+                {"Production"}
               </Badge>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="font-mono text-xs">
-                prod-us-east-1
+                {"prod-us-east-1"}
               </span>
             </span>
           </SheetDescription>
@@ -135,11 +135,11 @@ export function Pattern() {
           </span>
           <span className="flex gap-1.5 items-center shrink-0 tabular-nums text-muted-foreground text-xs">
             <span>
-              Waiting for Promote
+              {"Waiting for Promote"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              0:11
+              {"0:11"}
             </span>
           </span>
         </div>
@@ -151,32 +151,32 @@ export function Pattern() {
               <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
               <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
             </svg>
-            Promote
+            {"Promote"}
           </Button>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
               <path d="M9 14 4 9l5-5"></path>
               <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
             </svg>
-            Roll back
+            {"Roll back"}
           </Button>
         </div>
       </div>
       <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
         <TabsList className="border-b gap-5 h-auto justify-start px-5 py-0 shrink-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_a_" compositeItemActive="" aria-controls="base-ui-_r_e_">
-            Pipeline
+            {"Pipeline"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_b_">
-            Logs
+            {"Logs"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_c_">
-            Health
+            {"Health"}
           </TabsTrigger>
           <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_d_">
-            Changes
+            {"Changes"}
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-              5
+              {"5"}
             </Badge>
           </TabsTrigger>
         </TabsList>
@@ -196,12 +196,12 @@ export function Pattern() {
                       <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
                         <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                           <span className="text-foreground">
-                            Build
+                            {"Build"}
                           </span>
                         </span>
                       </MarkerContent>
                       <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-                        0:48
+                        {"0:48"}
                       </span>
                     </Marker>
                     <Marker className="group/row items-start px-(--frame-panel-px) py-2" variant="default">
@@ -214,12 +214,12 @@ export function Pattern() {
                       <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
                         <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                           <span className="text-foreground">
-                            Test
+                            {"Test"}
                           </span>
                         </span>
                       </MarkerContent>
                       <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-                        1:36
+                        {"1:36"}
                       </span>
                     </Marker>
                     <Marker className="group/row items-start px-(--frame-panel-px) py-2" variant="default">
@@ -232,12 +232,12 @@ export function Pattern() {
                       <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
                         <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                           <span className="text-foreground">
-                            Security scan
+                            {"Security scan"}
                           </span>
                         </span>
                       </MarkerContent>
                       <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-                        0:32
+                        {"0:32"}
                       </span>
                     </Marker>
                     <Marker className="group/row items-start px-(--frame-panel-px) py-2" variant="default">
@@ -250,15 +250,15 @@ export function Pattern() {
                       <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
                         <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                           <span className="text-foreground">
-                            Canary 25%
+                            {"Canary 25%"}
                           </span>
                         </span>
                         <span className="leading-5 min-w-0 text-muted-foreground text-xs">
-                          Error 0.05%, p95 43 ms, 3 of 12 pods
+                          {"Error 0.05%, p95 43 ms, 3 of 12 pods"}
                         </span>
                       </MarkerContent>
                       <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-                        2:30
+                        {"2:30"}
                       </span>
                     </Marker>
                     <Marker className="group/row items-start px-(--frame-panel-px) py-2" variant="default">
@@ -271,15 +271,15 @@ export function Pattern() {
                       <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
                         <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                           <span className="text-foreground">
-                            Canary 50%
+                            {"Canary 50%"}
                           </span>
                         </span>
                         <span className="leading-5 min-w-0 text-muted-foreground text-xs">
-                          Error 0.05%, p95 44 ms, 6 of 12 pods
+                          {"Error 0.05%, p95 44 ms, 6 of 12 pods"}
                         </span>
                       </MarkerContent>
                       <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-                        3:00
+                        {"3:00"}
                       </span>
                     </Marker>
                     <div className="bg-muted/50 border-border border-y flex flex-col gap-2 px-(--frame-panel-px) py-2.5">
@@ -294,11 +294,11 @@ export function Pattern() {
                         <MarkerContent className="animate-in duration-300 ease-out fade-in-50 flex flex-1 flex-col gap-0.5 motion-reduce:animate-none slide-in-from-bottom-2 text-[13px]">
                           <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                             <span className="font-medium text-foreground">
-                              Waiting for Promote
+                              {"Waiting for Promote"}
                             </span>
                           </span>
                           <span className="leading-5 text-muted-foreground text-xs">
-                            Canary 50% passed 4 of 4 checks. Waiting since 14:21:06.
+                            {"Canary 50% passed 4 of 4 checks. Waiting since 14:21:06."}
                           </span>
                         </MarkerContent>
                       </Marker>
@@ -309,7 +309,7 @@ export function Pattern() {
                       </MarkerIcon>
                       <MarkerContent className="flex flex-1 flex-wrap gap-x-2 gap-y-1 items-center min-h-5 text-[13px]">
                         <span className="min-w-0 text-muted-foreground">
-                          Full rollout
+                          {"Full rollout"}
                         </span>
                       </MarkerContent>
                     </Marker>
@@ -318,12 +318,12 @@ export function Pattern() {
                 <div className="flex flex-col gap-5">
                   <section className="flex flex-col gap-3 min-w-0">
                     <h3 className="font-medium text-muted-foreground text-xs">
-                      Release
+                      {"Release"}
                     </h3>
                     <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Service
+                          {"Service"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0">
@@ -332,32 +332,32 @@ export function Pattern() {
                               <path d="m9 12 2 2 4-4"></path>
                             </svg>
                             <span className="truncate">
-                              fraud-scorer
+                              {"fraud-scorer"}
                             </span>
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Version
+                          {"Version"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="font-mono text-xs">
-                            v3.9.0
+                            {"v3.9.0"}
                           </span>
                           <span className="min-w-0 text-muted-foreground truncate">
-                            from v3.8.2
+                            {"from v3.8.2"}
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Commit
+                          {"Commit"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="flex gap-1 items-center min-w-0 shrink-0">
                             <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                              d4a7c19
+                              {"d4a7c19"}
                             </span>
                             <Button type="button" tabIndex="0" aria-label="Copy commit SHA">
                               <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -367,25 +367,25 @@ export function Pattern() {
                             </Button>
                           </span>
                           <span className="min-w-0 text-muted-foreground truncate">
-                            Serve fs-v7 features from the online store
+                            {"Serve fs-v7 features from the online store"}
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Image
+                          {"Image"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="min-w-0 wrap-break-word">
                             <span className="font-mono text-xs">
-                              registry.lumenharbor.example/fraud-scorer:v3.9.0
+                              {"registry.lumenharbor.example/fraud-scorer:v3.9.0"}
                             </span>
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Strategy
+                          {"Strategy"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="flex gap-2 items-center min-w-0 text-sm">
@@ -396,11 +396,11 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Canary
+                              {"Canary"}
                             </span>
                           </span>
                           <span className="min-w-0 text-muted-foreground truncate">
-                            holds at Canary 50%
+                            {"holds at Canary 50%"}
                           </span>
                         </dd>
                       </div>
@@ -408,22 +408,22 @@ export function Pattern() {
                   </section>
                   <section className="flex flex-col gap-3 min-w-0">
                     <h3 className="font-medium text-muted-foreground text-xs">
-                      Run
+                      {"Run"}
                     </h3>
                     <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Cluster
+                          {"Cluster"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="font-mono text-xs">
-                            prod-us-east-1
+                            {"prod-us-east-1"}
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Created by
+                          {"Created by"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="flex gap-1.5 items-center min-w-0">
@@ -436,14 +436,14 @@ export function Pattern() {
                               </svg>
                             </IconTile>
                             <span className="truncate">
-                              GitHub Actions
+                              {"GitHub Actions"}
                             </span>
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Requested by
+                          {"Requested by"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="flex gap-2 items-center min-w-0">
@@ -451,14 +451,14 @@ export function Pattern() {
                               <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="truncate">
-                              Emma Wilson
+                              {"Emma Wilson"}
                             </span>
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Author
+                          {"Author"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="flex gap-2 items-center min-w-0">
@@ -466,41 +466,41 @@ export function Pattern() {
                               <AvatarImage alt="" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="truncate">
-                              Kenji Tan
+                              {"Kenji Tan"}
                             </span>
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Started
+                          {"Started"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="tabular-nums">
-                            Sep 29, 2026, 14:12:40 UTC
+                            {"Sep 29, 2026, 14:12:40 UTC"}
                           </span>
                           <span className="min-w-0 text-muted-foreground truncate">
-                            8m ago
+                            {"8m ago"}
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Finished
+                          {"Finished"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="min-w-0 text-muted-foreground truncate">
-                            Still running
+                            {"Still running"}
                           </span>
                         </dd>
                       </div>
                       <div className="contents">
                         <dt className="text-muted-foreground">
-                          Duration
+                          {"Duration"}
                         </dt>
                         <dd className="flex gap-2 items-center leading-5 min-w-0">
                           <span className="tabular-nums">
-                            8:37
+                            {"8:37"}
                           </span>
                         </dd>
                       </div>

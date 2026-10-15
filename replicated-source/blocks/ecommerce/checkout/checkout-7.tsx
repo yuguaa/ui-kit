@@ -33,109 +33,146 @@ export function Pattern() {
   return (
     <main className="bg-muted/30 flex items-start justify-center lg:p-10 min-h-svh p-4 pb-20 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Concierge checkout
+        {"Concierge checkout"}
       </h1>
+      <StepperItem>
       <Stepper className="lg:px-8 lg:py-10 max-w-5xl mx-auto px-4 py-8 sm:px-6" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
         <header className="flex flex-col gap-6 lg:flex-row lg:gap-10 lg:items-end lg:justify-between">
           <div className="min-w-0 shrink-0">
             <Button className="-ml-3 gap-1 h-auto hover:text-foreground mb-1 px-3 py-1 text-muted-foreground w-fit" type="button" tabIndex="0" extracted="1">
-              ← Back to cart
+              {"← Back to cart"}
             </Button>
             <h1 className="font-semibold text-2xl tracking-tight">
-              Checkout
+              {"Checkout"}
             </h1>
             <p className="gap-1.5 inline-flex items-center leading-5 mt-1 text-muted-foreground text-sm">
               <span>
-                4 items
+                {"4 items"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="tabular-nums">
-                $364.31
+                {"$364.31"}
               </span>
             </p>
           </div>
+          <Stepper>
           <StepperNav className="gap-3 lg:max-w-xl sm:gap-4 w-full" data-state="1" data-orientation="horizontal">
+            <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="active">
+              <Stepper>
               <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="active">
                   <div className="absolute">
                     <span className="sr-only">
-                      1
+                      {"1"}
                     </span>
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="font-semibold group-data-[state=inactive]/step:text-muted-foreground text-start" data-state="active">
-                  Customer
+                  {"Customer"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
             </StepperItem>
+            </Stepper>
+            <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
+              <Stepper>
               <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
                     <span className="sr-only">
-                      2
+                      {"2"}
                     </span>
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="font-semibold group-data-[state=inactive]/step:text-muted-foreground text-start" data-state="inactive">
-                  Address
+                  {"Address"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
             </StepperItem>
+            </Stepper>
+            <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
+              <Stepper>
               <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
                     <span className="sr-only">
-                      3
+                      {"3"}
                     </span>
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="font-semibold group-data-[state=inactive]/step:text-muted-foreground text-start" data-state="inactive">
-                  Delivery
+                  {"Delivery"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
             </StepperItem>
+            </Stepper>
+            <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
+              <Stepper>
               <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
                     <span className="sr-only">
-                      4
+                      {"4"}
                     </span>
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="font-semibold group-data-[state=inactive]/step:text-muted-foreground text-start" data-state="inactive">
-                  Payment
+                  {"Payment"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
             </StepperItem>
+            </Stepper>
           </StepperNav>
+          </Stepper>
         </header>
         <form className="gap-0 grid lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start min-w-0 mt-8" aria-label="Checkout">
           <div className="flex flex-col lg:pr-10 min-w-0">
+            <Stepper>
             <StepperPanel data-state="1">
+              <Stepper>
               <StepperContent data-state="1">
                 <section className="flex flex-col gap-5 min-w-0" aria-labelledby="checkout-7-contact-title">
                   <div className="flex gap-3 items-start justify-between">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <h2 className="font-semibold text-base" id="checkout-7-contact-title">
-                        Customer
+                        {"Customer"}
                       </h2>
                     </div>
                     <span className="gap-1 inline-flex items-center shrink-0 text-muted-foreground text-sm">
                       <span className="hidden sm:inline">
-                        Have an account?
+                        {"Have an account?"}
                       </span>
                       <Button className="font-medium h-auto hover:text-primary hover:underline p-0 text-sm underline-offset-4" type="button" tabIndex="0">
-                        Sign in
+                        {"Sign in"}
                       </Button>
                     </span>
                   </div>
                   <FieldSet className="gap-3">
                     <FieldLegend className="sr-only" variant="legend">
-                      Continue with provider
+                      {"Continue with provider"}
                     </FieldLegend>
                     <div className="gap-2 grid sm:grid-cols-3">
                       <Button className="w-full" type="button" tabIndex="0">
@@ -143,7 +180,7 @@ export function Pattern() {
                           <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
                         </svg>
                         <span>
-                          Apple
+                          {"Apple"}
                         </span>
                       </Button>
                       <Button className="w-full" type="button" tabIndex="0">
@@ -250,7 +287,7 @@ export function Pattern() {
                           </g>
                         </svg>
                         <span>
-                          Google
+                          {"Google"}
                         </span>
                       </Button>
                       <Button className="w-full" type="button" tabIndex="0">
@@ -258,7 +295,7 @@ export function Pattern() {
                           <path fill="#000" d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"></path>
                         </svg>
                         <span>
-                          X
+                          {"X"}
                         </span>
                       </Button>
                     </div>
@@ -266,26 +303,26 @@ export function Pattern() {
                   <div className="flex gap-3 items-center">
                     <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                     <span className="font-medium text-[0.6875rem] text-muted-foreground tracking-[0.08em] uppercase">
-                      Or continue with email
+                      {"Or continue with email"}
                     </span>
                     <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   </div>
                   <FieldSet>
                     <FieldLegend className="sr-only" variant="legend">
-                      Contact information
+                      {"Contact information"}
                     </FieldLegend>
                     <FieldGroup className="gap-4 grid sm:grid-cols-2">
                       <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-7-email">
-                          Email
+                          {"Email"}
                         </FieldLabel>
                         <Input id="checkout-7-email" autoComplete="email" aria-invalid="false" placeholder="you@example.com" type="email" value="morgan.lee@example.com"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-7-phone">
-                          Phone
+                          {"Phone"}
                           <span className="font-normal text-muted-foreground">
-                            (optional)
+                            {"(optional)"}
                           </span>
                         </FieldLabel>
                         <Input id="checkout-7-phone" autoComplete="tel" placeholder="(555) 555-5555" type="tel" value="(415) 555-0148"></Input>
@@ -301,13 +338,15 @@ export function Pattern() {
                       </Checkbox>
                       <input id="checkout-7-subscribe" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-7-subscribe" id="checkout-7-subscribe-label">
-                        Email me with order updates and offers
+                        {"Email me with order updates and offers"}
                       </FieldLabel>
                     </Field>
                   </FieldSet>
                 </section>
               </StepperContent>
+              </Stepper>
             </StepperPanel>
+            </Stepper>
             <Separator className="mt-8" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:items-center sm:justify-between">
               <span className="gap-1.5 inline-flex items-center text-muted-foreground text-xs">
@@ -316,11 +355,11 @@ export function Pattern() {
                   <rect x="3" y="10" width="18" height="12" rx="2"></rect>
                   <path d="M7 10V7a5 5 0 0 1 10 0v3"></path>
                 </svg>
-                Secure encrypted checkout
+                {"Secure encrypted checkout"}
               </span>
               <div className="flex gap-2 items-center sm:gap-3">
                 <Button type="submit" tabIndex="0">
-                  Continue
+                  {"Continue"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -332,7 +371,7 @@ export function Pattern() {
           <aside className="border-border border-t flex flex-col gap-5 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0 lg:sticky lg:top-6 min-w-0 pt-8" aria-label="Order summary">
             <div className="flex flex-col gap-0.5 min-w-0">
               <h2 className="font-semibold text-base" id="checkout-7-summary-title">
-                Order summary
+                {"Order summary"}
               </h2>
             </div>
             <ItemGroup className="gap-4" role="list">
@@ -343,30 +382,30 @@ export function Pattern() {
                       <img className="absolute duration-300 group-hover/product:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Charcoal wireless over-ear headphones on a neutral surface" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=320&h=320&q=80" />
                     </a>
                     <span className="-translate-y-1/3 absolute bg-foreground font-medium h-4 inline-flex items-center justify-center leading-none min-w-4 pointer-events-none px-1 right-0 rounded-full text-[0.625rem] text-background top-0 translate-x-1/3">
-                      1
+                      {"1"}
                     </span>
                   </Item>
                 </ItemMedia>
                 <ItemContent className="gap-0.5 min-w-0">
                   <ItemTitle className="block line-clamp-none max-w-full min-w-0 overflow-visible">
                     <a className="block hover:text-primary hover:underline text-foreground transition-colors truncate underline-offset-2" href="#wireless-headphones">
-                      Wireless Headphones
+                      {"Wireless Headphones"}
                     </a>
                   </ItemTitle>
                   <ItemDescription className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-xs">
                     <span className="shrink-0 truncate">
-                      Charcoal
+                      {"Charcoal"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-destructive-foreground transition-shadow">
-                      Sale
+                      {"Sale"}
                     </Badge>
                   </ItemDescription>
                 </ItemContent>
                 <span className="font-medium shrink-0 tabular-nums text-right text-sm">
-                  $199.00
+                  {"$199.00"}
                   <span className="block font-normal line-through text-muted-foreground text-xs">
-                    $249.00
+                    {"$249.00"}
                   </span>
                 </span>
               </Item>
@@ -377,24 +416,24 @@ export function Pattern() {
                       <img className="absolute duration-300 group-hover/product:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Folded white cotton t-shirt on a clean background" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=320&h=320&q=80" />
                     </a>
                     <span className="-translate-y-1/3 absolute bg-foreground font-medium h-4 inline-flex items-center justify-center leading-none min-w-4 pointer-events-none px-1 right-0 rounded-full text-[0.625rem] text-background top-0 translate-x-1/3">
-                      2
+                      {"2"}
                     </span>
                   </Item>
                 </ItemMedia>
                 <ItemContent className="gap-0.5 min-w-0">
                   <ItemTitle className="block line-clamp-none max-w-full min-w-0 overflow-visible">
                     <a className="block hover:text-primary hover:underline text-foreground transition-colors truncate underline-offset-2" href="#classic-cotton-tee">
-                      Classic Cotton Tee
+                      {"Classic Cotton Tee"}
                     </a>
                   </ItemTitle>
                   <ItemDescription className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-xs">
                     <span className="shrink-0 truncate">
-                      White · Size M
+                      {"White · Size M"}
                     </span>
                   </ItemDescription>
                 </ItemContent>
                 <span className="font-medium shrink-0 tabular-nums text-right text-sm">
-                  $56.00
+                  {"$56.00"}
                 </span>
               </Item>
               <Item className="gap-3 items-start px-0 py-0" variant="default" size="default" role="listitem">
@@ -404,89 +443,90 @@ export function Pattern() {
                       <img className="absolute duration-300 group-hover/product:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Tan leather bifold wallet product view" src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=320&h=320&q=80" />
                     </a>
                     <span className="-translate-y-1/3 absolute bg-foreground font-medium h-4 inline-flex items-center justify-center leading-none min-w-4 pointer-events-none px-1 right-0 rounded-full text-[0.625rem] text-background top-0 translate-x-1/3">
-                      1
+                      {"1"}
                     </span>
                   </Item>
                 </ItemMedia>
                 <ItemContent className="gap-0.5 min-w-0">
                   <ItemTitle className="block line-clamp-none max-w-full min-w-0 overflow-visible">
                     <a className="block hover:text-primary hover:underline text-foreground transition-colors truncate underline-offset-2" href="#leather-bifold-wallet">
-                      Leather Bifold Wallet
+                      {"Leather Bifold Wallet"}
                     </a>
                   </ItemTitle>
                   <ItemDescription className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-xs">
                     <span className="shrink-0 truncate">
-                      Tan
+                      {"Tan"}
                     </span>
                   </ItemDescription>
                 </ItemContent>
                 <span className="font-medium shrink-0 tabular-nums text-right text-sm">
-                  $78.00
+                  {"$78.00"}
                 </span>
               </Item>
             </ItemGroup>
             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <Field className="gap-2" role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-7-promo">
-                Promo code
+                {"Promo code"}
               </FieldLabel>
               <div className="flex gap-2">
                 <Input id="checkout-7-promo" placeholder="Enter code" aria-invalid="false" value="SAVE10"></Input>
                 <Button type="button" tabIndex="0">
-                  Apply
+                  {"Apply"}
                 </Button>
               </div>
               <p className="text-success text-xs">
-                SAVE10 applied for $10.00 off.
+                {"SAVE10 applied for $10.00 off."}
               </p>
             </Field>
             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-2">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-muted-foreground">
-                  Subtotal
+                  {"Subtotal"}
                 </span>
                 <span className="tabular-nums">
-                  $333.00
+                  {"$333.00"}
                 </span>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-muted-foreground">
-                  Shipping
+                  {"Shipping"}
                 </span>
                 <span className="tabular-nums">
-                  $12.00
+                  {"$12.00"}
                 </span>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-muted-foreground">
-                  Tax
+                  {"Tax"}
                 </span>
                 <span className="tabular-nums">
-                  $29.31
+                  {"$29.31"}
                 </span>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="font-semibold text-success">
-                  Discount
+                  {"Discount"}
                 </span>
                 <span className="font-semibold tabular-nums text-success">
-                  −$10.00
+                  {"−$10.00"}
                 </span>
               </div>
             </div>
             <Separator className="border-dashed" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex gap-3 items-baseline justify-between">
               <span className="font-semibold text-base">
-                Total
+                {"Total"}
               </span>
               <span className="font-semibold tabular-nums text-xl">
-                $364.31
+                {"$364.31"}
               </span>
             </div>
           </aside>
         </form>
       </Stepper>
+      </StepperItem>
     </main>
   )
 }

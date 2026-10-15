@@ -46,7 +46,7 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center min-h-svh p-4 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Deal Pipeline
+        {"Deal Pipeline"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1240px] mx-auto w-full">
         <header className="px-1 py-1" aria-label="Deal board toolbar">
@@ -54,14 +54,14 @@ export function Pattern() {
             <div className="min-w-0">
               <div className="flex flex-wrap gap-2 items-center min-w-0">
                 <h2 className="font-semibold text-base truncate">
-                  Deal Risk Board
+                  {"Deal Risk Board"}
                 </h2>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                  12
+                  {"12"}
                 </Badge>
               </div>
               <p className="line-clamp-1 mt-0.5 text-muted-foreground text-sm">
-                Review deals by risk and close window.
+                {"Review deals by risk and close window."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full">
@@ -69,14 +69,14 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New Deal
+                {"New Deal"}
               </Button>
             </div>
           </div>
@@ -93,10 +93,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Qualified">
-                              Qualified
+                              {"Qualified"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              3
+                              {"3"}
                             </Badge>
                           </div>
                         </div>
@@ -230,11 +230,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Google">
-                                    Google
+                                    {"Google"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -250,10 +250,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$184K">
-                                        $184K
+                                        {"$184K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -270,10 +270,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 15">
-                                        Jul 15
+                                        {"Jul 15"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -281,21 +281,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      66%
+                                      {"66%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="66" aria-valuetext="66%" role="progressbar" aria-labelledby="base-ui-_r_1_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1_" role="presentation">
-                                      Google deal confidence
+                                      {"Google deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "66%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -306,15 +306,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Enterprise AE
+                                        {"Enterprise AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    15d left
+                                    {"15d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -348,11 +348,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Zoom">
-                                    Zoom
+                                    {"Zoom"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Clear
+                                    {"Clear"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -368,10 +368,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$126K">
-                                        $126K
+                                        {"$126K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -388,10 +388,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 21">
-                                        Jul 21
+                                        {"Jul 21"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -399,21 +399,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      74%
+                                      {"74%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="74" aria-valuetext="74%" role="progressbar" aria-labelledby="base-ui-_r_3_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_3_" role="presentation">
-                                      Zoom deal confidence
+                                      {"Zoom deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "74%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -424,15 +424,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Account Executive
+                                        {"Account Executive"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    21d left
+                                    {"21d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -453,11 +453,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Dropbox">
-                                    Dropbox
+                                    {"Dropbox"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Clear
+                                    {"Clear"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -473,10 +473,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$158K">
-                                        $158K
+                                        {"$158K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -493,10 +493,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Aug 3">
-                                        Aug 3
+                                        {"Aug 3"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -504,21 +504,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      71%
+                                      {"71%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="71" aria-valuetext="71%" role="progressbar" aria-labelledby="base-ui-_r_4_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_4_" role="presentation">
-                                      Dropbox deal confidence
+                                      {"Dropbox deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "71%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -529,15 +529,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Commercial AE
+                                        {"Commercial AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    34d left
+                                    {"34d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -554,10 +554,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Discovery">
-                              Discovery
+                              {"Discovery"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              2
+                              {"2"}
                             </Badge>
                           </div>
                         </div>
@@ -597,11 +597,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Slack">
-                                    Slack
+                                    {"Slack"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Blocked
+                                    {"Blocked"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -617,10 +617,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$342K">
-                                        $342K
+                                        {"$342K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -637,10 +637,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 6">
-                                        Jul 6
+                                        {"Jul 6"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -648,21 +648,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      32%
+                                      {"32%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="32" aria-valuetext="32%" role="progressbar" aria-labelledby="base-ui-_r_5_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5_" role="presentation">
-                                      Slack deal confidence
+                                      {"Slack deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "32%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -673,15 +673,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Nora Vale
+                                        {"Nora Vale"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Sales Manager
+                                        {"Sales Manager"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    6d left
+                                    {"6d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -701,11 +701,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Stripe">
-                                    Stripe
+                                    {"Stripe"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Blocked
+                                    {"Blocked"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -721,10 +721,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$278K">
-                                        $278K
+                                        {"$278K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -741,10 +741,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 10">
-                                        Jul 10
+                                        {"Jul 10"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -752,21 +752,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      42%
+                                      {"42%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="42" aria-valuetext="42%" role="progressbar" aria-labelledby="base-ui-_r_6_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6_" role="presentation">
-                                      Stripe deal confidence
+                                      {"Stripe deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "42%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -777,15 +777,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Enterprise AE
+                                        {"Enterprise AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    10d left
+                                    {"10d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -802,10 +802,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Solution Fit">
-                              Solution Fit
+                              {"Solution Fit"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              2
+                              {"2"}
                             </Badge>
                           </div>
                         </div>
@@ -847,11 +847,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="OpenAI">
-                                    OpenAI
+                                    {"OpenAI"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -867,10 +867,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$515K">
-                                        $515K
+                                        {"$515K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -887,10 +887,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 13">
-                                        Jul 13
+                                        {"Jul 13"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -898,21 +898,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      59%
+                                      {"59%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="59" aria-valuetext="59%" role="progressbar" aria-labelledby="base-ui-_r_7_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_7_" role="presentation">
-                                      OpenAI deal confidence
+                                      {"OpenAI deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "59%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -923,15 +923,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Solutions AE
+                                        {"Solutions AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    13d left
+                                    {"13d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -947,7 +947,7 @@ export function Pattern() {
                                     <span className="dark:hidden" aria-hidden="true">
                                       <svg className="size-5" aria-hidden="true" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                         <title>
-                                          Anthropic
+                                          {"Anthropic"}
                                         </title>
                                         <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                       </svg>
@@ -955,7 +955,7 @@ export function Pattern() {
                                     <span className="dark:block hidden" aria-hidden="true">
                                       <svg className="size-5" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                         <title>
-                                          Anthropic
+                                          {"Anthropic"}
                                         </title>
                                         <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                       </svg>
@@ -964,11 +964,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Anthropic">
-                                    Anthropic
+                                    {"Anthropic"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -984,10 +984,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$228K">
-                                        $228K
+                                        {"$228K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1004,10 +1004,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 22">
-                                        Jul 22
+                                        {"Jul 22"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1015,21 +1015,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      64%
+                                      {"64%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="64" aria-valuetext="64%" role="progressbar" aria-labelledby="base-ui-_r_8_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8_" role="presentation">
-                                      Anthropic deal confidence
+                                      {"Anthropic deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "64%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1040,15 +1040,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Commercial AE
+                                        {"Commercial AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    22d left
+                                    {"22d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1065,10 +1065,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Security">
-                              Security
+                              {"Security"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              3
+                              {"3"}
                             </Badge>
                           </div>
                         </div>
@@ -1110,11 +1110,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="GitHub">
-                                    GitHub
+                                    {"GitHub"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -1130,10 +1130,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$397K">
-                                        $397K
+                                        {"$397K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1150,10 +1150,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 8">
-                                        Jul 8
+                                        {"Jul 8"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1161,21 +1161,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      48%
+                                      {"48%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="48" aria-valuetext="48%" role="progressbar" aria-labelledby="base-ui-_r_9_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_9_" role="presentation">
-                                      GitHub deal confidence
+                                      {"GitHub deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "48%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1186,15 +1186,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Account Executive
+                                        {"Account Executive"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    8d left
+                                    {"8d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1226,11 +1226,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Supabase">
-                                    Supabase
+                                    {"Supabase"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -1246,10 +1246,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$448K">
-                                        $448K
+                                        {"$448K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1266,10 +1266,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 18">
-                                        Jul 18
+                                        {"Jul 18"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1277,21 +1277,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      57%
+                                      {"57%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="57" aria-valuetext="57%" role="progressbar" aria-labelledby="base-ui-_r_a_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_a_" role="presentation">
-                                      Supabase deal confidence
+                                      {"Supabase deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "57%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1302,15 +1302,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Nora Vale
+                                        {"Nora Vale"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Sales Manager
+                                        {"Sales Manager"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    18d left
+                                    {"18d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1339,11 +1339,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="NVIDIA">
-                                    NVIDIA
+                                    {"NVIDIA"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Clear
+                                    {"Clear"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -1359,10 +1359,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$302K">
-                                        $302K
+                                        {"$302K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1379,10 +1379,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 27">
-                                        Jul 27
+                                        {"Jul 27"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1390,21 +1390,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      72%
+                                      {"72%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="72" aria-valuetext="72%" role="progressbar" aria-labelledby="base-ui-_r_b_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_b_" role="presentation">
-                                      NVIDIA deal confidence
+                                      {"NVIDIA deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "72%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1415,15 +1415,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Solutions AE
+                                        {"Solutions AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    27d left
+                                    {"27d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1440,10 +1440,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Procurement">
-                              Procurement
+                              {"Procurement"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              2
+                              {"2"}
                             </Badge>
                           </div>
                         </div>
@@ -1482,11 +1482,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="PayPal">
-                                    PayPal
+                                    {"PayPal"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Risk
+                                    {"Risk"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -1502,10 +1502,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$305K">
-                                        $305K
+                                        {"$305K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1522,10 +1522,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Jul 19">
-                                        Jul 19
+                                        {"Jul 19"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1533,21 +1533,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      61%
+                                      {"61%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="61" aria-valuetext="61%" role="progressbar" aria-labelledby="base-ui-_r_c_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_c_" role="presentation">
-                                      PayPal deal confidence
+                                      {"PayPal deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "61%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1558,15 +1558,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Solutions AE
+                                        {"Solutions AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    19d left
+                                    {"19d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1589,11 +1589,11 @@ export function Pattern() {
                                 </Item>
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Microsoft OneDrive">
-                                    Microsoft OneDrive
+                                    {"Microsoft OneDrive"}
                                   </CardTitle>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Clear
+                                    {"Clear"}
                                   </Badge>
                                 </div>
                               </CardHeader>
@@ -1609,10 +1609,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="$264K">
-                                        $264K
+                                        {"$264K"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Value
+                                        {"Value"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1629,10 +1629,10 @@ export function Pattern() {
                                     </ItemMedia>
                                     <ItemContent className="gap-0 min-w-0">
                                       <ItemTitle className="font-medium leading-5 tabular-nums text-sm truncate" title="Aug 2">
-                                        Aug 2
+                                        {"Aug 2"}
                                       </ItemTitle>
                                       <ItemDescription className="leading-3.5 text-[0.6875rem] truncate">
-                                        Close
+                                        {"Close"}
                                       </ItemDescription>
                                     </ItemContent>
                                   </Item>
@@ -1640,21 +1640,21 @@ export function Pattern() {
                                 <div className="flex flex-col gap-2.5">
                                   <div className="flex gap-2 items-center justify-between text-sm">
                                     <span className="text-muted-foreground">
-                                      Confidence
+                                      {"Confidence"}
                                     </span>
                                     <span className="font-medium tabular-nums">
-                                      76%
+                                      {"76%"}
                                     </span>
                                   </div>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="76" aria-valuetext="76%" role="progressbar" aria-labelledby="base-ui-_r_d_">
                                     <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_d_" role="presentation">
-                                      Microsoft OneDrive deal confidence
+                                      {"Microsoft OneDrive deal confidence"}
                                     </ProgressLabel>
                                     <ProgressTrack progressing="">
                                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "76%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </div>
@@ -1665,15 +1665,15 @@ export function Pattern() {
                                     </Avatar>
                                     <div className="min-w-0">
                                       <div className="font-medium text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </div>
                                       <div className="text-muted-foreground text-xs truncate">
-                                        Commercial AE
+                                        {"Commercial AE"}
                                       </div>
                                     </div>
                                   </div>
                                   <span className="shrink-0 tabular-nums text-muted-foreground text-sm">
-                                    33d left
+                                    {"33d left"}
                                   </span>
                                 </div>
                               </CardContent>
@@ -1690,10 +1690,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <h3 className="font-semibold text-sm truncate" title="Closed-Won">
-                              Closed-Won
+                              {"Closed-Won"}
                             </h3>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              0
+                              {"0"}
                             </Badge>
                           </div>
                         </div>
@@ -1745,10 +1745,10 @@ export function Pattern() {
                             </div>
                             <EmptyHeader className="gap-1">
                               <EmptyTitle className="font-semibold text-sm">
-                                No Deals Here
+                                {"No Deals Here"}
                               </EmptyTitle>
                               <EmptyDescription className="text-xs/5">
-                                Drop deals into closed-won when this stage is ready.
+                                {"Drop deals into closed-won when this stage is ready."}
                               </EmptyDescription>
                             </EmptyHeader>
                             <EmptyContent className="max-w-none">
@@ -1757,7 +1757,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add won deal
+                                {"Add won deal"}
                               </Button>
                             </EmptyContent>
                           </Empty>
@@ -1771,7 +1771,7 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      Add Stage
+                      {"Add Stage"}
                     </Button>
                   </div>
                 </KanbanBoard>
@@ -1783,9 +1783,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

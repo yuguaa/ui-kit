@@ -12,27 +12,7 @@ export function Pattern() {
             <div className="@min-[640px]:h-[44cqw] @min-[860px]:-translate-y-1/2 @min-[860px]:absolute @min-[860px]:h-auto @min-[860px]:left-[calc(50%+1.25cqw)] @min-[860px]:overflow-visible @min-[860px]:top-1/2 @min-[860px]:w-[48.75cqw] h-[62cqw] order-last overflow-hidden pointer-events-none relative w-full" aria-hidden="true">
               <div className="@container @min-[640px]:left-[10cqw] @min-[640px]:top-[-15cqw] @min-[640px]:w-[80cqw] @min-[860px]:left-0 @min-[860px]:relative @min-[860px]:top-0 @min-[860px]:w-full absolute aspect-[624/600] left-[-7.5cqw] top-[-22.5cqw] w-[115cqw]">
                 <div className="[transform:scale(calc(100cqw/624px))] absolute left-0 origin-top-left top-0" role="img" aria-label="Isometric grid of connected integrations, each on its own tile" style={{width: "624px", height: "600px"}}>
-                  <style>{`
-@keyframes cta13-guide-pulse {
-  0% { opacity: 0.15; }
-  5% { opacity: 0.6; }
-  30% { opacity: 0.6; }
-  44% { opacity: 0.15; }
-  100% { opacity: 0.15; }
-}
-
-.cta13-guide-pulse {
-  animation-name: cta13-guide-pulse;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta13-guide-pulse {
-    animation: none;
-  }
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n@keyframes cta13-guide-pulse {\n  0% { opacity: 0.15; }\n  5% { opacity: 0.6; }\n  30% { opacity: 0.6; }\n  44% { opacity: 0.15; }\n  100% { opacity: 0.15; }\n}\n\n.cta13-guide-pulse {\n  animation-name: cta13-guide-pulse;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .cta13-guide-pulse {\n    animation: none;\n  }\n}\n" }} />
                   <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 624 600">
                     <defs>
                       <pattern id="cta13-grid" patternUnits="userSpaceOnUse" width="50" height="50">
@@ -94,7 +74,7 @@ export function Pattern() {
                         <div className="[&_svg]:size-full absolute origin-top-left" aria-hidden="true" style={{left: "22.5166px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg fill="#ffffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                             <title>
-                              ModelContextProtocol
+                              {"ModelContextProtocol"}
                             </title>
                             <path d="M15.688 2.343a2.588 2.588 0 00-3.61 0l-9.626 9.44a.863.863 0 01-1.203 0 .823.823 0 010-1.18l9.626-9.44a4.313 4.313 0 016.016 0 4.116 4.116 0 011.204 3.54 4.3 4.3 0 013.609 1.18l.05.05a4.115 4.115 0 010 5.9l-8.706 8.537a.274.274 0 000 .393l1.788 1.754a.823.823 0 010 1.18.863.863 0 01-1.203 0l-1.788-1.753a1.92 1.92 0 010-2.754l8.706-8.538a2.47 2.47 0 000-3.54l-.05-.049a2.588 2.588 0 00-3.607-.003l-7.172 7.034-.002.002-.098.097a.863.863 0 01-1.204 0 .823.823 0 010-1.18l7.273-7.133a2.47 2.47 0 00-.003-3.537z"></path>
                             <path d="M14.485 4.703a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a4.115 4.115 0 000 5.9 4.314 4.314 0 006.016 0l7.12-6.982a.823.823 0 000-1.18.863.863 0 00-1.204 0l-7.119 6.982a2.588 2.588 0 01-3.61 0 2.47 2.47 0 010-3.54l7.12-6.982z"></path>
@@ -279,14 +259,14 @@ export function Pattern() {
             <div className="@min-[860px]:p-[3.75cqw] @min-[860px]:w-[48.75cqw] flex flex-col gap-7 items-start p-6 relative">
               <h2 className="@min-[860px]:text-4xl font-semibold text-3xl text-balance tracking-tight" id="cta-13-title">
                 <span className="@min-[860px]:block">
-                  Connect Your
+                  {"Connect Your"}
                 </span>
                 <span className="@min-[860px]:block">
-                  Developer Stack
+                  {"Developer Stack"}
                 </span>
               </h2>
               <p className="max-w-md text-muted-foreground text-sm">
-                Connect your development tools through MCP and give AI agents access to the services they need across your workflow.
+                {"Connect your development tools through MCP and give AI agents access to the services they need across your workflow."}
               </p>
               <div className="[--secondary-foreground:#fafafa] [--secondary:#262626] flex flex-wrap gap-x-4 gap-y-2 items-center">
                 <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex="0">
@@ -297,25 +277,25 @@ export function Pattern() {
                     <path d="M10.5 16.5 13 14"></path>
                     <path d="m18 3-4 4h6l-4 4"></path>
                   </svg>
-                  Connect MCP
+                  {"Connect MCP"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
                   <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
                     <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path>
                     <rect x="14" y="2" width="8" height="8" rx="1"></rect>
                   </svg>
-                  Browse Integrations
+                  {"Browse Integrations"}
                 </Button>
               </div>
               <Separator className="[--border:#ffffff1a] max-w-md" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <div className="flex flex-col gap-4 max-w-md">
                 <p className="text-muted-foreground text-sm">
-                  Trusted by leading builders
+                  {"Trusted by leading builders"}
                 </p>
                 <ul className="flex flex-wrap gap-x-6 gap-y-5 items-center">
                   <li className="flex items-center">
                     <span className="sr-only">
-                      Vercel
+                      {"Vercel"}
                     </span>
                     <span className="[&_svg]:h-full [&_svg]:w-auto inline-flex" aria-hidden="true" style={{height: "16px"}}>
                       <svg aria-label="Vercel logotype" viewBox="0 0 262 52">
@@ -325,7 +305,7 @@ export function Pattern() {
                   </li>
                   <li className="flex items-center">
                     <span className="sr-only">
-                      OpenAI
+                      {"OpenAI"}
                     </span>
                     <span className="[&_svg]:h-full [&_svg]:w-auto inline-flex" aria-hidden="true" style={{height: "21px"}}>
                       <svg fill="none" viewBox="0 0 1180 320">
@@ -342,7 +322,7 @@ export function Pattern() {
                   </li>
                   <li className="flex items-center">
                     <span className="sr-only">
-                      Resend
+                      {"Resend"}
                     </span>
                     <span className="[&_svg]:h-full [&_svg]:w-auto inline-flex" aria-hidden="true" style={{height: "15px"}}>
                       <svg viewBox="0 0 1978 420" fill="none">
@@ -352,7 +332,7 @@ export function Pattern() {
                   </li>
                   <li className="flex items-center">
                     <span className="sr-only">
-                      Clerk
+                      {"Clerk"}
                     </span>
                     <span className="[&_svg]:h-full [&_svg]:w-auto inline-flex" aria-hidden="true" style={{height: "17px"}}>
                       <svg fill="none" viewBox="0 0 441 128">

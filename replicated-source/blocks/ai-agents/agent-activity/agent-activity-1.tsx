@@ -28,10 +28,10 @@ export function Pattern() {
       <Frame className="max-w-xl w-full" spacing="default">
         <header className="flex flex-row gap-2 items-center px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="font-semibold text-sm truncate">
-            Reproduce webhook failure
+            {"Reproduce webhook failure"}
           </div>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-            Needs you
+            {"Needs you"}
           </Badge>
           <DropdownMenu>
           <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Run options" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
@@ -54,11 +54,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
               <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                 <span className="text-foreground">
-                  Traced the failing event
+                  {"Traced the failing event"}
                 </span>
                 <span className="basis-full flex gap-1 items-center min-w-0 sm:basis-0 sm:flex-1">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    charge.refunded
+                    {"charge.refunded"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -74,7 +74,7 @@ export function Pattern() {
               </span>
             </MarkerContent>
             <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-              0:08
+              {"0:08"}
             </span>
           </Marker>
           <Marker className="animate-in duration-300 ease-out fade-in-50 group/row items-start motion-reduce:animate-none px-(--frame-panel-px) py-2 slide-in-from-bottom-1" variant="default">
@@ -87,14 +87,14 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
               <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                 <span className="text-foreground">
-                  41 events queued
+                  {"41 events queued"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                  Check
+                  {"Check"}
                 </Badge>
                 <span className="basis-full flex gap-1 items-center min-w-0 sm:basis-0 sm:flex-1">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    events
+                    {"events"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -109,11 +109,11 @@ export function Pattern() {
                 </span>
               </span>
               <span className="leading-5 min-w-0 text-muted-foreground text-xs">
-                39 still pending, 2 already past the retry window
+                {"39 still pending, 2 already past the retry window"}
               </span>
             </MarkerContent>
             <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-              0:03
+              {"0:03"}
             </span>
           </Marker>
           <Marker className="animate-in duration-300 ease-out fade-in-50 group/row items-start motion-reduce:animate-none px-(--frame-panel-px) py-2 slide-in-from-bottom-1" variant="default">
@@ -126,11 +126,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
               <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                 <span className="text-foreground">
-                  Read 4 pages
+                  {"Read 4 pages"}
                 </span>
                 <span className="basis-full flex gap-1 items-center min-w-0 sm:basis-0 sm:flex-1">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    stripe.com/docs/webhooks
+                    {"stripe.com/docs/webhooks"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -155,7 +155,7 @@ export function Pattern() {
               </span>
             </MarkerContent>
             <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-              0:06
+              {"0:06"}
             </span>
           </Marker>
           <Marker className="animate-in duration-300 ease-out fade-in-50 group/row items-start motion-reduce:animate-none px-(--frame-panel-px) py-2 slide-in-from-bottom-1" variant="default">
@@ -168,11 +168,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 flex-col gap-0.5 text-[13px]">
               <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                 <span className="text-foreground">
-                  Reproduced the 500
+                  {"Reproduced the 500"}
                 </span>
                 <span className="basis-full flex gap-1 items-center min-w-0 sm:basis-0 sm:flex-1">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    stripe-webhook.test.ts
+                    {"stripe-webhook.test.ts"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -197,7 +197,7 @@ export function Pattern() {
               </span>
             </MarkerContent>
             <span className="flex h-5 items-center self-start shrink-0 tabular-nums text-muted-foreground text-xs">
-              0:12
+              {"0:12"}
             </span>
           </Marker>
           <div className="bg-muted/50 border-border border-y flex flex-col gap-2 px-(--frame-panel-px) py-2.5">
@@ -212,11 +212,11 @@ export function Pattern() {
               <MarkerContent className="animate-in duration-300 ease-out fade-in-50 flex flex-1 flex-col gap-0.5 motion-reduce:animate-none slide-in-from-bottom-2 text-[13px]">
                 <span className="flex flex-wrap gap-x-2 gap-y-1 items-center leading-5 min-h-5 min-w-0">
                   <span className="font-medium text-foreground">
-                    Needs your answer
+                    {"Needs your answer"}
                   </span>
                   <span className="basis-full flex gap-1 items-center min-w-0 sm:basis-0 sm:flex-1">
                     <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                      src/api/stripe-webhook.ts
+                      {"src/api/stripe-webhook.ts"}
                     </span>
                     <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                       <Tooltip>
@@ -240,7 +240,7 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="leading-5 text-muted-foreground text-sm">
-                  The same guard covers disputes. Fix both branches, or refunds only?
+                  {"The same guard covers disputes. Fix both branches, or refunds only?"}
                 </span>
               </MarkerContent>
             </Marker>
@@ -250,7 +250,7 @@ export function Pattern() {
                   <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_t_" placeholder="Type your answer" aria-label="Answer the question" value="" />
                   <InputGroupAddon className="gap-1" role="group" data-align="inline-end">
                     <Button className="aria-disabled:opacity-50 aria-disabled:pointer-events-none cn-input-group-button cn-input-group-button-size-xs flex shadow-none" type="submit" disabled="" tabIndex="0" aria-disabled="true" size="xs">
-                      Send
+                      {"Send"}
                     </Button>
                   </InputGroupAddon>
                 </InputGroup>
@@ -263,10 +263,10 @@ export function Pattern() {
             </MarkerIcon>
             <MarkerContent className="flex flex-1 flex-wrap gap-x-2 gap-y-1 items-center min-h-5 text-[13px]">
               <span className="min-w-0 text-muted-foreground">
-                Editing the refund branch
+                {"Editing the refund branch"}
               </span>
               <span className="basis-full font-mono min-w-0 sm:basis-0 sm:flex-1 text-muted-foreground text-xs truncate">
-                src/api/stripe-webhook.ts
+                {"src/api/stripe-webhook.ts"}
               </span>
             </MarkerContent>
           </Marker>
@@ -278,18 +278,18 @@ export function Pattern() {
             </MarkerIcon>
             <MarkerContent className="flex flex-1 flex-wrap gap-x-2 gap-y-1 items-center min-h-5 text-[13px]">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-mono font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                fly
+                {"fly"}
               </Badge>
               <span className="min-w-0 text-muted-foreground">
-                Needs your approval
+                {"Needs your approval"}
               </span>
               <span className="basis-full font-mono min-w-0 sm:basis-0 sm:flex-1 text-muted-foreground text-xs truncate">
-                webhook-consumer
+                {"webhook-consumer"}
               </span>
             </MarkerContent>
             <span className="flex h-5 items-center self-start shrink-0">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                High impact
+                {"High impact"}
               </Badge>
             </span>
           </Marker>
@@ -299,13 +299,13 @@ export function Pattern() {
             </MarkerIcon>
             <MarkerContent className="flex flex-1 flex-wrap gap-x-2 gap-y-1 items-center min-h-5 text-[13px]">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-mono font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                fly
+                {"fly"}
               </Badge>
               <span className="min-w-0 text-muted-foreground">
-                scale_app
+                {"scale_app"}
               </span>
               <span className="basis-full font-mono min-w-0 sm:basis-0 sm:flex-1 text-muted-foreground text-xs truncate">
-                webhook-consumer
+                {"webhook-consumer"}
               </span>
             </MarkerContent>
           </Marker>
@@ -315,13 +315,13 @@ export function Pattern() {
             </MarkerIcon>
             <MarkerContent className="flex flex-1 flex-wrap gap-x-2 gap-y-1 items-center min-h-5 text-[13px]">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-mono font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                linear
+                {"linear"}
               </Badge>
               <span className="min-w-0 text-muted-foreground">
-                create_issue
+                {"create_issue"}
               </span>
               <span className="basis-full font-mono min-w-0 sm:basis-0 sm:flex-1 text-muted-foreground text-xs truncate">
-                engineering backlog
+                {"engineering backlog"}
               </span>
             </MarkerContent>
           </Marker>
@@ -329,11 +329,11 @@ export function Pattern() {
         <footer className="flex flex-row gap-2 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <span className="flex gap-2 items-center text-muted-foreground text-xs">
             <span className="tabular-nums">
-              Step 5 of 9
+              {"Step 5 of 9"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="tabular-nums">
-              0:29
+              {"0:29"}
             </span>
           </span>
         </footer>

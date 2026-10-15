@@ -10,11 +10,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                01
+                {"01"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Ceramics">
-                Ceramics
+                {"Ceramics"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -24,7 +24,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                    Bestseller
+                    {"Bestseller"}
                   </Badge>
                 </div>
                 <Button className="absolute right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Hand-Thrown Stoneware Mug from wishlist" aria-pressed="true" extracted="1">
@@ -37,41 +37,41 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Hand-Thrown Stoneware Mug
+                      {"Hand-Thrown Stoneware Mug"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $48
+                      {"$48"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  A 350 ml mug shaped on a kick wheel in Caldas da Rainha, finished with a food-safe glaze that softens after the first wash.
+                  {"A 350 ml mug shaped on a kick wheel in Caldas da Rainha, finished with a food-safe glaze that softens after the first wash."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Volume
+                      {"Volume"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      350 ml
+                      {"350 ml"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Kiln
+                      {"Kiln"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      1280°C
+                      {"1280°C"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Maker
+                      {"Maker"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Algarve
+                      {"Algarve"}
                     </dd>
                   </div>
                 </dl>
@@ -81,11 +81,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                02
+                {"02"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Lighting">
-                Lighting
+                {"Lighting"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -103,41 +103,41 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Brass Candle Holder Set
+                      {"Brass Candle Holder Set"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $124
+                      {"$124"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  Solid brass holders that age into a softer patina with use, hand-spun in a small Lisbon foundry.
+                  {"Solid brass holders that age into a softer patina with use, hand-spun in a small Lisbon foundry."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Metal
+                      {"Metal"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Solid brass
+                      {"Solid brass"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Finish
+                      {"Finish"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Patinated
+                      {"Patinated"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Pieces
+                      {"Pieces"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      2
+                      {"2"}
                     </dd>
                   </div>
                 </dl>
@@ -147,11 +147,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                03
+                {"03"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Tableware">
-                Tableware
+                {"Tableware"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -169,44 +169,44 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Walnut Serving Tray
+                      {"Walnut Serving Tray"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $98
+                      {"$98"}
                     </span>
                     <span className="font-normal line-through text-muted-foreground">
-                      $128
+                      {"$128"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  Steam-bent walnut with a hand-rubbed plant oil finish, sanded by hand before each shipment.
+                  {"Steam-bent walnut with a hand-rubbed plant oil finish, sanded by hand before each shipment."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Width
+                      {"Width"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      36 cm
+                      {"36 cm"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Finish
+                      {"Finish"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Plant oil
+                      {"Plant oil"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Maker
+                      {"Maker"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Galicia
+                      {"Galicia"}
                     </dd>
                   </div>
                 </dl>
@@ -216,11 +216,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                04
+                {"04"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Linens">
-                Linens
+                {"Linens"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -230,7 +230,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                    New
+                    {"New"}
                   </Badge>
                 </div>
                 <Button className="absolute right-2 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Add Linen Napkin Quartet to wishlist" aria-pressed="false">
@@ -243,41 +243,41 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Linen Napkin Quartet
+                      {"Linen Napkin Quartet"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $42
+                      {"$42"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  Stone-washed linen in four muted earth tones, soft from the first wash and only better with age.
+                  {"Stone-washed linen in four muted earth tones, soft from the first wash and only better with age."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Count
+                      {"Count"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      4 napkins
+                      {"4 napkins"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Weight
+                      {"Weight"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      200 gsm
+                      {"200 gsm"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Origin
+                      {"Origin"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Lithuania
+                      {"Lithuania"}
                     </dd>
                   </div>
                 </dl>
@@ -287,11 +287,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                05
+                {"05"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Objects">
-                Objects
+                {"Objects"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -309,41 +309,41 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Slow Reader Vase
+                      {"Slow Reader Vase"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $86
+                      {"$86"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  Slipcast stoneware in a tapered silhouette, sized for a single stem or a small bunch on a quiet shelf.
+                  {"Slipcast stoneware in a tapered silhouette, sized for a single stem or a small bunch on a quiet shelf."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Height
+                      {"Height"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      22 cm
+                      {"22 cm"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Glaze
+                      {"Glaze"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Matte
+                      {"Matte"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Maker
+                      {"Maker"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Maastricht
+                      {"Maastricht"}
                     </dd>
                   </div>
                 </dl>
@@ -353,11 +353,11 @@ export function Pattern() {
           <article className="flex flex-col gap-5 group/card">
             <header className="flex gap-3 items-center">
               <span className="font-mono tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                06
+                {"06"}
               </span>
               <span className="bg-border flex-1 h-px" aria-hidden="true"></span>
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.18em] transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Textiles">
-                Textiles
+                {"Textiles"}
               </a>
             </header>
             <div className="flex gap-4 items-start min-w-0 sm:gap-5">
@@ -367,7 +367,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                    Trending
+                    {"Trending"}
                   </Badge>
                 </div>
                 <Button className="absolute right-2 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Add Wool Throw Blanket to wishlist" aria-pressed="false">
@@ -380,41 +380,41 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between min-w-0">
                   <h3 className="font-medium leading-snug min-w-0 text-balance text-foreground text-lg tracking-tight">
                     <a className="block hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Wool Throw Blanket
+                      {"Wool Throw Blanket"}
                     </a>
                   </h3>
                   <div className="flex font-semibold gap-2 items-baseline shrink-0 tabular-nums text-base">
                     <span className="text-foreground">
-                      $148
+                      {"$148"}
                     </span>
                   </div>
                 </div>
                 <p className="leading-relaxed text-muted-foreground text-pretty text-sm">
-                  Loomed in the Yorkshire dales from undyed British wool, finished with a hand-tied fringe.
+                  {"Loomed in the Yorkshire dales from undyed British wool, finished with a hand-tied fringe."}
                 </p>
                 <dl className="border-border/60 border-t gap-x-3 gap-y-2 grid grid-cols-3 pt-3">
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Size
+                      {"Size"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      140 × 200 cm
+                      {"140 × 200 cm"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Weight
+                      {"Weight"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      1.4 kg
+                      {"1.4 kg"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5">
                     <dt className="text-muted-foreground text-xs tracking-wide uppercase">
-                      Loom
+                      {"Loom"}
                     </dt>
                     <dd className="font-medium leading-snug text-foreground text-sm">
-                      Yorkshire
+                      {"Yorkshire"}
                     </dd>
                   </div>
                 </dl>

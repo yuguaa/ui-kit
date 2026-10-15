@@ -13,7 +13,7 @@ export function Pattern() {
       <Frame className="@container max-w-md w-full">
         <FramePanel className="px-3.5! py-3!">
           <h2 className="font-medium text-base text-foreground">
-            Manual Integrations
+            {"Manual Integrations"}
           </h2>
         </FramePanel>
         <FramePanel className="p-3.5!">
@@ -30,10 +30,10 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Data Cleaning
+                    {"Data Cleaning"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Automated pipeline to clean and format..
+                    {"Automated pipeline to clean and format.."}
                   </p>
                 </div>
                 <Button className="text-foreground" type="button" tabIndex="0" aria-label="Add Data Cleaning integration">
@@ -61,10 +61,10 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Anomaly Detection
+                    {"Anomaly Detection"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Identify irregular patterns in financial or..
+                    {"Identify irregular patterns in financial or.."}
                   </p>
                 </div>
                 <Button className="text-foreground" type="button" tabIndex="0" aria-label="Add Anomaly Detection integration">
@@ -90,10 +90,10 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Recommendation Engine
+                    {"Recommendation Engine"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    AI-driven product or content recomme..
+                    {"AI-driven product or content recomme.."}
                   </p>
                 </div>
                 <Button className="text-foreground" type="button" tabIndex="0" aria-label="Add Recommendation Engine integration">
@@ -116,10 +116,10 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Chatbot Support
+                    {"Chatbot Support"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Conversational assistant for customer..
+                    {"Conversational assistant for customer.."}
                   </p>
                 </div>
                 <Button className="text-foreground" type="button" tabIndex="0" aria-label="Add Chatbot Support integration">
@@ -144,10 +144,10 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0 space-y-0.5">
                   <p className="font-medium text-foreground text-sm">
-                    Fraud Monitoring
+                    {"Fraud Monitoring"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Real-time alerts for suspicious transac..
+                    {"Real-time alerts for suspicious transac.."}
                   </p>
                 </div>
                 <Button className="text-foreground" type="button" tabIndex="0" aria-label="Add Fraud Monitoring integration">
@@ -162,7 +162,7 @@ export function Pattern() {
         </FramePanel>
         <FramePanel className="p-3!">
           <Button className="text-foreground w-full" type="button" tabIndex="0">
-            Browse More
+            {"Browse More"}
           </Button>
         </FramePanel>
       </Frame>

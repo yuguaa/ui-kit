@@ -23,7 +23,7 @@ export function Pattern() {
       <Frame className="@container max-w-xl w-full">
         <FramePanel className="flex items-center justify-between p-3.5!">
           <h2 className="font-medium text-base text-foreground">
-            Top Movers
+            {"Top Movers"}
           </h2>
           <InputGroup className="w-46" role="group">
             <InputGroupAddon role="group" data-align="inline-start">
@@ -35,7 +35,7 @@ export function Pattern() {
             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_0_" placeholder="Search" />
             <InputGroupAddon role="group" data-align="inline-end">
               <Kbd>
-                ⌘ K
+                {"⌘ K"}
               </Kbd>
             </InputGroupAddon>
           </InputGroup>
@@ -46,13 +46,13 @@ export function Pattern() {
               <TableHeader className="bg-muted/50">
                 <TableRow>
                   <TableHead className="ps-3.5 text-muted-foreground text-sm">
-                    Name
+                    {"Name"}
                   </TableHead>
                   <TableHead className="text-muted-foreground text-sm">
-                    Status
+                    {"Status"}
                   </TableHead>
                   <TableHead className="text-muted-foreground text-sm">
-                    Active
+                    {"Active"}
                   </TableHead>
                 </TableRow>
               </TableHeader>
@@ -65,17 +65,17 @@ export function Pattern() {
                       </svg>
                       <div className="min-w-0">
                         <div className="font-medium text-base text-foreground">
-                          Tiango
+                          {"Tiango"}
                         </div>
                         <div className="text-muted-foreground text-sm">
-                          Barcelona, Spain
+                          {"Barcelona, Spain"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 outline-none px-1.5 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Active
+                      {"Active"}
                     </Badge>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
@@ -84,7 +84,7 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      +$1.9M
+                      {"+$1.9M"}
                     </div>
                   </TableCell>
                 </TableRow>
@@ -96,17 +96,17 @@ export function Pattern() {
                       </svg>
                       <div className="min-w-0">
                         <div className="font-medium text-base text-foreground">
-                          Hotmart
+                          {"Hotmart"}
                         </div>
                         <div className="text-muted-foreground text-sm">
-                          Belo Horizonte, Brazil
+                          {"Belo Horizonte, Brazil"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 outline-none px-1.5 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                      New
+                      {"New"}
                     </Badge>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
@@ -115,7 +115,7 @@ export function Pattern() {
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      -$2.1M
+                      {"-$2.1M"}
                     </div>
                   </TableCell>
                 </TableRow>
@@ -134,17 +134,17 @@ export function Pattern() {
                       </span>
                       <div className="min-w-0">
                         <div className="font-medium text-base text-foreground">
-                          OpenAI
+                          {"OpenAI"}
                         </div>
                         <div className="text-muted-foreground text-sm">
-                          San Francisco, CA
+                          {"San Francisco, CA"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 outline-none px-1.5 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Active
+                      {"Active"}
                     </Badge>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
@@ -153,7 +153,7 @@ export function Pattern() {
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      +$870k
+                      {"+$870k"}
                     </div>
                   </TableCell>
                 </TableRow>
@@ -182,17 +182,17 @@ export function Pattern() {
                       </svg>
                       <div className="min-w-0">
                         <div className="font-medium text-base text-foreground">
-                          Vercel
+                          {"Vercel"}
                         </div>
                         <div className="text-muted-foreground text-sm">
-                          San Francisco, CA
+                          {"San Francisco, CA"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 outline-none px-1.5 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      On Hold
+                      {"On Hold"}
                     </Badge>
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
@@ -201,7 +201,7 @@ export function Pattern() {
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      -$530k
+                      {"-$530k"}
                     </div>
                   </TableCell>
                 </TableRow>

@@ -61,7 +61,7 @@ export function Pattern() {
                     <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                     <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                   </svg>
-                  Overview
+                  {"Overview"}
                 </Button>
                 <Button className="[&_svg]:text-ring [&_svg]:transition-colors gap-2 hover:[&_svg]:text-foreground hover:bg-accent/50 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-bot size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
@@ -72,7 +72,7 @@ export function Pattern() {
                     <path d="M15 13v2"></path>
                     <path d="M9 13v2"></path>
                   </svg>
-                  Fleet
+                  {"Fleet"}
                 </Button>
                 <Button className="[&_svg]:text-ring [&_svg]:transition-colors gap-2 hover:[&_svg]:text-foreground hover:bg-accent/50 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
@@ -80,7 +80,7 @@ export function Pattern() {
                     <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
                     <circle cx="18" cy="5" r="3"></circle>
                   </svg>
-                  Missions
+                  {"Missions"}
                 </Button>
                 <Button className="[&_svg]:text-ring [&_svg]:transition-colors gap-2 hover:[&_svg]:text-foreground hover:bg-accent/50 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-radio-tower size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RadioTowerIcon" tabler="IconAntenna" hugeicons="AntennaIcon" phosphor="BroadcastIcon" remixicon="RiSignalTowerLine" aria-hidden="true">
@@ -92,13 +92,13 @@ export function Pattern() {
                     <path d="M9.5 18h5"></path>
                     <path d="m8 22 4-11 4 11"></path>
                   </svg>
-                  Stations
+                  {"Stations"}
                 </Button>
                 <Button className="[&_svg]:text-ring [&_svg]:transition-colors gap-2 hover:[&_svg]:text-foreground hover:bg-accent/50 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-wrench size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WrenchIcon" tabler="IconTool" hugeicons="Wrench01Icon" phosphor="WrenchIcon" remixicon="RiToolsLine" aria-hidden="true">
                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>
                   </svg>
-                  Maintenance
+                  {"Maintenance"}
                 </Button>
                 <Button className="[&_svg]:text-ring [&_svg]:transition-colors gap-2 hover:[&_svg]:text-foreground hover:bg-accent/50 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-file-spreadsheet size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileSpreadsheetIcon" tabler="IconFileSpreadsheet" hugeicons="FileSpreadsheetIcon" phosphor="FileXlsIcon" remixicon="RiFileExcel2Line" aria-hidden="true">
@@ -109,7 +109,7 @@ export function Pattern() {
                     <path d="M8 17h2"></path>
                     <path d="M14 17h2"></path>
                   </svg>
-                  Reports
+                  {"Reports"}
                 </Button>
               </nav>
               <div className="flex gap-0.5 items-center lg:hidden">
@@ -142,10 +142,10 @@ export function Pattern() {
               </Button>
               <DialogHeader className="sr-only">
                 <DialogTitle id="base-ui-_r_c_">
-                  Search Fleet
+                  {"Search Fleet"}
                 </DialogTitle>
                 <DialogDescription id="base-ui-_r_d_">
-                  Search across every robot, zone and mission.
+                  {"Search across every robot, zone and mission."}
                 </DialogDescription>
               </DialogHeader>
               <DropdownMenu>
@@ -168,17 +168,17 @@ export function Pattern() {
               <DropdownMenuTrigger className="-mx-0.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Account menu" aria-haspopup="menu" id="base-ui-_r_o_" aria-expanded="false">
                 <Avatar className="size-6" size="default">
                   <AvatarFallback className="text-[10px]">
-                    SC
+                    {"SC"}
                   </AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
               </DropdownMenu>
               <Button className="shadow-xs text-xs" type="button" tabIndex="0">
                 <span className="sm:hidden">
-                  Onboard
+                  {"Onboard"}
                 </span>
                 <span className="max-sm:hidden">
-                  Onboard Robot
+                  {"Onboard Robot"}
                 </span>
               </Button>
             </div>
@@ -188,23 +188,23 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-4 items-start justify-center min-w-0 sm:gap-1.5">
                 <div className="flex flex-wrap gap-x-2.5 gap-y-4 items-center sm:gap-y-1.5">
                   <h1 className="font-medium text-xl">
-                    Mission Control Center
+                    {"Mission Control Center"}
                   </h1>
                   <Separator className="data-vertical:self-center h-3 hidden sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                   <div className="flex gap-1.5 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-background disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
-                      342 Robots
+                      {"342 Robots"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-background disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
-                      58 Missions
+                      {"58 Missions"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-background disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative rounded-full text-[0.625rem] transition-shadow">
-                      12 Stations
+                      {"12 Stations"}
                     </Badge>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Track robot status, capacity, assignments, health, and activity across your entire operating fleet.
+                  {"Track robot status, capacity, assignments, health, and activity across your entire operating fleet."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -214,7 +214,7 @@ export function Pattern() {
                     <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
                     <circle cx="18" cy="5" r="3"></circle>
                   </svg>
-                  New Mission
+                  {"New Mission"}
                 </Button>
                 <Button className="shadow-xs text-xs" type="button" tabIndex="0">
                   <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" data-icon="inline-start" aria-hidden="true">
@@ -223,7 +223,7 @@ export function Pattern() {
                     <path d="M22 4h-4"></path>
                     <circle cx="4" cy="20" r="2"></circle>
                   </svg>
-                  Open Chat
+                  {"Open Chat"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-xs shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Display options" aria-haspopup="menu" id="base-ui-_r_t_" aria-expanded="false">
@@ -241,28 +241,28 @@ export function Pattern() {
               <div className="flex max-md:hidden px-4 sm:px-6">
                 <TabsList className="bg-input/30 h-7 inset-ring inset-ring-ring/20 p-0 shrink-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Workspace views">
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_v_">
-                    Summary
+                    {"Summary"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_10_" compositeItemActive="" aria-controls="base-ui-_r_18_">
-                    Delivery Center
+                    {"Delivery Center"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_11_">
-                    Performance
+                    {"Performance"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_12_">
-                    Coverage
+                    {"Coverage"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_13_">
-                    Issues
+                    {"Issues"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_14_">
-                    Capacity
+                    {"Capacity"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_15_">
-                    Trends
+                    {"Trends"}
                   </TabsTrigger>
                   <TabsTrigger className="border-0 dark:data-active:bg-background dark:data-active:inset-ring-ring/30 data-active:inset-ring data-active:inset-ring-ring/50 data-active:shadow-xs flex-none h-full px-2.5 py-0.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_16_">
-                    Access
+                    {"Access"}
                   </TabsTrigger>
                 </TabsList>
               </div>

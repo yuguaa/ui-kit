@@ -38,35 +38,35 @@ export function Pattern() {
         <header className="@container/header flex flex-row flex-wrap gap-(--frame-panel-header-gap) gap-x-2 gap-y-3 items-center px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-1 flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Deploy History
+              {"Deploy History"}
             </div>
             <div className="tabular-nums text-muted-foreground text-xs whitespace-nowrap" aria-live="polite">
-              6 deploys
+              {"6 deploys"}
             </div>
           </div>
           <ToggleGroup className="@xl/header:order-none @xl/header:w-fit order-last w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Environment" style={{"--gap": "0"}}>
             <ToggleGroupItem className="@xl/header:flex-none [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="All, 6 deploys" extracted="1">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                All
+                {"All"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                6
+                {"6"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="@xl/header:flex-none [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Production, 4 deploys">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Production
+                {"Production"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                4
+                {"4"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="@xl/header:flex-none [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Staging, 2 deploys">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Staging
+                {"Staging"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                2
+                {"2"}
               </span>
             </ToggleGroupItem>
           </ToggleGroup>
@@ -77,7 +77,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New deploy
+              {"New deploy"}
             </DialogTrigger>
             </Dialog>
             <DropdownMenu>
@@ -105,29 +105,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    fraud-scorer
+                    {"fraud-scorer"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v3.9.0
+                    {"v3.9.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4128
+                    {"DEP-4128"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Waiting
+                    {"Waiting"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -142,7 +142,7 @@ export function Pattern() {
                       <span className="bg-warning overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      5/6
+                      {"5/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -150,10 +150,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 29, 14:12
+                  {"Sep 29, 14:12"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  8m ago
+                  {"8m ago"}
                 </span>
               </div>
             </Item>
@@ -170,29 +170,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    payments-api
+                    {"payments-api"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v2.41.0
+                    {"v2.41.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4127
+                    {"DEP-4127"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Succeeded
+                    {"Succeeded"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -207,7 +207,7 @@ export function Pattern() {
                       <span className="bg-success overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      6/6
+                      {"6/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -215,10 +215,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 29, 13:51
+                  {"Sep 29, 13:51"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  29m ago
+                  {"29m ago"}
                 </span>
               </div>
             </Item>
@@ -237,29 +237,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    reconciliation
+                    {"reconciliation"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v2.7.1
+                    {"v2.7.1"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4125
+                    {"DEP-4125"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                    Rolled back
+                    {"Rolled back"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -274,7 +274,7 @@ export function Pattern() {
                       <span className="bg-muted-foreground/25 overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      3/6
+                      {"3/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -282,10 +282,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 29, 10:38
+                  {"Sep 29, 10:38"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  3h ago
+                  {"3h ago"}
                 </span>
               </div>
             </Item>
@@ -302,29 +302,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    ledger-worker
+                    {"ledger-worker"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Staging
+                    {"Staging"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v1.18.4
+                    {"v1.18.4"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4124
+                    {"DEP-4124"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Staging
+                    {"Staging"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Failed
+                    {"Failed"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -339,7 +339,7 @@ export function Pattern() {
                       <span className="bg-muted-foreground/25 overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      3/6
+                      {"3/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -347,10 +347,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 29, 10:02
+                  {"Sep 29, 10:02"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  4h ago
+                  {"4h ago"}
                 </span>
               </div>
             </Item>
@@ -367,29 +367,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    notifications
+                    {"notifications"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Staging
+                    {"Staging"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v3.5.0
+                    {"v3.5.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4112
+                    {"DEP-4112"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Staging
+                    {"Staging"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Failed
+                    {"Failed"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -404,7 +404,7 @@ export function Pattern() {
                       <span className="bg-muted-foreground/25 overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      1/6
+                      {"1/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -412,10 +412,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 28, 21:05
+                  {"Sep 28, 21:05"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  17h ago
+                  {"17h ago"}
                 </span>
               </div>
             </Item>
@@ -436,29 +436,29 @@ export function Pattern() {
               <ItemContent className="gap-0.5 min-w-0">
                 <ItemTitle className="max-w-full min-w-0">
                   <span className="min-w-0 truncate">
-                    search-indexer
+                    {"search-indexer"}
                   </span>
                   <Badge className="@2xl/panel:inline-flex [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="flex font-mono gap-1.5 items-center min-w-0 text-xs">
                   <span className="truncate">
-                    v2.3.0
+                    {"v2.3.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0">
-                    DEP-4108
+                    {"DEP-4108"}
                   </span>
                 </ItemDescription>
               </ItemContent>
               <ItemActions className="@2xl/panel:basis-auto @2xl/panel:order-none basis-full gap-4 justify-between order-last">
                 <span className="@2xl/panel:w-24 flex gap-1.5 items-center shrink-0">
                   <Badge className="@2xl/panel:hidden [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Succeeded
+                    {"Succeeded"}
                   </Badge>
                 </span>
                 <div className="@2xl/panel:flex-none @2xl/panel:w-36 flex-1 max-w-36 min-w-0">
@@ -473,7 +473,7 @@ export function Pattern() {
                       <span className="bg-success overflow-hidden relative rounded-full" aria-hidden="true"></span>
                     </span>
                     <span className="shrink-0 tabular-nums text-right text-xs w-8">
-                      6/6
+                      {"6/6"}
                     </span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -481,10 +481,10 @@ export function Pattern() {
               </ItemActions>
               <div className="flex flex-col gap-0.5 items-end shrink-0 w-24">
                 <span className="tabular-nums text-sm whitespace-nowrap">
-                  Sep 28, 18:07
+                  {"Sep 28, 18:07"}
                 </span>
                 <span className="text-muted-foreground text-xs whitespace-nowrap">
-                  20h ago
+                  {"20h ago"}
                 </span>
               </div>
             </Item>

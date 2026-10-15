@@ -30,17 +30,17 @@ export function Pattern() {
                 </IconTile>
                 <div className="flex flex-col gap-2 min-w-0">
                   <h2 className="font-semibold leading-tight text-sm truncate">
-                    Mara Alves
+                    {"Mara Alves"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
                       <circle cx="12" cy="12" r="10"></circle>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Open to Proposals
+                    {"Open to Proposals"}
                   </Badge>
                   <p className="text-muted-foreground text-xs truncate">
-                    malves@neui-capital.io
+                    {"malves@neui-capital.io"}
                   </p>
                 </div>
               </div>
@@ -50,10 +50,10 @@ export function Pattern() {
                 <Item className="bg-transparent px-2 py-3" variant="muted" size="sm">
                   <ItemContent className="gap-1 items-center">
                     <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                      87
+                      {"87"}
                     </ItemTitle>
                     <ItemDescription className="leading-tight line-clamp-1 text-xs">
-                      Deals
+                      {"Deals"}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -63,10 +63,10 @@ export function Pattern() {
                 <Item className="bg-transparent px-2 py-3" variant="muted" size="sm">
                   <ItemContent className="gap-1 items-center">
                     <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                      $7.2M
+                      {"$7.2M"}
                     </ItemTitle>
                     <ItemDescription className="leading-tight line-clamp-1 text-xs">
-                      Avg. Ticket
+                      {"Avg. Ticket"}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -76,10 +76,10 @@ export function Pattern() {
                 <Item className="bg-transparent px-2 py-3" variant="muted" size="sm">
                   <ItemContent className="gap-1 items-center">
                     <ItemTitle className="font-medium leading-none tabular-nums text-sm">
-                      $415M
+                      {"$415M"}
                     </ItemTitle>
                     <ItemDescription className="leading-tight line-clamp-1 text-xs">
-                      Total Fund
+                      {"Total Fund"}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -101,13 +101,13 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="font-medium leading-5 text-sm truncate">
-                        Northline Ventures
+                        {"Northline Ventures"}
                       </span>
                     </ItemTitle>
                   </ItemContent>
                   <ItemActions className="shrink-0">
                     <span className="font-medium leading-5 tabular-nums text-sm">
-                      $7,840,000
+                      {"$7,840,000"}
                     </span>
                   </ItemActions>
                 </Item>
@@ -126,13 +126,13 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="font-medium leading-5 text-sm truncate">
-                        Bluepeak Capital
+                        {"Bluepeak Capital"}
                       </span>
                     </ItemTitle>
                   </ItemContent>
                   <ItemActions className="shrink-0">
                     <span className="font-medium leading-5 tabular-nums text-sm">
-                      $3,260,000
+                      {"$3,260,000"}
                     </span>
                   </ItemActions>
                 </Item>
@@ -152,13 +152,13 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="min-w-0 w-full">
                       <span className="font-medium leading-5 text-sm truncate">
-                        Everfield Equity
+                        {"Everfield Equity"}
                       </span>
                     </ItemTitle>
                   </ItemContent>
                   <ItemActions className="shrink-0">
                     <span className="font-medium leading-5 tabular-nums text-sm">
-                      $1,180,000
+                      {"$1,180,000"}
                     </span>
                   </ItemActions>
                 </Item>
@@ -168,7 +168,7 @@ export function Pattern() {
               <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                 <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
               </svg>
-              Send Funding Proposal
+              {"Send Funding Proposal"}
             </Button>
           </div>
         </FramePanel>

@@ -18,27 +18,14 @@ export function Pattern() {
   return (
     <div className="flex items-center justify-center md:p-10 min-h-svh p-6 w-full">
       <Frame className="@container [--velocity-current:var(--velocity-accent,var(--color-blue-500))] dark:[--velocity-current:var(--velocity-accent,var(--color-blue-400))] max-w-5xl min-w-0 w-full" spacing="default" chart="chart-r0">
-        <style>{`
- [data-chart=chart-r0] {
-  --color-velocity: var(--velocity-current);
-  --color-watch: var(--color-amber-400);
-  --color-slow: var(--color-zinc-400);
-}
-
-
-.dark [data-chart=chart-r0] {
-  --color-velocity: var(--velocity-current);
-  --color-watch: var(--color-amber-300);
-  --color-slow: var(--color-zinc-500);
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-r0] {\n  --color-velocity: var(--velocity-current);\n  --color-watch: var(--color-amber-400);\n  --color-slow: var(--color-zinc-400);\n}\n\n\n.dark [data-chart=chart-r0] {\n  --color-velocity: var(--velocity-current);\n  --color-watch: var(--color-amber-300);\n  --color-slow: var(--color-zinc-500);\n}\n" }} />
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="font-semibold text-sm">
-              Inventory Velocity
+              {"Inventory Velocity"}
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Units sold per day by category
+              {"Units sold per day by category"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
@@ -51,10 +38,10 @@ export function Pattern() {
                 <path d="M3 10h18"></path>
               </svg>
               <span className="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">
-                Last 30 days
+                {"Last 30 days"}
               </span>
               <span className="@md:hidden [text-box:trim-both_cap_alphabetic]" aria-hidden="true">
-                30D
+                {"30D"}
               </span>
               <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -71,10 +58,10 @@ export function Pattern() {
                 <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
               </svg>
               <span className="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">
-                Warehouses
+                {"Warehouses"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-normal tabular-nums text-muted-foreground">
-                3/3
+                {"3/3"}
               </span>
               <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -123,12 +110,12 @@ export function Pattern() {
             <div className="@3xl:border-b-0 @3xl:border-e border-b flex flex-col gap-3 justify-between min-w-0 px-(--frame-panel-px) py-(--frame-panel-py)">
               <span className="flex h-5 items-center text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Units per Day
+                  {"Units per Day"}
                 </span>
               </span>
               <span className="flex gap-3 h-9 items-center">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-4xl tracking-tight">
-                  7,170
+                  {"7,170"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 bg-success/10 border border-none border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -136,28 +123,28 @@ export function Pattern() {
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
                   <span className="sr-only">
-                    Up
+                    {"Up"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    13.5%
+                    {"13.5%"}
                   </span>
                 </Badge>
               </span>
               <span className="flex h-5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  vs 6,316 a day in the prior 30 days
+                  {"vs 6,316 a day in the prior 30 days"}
                 </span>
               </span>
             </div>
             <div className="flex flex-col gap-3 justify-between min-w-0 px-(--frame-panel-px) py-(--frame-panel-py)">
               <span className="flex gap-3 h-5 items-center justify-between">
                 <span className="[text-box:trim-both_cap_alphabetic] shrink-0 text-muted-foreground text-sm whitespace-nowrap">
-                  Stock Health
+                  {"Stock Health"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip tabular-nums text-ellipsis text-muted-foreground text-xs whitespace-nowrap">
-                  24.5 days of supply
+                  {"24.5 days of supply"}
                   <span className="@max-md:hidden">
-                    , 175.3K on hand
+                    {", 175.3K on hand"}
                   </span>
                 </span>
               </span>
@@ -170,37 +157,37 @@ export function Pattern() {
                 <li className="flex gap-2 h-5 items-center min-w-0">
                   <span className="bg-(--color-velocity) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-sm">
-                    8
+                    {"8"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] text-sm">
-                    Healthy
+                    {"Healthy"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis text-muted-foreground text-xs whitespace-nowrap">
-                    under 30 days
+                    {"under 30 days"}
                   </span>
                 </li>
                 <li className="flex gap-2 h-5 items-center min-w-0">
                   <span className="bg-(--color-watch) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-sm">
-                    2
+                    {"2"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] text-sm">
-                    Watch
+                    {"Watch"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis text-muted-foreground text-xs whitespace-nowrap">
-                    Toys and Health
+                    {"Toys and Health"}
                   </span>
                 </li>
                 <li className="flex gap-2 h-5 items-center min-w-0">
                   <span className="bg-(--color-slow) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-sm">
-                    2
+                    {"2"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] text-sm">
-                    Slow
+                    {"Slow"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis text-muted-foreground text-xs whitespace-nowrap">
-                    Office and Electronics
+                    {"Office and Electronics"}
                   </span>
                 </li>
               </ul>
@@ -209,65 +196,31 @@ export function Pattern() {
         </FramePanel>
         <FramePanel>
           <div className="flex flex-col gap-6">
-            <style>{`
-@keyframes velocity-rise-y {
-  from { transform: scaleY(0); opacity: 0; }
-  to { transform: scaleY(1); opacity: 1; }
-}
-@keyframes velocity-rise-x {
-  from { transform: scaleX(0); opacity: 0; }
-  to { transform: scaleX(1); opacity: 1; }
-}
-.velocity-bar {
-  transform-box: fill-box;
-  transform-origin: bottom;
-  animation: velocity-rise-y 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-.velocity-bar[data-sideways] {
-  transform-origin: left;
-  animation-name: velocity-rise-x;
-}
-@media (prefers-reduced-motion: reduce) {
-  .velocity-bar { animation: none; }
-}
-html[data-demo="frozen"] .velocity-bar { animation: none; }
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes velocity-rise-y {\n  from { transform: scaleY(0); opacity: 0; }\n  to { transform: scaleY(1); opacity: 1; }\n}\n@keyframes velocity-rise-x {\n  from { transform: scaleX(0); opacity: 0; }\n  to { transform: scaleX(1); opacity: 1; }\n}\n.velocity-bar {\n  transform-box: fill-box;\n  transform-origin: bottom;\n  animation: velocity-rise-y 640ms cubic-bezier(0.22, 1, 0.36, 1) both;\n}\n.velocity-bar[data-sideways] {\n  transform-origin: left;\n  animation-name: velocity-rise-x;\n}\n@media (prefers-reduced-motion: reduce) {\n  .velocity-bar { animation: none; }\n}\nhtml[data-demo=\"frozen\"] .velocity-bar { animation: none; }\n" }} />
             <ul className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-end text-muted-foreground text-xs">
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-(--color-velocity) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Healthy
+                  {"Healthy"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-(--color-watch) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Watch
+                  {"Watch"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
                 <span className="bg-(--color-slow) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Slow
+                  {"Slow"}
                 </span>
               </li>
             </ul>
             <div className="h-72 w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-72 justify-center text-xs w-full" data-chart="chart-_r_11_">
-                <style>{`
- [data-chart=chart-_r_11_] {
-  --color-velocity: var(--velocity-current);
-  --color-watch: var(--color-amber-400);
-  --color-slow: var(--color-zinc-400);
-}
-
-
-.dark [data-chart=chart-_r_11_] {
-  --color-velocity: var(--velocity-current);
-  --color-watch: var(--color-amber-300);
-  --color-slow: var(--color-zinc-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_11_] {\n  --color-velocity: var(--velocity-current);\n  --color-watch: var(--color-amber-400);\n  --color-slow: var(--color-zinc-400);\n}\n\n\n.dark [data-chart=chart-_r_11_] {\n  --color-velocity: var(--velocity-current);\n  --color-watch: var(--color-amber-300);\n  --color-slow: var(--color-zinc-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="982" height="288" style={{position: "relative", cursor: "default", width: "982px", height: "288px"}}>
@@ -495,84 +448,84 @@ html[data-demo="frozen"] .velocity-bar { animation: none; }
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="85.95833333333334" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="85.95833333333334" dy="0.71em">
-                                  Electronics
+                                  {"Electronics"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="163.875" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="163.875" dy="0.71em">
-                                  Apparel
+                                  {"Apparel"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="241.79166666666669" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="241.79166666666669" dy="0.71em">
-                                  Home
+                                  {"Home"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="319.7083333333333" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="319.7083333333333" dy="0.71em">
-                                  Beauty
+                                  {"Beauty"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="397.625" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="397.625" dy="0.71em">
-                                  Health
+                                  {"Health"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="475.5416666666667" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="475.5416666666667" dy="0.71em">
-                                  Sports
+                                  {"Sports"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="553.4583333333334" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="553.4583333333334" dy="0.71em">
-                                  Toys
+                                  {"Toys"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="631.3750000000001" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="631.3750000000001" dy="0.71em">
-                                  Automotive
+                                  {"Automotive"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="709.2916666666667" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="709.2916666666667" dy="0.71em">
-                                  Garden
+                                  {"Garden"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="787.2083333333334" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="787.2083333333334" dy="0.71em">
-                                  Grocery
+                                  {"Grocery"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="865.1250000000001" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="865.1250000000001" dy="0.71em">
-                                  Books
+                                  {"Books"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="935" stroke="none" x="943.0416666666667" y="274" textAnchor="middle" fill="#666">
                                 <tspan x="943.0416666666667" dy="0.71em">
-                                  Office
+                                  {"Office"}
                                 </tspan>
                               </text>
                             </g>
@@ -581,35 +534,35 @@ html[data-demo="frozen"] .velocity-bar { animation: none; }
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="47" orientation="left" height="250" stroke="none" x="33" y="258" textAnchor="end" fill="#666">
                                 <tspan x="33" dy="0.355em">
-                                  0
+                                  {"0"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="47" orientation="left" height="250" stroke="none" x="33" y="195.5" textAnchor="end" fill="#666">
                                 <tspan x="33" dy="0.355em">
-                                  250
+                                  {"250"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="47" orientation="left" height="250" stroke="none" x="33" y="133" textAnchor="end" fill="#666">
                                 <tspan x="33" dy="0.355em">
-                                  500
+                                  {"500"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="47" orientation="left" height="250" stroke="none" x="33" y="70.5" textAnchor="end" fill="#666">
                                 <tspan x="33" dy="0.355em">
-                                  750
+                                  {"750"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="47" orientation="left" height="250" stroke="none" x="33" y="9" textAnchor="end" fill="#666">
                                 <tspan x="33" dy="0.355em">
-                                  1,000
+                                  {"1,000"}
                                 </tspan>
                               </text>
                             </g>
@@ -620,44 +573,45 @@ html[data-demo="frozen"] .velocity-bar { animation: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              Electronics: 342 units a day, 52 days of supply, slow stock
+              {"Electronics: 342 units a day, 52 days of supply, slow stock"}
             </li>
             <li>
-              Apparel: 876 units a day, 18 days of supply
+              {"Apparel: 876 units a day, 18 days of supply"}
             </li>
             <li>
-              Home: 512 units a day, 27 days of supply
+              {"Home: 512 units a day, 27 days of supply"}
             </li>
             <li>
-              Beauty: 629 units a day, 22 days of supply
+              {"Beauty: 629 units a day, 22 days of supply"}
             </li>
             <li>
-              Health: 458 units a day, 31 days of supply, watch stock
+              {"Health: 458 units a day, 31 days of supply, watch stock"}
             </li>
             <li>
-              Sports: 781 units a day, 20 days of supply
+              {"Sports: 781 units a day, 20 days of supply"}
             </li>
             <li>
-              Toys: 394 units a day, 43 days of supply, watch stock
+              {"Toys: 394 units a day, 43 days of supply, watch stock"}
             </li>
             <li>
-              Automotive: 925 units a day, 16 days of supply
+              {"Automotive: 925 units a day, 16 days of supply"}
             </li>
             <li>
-              Garden: 647 units a day, 24 days of supply
+              {"Garden: 647 units a day, 24 days of supply"}
             </li>
             <li>
-              Grocery: 532 units a day, 12 days of supply
+              {"Grocery: 532 units a day, 12 days of supply"}
             </li>
             <li>
-              Books: 803 units a day, 19 days of supply
+              {"Books: 803 units a day, 19 days of supply"}
             </li>
             <li>
-              Office: 271 units a day, 57 days of supply, slow stock
+              {"Office: 271 units a day, 57 days of supply, slow stock"}
             </li>
           </ul>
         </FramePanel>
@@ -665,16 +619,16 @@ html[data-demo="frozen"] .velocity-bar { animation: none; }
           <span className="flex gap-2 h-4 items-center">
             <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Synced 12 min ago
+              {"Synced 12 min ago"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-              3 of 3 warehouses
+              {"3 of 3 warehouses"}
             </span>
           </span>
           <span className="flex h-4 items-center tabular-nums">
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Sep 12 to Oct 11
+              {"Sep 12 to Oct 11"}
             </span>
           </span>
         </footer>

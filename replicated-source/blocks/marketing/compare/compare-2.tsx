@@ -19,41 +19,41 @@ export function Pattern() {
                 <path d="M22 4h-4"></path>
                 <circle cx="4" cy="20" r="2"></circle>
               </svg>
-              NeUI for AI Agents
+              {"NeUI for AI Agents"}
               <svg className="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
             </Badge>
             <h2 className="@xl/block:text-4xl font-semibold max-w-[27ch] text-3xl text-pretty" id="compare-2-title">
-              Build Truly Production-Ready UI
+              {"Build Truly Production-Ready UI"}
               <span className="-my-1.5 [text-box:trim-both_cap_alphabetic] bg-amber-300 inline-block px-1.5 py-1.5 rounded-sm text-neutral-950">
-                10x Faster
+                {"10x Faster"}
               </span>
-              with NeUI MCP
+              {"with NeUI MCP"}
             </h2>
             <p className="max-w-160 text-muted-foreground text-sm">
-              Give your coding agent registry search, real APIs, exact install steps, and ready-made blocks, so you can build polished UI with less prompting and rework.
+              {"Give your coding agent registry search, real APIs, exact install steps, and ready-made blocks, so you can build polished UI with less prompting and rework."}
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <div className="@xl/block:grid-cols-[minmax(0,1fr)_25%_35%] grid grid-cols-[minmax(0,1fr)_minmax(4.5rem,16%)_42%]">
               <p className="@xl/block:pr-4 @xl/block:text-start font-medium pr-2 text-center text-muted-foreground text-sm">
-                Workflow
+                {"Workflow"}
                 <span className="@xl/block:inline block">
-                  Features
+                  {"Features"}
                 </span>
               </p>
               <p className="font-medium text-center text-muted-foreground text-sm">
-                NeUI
+                {"NeUI"}
                 <span className="@xl/block:inline block">
-                  Approach
+                  {"Approach"}
                 </span>
               </p>
               <p className="@xl/block:pl-[clamp(1rem,35cqw_-_320px,3rem)] @xl/block:text-start font-medium pl-2 text-center text-muted-foreground text-sm">
-                Prompt-Only
+                {"Prompt-Only"}
                 <span className="@xl/block:inline block">
-                  Approach
+                  {"Approach"}
                 </span>
               </p>
             </div>
@@ -70,9 +70,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Intent-Based Registry
+                  {"Intent-Based Registry"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Search
+                    {"Search"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" aria-label="About Intent-Based Registry Search" extracted="1">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -88,7 +88,7 @@ export function Pattern() {
               <div className="@xl/block:pt-6 flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -105,9 +105,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Search and compare every item by hand
+                    {"Search and compare every item by hand"}
                   </p>
                 </span>
               </div>
@@ -122,9 +122,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Ranked Matches with Clear
+                  {"Ranked Matches with Clear"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Context
+                    {"Context"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" aria-label="About Ranked Matches with Clear Context">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -140,7 +140,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -157,9 +157,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Pick results without enough useful context
+                    {"Pick results without enough useful context"}
                   </p>
                 </span>
               </div>
@@ -172,9 +172,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Full-Page UI Planning
+                  {"Full-Page UI Planning"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Support
+                    {"Support"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" aria-label="About Full-Page UI Planning Support">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -190,7 +190,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -207,9 +207,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Plan every page section from scratch
+                    {"Plan every page section from scratch"}
                   </p>
                 </span>
               </div>
@@ -222,9 +222,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Verified Component API
+                  {"Verified Component API"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Access
+                    {"Access"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" aria-label="About Verified Component API Access">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -240,7 +240,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -257,9 +257,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Guess props, states, and API details
+                    {"Guess props, states, and API details"}
                   </p>
                 </span>
               </div>
@@ -273,9 +273,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Real Working UI
+                  {"Real Working UI"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Examples
+                    {"Examples"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" aria-label="About Real Working UI Examples">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -291,7 +291,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -308,9 +308,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Build and test each example yourself
+                    {"Build and test each example yourself"}
                   </p>
                 </span>
               </div>
@@ -323,9 +323,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Exact shadcn Install
+                  {"Exact shadcn Install"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Commands
+                    {"Commands"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" aria-label="About Exact shadcn Install Commands">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -341,7 +341,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -358,9 +358,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Find, check, and copy each command
+                    {"Find, check, and copy each command"}
                   </p>
                 </span>
               </div>
@@ -372,9 +372,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Props and Usage
+                  {"Props and Usage"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Validation
+                    {"Validation"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" aria-label="About Props and Usage Validation">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -390,7 +390,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -407,9 +407,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Spot broken usage after writing code
+                    {"Spot broken usage after writing code"}
                   </p>
                 </span>
               </div>
@@ -421,9 +421,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Reuse-First Block
+                  {"Reuse-First Block"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Selection
+                    {"Selection"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_f_" baseUiTooltipTrigger="" aria-label="About Reuse-First Block Selection">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -439,7 +439,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -456,9 +456,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Rebuild the same common UI patterns
+                    {"Rebuild the same common UI patterns"}
                   </p>
                 </span>
               </div>
@@ -471,9 +471,9 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <p className="@4xl/block:mt-1.75 [overflow-wrap:anywhere] font-medium min-w-0 text-sm">
-                  Final Post-Install UI
+                  {"Final Post-Install UI"}
                   <span className="flex-wrap gap-x-1 inline-flex items-center max-w-full">
-                    Audit
+                    {"Audit"}
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-muted-foreground transition-colors" type="button" id="base-ui-_r_h_" baseUiTooltipTrigger="" aria-label="About Final Post-Install UI Audit">
                       <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -489,7 +489,7 @@ export function Pattern() {
               <div className="-mt-px @xl/block:border-white/10 @xl/block:pb-6 border-t flex items-start justify-center py-4">
                 <IconTile className="@xl/block:bg-black/10 [--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-emerald-900/10 border-0" variant="frame" size="default">
                   <span className="sr-only">
-                    Covered by the NeUI approach
+                    {"Covered by the NeUI approach"}
                   </span>
                   <svg className="lucide lucide-check text-amber-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
@@ -506,9 +506,9 @@ export function Pattern() {
                   </span>
                   <p className="font-medium min-w-0 text-muted-foreground text-sm">
                     <span className="sr-only">
-                      Prompt-only approach:
+                      {"Prompt-only approach:"}
                     </span>
-                    Review every screen and detail manually
+                    {"Review every screen and detail manually"}
                   </p>
                 </span>
               </div>

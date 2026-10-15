@@ -18,20 +18,20 @@ export function Pattern() {
                   <path d="m7.5 4.27 9 5.15"></path>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Binance
+                  {"Binance"}
                 </span>
               </div>
             </header>
             <FramePanel className="space-y-3.5">
               <p className="leading-relaxed text-xs">
-                Track trading volumes, liquidity shifts, and price movements for informed decisions
+                {"Track trading volumes, liquidity shifts, and price movements for informed decisions"}
               </p>
               <a className="font-medium gap-1 hover:underline inline-flex items-center text-primary text-xs underline-offset-2" href="#">
                 <svg className="lucide lucide-link shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                 </svg>
-                https://www.binance.com/en/markets/over..
+                {"https://www.binance.com/en/markets/over.."}
               </a>
             </FramePanel>
           </Frame>
@@ -43,20 +43,20 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Revenue
+                  {"Revenue"}
                 </span>
               </div>
             </header>
             <FramePanel className="space-y-3.5">
               <p className="leading-relaxed text-xs">
-                Get instant insights into earnings and cash flow performance.
+                {"Get instant insights into earnings and cash flow performance."}
               </p>
               <a className="font-medium gap-1 hover:underline inline-flex items-center text-primary text-xs underline-offset-2" href="#">
                 <svg className="lucide lucide-link shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                 </svg>
-                https://nexo.io/earn/crypto-detailed-portfol..
+                {"https://nexo.io/earn/crypto-detailed-portfol.."}
               </a>
             </FramePanel>
           </Frame>
@@ -68,20 +68,20 @@ export function Pattern() {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Shipments
+                  {"Shipments"}
                 </span>
               </div>
             </header>
             <FramePanel className="space-y-3.5">
               <p className="leading-relaxed text-xs">
-                Stay on top of deliveries and track shipment statuses efficiently.
+                {"Stay on top of deliveries and track shipment statuses efficiently."}
               </p>
               <a className="font-medium gap-1 hover:underline inline-flex items-center text-primary text-xs underline-offset-2" href="#">
                 <svg className="lucide lucide-link shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                 </svg>
-                https://www.educare.io/platform/analytics/e..
+                {"https://www.educare.io/platform/analytics/e.."}
               </a>
             </FramePanel>
           </Frame>

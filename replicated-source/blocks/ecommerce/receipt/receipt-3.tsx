@@ -12,7 +12,7 @@ export function Pattern() {
       <section className="max-w-md md:py-12 mx-auto px-4 py-8 w-full" aria-labelledby="receipt-heading">
         <header className="flex gap-3 items-center justify-between mb-4">
           <span className="font-semibold text-[0.6875rem] text-muted-foreground tracking-[0.22em] uppercase" id="receipt-heading">
-            Receipt
+            {"Receipt"}
           </span>
           <div className="flex gap-1.5 items-center">
             <Button type="button" tabIndex="0" aria-label="Download receipt RCT-2026-018042 as PDF" extracted="1">
@@ -21,7 +21,7 @@ export function Pattern() {
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
-              Download
+              {"Download"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Email receipt RCT-2026-018042">
               <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
@@ -51,10 +51,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 items-center">
                 <p className="font-bold text-foreground text-sm tracking-[0.22em] uppercase">
-                  Order Receipt
+                  {"Order Receipt"}
                 </p>
                 <p className="text-[0.6875rem] text-muted-foreground tracking-[0.18em] uppercase">
-                  NeUI · neui.io
+                  {"NeUI · neui.io"}
                 </p>
               </div>
             </div>
@@ -62,37 +62,37 @@ export function Pattern() {
             <dl className="flex flex-col gap-1.5 text-xs">
               <div className="flex gap-3 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Receipt #
+                  {"Receipt #"}
                 </dt>
                 <dd className="tabular-nums text-foreground">
-                  RCT-2026-018042
+                  {"RCT-2026-018042"}
                 </dd>
               </div>
               <div className="flex gap-3 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Order #
+                  {"Order #"}
                 </dt>
                 <dd className="tabular-nums text-foreground">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#" aria-label="View order HLD-2026-18042">
-                    HLD-2026-18042
+                    {"HLD-2026-18042"}
                   </a>
                 </dd>
               </div>
               <div className="flex gap-3 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Date
+                  {"Date"}
                 </dt>
                 <dd className="tabular-nums text-foreground">
-                  May 18, 2026
+                  {"May 18, 2026"}
                 </dd>
               </div>
               <div className="flex gap-3 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Customer
+                  {"Customer"}
                 </dt>
                 <dd className="tabular-nums text-foreground">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="mailto:jordan@example.com" aria-label="Email customer jordan@example.com">
-                    jordan@example.com
+                    {"jordan@example.com"}
                   </a>
                 </dd>
               </div>
@@ -103,45 +103,45 @@ export function Pattern() {
                 <div className="flex gap-3 items-baseline justify-between">
                   <h3 className="font-semibold min-w-0 text-foreground text-sm truncate">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Field Shell Jacket
+                      {"Field Shell Jacket"}
                     </a>
                   </h3>
                   <span className="font-semibold shrink-0 tabular-nums text-foreground text-sm">
-                    $185.00
+                    {"$185.00"}
                   </span>
                 </div>
                 <p className="leading-snug tabular-nums text-muted-foreground text-xs">
-                  Olive · M · 1 × $185.00
+                  {"Olive · M · 1 × $185.00"}
                 </p>
               </article>
               <article className="flex flex-col gap-0.5 min-w-0" role="listitem">
                 <div className="flex gap-3 items-baseline justify-between">
                   <h3 className="font-semibold min-w-0 text-foreground text-sm truncate">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Compass Down Vest
+                      {"Compass Down Vest"}
                     </a>
                   </h3>
                   <span className="font-semibold shrink-0 tabular-nums text-foreground text-sm">
-                    $228.00
+                    {"$228.00"}
                   </span>
                 </div>
                 <p className="leading-snug tabular-nums text-muted-foreground text-xs">
-                  Slate · M · 1 × $228.00
+                  {"Slate · M · 1 × $228.00"}
                 </p>
               </article>
               <article className="flex flex-col gap-0.5 min-w-0" role="listitem">
                 <div className="flex gap-3 items-baseline justify-between">
                   <h3 className="font-semibold min-w-0 text-foreground text-sm truncate">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Linen Field Shirt
+                      {"Linen Field Shirt"}
                     </a>
                   </h3>
                   <span className="font-semibold shrink-0 tabular-nums text-foreground text-sm">
-                    $256.00
+                    {"$256.00"}
                   </span>
                 </div>
                 <p className="leading-snug tabular-nums text-muted-foreground text-xs">
-                  Sand · M · 2 × $128.00
+                  {"Sand · M · 2 × $128.00"}
                 </p>
               </article>
             </div>
@@ -149,81 +149,81 @@ export function Pattern() {
             <div className="flex flex-col gap-1.5">
               <div className="flex gap-3 items-baseline justify-between text-xs">
                 <span className="text-muted-foreground">
-                  Subtotal
+                  {"Subtotal"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $669.00
+                  {"$669.00"}
                 </span>
               </div>
               <div className="flex gap-3 items-baseline justify-between text-xs">
                 <span className="text-muted-foreground">
-                  Shipping
+                  {"Shipping"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $12.00
+                  {"$12.00"}
                 </span>
               </div>
               <div className="flex gap-3 items-baseline justify-between text-xs">
                 <span className="text-muted-foreground">
-                  Discount (WELCOME15)
+                  {"Discount (WELCOME15)"}
                 </span>
                 <span className="font-medium tabular-nums text-success">
-                  -$100.35
+                  {"-$100.35"}
                 </span>
               </div>
               <div className="flex gap-3 items-baseline justify-between text-xs">
                 <span className="text-muted-foreground">
-                  Tax
+                  {"Tax"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  $51.27
+                  {"$51.27"}
                 </span>
               </div>
             </div>
             <div className="border-double border-foreground border-y-2 py-3">
               <div className="flex gap-3 items-baseline justify-between">
                 <span className="font-bold text-base text-foreground tracking-[0.18em] uppercase">
-                  Total
+                  {"Total"}
                 </span>
                 <span className="font-bold tabular-nums text-foreground text-lg">
-                  $631.92
+                  {"$631.92"}
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                Payment
+                {"Payment"}
               </p>
               <div className="flex flex-col gap-0.5 leading-snug text-xs">
                 <p className="text-foreground">
-                  Visa · 4242
+                  {"Visa · 4242"}
                 </p>
                 <p className="text-muted-foreground text-xs">
-                  Charged May 18, 2026 at 9:42 AM
+                  {"Charged May 18, 2026 at 9:42 AM"}
                 </p>
               </div>
             </div>
             <hr className="border-border/60 border-dashed border-t" />
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                Ship To
+                {"Ship To"}
               </p>
               <div className="flex flex-col gap-0.5 leading-snug text-xs">
                 <address className="not-italic text-foreground">
                   <p>
-                    Jordan Reeves
+                    {"Jordan Reeves"}
                   </p>
                   <p className="text-muted-foreground">
-                    180 Bedford Avenue
+                    {"180 Bedford Avenue"}
                   </p>
                   <p className="text-muted-foreground">
-                    Apt 4F
+                    {"Apt 4F"}
                   </p>
                   <p className="text-muted-foreground">
-                    Brooklyn, NY 11211
+                    {"Brooklyn, NY 11211"}
                   </p>
                   <p className="text-muted-foreground">
-                    United States
+                    {"United States"}
                   </p>
                 </address>
               </div>
@@ -231,17 +231,17 @@ export function Pattern() {
             <hr className="border-border/60 border-dashed border-t" />
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-[0.625rem] text-muted-foreground tracking-[0.22em] uppercase">
-                Tracking
+                {"Tracking"}
               </p>
               <div className="flex flex-col gap-0.5 leading-snug text-xs">
                 <p className="break-all text-foreground">
-                  1Z999AA10123456784
+                  {"1Z999AA10123456784"}
                 </p>
                 <p className="text-muted-foreground text-xs">
-                  UPS Ground · Arrives May 22, 2026 to May 25, 2026
+                  {"UPS Ground · Arrives May 22, 2026 to May 25, 2026"}
                 </p>
                 <a className="font-semibold gap-1 hover:text-primary hover:underline inline-flex items-center mt-1 text-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Track order HLD-2026-18042">
-                  Track Shipment
+                  {"Track Shipment"}
                   <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -252,10 +252,10 @@ export function Pattern() {
             <hr className="border-border/60 border-dashed border-t" />
             <div className="flex flex-col gap-2 items-center pt-1 text-center">
               <p className="font-medium text-foreground text-sm">
-                Thank you for shopping with NeUI.
+                {"Thank you for shopping with NeUI."}
               </p>
               <a className="hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4" href="mailto:support@neui.io" aria-label="Email NeUI support at support@neui.io">
-                support@neui.io
+                {"support@neui.io"}
               </a>
             </div>
           </CardContent>

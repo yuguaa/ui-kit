@@ -28,7 +28,7 @@ export function Pattern() {
           <div className="@container flex flex-col gap-6 items-start justify-center">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/10 border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-5 outline-none px-2 py-0.5 relative rounded-full text-[#d0d6d8] text-sm transition-shadow">
               <span className="bg-teal-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-              Usage velocity elevated
+              {"Usage velocity elevated"}
               <svg className="lucide lucide-arrow-up-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
@@ -36,20 +36,20 @@ export function Pattern() {
             </Badge>
             <h1 className="@md:text-3xl @xl:leading-10 @xl:text-4xl font-semibold leading-tight text-2xl text-[#d0d6d8] tracking-tight" id="hero-1-title">
               <span className="@xl:block">
-                Scale complex
+                {"Scale complex"}
                 <span className="[text-box:trim-both_cap_text] bg-white/15 inline-block px-2 py-0.5 rounded-sm text-[#e3e7e8]">
-                  agent workflows
+                  {"agent workflows"}
                 </span>
               </span>
               <span className="@xl:block">
-                without slowing down your product
+                {"without slowing down your product"}
               </span>
               <span className="@xl:block">
-                or hitting usage ceilings
+                {"or hitting usage ceilings"}
               </span>
             </h1>
             <p className="leading-6 text-base text-white/40">
-              Track MCP activity, spot unusual usage spikes, and keep agent workloads within predictable limits as your product scales.
+              {"Track MCP activity, spot unusual usage spikes, and keep agent workloads within predictable limits as your product scales."}
             </p>
             <div className="flex flex-wrap gap-5 items-center">
               <div className="flex gap-2 items-center">
@@ -60,7 +60,7 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <span className="font-medium text-[#d0d6d8] text-sm">
-                  MCP-ready
+                  {"MCP-ready"}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
@@ -73,22 +73,22 @@ export function Pattern() {
                   </svg>
                 </IconTile>
                 <span className="font-medium text-[#d0d6d8] text-sm">
-                  Agent Skills
+                  {"Agent Skills"}
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:w-auto w-full">
               <Button className="bg-teal-500 hover:bg-teal-400 shadow-2xs text-teal-950" href="#" role="button" tabIndex="0">
-                Get All-access
+                {"Get All-access"}
               </Button>
               <Button className="bg-white/10 border-transparent hover:bg-white/15 hover:text-white shadow-xs text-white/70" href="#" role="button" tabIndex="0">
-                View Plans
+                {"View Plans"}
               </Button>
             </div>
             <Separator className="bg-white/10 max-w-md w-full" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-4">
               <span className="text-sm text-white/40">
-                Built for growing AI teams
+                {"Built for growing AI teams"}
               </span>
               <div className="[&_:not([fill=none])]:fill-[#9ca8ab] flex flex-wrap gap-x-6 gap-y-6 items-center">
                 <span>
@@ -117,7 +117,7 @@ export function Pattern() {
                 <span>
                   <svg className="h-3.5 w-auto" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                   </svg>
@@ -127,62 +127,7 @@ export function Pattern() {
           </div>
           <div className="lg:translate-x-0 lg:translate-y-[14%] translate-x-[7%] w-full">
             <svg className="h-auto overflow-visible w-full" viewBox="0 0 624 600" role="img" aria-label="MCP usage velocity climbing across seven intervals, peaking at 89 percent">
-              <style>{`
-@keyframes hero1-gleam { 0%, 100% { opacity: 0 } 45% { opacity: 0.42 } }
-@keyframes hero1-read { 0%, 86%, 100% { opacity: 1 } 91% { opacity: 0.3 } }
-@keyframes hero1-ring { 0%, 100% { opacity: 0.16 } 50% { opacity: 0.6 } }
-@keyframes hero1-sweep { 0% { opacity: 0 } 6% { opacity: 0.34 } 20% { opacity: 0 } 100% { opacity: 0 } }
-@keyframes hero1-grid { 0%, 100% { opacity: 0.82 } 50% { opacity: 1 } }
-@keyframes hero1-flow-a {
-  0% { transform: translateX(-160px); opacity: 0 }
-  9% { opacity: 1 } 84% { opacity: 1 }
-  100% { transform: translateX(940px); opacity: 0 }
-}
-@keyframes hero1-flow-b {
-  0% { transform: translateX(940px); opacity: 0 }
-  9% { opacity: 1 } 84% { opacity: 1 }
-  100% { transform: translateX(-160px); opacity: 0 }
-}
-@keyframes hero1-flow-c {
-  0% { transform: translateY(-160px); opacity: 0 }
-  9% { opacity: 1 } 84% { opacity: 1 }
-  100% { transform: translateY(940px); opacity: 0 }
-}
-@keyframes hero1-flow-d {
-  0% { transform: translateY(940px); opacity: 0 }
-  9% { opacity: 1 } 84% { opacity: 1 }
-  100% { transform: translateY(-160px); opacity: 0 }
-}
-
-.hero1-gleam { animation: hero1-gleam var(--hero1-period) ease-in-out infinite; }
-.hero1-read { animation: hero1-read var(--hero1-period) steps(1, end) infinite; }
-.hero1-ring { animation: hero1-ring 4.4s ease-in-out infinite; }
-.hero1-sweep { animation: hero1-sweep 11.2s ease-out infinite; }
-.hero1-grid { animation: hero1-grid 19s ease-in-out infinite; }
-.hero1-hint { opacity: 0; transition: opacity 220ms cubic-bezier(0.22,1,0.36,1), transform 220ms cubic-bezier(0.22,1,0.36,1); transform: translateY(4px); }
-.hero1-hint[data-open="true"] { opacity: 1; transform: translateY(0); }
-.hero1-lead { transition: stroke-dashoffset 260ms cubic-bezier(0.22,1,0.36,1), opacity 180ms linear; }
-.hero1-hit { fill: transparent; cursor: pointer; outline: none; }
-.hero1-lift { opacity: 0; transition: opacity 200ms cubic-bezier(0.22,1,0.36,1); }
-.hero1-bar[data-active="true"] .hero1-lift { opacity: 1; }
-.hero1-edge { transition: stroke 200ms linear, stroke-opacity 200ms linear; }
-.hero1-bar[data-active="true"] .hero1-edge { stroke: var(--hero1-edge-on); stroke-opacity: 0.22; }
-/* Name and timing arrive as custom properties, never as an inline animation
-   shorthand: an inline style would outrank the reduced-motion rule below. */
-.hero1-flow {
-  opacity: 0;
-  animation: var(--hero1-flow-name) var(--hero1-flow-dur) linear var(--hero1-flow-delay) infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero1-gleam, .hero1-read, .hero1-ring, .hero1-sweep, .hero1-grid, .hero1-flow {
-    animation: none;
-  }
-  .hero1-gleam, .hero1-sweep, .hero1-flow { opacity: 0; }
-  .hero1-hint, .hero1-lead { transition-duration: 1ms; }
-  .hero1-ring { opacity: 0.45; }
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hero1-gleam { 0%, 100% { opacity: 0 } 45% { opacity: 0.42 } }\n@keyframes hero1-read { 0%, 86%, 100% { opacity: 1 } 91% { opacity: 0.3 } }\n@keyframes hero1-ring { 0%, 100% { opacity: 0.16 } 50% { opacity: 0.6 } }\n@keyframes hero1-sweep { 0% { opacity: 0 } 6% { opacity: 0.34 } 20% { opacity: 0 } 100% { opacity: 0 } }\n@keyframes hero1-grid { 0%, 100% { opacity: 0.82 } 50% { opacity: 1 } }\n@keyframes hero1-flow-a {\n  0% { transform: translateX(-160px); opacity: 0 }\n  9% { opacity: 1 } 84% { opacity: 1 }\n  100% { transform: translateX(940px); opacity: 0 }\n}\n@keyframes hero1-flow-b {\n  0% { transform: translateX(940px); opacity: 0 }\n  9% { opacity: 1 } 84% { opacity: 1 }\n  100% { transform: translateX(-160px); opacity: 0 }\n}\n@keyframes hero1-flow-c {\n  0% { transform: translateY(-160px); opacity: 0 }\n  9% { opacity: 1 } 84% { opacity: 1 }\n  100% { transform: translateY(940px); opacity: 0 }\n}\n@keyframes hero1-flow-d {\n  0% { transform: translateY(940px); opacity: 0 }\n  9% { opacity: 1 } 84% { opacity: 1 }\n  100% { transform: translateY(-160px); opacity: 0 }\n}\n\n.hero1-gleam { animation: hero1-gleam var(--hero1-period) ease-in-out infinite; }\n.hero1-read { animation: hero1-read var(--hero1-period) steps(1, end) infinite; }\n.hero1-ring { animation: hero1-ring 4.4s ease-in-out infinite; }\n.hero1-sweep { animation: hero1-sweep 11.2s ease-out infinite; }\n.hero1-grid { animation: hero1-grid 19s ease-in-out infinite; }\n.hero1-hint { opacity: 0; transition: opacity 220ms cubic-bezier(0.22,1,0.36,1), transform 220ms cubic-bezier(0.22,1,0.36,1); transform: translateY(4px); }\n.hero1-hint[data-open=\"true\"] { opacity: 1; transform: translateY(0); }\n.hero1-lead { transition: stroke-dashoffset 260ms cubic-bezier(0.22,1,0.36,1), opacity 180ms linear; }\n.hero1-hit { fill: transparent; cursor: pointer; outline: none; }\n.hero1-lift { opacity: 0; transition: opacity 200ms cubic-bezier(0.22,1,0.36,1); }\n.hero1-bar[data-active=\"true\"] .hero1-lift { opacity: 1; }\n.hero1-edge { transition: stroke 200ms linear, stroke-opacity 200ms linear; }\n.hero1-bar[data-active=\"true\"] .hero1-edge { stroke: var(--hero1-edge-on); stroke-opacity: 0.22; }\n/* Name and timing arrive as custom properties, never as an inline animation\n   shorthand: an inline style would outrank the reduced-motion rule below. */\n.hero1-flow {\n  opacity: 0;\n  animation: var(--hero1-flow-name) var(--hero1-flow-dur) linear var(--hero1-flow-delay) infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .hero1-gleam, .hero1-read, .hero1-ring, .hero1-sweep, .hero1-grid, .hero1-flow {\n    animation: none;\n  }\n  .hero1-gleam, .hero1-sweep, .hero1-flow { opacity: 0; }\n  .hero1-hint, .hero1-lead { transition-duration: 1ms; }\n  .hero1-ring { opacity: 0.45; }\n}\n" }} />
               <defs>
                 <pattern id="_r_1_-grid" patternUnits="userSpaceOnUse" width="50" height="50">
                   <rect width="50" height="50" fill="none" stroke="white"></rect>
@@ -266,7 +211,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="29 percent usage" x="-34.7" y="374" width="86.6025" height="100"></rect>
                 <g transform="translate(8.60125 399) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "7.1s"}}>
-                    29%
+                    {"29%"}
                   </text>
                 </g>
               </g>
@@ -284,7 +229,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="60 percent usage" x="52" y="254" width="86.6025" height="170"></rect>
                 <g transform="translate(95.30125000000001 279) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "8.3s"}}>
-                    60%
+                    {"60%"}
                   </text>
                 </g>
               </g>
@@ -303,7 +248,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="89 percent usage" x="138.5" y="144" width="86.6025" height="230"></rect>
                 <g transform="translate(181.80125 169) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#00bba7" style={{"--hero1-period": "6.4s"}}>
-                    89%
+                    {"89%"}
                   </text>
                 </g>
               </g>
@@ -321,7 +266,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="76 percent usage" x="225.3" y="124" width="86.6025" height="200"></rect>
                 <g transform="translate(268.60125 149) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "9.2s"}}>
-                    76%
+                    {"76%"}
                   </text>
                 </g>
               </g>
@@ -339,7 +284,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="71 percent usage" x="311.7" y="94" width="86.6025" height="180"></rect>
                 <g transform="translate(355.00124999999997 119) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "7.7s"}}>
-                    71%
+                    {"71%"}
                   </text>
                 </g>
               </g>
@@ -357,7 +302,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="55 percent usage" x="398.3" y="84" width="86.6025" height="140"></rect>
                 <g transform="translate(441.60125 109) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "8.9s"}}>
-                    55%
+                    {"55%"}
                   </text>
                 </g>
               </g>
@@ -375,7 +320,7 @@ export function Pattern() {
                 <rect className="hero1-hit" tabIndex="0" role="button" aria-label="62 percent usage" x="485" y="14" width="86.6025" height="160"></rect>
                 <g transform="translate(528.30125 39) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                   <text className="hero1-read" textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" fill="#e3e7e8" style={{"--hero1-period": "6.8s"}}>
-                    62%
+                    {"62%"}
                   </text>
                 </g>
               </g>
@@ -384,7 +329,7 @@ export function Pattern() {
                 <circle cx="8.60125" cy="364" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="-53.39875" y="305" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="8.60125" y="319" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 29%
+                  {"Interval 29%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -392,7 +337,7 @@ export function Pattern() {
                 <circle cx="95.30125000000001" cy="244" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="33.30125000000001" y="185" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="95.30125000000001" y="199" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 60%
+                  {"Interval 60%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -400,7 +345,7 @@ export function Pattern() {
                 <circle cx="181.80125" cy="134" r="2.5" fill="#00bba7"></circle>
                 <rect x="119.80125000000001" y="75" width="124" height="28" rx="8" fill="#131414" stroke="#00bba7" strokeOpacity="0.5" vector-effect="non-scaling-stroke"></rect>
                 <text x="181.80125" y="89" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Spike 89%
+                  {"Spike 89%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -408,7 +353,7 @@ export function Pattern() {
                 <circle cx="268.60125" cy="114" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="206.60125" y="55" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="268.60125" y="69" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 76%
+                  {"Interval 76%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -416,7 +361,7 @@ export function Pattern() {
                 <circle cx="355.00124999999997" cy="84" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="293.00124999999997" y="25" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="355.00124999999997" y="39" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 71%
+                  {"Interval 71%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -424,7 +369,7 @@ export function Pattern() {
                 <circle cx="441.60125" cy="74" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="379.60125" y="15" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="441.60125" y="29" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 55%
+                  {"Interval 55%"}
                 </text>
               </g>
               <g className="hero1-hint" data-open="false" pointer-events="none">
@@ -432,17 +377,17 @@ export function Pattern() {
                 <circle cx="528.30125" cy="4" r="2.5" fill="#e3e7e8"></circle>
                 <rect x="466.30125" y="-55" width="124" height="28" rx="8" fill="#131414" stroke="#2d2f30" strokeOpacity="1" vector-effect="non-scaling-stroke"></rect>
                 <text x="528.30125" y="-41" textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="500" fill="#d0d6d8">
-                  Interval 62%
+                  {"Interval 62%"}
                 </text>
               </g>
               <g transform="translate(163.28 274) rotate(-90) skewX(-30) scale(1,0.866025)">
                 <text textAnchor="middle" dominantBaseline="middle" fontSize="14" fontWeight="500" letter-spacing="0.56" fill="#d0d6d8">
-                  Unusual usage spike
+                  {"Unusual usage spike"}
                 </text>
               </g>
               <g transform="translate(395.17 373.75) matrix(0.866025 -0.5 0.866025 0.5 0 0)">
                 <text textAnchor="middle" dominantBaseline="middle" fontSize="36" fontWeight="600" fill="#d0d6d8">
-                  MCP Usage Velocity
+                  {"MCP Usage Velocity"}
                 </text>
               </g>
             </svg>

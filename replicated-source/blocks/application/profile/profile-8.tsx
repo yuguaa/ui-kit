@@ -44,10 +44,10 @@ export function Pattern() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-0.5 max-w-2xl">
             <h1 className="font-semibold text-xl">
-              Billing
+              {"Billing"}
             </h1>
             <p className="text-muted-foreground text-sm">
-              Review the current plan, billing contact, and recent invoices.
+              {"Review the current plan, billing contact, and recent invoices."}
             </p>
           </div>
           <Button className="self-start sm:self-auto" type="button" tabIndex="0" extracted="1">
@@ -55,7 +55,7 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Back to profile
+            {"Back to profile"}
           </Button>
         </div>
         <Alert className="[&>svg:not([class*=size-])]:size-4 [&>svg]:text-destructive bg-destructive/4 border border-destructive/30 gap-y-0.5 grid grid-cols-[0_1fr] has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_[data-slot=alert-action]]:sm:row-end-3 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_svg]:translate-y-0.5 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:items-start has-[>svg]:gap-x-2.5 has-[>svg]:grid-cols-[calc(var(--spacing)*3)_1fr] items-center px-3 py-2.5 style-luma:rounded-2xl style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-lg text-sm" role="alert">
@@ -65,14 +65,14 @@ export function Pattern() {
             <path d="M12 16h.01"></path>
           </svg>
           <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-            Renewal is blocked.
+            {"Renewal is blocked."}
           </AlertTitle>
           <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-            No company card is saved. Add one before May 3, 2026 so renewal, seat changes, and receipt delivery can continue normally.
+            {"No company card is saved. Add one before May 3, 2026 so renewal, seat changes, and receipt delivery can continue normally."}
           </AlertDescription>
           <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
             <Button type="button" tabIndex="0">
-              Add company card
+              {"Add company card"}
             </Button>
           </AlertAction>
         </Alert>
@@ -80,10 +80,10 @@ export function Pattern() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Plan
+                {"Plan"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Current subscription and core usage.
+                {"Current subscription and core usage."}
               </p>
             </div>
           </div>
@@ -103,48 +103,48 @@ export function Pattern() {
                     <div className="min-w-0 space-y-2">
                       <div className="flex flex-wrap gap-2 items-center">
                         <CardTitle>
-                          Growth
+                          {"Growth"}
                         </CardTitle>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                          Trial
+                          {"Trial"}
                         </Badge>
                       </div>
                       <p className="text-sm">
                         <span className="font-medium">
-                          $24.00
+                          {"$24.00"}
                         </span>
                         <span className="text-muted-foreground">
-                          per editor / month
+                          {"per editor / month"}
                         </span>
                       </p>
                       <p className="leading-6 max-w-xl text-muted-foreground text-sm">
-                        Growth keeps audit history, automations, and workspace permissions on one monthly plan.
+                        {"Growth keeps audit history, automations, and workspace permissions on one monthly plan."}
                       </p>
                     </div>
                   </div>
                   <dl className="gap-4 grid md:pl-4">
                     <div className="space-y-0.5">
                       <dt className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Renewal date
+                        {"Renewal date"}
                       </dt>
                       <dd className="font-medium text-sm">
-                        May 3, 2026
+                        {"May 3, 2026"}
                       </dd>
                     </div>
                     <div className="space-y-0.5">
                       <dt className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Renewal status
+                        {"Renewal status"}
                       </dt>
                       <dd className="font-medium text-sm">
-                        Card required
+                        {"Card required"}
                       </dd>
                     </div>
                     <div className="space-y-0.5">
                       <dt className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Billing owner
+                        {"Billing owner"}
                       </dt>
                       <dd className="font-medium text-sm">
-                        Mina Ortega
+                        {"Mina Ortega"}
                       </dd>
                     </div>
                   </dl>
@@ -152,10 +152,10 @@ export function Pattern() {
               </CardHeader>
               <CardFooter className="border-t flex-col gap-2 items-start justify-between px-5 py-3 sm:flex-row sm:items-center sm:px-6">
                 <p className="max-w-xl text-muted-foreground text-sm">
-                  Renewal stays paused until a company card is added.
+                  {"Renewal stays paused until a company card is added."}
                 </p>
                 <Button type="button" tabIndex="0">
-                  Manage plan
+                  {"Manage plan"}
                 </Button>
               </CardFooter>
             </Card>
@@ -175,15 +175,15 @@ export function Pattern() {
                     </Item>
                     <div className="min-w-0">
                       <p className="font-medium text-sm">
-                        Seats
+                        {"Seats"}
                       </p>
                       <p className="text-muted-foreground text-sm">
-                        Active editors
+                        {"Active editors"}
                       </p>
                     </div>
                   </div>
                   <p className="font-semibold tabular-nums text-lg tracking-tight">
-                    3 of 5
+                    {"3 of 5"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 justify-between min-h-[7.75rem] px-5 py-5 sm:px-6">
@@ -201,15 +201,15 @@ export function Pattern() {
                     </Item>
                     <div className="min-w-0">
                       <p className="font-medium text-sm">
-                        Tracked records
+                        {"Tracked records"}
                       </p>
                       <p className="text-muted-foreground text-sm">
-                        Used this month
+                        {"Used this month"}
                       </p>
                     </div>
                   </div>
                   <p className="font-semibold tabular-nums text-lg tracking-tight">
-                    218,430
+                    {"218,430"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 justify-between min-h-[7.75rem] px-5 py-5 sm:px-6">
@@ -225,24 +225,24 @@ export function Pattern() {
                     </Item>
                     <div className="min-w-0">
                       <p className="font-medium text-sm">
-                        Automation credits
+                        {"Automation credits"}
                       </p>
                       <p className="text-muted-foreground text-sm">
-                        Used this month
+                        {"Used this month"}
                       </p>
                     </div>
                   </div>
                   <p className="font-semibold tabular-nums text-lg tracking-tight">
-                    1,280
+                    {"1,280"}
                   </p>
                 </div>
               </CardContent>
               <CardFooter className="border-t flex-col gap-2 items-start justify-between px-5 py-3 sm:flex-row sm:items-center sm:px-6">
                 <p className="max-w-xl text-muted-foreground text-sm">
-                  Usage counters reset on May 3, 2026 with the next billing cycle.
+                  {"Usage counters reset on May 3, 2026 with the next billing cycle."}
                 </p>
                 <Button type="button" tabIndex="0">
-                  View usage
+                  {"View usage"}
                 </Button>
               </CardFooter>
             </Card>
@@ -252,10 +252,10 @@ export function Pattern() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Billing Details
+                {"Billing Details"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Invoice contact and payment readiness.
+                {"Invoice contact and payment readiness."}
               </p>
             </div>
             <div className="flex items-center shrink-0">
@@ -264,7 +264,7 @@ export function Pattern() {
                   <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                   <path d="m15 5 4 4"></path>
                 </svg>
-                Edit details
+                {"Edit details"}
               </Button>
             </div>
           </div>
@@ -275,7 +275,7 @@ export function Pattern() {
                   <div className="@md/field-group:basis-3/5 @md/field-group:pr-2 @md/field-group:w-3/5 flex flex-col gap-0.5 min-w-0 w-full">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Billing contact
+                        {"Billing contact"}
                       </FieldLabel>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Billing contact details" id="base-ui-_r_1_" baseUiTooltipTrigger="">
@@ -288,13 +288,13 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <FieldDescription className="leading-5 max-w-[28rem] text-sm">
-                      Receives invoices and renewal notices.
+                      {"Receives invoices and renewal notices."}
                     </FieldDescription>
                   </div>
                   <FieldContent className="@md/field-group:basis-2/5 @md/field-group:w-2/5 min-w-0 w-full">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <span className="block font-medium max-w-full text-right text-sm truncate" title="billing@northstarstudio.co">
-                        billing@northstarstudio.co
+                        {"billing@northstarstudio.co"}
                       </span>
                     </div>
                   </FieldContent>
@@ -306,17 +306,17 @@ export function Pattern() {
                   <div className="@md/field-group:basis-3/5 @md/field-group:pr-2 @md/field-group:w-3/5 flex flex-col gap-0.5 min-w-0 w-full">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Legal entity
+                        {"Legal entity"}
                       </FieldLabel>
                     </div>
                     <FieldDescription className="leading-5 max-w-[28rem] text-sm">
-                      Shown on invoices and receipts.
+                      {"Shown on invoices and receipts."}
                     </FieldDescription>
                   </div>
                   <FieldContent className="@md/field-group:basis-2/5 @md/field-group:w-2/5 min-w-0 w-full">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <span className="block font-medium max-w-full text-right text-sm truncate" title="Northstar Studio GmbH">
-                        Northstar Studio GmbH
+                        {"Northstar Studio GmbH"}
                       </span>
                     </div>
                   </FieldContent>
@@ -328,7 +328,7 @@ export function Pattern() {
                   <div className="@md/field-group:basis-3/5 @md/field-group:pr-2 @md/field-group:w-3/5 flex flex-col gap-0.5 min-w-0 w-full">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Region
+                        {"Region"}
                       </FieldLabel>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Region details" id="base-ui-_r_3_" baseUiTooltipTrigger="">
@@ -341,13 +341,13 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <FieldDescription className="leading-5 max-w-[28rem] text-sm">
-                      Used for tax and invoice formatting.
+                      {"Used for tax and invoice formatting."}
                     </FieldDescription>
                   </div>
                   <FieldContent className="@md/field-group:basis-2/5 @md/field-group:w-2/5 min-w-0 w-full">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <span className="block font-medium max-w-full text-right text-sm truncate" title="Berlin, Germany">
-                        Berlin, Germany
+                        {"Berlin, Germany"}
                       </span>
                     </div>
                   </FieldContent>
@@ -359,10 +359,10 @@ export function Pattern() {
                   <div className="@md/field-group:basis-3/5 @md/field-group:pr-2 @md/field-group:w-3/5 flex flex-col gap-0.5 min-w-0 w-full">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Payment method
+                        {"Payment method"}
                       </FieldLabel>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Action required
+                        {"Action required"}
                       </Badge>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Payment method details" id="base-ui-_r_5_" baseUiTooltipTrigger="">
@@ -375,13 +375,13 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <FieldDescription className="leading-5 max-w-[28rem] text-sm">
-                      Required before the trial renews.
+                      {"Required before the trial renews."}
                     </FieldDescription>
                   </div>
                   <FieldContent className="@md/field-group:basis-2/5 @md/field-group:w-2/5 min-w-0 w-full">
                     <div className="@md/field-group:justify-end flex justify-start w-full">
                       <span className="block max-w-full text-muted-foreground text-right text-sm truncate" title="No company card added">
-                        No company card added
+                        {"No company card added"}
                       </span>
                     </div>
                   </FieldContent>
@@ -394,10 +394,10 @@ export function Pattern() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-px min-w-0">
               <h2 className="font-semibold text-base">
-                Invoice History
+                {"Invoice History"}
               </h2>
               <p className="text-muted-foreground text-sm">
-                Recent invoices.
+                {"Recent invoices."}
               </p>
             </div>
             <div className="flex items-center shrink-0">
@@ -407,7 +407,7 @@ export function Pattern() {
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <path d="m7 10 5 5 5-5"></path>
                 </svg>
-                Download all
+                {"Download all"}
               </Button>
             </div>
           </div>
@@ -419,23 +419,23 @@ export function Pattern() {
                     <TableHeader>
                       <TableRow>
                         <TableHead className="w-[22%]">
-                          Invoice
+                          {"Invoice"}
                         </TableHead>
                         <TableHead className="w-[22%]">
-                          Period
+                          {"Period"}
                         </TableHead>
                         <TableHead className="w-[18%]">
-                          Date
+                          {"Date"}
                         </TableHead>
                         <TableHead className="w-[16%]">
-                          Total
+                          {"Total"}
                         </TableHead>
                         <TableHead className="text-right w-[14%]">
-                          Status
+                          {"Status"}
                         </TableHead>
                         <TableHead className="text-right w-[8%]">
                           <span className="sr-only">
-                            Download
+                            {"Download"}
                           </span>
                         </TableHead>
                       </TableRow>
@@ -444,21 +444,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-4208
+                            {"INV-4208"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Apr 2026
+                          {"Apr 2026"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Apr 2, 2026
+                          {"Apr 2, 2026"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $0.00
+                          {"$0.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                            Credited
+                            {"Credited"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">
@@ -474,21 +474,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-4079
+                            {"INV-4079"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Mar 2026
+                          {"Mar 2026"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Mar 2, 2026
+                          {"Mar 2, 2026"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $96.00
+                          {"$96.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Paid
+                            {"Paid"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">
@@ -504,21 +504,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-3912
+                            {"INV-3912"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Feb 2026
+                          {"Feb 2026"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Feb 2, 2026
+                          {"Feb 2, 2026"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $72.00
+                          {"$72.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Paid
+                            {"Paid"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">
@@ -534,21 +534,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-3784
+                            {"INV-3784"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Jan 2026
+                          {"Jan 2026"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Jan 2, 2026
+                          {"Jan 2, 2026"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $72.00
+                          {"$72.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Paid
+                            {"Paid"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">
@@ -564,21 +564,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-3642
+                            {"INV-3642"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Dec 2025
+                          {"Dec 2025"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Dec 2, 2025
+                          {"Dec 2, 2025"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $72.00
+                          {"$72.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Paid
+                            {"Paid"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">
@@ -594,21 +594,21 @@ export function Pattern() {
                       <TableRow>
                         <TableCell className="font-medium whitespace-nowrap">
                           <a className="hover:text-primary hover:underline inline-flex text-foreground transition-colors underline-offset-4" href="#">
-                            INV-3501
+                            {"INV-3501"}
                           </a>
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Nov 2025
+                          {"Nov 2025"}
                         </TableCell>
                         <TableCell className="text-muted-foreground text-sm whitespace-nowrap">
-                          Nov 2, 2025
+                          {"Nov 2, 2025"}
                         </TableCell>
                         <TableCell className="font-semibold tabular-nums tracking-tight whitespace-nowrap">
-                          $48.00
+                          {"$48.00"}
                         </TableCell>
                         <TableCell className="text-right">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Paid
+                            {"Paid"}
                           </Badge>
                         </TableCell>
                         <TableCell className="text-right">

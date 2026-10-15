@@ -10,29 +10,29 @@ export function Pattern() {
           <div className="flex flex-col gap-4 items-start lg:pt-32 pb-6 pt-16 px-6 sm:pt-24">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 hover:bg-accent min-w-5 outline-none px-2 py-0.5 relative rounded-full text-foreground text-sm transition-colors" href="#">
               <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-              NeUI Pro is LIVE!
+              {"NeUI Pro is LIVE!"}
               <svg className="lucide lucide-arrow-up-right size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
             </Badge>
             <h1 className="font-semibold lg:leading-[1.05] lg:text-5xl max-w-3xl sm:text-4xl text-3xl text-foreground tracking-tight" id="hero-15-title">
-              Build better shadcn/ui products from design to production.
+              {"Build better shadcn/ui products from design to production."}
             </h1>
             <p className="leading-6 max-w-3xl text-base text-muted-foreground">
-              A design-led
+              {"A design-led"}
               <span className="font-medium text-foreground">
-                shadcn/ui
+                {"shadcn/ui"}
               </span>
-              platform with production-ready blocks,
+              {"platform with production-ready blocks,"}
               <span className="font-medium text-foreground">
-                MCP tools
+                {"MCP tools"}
               </span>
-              , reusable patterns, and a curated registry for moving from first draft to polished product with less repetition, stronger consistency, and
+              {", reusable patterns, and a curated registry for moving from first draft to polished product with less repetition, stronger consistency, and"}
               <span className="font-medium text-foreground">
-                faster delivery
+                {"faster delivery"}
               </span>
-              .
+              {"."}
             </p>
             <div className="flex flex-wrap gap-2 items-center pt-2">
               <Button href="#" role="button" tabIndex="0">
@@ -43,7 +43,7 @@ export function Pattern() {
                   <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                   <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                 </svg>
-                Connect MCP
+                {"Connect MCP"}
               </Button>
               <Button href="#" role="button" tabIndex="0">
                 <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
@@ -52,7 +52,7 @@ export function Pattern() {
                   <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                   <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                 </svg>
-                Browse Registry
+                {"Browse Registry"}
               </Button>
             </div>
           </div>
@@ -67,10 +67,10 @@ export function Pattern() {
               </IconTile>
               <div className="flex flex-1 flex-col gap-1">
                 <p className="font-medium text-foreground text-sm">
-                  Design with ready-made blocks
+                  {"Design with ready-made blocks"}
                 </p>
                 <p className="line-clamp-3 text-muted-foreground text-sm">
-                  Start with polished patterns for screens and consistent shadcn/ui styling.
+                  {"Start with polished patterns for screens and consistent shadcn/ui styling."}
                 </p>
               </div>
               <svg className="group-hover/feature:translate-x-0.5 group-not-has-[a:hover]/grid:translate-x-0.5 lucide lucide-arrow-right self-center shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
@@ -88,10 +88,10 @@ export function Pattern() {
               </IconTile>
               <div className="flex flex-1 flex-col gap-1">
                 <p className="font-medium text-foreground text-sm">
-                  Build directly with MCP
+                  {"Build directly with MCP"}
                 </p>
                 <p className="line-clamp-3 text-muted-foreground text-sm">
-                  Search components, inspect APIs, and get commands inside your coding agent.
+                  {"Search components, inspect APIs, and get commands inside your coding agent."}
                 </p>
               </div>
               <svg className="group-hover/feature:translate-x-0.5 lucide lucide-arrow-right self-center shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
@@ -110,10 +110,10 @@ export function Pattern() {
               </IconTile>
               <div className="flex flex-1 flex-col gap-1">
                 <p className="font-medium text-foreground text-sm">
-                  Ship from one registry
+                  {"Ship from one registry"}
                 </p>
                 <p className="line-clamp-3 text-muted-foreground text-sm">
-                  Install components, blocks, and templates from one NeUI catalog.
+                  {"Install components, blocks, and templates from one NeUI catalog."}
                 </p>
               </div>
               <svg className="group-hover/feature:translate-x-0.5 lucide lucide-arrow-right self-center shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">

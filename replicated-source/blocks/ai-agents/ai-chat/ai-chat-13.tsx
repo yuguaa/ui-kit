@@ -42,11 +42,11 @@ export function Pattern() {
       <div className="flex-1 min-h-0 overflow-y-auto">
         <header className="bg-background border-b flex gap-2 h-14 items-center px-4 sm:px-6 sticky top-0 z-10">
           <span className="font-medium min-w-0 text-sm truncate">
-            Halcyon Labs
+            {"Halcyon Labs"}
           </span>
           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span className="min-w-0 text-muted-foreground text-sm truncate">
-            API Health
+            {"API Health"}
           </span>
           <DropdownMenu>
           <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open user menu" aria-haspopup="menu" id="base-ui-_r_5_" aria-expanded="false">
@@ -140,7 +140,7 @@ export function Pattern() {
           <path d="M22 4h-4"></path>
           <circle cx="4" cy="20" r="2"></circle>
         </svg>
-        Ask AI
+        {"Ask AI"}
       </Button>
       <Card className="[--window-h:min(40rem,calc(100svh-2rem))] [--window-max-h:calc(100svh-2rem)] bg-popover bottom-4 data-[state=closed]:[content-visibility:hidden] data-[state=closed]:invisible end-4 fixed gap-0 h-(--window-h) max-sm:h-(--window-max-h) origin-bottom-right overflow-hidden p-0 rounded-xl rtl:origin-bottom-left shadow-md sm:data-[expanded=true]:h-(--window-max-h) sm:max-w-104 w-[calc(100vw-2rem)] z-50" size="default" role="dialog" aria-modal="false" aria-labelledby="_r_0_" aria-describedby="_r_1_" data-state="open" expanded="false">
         <div className="absolute after:absolute after:bg-linear-to-b after:from-popover after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-popover/70 in-data-[size=minimized]:backdrop-filter-none inset-x-0 rounded-t-xl supports-backdrop-filter:bg-popover/60 top-0 z-20">
@@ -148,13 +148,13 @@ export function Pattern() {
           <div className="flex gap-1 items-center min-h-12 px-3">
             <div className="flex gap-2 items-center min-w-0 ps-1">
               <CardTitle className="font-medium normal-case text-sm tracking-normal truncate" id="_r_0_" role="heading" aria-level="2">
-                NeUI Chat
+                {"NeUI Chat"}
               </CardTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                Beta
+                {"Beta"}
               </Badge>
               <CardDescription className="sr-only" id="_r_1_">
-                Answers from API Health and what you attach.
+                {"Answers from API Health and what you attach."}
               </CardDescription>
             </div>
             <div className="flex gap-0.5 items-center ms-auto shrink-0">
@@ -221,15 +221,15 @@ export function Pattern() {
             <div className="[--scroll-fade-reveal:--spacing(8)] data-[at-end=true]:scroll-fade-b-0 data-[fits=true]:scroll-fade-none flex flex-1 flex-col gap-5 min-h-0 no-scrollbar overflow-y-auto overscroll-contain pb-2 pt-18 px-4 scroll-fade-b scroll-pb-10 scroll-pt-18" data-fold="starters" data-fits="true" data-at-end="true">
               <div className="flex flex-col gap-1">
                 <EmptyTitle>
-                  Hi Maya
+                  {"Hi Maya"}
                 </EmptyTitle>
                 <EmptyDescription>
-                  I read API Health and anything you attach.
+                  {"I read API Health and anything you attach."}
                 </EmptyDescription>
               </div>
               <div className="flex flex-col gap-1" role="group" aria-labelledby="_r_j_">
                 <p className="font-medium text-muted-foreground text-xs" id="_r_j_">
-                  Try Asking
+                  {"Try Asking"}
                 </p>
                 <div className="flex flex-col">
                   <Button className="font-normal gap-2 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
@@ -237,7 +237,7 @@ export function Pattern() {
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      Why did p95 double on eu-west?
+                      {"Why did p95 double on eu-west?"}
                     </span>
                   </Button>
                   <Button className="font-normal gap-2 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
@@ -245,7 +245,7 @@ export function Pattern() {
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      Which endpoints fail the most?
+                      {"Which endpoints fail the most?"}
                     </span>
                   </Button>
                   <Button className="font-normal gap-2 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
@@ -253,7 +253,7 @@ export function Pattern() {
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      How do we fix the slowdown?
+                      {"How do we fix the slowdown?"}
                     </span>
                   </Button>
                   <Button className="font-normal gap-2 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
@@ -261,7 +261,7 @@ export function Pattern() {
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      Draft a status update for customers
+                      {"Draft a status update for customers"}
                     </span>
                   </Button>
                   <Button className="font-normal gap-2 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
@@ -269,7 +269,7 @@ export function Pattern() {
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      What changed in release 3.4?
+                      {"What changed in release 3.4?"}
                     </span>
                   </Button>
                 </div>
@@ -280,7 +280,7 @@ export function Pattern() {
             <form>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="_r_k_">
-                  Ask a question
+                  {"Ask a question"}
                 </FieldLabel>
                 <InputGroup role="group">
                   <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-14 outline-none placeholder:text-muted-foreground resize-none w-full" id="_r_k_" placeholder="Ask about this page"></textarea>
@@ -310,7 +310,7 @@ export function Pattern() {
               </Field>
             </form>
             <p className="text-center text-muted-foreground text-xs">
-              Replies can be wrong. Check before acting.
+              {"Replies can be wrong. Check before acting."}
             </p>
           </div>
         </div>
@@ -321,10 +321,10 @@ export function Pattern() {
           <div className="flex gap-1 items-center min-h-12 px-3">
             <div className="flex gap-2 items-center min-w-0 ps-1">
               <CardTitle className="font-medium normal-case text-sm tracking-normal truncate">
-                NeUI Chat
+                {"NeUI Chat"}
               </CardTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                Beta
+                {"Beta"}
               </Badge>
               <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs" role="status" data-fold="status"></span>
             </div>

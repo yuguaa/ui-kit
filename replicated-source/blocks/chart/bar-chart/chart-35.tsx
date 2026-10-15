@@ -24,10 +24,10 @@ export function Pattern() {
           <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="basis-40 flex flex-col gap-px grow min-w-0">
               <div className="font-semibold text-sm">
-                Event Volume
+                {"Event Volume"}
               </div>
               <div className="text-muted-foreground text-xs truncate">
-                6-hour buckets, UTC
+                {"6-hour buckets, UTC"}
               </div>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
@@ -35,50 +35,50 @@ export function Pattern() {
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Success, 59 events" extracted="1">
                   <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Success
+                    {"Success"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                    59
+                    {"59"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Denied, 4 events">
                   <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Denied
+                    {"Denied"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                    4
+                    {"4"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Failed, 2 events">
                   <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Failed
+                    {"Failed"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                    2
+                    {"2"}
                   </span>
                 </ToggleGroupItem>
               </ToggleGroup>
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Time range" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0" title="Last hour">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    1h
+                    {"1h"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" title="Last 24 hours">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    24h
+                    {"24h"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" title="Last 7 days">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    7d
+                    {"7d"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" title="Last 30 days">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    30d
+                    {"30d"}
                   </span>
                 </ToggleGroupItem>
               </ToggleGroup>
@@ -98,10 +98,10 @@ export function Pattern() {
               <div className="@xl:flex-row @xl:gap-3 @xl:items-center flex flex-col gap-1 min-w-0">
                 <div className="flex gap-1.5 items-baseline shrink-0">
                   <span className="font-semibold tabular-nums text-2xl tracking-tight">
-                    65
+                    {"65"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    events
+                    {"events"}
                   </span>
                 </div>
                 <div className="@xl:flex-nowrap @xl:min-h-0 @xl:overflow-hidden @xl:whitespace-nowrap content-start flex flex-wrap gap-x-1.5 gap-y-1 items-center min-h-11 min-w-0 tabular-nums text-muted-foreground text-xs">
@@ -111,25 +111,25 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      +25%
+                      {"+25%"}
                     </span>
                   </Badge>
                   <span className="flex h-5 items-center shrink-0">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      vs prior 7d
+                      {"vs prior 7d"}
                     </span>
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex h-5 items-center shrink-0">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      6.2% denied
+                      {"6.2% denied"}
                     </span>
                   </span>
                   <span className="@xl:flex gap-x-1.5 hidden items-center">
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="flex h-5 items-center shrink-0">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        4 awaiting review
+                        {"4 awaiting review"}
                       </span>
                     </span>
                   </span>
@@ -137,21 +137,9 @@ export function Pattern() {
               </div>
             </div>
             <div className="min-w-0 mt-auto relative">
+              <ChartContainer>
               <div className="@4xl:h-62 [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-video cn-chart cursor-pointer flex h-48 has-[.recharts-surface:focus-visible]:ring-[3px] has-[.recharts-surface:focus-visible]:ring-ring/50 justify-center min-w-0 select-none text-xs touch-pan-y w-full" data-chart="chart-_r_f_" role="group" aria-label="Events per bucket: Success, Denied, and Failed. Arrow keys move, Enter selects, Shift+Enter extends, Escape clears.">
-                <style>{`
- [data-chart=chart-_r_f_] {
-  --color-success: var(--success);
-  --color-denied: var(--warning);
-  --color-failed: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_f_] {
-  --color-success: var(--success);
-  --color-denied: var(--warning);
-  --color-failed: var(--destructive);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_f_] {\n  --color-success: var(--success);\n  --color-denied: var(--warning);\n  --color-failed: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_f_] {\n  --color-success: var(--success);\n  --color-denied: var(--warning);\n  --color-failed: var(--destructive);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="990" height="248" style={{position: "relative", cursor: "default", width: "990px", height: "248px"}}>
@@ -760,49 +748,49 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="107.27586206896552" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="107.27586206896552" dy="0.71em">
-                                  Sep 23
+                                  {"Sep 23"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="240.51724137931035" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="240.51724137931035" dy="0.71em">
-                                  Sep 24
+                                  {"Sep 24"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="373.7586206896552" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="373.7586206896552" dy="0.71em">
-                                  Sep 25
+                                  {"Sep 25"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="506.99999999999994" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="506.99999999999994" dy="0.71em">
-                                  Sep 26
+                                  {"Sep 26"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="640.2413793103449" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="640.2413793103449" dy="0.71em">
-                                  Sep 27
+                                  {"Sep 27"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="773.4827586206897" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="773.4827586206897" dy="0.71em">
-                                  Sep 28
+                                  {"Sep 28"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="966" stroke="none" x="906.7241379310345" y="234" textAnchor="middle" fill="#666">
                                 <tspan x="906.7241379310345" dy="0.71em">
-                                  Sep 29
+                                  {"Sep 29"}
                                 </tspan>
                               </text>
                             </g>
@@ -811,28 +799,28 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="24" orientation="left" height="190" stroke="none" x="18" y="218" textAnchor="end" fill="#666">
                                 <tspan x="18" dy="0.355em">
-                                  0
+                                  {"0"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="24" orientation="left" height="190" stroke="none" x="18" y="154.66666666666669" textAnchor="end" fill="#666">
                                 <tspan x="18" dy="0.355em">
-                                  5
+                                  {"5"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="24" orientation="left" height="190" stroke="none" x="18" y="91.33333333333334" textAnchor="end" fill="#666">
                                 <tspan x="18" dy="0.355em">
-                                  10
+                                  {"10"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="24" orientation="left" height="190" stroke="none" x="18" y="28" textAnchor="end" fill="#666">
                                 <tspan x="18" dy="0.355em">
-                                  15
+                                  {"15"}
                                 </tspan>
                               </text>
                             </g>
@@ -843,6 +831,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
               <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
                 <span className="absolute flex items-center justify-center size-5" style={{left: "963px", top: "0px"}}>
                   <Avatar className="size-5" size="sm" aria-hidden="true">

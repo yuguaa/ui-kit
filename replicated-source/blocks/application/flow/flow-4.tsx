@@ -74,7 +74,7 @@ export function Pattern() {
             <BreadcrumbList className="flex-nowrap">
               <BreadcrumbItem>
                 <BreadcrumbLink href="#">
-                  Maps
+                  {"Maps"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -85,52 +85,52 @@ export function Pattern() {
             </BreadcrumbList>
           </Breadcrumb>
           <h1 className="font-semibold min-w-0 text-sm truncate">
-            Repeat Order Growth
+            {"Repeat Order Growth"}
           </h1>
           <Separator className="data-vertical:self-center h-4 max-xl:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <p className="flex gap-1.5 items-center max-xl:sr-only min-w-0 text-muted-foreground text-xs">
             <span className="shrink-0 tabular-nums">
-              3 initiatives, 6 metrics
+              {"3 initiatives, 6 metrics"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="min-w-0 tabular-nums truncate">
-              5 correlations
+              {"5 correlations"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <Avatar className="size-4" size="default" aria-hidden="true">
               <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
             </Avatar>
             <span className="min-w-0 truncate">
-              Ines Marchetti
+              {"Ines Marchetti"}
             </span>
           </p>
         </div>
         <p className="sr-only" role="status">
-          Past 7 days, 3 initiatives and 6 metrics
+          {"Past 7 days, 3 initiatives and 6 metrics"}
         </p>
         <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" spacing="0" aria-label="Period" style={{"--gap": "0"}}>
           <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center md:px-3 outline-none px-2 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="default" spacing="0">
             <span className="max-md:hidden">
-              7 days
+              {"7 days"}
             </span>
             <span className="md:hidden">
-              7d
+              {"7d"}
             </span>
           </ToggleGroupItem>
           <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center md:px-3 outline-none px-2 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0">
             <span className="max-md:hidden">
-              6 weeks
+              {"6 weeks"}
             </span>
             <span className="md:hidden">
-              6w
+              {"6w"}
             </span>
           </ToggleGroupItem>
           <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center md:px-3 outline-none px-2 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0">
             <span className="max-md:hidden">
-              12 months
+              {"12 months"}
             </span>
             <span className="md:hidden">
-              12m
+              {"12m"}
             </span>
           </ToggleGroupItem>
         </ToggleGroup>
@@ -155,7 +155,7 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add metric
+            {"Add metric"}
           </Button>
           <DropdownMenu>
           <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Map actions" aria-haspopup="menu" id="base-ui-_r_9_" aria-expanded="false">
@@ -227,27 +227,27 @@ export function Pattern() {
                   <div className="react-flow__edgelabel-renderer">
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(655.682px, 138.785px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-card border border-border dark:bg-card disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        0.91
+                        {"0.91"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(655.682px, 225.14px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-card border border-border dark:bg-card disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        0.88
+                        {"0.88"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(655.682px, 309.028px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-card border border-border dark:bg-card disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive text-xs transition-shadow">
-                        -0.58
+                        {"-0.58"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(1008.5px, 181.963px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-card border border-border dark:bg-card disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        0.97
+                        {"0.97"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(1008.5px, 267.084px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-card border border-border dark:bg-card disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        0.84
+                        {"0.84"}
                       </Badge>
                     </div>
                   </div>
@@ -269,37 +269,37 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Free first returns
+                                  {"Free first returns"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Initiative
+                                  {"Initiative"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold tabular-nums text-sm">
-                                  62%
+                                  {"62%"}
                                 </span>
                                 <Progress className="ms-auto shrink-0 w-10" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" aria-valuetext="62%" role="progressbar" aria-label="62% done">
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "62%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                  In Progress
+                                  {"In Progress"}
                                 </Badge>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  GitHub Project
+                                  {"GitHub Project"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="shrink-0 tabular-nums">
-                                  3 open
+                                  {"3 open"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -326,37 +326,37 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  SMS restock alerts
+                                  {"SMS restock alerts"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Initiative
+                                  {"Initiative"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold tabular-nums text-sm">
-                                  40%
+                                  {"40%"}
                                 </span>
                                 <Progress className="ms-auto shrink-0 w-10" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" aria-valuetext="40%" role="progressbar" aria-label="40% done">
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "40%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                                  To Do
+                                  {"To Do"}
                                 </Badge>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Growth Team
+                                  {"Growth Team"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="shrink-0 tabular-nums">
-                                  5 open
+                                  {"5 open"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -383,37 +383,37 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Loyalty upgrade email
+                                  {"Loyalty upgrade email"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Initiative
+                                  {"Initiative"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold tabular-nums text-sm">
-                                  0%
+                                  {"0%"}
                                 </span>
                                 <Progress className="ms-auto shrink-0 w-10" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" aria-valuetext="0%" role="progressbar" aria-label="0% done">
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "0%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                  Blocked
+                                  {"Blocked"}
                                 </Badge>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Lifecycle Team
+                                  {"Lifecycle Team"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="shrink-0 tabular-nums">
-                                  4 open
+                                  {"4 open"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -436,29 +436,29 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Checkout completion
+                                  {"Checkout completion"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Input
+                                  {"Input"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-sm truncate">
-                                  68.4%
+                                  {"68.4%"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  +1.2%
+                                  {"+1.2%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Average
+                                  {"Average"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -482,29 +482,29 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Restock alert opt-ins
+                                  {"Restock alert opt-ins"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Input
+                                  {"Input"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-sm truncate">
-                                  1,240
+                                  {"1,240"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  +3.1%
+                                  {"+3.1%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Sum
+                                  {"Sum"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -528,40 +528,40 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Average discount depth
+                                  {"Average discount depth"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  Input
+                                  {"Input"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-sm truncate">
-                                  14.2%
+                                  {"14.2%"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  -0.8%
+                                  {"-0.8%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Average
+                                  {"Average"}
                                 </span>
                                 <Progress className="ms-auto shrink-0 w-10" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-label="58% toward 12% by end of Q4">
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                                 <span className="shrink-0 tabular-nums">
-                                  58%
+                                  {"58%"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -587,29 +587,29 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Weekly repeat orders
+                                  {"Weekly repeat orders"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  North Star
+                                  {"North Star"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-base truncate">
-                                  3,912
+                                  {"3,912"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  +0.9%
+                                  {"+0.9%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Sum
+                                  {"Sum"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -633,29 +633,29 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Repeat purchase rate
+                                  {"Repeat purchase rate"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  KPI
+                                  {"KPI"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-sm truncate">
-                                  36.4%
+                                  {"36.4%"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  +0.6%
+                                  {"+0.6%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Average
+                                  {"Average"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -679,29 +679,29 @@ export function Pattern() {
                               </IconTile>
                               <div className="flex flex-col min-w-0">
                                 <div className="font-semibold leading-4 text-sm truncate">
-                                  Contribution margin
+                                  {"Contribution margin"}
                                 </div>
                                 <div className="leading-4 text-muted-foreground text-xs truncate">
-                                  KPI
+                                  {"KPI"}
                                 </div>
                               </div>
                             </header>
                             <FramePanel className="flex flex-col gap-1">
                               <div className="flex gap-2 items-center">
                                 <span className="font-semibold min-w-0 tabular-nums text-sm truncate">
-                                  $412K
+                                  {"$412K"}
                                 </span>
                                 <span className="ms-auto shrink-0 tabular-nums text-success text-xs">
-                                  +1.4%
+                                  {"+1.4%"}
                                 </span>
                               </div>
                               <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                                 <span className="truncate">
-                                  Past 7 days
+                                  {"Past 7 days"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="truncate">
-                                  Sum
+                                  {"Sum"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -755,7 +755,7 @@ export function Pattern() {
                   </Tooltip>
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 tabular-nums transition-all w-12 whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom level 81%" aria-haspopup="menu" id="base-ui-_r_m_" aria-expanded="false">
-                    81%
+                    {"81%"}
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <Tooltip>
@@ -793,14 +793,14 @@ export function Pattern() {
             </div>
             <div className="bottom center react-flow__attribution react-flow__panel" data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev?utm_source=attribution">
               <a href="https://reactflow.dev?utm_source=attribution" target="_blank" rel="noopener noreferrer" aria-label="React Flow attribution">
-                React Flow
+                {"React Flow"}
               </a>
             </div>
             <div id="react-flow__node-desc-1" style={{display: "none"}}>
-              Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.
+              {"Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel."}
             </div>
             <div id="react-flow__edge-desc-1" style={{display: "none"}}>
-              Press enter or space to select an edge. You can then press delete to remove it or escape to cancel.
+              {"Press enter or space to select an edge. You can then press delete to remove it or escape to cancel."}
             </div>
             <div id="react-flow__aria-live-1" aria-live="assertive" aria-atomic="true" style={{position: "absolute", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)"}}></div>
           </div>
@@ -817,10 +817,10 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="truncate">
-                  Weekly repeat orders
+                  {"Weekly repeat orders"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                  North Star
+                  {"North Star"}
                 </Badge>
               </CardTitle>
               <Button className="-me-1.5" type="button" tabIndex="0" aria-label="Close metric details">
@@ -833,10 +833,10 @@ export function Pattern() {
             <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
               <TabsList className="border-b gap-5 h-auto justify-start px-4 py-0 shrink-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                 <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_24_" compositeItemActive="" aria-controls="base-ui-_r_26_">
-                  Settings
+                  {"Settings"}
                 </TabsTrigger>
                 <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_25_">
-                  Links
+                  {"Links"}
                 </TabsTrigger>
               </TabsList>
               <div className="flex flex-1 flex-col min-h-0 overflow-y-auto p-4">
@@ -844,13 +844,13 @@ export function Pattern() {
                   <FieldGroup>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="card-title">
-                        Title
+                        {"Title"}
                       </FieldLabel>
                       <Input id="card-title" value="Weekly repeat orders"></Input>
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-role">
-                        Role
+                        {"Role"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" disabled="" tabIndex="-1" disabled id="metric-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -863,33 +863,33 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="2"></circle>
                               </svg>
                             </span>
-                            North Star
+                            {"North Star"}
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
                       <input id="base-ui-_r_28_-hidden-input" disabled tabIndex="-1" aria-hidden="true" value="north_star" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldDescription>
-                        Promote another metric to hand this role on.
+                        {"Promote another metric to hand this role on."}
                       </FieldDescription>
                     </Field>
                     <div className="gap-3 grid grid-cols-2">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-aggregation">
-                          Aggregation
+                          {"Aggregation"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="metric-aggregation" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            Sum
+                            {"Sum"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -897,16 +897,16 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-unit">
-                          Unit
+                          {"Unit"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="metric-unit" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            Count
+                            {"Count"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -915,16 +915,16 @@ export function Pattern() {
                     </div>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-direction">
-                        Better when
+                        {"Better when"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="metric-direction" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                         <SelectValue>
-                          Higher is better
+                          {"Higher is better"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -932,39 +932,39 @@ export function Pattern() {
                     </Field>
                     <div className="gap-x-2 gap-y-3 grid grid-cols-[minmax(0,1fr)_7.5rem_5.5rem] items-center" role="group" aria-label="Period values">
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Period
+                        {"Period"}
                       </span>
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Value
+                        {"Value"}
                       </span>
                       <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                        Change %
+                        {"Change %"}
                       </span>
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-7d-value">
-                        Past 7 days
+                        {"Past 7 days"}
                       </FieldLabel>
                       <Input className="tabular-nums" id="metric-7d-value" inputmode="decimal" type="number" value="3912"></Input>
                       <Input className="tabular-nums" id="base-ui-_r_2l_" inputmode="decimal" step="0.1" aria-label="Past 7 days change" type="number" value="0.9"></Input>
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-6w-value">
-                        Past 6 weeks
+                        {"Past 6 weeks"}
                       </FieldLabel>
                       <Input className="tabular-nums" id="metric-6w-value" inputmode="decimal" type="number" value="22408"></Input>
                       <Input className="tabular-nums" id="base-ui-_r_2n_" inputmode="decimal" step="0.1" aria-label="Past 6 weeks change" type="number" value="2.6"></Input>
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-12m-value">
-                        Past 12 months
+                        {"Past 12 months"}
                       </FieldLabel>
                       <Input className="tabular-nums" id="metric-12m-value" inputmode="decimal" type="number" value="168730"></Input>
                       <Input className="tabular-nums" id="base-ui-_r_2p_" inputmode="decimal" step="0.1" aria-label="Past 12 months change" type="number" value="31.8"></Input>
                     </div>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-goal">
-                        Goal
+                        {"Goal"}
                       </FieldLabel>
                       <Input id="metric-goal" placeholder="Leave empty for no goal" value=""></Input>
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="metric-goal-progress">
-                        Goal progress %
+                        {"Goal progress %"}
                       </FieldLabel>
                       <Input className="tabular-nums" disabled="" id="metric-goal-progress" disabled inputmode="numeric" min="0" max="100" type="number" value="0"></Input>
                     </Field>
@@ -975,10 +975,10 @@ export function Pattern() {
             <footer className="border-t p-4 shrink-0">
               <div className="gap-3 grid grid-cols-2 w-full">
                 <Button type="button" tabIndex="0">
-                  Cancel
+                  {"Cancel"}
                 </Button>
                 <Button type="button" disabled="" tabIndex="0" disabled>
-                  Save metric
+                  {"Save metric"}
                 </Button>
               </div>
             </footer>

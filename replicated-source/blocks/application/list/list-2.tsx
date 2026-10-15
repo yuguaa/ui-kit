@@ -17,16 +17,16 @@ export function Pattern() {
       <Frame className="max-w-sm w-full" spacing="sm">
         <FramePanel className="flex items-center justify-between p-3!">
           <h2 className="font-medium text-base text-foreground">
-            Capital Inflows
+            {"Capital Inflows"}
           </h2>
           <Select>
           <SelectTrigger className="min-w-28 shrink-0 text-xs" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Filter funds shown">
             <SelectValue>
-              Top 3 Funds
+              {"Top 3 Funds"}
             </SelectValue>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -46,15 +46,15 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-base text-foreground">
-                    Tether Reserve
+                    {"Tether Reserve"}
                   </p>
                 </div>
                 <div className="shrink-0 space-y-0.5 text-right">
                   <p className="leading-none text-muted-foreground text-xs">
-                    Capital In
+                    {"Capital In"}
                   </p>
                   <p className="font-medium leading-tight text-foreground text-sm">
-                    $7,928,400
+                    {"$7,928,400"}
                   </p>
                 </div>
               </div>
@@ -72,15 +72,15 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-base text-foreground">
-                    Binance Ventures
+                    {"Binance Ventures"}
                   </p>
                 </div>
                 <div className="shrink-0 space-y-0.5 text-right">
                   <p className="leading-none text-muted-foreground text-xs">
-                    Capital In
+                    {"Capital In"}
                   </p>
                   <p className="font-medium leading-tight text-foreground text-sm">
-                    $3,214,900
+                    {"$3,214,900"}
                   </p>
                 </div>
               </div>
@@ -105,15 +105,15 @@ export function Pattern() {
                 </Item>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-base text-foreground">
-                    Coinholder Treasury
+                    {"Coinholder Treasury"}
                   </p>
                 </div>
                 <div className="shrink-0 space-y-0.5 text-right">
                   <p className="leading-none text-muted-foreground text-xs">
-                    Capital In
+                    {"Capital In"}
                   </p>
                   <p className="font-medium leading-tight text-foreground text-sm">
-                    $1,246,300
+                    {"$1,246,300"}
                   </p>
                 </div>
               </div>

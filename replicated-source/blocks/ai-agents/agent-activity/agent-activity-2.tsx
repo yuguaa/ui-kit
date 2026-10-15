@@ -39,19 +39,19 @@ export function Pattern() {
             <div className="flex flex-col gap-0.5 min-w-0">
               <div className="flex gap-2 items-center min-w-0">
                 <CardTitle className="truncate">
-                  Fix Refund Webhook
+                  {"Fix Refund Webhook"}
                 </CardTitle>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  Done
+                  {"Done"}
                 </Badge>
               </div>
               <CardDescription className="flex gap-1.5 items-center min-w-0 text-xs">
                 <span className="truncate">
-                  Jonas Weber
+                  {"Jonas Weber"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="shrink-0 tabular-nums">
-                  Started 14:02
+                  {"Started 14:02"}
                 </span>
               </CardDescription>
             </div>
@@ -69,7 +69,7 @@ export function Pattern() {
           </CardAction>
         </CardHeader>
         <span className="sr-only" role="status" aria-live="polite">
-          Run complete. 8 steps, 44.7s.
+          {"Run complete. 8 steps, 44.7s."}
         </span>
         <CardContent className="flex flex-col px-0 py-3">
           <Marker className="border-transparent border-y group/row px-(--card-spacing) py-1.5 transition-colors" variant="default">
@@ -84,11 +84,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  Thought for 8s
+                  {"Thought for 8s"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    the 500 on charge.refunded
+                    {"the 500 on charge.refunded"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -103,7 +103,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                8.0s
+                {"8.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -120,11 +120,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  Read 412 lines
+                  {"Read 412 lines"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    src/api/stripe-webhook.ts
+                    {"src/api/stripe-webhook.ts"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -148,7 +148,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                5.0s
+                {"5.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -162,11 +162,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  6 files, 2 of them handlers
+                  {"6 files, 2 of them handlers"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    grep -rn "charge.refunded" src
+                    {"grep -rn \"charge.refunded\" src"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -181,7 +181,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                2.0s
+                {"2.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -196,11 +196,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  41 rows in 320ms
+                  {"41 rows in 320ms"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    events where type = 'charge.refunded'
+                    {"events where type = 'charge.refunded'"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -224,7 +224,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                320ms
+                {"320ms"}
               </span>
             </MarkerContent>
           </Marker>
@@ -238,11 +238,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  +12 -3 in the webhook
+                  {"+12 -3 in the webhook"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    src/api/stripe-webhook.ts
+                    {"src/api/stripe-webhook.ts"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -266,7 +266,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                9.0s
+                {"9.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -280,11 +280,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  Exit 0 in 12.4s
+                  {"Exit 0 in 12.4s"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    pnpm test src/api/__tests__/stripe-webhook.test.ts
+                    {"pnpm test src/api/__tests__/stripe-webhook.test.ts"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -299,7 +299,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                12.4s
+                {"12.4s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -313,11 +313,11 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <span className="shrink-0">
-                  +8 -1 in the worker
+                  {"+8 -1 in the worker"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    src/queue/events-worker.ts
+                    {"src/queue/events-worker.ts"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -341,7 +341,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                6.0s
+                {"6.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -355,14 +355,14 @@ export function Pattern() {
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="flex flex-1 gap-2 items-center min-w-0">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-mono font-normal gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                  linear
+                  {"linear"}
                 </Badge>
                 <span className="shrink-0">
-                  Created HAL-482
+                  {"Created HAL-482"}
                 </span>
                 <span className="flex flex-1 gap-1 items-center min-w-0">
                   <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-                    engineering backlog
+                    {"engineering backlog"}
                   </span>
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto h-5 items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none shrink-0 transition-opacity">
                     <Tooltip>
@@ -386,7 +386,7 @@ export function Pattern() {
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-end text-muted-foreground text-xs w-12">
-                2.0s
+                {"2.0s"}
               </span>
             </MarkerContent>
           </Marker>
@@ -398,15 +398,15 @@ export function Pattern() {
             </MarkerIcon>
             <MarkerContent className="flex flex-1 gap-2 items-center leading-5 text-[13px] text-foreground">
               <span className="shrink-0">
-                Run complete
+                {"Run complete"}
               </span>
               <span className="flex gap-1.5 items-center shrink-0 tabular-nums text-muted-foreground text-xs">
                 <span>
-                  8 steps
+                  {"8 steps"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  44.7s
+                  {"44.7s"}
                 </span>
               </span>
             </MarkerContent>
@@ -415,11 +415,11 @@ export function Pattern() {
         <CardFooter className="border-t flex-wrap gap-x-3 gap-y-2 pb-(--card-spacing)">
           <p className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
             <span className="shrink-0 tabular-nums">
-              2 files touched
+              {"2 files touched"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="shrink-0 tabular-nums">
-              4 tools called
+              {"4 tools called"}
             </span>
           </p>
           <div className="flex gap-1.5 items-center ms-auto shrink-0">
@@ -428,7 +428,7 @@ export function Pattern() {
                 <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
                 <path d="M21 3v5h-5"></path>
               </svg>
-              Rerun
+              {"Rerun"}
             </Button>
           </div>
         </CardFooter>

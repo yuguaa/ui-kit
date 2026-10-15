@@ -44,12 +44,17 @@ import { SidebarMenuButton } from "@/registry/bases/radix/ui/sidebar"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="[--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "350px", "--sidebar-width-icon": "3rem", "--header-height": "50px"}}>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="*:data-[sidebar=sidebar]:flex-row data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-svh hidden inset-y-0 md:flex overflow-hidden transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <div className="flex flex-1 min-h-full">
+              <SidebarProvider>
               <Sidebar className="border-r w-(--sidebar-width-icon)!">
                 <SidebarHeader className="items-center justify-center py-3" sidebar="header">
                   <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default" aria-hidden="true">
@@ -61,11 +66,17 @@ export function Pattern() {
                     </ItemMedia>
                   </Item>
                 </SidebarHeader>
+                <SidebarProvider>
                 <SidebarContent sidebar="content">
+                  <SidebarProvider>
                   <SidebarGroup sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent sidebar="group-content">
+                      <SidebarProvider>
                       <SidebarMenu className="gap-0.5" sidebar="menu">
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="">
                             <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                               <path d="M8 2v4"></path>
@@ -74,16 +85,24 @@ export function Pattern() {
                               <path d="M3 10h18"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                               <circle cx="12" cy="12" r="10"></circle>
                               <path d="M12 6v6l4 2"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -92,8 +111,12 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                               <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
@@ -101,19 +124,29 @@ export function Pattern() {
                             </svg>
                             <span className="absolute bg-primary right-0.5 rounded-full size-1.5 top-0.5" aria-hidden="true"></span>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                               <path d="m21 21-4.34-4.34"></path>
                               <circle cx="11" cy="11" r="8"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
                       </SidebarMenu>
+                      </SidebarProvider>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                 </SidebarContent>
+                </SidebarProvider>
                 <SidebarFooter sidebar="footer">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
@@ -124,11 +157,12 @@ export function Pattern() {
                   </DropdownMenu>
                 </SidebarFooter>
               </Sidebar>
+              </SidebarProvider>
               <div className="flex flex-1 overflow-hidden w-[calc(var(--sidebar-width)-var(--sidebar-width-icon))]">
                 <div className="bg-background flex flex-1 flex-col overflow-hidden">
                   <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                     <span className="font-semibold text-foreground text-sm">
-                      Calendars
+                      {"Calendars"}
                     </span>
                     <Button type="button" tabIndex="0" aria-label="Add calendar">
                       <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
@@ -140,7 +174,7 @@ export function Pattern() {
                   <div className="border-b border-border flex flex-col items-center px-1 py-2 shrink-0">
                     <div className="flex items-center justify-between pb-1 px-2 w-full">
                       <span className="font-medium text-foreground text-sm">
-                        June 2026
+                        {"June 2026"}
                       </span>
                       <div className="flex gap-0.5 items-center justify-center">
                         <Button type="button" tabIndex="0" aria-label="Previous month">
@@ -160,32 +194,32 @@ export function Pattern() {
                         <div className="flex flex-col gap-4 rdp-month w-full">
                           <div className="hidden">
                             <span className="cn-calendar-caption font-medium rdp-caption_label select-none text-sm" role="status" aria-live="polite">
-                              June 2026
+                              {"June 2026"}
                             </span>
                           </div>
                           <table className="border-collapse rdp-month_grid w-full" role="grid" aria-multiselectable="false" aria-label="June 2026">
                             <thead aria-hidden="true">
                               <tr className="flex rdp-weekdays">
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Sunday" scope="col">
-                                  Su
+                                  {"Su"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Monday" scope="col">
-                                  Mo
+                                  {"Mo"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Tuesday" scope="col">
-                                  Tu
+                                  {"Tu"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Wednesday" scope="col">
-                                  We
+                                  {"We"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Thursday" scope="col">
-                                  Th
+                                  {"Th"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Friday" scope="col">
-                                  Fr
+                                  {"Fr"}
                                 </th>
                                 <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Saturday" scope="col">
-                                  Sa
+                                  {"Sa"}
                                 </th>
                               </tr>
                             </thead>
@@ -194,43 +228,43 @@ export function Pattern() {
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-05-31" data-month="2026-05" data-outside="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/5/31" aria-label="Sunday, May 31st, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    31
+                                    {"31"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-01">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/1" aria-label="Monday, June 1st, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    1
+                                    {"1"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-02">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/2" aria-label="Tuesday, June 2nd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    2
+                                    {"2"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-03">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/3" aria-label="Wednesday, June 3rd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    3
+                                    {"3"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-04">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/4" aria-label="Thursday, June 4th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    4
+                                    {"4"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-05">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/5" aria-label="Friday, June 5th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    5
+                                    {"5"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-06">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/6" aria-label="Saturday, June 6th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    6
+                                    {"6"}
                                   </Button>
                                 </td>
                               </tr>
@@ -238,43 +272,43 @@ export function Pattern() {
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-07">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/7" aria-label="Sunday, June 7th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    7
+                                    {"7"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-08">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/8" aria-label="Monday, June 8th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    8
+                                    {"8"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-09">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/9" aria-label="Tuesday, June 9th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    9
+                                    {"9"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day rdp-selected relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" aria-selected="true" data-day="2026-06-10" data-selected="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="0" day="2026/6/10" selectedSingle="true" aria-label="Wednesday, June 10th, 2026, selected">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    10
+                                    {"10"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-11">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/11" aria-label="Thursday, June 11th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    11
+                                    {"11"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-12">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/12" aria-label="Friday, June 12th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    12
+                                    {"12"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-13">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/13" aria-label="Saturday, June 13th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    13
+                                    {"13"}
                                   </Button>
                                 </td>
                               </tr>
@@ -282,43 +316,43 @@ export function Pattern() {
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-14">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/14" aria-label="Sunday, June 14th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    14
+                                    {"14"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-15">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/15" aria-label="Monday, June 15th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    15
+                                    {"15"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-16">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/16" aria-label="Tuesday, June 16th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    16
+                                    {"16"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-17">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/17" aria-label="Wednesday, June 17th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    17
+                                    {"17"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-18">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/18" aria-label="Thursday, June 18th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    18
+                                    {"18"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-19">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/19" aria-label="Friday, June 19th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    19
+                                    {"19"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-20">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/20" aria-label="Saturday, June 20th, 2026">
                                     <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                    20
+                                    {"20"}
                                   </Button>
                                 </td>
                               </tr>
@@ -326,43 +360,43 @@ export function Pattern() {
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-21">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/21" aria-label="Sunday, June 21st, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    21
+                                    {"21"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-22">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/22" aria-label="Monday, June 22nd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    22
+                                    {"22"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-23">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/23" aria-label="Tuesday, June 23rd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    23
+                                    {"23"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-24">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/24" aria-label="Wednesday, June 24th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    24
+                                    {"24"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-25">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/25" aria-label="Thursday, June 25th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    25
+                                    {"25"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-26">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/26" aria-label="Friday, June 26th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    26
+                                    {"26"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-27">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/27" aria-label="Saturday, June 27th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    27
+                                    {"27"}
                                   </Button>
                                 </td>
                               </tr>
@@ -370,43 +404,43 @@ export function Pattern() {
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-28">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/28" aria-label="Sunday, June 28th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    28
+                                    {"28"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-29">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/29" aria-label="Monday, June 29th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    29
+                                    {"29"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-06-30">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/6/30" aria-label="Tuesday, June 30th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    30
+                                    {"30"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-07-01" data-month="2026-07" data-outside="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/7/1" aria-label="Wednesday, July 1st, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    1
+                                    {"1"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-07-02" data-month="2026-07" data-outside="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/7/2" aria-label="Thursday, July 2nd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    2
+                                    {"2"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-07-03" data-month="2026-07" data-outside="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/7/3" aria-label="Friday, July 3rd, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    3
+                                    {"3"}
                                   </Button>
                                 </td>
                                 <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-07-04" data-month="2026-07" data-outside="true">
                                   <Button className="[&>span]:opacity-70 [&>span]:text-xs aspect-square border-0 cn-calendar-day-button dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto w-full z-10" type="button" tabIndex="-1" day="2026/7/4" aria-label="Saturday, July 4th, 2026">
                                     <span className="size-1" aria-hidden="true"></span>
-                                    4
+                                    {"4"}
                                   </Button>
                                 </td>
                               </tr>
@@ -423,7 +457,7 @@ export function Pattern() {
                           <div className="border-b border-border py-2">
                             <div className="px-3 py-1">
                               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                My Calendars
+                                {"My Calendars"}
                               </span>
                             </div>
                             <div className="px-2" role="list">
@@ -435,10 +469,10 @@ export function Pattern() {
                                       <path d="m9 18 6-6-6-6"></path>
                                     </svg>
                                     <span className="truncate">
-                                      nick@company.io
+                                      {"nick@company.io"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-auto outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                      3
+                                      {"3"}
                                     </Badge>
                                   </CollapsibleTrigger>
                                   </Collapsible>
@@ -455,7 +489,7 @@ export function Pattern() {
                                         </Checkbox>
                                         <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         <span className="flex-1 font-medium text-foreground text-sm truncate">
-                                          Work
+                                          {"Work"}
                                         </span>
                                         <DropdownMenu>
                                         <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-hover:opacity-100 group/button inline-flex items-center justify-center opacity-0 outline-none select-none shrink-0 transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Work" aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
@@ -478,7 +512,7 @@ export function Pattern() {
                                         </Checkbox>
                                         <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         <span className="flex-1 font-medium text-foreground text-sm truncate">
-                                          Personal
+                                          {"Personal"}
                                         </span>
                                         <DropdownMenu>
                                         <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-hover:opacity-100 group/button inline-flex items-center justify-center opacity-0 outline-none select-none shrink-0 transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Personal" aria-haspopup="menu" id="base-ui-_r_v_" aria-expanded="false">
@@ -501,7 +535,7 @@ export function Pattern() {
                                         </Checkbox>
                                         <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         <span className="flex-1 font-medium text-foreground text-sm truncate">
-                                          Meetings
+                                          {"Meetings"}
                                         </span>
                                         <DropdownMenu>
                                         <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-hover:opacity-100 group/button inline-flex items-center justify-center opacity-0 outline-none select-none shrink-0 transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Meetings" aria-haspopup="menu" id="base-ui-_r_17_" aria-expanded="false">
@@ -525,10 +559,10 @@ export function Pattern() {
                                       <path d="m9 18 6-6-6-6"></path>
                                     </svg>
                                     <span className="truncate">
-                                      nick@gmail.com
+                                      {"nick@gmail.com"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-auto outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                      2
+                                      {"2"}
                                     </Badge>
                                   </CollapsibleTrigger>
                                   </Collapsible>
@@ -541,17 +575,17 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add account
+                                {"Add account"}
                               </Button>
                             </div>
                           </div>
                           <div className="border-b border-border py-2">
                             <div className="flex items-center justify-between px-3 py-1">
                               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                Up Next
+                                {"Up Next"}
                               </span>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-auto outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                3
+                                {"3"}
                               </Badge>
                             </div>
                             <div className="flex flex-col gap-0.5 px-1.5" role="list">
@@ -560,10 +594,10 @@ export function Pattern() {
                                   <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(79, 70, 229)"}}></span>
                                   <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                     <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                      Weekly Team Standup
+                                      {"Weekly Team Standup"}
                                     </span>
                                     <span className="text-muted-foreground text-xs">
-                                      9:00 AM to 9:30 AM
+                                      {"9:00 AM to 9:30 AM"}
                                     </span>
                                   </div>
                                   <div className="-space-x-1 flex ml-auto">
@@ -584,10 +618,10 @@ export function Pattern() {
                                   <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(147, 51, 234)"}}></span>
                                   <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                     <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                      Design Review · Component Library v3
+                                      {"Design Review · Component Library v3"}
                                     </span>
                                     <span className="text-muted-foreground text-xs">
-                                      11:00 AM to 12:00 PM
+                                      {"11:00 AM to 12:00 PM"}
                                     </span>
                                   </div>
                                   <div className="-space-x-1 flex ml-auto">
@@ -602,10 +636,10 @@ export function Pattern() {
                                   <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(234, 88, 12)"}}></span>
                                   <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                     <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                      Coffee with Alex
+                                      {"Coffee with Alex"}
                                     </span>
                                     <span className="text-muted-foreground text-xs">
-                                      2:00 PM to 2:30 PM
+                                      {"2:00 PM to 2:30 PM"}
                                     </span>
                                   </div>
                                 </Button>
@@ -618,7 +652,7 @@ export function Pattern() {
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5v14"></path>
                               </svg>
-                              New Event
+                              {"New Event"}
                             </Button>
                             <Button className="justify-start text-muted-foreground w-full" type="button" tabIndex="0">
                               <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
@@ -628,7 +662,7 @@ export function Pattern() {
                                 <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                                 <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                               </svg>
-                              Share Availability
+                              {"Share Availability"}
                             </Button>
                           </div>
                           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -640,10 +674,10 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-col">
                               <span className="font-medium text-[11px] text-muted-foreground/60">
-                                Your timezone
+                                {"Your timezone"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                GMT+5 (+05:00) · Asia/Tashkent
+                                {"GMT+5 (+05:00) · Asia/Tashkent"}
                               </span>
                             </div>
                           </div>
@@ -658,7 +692,7 @@ export function Pattern() {
                 <div className="bg-background flex-1 flex-col hidden overflow-hidden">
                   <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                     <span className="font-semibold text-foreground text-sm">
-                      Schedule
+                      {"Schedule"}
                     </span>
                     <Button type="button" tabIndex="0" aria-label="Filter schedule">
                       <svg className="lucide lucide-settings-2 lucide-settings2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
@@ -677,7 +711,7 @@ export function Pattern() {
                             <div className="py-3">
                               <div className="pb-2 px-3">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  Today
+                                  {"Today"}
                                 </span>
                               </div>
                               <div className="flex flex-col gap-2 px-3" role="list">
@@ -689,15 +723,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(79, 70, 229)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Morning Standup
+                                            {"Morning Standup"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          9:00 AM to 9:15 AM
+                                          {"9:00 AM to 9:15 AM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -706,7 +740,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        Zoom · Room A
+                                        {"Zoom · Room A"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -723,7 +757,7 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          3 attendees
+                                          {"3 attendees"}
                                         </span>
                                       </div>
                                     </div>
@@ -737,15 +771,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(147, 51, 234)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Sprint Planning
+                                            {"Sprint Planning"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          10:00 AM to 11:00 AM
+                                          {"10:00 AM to 11:00 AM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -754,7 +788,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        Conf Room B
+                                        {"Conf Room B"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -768,14 +802,14 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          2 attendees
+                                          {"2 attendees"}
                                         </span>
                                       </div>
                                       <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                         <svg className="lucide lucide-paperclip size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                           <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                         </svg>
-                                        1 file
+                                        {"1 file"}
                                       </div>
                                     </div>
                                   </div>
@@ -788,15 +822,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(234, 88, 12)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Lunch with Sarah
+                                            {"Lunch with Sarah"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          12:30 PM to 1:30 PM
+                                          {"12:30 PM to 1:30 PM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                        Personal
+                                        {"Personal"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -805,7 +839,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        The Coffee House, 3rd Ave
+                                        {"The Coffee House, 3rd Ave"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -816,7 +850,7 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          1 attendee
+                                          {"1 attendee"}
                                         </span>
                                       </div>
                                     </div>
@@ -830,15 +864,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(22, 163, 74)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Code Review Session
+                                            {"Code Review Session"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          3:00 PM to 4:00 PM
+                                          {"3:00 PM to 4:00 PM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -852,14 +886,14 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          2 attendees
+                                          {"2 attendees"}
                                         </span>
                                       </div>
                                       <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                         <svg className="lucide lucide-paperclip size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                           <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                         </svg>
-                                        2 files
+                                        {"2 files"}
                                       </div>
                                     </div>
                                   </div>
@@ -872,7 +906,7 @@ export function Pattern() {
                             <div className="py-3">
                               <div className="pb-2 px-3">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  Tomorrow
+                                  {"Tomorrow"}
                                 </span>
                               </div>
                               <div className="flex flex-col gap-2 px-3" role="list">
@@ -884,15 +918,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(79, 70, 229)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Client Presentation
+                                            {"Client Presentation"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          9:30 AM to 10:30 AM
+                                          {"9:30 AM to 10:30 AM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -901,7 +935,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        Google Meet
+                                        {"Google Meet"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -915,14 +949,14 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          2 attendees
+                                          {"2 attendees"}
                                         </span>
                                       </div>
                                       <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                         <svg className="lucide lucide-paperclip size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                           <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                         </svg>
-                                        1 file
+                                        {"1 file"}
                                       </div>
                                     </div>
                                   </div>
@@ -935,15 +969,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(147, 51, 234)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Design Sync
+                                            {"Design Sync"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          2:00 PM to 2:45 PM
+                                          {"2:00 PM to 2:45 PM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -957,14 +991,14 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          2 attendees
+                                          {"2 attendees"}
                                         </span>
                                       </div>
                                       <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                         <svg className="lucide lucide-paperclip size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                           <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                         </svg>
-                                        1 file
+                                        {"1 file"}
                                       </div>
                                     </div>
                                   </div>
@@ -977,7 +1011,7 @@ export function Pattern() {
                             <div className="py-3">
                               <div className="pb-2 px-3">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  This Week
+                                  {"This Week"}
                                 </span>
                               </div>
                               <div className="flex flex-col gap-2 px-3" role="list">
@@ -989,15 +1023,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(79, 70, 229)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            Team Retrospective
+                                            {"Team Retrospective"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          11:00 AM to 12:00 PM
+                                          {"11:00 AM to 12:00 PM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1006,7 +1040,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        Conf Room A
+                                        {"Conf Room A"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -1023,7 +1057,7 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          3 attendees
+                                          {"3 attendees"}
                                         </span>
                                       </div>
                                     </div>
@@ -1037,15 +1071,15 @@ export function Pattern() {
                                         <div className="flex gap-1 items-center">
                                           <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(22, 163, 74)"}}></div>
                                           <h3 className="font-medium leading-snug text-sm truncate">
-                                            1:1 with Manager
+                                            {"1:1 with Manager"}
                                           </h3>
                                         </div>
                                         <span className="text-muted-foreground text-xs">
-                                          4:00 PM to 4:30 PM
+                                          {"4:00 PM to 4:30 PM"}
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </div>
                                     <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1054,7 +1088,7 @@ export function Pattern() {
                                         <circle cx="12" cy="10" r="3"></circle>
                                       </svg>
                                       <span className="truncate">
-                                        Zoom
+                                        {"Zoom"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center justify-between">
@@ -1065,7 +1099,7 @@ export function Pattern() {
                                           </Avatar>
                                         </AvatarGroup>
                                         <span className="text-muted-foreground text-xs">
-                                          1 attendee
+                                          {"1 attendee"}
                                         </span>
                                       </div>
                                     </div>
@@ -1084,14 +1118,14 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      New Event
+                      {"New Event"}
                     </Button>
                   </div>
                 </div>
                 <div className="bg-background flex-1 flex-col hidden overflow-hidden">
                   <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                     <span className="font-semibold text-foreground text-sm">
-                      Contacts
+                      {"Contacts"}
                     </span>
                     <Button type="button" tabIndex="0" aria-label="Add contact">
                       <svg className="lucide lucide-user-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserPlusIcon" tabler="IconUserPlus" hugeicons="UserAdd01Icon" phosphor="UserPlusIcon" remixicon="RiUserAddLine" aria-hidden="true">
@@ -1118,7 +1152,7 @@ export function Pattern() {
                           <div role="group" aria-labelledby="contact-group-design">
                             <div className="px-3 py-1.5">
                               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="contact-group-design">
-                                Design
+                                {"Design"}
                               </span>
                             </div>
                             <div role="list">
@@ -1132,10 +1166,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Sarah Chen
+                                      {"Sarah Chen"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      Design Lead
+                                      {"Design Lead"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1171,10 +1205,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Aisha Patel
+                                      {"Aisha Patel"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      UX Researcher
+                                      {"UX Researcher"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1205,7 +1239,7 @@ export function Pattern() {
                           <div role="group" aria-labelledby="contact-group-engineering">
                             <div className="px-3 py-1.5">
                               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="contact-group-engineering">
-                                Engineering
+                                {"Engineering"}
                               </span>
                             </div>
                             <div role="list">
@@ -1219,10 +1253,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Luna Martinez
+                                      {"Luna Martinez"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      QA Engineer
+                                      {"QA Engineer"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1258,10 +1292,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Marcus Rivera
+                                      {"Marcus Rivera"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      Frontend Engineer
+                                      {"Frontend Engineer"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1297,10 +1331,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      James Park
+                                      {"James Park"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      Backend Engineer
+                                      {"Backend Engineer"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1336,10 +1370,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Tom Bradley
+                                      {"Tom Bradley"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      DevOps Engineer
+                                      {"DevOps Engineer"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1370,7 +1404,7 @@ export function Pattern() {
                           <div role="group" aria-labelledby="contact-group-management">
                             <div className="px-3 py-1.5">
                               <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="contact-group-management">
-                                Management
+                                {"Management"}
                               </span>
                             </div>
                             <div role="list">
@@ -1384,10 +1418,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Emily Watson
+                                      {"Emily Watson"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      Product Manager
+                                      {"Product Manager"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1423,10 +1457,10 @@ export function Pattern() {
                                   </div>
                                   <div className="flex flex-1 flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      David Kim
+                                      {"David Kim"}
                                     </span>
                                     <span className="text-muted-foreground text-xs truncate">
-                                      Engineering Manager
+                                      {"Engineering Manager"}
                                     </span>
                                   </div>
                                   <div className="flex gap-0.5 items-center shrink-0">
@@ -1460,11 +1494,11 @@ export function Pattern() {
                   </div>
                   <div className="border-border border-t flex h-10 items-center justify-between px-3 text-xs">
                     <span>
-                      8 contacts
+                      {"8 contacts"}
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-emerald-500 rounded-full size-2 text-muted-foreground" aria-hidden="true"></span>
-                      4 online
+                      {"4 online"}
                     </span>
                   </div>
                 </div>
@@ -1472,10 +1506,10 @@ export function Pattern() {
                   <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                     <div className="flex gap-2 items-center">
                       <span className="font-semibold text-foreground text-sm">
-                        Notifications
+                        {"Notifications"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-primary-foreground transition-shadow">
-                        3
+                        {"3"}
                       </Badge>
                     </div>
                     <Tooltip>
@@ -1504,16 +1538,16 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium text-primary">
-                                        Sarah Chen
+                                        {"Sarah Chen"}
                                       </span>
-                                      invited you to
+                                      {"invited you to"}
                                     </p>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                                      New
+                                      {"New"}
                                     </Badge>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    Q2 Planning · Friday 10:00 to 11:00 AM
+                                    {"Q2 Planning · Friday 10:00 to 11:00 AM"}
                                   </p>
                                   <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center mt-1 px-2 py-1 rounded-sm text-[11px] text-muted-foreground">
                                     <svg className="lucide lucide-calendar opacity-60 shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
@@ -1523,30 +1557,30 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="font-medium text-foreground">
-                                      Fri, Mar 7
+                                      {"Fri, Mar 7"}
                                     </span>
                                     <span className="opacity-70">
-                                      10:00 to 11:00 AM
+                                      {"10:00 to 11:00 AM"}
                                     </span>
                                   </div>
                                   <div className="flex gap-1 items-center py-1">
                                     <Button type="button" tabIndex="0">
-                                      Accept
+                                      {"Accept"}
                                     </Button>
                                     <Button type="button" tabIndex="0">
-                                      Decline
+                                      {"Decline"}
                                     </Button>
                                   </div>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      5 min ago
+                                      {"5 min ago"}
                                     </p>
                                     <span className="border border-border/60 font-medium h-[18px] inline-flex items-center overflow-hidden rounded-sm shrink-0 text-[10px]">
                                       <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground">
-                                        Location
+                                        {"Location"}
                                       </span>
                                       <span className="flex h-full items-center leading-none px-1.5 text-foreground">
-                                        Google Meet
+                                        {"Google Meet"}
                                       </span>
                                     </span>
                                   </div>
@@ -1571,12 +1605,12 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium">
-                                        Sprint Planning starts in 15 minutes
+                                        {"Sprint Planning starts in 15 minutes"}
                                       </span>
                                     </p>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    Make sure you have reviewed the backlog items before joining.
+                                    {"Make sure you have reviewed the backlog items before joining."}
                                   </p>
                                   <AvatarGroup className="-space-x-1 mt-1.5">
                                     <Avatar className="size-5" size="default">
@@ -1589,7 +1623,7 @@ export function Pattern() {
                                       <AvatarImage alt="TB" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                                      +2
+                                      {"+2"}
                                     </AvatarGroupCount>
                                   </AvatarGroup>
                                   <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center mt-1 px-2 py-1 rounded-sm text-[11px] text-muted-foreground">
@@ -1600,22 +1634,22 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="font-medium text-foreground">
-                                      Today
+                                      {"Today"}
                                     </span>
                                     <span className="opacity-70">
-                                      10:00 to 11:00 AM
+                                      {"10:00 to 11:00 AM"}
                                     </span>
                                   </div>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      15 min ago
+                                      {"15 min ago"}
                                     </p>
                                     <span className="border border-border/60 font-medium h-[18px] inline-flex items-center overflow-hidden rounded-sm shrink-0 text-[10px]">
                                       <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground">
-                                        Room
+                                        {"Room"}
                                       </span>
                                       <span className="flex h-full items-center leading-none px-1.5 text-foreground">
-                                        Conf B
+                                        {"Conf B"}
                                       </span>
                                     </span>
                                   </div>
@@ -1637,29 +1671,29 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium text-primary">
-                                        Marcus Rivera
+                                        {"Marcus Rivera"}
                                       </span>
-                                      moved
+                                      {"moved"}
                                     </p>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    Design Sync rescheduled to 3:00 PM tomorrow
+                                    {"Design Sync rescheduled to 3:00 PM tomorrow"}
                                   </p>
                                   <div className="flex gap-1 items-center py-1">
                                     <Button type="button" tabIndex="0">
-                                      View event
+                                      {"View event"}
                                     </Button>
                                   </div>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      1 hour ago
+                                      {"1 hour ago"}
                                     </p>
                                     <span className="border border-border/60 font-medium h-[18px] inline-flex items-center overflow-hidden rounded-sm shrink-0 text-[10px]">
                                       <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground">
-                                        Change
+                                        {"Change"}
                                       </span>
                                       <span className="flex h-full items-center leading-none px-1.5 text-warning">
-                                        +1 day
+                                        {"+1 day"}
                                       </span>
                                     </span>
                                   </div>
@@ -1680,24 +1714,24 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium text-primary">
-                                        Emily Watson
+                                        {"Emily Watson"}
                                       </span>
-                                      accepted your invite to
+                                      {"accepted your invite to"}
                                     </p>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    Team Lunch
+                                    {"Team Lunch"}
                                   </p>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      2 hours ago
+                                      {"2 hours ago"}
                                     </p>
                                     <span className="border border-border/60 font-medium h-[18px] inline-flex items-center overflow-hidden rounded-sm shrink-0 text-[10px]">
                                       <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground">
-                                        RSVP
+                                        {"RSVP"}
                                       </span>
                                       <span className="flex h-full items-center leading-none px-1.5 text-success">
-                                        Going
+                                        {"Going"}
                                       </span>
                                     </span>
                                   </div>
@@ -1718,24 +1752,24 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium text-primary">
-                                        David Kim
+                                        {"David Kim"}
                                       </span>
-                                      cancelled
+                                      {"cancelled"}
                                     </p>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    Friday Demo has been removed from the calendar
+                                    {"Friday Demo has been removed from the calendar"}
                                   </p>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      3 hours ago
+                                      {"3 hours ago"}
                                     </p>
                                     <span className="border border-border/60 font-medium h-[18px] inline-flex items-center overflow-hidden rounded-sm shrink-0 text-[10px]">
                                       <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground">
-                                        Status
+                                        {"Status"}
                                       </span>
                                       <span className="flex h-full items-center leading-none px-1.5 text-destructive">
-                                        Cancelled
+                                        {"Cancelled"}
                                       </span>
                                     </span>
                                   </div>
@@ -1756,13 +1790,13 @@ export function Pattern() {
                                   <div className="flex gap-2 items-start justify-between">
                                     <p className="leading-snug text-foreground text-sm">
                                       <span className="font-medium text-primary">
-                                        Aisha Patel
+                                        {"Aisha Patel"}
                                       </span>
-                                      invited you to
+                                      {"invited you to"}
                                     </p>
                                   </div>
                                   <p className="line-clamp-2 text-muted-foreground text-xs">
-                                    UX Review · Next Monday 2:00 PM
+                                    {"UX Review · Next Monday 2:00 PM"}
                                   </p>
                                   <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center mt-1 px-2 py-1 rounded-sm text-[11px] text-muted-foreground">
                                     <svg className="lucide lucide-calendar opacity-60 shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
@@ -1772,10 +1806,10 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="font-medium text-foreground">
-                                      Mon, Mar 10
+                                      {"Mon, Mar 10"}
                                     </span>
                                     <span className="opacity-70">
-                                      2:00 to 3:00 PM
+                                      {"2:00 to 3:00 PM"}
                                     </span>
                                   </div>
                                   <div className="flex gap-1 items-center py-1">
@@ -1784,9 +1818,9 @@ export function Pattern() {
                                         <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                           <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                         </svg>
-                                        ux-review-agenda.pdf
+                                        {"ux-review-agenda.pdf"}
                                         <span className="opacity-60">
-                                          (84 KB)
+                                          {"(84 KB)"}
                                         </span>
                                       </Button>
                                       <Button type="button" tabIndex="0" aria-label="Download attachment">
@@ -1800,15 +1834,15 @@ export function Pattern() {
                                   </div>
                                   <div className="flex gap-1 items-center py-1">
                                     <Button type="button" tabIndex="0">
-                                      Accept
+                                      {"Accept"}
                                     </Button>
                                     <Button type="button" tabIndex="0">
-                                      Maybe
+                                      {"Maybe"}
                                     </Button>
                                   </div>
                                   <div className="flex gap-2 items-center pt-0.5">
                                     <p className="text-[11px] text-muted-foreground">
-                                      Yesterday
+                                      {"Yesterday"}
                                     </p>
                                   </div>
                                 </div>
@@ -1821,7 +1855,7 @@ export function Pattern() {
                   </div>
                   <div className="border-border border-t p-2">
                     <Button className="text-muted-foreground w-full" type="button" tabIndex="0">
-                      View all notifications
+                      {"View all notifications"}
                     </Button>
                   </div>
                 </div>
@@ -1833,25 +1867,30 @@ export function Pattern() {
                 <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
               </span>
               <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-                Collapse
+                {"Collapse"}
               </span>
             </button>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <SidebarInset>
         <header className="border-b border-border flex gap-2 h-(--header-height) items-center min-w-0 px-4 py-1.5 sm:gap-3">
+          <SidebarProvider>
           <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
             <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
-              Toggle Sidebar
+              {"Toggle Sidebar"}
             </span>
           </SidebarTrigger>
+          </SidebarProvider>
           <h1 className="font-semibold sm:text-lg text-base text-foreground whitespace-nowrap">
-            June 2026
+            {"June 2026"}
           </h1>
           <div className="-space-x-1.5 hidden items-center md:flex">
             <span className="border-2 border-background rounded-full size-3.5" aria-hidden="true" style={{backgroundColor: "rgb(79, 70, 229)"}}></span>
@@ -1873,11 +1912,11 @@ export function Pattern() {
               </Button>
             </div>
             <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-              Today
+              {"Today"}
             </Button>
             <DropdownMenu>
             <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Calendar view: Week" aria-haspopup="menu" id="base-ui-_r_2l_" aria-expanded="false">
-              Week
+              {"Week"}
               <svg className="lucide lucide-chevron-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
@@ -1888,7 +1927,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New Event
+              {"New Event"}
             </Button>
           </div>
         </header>
@@ -1902,5 +1941,6 @@ export function Pattern() {
         </div>
       </SidebarInset>
     </div>
+    </SidebarProvider>
   )
 }

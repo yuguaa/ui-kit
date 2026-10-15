@@ -35,7 +35,7 @@ export function Pattern() {
                   <circle cx="14" cy="14" r="14" fill="url(#nb3-acme)"></circle>
                 </svg>
                 <span className="hidden md:block">
-                  Acme Inc
+                  {"Acme Inc"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -45,7 +45,7 @@ export function Pattern() {
               </DropdownMenu>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
-              /
+              {"/"}
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <DropdownMenu>
@@ -56,7 +56,7 @@ export function Pattern() {
                   <path d="M2 12h20"></path>
                 </svg>
                 <span className="hidden md:block">
-                  web-app
+                  {"web-app"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -66,14 +66,14 @@ export function Pattern() {
               </DropdownMenu>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
-              /
+              {"/"}
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
                 <span className="bg-success rounded-full self-center shrink-0 size-2"></span>
                 <span className="hidden md:block">
-                  Production
+                  {"Production"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -106,7 +106,7 @@ export function Pattern() {
               <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
             </svg>
             <span className="hidden md:block">
-              Upgrade
+              {"Upgrade"}
             </span>
           </Button>
           <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>

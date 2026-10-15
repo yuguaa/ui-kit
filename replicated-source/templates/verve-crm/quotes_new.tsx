@@ -103,10 +103,14 @@ export function Pattern() {
     <div className="fixed h-0.5 inset-x-0 opacity-0 pointer-events-none top-0 will-change-[opacity] z-[9999]" aria-hidden="true" style={{transition: "opacity 350ms ease-out", opacity: "0"}}>
       <div className="bg-primary h-full w-0 will-change-[width]" style={{transition: "none", width: "0%"}}></div>
     </div>
+    <SidebarProvider>
     <div className="[--header-height:50px] [--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "63px", "--sidebar-width-icon": "3rem"}}>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="inset" data-side="left">
         <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="bottom-0 data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 top-0 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+          <SidebarProvider>
           <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
             <div className="flex grow h-full">
               <div className="flex flex-col h-full">
@@ -120,19 +124,29 @@ export function Pattern() {
                     </ItemMedia>
                   </Item>
                 </SidebarHeader>
+                <SidebarProvider>
                 <SidebarContent className="flex-row gap-0 md:flex-col no-scrollbar" sidebar="content">
+                  <SidebarProvider>
                   <SidebarGroup className="p-2" sidebar="group">
+                    <SidebarProvider>
                     <SidebarGroupContent className="justify-center text-sm" sidebar="group-content">
+                      <SidebarProvider>
                       <SidebarMenu className="gap-0.5" sidebar="menu">
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1kpj5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                               <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1l9j5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="">
                             <svg className="lucide lucide-target" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <circle cx="12" cy="12" r="10"></circle>
@@ -140,15 +154,23 @@ export function Pattern() {
                               <circle cx="12" cy="12" r="2"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1lpj5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1m9j5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -157,8 +179,12 @@ export function Pattern() {
                               <circle cx="9" cy="7" r="4"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1mpj5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
@@ -167,19 +193,29 @@ export function Pattern() {
                               <path d="M8 17v-3"></path>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
+                        <SidebarProvider>
                         <SidebarMenuItem sidebar="menu-item">
+                          <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_R_1n9j5ulb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                             <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                               <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                           </SidebarMenuButton>
+                          </SidebarProvider>
                         </SidebarMenuItem>
+                        </SidebarProvider>
                       </SidebarMenu>
+                      </SidebarProvider>
                     </SidebarGroupContent>
+                    </SidebarProvider>
                   </SidebarGroup>
+                  </SidebarProvider>
                 </SidebarContent>
+                </SidebarProvider>
                 <SidebarFooter className="gap-2 p-2" sidebar="footer">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_R_1tj5ulb_" aria-expanded="false">
@@ -197,7 +233,7 @@ export function Pattern() {
                       <nav className="flex flex-col py-1">
                         <div>
                           <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-foreground/70 uppercase">
-                            Deals
+                            {"Deals"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
                             <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/pipeline">
@@ -210,7 +246,7 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span className="truncate">
-                                Deal Board
+                                {"Deal Board"}
                               </span>
                             </a>
                             <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/forecast">
@@ -221,7 +257,7 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span className="truncate">
-                                Forecast
+                                {"Forecast"}
                               </span>
                             </a>
                           </div>
@@ -229,7 +265,7 @@ export function Pattern() {
                         <div>
                           <Separator className="my-2" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                           <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-foreground/70 uppercase">
-                            Sales
+                            {"Sales"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
                             <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-accent bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-accent-foreground transition-all w-full whitespace-nowrap" aria-current="page" href="/quotes">
@@ -243,7 +279,7 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span className="truncate">
-                                Quotes
+                                {"Quotes"}
                               </span>
                             </a>
                             <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/products">
@@ -264,7 +300,7 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span className="truncate">
-                                Products
+                                {"Products"}
                               </span>
                             </a>
                             <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/approvals">
@@ -275,10 +311,10 @@ export function Pattern() {
                                 </svg>
                               </span>
                               <span className="truncate">
-                                Approvals
+                                {"Approvals"}
                               </span>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
-                                4
+                                {"4"}
                               </Badge>
                             </a>
                           </div>
@@ -296,7 +332,7 @@ export function Pattern() {
                         <AvatarBadge className="bg-success group-data-[size=sm]/avatar:size-1.5 ring-1 ring-background text-primary-foreground"></AvatarBadge>
                       </Avatar>
                       <span className="font-medium text-foreground text-xs truncate">
-                        Nadia Farrell
+                        {"Nadia Farrell"}
                       </span>
                       <svg className="lucide lucide-chevron-down ml-auto opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
@@ -307,11 +343,11 @@ export function Pattern() {
                   <div className="border-border border-t p-3 space-y-2">
                     <div className="flex items-center justify-between">
                       <p className="font-medium text-foreground text-xs">
-                        Quarterly Quota
+                        {"Quarterly Quota"}
                       </p>
                     </div>
                     <p className="leading-snug text-[11px] text-muted-foreground">
-                      Closed-won against the Q3 team target
+                      {"Closed-won against the Q3 team target"}
                     </p>
                     <div className="bg-muted/55 h-1.5 overflow-hidden relative rounded-sm">
                       <div className="absolute inset-0 opacity-20 pointer-events-none text-muted-foreground" aria-hidden="true" style={{backgroundImage: "repeating-linear-gradient(-45deg, currentColor 0, currentColor 1px, transparent 0, transparent 4px)"}}></div>
@@ -320,27 +356,27 @@ export function Pattern() {
                           <ProgressIndicator className="bg-primary" progressing="" style={{insetInlineStart: "0", height: "inherit", width: "74%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0", padding: "0", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0", left: "0"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex items-center justify-between leading-none text-[11px]">
                       <div className="flex gap-1 items-center">
                         <span className="font-semibold tabular-nums text-foreground">
-                          74
-                          %
+                          {"74"}
+                          {"%"}
                         </span>
                         <span className="text-muted-foreground">
-                          Closed
+                          {"Closed"}
                         </span>
                       </div>
                       <div className="flex gap-1 items-center">
                         <span className="font-semibold tabular-nums text-foreground">
-                          26
-                          %
+                          {"26"}
+                          {"%"}
                         </span>
                         <span className="text-muted-foreground">
-                          To go
+                          {"To go"}
                         </span>
                       </div>
                     </div>
@@ -349,29 +385,34 @@ export function Pattern() {
               </div>
             </div>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
       <button className="-translate-y-1/2 cursor-pointer fixed focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-ring focus-visible:rounded-sm group/rail h-12 hidden items-center lg:flex outline-none pl-2 top-1/2 w-7 z-30" type="button" aria-label="Collapse inner sidebar" style={{left: "calc(var(--sidebar-width-inner) + var(--sidebar-width))"}}>
         <span className="flex flex-col items-center">
           <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:bg-foreground/60 group-hover/rail:rotate-40 h-2 origin-bottom rounded-t-full transition-all w-0.5" aria-hidden="true"></span>
           <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
         </span>
         <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-          Collapse
+          {"Collapse"}
         </span>
       </button>
       <SidebarInset className="bg-background border border-border md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm overflow-hidden shadow-none">
         <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center md:ps-0 pe-2 ps-2.5 sticky top-0 w-full z-50">
           <div className="flex flex-1 gap-1.5 items-center md:flex-none">
+            <SidebarProvider>
             <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center md:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
               <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
-                Toggle Sidebar
+                {"Toggle Sidebar"}
               </span>
             </SidebarTrigger>
+            </SidebarProvider>
             <Breadcrumb aria-label="breadcrumb">
               <BreadcrumbList className="gap-0.5 text-muted-foreground text-sm">
                 <BreadcrumbItem className="gap-1">
@@ -391,7 +432,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="leading-none sm:not-sr-only sr-only">
-                      Acme Inc
+                      {"Acme Inc"}
                     </span>
                     <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m7 15 5 5 5-5"></path>
@@ -401,16 +442,16 @@ export function Pattern() {
                   </DropdownMenu>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="[&>svg]:size-3.5 opacity-60 text-xs" role="presentation" aria-hidden="true">
-                  /
+                  {"/"}
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="gap-1">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_R_v5f5ulb_" aria-expanded="false">
                     <span className="hidden sm:inline">
-                      CRM
+                      {"CRM"}
                     </span>
                     <span className="sm:hidden">
-                      CRM
+                      {"CRM"}
                     </span>
                     <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m7 15 5 5 5-5"></path>
@@ -426,7 +467,7 @@ export function Pattern() {
             <ButtonGroup className="[&>[data-slot]:not(:has(~[data-slot]))]:rounded-r-lg! has-[>[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-r-lg" role="group">
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border border-r-0 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Search scope" aria-haspopup="menu" id="base-ui-_R_6pf5ulb_" aria-expanded="false">
-                All
+                {"All"}
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -441,15 +482,15 @@ export function Pattern() {
                     </svg>
                   </InputGroupAddon>
                   <span className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none flex flex-1 font-normal gap-2 items-center ps-1.5 text-muted-foreground text-sm">
-                    Search...
+                    {"Search..."}
                   </span>
                   <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:mr-[-0.3rem] has-[>kbd]:mr-[-0.15rem] pr-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-end" aria-hidden="true">
                     <KbdGroup className="gap-1">
                       <Kbd className="[&_svg:not([class*='size-'])]:size-3 bg-muted dark:in-data-[slot=tooltip-content]:bg-background/10 font-medium font-sans gap-1 h-5 in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background min-w-5 px-1 rounded-sm text-muted-foreground text-xs w-fit">
-                        ⌘
+                        {"⌘"}
                       </Kbd>
                       <Kbd className="[&_svg:not([class*='size-'])]:size-3 bg-muted dark:in-data-[slot=tooltip-content]:bg-background/10 font-medium font-sans gap-1 h-5 in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background min-w-5 px-1 rounded-sm text-muted-foreground text-xs w-fit">
-                        K
+                        {"K"}
                       </Kbd>
                     </KbdGroup>
                   </InputGroupAddon>
@@ -465,7 +506,7 @@ export function Pattern() {
                 <path d="M12 5v14"></path>
               </svg>
               <span className="hidden sm:inline">
-                Create
+                {"Create"}
               </span>
             </DropdownMenuTrigger>
             </DropdownMenu>
@@ -482,10 +523,10 @@ export function Pattern() {
         </header>
         <DialogHeader className="gap-2 sr-only">
           <DialogTitle className="font-heading font-medium leading-none text-base" id="base-ui-_R_bef5ulb_">
-            Search
+            {"Search"}
           </DialogTitle>
           <DialogDescription className="*:[a]:hover:text-foreground *:[a]:underline *:[a]:underline-offset-3 text-muted-foreground text-sm" id="base-ui-_R_jef5ulb_">
-            Search your workspace content.
+            {"Search your workspace content."}
           </DialogDescription>
         </DialogHeader>
         <div className="flex flex-1 flex-col grow md:flex-row overflow-hidden">
@@ -497,7 +538,7 @@ export function Pattern() {
                     <nav className="flex flex-col py-1">
                       <div>
                         <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-foreground/70 uppercase">
-                          Deals
+                          {"Deals"}
                         </p>
                         <div className="flex flex-col gap-0.5 px-2">
                           <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/pipeline">
@@ -510,7 +551,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Deal Board
+                              {"Deal Board"}
                             </span>
                           </a>
                           <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/forecast">
@@ -521,7 +562,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Forecast
+                              {"Forecast"}
                             </span>
                           </a>
                         </div>
@@ -529,7 +570,7 @@ export function Pattern() {
                       <div>
                         <Separator className="my-2" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                         <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-foreground/70 uppercase">
-                          Sales
+                          {"Sales"}
                         </p>
                         <div className="flex flex-col gap-0.5 px-2">
                           <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-accent bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-accent-foreground transition-all w-full whitespace-nowrap" aria-current="page" href="/quotes">
@@ -543,7 +584,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Quotes
+                              {"Quotes"}
                             </span>
                           </a>
                           <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/products">
@@ -564,7 +605,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Products
+                              {"Products"}
                             </span>
                           </a>
                           <a className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-start outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-foreground transition-all w-full whitespace-nowrap" href="/approvals">
@@ -575,10 +616,10 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="truncate">
-                              Approvals
+                              {"Approvals"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
-                              4
+                              {"4"}
                             </Badge>
                           </a>
                         </div>
@@ -596,7 +637,7 @@ export function Pattern() {
                       <AvatarBadge className="bg-success group-data-[size=sm]/avatar:size-1.5 ring-1 ring-background text-primary-foreground"></AvatarBadge>
                     </Avatar>
                     <span className="font-medium text-foreground text-xs truncate">
-                      Nadia Farrell
+                      {"Nadia Farrell"}
                     </span>
                     <svg className="lucide lucide-chevron-down ml-auto opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
@@ -607,11 +648,11 @@ export function Pattern() {
                 <div className="border-border border-t p-3 space-y-2">
                   <div className="flex items-center justify-between">
                     <p className="font-medium text-foreground text-xs">
-                      Quarterly Quota
+                      {"Quarterly Quota"}
                     </p>
                   </div>
                   <p className="leading-snug text-[11px] text-muted-foreground">
-                    Closed-won against the Q3 team target
+                    {"Closed-won against the Q3 team target"}
                   </p>
                   <div className="bg-muted/55 h-1.5 overflow-hidden relative rounded-sm">
                     <div className="absolute inset-0 opacity-20 pointer-events-none text-muted-foreground" aria-hidden="true" style={{backgroundImage: "repeating-linear-gradient(-45deg, currentColor 0, currentColor 1px, transparent 0, transparent 4px)"}}></div>
@@ -620,27 +661,27 @@ export function Pattern() {
                         <ProgressIndicator className="bg-primary" progressing="" style={{insetInlineStart: "0", height: "inherit", width: "74%"}}></ProgressIndicator>
                       </ProgressTrack>
                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0", padding: "0", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0", left: "0"}}>
-                        x
+                        {"x"}
                       </span>
                     </Progress>
                   </div>
                   <div className="flex items-center justify-between leading-none text-[11px]">
                     <div className="flex gap-1 items-center">
                       <span className="font-semibold tabular-nums text-foreground">
-                        74
-                        %
+                        {"74"}
+                        {"%"}
                       </span>
                       <span className="text-muted-foreground">
-                        Closed
+                        {"Closed"}
                       </span>
                     </div>
                     <div className="flex gap-1 items-center">
                       <span className="font-semibold tabular-nums text-foreground">
-                        26
-                        %
+                        {"26"}
+                        {"%"}
                       </span>
                       <span className="text-muted-foreground">
-                        To go
+                        {"To go"}
                       </span>
                     </div>
                   </div>
@@ -654,7 +695,7 @@ export function Pattern() {
           <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4">
             <div className="@container flex flex-col gap-3 max-w-7xl mx-auto text-foreground w-full">
               <h1 className="sr-only">
-                New quote
+                {"New quote"}
               </h1>
               <div>
                 <a className="-ms-2 [&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] text-muted-foreground transition-all whitespace-nowrap" href="/quotes">
@@ -662,7 +703,7 @@ export function Pattern() {
                     <path d="m12 19-7-7 7-7"></path>
                     <path d="M19 12H5"></path>
                   </svg>
-                  Back to quotes
+                  {"Back to quotes"}
                 </a>
               </div>
               <section aria-label="Quote">
@@ -670,10 +711,10 @@ export function Pattern() {
                   <header className="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between" aria-label="Quote toolbar">
                     <div className="min-w-0">
                       <h2 className="font-semibold leading-5 text-sm truncate">
-                        Create quote
+                        {"Create quote"}
                       </h2>
                       <p className="leading-4 line-clamp-1 text-muted-foreground text-xs">
-                        Price line items from the catalog and send for approval.
+                        {"Price line items from the catalog and send for approval."}
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full" role="group" aria-label="Quote actions">
@@ -683,7 +724,7 @@ export function Pattern() {
                           <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path>
                           <path d="M8 6v8"></path>
                         </svg>
-                        Feedback
+                        {"Feedback"}
                       </Button>
                       <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hidden hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg px-2.5 rounded-[min(var(--radius-md),12px)] sm:inline-flex text-[0.8rem]" type="button" tabIndex="0">
                         <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
@@ -691,14 +732,14 @@ export function Pattern() {
                           <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                           <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
                         </svg>
-                        Save draft
+                        {"Save draft"}
                       </Button>
                       <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-primary/80 in-data-[slot=button-group]:rounded-lg px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-primary-foreground" type="submit" tabIndex="0" form="form-3-invoice-creator">
                         <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                           <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                           <path d="m21.854 2.147-10.94 10.939"></path>
                         </svg>
-                        Send quote
+                        {"Send quote"}
                       </Button>
                     </div>
                   </header>
@@ -707,10 +748,10 @@ export function Pattern() {
                       <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 overflow-hidden p-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                         <CardHeader className="[.border-b]:pb-(--card-spacing) gap-1 px-5 py-5 rounded-t-xl sm:px-6">
                           <CardTitle className="font-heading font-medium group-data-[size=sm]/card:text-sm leading-snug text-base">
-                            Quote Details
+                            {"Quote Details"}
                           </CardTitle>
                           <CardDescription className="text-muted-foreground text-sm">
-                            Account, terms, line items, and notes.
+                            {"Account, terms, line items, and notes."}
                           </CardDescription>
                           <CardAction className="flex gap-1.5 items-center self-center">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -719,10 +760,10 @@ export function Pattern() {
                                 <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path>
                                 <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path>
                               </svg>
-                              Draft
+                              {"Draft"}
                             </Badge>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm sm:inline-flex text-primary text-xs transition-shadow">
-                              USD
+                              {"USD"}
                             </Badge>
                           </CardAction>
                         </CardHeader>
@@ -730,10 +771,10 @@ export function Pattern() {
                         <CardContent className="flex flex-col gap-7 px-5 py-5 sm:px-6 sm:py-6">
                           <FieldSet className="gap-0 has-[>[data-slot=checkbox-group]]:gap-3 has-[>[data-slot=radio-group]]:gap-3">
                             <FieldLegend className="data-[variant=label]:text-sm data-[variant=legend]:text-base font-medium mb-1.5 sr-only" variant="legend">
-                              Quote form
+                              {"Quote form"}
                             </FieldLegend>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 sr-only text-left text-muted-foreground text-sm">
-                              Build a quote against a deal, with terms, line items and notes.
+                              {"Build a quote against a deal, with terms, line items and notes."}
                             </FieldDescription>
                             <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-7">
                               <section className="flex flex-col gap-4 sm:gap-5">
@@ -741,14 +782,14 @@ export function Pattern() {
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <div className="flex flex-wrap gap-2 items-center">
                                       <h2 className="font-semibold leading-6 text-base text-foreground">
-                                        Customer
+                                        {"Customer"}
                                       </h2>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                                        Required
+                                        {"Required"}
                                       </Badge>
                                     </div>
                                     <p className="text-muted-foreground text-sm">
-                                      The account and the deal this quote is for.
+                                      {"The account and the deal this quote is for."}
                                     </p>
                                   </div>
                                 </div>
@@ -756,7 +797,7 @@ export function Pattern() {
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <div className="flex gap-1.5 items-center">
                                       <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-customer">
-                                        Customer
+                                        {"Customer"}
                                       </FieldLabel>
                                       <Tooltip>
                                       <TooltipTrigger className="-my-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Customer info" id="base-ui-_R_1m9hrmlubsnqn5ulb_" baseUiTooltipTrigger="">
@@ -789,7 +830,7 @@ export function Pattern() {
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <div className="flex gap-1.5 items-center">
                                       <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-tax-id">
-                                        Tax ID
+                                        {"Tax ID"}
                                       </FieldLabel>
                                       <Tooltip>
                                       <TooltipTrigger className="-my-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Tax ID info" id="base-ui-_R_1mahrmlubsnqn5ulb_" baseUiTooltipTrigger="">
@@ -817,7 +858,7 @@ export function Pattern() {
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <div className="flex gap-1.5 items-center">
                                       <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-invoice-number">
-                                        Quote Number
+                                        {"Quote Number"}
                                       </FieldLabel>
                                       <Tooltip>
                                       <TooltipTrigger className="-my-1 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Quote Number info" id="base-ui-_R_1mbhrmlubsnqn5ulb_" baseUiTooltipTrigger="">
@@ -843,7 +884,7 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-po-number">
-                                      PO Reference
+                                      {"PO Reference"}
                                     </FieldLabel>
                                     <Input className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 file:font-medium file:h-6 file:text-sm focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 h-8 md:text-sm px-2.5 py-1 rounded-lg text-base transition-colors" id="form-3-po-number" value="DEAL-4967"></Input>
                                   </Field>
@@ -855,26 +896,26 @@ export function Pattern() {
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <div className="flex flex-wrap gap-2 items-center">
                                       <h2 className="font-semibold leading-6 text-base text-foreground">
-                                        Terms
+                                        {"Terms"}
                                       </h2>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-info-foreground text-xs transition-shadow">
-                                        Net 14
+                                        {"Net 14"}
                                       </Badge>
                                     </div>
                                     <p className="text-muted-foreground text-sm">
-                                      Dates, currency, and collection method.
+                                      {"Dates, currency, and collection method."}
                                     </p>
                                   </div>
                                 </div>
                                 <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-4 grid md:grid-cols-3">
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-issue-date">
-                                      Issue Date
+                                      {"Issue Date"}
                                     </FieldLabel>
                                     <Popover>
                                     <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-between outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="form-3-issue-date" aria-label="Choose issue date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                                       <span className="truncate">
-                                        Jul 17, 2026
+                                        {"Jul 17, 2026"}
                                       </span>
                                       <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-end" aria-hidden="true">
                                         <path d="M8 2v4"></path>
@@ -887,12 +928,12 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-due-date">
-                                      Valid Until
+                                      {"Valid Until"}
                                     </FieldLabel>
                                     <Popover>
                                     <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-between outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 text-[0.8rem] transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="form-3-due-date" aria-label="Choose valid-until date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                                       <span className="truncate">
-                                        Aug 14, 2026
+                                        {"Aug 14, 2026"}
                                       </span>
                                       <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-end" aria-hidden="true">
                                         <path d="M8 2v4"></path>
@@ -905,16 +946,16 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-currency">
-                                      Currency
+                                      {"Currency"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="form-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue className="flex flex-1 text-left">
-                                        USD
+                                        {"USD"}
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -922,16 +963,16 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-payment-terms">
-                                      Payment Terms
+                                      {"Payment Terms"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="form-3-payment-terms" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue className="flex flex-1 text-left">
-                                        Net 14
+                                        {"Net 14"}
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -939,16 +980,16 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-collection-method">
-                                      Collection
+                                      {"Collection"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="form-3-collection-method" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue className="flex flex-1 text-left">
-                                        Annual
+                                        {"Annual"}
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -956,7 +997,7 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-billing-address">
-                                      Billing Address
+                                      {"Billing Address"}
                                     </FieldLabel>
                                     <Input className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 file:font-medium file:h-6 file:text-sm focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 h-8 md:text-sm px-2.5 py-1 rounded-lg text-base transition-colors" id="form-3-billing-address" aria-invalid="false" value="14 Warren Street, Suite 620, New York, NY"></Input>
                                   </Field>
@@ -968,14 +1009,14 @@ export function Pattern() {
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <div className="flex flex-wrap gap-2 items-center">
                                       <h2 className="font-semibold leading-6 text-base text-foreground">
-                                        Line Items
+                                        {"Line Items"}
                                       </h2>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                        3 items
+                                        {"3 items"}
                                       </Badge>
                                     </div>
                                     <p className="text-muted-foreground text-sm">
-                                      Products, services, quantity, tax, and amount.
+                                      {"Products, services, quantity, tax, and amount."}
                                     </p>
                                   </div>
                                   <div className="shrink-0">
@@ -984,7 +1025,7 @@ export function Pattern() {
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5v14"></path>
                                       </svg>
-                                      Add item
+                                      {"Add item"}
                                     </Button>
                                   </div>
                                 </div>
@@ -993,19 +1034,19 @@ export function Pattern() {
                                     <TableHeader className="[&_tr]:border-b">
                                       <TableRow className="border-b data-[state=selected]:bg-muted hover:bg-muted/50 transition-colors">
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 ps-0 px-2 text-foreground text-left w-[42%] whitespace-nowrap">
-                                          Item
+                                          {"Item"}
                                         </TableHead>
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 px-2 text-foreground text-left w-24 whitespace-nowrap">
-                                          Qty
+                                          {"Qty"}
                                         </TableHead>
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 px-2 text-foreground text-left w-36 whitespace-nowrap">
-                                          Rate
+                                          {"Rate"}
                                         </TableHead>
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 px-2 text-foreground text-left w-32 whitespace-nowrap">
-                                          Tax
+                                          {"Tax"}
                                         </TableHead>
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 px-2 text-end text-foreground w-32 whitespace-nowrap">
-                                          Amount
+                                          {"Amount"}
                                         </TableHead>
                                         <TableHead className="[&:has([role=checkbox])]:pr-0 align-middle font-medium h-10 pe-0 px-2 text-foreground text-left w-10 whitespace-nowrap"></TableHead>
                                       </TableRow>
@@ -1017,11 +1058,11 @@ export function Pattern() {
                                             <Select>
                                             <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground flex-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-0 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_4mlrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-1">
                                               <SelectValue className="flex flex-1 text-left">
-                                                Pro platform licence
+                                                {"Pro platform licence"}
                                               </SelectValue>
                                               <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="m6 9 6 6 6-6"></path>
-                                                ▼
+                                                {"▼"}
                                               </svg>
                                             </SelectTrigger>
                                             </Select>
@@ -1043,7 +1084,7 @@ export function Pattern() {
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 whitespace-nowrap">
                                           <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-7 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 min-w-28 rounded-lg transition-colors" role="group">
                                             <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
-                                              $
+                                              {"$"}
                                             </InputGroupAddon>
                                             <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="base-ui-_R_9mlrmlubsnqn5ulb_" type="number" min="0" step="50" aria-label="Rate for Pro platform licence" value="1200" />
                                           </InputGroup>
@@ -1052,11 +1093,11 @@ export function Pattern() {
                                           <Select>
                                           <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-24 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_26lrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Tax rate for Pro platform licence">
                                             <SelectValue className="flex flex-1 text-left">
-                                              8.25%
+                                              {"8.25%"}
                                             </SelectValue>
                                             <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
-                                              ▼
+                                              {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
@@ -1064,7 +1105,7 @@ export function Pattern() {
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle font-medium p-2 tabular-nums text-end whitespace-nowrap">
                                           <span className="inline-flex items-center justify-end min-h-9">
-                                            $72,000.00
+                                            {"$72,000.00"}
                                           </span>
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 pe-0 text-end whitespace-nowrap">
@@ -1085,11 +1126,11 @@ export function Pattern() {
                                             <Select>
                                             <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground flex-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-0 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_4qlrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-2">
                                               <SelectValue className="flex flex-1 text-left">
-                                                Implementation retainer
+                                                {"Implementation retainer"}
                                               </SelectValue>
                                               <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="m6 9 6 6 6-6"></path>
-                                                ▼
+                                                {"▼"}
                                               </svg>
                                             </SelectTrigger>
                                             </Select>
@@ -1111,7 +1152,7 @@ export function Pattern() {
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 whitespace-nowrap">
                                           <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-7 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 min-w-28 rounded-lg transition-colors" role="group">
                                             <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
-                                              $
+                                              {"$"}
                                             </InputGroupAddon>
                                             <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="base-ui-_R_9qlrmlubsnqn5ulb_" type="number" min="0" step="50" aria-label="Rate for Implementation retainer" value="4800" />
                                           </InputGroup>
@@ -1120,11 +1161,11 @@ export function Pattern() {
                                           <Select>
                                           <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-24 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_2alrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Tax rate for Implementation retainer">
                                             <SelectValue className="flex flex-1 text-left">
-                                              8.25%
+                                              {"8.25%"}
                                             </SelectValue>
                                             <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
-                                              ▼
+                                              {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
@@ -1132,7 +1173,7 @@ export function Pattern() {
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle font-medium p-2 tabular-nums text-end whitespace-nowrap">
                                           <span className="inline-flex items-center justify-end min-h-9">
-                                            $4,800.00
+                                            {"$4,800.00"}
                                           </span>
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 pe-0 text-end whitespace-nowrap">
@@ -1153,11 +1194,11 @@ export function Pattern() {
                                             <Select>
                                             <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground flex-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-0 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_4ulrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-3">
                                               <SelectValue className="flex flex-1 text-left">
-                                                Priority support block
+                                                {"Priority support block"}
                                               </SelectValue>
                                               <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="m6 9 6 6 6-6"></path>
-                                                ▼
+                                                {"▼"}
                                               </svg>
                                             </SelectTrigger>
                                             </Select>
@@ -1179,7 +1220,7 @@ export function Pattern() {
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 whitespace-nowrap">
                                           <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-7 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 min-w-28 rounded-lg transition-colors" role="group">
                                             <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
-                                              $
+                                              {"$"}
                                             </InputGroupAddon>
                                             <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="base-ui-_R_9ulrmlubsnqn5ulb_" type="number" min="0" step="50" aria-label="Rate for Priority support block" value="950" />
                                           </InputGroup>
@@ -1188,11 +1229,11 @@ export function Pattern() {
                                           <Select>
                                           <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 min-w-24 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors" type="button" tabIndex="0" id="base-ui-_R_2elrmlubsnqn5ulb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Tax rate for Priority support block">
                                             <SelectValue className="flex flex-1 text-left">
-                                              No tax
+                                              {"No tax"}
                                             </SelectValue>
                                             <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
-                                              ▼
+                                              {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
@@ -1200,7 +1241,7 @@ export function Pattern() {
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle font-medium p-2 tabular-nums text-end whitespace-nowrap">
                                           <span className="inline-flex items-center justify-end min-h-9">
-                                            $1,900.00
+                                            {"$1,900.00"}
                                           </span>
                                         </TableCell>
                                         <TableCell className="[&:has([role=checkbox])]:pr-0 align-middle p-2 pe-0 text-end whitespace-nowrap">
@@ -1225,32 +1266,32 @@ export function Pattern() {
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <div className="flex flex-wrap gap-2 items-center">
                                       <h2 className="font-semibold leading-6 text-base text-foreground">
-                                        Notes
+                                        {"Notes"}
                                       </h2>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                        Optional
+                                        {"Optional"}
                                       </Badge>
                                     </div>
                                     <p className="text-muted-foreground text-sm">
-                                      Customer-facing memo and payment footer.
+                                      {"Customer-facing memo and payment footer."}
                                     </p>
                                   </div>
                                 </div>
                                 <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-4 grid md:grid-cols-2">
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-memo">
-                                      Memo
+                                      {"Memo"}
                                     </FieldLabel>
                                     <Textarea className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm px-2.5 py-2 rounded-lg text-base transition-colors" id="form-3-memo">
-                                      Pricing holds until the valid-until date. Seat tiers are as discussed on the demo.
+                                      {"Pricing holds until the valid-until date. Seat tiers are as discussed on the demo."}
                                     </Textarea>
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="form-3-footer-note">
-                                      Footer Note
+                                      {"Footer Note"}
                                     </FieldLabel>
                                     <Textarea className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm px-2.5 py-2 rounded-lg text-base transition-colors" id="form-3-footer-note">
-                                      Accepting this quote starts the order form and onboarding.
+                                      {"Accepting this quote starts the order form and onboarding."}
                                     </Textarea>
                                   </Field>
                                 </FieldGroup>
@@ -1267,18 +1308,18 @@ export function Pattern() {
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="m9 12 2 2 4-4"></path>
                                   </svg>
-                                  Ready to send
+                                  {"Ready to send"}
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
-                                  PDF preview ready
+                                  {"PDF preview ready"}
                                 </Badge>
                               </div>
                               <div className="flex flex-col gap-1 min-w-0 text-muted-foreground text-sm">
                                 <p>
-                                  The PDF and the signature link are prepared after sending.
+                                  {"The PDF and the signature link are prepared after sending."}
                                 </p>
                                 <p>
-                                  Totals update as items, taxes, and discounts change.
+                                  {"Totals update as items, taxes, and discounts change."}
                                 </p>
                               </div>
                             </div>
@@ -1308,50 +1349,50 @@ export function Pattern() {
                                 <div className="gap-3 grid sm:grid-cols-[1fr_8rem] sm:items-center">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="font-medium text-sm">
-                                      Quote Discount
+                                      {"Quote Discount"}
                                     </span>
                                     <span className="text-muted-foreground text-xs">
-                                      Applied before tax calculation.
+                                      {"Applied before tax calculation."}
                                     </span>
                                   </div>
                                   <InputGroup className="bg-background/85 border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-7 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
                                     <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="base-ui-_R_36kmlubsnqn5ulb_" type="number" min="0" max="100" step="0.5" aria-label="Quote discount percentage" value="8" />
                                     <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:mr-[-0.3rem] has-[>kbd]:mr-[-0.15rem] pr-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-end">
-                                      %
+                                      {"%"}
                                     </InputGroupAddon>
                                   </InputGroup>
                                 </div>
                                 <dl className="backdrop-blur-sm bg-background/70 border gap-2.5 grid p-3 rounded-md text-sm">
                                   <div className="flex gap-4 items-center justify-between">
                                     <dt>
-                                      Subtotal
+                                      {"Subtotal"}
                                     </dt>
                                     <dd className="tabular-nums text-foreground">
-                                      $78,700.00
+                                      {"$78,700.00"}
                                     </dd>
                                   </div>
                                   <div className="flex gap-4 items-center justify-between">
                                     <dt>
-                                      Discount
+                                      {"Discount"}
                                     </dt>
                                     <dd className="tabular-nums text-foreground">
-                                      -$6,296.00
+                                      {"-$6,296.00"}
                                     </dd>
                                   </div>
                                   <div className="flex gap-4 items-center justify-between">
                                     <dt>
-                                      Tax
+                                      {"Tax"}
                                     </dt>
                                     <dd className="tabular-nums text-foreground">
-                                      $5,829.12
+                                      {"$5,829.12"}
                                     </dd>
                                   </div>
                                   <div className="flex gap-4 items-center justify-between">
                                     <dt className="font-medium text-foreground">
-                                      Quote Total
+                                      {"Quote Total"}
                                     </dt>
                                     <dd className="font-semibold tabular-nums text-base text-foreground">
-                                      $78,233.12
+                                      {"$78,233.12"}
                                     </dd>
                                   </div>
                                 </dl>
@@ -1369,6 +1410,7 @@ export function Pattern() {
         </div>
       </SidebarInset>
     </div>
+    </SidebarProvider>
     <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
     <next-route-announcer style={{position: "absolute"}}></next-route-announcer>
   </>

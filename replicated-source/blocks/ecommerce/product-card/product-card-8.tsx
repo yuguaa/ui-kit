@@ -28,7 +28,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -38,7 +38,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Tech Accessories
+                  {"Tech Accessories"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -48,7 +48,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Device Drops
+                  {"Device Drops"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -56,10 +56,10 @@ export function Pattern() {
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex flex-wrap gap-3 items-center">
               <h2 className="font-semibold md:text-3xl text-2xl text-balance">
-                Device Drops
+                {"Device Drops"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                4 devices
+                {"4 devices"}
               </Badge>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
@@ -71,20 +71,20 @@ export function Pattern() {
                   <circle cx="17" cy="17" r="3"></circle>
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
-                Filter
+                {"Filter"}
               </PopoverTrigger>
               </Popover>
               <Select>
               <SelectTrigger className="w-[174px]" type="button" tabIndex="0" id="base-ui-_r_2_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm">
                 <span className="text-muted-foreground">
-                  Sort by:
+                  {"Sort by:"}
                 </span>
                 <SelectValue>
-                  Featured
+                  {"Featured"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -115,26 +115,26 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Audio products">
-                      Audio
+                      {"Audio"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Travel products">
-                      Travel
+                      {"Travel"}
                     </a>
                   </div>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                  Low Stock
+                  {"Low Stock"}
                 </Badge>
               </div>
               <div className="min-w-0 space-y-1">
                 <h3 className="font-semibold text-base truncate">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                    Auralite Pods
+                    {"Auralite Pods"}
                   </a>
                 </h3>
                 <p className="leading-5 line-clamp-2 min-h-10 text-muted-foreground text-sm">
-                  White wireless earbuds with adaptive noise control, voice isolation, and quick-switch pairing.
+                  {"White wireless earbuds with adaptive noise control, voice isolation, and quick-switch pairing."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
@@ -193,20 +193,20 @@ export function Pattern() {
                       </div>
                     </div>
                     <span className="text-muted-foreground text-xs w-5">
-                      4.7
+                      {"4.7"}
                     </span>
                   </Rating>
                 </div>
                 <a className="hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-4" href="#">
-                  418 reviews
+                  {"418 reviews"}
                 </a>
               </div>
               <div className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-base">
                 <span>
-                  $148.00
+                  {"$148.00"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground truncate">
-                  $179.00
+                  {"$179.00"}
                 </span>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -215,7 +215,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -241,26 +241,26 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Wearables products">
-                      Wearables
+                      {"Wearables"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Health products">
-                      Health
+                      {"Health"}
                     </a>
                   </div>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-info-foreground text-xs transition-shadow">
-                  New
+                  {"New"}
                 </Badge>
               </div>
               <div className="min-w-0 space-y-1">
                 <h3 className="font-semibold text-base truncate">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                    Orbit Watch
+                    {"Orbit Watch"}
                   </a>
                 </h3>
                 <p className="leading-5 line-clamp-2 min-h-10 text-muted-foreground text-sm">
-                  Slim activity watch with always-on metrics, fast charging, and a soft sport loop.
+                  {"Slim activity watch with always-on metrics, fast charging, and a soft sport loop."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
@@ -319,17 +319,17 @@ export function Pattern() {
                       </div>
                     </div>
                     <span className="text-muted-foreground text-xs w-5">
-                      4.8
+                      {"4.8"}
                     </span>
                   </Rating>
                 </div>
                 <a className="hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-4" href="#">
-                  286 reviews
+                  {"286 reviews"}
                 </a>
               </div>
               <div className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-base">
                 <span>
-                  $214.00
+                  {"$214.00"}
                 </span>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -338,7 +338,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -364,26 +364,26 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Photography products">
-                      Photography
+                      {"Photography"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Travel products">
-                      Travel
+                      {"Travel"}
                     </a>
                   </div>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                  Trending
+                  {"Trending"}
                 </Badge>
               </div>
               <div className="min-w-0 space-y-1">
                 <h3 className="font-semibold text-base truncate">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                    Grain Camera
+                    {"Grain Camera"}
                   </a>
                 </h3>
                 <p className="leading-5 line-clamp-2 min-h-10 text-muted-foreground text-sm">
-                  Pocket mirrorless camera with tactile controls, fast autofocus, and clean low-light color.
+                  {"Pocket mirrorless camera with tactile controls, fast autofocus, and clean low-light color."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
@@ -442,17 +442,17 @@ export function Pattern() {
                       </div>
                     </div>
                     <span className="text-muted-foreground text-xs w-5">
-                      4.9
+                      {"4.9"}
                     </span>
                   </Rating>
                 </div>
                 <a className="hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-4" href="#">
-                  306 reviews
+                  {"306 reviews"}
                 </a>
               </div>
               <div className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-base">
                 <span>
-                  $428.00
+                  {"$428.00"}
                 </span>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -461,7 +461,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -487,11 +487,11 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Mobile products">
-                      Mobile
+                      {"Mobile"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Charging products">
-                      Charging
+                      {"Charging"}
                     </a>
                   </div>
                 </div>
@@ -499,11 +499,11 @@ export function Pattern() {
               <div className="min-w-0 space-y-1">
                 <h3 className="font-semibold text-base truncate">
                   <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                    Dockline Charge
+                    {"Dockline Charge"}
                   </a>
                 </h3>
                 <p className="leading-5 line-clamp-2 min-h-10 text-muted-foreground text-sm">
-                  Compact phone charging stand with an angled display view and weighted desk base.
+                  {"Compact phone charging stand with an angled display view and weighted desk base."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
@@ -562,17 +562,17 @@ export function Pattern() {
                       </div>
                     </div>
                     <span className="text-muted-foreground text-xs w-5">
-                      4.6
+                      {"4.6"}
                     </span>
                   </Rating>
                 </div>
                 <a className="hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-4" href="#">
-                  238 reviews
+                  {"238 reviews"}
                 </a>
               </div>
               <div className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-base">
                 <span>
-                  $96.00
+                  {"$96.00"}
                 </span>
               </div>
               <Button className="mt-auto w-full" type="button" tabIndex="0">
@@ -581,7 +581,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>

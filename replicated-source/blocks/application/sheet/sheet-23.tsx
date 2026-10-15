@@ -34,7 +34,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        New connection
+        {"New connection"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -43,7 +43,7 @@ export function Pattern() {
             <path d="M5 12h14"></path>
             <path d="M12 5v14"></path>
           </svg>
-          New Connection
+          {"New Connection"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -54,10 +54,10 @@ export function Pattern() {
         <div className="flex gap-2 items-center justify-between">
           <div className="flex flex-col gap-0.5 min-w-0">
             <SheetTitle className="min-w-0" id="base-ui-_r_3_">
-              New Connection
+              {"New Connection"}
             </SheetTitle>
             <SheetDescription id="base-ui-_r_4_">
-              Pick what to connect.
+              {"Pick what to connect."}
             </SheetDescription>
           </div>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close">
@@ -67,48 +67,76 @@ export function Pattern() {
             </svg>
           </SheetClose>
         </div>
+        <StepperItem>
         <Stepper role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="New connection steps">
+          <Stepper>
           <StepperNav className="flex items-center" data-state="1" data-orientation="horizontal">
+            <Stepper>
             <StepperItem className="min-w-0" data-state="active">
+              <Stepper>
               <StepperTrigger className="gap-1.5 min-w-0" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                <Stepper>
                 <StepperIndicator className="[&_svg:not([class*=size-])]:size-3.5" data-state="active">
                   <div className="absolute">
-                    1
+                    {"1"}
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="truncate" data-state="active">
-                  Source
+                  {"Source"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
               <StepperSeparator className="mx-2.5" data-state="active"></StepperSeparator>
             </StepperItem>
+            </Stepper>
+            <Stepper>
             <StepperItem className="min-w-0" data-state="inactive">
+              <Stepper>
               <StepperTrigger className="gap-1.5 min-w-0" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                <Stepper>
                 <StepperIndicator className="[&_svg:not([class*=size-])]:size-3.5" data-state="inactive">
                   <div className="absolute">
-                    2
+                    {"2"}
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="truncate" data-state="inactive">
-                  Configure
+                  {"Configure"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
               <StepperSeparator className="mx-2.5" data-state="inactive"></StepperSeparator>
             </StepperItem>
+            </Stepper>
+            <Stepper>
             <StepperItem className="min-w-0" data-state="inactive">
+              <Stepper>
               <StepperTrigger className="gap-1.5 min-w-0" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                <Stepper>
                 <StepperIndicator className="[&_svg:not([class*=size-])]:size-3.5" data-state="inactive">
                   <div className="absolute">
-                    3
+                    {"3"}
                   </div>
                 </StepperIndicator>
+                </Stepper>
+                <Stepper>
                 <StepperTitle className="truncate" data-state="inactive">
-                  Datasets
+                  {"Datasets"}
                 </StepperTitle>
+                </Stepper>
               </StepperTrigger>
+              </Stepper>
             </StepperItem>
+            </Stepper>
           </StepperNav>
+          </Stepper>
         </Stepper>
+        </StepperItem>
       </div>
       <form className="flex flex-1 flex-col min-h-0" novalidate="">
         <div className="flex-1 min-h-0 no-scrollbar overflow-y-auto scroll-fade-y scroll-py-10">
@@ -147,11 +175,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Neon
+                      {"Neon"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Postgres
+                    {"Postgres"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -169,11 +197,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      PlanetScale
+                      {"PlanetScale"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    MySQL
+                    {"MySQL"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -200,11 +228,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Supabase
+                      {"Supabase"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Postgres
+                    {"Postgres"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -227,11 +255,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Redis
+                      {"Redis"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Redis 7
+                    {"Redis 7"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -249,11 +277,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      BigQuery
+                      {"BigQuery"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Google Cloud
+                    {"Google Cloud"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -268,11 +296,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Stripe
+                      {"Stripe"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    REST API
+                    {"REST API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -290,11 +318,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      GitHub
+                      {"GitHub"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    REST API
+                    {"REST API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -309,11 +337,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Linear
+                      {"Linear"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    GraphQL API
+                    {"GraphQL API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -333,11 +361,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Slack
+                      {"Slack"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Web API
+                    {"Web API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -356,11 +384,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Google Drive
+                      {"Google Drive"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Sheets API
+                    {"Sheets API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -376,11 +404,11 @@ export function Pattern() {
                 <ItemContent className="min-w-0">
                   <ItemTitle className="max-w-full min-w-0">
                     <span className="truncate">
-                      Dropbox
+                      {"Dropbox"}
                     </span>
                   </ItemTitle>
                   <ItemDescription className="truncate">
-                    Files API
+                    {"Files API"}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -389,13 +417,13 @@ export function Pattern() {
         </div>
         <div className="bg-muted border-t flex gap-2 items-center px-5 py-3 shrink-0">
           <p className="me-auto min-w-0 text-muted-foreground text-xs truncate" aria-live="polite">
-            Pick an integration to continue
+            {"Pick an integration to continue"}
           </p>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </SheetClose>
           <Button type="submit" disabled="" tabIndex="0" disabled>
-            Continue
+            {"Continue"}
             <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
             </svg>

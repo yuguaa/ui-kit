@@ -23,11 +23,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        App connection dialog
+        {"App connection dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open app connector
+          {"Open app connector"}
         </Button>
       </div>
     </main>
@@ -35,10 +35,10 @@ export function Pattern() {
     <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col max-w-[calc(100vw-1.5rem)] shadow-none sm:max-w-xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader>
         <DialogTitle id="base-ui-_r_2_">
-          Add a workspace app
+          {"Add a workspace app"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Choose one source to connect.
+          {"Choose one source to connect."}
         </DialogDescription>
       </DialogHeader>
       <div className="shrink-0">
@@ -52,7 +52,7 @@ export function Pattern() {
           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_4_" placeholder="Search integrations" aria-label="Search integrations" autoComplete="off" value="" />
           <InputGroupAddon role="group" data-align="inline-end">
             <Kbd>
-              ⌘K
+              {"⌘K"}
             </Kbd>
           </InputGroupAddon>
         </InputGroup>
@@ -75,10 +75,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Claude
+                    {"Claude"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Track model usage
+                    {"Track model usage"}
                   </p>
                 </div>
               </label>
@@ -103,10 +103,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    OpenAI
+                    {"OpenAI"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Research and model runs
+                    {"Research and model runs"}
                   </p>
                 </div>
               </label>
@@ -131,10 +131,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Cursor
+                    {"Cursor"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Sync coding activity
+                    {"Sync coding activity"}
                   </p>
                 </div>
               </label>
@@ -166,10 +166,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Google Calendar
+                    {"Google Calendar"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Mirror planning holds
+                    {"Mirror planning holds"}
                   </p>
                 </div>
               </label>
@@ -192,10 +192,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Slack
+                    {"Slack"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Monitor team activity
+                    {"Monitor team activity"}
                   </p>
                 </div>
               </label>
@@ -213,10 +213,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Stripe
+                    {"Stripe"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Track revenue signals
+                    {"Track revenue signals"}
                   </p>
                 </div>
               </label>
@@ -248,10 +248,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Zoom
+                    {"Zoom"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Log meeting sessions
+                    {"Log meeting sessions"}
                   </p>
                 </div>
               </label>
@@ -269,10 +269,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Loom
+                    {"Loom"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Store async walkthroughs
+                    {"Store async walkthroughs"}
                   </p>
                 </div>
               </label>
@@ -319,10 +319,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Instagram
+                    {"Instagram"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Track campaign engagement
+                    {"Track campaign engagement"}
                   </p>
                 </div>
               </label>
@@ -340,10 +340,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Discord
+                    {"Discord"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Watch community activity
+                    {"Watch community activity"}
                   </p>
                 </div>
               </label>
@@ -374,10 +374,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    Google Meet
+                    {"Google Meet"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Capture call activity
+                    {"Capture call activity"}
                   </p>
                 </div>
               </label>
@@ -399,10 +399,10 @@ export function Pattern() {
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
-                    PayPal
+                    {"PayPal"}
                   </p>
                   <p className="leading-none text-muted-foreground text-xs truncate">
-                    Monitor payout events
+                    {"Monitor payout events"}
                   </p>
                 </div>
               </label>
@@ -416,7 +416,7 @@ export function Pattern() {
             <path d="M5 12h14"></path>
             <path d="M12 5v14"></path>
           </svg>
-          Add app
+          {"Add app"}
         </Button>
       </DialogFooter>
       <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
@@ -425,7 +425,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

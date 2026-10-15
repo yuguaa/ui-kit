@@ -48,7 +48,7 @@ export function Pattern() {
                       <path d="M8 17v-3"></path>
                     </svg>
                     <span className="hidden md:inline">
-                      Analytics
+                      {"Analytics"}
                     </span>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -59,7 +59,7 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
                   <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                    Growth Overview
+                    {"Growth Overview"}
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -77,11 +77,11 @@ export function Pattern() {
             <Select>
             <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
               <SelectValue>
-                off
+                {"off"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -96,7 +96,7 @@ export function Pattern() {
                 <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
               </svg>
               <span className="hidden md:block">
-                Share
+                {"Share"}
               </span>
             </Button>
             <DropdownMenu>
@@ -121,7 +121,7 @@ export function Pattern() {
                 <path d="M3 10h18"></path>
               </svg>
               <span className="text-foreground truncate">
-                Select the date
+                {"Select the date"}
               </span>
             </PopoverTrigger>
             </Popover>
@@ -131,7 +131,7 @@ export function Pattern() {
                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
               </svg>
               <span className="hidden md:inline">
-                Compare
+                {"Compare"}
               </span>
             </Button>
           </div>
@@ -141,23 +141,23 @@ export function Pattern() {
               <circle cx="11" cy="11" r="8"></circle>
             </svg>
             <span className="hidden md:inline">
-              Search
+              {"Search"}
             </span>
             <KbdGroup aria-hidden="true">
               <Kbd>
-                ⌘
+                {"⌘"}
               </Kbd>
               <Kbd>
-                K
+                {"K"}
               </Kbd>
             </KbdGroup>
           </Button>
           <DialogHeader className="sr-only">
             <DialogTitle id="base-ui-_r_b_">
-              Search
+              {"Search"}
             </DialogTitle>
             <DialogDescription id="base-ui-_r_c_">
-              Search or jump to anything in your workspace.
+              {"Search or jump to anything in your workspace."}
             </DialogDescription>
           </DialogHeader>
         </div>

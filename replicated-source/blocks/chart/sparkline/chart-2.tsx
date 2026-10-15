@@ -12,17 +12,9 @@ export function Pattern() {
           <FramePanel className="p-0!">
             <div className="@2xl:grid-cols-2 @4xl:grid-cols-4 grid overflow-hidden">
               <div className="@4xl:border-b-0 @4xl:border-r border-b border-border/60 md:border-b md:border-r min-h-[102px] overflow-hidden p-4 relative">
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto cn-chart flex h-8 justify-center right-4 text-xs top-5 w-[76px] z-10" data-chart="chart-_r_0_">
-                  <style>{`
- [data-chart=chart-_r_0_] {
-  --color-value: var(--muted-foreground);
-}
-
-
-.dark [data-chart=chart-_r_0_] {
-  --color-value: var(--muted-foreground);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_0_] {\n  --color-value: var(--muted-foreground);\n}\n\n\n.dark [data-chart=chart-_r_0_] {\n  --color-value: var(--muted-foreground);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="76" height="32" style={{position: "relative", cursor: "default", width: "76px", height: "32px"}}>
@@ -58,14 +50,15 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
                 <div className="flex flex-col gap-5 justify-between min-h-[70px]">
                   <div className="flex flex-col gap-0.5 pr-24">
                     <div className="font-semibold text-xl">
-                      1,246
+                      {"1,246"}
                       <span className="ps-0.5 text-muted-foreground/40"></span>
                     </div>
                     <h3 className="leading-none text-muted-foreground text-xs">
-                      Total Orders
+                      {"Total Orders"}
                     </h3>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -75,27 +68,19 @@ export function Pattern() {
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
                       <span>
-                        23.08%
+                        {"23.08%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      Annual trend
+                      {"Annual trend"}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="@4xl:border-b-0 @4xl:border-r border-b border-border/60 md:border-b min-h-[102px] overflow-hidden p-4 relative">
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto cn-chart flex h-8 justify-center right-4 text-xs top-5 w-[76px] z-10" data-chart="chart-_r_1_">
-                  <style>{`
- [data-chart=chart-_r_1_] {
-  --color-value: var(--muted-foreground);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-value: var(--muted-foreground);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-value: var(--muted-foreground);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-value: var(--muted-foreground);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="76" height="32" style={{position: "relative", cursor: "default", width: "76px", height: "32px"}}>
@@ -131,16 +116,17 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
                 <div className="flex flex-col gap-5 justify-between min-h-[70px]">
                   <div className="flex flex-col gap-0.5 pr-24">
                     <div className="font-semibold text-xl">
-                      $89.3
+                      {"$89.3"}
                       <span className="ps-0.5 text-muted-foreground/40">
-                        k
+                        {"k"}
                       </span>
                     </div>
                     <h3 className="leading-none text-muted-foreground text-xs">
-                      Cumulative Spend
+                      {"Cumulative Spend"}
                     </h3>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -150,27 +136,19 @@ export function Pattern() {
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
                       <span>
-                        3.82%
+                        {"3.82%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      Monthly trend
+                      {"Monthly trend"}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="@4xl:border-b-0 @4xl:border-r border-b border-border/60 md:border-b-0 md:border-r min-h-[102px] overflow-hidden p-4 relative">
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto cn-chart flex h-8 justify-center right-4 text-xs top-5 w-[76px] z-10" data-chart="chart-_r_2_">
-                  <style>{`
- [data-chart=chart-_r_2_] {
-  --color-value: var(--muted-foreground);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-value: var(--muted-foreground);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-value: var(--muted-foreground);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-value: var(--muted-foreground);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="76" height="32" style={{position: "relative", cursor: "default", width: "76px", height: "32px"}}>
@@ -206,14 +184,15 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
                 <div className="flex flex-col gap-5 justify-between min-h-[70px]">
                   <div className="flex flex-col gap-0.5 pr-24">
                     <div className="font-semibold text-xl">
-                      $68
+                      {"$68"}
                       <span className="ps-0.5 text-muted-foreground/40"></span>
                     </div>
                     <h3 className="leading-none text-muted-foreground text-xs">
-                      Avg. Order Value
+                      {"Avg. Order Value"}
                     </h3>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -223,27 +202,19 @@ export function Pattern() {
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
                       <span>
-                        0.39%
+                        {"0.39%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      Weekly trend
+                      {"Weekly trend"}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="@4xl:border-b-0 @4xl:border-r-0 border-border/60 md:border-b-0 min-h-[102px] overflow-hidden p-4 relative">
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto cn-chart flex h-8 justify-center right-4 text-xs top-5 w-[76px] z-10" data-chart="chart-_r_3_">
-                  <style>{`
- [data-chart=chart-_r_3_] {
-  --color-value: var(--muted-foreground);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-value: var(--muted-foreground);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--muted-foreground);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--muted-foreground);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="76" height="32" style={{position: "relative", cursor: "default", width: "76px", height: "32px"}}>
@@ -279,16 +250,17 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
                 <div className="flex flex-col gap-5 justify-between min-h-[70px]">
                   <div className="flex flex-col gap-0.5 pr-24">
                     <div className="font-semibold text-xl">
-                      $2.3
+                      {"$2.3"}
                       <span className="ps-0.5 text-muted-foreground/40">
-                        k
+                        {"k"}
                       </span>
                     </div>
                     <h3 className="leading-none text-muted-foreground text-xs">
-                      Account Balance
+                      {"Account Balance"}
                     </h3>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -298,11 +270,11 @@ export function Pattern() {
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
                       <span>
-                        1.04%
+                        {"1.04%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      Daily trend
+                      {"Daily trend"}
                     </span>
                   </div>
                 </div>

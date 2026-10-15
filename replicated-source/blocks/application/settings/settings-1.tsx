@@ -26,10 +26,10 @@ export function Pattern() {
       <Card className="max-w-4xl w-full" size="default">
         <CardHeader>
           <CardTitle>
-            Import from other services
+            {"Import from other services"}
           </CardTitle>
           <CardDescription>
-            Select maximum 2 services to copy tasks from and authentication details to access their API.
+            {"Select maximum 2 services to copy tasks from and authentication details to access their API."}
           </CardDescription>
         </CardHeader>
         <CardContent className="gap-4 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2">
@@ -49,14 +49,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Stripe
+                        {"Stripe"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Payment processing platform for online transactions.
+                      {"Payment processing platform for online transactions."}
                     </p>
                   </div>
                 </Field>
@@ -91,14 +91,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Supabase
+                        {"Supabase"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Open-source Firebase alternative with database and authentication.
+                      {"Open-source Firebase alternative with database and authentication."}
                     </p>
                   </div>
                 </Field>
@@ -128,14 +128,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        OpenAI
+                        {"OpenAI"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      AI models and APIs for building intelligent applications.
+                      {"AI models and APIs for building intelligent applications."}
                     </p>
                   </div>
                 </Field>
@@ -158,14 +158,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Discord
+                        {"Discord"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Communication platform for communities with chat and voice.
+                      {"Communication platform for communities with chat and voice."}
                     </p>
                   </div>
                 </Field>
@@ -184,7 +184,7 @@ export function Pattern() {
                         <span className="dark:hidden" aria-hidden="true">
                           <svg className="size-6" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                             <title>
-                              Anthropic
+                              {"Anthropic"}
                             </title>
                             <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                           </svg>
@@ -192,7 +192,7 @@ export function Pattern() {
                         <span className="dark:block hidden" aria-hidden="true">
                           <svg className="size-6" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                             <title>
-                              Anthropic
+                              {"Anthropic"}
                             </title>
                             <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                           </svg>
@@ -201,14 +201,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Anthropic
+                        {"Anthropic"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        2-Step Import
+                        {"2-Step Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      AI safety company building reliable and interpretable AI systems.
+                      {"AI safety company building reliable and interpretable AI systems."}
                     </p>
                   </div>
                 </Field>
@@ -238,14 +238,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Resend
+                        {"Resend"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Modern email API built for developers with great deliverability.
+                      {"Modern email API built for developers with great deliverability."}
                     </p>
                   </div>
                 </Field>
@@ -281,14 +281,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Neon
+                        {"Neon"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        2-Step Import
+                        {"2-Step Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Serverless Postgres database with branching and auto-scaling.
+                      {"Serverless Postgres database with branching and auto-scaling."}
                     </p>
                   </div>
                 </Field>
@@ -318,14 +318,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        PlanetScale
+                        {"PlanetScale"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        2-Step Import
+                        {"2-Step Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      MySQL-compatible serverless database with branching workflows.
+                      {"MySQL-compatible serverless database with branching workflows."}
                     </p>
                   </div>
                 </Field>
@@ -356,14 +356,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex items-center justify-between">
                       <h2 className="font-semibold text-sm">
-                        Redis
+                        {"Redis"}
                       </h2>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Easy Import
+                        {"Easy Import"}
                       </Badge>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      In-memory data store for caching, messaging, and real-time apps.
+                      {"In-memory data store for caching, messaging, and real-time apps."}
                     </p>
                   </div>
                 </Field>
@@ -377,10 +377,10 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Go back
+            {"Go back"}
           </Button>
           <Button type="button" tabIndex="0">
-            Next step
+            {"Next step"}
             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>

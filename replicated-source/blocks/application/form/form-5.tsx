@@ -64,7 +64,7 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center lg:px-8 min-h-svh px-4 py-6 sm:px-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        User profile form
+        {"User profile form"}
       </h1>
       <form className="flex flex-col gap-6 max-w-6xl w-full" id="form-5-user-profile">
         <header className="flex flex-col gap-5">
@@ -73,7 +73,7 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Users
+            {"Users"}
           </Button>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex gap-3 items-center min-w-0">
@@ -83,16 +83,16 @@ export function Pattern() {
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-2 items-center min-w-0">
                   <h2 className="font-semibold leading-tight text-2xl tracking-tight">
-                    Iris Kwon
+                    {"Iris Kwon"}
                   </h2>
                 </div>
                 <p className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-sm">
                   <span>
-                    Product operations lead
+                    {"Product operations lead"}
                   </span>
                   <span className="bg-gray-400 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Active today
+                    {"Active today"}
                   </span>
                 </p>
               </div>
@@ -121,7 +121,7 @@ export function Pattern() {
                   <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                   <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
                 </svg>
-                Save Profile
+                {"Save Profile"}
               </Button>
             </div>
           </div>
@@ -148,7 +148,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Profile
+                      {"Profile"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
@@ -162,7 +162,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Organizations
+                      {"Organizations"}
                     </span>
                   </TabsTrigger>
                   <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_a_">
@@ -173,7 +173,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Security
+                      {"Security"}
                     </span>
                   </TabsTrigger>
                 </TabsList>
@@ -187,10 +187,10 @@ export function Pattern() {
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <h2 className="font-semibold text-base">
-                        User Activity
+                        {"User Activity"}
                       </h2>
                       <p className="text-muted-foreground text-sm">
-                        A lightweight trace of recent profile and workspace activity.
+                        {"A lightweight trace of recent profile and workspace activity."}
                       </p>
                     </div>
                     <div className="flex justify-end shrink-0 sm:ml-auto sm:w-auto w-full">
@@ -198,11 +198,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-5-activity-year" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            2026
+                            {"2026"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -217,14 +217,14 @@ export function Pattern() {
                           <Tooltip>
                           <TooltipTrigger className="align-middle focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring gap-1.5 hover:text-foreground inline-flex items-center leading-none rounded-sm text-muted-foreground text-sm" type="button" aria-label="Profile edits, workspace visits, and sign-in events were recorded on 41 days this year." id="base-ui-_r_g_" baseUiTooltipTrigger="">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              41 active days
+                              {"41 active days"}
                             </Badge>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
                           <TooltipTrigger className="align-middle focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring gap-1.5 hover:text-foreground inline-flex items-center leading-none rounded-sm text-muted-foreground text-sm" type="button" aria-label="Wednesday: 14 activity events, including 5 workspace handoffs." id="base-ui-_r_i_" baseUiTooltipTrigger="">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Apr 22
+                              {"Apr 22"}
                             </Badge>
                           </TooltipTrigger>
                           </Tooltip>
@@ -234,14 +234,14 @@ export function Pattern() {
                               <Spinner className="lucide lucide-loader-circle size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Loader2Icon" tabler="IconLoader" hugeicons="Loading03Icon" phosphor="SpinnerIcon" remixicon="RiLoaderLine" role="status" aria-label="Loading" aria-hidden="true">
                                 <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
                               </Spinner>
-                              Syncing
+                              {"Syncing"}
                             </Badge>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
                           <TooltipTrigger className="align-middle focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring gap-1.5 hover:text-foreground inline-flex items-center leading-none rounded-sm text-muted-foreground text-sm" type="button" aria-label="Last completed profile activity sync from audit-log events." id="base-ui-_r_m_" baseUiTooltipTrigger="">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Synced 20m ago
+                              {"Synced 20m ago"}
                             </Badge>
                           </TooltipTrigger>
                           </Tooltip>
@@ -249,25 +249,25 @@ export function Pattern() {
                         <div className="gap-1.5 grid grid-cols-[0.75rem_minmax(0,1fr)]">
                           <div className="gap-1 grid grid-rows-[repeat(7,0.75rem)] leading-none text-[9px] text-muted-foreground">
                             <span className="grid place-items-center size-3">
-                              S
+                              {"S"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              M
+                              {"M"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              T
+                              {"T"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              W
+                              {"W"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              T
+                              {"T"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              F
+                              {"F"}
                             </span>
                             <span className="grid place-items-center size-3">
-                              S
+                              {"S"}
                             </span>
                           </div>
                           <ScrollArea className="min-w-0 pb-2" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "10px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" hasOverflowY="" overflowXEnd="" overflowYEnd="">
@@ -798,40 +798,40 @@ export function Pattern() {
                                   </div>
                                   <div className="grid grid-cols-12 leading-none text-muted-foreground text-xs">
                                     <span>
-                                      Jan
+                                      {"Jan"}
                                     </span>
                                     <span>
-                                      Feb
+                                      {"Feb"}
                                     </span>
                                     <span>
-                                      Mar
+                                      {"Mar"}
                                     </span>
                                     <span>
-                                      Apr
+                                      {"Apr"}
                                     </span>
                                     <span>
-                                      May
+                                      {"May"}
                                     </span>
                                     <span>
-                                      Jun
+                                      {"Jun"}
                                     </span>
                                     <span>
-                                      Jul
+                                      {"Jul"}
                                     </span>
                                     <span>
-                                      Aug
+                                      {"Aug"}
                                     </span>
                                     <span>
-                                      Sep
+                                      {"Sep"}
                                     </span>
                                     <span>
-                                      Oct
+                                      {"Oct"}
                                     </span>
                                     <span>
-                                      Nov
+                                      {"Nov"}
                                     </span>
                                     <span className="text-end">
-                                      Dec
+                                      {"Dec"}
                                     </span>
                                   </div>
                                 </div>
@@ -851,10 +851,10 @@ export function Pattern() {
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <h2 className="font-semibold text-base">
-                        Personal Information
+                        {"Personal Information"}
                       </h2>
                       <p className="text-muted-foreground text-sm">
-                        Edit the identity shown across assignments and handoffs.
+                        {"Edit the identity shown across assignments and handoffs."}
                       </p>
                     </div>
                   </div>
@@ -864,10 +864,10 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-field-title items-center">
-                              Profile Image
+                              {"Profile Image"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Used in mentions, activity rows, and directory previews.
+                              {"Used in mentions, activity rows, and directory previews."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
@@ -886,16 +886,16 @@ export function Pattern() {
                                         <path d="m17 8-5-5-5 5"></path>
                                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                       </svg>
-                                      Replace image
+                                      {"Replace image"}
                                     </Button>
                                     <input className="sr-only" id="form-5-avatar" accept="image/png,image/jpeg,image/webp" aria-label="Upload profile image" tabIndex="-1" type="file" />
                                   </div>
                                   <Button type="button" tabIndex="0">
-                                    Remove
+                                    {"Remove"}
                                   </Button>
                                 </div>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  Recommended size 1:1. PNG, JPEG, or WebP up to 4MB.
+                                  {"Recommended size 1:1. PNG, JPEG, or WebP up to 4MB."}
                                 </p>
                               </div>
                             </div>
@@ -904,23 +904,23 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-field-title items-center">
-                              Name
+                              {"Name"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Keep legal and display naming aligned.
+                              {"Keep legal and display naming aligned."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <FieldGroup className="gap-3 grid sm:grid-cols-2">
                               <Field className="gap-2" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-first-name">
-                                  First Name
+                                  {"First Name"}
                                 </FieldLabel>
                                 <Input id="form-5-first-name" value="Iris"></Input>
                               </Field>
                               <Field className="gap-2" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-last-name">
-                                  Last Name
+                                  {"Last Name"}
                                 </FieldLabel>
                                 <Input id="form-5-last-name" value="Kwon"></Input>
                               </Field>
@@ -930,17 +930,17 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-handle">
-                              Public Handle
+                              {"Public Handle"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Used for mentions, profile links, and compact owner labels.
+                              {"Used for mentions, profile links, and compact owner labels."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <InputGroup role="group">
                               <InputGroupAddon role="group" data-align="inline-start">
                                 <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                  @
+                                  {"@"}
                                 </span>
                               </InputGroupAddon>
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="form-5-handle" value="iris-kwon" />
@@ -950,21 +950,21 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-role">
-                              Role
+                              {"Role"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Controls assignment labels and operational scope.
+                              {"Controls assignment labels and operational scope."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <Select>
                             <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-5-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Product operations lead
+                                {"Product operations lead"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -974,10 +974,10 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-country">
-                              Country
+                              {"Country"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Sets the regional profile context.
+                              {"Sets the regional profile context."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
@@ -985,7 +985,7 @@ export function Pattern() {
                               <span className="flex gap-2 items-center min-w-0">
                                 <img className="rounded-xs shrink-0" alt="" width="16" height="12" src="https://flagcdn.com/ca.svg" style={{height: "auto"}} />
                                 <span className="truncate">
-                                  Canada
+                                  {"Canada"}
                                 </span>
                               </span>
                               <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -998,21 +998,21 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-locale">
-                              Locale
+                              {"Locale"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Controls date, number, and interface formatting.
+                              {"Controls date, number, and interface formatting."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <Select>
                             <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-5-locale" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                English (Canada)
+                                {"English (Canada)"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -1022,21 +1022,21 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-timezone">
-                              Time Zone
+                              {"Time Zone"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Used for activity timestamps and notifications.
+                              {"Used for activity timestamps and notifications."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <Select>
                             <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-5-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Eastern Time (UTC-5)
+                                {"Eastern Time (UTC-5)"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -1046,36 +1046,36 @@ export function Pattern() {
                         <Field className="@md/field-group:gap-6 gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-bio">
-                              Bio
+                              {"Bio"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Short internal context for admins and collaborators.
+                              {"Short internal context for admins and collaborators."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <Textarea className="min-h-24 resize-none" id="form-5-bio">
-                              Coordinates launch approvals, customer handoffs, and product readiness across the Atlas Lane workspace.
+                              {"Coordinates launch approvals, customer handoffs, and product readiness across the Atlas Lane workspace."}
                             </Textarea>
                           </FieldContent>
                         </Field>
                         <Field className="@md/field-group:gap-6 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-5 py-4" role="group" data-orientation="responsive">
                           <div className="@md/field-group:basis-2/5 @md/field-group:pr-4 @md/field-group:w-2/5 flex flex-col gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-5-visibility">
-                              Profile Visibility
+                              {"Profile Visibility"}
                             </FieldLabel>
                             <FieldDescription className="text-balance">
-                              Decide who can see extended profile details.
+                              {"Decide who can see extended profile details."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:basis-3/5 @md/field-group:w-3/5 min-w-0 w-full">
                             <Select>
                             <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-5-visibility" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Visible to workspace
+                                {"Visible to workspace"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -1091,10 +1091,10 @@ export function Pattern() {
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <h2 className="font-semibold text-base">
-                          Email Addresses
+                          {"Email Addresses"}
                         </h2>
                         <p className="text-muted-foreground text-sm">
-                          Verified addresses used for sign-in and notifications.
+                          {"Verified addresses used for sign-in and notifications."}
                         </p>
                       </div>
                       <div className="flex justify-end shrink-0 sm:ml-auto sm:w-auto w-full">
@@ -1103,7 +1103,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add Email
+                          {"Add Email"}
                         </Button>
                       </div>
                     </div>
@@ -1120,10 +1120,10 @@ export function Pattern() {
                             <ItemContent className="min-w-0">
                               <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                                 <span className="min-w-0 truncate">
-                                  iris.kwon@atlaslane.dev
+                                  {"iris.kwon@atlaslane.dev"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Primary
+                                  {"Primary"}
                                 </Badge>
                                 <Tooltip>
                                 <TooltipTrigger className="align-middle focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="iris.kwon@atlaslane.dev verification details" id="base-ui-_r_3p_" baseUiTooltipTrigger="">
@@ -1135,12 +1135,12 @@ export function Pattern() {
                                 </Tooltip>
                               </ItemTitle>
                               <ItemDescription className="truncate">
-                                Primary sign-in, recovery, and workspace notification email.
+                                {"Primary sign-in, recovery, and workspace notification email."}
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions className="gap-3 shrink-0">
                               <span className="hidden sm:inline text-muted-foreground text-xs whitespace-nowrap">
-                                Added 3h ago
+                                {"Added 3h ago"}
                               </span>
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for iris.kwon@atlaslane.dev" aria-haspopup="menu" id="base-ui-_r_3t_" aria-expanded="false">
@@ -1164,16 +1164,16 @@ export function Pattern() {
                             <ItemContent className="min-w-0">
                               <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                                 <span className="min-w-0 truncate">
-                                  launches@atlaslane.dev
+                                  {"launches@atlaslane.dev"}
                                 </span>
                               </ItemTitle>
                               <ItemDescription className="truncate">
-                                Shared launch review alias for customer-facing updates.
+                                {"Shared launch review alias for customer-facing updates."}
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions className="gap-3 shrink-0">
                               <span className="hidden sm:inline text-muted-foreground text-xs whitespace-nowrap">
-                                Linked 2d ago
+                                {"Linked 2d ago"}
                               </span>
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for launches@atlaslane.dev" aria-haspopup="menu" id="base-ui-_r_42_" aria-expanded="false">
@@ -1194,10 +1194,10 @@ export function Pattern() {
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <h2 className="font-semibold text-base">
-                          Connected Accounts
+                          {"Connected Accounts"}
                         </h2>
                         <p className="text-muted-foreground text-sm">
-                          Identity sources and public destinations linked to this user.
+                          {"Identity sources and public destinations linked to this user."}
                         </p>
                       </div>
                     </div>
@@ -1214,10 +1214,10 @@ export function Pattern() {
                             <ItemContent className="min-w-0">
                               <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                                 <span className="min-w-0 truncate">
-                                  Atlas Lane SSO
+                                  {"Atlas Lane SSO"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                                  Managed
+                                  {"Managed"}
                                 </Badge>
                                 <Tooltip>
                                 <TooltipTrigger className="align-middle focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="Atlas Lane SSO verification details" id="base-ui-_r_45_" baseUiTooltipTrigger="">
@@ -1229,12 +1229,12 @@ export function Pattern() {
                                 </Tooltip>
                               </ItemTitle>
                               <ItemDescription className="truncate">
-                                SAML identity source with profile sync enabled.
+                                {"SAML identity source with profile sync enabled."}
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions className="gap-3 shrink-0">
                               <span className="hidden sm:inline text-muted-foreground text-xs whitespace-nowrap">
-                                Synced 12m ago
+                                {"Synced 12m ago"}
                               </span>
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Atlas Lane SSO" aria-haspopup="menu" id="base-ui-_r_49_" aria-expanded="false">
@@ -1259,16 +1259,16 @@ export function Pattern() {
                             <ItemContent className="min-w-0">
                               <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                                 <span className="min-w-0 truncate">
-                                  Customer docs portal
+                                  {"Customer docs portal"}
                                 </span>
                               </ItemTitle>
                               <ItemDescription className="truncate">
-                                Public author profile for changelogs and launch notes.
+                                {"Public author profile for changelogs and launch notes."}
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions className="gap-3 shrink-0">
                               <span className="hidden sm:inline text-muted-foreground text-xs whitespace-nowrap">
-                                Visible
+                                {"Visible"}
                               </span>
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Customer docs portal" aria-haspopup="menu" id="base-ui-_r_4e_" aria-expanded="false">
@@ -1291,10 +1291,10 @@ export function Pattern() {
                 <Card className="gap-0 p-0" size="default">
                   <CardHeader className="gap-1 px-4 py-4">
                     <CardTitle>
-                      Audit Rail
+                      {"Audit Rail"}
                     </CardTitle>
                     <div className="text-muted-foreground text-sm">
-                      Stable identifiers and profile timestamps.
+                      {"Stable identifiers and profile timestamps."}
                     </div>
                   </CardHeader>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1309,7 +1309,7 @@ export function Pattern() {
                       <ItemContent className="min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center">
                           <span>
-                            User ID
+                            {"User ID"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="User ID: Stable identifier" id="base-ui-_r_4h_" baseUiTooltipTrigger="">
@@ -1323,7 +1323,7 @@ export function Pattern() {
                         </ItemDescription>
                         <ItemTitle className="gap-1.5 min-w-0 w-full">
                           <span className="min-w-0 truncate">
-                            usr_8R4m...KX92
+                            {"usr_8R4m...KX92"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy User ID">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -1345,7 +1345,7 @@ export function Pattern() {
                       <ItemContent className="min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center">
                           <span>
-                            Primary Email
+                            {"Primary Email"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="Primary Email: Verified contact" id="base-ui-_r_4j_" baseUiTooltipTrigger="">
@@ -1359,7 +1359,7 @@ export function Pattern() {
                         </ItemDescription>
                         <ItemTitle className="gap-1.5 min-w-0 w-full">
                           <span className="min-w-0 truncate">
-                            iris.kwon@atlaslane.dev
+                            {"iris.kwon@atlaslane.dev"}
                           </span>
                           <Button type="button" tabIndex="0" aria-label="Copy Primary Email">
                             <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -1384,7 +1384,7 @@ export function Pattern() {
                       <ItemContent className="min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center">
                           <span>
-                            User Since
+                            {"User Since"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="User Since: Created by admin invite" id="base-ui-_r_4l_" baseUiTooltipTrigger="">
@@ -1398,7 +1398,7 @@ export function Pattern() {
                         </ItemDescription>
                         <ItemTitle className="gap-1.5 min-w-0 w-full">
                           <span className="min-w-0 truncate">
-                            March 18, 2026
+                            {"March 18, 2026"}
                           </span>
                         </ItemTitle>
                       </ItemContent>
@@ -1413,7 +1413,7 @@ export function Pattern() {
                       <ItemContent className="min-w-0">
                         <ItemDescription className="flex gap-1.5 items-center">
                           <span>
-                            Profile Updated
+                            {"Profile Updated"}
                           </span>
                           <Tooltip>
                           <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex rounded-sm shrink-0 text-muted-foreground" type="button" aria-label="Profile Updated: Identity sync complete" id="base-ui-_r_4n_" baseUiTooltipTrigger="">
@@ -1427,7 +1427,7 @@ export function Pattern() {
                         </ItemDescription>
                         <ItemTitle className="gap-1.5 min-w-0 w-full">
                           <span className="min-w-0 truncate">
-                            Updated 3h ago
+                            {"Updated 3h ago"}
                           </span>
                         </ItemTitle>
                       </ItemContent>
@@ -1437,20 +1437,20 @@ export function Pattern() {
                 <Card className="gap-0 p-0" size="default">
                   <CardHeader className="gap-1 px-4 py-4">
                     <CardTitle>
-                      Profile Health
+                      {"Profile Health"}
                     </CardTitle>
                     <div className="text-muted-foreground text-sm">
-                      Identity quality and access readiness.
+                      {"Identity quality and access readiness."}
                     </div>
                   </CardHeader>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <CardContent className="flex flex-col gap-4 px-4 py-4">
                     <div className="flex gap-3 items-center justify-between">
                       <span className="font-medium text-sm">
-                        Completion
+                        {"Completion"}
                       </span>
                       <span className="font-medium text-sm">
-                        92%
+                        {"92%"}
                       </span>
                     </div>
                     <Progress progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" aria-valuetext="92%" role="progressbar" aria-label="Profile completion">
@@ -1458,35 +1458,35 @@ export function Pattern() {
                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "92%"}}></ProgressIndicator>
                       </ProgressTrack>
                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                        x
+                        {"x"}
                       </span>
                     </Progress>
                     <div className="flex flex-col gap-2">
                       <div className="flex gap-3 items-center justify-between text-sm">
                         <span className="text-muted-foreground">
-                          Identity Sync
+                          {"Identity Sync"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                           <Spinner className="lucide lucide-loader-circle size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Loader2Icon" tabler="IconLoader" hugeicons="Loading03Icon" phosphor="SpinnerIcon" remixicon="RiLoaderLine" role="status" aria-label="Loading" aria-hidden="true">
                             <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
                           </Spinner>
-                          Syncing
+                          {"Syncing"}
                         </Badge>
                       </div>
                       <div className="flex gap-3 items-center justify-between text-sm">
                         <span className="text-muted-foreground">
-                          Access Review
+                          {"Access Review"}
                         </span>
                         <span className="font-medium">
-                          Due May 02
+                          {"Due May 02"}
                         </span>
                       </div>
                       <div className="flex gap-3 items-center justify-between text-sm">
                         <span className="text-muted-foreground">
-                          Recovery
+                          {"Recovery"}
                         </span>
                         <span className="font-medium">
-                          Configured
+                          {"Configured"}
                         </span>
                       </div>
                     </div>

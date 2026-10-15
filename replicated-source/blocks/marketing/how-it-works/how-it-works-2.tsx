@@ -19,39 +19,7 @@ export function Pattern() {
   return (
     <div className="w-full">
       <section className="bg-background lg:px-8 px-4 py-12 sm:px-6 text-foreground w-full" aria-labelledby="how-it-works-2-title">
-        <style>{`
-@keyframes hiw2-drift {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-[data-slot="hiw2-drift"] {
-  animation: hiw2-drift var(--hiw2-period) ease-in-out var(--hiw2-delay) infinite;
-}
-@keyframes hiw2-sweep-a {
-  0%, 100% { transform: translate(0px, 0px); opacity: 0; }
-  4% { opacity: 0.6; }
-  40% { opacity: 0.6; }
-  46% { transform: translate(95.40px, 55.08px); opacity: 0; }
-}
-@keyframes hiw2-sweep-b {
-  0%, 100% { transform: translate(0px, 0px); opacity: 0; }
-  4% { opacity: 0.6; }
-  40% { opacity: 0.6; }
-  46% { transform: translate(95.40px, -55.08px); opacity: 0; }
-}
-[data-slot="hiw2-sweep"] {
-  animation-duration: 9s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-[data-slot="hiw2-sweep"][data-axis="a"] { animation-name: hiw2-sweep-a; }
-[data-slot="hiw2-sweep"][data-axis="b"] { animation-name: hiw2-sweep-b; }
-[data-slot="hiw2-sweep"][data-leg="2"] { animation-delay: 4.50s; }
-@media (prefers-reduced-motion: reduce) {
-  [data-slot="hiw2-drift"],
-  [data-slot="hiw2-sweep"] { animation: none; }
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n@keyframes hiw2-drift {\n  0%, 100% { transform: translateY(0); }\n  50% { transform: translateY(-6px); }\n}\n[data-slot=\"hiw2-drift\"] {\n  animation: hiw2-drift var(--hiw2-period) ease-in-out var(--hiw2-delay) infinite;\n}\n@keyframes hiw2-sweep-a {\n  0%, 100% { transform: translate(0px, 0px); opacity: 0; }\n  4% { opacity: 0.6; }\n  40% { opacity: 0.6; }\n  46% { transform: translate(95.40px, 55.08px); opacity: 0; }\n}\n@keyframes hiw2-sweep-b {\n  0%, 100% { transform: translate(0px, 0px); opacity: 0; }\n  4% { opacity: 0.6; }\n  40% { opacity: 0.6; }\n  46% { transform: translate(95.40px, -55.08px); opacity: 0; }\n}\n[data-slot=\"hiw2-sweep\"] {\n  animation-duration: 9s;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n[data-slot=\"hiw2-sweep\"][data-axis=\"a\"] { animation-name: hiw2-sweep-a; }\n[data-slot=\"hiw2-sweep\"][data-axis=\"b\"] { animation-name: hiw2-sweep-b; }\n[data-slot=\"hiw2-sweep\"][data-leg=\"2\"] { animation-delay: 4.50s; }\n@media (prefers-reduced-motion: reduce) {\n  [data-slot=\"hiw2-drift\"],\n  [data-slot=\"hiw2-sweep\"] { animation: none; }\n}\n" }} />
         <div className="@container flex flex-col gap-8 max-w-7xl mx-auto w-full">
           <div className="@5xl:grid-cols-[1fr_auto] @5xl:items-end @6xl:grid-cols-[1fr_auto_20rem] gap-8 grid">
             <div className="flex flex-col gap-4 items-start min-w-0">
@@ -61,13 +29,13 @@ export function Pattern() {
                   <path d="m6 8-4 4 4 4"></path>
                   <path d="m14.5 4-5 16"></path>
                 </svg>
-                How It Works
+                {"How It Works"}
               </Badge>
               <h2 className="@xl:text-4xl font-semibold text-3xl" id="how-it-works-2-title">
-                Build faster with NeUI
+                {"Build faster with NeUI"}
               </h2>
               <p className="leading-6 text-base text-muted-foreground">
-                Install NeUI, find the right components, customize the source, and ship polished interfaces faster.
+                {"Install NeUI, find the right components, customize the source, and ship polished interfaces faster."}
               </p>
             </div>
             <div className="@5xl:justify-end @5xl:w-80 flex flex-wrap gap-x-2.5 gap-y-2 items-center">
@@ -76,7 +44,7 @@ export function Pattern() {
                   <path d="M12 7v14"></path>
                   <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                 </svg>
-                View Docs
+                {"View Docs"}
               </Button>
               <Button href="#" role="button" tabIndex="0">
                 <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
@@ -85,7 +53,7 @@ export function Pattern() {
                   <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                   <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                 </svg>
-                Browse Registry
+                {"Browse Registry"}
               </Button>
             </div>
             <ul className="@6xl:w-80 divide-border divide-y flex flex-col" role="list">
@@ -100,10 +68,10 @@ export function Pattern() {
                   </IconTile>
                   <ItemContent className="gap-px">
                     <ItemTitle className="leading-5 line-clamp-none">
-                      Curated Library
+                      {"Curated Library"}
                     </ItemTitle>
                     <ItemDescription className="leading-5 line-clamp-none">
-                      Components, templates, and production-ready blocks in one place.
+                      {"Components, templates, and production-ready blocks in one place."}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -119,10 +87,10 @@ export function Pattern() {
                   </IconTile>
                   <ItemContent className="gap-px">
                     <ItemTitle className="leading-5 line-clamp-none">
-                      CLI Compatible
+                      {"CLI Compatible"}
                     </ItemTitle>
                     <ItemDescription className="leading-5 line-clamp-none">
-                      Add parts with the shadcn command you already use.
+                      {"Add parts with the shadcn command you already use."}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -220,19 +188,19 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-2 py-(--card-spacing)">
                   <div className="flex gap-2 items-start">
                     <CardTitle className="flex-1 leading-6 min-w-0">
-                      Install NeUI
+                      {"Install NeUI"}
                     </CardTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 mt-px outline-none px-2 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                      Step 1
+                      {"Step 1"}
                     </Badge>
                   </div>
                   <CardDescription className="leading-5">
-                    Add NeUI to your project and configure the tools you want to use.
+                    {"Add NeUI to your project and configure the tools you want to use."}
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Get Started
+                    {"Get Started"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -326,19 +294,19 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-2 py-(--card-spacing)">
                   <div className="flex gap-2 items-start">
                     <CardTitle className="flex-1 leading-6 min-w-0">
-                      Find components
+                      {"Find components"}
                     </CardTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 mt-px outline-none px-2 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                      Step 2
+                      {"Step 2"}
                     </Badge>
                   </div>
                   <CardDescription className="leading-5">
-                    Browse the registry or use AI-assisted tools for your interface.
+                    {"Browse the registry or use AI-assisted tools for your interface."}
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Explore Components
+                    {"Explore Components"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -441,19 +409,19 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-2 py-(--card-spacing)">
                   <div className="flex gap-2 items-start">
                     <CardTitle className="flex-1 leading-6 min-w-0">
-                      Customize
+                      {"Customize"}
                     </CardTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 mt-px outline-none px-2 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                      Step 3
+                      {"Step 3"}
                     </Badge>
                   </div>
                   <CardDescription className="leading-5">
-                    Edit the source, styling, variants, and behavior inside your project.
+                    {"Edit the source, styling, variants, and behavior inside your project."}
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Read Documentation
+                    {"Read Documentation"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -547,19 +515,19 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-2 py-(--card-spacing)">
                   <div className="flex gap-2 items-start">
                     <CardTitle className="flex-1 leading-6 min-w-0">
-                      Ship faster
+                      {"Ship faster"}
                     </CardTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 mt-px outline-none px-2 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                      Step 4
+                      {"Step 4"}
                     </Badge>
                   </div>
                   <CardDescription className="leading-5">
-                    Combine components into interfaces without rebuilding common patterns.
+                    {"Combine components into interfaces without rebuilding common patterns."}
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Start Building
+                    {"Start Building"}
                   </Button>
                 </CardFooter>
               </Card>

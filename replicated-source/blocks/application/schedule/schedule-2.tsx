@@ -34,11 +34,11 @@ export function Pattern() {
             <div className="flex flex-col">
               <div className="flex gap-1.5 items-center">
                 <span className="font-semibold text-sm">
-                  Alex Johnson
+                  {"Alex Johnson"}
                 </span>
               </div>
               <span className="text-muted-foreground text-xs">
-                Founder & CEO
+                {"Founder & CEO"}
               </span>
             </div>
           </div>
@@ -56,16 +56,16 @@ export function Pattern() {
           <div className="gap-5 grid md:grid-cols-2">
             <div className="flex flex-col gap-2">
               <Label htmlFor="start-time">
-                Start time
+                {"Start time"}
               </Label>
               <Select>
               <SelectTrigger className="w-full" type="button" tabIndex="0" id="start-time" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                 <SelectValue>
-                  09:00 AM
+                  {"09:00 AM"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -73,16 +73,16 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2">
               <Label htmlFor="end-time">
-                End time
+                {"End time"}
               </Label>
               <Select>
               <SelectTrigger className="w-full" type="button" tabIndex="0" id="end-time" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                 <SelectValue>
-                  10:00 AM
+                  {"10:00 AM"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -91,38 +91,38 @@ export function Pattern() {
           </div>
           <div className="flex flex-col gap-2">
             <Label>
-              Duration
+              {"Duration"}
             </Label>
             <div className="gap-2 grid grid-cols-2 lg:grid-cols-5 md:grid-cols-3">
               <Button type="button" tabIndex="0">
-                15 min
+                {"15 min"}
               </Button>
               <Button type="button" tabIndex="0">
-                30 min
+                {"30 min"}
               </Button>
               <Button type="button" tabIndex="0">
-                1 hour
+                {"1 hour"}
               </Button>
               <Button type="button" tabIndex="0">
-                2 hours
+                {"2 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                3 hours
+                {"3 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                4 hours
+                {"4 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                5 hours
+                {"5 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                6 hours
+                {"6 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                7 hours
+                {"7 hours"}
               </Button>
               <Button type="button" tabIndex="0">
-                8 hours
+                {"8 hours"}
               </Button>
             </div>
           </div>
@@ -139,18 +139,18 @@ export function Pattern() {
             </TooltipTrigger>
             </Tooltip>
             <span className="text-muted-foreground text-xs truncate">
-              Selected duration:
+              {"Selected duration:"}
               <strong className="font-semibold text-foreground">
-                1 hour
+                {"1 hour"}
               </strong>
             </span>
           </div>
           <div className="flex gap-2 justify-center">
             <Button type="button" tabIndex="0">
-              Cancel
+              {"Cancel"}
             </Button>
             <Button type="button" tabIndex="0">
-              Apply
+              {"Apply"}
             </Button>
           </div>
         </footer>

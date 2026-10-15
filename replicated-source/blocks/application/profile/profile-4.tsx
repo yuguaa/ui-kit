@@ -39,10 +39,10 @@ export function Pattern() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex flex-col gap-0.5 max-w-lg">
             <h1 className="font-semibold text-xl">
-              Outreach Inboxes
+              {"Outreach Inboxes"}
             </h1>
             <p className="text-muted-foreground text-sm">
-              Keep sending accounts, reply routing, and booking calendars aligned.
+              {"Keep sending accounts, reply routing, and booking calendars aligned."}
             </p>
           </div>
           <Button className="self-start" type="button" tabIndex="0" extracted="1">
@@ -50,16 +50,16 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Back to profile
+            {"Back to profile"}
           </Button>
         </div>
         <section className="flex flex-col gap-3 mt-1">
           <div className="flex flex-col gap-px">
             <h2 className="font-semibold text-base">
-              Connected Accounts
+              {"Connected Accounts"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Primary mailbox used for sends and calendar booking.
+              {"Primary mailbox used for sends and calendar booking."}
             </p>
           </div>
           <Card className="gap-0 p-0" size="default">
@@ -90,14 +90,14 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                       <span className="min-w-0 truncate">
-                        alex@northstarstudio.com
+                        {"alex@northstarstudio.com"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                        Primary
+                        {"Primary"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="truncate">
-                      Primary sender mailbox and booking calendar
+                      {"Primary sender mailbox and booking calendar"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="self-start shrink-0">
@@ -137,14 +137,14 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                       <span className="min-w-0 truncate">
-                        meetings@northstarstudio.com
+                        {"meetings@northstarstudio.com"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                        Synced
+                        {"Synced"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="truncate">
-                      Google Meet links for scheduled demos
+                      {"Google Meet links for scheduled demos"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="self-start shrink-0">
@@ -170,7 +170,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    Connect Loom workspace
+                    {"Connect Loom workspace"}
                   </span>
                 </Button>
                 <Button className="w-full" type="button" tabIndex="0">
@@ -185,7 +185,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    Connect Slack handoff
+                    {"Connect Slack handoff"}
                   </span>
                 </Button>
               </div>
@@ -195,10 +195,10 @@ export function Pattern() {
         <section className="flex flex-col gap-3">
           <div className="flex flex-col gap-px">
             <h2 className="font-semibold text-base">
-              Reply Routing
+              {"Reply Routing"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Where replies and bounce notices should land.
+              {"Where replies and bounce notices should land."}
             </p>
           </div>
           <Card className="gap-0 p-0" size="default">
@@ -213,14 +213,14 @@ export function Pattern() {
                   <ItemContent className="min-w-0">
                     <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                       <span className="min-w-0 truncate">
-                        ryan@neui.io
+                        {"ryan@neui.io"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                        Verified
+                        {"Verified"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="truncate">
-                      Primary reply owner for outbound sequences
+                      {"Primary reply owner for outbound sequences"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="self-start shrink-0">
@@ -240,18 +240,18 @@ export function Pattern() {
                   <ItemMedia variant="icon">
                     <Avatar className="size-10" size="default">
                       <AvatarFallback className="bg-amber-100 dark:bg-amber-950 dark:text-amber-200 font-medium text-amber-700 text-xs tracking-[0.08em] uppercase">
-                        AC
+                        {"AC"}
                       </AvatarFallback>
                     </Avatar>
                   </ItemMedia>
                   <ItemContent className="min-w-0">
                     <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                       <span className="min-w-0 truncate">
-                        adam@neui.io
+                        {"adam@neui.io"}
                       </span>
                     </ItemTitle>
                     <ItemDescription className="truncate">
-                      Compliance copy for outbound mail
+                      {"Compliance copy for outbound mail"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="self-start shrink-0">
@@ -271,21 +271,21 @@ export function Pattern() {
                   <ItemMedia variant="icon">
                     <Avatar className="size-10" size="default">
                       <AvatarFallback className="bg-sky-100 dark:bg-sky-950 dark:text-sky-200 font-medium text-sky-700 text-xs tracking-[0.08em] uppercase">
-                        MT
+                        {"MT"}
                       </AvatarFallback>
                     </Avatar>
                   </ItemMedia>
                   <ItemContent className="min-w-0">
                     <ItemTitle className="flex-wrap gap-2 min-w-0 w-full">
                       <span className="min-w-0 truncate">
-                        mason@neui.io
+                        {"mason@neui.io"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                        Shared
+                        {"Shared"}
                       </Badge>
                     </ItemTitle>
                     <ItemDescription className="truncate">
-                      Shared inbox alias for delegated handoff
+                      {"Shared inbox alias for delegated handoff"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="self-start shrink-0">
@@ -307,10 +307,10 @@ export function Pattern() {
         <section className="flex flex-col gap-3">
           <div className="flex flex-col gap-px">
             <h2 className="font-semibold text-base">
-              Sender Signature
+              {"Sender Signature"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Shared footer content for outbound mail.
+              {"Shared footer content for outbound mail."}
             </p>
           </div>
           <Card className="gap-0 p-0" size="default">
@@ -321,14 +321,14 @@ export function Pattern() {
                     <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                       <div className="flex flex-wrap gap-2 items-center">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="workspace-signature" id="workspace-signature-label">
-                          Attach workspace signature
+                          {"Attach workspace signature"}
                         </FieldLabel>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                          Recommended
+                          {"Recommended"}
                         </Badge>
                       </div>
                       <FieldDescription>
-                        Add the shared sender details and booking link to outbound mail.
+                        {"Add the shared sender details and booking link to outbound mail."}
                       </FieldDescription>
                     </div>
                     <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -347,11 +347,11 @@ export function Pattern() {
                     <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                       <div className="flex flex-wrap gap-2 items-center">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="booking-link" id="booking-link-label">
-                          Include booking link
+                          {"Include booking link"}
                         </FieldLabel>
                       </div>
                       <FieldDescription>
-                        Pull the active scheduling page into first-touch emails.
+                        {"Pull the active scheduling page into first-touch emails."}
                       </FieldDescription>
                     </div>
                     <FieldContent className="@md/field-group:w-78 min-w-0">
@@ -370,11 +370,11 @@ export function Pattern() {
                     <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                       <div className="flex flex-wrap gap-2 items-center">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="support-footer" id="support-footer-label">
-                          Show support footer
+                          {"Show support footer"}
                         </FieldLabel>
                       </div>
                       <FieldDescription>
-                        Add the shared phone line and help desk email in follow-ups.
+                        {"Add the shared phone line and help desk email in follow-ups."}
                       </FieldDescription>
                     </div>
                     <FieldContent className="@md/field-group:w-78 min-w-0">

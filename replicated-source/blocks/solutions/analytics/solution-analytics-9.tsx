@@ -37,27 +37,27 @@ export function Pattern() {
         <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1 min-w-0">
             <h1 className="font-semibold text-foreground text-xl tracking-tight">
-              Alert Rules
+              {"Alert Rules"}
             </h1>
             <p className="text-muted-foreground text-sm">
-              4 rules · 1 needs setup
+              {"4 rules · 1 needs setup"}
             </p>
           </div>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-            Unsaved changes
+            {"Unsaved changes"}
           </Badge>
         </header>
         <Tabs className="gap-5" data-orientation="horizontal" activationDirection="none">
           <TabsList className="w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
             <TabsTrigger className="gap-1.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_3_" extracted="1">
-              Thresholds
+              {"Thresholds"}
               <span className="bg-destructive rounded-full size-1.5" aria-hidden="true"></span>
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-              Delivery
+              {"Delivery"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-              Schedule
+              {"Schedule"}
             </TabsTrigger>
           </TabsList>
           <TabsContent className="flex flex-col gap-4" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_3_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
@@ -68,16 +68,16 @@ export function Pattern() {
                 <line x1="12" x2="12.01" y1="16" y2="16"></line>
               </svg>
               <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                Threshold required
+                {"Threshold required"}
               </AlertTitle>
               <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                Experiment regression cannot save without a threshold.
+                {"Experiment regression cannot save without a threshold."}
               </AlertDescription>
             </Alert>
             <FieldSeparator className="[&_[data-slot=field-separator-content]]:bg-background [&_[data-slot=field-separator-content]]:font-medium [&_[data-slot=field-separator-content]]:px-3 [&_[data-slot=field-separator-content]]:text-muted-foreground [&_[data-slot=field-separator-content]]:text-xs my-2" content="true">
               <Separator className="absolute inset-0 top-1/2" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <span className="bg-background block cn-field-separator-content mx-auto relative w-fit">
-                Growth metrics
+                {"Growth metrics"}
               </span>
             </FieldSeparator>
             <Card className="p-0" size="default">
@@ -94,16 +94,16 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center min-w-0">
                           <FieldLabel className="cn-field-title items-center">
-                            Activation drop
+                            {"Activation drop"}
                           </FieldLabel>
                           <div className="shrink-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </div>
                         </div>
                         <FieldDescription className="max-w-2xl">
-                          ALR-516 · Activation rate (MET-609) below median.
+                          {"ALR-516 · Activation rate (MET-609) below median."}
                         </FieldDescription>
                       </FieldContent>
                       <div className="self-center shrink-0">
@@ -112,16 +112,16 @@ export function Pattern() {
                           <SelectValue>
                             <span className="flex flex-col gap-px items-start">
                               <span className="font-medium">
-                                Significant
+                                {"Significant"}
                               </span>
                               <small className="text-muted-foreground text-xs">
-                                20 percent or more.
+                                {"20 percent or more."}
                               </small>
                             </span>
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -140,16 +140,16 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center min-w-0">
                           <FieldLabel className="cn-field-title items-center">
-                            Event volume spike
+                            {"Event volume spike"}
                           </FieldLabel>
                           <div className="shrink-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </div>
                         </div>
                         <FieldDescription className="max-w-2xl">
-                          ALR-517 · Event volume over 2x baseline.
+                          {"ALR-517 · Event volume over 2x baseline."}
                         </FieldDescription>
                       </FieldContent>
                       <div className="self-center shrink-0">
@@ -158,16 +158,16 @@ export function Pattern() {
                           <SelectValue>
                             <span className="flex flex-col gap-px items-start">
                               <span className="font-medium">
-                                Moderate
+                                {"Moderate"}
                               </span>
                               <small className="text-muted-foreground text-xs">
-                                10 percent or more.
+                                {"10 percent or more."}
                               </small>
                             </span>
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -189,16 +189,16 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center min-w-0">
                           <FieldLabel className="cn-field-title items-center">
-                            Retention decay
+                            {"Retention decay"}
                           </FieldLabel>
                           <div className="shrink-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Paused
+                              {"Paused"}
                             </Badge>
                           </div>
                         </div>
                         <FieldDescription className="max-w-2xl">
-                          ALR-518 · Week four retention under 32 percent.
+                          {"ALR-518 · Week four retention under 32 percent."}
                         </FieldDescription>
                       </FieldContent>
                       <div className="self-center shrink-0">
@@ -207,16 +207,16 @@ export function Pattern() {
                           <SelectValue>
                             <span className="flex flex-col gap-px items-start">
                               <span className="font-medium">
-                                Moderate
+                                {"Moderate"}
                               </span>
                               <small className="text-muted-foreground text-xs">
-                                10 percent or more.
+                                {"10 percent or more."}
                               </small>
                             </span>
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -230,7 +230,7 @@ export function Pattern() {
             <FieldSeparator className="[&_[data-slot=field-separator-content]]:bg-background [&_[data-slot=field-separator-content]]:font-medium [&_[data-slot=field-separator-content]]:px-3 [&_[data-slot=field-separator-content]]:text-muted-foreground [&_[data-slot=field-separator-content]]:text-xs my-2" content="true">
               <Separator className="absolute inset-0 top-1/2" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <span className="bg-background block cn-field-separator-content mx-auto relative w-fit">
-                Experiments
+                {"Experiments"}
               </span>
             </FieldSeparator>
             <Card className="p-0" size="default">
@@ -248,16 +248,16 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center min-w-0">
                           <FieldLabel className="cn-field-title items-center">
-                            Experiment regression
+                            {"Experiment regression"}
                           </FieldLabel>
                           <div className="shrink-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Set threshold
+                              {"Set threshold"}
                             </Badge>
                           </div>
                         </div>
                         <FieldDescription className="max-w-2xl">
-                          ALR-519 · Experiment lift negative for 2 days.
+                          {"ALR-519 · Experiment lift negative for 2 days."}
                         </FieldDescription>
                       </FieldContent>
                       <div className="self-center shrink-0">
@@ -265,12 +265,12 @@ export function Pattern() {
                         <SelectTrigger className="[&_small]:hidden w-[180px]" type="button" placeholder="" tabIndex="0" id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="true">
                           <SelectValue placeholder="">
                             <span className="text-destructive">
-                              Set a threshold
+                              {"Set a threshold"}
                             </span>
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -285,7 +285,7 @@ export function Pattern() {
         </Tabs>
         <div className="border-t flex flex-col gap-3 pt-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-muted-foreground text-sm">
-            Experiment regression needs a threshold to save.
+            {"Experiment regression needs a threshold to save."}
           </p>
           <div className="flex flex-col gap-2 sm:flex-row">
             <Button type="button" tabIndex="0">
@@ -293,7 +293,7 @@ export function Pattern() {
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
-              Discard
+              {"Discard"}
             </Button>
             <Button type="submit" tabIndex="0">
               <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" data-icon="inline-start" aria-hidden="true">
@@ -301,7 +301,7 @@ export function Pattern() {
                 <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                 <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
               </svg>
-              Save changes
+              {"Save changes"}
             </Button>
           </div>
         </div>

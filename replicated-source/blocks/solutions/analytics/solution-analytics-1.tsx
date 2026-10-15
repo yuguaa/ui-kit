@@ -47,7 +47,7 @@ export function Pattern() {
   return (
     <main className="@container flex flex-col gap-4 max-w-7xl min-h-svh mx-auto p-6 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Product Dashboard
+        {"Product Dashboard"}
       </h1>
       <header className="flex gap-2 items-center justify-between min-h-12 shrink-0 w-full">
         <Breadcrumb aria-label="breadcrumb">
@@ -66,7 +66,7 @@ export function Pattern() {
                   <circle cx="14" cy="14" r="14" fill="url(#solution-analytics-1-aster)"></circle>
                 </svg>
                 <span className="hidden md:block">
-                  Aster Cloud
+                  {"Aster Cloud"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -76,14 +76,14 @@ export function Pattern() {
               </DropdownMenu>
             </BreadcrumbItem>
             <BreadcrumbSeparator className="hidden sm:flex" role="presentation" aria-hidden="true">
-              /
+              {"/"}
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
                 <span className="bg-slate-400 rounded-full shrink-0 size-2"></span>
                 <span className="hidden md:block">
-                  All segments
+                  {"All segments"}
                 </span>
                 <svg className="lucide lucide-chevrons-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
@@ -111,7 +111,7 @@ export function Pattern() {
               <path d="m9 15 3 3 3-3"></path>
             </svg>
             <span className="hidden md:block">
-              Export CSV
+              {"Export CSV"}
             </span>
           </Button>
           <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -124,10 +124,10 @@ export function Pattern() {
         <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5">
             <div className="font-semibold text-balance text-foreground text-sm" id="backlog-grid-heading">
-              Signal Backlog
+              {"Signal Backlog"}
             </div>
             <div className="text-muted-foreground text-pretty text-xs">
-              4 healthy · 2 at risk
+              {"4 healthy · 2 at risk"}
             </div>
           </div>
           <Button type="button" tabIndex="0">
@@ -135,7 +135,7 @@ export function Pattern() {
               <path d="M12 17v5"></path>
               <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
             </svg>
-            Review Queue
+            {"Review Queue"}
           </Button>
         </header>
         <FramePanel className="p-0 shadow-none">
@@ -152,7 +152,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                All segments
+                {"All segments"}
               </Button>
             </div>
             <div className="flex flex-wrap gap-2 items-center">
@@ -163,17 +163,20 @@ export function Pattern() {
                   <circle cx="19" cy="12" r="1"></circle>
                   <circle cx="5" cy="12" r="1"></circle>
                 </svg>
-                Actions
+                {"Actions"}
               </DropdownMenuTrigger>
               </DropdownMenu>
             </div>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_h_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1206px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                    <DataGridProvider>
                     <DataGridTable style={{"--header-signal-size": "376", "--col-signal-size": "376", "--header-tags-size": "210", "--col-tags-size": "210", "--header-score-size": "148", "--col-score-size": "148", "--header-trend-size": "108", "--col-trend-size": "108", "--header-events-size": "100", "--col-events-size": "100", "--header-priority-size": "94", "--col-priority-size": "94", "--header-status-size": "110", "--col-status-size": "110", "--header-actions-size": "60", "--col-actions-size": "60", width: "calc(1206px + var(--data-grid-fill-size, 0px))"}}>
                       <colgroup>
                         <col style={{width: "calc(var(--col-signal-size) * 1px)"}} />
@@ -192,7 +195,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_l_" aria-expanded="false">
-                                Signal
+                                {"Signal"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -206,7 +209,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_q_" aria-expanded="false">
-                                Segment
+                                {"Segment"}
                               </DropdownMenuTrigger>
                               </DropdownMenu>
                             </div>
@@ -216,7 +219,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_v_" aria-expanded="false">
-                                Score
+                                {"Score"}
                                 <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                   <path d="M12 5v14"></path>
                                   <path d="m19 12-7 7-7-7"></path>
@@ -230,7 +233,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_14_" aria-expanded="false">
-                                Trend
+                                {"Trend"}
                               </DropdownMenuTrigger>
                               </DropdownMenu>
                             </div>
@@ -240,7 +243,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_19_" aria-expanded="false">
-                                Events
+                                {"Events"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -254,7 +257,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1e_" aria-expanded="false">
-                                Priority
+                                {"Priority"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -268,7 +271,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1j_" aria-expanded="false">
-                                Status
+                                {"Status"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -282,6 +285,7 @@ export function Pattern() {
                           <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="row-001">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 truncate" style={{width: "calc(var(--col-signal-size) * 1px)"}}>
@@ -294,10 +298,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <a className="font-medium hover:text-primary hover:underline line-clamp-1 text-foreground underline-offset-2" href="#">
-                                  Template gallery depth
+                                  {"Template gallery depth"}
                                 </a>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="Trial workspace activation">
-                                  Trial workspace activation · FEA-118
+                                  {"Trial workspace activation · FEA-118"}
                                 </div>
                               </div>
                             </div>
@@ -305,26 +309,26 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-sky-100 border-0 border-transparent dark:bg-sky-950/50 dark:text-sky-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-sky-800 text-xs transition-shadow">
-                                Activation
+                                {"Activation"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-100 border-0 border-transparent dark:bg-violet-950/50 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-violet-800 text-xs transition-shadow">
-                                Adoption
+                                {"Adoption"}
                               </Badge>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="68" aria-valuetext="68%" role="progressbar" aria-labelledby="base-ui-_r_1l_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1l_" role="presentation">
-                                Health score
+                                {"Health score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                68%
+                                {"68%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -335,18 +339,18 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-events-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              486k
+                              {"486k"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-priority-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Healthy
+                              {"Healthy"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -368,17 +372,17 @@ export function Pattern() {
                               <div className="relative shrink-0">
                                 <Avatar className="size-8" size="default">
                                   <AvatarFallback className="text-[10px]">
-                                    IV
+                                    {"IV"}
                                   </AvatarFallback>
                                 </Avatar>
                                 <span className="absolute bg-emerald-500 bottom-0.5 right-0 ring-2 ring-background rounded-full size-2" aria-hidden="true"></span>
                               </div>
                               <div className="min-w-0">
                                 <a className="font-medium hover:text-primary hover:underline line-clamp-1 text-foreground underline-offset-2" href="#">
-                                  Automation expansion
+                                  {"Automation expansion"}
                                 </a>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="Automation rule adoption">
-                                  Automation rule adoption · SEG-307
+                                  {"Automation rule adoption · SEG-307"}
                                 </div>
                               </div>
                             </div>
@@ -386,26 +390,26 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-100 border-0 border-transparent dark:bg-violet-950/50 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-violet-800 text-xs transition-shadow">
-                                Adoption
+                                {"Adoption"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-muted border-0 border-transparent dark:bg-muted/70 dark:text-muted-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-muted-foreground text-xs transition-shadow">
-                                Data
+                                {"Data"}
                               </Badge>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" aria-valuetext="62%" role="progressbar" aria-labelledby="base-ui-_r_1r_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1r_" role="presentation">
-                                Health score
+                                {"Health score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                62%
+                                {"62%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "62%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -416,18 +420,18 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-events-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              92k
+                              {"92k"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-priority-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Healthy
+                              {"Healthy"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -454,10 +458,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <a className="font-medium hover:text-primary hover:underline line-clamp-1 text-foreground underline-offset-2" href="#">
-                                  Checklist nudge lift
+                                  {"Checklist nudge lift"}
                                 </a>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="Dormant admin exposure">
-                                  Dormant admin exposure · EXP-224
+                                  {"Dormant admin exposure · EXP-224"}
                                 </div>
                               </div>
                             </div>
@@ -465,26 +469,26 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-100 border-0 border-transparent dark:bg-amber-950/50 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-amber-800 text-xs transition-shadow">
-                                Risk
+                                {"Risk"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-sky-100 border-0 border-transparent dark:bg-sky-950/50 dark:text-sky-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-sky-800 text-xs transition-shadow">
-                                Activation
+                                {"Activation"}
                               </Badge>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-labelledby="base-ui-_r_21_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_21_" role="presentation">
-                                Health score
+                                {"Health score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                58%
+                                {"58%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -495,18 +499,18 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-events-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              64k
+                              {"64k"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-priority-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Healthy
+                              {"Healthy"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -533,10 +537,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <a className="font-medium hover:text-primary hover:underline line-clamp-1 text-foreground underline-offset-2" href="#">
-                                  Week four replay
+                                  {"Week four replay"}
                                 </a>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="Retention replay cohort">
-                                  Retention replay cohort · COH-088
+                                  {"Retention replay cohort · COH-088"}
                                 </div>
                               </div>
                             </div>
@@ -544,23 +548,23 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-indigo-100 border-0 border-transparent dark:bg-indigo-950/50 dark:text-indigo-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-indigo-800 text-xs transition-shadow">
-                                Retention
+                                {"Retention"}
                               </Badge>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="55%" role="progressbar" aria-labelledby="base-ui-_r_27_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_27_" role="presentation">
-                                Health score
+                                {"Health score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                55%
+                                {"55%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "55%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -571,18 +575,18 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-events-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              143k
+                              {"143k"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-priority-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-emerald-500 rounded-full! shrink-0 size-1.5"></span>
-                              Healthy
+                              {"Healthy"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -609,10 +613,10 @@ export function Pattern() {
                               </div>
                               <div className="min-w-0">
                                 <a className="font-medium hover:text-primary hover:underline line-clamp-1 text-foreground underline-offset-2" href="#">
-                                  Report viewed stream
+                                  {"Report viewed stream"}
                                 </a>
                                 <div className="line-clamp-1 text-muted-foreground text-xs" title="Saved report event stream">
-                                  Saved report event stream · EVT-1842
+                                  {"Saved report event stream · EVT-1842"}
                                 </div>
                               </div>
                             </div>
@@ -620,26 +624,26 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-tags-size) * 1px)"}}>
                             <div className="flex flex-wrap gap-1 items-center">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-violet-100 border-0 border-transparent dark:bg-violet-950/50 dark:text-violet-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-violet-800 text-xs transition-shadow">
-                                Adoption
+                                {"Adoption"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-muted border-0 border-transparent dark:bg-muted/70 dark:text-muted-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-muted-foreground text-xs transition-shadow">
-                                Data
+                                {"Data"}
                               </Badge>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-score-size) * 1px)"}}>
                             <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-12 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="53" aria-valuetext="53%" role="progressbar" aria-labelledby="base-ui-_r_2d_">
                               <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2d_" role="presentation">
-                                Health score
+                                {"Health score"}
                               </ProgressLabel>
                               <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                53%
+                                {"53%"}
                               </ProgressValue>
                               <ProgressTrack progressing="">
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "53%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </td>
@@ -650,18 +654,18 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-events-size) * 1px)"}}>
                             <span className="font-semibold tabular-nums text-foreground text-sm">
-                              198k
+                              {"198k"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-priority-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-blue-500 rounded-full! shrink-0 size-1.5"></span>
-                              Loading
+                              {"Loading"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -678,27 +682,32 @@ export function Pattern() {
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_2j_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    5
+                    {"5"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -706,26 +715,26 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 5 of 8
+                  {"1 - 5 of 8"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -734,6 +743,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </FramePanel>
       </Frame>
@@ -743,21 +753,21 @@ export function Pattern() {
             <div className="flex gap-3 items-start justify-between mb-6">
               <div className="flex flex-col gap-px">
                 <h3 className="font-semibold text-base text-foreground">
-                  Product Health
+                  {"Product Health"}
                 </h3>
                 <span className="font-normal text-muted-foreground text-xs">
-                  486k events at 09:40
+                  {"486k events at 09:40"}
                 </span>
               </div>
               <div className="flex gap-2 items-center">
                 <Select>
                 <SelectTrigger className="h-8! w-32" type="button" tabIndex="0" id="base-ui-_r_2m_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    Last 30 days
+                    {"Last 30 days"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -775,47 +785,47 @@ export function Pattern() {
                 <div className="gap-2 grid grid-cols-3">
                   <div className="flex flex-col items-start justify-start">
                     <div className="font-bold text-foreground text-xl">
-                      486k
+                      {"486k"}
                     </div>
                     <div className="font-medium mb-1 text-muted-foreground text-xs">
-                      Events
+                      {"Events"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-emerald-500 text-xs">
                       <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      +21%
+                      {"+21%"}
                     </span>
                   </div>
                   <div className="flex flex-col items-start justify-start">
                     <div className="font-bold text-foreground text-xl">
-                      68%
+                      {"68%"}
                     </div>
                     <div className="font-medium mb-1 text-muted-foreground text-xs">
-                      Health
+                      {"Health"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-emerald-500 text-xs">
                       <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
-                      +7%
+                      {"+7%"}
                     </span>
                   </div>
                   <div className="flex flex-col items-start justify-start">
                     <div className="font-bold text-foreground text-xl">
-                      2
+                      {"2"}
                     </div>
                     <div className="font-medium mb-1 text-muted-foreground text-xs">
-                      Risk
+                      {"Risk"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-destructive text-xs">
                       <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
-                      -4%
+                      {"-4%"}
                     </span>
                   </div>
                 </div>
@@ -823,10 +833,10 @@ export function Pattern() {
                 <div>
                   <div className="flex items-center justify-between mb-2.5">
                     <span className="font-medium text-foreground text-sm">
-                      Health Progress
+                      {"Health Progress"}
                     </span>
                     <span className="font-semibold text-foreground text-xs">
-                      68%
+                      {"68%"}
                     </span>
                   </div>
                   <Progress className="**:data-[slot=progress-track]:h-2.5" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="68" aria-valuetext="68%" role="progressbar">
@@ -834,14 +844,14 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div>
                   <div className="font-medium mb-2.5 text-foreground text-sm">
-                    Recent Activity
+                    {"Recent Activity"}
                   </div>
                   <ul className="space-y-2">
                     <li className="flex gap-2.5 items-center justify-between text-sm">
@@ -851,11 +861,11 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="text-foreground text-xs truncate">
-                          FEA-118 reached 68% health.
+                          {"FEA-118 reached 68% health."}
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        09:40
+                        {"09:40"}
                       </Badge>
                     </li>
                     <li className="flex gap-2.5 items-center justify-between text-sm">
@@ -865,11 +875,11 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="text-foreground text-xs truncate">
-                          486k product events rebuilt.
+                          {"486k product events rebuilt."}
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        09:32
+                        {"09:32"}
                       </Badge>
                     </li>
                     <li className="flex gap-2.5 items-center justify-between text-sm">
@@ -879,11 +889,11 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="text-foreground text-xs truncate">
-                          COH-071 fell to 29% health.
+                          {"COH-071 fell to 29% health."}
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        09:20
+                        {"09:20"}
                       </Badge>
                     </li>
                   </ul>
@@ -893,26 +903,26 @@ export function Pattern() {
           </FramePanel>
           <footer className="flex flex-row gap-2.5 items-center p-2! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <Button className="flex-1" type="button" tabIndex="0">
-              Review
+              {"Review"}
             </Button>
             <Button className="flex-1" type="button" tabIndex="0">
-              Full Report
+              {"Full Report"}
             </Button>
           </footer>
         </Frame>
         <Frame className="h-full text-foreground w-full">
           <header className="flex flex-row gap-2 items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-1.5!">
             <div className="font-semibold text-sm">
-              Trend
+              {"Trend"}
             </div>
             <Select>
             <SelectTrigger className="min-w-[140px]" type="button" tabIndex="0" id="base-ui-_r_2p_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
               <SelectValue>
-                12 months
+                {"12 months"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -921,32 +931,24 @@ export function Pattern() {
           <FramePanel className="space-y-4">
             <div className="flex flex-col gap-1">
               <div className="font-medium text-muted-foreground text-xs">
-                Latest (Jul 01 to Jun 15)
+                {"Latest (Jul 01 to Jun 15)"}
               </div>
               <div className="flex gap-2.5 items-center">
                 <span className="font-semibold leading-none text-foreground text-xl">
-                  68%
+                  {"68%"}
                 </span>
                 <span className="[&_svg]:size-4 font-medium gap-1 inline-flex items-center text-emerald-500 text-xs">
                   <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
-                  7.0%
+                  {"7.0%"}
                 </span>
               </div>
             </div>
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[300px] justify-center text-xs w-full" data-chart="chart-_r_2s_">
-              <style>{`
- [data-chart=chart-_r_2s_] {
-  --color-value: var(--color-violet-500);
-}
-
-
-.dark [data-chart=chart-_r_2s_] {
-  --color-value: var(--color-violet-500);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2s_] {\n  --color-value: var(--color-violet-500);\n}\n\n\n.dark [data-chart=chart-_r_2s_] {\n  --color-value: var(--color-violet-500);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="558" height="300" style={{position: "relative", cursor: "default", width: "558px", height: "300px"}}>
@@ -1022,77 +1024,77 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="58.90909090909091" y="276" textAnchor="middle" fill="#666">
                               <tspan x="58.90909090909091" dy="0.71em">
-                                AUG
+                                {"AUG"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="107.81818181818181" y="276" textAnchor="middle" fill="#666">
                               <tspan x="107.81818181818181" dy="0.71em">
-                                SEP
+                                {"SEP"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="156.72727272727272" y="276" textAnchor="middle" fill="#666">
                               <tspan x="156.72727272727272" dy="0.71em">
-                                OCT
+                                {"OCT"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="205.63636363636363" y="276" textAnchor="middle" fill="#666">
                               <tspan x="205.63636363636363" dy="0.71em">
-                                NOV
+                                {"NOV"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="254.54545454545453" y="276" textAnchor="middle" fill="#666">
                               <tspan x="254.54545454545453" dy="0.71em">
-                                DEC
+                                {"DEC"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="303.45454545454544" y="276" textAnchor="middle" fill="#666">
                               <tspan x="303.45454545454544" dy="0.71em">
-                                JAN
+                                {"JAN"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="352.3636363636364" y="276" textAnchor="middle" fill="#666">
                               <tspan x="352.3636363636364" dy="0.71em">
-                                FEB
+                                {"FEB"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="401.27272727272725" y="276" textAnchor="middle" fill="#666">
                               <tspan x="401.27272727272725" dy="0.71em">
-                                MAR
+                                {"MAR"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="450.18181818181813" y="276" textAnchor="middle" fill="#666">
                               <tspan x="450.18181818181813" dy="0.71em">
-                                APR
+                                {"APR"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="499.09090909090907" y="276" textAnchor="middle" fill="#666">
                               <tspan x="499.09090909090907" dy="0.71em">
-                                MAY
+                                {"MAY"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="538" stroke="none" fontSize="12" x="545.5859375" y="276" textAnchor="middle" fill="#666">
                               <tspan x="545.5859375" dy="0.71em">
-                                JUN
+                                {"JUN"}
                               </tspan>
                             </text>
                           </g>
@@ -1103,6 +1105,7 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </FramePanel>
         </Frame>
       </div>

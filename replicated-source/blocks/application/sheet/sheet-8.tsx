@@ -34,11 +34,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Notification relay quick settings sheet
+        {"Notification relay quick settings sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-        Open relay settings
+        {"Open relay settings"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -48,7 +48,7 @@ export function Pattern() {
         <div className="border-b flex gap-2 items-center justify-between min-h-12 px-4">
           <div className="min-w-0">
             <SheetTitle className="leading-5 text-sm truncate" id="base-ui-_r_3_">
-              Notification Relay
+              {"Notification Relay"}
             </SheetTitle>
           </div>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close sheet">
@@ -65,18 +65,18 @@ export function Pattern() {
             <form className="pb-3 pt-5 px-4" id="sheet-8-notification-relay">
               <FieldSet className="gap-5">
                 <FieldLegend className="sr-only" variant="legend">
-                  Notification relay quick settings
+                  {"Notification relay quick settings"}
                 </FieldLegend>
                 <section className="flex flex-col gap-1" aria-labelledby="sheet-8-delivery-section">
                   <h3 className="font-semibold text-muted-foreground text-sm" id="sheet-8-delivery-section">
-                    Delivery
+                    {"Delivery"}
                   </h3>
                   <FieldGroup className="gap-1">
                     <Field className="gap-1.5 grid py-2 sm:gap-8 sm:grid-cols-[minmax(0,10.5rem)_minmax(0,1fr)] sm:items-center" role="group" data-orientation="vertical">
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-panel-label">
-                            Panel Label
+                            {"Panel Label"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -88,7 +88,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-quiet-start">
-                            Quiet Window
+                            {"Quiet Window"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Quiet Window hint" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -106,26 +106,26 @@ export function Pattern() {
                           <Select>
                           <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-quiet-start" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Quiet window start">
                             <SelectValue>
-                              18:30
+                              {"18:30"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
                           <input id="base-ui-_r_8_-hidden-input" tabIndex="-1" aria-hidden="true" value="18:30" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <span className="text-muted-foreground text-sm">
-                            to
+                            {"to"}
                           </span>
                           <Select>
                           <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-quiet-end" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Quiet window end">
                             <SelectValue>
-                              08:00
+                              {"08:00"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -137,7 +137,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-region-clock">
-                            Region Clock
+                            {"Region Clock"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -145,11 +145,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-region-clock" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Region clock">
                           <SelectValue>
-                            Asia/Tashkent
+                            {"Asia/Tashkent"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -160,7 +160,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-delivery-channel">
-                            Delivery Channel
+                            {"Delivery Channel"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -168,11 +168,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-delivery-channel" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Delivery channel">
                           <SelectValue>
-                            Workspace inbox
+                            {"Workspace inbox"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -183,7 +183,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-digest-cadence">
-                            Digest Cadence
+                            {"Digest Cadence"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -191,11 +191,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-digest-cadence" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Digest cadence">
                           <SelectValue>
-                            Twice daily
+                            {"Twice daily"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -206,7 +206,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-workdays" id="sheet-8-workdays-label">
-                            Workdays Only
+                            {"Workdays Only"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -221,14 +221,14 @@ export function Pattern() {
                 </section>
                 <section className="flex flex-col gap-1" aria-labelledby="sheet-8-routing-section">
                   <h3 className="font-semibold text-muted-foreground text-sm" id="sheet-8-routing-section">
-                    Routing
+                    {"Routing"}
                   </h3>
                   <FieldGroup className="gap-1">
                     <Field className="gap-1.5 grid py-2 sm:gap-8 sm:grid-cols-[minmax(0,10.5rem)_minmax(0,1fr)] sm:items-center" role="group" data-orientation="vertical">
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-digest-route">
-                            Digest Route
+                            {"Digest Route"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -236,11 +236,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-digest-route" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Digest route">
                           <SelectValue>
-                            Ops brief
+                            {"Ops brief"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -251,7 +251,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-priority" id="sheet-8-priority-label">
-                            Priority Escalation
+                            {"Priority Escalation"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority Escalation hint" id="base-ui-_r_u_" baseUiTooltipTrigger="">
@@ -275,7 +275,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-escalation-delay">
-                            Escalation Delay
+                            {"Escalation Delay"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -283,11 +283,11 @@ export function Pattern() {
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-8-escalation-delay" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Escalation delay">
                           <SelectValue>
-                            10 minutes
+                            {"10 minutes"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -298,7 +298,7 @@ export function Pattern() {
                       <FieldContent className="gap-0.5 min-w-0 sm:pt-0.5">
                         <div className="flex gap-1.5 items-center min-w-0">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-8-retry-failed-sends" id="sheet-8-retry-failed-sends-label">
-                            Retry Failed Sends
+                            {"Retry Failed Sends"}
                           </FieldLabel>
                         </div>
                       </FieldContent>
@@ -321,10 +321,10 @@ export function Pattern() {
       </div>
       <SheetFooter className="bg-muted border-t gap-3 grid grid-cols-2 min-w-0 px-5 py-4 shrink-0">
         <Button className="w-full" type="button" tabIndex="0">
-          Reset
+          {"Reset"}
         </Button>
         <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="submit" tabIndex="0" form="sheet-8-notification-relay">
-          Save Settings
+          {"Save Settings"}
         </SheetClose>
       </SheetFooter>
     </SheetContent>

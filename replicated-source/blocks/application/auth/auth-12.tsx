@@ -36,34 +36,34 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-col items-center max-w-[20rem] w-full">
                       <h1 className="font-medium leading-tight text-balance text-xl">
-                        Log in to NeUI
+                        {"Log in to NeUI"}
                       </h1>
                       <div className="flex flex-col min-h-[23.5rem] mt-8 w-full">
                         <div className="gap-4 grid w-full">
                           <Button type="button" tabIndex="0">
-                            Continue with Google
+                            {"Continue with Google"}
                           </Button>
                           <Button type="button" tabIndex="0">
-                            Continue with email
+                            {"Continue with email"}
                           </Button>
                           <Button type="button" tabIndex="0">
-                            Continue with SAML SSO
+                            {"Continue with SAML SSO"}
                           </Button>
                           <Button type="button" tabIndex="0">
-                            Log in with passkey
+                            {"Log in with passkey"}
                           </Button>
                           <Button type="button" tabIndex="0">
-                            Use backup code
+                            {"Use backup code"}
                           </Button>
                         </div>
                         <p className="lg:whitespace-nowrap mt-6 text-muted-foreground text-sm">
-                          Don't have an account?
+                          {"Don't have an account?"}
                           <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                            Sign up
+                            {"Sign up"}
                           </a>
-                          or
+                          {"or"}
                           <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                            learn more
+                            {"learn more"}
                           </a>
                         </p>
                       </div>
@@ -436,7 +436,7 @@ export function Pattern() {
                       <span className="dark:hidden" aria-hidden="true">
                         <svg className="size-6" aria-hidden="true" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                           <title>
-                            Anthropic
+                            {"Anthropic"}
                           </title>
                           <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                         </svg>
@@ -444,7 +444,7 @@ export function Pattern() {
                       <span className="dark:block hidden" aria-hidden="true">
                         <svg className="size-6" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                           <title>
-                            Anthropic
+                            {"Anthropic"}
                           </title>
                           <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                         </svg>
@@ -476,7 +476,7 @@ export function Pattern() {
                           </svg>
                         </div>
                         <blockquote className="font-semibold leading-[1.4] max-w-[28rem] mt-6 text-balance text-xl">
-                          “NeUI gave us a cleaner starting point, so the product felt polished much earlier in the sprint.”
+                          {"“NeUI gave us a cleaner starting point, so the product felt polished much earlier in the sprint.”"}
                         </blockquote>
                         <div className="flex justify-center mt-5 w-full">
                           <div className="flex gap-1.5 items-center min-w-0">
@@ -485,11 +485,11 @@ export function Pattern() {
                             </Avatar>
                             <div className="flex flex-col gap-0 items-start min-w-0 text-left">
                               <div className="font-medium text-sm">
-                                Mina Park
+                                {"Mina Park"}
                               </div>
                               <div className="flex gap-1 items-center text-muted-foreground text-xs">
                                 <span>
-                                  Product Design Lead
+                                  {"Product Design Lead"}
                                 </span>
                                 <Item className="border-0 p-0 scale-75 text-foreground/75 w-auto" variant="default" size="default">
                                   <ItemMedia className="size-auto" variant="icon">

@@ -19,14 +19,14 @@ export function Pattern() {
         <Frame className="@container w-full">
           <FramePanel className="flex items-center justify-between p-3.5!">
             <h2 className="font-medium text-base text-foreground">
-              Portfolio Snapshot
+              {"Portfolio Snapshot"}
             </h2>
             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
-                Weekly
+                {"Weekly"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                All Time
+                {"All Time"}
               </TabsTrigger>
             </TabsList>
           </FramePanel>
@@ -68,27 +68,27 @@ export function Pattern() {
                     </svg>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Bitcoin
+                        {"Bitcoin"}
                       </p>
                       <div className="flex flex-wrap gap-1.5 items-center min-w-0">
                         <span className="leading-4 text-muted-foreground text-sm">
-                          $64,120
+                          {"$64,120"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                           <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                             <path d="M16 17h6v-6"></path>
                             <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                           </svg>
-                          0.3%
+                          {"0.3%"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-0 shrink-0 text-right">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        $3,334
+                        {"$3,334"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        0.052 BTC
+                        {"0.052 BTC"}
                       </p>
                     </div>
                   </div>
@@ -102,27 +102,27 @@ export function Pattern() {
                     </svg>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Tether
+                        {"Tether"}
                       </p>
                       <div className="flex flex-wrap gap-1.5 items-center min-w-0">
                         <span className="leading-4 text-muted-foreground text-sm">
-                          $1.00
+                          {"$1.00"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                           <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                           </svg>
-                          1.2%
+                          {"1.2%"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-0 shrink-0 text-right">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        $590
+                        {"$590"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        590 USDT
+                        {"590 USDT"}
                       </p>
                     </div>
                   </div>
@@ -152,27 +152,27 @@ export function Pattern() {
                     </svg>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Algorand
+                        {"Algorand"}
                       </p>
                       <div className="flex flex-wrap gap-1.5 items-center min-w-0">
                         <span className="leading-4 text-muted-foreground text-sm">
-                          $0.18
+                          {"$0.18"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                           <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                             <path d="M16 17h6v-6"></path>
                             <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                           </svg>
-                          2.9%
+                          {"2.9%"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-0 shrink-0 text-right">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        $450
+                        {"$450"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        2,500 ALGO
+                        {"2,500 ALGO"}
                       </p>
                     </div>
                   </div>
@@ -186,27 +186,27 @@ export function Pattern() {
                     </svg>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Binance
+                        {"Binance"}
                       </p>
                       <div className="flex flex-wrap gap-1.5 items-center min-w-0">
                         <span className="leading-4 text-muted-foreground text-sm">
-                          $320.40
+                          {"$320.40"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                           <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                           </svg>
-                          1.7%
+                          {"1.7%"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-0 shrink-0 text-right">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        $1,345.68
+                        {"$1,345.68"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        4.2 BNB
+                        {"4.2 BNB"}
                       </p>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export function Pattern() {
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               </svg>
-              Add Asset
+              {"Add Asset"}
             </Button>
           </FramePanel>
         </Frame>

@@ -20,7 +20,7 @@ export function Pattern() {
           <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
             <TabsList className="sr-only" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Crypto transaction views">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_1_">
-                Activity
+                {"Activity"}
               </TabsTrigger>
             </TabsList>
             <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_1_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
@@ -37,14 +37,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex-1 min-w-0 space-y-0.5">
                       <p className="font-medium leading-none text-foreground text-sm">
-                        Ethereum Gain
+                        {"Ethereum Gain"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-xs">
-                        12th May, 2026
+                        {"12th May, 2026"}
                       </p>
                     </div>
                     <p className="font-medium leading-none shrink-0 text-lg text-right text-success">
-                      + $1,980
+                      {"+ $1,980"}
                     </p>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -61,14 +61,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex-1 min-w-0 space-y-0.5">
                       <p className="font-medium leading-none text-foreground text-sm">
-                        Bitcoin Sold
+                        {"Bitcoin Sold"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-xs">
-                        11th May, 2026
+                        {"11th May, 2026"}
                       </p>
                     </div>
                     <p className="font-medium leading-none shrink-0 text-destructive text-lg text-right">
-                      - $2,450
+                      {"- $2,450"}
                     </p>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -85,14 +85,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex-1 min-w-0 space-y-0.5">
                       <p className="font-medium leading-none text-foreground text-sm">
-                        USDT Deposit
+                        {"USDT Deposit"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-xs">
-                        9th May, 2026
+                        {"9th May, 2026"}
                       </p>
                     </div>
                     <p className="font-medium leading-none shrink-0 text-lg text-right text-success">
-                      + $3,200
+                      {"+ $3,200"}
                     </p>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -109,14 +109,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex-1 min-w-0 space-y-0.5">
                       <p className="font-medium leading-none text-foreground text-sm">
-                        Staking Reward
+                        {"Staking Reward"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-xs">
-                        8th May, 2026
+                        {"8th May, 2026"}
                       </p>
                     </div>
                     <p className="font-medium leading-none shrink-0 text-lg text-right text-success">
-                      + $126
+                      {"+ $126"}
                     </p>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -133,14 +133,14 @@ export function Pattern() {
                     </Item>
                     <div className="flex-1 min-w-0 space-y-0.5">
                       <p className="font-medium leading-none text-foreground text-sm">
-                        Solana Purchase
+                        {"Solana Purchase"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-xs">
-                        6th May, 2026
+                        {"6th May, 2026"}
                       </p>
                     </div>
                     <p className="font-medium leading-none shrink-0 text-destructive text-lg text-right">
-                      - $750
+                      {"- $750"}
                     </p>
                   </div>
                 </li>

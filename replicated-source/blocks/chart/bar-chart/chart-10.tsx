@@ -23,7 +23,7 @@ export function Pattern() {
       <Card className="@container/volume [--volume-accent:var(--color-violet-600)] dark:[--volume-accent:var(--color-violet-400)] max-w-5xl min-w-0 w-full" size="default">
         <CardHeader>
           <CardTitle>
-            Training Volume
+            {"Training Volume"}
           </CardTitle>
           <CardDescription className="col-start-1">
             <span className="flex gap-1.5 h-5 items-center">
@@ -33,14 +33,14 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span className="sr-only">
-                  Up
+                  {"Up"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  13.9%
+                  {"13.9%"}
                 </span>
               </span>
               <span className="[text-box:trim-both_cap_alphabetic]">
-                vs last block
+                {"vs last block"}
               </span>
             </span>
           </CardDescription>
@@ -49,12 +49,12 @@ export function Pattern() {
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Metric" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Time
+                    {"Time"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Distance
+                    {"Distance"}
                   </span>
                 </ToggleGroupItem>
               </ToggleGroup>
@@ -129,52 +129,30 @@ export function Pattern() {
                   <rect width="12" height="12" rx="2.5" fill="url(#swatch-r1q)"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                  Week 12
+                  {"Week 12"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
-                  Sep 22 to 28
+                  {"Sep 22 to 28"}
                 </span>
               </span>
               <span className="flex gap-2.5 h-5 items-center">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-foreground text-sm">
-                  4h 19m
+                  {"4h 19m"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-destructive">
-                  -3.4%
+                  {"-3.4%"}
                   <span className="font-normal text-muted-foreground">
-                    vs last block
+                    {"vs last block"}
                   </span>
                 </span>
               </span>
             </div>
             <div className="@xl/volume:h-72 [&_.recharts-cartesian-grid-horizontal]:duration-300 [&_.recharts-cartesian-grid-horizontal]:transition-opacity [&_g]:outline-hidden [-webkit-tap-highlight-color:transparent] data-[grid=off]:[&_.recharts-cartesian-grid-horizontal]:opacity-0 group/plot h-64 has-[.recharts-surface:focus-visible]:outline-2 motion-reduce:[&_*]:transition-none outline-offset-4 outline-ring/50 w-full" data-compare="prior" data-grid="on" data-intro="off">
-              <style>{`
-@keyframes volume-march {
-  from { transform: translateY(0); }
-  to { transform: translateY(-6px); }
-}
-.volume-march { animation: volume-march 1.4s linear infinite; }
-html[data-demo="frozen"] .volume-march { animation: none; }
-@media (prefers-reduced-motion: reduce) {
-  .volume-march { animation: none; }
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes volume-march {\n  from { transform: translateY(0); }\n  to { transform: translateY(-6px); }\n}\n.volume-march { animation: volume-march 1.4s linear infinite; }\nhtml[data-demo=\"frozen\"] .volume-march { animation: none; }\n@media (prefers-reduced-motion: reduce) {\n  .volume-march { animation: none; }\n}\n" }} />
+              <ChartContainer>
               <div className="@xl/volume:h-72 [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-64 justify-center text-xs w-full" data-chart="chart-_r_1v_">
-                <style>{`
- [data-chart=chart-_r_1v_] {
-  --color-volume: var(--volume-accent);
-  --color-prior: var(--muted-foreground);
-  --color-plan: var(--foreground);
-}
-
-
-.dark [data-chart=chart-_r_1v_] {
-  --color-volume: var(--volume-accent);
-  --color-prior: var(--muted-foreground);
-  --color-plan: var(--foreground);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1v_] {\n  --color-volume: var(--volume-accent);\n  --color-prior: var(--muted-foreground);\n  --color-plan: var(--foreground);\n}\n\n\n.dark [data-chart=chart-_r_1v_] {\n  --color-volume: var(--volume-accent);\n  --color-prior: var(--muted-foreground);\n  --color-plan: var(--foreground);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="992" height="288" style={{position: "relative", cursor: "default", width: "992px", height: "288px"}}>
@@ -182,7 +160,7 @@ html[data-demo="frozen"] .volume-march { animation: none; }
                       <svg className="recharts-surface" aria-label="Weekly running time" role="application" tabIndex="0" width="992" height="288" viewBox="0 0 992 288" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc>
-                          Each week of the block against its comparison; arrow keys move through the weeks.
+                          {"Each week of the block against its comparison; arrow keys move through the weeks."}
                         </desc>
                         <g className="recharts-zIndex-layer_-100" tabIndex="-1">
                           <g className="recharts-cartesian-grid">
@@ -609,62 +587,62 @@ html[data-demo="frozen"] .volume-march { animation: none; }
                           <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="87.16666666666666" y="280" dy="0.71em" textAnchor="middle">
-                                W1
+                                {"W1"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="165.5" y="280" dy="0.71em" textAnchor="middle">
-                                W2
+                                {"W2"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="243.83333333333331" y="280" dy="0.71em" textAnchor="middle">
-                                W3
+                                {"W3"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="322.1666666666667" y="280" dy="0.71em" textAnchor="middle">
-                                W4
+                                {"W4"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="400.5" y="280" dy="0.71em" textAnchor="middle">
-                                W5
+                                {"W5"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="478.8333333333333" y="280" dy="0.71em" textAnchor="middle">
-                                W6
+                                {"W6"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="557.1666666666666" y="280" dy="0.71em" textAnchor="middle">
-                                W7
+                                {"W7"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="635.4999999999999" y="280" dy="0.71em" textAnchor="middle">
-                                W8
+                                {"W8"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="713.8333333333333" y="280" dy="0.71em" textAnchor="middle">
-                                W9
+                                {"W9"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="792.1666666666666" y="280" dy="0.71em" textAnchor="middle">
-                                W10
+                                {"W10"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="870.4999999999999" y="280" dy="0.71em" textAnchor="middle">
-                                W11
+                                {"W11"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="948.8333333333333" y="280" dy="0.71em" textAnchor="middle">
-                                W12
+                                {"W12"}
                               </text>
                             </g>
                           </g>
@@ -672,28 +650,28 @@ html[data-demo="frozen"] .volume-march { animation: none; }
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="48" orientation="left" height="246" stroke="none" x="34" y="258" textAnchor="end" fill="#666">
                                 <tspan x="34" dy="0.355em">
-                                  0h
+                                  {"0h"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="48" orientation="left" height="246" stroke="none" x="34" y="176.00000000000003" textAnchor="end" fill="#666">
                                 <tspan x="34" dy="0.355em">
-                                  3h
+                                  {"3h"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="48" orientation="left" height="246" stroke="none" x="34" y="94.00000000000001" textAnchor="end" fill="#666">
                                 <tspan x="34" dy="0.355em">
-                                  6h
+                                  {"6h"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="48" orientation="left" height="246" stroke="none" x="34" y="12" textAnchor="end" fill="#666">
                                 <tspan x="34" dy="0.355em">
-                                  9h
+                                  {"9h"}
                                 </tspan>
                               </text>
                             </g>
@@ -704,196 +682,197 @@ html[data-demo="frozen"] .volume-march { animation: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <div className="sr-only">
             <table>
               <caption>
-                Weekly time, Jul 7 to Sep 28
+                {"Weekly time, Jul 7 to Sep 28"}
               </caption>
               <thead>
                 <tr>
                   <th scope="col">
-                    Week
+                    {"Week"}
                   </th>
                   <th scope="col">
-                    This Block
+                    {"This Block"}
                   </th>
                   <th scope="col">
-                    Last Block
+                    {"Last Block"}
                   </th>
                   <th scope="col">
-                    Plan
+                    {"Plan"}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">
-                    Week 1, Jul 7 to 13
+                    {"Week 1, Jul 7 to 13"}
                   </th>
                   <td>
-                    5h 12m
+                    {"5h 12m"}
                   </td>
                   <td>
-                    4h 15m
+                    {"4h 15m"}
                   </td>
                   <td>
-                    5h 00m
+                    {"5h 00m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 2, Jul 14 to 20
+                    {"Week 2, Jul 14 to 20"}
                   </th>
                   <td>
-                    5h 34m
+                    {"5h 34m"}
                   </td>
                   <td>
-                    4h 36m
+                    {"4h 36m"}
                   </td>
                   <td>
-                    5h 30m
+                    {"5h 30m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 3, Jul 21 to 27
+                    {"Week 3, Jul 21 to 27"}
                   </th>
                   <td>
-                    5h 52m
+                    {"5h 52m"}
                   </td>
                   <td>
-                    5h 56m
+                    {"5h 56m"}
                   </td>
                   <td>
-                    6h 10m
+                    {"6h 10m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 4, Jul 28 to Aug 3
+                    {"Week 4, Jul 28 to Aug 3"}
                   </th>
                   <td>
-                    4h 28m
+                    {"4h 28m"}
                   </td>
                   <td>
-                    3h 56m
+                    {"3h 56m"}
                   </td>
                   <td>
-                    4h 40m
+                    {"4h 40m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 5, Aug 4 to 10
+                    {"Week 5, Aug 4 to 10"}
                   </th>
                   <td>
-                    6h 26m
+                    {"6h 26m"}
                   </td>
                   <td>
-                    5h 18m
+                    {"5h 18m"}
                   </td>
                   <td>
-                    6h 15m
+                    {"6h 15m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 6, Aug 11 to 17
+                    {"Week 6, Aug 11 to 17"}
                   </th>
                   <td>
-                    6h 02m
+                    {"6h 02m"}
                   </td>
                   <td>
-                    6h 11m
+                    {"6h 11m"}
                   </td>
                   <td>
-                    6h 45m
+                    {"6h 45m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 7, Aug 18 to 24
+                    {"Week 7, Aug 18 to 24"}
                   </th>
                   <td>
-                    7h 21m
+                    {"7h 21m"}
                   </td>
                   <td>
-                    5h 58m
+                    {"5h 58m"}
                   </td>
                   <td>
-                    7h 15m
+                    {"7h 15m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 8, Aug 25 to 31
+                    {"Week 8, Aug 25 to 31"}
                   </th>
                   <td>
-                    5h 22m
+                    {"5h 22m"}
                   </td>
                   <td>
-                    4h 41m
+                    {"4h 41m"}
                   </td>
                   <td>
-                    5h 15m
+                    {"5h 15m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 9, Sep 1 to 7
+                    {"Week 9, Sep 1 to 7"}
                   </th>
                   <td>
-                    7h 38m
+                    {"7h 38m"}
                   </td>
                   <td>
-                    6h 17m
+                    {"6h 17m"}
                   </td>
                   <td>
-                    7h 30m
+                    {"7h 30m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 10, Sep 8 to 14
+                    {"Week 10, Sep 8 to 14"}
                   </th>
                   <td>
-                    8h 07m
+                    {"8h 07m"}
                   </td>
                   <td>
-                    6h 30m
+                    {"6h 30m"}
                   </td>
                   <td>
-                    8h 00m
+                    {"8h 00m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 11, Sep 15 to 21
+                    {"Week 11, Sep 15 to 21"}
                   </th>
                   <td>
-                    5h 51m
+                    {"5h 51m"}
                   </td>
                   <td>
-                    5h 18m
+                    {"5h 18m"}
                   </td>
                   <td>
-                    6h 15m
+                    {"6h 15m"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    Week 12, Sep 22 to 28
+                    {"Week 12, Sep 22 to 28"}
                   </th>
                   <td>
-                    4h 19m
+                    {"4h 19m"}
                   </td>
                   <td>
-                    4h 28m
+                    {"4h 28m"}
                   </td>
                   <td>
-                    4h 30m
+                    {"4h 30m"}
                   </td>
                 </tr>
               </tbody>
@@ -914,14 +893,14 @@ html[data-demo="frozen"] .volume-march { animation: none; }
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
                 <span className="@md/volume:hidden">
-                  Block
+                  {"Block"}
                 </span>
                 <span className="@md/volume:inline hidden">
-                  This Block
+                  {"This Block"}
                 </span>
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-foreground">
-                72h 12m
+                {"72h 12m"}
               </span>
             </li>
             <li className="animate-in duration-300 fade-in-0 flex gap-1.5 h-4 items-center motion-reduce:animate-none">
@@ -936,14 +915,14 @@ html[data-demo="frozen"] .volume-march { animation: none; }
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] text-muted-foreground">
                 <span className="@md/volume:hidden">
-                  Last
+                  {"Last"}
                 </span>
                 <span className="@md/volume:inline hidden">
-                  Last Block
+                  {"Last Block"}
                 </span>
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium tabular-nums text-foreground">
-                63h 24m
+                {"63h 24m"}
               </span>
             </li>
           </ul>

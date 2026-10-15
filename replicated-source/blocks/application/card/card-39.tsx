@@ -19,10 +19,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Getting Started
+              {"Getting Started"}
             </a>
             <p className="leading-relaxed pt-1.5 text-muted-foreground text-sm">
-              Follow our step-by-step onboarding guides to integrate and launch your project smoothly, even if you’re just getting started.
+              {"Follow our step-by-step onboarding guides to integrate and launch your project smoothly, even if you’re just getting started."}
             </p>
           </FramePanel>
           <FramePanel>
@@ -34,10 +34,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Security Center
+              {"Security Center"}
             </a>
             <p className="leading-relaxed pt-1.5 text-muted-foreground text-sm">
-              Learn about our advanced security measures and best practices to keep your data protected and your app fully compliant.
+              {"Learn about our advanced security measures and best practices to keep your data protected and your app fully compliant."}
             </p>
           </FramePanel>
           <FramePanel>
@@ -50,10 +50,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Integrations
+              {"Integrations"}
             </a>
             <p className="leading-relaxed pt-1.5 text-muted-foreground text-sm">
-              Seamlessly connect your app with trusted third-party services, from analytics and payments to automation tools that boost performance.
+              {"Seamlessly connect your app with trusted third-party services, from analytics and payments to automation tools that boost performance."}
             </p>
           </FramePanel>
           <FramePanel>
@@ -70,10 +70,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Support Hub
+              {"Support Hub"}
             </a>
             <p className="leading-relaxed pt-1.5 text-muted-foreground text-sm">
-              Access expert support, detailed docs, and a vibrant developer community, with guidance for complex issues whenever needed.
+              {"Access expert support, detailed docs, and a vibrant developer community, with guidance for complex issues whenever needed."}
             </p>
           </FramePanel>
         </div>

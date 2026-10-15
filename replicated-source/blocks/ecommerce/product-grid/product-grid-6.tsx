@@ -19,7 +19,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 pointer-events-none top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Bestseller
+                  {"Bestseller"}
                 </Badge>
               </div>
               <div className="absolute hidden inset-0 items-center justify-center pointer-events-none px-4 sm:flex">
@@ -28,7 +28,7 @@ export function Pattern() {
                     <svg className="fill-destructive lucide lucide-heart size-4 text-destructive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                       <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                     </svg>
-                    Saved
+                    {"Saved"}
                   </Button>
                   <Button className="flex-1 shadow-sm" type="button" tabIndex="0" aria-label="Add Linen Field Shirt to cart">
                     <svg className="lucide lucide-shopping-bag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
@@ -36,7 +36,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add to Cart
+                    {"Add to Cart"}
                   </Button>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export function Pattern() {
                     <span className="bg-lime-900 ring-2 ring-background rounded-full size-3.5" aria-hidden="true"></span>
                   </span>
                   <span className="tabular-nums text-foreground">
-                    +1
+                    {"+1"}
                   </span>
                 </span>
                 <span className="absolute backdrop-blur-sm bg-background/95 bottom-0 duration-300 font-medium gap-1.5 group-hover/card:opacity-100 group-hover/card:pointer-events-auto inline-flex items-center opacity-0 pointer-events-none px-2 py-1 right-0 rounded-full text-xs transition-opacity" aria-hidden="true">
@@ -65,20 +65,20 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Halden products">
-                Halden
+                {"Halden"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Linen Field Shirt
+                  {"Linen Field Shirt"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $128
+                  {"$128"}
                 </span>
               </div>
               <a className="gap-1.5 hover:text-foreground hover:underline inline-flex items-center mt-0.5 text-muted-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Shop the look for Linen Field Shirt, 4 items">
-                Shop The Look · 4 items
+                {"Shop The Look · 4 items"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -94,7 +94,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 pointer-events-none top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                  New
+                  {"New"}
                 </Badge>
               </div>
               <div className="absolute hidden inset-0 items-center justify-center pointer-events-none px-4 sm:flex">
@@ -103,7 +103,7 @@ export function Pattern() {
                     <svg className="lucide lucide-heart size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                       <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                     </svg>
-                    Add to List
+                    {"Add to List"}
                   </Button>
                   <Button className="flex-1 shadow-sm" type="button" tabIndex="0" aria-label="Add Heavy-Wash Denim to cart">
                     <svg className="lucide lucide-shopping-bag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
@@ -111,7 +111,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add to Cart
+                    {"Add to Cart"}
                   </Button>
                 </div>
               </div>
@@ -136,20 +136,20 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Marlow Goods products">
-                Marlow Goods
+                {"Marlow Goods"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Heavy-Wash Denim
+                  {"Heavy-Wash Denim"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $148
+                  {"$148"}
                 </span>
               </div>
               <a className="gap-1.5 hover:text-foreground hover:underline inline-flex items-center mt-0.5 text-muted-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Shop the look for Heavy-Wash Denim, 5 items">
-                Shop The Look · 5 items
+                {"Shop The Look · 5 items"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -169,7 +169,7 @@ export function Pattern() {
                     <svg className="lucide lucide-heart size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                       <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                     </svg>
-                    Add to List
+                    {"Add to List"}
                   </Button>
                   <Button className="flex-1 shadow-sm" type="button" tabIndex="0" aria-label="Add Cropped Knit Sweater to cart">
                     <svg className="lucide lucide-shopping-bag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
@@ -177,7 +177,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add to Cart
+                    {"Add to Cart"}
                   </Button>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export function Pattern() {
                     <span className="bg-zinc-950 ring-2 ring-background rounded-full size-3.5" aria-hidden="true"></span>
                   </span>
                   <span className="tabular-nums text-foreground">
-                    +2
+                    {"+2"}
                   </span>
                 </span>
                 <span className="absolute backdrop-blur-sm bg-background/95 bottom-0 duration-300 font-medium gap-1.5 group-hover/card:opacity-100 group-hover/card:pointer-events-auto inline-flex items-center opacity-0 pointer-events-none px-2 py-1 right-0 rounded-full text-xs transition-opacity" aria-hidden="true">
@@ -207,23 +207,23 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Wren & Field products">
-                Wren & Field
+                {"Wren & Field"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Cropped Knit Sweater
+                  {"Cropped Knit Sweater"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $98
+                  {"$98"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $118
+                  {"$118"}
                 </span>
               </div>
               <a className="gap-1.5 hover:text-foreground hover:underline inline-flex items-center mt-0.5 text-muted-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Shop the look for Cropped Knit Sweater, 3 items">
-                Shop The Look · 3 items
+                {"Shop The Look · 3 items"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -239,7 +239,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 pointer-events-none top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Limited
+                  {"Limited"}
                 </Badge>
               </div>
               <div className="absolute hidden inset-0 items-center justify-center pointer-events-none px-4 sm:flex">
@@ -248,7 +248,7 @@ export function Pattern() {
                     <svg className="lucide lucide-heart size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                       <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                     </svg>
-                    Add to List
+                    {"Add to List"}
                   </Button>
                   <Button className="flex-1 shadow-sm" type="button" tabIndex="0" aria-label="Add Pleated Wide Trouser to cart">
                     <svg className="lucide lucide-shopping-bag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
@@ -256,7 +256,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add to Cart
+                    {"Add to Cart"}
                   </Button>
                 </div>
               </div>
@@ -281,20 +281,20 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col gap-1.5 min-w-0">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-[0.16em] transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Halden products">
-                Halden
+                {"Halden"}
               </a>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Pleated Wide Trouser
+                  {"Pleated Wide Trouser"}
                 </a>
               </h3>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $178
+                  {"$178"}
                 </span>
               </div>
               <a className="gap-1.5 hover:text-foreground hover:underline inline-flex items-center mt-0.5 text-muted-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Shop the look for Pleated Wide Trouser, 4 items">
-                Shop The Look · 4 items
+                {"Shop The Look · 4 items"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>

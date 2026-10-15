@@ -48,15 +48,15 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-medium text-[0.9375rem]">
-              NeUI
+              {"NeUI"}
             </span>
           </div>
           <div className="backdrop-blur-md bg-background/55 flex gap-2 items-center px-4 py-1.5 ring-1 ring-border/30 rounded-full shadow-black/5 shadow-xs text-muted-foreground text-sm">
             <span className="hidden sm:inline text-foreground">
-              New here?
+              {"New here?"}
             </span>
             <Button className="font-medium h-auto p-0 text-sm" type="button" tabIndex="0">
-              Create an account
+              {"Create an account"}
             </Button>
           </div>
         </header>
@@ -66,17 +66,17 @@ export function Pattern() {
               <FramePanel className="flex flex-col gap-6 p-6 sm:p-8">
                 <div className="flex flex-col gap-1 items-center text-center">
                   <h1 className="font-semibold text-balance text-foreground text-xl tracking-tight">
-                    Sign in to NeUI
+                    {"Sign in to NeUI"}
                   </h1>
                   <p className="text-muted-foreground text-pretty text-sm">
-                    Pick up where you left off.
+                    {"Pick up where you left off."}
                   </p>
                 </div>
                 <form className="flex flex-col gap-4">
                   <FieldGroup className="gap-3.5">
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-8-identifier">
-                        Email or username
+                        {"Email or username"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="auth-8-identifier" autoComplete="username" placeholder="you@work.com" type="text" />
@@ -85,10 +85,10 @@ export function Pattern() {
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <div className="flex gap-3 items-center justify-between">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-8-password">
-                          Password
+                          {"Password"}
                         </FieldLabel>
                         <Button className="font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex="0">
-                          Forgot password?
+                          {"Forgot password?"}
                         </Button>
                       </div>
                       <InputGroup role="group">
@@ -105,13 +105,13 @@ export function Pattern() {
                     </Field>
                   </FieldGroup>
                   <Button className="w-full" type="submit" tabIndex="0">
-                    Sign in
+                    {"Sign in"}
                   </Button>
                 </form>
                 <div className="flex gap-3 items-center">
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <span className="text-muted-foreground text-xs">
-                    Or continue with
+                    {"Or continue with"}
                   </span>
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 </div>
@@ -220,7 +220,7 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span>
-                      Continue with Google
+                      {"Continue with Google"}
                     </span>
                   </Button>
                   <Button className="gap-2.5 h-10 px-4 w-full" type="button" tabIndex="0">
@@ -235,7 +235,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Continue with Apple
+                      {"Continue with Apple"}
                     </span>
                   </Button>
                   <Button className="gap-2.5 h-10 px-4 w-full" type="button" tabIndex="0">
@@ -250,20 +250,20 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Continue with GitHub
+                      {"Continue with GitHub"}
                     </span>
                   </Button>
                 </div>
                 <p className="text-center text-muted-foreground text-sm">
-                  New to NeUI?
+                  {"New to NeUI?"}
                   <Button className="h-auto p-0" type="button" tabIndex="0">
-                    Create an account
+                    {"Create an account"}
                   </Button>
                 </p>
               </FramePanel>
             </Frame>
             <p className="font-medium max-w-sm text-balance text-center text-foreground text-xs">
-              Joining 14,000+ product teams shipping faster with NeUI
+              {"Joining 14,000+ product teams shipping faster with NeUI"}
             </p>
           </div>
         </main>

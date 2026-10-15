@@ -20,7 +20,7 @@ export function Pattern() {
           <div className="border-b border-dashed flex items-center justify-between pb-6">
             <div className="flex gap-2 items-center">
               <h3 className="font-semibold text-base">
-                Browser Usage
+                {"Browser Usage"}
               </h3>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-none border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                 <svg className="lucide lucide-trending-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -28,12 +28,12 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span>
-                  +5.2%
+                  {"+5.2%"}
                 </span>
               </Badge>
             </div>
             <Button type="button" tabIndex="0" extracted="1">
-              Export
+              {"Export"}
             </Button>
           </div>
           <div className="space-y-6">
@@ -48,46 +48,30 @@ export function Pattern() {
               </Item>
               <div>
                 <div className="font-medium text-muted-foreground text-sm">
-                  Total Visitors
+                  {"Total Visitors"}
                 </div>
                 <div className="font-bold text-2xl">
-                  925
+                  {"925"}
                 </div>
               </div>
             </div>
             <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
               <TabsList className="w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
-                  5D
+                  {"5D"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                  2W
+                  {"2W"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                  1M
+                  {"1M"}
                 </TabsTrigger>
               </TabsList>
             </Tabs>
             <div className="aspect-square max-h-[200px] mx-auto w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-full justify-center overflow-visible text-xs w-full" data-chart="chart-_r_3_">
-                <style>{`
- [data-chart=chart-_r_3_] {
-  --color-chrome: var(--color-blue-500);
-  --color-safari: var(--color-sky-500);
-  --color-firefox: var(--color-orange-500);
-  --color-edge: var(--color-indigo-500);
-  --color-other: var(--color-slate-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-chrome: var(--color-blue-500);
-  --color-safari: var(--color-sky-500);
-  --color-firefox: var(--color-orange-500);
-  --color-edge: var(--color-indigo-500);
-  --color-other: var(--color-slate-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-chrome: var(--color-blue-500);\n  --color-safari: var(--color-sky-500);\n  --color-firefox: var(--color-orange-500);\n  --color-edge: var(--color-indigo-500);\n  --color-other: var(--color-slate-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-chrome: var(--color-blue-500);\n  --color-safari: var(--color-sky-500);\n  --color-firefox: var(--color-orange-500);\n  --color-edge: var(--color-indigo-500);\n  --color-other: var(--color-slate-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="overflow-visible recharts-wrapper" width="390" height="200" style={{position: "relative", cursor: "default", width: "390px", height: "200px"}}>
@@ -145,27 +129,27 @@ export function Pattern() {
                           <g className="recharts-label-list recharts-layer">
                             <text className="recharts-label recharts-text" stroke="none" fontSize="10" fontWeight="600" offset="5" x="236.53205433227936" y="46.7896771017071" textAnchor="middle" fill="white">
                               <tspan x="236.53205433227936" dy="0.355em">
-                                275
+                                {"275"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" stroke="none" fontSize="10" fontWeight="600" offset="5" x="140.4663114689557" y="60.2215282445511" textAnchor="middle" fill="white">
                               <tspan x="140.4663114689557" dy="0.355em">
-                                200
+                                {"200"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" stroke="none" fontSize="10" fontWeight="600" offset="5" x="142.62289235099675" y="142.57802947911898" textAnchor="middle" fill="white">
                               <tspan x="142.62289235099675" dy="0.355em">
-                                187
+                                {"187"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" stroke="none" fontSize="10" fontWeight="600" offset="5" x="217.2165393957922" y="163.7391196775984" textAnchor="middle" fill="white">
                               <tspan x="217.2165393957922" dy="0.355em">
-                                173
+                                {"173"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" stroke="none" fontSize="10" fontWeight="600" offset="5" x="258.8121305109572" y="122.00595373194636" textAnchor="middle" fill="white">
                               <tspan x="258.8121305109572" dy="0.355em">
-                                90
+                                {"90"}
                               </tspan>
                             </text>
                           </g>
@@ -175,6 +159,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
             <div className="flex gap-2 items-center px-2 text-muted-foreground text-xs">
               <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -183,7 +168,7 @@ export function Pattern() {
                 <path d="M12 8h.01"></path>
               </svg>
               <span>
-                Visitor data based on unique browser signatures.
+                {"Visitor data based on unique browser signatures."}
               </span>
             </div>
           </div>

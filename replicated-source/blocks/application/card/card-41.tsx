@@ -20,10 +20,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              API Integration
+              {"API Integration"}
             </a>
             <p className="leading-relaxed mt-1.5 text-muted-foreground text-xs">
-              Quick steps to connect APIs
+              {"Quick steps to connect APIs"}
             </p>
           </FramePanel>
           <FramePanel>
@@ -39,10 +39,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              UI Themes
+              {"UI Themes"}
             </a>
             <p className="leading-relaxed mt-1.5 text-muted-foreground text-xs">
-              Ready-made styles for apps
+              {"Ready-made styles for apps"}
             </p>
           </FramePanel>
           <FramePanel>
@@ -57,10 +57,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Analytics Setup
+              {"Analytics Setup"}
             </a>
             <p className="leading-relaxed mt-1.5 text-muted-foreground text-xs">
-              Real-time tracking setup
+              {"Real-time tracking setup"}
             </p>
           </FramePanel>
           <FramePanel>
@@ -72,10 +72,10 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-              Security Tips
+              {"Security Tips"}
             </a>
             <p className="leading-relaxed mt-1.5 text-muted-foreground text-xs">
-              Simple ways to stay secure
+              {"Simple ways to stay secure"}
             </p>
           </FramePanel>
         </div>

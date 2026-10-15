@@ -42,10 +42,10 @@ export function Pattern() {
         <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1 min-w-0">
             <h1 className="font-semibold text-foreground text-xl tracking-tight">
-              User Authentication
+              {"User Authentication"}
             </h1>
             <p className="max-w-2xl text-muted-foreground text-sm">
-              Configure sign-up, sign-in, and protection rules.
+              {"Configure sign-up, sign-in, and protection rules."}
             </p>
           </div>
           <Select>
@@ -54,13 +54,13 @@ export function Pattern() {
               <span className="flex gap-2 items-center min-w-0">
                 <span className="bg-info rounded-full shrink-0 size-1.5"></span>
                 <span className="truncate">
-                  Preview
+                  {"Preview"}
                 </span>
               </span>
             </SelectValue>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -75,42 +75,42 @@ export function Pattern() {
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_4_" compositeItemActive="" aria-controls="base-ui-_r_b_">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-label="Ready"></span>
                       <span className="truncate">
-                        Email
+                        {"Email"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
                       <span className="truncate">
-                        Phone
+                        {"Phone"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                        Pro
+                        {"Pro"}
                       </Badge>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
                       <span className="truncate">
-                        Username
+                        {"Username"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7_">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-label="Ready"></span>
                       <span className="truncate">
-                        Password
+                        {"Password"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-label="Limited"></span>
                       <span className="truncate">
-                        Passkeys
+                        {"Passkeys"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
                       <span className="truncate">
-                        Protection
+                        {"Protection"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 group-data-horizontal/tabs:after:bottom-0! justify-start px-0 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_a_">
                       <span className="truncate">
-                        User Model
+                        {"User Model"}
                       </span>
                     </TabsTrigger>
                   </TabsList>
@@ -128,11 +128,11 @@ export function Pattern() {
                         <FieldContent className="gap-0.5 min-w-0">
                           <div className="flex flex-wrap gap-2 items-center min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-sign-up" id="form-4-email-sign-up-label">
-                              Sign-up with email
+                              {"Sign-up with email"}
                             </FieldLabel>
                           </div>
                           <FieldDescription>
-                            Allow users to create accounts with a verified email address.
+                            {"Allow users to create accounts with a verified email address."}
                           </FieldDescription>
                         </FieldContent>
                         <div className="self-center shrink-0">
@@ -152,12 +152,12 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center min-w-0">
                               <div className="flex items-center min-w-0">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-required" id="form-4-email-required-label">
-                                  Require email address
+                                  {"Require email address"}
                                 </FieldLabel>
                               </div>
                             </div>
                             <FieldDescription className="max-w-2xl">
-                              Users must keep one reachable email address on their account.
+                              {"Users must keep one reachable email address on their account."}
                             </FieldDescription>
                           </FieldContent>
                           <div className="self-center shrink-0">
@@ -175,10 +175,10 @@ export function Pattern() {
                               <path d="M12 8h.01"></path>
                             </svg>
                             <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                              Required method
+                              {"Required method"}
                             </AlertTitle>
                             <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                              Email is the only enabled sign-up option, so it remains required.
+                              {"Email is the only enabled sign-up option, so it remains required."}
                             </AlertDescription>
                           </Alert>
                         </div>
@@ -190,17 +190,17 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center min-w-0">
                               <div className="flex items-center min-w-0">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-verify" id="form-4-email-verify-label">
-                                  Verify at sign-up
+                                  {"Verify at sign-up"}
                                 </FieldLabel>
                               </div>
                               <div className="shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary-foreground text-xs transition-shadow">
-                                  Recommended
+                                  {"Recommended"}
                                 </Badge>
                               </div>
                             </div>
                             <FieldDescription className="max-w-2xl">
-                              Require ownership verification before a new account is created.
+                              {"Require ownership verification before a new account is created."}
                             </FieldDescription>
                           </FieldContent>
                           <div className="self-center shrink-0">
@@ -213,10 +213,10 @@ export function Pattern() {
                         <div className="min-w-0">
                           <FieldSet className="gap-2">
                             <FieldLegend variant="label">
-                              Verification methods
+                              {"Verification methods"}
                             </FieldLegend>
                             <FieldDescription>
-                              Choose how users confirm control of an email address.
+                              {"Choose how users confirm control of an email address."}
                             </FieldDescription>
                             <div className="@container/field-group cn-field-group flex flex-col gap-2 group/field-group w-full">
                               <Field className="gap-2" role="group" data-orientation="horizontal">
@@ -230,10 +230,10 @@ export function Pattern() {
                                 <input id="form-4-email-code" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <FieldContent className="gap-0.5">
                                   <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="form-4-email-code" id="form-4-email-code-label">
-                                    One-time verification code
+                                    {"One-time verification code"}
                                   </FieldLabel>
                                   <FieldDescription className="text-xs">
-                                    Send a short passcode to the submitted address.
+                                    {"Send a short passcode to the submitted address."}
                                   </FieldDescription>
                                 </FieldContent>
                               </Field>
@@ -242,10 +242,10 @@ export function Pattern() {
                                 <input id="form-4-email-link" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <FieldContent className="gap-0.5">
                                   <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="form-4-email-link" id="form-4-email-link-label">
-                                    Verification link
+                                    {"Verification link"}
                                   </FieldLabel>
                                   <FieldDescription className="text-xs">
-                                    Send a secure link with an expiring session token.
+                                    {"Send a secure link with an expiring session token."}
                                   </FieldDescription>
                                 </FieldContent>
                               </Field>
@@ -260,12 +260,12 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center min-w-0">
                               <div className="flex items-center min-w-0">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-restrict" id="form-4-email-restrict-label">
-                                  Restrict email changes
+                                  {"Restrict email changes"}
                                 </FieldLabel>
                               </div>
                             </div>
                             <FieldDescription className="max-w-2xl">
-                              Prevent users from changing their email after sign-up.
+                              {"Prevent users from changing their email after sign-up."}
                             </FieldDescription>
                           </FieldContent>
                           <div className="self-center shrink-0">
@@ -286,11 +286,11 @@ export function Pattern() {
                         <FieldContent className="gap-0.5 min-w-0">
                           <div className="flex flex-wrap gap-2 items-center min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-sign-in" id="form-4-email-sign-in-label">
-                              Sign-in with email
+                              {"Sign-in with email"}
                             </FieldLabel>
                           </div>
                           <FieldDescription>
-                            Allow returning users to sign in with their email address.
+                            {"Allow returning users to sign in with their email address."}
                           </FieldDescription>
                         </FieldContent>
                         <div className="self-center shrink-0">
@@ -310,12 +310,12 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center min-w-0">
                               <div className="flex items-center min-w-0">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-login-code" id="form-4-email-login-code-label">
-                                  Email verification code
+                                  {"Email verification code"}
                                 </FieldLabel>
                               </div>
                             </div>
                             <FieldDescription className="max-w-2xl">
-                              Users can sign in with a one-time code.
+                              {"Users can sign in with a one-time code."}
                             </FieldDescription>
                           </FieldContent>
                           <div className="self-center shrink-0">
@@ -333,12 +333,12 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center min-w-0">
                               <div className="flex items-center min-w-0">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-4-email-login-link" id="form-4-email-login-link-label">
-                                  Email verification link
+                                  {"Email verification link"}
                                 </FieldLabel>
                               </div>
                             </div>
                             <FieldDescription className="max-w-2xl">
-                              Users can sign in by opening a magic link.
+                              {"Users can sign in by opening a magic link."}
                             </FieldDescription>
                           </FieldContent>
                           <div className="self-center shrink-0">
@@ -358,7 +358,7 @@ export function Pattern() {
         </Tabs>
         <div className="border-t flex flex-col gap-3 pt-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-muted-foreground text-sm">
-            Policy changes stay in preview until published.
+            {"Policy changes stay in preview until published."}
           </p>
           <div className="flex flex-col gap-2 sm:flex-row">
             <Button type="button" tabIndex="0">
@@ -366,7 +366,7 @@ export function Pattern() {
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
-              Discard
+              {"Discard"}
             </Button>
             <Button type="submit" tabIndex="0">
               <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" data-icon="inline-start" aria-hidden="true">
@@ -374,7 +374,7 @@ export function Pattern() {
                 <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                 <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
               </svg>
-              Save policy
+              {"Save policy"}
             </Button>
           </div>
         </div>

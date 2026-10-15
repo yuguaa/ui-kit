@@ -26,62 +26,7 @@ export function Pattern() {
         <div className="auth18-blob auth18-blob-3"></div>
         <div className="auth18-blob auth18-blob-4"></div>
         <div className="auth18-grain"></div>
-        <style>{`
-  .auth18-wave { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-  .auth18-blob { position: absolute; border-radius: 9999px; filter: blur(110px); will-change: transform; }
-  .auth18-blob-1 {
-    top: -18%; right: -12%;
-    width: 64vw; height: 64vw; max-width: 780px; max-height: 780px;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.78), rgba(255, 138, 61, 0) 70%);
-    animation: auth18-drift-1 22s ease-in-out infinite;
-  }
-  .auth18-blob-2 {
-    top: 6%; right: 18%;
-    width: 52vw; height: 52vw; max-width: 640px; max-height: 640px;
-    background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.6), rgba(236, 72, 153, 0) 70%);
-    animation: auth18-drift-2 30s ease-in-out infinite;
-  }
-  .auth18-blob-3 {
-    top: 32%; right: -6%;
-    width: 48vw; height: 48vw; max-width: 600px; max-height: 600px;
-    background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.55), rgba(139, 92, 246, 0) 70%);
-    animation: auth18-drift-3 26s ease-in-out infinite;
-  }
-  .auth18-blob-4 {
-    top: 58%; right: 12%;
-    width: 44vw; height: 44vw; max-width: 560px; max-height: 560px;
-    background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.45), rgba(59, 130, 246, 0) 70%);
-    animation: auth18-drift-4 34s ease-in-out infinite;
-  }
-  .auth18-grain {
-    position: absolute; inset: 0; opacity: 0.35; mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  }
-  .dark .auth18-blob-1 { background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.55), rgba(255, 138, 61, 0) 70%); }
-  .dark .auth18-blob-2 { background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.45), rgba(236, 72, 153, 0) 70%); }
-  .dark .auth18-blob-3 { background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.45), rgba(139, 92, 246, 0) 70%); }
-  .dark .auth18-blob-4 { background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.38), rgba(59, 130, 246, 0) 70%); }
-  .dark .auth18-grain { opacity: 0.18; }
-  @keyframes auth18-drift-1 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(-5%, 7%, 0) scale(1.08); }
-  }
-  @keyframes auth18-drift-2 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(7%, -5%, 0) scale(1.12); }
-  }
-  @keyframes auth18-drift-3 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(-7%, -7%, 0) scale(1.1); }
-  }
-  @keyframes auth18-drift-4 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(9%, 5%, 0) scale(1.14); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .auth18-blob { animation: none !important; }
-  }
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n  .auth18-wave { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }\n  .auth18-blob { position: absolute; border-radius: 9999px; filter: blur(110px); will-change: transform; }\n  .auth18-blob-1 {\n    top: -18%; right: -12%;\n    width: 64vw; height: 64vw; max-width: 780px; max-height: 780px;\n    background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.78), rgba(255, 138, 61, 0) 70%);\n    animation: auth18-drift-1 22s ease-in-out infinite;\n  }\n  .auth18-blob-2 {\n    top: 6%; right: 18%;\n    width: 52vw; height: 52vw; max-width: 640px; max-height: 640px;\n    background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.6), rgba(236, 72, 153, 0) 70%);\n    animation: auth18-drift-2 30s ease-in-out infinite;\n  }\n  .auth18-blob-3 {\n    top: 32%; right: -6%;\n    width: 48vw; height: 48vw; max-width: 600px; max-height: 600px;\n    background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.55), rgba(139, 92, 246, 0) 70%);\n    animation: auth18-drift-3 26s ease-in-out infinite;\n  }\n  .auth18-blob-4 {\n    top: 58%; right: 12%;\n    width: 44vw; height: 44vw; max-width: 560px; max-height: 560px;\n    background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.45), rgba(59, 130, 246, 0) 70%);\n    animation: auth18-drift-4 34s ease-in-out infinite;\n  }\n  .auth18-grain {\n    position: absolute; inset: 0; opacity: 0.35; mix-blend-mode: overlay;\n    background-image: url(\"data:image/svg+xml;utf8,\u003csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'>\u003cfilter id='n'>\u003cfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/>\u003cfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/>\u003c/filter>\u003crect width='100%' height='100%' filter='url(%23n)'/>\u003c/svg>\");\n  }\n  .dark .auth18-blob-1 { background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.55), rgba(255, 138, 61, 0) 70%); }\n  .dark .auth18-blob-2 { background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.45), rgba(236, 72, 153, 0) 70%); }\n  .dark .auth18-blob-3 { background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.45), rgba(139, 92, 246, 0) 70%); }\n  .dark .auth18-blob-4 { background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.38), rgba(59, 130, 246, 0) 70%); }\n  .dark .auth18-grain { opacity: 0.18; }\n  @keyframes auth18-drift-1 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(-5%, 7%, 0) scale(1.08); }\n  }\n  @keyframes auth18-drift-2 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(7%, -5%, 0) scale(1.12); }\n  }\n  @keyframes auth18-drift-3 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(-7%, -7%, 0) scale(1.1); }\n  }\n  @keyframes auth18-drift-4 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(9%, 5%, 0) scale(1.14); }\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .auth18-blob { animation: none !important; }\n  }\n" }} />
       </div>
       <div className="flex flex-col lg:px-14 lg:py-12 min-h-svh px-6 py-7 relative sm:px-12 sm:py-10">
         <header className="flex items-center justify-between">
@@ -95,13 +40,13 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <span className="font-semibold text-base tracking-tight">
-              NeUI
+              {"NeUI"}
             </span>
           </div>
           <p className="font-medium text-foreground/75 text-sm">
-            Already on NeUI?
+            {"Already on NeUI?"}
             <a className="font-semibold hover:text-primary hover:underline text-foreground transition-colors underline-offset-4" href="#">
-              Sign in
+              {"Sign in"}
             </a>
           </p>
         </header>
@@ -111,28 +56,28 @@ export function Pattern() {
               <div className="backdrop-blur-sm bg-background/80 border border-border/60 font-medium gap-2 inline-flex items-center px-3 py-1 rounded-full text-foreground/70 text-sm tracking-tight w-fit">
                 <span className="bg-primary rounded-full size-1.5" aria-hidden="true"></span>
                 <span>
-                  Global product teams ship on NeUI
+                  {"Global product teams ship on NeUI"}
                 </span>
               </div>
               <h1 className="font-semibold leading-[1.02] lg:text-[56px] sm:text-5xl text-4xl text-balance text-foreground tracking-[-0.02em]">
-                The UI layer to grow your
+                {"The UI layer to grow your"}
                 <span className="bg-clip-text bg-gradient-to-r from-orange-500 text-transparent to-violet-500 via-pink-500">
-                  product
+                  {"product"}
                 </span>
-                .
+                {"."}
               </h1>
               <p className="leading-relaxed max-w-xl sm:text-lg text-base text-muted-foreground text-pretty">
-                A premium block library built on shadcn. Auth, billing, dashboards, and settings. Production-ready the day you clone it.
+                {"A premium block library built on shadcn. Auth, billing, dashboards, and settings. Production-ready the day you clone it."}
               </p>
             </div>
             <Frame className="w-full">
               <FramePanel className="p-6 sm:space-y-8 space-y-7">
                 <div className="space-y-2">
                   <div className="font-semibold text-xl tracking-tight">
-                    Start your 14-day trial
+                    {"Start your 14-day trial"}
                   </div>
                   <div className="text-muted-foreground text-sm">
-                    No credit card. No sales call. Just ship.
+                    {"No credit card. No sales call. Just ship."}
                   </div>
                 </div>
                 <div className="flex flex-col gap-3">
@@ -240,7 +185,7 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span>
-                      Continue with Google
+                      {"Continue with Google"}
                     </span>
                   </Button>
                   <Button className="w-full" type="button" tabIndex="0">
@@ -255,14 +200,14 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span>
-                      Continue with GitHub
+                      {"Continue with GitHub"}
                     </span>
                   </Button>
                 </div>
                 <div className="flex gap-3 items-center">
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                   <span className="text-muted-foreground text-xs tracking-wide uppercase">
-                    or
+                    {"or"}
                   </span>
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 </div>
@@ -270,13 +215,13 @@ export function Pattern() {
                   <FieldGroup className="gap-5">
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-5-email">
-                        Work email
+                        {"Work email"}
                       </FieldLabel>
                       <Input id="auth-5-email" autoComplete="email" placeholder="you@company.com" required type="email"></Input>
                     </Field>
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-5-password">
-                        Password
+                        {"Password"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="auth-5-password" autoComplete="new-password" placeholder="8+ characters" required type="password" />
@@ -292,22 +237,22 @@ export function Pattern() {
                     </Field>
                   </FieldGroup>
                   <Button className="mt-1.5 w-full" type="submit" tabIndex="0">
-                    Start free trial
+                    {"Start free trial"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
                   </Button>
                   <p className="leading-5 text-center text-muted-foreground text-pretty text-xs">
-                    By continuing you agree to NeUI's
+                    {"By continuing you agree to NeUI's"}
                     <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                      Terms
+                      {"Terms"}
                     </a>
-                    and
+                    {"and"}
                     <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-                      Privacy Policy
+                      {"Privacy Policy"}
                     </a>
-                    .
+                    {"."}
                   </p>
                 </form>
               </FramePanel>
@@ -317,7 +262,7 @@ export function Pattern() {
         <footer className="max-w-6xl mx-auto pb-6 pt-10 sm:pt-14 w-full">
           <div className="flex flex-col gap-4 items-center">
             <p className="font-medium text-[11px] text-muted-foreground/90 tracking-[0.22em] uppercase">
-              Teams shipping with NeUI
+              {"Teams shipping with NeUI"}
             </p>
             <ul className="gap-x-2 gap-y-2.5 grid grid-cols-2 items-center lg:gap-x-2 lg:gap-y-0 lg:grid-cols-6 max-w-2xl opacity-90 sm:gap-x-2.5 sm:gap-y-3 sm:grid-cols-3 w-full" aria-label="Customer logos">
               <li className="flex h-9 items-center justify-center" aria-label="Stripe">
@@ -348,7 +293,7 @@ export function Pattern() {
                 <span className="dark:hidden" aria-hidden="true">
                   <svg className="h-[13px] w-auto" aria-hidden="true" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                   </svg>
@@ -356,7 +301,7 @@ export function Pattern() {
                 <span className="dark:block hidden" aria-hidden="true">
                   <svg className="h-[13px] w-auto" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                     <title>
-                      Anthropic
+                      {"Anthropic"}
                     </title>
                     <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                   </svg>

@@ -29,11 +29,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Workspace onboarding dialog
+        {"Workspace onboarding dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Launch onboarding
+          {"Launch onboarding"}
         </Button>
       </div>
     </main>
@@ -45,16 +45,16 @@ export function Pattern() {
             <div className="sm:space-y-8 space-y-6 w-full">
               <div className="min-w-0 space-y-1">
                 <DialogTitle className="font-semibold leading-6 text-base" id="base-ui-_r_4_" aria-live="polite">
-                  Set up your profile
+                  {"Set up your profile"}
                 </DialogTitle>
                 <DialogDescription className="leading-5 max-w-xl text-sm" id="base-ui-_r_5_">
-                  Add the details teammates will see across the workspace.
+                  {"Add the details teammates will see across the workspace."}
                 </DialogDescription>
               </div>
               <div>
                 <FieldSet>
                   <FieldLegend className="sr-only" variant="legend">
-                    Profile details
+                    {"Profile details"}
                   </FieldLegend>
                   <FieldGroup className="gap-4">
                     <Field role="group" data-orientation="vertical">
@@ -72,13 +72,13 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <div className="inline-flex relative">
                               <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                                Upload photo
+                                {"Upload photo"}
                               </Button>
                               <input className="hidden" id="onboarding-5-profile-photo" accept="image/*" aria-hidden="true" tabIndex="-1" type="file" />
                             </div>
                           </div>
                           <p className="leading-4 text-muted-foreground text-xs">
-                            PNG or JPG, at least 400 x 400 px, up to 10 MB.
+                            {"PNG or JPG, at least 400 x 400 px, up to 10 MB."}
                           </p>
                         </div>
                       </div>
@@ -86,22 +86,22 @@ export function Pattern() {
                     <FieldGroup className="gap-4">
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-5-name">
-                          Full name
+                          {"Full name"}
                           <span className="text-destructive">
-                            *
+                            {"*"}
                           </span>
                         </FieldLabel>
                         <Input id="onboarding-5-name" autoComplete="name" value="Sam Rivera"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-5-title">
-                          Job title
+                          {"Job title"}
                         </FieldLabel>
                         <Input id="onboarding-5-title" autoComplete="organization-title" value="Product Engineer"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-5-timezone">
-                          Timezone
+                          {"Timezone"}
                         </FieldLabel>
                         <InputGroup className="cn-combobox-input" role="group">
                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="onboarding-5-timezone" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" placeholder="Select a timezone" type="text" value="" />
@@ -126,7 +126,7 @@ export function Pattern() {
                       </Checkbox>
                       <input id="onboarding-5-marketing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground" htmlFor="onboarding-5-marketing" id="onboarding-5-marketing-label">
-                        Send me product updates and workspace tips.
+                        {"Send me product updates and workspace tips."}
                       </FieldLabel>
                     </Field>
                   </FieldGroup>
@@ -147,7 +147,7 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:justify-end sm:w-auto w-full">
               <Button className="sm:w-auto w-full" type="submit" tabIndex="0">
-                Continue
+                {"Continue"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -163,7 +163,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

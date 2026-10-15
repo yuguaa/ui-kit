@@ -39,14 +39,14 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="font-medium leading-tight text-xl">
-                2,140
+                {"2,140"}
               </h3>
               <span className="leading-relaxed text-muted-foreground/60 text-xs">
-                Shipments Today
+                {"Shipments Today"}
               </span>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-              +0.1% vs yesterday
+              {"+0.1% vs yesterday"}
             </Badge>
           </FramePanel>
           <FramePanel className="space-y-5">
@@ -74,10 +74,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="font-medium leading-tight text-xl">
-                96.7%
+                {"96.7%"}
               </h3>
               <span className="leading-relaxed text-muted-foreground/60 text-xs">
-                On-Time Rate
+                {"On-Time Rate"}
               </span>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -85,7 +85,7 @@ export function Pattern() {
                 <path d="M16 7h6v6"></path>
                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
               </svg>
-              Consistently improving
+              {"Consistently improving"}
             </Badge>
           </FramePanel>
           <FramePanel className="space-y-5">
@@ -111,14 +111,14 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="font-medium leading-tight text-xl">
-                329
+                {"329"}
               </h3>
               <span className="leading-relaxed text-muted-foreground/60 text-xs">
-                Pending Orders
+                {"Pending Orders"}
               </span>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-              No significant change
+              {"No significant change"}
             </Badge>
           </FramePanel>
           <FramePanel className="space-y-5">
@@ -143,10 +143,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-0.5">
               <h3 className="font-medium leading-tight text-xl">
-                18
+                {"18"}
               </h3>
               <span className="leading-relaxed text-muted-foreground/60 text-xs">
-                Returns
+                {"Returns"}
               </span>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -154,7 +154,7 @@ export function Pattern() {
                 <path d="M16 17h6v-6"></path>
                 <path d="m22 17-8.5-8.5-5 5L2 7"></path>
               </svg>
-              -5.8% this week
+              {"-5.8% this week"}
             </Badge>
           </FramePanel>
         </div>

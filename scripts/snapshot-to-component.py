@@ -1,5 +1,6 @@
 # 把 HTML 快照还原为组件源码：data-slot 映射组件、剥离默认类名、生成 import
 import json
+import os
 import re
 import sys
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
@@ -73,6 +74,22 @@ PARENT_WRAPPER = {
     "navigation-menu-trigger": "navigation-menu",
 }
 
+# 上下文 Provider 的补充规则（自动提取遗漏时手工补齐）
+EXTRA_PROVIDER = {
+    "data-grid-scroll-area": "DataGridProvider",
+    "data-grid-table": "DataGridProvider",
+    "data-grid-pagination": "DataGridProvider",
+    "data-grid-toolbar": "DataGridProvider",
+    "data-grid-table-viewport": "DataGridProvider",
+    "data-grid-table-body": "DataGridProvider",
+    "data-grid-table-foot": "DataGridProvider",
+    "data-grid-thumb": "DataGridProvider",
+    "sidebar-wrapper": "SidebarProvider",
+    "sidebar-container": "SidebarProvider",
+    "sidebar-menu-button": "SidebarProvider",
+    "sidebar-menu-item": "SidebarProvider",
+}
+
 
 def parent_entry(slot):
     """查父容器组件的索引条目"""
@@ -85,6 +102,26 @@ def parent_entry(slot):
             if item["file"].endswith(f"/{slot}.tsx") and item.get("component"):
                 return item
     return None
+
+
+def load_provider_wrappers():
+    """从自动提取的 Provider 约束生成补充包裹规则（自身即 Provider 的跳过）"""
+    if not os.path.exists(".slot-providers.json"):
+        return dict(EXTRA_PROVIDER)
+    data = json.load(open(".slot-providers.json"))
+    out = {}
+    for slot, providers in data.items():
+        entry = SLOT_TABLE.get(slot)
+        comp = entry.get("component") if entry else None
+        for provider in providers:
+            if comp != provider:
+                out[slot] = provider
+                break
+    out.update(EXTRA_PROVIDER)
+    return out
+
+
+PROVIDER_WRAPPER = load_provider_wrappers()
 
 
 def infer_variants(entry, leftover):
@@ -111,20 +148,20 @@ def render_node(node, indent, used):
         text = str(node).strip()
         if not text:
             return ""
-        for char, escaped in jsx_tools.TEXT_ESCAPES.items():
-            text = text.replace(char, escaped)
-        return pad + text
+        # 文本统一用表达式形式：快照里的文本可能含引号、反斜杠、花括号与不等号，
+        # 直接写在 JSX 文本位置需要逐字符转义，表达式形式最稳
+        return pad + "{" + json.dumps(text, ensure_ascii=False) + "}"
 
     if not isinstance(node, Tag):
         return ""
 
-    # 样式表内容原样保留，用模板字符串包裹（内部的反引号与 ${ 需要转义）
+    # 样式表内容原样保留：作为属性传入，避开 JSX 文本的转义限制
     if node.name in ("style", "script"):
         raw = "".join(str(c) for c in node.children)
         if not raw.strip():
             return ""
-        escaped = raw.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${")
-        return f"{pad}<{node.name}>{{`{escaped}`}}</{node.name}>"
+        payload = json.dumps(raw, ensure_ascii=False).replace("<", "\\u003c")
+        return f'{pad}<{node.name} dangerouslySetInnerHTML={{{{ __html: {payload} }}}} />'
 
     slot = node.get("data-slot")
     entry = SLOT_TABLE.get(slot) if slot else None
@@ -143,13 +180,17 @@ def render_node(node, indent, used):
         for key, value in variant_props.items():
             props.append(f'{key}="{value}"')
         if leftover:
-            props.append("className=" + json.dumps(" ".join(sorted(leftover)), ensure_ascii=False))
+            rendered = jsx_tools.format_attr("class", " ".join(sorted(leftover)))
+            if rendered:
+                props.append(rendered)
         used.add(component)
         tag = component
     else:
         tag = node.name
         if class_set:
-            props.append("className=" + json.dumps(" ".join(sorted(class_set)), ensure_ascii=False))
+            rendered = jsx_tools.format_attr("class", " ".join(sorted(class_set)))
+            if rendered:
+                props.append(rendered)
 
     for name, value in node.attrs.items():
         if name in ("class", "data-slot"):
@@ -186,6 +227,12 @@ def render_node(node, indent, used):
             parent_name = entry_parent["component"]
             used.add(parent_name)
             return f"{pad}<{parent_name}>\n{node_jsx}\n{pad}</{parent_name}>"
+
+    # 依赖上下文 Provider 的组件补上 Provider（Provider 不渲染 DOM，快照里看不到）
+    provider = PROVIDER_WRAPPER.get(slot)
+    if provider and component != provider:
+        used.add(provider)
+        return f"{pad}<{provider}>\n{node_jsx}\n{pad}</{provider}>"
 
     return node_jsx
 

@@ -34,7 +34,7 @@ export function Pattern() {
     <div className="flex items-center justify-center p-10 w-full">
       <Tabs className="flex-1 flex-col min-h-0" data-orientation="horizontal" activationDirection="none">
         <h1 className="font-semibold sm:text-lg text-base text-foreground whitespace-nowrap">
-          Navbar
+          {"Navbar"}
         </h1>
         <header className="bg-background border-b border-border flex flex-col gap-3 shrink-0 w-full">
           <div className="flex items-center justify-between">
@@ -46,7 +46,7 @@ export function Pattern() {
                       <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                     </svg>
                     <span className="hidden md:inline">
-                      Products
+                      {"Products"}
                     </span>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -61,7 +61,7 @@ export function Pattern() {
                       <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                     </svg>
                     <span className="hidden md:inline">
-                      Mobile
+                      {"Mobile"}
                     </span>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
@@ -72,7 +72,7 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
                   <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                    Checkout Flow
+                    {"Checkout Flow"}
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -103,22 +103,22 @@ export function Pattern() {
           <div className="flex items-center justify-between min-h-9">
             <TabsList className="hidden md:inline-flex" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
-                Discussion
+                {"Discussion"}
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                  3
+                  {"3"}
                 </Badge>
               </TabsTrigger>
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_6_" compositeItemActive="">
-                Tasks
+                {"Tasks"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7_">
-                Timeline
+                {"Timeline"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_">
-                Files
+                {"Files"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
-                Overview
+                {"Overview"}
               </TabsTrigger>
             </TabsList>
             <DropdownMenu>
@@ -143,7 +143,7 @@ export function Pattern() {
                   <path d="M12 5v14"></path>
                 </svg>
                 <span className="duration-300 group-hover/fab:opacity-100 ml-8 opacity-0 pr-2 transition-opacity whitespace-nowrap">
-                  Create New
+                  {"Create New"}
                 </span>
               </Button>
               <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -160,7 +160,7 @@ export function Pattern() {
                 <AvatarGroupCount>
                   <Popover>
                   <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_g_" aria-haspopup="dialog" aria-expanded="false" aria-label="9 more: Mira Stone, Alex Johnson, Nora Vale, David Kim, Priya Patel, Omar Haddad, Sarah Chen, Kenji Tan, Emma Wilson">
-                    +9
+                    {"+9"}
                   </PopoverTrigger>
                   </Popover>
                 </AvatarGroupCount>

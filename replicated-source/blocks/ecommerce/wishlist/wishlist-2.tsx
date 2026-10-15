@@ -24,7 +24,7 @@ export function Pattern() {
             <BreadcrumbList className="sm:text-sm text-xs">
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-2" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -34,7 +34,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Wishlist
+                  {"Wishlist"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -43,10 +43,10 @@ export function Pattern() {
             <div className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-between">
               <div className="flex gap-2 items-center">
                 <h1 className="font-semibold leading-tight sm:text-[1.75rem] text-2xl text-foreground tracking-tight" id="wishlist-title">
-                  Saved For Later
+                  {"Saved For Later"}
                 </h1>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-primary-foreground text-xs transition-shadow" aria-label="5 items saved">
-                  5
+                  {"5"}
                 </Badge>
               </div>
               <div className="flex flex-wrap gap-2 items-center">
@@ -58,7 +58,7 @@ export function Pattern() {
                     <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                     <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                   </svg>
-                  Share List
+                  {"Share List"}
                 </Button>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
@@ -66,31 +66,31 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Add 4 To Cart
+                  {"Add 4 To Cart"}
                 </Button>
               </div>
             </div>
             <p className="flex flex-wrap gap-x-2 gap-y-1 items-center sm:text-sm text-muted-foreground text-xs">
               <span className="gap-2 inline-flex items-center">
                 <span>
-                  1 price drop
+                  {"1 price drop"}
                 </span>
               </span>
               <span className="gap-2 inline-flex items-center">
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  1 back in stock
+                  {"1 back in stock"}
                 </span>
               </span>
               <span className="gap-2 inline-flex items-center">
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  1 almost gone
+                  {"1 almost gone"}
                 </span>
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="font-medium text-success">
-                Total savings $35
+                {"Total savings $35"}
               </span>
             </p>
           </div>
@@ -100,34 +100,34 @@ export function Pattern() {
             <TabsList className="border-b h-10! justify-start w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
               <TabsTrigger className="gap-2 group-data-horizontal/tabs:after:bottom-[-5px]! px-3 py-1.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-label="All, 5 items">
                 <span>
-                  All
+                  {"All"}
                 </span>
                 <span className="bg-muted font-semibold h-4 inline-flex items-center justify-center min-w-4 px-1 rounded-full tabular-nums text-[10px] text-muted-foreground">
-                  5
+                  {"5"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="gap-2 group-data-horizontal/tabs:after:bottom-[-5px]! px-3 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_" aria-label="Price Drops, 1 item">
                 <span>
-                  Price Drops
+                  {"Price Drops"}
                 </span>
                 <span className="bg-muted font-semibold h-4 inline-flex items-center justify-center min-w-4 px-1 rounded-full tabular-nums text-[10px] text-muted-foreground">
-                  1
+                  {"1"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="gap-2 group-data-horizontal/tabs:after:bottom-[-5px]! px-3 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Back In Stock, 1 item">
                 <span>
-                  Back In Stock
+                  {"Back In Stock"}
                 </span>
                 <span className="bg-muted font-semibold h-4 inline-flex items-center justify-center min-w-4 px-1 rounded-full tabular-nums text-[10px] text-muted-foreground">
-                  1
+                  {"1"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="gap-2 group-data-horizontal/tabs:after:bottom-[-5px]! px-3 py-1.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_" aria-label="Almost Gone, 1 item">
                 <span>
-                  Almost Gone
+                  {"Almost Gone"}
                 </span>
                 <span className="bg-muted font-semibold h-4 inline-flex items-center justify-center min-w-4 px-1 rounded-full tabular-nums text-[10px] text-muted-foreground">
-                  1
+                  {"1"}
                 </span>
               </TabsTrigger>
             </TabsList>
@@ -146,7 +146,7 @@ export function Pattern() {
                       <path d="M16 17h6v-6"></path>
                       <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                     </svg>
-                    Price Drop
+                    {"Price Drop"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Storm Wool Coat from wishlist">
@@ -158,26 +158,26 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="#" aria-label="Shop all Outerwear">
-                  Outerwear
+                  {"Outerwear"}
                 </a>
                 <h3 className="font-semibold leading-tight min-w-0 sm:text-base text-foreground text-sm tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                    Storm Wool Coat
+                    {"Storm Wool Coat"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $385
+                    {"$385"}
                   </span>
                   <span className="line-through tabular-nums text-muted-foreground text-xs">
-                    $420
+                    {"$420"}
                   </span>
                   <span className="font-semibold tabular-nums text-success text-xs">
-                    Save $35
+                    {"Save $35"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Saved 3 days ago
+                  {"Saved 3 days ago"}
                 </p>
               </div>
               <Button className="w-full" type="button" tabIndex="0" aria-label="Add Storm Wool Coat to cart">
@@ -186,7 +186,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add To Cart
+                {"Add To Cart"}
               </Button>
             </article>
           </li>
@@ -201,7 +201,7 @@ export function Pattern() {
                     <svg className="lucide lucide-flame size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlameIcon" tabler="IconFlame" hugeicons="Fire02Icon" phosphor="FlameIcon" remixicon="RiFireLine" aria-hidden="true">
                       <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path>
                     </svg>
-                    Almost Gone
+                    {"Almost Gone"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Italian Penny Loafers from wishlist">
@@ -213,20 +213,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="#" aria-label="Shop all Footwear">
-                  Footwear
+                  {"Footwear"}
                 </a>
                 <h3 className="font-semibold leading-tight min-w-0 sm:text-base text-foreground text-sm tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                    Italian Penny Loafers
+                    {"Italian Penny Loafers"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $295
+                    {"$295"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Only 2 left
+                  {"Only 2 left"}
                 </p>
               </div>
               <Button className="w-full" type="button" tabIndex="0" aria-label="Add Italian Penny Loafers to cart">
@@ -235,7 +235,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add To Cart
+                {"Add To Cart"}
               </Button>
             </article>
           </li>
@@ -253,7 +253,7 @@ export function Pattern() {
                       <polyline points="3.29 7 12 12 20.71 7"></polyline>
                       <path d="m7.5 4.27 9 5.15"></path>
                     </svg>
-                    Back In Stock
+                    {"Back In Stock"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Cashmere V-Neck Sweater from wishlist">
@@ -265,20 +265,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="#" aria-label="Shop all Knits">
-                  Knits
+                  {"Knits"}
                 </a>
                 <h3 className="font-semibold leading-tight min-w-0 sm:text-base text-foreground text-sm tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                    Cashmere V-Neck Sweater
+                    {"Cashmere V-Neck Sweater"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $228
+                    {"$228"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Restocked 2 days ago
+                  {"Restocked 2 days ago"}
                 </p>
               </div>
               <Button className="w-full" type="button" tabIndex="0" aria-label="Add Cashmere V-Neck Sweater to cart">
@@ -287,7 +287,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add To Cart
+                {"Add To Cart"}
               </Button>
             </article>
           </li>
@@ -306,20 +306,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="#" aria-label="Shop all Leather Goods">
-                  Leather Goods
+                  {"Leather Goods"}
                 </a>
                 <h3 className="font-semibold leading-tight min-w-0 sm:text-base text-foreground text-sm tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                    Slim Card Holder
+                    {"Slim Card Holder"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $85
+                    {"$85"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Saved 4 days ago
+                  {"Saved 4 days ago"}
                 </p>
               </div>
               <Button className="w-full" type="button" tabIndex="0" aria-label="Add Slim Card Holder to cart">
@@ -328,7 +328,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add To Cart
+                {"Add To Cart"}
               </Button>
             </article>
           </li>
@@ -346,7 +346,7 @@ export function Pattern() {
                       <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path>
                       <path d="m2 2 20 20"></path>
                     </svg>
-                    Unavailable
+                    {"Unavailable"}
                   </Badge>
                 </div>
                 <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Weekend Tote Bag from wishlist">
@@ -358,20 +358,20 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5 min-w-0">
                 <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="#" aria-label="Shop all Bags">
-                  Bags
+                  {"Bags"}
                 </a>
                 <h3 className="font-semibold leading-tight min-w-0 sm:text-base text-foreground text-sm tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                    Weekend Tote Bag
+                    {"Weekend Tote Bag"}
                   </a>
                 </h3>
                 <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $310
+                    {"$310"}
                   </span>
                 </div>
                 <p className="text-muted-foreground text-xs">
-                  Currently unavailable
+                  {"Currently unavailable"}
                 </p>
               </div>
               <Button className="w-full" type="button" tabIndex="0" aria-label="Notify me when Weekend Tote Bag is restocked">
@@ -379,7 +379,7 @@ export function Pattern() {
                   <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                 </svg>
-                Notify When Restocked
+                {"Notify When Restocked"}
               </Button>
             </article>
           </li>

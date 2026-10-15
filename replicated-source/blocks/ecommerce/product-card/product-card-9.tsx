@@ -19,7 +19,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -29,7 +29,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Vape Pens
+                  {"Vape Pens"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -39,7 +39,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Accessories
+                  {"Accessories"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -47,14 +47,14 @@ export function Pattern() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
               <h1 className="font-semibold leading-tight md:text-3xl text-2xl text-balance">
-                Vape Pen Accessories
+                {"Vape Pen Accessories"}
               </h1>
               <p className="leading-6 max-w-2xl mt-2 text-muted-foreground text-pretty text-sm">
-                Replacement pods, sleeves, and cartridge essentials selected for compact everyday carry.
+                {"Replacement pods, sleeves, and cartridge essentials selected for compact everyday carry."}
               </p>
             </div>
             <Button className="hover:text-primary hover:underline sm:w-auto transition-colors underline-offset-4 w-full" href="#" aria-label="Browse all vape pen accessories" role="button" tabIndex="0">
-              Browse All
+              {"Browse All"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -93,21 +93,21 @@ export function Pattern() {
                       </svg>
                       <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Accessories products">
-                          Accessories
+                          {"Accessories"}
                         </a>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Batteries products">
-                          Batteries
+                          {"Batteries"}
                         </a>
                       </div>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary text-xs transition-shadow">
-                      New Drop
+                      {"New Drop"}
                     </Badge>
                   </div>
                   <h2 className="font-bold leading-[1.28] md:text-[1.375rem] min-w-0 text-balance text-xl xl:text-xl" id="vape-pen-accessories-4-title">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Vape Pen Accessories 4
+                      {"Vape Pen Accessories 4"}
                     </a>
                   </h2>
                   <div className="flex gap-2 items-center min-h-5 min-w-0 mt-3">
@@ -168,13 +168,13 @@ export function Pattern() {
                       </Rating>
                     </div>
                     <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#">
-                      126 reviews
+                      {"126 reviews"}
                     </a>
                   </div>
                   <div className="flex gap-3 items-start justify-between min-h-6 min-w-0 mt-3">
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                       <span className="font-semibold tabular-nums text-lg">
-                        $35.00
+                        {"$35.00"}
                       </span>
                     </div>
                     <div className="flex font-medium gap-1.5 items-center justify-end min-h-6 shrink-0 text-muted-foreground text-right text-xs">
@@ -186,7 +186,7 @@ export function Pattern() {
                         <circle cx="7" cy="18" r="2"></circle>
                       </svg>
                       <span className="max-w-24 truncate">
-                        Ships today
+                        {"Ships today"}
                       </span>
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Add to Cart
+                      {"Add to Cart"}
                     </Button>
                   </div>
                 </div>
@@ -228,18 +228,18 @@ export function Pattern() {
                       </svg>
                       <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Cartridges products">
-                          Cartridges
+                          {"Cartridges"}
                         </a>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Refills products">
-                          Refills
+                          {"Refills"}
                         </a>
                       </div>
                     </div>
                   </div>
                   <h2 className="font-bold leading-[1.28] md:text-[1.375rem] min-w-0 text-balance text-xl xl:text-xl" id="ceramic-cartridge-duo-title">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Ceramic Cartridge Duo
+                      {"Ceramic Cartridge Duo"}
                     </a>
                   </h2>
                   <div className="flex gap-2 items-center min-h-5 min-w-0 mt-3">
@@ -300,16 +300,16 @@ export function Pattern() {
                       </Rating>
                     </div>
                     <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#">
-                      88 reviews
+                      {"88 reviews"}
                     </a>
                   </div>
                   <div className="flex gap-3 items-start justify-between min-h-6 min-w-0 mt-3">
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                       <span className="font-semibold tabular-nums text-lg">
-                        $28.00
+                        {"$28.00"}
                       </span>
                       <span className="font-medium line-through tabular-nums text-muted-foreground text-sm">
-                        $36.00
+                        {"$36.00"}
                       </span>
                     </div>
                     <div className="flex font-medium gap-1.5 items-center justify-end min-h-6 shrink-0 text-muted-foreground text-right text-xs">
@@ -321,7 +321,7 @@ export function Pattern() {
                         <circle cx="7" cy="18" r="2"></circle>
                       </svg>
                       <span className="max-w-24 truncate">
-                        Refill ready
+                        {"Refill ready"}
                       </span>
                     </div>
                   </div>
@@ -332,7 +332,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Add to Cart
+                      {"Add to Cart"}
                     </Button>
                   </div>
                 </div>
@@ -363,21 +363,21 @@ export function Pattern() {
                       </svg>
                       <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Battery products">
-                          Battery
+                          {"Battery"}
                         </a>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Sleeves products">
-                          Sleeves
+                          {"Sleeves"}
                         </a>
                       </div>
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                      Low Stock
+                      {"Low Stock"}
                     </Badge>
                   </div>
                   <h2 className="font-bold leading-[1.28] md:text-[1.375rem] min-w-0 text-balance text-xl xl:text-xl" id="black-battery-sleeve-title">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Black Battery Sleeve
+                      {"Black Battery Sleeve"}
                     </a>
                   </h2>
                   <div className="flex gap-2 items-center min-h-5 min-w-0 mt-3">
@@ -438,13 +438,13 @@ export function Pattern() {
                       </Rating>
                     </div>
                     <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#">
-                      203 reviews
+                      {"203 reviews"}
                     </a>
                   </div>
                   <div className="flex gap-3 items-start justify-between min-h-6 min-w-0 mt-3">
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                       <span className="font-semibold tabular-nums text-lg">
-                        $42.00
+                        {"$42.00"}
                       </span>
                     </div>
                     <div className="flex font-medium gap-1.5 items-center justify-end min-h-6 shrink-0 text-muted-foreground text-right text-xs">
@@ -456,7 +456,7 @@ export function Pattern() {
                         <circle cx="7" cy="18" r="2"></circle>
                       </svg>
                       <span className="max-w-24 truncate">
-                        6 left
+                        {"6 left"}
                       </span>
                     </div>
                   </div>
@@ -467,7 +467,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Add to Cart
+                      {"Add to Cart"}
                     </Button>
                   </div>
                 </div>
@@ -498,18 +498,18 @@ export function Pattern() {
                       </svg>
                       <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Pods products">
-                          Pods
+                          {"Pods"}
                         </a>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="View Starter Kits products">
-                          Starter Kits
+                          {"Starter Kits"}
                         </a>
                       </div>
                     </div>
                   </div>
                   <h2 className="font-bold leading-[1.28] md:text-[1.375rem] min-w-0 text-balance text-xl xl:text-xl" id="blue-pod-kit-title">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                      Blue Pod Kit With Refill
+                      {"Blue Pod Kit With Refill"}
                     </a>
                   </h2>
                   <div className="flex gap-2 items-center min-h-5 min-w-0 mt-3">
@@ -570,13 +570,13 @@ export function Pattern() {
                       </Rating>
                     </div>
                     <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-4" href="#">
-                      74 reviews
+                      {"74 reviews"}
                     </a>
                   </div>
                   <div className="flex gap-3 items-start justify-between min-h-6 min-w-0 mt-3">
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                       <span className="font-semibold tabular-nums text-lg">
-                        $39.00
+                        {"$39.00"}
                       </span>
                     </div>
                     <div className="flex font-medium gap-1.5 items-center justify-end min-h-6 shrink-0 text-muted-foreground text-right text-xs">
@@ -588,7 +588,7 @@ export function Pattern() {
                         <circle cx="7" cy="18" r="2"></circle>
                       </svg>
                       <span className="max-w-24 truncate">
-                        Ready to use
+                        {"Ready to use"}
                       </span>
                     </div>
                   </div>
@@ -599,7 +599,7 @@ export function Pattern() {
                         <path d="M3.103 6.034h17.794"></path>
                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                       </svg>
-                      Add to Cart
+                      {"Add to Cart"}
                     </Button>
                   </div>
                 </div>

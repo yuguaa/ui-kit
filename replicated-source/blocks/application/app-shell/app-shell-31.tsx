@@ -190,17 +190,17 @@ export function Pattern() {
             <TabsList className="gap-0 h-9! justify-start lg:h-11! lg:w-fit p-0 relative rounded-none shrink-0 w-[calc(100%-var(--radius)-12px)]" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger className="after:hidden dark:data-active:bg-transparent dark:data-active:border-transparent dark:data-active:text-(--shell-ink) dark:text-(--shell-ink-soft) data-active:bg-transparent data-active:border-transparent data-active:text-(--shell-ink) flex-none focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 font-medium group/tab h-full! lg:px-5 lg:w-(--tab-w) min-w-0 px-0.5 rounded-md shadow-none! sm:px-2 sm:text-sm text-(--shell-ink-soft) text-xs truncate w-[calc(var(--tab-f)*100%)]" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_7_" compositeItemActive="" aria-controls="base-ui-_r_a_" style={{"--tab-w": "227.304px", "--tab-f": "0.31409419343605816"}}>
                 <span className="group-focus-visible/tab:ring-(--shell-ink)/70 group-focus-visible/tab:ring-2 px-2 py-0.5 rounded-full">
-                  Operations
+                  {"Operations"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="after:hidden dark:data-active:bg-transparent dark:data-active:border-transparent dark:data-active:text-(--shell-ink) dark:text-(--shell-ink-soft) data-active:bg-transparent data-active:border-transparent data-active:text-(--shell-ink) flex-none focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 font-medium group/tab h-full! lg:px-5 lg:w-(--tab-w) min-w-0 px-0.5 rounded-md shadow-none! sm:px-2 sm:text-sm text-(--shell-ink-soft) text-xs truncate w-[calc(var(--tab-f)*100%)]" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_" style={{"--tab-w": "234.969px", "--tab-f": "0.32468587678825334"}}>
                 <span className="group-focus-visible/tab:ring-(--shell-ink)/70 group-focus-visible/tab:ring-2 px-2 py-0.5 rounded-full">
-                  Structure
+                  {"Structure"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="after:hidden dark:data-active:bg-transparent dark:data-active:border-transparent dark:data-active:text-(--shell-ink) dark:text-(--shell-ink-soft) data-active:bg-transparent data-active:border-transparent data-active:text-(--shell-ink) flex-none focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 font-medium group/tab h-full! lg:px-5 lg:w-(--tab-w) min-w-0 px-0.5 rounded-md shadow-none! sm:px-2 sm:text-sm text-(--shell-ink-soft) text-xs truncate w-[calc(var(--tab-f)*100%)]" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_" style={{"--tab-w": "236.007px", "--tab-f": "0.32612021042420625"}}>
                 <span className="group-focus-visible/tab:ring-(--shell-ink)/70 group-focus-visible/tab:ring-2 px-2 py-0.5 rounded-full">
-                  Insights
+                  {"Insights"}
                 </span>
               </TabsTrigger>
             </TabsList>

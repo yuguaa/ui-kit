@@ -27,19 +27,19 @@ export function Pattern() {
                   <path d="M16 7h6v6"></path>
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
-                +12.8%
+                {"+12.8%"}
               </Badge>
             </div>
             <div className="space-y-1">
               <div className="font-medium text-muted-foreground text-sm">
-                Active Projects
+                {"Active Projects"}
               </div>
               <div className="font-bold text-3xl text-foreground tracking-tight">
-                17
+                {"17"}
               </div>
             </div>
             <div className="text-muted-foreground text-xs">
-              From Jan 01 - Jul 30, 2024
+              {"From Jan 01 - Jul 30, 2024"}
             </div>
           </FramePanel>
         </Frame>
@@ -60,19 +60,19 @@ export function Pattern() {
                   <path d="M16 7h6v6"></path>
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
-                +3.7%
+                {"+3.7%"}
               </Badge>
             </div>
             <div className="space-y-1">
               <div className="font-medium text-muted-foreground text-sm">
-                Orders Processed
+                {"Orders Processed"}
               </div>
               <div className="font-bold text-3xl text-foreground tracking-tight">
-                3,421
+                {"3,421"}
               </div>
             </div>
             <div className="text-muted-foreground text-xs">
-              From Jan 01 - Jul 30, 2024
+              {"From Jan 01 - Jul 30, 2024"}
             </div>
           </FramePanel>
         </Frame>
@@ -94,19 +94,19 @@ export function Pattern() {
                   <path d="M16 17h6v-6"></path>
                   <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                 </svg>
-                -2.1%
+                {"-2.1%"}
               </Badge>
             </div>
             <div className="space-y-1">
               <div className="font-medium text-muted-foreground text-sm">
-                Churned Users
+                {"Churned Users"}
               </div>
               <div className="font-bold text-3xl text-foreground tracking-tight">
-                89
+                {"89"}
               </div>
             </div>
             <div className="text-muted-foreground text-xs">
-              From Jan 01 - Jul 30, 2024
+              {"From Jan 01 - Jul 30, 2024"}
             </div>
           </FramePanel>
         </Frame>

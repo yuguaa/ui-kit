@@ -18,30 +18,30 @@ export function Pattern() {
         <Card className="gap-0 overflow-hidden p-0" size="default">
           <div className="flex gap-3 items-center justify-between px-5 py-4">
             <h2 className="font-semibold text-foreground text-sm tracking-tight">
-              Filters
+              {"Filters"}
             </h2>
             <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0" extracted="1">
-              Clear all
+              {"Clear all"}
             </Button>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="flex flex-wrap gap-1.5 px-5 py-4" aria-label="Active filters">
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Women">
-              Women
+              {"Women"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Outerwear">
-              Outerwear
+              {"Outerwear"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Cotton">
-              Cotton
+              {"Cotton"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
@@ -49,35 +49,35 @@ export function Pattern() {
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Black">
               <span className="border border-border/60 inline-block rounded-full shrink-0 size-2.5" aria-hidden="true" style={{backgroundColor: "oklch(0.205 0 0)"}}></span>
-              Black
+              {"Black"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Northline">
-              Northline
+              {"Northline"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter 4★ & up">
-              4★ & up
+              {"4★ & up"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter $40 − $180">
-              $40 − $180
+              {"$40 − $180"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
               </svg>
             </button>
             <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter In stock">
-              In stock
+              {"In stock"}
               <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                 <path d="M18 6 6 18"></path>
                 <path d="m6 6 12 12"></path>
@@ -90,9 +90,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="0" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" aria-disabled="false" aria-expanded="false" id="base-ui-_r_2_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Department
+                    {"Department"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -108,9 +108,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-index="1" data-open="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" index="1" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_4_" aria-expanded="true" id="base-ui-_r_5_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Category
+                    {"Category"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -135,10 +135,10 @@ export function Pattern() {
                       <input id="filter-6-category-outerwear" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-outerwear" id="filter-6-category-outerwear-label">
                         <span className="truncate">
-                          Outerwear
+                          {"Outerwear"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          128
+                          {"128"}
                         </span>
                       </Label>
                     </li>
@@ -147,10 +147,10 @@ export function Pattern() {
                       <input id="filter-6-category-knitwear" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-knitwear" id="filter-6-category-knitwear-label">
                         <span className="truncate">
-                          Knitwear
+                          {"Knitwear"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          84
+                          {"84"}
                         </span>
                       </Label>
                     </li>
@@ -159,10 +159,10 @@ export function Pattern() {
                       <input id="filter-6-category-tops" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-tops" id="filter-6-category-tops-label">
                         <span className="truncate">
-                          Tops
+                          {"Tops"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          156
+                          {"156"}
                         </span>
                       </Label>
                     </li>
@@ -171,10 +171,10 @@ export function Pattern() {
                       <input id="filter-6-category-bottoms" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-bottoms" id="filter-6-category-bottoms-label">
                         <span className="truncate">
-                          Bottoms
+                          {"Bottoms"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          92
+                          {"92"}
                         </span>
                       </Label>
                     </li>
@@ -183,10 +183,10 @@ export function Pattern() {
                       <input id="filter-6-category-dresses" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-dresses" id="filter-6-category-dresses-label">
                         <span className="truncate">
-                          Dresses
+                          {"Dresses"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          74
+                          {"74"}
                         </span>
                       </Label>
                     </li>
@@ -195,10 +195,10 @@ export function Pattern() {
                       <input id="filter-6-category-footwear" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-6-category-footwear" id="filter-6-category-footwear-label">
                         <span className="truncate">
-                          Footwear
+                          {"Footwear"}
                         </span>
                         <span className="tabular-nums text-muted-foreground">
-                          67
+                          {"67"}
                         </span>
                       </Label>
                     </li>
@@ -210,9 +210,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-index="2" data-open="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" index="2" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_p_" aria-expanded="true" id="base-ui-_r_q_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Price
+                    {"Price"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -227,10 +227,10 @@ export function Pattern() {
                 <div className="[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 cn-accordion-content-inner data-ending-style:h-0 data-starting-style:h-0 flex flex-col gap-3 h-(--accordion-panel-height) pb-4 px-5">
                   <div className="flex font-medium gap-3 items-baseline justify-between tabular-nums text-xs">
                     <span className="font-semibold text-foreground">
-                      $40
+                      {"$40"}
                     </span>
                     <span className="font-semibold text-foreground">
-                      $180
+                      {"$180"}
                     </span>
                   </div>
                   <Slider data-orientation="horizontal" id="base-ui-_r_r_" role="group" aria-label="Price range">
@@ -253,9 +253,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="3" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="3" aria-disabled="false" aria-expanded="false" id="base-ui-_r_14_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Color
+                    {"Color"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -271,7 +271,7 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="4" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="4" aria-disabled="false" aria-expanded="false" id="base-ui-_r_17_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Size
+                    {"Size"}
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                     <path d="m6 9 6 6 6-6"></path>
@@ -286,9 +286,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="5" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="5" aria-disabled="false" aria-expanded="false" id="base-ui-_r_1a_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Material
+                    {"Material"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -304,9 +304,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="6" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="6" aria-disabled="false" aria-expanded="false" id="base-ui-_r_1d_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Brand
+                    {"Brand"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -322,9 +322,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="7" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="7" aria-disabled="false" aria-expanded="false" id="base-ui-_r_1g_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Rating
+                    {"Rating"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -340,9 +340,9 @@ export function Pattern() {
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="8" data-closed="">
                 <AccordionTrigger className="font-semibold hover:no-underline items-center px-5 py-3.5 text-sm tracking-tight" type="button" value="category,price" data-orientation="vertical" hidden="" index="8" aria-disabled="false" aria-expanded="false" id="base-ui-_r_1j_" tabIndex="0">
                   <span className="inline-flex items-center">
-                    Quick filters
+                    {"Quick filters"}
                     <span className="bg-foreground font-semibold h-4 inline-flex items-center justify-center min-w-4 ml-1.5 px-1 rounded-full tabular-nums text-[0.625rem] text-background">
-                      1
+                      {"1"}
                     </span>
                   </span>
                   <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -358,10 +358,10 @@ export function Pattern() {
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="flex gap-2 items-center px-5 py-4">
             <Button className="flex-1" type="button" tabIndex="0">
-              Apply filters
+              {"Apply filters"}
             </Button>
             <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0">
-              Reset
+              {"Reset"}
             </Button>
           </div>
         </Card>

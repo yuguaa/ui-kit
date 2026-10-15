@@ -22,13 +22,13 @@ export function Pattern() {
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
               <path d="M12 17h.01"></path>
             </svg>
-            FAQ
+            {"FAQ"}
           </Badge>
           <h2 className="font-semibold sm:text-3xl text-2xl text-balance text-foreground tracking-tight" id="faq-5-title">
-            Everything Before Launch
+            {"Everything Before Launch"}
           </h2>
           <p className="max-w-md text-base text-muted-foreground text-pretty">
-            What teams ask when adopting NeUI blocks in production.
+            {"What teams ask when adopting NeUI blocks in production."}
           </p>
         </div>
         <div className="gap-6 grid items-start lg:gap-8 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,0.85fr)] lg:mt-8 mt-6">
@@ -39,7 +39,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-index="0" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_1_" aria-expanded="true" id="base-ui-_r_2_" tabIndex="0" extracted="1">
                       <span className="min-w-0 text-pretty">
-                        How Do Teams Move a Block Into Production?
+                        {"How Do Teams Move a Block Into Production?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -52,7 +52,7 @@ export function Pattern() {
                   <AccordionContent data-orientation="vertical" index="0" data-open="" id="base-ui-_r_1_" aria-labelledby="base-ui-_r_2_" role="region" style={{"--accordion-panel-height": "auto", "--accordion-panel-width": "auto", animationName: "none"}}>
                     <div className="[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 cn-accordion-content-inner data-ending-style:h-0 data-starting-style:h-0 h-(--accordion-panel-height) leading-6 pb-4 text-muted-foreground text-pretty text-sm">
                       <p>
-                        Copy the block into a route, swap the demo records for your data, and tighten the copy to match the surface. Layout, spacing, and focus states are already reviewed across breakpoints, so the first commit is usually content, not structure.
+                        {"Copy the block into a route, swap the demo records for your data, and tighten the copy to match the surface. Layout, spacing, and focus states are already reviewed across breakpoints, so the first commit is usually content, not structure."}
                       </p>
                     </div>
                   </AccordionContent>
@@ -61,7 +61,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="1" data-closed="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" hidden="" index="1" aria-disabled="false" aria-expanded="false" id="base-ui-_r_5_" tabIndex="0">
                       <span className="min-w-0 text-pretty">
-                        Can We Customize the Underlying shadcn Primitives?
+                        {"Can We Customize the Underlying shadcn Primitives?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -76,7 +76,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="2" data-closed="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" hidden="" index="2" aria-disabled="false" aria-expanded="false" id="base-ui-_r_8_" tabIndex="0">
                       <span className="min-w-0 text-pretty">
-                        How Does Theming Work With Our Design Tokens?
+                        {"How Does Theming Work With Our Design Tokens?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -91,7 +91,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="3" data-closed="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" hidden="" index="3" aria-disabled="false" aria-expanded="false" id="base-ui-_r_b_" tabIndex="0">
                       <span className="min-w-0 text-pretty">
-                        What Does a Pro License Include?
+                        {"What Does a Pro License Include?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -106,7 +106,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="4" data-closed="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" hidden="" index="4" aria-disabled="false" aria-expanded="false" id="base-ui-_r_e_" tabIndex="0">
                       <span className="min-w-0 text-pretty">
-                        Will Updates Overwrite Our Customizations?
+                        {"Will Updates Overwrite Our Customizations?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -121,7 +121,7 @@ export function Pattern() {
                   <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="5" data-closed="">
                     <AccordionTrigger className="[&>svg]:my-auto font-medium gap-4 hover:no-underline py-4 text-base text-left" type="button" value="production-use" data-orientation="vertical" hidden="" index="5" aria-disabled="false" aria-expanded="false" id="base-ui-_r_h_" tabIndex="0">
                       <span className="min-w-0 text-pretty">
-                        Where Do We Go for Implementation Help?
+                        {"Where Do We Go for Implementation Help?"}
                       </span>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -150,10 +150,10 @@ export function Pattern() {
                 </span>
                 <div className="flex flex-col gap-1.5">
                   <p className="font-semibold text-base text-foreground tracking-tight">
-                    Still Have Questions?
+                    {"Still Have Questions?"}
                   </p>
                   <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                    Tell us your stack and timeline. A real engineer replies within a business day.
+                    {"Tell us your stack and timeline. A real engineer replies within a business day."}
                   </p>
                 </div>
                 <Button className="w-full" href="#" role="button" tabIndex="0">
@@ -163,7 +163,7 @@ export function Pattern() {
                     <path d="M7 15h6"></path>
                     <path d="M7 7h8"></path>
                   </svg>
-                  Talk to Support
+                  {"Talk to Support"}
                 </Button>
                 <div className="border-border/60 border-t flex gap-2.5 items-center pt-4 text-sm">
                   <svg className="lucide lucide-mail size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
@@ -171,9 +171,9 @@ export function Pattern() {
                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                   </svg>
                   <span className="text-muted-foreground">
-                    Prefer email?
+                    {"Prefer email?"}
                     <a className="focus-visible:outline-none focus-visible:underline font-medium hover:underline text-foreground underline-offset-3" href="#">
-                      support@neui.dev
+                      {"support@neui.dev"}
                     </a>
                   </span>
                 </div>

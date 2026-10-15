@@ -20,10 +20,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-4">
                 <a className="block font-medium hover:text-primary leading-tight text-foreground text-sm" href="#">
-                  Ordering & Billing Guide
+                  {"Ordering & Billing Guide"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  Step-by-step instructions for checkout, invoices, taxes, and returns.
+                  {"Step-by-step instructions for checkout, invoices, taxes, and returns."}
                 </p>
               </div>
             </div>
@@ -32,7 +32,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Place an order guide
+                      {"Place an order guide"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
@@ -43,7 +43,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Request a refund guide
+                      {"Request a refund guide"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
@@ -68,10 +68,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-4">
                 <a className="block font-medium hover:text-primary leading-tight text-foreground text-sm" href="#">
-                  Configuration & Integrations
+                  {"Configuration & Integrations"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  Setup for accounts, permissions, webhooks, and third-party connections.
+                  {"Setup for accounts, permissions, webhooks, and third-party connections."}
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Connect Slack and Trello
+                      {"Connect Slack and Trello"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
@@ -91,7 +91,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Create API keys securely
+                      {"Create API keys securely"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
@@ -114,10 +114,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-4">
                 <a className="block font-medium hover:text-primary leading-tight text-foreground text-sm" href="#">
-                  Media Library Introduction
+                  {"Media Library Introduction"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  Basics for uploading images, organizing folders, and optimizing delivery.
+                  {"Basics for uploading images, organizing folders, and optimizing delivery."}
                 </p>
               </div>
             </div>
@@ -126,7 +126,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Upload and organize assets
+                      {"Upload and organize assets"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
@@ -137,7 +137,7 @@ export function Pattern() {
                 <div className="border-border/60 border-t group">
                   <a className="flex gap-2 group-hover:bg-muted/60 group-hover:text-primary items-center justify-between leading-relaxed px-5 py-3 text-foreground text-xs transition-colors w-full" href="#">
                     <span>
-                      Image optimization best practices
+                      {"Image optimization best practices"}
                     </span>
                     <svg className="group-hover:text-primary lucide lucide-arrow-up-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>

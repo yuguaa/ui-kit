@@ -28,7 +28,7 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-start justify-center min-h-svh p-3 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Access review board
+        {"Access review board"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1280px] mx-auto w-full">
         <header className="px-1 py-1" aria-label="Access review toolbar">
@@ -36,14 +36,14 @@ export function Pattern() {
             <div className="min-w-0">
               <div className="flex flex-wrap gap-2 items-center min-w-0">
                 <h2 className="font-semibold text-base truncate">
-                  Access Review
+                  {"Access Review"}
                 </h2>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                  10
+                  {"10"}
                 </Badge>
               </div>
               <p className="line-clamp-1 mt-0.5 text-muted-foreground text-sm">
-                Review access changes, risk signals, and owner attestations.
+                {"Review access changes, risk signals, and owner attestations."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full">
@@ -51,14 +51,14 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New review
+                {"New review"}
               </Button>
             </div>
           </div>
@@ -79,10 +79,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Intake">
-                            Intake
+                            {"Intake"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -113,10 +113,10 @@ export function Pattern() {
                                   <span className="bg-amber-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Stripe">
-                                      Stripe
+                                      {"Stripe"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Medium
+                                      {"Medium"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -134,10 +134,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1021
+                                            {"IAM-1021"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Billing admin">
-                                            Billing admin
+                                            {"Billing admin"}
                                           </span>
                                         </div>
                                       </div>
@@ -156,10 +156,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Verify billing administrator grant">
-                                            Verify billing administrator grant
+                                            {"Verify billing administrator grant"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            18m ago
+                                            {"18m ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -179,7 +179,7 @@ export function Pattern() {
                                             <AvatarImage alt="Avery Stone" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Avery Stone">
-                                            Avery Stone
+                                            {"Avery Stone"}
                                           </span>
                                         </div>
                                       </div>
@@ -258,7 +258,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -267,7 +267,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="3 comments">
@@ -275,7 +275,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          3
+                                          {"3"}
                                         </span>
                                       </span>
                                     </div>
@@ -284,7 +284,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Today
+                                      {"Today"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -298,10 +298,10 @@ export function Pattern() {
                                   <span className="bg-emerald-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Support console">
-                                      Support console
+                                      {"Support console"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Low
+                                      {"Low"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -319,10 +319,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1022
+                                            {"IAM-1022"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Session replay">
-                                            Session replay
+                                            {"Session replay"}
                                           </span>
                                         </div>
                                       </div>
@@ -341,10 +341,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Confirm support console impersonation role">
-                                            Confirm support console impersonation role
+                                            {"Confirm support console impersonation role"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            2h ago
+                                            {"2h ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -364,7 +364,7 @@ export function Pattern() {
                                             <AvatarImage alt="Talia Moss" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Talia Moss">
-                                            Talia Moss
+                                            {"Talia Moss"}
                                           </span>
                                         </div>
                                       </div>
@@ -443,7 +443,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          1
+                                          {"1"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -452,7 +452,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="1 comments">
@@ -460,7 +460,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          1
+                                          {"1"}
                                         </span>
                                       </span>
                                     </div>
@@ -469,7 +469,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      2d
+                                      {"2d"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -482,7 +482,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add intake review
+                          {"Add intake review"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -499,10 +499,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Owner Review">
-                            Owner Review
+                            {"Owner Review"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -533,10 +533,10 @@ export function Pattern() {
                                   <span className="bg-amber-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Snowflake">
-                                      Snowflake
+                                      {"Snowflake"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Medium
+                                      {"Medium"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -554,10 +554,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1104
+                                            {"IAM-1104"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Schema owner">
-                                            Schema owner
+                                            {"Schema owner"}
                                           </span>
                                         </div>
                                       </div>
@@ -576,10 +576,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Attest warehouse schema owner access">
-                                            Attest warehouse schema owner access
+                                            {"Attest warehouse schema owner access"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            41m ago
+                                            {"41m ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -599,7 +599,7 @@ export function Pattern() {
                                             <AvatarImage alt="Dev Iqbal" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Dev Iqbal">
-                                            Dev Iqbal
+                                            {"Dev Iqbal"}
                                           </span>
                                         </div>
                                       </div>
@@ -678,7 +678,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          3
+                                          {"3"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -687,7 +687,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 comments">
@@ -695,7 +695,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                     </div>
@@ -704,7 +704,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      1d
+                                      {"1d"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -718,10 +718,10 @@ export function Pattern() {
                                   <span className="bg-emerald-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Workspace admin">
-                                      Workspace admin
+                                      {"Workspace admin"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Low
+                                      {"Low"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -739,10 +739,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1107
+                                            {"IAM-1107"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Org settings">
-                                            Org settings
+                                            {"Org settings"}
                                           </span>
                                         </div>
                                       </div>
@@ -761,10 +761,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Review workspace owner permissions">
-                                            Review workspace owner permissions
+                                            {"Review workspace owner permissions"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            Yesterday
+                                            {"Yesterday"}
                                           </span>
                                         </div>
                                       </div>
@@ -784,7 +784,7 @@ export function Pattern() {
                                             <AvatarImage alt="Camila Reed" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Camila Reed">
-                                            Camila Reed
+                                            {"Camila Reed"}
                                           </span>
                                         </div>
                                       </div>
@@ -863,7 +863,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          1
+                                          {"1"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -872,7 +872,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="4 comments">
@@ -880,7 +880,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          4
+                                          {"4"}
                                         </span>
                                       </span>
                                     </div>
@@ -889,7 +889,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      3d
+                                      {"3d"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -902,7 +902,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add owner review
+                          {"Add owner review"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -919,10 +919,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Risk Review">
-                            Risk Review
+                            {"Risk Review"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -953,10 +953,10 @@ export function Pattern() {
                                   <span className="bg-red-600 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="GitHub Enterprise">
-                                      GitHub Enterprise
+                                      {"GitHub Enterprise"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                                      Critical
+                                      {"Critical"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -974,10 +974,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1208
+                                            {"IAM-1208"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Repository admin">
-                                            Repository admin
+                                            {"Repository admin"}
                                           </span>
                                         </div>
                                       </div>
@@ -996,10 +996,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Remove dormant repository administrator">
-                                            Remove dormant repository administrator
+                                            {"Remove dormant repository administrator"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            44d ago
+                                            {"44d ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -1019,7 +1019,7 @@ export function Pattern() {
                                             <AvatarImage alt="Jonas Hart" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Jonas Hart">
-                                            Jonas Hart
+                                            {"Jonas Hart"}
                                           </span>
                                         </div>
                                       </div>
@@ -1098,7 +1098,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          4
+                                          {"4"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -1107,7 +1107,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="7 comments">
@@ -1115,7 +1115,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          7
+                                          {"7"}
                                         </span>
                                       </span>
                                     </div>
@@ -1124,7 +1124,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Overdue
+                                      {"Overdue"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -1138,10 +1138,10 @@ export function Pattern() {
                                   <span className="bg-red-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Workday">
-                                      Workday
+                                      {"Workday"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      High
+                                      {"High"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -1159,10 +1159,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1212
+                                            {"IAM-1212"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Payroll export">
-                                            Payroll export
+                                            {"Payroll export"}
                                           </span>
                                         </div>
                                       </div>
@@ -1181,10 +1181,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Validate payroll export permission">
-                                            Validate payroll export permission
+                                            {"Validate payroll export permission"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            6d ago
+                                            {"6d ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -1204,7 +1204,7 @@ export function Pattern() {
                                             <AvatarImage alt="Freya Chen" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Freya Chen">
-                                            Freya Chen
+                                            {"Freya Chen"}
                                           </span>
                                         </div>
                                       </div>
@@ -1283,7 +1283,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -1292,7 +1292,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="5 comments">
@@ -1300,7 +1300,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          5
+                                          {"5"}
                                         </span>
                                       </span>
                                     </div>
@@ -1309,7 +1309,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Today
+                                      {"Today"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -1322,7 +1322,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add risk review
+                          {"Add risk review"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -1341,10 +1341,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Exception">
-                            Exception
+                            {"Exception"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            1
+                            {"1"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1375,10 +1375,10 @@ export function Pattern() {
                                   <span className="bg-red-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Okta">
-                                      Okta
+                                      {"Okta"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      High
+                                      {"High"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -1396,10 +1396,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1301
+                                            {"IAM-1301"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Break-glass admin">
-                                            Break-glass admin
+                                            {"Break-glass admin"}
                                           </span>
                                         </div>
                                       </div>
@@ -1418,10 +1418,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Time-box break-glass identity access">
-                                            Time-box break-glass identity access
+                                            {"Time-box break-glass identity access"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            12m ago
+                                            {"12m ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -1441,7 +1441,7 @@ export function Pattern() {
                                             <AvatarImage alt="Avery Stone" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Avery Stone">
-                                            Avery Stone
+                                            {"Avery Stone"}
                                           </span>
                                         </div>
                                       </div>
@@ -1520,7 +1520,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          3
+                                          {"3"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -1529,7 +1529,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="4 comments">
@@ -1537,7 +1537,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          4
+                                          {"4"}
                                         </span>
                                       </span>
                                     </div>
@@ -1546,7 +1546,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      12h
+                                      {"12h"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -1559,7 +1559,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add exception
+                          {"Add exception"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -1575,10 +1575,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Removal">
-                            Removal
+                            {"Removal"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            1
+                            {"1"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1609,10 +1609,10 @@ export function Pattern() {
                                   <span className="bg-amber-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="Customer data platform">
-                                      Customer data platform
+                                      {"Customer data platform"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Medium
+                                      {"Medium"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -1630,10 +1630,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1416
+                                            {"IAM-1416"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Audience export">
-                                            Audience export
+                                            {"Audience export"}
                                           </span>
                                         </div>
                                       </div>
@@ -1652,10 +1652,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Queue marketing contractor data export removal">
-                                            Queue marketing contractor data export removal
+                                            {"Queue marketing contractor data export removal"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            19d ago
+                                            {"19d ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -1675,7 +1675,7 @@ export function Pattern() {
                                             <AvatarImage alt="Talia Moss" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Talia Moss">
-                                            Talia Moss
+                                            {"Talia Moss"}
                                           </span>
                                         </div>
                                       </div>
@@ -1754,7 +1754,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -1763,7 +1763,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 comments">
@@ -1771,7 +1771,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                     </div>
@@ -1780,7 +1780,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Queued
+                                      {"Queued"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -1793,7 +1793,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add removal
+                          {"Add removal"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -1809,10 +1809,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Certified">
-                            Certified
+                            {"Certified"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1843,10 +1843,10 @@ export function Pattern() {
                                   <span className="bg-emerald-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="GRC workspace">
-                                      GRC workspace
+                                      {"GRC workspace"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Low
+                                      {"Low"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -1864,10 +1864,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1505
+                                            {"IAM-1505"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Audit evidence">
-                                            Audit evidence
+                                            {"Audit evidence"}
                                           </span>
                                         </div>
                                       </div>
@@ -1886,10 +1886,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Certify audit evidence reader">
-                                            Certify audit evidence reader
+                                            {"Certify audit evidence reader"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            3h ago
+                                            {"3h ago"}
                                           </span>
                                         </div>
                                       </div>
@@ -1909,7 +1909,7 @@ export function Pattern() {
                                             <AvatarImage alt="Mina Patel" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Mina Patel">
-                                            Mina Patel
+                                            {"Mina Patel"}
                                           </span>
                                         </div>
                                       </div>
@@ -1988,7 +1988,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          1
+                                          {"1"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -1997,7 +1997,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="1 comments">
@@ -2005,7 +2005,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          1
+                                          {"1"}
                                         </span>
                                       </span>
                                     </div>
@@ -2014,7 +2014,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Done
+                                      {"Done"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -2028,10 +2028,10 @@ export function Pattern() {
                                   <span className="bg-emerald-500 ml-0.5 rounded-md size-2.5" aria-hidden="true"></span>
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <CardTitle className="leading-5 min-w-0 text-sm truncate" title="CI/CD platform">
-                                      CI/CD platform
+                                      {"CI/CD platform"}
                                     </CardTitle>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Low
+                                      {"Low"}
                                     </Badge>
                                   </div>
                                 </CardHeader>
@@ -2049,10 +2049,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="font-medium tabular-nums truncate">
-                                            IAM-1511
+                                            {"IAM-1511"}
                                           </span>
                                           <span className="text-muted-foreground text-xs truncate" title="Deploy approval">
-                                            Deploy approval
+                                            {"Deploy approval"}
                                           </span>
                                         </div>
                                       </div>
@@ -2071,10 +2071,10 @@ export function Pattern() {
                                       <div className="min-w-0">
                                         <div className="flex gap-2 items-center min-w-0">
                                           <span className="truncate" title="Certify production deploy approval">
-                                            Certify production deploy approval
+                                            {"Certify production deploy approval"}
                                           </span>
                                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                            Today
+                                            {"Today"}
                                           </span>
                                         </div>
                                       </div>
@@ -2094,7 +2094,7 @@ export function Pattern() {
                                             <AvatarImage alt="Rowan Kim" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                           </Avatar>
                                           <span className="truncate" title="Rowan Kim">
-                                            Rowan Kim
+                                            {"Rowan Kim"}
                                           </span>
                                         </div>
                                       </div>
@@ -2173,7 +2173,7 @@ export function Pattern() {
                                           <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="2 reviewers">
@@ -2182,7 +2182,7 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span>
-                                          2
+                                          {"2"}
                                         </span>
                                       </span>
                                       <span className="flex gap-1 items-center tabular-nums" aria-label="3 comments">
@@ -2190,7 +2190,7 @@ export function Pattern() {
                                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                         <span>
-                                          3
+                                          {"3"}
                                         </span>
                                       </span>
                                     </div>
@@ -2199,7 +2199,7 @@ export function Pattern() {
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <path d="M12 6v6l4 2"></path>
                                       </svg>
-                                      Done
+                                      {"Done"}
                                     </span>
                                   </div>
                                 </CardContent>
@@ -2212,7 +2212,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add certification
+                          {"Add certification"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -2223,7 +2223,7 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      Add Stage
+                      {"Add Stage"}
                     </Button>
                   </div>
                 </KanbanBoard>
@@ -2235,9 +2235,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

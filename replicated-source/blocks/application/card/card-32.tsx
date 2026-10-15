@@ -17,7 +17,7 @@ export function Pattern() {
           <div className="flex flex-col items-stretch md:flex-row overflow-hidden">
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Passing Controls
+                {"Passing Controls"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <div className="[&_svg]:size-4">
@@ -27,17 +27,17 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-0.5 items-baseline">
                   <span className="text-sm">
-                    92% - 42
+                    {"92% - 42"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    /73 controls
+                    {"/73 controls"}
                   </span>
                 </div>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Open Tickets
+                {"Open Tickets"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <div className="[&_svg]:size-4">
@@ -47,17 +47,17 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-0.5 items-baseline">
                   <span className="text-sm">
-                    22% - 16
+                    {"22% - 16"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    /74 tickets
+                    {"/74 tickets"}
                   </span>
                 </div>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Critical Issues
+                {"Critical Issues"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <div className="[&_svg]:size-4">
@@ -69,17 +69,17 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-0.5 items-baseline">
                   <span className="text-sm">
-                    5% - 6
+                    {"5% - 6"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    /107 issues
+                    {"/107 issues"}
                   </span>
                 </div>
               </div>
             </div>
             <div className="border-b border-border/60 flex flex-col gap-2 justify-between last:border-0 md:border-r md:gap-4 p-4">
               <h3 className="m-0 text-muted-foreground text-sm">
-                Verified Findings
+                {"Verified Findings"}
               </h3>
               <div className="flex gap-1.5 items-center">
                 <div className="[&_svg]:size-4">
@@ -93,10 +93,10 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-0.5 items-baseline">
                   <span className="text-sm">
-                    64% - 68
+                    {"64% - 68"}
                   </span>
                   <span className="text-muted-foreground text-sm">
-                    /107
+                    {"/107"}
                   </span>
                 </div>
               </div>
@@ -269,7 +269,7 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2 justify-between md:gap-4 relative z-10">
                 <h3 className="m-0 text-muted-foreground text-sm">
-                  Team
+                  {"Team"}
                 </h3>
                 <AvatarGroup>
                   <Avatar className="size-6" size="default">
@@ -282,7 +282,7 @@ export function Pattern() {
                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="border size-6 text-[10px]">
-                    +1
+                    {"+1"}
                   </AvatarGroupCount>
                 </AvatarGroup>
               </div>

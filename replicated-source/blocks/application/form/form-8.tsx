@@ -31,28 +31,28 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center lg:px-10 min-h-svh px-4 py-6 sm:px-8 sm:py-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        API keys management form
+        {"API keys management form"}
       </h1>
       <section className="max-w-3xl w-full" aria-labelledby="form-8-title">
         <div className="flex flex-col gap-4 mb-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1 min-w-0">
             <h2 className="font-semibold text-2xl tracking-tight" id="form-8-title">
-              API Keys
+              {"API Keys"}
             </h2>
             <p className="max-w-2xl text-muted-foreground text-sm">
-              Manage credentials and copy stack-ready environment values.
+              {"Manage credentials and copy stack-ready environment values."}
             </p>
           </div>
           <div className="flex flex-wrap gap-2 items-center sm:justify-end">
             <span className="text-muted-foreground text-sm">
-              4 keys
+              {"4 keys"}
             </span>
             <Button type="button" tabIndex="0">
               <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              Create Key
+              {"Create Key"}
             </Button>
           </div>
         </div>
@@ -61,10 +61,10 @@ export function Pattern() {
             <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold text-sm">
-                  Quick Copy
+                  {"Quick Copy"}
                 </div>
                 <div className="text-muted-foreground text-sm">
-                  Choose a stack and paste the environment block.
+                  {"Choose a stack and paste the environment block."}
                 </div>
               </div>
               <ButtonGroup className="sm:w-auto w-full" role="group">
@@ -79,13 +79,13 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        Next.js
+                        {"Next.js"}
                       </span>
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -95,7 +95,7 @@ export function Pattern() {
                     <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg>
-                  Copy
+                  {"Copy"}
                 </Button>
               </ButtonGroup>
             </header>
@@ -106,49 +106,49 @@ export function Pattern() {
                     <pre className="font-mono leading-6 min-w-full py-3 text-xs w-max">
                       <div className="grid grid-cols-[2.25rem_minmax(32rem,1fr)] min-w-max">
                         <span className="px-2 select-none tabular-nums text-neutral-500 text-right">
-                          1
+                          {"1"}
                         </span>
                         <code className="px-3">
                           <span className="text-emerald-400">
-                            NEXT_PUBLIC_NEUI_PUBLISHABLE_KEY
+                            {"NEXT_PUBLIC_NEUI_PUBLISHABLE_KEY"}
                           </span>
                           <span className="text-neutral-500">
-                            =
+                            {"="}
                           </span>
                           <span className="text-neutral-100">
-                            pk_live_ui7xM9...Qd2a
+                            {"pk_live_ui7xM9...Qd2a"}
                           </span>
                         </code>
                       </div>
                       <div className="grid grid-cols-[2.25rem_minmax(32rem,1fr)] min-w-max">
                         <span className="px-2 select-none tabular-nums text-neutral-500 text-right">
-                          2
+                          {"2"}
                         </span>
                         <code className="px-3">
                           <span className="text-emerald-400">
-                            NEUI_SECRET_KEY
+                            {"NEUI_SECRET_KEY"}
                           </span>
                           <span className="text-neutral-500">
-                            =
+                            {"="}
                           </span>
                           <span className="text-neutral-100">
-                            sk_live_••••••••••••••••••••••••
+                            {"sk_live_••••••••••••••••••••••••"}
                           </span>
                         </code>
                       </div>
                       <div className="grid grid-cols-[2.25rem_minmax(32rem,1fr)] min-w-max">
                         <span className="px-2 select-none tabular-nums text-neutral-500 text-right">
-                          3
+                          {"3"}
                         </span>
                         <code className="px-3">
                           <span className="text-emerald-400">
-                            NEUI_API_URL
+                            {"NEUI_API_URL"}
                           </span>
                           <span className="text-neutral-500">
-                            =
+                            {"="}
                           </span>
                           <span className="text-neutral-100">
-                            https://api.neui.dev/v1
+                            {"https://api.neui.dev/v1"}
                           </span>
                         </code>
                       </div>
@@ -162,10 +162,10 @@ export function Pattern() {
             <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold text-sm">
-                  Keys
+                  {"Keys"}
                 </div>
                 <div className="text-muted-foreground text-sm">
-                  Copy, reveal, rotate, or revoke workspace keys.
+                  {"Copy, reveal, rotate, or revoke workspace keys."}
                 </div>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -174,7 +174,7 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add Key
+                  {"Add Key"}
                 </Button>
               </div>
             </header>
@@ -184,23 +184,23 @@ export function Pattern() {
                   <div className="flex flex-col gap-1.5 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <span className="font-medium text-sm">
-                        Browser publishable key
+                        {"Browser publishable key"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span>
-                        Frontend Platform
+                        {"Frontend Platform"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Production
+                        {"Production"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Next.js
+                        {"Next.js"}
                       </span>
                     </div>
                   </div>
@@ -220,7 +220,7 @@ export function Pattern() {
                     </InputGroup>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-xs">
                       <span>
-                        Last used 4m ago
+                        {"Last used 4m ago"}
                       </span>
                     </div>
                   </div>
@@ -232,23 +232,23 @@ export function Pattern() {
                   <div className="flex flex-col gap-1.5 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <span className="font-medium text-sm">
-                        Server default
+                        {"Server default"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Active
+                        {"Active"}
                       </Badge>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span>
-                        Core API
+                        {"Core API"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Production
+                        {"Production"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Node API
+                        {"Node API"}
                       </span>
                     </div>
                   </div>
@@ -297,7 +297,7 @@ export function Pattern() {
                     </InputGroup>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-xs">
                       <span>
-                        Last used 11m ago
+                        {"Last used 11m ago"}
                       </span>
                     </div>
                   </div>
@@ -309,23 +309,23 @@ export function Pattern() {
                   <div className="flex flex-col gap-1.5 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <span className="font-medium text-sm">
-                        Usage sync worker
+                        {"Usage sync worker"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Rotating
+                        {"Rotating"}
                       </Badge>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span>
-                        Data Jobs
+                        {"Data Jobs"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Production
+                        {"Production"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Python
+                        {"Python"}
                       </span>
                     </div>
                   </div>
@@ -374,7 +374,7 @@ export function Pattern() {
                     </InputGroup>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-xs">
                       <span>
-                        Last used 22m ago
+                        {"Last used 22m ago"}
                       </span>
                     </div>
                   </div>
@@ -386,23 +386,23 @@ export function Pattern() {
                   <div className="flex flex-col gap-1.5 min-w-0">
                     <div className="flex flex-wrap gap-2 items-center min-w-0">
                       <span className="font-medium text-sm">
-                        Webhook verifier
+                        {"Webhook verifier"}
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                        Restricted
+                        {"Restricted"}
                       </Badge>
                     </div>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span>
-                        Integrations
+                        {"Integrations"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Production
+                        {"Production"}
                       </span>
                       <span className="bg-gray-400 rounded-full size-1" aria-hidden="true"></span>
                       <span>
-                        Webhooks
+                        {"Webhooks"}
                       </span>
                     </div>
                   </div>
@@ -451,7 +451,7 @@ export function Pattern() {
                     </InputGroup>
                     <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0 text-muted-foreground text-xs">
                       <span>
-                        Last used 2h ago
+                        {"Last used 2h ago"}
                       </span>
                     </div>
                   </div>
@@ -468,15 +468,15 @@ export function Pattern() {
                   <path d="M12 16h.01"></path>
                 </svg>
                 <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                  Keep secret keys server-side
+                  {"Keep secret keys server-side"}
                 </AlertTitle>
                 <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
                   <Button type="button" tabIndex="0">
-                    Dismiss
+                    {"Dismiss"}
                   </Button>
                 </AlertAction>
                 <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                  Rotate immediately if a key appears in client code, logs, or shared screenshots.
+                  {"Rotate immediately if a key appears in client code, logs, or shared screenshots."}
                 </AlertDescription>
               </Alert>
             </FramePanel>

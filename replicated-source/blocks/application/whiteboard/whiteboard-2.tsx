@@ -47,15 +47,15 @@ export function Pattern() {
         <header className="@container/header bg-background border-b flex gap-2 h-12 items-center px-3 shrink-0 sticky top-0 z-20" aria-labelledby="_r_1_">
           <div className="flex flex-1 gap-2 items-center min-w-0">
             <h2 className="font-medium text-sm truncate" id="_r_1_">
-              Sprint 42 Planning
+              {"Sprint 42 Planning"}
             </h2>
             <span className="@max-md/header:hidden bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="@max-md/header:hidden shrink-0 tabular-nums text-muted-foreground text-xs">
-              Sep 28 to Oct 9
+              {"Sep 28 to Oct 9"}
             </span>
             <span className="data-[status=error]:text-destructive flex gap-1.5 items-center shrink-0 text-muted-foreground text-xs whitespace-nowrap" data-status="saved">
               <span className="sr-only" role="status" aria-live="polite">
-                Saved
+                {"Saved"}
               </span>
               <span className="flex items-center justify-center shrink-0 size-4" aria-hidden="true">
                 <Spinner className="hidden lucide lucide-loader-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Loader2Icon" tabler="IconLoader" hugeicons="Loading03Icon" phosphor="SpinnerIcon" remixicon="RiLoaderLine" role="presentation" aria-label="Loading" aria-hidden="true">
@@ -77,16 +77,16 @@ export function Pattern() {
               </span>
               <span className="@max-md/header:hidden grid" aria-hidden="true">
                 <span className="col-start-1 row-start-1">
-                  Saved
+                  {"Saved"}
                 </span>
                 <span className="col-start-1 invisible row-start-1">
-                  Unsaved
+                  {"Unsaved"}
                 </span>
                 <span className="col-start-1 invisible row-start-1">
-                  Saving
+                  {"Saving"}
                 </span>
                 <span className="col-start-1 invisible row-start-1">
-                  Save failed
+                  {"Save failed"}
                 </span>
               </span>
             </span>
@@ -108,10 +108,10 @@ export function Pattern() {
                   <AvatarBadge className="bg-[color:var(--halo,var(--background))] border-2 border-warning ring-[color:var(--halo,var(--background))]"></AvatarBadge>
                 </Avatar>
                 <AvatarGroupCount className="@max-md/header:hidden ms-1 tabular-nums text-xs" aria-hidden="true">
-                  +1
+                  {"+1"}
                 </AvatarGroupCount>
                 <AvatarGroupCount className="@md/header:hidden ms-1 tabular-nums text-xs" aria-hidden="true">
-                  +2
+                  {"+2"}
                 </AvatarGroupCount>
               </AvatarGroup>
             </TooltipTrigger>
@@ -126,7 +126,7 @@ export function Pattern() {
                 <circle cx="12" cy="12" r="2"></circle>
               </svg>
               <span className="@max-md/header:sr-only">
-                Present
+                {"Present"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -142,7 +142,7 @@ export function Pattern() {
           </div>
         </header>
         <div className="flex flex-1 min-h-0 overflow-hidden relative">
-          <div className="[&[data-wb-tool=selection]_.HintViewer]:hidden! [&_.LoadingMessage]:hidden! [&_.excalidraw_.scroll-back-to-content]:hidden! [:root:has(&)_.excalidraw-tooltip]:[--ui-font:var(--font-sans)]! [:root:has(&)_.excalidraw-tooltip]:[border-radius:var(--border-radius-md)]! [:root:has(&)_.excalidraw-tooltip]:bg-foreground! [:root:has(&)_.excalidraw-tooltip]:font-normal! [:root:has(&)_.excalidraw-tooltip]:px-3! [:root:has(&)_.excalidraw-tooltip]:py-1.5! [:root:has(&)_.excalidraw-tooltip]:text-background! [:root:has(&)_.excalidraw-tooltip]:text-xs! [:root:has(&)_.excalidraw.excalidraw-modal-container]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw.excalidraw-modal-container]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw.theme--dark]:[--ExcTextField--background:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark]:[--color-primary-light:color-mix(in_oklab,var(--primary)_24%,var(--background))]! [:root:has(&)_.excalidraw.theme--dark]:[--color-surface-primary-container:color-mix(in_oklab,var(--primary)_24%,var(--background))]! [:root:has(&)_.excalidraw.theme--dark_.context-menu-item.dangerous:hover]:bg-destructive/20! [:root:has(&)_.excalidraw.theme--dark_.default-sidebar_.sidebar-tab-trigger[data-state=active]]:[border:1px_solid_var(--input)]! [:root:has(&)_.excalidraw.theme--dark_.sidebar-tab-trigger[data-state=active]]:[--button-bg:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark_.sidebar-tab-trigger[data-state=active]]:[--button-hover-bg:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark_:is(.App-menu\\_\\_left,.App-mobile-menu)]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw]:[--ExcTextField--background:transparent]! [:root:has(&)_.excalidraw]:[--ExcTextField--border-active:var(--ring)]! [:root:has(&)_.excalidraw]:[--ExcTextField--border-hover:var(--input)]! [:root:has(&)_.excalidraw]:[--ExcTextField--border:var(--input)]! [:root:has(&)_.excalidraw]:[--ExcTextField--placeholder:var(--muted-foreground)]! [:root:has(&)_.excalidraw]:[--border-radius-lg:var(--radius)]! [:root:has(&)_.excalidraw]:[--border-radius-md:calc(var(--radius)_-_2px)]! [:root:has(&)_.excalidraw]:[--button-gray-1:var(--muted)]! [:root:has(&)_.excalidraw]:[--button-gray-2:var(--border)]! [:root:has(&)_.excalidraw]:[--button-gray-3:var(--input)]! [:root:has(&)_.excalidraw]:[--color-brand-active:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-brand-hover:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-disabled:color-mix(in_oklab,var(--muted-foreground)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--color-icon-white:var(--primary-foreground)]! [:root:has(&)_.excalidraw]:[--color-logo-text:var(--foreground)]! [:root:has(&)_.excalidraw]:[--color-on-primary-container:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-on-surface:var(--foreground)]! [:root:has(&)_.excalidraw]:[--color-primary-darker:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-primary-darkest:var(--ring)]! [:root:has(&)_.excalidraw]:[--color-primary-hover:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-primary-light:color-mix(in_oklab,var(--primary)_12%,var(--background))]! [:root:has(&)_.excalidraw]:[--color-primary:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-slider-thumb:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-slider-track:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-surface-high:var(--muted)]! [:root:has(&)_.excalidraw]:[--color-surface-low:var(--background)]! [:root:has(&)_.excalidraw]:[--color-surface-lowest:var(--background)]! [:root:has(&)_.excalidraw]:[--color-surface-mid:var(--muted)]! [:root:has(&)_.excalidraw]:[--color-surface-primary-container:color-mix(in_oklab,var(--primary)_12%,var(--background))]! [:root:has(&)_.excalidraw]:[--default-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--default-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--default-button-size:2rem]! [:root:has(&)_.excalidraw]:[--default-icon-size:1rem]! [:root:has(&)_.excalidraw]:[--dialog-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--focus-highlight-color:color-mix(in_oklab,var(--ring)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--input-bg-color:transparent]! [:root:has(&)_.excalidraw]:[--input-border-color:var(--input)]! [:root:has(&)_.excalidraw]:[--island-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--keybinding-color:var(--muted-foreground)]! [:root:has(&)_.excalidraw]:[--lg-button-size:2rem]! [:root:has(&)_.excalidraw]:[--lg-icon-size:1rem]! [:root:has(&)_.excalidraw]:[--library-dropdown-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw]:[--link-color:var(--primary)]! [:root:has(&)_.excalidraw]:[--list-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--modal-shadow:none]! [:root:has(&)_.excalidraw]:[--popup-bg-color:var(--popover)]! [:root:has(&)_.excalidraw]:[--popup-secondary-bg-color:var(--popover)]! [:root:has(&)_.excalidraw]:[--popup-text-color:var(--popover-foreground)]! [:root:has(&)_.excalidraw]:[--scrollbar-thumb-hover:color-mix(in_oklab,var(--muted-foreground)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--scrollbar-thumb:var(--border)]! [:root:has(&)_.excalidraw]:[--select-highlight-color:var(--primary)]! [:root:has(&)_.excalidraw]:[--shadow-island:0_0_0_1px_color-mix(in_oklab,var(--foreground)_10%,transparent),var(--shadow-sm)]! [:root:has(&)_.excalidraw]:[--sidebar-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--sidebar-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--sidebar-shadow:none]! [:root:has(&)_.excalidraw]:[--ui-font:var(--font-sans)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:gap-1! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:justify-start! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:min-h-[calc(var(--wb-control-size,2rem)+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:p-1! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:pe-[calc(var(--wb-control-size,2rem)*2+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:ps-[calc(var(--wb-footer-width,0px)+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar]:[--default-button-size:var(--wb-control-size,2rem)]! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:min-h-0! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:no-scrollbar! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:overflow-x-hidden! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:overflow-y-auto! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:p-2! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:scroll-fade-y! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:scroll-py-10! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:flex! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:flex-col! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:overflow-hidden! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:p-0! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:w-44! [:root:has(&)_.excalidraw_.App-mobile-menu]:no-scrollbar! [:root:has(&)_.excalidraw_.App-mobile-menu]:scroll-fade-y! [:root:has(&)_.excalidraw_.App-toolbar.Island]:invisible! [:root:has(&)_.excalidraw_.HintViewer]:visible! [:root:has(&)_.excalidraw_.Modal\\_\\_background]:backdrop-blur-xs! [:root:has(&)_.excalidraw_.Modal\\_\\_background]:bg-black/10! [:root:has(&)_.excalidraw_.Modal\\_\\_content]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.Toast]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.Toast]:[box-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw_.Toast]:bg-popover! [:root:has(&)_.excalidraw_.Toast]:py-2! [:root:has(&)_.excalidraw_.Toast]:text-sm! [:root:has(&)_.excalidraw_.color-picker-content--default]:grid-cols-[repeat(5,1.5rem)]! [:root:has(&)_.excalidraw_.color-picker\\_\\_button--large]:size-6! [:root:has(&)_.excalidraw_.context-menu-item-separator]:-mx-1! [:root:has(&)_.excalidraw_.context-menu-item-separator]:border-border! [:root:has(&)_.excalidraw_.context-menu-item-separator]:my-1! [:root:has(&)_.excalidraw_.context-menu-item.checkmark]:before:hidden! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:[content:\"\"]! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:[mask:url(\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M20%206%209%2017l-5-5'/%3E%3C/svg%3E\")_right/1rem_1rem_no-repeat]! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:bg-current! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:ms-auto! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:shrink-0! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:size-4! [:root:has(&)_.excalidraw_.context-menu-item.dangerous:hover]:bg-destructive/10! [:root:has(&)_.excalidraw_.context-menu-item.dangerous_.context-menu-item\\_\\_label]:text-destructive! [:root:has(&)_.excalidraw_.context-menu-item:focus-visible]:bg-accent! [:root:has(&)_.excalidraw_.context-menu-item:focus-visible]:outline-none! [:root:has(&)_.excalidraw_.context-menu-item:is(:hover,:focus-visible)]:[--popup-bg-color:var(--accent-foreground)]! [:root:has(&)_.excalidraw_.context-menu-item:is(:hover,:focus-visible)]:[--select-highlight-color:var(--accent)]! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:flex! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:flex-1! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:gap-4! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:items-center! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:me-0! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut:not(:empty)]:ps-4! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:opacity-100! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:text-muted-foreground! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:text-xs! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:tracking-widest! [:root:has(&)_.excalidraw_.context-menu-item]:[border-radius:var(--border-radius-md)]! [:root:has(&)_.excalidraw_.context-menu-item]:flex! [:root:has(&)_.excalidraw_.context-menu-item]:gap-1.5! [:root:has(&)_.excalidraw_.context-menu-item]:h-7! [:root:has(&)_.excalidraw_.context-menu-item]:items-center! [:root:has(&)_.excalidraw_.context-menu-item]:min-w-32! [:root:has(&)_.excalidraw_.context-menu-item]:px-1.5! [:root:has(&)_.excalidraw_.context-menu-item]:py-0! [:root:has(&)_.excalidraw_.context-menu-item]:text-sm! [:root:has(&)_.excalidraw_.context-menu]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.context-menu]:[box-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw_.context-menu]:border-0! [:root:has(&)_.excalidraw_.context-menu]:p-1! [:root:has(&)_.excalidraw_.default-sidebar_.sidebar-triggers]:bg-muted! [:root:has(&)_.excalidraw_.default-sidebar_.sidebar-triggers]:border-transparent! [:root:has(&)_.excalidraw_.dropdown-menu-button:hover]:[--background:var(--muted)]! [:root:has(&)_.excalidraw_.dropdown-menu-container>div:not([class])]:-mx-1! [:root:has(&)_.excalidraw_.dropdown-menu-container>div:not([class])]:my-1! [:root:has(&)_.excalidraw_.dropdown-menu-item:disabled]:opacity-50! [:root:has(&)_.excalidraw_.dropdown-menu-item:disabled]:pointer-events-none! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-container]:gap-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-container]:p-1! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:font-medium! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:m-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:px-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:py-1! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:text-muted-foreground! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:text-xs! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item:focus-visible]:[box-shadow:none]! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item:focus-visible]:bg-accent! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:opacity-100! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:ps-4! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:text-muted-foreground! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:tracking-widest! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_text]:gap-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:border-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:gap-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:h-7! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:m-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:px-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:text-sm! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:w-full! [:root:has(&)_.excalidraw_.dropdown-menu_:is(.dropdown-menu-item\\_\\_shortcut,.dropdown-menu-item\\_\\_shortcut--orphaned)]:text-xs! [:root:has(&)_.excalidraw_.exc-stats\\_\\_row--heading]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h2]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h2]:text-sm! [:root:has(&)_.excalidraw_.exc-stats_h3]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h3]:text-muted-foreground! [:root:has(&)_.excalidraw_.exc-stats_h3]:text-xs! [:root:has(&)_.excalidraw_.focus-visible-none>.Island]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw_.focus-visible-none>.Island]:p-2! [:root:has(&)_.excalidraw_.focus-visible-none>span]:hidden! [:root:has(&)_.excalidraw_.follow-mode]:hidden! [:root:has(&)_.excalidraw_.layer-ui\\_\\_search-header_.ExcTextField\\_\\_input]:bg-muted! [:root:has(&)_.excalidraw_.layer-ui\\_\\_wrapper\\_\\_footer-left]:ps-[calc(var(--wb-footer-width,0px)+0.5rem)]! [:root:has(&)_.excalidraw_.layer-ui\\_\\_wrapper\\_\\_footer-right]:hidden! [:root:has(&)_.excalidraw_.library-menu-browse-button]:hidden! [:root:has(&)_.excalidraw_.library-menu-control-buttons--at-bottom]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header--excal+div:not(.library-menu-items-container\\_\\_grid)]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header--excal:not(:has(+.library-menu-items-container\\_\\_grid))]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:font-medium! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:text-foreground! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:text-sm! [:root:has(&)_.excalidraw_.main-menu-trigger.dropdown-menu-button--mobile]:hidden! [:root:has(&)_.excalidraw_.main-menu-trigger]:invisible! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:no-scrollbar! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:scroll-fade-y! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:scroll-py-10! [:root:has(&)_.excalidraw_.range-wrapper]:mb-1! [:root:has(&)_.excalidraw_.range-wrapper]:text-xs! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:[--button-bg:var(--background)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:[--button-hover-bg:var(--background)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:text-foreground! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-active-bg:var(--button-bg)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-color:var(--muted-foreground)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-hover-color:var(--foreground)]! [:root:has(&)_.excalidraw_.sidebar-trigger\\_\\_label-element:has(.default-sidebar-trigger)]:hidden! [:root:has(&)_.excalidraw_.welcome-screen-decor]:[font-family:inherit]! [:root:has(&)_.excalidraw_.welcome-screen-menu-item:hover_.welcome-screen-menu-item\\_\\_text]:text-foreground! [:root:has(&)_.excalidraw_.welcome-screen-menu-item\\_\\_icon_svg]:size-4! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)]:[--default-button-size:1.75rem]! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.color-picker\\_\\_button.active-color]:size-6! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.color-picker\\_\\_button]:size-5! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn]:gap-y-2! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_.buttonList]:gap-1! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_.buttonList]:py-0! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_:is(legend,h3,.control-label)]:text-muted-foreground! [:root:has(&)_.excalidraw_:is(.ExcTextField\\_\\_label,.ExcTextField\\_\\_input_input)]:[font-family:inherit]! [:root:has(&)_.excalidraw_:is(.UserList\\_\\_wrapper,.UserList-Wrapper)]:hidden! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)]:p-0! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)_svg]:shrink-0! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)_svg]:size-4! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.picker,.context-menu,.Toast,.ElementLinkDialog,.focus-visible-none>.Island)]:[--shadow-island:0_0_0_1px_color-mix(in_oklab,var(--foreground)_10%,transparent),var(--shadow-md)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.properties-content)]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.properties-content)]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu:not(.manual-hover)_.dropdown-menu-item:is(:hover,:focus-visible),.dropdown-menu-item--hovered)]:[--color-on-surface:var(--accent-foreground)]! [:root:has(&)_.excalidraw_:is(.library-menu-items-container,.dropdown-menu-container,.Modal\\_\\_content)]:no-scrollbar! [:root:has(&)_.excalidraw_:is(.library-menu-items-container\\_\\_items,.layer-ui\\_\\_search-result-container,.ScrollableList\\_\\_wrapper)]:no-scrollbar! [:root:has(&)_.excalidraw_:is(.library-menu-items-container\\_\\_items,.layer-ui\\_\\_search-result-container,.ScrollableList\\_\\_wrapper)]:scroll-fade-y! [:root:has(&)_.excalidraw_:is(.undo-redo-buttons,.App-toolbar-content>div:has(>[data-testid=button-undo]))]:hidden! [:root:has(&)_.excalidraw_:is(.welcome-screen-decor,.welcome-screen-menu-item,.welcome-screen-menu-item\\_\\_shortcut,.HintViewer,.Dialog\\_\\_close)]:text-muted-foreground! [:root:has(&)_.excalidraw_:is(.zoom-actions,.mobile-misc-tools-container)]:hidden! [:root:has(&)_.excalidraw_[data-testid=lib-dropdown--remove]]:hidden! [:root:has(&)_.excalidraw_svg[focusable=false]:not([fill=currentColor],:has([fill=currentColor],[fill^=var]),[data-testid^=fill-]_svg,label:has(>[data-testid^=strokeWidth])_svg,label:has(>[name=strokeStyle])_svg)_:is(path,line,polyline,polygon,circle,ellipse,rect)]:[stroke-width:1.33px]! [:root:has(&)_.excalidraw_svg[focusable=false]:not([fill=currentColor],:has([fill=currentColor],[fill^=var]),[data-testid^=fill-]_svg,label:has(>[data-testid^=strokeWidth])_svg,label:has(>[name=strokeStyle])_svg)_:is(path,line,polyline,polygon,circle,ellipse,rect)]:[vector-effect:non-scaling-stroke]! bg-background data-keyboard-focus:ring-2 data-keyboard-focus:ring-inset data-keyboard-focus:ring-ring/50 flex-1 isolate min-h-0 min-w-0 overflow-hidden relative size-full" role="region" aria-label="Sprint 42 Planning board" aria-busy="false" style={{"--wb-footer-width": "344px", "--wb-control-size": "32px"}} data-wb-tool="selection">
+          <div className={"[&[data-wb-tool=selection]_.HintViewer]:hidden! [&_.LoadingMessage]:hidden! [&_.excalidraw_.scroll-back-to-content]:hidden! [:root:has(&)_.excalidraw-tooltip]:[--ui-font:var(--font-sans)]! [:root:has(&)_.excalidraw-tooltip]:[border-radius:var(--border-radius-md)]! [:root:has(&)_.excalidraw-tooltip]:bg-foreground! [:root:has(&)_.excalidraw-tooltip]:font-normal! [:root:has(&)_.excalidraw-tooltip]:px-3! [:root:has(&)_.excalidraw-tooltip]:py-1.5! [:root:has(&)_.excalidraw-tooltip]:text-background! [:root:has(&)_.excalidraw-tooltip]:text-xs! [:root:has(&)_.excalidraw.excalidraw-modal-container]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw.excalidraw-modal-container]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw.theme--dark]:[--ExcTextField--background:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark]:[--color-primary-light:color-mix(in_oklab,var(--primary)_24%,var(--background))]! [:root:has(&)_.excalidraw.theme--dark]:[--color-surface-primary-container:color-mix(in_oklab,var(--primary)_24%,var(--background))]! [:root:has(&)_.excalidraw.theme--dark_.context-menu-item.dangerous:hover]:bg-destructive/20! [:root:has(&)_.excalidraw.theme--dark_.default-sidebar_.sidebar-tab-trigger[data-state=active]]:[border:1px_solid_var(--input)]! [:root:has(&)_.excalidraw.theme--dark_.sidebar-tab-trigger[data-state=active]]:[--button-bg:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark_.sidebar-tab-trigger[data-state=active]]:[--button-hover-bg:color-mix(in_oklab,var(--input)_30%,transparent)]! [:root:has(&)_.excalidraw.theme--dark_:is(.App-menu\\_\\_left,.App-mobile-menu)]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw]:[--ExcTextField--background:transparent]! [:root:has(&)_.excalidraw]:[--ExcTextField--border-active:var(--ring)]! [:root:has(&)_.excalidraw]:[--ExcTextField--border-hover:var(--input)]! [:root:has(&)_.excalidraw]:[--ExcTextField--border:var(--input)]! [:root:has(&)_.excalidraw]:[--ExcTextField--placeholder:var(--muted-foreground)]! [:root:has(&)_.excalidraw]:[--border-radius-lg:var(--radius)]! [:root:has(&)_.excalidraw]:[--border-radius-md:calc(var(--radius)_-_2px)]! [:root:has(&)_.excalidraw]:[--button-gray-1:var(--muted)]! [:root:has(&)_.excalidraw]:[--button-gray-2:var(--border)]! [:root:has(&)_.excalidraw]:[--button-gray-3:var(--input)]! [:root:has(&)_.excalidraw]:[--color-brand-active:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-brand-hover:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-disabled:color-mix(in_oklab,var(--muted-foreground)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--color-icon-white:var(--primary-foreground)]! [:root:has(&)_.excalidraw]:[--color-logo-text:var(--foreground)]! [:root:has(&)_.excalidraw]:[--color-on-primary-container:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-on-surface:var(--foreground)]! [:root:has(&)_.excalidraw]:[--color-primary-darker:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-primary-darkest:var(--ring)]! [:root:has(&)_.excalidraw]:[--color-primary-hover:color-mix(in_oklab,var(--primary)_80%,transparent)]! [:root:has(&)_.excalidraw]:[--color-primary-light:color-mix(in_oklab,var(--primary)_12%,var(--background))]! [:root:has(&)_.excalidraw]:[--color-primary:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-slider-thumb:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-slider-track:var(--primary)]! [:root:has(&)_.excalidraw]:[--color-surface-high:var(--muted)]! [:root:has(&)_.excalidraw]:[--color-surface-low:var(--background)]! [:root:has(&)_.excalidraw]:[--color-surface-lowest:var(--background)]! [:root:has(&)_.excalidraw]:[--color-surface-mid:var(--muted)]! [:root:has(&)_.excalidraw]:[--color-surface-primary-container:color-mix(in_oklab,var(--primary)_12%,var(--background))]! [:root:has(&)_.excalidraw]:[--default-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--default-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--default-button-size:2rem]! [:root:has(&)_.excalidraw]:[--default-icon-size:1rem]! [:root:has(&)_.excalidraw]:[--dialog-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--focus-highlight-color:color-mix(in_oklab,var(--ring)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--input-bg-color:transparent]! [:root:has(&)_.excalidraw]:[--input-border-color:var(--input)]! [:root:has(&)_.excalidraw]:[--island-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--keybinding-color:var(--muted-foreground)]! [:root:has(&)_.excalidraw]:[--lg-button-size:2rem]! [:root:has(&)_.excalidraw]:[--lg-icon-size:1rem]! [:root:has(&)_.excalidraw]:[--library-dropdown-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw]:[--link-color:var(--primary)]! [:root:has(&)_.excalidraw]:[--list-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--modal-shadow:none]! [:root:has(&)_.excalidraw]:[--popup-bg-color:var(--popover)]! [:root:has(&)_.excalidraw]:[--popup-secondary-bg-color:var(--popover)]! [:root:has(&)_.excalidraw]:[--popup-text-color:var(--popover-foreground)]! [:root:has(&)_.excalidraw]:[--scrollbar-thumb-hover:color-mix(in_oklab,var(--muted-foreground)_50%,transparent)]! [:root:has(&)_.excalidraw]:[--scrollbar-thumb:var(--border)]! [:root:has(&)_.excalidraw]:[--select-highlight-color:var(--primary)]! [:root:has(&)_.excalidraw]:[--shadow-island:0_0_0_1px_color-mix(in_oklab,var(--foreground)_10%,transparent),var(--shadow-sm)]! [:root:has(&)_.excalidraw]:[--sidebar-bg-color:var(--background)]! [:root:has(&)_.excalidraw]:[--sidebar-border-color:var(--border)]! [:root:has(&)_.excalidraw]:[--sidebar-shadow:none]! [:root:has(&)_.excalidraw]:[--ui-font:var(--font-sans)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:gap-1! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:justify-start! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:min-h-[calc(var(--wb-control-size,2rem)+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:p-1! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:pe-[calc(var(--wb-control-size,2rem)*2+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar>.Island_.App-toolbar-content]:ps-[calc(var(--wb-footer-width,0px)+0.5rem)]! [:root:has(&)_.excalidraw_.App-bottom-bar]:[--default-button-size:var(--wb-control-size,2rem)]! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:min-h-0! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:no-scrollbar! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:overflow-x-hidden! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:overflow-y-auto! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:p-2! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:scroll-fade-y! [:root:has(&)_.excalidraw_.App-menu\\_\\_left>.panelColumn]:scroll-py-10! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:flex! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:flex-col! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:overflow-hidden! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:p-0! [:root:has(&)_.excalidraw_.App-menu\\_\\_left]:w-44! [:root:has(&)_.excalidraw_.App-mobile-menu]:no-scrollbar! [:root:has(&)_.excalidraw_.App-mobile-menu]:scroll-fade-y! [:root:has(&)_.excalidraw_.App-toolbar.Island]:invisible! [:root:has(&)_.excalidraw_.HintViewer]:visible! [:root:has(&)_.excalidraw_.Modal\\_\\_background]:backdrop-blur-xs! [:root:has(&)_.excalidraw_.Modal\\_\\_background]:bg-black/10! [:root:has(&)_.excalidraw_.Modal\\_\\_content]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.Toast]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.Toast]:[box-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw_.Toast]:bg-popover! [:root:has(&)_.excalidraw_.Toast]:py-2! [:root:has(&)_.excalidraw_.Toast]:text-sm! [:root:has(&)_.excalidraw_.color-picker-content--default]:grid-cols-[repeat(5,1.5rem)]! [:root:has(&)_.excalidraw_.color-picker\\_\\_button--large]:size-6! [:root:has(&)_.excalidraw_.context-menu-item-separator]:-mx-1! [:root:has(&)_.excalidraw_.context-menu-item-separator]:border-border! [:root:has(&)_.excalidraw_.context-menu-item-separator]:my-1! [:root:has(&)_.excalidraw_.context-menu-item.checkmark]:before:hidden! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:[content:\"\"]! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:[mask:url(\"data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M20%206%209%2017l-5-5'/%3E%3C/svg%3E\")_right/1rem_1rem_no-repeat]! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:bg-current! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:ms-auto! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:shrink-0! [:root:has(&)_.excalidraw_.context-menu-item.checkmark_.context-menu-item\\_\\_label]:after:size-4! [:root:has(&)_.excalidraw_.context-menu-item.dangerous:hover]:bg-destructive/10! [:root:has(&)_.excalidraw_.context-menu-item.dangerous_.context-menu-item\\_\\_label]:text-destructive! [:root:has(&)_.excalidraw_.context-menu-item:focus-visible]:bg-accent! [:root:has(&)_.excalidraw_.context-menu-item:focus-visible]:outline-none! [:root:has(&)_.excalidraw_.context-menu-item:is(:hover,:focus-visible)]:[--popup-bg-color:var(--accent-foreground)]! [:root:has(&)_.excalidraw_.context-menu-item:is(:hover,:focus-visible)]:[--select-highlight-color:var(--accent)]! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:flex! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:flex-1! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:gap-4! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:items-center! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_label]:me-0! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut:not(:empty)]:ps-4! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:opacity-100! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:text-muted-foreground! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:text-xs! [:root:has(&)_.excalidraw_.context-menu-item\\_\\_shortcut]:tracking-widest! [:root:has(&)_.excalidraw_.context-menu-item]:[border-radius:var(--border-radius-md)]! [:root:has(&)_.excalidraw_.context-menu-item]:flex! [:root:has(&)_.excalidraw_.context-menu-item]:gap-1.5! [:root:has(&)_.excalidraw_.context-menu-item]:h-7! [:root:has(&)_.excalidraw_.context-menu-item]:items-center! [:root:has(&)_.excalidraw_.context-menu-item]:min-w-32! [:root:has(&)_.excalidraw_.context-menu-item]:px-1.5! [:root:has(&)_.excalidraw_.context-menu-item]:py-0! [:root:has(&)_.excalidraw_.context-menu-item]:text-sm! [:root:has(&)_.excalidraw_.context-menu]:[border-radius:var(--border-radius-lg)]! [:root:has(&)_.excalidraw_.context-menu]:[box-shadow:var(--shadow-island)]! [:root:has(&)_.excalidraw_.context-menu]:border-0! [:root:has(&)_.excalidraw_.context-menu]:p-1! [:root:has(&)_.excalidraw_.default-sidebar_.sidebar-triggers]:bg-muted! [:root:has(&)_.excalidraw_.default-sidebar_.sidebar-triggers]:border-transparent! [:root:has(&)_.excalidraw_.dropdown-menu-button:hover]:[--background:var(--muted)]! [:root:has(&)_.excalidraw_.dropdown-menu-container>div:not([class])]:-mx-1! [:root:has(&)_.excalidraw_.dropdown-menu-container>div:not([class])]:my-1! [:root:has(&)_.excalidraw_.dropdown-menu-item:disabled]:opacity-50! [:root:has(&)_.excalidraw_.dropdown-menu-item:disabled]:pointer-events-none! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-container]:gap-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-container]:p-1! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:font-medium! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:m-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:px-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:py-1! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:text-muted-foreground! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-group-title]:text-xs! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item:focus-visible]:[box-shadow:none]! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item:focus-visible]:bg-accent! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:opacity-100! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:ps-4! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:text-muted-foreground! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_shortcut]:tracking-widest! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item\\_\\_text]:gap-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:border-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:gap-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:h-7! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:m-0! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:px-1.5! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:text-sm! [:root:has(&)_.excalidraw_.dropdown-menu_.dropdown-menu-item]:w-full! [:root:has(&)_.excalidraw_.dropdown-menu_:is(.dropdown-menu-item\\_\\_shortcut,.dropdown-menu-item\\_\\_shortcut--orphaned)]:text-xs! [:root:has(&)_.excalidraw_.exc-stats\\_\\_row--heading]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h2]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h2]:text-sm! [:root:has(&)_.excalidraw_.exc-stats_h3]:font-medium! [:root:has(&)_.excalidraw_.exc-stats_h3]:text-muted-foreground! [:root:has(&)_.excalidraw_.exc-stats_h3]:text-xs! [:root:has(&)_.excalidraw_.focus-visible-none>.Island]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw_.focus-visible-none>.Island]:p-2! [:root:has(&)_.excalidraw_.focus-visible-none>span]:hidden! [:root:has(&)_.excalidraw_.follow-mode]:hidden! [:root:has(&)_.excalidraw_.layer-ui\\_\\_search-header_.ExcTextField\\_\\_input]:bg-muted! [:root:has(&)_.excalidraw_.layer-ui\\_\\_wrapper\\_\\_footer-left]:ps-[calc(var(--wb-footer-width,0px)+0.5rem)]! [:root:has(&)_.excalidraw_.layer-ui\\_\\_wrapper\\_\\_footer-right]:hidden! [:root:has(&)_.excalidraw_.library-menu-browse-button]:hidden! [:root:has(&)_.excalidraw_.library-menu-control-buttons--at-bottom]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header--excal+div:not(.library-menu-items-container\\_\\_grid)]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header--excal:not(:has(+.library-menu-items-container\\_\\_grid))]:hidden! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:font-medium! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:text-foreground! [:root:has(&)_.excalidraw_.library-menu-items-container\\_\\_header]:text-sm! [:root:has(&)_.excalidraw_.main-menu-trigger.dropdown-menu-button--mobile]:hidden! [:root:has(&)_.excalidraw_.main-menu-trigger]:invisible! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:no-scrollbar! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:scroll-fade-y! [:root:has(&)_.excalidraw_.popover[style*=overflow]]:scroll-py-10! [:root:has(&)_.excalidraw_.range-wrapper]:mb-1! [:root:has(&)_.excalidraw_.range-wrapper]:text-xs! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:[--button-bg:var(--background)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:[--button-hover-bg:var(--background)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger[data-state=active]]:text-foreground! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-active-bg:var(--button-bg)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-color:var(--muted-foreground)]! [:root:has(&)_.excalidraw_.sidebar-tab-trigger]:[--button-hover-color:var(--foreground)]! [:root:has(&)_.excalidraw_.sidebar-trigger\\_\\_label-element:has(.default-sidebar-trigger)]:hidden! [:root:has(&)_.excalidraw_.welcome-screen-decor]:[font-family:inherit]! [:root:has(&)_.excalidraw_.welcome-screen-menu-item:hover_.welcome-screen-menu-item\\_\\_text]:text-foreground! [:root:has(&)_.excalidraw_.welcome-screen-menu-item\\_\\_icon_svg]:size-4! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)]:[--default-button-size:1.75rem]! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.color-picker\\_\\_button.active-color]:size-6! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.color-picker\\_\\_button]:size-5! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn]:gap-y-2! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_.buttonList]:gap-1! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_.buttonList]:py-0! [:root:has(&)_.excalidraw_:is(.App-menu\\_\\_left,.App-mobile-menu)_.panelColumn_:is(legend,h3,.control-label)]:text-muted-foreground! [:root:has(&)_.excalidraw_:is(.ExcTextField\\_\\_label,.ExcTextField\\_\\_input_input)]:[font-family:inherit]! [:root:has(&)_.excalidraw_:is(.UserList\\_\\_wrapper,.UserList-Wrapper)]:hidden! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)]:p-0! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)_svg]:shrink-0! [:root:has(&)_.excalidraw_:is(.dropdown-menu-button,.sidebar-tab-trigger)_svg]:size-4! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.picker,.context-menu,.Toast,.ElementLinkDialog,.focus-visible-none>.Island)]:[--shadow-island:0_0_0_1px_color-mix(in_oklab,var(--foreground)_10%,transparent),var(--shadow-md)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.properties-content)]:[--button-hover-bg:var(--accent)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu-container,.properties-content)]:[--island-bg-color:var(--popover)]! [:root:has(&)_.excalidraw_:is(.dropdown-menu:not(.manual-hover)_.dropdown-menu-item:is(:hover,:focus-visible),.dropdown-menu-item--hovered)]:[--color-on-surface:var(--accent-foreground)]! [:root:has(&)_.excalidraw_:is(.library-menu-items-container,.dropdown-menu-container,.Modal\\_\\_content)]:no-scrollbar! [:root:has(&)_.excalidraw_:is(.library-menu-items-container\\_\\_items,.layer-ui\\_\\_search-result-container,.ScrollableList\\_\\_wrapper)]:no-scrollbar! [:root:has(&)_.excalidraw_:is(.library-menu-items-container\\_\\_items,.layer-ui\\_\\_search-result-container,.ScrollableList\\_\\_wrapper)]:scroll-fade-y! [:root:has(&)_.excalidraw_:is(.undo-redo-buttons,.App-toolbar-content>div:has(>[data-testid=button-undo]))]:hidden! [:root:has(&)_.excalidraw_:is(.welcome-screen-decor,.welcome-screen-menu-item,.welcome-screen-menu-item\\_\\_shortcut,.HintViewer,.Dialog\\_\\_close)]:text-muted-foreground! [:root:has(&)_.excalidraw_:is(.zoom-actions,.mobile-misc-tools-container)]:hidden! [:root:has(&)_.excalidraw_[data-testid=lib-dropdown--remove]]:hidden! [:root:has(&)_.excalidraw_svg[focusable=false]:not([fill=currentColor],:has([fill=currentColor],[fill^=var]),[data-testid^=fill-]_svg,label:has(>[data-testid^=strokeWidth])_svg,label:has(>[name=strokeStyle])_svg)_:is(path,line,polyline,polygon,circle,ellipse,rect)]:[stroke-width:1.33px]! [:root:has(&)_.excalidraw_svg[focusable=false]:not([fill=currentColor],:has([fill=currentColor],[fill^=var]),[data-testid^=fill-]_svg,label:has(>[data-testid^=strokeWidth])_svg,label:has(>[name=strokeStyle])_svg)_:is(path,line,polyline,polygon,circle,ellipse,rect)]:[vector-effect:non-scaling-stroke]! bg-background data-keyboard-focus:ring-2 data-keyboard-focus:ring-inset data-keyboard-focus:ring-ring/50 flex-1 isolate min-h-0 min-w-0 overflow-hidden relative size-full"} role="region" aria-label="Sprint 42 Planning board" aria-busy="false" style={{"--wb-footer-width": "344px", "--wb-control-size": "32px"}} data-wb-tool="selection">
             <div className="[--wb-grid-ink:color-mix(in_oklab,var(--wb-grid-line)_var(--wb-grid-fade,100%),transparent)] [--wb-grid-line:color-mix(in_oklab,var(--foreground)_3%,transparent)] [background-image:linear-gradient(to_right,var(--wb-grid-ink)_1px,transparent_1px),linear-gradient(to_bottom,var(--wb-grid-ink)_1px,transparent_1px)] [background-position:var(--wb-grid-x,0px)_var(--wb-grid-y,0px)] [background-size:var(--wb-grid-gap,20px)_var(--wb-grid-gap,20px)] absolute dark:[--wb-grid-line:color-mix(in_oklab,var(--foreground)_4%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--wb-grid-gap": "12px", "--wb-grid-x": "25.600000000000044px", "--wb-grid-y": "88.10000000000002px", "--wb-grid-fade": "100%"}}></div>
             <div className="excalidraw excalidraw-container" tabIndex="0" style={{"--ui-pointerEvents": "all", "--right-sidebar-width": "302px"}}>
               <div className="layer-ui__wrapper">
@@ -169,11 +169,11 @@ export function Pattern() {
                             <div className="App-toolbar Island" style={{"--padding": "1"}}>
                               <div className="HintViewer">
                                 <span>
-                                  To move canvas, hold mouse wheel or spacebar while dragging, or use the hand tool
+                                  {"To move canvas, hold mouse wheel or spacebar while dragging, or use the hand tool"}
                                 </span>
                               </div>
                               <h2 className="visually-hidden" id="O3UrguvPOqKR0Sz_JNAMi-shapes-title">
-                                Shapes
+                                {"Shapes"}
                               </h2>
                               <div className="Stack Stack_horizontal" style={{"--gap": "1"}}>
                                 <label className="ToolIcon ToolIcon__lock ToolIcon_size_medium" title="Keep selected tool active after drawing — Q">
@@ -219,7 +219,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      1
+                                      {"1"}
                                     </span>
                                   </div>
                                 </label>
@@ -233,7 +233,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      2
+                                      {"2"}
                                     </span>
                                   </div>
                                 </label>
@@ -247,7 +247,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      3
+                                      {"3"}
                                     </span>
                                   </div>
                                 </label>
@@ -261,7 +261,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      4
+                                      {"4"}
                                     </span>
                                   </div>
                                 </label>
@@ -277,7 +277,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      5
+                                      {"5"}
                                     </span>
                                   </div>
                                 </label>
@@ -288,7 +288,7 @@ export function Pattern() {
                                       <path d="M4.167 10h11.666" strokeWidth="1.5"></path>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      6
+                                      {"6"}
                                     </span>
                                   </div>
                                 </label>
@@ -302,7 +302,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      7
+                                      {"7"}
                                     </span>
                                   </div>
                                 </label>
@@ -320,7 +320,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      8
+                                      {"8"}
                                     </span>
                                   </div>
                                 </label>
@@ -336,7 +336,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      9
+                                      {"9"}
                                     </span>
                                   </div>
                                 </label>
@@ -351,7 +351,7 @@ export function Pattern() {
                                       </g>
                                     </svg>
                                     <span className="ToolIcon__keybinding">
-                                      0
+                                      {"0"}
                                     </span>
                                   </div>
                                 </label>
@@ -376,7 +376,7 @@ export function Pattern() {
                       <div className="UserList__wrapper">
                         <div className="UserList" style={{"--max-avatars": "1"}}>
                           <button className="UserList__more" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-_r_3l_" data-state="closed">
-                            +4
+                            {"+4"}
                           </button>
                         </div>
                       </div>
@@ -396,7 +396,7 @@ export function Pattern() {
                             </svg>
                           </div>
                           <div className="sidebar-trigger__label">
-                            Library
+                            {"Library"}
                           </div>
                         </div>
                       </label>
@@ -408,7 +408,7 @@ export function Pattern() {
                     <div className="Stack Stack_vertical" style={{"--gap": "2"}}>
                       <section aria-labelledby="O3UrguvPOqKR0Sz_JNAMi-canvasActions-title">
                         <h2 className="visually-hidden" id="O3UrguvPOqKR0Sz_JNAMi-canvasActions-title">
-                          Canvas actions
+                          {"Canvas actions"}
                         </h2>
                         <div className="Stack Stack_vertical zoom-actions" style={{"--gap": "1"}}>
                           <div className="Stack Stack_horizontal" style={{alignItems: "center"}}>
@@ -421,7 +421,7 @@ export function Pattern() {
                             </button>
                             <div className="excalidraw-tooltip-wrapper" style={{height: "100%"}}>
                               <button className="ToolIcon ToolIcon_size_medium ToolIcon_type_button ToolIcon_type_button--show reset-zoom-button zoom-button" title="Reset zoom" aria-label="Reset zoom" type="button">
-                                60%
+                                {"60%"}
                               </button>
                             </div>
                             <button className="ToolIcon ToolIcon_size_medium ToolIcon_type_button ToolIcon_type_button--show zoom-button zoom-in-button" title="Zoom in — Cmd++" aria-label="Zoom in" type="button">
@@ -475,7 +475,7 @@ export function Pattern() {
                     </div>
                   </div>
                   <button className="disable-zen-mode" type="button">
-                    Exit zen mode
+                    {"Exit zen mode"}
                   </button>
                 </footer>
               </div>
@@ -489,25 +489,25 @@ export function Pattern() {
                 <canvas className="excalidraw__canvas static" width="992" height="585" style={{width: "992px", height: "585px"}}></canvas>
               </div>
               <canvas className="excalidraw__canvas interactive" width="992" height="585" style={{width: "992px", height: "585px"}}>
-                Drawing canvas
+                {"Drawing canvas"}
               </canvas>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_goal" style={{position: "absolute", bottom: "499.9px", left: "25.6px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "736px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Sprint Goal
+                {"Sprint Goal"}
               </div>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_risks" style={{position: "absolute", bottom: "499.9px", left: "524.8px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "736px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Risks
+                {"Risks"}
               </div>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_express_pay" style={{position: "absolute", bottom: "334.3px", left: "25.6px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "320px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Express Pay
+                {"Express Pay"}
               </div>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_receipts" style={{position: "absolute", bottom: "334.3px", left: "275.2px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "320px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Receipts
+                {"Receipts"}
               </div>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_offline" style={{position: "absolute", bottom: "334.3px", left: "524.8px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "320px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Offline Research
+                {"Offline Research"}
               </div>
               <div id="O3UrguvPOqKR0Sz_JNAMi-frame-name-frm_parked" style={{position: "absolute", bottom: "334.3px", left: "774.4px", zIndex: "2", fontSize: "14px", color: "rgb(153, 153, 153)", lineHeight: "1.25", width: "max-content", maxWidth: "320px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", cursor: "move", pointerEvents: "all"}}>
-                Parked
+                {"Parked"}
               </div>
             </div>
             <div className="absolute group/wb-overlay inset-0 overflow-hidden pointer-events-none z-2" data-theme="light" aria-hidden="true" inert="" data-remote-selection="shown">
@@ -559,13 +559,13 @@ export function Pattern() {
               <div className="absolute data-hidden:opacity-0 duration-150 group-data-[remote-selection=hidden]/wb-overlay:invisible in-data-[demo=frozen]:transition-none left-0 motion-reduce:transition-none top-0 transition-opacity" style={{transform: "translate(295px, 272px)"}}>
                 <Badge className="-translate-y-full [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 in-data-[demo=frozen]:transition-none min-w-5 motion-reduce:transition-none outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-opacity">
                   <span className="group-data-[theme=dark]/wb-overlay:[filter:invert(93%)_hue-rotate(180deg)] rounded-full size-2" aria-hidden="true" style={{backgroundColor: "rgb(212, 168, 255)"}}></span>
-                  Sofia
+                  {"Sofia"}
                 </Badge>
               </div>
               <div className="absolute data-hidden:opacity-0 duration-150 group-data-[remote-selection=hidden]/wb-overlay:invisible in-data-[demo=frozen]:transition-none left-0 motion-reduce:transition-none top-0 transition-opacity" style={{transform: "translate(46px, 272px)"}}>
                 <Badge className="-translate-y-full [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 in-data-[demo=frozen]:transition-none min-w-5 motion-reduce:transition-none outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-opacity">
                   <span className="group-data-[theme=dark]/wb-overlay:[filter:invert(93%)_hue-rotate(180deg)] rounded-full size-2" aria-hidden="true" style={{backgroundColor: "rgb(255, 168, 226)"}}></span>
-                  Omar
+                  {"Omar"}
                 </Badge>
               </div>
             </div>
@@ -720,7 +720,7 @@ export function Pattern() {
                   </Tooltip>
                   <Tooltip>
                   <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-16 outline-none select-none shrink-0 tabular-nums transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom 60%, zoom options" aria-haspopup="menu" id="base-ui-_r_2c_" baseUiTooltipTrigger="" aria-expanded="false">
-                    60%
+                    {"60%"}
                   </TooltipTrigger>
                   </Tooltip>
                   <Tooltip>
@@ -809,7 +809,7 @@ export function Pattern() {
                       <path d="M4 7h16M4 17h16M7 4v16M17 4v16"></path>
                     </svg>
                     <span className="min-w-0 truncate">
-                      6 Frames
+                      {"6 Frames"}
                     </span>
                   </TooltipTrigger>
                   </Tooltip>
@@ -829,10 +829,10 @@ export function Pattern() {
               <div className="p-3 shrink-0">
                 <TabsList className="w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                   <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_33_" compositeItemActive="" aria-controls="base-ui-_r_35_">
-                    Plan
+                    {"Plan"}
                   </TabsTrigger>
                   <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_34_">
-                    Log
+                    {"Log"}
                   </TabsTrigger>
                 </TabsList>
               </div>
@@ -856,11 +856,11 @@ export function Pattern() {
                         <Item className="flex-col gap-2 items-stretch py-0" variant="default" size="xs">
                           <div className="flex gap-2 items-center justify-between">
                             <span className="text-muted-foreground text-xs">
-                              Committed
+                              {"Committed"}
                             </span>
                             <span className="flex gap-1.5 items-center">
                               <span className="font-medium tabular-nums text-sm">
-                                26 of 31 pts
+                                {"26 of 31 pts"}
                               </span>
                             </span>
                           </div>
@@ -869,18 +869,18 @@ export function Pattern() {
                               <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83.871%"}}></ProgressIndicator>
                             </ProgressTrack>
                             <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                              x
+                              {"x"}
                             </span>
                           </Progress>
                           <p className="tabular-nums text-muted-foreground text-xs">
-                            11 pts parked
+                            {"11 pts parked"}
                           </p>
                         </Item>
                       </section>
                       <section className="flex flex-col gap-1.5" aria-label="Lanes">
                         <Item className="flex-nowrap justify-between min-h-6 py-0" variant="default" size="xs">
                           <h3 className="font-medium text-muted-foreground text-xs">
-                            Lanes
+                            {"Lanes"}
                           </h3>
                         </Item>
                         <ItemGroup className="gap-0.5" role="list">
@@ -898,7 +898,7 @@ export function Pattern() {
                                 <button className="after:absolute after:inset-0 aria-disabled:cursor-default cursor-pointer min-w-0 outline-none text-start" type="button" data-row-select="">
                                   <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                     <span className="duration-150 ease-linear group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-block max-w-none motion-reduce:transition-none pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                      Express Pay
+                                      {"Express Pay"}
                                     </span>
                                   </span>
                                 </button>
@@ -906,12 +906,12 @@ export function Pattern() {
                               <ItemDescription className="tabular-nums text-xs/normal">
                                 <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                   <span className="align-top duration-150 ease-linear gap-1.5 group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-flex items-center max-w-none motion-reduce:transition-none pointer-coarse:flex-wrap pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                    Omar Farouk
+                                    {"Omar Farouk"}
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="sr-only">
-                                      ,
+                                      {","}
                                     </span>
-                                    13 of 13 pts
+                                    {"13 of 13 pts"}
                                   </span>
                                 </span>
                               </ItemDescription>
@@ -943,7 +943,7 @@ export function Pattern() {
                                 <button className="after:absolute after:inset-0 aria-disabled:cursor-default cursor-pointer min-w-0 outline-none text-start" type="button" data-row-select="">
                                   <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                     <span className="duration-150 ease-linear group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-block max-w-none motion-reduce:transition-none pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                      Receipts
+                                      {"Receipts"}
                                     </span>
                                   </span>
                                 </button>
@@ -951,12 +951,12 @@ export function Pattern() {
                               <ItemDescription className="tabular-nums text-xs/normal">
                                 <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                   <span className="align-top duration-150 ease-linear gap-1.5 group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-flex items-center max-w-none motion-reduce:transition-none pointer-coarse:flex-wrap pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                    Sofia Marino
+                                    {"Sofia Marino"}
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="sr-only">
-                                      ,
+                                      {","}
                                     </span>
-                                    8 of 10 pts
+                                    {"8 of 10 pts"}
                                   </span>
                                 </span>
                               </ItemDescription>
@@ -987,7 +987,7 @@ export function Pattern() {
                                 <button className="after:absolute after:inset-0 aria-disabled:cursor-default cursor-pointer min-w-0 outline-none text-start" type="button" data-row-select="">
                                   <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                     <span className="duration-150 ease-linear group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-block max-w-none motion-reduce:transition-none pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                      Offline Research
+                                      {"Offline Research"}
                                     </span>
                                   </span>
                                 </button>
@@ -995,12 +995,12 @@ export function Pattern() {
                               <ItemDescription className="tabular-nums text-xs/normal">
                                 <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                   <span className="align-top duration-150 ease-linear gap-1.5 group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-flex items-center max-w-none motion-reduce:transition-none pointer-coarse:flex-wrap pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                    Emma Lindgren
+                                    {"Emma Lindgren"}
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="sr-only">
-                                      ,
+                                      {","}
                                     </span>
-                                    5 of 8 pts
+                                    {"5 of 8 pts"}
                                   </span>
                                 </span>
                               </ItemDescription>
@@ -1031,7 +1031,7 @@ export function Pattern() {
                                 <button className="after:absolute after:inset-0 aria-disabled:cursor-default cursor-pointer min-w-0 outline-none text-start" type="button" data-row-select="">
                                   <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                     <span className="duration-150 ease-linear group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-block max-w-none motion-reduce:transition-none pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                      Parked
+                                      {"Parked"}
                                     </span>
                                   </span>
                                 </button>
@@ -1039,12 +1039,12 @@ export function Pattern() {
                               <ItemDescription className="tabular-nums text-xs/normal">
                                 <span className="block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] group-has-[:focus-visible]/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] group-hover/item:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" style={{"--row-slide": "0px"}}>
                                   <span className="align-top duration-150 ease-linear gap-1.5 group-has-[:focus-visible]/item:duration-[2500ms] group-has-[:focus-visible]/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] group-hover/item:duration-[2500ms] group-hover/item:in-data-overflowing:[transform:translateX(calc(var(--row-slide)-1.5rem))] inline-flex items-center max-w-none motion-reduce:transition-none pointer-coarse:flex-wrap pointer-coarse:whitespace-normal transition-transform whitespace-nowrap">
-                                    2 cards
+                                    {"2 cards"}
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="sr-only">
-                                      ,
+                                      {","}
                                     </span>
-                                    11 pts
+                                    {"11 pts"}
                                   </span>
                                 </span>
                               </ItemDescription>

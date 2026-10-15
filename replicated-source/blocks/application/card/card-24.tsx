@@ -15,7 +15,7 @@ export function Pattern() {
               <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
             </svg>
             <h3 className="font-medium text-foreground text-sm">
-              Recommended Role, based on your profile
+              {"Recommended Role, based on your profile"}
             </h3>
           </div>
         </header>
@@ -31,10 +31,10 @@ export function Pattern() {
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold leading-tight text-base text-foreground">
-                Software Engineer
+                {"Software Engineer"}
               </h3>
               <p className="text-muted-foreground text-sm">
-                Resend
+                {"Resend"}
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export function Pattern() {
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
               <span className="text-sm">
-                Berlin, Germany
+                {"Berlin, Germany"}
               </span>
             </div>
             <div className="[&_svg]:shrink-0 [&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-1.5 items-center">
@@ -56,7 +56,7 @@ export function Pattern() {
                 <line x1="12" x2="12" y1="17" y2="21"></line>
               </svg>
               <span className="text-sm">
-                Hybrid
+                {"Hybrid"}
               </span>
             </div>
             <div className="[&_svg]:shrink-0 [&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-1.5 items-center">
@@ -66,19 +66,19 @@ export function Pattern() {
                 <path d="M6 12h.01M18 12h.01"></path>
               </svg>
               <span className="text-sm">
-                $60-75k/year
+                {"$60-75k/year"}
               </span>
             </div>
           </div>
           <p className="leading-relaxed text-muted-foreground text-sm">
-            Join the engineering team at CloudCore to build scalable cloud platforms. Collaborate on backend systems, APIs, and modern infrastructure to deliver enterprise solutions worldwide.
+            {"Join the engineering team at CloudCore to build scalable cloud platforms. Collaborate on backend systems, APIs, and modern infrastructure to deliver enterprise solutions worldwide."}
           </p>
           <div className="flex flex-wrap gap-2">
             <Button type="button" tabIndex="0">
-              Quick Apply
+              {"Quick Apply"}
             </Button>
             <Button type="button" tabIndex="0">
-              View Details
+              {"View Details"}
             </Button>
           </div>
         </FramePanel>

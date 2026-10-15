@@ -12,11 +12,11 @@ export function Pattern() {
           <FramePanel className="space-y-7.5">
             <div className="flex flex-col gap-1.5">
               <div className="font-semibold leading-tight text-foreground text-xl">
-                1,246
+                {"1,246"}
                 <span className="font-semibold text-muted-foreground/40"></span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Total Orders
+                {"Total Orders"}
               </p>
             </div>
             <div className="flex gap-1.5 items-center">
@@ -26,24 +26,24 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span>
-                  23.08%
+                  {"23.08%"}
                 </span>
               </Badge>
               <span className="text-muted-foreground text-xs">
-                Annual trend
+                {"Annual trend"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="space-y-7.5">
             <div className="flex flex-col gap-1.5">
               <div className="font-semibold leading-tight text-foreground text-xl">
-                $89,378
+                {"$89,378"}
                 <span className="font-semibold text-muted-foreground/40">
-                  .02
+                  {".02"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Cumulative Spend
+                {"Cumulative Spend"}
               </p>
             </div>
             <div className="flex gap-1.5 items-center">
@@ -53,24 +53,24 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span>
-                  3.82%
+                  {"3.82%"}
                 </span>
               </Badge>
               <span className="text-muted-foreground text-xs">
-                Monthly trend
+                {"Monthly trend"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="space-y-7.5">
             <div className="flex flex-col gap-1.5">
               <div className="font-semibold leading-tight text-foreground text-xl">
-                $68
+                {"$68"}
                 <span className="font-semibold text-muted-foreground/40">
-                  .50
+                  {".50"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Avg. Order Value(AOV)
+                {"Avg. Order Value(AOV)"}
               </p>
             </div>
             <div className="flex gap-1.5 items-center">
@@ -80,24 +80,24 @@ export function Pattern() {
                   <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                 </svg>
                 <span>
-                  0.39%
+                  {"0.39%"}
                 </span>
               </Badge>
               <span className="text-muted-foreground text-xs">
-                Weekly trend
+                {"Weekly trend"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="space-y-7.5">
             <div className="flex flex-col gap-1.5">
               <div className="font-semibold leading-tight text-foreground text-xl">
-                $2,345
+                {"$2,345"}
                 <span className="font-semibold text-muted-foreground/40">
-                  .94
+                  {".94"}
                 </span>
               </div>
               <p className="leading-relaxed text-muted-foreground text-xs">
-                Account Balance
+                {"Account Balance"}
               </p>
             </div>
             <div className="flex gap-1.5 items-center">
@@ -107,11 +107,11 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span>
-                  1.04%
+                  {"1.04%"}
                 </span>
               </Badge>
               <span className="text-muted-foreground text-xs">
-                Daily trend
+                {"Daily trend"}
               </span>
             </div>
           </FramePanel>

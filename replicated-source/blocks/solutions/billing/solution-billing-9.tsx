@@ -50,17 +50,17 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-start justify-center max-w-5xl md:p-4 min-h-svh mx-auto p-3 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Coupon Manager
+        {"Coupon Manager"}
       </h1>
       <div className="flex flex-col gap-3 w-full">
         <div className="flex flex-wrap gap-3 items-center justify-between">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex flex-wrap gap-2.5 items-center">
               <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                Coupons
+                {"Coupons"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                1 live
+                {"1 live"}
               </Badge>
             </div>
             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center text-muted-foreground text-xs">
@@ -68,11 +68,11 @@ export function Pattern() {
                 <Avatar className="size-4" size="default">
                   <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                 </Avatar>
-                Mara Whitfield
+                {"Mara Whitfield"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                4 coupons
+                {"4 coupons"}
               </span>
             </div>
           </div>
@@ -82,7 +82,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              Create
+              {"Create"}
             </Button>
           </div>
         </div>
@@ -110,7 +110,7 @@ export function Pattern() {
                       <Collapsible>
                       <CollapsibleTrigger className="min-w-0 text-left" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_0_" aria-expanded="true">
                         <span className="block font-mono font-semibold text-foreground text-sm tracking-wide truncate uppercase">
-                          SPRING25
+                          {"SPRING25"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -127,11 +127,11 @@ export function Pattern() {
                     <CollapsibleTrigger className="min-w-0 text-left" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_0_" aria-expanded="true">
                       <span className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                         <span className="truncate">
-                          25% off
+                          {"25% off"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          Ends in 12 days
+                          {"Ends in 12 days"}
                         </span>
                       </span>
                     </CollapsibleTrigger>
@@ -141,10 +141,10 @@ export function Pattern() {
                 <Collapsible>
                 <CollapsibleTrigger className="flex gap-2.5 group/row items-center shrink-0 text-left" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_0_" aria-expanded="true">
                   <span className="hidden sm:inline tabular-nums text-muted-foreground text-xs">
-                    142 / 500
+                    {"142 / 500"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Active
+                    {"Active"}
                   </Badge>
                   <svg className="group-hover/row:text-foreground in-data-open:rotate-180 lucide lucide-chevron-down shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -156,19 +156,19 @@ export function Pattern() {
                 <FramePanel className="border-border border-t">
                   <FieldSet className="gap-0">
                     <FieldLegend className="sr-only" variant="legend">
-                      SPRING25 redemption rules
+                      {"SPRING25 redemption rules"}
                     </FieldLegend>
                     <FieldDescription className="sr-only">
-                      Edit the discount, duration, limit, and eligible plans.
+                      {"Edit the discount, duration, limit, and eligible plans."}
                     </FieldDescription>
                     <FieldGroup className="gap-0">
                       <Field className="@md/field-group:gap-8 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-4 py-3" role="group" data-orientation="responsive">
                         <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                           <FieldLabel className="cn-field-title items-center">
-                            Discount Type
+                            {"Discount Type"}
                           </FieldLabel>
                           <FieldDescription className="leading-5 text-xs">
-                            Percentage or a fixed amount.
+                            {"Percentage or a fixed amount."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:basis-1/2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -176,10 +176,10 @@ export function Pattern() {
                             <Tabs data-orientation="horizontal" activationDirection="none">
                               <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_3_" compositeItemActive="">
-                                  Percentage
+                                  {"Percentage"}
                                 </TabsTrigger>
                                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                                  Fixed Amount
+                                  {"Fixed Amount"}
                                 </TabsTrigger>
                               </TabsList>
                             </Tabs>
@@ -192,10 +192,10 @@ export function Pattern() {
                       <Field className="@md/field-group:gap-8 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-4 py-3" role="group" data-orientation="responsive">
                         <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="PROMO-SPRING25-amount">
-                            Amount
+                            {"Amount"}
                           </FieldLabel>
                           <FieldDescription className="leading-5 text-xs">
-                            The discount applied at checkout.
+                            {"The discount applied at checkout."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:basis-1/2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -204,7 +204,7 @@ export function Pattern() {
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="PROMO-SPRING25-amount" inputmode="numeric" min="0" type="number" value="25" />
                               <InputGroupAddon role="group" data-align="inline-end">
                                 <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center text-muted-foreground">
-                                  %
+                                  {"%"}
                                 </span>
                               </InputGroupAddon>
                             </InputGroup>
@@ -217,10 +217,10 @@ export function Pattern() {
                       <Field className="@md/field-group:gap-8 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-4 py-3" role="group" data-orientation="responsive">
                         <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                           <FieldLabel className="cn-field-title items-center">
-                            Duration
+                            {"Duration"}
                           </FieldLabel>
                           <FieldDescription className="leading-5 text-xs">
-                            How long the discount applies.
+                            {"How long the discount applies."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:basis-1/2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -228,11 +228,11 @@ export function Pattern() {
                             <Select>
                             <SelectTrigger className="max-w-[200px]" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                repeating
+                                {"repeating"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -246,10 +246,10 @@ export function Pattern() {
                       <Field className="@md/field-group:gap-8 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-3 px-4 py-3" role="group" data-orientation="responsive">
                         <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="PROMO-SPRING25-limit">
-                            Redemption Limit
+                            {"Redemption Limit"}
                           </FieldLabel>
                           <FieldDescription className="leading-5 text-xs">
-                            Cap the total times this code can be used.
+                            {"Cap the total times this code can be used."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:basis-1/2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -263,7 +263,7 @@ export function Pattern() {
                                   <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                                 </Switch>
                                 <input id="base-ui-_r_b_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
-                                Unlimited
+                                {"Unlimited"}
                               </span>
                             </div>
                           </div>
@@ -275,32 +275,32 @@ export function Pattern() {
                       <Field className="@md/field-group:gap-8 gap-3 px-4 py-3" role="group" data-orientation="responsive">
                         <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                           <FieldLabel className="cn-field-title items-center">
-                            Eligible Plans
+                            {"Eligible Plans"}
                           </FieldLabel>
                           <FieldDescription className="leading-5 text-xs">
-                            Plans this code can be applied to.
+                            {"Plans this code can be applied to."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:basis-1/2 @md/field-group:w-1/2 min-w-0 w-full">
                           <div className="flex justify-start w-full">
                             <div className="flex flex-wrap gap-1.5">
                               <Button type="button" tabIndex="0" aria-pressed="false">
-                                Starter
+                                {"Starter"}
                               </Button>
                               <Button type="button" tabIndex="0" aria-pressed="true">
                                 <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
-                                Growth
+                                {"Growth"}
                               </Button>
                               <Button type="button" tabIndex="0" aria-pressed="true">
                                 <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
-                                Scale
+                                {"Scale"}
                               </Button>
                               <Button type="button" tabIndex="0" aria-pressed="false">
-                                Enterprise
+                                {"Enterprise"}
                               </Button>
                             </div>
                           </div>
@@ -316,10 +316,10 @@ export function Pattern() {
                         <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                         <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                       </svg>
-                      Copy
+                      {"Copy"}
                     </Button>
                     <Button className="w-full" type="button" tabIndex="0">
-                      Save
+                      {"Save"}
                     </Button>
                   </div>
                 </footer>
@@ -349,7 +349,7 @@ export function Pattern() {
                       <Collapsible>
                       <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                         <span className="block font-mono font-semibold text-foreground text-sm tracking-wide truncate uppercase">
-                          WELCOME10
+                          {"WELCOME10"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -366,11 +366,11 @@ export function Pattern() {
                     <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                       <span className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                         <span className="truncate">
-                          $10 off
+                          {"$10 off"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          Starts in 5 days
+                          {"Starts in 5 days"}
                         </span>
                       </span>
                     </CollapsibleTrigger>
@@ -380,10 +380,10 @@ export function Pattern() {
                 <Collapsible>
                 <CollapsibleTrigger className="flex gap-2.5 group/row items-center shrink-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                   <span className="hidden sm:inline tabular-nums text-muted-foreground text-xs">
-                    0 / 300
+                    {"0 / 300"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Scheduled
+                    {"Scheduled"}
                   </Badge>
                   <svg className="group-hover/row:text-foreground in-data-open:rotate-180 lucide lucide-chevron-down shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -416,7 +416,7 @@ export function Pattern() {
                       <Collapsible>
                       <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                         <span className="block font-mono font-semibold text-foreground text-sm tracking-wide truncate uppercase">
-                          LEGACY15
+                          {"LEGACY15"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -433,11 +433,11 @@ export function Pattern() {
                     <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                       <span className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                         <span className="truncate">
-                          15% off
+                          {"15% off"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          Ended 8 days ago
+                          {"Ended 8 days ago"}
                         </span>
                       </span>
                     </CollapsibleTrigger>
@@ -447,10 +447,10 @@ export function Pattern() {
                 <Collapsible>
                 <CollapsibleTrigger className="flex gap-2.5 group/row items-center shrink-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                   <span className="hidden sm:inline tabular-nums text-muted-foreground text-xs">
-                    612 used
+                    {"612 used"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                    Expired
+                    {"Expired"}
                   </Badge>
                   <svg className="group-hover/row:text-foreground in-data-open:rotate-180 lucide lucide-chevron-down shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -483,7 +483,7 @@ export function Pattern() {
                       <Collapsible>
                       <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                         <span className="block font-mono font-semibold text-foreground text-sm tracking-wide truncate uppercase">
-                          MAXOUT30
+                          {"MAXOUT30"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -500,11 +500,11 @@ export function Pattern() {
                     <CollapsibleTrigger className="min-w-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                       <span className="flex gap-1.5 items-center leading-4 min-w-0 text-muted-foreground text-xs">
                         <span className="truncate">
-                          30% off
+                          {"30% off"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          Cap hit 2 days ago
+                          {"Cap hit 2 days ago"}
                         </span>
                       </span>
                     </CollapsibleTrigger>
@@ -514,10 +514,10 @@ export function Pattern() {
                 <Collapsible>
                 <CollapsibleTrigger className="flex gap-2.5 group/row items-center shrink-0 text-left" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
                   <span className="hidden sm:inline tabular-nums text-muted-foreground text-xs">
-                    500 / 500
+                    {"500 / 500"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Limit Reached
+                    {"Limit Reached"}
                   </Badge>
                   <svg className="group-hover/row:text-foreground in-data-open:rotate-180 lucide lucide-chevron-down shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>

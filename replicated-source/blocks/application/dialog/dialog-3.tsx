@@ -34,11 +34,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Plan cancellation dialog
+        {"Plan cancellation dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open offboarding dialog
+          {"Open offboarding dialog"}
         </Button>
       </div>
     </main>
@@ -46,10 +46,10 @@ export function Pattern() {
     <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 sm:max-w-2xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="mb-2 ps-1 pt-1 text-left">
         <DialogTitle id="base-ui-_r_2_">
-          Cancel Your Plan
+          {"Cancel Your Plan"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Your workspace stays active through the current billing period.
+          {"Your workspace stays active through the current billing period."}
         </DialogDescription>
       </DialogHeader>
       <div className="px-1">
@@ -60,31 +60,31 @@ export function Pattern() {
             <path d="M12 17h.01"></path>
           </svg>
           <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-            Shared access pauses after expiry.
+            {"Shared access pauses after expiry."}
           </AlertTitle>
           <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-            Team access stays on until the current period ends.
+            {"Team access stays on until the current period ends."}
           </AlertDescription>
           <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
             <Button type="button" tabIndex="0">
-              Dismiss
+              {"Dismiss"}
             </Button>
             <Button type="button" tabIndex="0">
-              Manage
+              {"Manage"}
             </Button>
           </AlertAction>
         </Alert>
       </div>
       <FieldSet className="gap-0 mb-1 px-1">
         <FieldLegend className="sr-only" variant="legend">
-          Select cancellation reasons
+          {"Select cancellation reasons"}
         </FieldLegend>
         <FieldGroup className="gap-3 grid sm:grid-cols-2">
           <FieldLabel className="cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center min-w-0 peer-disabled:cursor-not-allowed select-none w-full" htmlFor="plan-cancellation-single-launch" id="plan-cancellation-single-launch-label">
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Only needed one launch
+                  {"Only needed one launch"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4_" aria-checked="false" aria-label="Only needed one launch" aria-labelledby="plan-cancellation-single-launch-label"></Checkbox>
@@ -95,7 +95,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Budget changed
+                  {"Budget changed"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_7_" aria-checked="false" aria-label="Budget changed" aria-labelledby="plan-cancellation-budget-label"></Checkbox>
@@ -106,7 +106,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Missing a few patterns
+                  {"Missing a few patterns"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_a_" aria-checked="false" aria-label="Missing a few patterns" aria-labelledby="plan-cancellation-missing-patterns-label"></Checkbox>
@@ -117,7 +117,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Moved back in-house
+                  {"Moved back in-house"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_d_" aria-checked="false" aria-label="Moved back in-house" aria-labelledby="plan-cancellation-internal-kit-label"></Checkbox>
@@ -128,7 +128,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Not the right stack fit
+                  {"Not the right stack fit"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_g_" aria-checked="false" aria-label="Not the right stack fit" aria-labelledby="plan-cancellation-not-our-stack-label"></Checkbox>
@@ -139,7 +139,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Wanted better Figma parity
+                  {"Wanted better Figma parity"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_j_" aria-checked="false" aria-label="Wanted better Figma parity" aria-labelledby="plan-cancellation-figma-parity-label"></Checkbox>
@@ -150,7 +150,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Output felt inconsistent
+                  {"Output felt inconsistent"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_m_" aria-checked="false" aria-label="Output felt inconsistent" aria-labelledby="plan-cancellation-quality-consistency-label"></Checkbox>
@@ -161,7 +161,7 @@ export function Pattern() {
             <Field className="gap-4 hover:bg-muted/30 justify-between px-3 py-2 rounded-lg transition-colors" role="group" data-orientation="horizontal">
               <FieldContent className="min-w-0 pr-2">
                 <FieldLabel className="cn-field-title font-medium items-center text-sm">
-                  Something else
+                  {"Something else"}
                 </FieldLabel>
               </FieldContent>
               <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_p_" aria-checked="false" aria-label="Something else" aria-labelledby="plan-cancellation-other-label"></Checkbox>
@@ -172,7 +172,7 @@ export function Pattern() {
       </FieldSet>
       <Field className="mb-3 px-1" role="group" data-orientation="vertical">
         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="plan-cancellation-feedback">
-          Additional feedback
+          {"Additional feedback"}
         </FieldLabel>
         <Textarea className="border min-h-24 px-3 py-2 resize-none rounded-lg" id="plan-cancellation-feedback" placeholder="Anything we should improve before you leave NeUI?"></Textarea>
       </Field>
@@ -186,17 +186,17 @@ export function Pattern() {
               <path d="M12 8h.01"></path>
             </svg>
             <span>
-              Billing stays active
+              {"Billing stays active"}
             </span>
           </TooltipTrigger>
           </Tooltip>
         </div>
         <div className="flex gap-2 justify-end sm:w-auto w-full">
           <Button type="button" tabIndex="0">
-            Keep plan
+            {"Keep plan"}
           </Button>
           <Button type="button" disabled="" tabIndex="0" disabled>
-            Cancel plan
+            {"Cancel plan"}
           </Button>
         </div>
       </DialogFooter>
@@ -206,7 +206,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

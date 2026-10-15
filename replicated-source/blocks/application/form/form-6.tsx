@@ -14,16 +14,16 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center lg:px-10 min-h-svh px-4 py-6 sm:px-8 sm:py-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Business verification form
+        {"Business verification form"}
       </h1>
       <section className="max-w-4xl w-full" aria-labelledby="form-6-title">
         <div className="flex flex-col gap-3 mb-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-0.5 min-w-0">
             <h2 className="font-semibold leading-tight text-lg" id="form-6-title">
-              Business Verification
+              {"Business Verification"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Review submitted profile details before approval.
+              {"Review submitted profile details before approval."}
             </p>
           </div>
           <Button type="button" tabIndex="0">
@@ -32,7 +32,7 @@ export function Pattern() {
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
               <path d="M12 17h.01"></path>
             </svg>
-            Contact support
+            {"Contact support"}
           </Button>
         </div>
         <div className="flex flex-col gap-4">
@@ -40,10 +40,10 @@ export function Pattern() {
             <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold text-sm">
-                  Business Details
+                  {"Business Details"}
                 </div>
                 <div className="text-muted-foreground text-sm truncate">
-                  Legal identity and address.
+                  {"Legal identity and address."}
                 </div>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -52,7 +52,7 @@ export function Pattern() {
                     <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                     <path d="m15 5 4 4"></path>
                   </svg>
-                  Edit
+                  {"Edit"}
                 </Button>
               </div>
             </header>
@@ -60,10 +60,10 @@ export function Pattern() {
               <div className="flex flex-col gap-3 min-w-0 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-sm">
-                    Cedar & Volt Studio LLC
+                    {"Cedar & Volt Studio LLC"}
                   </p>
                   <p className="text-muted-foreground text-sm truncate">
-                    Domain confirmed for review.
+                    {"Domain confirmed for review."}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative self-start sm:self-center style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -71,7 +71,7 @@ export function Pattern() {
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
-                  Verified domain
+                  {"Verified domain"}
                 </Badge>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -80,7 +80,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        URL
+                        {"URL"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="URL info" id="base-ui-_r_1_" baseUiTooltipTrigger="">
@@ -96,7 +96,7 @@ export function Pattern() {
                       <span className="min-w-0">
                         <a className="gap-1.5 hover:underline hover:underline-offset-4 inline-flex items-center min-w-0 text-primary" href="https://cedarvolt.studio" target="_blank" rel="noreferrer">
                           <span className="min-w-0 truncate">
-                            cedarvolt.studio
+                            {"cedarvolt.studio"}
                           </span>
                           <svg className="lucide lucide-external-link shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                             <path d="M15 3h6v6"></path>
@@ -122,7 +122,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Address
+                        {"Address"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Address info" id="base-ui-_r_5_" baseUiTooltipTrigger="">
@@ -138,13 +138,13 @@ export function Pattern() {
                       <span className="min-w-0">
                         <span className="flex flex-col min-w-0">
                           <span className="min-w-0 truncate">
-                            418 Market Street, Floor 6
+                            {"418 Market Street, Floor 6"}
                           </span>
                           <span className="min-w-0 truncate">
-                            Portland, OR 97205
+                            {"Portland, OR 97205"}
                           </span>
                           <span className="min-w-0 truncate">
-                            United States
+                            {"United States"}
                           </span>
                         </span>
                       </span>
@@ -156,7 +156,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Business type
+                        {"Business type"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Business type info" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -170,7 +170,7 @@ export function Pattern() {
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        Limited liability company
+                        {"Limited liability company"}
                       </span>
                     </dd>
                   </div>
@@ -180,12 +180,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Other information provided
+                        {"Other information provided"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        US EIN ending 2146, Digital services, Product description
+                        {"US EIN ending 2146, Digital services, Product description"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Other information provided value info" id="base-ui-_r_9_" baseUiTooltipTrigger="">
@@ -206,10 +206,10 @@ export function Pattern() {
             <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold text-sm">
-                  Public Details
+                  {"Public Details"}
                 </div>
                 <div className="text-muted-foreground text-sm truncate">
-                  Customer-facing profile.
+                  {"Customer-facing profile."}
                 </div>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -218,7 +218,7 @@ export function Pattern() {
                     <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                     <path d="m15 5 4 4"></path>
                   </svg>
-                  Edit
+                  {"Edit"}
                 </Button>
               </div>
             </header>
@@ -226,10 +226,10 @@ export function Pattern() {
               <div className="flex flex-col gap-3 min-w-0 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-sm">
-                    Customer Support Information
+                    {"Customer Support Information"}
                   </p>
                   <p className="text-muted-foreground text-sm truncate">
-                    Receipt and invoice profile.
+                    {"Receipt and invoice profile."}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative self-start sm:self-center style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
@@ -237,7 +237,7 @@ export function Pattern() {
                     <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
                     <circle cx="12" cy="12" r="3"></circle>
                   </svg>
-                  Customer visible
+                  {"Customer visible"}
                 </Badge>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -246,7 +246,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Business name
+                        {"Business name"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Business name info" id="base-ui-_r_b_" baseUiTooltipTrigger="">
@@ -262,7 +262,7 @@ export function Pattern() {
                       <span className="min-w-0">
                         <span className="flex flex-wrap gap-x-3 gap-y-1.5 items-center min-w-0">
                           <span className="min-w-0">
-                            Cedar & Volt Studio
+                            {"Cedar & Volt Studio"}
                           </span>
                           <span className="flex-wrap gap-x-3 gap-y-1 inline-flex items-center min-w-0">
                             <span className="h-5 inline-flex items-center" aria-label="Stripe">
@@ -281,12 +281,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Support phone
+                        {"Support phone"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        +1 503 555 0184
+                        {"+1 503 555 0184"}
                       </span>
                     </dd>
                   </div>
@@ -296,12 +296,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Support email
+                        {"Support email"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        support@cedarvolt.studio
+                        {"support@cedarvolt.studio"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Support email value info" id="base-ui-_r_d_" baseUiTooltipTrigger="">
@@ -320,7 +320,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Statement descriptor
+                        {"Statement descriptor"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Statement descriptor info" id="base-ui-_r_f_" baseUiTooltipTrigger="">
@@ -336,7 +336,7 @@ export function Pattern() {
                       <span className="min-w-0">
                         <span className="flex flex-wrap gap-x-3 gap-y-1.5 items-center min-w-0">
                           <span className="min-w-0">
-                            CEDARVOLT.STUDIO
+                            {"CEDARVOLT.STUDIO"}
                           </span>
                           <span className="flex-wrap gap-x-3 gap-y-1 inline-flex items-center min-w-0">
                             <span className="h-5 inline-flex items-center" aria-label="PayPal">
@@ -367,12 +367,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Also provided
+                        {"Also provided"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        Business website, Support URL, Customer support note
+                        {"Business website, Support URL, Customer support note"}
                       </span>
                     </dd>
                   </div>
@@ -384,10 +384,10 @@ export function Pattern() {
             <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <div className="font-semibold text-sm">
-                  Management and Ownership
+                  {"Management and Ownership"}
                 </div>
                 <div className="text-muted-foreground text-sm truncate">
-                  People authorized to represent the business.
+                  {"People authorized to represent the business."}
                 </div>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -396,14 +396,14 @@ export function Pattern() {
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add owner
+                  {"Add owner"}
                 </Button>
                 <Button type="button" tabIndex="0" aria-label="Edit management and ownership">
                   <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                     <path d="m15 5 4 4"></path>
                   </svg>
-                  Edit
+                  {"Edit"}
                 </Button>
               </div>
             </header>
@@ -411,17 +411,17 @@ export function Pattern() {
               <div className="flex flex-col gap-3 min-w-0 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-sm">
-                    Mira Coleman
+                    {"Mira Coleman"}
                   </p>
                   <p className="text-muted-foreground text-sm truncate">
-                    Account representative
+                    {"Account representative"}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative self-start sm:self-center style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                   <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                     <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                   </svg>
-                  Primary
+                  {"Primary"}
                 </Badge>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -430,7 +430,7 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Role
+                        {"Role"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Role info" id="base-ui-_r_h_" baseUiTooltipTrigger="">
@@ -444,7 +444,7 @@ export function Pattern() {
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        Executive, owner, and representative
+                        {"Executive, owner, and representative"}
                       </span>
                     </dd>
                   </div>
@@ -454,12 +454,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Email
+                        {"Email"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        mira@cedarvolt.studio
+                        {"mira@cedarvolt.studio"}
                       </span>
                     </dd>
                   </div>
@@ -469,12 +469,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Date of birth
+                        {"Date of birth"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        Born on May 18, 1987
+                        {"Born on May 18, 1987"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Date of birth value info" id="base-ui-_r_j_" baseUiTooltipTrigger="">
@@ -493,20 +493,20 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Address
+                        {"Address"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
                         <span className="flex flex-col min-w-0">
                           <span className="min-w-0 truncate">
-                            730 Alder Way
+                            {"730 Alder Way"}
                           </span>
                           <span className="min-w-0 truncate">
-                            Portland, OR 97209
+                            {"Portland, OR 97209"}
                           </span>
                           <span className="min-w-0 truncate">
-                            United States
+                            {"United States"}
                           </span>
                         </span>
                       </span>
@@ -518,12 +518,12 @@ export function Pattern() {
                   <div className="gap-1 grid px-4 py-3 sm:gap-5 sm:grid-cols-[minmax(10rem,0.95fr)_minmax(0,1.35fr)]">
                     <dt className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Other information provided
+                        {"Other information provided"}
                       </span>
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-6 min-w-0 text-foreground text-sm">
                       <span className="min-w-0">
-                        Last 4 SSN ending 4481, Phone
+                        {"Last 4 SSN ending 4481, Phone"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Other information provided value info" id="base-ui-_r_l_" baseUiTooltipTrigger="">
@@ -542,17 +542,17 @@ export function Pattern() {
               <div className="flex gap-3 items-center justify-between px-4 py-3">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-sm truncate">
-                    Beneficial ownership
+                    {"Beneficial ownership"}
                   </p>
                   <p className="text-muted-foreground text-sm truncate">
-                    1 additional owner provided.
+                    {"1 additional owner provided."}
                   </p>
                 </div>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-start" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  Show 1 more owner
+                  {"Show 1 more owner"}
                 </Button>
               </div>
             </FramePanel>

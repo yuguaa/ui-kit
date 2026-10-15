@@ -34,10 +34,10 @@ export function Pattern() {
           <div className="flex flex-wrap gap-x-2 items-center pe-2">
             <EventCalendarNav className="flex-1 flex-nowrap">
               <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                Today
+                {"Today"}
               </EventCalendarNavToday>
               <EventCalendarViewSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
-                Month
+                {"Month"}
                 <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -55,7 +55,7 @@ export function Pattern() {
                 </EventCalendarNavNext>
               </div>
               <EventCalendarTitle className="ms-3" aria-live="polite">
-                July 2026
+                {"July 2026"}
               </EventCalendarTitle>
               <div className="grow"></div>
             </EventCalendarNav>
@@ -69,7 +69,7 @@ export function Pattern() {
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-emerald-500)"}}></span>
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-rose-500)"}}></span>
                 </span>
-                Calendars
+                {"Calendars"}
                 <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -80,7 +80,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Add event
+                {"Add event"}
               </Button>
             </EventCalendarToolbar>
           </div>
@@ -89,58 +89,58 @@ export function Pattern() {
               <div className="@container border-b grid" role="row" style={{gridTemplateColumns: "repeat(7, minmax(0px, 1fr))"}}>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Mon
+                    {"Mon"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    M
+                    {"M"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Tue
+                    {"Tue"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    T
+                    {"T"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Wed
+                    {"Wed"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    W
+                    {"W"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Thu
+                    {"Thu"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    T
+                    {"T"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Fri
+                    {"Fri"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    F
+                    {"F"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Sat
+                    {"Sat"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    S
+                    {"S"}
                   </span>
                 </div>
                 <div className="font-medium px-2 py-1.5 text-muted-foreground truncate" role="columnheader">
                   <span className="@max-[36rem]:hidden">
-                    Sun
+                    {"Sun"}
                   </span>
                   <span className="@max-[36rem]:inline hidden">
-                    S
+                    {"S"}
                   </span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        29
+                        {"29"}
                       </span>
                     </div>
                   </div>
@@ -170,7 +170,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        30
+                        {"30"}
                       </span>
                     </div>
                   </div>
@@ -186,7 +186,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        1
+                        {"1"}
                       </span>
                     </div>
                   </div>
@@ -196,10 +196,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="1:1 with Leo, 11:00 AM - 11:30 AM" aria-label="1:1 with Leo, 11:00 AM - 11:30 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          1:1 with Leo
+                          {"1:1 with Leo"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          11:00 AM
+                          {"11:00 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -218,7 +218,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        2
+                        {"2"}
                       </span>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        3
+                        {"3"}
                       </span>
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        4
+                        {"4"}
                       </span>
                     </div>
                   </div>
@@ -262,7 +262,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        5
+                        {"5"}
                       </span>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ export function Pattern() {
                       <EventCalendarEvent className="h-[calc(var(--ec-month-bar-h,1.75rem)-0.125rem)]" type="button" view="month" allDay="true" past="true" title="Time off, All day" aria-label="Time off, All day" aria-pressed="false" style={{"--ec-event-color": "var(--color-emerald-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Time off
+                          {"Time off"}
                         </span>
                         <span className="absolute cursor-ew-resize duration-150 flex group-hover/ec-event:opacity-100 inset-y-0 items-center justify-center opacity-0 start-0 transition-opacity w-2" data-edge="start">
                           <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -295,10 +295,10 @@ export function Pattern() {
                           <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
                         </svg>
                         <span className="font-medium truncate">
-                          Weekly planning
+                          {"Weekly planning"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          9:30 AM
+                          {"9:30 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -320,7 +320,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        6
+                        {"6"}
                       </span>
                     </div>
                   </div>
@@ -329,10 +329,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Design review, 10:00 AM - 11:00 AM" aria-label="Design review, 10:00 AM - 11:00 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-blue-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Design review
+                          {"Design review"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          10:00 AM
+                          {"10:00 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -354,7 +354,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        7
+                        {"7"}
                       </span>
                     </div>
                   </div>
@@ -368,7 +368,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        8
+                        {"8"}
                       </span>
                     </div>
                   </div>
@@ -384,7 +384,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        9
+                        {"9"}
                       </span>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        10
+                        {"10"}
                       </span>
                     </div>
                   </div>
@@ -414,7 +414,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        11
+                        {"11"}
                       </span>
                     </div>
                   </div>
@@ -428,7 +428,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        12
+                        {"12"}
                       </span>
                     </div>
                   </div>
@@ -437,7 +437,7 @@ export function Pattern() {
                       <EventCalendarEvent className="h-[calc(var(--ec-month-bar-h,1.75rem)-0.125rem)]" type="button" view="month" allDay="true" past="true" title="Offsite, All day" aria-label="Offsite, All day" aria-pressed="false" style={{"--ec-event-color": "var(--color-rose-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Offsite
+                          {"Offsite"}
                         </span>
                         <span className="absolute cursor-ew-resize duration-150 flex group-hover/ec-event:opacity-100 inset-y-0 items-center justify-center opacity-0 start-0 transition-opacity w-2" data-edge="start">
                           <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -461,10 +461,10 @@ export function Pattern() {
                           <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
                         </svg>
                         <span className="font-medium truncate">
-                          Weekly planning
+                          {"Weekly planning"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          9:30 AM
+                          {"9:30 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -486,7 +486,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        13
+                        {"13"}
                       </span>
                     </div>
                   </div>
@@ -495,10 +495,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Roadmap review, 1:00 PM - 2:30 PM" aria-label="Roadmap review, 1:00 PM - 2:30 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Roadmap review
+                          {"Roadmap review"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          1:00 PM
+                          {"1:00 PM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -523,7 +523,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        14
+                        {"14"}
                       </span>
                     </div>
                   </div>
@@ -532,10 +532,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Focus block, 2:00 PM - 4:00 PM" aria-label="Focus block, 2:00 PM - 4:00 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-amber-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Focus block
+                          {"Focus block"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          2:00 PM
+                          {"2:00 PM"}
                         </span>
                       </EventCalendarEvent>
                     </div>
@@ -547,7 +547,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        15
+                        {"15"}
                       </span>
                     </div>
                   </div>
@@ -561,7 +561,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        16
+                        {"16"}
                       </span>
                     </div>
                   </div>
@@ -570,10 +570,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Client call: Northstar, 3:00 PM - 3:30 PM" aria-label="Client call: Northstar, 3:00 PM - 3:30 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Client call: Northstar
+                          {"Client call: Northstar"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          3:00 PM
+                          {"3:00 PM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -592,7 +592,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        17
+                        {"17"}
                       </span>
                     </div>
                   </div>
@@ -606,7 +606,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        18
+                        {"18"}
                       </span>
                     </div>
                   </div>
@@ -620,7 +620,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        19
+                        {"19"}
                       </span>
                     </div>
                   </div>
@@ -637,10 +637,10 @@ export function Pattern() {
                           <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
                         </svg>
                         <span className="font-medium truncate">
-                          Weekly planning
+                          {"Weekly planning"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          9:30 AM
+                          {"9:30 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -662,7 +662,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        20
+                        {"20"}
                       </span>
                     </div>
                   </div>
@@ -671,10 +671,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Interview: System design, 10:00 AM - 10:45 AM" aria-label="Interview: System design, 10:00 AM - 10:45 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Interview: System design
+                          {"Interview: System design"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          10:00 AM
+                          {"10:00 AM"}
                         </span>
                       </EventCalendarEvent>
                     </div>
@@ -686,7 +686,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        21
+                        {"21"}
                       </span>
                     </div>
                   </div>
@@ -700,7 +700,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        22
+                        {"22"}
                       </span>
                     </div>
                   </div>
@@ -709,10 +709,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Quarterly planning, 1:00 PM - 2:30 PM" aria-label="Quarterly planning, 1:00 PM - 2:30 PM" aria-pressed="false" style={{"--ec-event-color": "var(--color-blue-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Quarterly planning
+                          {"Quarterly planning"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          1:00 PM
+                          {"1:00 PM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -737,7 +737,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        23
+                        {"23"}
                       </span>
                     </div>
                   </div>
@@ -751,7 +751,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        24
+                        {"24"}
                       </span>
                     </div>
                   </div>
@@ -765,7 +765,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        25
+                        {"25"}
                       </span>
                     </div>
                   </div>
@@ -779,7 +779,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        26
+                        {"26"}
                       </span>
                     </div>
                   </div>
@@ -795,7 +795,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        27
+                        {"27"}
                       </span>
                     </div>
                   </div>
@@ -804,10 +804,10 @@ export function Pattern() {
                       <EventCalendarEvent className="shrink-0" type="button" view="month" past="true" title="Monthly review, 10:00 AM - 11:00 AM" aria-label="Monthly review, 10:00 AM - 11:00 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Monthly review
+                          {"Monthly review"}
                         </span>
                         <span className="shrink-0 text-muted-foreground text-xs">
-                          10:00 AM
+                          {"10:00 AM"}
                         </span>
                         <span className="@[9rem]:flex hidden ms-auto shrink-0">
                           <AvatarGroup>
@@ -821,7 +821,7 @@ export function Pattern() {
                               <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <AvatarGroupCount className="bg-muted font-medium size-4 text-[10px] text-muted-foreground">
-                              +1
+                              {"+1"}
                             </AvatarGroupCount>
                           </AvatarGroup>
                         </span>
@@ -835,7 +835,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        28
+                        {"28"}
                       </span>
                     </div>
                   </div>
@@ -849,7 +849,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        29
+                        {"29"}
                       </span>
                     </div>
                   </div>
@@ -865,7 +865,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        30
+                        {"30"}
                       </span>
                     </div>
                   </div>
@@ -879,7 +879,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5">
-                        31
+                        {"31"}
                       </span>
                     </div>
                   </div>
@@ -893,7 +893,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        1
+                        {"1"}
                       </span>
                     </div>
                   </div>
@@ -907,7 +907,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        2
+                        {"2"}
                       </span>
                     </div>
                   </div>
@@ -916,7 +916,7 @@ export function Pattern() {
                       <EventCalendarEvent className="h-[calc(var(--ec-month-bar-h,1.75rem)-0.125rem)]" type="button" view="month" allDay="true" past="true" title="Release day, All day" aria-label="Release day, All day" aria-pressed="false" style={{"--ec-event-color": "var(--color-blue-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium truncate">
-                          Release day
+                          {"Release day"}
                         </span>
                         <span className="absolute cursor-ew-resize duration-150 flex group-hover/ec-event:opacity-100 inset-y-0 items-center justify-center opacity-0 start-0 transition-opacity w-2" data-edge="start">
                           <span className="bg-foreground/40 h-2.5 rounded-full w-0.5" aria-hidden="true"></span>
@@ -939,7 +939,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        3
+                        {"3"}
                       </span>
                     </div>
                   </div>
@@ -953,7 +953,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        4
+                        {"4"}
                       </span>
                     </div>
                   </div>
@@ -967,7 +967,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        5
+                        {"5"}
                       </span>
                     </div>
                   </div>
@@ -981,7 +981,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        6
+                        {"6"}
                       </span>
                     </div>
                   </div>
@@ -995,7 +995,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        7
+                        {"7"}
                       </span>
                     </div>
                   </div>
@@ -1009,7 +1009,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        8
+                        {"8"}
                       </span>
                     </div>
                   </div>
@@ -1023,7 +1023,7 @@ export function Pattern() {
                         </svg>
                       </button>
                       <span className="flex items-center justify-center rounded-full size-5 text-muted-foreground">
-                        9
+                        {"9"}
                       </span>
                     </div>
                   </div>

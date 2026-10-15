@@ -31,7 +31,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Finance account dialog
+        {"Finance account dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
@@ -43,7 +43,7 @@ export function Pattern() {
             <path d="M3 22h18"></path>
             <path d="M6 18v-7"></path>
           </svg>
-          Open finance account dialog
+          {"Open finance account dialog"}
         </Button>
       </div>
     </main>
@@ -53,28 +53,28 @@ export function Pattern() {
         <section className="flex flex-col min-h-0">
           <DialogHeader className="gap-2 pb-6 pr-12 pt-12 px-6 shrink-0 sm:pt-14 sm:px-8 text-left">
             <DialogTitle className="text-2xl" id="base-ui-_r_2_">
-              Create your finance account
+              {"Create your finance account"}
             </DialogTitle>
             <DialogDescription className="leading-5 max-w-md text-sm" id="base-ui-_r_3_">
-              Set the account identity used for payouts and transfers.
+              {"Set the account identity used for payouts and transfers."}
             </DialogDescription>
           </DialogHeader>
           <div className="flex-1 min-h-0 overflow-y-auto pb-6 px-6 sm:px-8">
             <FieldGroup className="gap-4">
               <Field className="gap-2" role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="finance-account-name">
-                  Account name
+                  {"Account name"}
                 </FieldLabel>
                 <Input id="finance-account-name" value="Cedar Operating"></Input>
               </Field>
               <Field className="gap-2" role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="finance-account-tag">
-                  Account tag
+                  {"Account tag"}
                 </FieldLabel>
                 <InputGroup role="group">
                   <InputGroupAddon role="group" data-align="inline-start">
                     <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                      acct_
+                      {"acct_"}
                     </span>
                   </InputGroupAddon>
                   <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="finance-account-tag" value="cedar_ops" />
@@ -82,7 +82,7 @@ export function Pattern() {
               </Field>
               <Field className="gap-2" role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="finance-statement-label">
-                  Statement label
+                  {"Statement label"}
                 </FieldLabel>
                 <Input id="finance-statement-label" value="CEDAR STUDIO"></Input>
               </Field>
@@ -95,14 +95,14 @@ export function Pattern() {
                   <CardHeader className="gap-0 pb-4 pt-5 px-5">
                     <div className="flex gap-3 items-start min-w-0">
                       <div className="bg-background border flex font-semibold items-center justify-center rounded-md shadow-xs shrink-0 size-11 text-foreground text-sm">
-                        CO
+                        {"CO"}
                       </div>
                       <div className="flex-1 min-w-0">
                         <CardTitle className="leading-5 text-base truncate">
-                          Cedar Operating
+                          {"Cedar Operating"}
                         </CardTitle>
                         <CardDescription className="text-sm truncate">
-                          acct_cedar_ops
+                          {"acct_cedar_ops"}
                         </CardDescription>
                       </div>
                     </div>
@@ -110,35 +110,35 @@ export function Pattern() {
                   <CardContent className="flex flex-col gap-4 pb-5 px-5">
                     <div>
                       <p className="font-medium text-muted-foreground text-xs">
-                        Available balance
+                        {"Available balance"}
                       </p>
                       <p className="font-semibold leading-none mt-1 tabular-nums text-2xl">
-                        $86,240.00
+                        {"$86,240.00"}
                       </p>
                     </div>
                     <div className="border-t flex flex-col gap-2 pt-3">
                       <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                         <span className="shrink-0 text-muted-foreground">
-                          Account type
+                          {"Account type"}
                         </span>
                         <span className="font-medium min-w-0 truncate">
-                          USD operating
+                          {"USD operating"}
                         </span>
                       </div>
                       <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                         <span className="shrink-0 text-muted-foreground">
-                          Statement label
+                          {"Statement label"}
                         </span>
                         <span className="font-medium min-w-0 truncate">
-                          CEDAR STUDIO
+                          {"CEDAR STUDIO"}
                         </span>
                       </div>
                       <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                         <span className="shrink-0 text-muted-foreground">
-                          Routing
+                          {"Routing"}
                         </span>
                         <span className="font-medium min-w-0 truncate">
-                          021000021
+                          {"021000021"}
                         </span>
                       </div>
                     </div>
@@ -150,7 +150,7 @@ export function Pattern() {
           <DialogFooter className="bg-transparent! border-0 m-0 pb-6 pt-0 px-6 sm:px-8">
             <div className="border-t flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between w-full">
               <Button className="px-0 w-fit" type="button" tabIndex="0">
-                Terms & disclosures
+                {"Terms & disclosures"}
                 <svg className="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M15 3h6v6"></path>
                   <path d="M10 14 21 3"></path>
@@ -159,10 +159,10 @@ export function Pattern() {
               </Button>
               <div className="flex gap-2 sm:w-auto w-full">
                 <Button className="flex-1 sm:flex-none" type="button" tabIndex="0">
-                  Not now
+                  {"Not now"}
                 </Button>
                 <Button className="flex-1 sm:flex-none" type="submit" tabIndex="0">
-                  Create account
+                  {"Create account"}
                 </Button>
               </div>
             </div>
@@ -176,14 +176,14 @@ export function Pattern() {
               <CardHeader className="gap-0 pb-4 pt-5 px-5">
                 <div className="flex gap-3 items-start min-w-0">
                   <div className="bg-background border flex font-semibold items-center justify-center rounded-md shadow-xs shrink-0 size-11 text-foreground text-sm">
-                    CO
+                    {"CO"}
                   </div>
                   <div className="flex-1 min-w-0">
                     <CardTitle className="leading-5 text-base truncate">
-                      Cedar Operating
+                      {"Cedar Operating"}
                     </CardTitle>
                     <CardDescription className="text-sm truncate">
-                      acct_cedar_ops
+                      {"acct_cedar_ops"}
                     </CardDescription>
                   </div>
                 </div>
@@ -191,35 +191,35 @@ export function Pattern() {
               <CardContent className="flex flex-col gap-4 pb-5 px-5">
                 <div>
                   <p className="font-medium text-muted-foreground text-xs">
-                    Available balance
+                    {"Available balance"}
                   </p>
                   <p className="font-semibold leading-none mt-1 tabular-nums text-2xl">
-                    $86,240.00
+                    {"$86,240.00"}
                   </p>
                 </div>
                 <div className="border-t flex flex-col gap-2 pt-3">
                   <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                     <span className="shrink-0 text-muted-foreground">
-                      Account type
+                      {"Account type"}
                     </span>
                     <span className="font-medium min-w-0 truncate">
-                      USD operating
+                      {"USD operating"}
                     </span>
                   </div>
                   <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                     <span className="shrink-0 text-muted-foreground">
-                      Statement label
+                      {"Statement label"}
                     </span>
                     <span className="font-medium min-w-0 truncate">
-                      CEDAR STUDIO
+                      {"CEDAR STUDIO"}
                     </span>
                   </div>
                   <div className="flex gap-4 items-center justify-between min-w-0 text-sm">
                     <span className="shrink-0 text-muted-foreground">
-                      Routing
+                      {"Routing"}
                     </span>
                     <span className="font-medium min-w-0 truncate">
-                      021000021
+                      {"021000021"}
                     </span>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

@@ -34,7 +34,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Notifications sheet
+        {"Notifications sheet"}
       </h1>
       <Sheet>
       <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
@@ -42,7 +42,7 @@ export function Pattern() {
           <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
           <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
         </svg>
-        Open notifications
+        {"Open notifications"}
       </SheetTrigger>
       </Sheet>
     </main>
@@ -53,14 +53,14 @@ export function Pattern() {
           <div className="flex-1 min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <SheetTitle className="truncate" id="base-ui-_r_3_">
-                Notifications
+                {"Notifications"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative rounded-full text-[0.6rem] text-primary-foreground transition-shadow">
-                3
+                {"3"}
               </Badge>
             </div>
             <SheetDescription className="sr-only" id="base-ui-_r_4_">
-              Latest workspace activity, approvals, and mentions.
+              {"Latest workspace activity, approvals, and mentions."}
             </SheetDescription>
           </div>
           <div className="flex gap-1 items-center shrink-0">
@@ -96,20 +96,20 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-2" href="#">
-                          @sarah_smith
+                          {"@sarah_smith"}
                         </a>
-                        mentioned you in
+                        {"mentioned you in"}
                         <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-2" href="#PR-1024">
-                          #PR-1024
+                          {"#PR-1024"}
                         </a>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      "Can you review the changes?"
+                      {"\"Can you review the changes?\""}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        2m ago
+                        {"2m ago"}
                       </p>
                     </div>
                   </div>
@@ -133,31 +133,31 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Pending approval
+                          {"Pending approval"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Design System v2.0 release requires your approval before deployment.
+                      {"Design System v2.0 release requires your approval before deployment."}
                     </p>
                     <div className="flex flex-wrap gap-1 items-center py-1">
                       <Button type="button" tabIndex="0">
-                        Approve
+                        {"Approve"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Review
+                        {"Review"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        5m ago
+                        {"5m ago"}
                       </p>
                       <span className="border border-border/60 font-medium h-6 inline-flex items-center overflow-hidden rounded-sm shrink-0 text-xs">
                         <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground text-xs">
-                          Priority
+                          {"Priority"}
                         </span>
                         <span className="flex h-full items-center leading-none px-1.5 text-warning text-xs">
-                          High
+                          {"High"}
                         </span>
                       </span>
                     </div>
@@ -179,13 +179,13 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-2" href="#">
-                          @maverick
+                          {"@maverick"}
                         </a>
-                        shared
+                        {"shared"}
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Project Timeline
+                      {"Project Timeline"}
                     </p>
                     <div className="flex gap-1 items-center py-1">
                       <ButtonGroup role="group">
@@ -194,10 +194,10 @@ export function Pattern() {
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
-                            project-plan.pdf
+                            {"project-plan.pdf"}
                           </span>
                           <span className="opacity-60">
-                            (2mb)
+                            {"(2mb)"}
                           </span>
                         </Button>
                         <Button type="button" tabIndex="0" aria-label="Download attachment">
@@ -211,7 +211,7 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        15m ago
+                        {"15m ago"}
                       </p>
                     </div>
                   </div>
@@ -235,23 +235,23 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Task assigned to you
+                          {"Task assigned to you"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Implement user authentication flow for the mobile app.
+                      {"Implement user authentication flow for the mobile app."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        30m ago
+                        {"30m ago"}
                       </p>
                       <span className="border border-border/60 font-medium h-6 inline-flex items-center overflow-hidden rounded-sm shrink-0 text-xs">
                         <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground text-xs">
-                          Due
+                          {"Due"}
                         </span>
                         <span className="flex h-full items-center leading-none px-1.5 text-destructive text-xs">
-                          Tomorrow
+                          {"Tomorrow"}
                         </span>
                       </span>
                     </div>
@@ -277,12 +277,12 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          4 people joined your workspace
+                          {"4 people joined your workspace"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Sarah, Mike, Emma and James just joined NeUI Pro.
+                      {"Sarah, Mike, Emma and James just joined NeUI Pro."}
                     </p>
                     <AvatarGroup className="-space-x-1 mt-1.5">
                       <Avatar className="size-5" size="default">
@@ -295,12 +295,12 @@ export function Pattern() {
                         <AvatarImage alt="EW" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                        +1
+                        {"+1"}
                       </AvatarGroupCount>
                     </AvatarGroup>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        45m ago
+                        {"45m ago"}
                       </p>
                     </div>
                   </div>
@@ -325,15 +325,15 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Reactions on your comment
+                          {"Reactions on your comment"}
                         </span>
                       </p>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-px outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                        +5
+                        {"+5"}
                       </Badge>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Sarah and 2 others reacted to your comment in #design-system.
+                      {"Sarah and 2 others reacted to your comment in #design-system."}
                     </p>
                     <AvatarGroup className="-space-x-1 mt-1.5">
                       <Avatar className="size-5" size="default">
@@ -343,12 +343,12 @@ export function Pattern() {
                         <AvatarImage alt="MA" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <AvatarGroupCount className="leading-none size-5 text-[9px]">
-                        +1
+                        {"+1"}
                       </AvatarGroupCount>
                     </AvatarGroup>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        1h ago
+                        {"1h ago"}
                       </p>
                     </div>
                   </div>
@@ -368,13 +368,13 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-2" href="#">
-                          @emma
+                          {"@emma"}
                         </a>
-                        New review received
+                        {"New review received"}
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Emma left a review on Design System v2.0.
+                      {"Emma left a review on Design System v2.0."}
                     </p>
                     <Rating className="mt-0.5">
                       <div className="flex items-center">
@@ -432,7 +432,7 @@ export function Pattern() {
                     </Rating>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        2h ago
+                        {"2h ago"}
                       </p>
                     </div>
                   </div>
@@ -457,12 +457,12 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Upcoming event reminder
+                          {"Upcoming event reminder"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Design system review with the product team.
+                      {"Design system review with the product team."}
                     </p>
                     <div className="bg-muted/50 border border-border/50 gap-1.5 inline-flex items-center mt-1 px-2 py-1 rounded-sm text-muted-foreground text-sm w-fit">
                       <svg className="lucide lucide-calendar opacity-60 shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
@@ -472,30 +472,30 @@ export function Pattern() {
                         <path d="M3 10h18"></path>
                       </svg>
                       <span className="font-medium text-foreground">
-                        Mar 3, 2026
+                        {"Mar 3, 2026"}
                       </span>
                       <span className="opacity-70">
-                        10:00 - 11:00 AM
+                        {"10:00 - 11:00 AM"}
                       </span>
                     </div>
                     <div className="flex flex-wrap gap-1 items-center py-1">
                       <Button type="button" tabIndex="0">
-                        Join
+                        {"Join"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Decline
+                        {"Decline"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        3h ago
+                        {"3h ago"}
                       </p>
                       <span className="border border-border/60 font-medium h-6 inline-flex items-center overflow-hidden rounded-sm shrink-0 text-xs">
                         <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground text-xs">
-                          Where
+                          {"Where"}
                         </span>
                         <span className="flex h-full items-center leading-none px-1.5 text-info text-xs">
-                          Google Meet
+                          {"Google Meet"}
                         </span>
                       </span>
                     </div>
@@ -521,24 +521,24 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Team Invitation
+                          {"Team Invitation"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Alex invited you to join NeUI Pro.
+                      {"Alex invited you to join NeUI Pro."}
                     </p>
                     <div className="flex flex-wrap gap-1 items-center py-1">
                       <Button type="button" tabIndex="0">
-                        Accept
+                        {"Accept"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Decline
+                        {"Decline"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        1h ago
+                        {"1h ago"}
                       </p>
                     </div>
                   </div>
@@ -561,16 +561,16 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Slack connected
+                          {"Slack connected"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Your Slack workspace is now synced with notifications.
+                      {"Your Slack workspace is now synced with notifications."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        2h ago
+                        {"2h ago"}
                       </p>
                     </div>
                   </div>
@@ -593,19 +593,19 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Payment processed
+                          {"Payment processed"}
                         </span>
                       </p>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-px outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                        $49.00
+                        {"$49.00"}
                       </Badge>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Your monthly subscription was renewed.
+                      {"Your monthly subscription was renewed."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        3h ago
+                        {"3h ago"}
                       </p>
                     </div>
                   </div>
@@ -627,12 +627,12 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Monthly milestone reached!
+                          {"Monthly milestone reached!"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      100 of 100 tasks completed this month. Outstanding work!
+                      {"100 of 100 tasks completed this month. Outstanding work!"}
                     </p>
                     <div className="bg-muted/55 h-1 mt-1.5 overflow-hidden relative rounded-full">
                       <div className="absolute bg-[repeating-linear-gradient(-45deg,currentColor_0,currentColor_1px,transparent_0,transparent_4px)] inset-0 opacity-20 pointer-events-none text-muted-foreground" aria-hidden="true"></div>
@@ -641,20 +641,20 @@ export function Pattern() {
                           <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        4h ago
+                        {"4h ago"}
                       </p>
                       <span className="border border-border/60 font-medium h-6 inline-flex items-center overflow-hidden rounded-sm shrink-0 text-xs">
                         <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground text-xs">
-                          Goal
+                          {"Goal"}
                         </span>
                         <span className="flex h-full items-center leading-none px-1.5 text-success text-xs">
-                          100 tasks
+                          {"100 tasks"}
                         </span>
                       </span>
                     </div>
@@ -679,16 +679,16 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          New sign-in detected
+                          {"New sign-in detected"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      We noticed a new login from Mac OS, Chrome.
+                      {"We noticed a new login from Mac OS, Chrome."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        Yesterday
+                        {"Yesterday"}
                       </p>
                     </div>
                   </div>
@@ -711,24 +711,24 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Feedback requested
+                          {"Feedback requested"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      How was your experience with the new dashboard?
+                      {"How was your experience with the new dashboard?"}
                     </p>
                     <div className="flex flex-wrap gap-1 items-center py-1">
                       <Button type="button" tabIndex="0">
-                        Rate
+                        {"Rate"}
                       </Button>
                       <Button type="button" tabIndex="0">
-                        Later
+                        {"Later"}
                       </Button>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        Yesterday
+                        {"Yesterday"}
                       </p>
                     </div>
                   </div>
@@ -753,16 +753,16 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Introducing AI Copilot
+                          {"Introducing AI Copilot"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Generate code, fix bugs, and write tests faster with our new AI assistant.
+                      {"Generate code, fix bugs, and write tests faster with our new AI assistant."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        2 days ago
+                        {"2 days ago"}
                       </p>
                     </div>
                   </div>
@@ -784,16 +784,16 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          New comment on Issue #84
+                          {"New comment on Issue #84"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      "I think we should prioritize this for the next sprint..."
+                      {"\"I think we should prioritize this for the next sprint...\""}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        3 days ago
+                        {"3 days ago"}
                       </p>
                     </div>
                   </div>
@@ -818,23 +818,23 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Deployment successful
+                          {"Deployment successful"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      Production branch deployed to Vercel.
+                      {"Production branch deployed to Vercel."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        4 days ago
+                        {"4 days ago"}
                       </p>
                       <span className="border border-border/60 font-medium h-6 inline-flex items-center overflow-hidden rounded-sm shrink-0 text-xs">
                         <span className="bg-muted/60 border-border/50 border-r flex h-full items-center leading-none px-1.5 text-muted-foreground text-xs">
-                          Env
+                          {"Env"}
                         </span>
                         <span className="flex h-full items-center leading-none px-1.5 text-success text-xs">
-                          Production
+                          {"Production"}
                         </span>
                       </span>
                     </div>
@@ -857,12 +857,12 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          API usage at 80%
+                          {"API usage at 80%"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      You've used 80% of your monthly API quota.
+                      {"You've used 80% of your monthly API quota."}
                     </p>
                     <div className="bg-muted/55 h-1 mt-1.5 overflow-hidden relative rounded-full">
                       <div className="absolute bg-[repeating-linear-gradient(-45deg,currentColor_0,currentColor_1px,transparent_0,transparent_4px)] inset-0 opacity-20 pointer-events-none text-muted-foreground" aria-hidden="true"></div>
@@ -871,13 +871,13 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "80%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        5 days ago
+                        {"5 days ago"}
                       </p>
                     </div>
                   </div>
@@ -901,16 +901,16 @@ export function Pattern() {
                     <div className="flex gap-2 items-start justify-between">
                       <p className="leading-5 min-w-0 text-foreground text-sm">
                         <span className="font-medium">
-                          Scheduled maintenance
+                          {"Scheduled maintenance"}
                         </span>
                       </p>
                     </div>
                     <p className="line-clamp-2 text-muted-foreground text-sm">
-                      We'll be performing maintenance on Feb 28, 2026 at 2:00 AM UTC.
+                      {"We'll be performing maintenance on Feb 28, 2026 at 2:00 AM UTC."}
                     </p>
                     <div className="flex flex-wrap gap-2 items-center min-w-0 pt-0.5">
                       <p className="text-muted-foreground text-xs">
-                        1 week ago
+                        {"1 week ago"}
                       </p>
                     </div>
                   </div>

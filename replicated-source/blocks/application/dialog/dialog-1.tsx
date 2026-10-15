@@ -34,11 +34,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Duration picker dialog
+        {"Duration picker dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[320px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Launch dialog
+          {"Launch dialog"}
         </Button>
       </div>
     </main>
@@ -56,10 +56,10 @@ export function Pattern() {
           </Item>
           <div className="flex flex-col gap-1 min-w-0">
             <DialogTitle id="base-ui-_r_2_">
-              Select duration
+              {"Select duration"}
             </DialogTitle>
             <DialogDescription id="base-ui-_r_3_">
-              Pick a start and end time or use a quick preset.
+              {"Pick a start and end time or use a quick preset."}
             </DialogDescription>
           </div>
         </div>
@@ -68,19 +68,19 @@ export function Pattern() {
         <FieldGroup className="gap-4 grid md:grid-cols-2">
           <Field className="gap-2" role="group" data-orientation="vertical">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="duration-start-time">
-              Start time
+              {"Start time"}
               <span className="text-muted-foreground">
-                (optional)
+                {"(optional)"}
               </span>
             </FieldLabel>
             <Select>
             <SelectTrigger className="w-full" type="button" tabIndex="0" id="duration-start-time" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
               <SelectValue>
-                02:00 AM
+                {"02:00 AM"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -88,19 +88,19 @@ export function Pattern() {
           </Field>
           <Field className="gap-2" role="group" data-orientation="vertical">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="duration-end-time">
-              End time
+              {"End time"}
               <span className="text-muted-foreground">
-                (optional)
+                {"(optional)"}
               </span>
             </FieldLabel>
             <Select>
             <SelectTrigger className="w-full" type="button" tabIndex="0" id="duration-end-time" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
               <SelectValue>
-                02:30 AM
+                {"02:30 AM"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -109,7 +109,7 @@ export function Pattern() {
         </FieldGroup>
         <div className="flex flex-col gap-3">
           <p className="font-medium text-sm">
-            Quick duration
+            {"Quick duration"}
           </p>
           <ToggleGroup className="grid grid-cols-4 w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Quick duration presets" style={{"--gap": "2"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-medium group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2">
@@ -117,32 +117,32 @@ export function Pattern() {
                 <path d="M20 6 9 17l-5-5"></path>
               </svg>
               <span className="min-w-0 text-center">
-                30 min
+                {"30 min"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
               <span className="min-w-0 text-center">
-                2 hours
+                {"2 hours"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
               <span className="min-w-0 text-center">
-                4 hours
+                {"4 hours"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
               <span className="min-w-0 text-center">
-                8 hours
+                {"8 hours"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
               <span className="min-w-0 text-center">
-                12 hours
+                {"12 hours"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 relative transition-colors w-full whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
               <span className="min-w-0 text-center">
-                1 day
+                {"1 day"}
               </span>
             </ToggleGroupItem>
           </ToggleGroup>
@@ -158,17 +158,17 @@ export function Pattern() {
               <path d="M12 8h.01"></path>
             </svg>
             <span>
-              Quick presets update the end time.
+              {"Quick presets update the end time."}
             </span>
           </TooltipTrigger>
           </Tooltip>
         </div>
         <div className="flex gap-2 justify-end sm:w-auto w-full">
           <Button type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </Button>
           <Button type="button" tabIndex="0">
-            Apply
+            {"Apply"}
           </Button>
         </div>
       </DialogFooter>
@@ -178,7 +178,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

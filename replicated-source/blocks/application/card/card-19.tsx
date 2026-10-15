@@ -11,10 +11,10 @@ export function Pattern() {
         <Frame className="w-full">
           <header className="flex flex-row gap-(--frame-panel-header-gap) items-center justify-between px-1.5 py-2">
             <div className="font-medium text-sm">
-              Asset Overview
+              {"Asset Overview"}
             </div>
             <span className="text-muted-foreground text-xs">
-              Updated Mar 3, 7:32 AM GMT+7
+              {"Updated Mar 3, 7:32 AM GMT+7"}
             </span>
           </header>
           <FramePanel className="flex flex-col gap-4 px-3.5 sm:flex-row sm:items-center sm:justify-between">
@@ -26,27 +26,27 @@ export function Pattern() {
                   <path d="M12 18V6"></path>
                 </svg>
                 <span className="font-medium leading-relaxed text-xs uppercase">
-                  Bts/Usd | Cryptocurrency
+                  {"Bts/Usd | Cryptocurrency"}
                 </span>
               </div>
               <div className="flex flex-col gap-2 md:flex-row md:items-center">
                 <h3 className="font-semibold leading-tight text-2xl">
-                  $93,725.75 USD
+                  {"$93,725.75 USD"}
                 </h3>
                 <span className="leading-relaxed text-green-800 text-xs">
-                  +2.42% (+$2,215.87)
+                  {"+2.42% (+$2,215.87)"}
                 </span>
               </div>
             </div>
             <div className="flex gap-2.5">
               <Button type="button" tabIndex="0">
-                Follow
+                {"Follow"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
                   <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                 </svg>
-                Trade on Binance
+                {"Trade on Binance"}
               </Button>
             </div>
           </FramePanel>

@@ -19,6 +19,8 @@ export interface SnapshotCardProps {
   title: string
   /** 卡片底部左侧的标识标签（开发模式显示） */
   nameLabel?: string
+  /** 源码文件在面板里显示的名字 */
+  codeFile?: string
   description?: string
   /** 快照的设计宽度，缩放基准 */
   baseWidth?: number
@@ -38,6 +40,7 @@ export function SnapshotCard({
   registryName,
   title,
   nameLabel,
+  codeFile,
   description,
   baseWidth = 1280,
   height = 260,
@@ -114,7 +117,11 @@ export function SnapshotCard({
             </div>
           ) : null}
           <CopyRegistry value={registryName} />
-          <SnapshotViewCode src={codeSrc} title={`${title}.html`} registryName={registryName} />
+          <SnapshotViewCode
+            src={codeSrc}
+            title={codeFile ?? `${nameLabel ?? title}.tsx`}
+            registryName={registryName}
+          />
         </div>
       </div>
     </div>

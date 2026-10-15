@@ -101,12 +101,17 @@ export function Pattern() {
   return (
   <>
     <div id="root" data-base-ui-inert="">
+      <SidebarProvider>
       <div className="[--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-svh overflow-hidden w-full" style={{"--sidebar-width": "350px", "--sidebar-width-icon": "3rem", "--header-height": "50px"}}>
+        <SidebarProvider>
         <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
           <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)" aria-hidden="true"></div>
+          <SidebarProvider>
           <div className="*:data-[sidebar=sidebar]:flex-row data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-svh hidden inset-y-0 md:flex overflow-hidden transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+            <SidebarProvider>
             <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
               <div className="flex flex-1 min-h-full">
+                <SidebarProvider>
                 <Sidebar className="border-r w-(--sidebar-width-icon)!" aria-hidden="true">
                   <SidebarHeader className="gap-2 items-center justify-center p-2 py-3" sidebar="header">
                     <a className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-sidebar focus-visible:ring-ring outline-none rounded-md" aria-label="NeUI Clinic, back to the dashboard" href="/" data-discover="true">
@@ -120,11 +125,17 @@ export function Pattern() {
                       </Item>
                     </a>
                   </SidebarHeader>
+                  <SidebarProvider>
                   <SidebarContent className="gap-0 no-scrollbar" sidebar="content">
+                    <SidebarProvider>
                     <SidebarGroup className="p-2" sidebar="group">
+                      <SidebarProvider>
                       <SidebarGroupContent className="text-sm" sidebar="group-content">
+                        <SidebarProvider>
                         <SidebarMenu className="gap-0.5" sidebar="menu">
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Dashboard">
                               <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <rect width="7" height="9" x="3" y="3" rx="1"></rect>
@@ -133,8 +144,12 @@ export function Pattern() {
                                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Calendar">
                               <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M8 2v3"></path>
@@ -143,8 +158,12 @@ export function Pattern() {
                                 <path d="M3 9h18"></path>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Appointments">
                               <svg className="lucide lucide-calendar-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M8 2v3"></path>
@@ -154,8 +173,12 @@ export function Pattern() {
                                 <path d="m9 15 2 2 4-4"></path>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Customers">
                               <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -164,8 +187,12 @@ export function Pattern() {
                                 <circle cx="9" cy="7" r="4"></circle>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Staff">
                               <svg className="lucide lucide-stethoscope" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M11 2v2"></path>
@@ -175,8 +202,12 @@ export function Pattern() {
                                 <circle cx="20" cy="10" r="2"></circle>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Payments">
                               <svg className="lucide lucide-banknote" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <rect width="20" height="12" x="2" y="6" rx="2"></rect>
@@ -184,13 +215,22 @@ export function Pattern() {
                                 <path d="M6 12h.01M18 12h.01"></path>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
                         </SidebarMenu>
+                        </SidebarProvider>
                       </SidebarGroupContent>
+                      </SidebarProvider>
                     </SidebarGroup>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarGroup className="mt-auto p-2" sidebar="group">
+                      <SidebarProvider>
                       <SidebarGroupContent className="text-sm" sidebar="group-content">
+                        <SidebarProvider>
                         <SidebarMenu className="gap-0.5" sidebar="menu">
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
                             <Popover>
                             <PopoverTrigger className="[&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 active:bg-sidebar-accent active:text-sidebar-accent-foreground aria-disabled:opacity-50 aria-disabled:pointer-events-none data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground disabled:opacity-50 disabled:pointer-events-none flex focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 group/menu-button h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground items-center justify-center! outline-hidden overflow-hidden p-2 peer/menu-button ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding] w-full" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Notifications" tabIndex="0" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
@@ -202,26 +242,39 @@ export function Pattern() {
                             </PopoverTrigger>
                             </Popover>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_h_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Search">
                               <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
                                 <circle cx="11" cy="11" r="8"></circle>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
+                            <SidebarProvider>
                             <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center! p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" type="button" id="base-ui-_r_j_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Settings" data-active="">
                               <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                                 <circle cx="12" cy="12" r="3"></circle>
                               </svg>
                             </SidebarMenuButton>
+                            </SidebarProvider>
                           </SidebarMenuItem>
+                          </SidebarProvider>
                         </SidebarMenu>
+                        </SidebarProvider>
                       </SidebarGroupContent>
+                      </SidebarProvider>
                     </SidebarGroup>
+                    </SidebarProvider>
                   </SidebarContent>
+                  </SidebarProvider>
                   <SidebarFooter className="gap-2 p-2" sidebar="footer">
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
@@ -232,11 +285,12 @@ export function Pattern() {
                     </DropdownMenu>
                   </SidebarFooter>
                 </Sidebar>
+                </SidebarProvider>
                 <div className="flex flex-1 overflow-hidden w-[calc(var(--sidebar-width)-var(--sidebar-width-icon))]">
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Open Time
+                        {"Open Time"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Book the first open slot">
                         <svg className="lucide lucide-clock-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -250,18 +304,18 @@ export function Pattern() {
                     <div className="border-b border-border flex flex-col gap-2 px-3 py-3 shrink-0">
                       <div className="flex gap-2 items-center justify-between">
                         <span className="font-medium text-foreground text-sm">
-                          Today · 15 Oct
+                          {"Today · 15 Oct"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                          18 slots
+                          {"18 slots"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-1.5 items-baseline">
                         <span className="font-semibold tabular-nums text-2xl text-foreground tracking-tight">
-                          27h 30m
+                          {"27h 30m"}
                         </span>
                         <span className="text-muted-foreground text-xs">
-                          still sellable
+                          {"still sellable"}
                         </span>
                       </div>
                       <div className="bg-muted flex h-1.5 overflow-hidden rounded-full w-full" role="img" aria-label="13h 30m booked, 12h 45m held, 1h 15m in gaps too short to sell, 27h 30m open">
@@ -271,7 +325,7 @@ export function Pattern() {
                         <span className="bg-success h-full" aria-hidden="true" style={{flexGrow: "1650", flexBasis: "0px"}}></span>
                       </div>
                       <span className="text-muted-foreground text-xs">
-                        Across 5 chairs that ran
+                        {"Across 5 chairs that ran"}
                       </span>
                     </div>
                     <div className="grow max-h-full min-h-0">
@@ -281,10 +335,10 @@ export function Pattern() {
                             <div className="border-b border-border py-2">
                               <div className="flex items-center justify-between px-3 py-1">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  Open by chair
+                                  {"Open by chair"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                  5 of 9
+                                  {"5 of 9"}
                                 </Badge>
                               </div>
                               <div className="px-2" role="list">
@@ -296,10 +350,10 @@ export function Pattern() {
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                       <span className="truncate">
-                                        Chairs that ran
+                                        {"Chairs that ran"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                        5
+                                        {"5"}
                                       </Badge>
                                     </CollapsibleTrigger>
                                     </Collapsible>
@@ -308,46 +362,46 @@ export function Pattern() {
                                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start pl-5 pr-1 px-2.5 rounded-lg text-sm w-full" type="button" tabIndex="0">
                                           <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(37, 99, 235)"}}></span>
                                           <span className="flex-1 font-normal min-w-0 text-left text-sm truncate">
-                                            Dr. Amara Chen
+                                            {"Dr. Amara Chen"}
                                           </span>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                            6h 45m
+                                            {"6h 45m"}
                                           </Badge>
                                         </Button>
                                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start pl-5 pr-1 px-2.5 rounded-lg text-sm w-full" type="button" tabIndex="0">
                                           <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(192, 38, 211)"}}></span>
                                           <span className="flex-1 font-normal min-w-0 text-left text-sm truncate">
-                                            Dr. Ravi Menon
+                                            {"Dr. Ravi Menon"}
                                           </span>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                            6h
+                                            {"6h"}
                                           </Badge>
                                         </Button>
                                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start pl-5 pr-1 px-2.5 rounded-lg text-sm w-full" type="button" tabIndex="0">
                                           <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(234, 88, 12)"}}></span>
                                           <span className="flex-1 font-normal min-w-0 text-left text-sm truncate">
-                                            Dr. Elena Novak
+                                            {"Dr. Elena Novak"}
                                           </span>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                            7h 15m
+                                            {"7h 15m"}
                                           </Badge>
                                         </Button>
                                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start pl-5 pr-1 px-2.5 rounded-lg text-sm w-full" type="button" tabIndex="0">
                                           <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(13, 148, 136)"}}></span>
                                           <span className="flex-1 font-normal min-w-0 text-left text-sm truncate">
-                                            Dr. Tomas Reyes
+                                            {"Dr. Tomas Reyes"}
                                           </span>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                            3h
+                                            {"3h"}
                                           </Badge>
                                         </Button>
                                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start pl-5 pr-1 px-2.5 rounded-lg text-sm w-full" type="button" tabIndex="0">
                                           <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "rgb(147, 51, 234)"}}></span>
                                           <span className="flex-1 font-normal min-w-0 text-left text-sm truncate">
-                                            Dr. Hana Sato
+                                            {"Dr. Hana Sato"}
                                           </span>
                                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                            4h 30m
+                                            {"4h 30m"}
                                           </Badge>
                                         </Button>
                                       </div>
@@ -362,10 +416,10 @@ export function Pattern() {
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                       <span className="truncate">
-                                        Never opened
+                                        {"Never opened"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                        4
+                                        {"4"}
                                       </Badge>
                                     </CollapsibleTrigger>
                                     </Collapsible>
@@ -376,10 +430,10 @@ export function Pattern() {
                             <div className="border-b border-border py-2">
                               <div className="flex items-center justify-between px-3 py-1">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  Open slots · 30m+
+                                  {"Open slots · 30m+"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                  18
+                                  {"18"}
                                 </Badge>
                               </div>
                               <div className="flex flex-col gap-0.5 px-1.5" role="list">
@@ -388,10 +442,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(37, 99, 235)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        8:00 AM to 8:30 AM
+                                        {"8:00 AM to 8:30 AM"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Dr. Amara Chen · 30m
+                                        {"Dr. Amara Chen · 30m"}
                                       </span>
                                     </div>
                                   </Button>
@@ -401,10 +455,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(192, 38, 211)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        8:00 AM to 9:00 AM
+                                        {"8:00 AM to 9:00 AM"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Dr. Ravi Menon · 1h
+                                        {"Dr. Ravi Menon · 1h"}
                                       </span>
                                     </div>
                                   </Button>
@@ -414,10 +468,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(234, 88, 12)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        8:00 AM to 10:15 AM
+                                        {"8:00 AM to 10:15 AM"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Dr. Elena Novak · 2h 15m
+                                        {"Dr. Elena Novak · 2h 15m"}
                                       </span>
                                     </div>
                                   </Button>
@@ -427,10 +481,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(147, 51, 234)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        8:45 AM to 9:15 AM
+                                        {"8:45 AM to 9:15 AM"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Dr. Hana Sato · 30m
+                                        {"Dr. Hana Sato · 30m"}
                                       </span>
                                     </div>
                                   </Button>
@@ -440,10 +494,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "rgb(37, 99, 235)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        9:00 AM to 9:30 AM
+                                        {"9:00 AM to 9:30 AM"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Dr. Amara Chen · 30m
+                                        {"Dr. Amara Chen · 30m"}
                                       </span>
                                     </div>
                                   </Button>
@@ -451,7 +505,7 @@ export function Pattern() {
                               </div>
                               <div className="pt-1 px-1.5">
                                 <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start px-2 rounded-lg text-muted-foreground text-sm w-full" type="button" tabIndex="0">
-                                  Show all 18
+                                  {"Show all 18"}
                                 </Button>
                               </div>
                             </div>
@@ -461,7 +515,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Book the first open slot
+                                {"Book the first open slot"}
                               </Button>
                               <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start px-2.5 rounded-lg text-muted-foreground text-sm w-full" type="button" tabIndex="0">
                                 <svg className="lucide lucide-calendar-days" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -476,7 +530,7 @@ export function Pattern() {
                                   <path d="M12 17h.01"></path>
                                   <path d="M16 17h.01"></path>
                                 </svg>
-                                Open the board on this day
+                                {"Open the board on this day"}
                               </Button>
                             </div>
                             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -487,10 +541,10 @@ export function Pattern() {
                               </svg>
                               <div className="flex flex-col min-w-0">
                                 <span className="font-medium text-[11px] text-muted-foreground/60">
-                                  Open time
+                                  {"Open time"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  27h 30m of 55h
+                                  {"27h 30m of 55h"}
                                 </span>
                               </div>
                             </div>
@@ -505,7 +559,7 @@ export function Pattern() {
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0" aria-hidden="true">
                       <span className="font-semibold text-foreground text-sm">
-                        Chairs
+                        {"Chairs"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="New booking">
                         <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -517,7 +571,7 @@ export function Pattern() {
                     <div className="border-b border-border flex flex-col items-center px-1 py-2 shrink-0">
                       <div className="flex items-center justify-between pb-1 px-2 w-full" aria-hidden="true">
                         <span className="font-medium text-foreground text-sm">
-                          October 2026
+                          {"October 2026"}
                         </span>
                         <div className="flex gap-0.5 items-center justify-center">
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Previous month">
@@ -537,32 +591,32 @@ export function Pattern() {
                           <div className="flex flex-col gap-4 rdp-month w-full">
                             <div className="hidden">
                               <span className="font-medium rdp-caption_label select-none text-sm" role="status" aria-live="polite">
-                                October 2026
+                                {"October 2026"}
                               </span>
                             </div>
                             <table className="border-collapse rdp-month_grid w-full" role="grid" aria-multiselectable="false" aria-label="October 2026">
                               <thead aria-hidden="true">
                                 <tr className="flex rdp-weekdays">
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Sunday" scope="col">
-                                    Su
+                                    {"Su"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Monday" scope="col">
-                                    Mo
+                                    {"Mo"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Tuesday" scope="col">
-                                    Tu
+                                    {"Tu"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Wednesday" scope="col">
-                                    We
+                                    {"We"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Thursday" scope="col">
-                                    Th
+                                    {"Th"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Friday" scope="col">
-                                    Fr
+                                    {"Fr"}
                                   </th>
                                   <th className="flex-1 font-normal rdp-weekday rounded-(--cell-radius) select-none text-[0.8rem] text-muted-foreground" aria-label="Saturday" scope="col">
-                                    Sa
+                                    {"Sa"}
                                   </th>
                                 </tr>
                               </thead>
@@ -571,43 +625,43 @@ export function Pattern() {
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-09-27" data-month="2026-09" data-outside="true">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/9/27" aria-label="Sunday, September 27th, 2026">
                                       <span className="size-1" aria-hidden="true"></span>
-                                      27
+                                      {"27"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-09-28" data-month="2026-09" data-outside="true">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/9/28" aria-label="Monday, September 28th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      28
+                                      {"28"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-09-29" data-month="2026-09" data-outside="true">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/9/29" aria-label="Tuesday, September 29th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      29
+                                      {"29"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aria-selected:text-muted-foreground aspect-square group/day h-full p-0 rdp-day rdp-outside relative rounded-(--cell-radius) select-none text-center text-muted-foreground w-full" role="gridcell" data-day="2026-09-30" data-month="2026-09" data-outside="true">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/9/30" aria-label="Wednesday, September 30th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      30
+                                      {"30"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-01">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/1" aria-label="Thursday, October 1st, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      1
+                                      {"1"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-02">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/2" aria-label="Friday, October 2nd, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      2
+                                      {"2"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-03">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/3" aria-label="Saturday, October 3rd, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      3
+                                      {"3"}
                                     </Button>
                                   </td>
                                 </tr>
@@ -615,43 +669,43 @@ export function Pattern() {
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-04">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/4" aria-label="Sunday, October 4th, 2026">
                                       <span className="size-1" aria-hidden="true"></span>
-                                      4
+                                      {"4"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-05">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/5" aria-label="Monday, October 5th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      5
+                                      {"5"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-06">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/6" aria-label="Tuesday, October 6th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      6
+                                      {"6"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-07">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/7" aria-label="Wednesday, October 7th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      7
+                                      {"7"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-08">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/8" aria-label="Thursday, October 8th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      8
+                                      {"8"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-09">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/9" aria-label="Friday, October 9th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      9
+                                      {"9"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-10">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/10" aria-label="Saturday, October 10th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      10
+                                      {"10"}
                                     </Button>
                                   </td>
                                 </tr>
@@ -659,43 +713,43 @@ export function Pattern() {
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-11">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/11" aria-label="Sunday, October 11th, 2026">
                                       <span className="size-1" aria-hidden="true"></span>
-                                      11
+                                      {"11"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-12">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/12" aria-label="Monday, October 12th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      12
+                                      {"12"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-13">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/13" aria-label="Tuesday, October 13th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      13
+                                      {"13"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-14">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/14" aria-label="Wednesday, October 14th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      14
+                                      {"14"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square bg-accent group/day h-full p-0 rdp-day rdp-selected relative rounded-(--cell-radius) rounded-md select-none text-center text-foreground w-full" role="gridcell" aria-selected="true" data-day="2026-10-15" data-selected="true" data-today="true">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="0" day="2026/10/15" selectedSingle="true" aria-label="Today, Thursday, October 15th, 2026, selected">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      15
+                                      {"15"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-16">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/16" aria-label="Friday, October 16th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      16
+                                      {"16"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-17">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/17" aria-label="Saturday, October 17th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      17
+                                      {"17"}
                                     </Button>
                                   </td>
                                 </tr>
@@ -703,43 +757,43 @@ export function Pattern() {
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-18">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/18" aria-label="Sunday, October 18th, 2026">
                                       <span className="size-1" aria-hidden="true"></span>
-                                      18
+                                      {"18"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-19">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/19" aria-label="Monday, October 19th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      19
+                                      {"19"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-20">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/20" aria-label="Tuesday, October 20th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      20
+                                      {"20"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-21">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/21" aria-label="Wednesday, October 21st, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      21
+                                      {"21"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-22">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/22" aria-label="Thursday, October 22nd, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      22
+                                      {"22"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-23">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/23" aria-label="Friday, October 23rd, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      23
+                                      {"23"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-24">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/24" aria-label="Saturday, October 24th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      24
+                                      {"24"}
                                     </Button>
                                   </td>
                                 </tr>
@@ -747,43 +801,43 @@ export function Pattern() {
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-25">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/25" aria-label="Sunday, October 25th, 2026">
                                       <span className="size-1" aria-hidden="true"></span>
-                                      25
+                                      {"25"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-26">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/26" aria-label="Monday, October 26th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      26
+                                      {"26"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-27">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/27" aria-label="Tuesday, October 27th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      27
+                                      {"27"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-28">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/28" aria-label="Wednesday, October 28th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      28
+                                      {"28"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-29">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/29" aria-label="Thursday, October 29th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      29
+                                      {"29"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-30">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/30" aria-label="Friday, October 30th, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      30
+                                      {"30"}
                                     </Button>
                                   </td>
                                   <td className="[&:first-child[data-selected=true]_button]:rounded-l-(--cell-radius) [&:last-child[data-selected=true]_button]:rounded-r-(--cell-radius) aspect-square group/day h-full p-0 rdp-day relative rounded-(--cell-radius) select-none text-center w-full" role="gridcell" data-day="2026-10-31">
                                     <Button className="[&>span]:opacity-70 [&>span]:text-xs [&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aspect-square bg-clip-padding border-0 border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 dark:hover:text-foreground data-[range-end=true]:bg-primary data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:rounded-r-(--cell-radius) data-[range-end=true]:text-primary-foreground data-[range-middle=true]:bg-muted data-[range-middle=true]:rounded-none data-[range-middle=true]:text-foreground data-[range-start=true]:bg-primary data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:rounded-l-(--cell-radius) data-[range-start=true]:text-primary-foreground data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground flex flex-col focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1 group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:relative group-data-[focused=true]/day:ring-[3px] group-data-[focused=true]/day:ring-ring/50 group-data-[focused=true]/day:z-10 hover:bg-muted hover:text-foreground isolate leading-none min-w-(--cell-size) rdp-day relative rounded-md size-auto text-sm w-full z-10" type="button" tabIndex="-1" day="2026/10/31" aria-label="Saturday, October 31st, 2026">
                                       <span className="bg-primary in-data-[selected-single=true]:bg-primary-foreground! rounded-full size-1" aria-hidden="true"></span>
-                                      31
+                                      {"31"}
                                     </Button>
                                   </td>
                                 </tr>
@@ -800,10 +854,10 @@ export function Pattern() {
                             <div className="border-b border-border py-2">
                               <div className="flex items-center justify-between px-3 py-1">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  My Chairs
+                                  {"My Chairs"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                  5 of 9
+                                  {"5 of 9"}
                                 </Badge>
                               </div>
                               <div className="px-2" role="list">
@@ -815,10 +869,10 @@ export function Pattern() {
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                       <span className="truncate">
-                                        Daily chairs
+                                        {"Daily chairs"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                        5
+                                        {"5"}
                                       </Badge>
                                     </CollapsibleTrigger>
                                     </Collapsible>
@@ -835,7 +889,7 @@ export function Pattern() {
                                           </Checkbox>
                                           <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                           <span className="flex-1 font-normal text-foreground text-sm truncate">
-                                            Dr. Amara Chen
+                                            {"Dr. Amara Chen"}
                                           </span>
                                           <DropdownMenu>
                                           <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group-hover:opacity-100 group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center opacity-0 outline-none rounded-[min(var(--radius-md),10px)] select-none shrink-0 size-6 text-sm transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Dr. Amara Chen" aria-haspopup="menu" id="base-ui-_r_14_" aria-expanded="false">
@@ -858,7 +912,7 @@ export function Pattern() {
                                           </Checkbox>
                                           <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                           <span className="flex-1 font-normal text-foreground text-sm truncate">
-                                            Dr. Ravi Menon
+                                            {"Dr. Ravi Menon"}
                                           </span>
                                           <DropdownMenu>
                                           <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group-hover:opacity-100 group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center opacity-0 outline-none rounded-[min(var(--radius-md),10px)] select-none shrink-0 size-6 text-sm transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Dr. Ravi Menon" aria-haspopup="menu" id="base-ui-_r_1c_" aria-expanded="false">
@@ -881,7 +935,7 @@ export function Pattern() {
                                           </Checkbox>
                                           <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                           <span className="flex-1 font-normal text-foreground text-sm truncate">
-                                            Dr. Elena Novak
+                                            {"Dr. Elena Novak"}
                                           </span>
                                           <DropdownMenu>
                                           <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group-hover:opacity-100 group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center opacity-0 outline-none rounded-[min(var(--radius-md),10px)] select-none shrink-0 size-6 text-sm transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Dr. Elena Novak" aria-haspopup="menu" id="base-ui-_r_1k_" aria-expanded="false">
@@ -904,7 +958,7 @@ export function Pattern() {
                                           </Checkbox>
                                           <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                           <span className="flex-1 font-normal text-foreground text-sm truncate">
-                                            Dr. Tomas Reyes
+                                            {"Dr. Tomas Reyes"}
                                           </span>
                                           <DropdownMenu>
                                           <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group-hover:opacity-100 group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center opacity-0 outline-none rounded-[min(var(--radius-md),10px)] select-none shrink-0 size-6 text-sm transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Dr. Tomas Reyes" aria-haspopup="menu" id="base-ui-_r_1s_" aria-expanded="false">
@@ -927,7 +981,7 @@ export function Pattern() {
                                           </Checkbox>
                                           <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                           <span className="flex-1 font-normal text-foreground text-sm truncate">
-                                            Dr. Hana Sato
+                                            {"Dr. Hana Sato"}
                                           </span>
                                           <DropdownMenu>
                                           <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group-hover:opacity-100 group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center opacity-0 outline-none rounded-[min(var(--radius-md),10px)] select-none shrink-0 size-6 text-sm transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Options for Dr. Hana Sato" aria-haspopup="menu" id="base-ui-_r_24_" aria-expanded="false">
@@ -951,10 +1005,10 @@ export function Pattern() {
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                       <span className="truncate">
-                                        Relief chairs
+                                        {"Relief chairs"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                        4
+                                        {"4"}
                                       </Badge>
                                     </CollapsibleTrigger>
                                     </Collapsible>
@@ -967,17 +1021,17 @@ export function Pattern() {
                                     <path d="M5 12h14"></path>
                                     <path d="M12 5v14"></path>
                                   </svg>
-                                  Show every chair
+                                  {"Show every chair"}
                                 </Button>
                               </div>
                             </div>
                             <div className="border-b border-border py-2">
                               <div className="flex items-center justify-between px-3 py-1">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                                  Up Next
+                                  {"Up Next"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 ml-auto outline-none px-1.25 py-0.5 relative rounded-sm text-muted-foreground text-xs transition-shadow">
-                                  10
+                                  {"10"}
                                 </Badge>
                               </div>
                               <div className="flex flex-col gap-0.5 px-1.5" role="list">
@@ -986,10 +1040,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        Laila Abadi
+                                        {"Laila Abadi"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        10:15 AM to 10:45 AM · Braces Adjustment
+                                        {"10:15 AM to 10:45 AM · Braces Adjustment"}
                                       </span>
                                     </div>
                                     <div className="-space-x-1 flex ml-auto">
@@ -1007,10 +1061,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "var(--color-slate-500)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        Chiara Novello
+                                        {"Chiara Novello"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        10:45 AM to 11:15 AM · Braces Adjustment
+                                        {"10:45 AM to 11:15 AM · Braces Adjustment"}
                                       </span>
                                     </div>
                                     <div className="-space-x-1 flex ml-auto">
@@ -1028,10 +1082,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        Elsa Lindqvist
+                                        {"Elsa Lindqvist"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        11:00 AM to 12:00 PM · Crown Fitting
+                                        {"11:00 AM to 12:00 PM · Crown Fitting"}
                                       </span>
                                     </div>
                                     <div className="-space-x-1 flex ml-auto">
@@ -1049,10 +1103,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        Laila Abadi
+                                        {"Laila Abadi"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        12:30 PM to 1:15 PM · Scaling
+                                        {"12:30 PM to 1:15 PM · Scaling"}
                                       </span>
                                     </div>
                                     <div className="-space-x-1 flex ml-auto">
@@ -1070,10 +1124,10 @@ export function Pattern() {
                                     <span className="rounded-full self-stretch shrink-0 w-1" aria-hidden="true" style={{backgroundColor: "var(--color-slate-500)"}}></span>
                                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                                       <span className="font-medium leading-snug text-foreground text-sm truncate">
-                                        Ifeoma Okafor
+                                        {"Ifeoma Okafor"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        2:00 PM to 2:45 PM · Implant Review
+                                        {"2:00 PM to 2:45 PM · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="-space-x-1 flex ml-auto">
@@ -1089,7 +1143,7 @@ export function Pattern() {
                               </div>
                               <div className="pt-1 px-1.5">
                                 <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start px-2 rounded-lg text-muted-foreground text-sm w-full" type="button" tabIndex="0">
-                                  Show all 10
+                                  {"Show all 10"}
                                 </Button>
                               </div>
                             </div>
@@ -1099,7 +1153,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                New Booking
+                                {"New Booking"}
                               </Button>
                               <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground justify-start px-2.5 rounded-lg text-muted-foreground text-sm w-full" type="button" tabIndex="0">
                                 <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1109,7 +1163,7 @@ export function Pattern() {
                                   <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                                   <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                                 </svg>
-                                Share Availability
+                                {"Share Availability"}
                               </Button>
                             </div>
                             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1121,10 +1175,10 @@ export function Pattern() {
                               </svg>
                               <div className="flex flex-col">
                                 <span className="font-medium text-[11px] text-muted-foreground/60">
-                                  Clinic timezone
+                                  {"Clinic timezone"}
                                 </span>
                                 <span className="text-muted-foreground text-xs">
-                                  Asia/Shanghai
+                                  {"Asia/Shanghai"}
                                 </span>
                               </div>
                             </div>
@@ -1139,7 +1193,7 @@ export function Pattern() {
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Agenda
+                        {"Agenda"}
                       </span>
                       <DropdownMenu>
                       <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter appointments" aria-haspopup="menu" id="base-ui-_r_2a_" aria-expanded="false">
@@ -1160,7 +1214,7 @@ export function Pattern() {
                               <div className="py-3">
                                 <div className="pb-2 px-3">
                                   <button className="focus-visible:ring-2 focus-visible:ring-ring font-medium hover:text-foreground outline-none rounded-sm text-muted-foreground text-xs tracking-wide transition-colors uppercase" type="button">
-                                    Monday, Oct 12
+                                    {"Monday, Oct 12"}
                                   </button>
                                 </div>
                                 <div className="flex flex-col gap-2 px-3" role="list">
@@ -1171,15 +1225,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-amber-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Harriet Pemberton (Implant Fitting)
+                                              {"Harriet Pemberton (Implant Fitting)"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            All day
+                                            {"All day"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                                          Procedure
+                                          {"Procedure"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1196,14 +1250,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            3 attendees
+                                            {"3 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          24 notes
+                                          {"24 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1215,15 +1269,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-indigo-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Consent Forms Review
+                                              {"Consent Forms Review"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            9:00 AM to 10:30 AM
+                                            {"9:00 AM to 10:30 AM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                          Insurance
+                                          {"Insurance"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1232,7 +1286,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Op 4
+                                          {"Op 4"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1246,19 +1300,19 @@ export function Pattern() {
                                             </Avatar>
                                             <Avatar className="after:rounded-full border border-background data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                               <AvatarFallback className="bg-muted font-semibold rounded-full text-[8px] text-muted-foreground">
-                                                RC
+                                                {"RC"}
                                               </AvatarFallback>
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            3 attendees
+                                            {"3 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          9 notes
+                                          {"9 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1270,15 +1324,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Weekly Clinical Standup
+                                              {"Weekly Clinical Standup"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            1:00 PM to 2:00 PM
+                                            {"1:00 PM to 2:00 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                          Meeting
+                                          {"Meeting"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1287,7 +1341,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Video call
+                                          {"Video call"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1303,11 +1357,11 @@ export function Pattern() {
                                               <AvatarImage className="rounded-full" alt="Tomas Weber" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +6
+                                              {"+6"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            9 attendees
+                                            {"9 attendees"}
                                           </span>
                                         </div>
                                       </div>
@@ -1321,7 +1375,7 @@ export function Pattern() {
                               <div className="py-3">
                                 <div className="pb-2 px-3">
                                   <button className="focus-visible:ring-2 focus-visible:ring-ring font-medium hover:text-foreground outline-none rounded-sm text-muted-foreground text-xs tracking-wide transition-colors uppercase" type="button">
-                                    Tuesday, Oct 13
+                                    {"Tuesday, Oct 13"}
                                   </button>
                                 </div>
                                 <div className="flex flex-col gap-2 px-3" role="list">
@@ -1332,15 +1386,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Introductory Call
+                                              {"Introductory Call"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            10:00 AM to 11:00 AM
+                                            {"10:00 AM to 11:00 AM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                          Call
+                                          {"Call"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1354,22 +1408,22 @@ export function Pattern() {
                                             </Avatar>
                                             <Avatar className="after:rounded-full border border-background data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                               <AvatarFallback className="bg-muted font-semibold rounded-full text-[8px] text-muted-foreground">
-                                                DA
+                                                {"DA"}
                                               </AvatarFallback>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +2
+                                              {"+2"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            5 attendees
+                                            {"5 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          2 notes
+                                          {"2 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1381,15 +1435,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Katherine Chen Plan Review
+                                              {"Katherine Chen Plan Review"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            10:30 AM to 12:00 PM
+                                            {"10:30 AM to 12:00 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                          Call
+                                          {"Call"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1403,14 +1457,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            2 attendees
+                                            {"2 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          5 notes
+                                          {"5 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1423,7 +1477,7 @@ export function Pattern() {
                               <div className="py-3">
                                 <div className="pb-2 px-3">
                                   <button className="focus-visible:ring-2 focus-visible:ring-ring font-medium hover:text-foreground outline-none rounded-sm text-muted-foreground text-xs tracking-wide transition-colors uppercase" type="button">
-                                    Wednesday, Oct 14
+                                    {"Wednesday, Oct 14"}
                                   </button>
                                 </div>
                                 <div className="flex flex-col gap-2 px-3" role="list">
@@ -1434,15 +1488,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-slate-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Send pre-op notes to Camila
+                                              {"Send pre-op notes to Camila"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            All day
+                                            {"All day"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          Task
+                                          {"Task"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1456,14 +1510,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            2 attendees
+                                            {"2 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          4 notes
+                                          {"4 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1475,15 +1529,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-emerald-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Certificate Chase
+                                              {"Certificate Chase"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            9:00 AM to 10:00 AM
+                                            {"9:00 AM to 10:00 AM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Recall
+                                          {"Recall"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1494,22 +1548,22 @@ export function Pattern() {
                                             </Avatar>
                                             <Avatar className="after:rounded-full border border-background data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                               <AvatarFallback className="bg-muted font-semibold rounded-full text-[8px] text-muted-foreground">
-                                                DA
+                                                {"DA"}
                                               </AvatarFallback>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +1
+                                              {"+1"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            4 attendees
+                                            {"4 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          6 notes
+                                          {"6 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1521,15 +1575,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Case Review Debrief
+                                              {"Case Review Debrief"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            3:00 PM to 4:45 PM
+                                            {"3:00 PM to 4:45 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                          Call
+                                          {"Call"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1538,7 +1592,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Op 1
+                                          {"Op 1"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1552,14 +1606,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            2 attendees
+                                            {"2 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          3 notes
+                                          {"3 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1572,7 +1626,7 @@ export function Pattern() {
                               <div className="py-3">
                                 <div className="pb-2 px-3">
                                   <button className="focus-visible:ring-2 focus-visible:ring-ring font-medium outline-none rounded-sm text-foreground text-xs tracking-wide transition-colors uppercase" type="button" aria-current="date">
-                                    Today
+                                    {"Today"}
                                   </button>
                                 </div>
                                 <div className="flex flex-col gap-2 px-3" role="list">
@@ -1583,15 +1637,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-indigo-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Amara Mitchell insurance certificates
+                                              {"Amara Mitchell insurance certificates"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            All day
+                                            {"All day"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                          Insurance
+                                          {"Insurance"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1605,14 +1659,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            2 attendees
+                                            {"2 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          12 notes
+                                          {"12 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1624,15 +1678,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-slate-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Watchlist Prep
+                                              {"Watchlist Prep"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            10:00 AM to 11:15 AM
+                                            {"10:00 AM to 11:15 AM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          Task
+                                          {"Task"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1646,14 +1700,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            2 attendees
+                                            {"2 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          5 notes
+                                          {"5 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1665,15 +1719,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Caseload Review
+                                              {"Caseload Review"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            1:30 PM to 3:30 PM
+                                            {"1:30 PM to 3:30 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                          Meeting
+                                          {"Meeting"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1682,7 +1736,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Op 2
+                                          {"Op 2"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1698,18 +1752,18 @@ export function Pattern() {
                                               <AvatarImage className="rounded-full" alt="Tomas Weber" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +11
+                                              {"+11"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            14 attendees
+                                            {"14 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          1 note
+                                          {"1 note"}
                                         </div>
                                       </div>
                                     </button>
@@ -1722,7 +1776,7 @@ export function Pattern() {
                               <div className="py-3">
                                 <div className="pb-2 px-3">
                                   <button className="focus-visible:ring-2 focus-visible:ring-ring font-medium hover:text-foreground outline-none rounded-sm text-muted-foreground text-xs tracking-wide transition-colors uppercase" type="button">
-                                    Tomorrow
+                                    {"Tomorrow"}
                                   </button>
                                 </div>
                                 <div className="flex flex-col gap-2 px-3" role="list">
@@ -1733,15 +1787,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Camila Rosenthal Kickoff
+                                              {"Camila Rosenthal Kickoff"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            9:00 AM to 10:15 AM
+                                            {"9:00 AM to 10:15 AM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                          Meeting
+                                          {"Meeting"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1750,7 +1804,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Video call
+                                          {"Video call"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1766,18 +1820,18 @@ export function Pattern() {
                                               <AvatarImage className="rounded-full" alt="Elin Dahl" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +3
+                                              {"+3"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            6 attendees
+                                            {"6 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          2 notes
+                                          {"2 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1789,15 +1843,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-emerald-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Consent Docs Follow Up
+                                              {"Consent Docs Follow Up"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            11:30 AM to 12:45 PM
+                                            {"11:30 AM to 12:45 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Recall
+                                          {"Recall"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1808,27 +1862,27 @@ export function Pattern() {
                                             </Avatar>
                                             <Avatar className="after:rounded-full border border-background data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                               <AvatarFallback className="bg-muted font-semibold rounded-full text-[8px] text-muted-foreground">
-                                                RC
+                                                {"RC"}
                                               </AvatarFallback>
                                             </Avatar>
                                             <Avatar className="after:rounded-full border border-background data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                               <AvatarFallback className="bg-muted font-semibold rounded-full text-[8px] text-muted-foreground">
-                                                DA
+                                                {"DA"}
                                               </AvatarFallback>
                                             </Avatar>
                                             <span className="bg-muted border border-background flex font-semibold items-center justify-center rounded-full size-5 text-[8px] text-muted-foreground">
-                                              +4
+                                              {"+4"}
                                             </span>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            7 attendees
+                                            {"7 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          7 notes
+                                          {"7 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1840,15 +1894,15 @@ export function Pattern() {
                                           <div className="flex gap-1 items-center">
                                             <div className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-indigo-500)"}}></div>
                                             <h3 className="font-medium leading-snug text-sm truncate">
-                                              Aftercare Handover
+                                              {"Aftercare Handover"}
                                             </h3>
                                           </div>
                                           <span className="text-muted-foreground text-xs">
-                                            3:00 PM to 4:15 PM
+                                            {"3:00 PM to 4:15 PM"}
                                           </span>
                                         </div>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 mt-0.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                          Insurance
+                                          {"Insurance"}
                                         </Badge>
                                       </div>
                                       <div className="flex gap-1.5 items-center pl-0 text-muted-foreground text-xs">
@@ -1857,7 +1911,7 @@ export function Pattern() {
                                           <circle cx="12" cy="10" r="3"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          Op 1
+                                          {"Op 1"}
                                         </span>
                                       </div>
                                       <div className="flex gap-2 items-center justify-between">
@@ -1874,14 +1928,14 @@ export function Pattern() {
                                             </Avatar>
                                           </AvatarGroup>
                                           <span className="text-muted-foreground text-xs">
-                                            3 attendees
+                                            {"3 attendees"}
                                           </span>
                                         </div>
                                         <div className="flex gap-1 items-center ml-auto text-muted-foreground text-xs">
                                           <svg className="lucide lucide-message-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                           </svg>
-                                          3 notes
+                                          {"3 notes"}
                                         </div>
                                       </div>
                                     </button>
@@ -1902,14 +1956,14 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
-                        New Appointment
+                        {"New Appointment"}
                       </Button>
                     </div>
                   </div>
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Directory
+                        {"Directory"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Add patient">
                         <svg className="lucide lucide-user-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1936,7 +1990,7 @@ export function Pattern() {
                             <div role="group" aria-labelledby="patient-group-in-chair">
                               <div className="px-3 py-1.5">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="patient-group-in-chair">
-                                  In Chair
+                                  {"In Chair"}
                                 </span>
                               </div>
                               <div role="list">
@@ -1950,10 +2004,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Elsa Lindqvist
+                                        {"Elsa Lindqvist"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2113 · Extraction
+                                        {"PT-2113 · Extraction"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -1989,10 +2043,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Laila Abadi
+                                        {"Laila Abadi"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2190 · Scaling
+                                        {"PT-2190 · Scaling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2023,7 +2077,7 @@ export function Pattern() {
                             <div role="group" aria-labelledby="patient-group-active">
                               <div className="px-3 py-1.5">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="patient-group-active">
-                                  Active
+                                  {"Active"}
                                 </span>
                               </div>
                               <div role="list">
@@ -2037,10 +2091,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Ifeoma Okafor
+                                        {"Ifeoma Okafor"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2041 · Implant Review
+                                        {"PT-2041 · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2076,10 +2130,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Samir Haddad
+                                        {"Samir Haddad"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2088 · Extraction
+                                        {"PT-2088 · Extraction"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2115,10 +2169,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Mateo Santos
+                                        {"Mateo Santos"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2156 · Crown Fitting
+                                        {"PT-2156 · Crown Fitting"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2154,10 +2208,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Gregory Whitfield
+                                        {"Gregory Whitfield"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2204 · Scaling
+                                        {"PT-2204 · Scaling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2193,10 +2247,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Wei Ling Tan
+                                        {"Wei Ling Tan"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2231 · Composite Filling
+                                        {"PT-2231 · Composite Filling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2232,10 +2286,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Chiara Novello
+                                        {"Chiara Novello"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2277 · Braces Adjustment
+                                        {"PT-2277 · Braces Adjustment"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2271,10 +2325,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Declan Brennan
+                                        {"Declan Brennan"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2290 · Composite Filling
+                                        {"PT-2290 · Composite Filling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2310,10 +2364,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Yuki Nakamura
+                                        {"Yuki Nakamura"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2312 · Scaling
+                                        {"PT-2312 · Scaling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2349,10 +2403,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Kwame Osei
+                                        {"Kwame Osei"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2326 · Composite Filling
+                                        {"PT-2326 · Composite Filling"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2388,10 +2442,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Irina Petrova
+                                        {"Irina Petrova"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2334 · Implant Review
+                                        {"PT-2334 · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2427,10 +2481,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Nadia Rahman
+                                        {"Nadia Rahman"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2347 · Implant Review
+                                        {"PT-2347 · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2466,10 +2520,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Bruno Silva
+                                        {"Bruno Silva"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2355 · Extraction
+                                        {"PT-2355 · Extraction"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2505,10 +2559,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Marta Kowalski
+                                        {"Marta Kowalski"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2368 · Crown Fitting
+                                        {"PT-2368 · Crown Fitting"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2544,10 +2598,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Dawit Bekele
+                                        {"Dawit Bekele"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2371 · Implant Review
+                                        {"PT-2371 · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2583,10 +2637,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Camille Fontaine
+                                        {"Camille Fontaine"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2389 · Root Canal
+                                        {"PT-2389 · Root Canal"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2622,10 +2676,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Lea Moreau
+                                        {"Lea Moreau"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2394 · General Checkup
+                                        {"PT-2394 · General Checkup"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2661,10 +2715,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Diego Ibarra
+                                        {"Diego Ibarra"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2402 · Braces Adjustment
+                                        {"PT-2402 · Braces Adjustment"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2700,10 +2754,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Henrik Olsen
+                                        {"Henrik Olsen"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2417 · Extraction
+                                        {"PT-2417 · Extraction"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2739,10 +2793,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-1 flex-col min-w-0">
                                       <span className="font-medium text-foreground text-sm truncate">
-                                        Priya Chowdhury
+                                        {"Priya Chowdhury"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        PT-2425 · Implant Review
+                                        {"PT-2425 · Implant Review"}
                                       </span>
                                     </div>
                                     <div className="flex gap-0.5 items-center shrink-0">
@@ -2779,18 +2833,18 @@ export function Pattern() {
                     </div>
                     <div className="border-border border-t flex h-10 items-center justify-between px-3 shrink-0 text-xs">
                       <span>
-                        21 patients
+                        {"21 patients"}
                       </span>
                       <span className="flex gap-1.5 items-center">
                         <span className="bg-warning rounded-full size-2 text-muted-foreground" aria-hidden="true"></span>
-                        3 unpaid
+                        {"3 unpaid"}
                       </span>
                     </div>
                   </div>
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Load
+                        {"Load"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Add clinician">
                         <svg className="lucide lucide-user-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -2808,7 +2862,7 @@ export function Pattern() {
                             <div role="group" aria-labelledby="staff-on-floor">
                               <div className="px-3 py-1.5">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="staff-on-floor">
-                                  On the floor
+                                  {"On the floor"}
                                 </span>
                               </div>
                               <div role="list">
@@ -2820,17 +2874,17 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                          3h 45m
+                                          {"3h 45m"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Ravi Menon: 3h 45m in the chair today">
                                         <div className="bg-primary h-full rounded-full" style={{width: "100%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        3 today · 1 tomorrow
+                                        {"3 today · 1 tomorrow"}
                                       </span>
                                     </div>
                                   </div>
@@ -2843,17 +2897,17 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                          3h 30m
+                                          {"3h 30m"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Amara Chen: 3h 30m in the chair today">
                                         <div className="bg-primary h-full rounded-full" style={{width: "93%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        5 today · 1 tomorrow
+                                        {"5 today · 1 tomorrow"}
                                       </span>
                                     </div>
                                   </div>
@@ -2866,17 +2920,17 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                          2h 30m
+                                          {"2h 30m"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Hana Sato: 2h 30m in the chair today">
                                         <div className="bg-primary h-full rounded-full" style={{width: "67%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        3 today · 1 tomorrow
+                                        {"3 today · 1 tomorrow"}
                                       </span>
                                     </div>
                                   </div>
@@ -2889,17 +2943,17 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                          2h 15m
+                                          {"2h 15m"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Elena Novak: 2h 15m in the chair today">
                                         <div className="bg-primary h-full rounded-full" style={{width: "60%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        4 today · 1 tomorrow
+                                        {"4 today · 1 tomorrow"}
                                       </span>
                                     </div>
                                   </div>
@@ -2912,17 +2966,17 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Tomas Reyes
+                                          {"Dr. Tomas Reyes"}
                                         </span>
                                         <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                          2h
+                                          {"2h"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Tomas Reyes: 2h in the chair today">
                                         <div className="bg-primary h-full rounded-full" style={{width: "53%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        2 today · 0 tomorrow
+                                        {"2 today · 0 tomorrow"}
                                       </span>
                                     </div>
                                   </div>
@@ -2932,7 +2986,7 @@ export function Pattern() {
                             <div role="group" aria-labelledby="staff-off">
                               <div className="px-3 py-1.5">
                                 <span className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="staff-off">
-                                  Not scheduled
+                                  {"Not scheduled"}
                                 </span>
                               </div>
                               <div role="list">
@@ -2944,14 +2998,14 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Ines Duarte
+                                          {"Dr. Ines Duarte"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Ines Duarte: not on the floor today">
                                         <div className="bg-transparent h-full rounded-full" style={{width: "0%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Prosthodontics · not on the floor
+                                        {"Prosthodontics · not on the floor"}
                                       </span>
                                     </div>
                                   </div>
@@ -2964,14 +3018,14 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Jonas Falk
+                                          {"Dr. Jonas Falk"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Jonas Falk: not on the floor today">
                                         <div className="bg-transparent h-full rounded-full" style={{width: "0%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Implantology · not on the floor
+                                        {"Implantology · not on the floor"}
                                       </span>
                                     </div>
                                   </div>
@@ -2984,14 +3038,14 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Noah Weber
+                                          {"Dr. Noah Weber"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Noah Weber: not on the floor today">
                                         <div className="bg-transparent h-full rounded-full" style={{width: "0%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Periodontics · not on the floor
+                                        {"Periodontics · not on the floor"}
                                       </span>
                                     </div>
                                   </div>
@@ -3004,14 +3058,14 @@ export function Pattern() {
                                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                                       <div className="flex gap-2 items-center justify-between min-w-0">
                                         <span className="font-medium text-foreground text-sm truncate">
-                                          Dr. Priya Raman
+                                          {"Dr. Priya Raman"}
                                         </span>
                                       </div>
                                       <div className="bg-muted group-hover:bg-border h-1 overflow-hidden rounded-full w-full" role="img" aria-label="Dr. Priya Raman: not on the floor today">
                                         <div className="bg-transparent h-full rounded-full" style={{width: "0%"}}></div>
                                       </div>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        Pediatrics · not on the floor
+                                        {"Pediatrics · not on the floor"}
                                       </span>
                                     </div>
                                   </div>
@@ -3027,17 +3081,17 @@ export function Pattern() {
                     </div>
                     <div className="border-border border-t flex h-10 items-center justify-between px-3 shrink-0 text-xs">
                       <span>
-                        5 of 9 on the floor
+                        {"5 of 9 on the floor"}
                       </span>
                       <span className="tabular-nums text-muted-foreground">
-                        14h booked
+                        {"14h booked"}
                       </span>
                     </div>
                   </div>
                   <div className="bg-background flex-1 flex-col hidden overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Activity
+                        {"Activity"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="New invoice">
                         <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -3057,27 +3111,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-6
+                                        {"INV-20261015-6"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Declan Brennan · $350
+                                        {"Declan Brennan · $350"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2290
+                                          {"PT-2290"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3088,27 +3142,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-5
+                                        {"INV-20261015-5"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Wei Ling Tan · $120
+                                        {"Wei Ling Tan · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2231
+                                          {"PT-2231"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3119,27 +3173,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-info border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-4
+                                        {"INV-20261015-4"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Gregory Whitfield · $850
+                                        {"Gregory Whitfield · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Open
+                                          {"Open"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-info rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2204
+                                          {"PT-2204"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3150,27 +3204,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-3
+                                        {"INV-20261015-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Mateo Santos · $850
+                                        {"Mateo Santos · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2156
+                                          {"PT-2156"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3181,27 +3235,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-2
+                                        {"INV-20261015-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Samir Haddad · $120
+                                        {"Samir Haddad · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2088
+                                          {"PT-2088"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3212,27 +3266,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-15">
-                                      Oct 15
+                                      {"Oct 15"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261015-1
+                                        {"INV-20261015-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Ifeoma Okafor · $90
+                                        {"Ifeoma Okafor · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2041
+                                          {"PT-2041"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3243,27 +3297,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-14">
-                                      Oct 14
+                                      {"Oct 14"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261014-5
+                                        {"INV-20261014-5"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Bruno Silva · $950
+                                        {"Bruno Silva · $950"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Tomas Reyes
+                                          {"Dr. Tomas Reyes"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2355
+                                          {"PT-2355"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3274,27 +3328,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-14">
-                                      Oct 14
+                                      {"Oct 14"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261014-4
+                                        {"INV-20261014-4"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Nadia Rahman · $90
+                                        {"Nadia Rahman · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2347
+                                          {"PT-2347"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3305,27 +3359,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-info border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-14">
-                                      Oct 14
+                                      {"Oct 14"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261014-3
+                                        {"INV-20261014-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Irina Petrova · $180
+                                        {"Irina Petrova · $180"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Open
+                                          {"Open"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-info rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2334
+                                          {"PT-2334"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3336,27 +3390,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-14">
-                                      Oct 14
+                                      {"Oct 14"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261014-2
+                                        {"INV-20261014-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $120
+                                        {"Kwame Osei · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3367,27 +3421,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-14">
-                                      Oct 14
+                                      {"Oct 14"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261014-1
+                                        {"INV-20261014-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Yuki Nakamura · $90
+                                        {"Yuki Nakamura · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2312
+                                          {"PT-2312"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3398,27 +3452,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-13">
-                                      Oct 13
+                                      {"Oct 13"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261013-5
+                                        {"INV-20261013-5"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Diego Ibarra · $90
+                                        {"Diego Ibarra · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Tomas Reyes
+                                          {"Dr. Tomas Reyes"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2402
+                                          {"PT-2402"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3429,27 +3483,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-13">
-                                      Oct 13
+                                      {"Oct 13"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261013-4
+                                        {"INV-20261013-4"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Lea Moreau · $120
+                                        {"Lea Moreau · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2394
+                                          {"PT-2394"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3460,27 +3514,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-13">
-                                      Oct 13
+                                      {"Oct 13"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261013-3
+                                        {"INV-20261013-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Camille Fontaine · $140
+                                        {"Camille Fontaine · $140"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2389
+                                          {"PT-2389"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3491,27 +3545,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-info border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-13">
-                                      Oct 13
+                                      {"Oct 13"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261013-2
+                                        {"INV-20261013-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Dawit Bekele · $850
+                                        {"Dawit Bekele · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Open
+                                          {"Open"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-info rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2371
+                                          {"PT-2371"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3522,27 +3576,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-13">
-                                      Oct 13
+                                      {"Oct 13"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261013-1
+                                        {"INV-20261013-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Marta Kowalski · $350
+                                        {"Marta Kowalski · $350"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2368
+                                          {"PT-2368"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3553,27 +3607,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-12">
-                                      Oct 12
+                                      {"Oct 12"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261012-4
+                                        {"INV-20261012-4"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $90
+                                        {"Kwame Osei · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Hana Sato
+                                          {"Dr. Hana Sato"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3584,27 +3638,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-12">
-                                      Oct 12
+                                      {"Oct 12"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261012-3
+                                        {"INV-20261012-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Yuki Nakamura · $120
+                                        {"Yuki Nakamura · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2312
+                                          {"PT-2312"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3615,27 +3669,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-12">
-                                      Oct 12
+                                      {"Oct 12"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261012-2
+                                        {"INV-20261012-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Priya Chowdhury · $90
+                                        {"Priya Chowdhury · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2425
+                                          {"PT-2425"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3646,27 +3700,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-12">
-                                      Oct 12
+                                      {"Oct 12"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261012-1
+                                        {"INV-20261012-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Henrik Olsen · $220
+                                        {"Henrik Olsen · $220"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2417
+                                          {"PT-2417"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3677,27 +3731,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-10">
-                                      Oct 10
+                                      {"Oct 10"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261010-1
+                                        {"INV-20261010-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Declan Brennan · $850
+                                        {"Declan Brennan · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2290
+                                          {"PT-2290"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3708,27 +3762,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-09">
-                                      Oct 9
+                                      {"Oct 9"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261009-3
+                                        {"INV-20261009-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Samir Haddad · $220
+                                        {"Samir Haddad · $220"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2088
+                                          {"PT-2088"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3739,27 +3793,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-09">
-                                      Oct 9
+                                      {"Oct 9"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261009-2
+                                        {"INV-20261009-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $140
+                                        {"Kwame Osei · $140"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3770,27 +3824,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-09">
-                                      Oct 9
+                                      {"Oct 9"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261009-1
+                                        {"INV-20261009-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Gregory Whitfield · $140
+                                        {"Gregory Whitfield · $140"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2204
+                                          {"PT-2204"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3801,27 +3855,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-08">
-                                      Oct 8
+                                      {"Oct 8"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261008-3
+                                        {"INV-20261008-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Irina Petrova · $850
+                                        {"Irina Petrova · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2334
+                                          {"PT-2334"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3832,27 +3886,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-08">
-                                      Oct 8
+                                      {"Oct 8"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261008-2
+                                        {"INV-20261008-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Henrik Olsen · $180
+                                        {"Henrik Olsen · $180"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2417
+                                          {"PT-2417"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3863,27 +3917,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-08">
-                                      Oct 8
+                                      {"Oct 8"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261008-1
+                                        {"INV-20261008-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Camille Fontaine · $120
+                                        {"Camille Fontaine · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2389
+                                          {"PT-2389"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3894,27 +3948,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-07">
-                                      Oct 7
+                                      {"Oct 7"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261007-5
+                                        {"INV-20261007-5"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Laila Abadi · $120
+                                        {"Laila Abadi · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2190
+                                          {"PT-2190"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3925,27 +3979,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-07">
-                                      Oct 7
+                                      {"Oct 7"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261007-4
+                                        {"INV-20261007-4"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $120
+                                        {"Kwame Osei · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3956,27 +4010,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-07">
-                                      Oct 7
+                                      {"Oct 7"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261007-3
+                                        {"INV-20261007-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Declan Brennan · $90
+                                        {"Declan Brennan · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2290
+                                          {"PT-2290"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -3987,27 +4041,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-07">
-                                      Oct 7
+                                      {"Oct 7"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261007-2
+                                        {"INV-20261007-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Marta Kowalski · $140
+                                        {"Marta Kowalski · $140"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2368
+                                          {"PT-2368"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4018,27 +4072,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-07">
-                                      Oct 7
+                                      {"Oct 7"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261007-1
+                                        {"INV-20261007-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Mateo Santos · $90
+                                        {"Mateo Santos · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2156
+                                          {"PT-2156"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4049,27 +4103,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-06">
-                                      Oct 6
+                                      {"Oct 6"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261006-3
+                                        {"INV-20261006-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Dawit Bekele · $120
+                                        {"Dawit Bekele · $120"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2371
+                                          {"PT-2371"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4080,27 +4134,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-06">
-                                      Oct 6
+                                      {"Oct 6"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261006-2
+                                        {"INV-20261006-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Henrik Olsen · $950
+                                        {"Henrik Olsen · $950"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2417
+                                          {"PT-2417"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4111,27 +4165,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-06">
-                                      Oct 6
+                                      {"Oct 6"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261006-1
+                                        {"INV-20261006-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Elsa Lindqvist · $90
+                                        {"Elsa Lindqvist · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2113
+                                          {"PT-2113"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4142,27 +4196,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-05">
-                                      Oct 5
+                                      {"Oct 5"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261005-1
+                                        {"INV-20261005-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Priya Chowdhury · $350
+                                        {"Priya Chowdhury · $350"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2425
+                                          {"PT-2425"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4173,27 +4227,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-03">
-                                      Oct 3
+                                      {"Oct 3"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261003-1
+                                        {"INV-20261003-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $850
+                                        {"Kwame Osei · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4204,27 +4258,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-02">
-                                      Oct 2
+                                      {"Oct 2"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261002-3
+                                        {"INV-20261002-3"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Irina Petrova · $850
+                                        {"Irina Petrova · $850"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Elena Novak
+                                          {"Dr. Elena Novak"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2334
+                                          {"PT-2334"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4235,27 +4289,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-02">
-                                      Oct 2
+                                      {"Oct 2"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261002-2
+                                        {"INV-20261002-2"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Kwame Osei · $90
+                                        {"Kwame Osei · $90"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Ravi Menon
+                                          {"Dr. Ravi Menon"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2326
+                                          {"PT-2326"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4266,27 +4320,27 @@ export function Pattern() {
                                     <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem)]" aria-hidden="true"></TimelineSeparator>
                                     <TimelineIndicator className="bg-success border-none group-data-[orientation=vertical]/timeline:top-1 size-2" aria-hidden="true"></TimelineIndicator>
                                     <TimelineDate className="font-semibold mb-0 text-[11px] text-muted-foreground/60 uppercase" datetime="2026-10-02">
-                                      Oct 2
+                                      {"Oct 2"}
                                     </TimelineDate>
                                   </TimelineHeader>
                                   <TimelineContent className="font-medium text-foreground">
                                     <div className="cursor-pointer focus-visible:ring-2 focus-visible:ring-ring min-w-0 outline-none pt-1 rounded-md space-y-1" role="button" tabIndex="0">
                                       <p className="font-medium leading-snug">
-                                        INV-20261002-1
+                                        {"INV-20261002-1"}
                                       </p>
                                       <p className="font-normal leading-snug line-clamp-2 text-muted-foreground text-xs">
-                                        Wei Ling Tan · $180
+                                        {"Wei Ling Tan · $180"}
                                       </p>
                                       <div className="flex flex-wrap gap-1.5 items-center pt-0.5">
                                         <span className="text-muted-foreground text-sm truncate">
-                                          Dr. Amara Chen
+                                          {"Dr. Amara Chen"}
                                         </span>
                                         <span className="sr-only">
-                                          Paid
+                                          {"Paid"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                           <span className="bg-success rounded-full size-1.5" aria-hidden="true"></span>
-                                          PT-2231
+                                          {"PT-2231"}
                                         </Badge>
                                       </div>
                                     </div>
@@ -4303,20 +4357,20 @@ export function Pattern() {
                     </div>
                     <div className="border-border border-t flex h-10 items-center justify-between px-3 shrink-0 text-xs">
                       <span>
-                        79 settled ·
+                        {"79 settled ·"}
                         <span className="tabular-nums">
-                          $23,820
+                          {"$23,820"}
                         </span>
                       </span>
                       <span className="tabular-nums text-muted-foreground">
-                        $1,880 owed
+                        {"$1,880 owed"}
                       </span>
                     </div>
                   </div>
                   <div className="bg-background flex flex-1 flex-col overflow-hidden" aria-hidden="true">
                     <div className="border-b border-border flex h-(--header-height) items-center justify-between px-3 shrink-0">
                       <span className="font-semibold text-foreground text-sm">
-                        Configuration
+                        {"Configuration"}
                       </span>
                       <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" disabled="" tabIndex="0" disabled aria-label="Reset to shipped defaults">
                         <svg className="lucide lucide-rotate-ccw size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -4337,7 +4391,7 @@ export function Pattern() {
                                     <circle cx="12" cy="7" r="4"></circle>
                                   </svg>
                                   <span className="truncate">
-                                    My Profile
+                                    {"My Profile"}
                                   </span>
                                 </TabsTrigger>
                                 <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 [box-shadow:none]! bg-transparent border border-transparent font-medium gap-3 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 justify-start px-3 py-1.5 rounded-md text-sm w-full" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_57_">
@@ -4346,7 +4400,7 @@ export function Pattern() {
                                     <path d="M12 6v6l4 2"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Hours
+                                    {"Hours"}
                                   </span>
                                 </TabsTrigger>
                                 <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 [box-shadow:none]! bg-transparent border border-transparent font-medium gap-3 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 justify-start px-3 py-1.5 rounded-md text-sm w-full" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_58_">
@@ -4357,7 +4411,7 @@ export function Pattern() {
                                     <path d="M19 18v2"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Chairs
+                                    {"Chairs"}
                                   </span>
                                 </TabsTrigger>
                                 <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 [box-shadow:none]! bg-transparent border border-transparent font-medium gap-3 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 justify-start px-3 py-1.5 rounded-md text-sm w-full" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_59_">
@@ -4368,7 +4422,7 @@ export function Pattern() {
                                     <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Procedures
+                                    {"Procedures"}
                                   </span>
                                 </TabsTrigger>
                                 <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 [box-shadow:none]! bg-transparent border border-transparent font-medium gap-3 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 justify-start px-3 py-1.5 rounded-md text-sm w-full" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5a_">
@@ -4378,7 +4432,7 @@ export function Pattern() {
                                     <path d="M6 12h.01M18 12h.01"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Billing
+                                    {"Billing"}
                                   </span>
                                 </TabsTrigger>
                                 <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 [box-shadow:none]! bg-transparent border border-transparent font-medium gap-3 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 justify-start px-3 py-1.5 rounded-md text-sm w-full" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5b_">
@@ -4387,7 +4441,7 @@ export function Pattern() {
                                     <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Notifications
+                                    {"Notifications"}
                                   </span>
                                 </TabsTrigger>
                               </TabsList>
@@ -4405,25 +4459,30 @@ export function Pattern() {
                   <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
                 </span>
                 <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-                  Collapse
+                  {"Collapse"}
                 </span>
               </button>
             </div>
+            </SidebarProvider>
           </div>
+          </SidebarProvider>
         </Sidebar>
+        </SidebarProvider>
         <SidebarInset className="bg-background md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm min-w-0">
           <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center min-w-0 px-4 py-1.5 shrink-0 sm:gap-3 sticky top-0 z-20" aria-hidden="true">
+            <SidebarProvider>
             <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center md:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
               <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
-                Toggle Sidebar
+                {"Toggle Sidebar"}
               </span>
             </SidebarTrigger>
+            </SidebarProvider>
             <h1 className="font-semibold min-w-0 sm:text-lg text-base text-foreground truncate">
-              Settings
+              {"Settings"}
             </h1>
             <div className="flex gap-2 items-center ml-auto shrink-0"></div>
           </header>
@@ -4433,30 +4492,30 @@ export function Pattern() {
                 <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 overflow-hidden p-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                   <CardHeader className="[.border-b]:pb-(--card-spacing) border-b gap-0 px-5 py-3 rounded-t-xl">
                     <CardTitle className="font-heading font-medium group-data-[size=sm]/card:text-sm leading-snug text-base">
-                      My profile
+                      {"My profile"}
                     </CardTitle>
                     <CardDescription className="text-muted-foreground text-sm">
-                      Public account details
+                      {"Public account details"}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-0">
                     <FieldSet className="gap-0 has-[>[data-slot=checkbox-group]]:gap-3 has-[>[data-slot=radio-group]]:gap-3">
                       <FieldLegend className="data-[variant=label]:text-sm data-[variant=legend]:text-base font-medium mb-1.5 sr-only" variant="legend">
-                        Profile fields
+                        {"Profile fields"}
                       </FieldLegend>
                       <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 sr-only text-left text-muted-foreground text-sm">
-                        Update your personal profile details.
+                        {"Update your personal profile details."}
                       </FieldDescription>
                       <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-0">
                         <Field className="data-[invalid=true]:text-destructive gap-4 px-5 py-3" role="group" data-orientation="responsive">
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center text-sm">
-                                Photo
+                                {"Photo"}
                               </FieldLabel>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Shown in comments and mentions.
+                              {"Shown in comments and mentions."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 gap-0.5 min-w-0">
@@ -4474,7 +4533,7 @@ export function Pattern() {
                                       <path d="m17 8-5-5-5 5"></path>
                                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     </svg>
-                                    Change
+                                    {"Change"}
                                   </Button>
                                   <input className="sr-only" id="settings-7-profile-photo" accept="image/*" aria-label="Upload profile image" tabIndex="-1" type="file" />
                                 </div>
@@ -4483,7 +4542,7 @@ export function Pattern() {
                                     <path d="M18 6 6 18"></path>
                                     <path d="m6 6 12 12"></path>
                                   </svg>
-                                  Remove
+                                  {"Remove"}
                                 </Button>
                               </div>
                             </div>
@@ -4496,11 +4555,11 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-full-name">
-                                Full name
+                                {"Full name"}
                               </FieldLabel>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Used across the workspace.
+                              {"Used across the workspace."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 gap-0.5 min-w-0">
@@ -4516,14 +4575,14 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-email">
-                                Email address
+                                {"Email address"}
                               </FieldLabel>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                                Verified
+                                {"Verified"}
                               </Badge>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Primary sign-in email.
+                              {"Primary sign-in email."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 gap-0.5 min-w-0">
@@ -4539,11 +4598,11 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-username">
-                                Username
+                                {"Username"}
                               </FieldLabel>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Visible in mentions and links.
+                              {"Visible in mentions and links."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 gap-0.5 min-w-0">
@@ -4551,7 +4610,7 @@ export function Pattern() {
                               <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
                                 <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
                                   <span className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none flex gap-2 items-center text-muted-foreground text-sm">
-                                    @
+                                    {"@"}
                                   </span>
                                 </InputGroupAddon>
                                 <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="settings-7-username" value="n.bold" />
@@ -4566,35 +4625,35 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center text-sm">
-                                Profile details
+                                {"Profile details"}
                               </FieldLabel>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Public details shared across the workspace.
+                              {"Public details shared across the workspace."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-[22rem] gap-0.5 min-w-0">
                             <div className="@md/field-group:justify-end flex justify-start w-full">
                               <FieldSet className="gap-3 has-[>[data-slot=checkbox-group]]:gap-3 has-[>[data-slot=radio-group]]:gap-3 w-full">
                                 <FieldLegend className="data-[variant=label]:text-sm data-[variant=legend]:text-base font-medium mb-1.5 sr-only" variant="legend">
-                                  Profile details
+                                  {"Profile details"}
                                 </FieldLegend>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 sr-only text-left text-muted-foreground text-sm">
-                                  Public profile and workspace defaults.
+                                  {"Public profile and workspace defaults."}
                                 </FieldDescription>
                                 <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-4">
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-role">
-                                      Role
+                                      {"Role"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="settings-7-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue className="flex flex-1 text-left">
-                                        Practice manager
+                                        {"Practice manager"}
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -4602,16 +4661,16 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-timezone">
-                                      Time zone
+                                      {"Time zone"}
                                     </FieldLabel>
                                     <Select>
                                     <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="settings-7-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue className="flex flex-1 text-left">
-                                        UTC+0 (London)
+                                        {"UTC+0 (London)"}
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -4619,12 +4678,12 @@ export function Pattern() {
                                   </Field>
                                   <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                     <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-website">
-                                      Website
+                                      {"Website"}
                                     </FieldLabel>
                                     <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
                                       <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
                                         <span className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none flex gap-2 items-center text-muted-foreground text-sm">
-                                          https://
+                                          {"https://"}
                                         </span>
                                       </InputGroupAddon>
                                       <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="settings-7-website" value="" />
@@ -4642,11 +4701,11 @@ export function Pattern() {
                           <div className="@md/field-group:max-w-sm flex flex-1 flex-col gap-0.5 min-w-0">
                             <div className="flex flex-wrap gap-2 items-center">
                               <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:has-[:focus-visible]:border-ring has-[>[data-slot=field]]:has-[:focus-visible]:ring-3 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/50 has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="settings-7-bio">
-                                Bio
+                                {"Bio"}
                               </FieldLabel>
                             </div>
                             <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                              Short profile summary.
+                              {"Short profile summary."}
                             </FieldDescription>
                           </div>
                           <FieldContent className="@md/field-group:w-78 gap-0.5 min-w-0">
@@ -4660,10 +4719,10 @@ export function Pattern() {
                   </CardContent>
                   <CardFooter className="bg-muted/50 border-t gap-2 justify-end p-(--card-spacing) px-5 py-3 rounded-b-xl">
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
-                      Cancel
+                      {"Cancel"}
                     </Button>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
-                      Save changes
+                      {"Save changes"}
                     </Button>
                   </CardFooter>
                 </Card>
@@ -4672,10 +4731,11 @@ export function Pattern() {
           </div>
         </SidebarInset>
       </div>
+      </SidebarProvider>
       <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
     </div>
     <span id="recharts_measurement_span" aria-hidden="true" data-base-ui-inert="" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "12px", letterSpacing: "normal"}}>
-      Jan
+      {"Jan"}
     </span>
     <DialogPortal id="_r_fo_" baseUiPortal="">
       <div role="presentation" data-base-ui-inert="" aria-hidden="true" style={{position: "fixed", inset: "0px", userSelect: "none"}}></div>
@@ -4685,10 +4745,10 @@ export function Pattern() {
       <DialogContent className="**:data-[slot=dialog-close]:opacity-60 **:data-[slot=dialog-close]:right-4 **:data-[slot=dialog-close]:top-4 bg-popover data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 duration-100 gap-0 grid max-w-[calc(100%-2rem)] p-0 ring-1 ring-foreground/10 rounded-xl sm:max-w-2xl text-popover-foreground text-sm" data-open="" id="_r_5c_" role="dialog" tabIndex="-1" baseUiFocusable="" aria-labelledby="base-ui-_r_fp_" aria-describedby="base-ui-_r_fq_" style={{"--nested-dialogs": "0"}}>
         <DialogHeader className="gap-2 sr-only">
           <DialogTitle className="font-heading font-medium leading-none text-base" id="base-ui-_r_fp_">
-            Search
+            {"Search"}
           </DialogTitle>
           <DialogDescription className="*:[a]:hover:text-foreground *:[a]:underline *:[a]:underline-offset-3 text-muted-foreground text-sm" id="base-ui-_r_fq_">
-            Find patients, bookings, invoices, clinicians, planner events and pages.
+            {"Find patients, bookings, invoices, clinicians, planner events and pages."}
           </DialogDescription>
         </DialogHeader>
         <div className="flex gap-3 items-center px-4 py-3">
@@ -4702,9 +4762,9 @@ export function Pattern() {
         <div className="max-h-[min(24rem,60vh)] no-scrollbar overflow-y-auto overscroll-contain p-1 scroll-py-1" aria-orientation="vertical" role="listbox" tabIndex="-1" id="_r_fs_" aria-busy="false" aria-activedescendant="base-ui-_r_fr_-0">
           <div role="group" aria-labelledby="base-ui-_r_fv_">
             <div className="px-2 py-1.5 text-muted-foreground text-xs" id="base-ui-_r_fv_">
-              Thursday 15 Oct
+              {"Thursday 15 Oct"}
               <span className="tabular-nums">
-                · 5 of 16
+                {"· 5 of 16"}
               </span>
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-0" aria-selected="false" data-highlighted="">
@@ -4714,28 +4774,28 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Wei Ling Tan
+                    {"Wei Ling Tan"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Scaling
+                    {"Scaling"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Dr. Hana Sato
+                    {"Dr. Hana Sato"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Op 2
+                    {"Op 2"}
                   </span>
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                15 Oct, 8:00 am
+                {"15 Oct, 8:00 am"}
               </span>
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-1" aria-selected="false">
@@ -4745,28 +4805,28 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Ifeoma Okafor
+                    {"Ifeoma Okafor"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    General Checkup
+                    {"General Checkup"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Dr. Amara Chen
+                    {"Dr. Amara Chen"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Op 1
+                    {"Op 1"}
                   </span>
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                15 Oct, 8:30 am
+                {"15 Oct, 8:30 am"}
               </span>
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-2" aria-selected="false">
@@ -4776,28 +4836,28 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Mateo Santos
+                    {"Mateo Santos"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Root Canal
+                    {"Root Canal"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Dr. Ravi Menon
+                    {"Dr. Ravi Menon"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Op 3
+                    {"Op 3"}
                   </span>
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                15 Oct, 9:00 am
+                {"15 Oct, 9:00 am"}
               </span>
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-3" aria-selected="false">
@@ -4807,28 +4867,28 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Declan Brennan
+                    {"Declan Brennan"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Whitening
+                    {"Whitening"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Dr. Hana Sato
+                    {"Dr. Hana Sato"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Op 2
+                    {"Op 2"}
                   </span>
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                15 Oct, 9:15 am
+                {"15 Oct, 9:15 am"}
               </span>
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-4" aria-selected="false">
@@ -4838,34 +4898,34 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Samir Haddad
+                    {"Samir Haddad"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Scaling
+                    {"Scaling"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Dr. Amara Chen
+                    {"Dr. Amara Chen"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    Op 1
+                    {"Op 1"}
                   </span>
                 </span>
               </span>
               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                15 Oct, 9:30 am
+                {"15 Oct, 9:30 am"}
               </span>
             </div>
           </div>
           <div role="group" aria-labelledby="base-ui-_r_g0_">
             <div className="px-2 py-1.5 text-muted-foreground text-xs" id="base-ui-_r_g0_">
-              Go to
+              {"Go to"}
             </div>
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-default data-highlighted:bg-accent data-highlighted:text-accent-foreground flex gap-3 items-center outline-hidden px-2 py-2 relative rounded-md select-none text-sm w-full" role="option" id="base-ui-_r_fr_-5" aria-selected="false">
               <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
@@ -4879,12 +4939,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Dashboard
+                    {"Dashboard"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -4901,12 +4961,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Calendar
+                    {"Calendar"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -4924,12 +4984,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Appointments
+                    {"Appointments"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -4946,12 +5006,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Customers
+                    {"Customers"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -4969,12 +5029,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Staff
+                    {"Staff"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -4990,12 +5050,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Payments
+                    {"Payments"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -5010,12 +5070,12 @@ export function Pattern() {
               <span className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="font-medium truncate">
-                    Settings
+                    {"Settings"}
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="truncate">
-                    Page
+                    {"Page"}
                   </span>
                 </span>
               </span>
@@ -5026,21 +5086,21 @@ export function Pattern() {
         <div className="border-t flex gap-3 items-center px-4 py-2 text-muted-foreground text-xs">
           <span>
             <kbd className="font-sans">
-              ↑↓
+              {"↑↓"}
             </kbd>
-            navigate
+            {"navigate"}
           </span>
           <span>
             <kbd className="font-sans">
-              ↵
+              {"↵"}
             </kbd>
-            open
+            {"open"}
           </span>
           <span>
             <kbd className="font-sans">
-              esc
+              {"esc"}
             </kbd>
-            close
+            {"close"}
           </span>
         </div>
         <input id="base-ui-_r_fr_-hidden-input" autoComplete="none" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
@@ -5050,7 +5110,7 @@ export function Pattern() {
             <path d="m6 6 12 12"></path>
           </svg>
           <span className="sr-only">
-            Close
+            {"Close"}
           </span>
         </DialogClose>
       </DialogContent>

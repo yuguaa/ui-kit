@@ -22,14 +22,14 @@ export function Pattern() {
               </Item>
               <div className="space-y-0.5">
                 <div className="font-bold leading-none text-2xl text-foreground">
-                  320
+                  {"320"}
                 </div>
                 <div className="font-medium text-muted-foreground text-sm">
-                  Support Tickets
+                  {"Support Tickets"}
                 </div>
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                12 Open, 308 Closed
+                {"12 Open, 308 Closed"}
               </Badge>
             </FramePanel>
           </Frame>
@@ -45,14 +45,14 @@ export function Pattern() {
               </Item>
               <div className="space-y-0.5">
                 <div className="font-bold leading-none text-2xl text-foreground">
-                  98%
+                  {"98%"}
                 </div>
                 <div className="font-medium text-muted-foreground text-sm">
-                  Resolved
+                  {"Resolved"}
                 </div>
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                +2.1% this month
+                {"+2.1% this month"}
               </Badge>
             </FramePanel>
           </Frame>
@@ -70,14 +70,14 @@ export function Pattern() {
               </Item>
               <div className="space-y-0.5">
                 <div className="font-bold leading-none text-2xl text-foreground">
-                  4.8
+                  {"4.8"}
                 </div>
                 <div className="font-medium text-muted-foreground text-sm">
-                  Satisfaction Rate
+                  {"Satisfaction Rate"}
                 </div>
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                Avg. (out of 5)
+                {"Avg. (out of 5)"}
               </Badge>
             </FramePanel>
           </Frame>

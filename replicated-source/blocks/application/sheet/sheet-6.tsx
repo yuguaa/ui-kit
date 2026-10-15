@@ -32,12 +32,12 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        View customizer sheet
+        {"View customizer sheet"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
         <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-          Open view customizer
+          {"Open view customizer"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -48,7 +48,7 @@ export function Pattern() {
         <div className="border-b flex gap-2 items-center justify-between min-h-12 px-4">
           <div className="min-w-0">
             <SheetTitle className="leading-5 text-sm truncate" id="base-ui-_r_3_">
-              Customize View
+              {"Customize View"}
             </SheetTitle>
           </div>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close sheet">
@@ -59,7 +59,7 @@ export function Pattern() {
           </SheetClose>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_4_">
-          Tune how the roadmap workspace opens for this team.
+          {"Tune how the roadmap workspace opens for this team."}
         </SheetDescription>
       </SheetHeader>
       <div className="flex-1 min-h-0">
@@ -71,10 +71,10 @@ export function Pattern() {
                   <Field className="border-b last:border-b-0 py-3" role="group" data-orientation="horizontal">
                     <FieldContent className="gap-0.5 min-w-0">
                       <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate" htmlFor="view-customizer-auto-save" id="view-customizer-auto-save-label">
-                        Auto Save
+                        {"Auto Save"}
                       </FieldLabel>
                       <FieldDescription className="text-muted-foreground text-xs truncate">
-                        Save view changes automatically.
+                        {"Save view changes automatically."}
                       </FieldDescription>
                     </FieldContent>
                     <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="sm" aria-labelledby="view-customizer-auto-save-label">
@@ -85,10 +85,10 @@ export function Pattern() {
                   <Field className="border-b last:border-b-0 py-3" role="group" data-orientation="horizontal">
                     <FieldContent className="gap-0.5 min-w-0">
                       <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate" htmlFor="view-customizer-smart-filters" id="view-customizer-smart-filters-label">
-                        Smart Filters
+                        {"Smart Filters"}
                       </FieldLabel>
                       <FieldDescription className="text-muted-foreground text-xs truncate">
-                        Surface useful filter suggestions.
+                        {"Surface useful filter suggestions."}
                       </FieldDescription>
                     </FieldContent>
                     <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="sm" aria-labelledby="view-customizer-smart-filters-label">
@@ -99,10 +99,10 @@ export function Pattern() {
                   <Field className="border-b last:border-b-0 py-3" role="group" data-orientation="horizontal">
                     <FieldContent className="gap-0.5 min-w-0">
                       <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate" htmlFor="view-customizer-group-totals" id="view-customizer-group-totals-label">
-                        Group Totals
+                        {"Group Totals"}
                       </FieldLabel>
                       <FieldDescription className="text-muted-foreground text-xs truncate">
-                        Show counts inside grouped sections.
+                        {"Show counts inside grouped sections."}
                       </FieldDescription>
                     </FieldContent>
                     <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" size="sm" aria-labelledby="view-customizer-group-totals-label">
@@ -113,10 +113,10 @@ export function Pattern() {
                   <Field className="border-b last:border-b-0 py-3" role="group" data-orientation="horizontal">
                     <FieldContent className="gap-0.5 min-w-0">
                       <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate" htmlFor="view-customizer-pinned-columns" id="view-customizer-pinned-columns-label">
-                        Pinned Columns
+                        {"Pinned Columns"}
                       </FieldLabel>
                       <FieldDescription className="text-muted-foreground text-xs truncate">
-                        Keep priority columns visible while scrolling.
+                        {"Keep priority columns visible while scrolling."}
                       </FieldDescription>
                     </FieldContent>
                     <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_f_" aria-checked="true" size="sm" aria-labelledby="view-customizer-pinned-columns-label">
@@ -128,7 +128,7 @@ export function Pattern() {
                     <FieldContent className="gap-0.5">
                       <div className="flex gap-1.5 items-center min-w-0">
                         <FieldLabel className="cn-label font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate">
-                          Layout Mode
+                          {"Layout Mode"}
                         </FieldLabel>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center rounded-sm shrink-0 size-4 text-muted-foreground transition-colors" type="button" aria-label="Layout Mode hint" id="base-ui-_r_j_" baseUiTooltipTrigger="">
@@ -141,7 +141,7 @@ export function Pattern() {
                         </Tooltip>
                       </div>
                       <FieldDescription className="text-muted-foreground text-xs">
-                        Choose how the review workspace is framed.
+                        {"Choose how the review workspace is framed."}
                       </FieldDescription>
                     </FieldContent>
                     <RadioGroup className="gap-3 grid grid-cols-2 pt-1" role="radiogroup" aria-label="Layout Mode">
@@ -154,7 +154,7 @@ export function Pattern() {
                         <input id="sheet-6-layout-command-deck" tabIndex="-1" aria-hidden="true" type="radio" value="command-deck" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldLabel className="cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed select-none w-full" htmlFor="sheet-6-layout-command-deck" id="sheet-6-layout-command-deck-label">
                           <span className="sr-only">
-                            Select Command Deck layout
+                            {"Select Command Deck layout"}
                           </span>
                           <span className="aspect-[1.6] bg-muted/40 block border overflow-hidden p-4 rounded-md">
                             <span className="block h-full w-full">
@@ -185,9 +185,9 @@ export function Pattern() {
                         </FieldLabel>
                         <div className="flex items-center justify-center min-w-0 pb-0.5 px-1">
                           <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate w-auto" htmlFor="sheet-6-layout-command-deck">
-                            Command Deck
+                            {"Command Deck"}
                             <span className="sr-only">
-                              , Wide action rail with status strips.
+                              {", Wide action rail with status strips."}
                             </span>
                           </FieldLabel>
                         </div>
@@ -197,7 +197,7 @@ export function Pattern() {
                         <input id="sheet-6-layout-insight-rail" tabIndex="-1" aria-hidden="true" type="radio" value="insight-rail" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldLabel className="cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed select-none w-full" htmlFor="sheet-6-layout-insight-rail" id="sheet-6-layout-insight-rail-label">
                           <span className="sr-only">
-                            Select Insight Rail layout
+                            {"Select Insight Rail layout"}
                           </span>
                           <span className="aspect-[1.6] bg-muted/40 block border overflow-hidden p-4 rounded-md">
                             <span className="block h-full w-full">
@@ -222,9 +222,9 @@ export function Pattern() {
                         </FieldLabel>
                         <div className="flex items-center justify-center min-w-0 pb-0.5 px-1">
                           <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm truncate w-auto" htmlFor="sheet-6-layout-insight-rail">
-                            Insight Rail
+                            {"Insight Rail"}
                             <span className="sr-only">
-                              , Slim page with context pinned right.
+                              {", Slim page with context pinned right."}
                             </span>
                           </FieldLabel>
                         </div>
@@ -239,10 +239,10 @@ export function Pattern() {
       </div>
       <SheetFooter className="bg-muted border-t gap-3 grid grid-cols-2 min-w-0 px-5 py-4 shrink-0">
         <Button className="w-full" type="button" tabIndex="0">
-          Reset
+          {"Reset"}
         </Button>
         <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0">
-          Save
+          {"Save"}
         </SheetClose>
       </SheetFooter>
     </SheetContent>

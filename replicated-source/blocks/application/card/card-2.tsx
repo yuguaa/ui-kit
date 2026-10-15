@@ -182,10 +182,10 @@ export function Pattern() {
                 </svg>
               </IconTile>
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Performance
+                {"Performance"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Optimize speed and efficiency
+                {"Optimize speed and efficiency"}
               </p>
             </div>
           </FramePanel>
@@ -364,10 +364,10 @@ export function Pattern() {
                 </svg>
               </IconTile>
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Design System
+                {"Design System"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Build with consistent UI blocks
+                {"Build with consistent UI blocks"}
               </p>
             </div>
           </FramePanel>
@@ -544,10 +544,10 @@ export function Pattern() {
                 </svg>
               </IconTile>
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                User Secutiry
+                {"User Secutiry"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Simplify user and roles setup
+                {"Simplify user and roles setup"}
               </p>
             </div>
           </FramePanel>
@@ -725,10 +725,10 @@ export function Pattern() {
                 </svg>
               </IconTile>
               <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                Documentation
+                {"Documentation"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Guides and best practices
+                {"Guides and best practices"}
               </p>
             </div>
           </FramePanel>

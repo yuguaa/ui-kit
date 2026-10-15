@@ -47,7 +47,7 @@ export function Pattern() {
   return (
     <main className="flex flex-col lg:p-10 max-w-6xl min-h-svh mx-auto p-6 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Metric detail
+        {"Metric detail"}
       </h1>
       <div className="flex flex-col gap-6 w-full">
         <div className="border-b flex flex-col gap-4 pb-5">
@@ -61,7 +61,7 @@ export function Pattern() {
                     <path d="M13 17V5"></path>
                     <path d="M8 17v-3"></path>
                   </svg>
-                  Metrics
+                  {"Metrics"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -71,7 +71,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Activation rate
+                  {"Activation rate"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -80,13 +80,13 @@ export function Pattern() {
             <div className="flex flex-col gap-2.5 min-w-0">
               <div className="flex flex-wrap gap-2.5 items-center">
                 <h1 className="font-semibold text-2xl text-foreground tracking-tight">
-                  Activation rate
+                  {"Activation rate"}
                 </h1>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  On track
+                  {"On track"}
                 </Badge>
                 <span className="font-mono text-muted-foreground text-xs">
-                  MET-609
+                  {"MET-609"}
                 </span>
               </div>
               <div className="flex flex-wrap gap-x-3 gap-y-1.5 items-center">
@@ -102,20 +102,20 @@ export function Pattern() {
                   </Avatar>
                   <Avatar className="size-6" size="default">
                     <AvatarFallback className="text-[10px]">
-                      IV
+                      {"IV"}
                     </AvatarFallback>
                   </Avatar>
                 </AvatarGroup>
                 <p className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
                   <span>
-                    Owned by
+                    {"Owned by"}
                     <span className="font-medium text-foreground">
-                      Mira Stone
+                      {"Mira Stone"}
                     </span>
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Last 28 days
+                    {"Last 28 days"}
                   </span>
                 </p>
               </div>
@@ -124,11 +124,11 @@ export function Pattern() {
               <Select>
               <SelectTrigger className="w-[9.5rem]" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                 <SelectValue>
-                  Last 12 weeks
+                  {"Last 12 weeks"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -139,7 +139,7 @@ export function Pattern() {
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
                 <span className="hidden md:block">
-                  Watching
+                  {"Watching"}
                 </span>
               </Button>
               <Button type="button" tabIndex="0" aria-label="Refresh metric">
@@ -166,26 +166,26 @@ export function Pattern() {
           <Frame>
             <FramePanel className="flex flex-col gap-4">
               <h3 className="font-medium text-muted-foreground text-sm">
-                Activation rate
+                {"Activation rate"}
               </h3>
               <div className="space-y-2.5">
                 <div className="flex flex-wrap gap-2.5 items-center">
                   <span className="font-medium tabular-nums text-2xl text-foreground tracking-tight">
-                    62.4%
+                    {"62.4%"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                       <path d="m5 12 7-7 7 7"></path>
                       <path d="M12 19V5"></path>
                     </svg>
-                    3.1 pts
+                    {"3.1 pts"}
                   </Badge>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="text-muted-foreground text-xs">
-                  vs
+                  {"vs"}
                   <span className="font-medium text-foreground">
-                    59.3% prior 28 days
+                    {"59.3% prior 28 days"}
                   </span>
                 </div>
               </div>
@@ -194,26 +194,26 @@ export function Pattern() {
           <Frame>
             <FramePanel className="flex flex-col gap-4">
               <h3 className="font-medium text-muted-foreground text-sm">
-                Activated workspaces
+                {"Activated workspaces"}
               </h3>
               <div className="space-y-2.5">
                 <div className="flex flex-wrap gap-2.5 items-center">
                   <span className="font-medium tabular-nums text-2xl text-foreground tracking-tight">
-                    801
+                    {"801"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                       <path d="m5 12 7-7 7 7"></path>
                       <path d="M12 19V5"></path>
                     </svg>
-                    128
+                    {"128"}
                   </Badge>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="text-muted-foreground text-xs">
-                  vs
+                  {"vs"}
                   <span className="font-medium text-foreground">
-                    673 prior 28 days
+                    {"673 prior 28 days"}
                   </span>
                 </div>
               </div>
@@ -222,26 +222,26 @@ export function Pattern() {
           <Frame>
             <FramePanel className="flex flex-col gap-4">
               <h3 className="font-medium text-muted-foreground text-sm">
-                New workspaces
+                {"New workspaces"}
               </h3>
               <div className="space-y-2.5">
                 <div className="flex flex-wrap gap-2.5 items-center">
                   <span className="font-medium tabular-nums text-2xl text-foreground tracking-tight">
-                    1,284
+                    {"1,284"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                       <path d="m5 12 7-7 7 7"></path>
                       <path d="M12 19V5"></path>
                     </svg>
-                    9.2%
+                    {"9.2%"}
                   </Badge>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="text-muted-foreground text-xs">
-                  vs
+                  {"vs"}
                   <span className="font-medium text-foreground">
-                    1,176 prior 28 days
+                    {"1,176 prior 28 days"}
                   </span>
                 </div>
               </div>
@@ -250,26 +250,26 @@ export function Pattern() {
           <Frame>
             <FramePanel className="flex flex-col gap-4">
               <h3 className="font-medium text-muted-foreground text-sm">
-                Time to first value
+                {"Time to first value"}
               </h3>
               <div className="space-y-2.5">
                 <div className="flex flex-wrap gap-2.5 items-center">
                   <span className="font-medium tabular-nums text-2xl text-foreground tracking-tight">
-                    3.8 d
+                    {"3.8 d"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                       <path d="M12 5v14"></path>
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
-                    0.6 d
+                    {"0.6 d"}
                   </Badge>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="text-muted-foreground text-xs">
-                  vs
+                  {"vs"}
                   <span className="font-medium text-foreground">
-                    4.4 d prior 28 days
+                    {"4.4 d prior 28 days"}
                   </span>
                 </div>
               </div>
@@ -280,34 +280,26 @@ export function Pattern() {
           <header className="flex flex-row gap-3 items-start justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="flex flex-col gap-1">
               <div className="font-semibold text-sm">
-                Activation Rate Trend
+                {"Activation Rate Trend"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Weekly rate tracked against target
+                {"Weekly rate tracked against target"}
               </div>
             </div>
             <div className="flex gap-3 items-center pt-0.5 shrink-0">
               <span className="flex gap-1.5 items-center">
                 <span className="rounded-full size-2" aria-hidden="true" style={{backgroundColor: "var(--color-teal-500)"}}></span>
                 <span className="text-muted-foreground text-xs">
-                  Activation rate
+                  {"Activation rate"}
                 </span>
               </span>
             </div>
           </header>
           <FramePanel className="flex flex-col">
             <div className="mt-auto">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-[300px] justify-center text-xs w-full" data-chart="chart-_r_8_">
-                <style>{`
- [data-chart=chart-_r_8_] {
-  --color-rate: var(--color-teal-500);
-}
-
-
-.dark [data-chart=chart-_r_8_] {
-  --color-rate: var(--color-teal-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_8_] {\n  --color-rate: var(--color-teal-500);\n}\n\n\n.dark [data-chart=chart-_r_8_] {\n  --color-rate: var(--color-teal-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="1030" height="300" style={{position: "relative", cursor: "default", width: "1030px", height: "300px"}}>
@@ -410,84 +402,84 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="36.00000000000006" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="36.00000000000006" dy="0.71em">
-                                  Mar 24
+                                  {"Mar 24"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="125.27272727272732" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="125.27272727272732" dy="0.71em">
-                                  Mar 31
+                                  {"Mar 31"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="214.5454545454546" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="214.5454545454546" dy="0.71em">
-                                  Apr 7
+                                  {"Apr 7"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="303.81818181818187" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="303.81818181818187" dy="0.71em">
-                                  Apr 14
+                                  {"Apr 14"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="393.0909090909091" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="393.0909090909091" dy="0.71em">
-                                  Apr 21
+                                  {"Apr 21"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="482.3636363636364" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="482.3636363636364" dy="0.71em">
-                                  Apr 28
+                                  {"Apr 28"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="571.6363636363637" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="571.6363636363637" dy="0.71em">
-                                  May 5
+                                  {"May 5"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="660.909090909091" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="660.909090909091" dy="0.71em">
-                                  May 12
+                                  {"May 12"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="750.1818181818182" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="750.1818181818182" dy="0.71em">
-                                  May 19
+                                  {"May 19"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="839.4545454545455" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="839.4545454545455" dy="0.71em">
-                                  May 26
+                                  {"May 26"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="928.7272727272727" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="928.7272727272727" dy="0.71em">
-                                  Jun 2
+                                  {"Jun 2"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="982" stroke="none" fontSize="11" x="1015.3984375" y="283" textAnchor="middle" fill="#666">
                                 <tspan x="1015.3984375" dy="0.71em">
-                                  Jun 9
+                                  {"Jun 9"}
                                 </tspan>
                               </text>
                             </g>
@@ -496,35 +488,35 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="255" stroke="none" fontSize="11" x="22" y="265" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  40%
+                                  {"40%"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="255" stroke="none" fontSize="11" x="22" y="201.25" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  50%
+                                  {"50%"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="255" stroke="none" fontSize="11" x="22" y="137.5" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  60%
+                                  {"60%"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="255" stroke="none" fontSize="11" x="22" y="73.75" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  70%
+                                  {"70%"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="255" stroke="none" fontSize="11" x="22" y="10" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  80%
+                                  {"80%"}
                                 </tspan>
                               </text>
                             </g>
@@ -535,6 +527,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
           <footer className="flex flex-row flex-wrap gap-(--frame-panel-footer-gap) gap-x-2.5 gap-y-1.5 items-center px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
@@ -545,25 +538,25 @@ export function Pattern() {
               </svg>
             </span>
             <span className="font-medium text-foreground text-sm">
-              Activation drop
+              {"Activation drop"}
             </span>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-              Armed
+              {"Armed"}
             </Badge>
             <span className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
               <span>
-                Fires below 55%
+                {"Fires below 55%"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                2 day window
+                {"2 day window"}
               </span>
             </span>
             <span className="flex gap-1.5 items-center ms-auto text-muted-foreground text-xs">
               <Avatar className="size-5" size="default">
                 <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
               </Avatar>
-              Sana Qureshi
+              {"Sana Qureshi"}
             </span>
           </footer>
         </Frame>
@@ -571,10 +564,10 @@ export function Pattern() {
           <Frame className="h-full">
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="font-semibold text-sm">
-                Cohort Breakdown
+                {"Cohort Breakdown"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Share activated in their first 28 days
+                {"Share activated in their first 28 days"}
               </div>
             </header>
             <FramePanel className="flex flex-col gap-5">
@@ -582,18 +575,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      Sales assisted accounts
+                      {"Sales assisted accounts"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-075
+                      {"COH-075"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      168 of 210
+                      {"168 of 210"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      80%
+                      {"80%"}
                     </span>
                   </div>
                 </div>
@@ -604,7 +597,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "80%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -613,18 +606,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      Invite driven teams
+                      {"Invite driven teams"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-071
+                      {"COH-071"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      312 of 440
+                      {"312 of 440"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      71%
+                      {"71%"}
                     </span>
                   </div>
                 </div>
@@ -635,7 +628,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "71%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -644,18 +637,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      Self serve signups
+                      {"Self serve signups"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-076
+                      {"COH-076"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      402 of 620
+                      {"402 of 620"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      65%
+                      {"65%"}
                     </span>
                   </div>
                 </div>
@@ -666,7 +659,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "65%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -675,18 +668,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      May activation cohort
+                      {"May activation cohort"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-072
+                      {"COH-072"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      288 of 450
+                      {"288 of 450"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      64%
+                      {"64%"}
                     </span>
                   </div>
                 </div>
@@ -697,7 +690,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "64%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -706,18 +699,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      Q3 onboarding accounts
+                      {"Q3 onboarding accounts"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-073
+                      {"COH-073"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      174 of 300
+                      {"174 of 300"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      58%
+                      {"58%"}
                     </span>
                   </div>
                 </div>
@@ -728,7 +721,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -737,18 +730,18 @@ export function Pattern() {
                 <div className="flex gap-3 items-center justify-between">
                   <span className="flex gap-1.5 items-baseline min-w-0">
                     <span className="font-medium text-foreground text-sm truncate">
-                      Dormant admins
+                      {"Dormant admins"}
                     </span>
                     <span className="font-mono shrink-0 text-[11px] text-muted-foreground">
-                      COH-074
+                      {"COH-074"}
                     </span>
                   </span>
                   <div className="flex gap-2.5 items-center shrink-0 text-xs">
                     <span className="tabular-nums text-muted-foreground">
-                      47 of 188
+                      {"47 of 188"}
                     </span>
                     <span className="font-medium tabular-nums text-foreground text-right w-9">
-                      25%
+                      {"25%"}
                     </span>
                   </div>
                 </div>
@@ -759,7 +752,7 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "25%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
@@ -769,10 +762,10 @@ export function Pattern() {
           <Frame className="h-full">
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="font-semibold text-sm">
-                Recent Changes
+                {"Recent Changes"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Edits to this metric over the last weeks
+                {"Edits to this metric over the last weeks"}
               </div>
             </header>
             <FramePanel>
@@ -789,23 +782,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Target raised to 70%
+                        {"Target raised to 70%"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      2 days ago
+                      {"2 days ago"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Leo Grant lifted the goal from 65% after the Q3 onboarding push.
+                      {"Leo Grant lifted the goal from 65% after the Q3 onboarding push."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Leo Grant
+                        {"Leo Grant"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -821,23 +814,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Alert threshold set to 55%
+                        {"Alert threshold set to 55%"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 9
+                      {"Jun 9"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Sana Qureshi widened the activation drop guard to a 2 day window.
+                      {"Sana Qureshi widened the activation drop guard to a 2 day window."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Sana Qureshi
+                        {"Sana Qureshi"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -853,23 +846,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Definition updated
+                        {"Definition updated"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 2
+                      {"Jun 2"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      template_applied (EVT-1842) replaced first_report_viewed as the activation event.
+                      {"template_applied (EVT-1842) replaced first_report_viewed as the activation event."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Mira Stone
+                        {"Mira Stone"}
                       </span>
                     </div>
                   </TimelineContent>

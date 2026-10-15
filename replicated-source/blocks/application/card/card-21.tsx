@@ -31,19 +31,19 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2.5">
               <a className="block font-semibold hover:text-primary leading-tight text-foreground text-sm" href="#">
-                Mobile Banking App Upgrade
+                {"Mobile Banking App Upgrade"}
               </a>
               <div className="flex gap-1.5 items-center">
                 <span className="font-medium leading-relaxed text-foreground text-xs">
-                  FivonaTech
+                  {"FivonaTech"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                 <div className="flex gap-0.5">
                   <span className="leading-relaxed text-muted-foreground text-xs">
-                    Due:
+                    {"Due:"}
                   </span>
                   <span className="font-medium leading-relaxed text-foreground text-xs">
-                    1d 18h
+                    {"1d 18h"}
                   </span>
                 </div>
               </div>
@@ -70,19 +70,19 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2.5">
               <a className="block font-semibold hover:text-primary leading-tight text-foreground text-sm" href="#">
-                Crypto Portfolio Dashboard
+                {"Crypto Portfolio Dashboard"}
               </a>
               <div className="flex gap-1.5 items-center">
                 <span className="font-medium leading-relaxed text-foreground text-xs">
-                  BlockEdge
+                  {"BlockEdge"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                 <div className="flex gap-0.5">
                   <span className="leading-relaxed text-muted-foreground text-xs">
-                    Due:
+                    {"Due:"}
                   </span>
                   <span className="font-medium leading-relaxed text-foreground text-xs">
-                    2d 20h
+                    {"2d 20h"}
                   </span>
                 </div>
               </div>
@@ -107,19 +107,19 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2.5">
               <a className="block font-semibold hover:text-primary leading-tight text-foreground text-sm" href="#">
-                AI-Powered Analytics Module
+                {"AI-Powered Analytics Module"}
               </a>
               <div className="flex gap-1.5 items-center">
                 <span className="font-medium leading-relaxed text-foreground text-xs">
-                  DataNexus
+                  {"DataNexus"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                 <div className="flex gap-0.5">
                   <span className="leading-relaxed text-muted-foreground text-xs">
-                    Due:
+                    {"Due:"}
                   </span>
                   <span className="font-medium leading-relaxed text-foreground text-xs">
-                    3d 6h
+                    {"3d 6h"}
                   </span>
                 </div>
               </div>

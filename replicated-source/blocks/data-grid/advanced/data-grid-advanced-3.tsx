@@ -61,21 +61,21 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-4 pt-8 sm:p-8 sm:pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Campaign targets
+        {"Campaign targets"}
       </h1>
       <Frame className="[--beat-end-px:var(--grid-cell-px)] [--grid-cell-px:--spacing(3)] w-full" spacing="default">
         <header className="flex flex-row gap-3 items-center justify-between max-sm:flex-col max-sm:items-start px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Campaign Targets
+              {"Campaign Targets"}
             </div>
             <div className="flex flex-wrap gap-x-1.5 items-center text-muted-foreground text-xs">
               <span className="tabular-nums">
-                30 campaigns
+                {"30 campaigns"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="tabular-nums">
-                13 beating both targets
+                {"13 beating both targets"}
               </span>
             </div>
           </div>
@@ -87,7 +87,7 @@ export function Pattern() {
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
               <span className="max-sm:sr-only">
-                Export
+                {"Export"}
               </span>
             </Button>
             <Button type="button" tabIndex="0">
@@ -95,7 +95,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New Campaign
+              {"New Campaign"}
             </Button>
           </div>
         </header>
@@ -105,27 +105,27 @@ export function Pattern() {
               <Tabs className="@max-3xl/view-tabs:-mx-(--frame-panel-header-px) @max-3xl/view-tabs:border-b @max-3xl/view-tabs:px-(--frame-panel-header-px) min-w-0" data-orientation="horizontal" activationDirection="none">
                 <TabsList className="-mb-px gap-5 h-11! justify-start max-w-full no-scrollbar overflow-x-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Funnel stage">
                   <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
-                    All
+                    {"All"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                      30
+                      {"30"}
                     </Badge>
                   </TabsTrigger>
                   <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                    Prospecting
+                    {"Prospecting"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                      16
+                      {"16"}
                     </Badge>
                   </TabsTrigger>
                   <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                    Retargeting
+                    {"Retargeting"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                      9
+                      {"9"}
                     </Badge>
                   </TabsTrigger>
                   <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                    Retention
+                    {"Retention"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                      5
+                      {"5"}
                     </Badge>
                   </TabsTrigger>
                 </TabsList>
@@ -134,23 +134,23 @@ export function Pattern() {
                 <ToggleGroup className="@max-lg/view-tabs:w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Filter by target verdict" style={{"--gap": "0"}}>
                   <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                    Beating
+                    {"Beating"}
                     <span className="tabular-nums text-muted-foreground">
-                      13
+                      {"13"}
                     </span>
                   </ToggleGroupItem>
                   <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                    At risk
+                    {"At risk"}
                     <span className="tabular-nums text-muted-foreground">
-                      3
+                      {"3"}
                     </span>
                   </ToggleGroupItem>
                   <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                    Missing
+                    {"Missing"}
                     <span className="tabular-nums text-muted-foreground">
-                      6
+                      {"6"}
                     </span>
                   </ToggleGroupItem>
                 </ToggleGroup>
@@ -173,7 +173,7 @@ export function Pattern() {
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Filters
+                  {"Filters"}
                 </span>
               </Toggle>
               <CascaderTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 style-luma:[&_svg:not([class*='size-'])]:size-4 style-lyra:[&_svg:not([class*='size-'])]:size-4 style-maia:[&_svg:not([class*='size-'])]:size-4 style-mira:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-4 style-rhea:[&_svg:not([class*='size-'])]:size-4 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-vega:[&_svg:not([class*='size-'])]:size-4 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_b_" role="combobox" aria-expanded="false" aria-haspopup="dialog" aria-label="Columns, 8 shown">
@@ -183,10 +183,10 @@ export function Pattern() {
                   <path d="M15 3v18"></path>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Columns
+                  {"Columns"}
                 </span>
                 <span className="tabular-nums text-muted-foreground">
-                  8
+                  {"8"}
                 </span>
               </CascaderTrigger>
               <input id="base-ui-_r_b_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
@@ -199,7 +199,7 @@ export function Pattern() {
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Settings
+                  {"Settings"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -208,10 +208,13 @@ export function Pattern() {
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <DataGrid>
             <div className="relative">
+              <DataGridProvider>
               <DataGridScrollArea className="supports-[animation-timeline:scroll()]:[&_[data-slot=scroll-area-viewport]]:scroll-fade-x" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                 <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_h_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                   <div role="presentation" style={{minWidth: "fit-content"}}>
+                    <DataGridProvider>
                     <DataGridTableViewport style={{width: "calc(1214px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                      <DataGridProvider>
                       <DataGridTable style={{"--header-1_channel_channel-size": "124", "--col-channel-size": "124", "--header-1_select_select-size": "41", "--col-select-size": "41", "--header-1_campaign_campaign-size": "277", "--col-campaign-size": "277", "--header-1_roasGroup_roasTarget-size": "358", "--col-roasGroup-size": "150", "--header-1_cpaGroup_cpaTarget-size": "358", "--col-cpaGroup-size": "150", "--header-1_actions_actions-size": "56", "--col-actions-size": "56", "--header-channel-size": "124", "--header-select-size": "41", "--header-campaign-size": "277", "--header-roasTarget-size": "68", "--col-roasTarget-size": "68", "--header-roas-size": "84", "--col-roas-size": "84", "--header-roasDelta-size": "103", "--col-roasDelta-size": "103", "--header-roasBeat-size": "103", "--col-roasBeat-size": "103", "--header-cpaTarget-size": "68", "--col-cpaTarget-size": "68", "--header-cpa-size": "84", "--col-cpa-size": "84", "--header-cpaDelta-size": "103", "--col-cpaDelta-size": "103", "--header-cpaBeat-size": "103", "--col-cpaBeat-size": "103", "--header-actions-size": "56", "--header-center_1_channel_channel-size": "124", "--header-center_1_select_select-size": "41", "--header-center_1_campaign_campaign-size": "277", "--header-center_1_roasGroup_roasTarget-size": "358", "--header-center_1_cpaGroup_cpaTarget-size": "358", "--header-center_1_actions_actions-size": "56", width: "calc(1214px + var(--data-grid-fill-size, 0px))"}}>
                         <colgroup>
                           <col style={{width: "calc(var(--col-channel-size) * 1px)"}} />
@@ -237,7 +240,7 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-ms-2 flex h-full items-center">
                                         <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                          Channel
+                                          {"Channel"}
                                           <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                             <path d="m7 15 5 5 5-5"></path>
                                             <path d="m7 9 5-5 5 5"></path>
@@ -251,12 +254,12 @@ export function Pattern() {
                                         <SelectTrigger className="-mx-2 bg-transparent border-transparent dark:bg-transparent flex-1 focus-visible:border-ring h-7 hover:border-input min-w-0 px-2 shadow-none w-full" type="button" tabIndex="0" id="base-ui-_r_i_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter by channel">
                                           <SelectValue>
                                             <span className="text-muted-foreground truncate">
-                                              Any
+                                              {"Any"}
                                             </span>
                                           </SelectValue>
                                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                             <path d="m6 9 6 6 6-6"></path>
-                                            ▼
+                                            {"▼"}
                                           </svg>
                                         </SelectTrigger>
                                         </Select>
@@ -300,7 +303,7 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-ms-2 flex h-full items-center">
                                         <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                          Campaign
+                                          {"Campaign"}
                                           <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                             <path d="m7 15 5 5 5-5"></path>
                                             <path d="m7 9 5-5 5 5"></path>
@@ -329,22 +332,22 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle border-b border-e font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" colSpan="4" data-col-id="roasGroup" data-header-id="center_1_roasGroup_roasTarget" data-header-depth="0" data-group="true" style={{width: "calc(var(--header-center_1_roasGroup_roasTarget-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center justify-center min-w-0">
                                 <span className="font-medium text-foreground text-sm">
-                                  ROAS
+                                  {"ROAS"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="font-normal text-muted-foreground text-xs truncate">
-                                  Higher is better
+                                  {"Higher is better"}
                                 </span>
                               </div>
                             </th>
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle border-b border-e font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" colSpan="4" data-col-id="cpaGroup" data-header-id="center_1_cpaGroup_cpaTarget" data-header-depth="0" data-group="true" style={{width: "calc(var(--header-center_1_cpaGroup_cpaTarget-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center justify-center min-w-0">
                                 <span className="font-medium text-foreground text-sm">
-                                  CPA
+                                  {"CPA"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="font-normal text-muted-foreground text-xs truncate">
-                                  Lower is better
+                                  {"Lower is better"}
                                 </span>
                               </div>
                             </th>
@@ -354,7 +357,7 @@ export function Pattern() {
                                   <div className="flex flex-col">
                                     <div className="flex h-10 items-center">
                                       <span className="sr-only">
-                                        Actions
+                                        {"Actions"}
                                       </span>
                                     </div>
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
@@ -375,7 +378,7 @@ export function Pattern() {
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            Target
+                                            {"Target"}
                                           </Button>
                                         </div>
                                       </div>
@@ -396,7 +399,7 @@ export function Pattern() {
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            Actual
+                                            {"Actual"}
                                             <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -410,7 +413,7 @@ export function Pattern() {
                                         <Popover>
                                         <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter ROAS, any value" baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                            Any
+                                            {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
                                             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
@@ -434,7 +437,7 @@ export function Pattern() {
                                       <div className="flex flex-1 justify-center min-w-0 ps-2">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            vs Target
+                                            {"vs Target"}
                                             <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                               <path d="M12 5v14"></path>
                                               <path d="m19 12-7 7-7-7"></path>
@@ -448,7 +451,7 @@ export function Pattern() {
                                         <Popover>
                                         <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter ROAS vs target, any value" baseUiClickTrigger="" id="base-ui-_r_10_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                            Any
+                                            {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
                                             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
@@ -472,7 +475,7 @@ export function Pattern() {
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            Target
+                                            {"Target"}
                                           </Button>
                                         </div>
                                       </div>
@@ -493,7 +496,7 @@ export function Pattern() {
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            Actual
+                                            {"Actual"}
                                             <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -507,7 +510,7 @@ export function Pattern() {
                                         <Popover>
                                         <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter CPA, any value" baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                            Any
+                                            {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
                                             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
@@ -531,7 +534,7 @@ export function Pattern() {
                                       <div className="flex flex-1 justify-center min-w-0 ps-2">
                                         <div className="-ms-2 flex h-full items-center">
                                           <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                            vs Target
+                                            {"vs Target"}
                                             <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -545,7 +548,7 @@ export function Pattern() {
                                         <Popover>
                                         <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter CPA vs target, any value" baseUiClickTrigger="" id="base-ui-_r_16_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
-                                            Any
+                                            {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
                                             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
@@ -563,6 +566,7 @@ export function Pattern() {
                             </th>
                           </tr>
                         </thead>
+                        <DataGridProvider>
                         <DataGridTableBody>
                           <tr className="*:last:border-e-0 [&:not(:last-child)>td]:border-b [&>td]:h-(--row-pitch) [--row-pitch:--spacing(11)] data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_h2c6w">
                             <td className="align-middle border-e first:ps-(--frame-panel-header-px) has-[[data-group-continues]]:border-b-0! last:pe-(--frame-panel-header-px) px-3 py-2 relative truncate" style={{width: "calc(var(--col-channel-size) * 1px)"}}>
@@ -576,7 +580,7 @@ export function Pattern() {
                                       </svg>
                                     </IconTile>
                                     <span className="truncate">
-                                      Search
+                                      {"Search"}
                                     </span>
                                   </span>
                                 </span>
@@ -589,18 +593,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Coastline Shell Generic
+                                  {"Coastline Shell Generic"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                3.6×
+                                {"3.6×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-200 dark:bg-emerald-800/60 dark:text-white flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                4.45×
+                                {"4.45×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -612,26 +616,26 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +24%
+                                    {"+24%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 24% above target, better than target
+                                  {"ROAS 24% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $46
+                                {"$46"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-100 dark:bg-emerald-900/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $37.32
+                                {"$37.32"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -643,15 +647,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −19%
+                                    {"−19%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 19% below target, better than target
+                                  {"CPA 19% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -675,7 +679,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "1", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Search
+                                  {"Search"}
                                 </span>
                               </div>
                             </td>
@@ -686,18 +690,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Ridge Boots Brand Exact
+                                  {"Ridge Boots Brand Exact"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                6.0×
+                                {"6.0×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-100 dark:bg-emerald-900/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                7.12×
+                                {"7.12×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -709,26 +713,26 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +19%
+                                    {"+19%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 19% above target, better than target
+                                  {"ROAS 19% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $24
+                                {"$24"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-100 dark:bg-emerald-900/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $21.13
+                                {"$21.13"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -740,15 +744,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −12%
+                                    {"−12%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 12% below target, better than target
+                                  {"CPA 12% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -772,7 +776,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "2", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Search
+                                  {"Search"}
                                 </span>
                               </div>
                             </td>
@@ -783,18 +787,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Trailhead Jacket Phrase
+                                  {"Trailhead Jacket Phrase"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                5.2×
+                                {"5.2×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                5.68×
+                                {"5.68×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -806,26 +810,26 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +9%
+                                    {"+9%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 9% above target, better than target
+                                  {"ROAS 9% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $30
+                                {"$30"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $27.93
+                                {"$27.93"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -837,15 +841,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −7%
+                                    {"−7%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 7% below target, better than target
+                                  {"CPA 7% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -869,7 +873,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "3", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Search
+                                  {"Search"}
                                 </span>
                               </div>
                             </td>
@@ -880,18 +884,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Basecamp Tent Evergreen
+                                  {"Basecamp Tent Evergreen"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                4.2×
+                                {"4.2×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                4.47×
+                                {"4.47×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -903,26 +907,26 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +6%
+                                    {"+6%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 6% above target, better than target
+                                  {"ROAS 6% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $58
+                                {"$58"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $55.81
+                                {"$55.81"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -934,15 +938,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −4%
+                                    {"−4%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 4% below target, better than target
+                                  {"CPA 4% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -966,7 +970,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "4", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Search
+                                  {"Search"}
                                 </span>
                               </div>
                             </td>
@@ -977,49 +981,49 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Summit Pack Launch
+                                  {"Summit Pack Launch"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                3.8×
+                                {"3.8×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-red-100 dark:bg-red-900/50 dark:text-red-100 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-red-900">
-                                3.28×
+                                {"3.28×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}>
                               <span className="flex items-center min-w-0 relative">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-destructive text-start text-xs whitespace-nowrap">
-                                    −14%
+                                    {"−14%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(66.00%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 14% below target, worse than target
+                                  {"ROAS 14% below target, worse than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e pe-(--beat-end-px) px-3 py-2 truncate" style={{width: "calc(var(--col-roasBeat-size) * 1px)"}}></td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $42
+                                {"$42"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $39.88
+                                {"$39.88"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -1031,15 +1035,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −5%
+                                    {"−5%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 5% below target, better than target
+                                  {"CPA 5% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -1063,7 +1067,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "5", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Search
+                                  {"Search"}
                                 </span>
                               </div>
                             </td>
@@ -1074,7 +1078,7 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Alpine Fleece Competitor
+                                  {"Alpine Fleece Competitor"}
                                 </button>
                                 <Tooltip>
                                 <TooltipTrigger className="[&_svg]:size-3.5 flex shrink-0 text-muted-foreground" id="base-ui-_r_2j_" baseUiTooltipTrigger="">
@@ -1084,7 +1088,7 @@ export function Pattern() {
                                     <circle cx="12" cy="14" r="8"></circle>
                                   </svg>
                                   <span className="sr-only">
-                                    Learning
+                                    {"Learning"}
                                   </span>
                                 </TooltipTrigger>
                                 </Tooltip>
@@ -1092,14 +1096,14 @@ export function Pattern() {
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                3.4×
+                                {"3.4×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-muted-foreground" title="Learning, not judged against target yet">
-                                2.35×
+                                {"2.35×"}
                                 <span className="sr-only">
-                                  , Learning, not judged against target yet
+                                  {", Learning, not judged against target yet"}
                                 </span>
                               </span>
                             </td>
@@ -1107,33 +1111,33 @@ export function Pattern() {
                               <span className="flex items-center min-w-0 relative" title="Learning, not judged against target yet">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-muted-foreground text-start text-xs whitespace-nowrap">
-                                    −31%
+                                    {"−31%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:opacity-40 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(23.01%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 31% below target, still learning
+                                  {"ROAS 31% below target, still learning"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e pe-(--beat-end-px) px-3 py-2 truncate" style={{width: "calc(var(--col-roasBeat-size) * 1px)"}}></td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $44
+                                {"$44"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-muted-foreground" title="Learning, not judged against target yet">
-                                $61.18
+                                {"$61.18"}
                                 <span className="sr-only">
-                                  , Learning, not judged against target yet
+                                  {", Learning, not judged against target yet"}
                                 </span>
                               </span>
                             </td>
@@ -1141,19 +1145,19 @@ export function Pattern() {
                               <span className="flex items-center min-w-0 relative" title="Learning, not judged against target yet">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-muted-foreground text-start text-xs whitespace-nowrap">
-                                    +39%
+                                    {"+39%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:opacity-40 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(2.41%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 39% above target, still learning
+                                  {"CPA 39% above target, still learning"}
                                 </span>
                               </span>
                             </td>
@@ -1187,7 +1191,7 @@ export function Pattern() {
                                       </svg>
                                     </IconTile>
                                     <span className="truncate">
-                                      Shopping
+                                      {"Shopping"}
                                     </span>
                                   </span>
                                 </span>
@@ -1200,18 +1204,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Basecamp Tent Price Drop
+                                  {"Basecamp Tent Price Drop"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                4.6×
+                                {"4.6×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-300 dark:bg-emerald-700/70 dark:text-white flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                6.05×
+                                {"6.05×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -1223,26 +1227,26 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +32%
+                                    {"+32%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 32% above target, better than target
+                                  {"ROAS 32% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $64
+                                {"$64"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-emerald-200 dark:bg-emerald-800/60 dark:text-white flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                $50.59
+                                {"$50.59"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}></td>
@@ -1254,15 +1258,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    −21%
+                                    {"−21%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 21% below target, better than target
+                                  {"CPA 21% below target, better than target"}
                                 </span>
                               </span>
                             </td>
@@ -1286,7 +1290,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "7", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Shopping
+                                  {"Shopping"}
                                 </span>
                               </div>
                             </td>
@@ -1297,7 +1301,7 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Glacier Gloves Preview
+                                  {"Glacier Gloves Preview"}
                                 </button>
                                 <Tooltip>
                                 <TooltipTrigger className="[&_svg]:size-3.5 flex shrink-0 text-muted-foreground" id="base-ui-_r_35_" baseUiTooltipTrigger="">
@@ -1307,7 +1311,7 @@ export function Pattern() {
                                     <circle cx="12" cy="14" r="8"></circle>
                                   </svg>
                                   <span className="sr-only">
-                                    Learning
+                                    {"Learning"}
                                   </span>
                                 </TooltipTrigger>
                                 </Tooltip>
@@ -1315,14 +1319,14 @@ export function Pattern() {
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                3.2×
+                                {"3.2×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-muted-foreground" title="Learning, not judged against target yet">
-                                3.60×
+                                {"3.60×"}
                                 <span className="sr-only">
-                                  , Learning, not judged against target yet
+                                  {", Learning, not judged against target yet"}
                                 </span>
                               </span>
                             </td>
@@ -1335,28 +1339,28 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-muted-foreground text-xs whitespace-nowrap">
-                                    +13%
+                                    {"+13%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 13% above target, still learning
+                                  {"ROAS 13% above target, still learning"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $26
+                                {"$26"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-muted-foreground" title="Learning, not judged against target yet">
-                                $23.57
+                                {"$23.57"}
                                 <span className="sr-only">
-                                  , Learning, not judged against target yet
+                                  {", Learning, not judged against target yet"}
                                 </span>
                               </span>
                             </td>
@@ -1369,15 +1373,15 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-muted-foreground text-xs whitespace-nowrap">
-                                    −9%
+                                    {"−9%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 9% below target, still learning
+                                  {"CPA 9% below target, still learning"}
                                 </span>
                               </span>
                             </td>
@@ -1401,7 +1405,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body" data-group-continues="">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "8", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Shopping
+                                  {"Shopping"}
                                 </span>
                               </div>
                             </td>
@@ -1412,18 +1416,18 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Canyon Bottle Feed
+                                  {"Canyon Bottle Feed"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                4.0×
+                                {"4.0×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-emerald-50 dark:bg-emerald-950/60 dark:text-emerald-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-emerald-950">
-                                4.11×
+                                {"4.11×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}></td>
@@ -1435,45 +1439,45 @@ export function Pattern() {
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-foreground text-xs whitespace-nowrap">
-                                    +3%
+                                    {"+3%"}
                                   </span>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 3% above target, better than target
+                                  {"ROAS 3% above target, better than target"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $18
+                                {"$18"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-amber-100 dark:bg-amber-900/50 dark:text-amber-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-amber-950">
-                                $18.89
+                                {"$18.89"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}>
                               <span className="flex items-center min-w-0 relative">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-foreground text-start text-xs whitespace-nowrap">
-                                    +5%
+                                    {"+5%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(87.70%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 5% above target, a near miss
+                                  {"CPA 5% above target, a near miss"}
                                 </span>
                               </span>
                             </td>
@@ -1498,7 +1502,7 @@ export function Pattern() {
                               <div className="flex items-center min-w-0" data-group-run="body">
                                 <span className="[--band-hatch:color-mix(in_oklab,var(--border)_40%,transparent)] [background-image:repeating-linear-gradient(-45deg,var(--band-hatch)_0_1px,transparent_1px_4px)] [background-position:0_calc(var(--band-index)*var(--row-pitch)*-1)] [background-size:100%_calc(var(--band-size)*var(--row-pitch))] absolute bg-(--frame-panel-bg) bg-no-repeat dark:[--band-hatch:color-mix(in_oklab,var(--border)_28%,transparent)] inset-0 pointer-events-none" aria-hidden="true" style={{"--band-index": "9", "--band-size": "10"}}></span>
                                 <span className="sr-only">
-                                  Shopping
+                                  {"Shopping"}
                                 </span>
                               </div>
                             </td>
@@ -1509,68 +1513,68 @@ export function Pattern() {
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
                                 <button className="block cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:text-primary hover:underline min-w-0 outline-none text-foreground text-left transition-colors truncate underline-offset-2" type="button">
-                                  Harbor Duffel Bundle Offer
+                                  {"Harbor Duffel Bundle Offer"}
                                 </button>
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-roasTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                3.9×
+                                {"3.9×"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-roas-size) * 1px)"}}>
                               <span className="absolute bg-amber-100 dark:bg-amber-900/50 dark:text-amber-50 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-amber-950">
-                                3.57×
+                                {"3.57×"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-roasDelta-size) * 1px)"}}>
                               <span className="flex items-center min-w-0 relative">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-foreground text-start text-xs whitespace-nowrap">
-                                    −8%
+                                    {"−8%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-warning **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(79.00%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  ROAS 8% below target, a near miss
+                                  {"ROAS 8% below target, a near miss"}
                                 </span>
                               </span>
                             </td>
                             <td className="align-middle border-e pe-(--beat-end-px) px-3 py-2 truncate" style={{width: "calc(var(--col-roasBeat-size) * 1px)"}}></td>
                             <td className="align-middle border-e px-3 py-2 text-right truncate" style={{width: "calc(var(--col-cpaTarget-size) * 1px)"}}>
                               <span className="tabular-nums text-muted-foreground">
-                                $52
+                                {"$52"}
                               </span>
                             </td>
                             <td className="align-middle border-e p-0 relative truncate" style={{width: "calc(var(--col-cpa-size) * 1px)"}}>
                               <span className="absolute bg-red-100 dark:bg-red-900/50 dark:text-red-100 flex font-medium inset-0 items-center justify-end px-(--grid-cell-px) tabular-nums text-red-900">
-                                $57.62
+                                {"$57.62"}
                               </span>
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-cpaDelta-size) * 1px)"}}>
                               <span className="flex items-center min-w-0 relative">
                                 <span className="flex flex-1 gap-0.75 items-center min-w-0" aria-hidden="true">
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-destructive text-start text-xs whitespace-nowrap">
-                                    +11%
+                                    {"+11%"}
                                   </span>
                                   <Progress className="**:data-[slot=progress-indicator]:bg-destructive **:data-[slot=progress-indicator]:motion-reduce:transition-none **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-indicator]:transition-[translate] **:data-[slot=progress-indicator]:translate-x-(--mini-bar-drain) **:data-[slot=progress-track]:bg-muted-foreground/15 **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full flex-1 gap-0 min-w-0" complete="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" role="progressbar" aria-hidden="true" style={{"--mini-bar-drain": "round(min(73.00%, 100% - 0.375rem), 1px)"}}>
                                     <ProgressTrack complete="">
                                       <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                     </ProgressTrack>
                                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                      x
+                                      {"x"}
                                     </span>
                                   </Progress>
                                 </span>
                                 <span className="sr-only">
-                                  CPA 11% above target, worse than target
+                                  {"CPA 11% above target, worse than target"}
                                 </span>
                               </span>
                             </td>
@@ -1591,6 +1595,8 @@ export function Pattern() {
                             <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                           </tr>
                         </DataGridTableBody>
+                        </DataGridProvider>
+                        <DataGridProvider>
                         <DataGridTableFoot>
                           <DataGridTableFootRow>
                             <td className="align-middle border-e font-medium px-3 py-2 text-secondary-foreground/80"></td>
@@ -1602,30 +1608,30 @@ export function Pattern() {
                               <span className="flex items-center">
                                 <span className="flex flex-none gap-0.75 items-center leading-4 min-w-0 text-muted-foreground text-xs" aria-hidden="true" style={{width: "calc(calc(var(--col-roasDelta-size, 103) * 1px) - 1px - 2 * var(--grid-cell-px))"}}>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-start text-xs whitespace-nowrap">
-                                    40%
+                                    {"40%"}
                                   </span>
                                   <span className="flex flex-1 justify-center min-w-0">
                                     <span className="whitespace-nowrap">
-                                      Missing
+                                      {"Missing"}
                                     </span>
                                   </span>
                                 </span>
                                 <span className="flex flex-1 gap-0.75 items-center leading-4 min-w-0 ms-[calc(2*var(--grid-cell-px)+1px)] text-muted-foreground text-xs" aria-hidden="true">
                                   <span className="flex flex-1 justify-center min-w-0">
                                     <span className="whitespace-nowrap">
-                                      Beating
+                                      {"Beating"}
                                     </span>
                                   </span>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-xs whitespace-nowrap">
-                                    40%
+                                    {"40%"}
                                   </span>
                                 </span>
                               </span>
                               <span className="-translate-y-1/2 absolute leading-4 tabular-nums text-center text-muted-foreground text-xs top-1/2 w-3.25" aria-hidden="true" style={{insetInlineStart: "calc(calc(var(--col-roasDelta-size, 103) * 1px) - 7px)"}}>
-                                0
+                                {"0"}
                               </span>
                               <span className="sr-only">
-                                Bars run from 0 at the line between the halves to 40% off target, misses in the first half and beats in the second
+                                {"Bars run from 0 at the line between the halves to 40% off target, misses in the first half and beats in the second"}
                               </span>
                             </td>
                             <td className="align-middle border-e font-medium px-3 py-2 text-secondary-foreground/80"></td>
@@ -1634,58 +1640,63 @@ export function Pattern() {
                               <span className="flex items-center">
                                 <span className="flex flex-none gap-0.75 items-center leading-4 min-w-0 text-muted-foreground text-xs" aria-hidden="true" style={{width: "calc(calc(var(--col-cpaDelta-size, 103) * 1px) - 1px - 2 * var(--grid-cell-px))"}}>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-start text-xs whitespace-nowrap">
-                                    40%
+                                    {"40%"}
                                   </span>
                                   <span className="flex flex-1 justify-center min-w-0">
                                     <span className="whitespace-nowrap">
-                                      Missing
+                                      {"Missing"}
                                     </span>
                                   </span>
                                 </span>
                                 <span className="flex flex-1 gap-0.75 items-center leading-4 min-w-0 ms-[calc(2*var(--grid-cell-px)+1px)] text-muted-foreground text-xs" aria-hidden="true">
                                   <span className="flex flex-1 justify-center min-w-0">
                                     <span className="whitespace-nowrap">
-                                      Beating
+                                      {"Beating"}
                                     </span>
                                   </span>
                                   <span className="leading-4 min-w-9 shrink-0 tabular-nums text-end text-xs whitespace-nowrap">
-                                    40%
+                                    {"40%"}
                                   </span>
                                 </span>
                               </span>
                               <span className="-translate-y-1/2 absolute leading-4 tabular-nums text-center text-muted-foreground text-xs top-1/2 w-3.25" aria-hidden="true" style={{insetInlineStart: "calc(calc(var(--col-cpaDelta-size, 103) * 1px) - 7px)"}}>
-                                0
+                                {"0"}
                               </span>
                               <span className="sr-only">
-                                Bars run from 0 at the line between the halves to 40% off target, misses in the first half and beats in the second
+                                {"Bars run from 0 at the line between the halves to 40% off target, misses in the first half and beats in the second"}
                               </span>
                             </td>
                             <td className="align-middle border-e font-medium px-3 py-2 text-secondary-foreground/80"></td>
                             <td className="p-0" aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></td>
                           </DataGridTableFootRow>
                         </DataGridTableFoot>
+                        </DataGridProvider>
                       </DataGridTable>
+                      </DataGridProvider>
                     </DataGridTableViewport>
+                    </DataGridProvider>
                   </div>
                 </div>
               </DataGridScrollArea>
+              </DataGridProvider>
             </div>
           </DataGrid>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_3r_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    10
+                    {"10"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -1693,29 +1704,29 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 10 of 30
+                  {"1 - 10 of 30"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
-                    3
+                    {"3"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -1724,6 +1735,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </FramePanel>
       </Frame>

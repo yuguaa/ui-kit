@@ -14,10 +14,10 @@ export function Pattern() {
       <Frame className="max-w-2xl w-full">
         <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="font-semibold text-sm">
-            Privacy & Preferences
+            {"Privacy & Preferences"}
           </div>
           <div className="text-muted-foreground text-sm">
-            Manage your account privacy settings and preferences to control how your data is used.
+            {"Manage your account privacy settings and preferences to control how your data is used."}
           </div>
         </header>
         <FramePanel className="p-0">
@@ -34,14 +34,14 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Show up in search results
+                    {"Show up in search results"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                    Pro
+                    {"Pro"}
                   </Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Control your visibility by choosing if you appear in search results.
+                  {"Control your visibility by choosing if you appear in search results."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -65,14 +65,14 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Manage Read Receipts for Messages
+                    {"Manage Read Receipts for Messages"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                    Pro
+                    {"Pro"}
                   </Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Enable or disable read receipts for private messages.
+                  {"Enable or disable read receipts for private messages."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -96,11 +96,11 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Enable Location-Based Services
+                    {"Enable Location-Based Services"}
                   </h2>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Allow the app to access and use your location for personalized content.
+                  {"Allow the app to access and use your location for personalized content."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -126,19 +126,19 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Ad Personalization Settings
+                    {"Ad Personalization Settings"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                    Beta
+                    {"Beta"}
                   </Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Customize how ads are targeted to your interests.
+                  {"Customize how ads are targeted to your interests."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
                 <Button type="button" tabIndex="0" extracted="1">
-                  Setup
+                  {"Setup"}
                 </Button>
               </div>
             </div>
@@ -157,11 +157,11 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Allow public profile
+                    {"Allow public profile"}
                   </h2>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Enable users to create and display a profile publicly.
+                  {"Enable users to create and display a profile publicly."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -189,11 +189,11 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Allow use location
+                    {"Allow use location"}
                   </h2>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Enable feature to use and share the user's location.
+                  {"Enable feature to use and share the user's location."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0">
@@ -218,22 +218,22 @@ export function Pattern() {
               <div className="flex-1 space-y-0.5">
                 <div className="flex gap-2 items-center">
                   <h2 className="font-semibold text-sm">
-                    Private vulnerability reporting
+                    {"Private vulnerability reporting"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                    Beta
+                    {"Beta"}
                   </Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Confidential channel for reporting system vulnerabilities.
+                  {"Confidential channel for reporting system vulnerabilities."}
                 </p>
               </div>
               <div className="flex gap-2 items-center shrink-0 sm:w-auto w-full">
                 <Button className="sm:flex-none" type="button" tabIndex="0">
-                  Disable all
+                  {"Disable all"}
                 </Button>
                 <Button className="sm:flex-none" type="button" tabIndex="0">
-                  Enable all
+                  {"Enable all"}
                 </Button>
               </div>
             </div>
@@ -241,10 +241,10 @@ export function Pattern() {
         </FramePanel>
         <footer className="flex flex-row gap-(--frame-panel-footer-gap) justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <Button type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </Button>
           <Button type="button" tabIndex="0">
-            Save changes
+            {"Save changes"}
           </Button>
         </footer>
       </Frame>

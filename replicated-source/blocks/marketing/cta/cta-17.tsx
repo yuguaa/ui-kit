@@ -21,14 +21,14 @@ export function Pattern() {
               </IconTile>
               <h2 className="@min-[480px]:text-4xl font-semibold text-3xl text-balance text-center text-gray-200" id="cta-17-title">
                 <span className="block">
-                  Build with NeUI
+                  {"Build with NeUI"}
                 </span>
                 <span className="block">
-                  Ship with Confidence
+                  {"Ship with Confidence"}
                 </span>
               </h2>
               <p className="leading-5 max-w-[34rem] text-center text-muted-foreground text-sm">
-                Use production-ready components, flexible blocks, and AI tools to create polished interfaces faster without rebuilding common patterns from scratch.
+                {"Use production-ready components, flexible blocks, and AI tools to create polished interfaces faster without rebuilding common patterns from scratch."}
               </p>
               <div className="flex flex-wrap gap-x-2.5 gap-y-2 items-center justify-center">
                 <Button className="bg-clip-border pr-2" href="#" role="button" tabIndex="0">
@@ -38,14 +38,14 @@ export function Pattern() {
                     <rect width="7" height="9" x="14" y="12" rx="1"></rect>
                     <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                   </svg>
-                  View Blocks
+                  {"View Blocks"}
                 </Button>
                 <Button className="bg-clip-border pr-2" href="#" role="button" tabIndex="0">
                   <svg className="lucide lucide-book-open size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
                     <path d="M12 7v14"></path>
                     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                   </svg>
-                  Read Docs
+                  {"Read Docs"}
                 </Button>
               </div>
               <a className="border border-border flex flex-wrap font-medium gap-1.5 hover:bg-white/5 items-center justify-center leading-none max-w-full px-3 py-2.5 rounded-full text-foreground text-sm transition-colors" href="#" aria-label="Read reviews, rated 4.6 out of 5 from 2600+ reviews">
@@ -105,14 +105,14 @@ export function Pattern() {
                 </Rating>
                 <span className="flex gap-1.5 items-center">
                   <span>
-                    4.6
+                    {"4.6"}
                   </span>
                   <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
                   <span>
-                    From 2600+ Reviews
+                    {"From 2600+ Reviews"}
                   </span>
                 </span>
               </a>

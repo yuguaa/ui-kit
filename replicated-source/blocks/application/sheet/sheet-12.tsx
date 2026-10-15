@@ -50,7 +50,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Cron job
+        {"Cron job"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -63,7 +63,7 @@ export function Pattern() {
             <path d="M8 2v4"></path>
             <circle cx="16" cy="16" r="6"></circle>
           </svg>
-          Open Job
+          {"Open Job"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -74,7 +74,7 @@ export function Pattern() {
         <div className="flex gap-2 items-center justify-between">
           <div className="flex gap-1 items-center min-w-0">
             <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-              JOB-219
+              {"JOB-219"}
             </span>
             <Button type="button" tabIndex="0" aria-label="Copy job ID">
               <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -93,7 +93,7 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-16 tabular-nums text-xs">
-                2 of 32
+                {"2 of 32"}
               </div>
               <Tooltip>
               <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next job" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -122,20 +122,20 @@ export function Pattern() {
         </div>
         <div className="flex flex-wrap gap-2 items-center min-w-0 mt-1">
           <SheetTitle className="min-w-0 text-lg" id="base-ui-_r_d_">
-            Import bank settlement files
+            {"Import bank settlement files"}
           </SheetTitle>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-            Failing
+            {"Failing"}
           </Badge>
         </div>
         <SheetDescription className="mt-1" id="base-ui-_r_e_">
           <span className="flex flex-wrap gap-1.5 items-center min-w-0">
             <span className="font-mono">
-              30 * * * *
+              {"30 * * * *"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              Hourly at :30 UTC
+              {"Hourly at :30 UTC"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="[&_svg:not([class*=size-])]:size-3.5 flex gap-1.5 items-center min-w-0">
@@ -145,7 +145,7 @@ export function Pattern() {
                 <path d="M3 12A9 3 0 0 0 21 12"></path>
               </svg>
               <span className="truncate">
-                ledger-worker
+                {"ledger-worker"}
               </span>
             </span>
           </span>
@@ -155,14 +155,14 @@ export function Pattern() {
             <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
               <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
             </svg>
-            Run Now
+            {"Run Now"}
           </Button>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseIcon" tabler="IconPlayerPause" hugeicons="PauseIcon" phosphor="PauseIcon" remixicon="RiPauseLine" aria-hidden="true">
               <rect x="14" y="3" width="5" height="18" rx="1"></rect>
               <rect x="5" y="3" width="5" height="18" rx="1"></rect>
             </svg>
-            Pause
+            {"Pause"}
           </Button>
         </div>
       </div>
@@ -170,16 +170,16 @@ export function Pattern() {
         <div className="border-b px-5 shrink-0">
           <TabsList className="-mb-px gap-5 h-10! p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
             <TabsTrigger className="after:-bottom-px! font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_f_" compositeItemActive="" aria-controls="base-ui-_r_i_">
-              Overview
+              {"Overview"}
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_g_">
-              Runs
+              {"Runs"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                21
+                {"21"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_h_">
-              Settings
+              {"Settings"}
             </TabsTrigger>
           </TabsList>
         </div>
@@ -193,22 +193,22 @@ export function Pattern() {
                   <line x1="12" x2="12.01" y1="16" y2="16"></line>
                 </svg>
                 <AlertTitle className="col-start-2 font-medium font-mono line-clamp-1 min-h-4 tracking-tight">
-                  Exit 137
+                  {"Exit 137"}
                 </AlertTitle>
                 <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
                   <Button type="button" tabIndex="0">
-                    View Log
+                    {"View Log"}
                   </Button>
                 </AlertAction>
                 <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                  OOMKilled at the 2Gi memory limit. 4 failed runs in a row since 11:30 UTC.
+                  {"OOMKilled at the 2Gi memory limit. 4 failed runs in a row since 11:30 UTC."}
                 </AlertDescription>
               </Alert>
               <Accordion data-orientation="vertical" dir="ltr" role="region">
                 <AccordionItem data-orientation="vertical" index="0" data-open="">
                   <h3 className="flex" data-orientation="vertical" data-index="0" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto before:-inset-x-2 before:-z-10 before:absolute before:inset-y-0 before:rounded-lg before:transition-colors font-medium hover:before:bg-muted/50 hover:no-underline isolate text-muted-foreground text-xs" type="button" value="schedule,details,next-runs,run-durations,command" data-orientation="vertical" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_k_" aria-expanded="true" id="base-ui-_r_l_" tabIndex="0">
-                      Schedule
+                      {"Schedule"}
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -222,42 +222,42 @@ export function Pattern() {
                       <dl className="gap-x-3 gap-y-1 grid grid-cols-5">
                         <div className="flex flex-col gap-1 min-w-0">
                           <dt className="text-muted-foreground text-xs truncate">
-                            Minute
+                            {"Minute"}
                           </dt>
                           <dd className="font-mono text-sm truncate">
-                            30
+                            {"30"}
                           </dd>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <dt className="text-muted-foreground text-xs truncate">
-                            Hour
+                            {"Hour"}
                           </dt>
                           <dd className="font-mono text-sm truncate">
-                            *
+                            {"*"}
                           </dd>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <dt className="text-muted-foreground text-xs truncate">
-                            Day
+                            {"Day"}
                           </dt>
                           <dd className="font-mono text-sm truncate">
-                            *
+                            {"*"}
                           </dd>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <dt className="text-muted-foreground text-xs truncate">
-                            Month
+                            {"Month"}
                           </dt>
                           <dd className="font-mono text-sm truncate">
-                            *
+                            {"*"}
                           </dd>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <dt className="text-muted-foreground text-xs truncate">
-                            Weekday
+                            {"Weekday"}
                           </dt>
                           <dd className="font-mono text-sm truncate">
-                            *
+                            {"*"}
                           </dd>
                         </div>
                       </dl>
@@ -267,7 +267,7 @@ export function Pattern() {
                 <AccordionItem data-orientation="vertical" index="1" data-open="">
                   <h3 className="flex" data-orientation="vertical" data-index="1" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto before:-inset-x-2 before:-z-10 before:absolute before:inset-y-0 before:rounded-lg before:transition-colors font-medium hover:before:bg-muted/50 hover:no-underline isolate text-muted-foreground text-xs" type="button" value="schedule,details,next-runs,run-durations,command" data-orientation="vertical" index="1" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_n_" aria-expanded="true" id="base-ui-_r_o_" tabIndex="0">
-                      Details
+                      {"Details"}
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -281,72 +281,72 @@ export function Pattern() {
                       <dl className="gap-x-3 gap-y-2.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Runs
+                            {"Runs"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="truncate">
-                              Hourly at :30
+                              {"Hourly at :30"}
                             </span>
                             <span className="text-muted-foreground truncate">
-                              UTC
+                              {"UTC"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Next Run
+                            {"Next Run"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="tabular-nums truncate">
-                              Tue, Sep 29, 14:30 UTC
+                              {"Tue, Sep 29, 14:30 UTC"}
                             </span>
                             <span className="text-muted-foreground truncate">
-                              in 10m
+                              {"in 10m"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Concurrency
+                            {"Concurrency"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
-                            Forbid
+                            {"Forbid"}
                             <span className="text-muted-foreground truncate">
-                              skip if still running
+                              {"skip if still running"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Timeout
+                            {"Timeout"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="tabular-nums">
-                              15 min
+                              {"15 min"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Retries
+                            {"Retries"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="tabular-nums">
-                              3
+                              {"3"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Alerts
+                            {"Alerts"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
-                            Pages #sre-oncall
+                            {"Pages #sre-oncall"}
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Target
+                            {"Target"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0">
@@ -356,27 +356,27 @@ export function Pattern() {
                                 <path d="M3 12A9 3 0 0 0 21 12"></path>
                               </svg>
                               <span className="truncate">
-                                ledger-worker
+                                {"ledger-worker"}
                               </span>
                             </span>
                             <span className="font-mono text-muted-foreground text-xs truncate">
-                              prod-us-east-1
+                              {"prod-us-east-1"}
                             </span>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Environment
+                            {"Environment"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Production
+                              {"Production"}
                             </Badge>
                           </dd>
                         </div>
                         <div className="contents">
                           <dt className="text-muted-foreground">
-                            Owner
+                            {"Owner"}
                           </dt>
                           <dd className="flex gap-1.5 items-center leading-5 min-w-0">
                             <span className="flex gap-2 items-center min-w-0">
@@ -384,11 +384,11 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="truncate">
-                                Alex Johnson
+                                {"Alex Johnson"}
                               </span>
                             </span>
                             <span className="text-muted-foreground truncate">
-                              SRE
+                              {"SRE"}
                             </span>
                           </dd>
                         </div>
@@ -399,7 +399,7 @@ export function Pattern() {
                 <AccordionItem data-orientation="vertical" index="2" data-open="">
                   <h3 className="flex" data-orientation="vertical" data-index="2" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto before:-inset-x-2 before:-z-10 before:absolute before:inset-y-0 before:rounded-lg before:transition-colors font-medium hover:before:bg-muted/50 hover:no-underline isolate text-muted-foreground text-xs" type="button" value="schedule,details,next-runs,run-durations,command" data-orientation="vertical" index="2" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_q_" aria-expanded="true" id="base-ui-_r_r_" tabIndex="0">
-                      Next 5 Runs
+                      {"Next 5 Runs"}
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -413,42 +413,42 @@ export function Pattern() {
                       <ol className="flex flex-col gap-1.5 text-sm">
                         <li className="flex gap-3 items-center justify-between">
                           <span className="min-w-0 tabular-nums truncate">
-                            Tue, Sep 29, 14:30 UTC
+                            {"Tue, Sep 29, 14:30 UTC"}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                            in 10m
+                            {"in 10m"}
                           </span>
                         </li>
                         <li className="flex gap-3 items-center justify-between">
                           <span className="min-w-0 tabular-nums truncate">
-                            Tue, Sep 29, 15:30 UTC
+                            {"Tue, Sep 29, 15:30 UTC"}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                            in 1h 10m
+                            {"in 1h 10m"}
                           </span>
                         </li>
                         <li className="flex gap-3 items-center justify-between">
                           <span className="min-w-0 tabular-nums truncate">
-                            Tue, Sep 29, 16:30 UTC
+                            {"Tue, Sep 29, 16:30 UTC"}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                            in 2h 10m
+                            {"in 2h 10m"}
                           </span>
                         </li>
                         <li className="flex gap-3 items-center justify-between">
                           <span className="min-w-0 tabular-nums truncate">
-                            Tue, Sep 29, 17:30 UTC
+                            {"Tue, Sep 29, 17:30 UTC"}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                            in 3h 10m
+                            {"in 3h 10m"}
                           </span>
                         </li>
                         <li className="flex gap-3 items-center justify-between">
                           <span className="min-w-0 tabular-nums truncate">
-                            Tue, Sep 29, 18:30 UTC
+                            {"Tue, Sep 29, 18:30 UTC"}
                           </span>
                           <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                            in 4h 10m
+                            {"in 4h 10m"}
                           </span>
                         </li>
                       </ol>
@@ -458,7 +458,7 @@ export function Pattern() {
                 <AccordionItem data-orientation="vertical" index="3" data-open="">
                   <h3 className="flex" data-orientation="vertical" data-index="3" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto before:-inset-x-2 before:-z-10 before:absolute before:inset-y-0 before:rounded-lg before:transition-colors font-medium hover:before:bg-muted/50 hover:no-underline isolate text-muted-foreground text-xs" type="button" value="schedule,details,next-runs,run-durations,command" data-orientation="vertical" index="3" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_t_" aria-expanded="true" id="base-ui-_r_u_" tabIndex="0">
-                      Run Durations
+                      {"Run Durations"}
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -470,21 +470,13 @@ export function Pattern() {
                   <AccordionContent data-orientation="vertical" index="3" data-open="" id="base-ui-_r_t_" aria-labelledby="base-ui-_r_u_" role="region" style={{"--accordion-panel-height": "auto", "--accordion-panel-width": "auto", animationName: "none"}}>
                     <div className="[&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4 cn-accordion-content-inner data-ending-style:h-0 data-starting-style:h-0 flex flex-col gap-3 h-(--accordion-panel-height) min-w-0">
                       <div className="flex flex-wrap gap-1.5 items-center tabular-nums text-muted-foreground text-xs">
-                        Last 20 runs
+                        {"Last 20 runs"}
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                        p95 4m 52s of 15m timeout
+                        {"p95 4m 52s of 15m timeout"}
                       </div>
+                      <ChartContainer>
                       <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-32 justify-center text-xs w-full" data-chart="chart-_r_v_">
-                        <style>{`
- [data-chart=chart-_r_v_] {
-  --color-durationSec: var(--primary);
-}
-
-
-.dark [data-chart=chart-_r_v_] {
-  --color-durationSec: var(--primary);
-}
-`}</style>
+                        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_v_] {\n  --color-durationSec: var(--primary);\n}\n\n\n.dark [data-chart=chart-_r_v_] {\n  --color-durationSec: var(--primary);\n}\n" }} />
                         <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                           <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                             <div className="recharts-wrapper" width="535" height="128" style={{position: "relative", cursor: "default", width: "535px", height: "128px"}}>
@@ -690,13 +682,14 @@ export function Pattern() {
                           </div>
                         </div>
                       </div>
+                      </ChartContainer>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem data-orientation="vertical" index="4" data-open="">
                   <h3 className="flex" data-orientation="vertical" data-index="4" data-open="">
                     <AccordionTrigger className="[&>svg]:my-auto before:-inset-x-2 before:-z-10 before:absolute before:inset-y-0 before:rounded-lg before:transition-colors font-medium hover:before:bg-muted/50 hover:no-underline isolate text-muted-foreground text-xs" type="button" value="schedule,details,next-runs,run-durations,command" data-orientation="vertical" index="4" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_11_" aria-expanded="true" id="base-ui-_r_12_" tabIndex="0">
-                      Command
+                      {"Command"}
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
                       </svg>
@@ -710,7 +703,7 @@ export function Pattern() {
                       <CodeBlock className="[--code-block-bg:var(--card)] [--code-block-caret-color:var(--primary)] [--code-block-copy-inset:--spacing(2)] [--code-block-copy-top:var(--code-block-copy-inset)] [--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_8%,transparent)] [--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-error-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-expand-clearance:--spacing(9)] [--code-block-fold-width:--spacing(4.5)] [--code-block-font-size:0.8125rem] [--code-block-gutter-gap:--spacing(2.5)] [--code-block-gutter-width:--spacing(9)] [--code-block-header-height:--spacing(8)] [--code-block-highlight-bar:color-mix(in_oklch,var(--primary)_60%,transparent)] [--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_6%,transparent)] [--code-block-info-bg:color-mix(in_oklch,var(--info)_8%,transparent)] [--code-block-line-height:1.125rem] [--code-block-number-pad:var(--code-block-gutter-gap)] [--code-block-padding:--spacing(2)] [--code-block-warning-bg:color-mix(in_oklch,var(--warning)_10%,transparent)] bg-card bg-clip-padding border border-border dark:[--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_12%,transparent)] dark:[--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-error-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_12%,transparent)] dark:[--code-block-info-bg:color-mix(in_oklch,var(--info)_12%,transparent)] dark:[--code-block-warning-bg:color-mix(in_oklch,var(--warning)_14%,transparent)] data-[gutter-channel]:[--code-block-number-pad:calc(var(--code-block-gutter-gap)+var(--code-block-fold-width))] data-[has-diff]:[--code-block-gutter-gap:--spacing(4)] data-[has-header]:[--code-block-copy-top:calc(var(--code-block-header-height)+1px+var(--code-block-copy-inset))] flex flex-col group/code-block min-w-0 relative rounded-(--code-block-radius) style-luma:[--code-block-radius:var(--radius-2xl)] style-lyra:[--code-block-radius:0px] style-maia:[--code-block-radius:var(--radius-2xl)] style-mira:[--code-block-radius:var(--radius-lg)] style-nova:[--code-block-radius:var(--radius-lg)] style-rhea:[--code-block-radius:var(--radius-xl)] style-sera:[--code-block-radius:0px] style-vega:[--code-block-radius:var(--radius-lg)] text-card-foreground text-left w-full" variant="default" hasHeader="true">
                         <CodeBlockHeader className="min-h-8 px-2.5">
                           <CodeBlockTitle>
-                            command.sh
+                            {"command.sh"}
                           </CodeBlockTitle>
                           <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" data-position="inline" aria-label="Copy code">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -727,22 +720,22 @@ export function Pattern() {
                                 <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="1" id="_r_13_-L1" style={{counterReset: "cb-line 0"}}>
                                   <span>
                                     <span style={{"--cb-c": "#6F42C1", "--cb-cd": "#B392F0"}}>
-                                      harbor
+                                      {"harbor"}
                                     </span>
                                     <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                      run
+                                      {"run"}
                                     </span>
                                     <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                      ledger-worker
+                                      {"ledger-worker"}
                                     </span>
                                     <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                      --
+                                      {"--"}
                                     </span>
                                     <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                      settlements:import
+                                      {"settlements:import"}
                                     </span>
                                     <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                      --banks=all
+                                      {"--banks=all"}
                                     </span>
                                   </span>
                                 </span>

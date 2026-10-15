@@ -24,29 +24,29 @@ export function Pattern() {
           <div className="flex flex-col gap-6 items-center w-full">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-foreground text-sm transition-shadow">
               <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-              Agent Skills Ready
+              {"Agent Skills Ready"}
               <svg className="lucide lucide-arrow-up-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
             </Badge>
             <h1 className="@md:text-5xl @xl:text-6xl font-semibold max-w-3xl text-4xl text-balance text-center text-foreground" id="hero-10-title">
-              Give AI agents the context
+              {"Give AI agents the context"}
               <span className="text-muted-foreground">
-                to build shadcn/ui.
+                {"to build shadcn/ui."}
               </span>
             </h1>
             <div className="flex flex-col gap-6 items-center max-w-[640px] w-full">
               <p className="leading-6 text-base text-center text-muted-foreground text-pretty">
-                A curated shadcn registry with
+                {"A curated shadcn registry with"}
                 <span className="font-medium text-foreground">
-                  polished components
+                  {"polished components"}
                 </span>
-                , blocks, templates, MCP tools, and Agent Skills for building modern interfaces with
+                {", blocks, templates, MCP tools, and Agent Skills for building modern interfaces with"}
                 <span className="font-medium text-foreground">
-                  developers and AI agents
+                  {"developers and AI agents"}
                 </span>
-                .
+                {"."}
               </p>
               <InputGroup className="h-40! max-w-md" role="group">
                 <InputGroupAddon className="border-b border-input justify-between" role="group" data-align="block-start">
@@ -57,7 +57,7 @@ export function Pattern() {
                       <path d="M5 14a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1 1 1 0 0 1 1 1v2a1 1 0 0 0 1 1"></path>
                       <path d="M9 22a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1"></path>
                     </svg>
-                    script.js
+                    {"script.js"}
                   </span>
                   <div className="flex gap-2 items-center">
                     <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none" type="button" tabIndex="0" size="icon-xs" aria-label="Reset code" extracted="1">
@@ -77,19 +77,19 @@ export function Pattern() {
                   </div>
                 </InputGroupAddon>
                 <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 min-h-0 outline-none placeholder:text-muted-foreground resize-none text-muted-foreground text-sm w-full" aria-label="Code snippet" spellCheck="false">
-                  console.log('Hello, world');
+                  {"console.log('Hello, world');"}
                 </textarea>
                 <InputGroupAddon className="border-input border-t justify-between" role="group" data-align="block-end">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline cn-input-group-button cn-input-group-button-size-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="xs" aria-label="AI model" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
-                    AI Model
+                    {"AI Model"}
                     <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <Button className="cn-input-group-button cn-input-group-button-size-xs flex shadow-none" type="button" tabIndex="0" size="xs">
-                    Run
+                    {"Run"}
                     <svg className="lucide lucide-corner-down-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownLeftIcon" tabler="IconCornerDownLeft" hugeicons="CornerDownLeftIcon" phosphor="ArrowElbowDownLeftIcon" remixicon="RiCornerDownLeftLine" aria-hidden="true">
                       <path d="M20 4v7a4 4 0 0 1-4 4H4"></path>
                       <path d="m9 10-5 5 5 5"></path>
@@ -179,10 +179,10 @@ export function Pattern() {
                   </Rating>
                   <div className="flex gap-1 items-center text-xs">
                     <span className="font-medium text-foreground">
-                      4.5 · 13.9k Ratings
+                      {"4.5 · 13.9k Ratings"}
                     </span>
                     <a className="font-medium hover:text-foreground text-muted-foreground underline underline-offset-2" href="#reviews">
-                      27 reviews
+                      {"27 reviews"}
                     </a>
                   </div>
                 </div>

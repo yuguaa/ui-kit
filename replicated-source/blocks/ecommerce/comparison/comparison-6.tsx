@@ -8,22 +8,22 @@ export function Pattern() {
         <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0">
             <h1 className="font-semibold sm:text-3xl text-2xl tracking-tight" id="comparison-7-heading">
-              Build your comparison
+              {"Build your comparison"}
             </h1>
             <p className="leading-5 max-w-prose mt-1 text-muted-foreground text-sm">
-              Pick up to 4 headphones from the catalog. The comparison below updates as you go.
+              {"Pick up to 4 headphones from the catalog. The comparison below updates as you go."}
             </p>
           </div>
           <div className="flex gap-3 items-center shrink-0">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-primary-foreground text-xs transition-shadow" aria-label="2 of 4 selected">
-              2 / 4 selected
+              {"2 / 4 selected"}
             </Badge>
             <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0" extracted="1">
               <svg className="lucide lucide-rotate-ccw size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
-              Clear all
+              {"Clear all"}
             </Button>
           </div>
         </header>
@@ -35,21 +35,21 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio-mini">
-                  Studio Mini
+                  {"Studio Mini"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: On ear, Wired">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#on-ear" aria-label="View On ear products">
-                    On ear
+                    {"On ear"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#wired" aria-label="View Wired products">
-                    Wired
+                    {"Wired"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $89
+                      {"$89"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -92,10 +92,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.3
+                      {"4.3"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-mini#reviews" aria-label="Read 1208 reviews for Studio Mini">
-                      (1,208 reviews)
+                      {"(1,208 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Compare
+                {"Compare"}
               </Button>
             </article>
           </div>
@@ -115,7 +115,7 @@ export function Pattern() {
                 <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio wireless headphones product shot" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&h=600&q=80" />
                 <span className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    On sale
+                    {"On sale"}
                   </Badge>
                 </span>
                 <span className="absolute right-2 top-2">
@@ -123,30 +123,30 @@ export function Pattern() {
                     <svg className="lucide lucide-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
-                    Added
+                    {"Added"}
                   </Badge>
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio">
-                  Studio Wireless
+                  {"Studio Wireless"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Wireless, Noise cancelling">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#wireless" aria-label="View Wireless products">
-                    Wireless
+                    {"Wireless"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#noise-cancelling" aria-label="View Noise cancelling products">
-                    Noise cancelling
+                    {"Noise cancelling"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $249
+                      {"$249"}
                     </span>
                     <span className="line-through tabular-nums text-muted-foreground text-sm">
-                      $299
+                      {"$299"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -189,10 +189,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.6
+                      {"4.6"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio#reviews" aria-label="Read 412 reviews for Studio Wireless">
-                      (412 reviews)
+                      {"(412 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -201,7 +201,7 @@ export function Pattern() {
                 <svg className="lucide lucide-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Added
+                {"Added"}
               </Button>
             </article>
           </div>
@@ -211,27 +211,27 @@ export function Pattern() {
                 <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio Active sport headphones product shot" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&h=600&q=80" />
                 <span className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    New
+                    {"New"}
                   </Badge>
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio-active">
-                  Studio Active
+                  {"Studio Active"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Sport, Water resistant">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#sport" aria-label="View Sport products">
-                    Sport
+                    {"Sport"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#water-resistant" aria-label="View Water resistant products">
-                    Water resistant
+                    {"Water resistant"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $329
+                      {"$329"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -274,10 +274,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.5
+                      {"4.5"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-active#reviews" aria-label="Read 248 reviews for Studio Active">
-                      (248 reviews)
+                      {"(248 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Compare
+                {"Compare"}
               </Button>
             </article>
           </div>
@@ -300,27 +300,27 @@ export function Pattern() {
                     <svg className="lucide lucide-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
-                    Added
+                    {"Added"}
                   </Badge>
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio-pro">
-                  Studio Pro
+                  {"Studio Pro"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Studio, Audiophile">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                    Studio
+                    {"Studio"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#audiophile" aria-label="View Audiophile products">
-                    Audiophile
+                    {"Audiophile"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $399
+                      {"$399"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -363,10 +363,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.8
+                      {"4.8"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-pro#reviews" aria-label="Read 96 reviews for Studio Pro">
-                      (96 reviews)
+                      {"(96 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export function Pattern() {
                 <svg className="lucide lucide-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Added
+                {"Added"}
               </Button>
             </article>
           </div>
@@ -386,21 +386,21 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio-max">
-                  Studio Max
+                  {"Studio Max"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Studio, Long battery">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                    Studio
+                    {"Studio"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#long-battery" aria-label="View Long battery products">
-                    Long battery
+                    {"Long battery"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $499
+                      {"$499"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -443,10 +443,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.7
+                      {"4.7"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-max#reviews" aria-label="Read 58 reviews for Studio Max">
-                      (58 reviews)
+                      {"(58 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -456,7 +456,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Compare
+                {"Compare"}
               </Button>
             </article>
           </div>
@@ -466,27 +466,27 @@ export function Pattern() {
                 <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio Elite headphones product shot" src="https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?auto=format&fit=crop&w=600&h=600&q=80" />
                 <span className="absolute left-2 top-2">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    Flagship
+                    {"Flagship"}
                   </Badge>
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <a className="font-semibold hover:text-primary hover:underline text-base text-foreground tracking-tight transition-colors truncate underline-offset-4" href="#studio-elite">
-                  Studio Elite
+                  {"Studio Elite"}
                 </a>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Studio, Premium">
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                    Studio
+                    {"Studio"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#premium" aria-label="View Premium products">
-                    Premium
+                    {"Premium"}
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-2 items-baseline justify-between mt-1">
                   <div className="flex gap-1.5 items-baseline">
                     <span className="font-semibold tabular-nums text-base text-foreground">
-                      $649
+                      {"$649"}
                     </span>
                   </div>
                   <div className="flex gap-1.5 items-center text-xs">
@@ -529,10 +529,10 @@ export function Pattern() {
                       </span>
                     </span>
                     <span className="font-medium tabular-nums text-foreground">
-                      4.9
+                      {"4.9"}
                     </span>
                     <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-elite#reviews" aria-label="Read 32 reviews for Studio Elite">
-                      (32 reviews)
+                      {"(32 reviews)"}
                     </a>
                   </div>
                 </div>
@@ -542,7 +542,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Compare
+                {"Compare"}
               </Button>
             </article>
           </div>
@@ -551,7 +551,7 @@ export function Pattern() {
           <div className="border-b border-border gap-3 grid grid-cols-1 p-4 sm:gap-4 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:p-5" role="rowgroup" aria-label="Comparison slots">
             <div className="hidden sm:flex sm:items-end">
               <span className="font-semibold text-[0.6875rem] text-muted-foreground tracking-wider uppercase">
-                Comparing
+                {"Comparing"}
               </span>
             </div>
             <div className="bg-background border border-border min-h-[12rem] rounded-md" role="listitem" aria-label="Slot 1">
@@ -569,24 +569,24 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-1 min-w-0">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm tracking-tight transition-colors truncate underline-offset-4" href="#studio">
-                    Studio Wireless
+                    {"Studio Wireless"}
                   </a>
                   <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Wireless, Noise cancelling">
                     <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#wireless" aria-label="View Wireless products">
-                      Wireless
+                      {"Wireless"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#noise-cancelling" aria-label="View Noise cancelling products">
-                      Noise cancelling
+                      {"Noise cancelling"}
                     </a>
                   </div>
                 </div>
                 <div className="flex gap-1.5 items-baseline mt-auto">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $249
+                    {"$249"}
                   </span>
                   <span className="line-through tabular-nums text-muted-foreground text-xs">
-                    $299
+                    {"$299"}
                   </span>
                 </div>
               </div>
@@ -606,21 +606,21 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-1 min-w-0">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm tracking-tight transition-colors truncate underline-offset-4" href="#studio-pro">
-                    Studio Pro
+                    {"Studio Pro"}
                   </a>
                   <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs" aria-label="Categories: Studio, Audiophile">
                     <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                      Studio
+                      {"Studio"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#audiophile" aria-label="View Audiophile products">
-                      Audiophile
+                      {"Audiophile"}
                     </a>
                   </div>
                 </div>
                 <div className="flex gap-1.5 items-baseline mt-auto">
                   <span className="font-semibold tabular-nums text-base text-foreground">
-                    $399
+                    {"$399"}
                   </span>
                 </div>
               </div>
@@ -634,10 +634,10 @@ export function Pattern() {
                   </svg>
                 </span>
                 <p className="font-medium text-foreground text-xs">
-                  Slot 3
+                  {"Slot 3"}
                 </p>
                 <p className="leading-snug text-[0.6875rem] text-muted-foreground">
-                  Add a product from the catalog above
+                  {"Add a product from the catalog above"}
                 </p>
               </div>
             </div>
@@ -650,10 +650,10 @@ export function Pattern() {
                   </svg>
                 </span>
                 <p className="font-medium text-foreground text-xs">
-                  Slot 4
+                  {"Slot 4"}
                 </p>
                 <p className="leading-snug text-[0.6875rem] text-muted-foreground">
-                  Add a product from the catalog above
+                  {"Add a product from the catalog above"}
                 </p>
               </div>
             </div>
@@ -661,59 +661,59 @@ export function Pattern() {
           <div className="flex flex-col gap-6 p-4 sm:p-5">
             <section className="flex flex-col gap-1" aria-labelledby="comparison-7-group-Build">
               <h3 className="border-b border-border font-semibold pb-2 text-[0.6875rem] text-muted-foreground tracking-wider uppercase" id="comparison-7-group-Build">
-                Build
+                {"Build"}
               </h3>
               <div className="flex flex-col">
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Type
+                    {"Type"}
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      Over ear
+                      {"Over ear"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      Over ear
+                      {"Over ear"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Weight
+                    {"Weight"}
                     <span className="font-normal ml-1 text-muted-foreground text-xs">
-                      g
+                      {"g"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                      265
+                      {"265"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      295
+                      {"295"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
@@ -721,19 +721,19 @@ export function Pattern() {
             </section>
             <section className="flex flex-col gap-1" aria-labelledby="comparison-7-group-Audio">
               <h3 className="border-b border-border font-semibold pb-2 text-[0.6875rem] text-muted-foreground tracking-wider uppercase" id="comparison-7-group-Audio">
-                Audio
+                {"Audio"}
               </h3>
               <div className="flex flex-col">
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Noise cancellation
+                    {"Noise cancellation"}
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="font-medium gap-1.5 inline-flex items-center text-foreground text-sm">
                       <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Yes
+                      {"Yes"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
@@ -741,30 +741,30 @@ export function Pattern() {
                       <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Yes
+                      {"Yes"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Spatial audio
+                    {"Spatial audio"}
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="gap-1.5 inline-flex items-center text-muted-foreground text-sm">
                       <svg className="lucide lucide-minus size-4 text-muted-foreground/60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                       </svg>
-                      No
+                      {"No"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
@@ -772,42 +772,42 @@ export function Pattern() {
                       <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Yes
+                      {"Yes"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Hi-res codec
+                    {"Hi-res codec"}
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      aptX
+                      {"aptX"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      LDAC
+                      {"LDAC"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
@@ -815,47 +815,47 @@ export function Pattern() {
             </section>
             <section className="flex flex-col gap-1" aria-labelledby="comparison-7-group-Power">
               <h3 className="border-b border-border font-semibold pb-2 text-[0.6875rem] text-muted-foreground tracking-wider uppercase" id="comparison-7-group-Power">
-                Power
+                {"Power"}
               </h3>
               <div className="flex flex-col">
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Battery life
+                    {"Battery life"}
                     <span className="font-normal ml-1 text-muted-foreground text-xs">
-                      h
+                      {"h"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      38
+                      {"38"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                      50
+                      {"50"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Wireless charging
+                    {"Wireless charging"}
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="gap-1.5 inline-flex items-center text-muted-foreground text-sm">
                       <svg className="lucide lucide-minus size-4 text-muted-foreground/60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                       </svg>
-                      No
+                      {"No"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
@@ -863,17 +863,17 @@ export function Pattern() {
                       <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Yes
+                      {"Yes"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
@@ -881,34 +881,34 @@ export function Pattern() {
             </section>
             <section className="flex flex-col gap-1" aria-labelledby="comparison-7-group-Support">
               <h3 className="border-b border-border font-semibold pb-2 text-[0.6875rem] text-muted-foreground tracking-wider uppercase" id="comparison-7-group-Support">
-                Support
+                {"Support"}
               </h3>
               <div className="flex flex-col">
                 <div className="border-b border-border gap-x-4 gap-y-1 grid grid-cols-1 hover:bg-muted/20 last:border-b-0 py-3 sm:grid-cols-[minmax(0,11rem)_repeat(4,minmax(0,1fr))] sm:items-center transition-colors">
                   <div className="font-medium text-foreground text-sm">
-                    Warranty
+                    {"Warranty"}
                     <span className="font-normal ml-1 text-muted-foreground text-xs">
-                      yr
+                      {"yr"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="tabular-nums text-foreground text-sm">
-                      2
+                      {"2"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                      3
+                      {"3"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                   <div className="flex items-center min-w-0">
                     <span className="text-muted-foreground/40 text-sm">
-                      -
+                      {"-"}
                     </span>
                   </div>
                 </div>
@@ -923,7 +923,7 @@ export function Pattern() {
             <path d="M12 8h.01"></path>
           </svg>
           <span>
-            Winners on objective specs are bolded automatically. Comparison excludes subjective qualities like sound character and fit.
+            {"Winners on objective specs are bolded automatically. Comparison excludes subjective qualities like sound character and fit."}
           </span>
         </p>
       </section>

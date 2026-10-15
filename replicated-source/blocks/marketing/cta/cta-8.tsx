@@ -6,46 +6,28 @@ export function Pattern() {
     <div className="w-full">
       <section className="bg-background lg:px-8 px-4 py-12 sm:px-6 w-full" aria-labelledby="cta-8-title">
         <Card className="@container border-0 gap-0 items-start max-w-7xl mx-auto overflow-clip p-0 relative shadow-2xl shadow-black/25 w-full" size="default" style={{background: "oklch(0.145 0 0)"}}>
-          <style>{`
-@keyframes cta8-bloom {
-  0%, 25% { opacity: 1; }
-  50% { opacity: 0.45; }
-  75%, 100% { opacity: 1; }
-}
-
-.cta8-bloom {
-  will-change: opacity;
-  animation: cta8-bloom 12s ease-in-out infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cta8-bloom {
-    animation: none;
-    will-change: auto;
-  }
-}
-`}</style>
+          <style dangerouslySetInnerHTML={{ __html: "\n@keyframes cta8-bloom {\n  0%, 25% { opacity: 1; }\n  50% { opacity: 0.45; }\n  75%, 100% { opacity: 1; }\n}\n\n.cta8-bloom {\n  will-change: opacity;\n  animation: cta8-bloom 12s ease-in-out infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .cta8-bloom {\n    animation: none;\n    will-change: auto;\n  }\n}\n" }} />
           <div className="-left-[100px] -top-[100px] absolute bg-[oklch(0.701_0.170_243.4)]/8 blur-[100px] cta8-bloom pointer-events-none rounded-full size-[400px]" aria-hidden="true"></div>
           <div className="absolute bg-[radial-gradient(circle_at_1.5px_1.5px,rgba(255,255,255,0.07)_0.75px,transparent_0)] bg-[size:3px_3px] inset-0 pointer-events-none" aria-hidden="true"></div>
           <div className="@max-3xl:pb-6 flex flex-col gap-6 items-start justify-center max-w-full min-w-72 p-12 relative w-[624px]">
             <h2 className="@xl:text-4xl font-semibold leading-10 text-3xl text-balance" id="cta-8-title" style={{color: "oklch(0.928 0.006 264.5)"}}>
-              Build Modern Apps
+              {"Build Modern Apps"}
               <span className="font-bold">
-                Faster
+                {"Faster"}
               </span>
               <span className="@xl:block">
-                With NeUI Blocks
+                {"With NeUI Blocks"}
               </span>
             </h2>
             <p className="leading-6 text-base" style={{color: "oklch(0.709 0 0)"}}>
-              Install production-ready components and templates from the NeUI registry, then customize them for your product.
+              {"Install production-ready components and templates from the NeUI registry, then customize them for your product."}
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-2 items-center">
               <Button className="bg-[oklch(0.922_0_0)] hover:bg-[oklch(0.870_0_0)] hover:text-[oklch(0.205_0_0)] shadow-2xs text-[oklch(0.205_0_0)]" href="#" role="button" tabIndex="0">
-                Get Started
+                {"Get Started"}
               </Button>
               <Button className="bg-white/5 border-white/15 hover:bg-white/10 hover:text-[oklch(0.985_0_0)] shadow-xs text-[oklch(0.985_0_0)]" href="#" role="button" tabIndex="0">
-                Read Docs
+                {"Read Docs"}
               </Button>
             </div>
           </div>

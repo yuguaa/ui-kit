@@ -47,7 +47,7 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Invoice send wizard layout
+        {"Invoice send wizard layout"}
       </h1>
       <div className="bg-background flex flex-col min-h-svh w-full">
         <header className="backdrop-blur bg-background/95 border-b border-border shrink-0 sticky top-0 z-20">
@@ -62,64 +62,92 @@ export function Pattern() {
               <Separator className="h-4 ml-2 mr-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <div className="flex gap-2 items-center min-w-0">
                 <h1 className="font-medium leading-5 text-base text-foreground truncate">
-                  Send invoice
+                  {"Send invoice"}
                 </h1>
               </div>
             </div>
             <div className="-translate-x-1/2 absolute left-1/2 max-w-72 min-w-28 w-[36vw]">
+              <StepperItem>
               <Stepper className="h-1.5 leading-none" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Invoice send progress">
+                <Stepper>
                 <StepperNav className="bg-muted flex h-1.5 overflow-hidden relative rounded-full" data-state="1" data-orientation="horizontal">
                   <span className="absolute bg-primary inset-y-0 left-0 origin-left overflow-hidden pointer-events-none w-full z-10" aria-hidden="true" style={{transform: "scaleX(0.25)"}}></span>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="active">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="active">
                         <div className="absolute">
                           <span className="sr-only">
-                            Customer
+                            {"Customer"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Items
+                            {"Items"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Notes
+                            {"Notes"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Review
+                            {"Review"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
                 </StepperNav>
+                </Stepper>
               </Stepper>
+              </StepperItem>
             </div>
             <div className="flex gap-2 items-center ml-auto shrink-0">
               <span className="font-medium tabular-nums text-muted-foreground text-sm whitespace-nowrap">
-                1 / 4
+                {"1 / 4"}
               </span>
             </div>
           </div>
@@ -129,10 +157,10 @@ export function Pattern() {
             <Card className="gap-0 p-0" size="default">
               <CardHeader className="gap-1 px-5 py-5 sm:px-6">
                 <CardTitle>
-                  Customer Details
+                  {"Customer Details"}
                 </CardTitle>
                 <CardDescription>
-                  Customer, invoice references, and billing terms.
+                  {"Customer, invoice references, and billing terms."}
                 </CardDescription>
                 <CardAction className="flex gap-1.5 items-center self-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
@@ -141,7 +169,7 @@ export function Pattern() {
                       <circle cx="12" cy="12" r="2"></circle>
                       <path d="M6 12h.01M18 12h.01"></path>
                     </svg>
-                    USD
+                    {"USD"}
                   </Badge>
                 </CardAction>
               </CardHeader>
@@ -149,10 +177,10 @@ export function Pattern() {
               <CardContent className="flex flex-col gap-7 px-5 py-5 sm:px-6 sm:py-6">
                 <FieldSet className="gap-0">
                   <FieldLegend className="sr-only" variant="legend">
-                    Invoice send wizard
+                    {"Invoice send wizard"}
                   </FieldLegend>
                   <FieldDescription className="sr-only">
-                    Send an invoice with customer, terms, line items, notes, and totals.
+                    {"Send an invoice with customer, terms, line items, notes, and totals."}
                   </FieldDescription>
                   <div className="flex flex-col gap-7 min-w-0" style={{opacity: "1", transform: "none"}}>
                     <section className="flex flex-col gap-4 sm:gap-5">
@@ -160,14 +188,14 @@ export function Pattern() {
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <div className="flex flex-wrap gap-2 items-center">
                             <h2 className="font-semibold leading-6 text-base text-foreground">
-                              Customer
+                              {"Customer"}
                             </h2>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Required
+                              {"Required"}
                             </Badge>
                           </div>
                           <p className="text-muted-foreground text-sm">
-                            Billable account and invoice reference.
+                            {"Billable account and invoice reference."}
                           </p>
                         </div>
                       </div>
@@ -175,7 +203,7 @@ export function Pattern() {
                         <Field role="group" data-orientation="vertical">
                           <div className="flex gap-1.5 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-customer">
-                              Customer
+                              {"Customer"}
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Customer info" id="base-ui-_r_3_" baseUiTooltipTrigger="">
@@ -208,7 +236,7 @@ export function Pattern() {
                         <Field role="group" data-orientation="vertical">
                           <div className="flex gap-1.5 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-tax-id">
-                              Tax ID
+                              {"Tax ID"}
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Tax ID info" id="base-ui-_r_a_" baseUiTooltipTrigger="">
@@ -236,7 +264,7 @@ export function Pattern() {
                         <Field role="group" data-orientation="vertical">
                           <div className="flex gap-1.5 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-invoice-number">
-                              Invoice Number
+                              {"Invoice Number"}
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Invoice Number info" id="base-ui-_r_d_" baseUiTooltipTrigger="">
@@ -262,7 +290,7 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-po-number">
-                            PO Reference
+                            {"PO Reference"}
                           </FieldLabel>
                           <Input id="wizard-3-po-number" value="PO-7418"></Input>
                         </Field>
@@ -274,26 +302,26 @@ export function Pattern() {
                         <div className="flex flex-col gap-0.5 min-w-0">
                           <div className="flex flex-wrap gap-2 items-center">
                             <h2 className="font-semibold leading-6 text-base text-foreground">
-                              Terms
+                              {"Terms"}
                             </h2>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Net 14
+                              {"Net 14"}
                             </Badge>
                           </div>
                           <p className="text-muted-foreground text-sm">
-                            Dates, currency, and collection method.
+                            {"Dates, currency, and collection method."}
                           </p>
                         </div>
                       </div>
                       <FieldGroup className="gap-4 grid md:grid-cols-2">
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-issue-date">
-                            Issue Date
+                            {"Issue Date"}
                           </FieldLabel>
                           <Popover>
                           <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="wizard-3-issue-date" aria-label="Choose issue date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                             <span className="truncate">
-                              Apr 24, 2026
+                              {"Apr 24, 2026"}
                             </span>
                             <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M8 2v4"></path>
@@ -306,12 +334,12 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-due-date">
-                            Due Date
+                            {"Due Date"}
                           </FieldLabel>
                           <Popover>
                           <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="wizard-3-due-date" aria-label="Choose due date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                             <span className="truncate">
-                              May 08, 2026
+                              {"May 08, 2026"}
                             </span>
                             <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M8 2v4"></path>
@@ -324,16 +352,16 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-currency">
-                            Currency
+                            {"Currency"}
                           </FieldLabel>
                           <Select>
                           <SelectTrigger className="w-full" type="button" tabIndex="0" id="wizard-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
-                              USD
+                              {"USD"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -341,16 +369,16 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-payment-terms">
-                            Payment Terms
+                            {"Payment Terms"}
                           </FieldLabel>
                           <Select>
                           <SelectTrigger className="w-full" type="button" tabIndex="0" id="wizard-3-payment-terms" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
-                              Net 14
+                              {"Net 14"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -358,16 +386,16 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-collection-method">
-                            Collection
+                            {"Collection"}
                           </FieldLabel>
                           <Select>
                           <SelectTrigger className="w-full" type="button" tabIndex="0" id="wizard-3-collection-method" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
-                              ACH transfer
+                              {"ACH transfer"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -375,7 +403,7 @@ export function Pattern() {
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-3-billing-address">
-                            Billing Address
+                            {"Billing Address"}
                           </FieldLabel>
                           <Input id="wizard-3-billing-address" value="14 Warren Street, Suite 620, New York, NY"></Input>
                         </Field>
@@ -392,10 +420,10 @@ export function Pattern() {
             <div className="flex items-center min-w-0"></div>
             <div className="flex gap-2 items-center justify-end shrink-0">
               <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-                Save draft
+                {"Save draft"}
               </Button>
               <Button className="min-w-0 px-3 sm:min-w-32 sm:px-4" type="submit" tabIndex="0" form="wizard-3-invoice-send-form">
-                Next step
+                {"Next step"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>

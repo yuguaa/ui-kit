@@ -14,13 +14,13 @@ export function Pattern() {
         <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0">
             <p className="font-semibold text-muted-foreground text-xs tracking-[0.08em] uppercase">
-              Head To Head
+              {"Head To Head"}
             </p>
             <h1 className="font-semibold mt-1 sm:text-3xl text-2xl tracking-tight" id="comparison-2-heading">
-              Pick The One That Fits You
+              {"Pick The One That Fits You"}
             </h1>
             <p className="leading-5 mt-1 text-muted-foreground text-sm">
-              Compare any two models on the specs that matter, with the better value bolded automatically.
+              {"Compare any two models on the specs that matter, with the better value bolded automatically."}
             </p>
           </div>
           <div className="flex gap-2 items-center shrink-0">
@@ -31,7 +31,7 @@ export function Pattern() {
                 <path d="m16 21 4-4-4-4"></path>
                 <path d="M20 17H4"></path>
               </svg>
-              Swap
+              {"Swap"}
             </Button>
           </div>
         </header>
@@ -44,17 +44,17 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-1.5 min-w-0">
                 <div className="flex items-center min-w-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                    New
+                    {"New"}
                   </Badge>
                 </div>
                 <Select>
                 <SelectTrigger className="border-0 focus-visible:ring-0 font-semibold gap-2 h-auto max-w-full px-0 py-0 shadow-none sm:text-lg text-base text-foreground tracking-tight" type="button" tabIndex="0" id="comparison-2-primary-picker" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Change compared product: Studio Pro">
                   <span className="truncate">
-                    Studio Pro
+                    {"Studio Pro"}
                   </span>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -65,22 +65,22 @@ export function Pattern() {
                     <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                   </svg>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                    Studio
+                    {"Studio"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#audiophile" aria-label="View Audiophile products">
-                    Audiophile
+                    {"Audiophile"}
                   </a>
                 </div>
               </div>
             </div>
             <p className="leading-5 text-muted-foreground text-sm">
-              Reference-tuned audio for serious listeners.
+              {"Reference-tuned audio for serious listeners."}
             </p>
             <div className="flex gap-3 items-center justify-between">
               <div className="flex gap-2 items-baseline min-w-0">
                 <span className="font-semibold tabular-nums text-foreground text-xl">
-                  $399
+                  {"$399"}
                 </span>
               </div>
               <div className="flex gap-1.5 items-center shrink-0 text-xs">
@@ -123,10 +123,10 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  4.8
+                  {"4.8"}
                 </span>
                 <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-pro#reviews" aria-label="Read 96 reviews for Studio Pro">
-                  (96)
+                  {"(96)"}
                 </a>
               </div>
             </div>
@@ -136,7 +136,7 @@ export function Pattern() {
                 <path d="M3.103 6.034h17.794"></path>
                 <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
               </svg>
-              Add to cart
+              {"Add to cart"}
             </Button>
           </article>
           <article className="bg-background border border-border flex flex-col gap-4 min-w-0 p-4 rounded-md sm:p-5" aria-label="Compare Studio Elite">
@@ -147,17 +147,17 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-1.5 min-w-0">
                 <div className="flex items-center min-w-0">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary-foreground text-xs transition-shadow">
-                    Flagship
+                    {"Flagship"}
                   </Badge>
                 </div>
                 <Select>
                 <SelectTrigger className="border-0 focus-visible:ring-0 font-semibold gap-2 h-auto max-w-full px-0 py-0 shadow-none sm:text-lg text-base text-foreground tracking-tight" type="button" tabIndex="0" id="comparison-2-secondary-picker" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Change compared product: Studio Elite">
                   <span className="truncate">
-                    Studio Elite
+                    {"Studio Elite"}
                   </span>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -168,22 +168,22 @@ export function Pattern() {
                     <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                   </svg>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                    Studio
+                    {"Studio"}
                   </a>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#premium" aria-label="View Premium products">
-                    Premium
+                    {"Premium"}
                   </a>
                 </div>
               </div>
             </div>
             <p className="leading-5 text-muted-foreground text-sm">
-              Flagship build with planar drivers and LDAC.
+              {"Flagship build with planar drivers and LDAC."}
             </p>
             <div className="flex gap-3 items-center justify-between">
               <div className="flex gap-2 items-baseline min-w-0">
                 <span className="font-semibold tabular-nums text-foreground text-xl">
-                  $649
+                  {"$649"}
                 </span>
               </div>
               <div className="flex gap-1.5 items-center shrink-0 text-xs">
@@ -226,10 +226,10 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  4.9
+                  {"4.9"}
                 </span>
                 <a className="hover:text-foreground hover:underline text-muted-foreground transition-colors underline-offset-4" href="#studio-elite#reviews" aria-label="Read 32 reviews for Studio Elite">
-                  (32)
+                  {"(32)"}
                 </a>
               </div>
             </div>
@@ -239,14 +239,14 @@ export function Pattern() {
                 <path d="M3.103 6.034h17.794"></path>
                 <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
               </svg>
-              Add to cart
+              {"Add to cart"}
             </Button>
           </article>
         </div>
         <div className="border border-border mt-6 overflow-hidden rounded-md">
           <table className="border-collapse table-fixed text-sm w-full">
             <caption className="sr-only">
-              Feature-by-feature comparison of Studio Pro and Studio Elite.
+              {"Feature-by-feature comparison of Studio Pro and Studio Elite."}
             </caption>
             <colgroup>
               <col className="sm:w-[14rem] w-[12rem]" />
@@ -257,17 +257,17 @@ export function Pattern() {
               <tr className="border-b border-border">
                 <th className="align-bottom bg-muted/30 px-4 py-3 text-left" scope="col">
                   <span className="block font-semibold leading-4 text-[0.6875rem] text-muted-foreground tracking-[0.12em] uppercase">
-                    Specification
+                    {"Specification"}
                   </span>
                 </th>
                 <th className="align-middle bg-muted/30 border-border border-l px-4 py-3 text-left" scope="col">
                   <span className="block font-semibold leading-5 sm:text-base text-foreground text-sm truncate">
-                    Studio Pro
+                    {"Studio Pro"}
                   </span>
                 </th>
                 <th className="align-middle bg-muted/30 border-border border-l px-4 py-3 text-left" scope="col">
                   <span className="block font-semibold leading-5 sm:text-base text-foreground text-sm truncate">
-                    Studio Elite
+                    {"Studio Elite"}
                   </span>
                 </th>
               </tr>
@@ -276,7 +276,7 @@ export function Pattern() {
               <tr>
                 <th className="bg-muted border-b border-border font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="3">
                   <span className="inline-block px-4 py-2">
-                    Overview
+                    {"Overview"}
                   </span>
                 </th>
               </tr>
@@ -284,18 +284,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Type
+                      {"Type"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    Over ear
+                    {"Over ear"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    Over ear
+                    {"Over ear"}
                   </span>
                 </td>
               </tr>
@@ -303,18 +303,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Color options
+                      {"Color options"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="font-medium tabular-nums text-foreground text-sm">
-                    6 colors
+                    {"6 colors"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-muted-foreground text-sm">
-                    3 colors
+                    {"3 colors"}
                   </span>
                 </td>
               </tr>
@@ -322,7 +322,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Weight
+                      {"Weight"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" aria-label="About Weight">
@@ -337,19 +337,19 @@ export function Pattern() {
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="font-medium tabular-nums text-foreground text-sm">
-                    295 g
+                    {"295 g"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-muted-foreground text-sm">
-                    340 g
+                    {"340 g"}
                   </span>
                 </td>
               </tr>
               <tr>
                 <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="3">
                   <span className="inline-block px-4 py-2">
-                    Audio
+                    {"Audio"}
                   </span>
                 </th>
               </tr>
@@ -357,7 +357,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Active noise cancellation
+                      {"Active noise cancellation"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" aria-label="About Active noise cancellation">
@@ -389,7 +389,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Spatial audio
+                      {"Spatial audio"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" aria-label="About Spatial audio">
@@ -421,18 +421,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Driver size
+                      {"Driver size"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    40 mm planar
+                    {"40 mm planar"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    45 mm planar
+                    {"45 mm planar"}
                   </span>
                 </td>
               </tr>
@@ -440,7 +440,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Hi-res codec
+                      {"Hi-res codec"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" aria-label="About Hi-res codec">
@@ -455,19 +455,19 @@ export function Pattern() {
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    LDAC, aptX HD
+                    {"LDAC, aptX HD"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    LDAC, aptX HD, AAC
+                    {"LDAC, aptX HD, AAC"}
                   </span>
                 </td>
               </tr>
               <tr>
                 <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="3">
                   <span className="inline-block px-4 py-2">
-                    Connectivity
+                    {"Connectivity"}
                   </span>
                 </th>
               </tr>
@@ -475,18 +475,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Bluetooth version
+                      {"Bluetooth version"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    5.3
+                    {"5.3"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-foreground text-sm">
-                    5.3 LE
+                    {"5.3 LE"}
                   </span>
                 </td>
               </tr>
@@ -494,7 +494,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Multi-device pairing
+                      {"Multi-device pairing"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_f_" baseUiTooltipTrigger="" aria-label="About Multi-device pairing">
@@ -526,7 +526,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Wired (3.5 mm)
+                      {"Wired (3.5 mm)"}
                     </span>
                   </span>
                 </th>
@@ -548,7 +548,7 @@ export function Pattern() {
               <tr>
                 <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="3">
                   <span className="inline-block px-4 py-2">
-                    Battery
+                    {"Battery"}
                   </span>
                 </th>
               </tr>
@@ -556,18 +556,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Playback time
+                      {"Playback time"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-muted-foreground text-sm">
-                    Up to 50 h
+                    {"Up to 50 h"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="font-medium tabular-nums text-foreground text-sm">
-                    Up to 60 h
+                    {"Up to 60 h"}
                   </span>
                 </td>
               </tr>
@@ -575,7 +575,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Fast charge
+                      {"Fast charge"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_h_" baseUiTooltipTrigger="" aria-label="About Fast charge">
@@ -590,12 +590,12 @@ export function Pattern() {
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-muted-foreground text-sm">
-                    10 min → 8 h
+                    {"10 min → 8 h"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="font-medium tabular-nums text-foreground text-sm">
-                    10 min → 12 h
+                    {"10 min → 12 h"}
                   </span>
                 </td>
               </tr>
@@ -603,7 +603,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Wireless charging
+                      {"Wireless charging"}
                     </span>
                   </span>
                 </th>
@@ -625,7 +625,7 @@ export function Pattern() {
               <tr>
                 <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="3">
                   <span className="inline-block px-4 py-2">
-                    Support
+                    {"Support"}
                   </span>
                 </th>
               </tr>
@@ -633,18 +633,18 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Warranty
+                      {"Warranty"}
                     </span>
                   </span>
                 </th>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="tabular-nums text-muted-foreground text-sm">
-                    3 years
+                    {"3 years"}
                   </span>
                 </td>
                 <td className="align-middle border-border border-l px-4 py-2.5">
                   <span className="font-medium tabular-nums text-foreground text-sm">
-                    5 years
+                    {"5 years"}
                   </span>
                 </td>
               </tr>
@@ -652,7 +652,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Free returns
+                      {"Free returns"}
                     </span>
                   </span>
                 </th>
@@ -675,7 +675,7 @@ export function Pattern() {
                 <th className="align-middle font-medium px-4 py-2.5 text-foreground text-left text-sm" scope="row">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Priority support
+                      {"Priority support"}
                     </span>
                     <Tooltip>
                     <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-3.5 text-muted-foreground/60 transition-colors" type="button" id="base-ui-_r_j_" baseUiTooltipTrigger="" aria-label="About Priority support">
@@ -713,7 +713,7 @@ export function Pattern() {
             <path d="M12 8h.01"></path>
           </svg>
           <span>
-            Specs compared are objective only. Audio character, fit, and build quality are subjective. Try them on if you can.
+            {"Specs compared are objective only. Audio character, fit, and build quality are subjective. Try them on if you can."}
           </span>
         </p>
       </section>

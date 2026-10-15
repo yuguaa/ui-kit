@@ -32,25 +32,25 @@ export function Pattern() {
             </ItemMedia>
           </Item>
           <span className="font-semibold hidden sm:inline text-sm">
-            Agentflow
+            {"Agentflow"}
           </span>
         </div>
         <div className="flex flex-1 items-center justify-center">
           <ButtonGroup className="**:data-[slot=button]:border-0" role="group">
             <Button type="button" tabIndex="0">
-              All
+              {"All"}
             </Button>
             <ButtonGroupSeparator className="bg-primary/10 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
             <Button type="button" tabIndex="0">
-              Code
+              {"Code"}
             </Button>
             <ButtonGroupSeparator className="bg-primary/10 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
             <Button type="button" tabIndex="0">
-              Research
+              {"Research"}
             </Button>
             <ButtonGroupSeparator className="bg-primary/10 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
             <Button type="button" tabIndex="0">
-              Data
+              {"Data"}
             </Button>
           </ButtonGroup>
         </div>
@@ -63,7 +63,7 @@ export function Pattern() {
               <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
             </svg>
             <span className="hidden sm:block">
-              Deploy
+              {"Deploy"}
             </span>
           </Button>
           <Popover>

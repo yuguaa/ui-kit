@@ -24,13 +24,13 @@ export function Pattern() {
             <header className="flex flex-col gap-5">
               <div className="flex flex-col gap-3 max-w-2xl">
                 <p className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-                  Offices
+                  {"Offices"}
                 </p>
                 <h2 className="font-semibold sm:text-4xl text-3xl text-balance text-foreground tracking-tight" id="contact-4-title">
-                  Find Us Around The World
+                  {"Find Us Around The World"}
                 </h2>
                 <p className="leading-7 text-base text-muted-foreground text-pretty">
-                  Three studios across three timezones, so there is usually someone on the team online when you are.
+                  {"Three studios across three timezones, so there is usually someone on the team online when you are."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
@@ -39,10 +39,10 @@ export function Pattern() {
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                     <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                   </svg>
-                  hello@neui.io
+                  {"hello@neui.io"}
                 </a>
                 <Button href="#" role="button" tabIndex="0">
-                  Talk to us
+                  {"Talk to us"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -55,18 +55,18 @@ export function Pattern() {
               <div className="flex flex-col gap-3 py-6 sm:first:pl-0 sm:last:pr-0 sm:px-6 sm:py-0">
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold text-foreground text-lg tracking-tight">
-                    Austin
+                    {"Austin"}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    United States
+                    {"United States"}
                   </p>
                 </div>
                 <address className="leading-6 not-italic text-muted-foreground text-sm">
                   <span className="block">
-                    98 San Jacinto Blvd, Suite 400
+                    {"98 San Jacinto Blvd, Suite 400"}
                   </span>
                   <span className="block">
-                    Austin, TX 78701
+                    {"Austin, TX 78701"}
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
@@ -76,13 +76,13 @@ export function Pattern() {
                   </svg>
                   <span>
                     <span className="font-medium tabular-nums text-foreground">
-                      UTC-6
+                      {"UTC-6"}
                     </span>
-                    · Mon to Fri, 9 to 6 CST
+                    {"· Mon to Fri, 9 to 6 CST"}
                   </span>
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Austin office">
-                  Get directions
+                  {"Get directions"}
                   <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -92,18 +92,18 @@ export function Pattern() {
               <div className="flex flex-col gap-3 py-6 sm:first:pl-0 sm:last:pr-0 sm:px-6 sm:py-0">
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold text-foreground text-lg tracking-tight">
-                    Berlin
+                    {"Berlin"}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    Germany
+                    {"Germany"}
                   </p>
                 </div>
                 <address className="leading-6 not-italic text-muted-foreground text-sm">
                   <span className="block">
-                    Torstrasse 120
+                    {"Torstrasse 120"}
                   </span>
                   <span className="block">
-                    10119 Berlin
+                    {"10119 Berlin"}
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
@@ -113,13 +113,13 @@ export function Pattern() {
                   </svg>
                   <span>
                     <span className="font-medium tabular-nums text-foreground">
-                      UTC+1
+                      {"UTC+1"}
                     </span>
-                    · Mon to Fri, 9 to 6 CET
+                    {"· Mon to Fri, 9 to 6 CET"}
                   </span>
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Berlin office">
-                  Get directions
+                  {"Get directions"}
                   <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -129,18 +129,18 @@ export function Pattern() {
               <div className="flex flex-col gap-3 py-6 sm:first:pl-0 sm:last:pr-0 sm:px-6 sm:py-0">
                 <div className="flex flex-col gap-0.5">
                   <h3 className="font-semibold text-foreground text-lg tracking-tight">
-                    Tokyo
+                    {"Tokyo"}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    Japan
+                    {"Japan"}
                   </p>
                 </div>
                 <address className="leading-6 not-italic text-muted-foreground text-sm">
                   <span className="block">
-                    2-11-3 Meguro
+                    {"2-11-3 Meguro"}
                   </span>
                   <span className="block">
-                    Meguro City, 153-0063
+                    {"Meguro City, 153-0063"}
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
@@ -150,13 +150,13 @@ export function Pattern() {
                   </svg>
                   <span>
                     <span className="font-medium tabular-nums text-foreground">
-                      UTC+9
+                      {"UTC+9"}
                     </span>
-                    · Mon to Fri, 10 to 7 JST
+                    {"· Mon to Fri, 10 to 7 JST"}
                   </span>
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Tokyo office">
-                  Get directions
+                  {"Get directions"}
                   <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>

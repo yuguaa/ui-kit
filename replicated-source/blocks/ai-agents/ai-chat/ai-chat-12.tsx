@@ -40,19 +40,20 @@ import { Marker } from "@/registry/bases/radix/ui/marker"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "min(26rem, 42vw)", "--sidebar-width-icon": "3rem", "--sidebar": "var(--card)"}}>
       <SidebarInset className="min-h-0 overflow-hidden">
         <div className="flex-1 min-h-0 overflow-y-auto scrollbar">
           <header className="after:absolute after:bg-gradient-to-b after:from-background after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-background/70 flex gap-2 h-14 items-center px-4 sm:px-6 sticky supports-backdrop-filter:bg-background/60 top-0 z-10">
             <span className="font-medium min-w-0 text-sm truncate">
-              Halcyon Labs
+              {"Halcyon Labs"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="min-w-0 text-muted-foreground text-sm truncate">
-              Docs
+              {"Docs"}
             </span>
             <Button className="ms-auto" type="button" tabIndex="0" aria-pressed="true">
-              Ask AI
+              {"Ask AI"}
             </Button>
           </header>
           <div className="flex flex-col gap-8 max-w-2xl mx-auto px-4 py-8 sm:px-6 w-full" aria-hidden="true">
@@ -120,14 +121,17 @@ export function Pattern() {
           </div>
         </div>
       </SidebarInset>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="right">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-svh hidden inset-y-0 md:flex transition-[left,right,width] w-(--sidebar-width) z-10" data-side="right" aria-label="Ask AI about NeUI Pro">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="absolute after:absolute after:bg-linear-to-b after:from-sidebar after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-sidebar/70 gap-0 inset-x-0 p-0 supports-backdrop-filter:bg-sidebar/60 top-0 z-20" sidebar="header">
               <div className="flex gap-1 items-center min-h-12 px-3">
                 <span className="font-medium min-w-0 ps-1 text-sm truncate">
-                  Ask AI
+                  {"Ask AI"}
                 </span>
                 <div className="flex gap-0.5 items-center ms-auto shrink-0">
                   <Tooltip>
@@ -163,6 +167,7 @@ export function Pattern() {
                 </div>
               </div>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="overflow-hidden" sidebar="content">
               <div className="flex flex-1 flex-col min-h-0 relative">
                 <MessageScroller className="flex-1" scrollable="start">
@@ -171,14 +176,14 @@ export function Pattern() {
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
                       <MessageScrollerItem className="[content-visibility:visible] animate-in duration-300 ease-out fade-in-0 motion-reduce:animate-none" messageId="asked_seed" scrollAnchor="false">
                         <Bubble variant="default" data-align="end">
                           <BubbleContent className="leading-relaxed text-sm">
-                            Why do my webhook deliveries keep retrying?
+                            {"Why do my webhook deliveries keep retrying?"}
                           </BubbleContent>
                         </Bubble>
                       </MessageScrollerItem>
@@ -192,11 +197,11 @@ export function Pattern() {
                                 <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                               </svg>
                               <span className="min-w-0 text-xs truncate">
-                                Read 6 articles
+                                {"Read 6 articles"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="shrink-0 tabular-nums text-xs">
-                                Used 4
+                                {"Used 4"}
                               </span>
                               <span className="flex shrink-0">
                                 <svg className="duration-200 group-data-[panel-open]/receipt:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none opacity-60 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
@@ -209,44 +214,44 @@ export function Pattern() {
                           <Bubble className="max-w-full" variant="outline" data-align="start">
                             <BubbleContent className="flex-col gap-3">
                               <p className="leading-relaxed text-sm">
-                                NeUI Pro retries whenever your endpoint answers with anything outside the 200 range, or takes longer than ten seconds to answer at all.
+                                {"NeUI Pro retries whenever your endpoint answers with anything outside the 200 range, or takes longer than ten seconds to answer at all."}
                               </p>
                               <ol className="flex flex-col gap-2">
                                 <li className="flex gap-2.5 leading-relaxed text-sm">
                                   <span className="shrink-0 tabular-nums text-muted-foreground w-3" aria-hidden="true">
-                                    1
+                                    {"1"}
                                   </span>
                                   <span className="min-w-0">
-                                    Open the delivery log for the failing event and read the status NeUI Pro recorded against each attempt.
+                                    {"Open the delivery log for the failing event and read the status NeUI Pro recorded against each attempt."}
                                   </span>
                                 </li>
                                 <li className="flex gap-2.5 leading-relaxed text-sm">
                                   <span className="shrink-0 tabular-nums text-muted-foreground w-3" aria-hidden="true">
-                                    2
+                                    {"2"}
                                   </span>
                                   <span className="min-w-0">
-                                    Acknowledge inside ten seconds. Return the response first, then do the work in a background job.
+                                    {"Acknowledge inside ten seconds. Return the response first, then do the work in a background job."}
                                   </span>
                                 </li>
                                 <li className="flex gap-2.5 leading-relaxed text-sm">
                                   <span className="shrink-0 tabular-nums text-muted-foreground w-3" aria-hidden="true">
-                                    3
+                                    {"3"}
                                   </span>
                                   <span className="min-w-0">
-                                    Check the signature step. A rejected signature answers with 400, which counts as a failure and starts the backoff again.
+                                    {"Check the signature step. A rejected signature answers with 400, which counts as a failure and starts the backoff again."}
                                   </span>
                                 </li>
                                 <li className="flex gap-2.5 leading-relaxed text-sm">
                                   <span className="shrink-0 tabular-nums text-muted-foreground w-3" aria-hidden="true">
-                                    4
+                                    {"4"}
                                   </span>
                                   <span className="min-w-0">
-                                    Return 200 for events you mean to ignore, so they leave the queue instead of retrying for a day.
+                                    {"Return 200 for events you mean to ignore, so they leave the queue instead of retrying for a day."}
                                   </span>
                                 </li>
                               </ol>
                               <p className="leading-relaxed text-muted-foreground text-sm">
-                                Every attempt carries the same event id, so the handler has to be safe to run twice.
+                                {"Every attempt carries the same event id, so the handler has to be safe to run twice."}
                               </p>
                             </BubbleContent>
                           </Bubble>
@@ -299,7 +304,7 @@ export function Pattern() {
                                 <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                               </svg>
                               <span className="min-w-0 text-start">
-                                How do I replay a dead lettered event?
+                                {"How do I replay a dead lettered event?"}
                               </span>
                             </Button>
                             <Button className="font-normal gap-2 h-auto hover:text-foreground items-start justify-start max-w-full px-2 py-1 text-muted-foreground text-xs w-fit whitespace-normal" type="button" tabIndex="0">
@@ -308,7 +313,7 @@ export function Pattern() {
                                 <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                               </svg>
                               <span className="min-w-0 text-start">
-                                How long does the backoff run?
+                                {"How long does the backoff run?"}
                               </span>
                             </Button>
                           </div>
@@ -321,17 +326,18 @@ export function Pattern() {
                 <div className="absolute bg-linear-to-t bottom-0 data-[active=true]:opacity-100 duration-200 ease-out from-sidebar h-8 inset-x-0 motion-reduce:transition-none opacity-0 pointer-events-none to-transparent transition-opacity" aria-hidden="true" data-active="false"></div>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="gap-2 mt-2 pb-4 pt-2 px-4 relative shrink-0 z-10" sidebar="footer">
               <form>
                 <Field role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-12-composer">
-                    Ask about NeUI Pro
+                    {"Ask about NeUI Pro"}
                   </FieldLabel>
                   <InputGroup role="group">
                     <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-9 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-12-composer" placeholder="Ask about NeUI Pro" maxLength="1000"></textarea>
                     <InputGroupAddon className="gap-2 justify-between" role="group" data-align="block-end">
                       <span className="data-low:text-destructive tabular-nums text-muted-foreground text-xs" aria-hidden="true">
-                        0 / 1000
+                        {"0 / 1000"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="submit" tabIndex="0" aria-label="Send question" id="base-ui-_r_l_" baseUiTooltipTrigger="">
@@ -347,8 +353,12 @@ export function Pattern() {
               </form>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
     </div>
+    </SidebarProvider>
   )
 }

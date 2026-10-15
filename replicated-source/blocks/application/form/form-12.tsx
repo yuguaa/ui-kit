@@ -48,15 +48,15 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-center justify-center lg:px-10 min-h-svh px-4 py-6 sm:px-8 sm:py-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Create ecommerce product form
+        {"Create ecommerce product form"}
       </h1>
       <Card className="gap-0 max-w-3xl p-0 w-full" size="default">
         <CardHeader className="border-b gap-1 px-5 py-4 sm:px-6">
           <CardTitle>
-            Create Product
+            {"Create Product"}
           </CardTitle>
           <CardDescription>
-            Add catalog details, media, pricing, and fulfillment.
+            {"Add catalog details, media, pricing, and fulfillment."}
           </CardDescription>
           <CardAction className="self-center">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -66,7 +66,7 @@ export function Pattern() {
                 <polyline points="3.29 7 12 12 20.71 7"></polyline>
                 <path d="m7.5 4.27 9 5.15"></path>
               </svg>
-              Draft
+              {"Draft"}
             </Badge>
           </CardAction>
         </CardHeader>
@@ -74,17 +74,17 @@ export function Pattern() {
           <CardContent className="p-0">
             <FieldSet className="gap-0">
               <FieldLegend className="sr-only" variant="legend">
-                Create ecommerce product
+                {"Create ecommerce product"}
               </FieldLegend>
               <FieldDescription className="sr-only">
-                Configure product media, details, pricing, inventory, fulfillment, collections, and publish status.
+                {"Configure product media, details, pricing, inventory, fulfillment, collections, and publish status."}
               </FieldDescription>
               <FieldGroup className="gap-0">
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] md:items-start px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-thumbnails">
-                        Product Media
+                        {"Product Media"}
                       </FieldLabel>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Product Media details" id="base-ui-_r_1_" baseUiTooltipTrigger="">
@@ -97,7 +97,7 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <FieldDescription>
-                      Thumbnail gallery for listings.
+                      {"Thumbnail gallery for listings."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -109,7 +109,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add Files
+                          {"Add Files"}
                         </Button>
                         <div className="flex flex-1 flex-wrap gap-2 items-center min-w-0">
                           <div className="group/item relative shrink-0">
@@ -132,7 +132,7 @@ export function Pattern() {
                           </div>
                         </div>
                         <div className="shrink-0 text-muted-foreground text-xs">
-                          2/5
+                          {"2/5"}
                         </div>
                       </div>
                     </div>
@@ -145,11 +145,11 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-product-name">
-                        Product Name
+                        {"Product Name"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Storefront display name.
+                      {"Storefront display name."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -163,16 +163,16 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-description">
-                        Description
+                        {"Description"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Short sales copy for the product page.
+                      {"Short sales copy for the product page."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Textarea className="min-h-24" id="form-12-description">
-                      Responsive knit running shoe with a cushioned midsole, grippy road outsole, and reflective details for early training sessions.
+                      {"Responsive knit running shoe with a cushioned midsole, grippy road outsole, and reflective details for early training sessions."}
                     </Textarea>
                   </div>
                 </Field>
@@ -183,22 +183,22 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-category">
-                        Category
+                        {"Category"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Primary merchandising group.
+                      {"Primary merchandising group."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-12-category" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Footwear
+                        {"Footwear"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -212,11 +212,11 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Product Type
+                        {"Product Type"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      How checkout and delivery should work.
+                      {"How checkout and delivery should work."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -230,10 +230,10 @@ export function Pattern() {
                         <input id="form-12-product-type-physical" tabIndex="-1" aria-hidden="true" type="radio" value="physical" checked name="form-12-product-type" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-product-type-physical" id="form-12-product-type-physical-label">
-                            Physical Product
+                            {"Physical Product"}
                           </FieldLabel>
                           <FieldDescription>
-                            Ships from inventory and needs fulfillment rules.
+                            {"Ships from inventory and needs fulfillment rules."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -242,10 +242,10 @@ export function Pattern() {
                         <input id="form-12-product-type-digital" tabIndex="-1" aria-hidden="true" type="radio" value="digital" name="form-12-product-type" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-product-type-digital" id="form-12-product-type-digital-label">
-                            Digital Download
+                            {"Digital Download"}
                           </FieldLabel>
                           <FieldDescription>
-                            Delivers files, licenses, or access after purchase.
+                            {"Delivers files, licenses, or access after purchase."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -254,10 +254,10 @@ export function Pattern() {
                         <input id="form-12-product-type-service" tabIndex="-1" aria-hidden="true" type="radio" value="service" name="form-12-product-type" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-product-type-service" id="form-12-product-type-service-label">
-                            Service
+                            {"Service"}
                           </FieldLabel>
                           <FieldDescription>
-                            Creates a bookable or managed service offer.
+                            {"Creates a bookable or managed service offer."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -271,23 +271,23 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Pricing
+                        {"Pricing"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Base and comparison price.
+                      {"Base and comparison price."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <FieldGroup className="gap-3 grid sm:grid-cols-2">
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-price">
-                          Price
+                          {"Price"}
                         </FieldLabel>
                         <InputGroup role="group">
                           <InputGroupAddon role="group" data-align="inline-start">
                             <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                              $
+                              {"$"}
                             </span>
                           </InputGroupAddon>
                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="form-12-price" inputmode="decimal" value="148.00" />
@@ -295,12 +295,12 @@ export function Pattern() {
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-compare-price">
-                          Compare At
+                          {"Compare At"}
                         </FieldLabel>
                         <InputGroup role="group">
                           <InputGroupAddon role="group" data-align="inline-start">
                             <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                              $
+                              {"$"}
                             </span>
                           </InputGroupAddon>
                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="form-12-compare-price" inputmode="decimal" value="188.00" />
@@ -316,24 +316,24 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Inventory
+                        {"Inventory"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Stock keeping unit and quantity.
+                      {"Stock keeping unit and quantity."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <FieldGroup className="gap-3 grid sm:grid-cols-2">
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-sku">
-                          SKU
+                          {"SKU"}
                         </FieldLabel>
                         <Input id="form-12-sku" autoComplete="off" value="ARS-2048-ST"></Input>
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-inventory">
-                          Quantity
+                          {"Quantity"}
                         </FieldLabel>
                         <Input id="form-12-inventory" inputmode="numeric" value="126"></Input>
                       </Field>
@@ -347,11 +347,11 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Commerce Rules
+                        {"Commerce Rules"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Tax and stock behavior.
+                      {"Tax and stock behavior."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -363,10 +363,10 @@ export function Pattern() {
                         <input id="form-12-track-inventory" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-track-inventory" id="form-12-track-inventory-label">
-                            Track Inventory
+                            {"Track Inventory"}
                           </FieldLabel>
                           <FieldDescription>
-                            Reserve stock after purchase.
+                            {"Reserve stock after purchase."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -377,10 +377,10 @@ export function Pattern() {
                         <input id="form-12-charge-tax" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-charge-tax" id="form-12-charge-tax-label">
-                            Charge Tax
+                            {"Charge Tax"}
                           </FieldLabel>
                           <FieldDescription>
-                            Apply regional tax rules.
+                            {"Apply regional tax rules."}
                           </FieldDescription>
                         </FieldContent>
                       </Field>
@@ -394,22 +394,22 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-fulfillment">
-                        Fulfillment
+                        {"Fulfillment"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      How orders are completed.
+                      {"How orders are completed."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-12-fulfillment" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Warehouse
+                        {"Warehouse"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -423,7 +423,7 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-field-title items-center">
-                        Collections
+                        {"Collections"}
                       </FieldLabel>
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Collections details" id="base-ui-_r_u_" baseUiTooltipTrigger="">
@@ -436,13 +436,13 @@ export function Pattern() {
                       </Tooltip>
                     </div>
                     <FieldDescription>
-                      Storefront groups and campaigns.
+                      {"Storefront groups and campaigns."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <ComboboxChips className="has-data-[slot=combobox-chip]:pl-1 min-h-10" role="toolbar">
                       <ComboboxChip className="gap-1.5" tabIndex="-1">
-                        New Arrivals
+                        {"New Arrivals"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -451,7 +451,7 @@ export function Pattern() {
                         </button>
                       </ComboboxChip>
                       <ComboboxChip className="gap-1.5" tabIndex="-1">
-                        Running
+                        {"Running"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -460,7 +460,7 @@ export function Pattern() {
                         </button>
                       </ComboboxChip>
                       <ComboboxChip className="gap-1.5" tabIndex="-1">
-                        Weather Ready
+                        {"Weather Ready"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -480,11 +480,11 @@ export function Pattern() {
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-12-status">
-                        Status
+                        {"Status"}
                       </FieldLabel>
                     </div>
                     <FieldDescription>
-                      Controls storefront visibility.
+                      {"Controls storefront visibility."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -494,13 +494,13 @@ export function Pattern() {
                         <span className="flex gap-2 items-center min-w-0">
                           <span className="bg-warning rounded-full shrink-0 size-1.5"></span>
                           <span className="truncate">
-                            Draft
+                            {"Draft"}
                           </span>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -513,15 +513,15 @@ export function Pattern() {
           <CardFooter className="gap-3 justify-between px-5 py-4 sm:px-6">
             <div className="gap-1.5 hidden items-center min-w-0 sm:flex text-muted-foreground text-sm">
               <span className="shrink-0">
-                2 media
+                {"2 media"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="min-w-0 truncate">
-                Footwear
+                {"Footwear"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="shrink-0">
-                3 collections
+                {"3 collections"}
               </span>
             </div>
             <div className="flex gap-2 items-center justify-end sm:w-auto w-full">
@@ -531,7 +531,7 @@ export function Pattern() {
                   <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                   <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
                 </svg>
-                Save Draft
+                {"Save Draft"}
               </Button>
               <Button type="submit" tabIndex="0">
                 <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
@@ -539,7 +539,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Create Product
+                {"Create Product"}
               </Button>
             </div>
           </CardFooter>

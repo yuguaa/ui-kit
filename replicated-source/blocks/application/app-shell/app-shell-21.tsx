@@ -48,12 +48,14 @@ import {
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="bg-background flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-0 text-foreground w-full" style={{"--sidebar-width": "16rem", "--sidebar-width-icon": "3rem"}}>
       <ResizablePanelGroup className="[&>[data-panel]:first-child]:duration-200 [&>[data-panel]:first-child]:ease-linear [&>[data-panel]:first-child]:transition-[flex] flex-1 group/panels has-[[data-separator=active]]:[&>[data-panel]:first-child]:transition-none min-h-0" group="true" testid="_r_0_" id="_r_0_" style={{height: "100%", width: "100%", overflow: "hidden", display: "flex", flexFlow: "row", touchAction: "pan-y"}}>
         <ResizablePanel panel="true" testid="_r_1_" id="_r_1_" style={{minHeight: "0px", maxHeight: "100%", height: "auto", minWidth: "0px", maxWidth: "100%", width: "auto", border: "0px", padding: "0px", margin: "0px", display: "flex", flex: "19.39 1 0px", overflow: "visible"}}>
           <div className="min-h-0" style={{maxHeight: "100%", maxWidth: "100%", flexGrow: "1", overflow: "auto", touchAction: "pan-y"}}>
             <div className="group/fade h-full overflow-hidden relative" data-state="open">
               <div className="duration-200 group-data-[state=collapsed]/fade:opacity-0 group-data-[state=collapsed]/fade:pointer-events-none h-full transition-opacity" style={{width: "248px"}}>
+                <SidebarProvider>
                 <Sidebar>
                   <SidebarHeader className="gap-2" sidebar="header">
                     <div className="flex gap-2 items-center pt-1 px-1">
@@ -66,7 +68,7 @@ export function Pattern() {
                         </ItemMedia>
                       </Item>
                       <span className="flex-1 font-semibold min-w-0 text-sm tracking-tight truncate">
-                        NeUI Chat
+                        {"NeUI Chat"}
                       </span>
                       <Button type="button" tabIndex="0" aria-label="Search chats">
                         <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
@@ -82,59 +84,75 @@ export function Pattern() {
                       </Button>
                     </div>
                   </SidebarHeader>
+                  <SidebarProvider>
                   <SidebarContent sidebar="content">
                     <div className="px-2 py-3">
                       <Tabs data-orientation="horizontal" activationDirection="none">
                         <TabsList className="bg-foreground/5 grid grid-cols-2 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                           <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2_" compositeItemActive="">
-                            Chats
+                            {"Chats"}
                           </TabsTrigger>
                           <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                            Artifacts
+                            {"Artifacts"}
                           </TabsTrigger>
                         </TabsList>
                       </Tabs>
                     </div>
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5 px-2" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5" type="button" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                           <span>
-                            New Chat
+                            {"New Chat"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5" type="button" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-folder" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FolderIcon" tabler="IconFolder" hugeicons="FolderIcon" phosphor="FolderIcon" remixicon="RiFolderLine" aria-hidden="true">
                             <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                           </svg>
                           <span>
-                            Projects
+                            {"Projects"}
                           </span>
                           <SidebarMenuBadge sidebar="menu-badge">
-                            4
+                            {"4"}
                           </SidebarMenuBadge>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5" type="button" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 6v6l4 2"></path>
                           </svg>
                           <span>
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                           <SidebarMenuBadge sidebar="menu-badge">
-                            2
+                            {"2"}
                           </SidebarMenuBadge>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5" type="button" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                             <path d="M14 17H5"></path>
@@ -143,20 +161,24 @@ export function Pattern() {
                             <circle cx="7" cy="7" r="3"></circle>
                           </svg>
                           <span>
-                            Customize
+                            {"Customize"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                     <SidebarSeparator className="bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:self-stretch data-vertical:w-px mx-0 my-3 shrink-0" data-orientation="horizontal" role="separator" aria-orientation="horizontal" sidebar="separator"></SidebarSeparator>
                     <nav aria-label="Chat threads">
                       <Collapsible data-open="">
+                        <SidebarProvider>
                         <SidebarGroup className="py-1" sidebar="group">
                           <Collapsible>
                           <CollapsibleTrigger className="[&>svg]:shrink-0 cn-sidebar-group-label cursor-pointer flex group/collapsible hover:text-foreground items-center outline-hidden shrink-0 w-full" sidebar="group-label" panelOpen="" role="button" tabIndex="0" aria-controls="base-ui-_r_4_" aria-expanded="true">
-                            Pinned
+                            {"Pinned"}
                             <span className="ms-auto tabular-nums text-muted-foreground text-xs">
-                              2
+                              {"2"}
                             </span>
                             <svg className="group-data-[panel-open]/collapsible:rotate-180 lucide lucide-chevron-down ms-1 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
@@ -164,16 +186,21 @@ export function Pattern() {
                           </CollapsibleTrigger>
                           </Collapsible>
                           <CollapsibleContent data-open="" id="base-ui-_r_4_" style={{"--collapsible-panel-height": "auto", "--collapsible-panel-width": "auto", animationName: "none"}}>
+                            <SidebarProvider>
                             <SidebarGroupContent sidebar="group-content">
+                              <SidebarProvider>
                               <SidebarMenu className="gap-0.5" sidebar="menu">
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default" data-active="">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" data-overflowing="true">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Stripe webhook 500s on charge.refunded
+                                        {"Stripe webhook 500s on charge.refunded"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Unpin Stripe webhook 500s on charge.refunded">
                                     <svg className="lucide lucide-pin-off" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PinOffIcon" tabler="IconPinnedOff" hugeicons="PinOffIcon" phosphor="PushPinSlashIcon" remixicon="RiUnpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -192,14 +219,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Q3 release notes draft
+                                        {"Q3 release notes draft"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Unpin Q3 release notes draft">
                                     <svg className="lucide lucide-pin-off" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PinOffIcon" tabler="IconPinnedOff" hugeicons="PinOffIcon" phosphor="PushPinSlashIcon" remixicon="RiUnpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -218,18 +249,23 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
                               </SidebarMenu>
+                              </SidebarProvider>
                             </SidebarGroupContent>
+                            </SidebarProvider>
                           </CollapsibleContent>
                         </SidebarGroup>
+                        </SidebarProvider>
                       </Collapsible>
                       <Collapsible data-open="">
+                        <SidebarProvider>
                         <SidebarGroup className="py-1" sidebar="group">
                           <Collapsible>
                           <CollapsibleTrigger className="[&>svg]:shrink-0 cn-sidebar-group-label cursor-pointer flex group/collapsible hover:text-foreground items-center outline-hidden shrink-0 w-full" sidebar="group-label" panelOpen="" role="button" tabIndex="0" aria-controls="base-ui-_r_f_" aria-expanded="true">
-                            Recent
+                            {"Recent"}
                             <span className="ms-auto tabular-nums text-muted-foreground text-xs">
-                              6
+                              {"6"}
                             </span>
                             <svg className="group-data-[panel-open]/collapsible:rotate-180 lucide lucide-chevron-down ms-1 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
@@ -237,16 +273,21 @@ export function Pattern() {
                           </CollapsibleTrigger>
                           </Collapsible>
                           <CollapsibleContent data-open="" id="base-ui-_r_f_" style={{"--collapsible-panel-height": "auto", "--collapsible-panel-width": "auto", animationName: "none"}}>
+                            <SidebarProvider>
                             <SidebarGroupContent sidebar="group-content">
+                              <SidebarProvider>
                               <SidebarMenu className="gap-0.5" sidebar="menu">
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Stream chat responses
+                                        {"Stream chat responses"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Stream chat responses">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -263,14 +304,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Churn by plan tier
+                                        {"Churn by plan tier"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Churn by plan tier">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -287,14 +332,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" data-overflowing="true">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Mobile onboarding revamp scope
+                                        {"Mobile onboarding revamp scope"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Mobile onboarding revamp scope">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -311,14 +360,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden" data-overflowing="true">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Why is p95 latency up on eu-west
+                                        {"Why is p95 latency up on eu-west"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Why is p95 latency up on eu-west">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -335,14 +388,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Rewrite the trial expiry email
+                                        {"Rewrite the trial expiry email"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Rewrite the trial expiry email">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -359,14 +416,18 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
+                                <SidebarProvider>
                                 <SidebarMenuItem className="group/row" sidebar="menu-item">
+                                  <SidebarProvider>
                                   <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 duration-200 ease-out group-focus-within/menu-item:pe-14 group-hover/menu-item:pe-14 hover:bg-foreground/5 max-md:pe-9 pe-2 transition-[padding]" type="button" sidebar="menu-button" size="default">
                                     <span className="@container block data-overflowing:[mask-image:linear-gradient(to_right,#000_calc(100%-1.5rem),transparent)] flex-1 group-hover/row:data-overflowing:[mask-image:linear-gradient(to_right,transparent,#000_1.5rem,#000_calc(100%-1.5rem),transparent)] min-w-0 overflow-hidden">
                                       <span className="duration-150 ease-linear group-hover/row:[transform:translateX(min(0px,calc(100cqw_-_100%)))] group-hover/row:duration-[2500ms] inline-block max-w-none motion-reduce:transform-none motion-reduce:transition-none transition-transform whitespace-nowrap">
-                                        Postgres index for events table
+                                        {"Postgres index for events table"}
                                       </span>
                                     </span>
                                   </SidebarMenuButton>
+                                  </SidebarProvider>
                                   <SidebarMenuAction className="end-7 max-md:hidden" type="button" sidebar="menu-action" aria-label="Pin Postgres index for events table">
                                     <svg className="lucide lucide-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Pin" tabler="IconPin" hugeicons="Pin02Icon" phosphor="PushPinIcon" remixicon="RiPushpinLine" aria-hidden="true">
                                       <path d="M12 17v5"></path>
@@ -383,37 +444,53 @@ export function Pattern() {
                                   </DropdownMenuTrigger>
                                   </DropdownMenu>
                                 </SidebarMenuItem>
+                                </SidebarProvider>
                               </SidebarMenu>
+                              </SidebarProvider>
                             </SidebarGroupContent>
+                            </SidebarProvider>
                           </CollapsibleContent>
                         </SidebarGroup>
+                        </SidebarProvider>
                       </Collapsible>
                     </nav>
                   </SidebarContent>
+                  </SidebarProvider>
                   <SidebarFooter className="gap-2" sidebar="footer">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 hover:text-foreground text-muted-foreground" type="button" sidebar="menu-button" size="sm">
                           <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
                             <path d="M12 7v14"></path>
                             <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                           </svg>
                           <span>
-                            Docs
+                            {"Docs"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 hover:text-foreground text-muted-foreground" type="button" sidebar="menu-button" size="sm">
                           <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                             <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                           </svg>
                           <span>
-                            What is new
+                            {"What is new"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 hover:text-foreground text-muted-foreground" type="button" sidebar="menu-button" size="sm">
                           <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -421,12 +498,17 @@ export function Pattern() {
                             <path d="M12 17h.01"></path>
                           </svg>
                           <span>
-                            Help
+                            {"Help"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
+                    <SidebarProvider>
                     <SidebarMenu sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
                         <DropdownMenu>
                         <DropdownMenuTrigger className="[&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 aria-disabled:opacity-50 aria-disabled:pointer-events-none bg-background border border-border cn-sidebar-menu-button cn-sidebar-menu-button-size-default cn-sidebar-menu-button-variant-default disabled:opacity-50 disabled:pointer-events-none flex group/menu-button h-auto hover:bg-accent items-center outline-hidden overflow-hidden pe-1.5 peer/menu-button ps-1.5 py-1.5 rounded-lg w-full" type="button" sidebar="menu-button" size="default" aria-label="Open workspace menu" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1h_" aria-expanded="false">
@@ -436,7 +518,7 @@ export function Pattern() {
                             </Avatar>
                             <div className="flex flex-col min-w-0">
                               <span className="font-medium leading-4 text-[13px] truncate">
-                                shadcn
+                                {"shadcn"}
                               </span>
                               <span className="flex gap-1 items-center leading-none min-w-0">
                                 <svg className="block shrink-0 size-3!" viewBox="0 0 28 28" fill="none" width="100%" height="100%" aria-hidden="true">
@@ -450,11 +532,11 @@ export function Pattern() {
                                   <circle cx="14" cy="14" r="14" fill="url(#sb21-atlas)"></circle>
                                 </svg>
                                 <span className="leading-none text-[11px] text-muted-foreground truncate">
-                                  Atlas
+                                  {"Atlas"}
                                 </span>
                                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                 <span className="leading-none shrink-0 text-[11px] text-muted-foreground">
-                                  Max
+                                  {"Max"}
                                 </span>
                               </span>
                             </div>
@@ -467,73 +549,103 @@ export function Pattern() {
                         </DropdownMenuTrigger>
                         </DropdownMenu>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarFooter>
                 </Sidebar>
+                </SidebarProvider>
               </div>
               <div className="absolute duration-200 group-data-[state=collapsed]/fade:opacity-100 group-data-[state=collapsed]/fade:pointer-events-auto inset-y-0 opacity-0 pointer-events-none start-0 transition-opacity w-12" inert="">
+                <SidebarProvider>
                 <Sidebar className="overflow-hidden">
                   <SidebarHeader className="pb-0 pt-2 px-2" sidebar="header">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1k_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Expand sidebar">
                           <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine" aria-hidden="true">
                             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                             <path d="M9 3v18"></path>
                           </svg>
                           <span>
-                            Expand sidebar
+                            {"Expand sidebar"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarHeader>
+                  <SidebarProvider>
                   <SidebarContent className="overflow-hidden" sidebar="content">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5 pt-2 px-2" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1m_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="New chat">
                           <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                           <span>
-                            New Chat
+                            {"New Chat"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1o_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Search chats">
                           <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                             <path d="m21 21-4.34-4.34"></path>
                             <circle cx="11" cy="11" r="8"></circle>
                           </svg>
                           <span>
-                            Search
+                            {"Search"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1q_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-folder" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FolderIcon" tabler="IconFolder" hugeicons="FolderIcon" phosphor="FolderIcon" remixicon="RiFolderLine" aria-hidden="true">
                             <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                           </svg>
                           <span>
-                            Projects
+                            {"Projects"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1s_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M12 6v6l4 2"></path>
                           </svg>
                           <span>
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_1u_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                             <path d="M14 17H5"></path>
@@ -542,13 +654,18 @@ export function Pattern() {
                             <circle cx="7" cy="7" r="3"></circle>
                           </svg>
                           <span>
-                            Customize
+                            {"Customize"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                     <SidebarSeparator className="bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:self-stretch data-vertical:w-px mx-2 my-1 shrink-0" data-orientation="horizontal" role="separator" aria-orientation="horizontal" sidebar="separator"></SidebarSeparator>
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5 px-2" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
                         <DropdownMenu>
                         <DropdownMenuTrigger className="[&>span:last-child]:sr-only [&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 aria-disabled:opacity-50 aria-disabled:pointer-events-none cn-sidebar-menu-button cn-sidebar-menu-button-size-default cn-sidebar-menu-button-variant-default data-active:bg-foreground/10 data-active:hover:bg-foreground/12 disabled:opacity-50 disabled:pointer-events-none flex group/menu-button hover:bg-foreground/5 items-center outline-hidden overflow-hidden p-2 peer/menu-button size-8" type="button" id="base-ui-_r_22_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Pinned chats" tabIndex="0" aria-haspopup="menu" aria-expanded="false">
@@ -557,11 +674,13 @@ export function Pattern() {
                             <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
                           </svg>
                           <span>
-                            Pinned
+                            {"Pinned"}
                           </span>
                         </DropdownMenuTrigger>
                         </DropdownMenu>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
                         <DropdownMenu>
                         <DropdownMenuTrigger className="[&>span:last-child]:sr-only [&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 aria-disabled:opacity-50 aria-disabled:pointer-events-none cn-sidebar-menu-button cn-sidebar-menu-button-size-default cn-sidebar-menu-button-variant-default data-active:bg-foreground/10 data-active:hover:bg-foreground/12 disabled:opacity-50 disabled:pointer-events-none flex group/menu-button hover:bg-foreground/5 items-center outline-hidden overflow-hidden p-2 peer/menu-button size-8" type="button" id="base-ui-_r_29_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Recent chats" tabIndex="0" aria-haspopup="menu" aria-expanded="false">
@@ -569,37 +688,51 @@ export function Pattern() {
                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                           </svg>
                           <span>
-                            Recent
+                            {"Recent"}
                           </span>
                         </DropdownMenuTrigger>
                         </DropdownMenu>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarContent>
+                  </SidebarProvider>
                   <SidebarFooter className="gap-1 pb-3 px-2" sidebar="footer">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_2e_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
                             <path d="M12 7v14"></path>
                             <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                           </svg>
                           <span>
-                            Docs
+                            {"Docs"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_2g_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                             <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                           </svg>
                           <span>
-                            What is new
+                            {"What is new"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="[&>span:last-child]:sr-only data-active:bg-foreground/10 data-active:hover:bg-foreground/12 hover:bg-foreground/5 p-2 size-8" type="button" id="base-ui-_r_2i_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
                           <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -607,11 +740,14 @@ export function Pattern() {
                             <path d="M12 17h.01"></path>
                           </svg>
                           <span>
-                            Help
+                            {"Help"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 size-8 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Account and workspace menu" aria-haspopup="menu" id="base-ui-_r_2m_" aria-expanded="false">
                       <Avatar className="size-7" size="default">
@@ -621,6 +757,7 @@ export function Pattern() {
                     </DropdownMenu>
                   </SidebarFooter>
                 </Sidebar>
+                </SidebarProvider>
               </div>
             </div>
           </div>
@@ -634,7 +771,7 @@ export function Pattern() {
               <header className="after:absolute after:bg-gradient-to-b after:from-background after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full bg-background flex gap-2 h-12 items-center md:h-14 px-3 relative shrink-0 sm:px-4 z-10">
                 <div className="flex flex-1 gap-2 items-center min-w-0">
                   <h1 className="font-medium min-w-0 text-sm truncate">
-                    Stripe webhook 500s on charge.refunded
+                    {"Stripe webhook 500s on charge.refunded"}
                   </h1>
                 </div>
                 <Tooltip>
@@ -647,7 +784,7 @@ export function Pattern() {
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_2v_" aria-expanded="false">
                   <span className="max-w-28 sm:max-w-none truncate">
-                    Claude Sonnet 5
+                    {"Claude Sonnet 5"}
                   </span>
                   <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -721,5 +858,6 @@ export function Pattern() {
         </ResizablePanel>
       </ResizablePanelGroup>
     </div>
+    </SidebarProvider>
   )
 }

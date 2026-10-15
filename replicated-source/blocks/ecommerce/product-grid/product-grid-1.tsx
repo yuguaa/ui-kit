@@ -22,7 +22,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 top-3">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                    20% Off
+                    {"20% Off"}
                   </Badge>
                 </div>
                 <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Wayfarer Daypack to wishlist" aria-pressed="false" extracted="1">
@@ -34,51 +34,51 @@ export function Pattern() {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col gap-3">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Daypacks">
-                Daypacks
+                {"Daypacks"}
               </a>
               <div className="flex gap-3 items-center justify-between min-h-6 min-w-0" role="group" aria-label="Choose color for Wayfarer Daypack">
                 <div className="flex gap-2 items-center min-w-0">
                   <button className="bg-zinc-700 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Wayfarer Daypack in Charcoal" aria-pressed="true">
                     <span className="sr-only">
-                      Charcoal
+                      {"Charcoal"}
                     </span>
                   </button>
                   <button className="bg-stone-300 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Wayfarer Daypack in Sand" aria-pressed="false">
                     <span className="sr-only">
-                      Sand
+                      {"Sand"}
                     </span>
                   </button>
                   <button className="bg-blue-950 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Wayfarer Daypack in Navy" aria-pressed="false">
                     <span className="sr-only">
-                      Navy
+                      {"Navy"}
                     </span>
                   </button>
                   <button className="bg-lime-900 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Wayfarer Daypack in Olive" aria-pressed="false">
                     <span className="sr-only">
-                      Olive
+                      {"Olive"}
                     </span>
                   </button>
                 </div>
                 <span className="shrink-0 text-muted-foreground text-xs">
-                  Charcoal
+                  {"Charcoal"}
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <CardTitle className="min-w-0">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                    Wayfarer Daypack
+                    {"Wayfarer Daypack"}
                   </a>
                 </CardTitle>
                 <CardDescription className="line-clamp-2">
-                  Everyday 18 L pack with a padded laptop sleeve and a side-zip opening to the main compartment.
+                  {"Everyday 18 L pack with a padded laptop sleeve and a side-zip opening to the main compartment."}
                 </CardDescription>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 mt-auto tabular-nums text-base">
                 <span className="text-foreground">
-                  $148
+                  {"$148"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $185
+                  {"$185"}
                 </span>
               </div>
             </CardContent>
@@ -91,7 +91,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 top-3">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                    New
+                    {"New"}
                   </Badge>
                 </div>
                 <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Sundown Weekender to wishlist" aria-pressed="false">
@@ -103,43 +103,43 @@ export function Pattern() {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col gap-3">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Weekenders">
-                Weekenders
+                {"Weekenders"}
               </a>
               <div className="flex gap-3 items-center justify-between min-h-6 min-w-0" role="group" aria-label="Choose color for Sundown Weekender">
                 <div className="flex gap-2 items-center min-w-0">
                   <button className="bg-zinc-950 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Sundown Weekender in Black" aria-pressed="true">
                     <span className="sr-only">
-                      Black
+                      {"Black"}
                     </span>
                   </button>
                   <button className="bg-stone-100 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Sundown Weekender in Bone" aria-pressed="false">
                     <span className="sr-only">
-                      Bone
+                      {"Bone"}
                     </span>
                   </button>
                   <button className="bg-amber-800 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Sundown Weekender in Saddle Tan" aria-pressed="false">
                     <span className="sr-only">
-                      Saddle Tan
+                      {"Saddle Tan"}
                     </span>
                   </button>
                 </div>
                 <span className="shrink-0 text-muted-foreground text-xs">
-                  Black
+                  {"Black"}
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <CardTitle className="min-w-0">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                    Sundown Weekender
+                    {"Sundown Weekender"}
                   </a>
                 </CardTitle>
                 <CardDescription className="line-clamp-2">
-                  48-hour duffel with full-grain leather pulls, a top-load main compartment, and a hidden shoe pocket.
+                  {"48-hour duffel with full-grain leather pulls, a top-load main compartment, and a hidden shoe pocket."}
                 </CardDescription>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 mt-auto tabular-nums text-base">
                 <span className="text-foreground">
-                  $224
+                  {"$224"}
                 </span>
               </div>
             </CardContent>
@@ -152,7 +152,7 @@ export function Pattern() {
                 </a>
                 <div className="absolute left-3 top-3">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                    23% Off
+                    {"23% Off"}
                   </Badge>
                 </div>
                 <Button className="absolute right-3 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Remove Saddle Tote from wishlist" aria-pressed="true">
@@ -164,51 +164,51 @@ export function Pattern() {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col gap-3">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Totes">
-                Totes
+                {"Totes"}
               </a>
               <div className="flex gap-3 items-center justify-between min-h-6 min-w-0" role="group" aria-label="Choose color for Saddle Tote">
                 <div className="flex gap-2 items-center min-w-0">
                   <button className="bg-stone-400 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Saddle Tote in Stone" aria-pressed="false">
                     <span className="sr-only">
-                      Stone
+                      {"Stone"}
                     </span>
                   </button>
                   <button className="bg-zinc-950 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Saddle Tote in Black" aria-pressed="false">
                     <span className="sr-only">
-                      Black
+                      {"Black"}
                     </span>
                   </button>
                   <button className="bg-amber-900 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Saddle Tote in Cognac" aria-pressed="true">
                     <span className="sr-only">
-                      Cognac
+                      {"Cognac"}
                     </span>
                   </button>
                   <button className="bg-emerald-800 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Saddle Tote in Sage" aria-pressed="false">
                     <span className="sr-only">
-                      Sage
+                      {"Sage"}
                     </span>
                   </button>
                 </div>
                 <span className="shrink-0 text-muted-foreground text-xs">
-                  Cognac
+                  {"Cognac"}
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <CardTitle className="min-w-0">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                    Saddle Tote
+                    {"Saddle Tote"}
                   </a>
                 </CardTitle>
                 <CardDescription className="line-clamp-2">
-                  Waxed canvas tote with a padded laptop sleeve, a hidden zip pocket, and stitched leather handles.
+                  {"Waxed canvas tote with a padded laptop sleeve, a hidden zip pocket, and stitched leather handles."}
                 </CardDescription>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 mt-auto tabular-nums text-base">
                 <span className="text-foreground">
-                  $98
+                  {"$98"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $128
+                  {"$128"}
                 </span>
               </div>
             </CardContent>
@@ -228,43 +228,43 @@ export function Pattern() {
             </CardHeader>
             <CardContent className="flex flex-1 flex-col gap-3">
               <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase w-fit" href="#" aria-label="View all Travel Packs">
-                Travel Packs
+                {"Travel Packs"}
               </a>
               <div className="flex gap-3 items-center justify-between min-h-6 min-w-0" role="group" aria-label="Choose color for Outpost 45L Pack">
                 <div className="flex gap-2 items-center min-w-0">
                   <button className="bg-slate-600 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Outpost 45L Pack in Slate" aria-pressed="false">
                     <span className="sr-only">
-                      Slate
+                      {"Slate"}
                     </span>
                   </button>
                   <button className="bg-emerald-900 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Outpost 45L Pack in Forest" aria-pressed="true">
                     <span className="sr-only">
-                      Forest
+                      {"Forest"}
                     </span>
                   </button>
                   <button className="bg-stone-300 border border-border/70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring hover:ring-2 hover:ring-ring/20 motion-safe:hover:scale-110 outline-none rounded-full shrink-0 size-4.5 transition-[box-shadow,transform]" type="button" aria-label="Show Outpost 45L Pack in Sand" aria-pressed="false">
                     <span className="sr-only">
-                      Sand
+                      {"Sand"}
                     </span>
                   </button>
                 </div>
                 <span className="shrink-0 text-muted-foreground text-xs">
-                  Forest
+                  {"Forest"}
                 </span>
               </div>
               <div className="flex flex-col gap-1 min-w-0">
                 <CardTitle className="min-w-0">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                    Outpost 45L Pack
+                    {"Outpost 45L Pack"}
                   </a>
                 </CardTitle>
                 <CardDescription className="line-clamp-2">
-                  Carry-on travel pack with clamshell access, a stowable hipbelt, and ventilated back panels.
+                  {"Carry-on travel pack with clamshell access, a stowable hipbelt, and ventilated back panels."}
                 </CardDescription>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 mt-auto tabular-nums text-base">
                 <span className="text-foreground">
-                  $268
+                  {"$268"}
                 </span>
               </div>
             </CardContent>

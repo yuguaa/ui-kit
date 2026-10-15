@@ -41,7 +41,7 @@ export function Pattern() {
   return (
     <div className="bg-background flex flex-col lg:h-svh lg:min-h-0 min-h-svh text-foreground w-full">
       <h1 className="sr-only">
-        Fleet console
+        {"Fleet console"}
       </h1>
       <div className="bg-accent/10 dark:bg-transparent flex flex-1 lg:pr-2 lg:py-2 min-h-0 w-full">
         <div className="duration-200 ease-linear group/rail h-full max-lg:hidden motion-reduce:transition-none overflow-hidden relative shrink-0 transition-[width] w-64" data-state="open">
@@ -69,13 +69,13 @@ export function Pattern() {
                 <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
                   <TabsList className="bg-input/30 h-7 inset-ring inset-ring-ring/20 p-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                     <TabsTrigger className="dark:data-active:bg-background dark:data-active:border-ring/30 data-active:border-ring/50 data-active:shadow-xs h-full not-data-active:hover:bg-input/50 px-2.5 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
-                      Fleet
+                      {"Fleet"}
                     </TabsTrigger>
                     <TabsTrigger className="dark:data-active:bg-background dark:data-active:border-ring/30 data-active:border-ring/50 data-active:shadow-xs h-full not-data-active:hover:bg-input/50 px-2.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                      Team
+                      {"Team"}
                     </TabsTrigger>
                     <TabsTrigger className="dark:data-active:bg-background dark:data-active:border-ring/30 data-active:border-ring/50 data-active:shadow-xs h-full not-data-active:hover:bg-input/50 px-2.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                      Events
+                      {"Events"}
                     </TabsTrigger>
                   </TabsList>
                 </Tabs>
@@ -91,7 +91,7 @@ export function Pattern() {
                         <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                       </svg>
                       <span>
-                        Overview
+                        {"Overview"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg text-[10px] text-muted-foreground transition-colors" type="button">
@@ -101,7 +101,7 @@ export function Pattern() {
                         <path d="M9 3.236v15"></path>
                       </svg>
                       <span>
-                        Live Map
+                        {"Live Map"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg text-[10px] text-muted-foreground transition-colors" type="button">
@@ -114,7 +114,7 @@ export function Pattern() {
                         <path d="M9 13v2"></path>
                       </svg>
                       <span>
-                        Robots
+                        {"Robots"}
                       </span>
                     </button>
                   </div>
@@ -126,7 +126,7 @@ export function Pattern() {
                         <path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"></path>
                       </svg>
                       <span>
-                        Zones
+                        {"Zones"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg text-[10px] text-muted-foreground transition-colors" type="button">
@@ -136,7 +136,7 @@ export function Pattern() {
                         <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                       </svg>
                       <span>
-                        Clusters
+                        {"Clusters"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg text-[10px] text-muted-foreground transition-colors" type="button">
@@ -146,7 +146,7 @@ export function Pattern() {
                         <path d="M2 12h20"></path>
                       </svg>
                       <span>
-                        Regions
+                        {"Regions"}
                       </span>
                     </button>
                   </div>
@@ -165,7 +165,7 @@ export function Pattern() {
                         <path d="M3 14v1"></path>
                       </svg>
                       <span>
-                        Data Sync
+                        {"Data Sync"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg text-[10px] text-muted-foreground transition-colors" type="button">
@@ -175,7 +175,7 @@ export function Pattern() {
                         <line x1="12" x2="12" y1="17" y2="21"></line>
                       </svg>
                       <span>
-                        Endpoints
+                        {"Endpoints"}
                       </span>
                     </button>
                     <button className="[&_svg]:text-ring [&_svg]:transition-colors bg-input/30 dark:inset-ring-input/30 flex flex-1 flex-col font-medium gap-1.5 gap-2 hover:[&_svg]:text-foreground hover:bg-input/50 hover:text-foreground inset-ring inset-ring-input/50 items-center justify-center leading-[14px] px-2 py-3 rounded-lg self-stretch text-[10px] text-muted-foreground transition-colors" type="button" aria-label="Add section">
@@ -189,7 +189,7 @@ export function Pattern() {
                 <nav className="flex flex-col w-full" aria-label="Robot Network">
                   <div className="flex gap-2 items-center pb-1 w-full">
                     <span className="font-medium text-ring text-xs">
-                      Robot Network
+                      {"Robot Network"}
                     </span>
                   </div>
                   <Collapsible data-open="">
@@ -210,7 +210,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          Service Pools
+                          {"Service Pools"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -219,7 +219,7 @@ export function Pattern() {
                           <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
-                        Stable
+                        {"Stable"}
                       </Badge>
                     </div>
                     <CollapsibleContent data-open="" id="base-ui-_r_3_" style={{"--collapsible-panel-height": "auto", "--collapsible-panel-width": "auto", animationName: "none"}}>
@@ -234,10 +234,10 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Delivery
+                              {"Delivery"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              42
+                              {"42"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
@@ -260,15 +260,15 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Inspection
+                              {"Inspection"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              18
+                              {"18"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
                           <Button className="font-normal h-5 hover:bg-transparent hover:text-foreground px-0 text-muted-foreground text-xs w-auto" href="#" aria-label="Review Inspection" role="button" tabIndex="0">
-                            Review
+                            {"Review"}
                           </Button>
                         </div>
                         <CollapsibleContent data-open="" id="base-ui-_r_5_" style={{"--collapsible-panel-height": "auto", "--collapsible-panel-width": "auto", animationName: "none"}}>
@@ -282,7 +282,7 @@ export function Pattern() {
                             <button className="-ml-2 dark:hover:bg-input/30 flex flex-1 font-medium gap-1.5 h-full hover:bg-accent/50 hover:text-foreground items-center min-w-0 px-2 rounded-md text-muted-foreground text-xs transition-colors" type="button">
                               <span className="bg-ring rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="truncate">
-                                Overview
+                                {"Overview"}
                               </span>
                             </button>
                           </div>
@@ -296,7 +296,7 @@ export function Pattern() {
                             <button className="-ml-2 bg-accent dark:bg-input/50 flex flex-1 font-medium gap-2 h-full items-center min-w-0 px-2 rounded-md text-foreground text-xs transition-colors" type="button" aria-current="page">
                               <span className="bg-foreground rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="truncate">
-                                Scheduled
+                                {"Scheduled"}
                               </span>
                             </button>
                           </div>
@@ -310,7 +310,7 @@ export function Pattern() {
                             <button className="-ml-2 dark:hover:bg-input/30 flex flex-1 font-medium gap-1.5 h-full hover:bg-accent/50 hover:text-foreground items-center min-w-0 px-2 rounded-md text-muted-foreground text-xs transition-colors" type="button">
                               <span className="bg-ring rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="truncate">
-                                Findings
+                                {"Findings"}
                               </span>
                             </button>
                           </div>
@@ -324,7 +324,7 @@ export function Pattern() {
                             <button className="-ml-2 dark:hover:bg-input/30 flex flex-1 font-medium gap-1.5 h-full hover:bg-accent/50 hover:text-foreground items-center min-w-0 px-2 rounded-md text-muted-foreground text-xs transition-colors" type="button">
                               <span className="bg-ring rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="truncate">
-                                Completed
+                                {"Completed"}
                               </span>
                             </button>
                           </div>
@@ -341,15 +341,15 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Maintenance
+                              {"Maintenance"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              11
+                              {"11"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/20 border border-transparent dark:bg-warning/20 dark:border-transparent dark:text-warning-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-4 min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                            2 offline
+                            {"2 offline"}
                           </Badge>
                         </div>
                       </Collapsible>
@@ -364,10 +364,10 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Transfer
+                              {"Transfer"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              27
+                              {"27"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
@@ -384,15 +384,15 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Patrol
+                              {"Patrol"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              16
+                              {"16"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/20 border border-transparent dark:bg-success/20 dark:border-transparent dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-4 min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            Live
+                            {"Live"}
                           </Badge>
                         </div>
                       </Collapsible>
@@ -407,15 +407,15 @@ export function Pattern() {
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                             <span className="truncate">
-                              Standby
+                              {"Standby"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                              37
+                              {"37"}
                             </Badge>
                           </CollapsibleTrigger>
                           </Collapsible>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-blue-500/20 border border-transparent dark:bg-blue-500/20 dark:border-transparent dark:text-blue-600 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-4 min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-blue-900 transition-shadow">
-                            All Ready
+                            {"All Ready"}
                           </Badge>
                         </div>
                       </Collapsible>
@@ -437,12 +437,12 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          Stations & Hubs
+                          {"Stations & Hubs"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
                       <Button className="font-normal h-5 hover:bg-transparent hover:text-foreground px-0 text-muted-foreground text-xs w-auto" href="#" aria-label="Add Stations & Hubs" role="button" tabIndex="0">
-                        Add
+                        {"Add"}
                       </Button>
                     </div>
                   </Collapsible>
@@ -463,7 +463,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          Dispatch Queues
+                          {"Dispatch Queues"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
@@ -486,12 +486,12 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="truncate">
-                          Connectivity Tiers
+                          {"Connectivity Tiers"}
                         </span>
                       </CollapsibleTrigger>
                       </Collapsible>
                       <Button className="font-normal h-5 hover:bg-transparent hover:text-foreground px-0 text-muted-foreground text-xs w-auto" href="#" aria-label="Manage Connectivity Tiers" role="button" tabIndex="0">
-                        Manage
+                        {"Manage"}
                       </Button>
                     </div>
                   </Collapsible>
@@ -504,10 +504,10 @@ export function Pattern() {
                 </Avatar>
                 <span className="flex flex-1 flex-col gap-0.5 min-w-0 text-left">
                   <span className="font-medium leading-none text-sidebar-accent-foreground text-xs truncate">
-                    Shadcn
+                    {"Shadcn"}
                   </span>
                   <span className="font-normal leading-none text-[10px] text-muted-foreground truncate">
-                    Author of Shadcn/ui
+                    {"Author of Shadcn/ui"}
                   </span>
                 </span>
                 <svg className="lucide lucide-chevrons-up-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
@@ -662,7 +662,7 @@ export function Pattern() {
               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_1b_" placeholder="Search" aria-label="Search the workspace" />
               <InputGroupAddon className="has-[>kbd]:mr-0 pr-2.5" role="group" data-align="inline-end">
                 <Kbd className="rounded-md">
-                  ⌘F
+                  {"⌘F"}
                 </Kbd>
               </InputGroupAddon>
             </InputGroup>

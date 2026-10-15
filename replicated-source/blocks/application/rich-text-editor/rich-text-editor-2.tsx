@@ -30,21 +30,21 @@ export function Pattern() {
           <div className="flex flex-1 flex-col gap-px min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <h1 className="font-medium text-base/5 truncate">
-                Escalation Playbook
+                {"Escalation Playbook"}
               </h1>
             </div>
             <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center text-muted-foreground text-xs">
               <span>
-                Support wiki
+                {"Support wiki"}
               </span>
               <span className="gap-1.5 inline-flex items-center max-sm:hidden">
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                Edited Sep 26
+                {"Edited Sep 26"}
               </span>
               <span className="gap-1.5 inline-flex items-center">
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span aria-live="polite">
-                  Saved
+                  {"Saved"}
                 </span>
               </span>
             </p>
@@ -113,110 +113,110 @@ export function Pattern() {
             <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap.resize-cursor]:cursor-col-resize [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.column-resize-handle]:-end-px [&_.tiptap_.column-resize-handle]:absolute [&_.tiptap_.column-resize-handle]:bg-primary [&_.tiptap_.column-resize-handle]:inset-y-0 [&_.tiptap_.column-resize-handle]:pointer-events-none [&_.tiptap_.column-resize-handle]:w-0.5 [&_.tiptap_.column-resize-handle]:z-10 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selectedCell]:after:absolute [&_.tiptap_.selectedCell]:after:bg-primary/10 [&_.tiptap_.selectedCell]:after:content-[''] [&_.tiptap_.selectedCell]:after:inset-0 [&_.tiptap_.selectedCell]:after:pointer-events-none [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_.tableWrapper]:mb-6 [&_.tiptap_.tableWrapper]:mt-10 [&_.tiptap_.tableWrapper]:overflow-x-auto [&_.tiptap_:is(h1,h2,h3)]:scroll-mt-[calc(var(--page-header)+--spacing(6))] [&_.tiptap_:is(td,th)]:align-top [&_.tiptap_:is(td,th)]:border [&_.tiptap_:is(td,th)]:border-border [&_.tiptap_:is(td,th)]:px-3 [&_.tiptap_:is(td,th)]:py-2 [&_.tiptap_:is(td,th)]:relative [&_.tiptap_:is(td,th)]:text-start [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_[data-type=mention]]:bg-primary/10 [&_.tiptap_[data-type=mention]]:font-medium [&_.tiptap_[data-type=mention]]:px-1 [&_.tiptap_[data-type=mention]]:py-0.5 [&_.tiptap_[data-type=mention]]:rounded-sm [&_.tiptap_[data-type=mention]]:text-primary [&_.tiptap_[data-type=mention]]:whitespace-nowrap! [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_table]:border-collapse [&_.tiptap_table]:table-fixed [&_.tiptap_table]:text-sm [&_.tiptap_table]:w-full [&_.tiptap_th]:bg-muted [&_.tiptap_th]:font-medium [&_.tiptap_th]:text-muted-foreground [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 flex flex-col max-w-3xl min-h-full mx-auto px-4 py-8 sm:px-16 sm:py-12 text-base/7 text-foreground w-full">
               <div className="ProseMirror tiptap" contentEditable="true" role="textbox" aria-label="Escalation Playbook page" aria-multiline="true" translate="no" tabIndex="0">
                 <h1>
-                  Escalation Playbook
+                  {"Escalation Playbook"}
                 </h1>
                 <p>
-                  How Loomwell support hands a customer problem to engineering without losing context.
+                  {"How Loomwell support hands a customer problem to engineering without losing context."}
                   <span data-type="mention" data-id="usr_daniel" data-label="Daniel Okafor" data-mention-suggestion-char="@" contentEditable="false">
-                    @Daniel Okafor
+                    {"@Daniel Okafor"}
                   </span>
-                  owns this page; propose edits in
+                  {"owns this page; propose edits in"}
                   <code>
-                    #support-ops
+                    {"#support-ops"}
                   </code>
-                  .
+                  {"."}
                 </p>
                 <div className="node-richTextOutline react-renderer" contentEditable="false">
                   <div className="flex flex-col gap-1.5" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                     <p className="font-medium text-muted-foreground text-xs">
-                      Contents
+                      {"Contents"}
                     </p>
                     <nav className="flex flex-col items-start" aria-label="Contents">
                       <Button className="font-normal h-auto hover:text-foreground max-w-full px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Escalation Playbook
+                          {"Escalation Playbook"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          When to Escalate
+                          {"When to Escalate"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Escalation Tiers
+                          {"Escalation Tiers"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Paging Engineering
+                          {"Paging Engineering"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Handoff Checklist
+                          {"Handoff Checklist"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Handoff Note
+                          {"Handoff Note"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Search Diagnostics
+                          {"Search Diagnostics"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Customer Updates
+                          {"Customer Updates"}
                         </span>
                       </Button>
                       <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
                         <span className="truncate">
-                          Review Cadence
+                          {"Review Cadence"}
                         </span>
                       </Button>
                     </nav>
                   </div>
                 </div>
                 <h2>
-                  When to Escalate
+                  {"When to Escalate"}
                 </h2>
                 <p>
-                  Escalate as soon as one of these is true. When in doubt, escalate and let the next tier downgrade it.
+                  {"Escalate as soon as one of these is true. When in doubt, escalate and let the next tier downgrade it."}
                 </p>
                 <ul>
                   <li>
                     <p>
-                      Email stops syncing for a workspace for more than 15 minutes.
+                      {"Email stops syncing for a workspace for more than 15 minutes."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Inbox search misses conversations that exist, for more than one agent.
+                      {"Inbox search misses conversations that exist, for more than one agent."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Scheduled replies send at the wrong time, or not at all.
+                      {"Scheduled replies send at the wrong time, or not at all."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Anything that looks like another workspace's data is
+                      {"Anything that looks like another workspace's data is"}
                       <strong>
-                        always Tier 3
+                        {"always Tier 3"}
                       </strong>
-                      .
+                      {"."}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  Escalation Tiers
+                  {"Escalation Tiers"}
                 </h2>
                 <p>
-                  Targets run from the moment the ticket is tagged, around the clock for Tier 3.
+                  {"Targets run from the moment the ticket is tagged, around the clock for Tier 3."}
                 </p>
                 <div className="tableWrapper">
                   <table style={{minWidth: "384px"}}>
@@ -230,45 +230,45 @@ export function Pattern() {
                       <tr>
                         <th colSpan="1" rowSpan="1">
                           <p>
-                            Tier
+                            {"Tier"}
                           </p>
                         </th>
                         <th colSpan="1" rowSpan="1">
                           <p>
-                            Owner
+                            {"Owner"}
                           </p>
                         </th>
                         <th colSpan="1" rowSpan="1">
                           <p>
-                            Response target
+                            {"Response target"}
                           </p>
                         </th>
                         <th colSpan="1" rowSpan="1">
                           <p>
-                            Channel
+                            {"Channel"}
                           </p>
                         </th>
                       </tr>
                       <tr>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Tier 1
+                            {"Tier 1"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Daniel Okafor
+                            {"Daniel Okafor"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            4 business hours
+                            {"4 business hours"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
                             <code>
-                              #support-desk
+                              {"#support-desk"}
                             </code>
                           </p>
                         </td>
@@ -276,23 +276,23 @@ export function Pattern() {
                       <tr>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Tier 2
+                            {"Tier 2"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Lena Hoffmann
+                            {"Lena Hoffmann"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            1 hour
+                            {"1 hour"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
                             <code>
-                              #search-oncall
+                              {"#search-oncall"}
                             </code>
                           </p>
                         </td>
@@ -300,23 +300,23 @@ export function Pattern() {
                       <tr>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Tier 3
+                            {"Tier 3"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            Lena Hoffmann
+                            {"Lena Hoffmann"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
-                            15 minutes
+                            {"15 minutes"}
                           </p>
                         </td>
                         <td colSpan="1" rowSpan="1">
                           <p>
                             <code>
-                              #incident-room
+                              {"#incident-room"}
                             </code>
                           </p>
                         </td>
@@ -325,17 +325,17 @@ export function Pattern() {
                   </table>
                 </div>
                 <h3>
-                  Paging Engineering
+                  {"Paging Engineering"}
                 </h3>
                 <p>
-                  Tier 2 and Tier 3 page the search on-call from the incident channel. Never message an engineer directly:
+                  {"Tier 2 and Tier 3 page the search on-call from the incident channel. Never message an engineer directly:"}
                   <mark data-color="yellow">
-                    the page is what starts the clock
+                    {"the page is what starts the clock"}
                   </mark>
-                  .
+                  {"."}
                 </p>
                 <h2>
-                  Handoff Checklist
+                  {"Handoff Checklist"}
                 </h2>
                 <ul data-type="taskList">
                   <li className="node-taskItem react-renderer" data-checked="true">
@@ -353,7 +353,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Tag the ticket with its tier and the affected workspace ID
+                            {"Tag the ticket with its tier and the affected workspace ID"}
                           </p>
                         </div>
                       </div>
@@ -374,7 +374,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Reproduce it on a staging workspace, or note why you could not
+                            {"Reproduce it on a staging workspace, or note why you could not"}
                           </p>
                         </div>
                       </div>
@@ -389,7 +389,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Paste the search diagnostics from the next section
+                            {"Paste the search diagnostics from the next section"}
                           </p>
                         </div>
                       </div>
@@ -404,11 +404,11 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Agree the customer update with
+                            {"Agree the customer update with"}
                             <span data-type="mention" data-id="usr_maya" data-label="Maya Chen" data-mention-suggestion-char="@" contentEditable="false">
-                              @Maya Chen
+                              {"@Maya Chen"}
                             </span>
-                            before it goes out
+                            {"before it goes out"}
                           </p>
                         </div>
                       </div>
@@ -423,11 +423,11 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Book the incident review with
+                            {"Book the incident review with"}
                             <span data-type="mention" data-id="usr_lena" data-label="Lena Hoffmann" data-mention-suggestion-char="@" contentEditable="false">
-                              @Lena Hoffmann
+                              {"@Lena Hoffmann"}
                             </span>
-                            once Tier 3 closes
+                            {"once Tier 3 closes"}
                           </p>
                         </div>
                       </div>
@@ -435,43 +435,43 @@ export function Pattern() {
                   </li>
                 </ul>
                 <h2>
-                  Handoff Note
+                  {"Handoff Note"}
                 </h2>
                 <h3>
-                  Search Diagnostics
+                  {"Search Diagnostics"}
                 </h3>
                 <p>
-                  Run this from the admin console and paste the output in the ticket:
+                  {"Run this from the admin console and paste the output in the ticket:"}
                 </p>
                 <pre>
                   <code>
-                    loomwell diag search --workspace ws_4821 --since 2h
+                    {"loomwell diag search --workspace ws_4821 --since 2h"}
                   </code>
                 </pre>
                 <h3>
-                  Customer Updates
+                  {"Customer Updates"}
                 </h3>
                 <p>
-                  Send the first update inside the response target, even with nothing new to say. The tone we aim for:
+                  {"Send the first update inside the response target, even with nothing new to say. The tone we aim for:"}
                 </p>
                 <blockquote>
                   <p>
-                    We can see the problem on our side and an engineer is on it now. You will hear from us again by 3:00 p.m. UTC, sooner if it is fixed.
+                    {"We can see the problem on our side and an engineer is on it now. You will hear from us again by 3:00 p.m. UTC, sooner if it is fixed."}
                   </p>
                 </blockquote>
                 <h2>
-                  Review Cadence
+                  {"Review Cadence"}
                 </h2>
                 <p>
-                  Every Tier 3 gets a written review within five business days.
+                  {"Every Tier 3 gets a written review within five business days."}
                   <span data-type="mention" data-id="usr_arjun" data-label="Arjun Mehta" data-mention-suggestion-char="@" contentEditable="false">
-                    @Arjun Mehta
+                    {"@Arjun Mehta"}
                   </span>
-                  collects the notes, and past reviews live in the
+                  {"collects the notes, and past reviews live in the"}
                   <a target="_blank" rel="noopener noreferrer nofollow" href="https://loomwell.example/reviews">
-                    incident archive
+                    {"incident archive"}
                   </a>
-                  .
+                  {"."}
                 </p>
               </div>
             </div>
@@ -520,47 +520,47 @@ export function Pattern() {
                   <div className="flex flex-col max-h-80 no-scrollbar overflow-y-auto p-0.5 supports-[animation-timeline:scroll()]:scroll-fade-y">
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start text-muted-foreground w-full" type="button" tabIndex="0" aria-current="location">
                       <span className="truncate">
-                        Escalation Playbook
+                        {"Escalation Playbook"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        When to Escalate
+                        {"When to Escalate"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Escalation Tiers
+                        {"Escalation Tiers"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Paging Engineering
+                        {"Paging Engineering"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Handoff Checklist
+                        {"Handoff Checklist"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Handoff Note
+                        {"Handoff Note"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Search Diagnostics
+                        {"Search Diagnostics"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Customer Updates
+                        {"Customer Updates"}
                       </span>
                     </Button>
                     <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
                       <span className="truncate">
-                        Review Cadence
+                        {"Review Cadence"}
                       </span>
                     </Button>
                   </div>

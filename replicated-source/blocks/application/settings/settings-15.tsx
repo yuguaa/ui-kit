@@ -32,7 +32,7 @@ export function Pattern() {
         <Frame>
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              AI features
+              {"AI features"}
             </div>
           </header>
           <FramePanel className="p-0!">
@@ -52,13 +52,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Enable AI semantic search
+                    {"Enable AI semantic search"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                      Smart
+                      {"Smart"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Find content by meaning, not exact wording.
+                    {"Find content by meaning, not exact wording."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -84,13 +84,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Enable AI insight
+                    {"Enable AI insight"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                      Beta
+                      {"Beta"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Surface patterns and highlights from your workspace.
+                    {"Surface patterns and highlights from your workspace."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -106,7 +106,7 @@ export function Pattern() {
         <Frame>
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              Publishing
+              {"Publishing"}
             </div>
           </header>
           <FramePanel className="p-0!">
@@ -123,18 +123,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Subdomain
+                    {"Subdomain"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-focus-foreground transition-shadow">
-                      Fallback
+                      {"Fallback"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Short hostname visitors use before your custom domain.
+                    {"Short hostname visitors use before your custom domain."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Button type="button" tabIndex="0" extracted="1">
-                    Edit subdomain
+                    {"Edit subdomain"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -152,18 +152,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Custom domain
+                    {"Custom domain"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                      HTTPS
+                      {"HTTPS"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Bring your brand URL and serve it over HTTPS.
+                    {"Bring your brand URL and serve it over HTTPS."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Button type="button" tabIndex="0">
-                    Connect domain
+                    {"Connect domain"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -184,18 +184,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Default content
+                    {"Default content"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                      Homepage
+                      {"Homepage"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    What new visitors see when they land on your site.
+                    {"What new visitors see when they land on your site."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Button type="button" tabIndex="0">
-                    Change default
+                    {"Change default"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -205,7 +205,7 @@ export function Pattern() {
         <Frame>
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              Collaboration
+              {"Collaboration"}
             </div>
           </header>
           <FramePanel className="p-0!">
@@ -223,9 +223,9 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Workspace team
+                    {"Workspace team"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-focus-foreground transition-shadow">
-                      12 members
+                      {"12 members"}
                     </Badge>
                   </ItemTitle>
                   <div className="mt-1">
@@ -242,7 +242,7 @@ export function Pattern() {
                       <AvatarGroupCount className="border leading-none size-6 text-[10px]">
                         <Popover>
                         <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false" aria-label="9 more: Maya Patel, Liam Carter, Priya Nair, Diego Alvarez, Emma Wilson, Kenji Sato, Olivia Brown, Omar Haddad, Grace Kim">
-                          +9
+                          {"+9"}
                         </PopoverTrigger>
                         </Popover>
                       </AvatarGroupCount>
@@ -251,7 +251,7 @@ export function Pattern() {
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <Button type="button" tabIndex="0">
-                    Manage members
+                    {"Manage members"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -261,7 +261,7 @@ export function Pattern() {
         <Frame>
           <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="font-semibold text-sm">
-              Notifications
+              {"Notifications"}
             </div>
           </header>
           <FramePanel className="p-0!">
@@ -277,13 +277,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    Email digest
+                    {"Email digest"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                      Weekly
+                      {"Weekly"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Weekly summary of activity and mentions in this workspace.
+                    {"Weekly summary of activity and mentions in this workspace."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
@@ -307,13 +307,13 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2">
-                    In-app alerts
+                    {"In-app alerts"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                      Instant
+                      {"Instant"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Show real-time notifications while you are working here.
+                    {"Show real-time notifications while you are working here."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">

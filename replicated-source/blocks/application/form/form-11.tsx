@@ -37,10 +37,10 @@ export function Pattern() {
       <Card className="gap-0 max-w-3xl p-0 w-full" size="default">
         <CardHeader className="border-b border-border gap-1 px-5 py-4 sm:px-6">
           <CardTitle>
-            New App
+            {"New App"}
           </CardTitle>
           <CardDescription>
-            Create a launch-ready app from a brief, source, and starter.
+            {"Create a launch-ready app from a brief, source, and starter."}
           </CardDescription>
         </CardHeader>
         <form id="form-11-app-launch">
@@ -63,13 +63,13 @@ export function Pattern() {
                     </Item>
                     <div className="min-w-0">
                       <p className="font-medium text-white/70 text-xs">
-                        Launch setup
+                        {"Launch setup"}
                       </p>
                       <h2 className="font-semibold leading-6 text-lg truncate">
-                        Response Hub
+                        {"Response Hub"}
                       </h2>
                       <p className="line-clamp-1 mt-1 text-sm text-white/75">
-                        Incident queues, escalation notes, and executive readouts.
+                        {"Incident queues, escalation notes, and executive readouts."}
                       </p>
                     </div>
                   </div>
@@ -77,26 +77,26 @@ export function Pattern() {
                     <div className="gap-1.5 grid">
                       <div className="flex gap-3 items-center justify-between min-w-0">
                         <span className="shrink-0 text-muted-foreground">
-                          Source
+                          {"Source"}
                         </span>
                         <span className="font-medium truncate">
-                          meadow-relay
+                          {"meadow-relay"}
                         </span>
                       </div>
                       <div className="flex gap-3 items-center justify-between min-w-0">
                         <span className="shrink-0 text-muted-foreground">
-                          Runtime
+                          {"Runtime"}
                         </span>
                         <span className="font-medium truncate">
-                          Next.js App
+                          {"Next.js App"}
                         </span>
                       </div>
                       <div className="flex gap-3 items-center justify-between min-w-0">
                         <span className="shrink-0 text-muted-foreground">
-                          Region
+                          {"Region"}
                         </span>
                         <span className="font-medium truncate">
-                          US East
+                          {"US East"}
                         </span>
                       </div>
                     </div>
@@ -109,24 +109,24 @@ export function Pattern() {
             </div>
             <FieldSet className="gap-0">
               <FieldLegend className="sr-only" variant="legend">
-                New app launch
+                {"New app launch"}
               </FieldLegend>
               <FieldDescription className="sr-only">
-                Configure launch brief, starter, source, app name, route, runtime, and region.
+                {"Configure launch brief, starter, source, app name, route, runtime, and region."}
               </FieldDescription>
               <FieldGroup className="gap-0">
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-start px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-launch-prompt">
-                      Launch Brief
+                      {"Launch Brief"}
                     </FieldLabel>
                     <FieldDescription>
-                      Describe the first version.
+                      {"Describe the first version."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Textarea className="min-h-24" id="form-11-launch-prompt">
-                      Create a service desk app with priority queues, SLA badges, and owner handoff notes.
+                      {"Create a service desk app with priority queues, SLA badges, and owner handoff notes."}
                     </Textarea>
                   </div>
                 </Field>
@@ -136,21 +136,21 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-template">
-                      Starter
+                      {"Starter"}
                     </FieldLabel>
                     <FieldDescription>
-                      Base app surface.
+                      {"Base app surface."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-11-template" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Response Hub
+                        {"Response Hub"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -163,21 +163,21 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-repository">
-                      Source
+                      {"Source"}
                     </FieldLabel>
                     <FieldDescription>
-                      Repository to connect.
+                      {"Repository to connect."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-11-repository" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        meadow-relay
+                        {"meadow-relay"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -190,10 +190,10 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-app-name">
-                      App Name
+                      {"App Name"}
                     </FieldLabel>
                     <FieldDescription>
-                      Display name for the app.
+                      {"Display name for the app."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
@@ -206,17 +206,17 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-app-slug">
-                      App URL
+                      {"App URL"}
                     </FieldLabel>
                     <FieldDescription>
-                      Public route for previews.
+                      {"Public route for previews."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <InputGroup role="group">
                       <InputGroupAddon className="pl-3 pr-0" role="group" data-align="inline-start">
                         <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center text-muted-foreground">
-                          studio.neui.dev/
+                          {"studio.neui.dev/"}
                         </span>
                       </InputGroupAddon>
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="form-11-app-slug" autoComplete="off" value="meadow-relay" />
@@ -229,21 +229,21 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-runtime">
-                      Runtime
+                      {"Runtime"}
                     </FieldLabel>
                     <FieldDescription>
-                      Where the app executes.
+                      {"Where the app executes."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-11-runtime" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Next.js App
+                        {"Next.js App"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -256,21 +256,21 @@ export function Pattern() {
                 <Field className="gap-3 grid md:grid-cols-[minmax(0,16rem)_minmax(0,1fr)] md:items-center px-5 py-4 sm:px-6" role="group" data-orientation="vertical">
                   <FieldContent className="gap-0.5 md:pt-0.5">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-11-region">
-                      Region
+                      {"Region"}
                     </FieldLabel>
                     <FieldDescription>
-                      Deployment location.
+                      {"Deployment location."}
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
                     <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-11-region" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        US East
+                        {"US East"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -282,7 +282,7 @@ export function Pattern() {
           </CardContent>
           <CardFooter className="gap-2 justify-end px-5 py-4 sm:px-6">
             <Button type="reset" tabIndex="0">
-              Cancel
+              {"Cancel"}
             </Button>
             <Button type="submit" tabIndex="0">
               <svg className="lucide lucide-rocket" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="RocketIcon" tabler="IconRocket" hugeicons="RocketIcon" phosphor="RocketIcon" remixicon="RiRocketLine" aria-hidden="true">
@@ -291,7 +291,7 @@ export function Pattern() {
                 <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
                 <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
               </svg>
-              Create App
+              {"Create App"}
             </Button>
           </CardFooter>
         </form>

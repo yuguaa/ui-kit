@@ -13,10 +13,10 @@ export function Pattern() {
         <header className="flex flex-wrap gap-x-8 gap-y-4 items-end justify-between">
           <div className="flex flex-col gap-1.5 min-w-0">
             <span className="font-medium text-muted-foreground text-xs tracking-[0.22em] uppercase">
-              Reviews
+              {"Reviews"}
             </span>
             <h2 className="font-semibold md:leading-tight md:text-[28px] text-2xl text-foreground tracking-tight" id="reviews-heading">
-              What Customers Are Saying
+              {"What Customers Are Saying"}
             </h2>
             <div className="flex flex-wrap gap-x-2.5 gap-y-1.5 items-center text-sm">
               <Rating>
@@ -74,76 +74,76 @@ export function Pattern() {
                 </div>
               </Rating>
               <span className="font-medium tabular-nums text-foreground">
-                4.8
+                {"4.8"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <a className="hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-4" href="#all-reviews" aria-label="Read all 1,284 verified reviews for Halden Wave Pro">
                 <span className="font-medium tabular-nums text-foreground">
-                  1,284
+                  {"1,284"}
                 </span>
-                verified reviews
+                {"verified reviews"}
               </a>
             </div>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
-            Write A Review
+            {"Write A Review"}
           </Button>
         </header>
         <div className="flex flex-wrap gap-2 items-center md:mt-8 mt-6" role="tablist" aria-label="Filter reviews by topic">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert border border-transparent cursor-pointer disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-invert-foreground text-xs transition-colors" type="button" role="tab" aria-selected="true">
             <span>
-              All Reviews
+              {"All Reviews"}
             </span>
             <span className="opacity-70 tabular-nums">
-              100%
+              {"100%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Sound Quality
+              {"Sound Quality"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              94%
+              {"94%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Noise Cancel
+              {"Noise Cancel"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              91%
+              {"91%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Comfort
+              {"Comfort"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              89%
+              {"89%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Battery
+              {"Battery"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              86%
+              {"86%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Build Quality
+              {"Build Quality"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              82%
+              {"82%"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border cursor-pointer dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-auto hover:bg-muted min-w-5 outline-none px-3.5 py-1.5 relative rounded-full text-xs transition-colors" type="button" role="tab" aria-selected="false">
             <span>
-              Companion App
+              {"Companion App"}
             </span>
             <span className="tabular-nums text-muted-foreground">
-              78%
+              {"78%"}
             </span>
           </Badge>
         </div>
@@ -156,14 +156,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Mateo Halberg">
-                    Mateo Halberg
+                    {"Mateo Halberg"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -222,24 +222,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    5.0
+                    {"5.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Onyx, LDAC
+                    {"Onyx, LDAC"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    4 days ago
+                    {"4 days ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Disappeared a JFK red-eye into a calm cabin.”
+              {"“Disappeared a JFK red-eye into a calm cabin.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Cancellation handled the engine wash without that pressurized ear feeling. Voice pickup on a hotel call was clean enough that nobody asked if I was outside. Worth the upgrade from my old pair, and the case finally fits in a laptop sleeve pocket.
+              {"Cancellation handled the engine wash without that pressurized ear feeling. Voice pickup on a hotel call was clean enough that nobody asked if I was outside. Worth the upgrade from my old pair, and the case finally fits in a laptop sleeve pocket."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Mateo Halberg as helpful">
@@ -249,9 +249,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    248
+                    {"248"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -264,14 +264,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Yuki Tanaka">
-                    Yuki Tanaka
+                    {"Yuki Tanaka"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -330,24 +330,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    5.0
+                    {"5.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Cloud, LDAC
+                    {"Cloud, LDAC"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    1 week ago
+                    {"1 week ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Codec switching is invisible between phone and laptop.”
+              {"“Codec switching is invisible between phone and laptop.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Hands off iOS at lunch, back to LDAC on the work laptop, no menu wrestling. The companion app remembers EQ per source which sounds small until you live with it for a month and never have to fiddle with sliders again.
+              {"Hands off iOS at lunch, back to LDAC on the work laptop, no menu wrestling. The companion app remembers EQ per source which sounds small until you live with it for a month and never have to fiddle with sliders again."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Yuki Tanaka as helpful">
@@ -357,9 +357,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    192
+                    {"192"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -372,14 +372,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Priya Iyer">
-                    Priya Iyer
+                    {"Priya Iyer"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -438,24 +438,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    4.0
+                    {"4.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Sage, aptX HD
+                    {"Sage, aptX HD"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    2 weeks ago
+                    {"2 weeks ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Battery beat the 38 hour claim on heavy ANC use.”
+              {"“Battery beat the 38 hour claim on heavy ANC use.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Tracked five working days of meetings plus an evening commute and the meter still read 22 percent. Fast charge brings them back in twelve minutes if you forget. Half star off for the included cable being a bit short.
+              {"Tracked five working days of meetings plus an evening commute and the meter still read 22 percent. Fast charge brings them back in twelve minutes if you forget. Half star off for the included cable being a bit short."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Priya Iyer as helpful">
@@ -465,9 +465,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    156
+                    {"156"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -480,14 +480,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Jonas Brandt">
-                    Jonas Brandt
+                    {"Jonas Brandt"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -546,24 +546,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    5.0
+                    {"5.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Onyx, LDAC
+                    {"Onyx, LDAC"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    3 weeks ago
+                    {"3 weeks ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Comfortable past hour four of back-to-back calls.”
+              {"“Comfortable past hour four of back-to-back calls.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Clamping force is gentler than the heavier comparable models. Earpads have memory foam that warms quickly without sweating, and the headband padding sits behind glasses temples without pinch.
+              {"Clamping force is gentler than the heavier comparable models. Earpads have memory foam that warms quickly without sweating, and the headband padding sits behind glasses temples without pinch."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Jonas Brandt as helpful">
@@ -573,9 +573,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    134
+                    {"134"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -588,14 +588,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Camille Avery">
-                    Camille Avery
+                    {"Camille Avery"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -654,24 +654,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    4.0
+                    {"4.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Cloud, aptX HD
+                    {"Cloud, aptX HD"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    1 month ago
+                    {"1 month ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Replacement earpads arrived inside a week.”
+              {"“Replacement earpads arrived inside a week.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Halden support sent fresh pads after a year of daily wear, no fuss, no questions. The fact that the cups pop off without tools is the kind of detail that earns a second purchase from me later.
+              {"Halden support sent fresh pads after a year of daily wear, no fuss, no questions. The fact that the cups pop off without tools is the kind of detail that earns a second purchase from me later."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Camille Avery as helpful">
@@ -681,9 +681,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    98
+                    {"98"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -696,14 +696,14 @@ export function Pattern() {
               <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                   <a className="font-semibold hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="View reviews by Aki Okafor">
-                    Aki Okafor
+                    {"Aki Okafor"}
                   </a>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
                     <svg className="lucide lucide-badge-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-hidden="true">
                       <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Verified
+                    {"Verified"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -762,24 +762,24 @@ export function Pattern() {
                     </div>
                   </Rating>
                   <span className="font-medium tabular-nums text-foreground">
-                    5.0
+                    {"5.0"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    Onyx, LDAC
+                    {"Onyx, LDAC"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span>
-                    1 month ago
+                    {"1 month ago"}
                   </span>
                 </div>
               </div>
             </header>
             <blockquote className="font-semibold leading-snug text-balance text-base text-foreground tracking-tight">
-              “Holds the low end without smearing the strings.”
+              {"“Holds the low end without smearing the strings.”"}
             </blockquote>
             <p className="leading-relaxed text-foreground/85 text-pretty text-sm">
-              Tested with a hi-res FLAC of a chamber recording, the cellos kept their bowing texture and the room ambience did not collapse into a wall of bass. Stage feels wide for a closed-back, not gimmicky.
+              {"Tested with a hi-res FLAC of a chamber recording, the cellos kept their bowing texture and the room ambience did not collapse into a wall of bass. Stage feels wide for a closed-back, not gimmicky."}
             </p>
             <footer className="flex gap-2 items-center text-xs">
               <button className="gap-1.5 hover:text-primary inline-flex items-center text-muted-foreground transition-colors" type="button" aria-label="Mark review by Aki Okafor as helpful">
@@ -789,9 +789,9 @@ export function Pattern() {
                 </svg>
                 <span>
                   <span className="font-medium tabular-nums text-foreground">
-                    87
+                    {"87"}
                   </span>
-                  found this helpful
+                  {"found this helpful"}
                 </span>
               </button>
             </footer>
@@ -799,7 +799,7 @@ export function Pattern() {
         </div>
         <div className="flex flex-wrap gap-4 items-center justify-center md:mt-12 mt-10">
           <a className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" href="#all-reviews" aria-label="View all 1,284 reviews for Halden Wave Pro">
-            View All 1,284 Reviews
+            {"View All 1,284 Reviews"}
           </a>
         </div>
       </section>

@@ -18,7 +18,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -28,7 +28,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Seasonal Categories
+                  {"Seasonal Categories"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -36,14 +36,14 @@ export function Pattern() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-1.5 min-w-0">
               <h2 className="font-semibold leading-tight md:text-3xl text-2xl text-balance tracking-tight" id="seasonal-heading">
-                Seasonal Category Cards
+                {"Seasonal Category Cards"}
               </h2>
               <p className="leading-6 max-w-2xl text-muted-foreground text-pretty text-sm">
-                Four focused shopping edits with image-first browsing and collection details revealed at the bottom of each card.
+                {"Four focused shopping edits with image-first browsing and collection details revealed at the bottom of each card."}
               </p>
             </div>
             <Button className="sm:w-auto w-full" href="#" aria-label="Browse all seasonal categories" role="button" tabIndex="0">
-              Browse All
+              {"Browse All"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -60,16 +60,16 @@ export function Pattern() {
             <div className="absolute bottom-4 duration-200 ease-out gap-3 hidden inset-x-4 items-end justify-between md:flex md:group-focus-within/card:opacity-0 md:group-hover/card:opacity-0 pointer-events-none transition-opacity z-20">
               <div className="min-w-0">
                 <p className="font-medium leading-5 text-xs text-zinc-50/80">
-                  Collection
+                  {"Collection"}
                 </p>
                 <h3 className="font-semibold leading-7 max-w-[16rem] text-balance text-xl text-zinc-50" id="warm-lighting-title">
                   <a className="hover:underline pointer-events-auto relative underline-offset-4 z-30" href="#">
-                    Warm Lighting
+                    {"Warm Lighting"}
                   </a>
                 </h3>
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-zinc-950/25 border border-white/30 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                Seasonal
+                {"Seasonal"}
               </Badge>
             </div>
             <div className="absolute bg-zinc-950/68 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 inset-0 md:group-focus-within/card:pointer-events-auto md:group-hover/card:opacity-100 md:group-hover/card:pointer-events-auto md:opacity-0 md:pointer-events-none motion-reduce:transition-none p-4 text-white transition-opacity z-30">
@@ -85,7 +85,7 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="tabular-nums truncate">
-                          58 items
+                          {"58 items"}
                         </span>
                       </span>
                       <span className="gap-1.5 inline-flex items-center min-w-0">
@@ -94,26 +94,26 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <a className="hover:text-white hover:underline transition-colors underline-offset-4" href="#">
-                          Seasonal Edit
+                          {"Seasonal Edit"}
                         </a>
                       </span>
                     </div>
                     <h3 className="font-semibold leading-6 min-w-0 mt-3 text-white text-xl">
                       <a className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 focus-visible:ring-zinc-50 hover:underline line-clamp-1 underline-offset-4" href="#">
-                        Warm Lighting
+                        {"Warm Lighting"}
                       </a>
                     </h3>
                   </div>
                   <p className="leading-5 line-clamp-3 max-w-md text-pretty text-sm text-white/85">
-                    Low-glare lamps, shaded pendants, warmer bulbs, and dimmable accents for softer evening rooms.
+                    {"Low-glare lamps, shaded pendants, warmer bulbs, and dimmable accents for softer evening rooms."}
                   </p>
                 </div>
                 <div className="border-t border-white/25 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex gap-4 items-center justify-between md:group-focus-within/card:opacity-100 md:group-focus-within/card:translate-y-0 md:group-hover/card:opacity-100 md:group-hover/card:translate-y-0 md:opacity-0 md:translate-y-4 min-w-0 motion-reduce:transition-none mt-auto opacity-100 pt-4 transition-[opacity,translate] translate-y-0 will-change-transform">
                   <span className="font-medium leading-5 text-white/80 text-xs">
-                    Curated seasonal shopping
+                    {"Curated seasonal shopping"}
                   </span>
                   <Button href="#" aria-label="Browse Warm Lighting collection" role="button" tabIndex="0">
-                    Shop Collection
+                    {"Shop Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -131,11 +131,11 @@ export function Pattern() {
             <div className="absolute bottom-4 duration-200 ease-out gap-3 hidden inset-x-4 items-end justify-between md:flex md:group-focus-within/card:opacity-0 md:group-hover/card:opacity-0 pointer-events-none transition-opacity z-20">
               <div className="min-w-0">
                 <p className="font-medium leading-5 text-xs text-zinc-50/80">
-                  Collection
+                  {"Collection"}
                 </p>
                 <h3 className="font-semibold leading-7 max-w-[16rem] text-balance text-xl text-zinc-50" id="layered-textiles-title">
                   <a className="hover:underline pointer-events-auto relative underline-offset-4 z-30" href="#">
-                    Layered Textiles
+                    {"Layered Textiles"}
                   </a>
                 </h3>
               </div>
@@ -153,7 +153,7 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="tabular-nums truncate">
-                          86 items
+                          {"86 items"}
                         </span>
                       </span>
                       <span className="gap-1.5 inline-flex items-center min-w-0">
@@ -162,26 +162,26 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <a className="hover:text-white hover:underline transition-colors underline-offset-4" href="#">
-                          Seasonal Edit
+                          {"Seasonal Edit"}
                         </a>
                       </span>
                     </div>
                     <h3 className="font-semibold leading-6 min-w-0 mt-3 text-white text-xl">
                       <a className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 focus-visible:ring-zinc-50 hover:underline line-clamp-1 underline-offset-4" href="#">
-                        Layered Textiles
+                        {"Layered Textiles"}
                       </a>
                     </h3>
                   </div>
                   <p className="leading-5 line-clamp-3 max-w-md text-pretty text-sm text-white/85">
-                    Throws, cushions, rugs, cotton bedding, and tactile layers that make seating and bedrooms feel finished.
+                    {"Throws, cushions, rugs, cotton bedding, and tactile layers that make seating and bedrooms feel finished."}
                   </p>
                 </div>
                 <div className="border-t border-white/25 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex gap-4 items-center justify-between md:group-focus-within/card:opacity-100 md:group-focus-within/card:translate-y-0 md:group-hover/card:opacity-100 md:group-hover/card:translate-y-0 md:opacity-0 md:translate-y-4 min-w-0 motion-reduce:transition-none mt-auto opacity-100 pt-4 transition-[opacity,translate] translate-y-0 will-change-transform">
                   <span className="font-medium leading-5 text-white/80 text-xs">
-                    Curated seasonal shopping
+                    {"Curated seasonal shopping"}
                   </span>
                   <Button href="#" aria-label="Browse Layered Textiles collection" role="button" tabIndex="0">
-                    Shop Collection
+                    {"Shop Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -199,16 +199,16 @@ export function Pattern() {
             <div className="absolute bottom-4 duration-200 ease-out gap-3 hidden inset-x-4 items-end justify-between md:flex md:group-focus-within/card:opacity-0 md:group-hover/card:opacity-0 pointer-events-none transition-opacity z-20">
               <div className="min-w-0">
                 <p className="font-medium leading-5 text-xs text-zinc-50/80">
-                  Collection
+                  {"Collection"}
                 </p>
                 <h3 className="font-semibold leading-7 max-w-[16rem] text-balance text-xl text-zinc-50" id="hosting-table-title">
                   <a className="hover:underline pointer-events-auto relative underline-offset-4 z-30" href="#">
-                    Hosting Table
+                    {"Hosting Table"}
                   </a>
                 </h3>
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-zinc-950/25 border border-white/30 dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none pointer-events-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                Restocked
+                {"Restocked"}
               </Badge>
             </div>
             <div className="absolute bg-zinc-950/68 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 inset-0 md:group-focus-within/card:pointer-events-auto md:group-hover/card:opacity-100 md:group-hover/card:pointer-events-auto md:opacity-0 md:pointer-events-none motion-reduce:transition-none p-4 text-white transition-opacity z-30">
@@ -224,7 +224,7 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="tabular-nums truncate">
-                          73 items
+                          {"73 items"}
                         </span>
                       </span>
                       <span className="gap-1.5 inline-flex items-center min-w-0">
@@ -233,26 +233,26 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <a className="hover:text-white hover:underline transition-colors underline-offset-4" href="#">
-                          Seasonal Edit
+                          {"Seasonal Edit"}
                         </a>
                       </span>
                     </div>
                     <h3 className="font-semibold leading-6 min-w-0 mt-3 text-white text-xl">
                       <a className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 focus-visible:ring-zinc-50 hover:underline line-clamp-1 underline-offset-4" href="#">
-                        Hosting Table
+                        {"Hosting Table"}
                       </a>
                     </h3>
                   </div>
                   <p className="leading-5 line-clamp-3 max-w-md text-pretty text-sm text-white/85">
-                    Serveware, trays, glasses, napkins, candles, and dining accents for casual dinners and planned gatherings.
+                    {"Serveware, trays, glasses, napkins, candles, and dining accents for casual dinners and planned gatherings."}
                   </p>
                 </div>
                 <div className="border-t border-white/25 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex gap-4 items-center justify-between md:group-focus-within/card:opacity-100 md:group-focus-within/card:translate-y-0 md:group-hover/card:opacity-100 md:group-hover/card:translate-y-0 md:opacity-0 md:translate-y-4 min-w-0 motion-reduce:transition-none mt-auto opacity-100 pt-4 transition-[opacity,translate] translate-y-0 will-change-transform">
                   <span className="font-medium leading-5 text-white/80 text-xs">
-                    Curated seasonal shopping
+                    {"Curated seasonal shopping"}
                   </span>
                   <Button href="#" aria-label="Browse Hosting Table collection" role="button" tabIndex="0">
-                    Shop Collection
+                    {"Shop Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -270,11 +270,11 @@ export function Pattern() {
             <div className="absolute bottom-4 duration-200 ease-out gap-3 hidden inset-x-4 items-end justify-between md:flex md:group-focus-within/card:opacity-0 md:group-hover/card:opacity-0 pointer-events-none transition-opacity z-20">
               <div className="min-w-0">
                 <p className="font-medium leading-5 text-xs text-zinc-50/80">
-                  Collection
+                  {"Collection"}
                 </p>
                 <h3 className="font-semibold leading-7 max-w-[16rem] text-balance text-xl text-zinc-50" id="entryway-reset-title">
                   <a className="hover:underline pointer-events-auto relative underline-offset-4 z-30" href="#">
-                    Entryway Reset
+                    {"Entryway Reset"}
                   </a>
                 </h3>
               </div>
@@ -292,7 +292,7 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="tabular-nums truncate">
-                          49 items
+                          {"49 items"}
                         </span>
                       </span>
                       <span className="gap-1.5 inline-flex items-center min-w-0">
@@ -301,26 +301,26 @@ export function Pattern() {
                           <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                         </svg>
                         <a className="hover:text-white hover:underline transition-colors underline-offset-4" href="#">
-                          Seasonal Edit
+                          {"Seasonal Edit"}
                         </a>
                       </span>
                     </div>
                     <h3 className="font-semibold leading-6 min-w-0 mt-3 text-white text-xl">
                       <a className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 focus-visible:ring-zinc-50 hover:underline line-clamp-1 underline-offset-4" href="#">
-                        Entryway Reset
+                        {"Entryway Reset"}
                       </a>
                     </h3>
                   </div>
                   <p className="leading-5 line-clamp-3 max-w-md text-pretty text-sm text-white/85">
-                    Benches, hooks, trays, mirrors, baskets, and catchall storage for cleaner arrivals and faster exits.
+                    {"Benches, hooks, trays, mirrors, baskets, and catchall storage for cleaner arrivals and faster exits."}
                   </p>
                 </div>
                 <div className="border-t border-white/25 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex gap-4 items-center justify-between md:group-focus-within/card:opacity-100 md:group-focus-within/card:translate-y-0 md:group-hover/card:opacity-100 md:group-hover/card:translate-y-0 md:opacity-0 md:translate-y-4 min-w-0 motion-reduce:transition-none mt-auto opacity-100 pt-4 transition-[opacity,translate] translate-y-0 will-change-transform">
                   <span className="font-medium leading-5 text-white/80 text-xs">
-                    Curated seasonal shopping
+                    {"Curated seasonal shopping"}
                   </span>
                   <Button href="#" aria-label="Browse Entryway Reset collection" role="button" tabIndex="0">
-                    Shop Collection
+                    {"Shop Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>

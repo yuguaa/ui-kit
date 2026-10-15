@@ -17,6 +17,8 @@ export interface SnapshotListItem {
   title: string
   /** 卡片底部的标识标签（开发模式显示） */
   nameLabel?: string
+  /** 源码文件在面板里显示的名字 */
+  codeFile?: string
   description?: string
   /** 可选分组标签；提供时按分组渲染 */
   group?: string
@@ -114,6 +116,7 @@ export function SnapshotList({
                   registryName={item.registryName}
                   title={item.title}
                   nameLabel={item.nameLabel}
+                  codeFile={item.codeFile}
                   description={item.description}
                   height={height}
                 />

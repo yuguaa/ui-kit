@@ -29,11 +29,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Starter library dialog
+        {"Starter library dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Browse starter library
+          {"Browse starter library"}
         </Button>
       </div>
     </main>
@@ -41,10 +41,10 @@ export function Pattern() {
     <DialogContent className="flex flex-col gap-0 h-[min(86vh,48rem)] lg:max-w-[64rem] max-w-[calc(100vw-1.5rem)] overflow-hidden p-0 sm:max-w-5xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="gap-1 pb-3 pt-4 px-5 shrink-0 text-left">
         <DialogTitle id="base-ui-_r_2_">
-          Starter library
+          {"Starter library"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Choose a ready operating shape, then tailor it to your team.
+          {"Choose a ready operating shape, then tailor it to your team."}
         </DialogDescription>
       </DialogHeader>
       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -53,7 +53,7 @@ export function Pattern() {
           <aside className="border-b flex flex-col lg:border-b-0 lg:border-r lg:max-h-none lg:shrink-0 lg:w-72 max-h-[min(42svh,22rem)] min-h-0 overflow-hidden">
             <div className="pb-3 pt-4 px-5">
               <p className="font-medium text-muted-foreground text-xs">
-                Use cases
+                {"Use cases"}
               </p>
             </div>
             <ScrollArea className="[&_[data-slot=scroll-area-scrollbar]]:duration-150 [&_[data-slot=scroll-area-scrollbar]]:opacity-0 [&_[data-slot=scroll-area-scrollbar]]:transition-opacity flex-1 h-full hover:[&_[data-slot=scroll-area-scrollbar]]:opacity-100 min-h-0 w-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
@@ -78,10 +78,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        All templates
+                        {"All templates"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Every starter flow
+                        {"Every starter flow"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -100,10 +100,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Launch ops
+                        {"Launch ops"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Releases and rollouts
+                        {"Releases and rollouts"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -122,10 +122,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Client delivery
+                        {"Client delivery"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Projects and approvals
+                        {"Projects and approvals"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -142,10 +142,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Revenue rhythm
+                        {"Revenue rhythm"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Pipeline and forecasting
+                        {"Pipeline and forecasting"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -162,10 +162,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Research loops
+                        {"Research loops"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Interviews and synthesis
+                        {"Interviews and synthesis"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -184,10 +184,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        People programs
+                        {"People programs"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Hiring and onboarding
+                        {"Hiring and onboarding"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -208,10 +208,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Support systems
+                        {"Support systems"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Queues and handoffs
+                        {"Queues and handoffs"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -228,10 +228,10 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="font-medium leading-tight text-sm">
-                        Partner motion
+                        {"Partner motion"}
                       </ItemTitle>
                       <ItemDescription className="mt-0.5 text-muted-foreground text-xs">
-                        Enablement and co-sell
+                        {"Enablement and co-sell"}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -257,25 +257,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Release radar
+                            {"Release radar"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Track launch readiness, blockers, and final sign-off across one weekly control room.
+                            {"Track launch readiness, blockers, and final sign-off across one weekly control room."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Product teams
+                          {"Product teams"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Launch
+                          {"Launch"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Weekly
+                          {"Weekly"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                          Approvals
+                          {"Approvals"}
                         </Badge>
                       </div>
                     </div>
@@ -288,25 +288,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Client pulse board
+                            {"Client pulse board"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Keep active engagements aligned with milestones, owners, and risk check-ins.
+                            {"Keep active engagements aligned with milestones, owners, and risk check-ins."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Service teams
+                          {"Service teams"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Delivery
+                          {"Delivery"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Milestones
+                          {"Milestones"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                          Risk
+                          {"Risk"}
                         </Badge>
                       </div>
                     </div>
@@ -319,25 +319,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Forecast bridge
+                            {"Forecast bridge"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Review commit movement, late-stage changes, and coverage gaps before the number locks.
+                            {"Review commit movement, late-stage changes, and coverage gaps before the number locks."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Revenue leaders
+                          {"Revenue leaders"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Forecast
+                          {"Forecast"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Pipeline
+                          {"Pipeline"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                          Exec
+                          {"Exec"}
                         </Badge>
                       </div>
                     </div>
@@ -350,25 +350,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Interview signal hub
+                            {"Interview signal hub"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Collect interview notes, confidence markers, and synthesis themes in one review lane.
+                            {"Collect interview notes, confidence markers, and synthesis themes in one review lane."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Research squads
+                          {"Research squads"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Research
+                          {"Research"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                          Notes
+                          {"Notes"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Themes
+                          {"Themes"}
                         </Badge>
                       </div>
                     </div>
@@ -381,25 +381,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            First 30 plan
+                            {"First 30 plan"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Guide new hires through setup, shadowing, and early outcome checkpoints.
+                            {"Guide new hires through setup, shadowing, and early outcome checkpoints."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          People teams
+                          {"People teams"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Onboarding
+                          {"Onboarding"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Tasks
+                          {"Tasks"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                          Manager
+                          {"Manager"}
                         </Badge>
                       </div>
                     </div>
@@ -412,25 +412,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Escalation watch
+                            {"Escalation watch"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Surface hot customer issues, next actions, and cross-functional handoffs in one place.
+                            {"Surface hot customer issues, next actions, and cross-functional handoffs in one place."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Support leads
+                          {"Support leads"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Support
+                          {"Support"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                          Urgent
+                          {"Urgent"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Handoff
+                          {"Handoff"}
                         </Badge>
                       </div>
                     </div>
@@ -443,25 +443,25 @@ export function Pattern() {
                       <div className="flex flex-col gap-2 min-w-0 sm:flex-row sm:items-start sm:justify-between">
                         <div className="min-w-0">
                           <h3 className="font-bold truncate">
-                            Partner sprint room
+                            {"Partner sprint room"}
                           </h3>
                           <p className="mt-1 text-muted-foreground text-sm">
-                            Coordinate shared launches, enablement tasks, and materials reviews with external partners.
+                            {"Coordinate shared launches, enablement tasks, and materials reviews with external partners."}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                          Partnership teams
+                          {"Partnership teams"}
                         </Badge>
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                          Partners
+                          {"Partners"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Assets
+                          {"Assets"}
                         </Badge>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                          Review
+                          {"Review"}
                         </Badge>
                       </div>
                     </div>
@@ -478,19 +478,19 @@ export function Pattern() {
       <DialogFooter className="border-t flex-row items-center justify-between my-auto px-9 py-4">
         <span className="flex flex-1 gap-2 items-center min-w-0 text-muted-foreground text-sm">
           <span className="shrink-0 whitespace-nowrap">
-            7 ready
+            {"7 ready"}
           </span>
           <span className="bg-gray-300 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span className="min-w-0 truncate">
-            Release radar
+            {"Release radar"}
           </span>
         </span>
         <div className="flex gap-2 items-center">
           <Button type="button" tabIndex="0">
-            Build from blank
+            {"Build from blank"}
           </Button>
           <Button type="button" tabIndex="0">
-            Open template
+            {"Open template"}
           </Button>
         </div>
       </DialogFooter>
@@ -500,7 +500,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

@@ -176,10 +176,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-5 relative z-10">
               <span className="font-semibold leading-tight text-foreground text-xl">
-                340
+                {"340"}
               </span>
               <span className="text-muted-foreground text-relaxed text-sm">
-                Emails Sent
+                {"Emails Sent"}
               </span>
             </div>
           </FramePanel>
@@ -351,10 +351,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-5 relative z-10">
               <span className="font-semibold leading-tight text-foreground text-xl">
-                62
+                {"62"}
               </span>
               <span className="text-muted-foreground text-relaxed text-sm">
-                Calls Made
+                {"Calls Made"}
               </span>
             </div>
           </FramePanel>
@@ -526,10 +526,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-5 relative z-10">
               <span className="font-semibold leading-tight text-foreground text-xl">
-                18
+                {"18"}
               </span>
               <span className="text-muted-foreground text-relaxed text-sm">
-                Demo Requests
+                {"Demo Requests"}
               </span>
             </div>
           </FramePanel>
@@ -701,10 +701,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-5 relative z-10">
               <span className="font-semibold leading-tight text-foreground text-xl">
-                71
+                {"71"}
               </span>
               <span className="text-muted-foreground text-relaxed text-sm">
-                Meetings
+                {"Meetings"}
               </span>
             </div>
           </FramePanel>

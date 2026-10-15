@@ -51,16 +51,17 @@ import { Marker } from "@/registry/bases/radix/ui/marker"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "min(28rem, 45vw)", "--sidebar-width-icon": "3rem", "--sidebar": "var(--card)"}}>
       <SidebarInset className="min-h-0 overflow-hidden">
         <div className="flex-1 min-h-0 overflow-y-auto scrollbar">
           <header className="after:absolute after:bg-gradient-to-b after:from-background after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-background/70 flex gap-2 h-14 items-center px-4 sm:px-6 sticky supports-backdrop-filter:bg-background/60 top-0 z-10">
             <span className="font-medium min-w-0 text-sm truncate">
-              NeUI Labs
+              {"NeUI Labs"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="min-w-0 text-muted-foreground text-sm truncate">
-              Calendar
+              {"Calendar"}
             </span>
             <div className="flex gap-3 items-center ms-auto shrink-0">
               <Button className="gap-1.5" type="button" tabIndex="0" aria-pressed="true">
@@ -70,7 +71,7 @@ export function Pattern() {
                   <path d="M22 4h-4"></path>
                   <circle cx="4" cy="20" r="2"></circle>
                 </svg>
-                Assistant
+                {"Assistant"}
               </Button>
               <Avatar className="size-7" size="default">
                 <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -208,9 +209,12 @@ export function Pattern() {
           </div>
         </div>
       </SidebarInset>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="floating" data-side="right">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="right" aria-label="NeUI Chat">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="border-b gap-0 p-0 shrink-0" sidebar="header">
               <div className="flex gap-1 items-center min-h-12 px-3">
@@ -225,7 +229,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="min-w-0 text-sm text-start truncate">
-                    Thursday reshuffle
+                    {"Thursday reshuffle"}
                   </span>
                   <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -274,6 +278,7 @@ export function Pattern() {
                 </div>
               </div>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="overflow-hidden" sidebar="content">
               <div className="flex flex-1 flex-col min-h-0 relative">
                 <MessageScroller className="flex-1" scrollable="start">
@@ -282,7 +287,7 @@ export function Pattern() {
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
@@ -290,7 +295,7 @@ export function Pattern() {
                         <div className="flex flex-col gap-2 group/turn">
                           <Bubble className="max-w-full" variant="outline" data-align="start">
                             <BubbleContent className="leading-relaxed text-sm">
-                              Welcome back. How can I help?
+                              {"Welcome back. How can I help?"}
                             </BubbleContent>
                           </Bubble>
                           <div className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
@@ -316,15 +321,15 @@ export function Pattern() {
                               </Button>
                               <div className="flex-1 min-w-0"></div>
                               <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                0:18
+                                {"0:18"}
                               </span>
                             </div>
                             <div className="flex flex-col gap-1">
                               <span className="flex gap-1.5 items-center text-muted-foreground text-xs">
-                                Transcription
+                                {"Transcription"}
                               </span>
                               <p className="leading-relaxed text-sm">
-                                I've got a lunch with Sarah on Thursday at noon. Can you move things around so it fits?
+                                {"I've got a lunch with Sarah on Thursday at noon. Can you move things around so it fits?"}
                               </p>
                             </div>
                           </BubbleContent>
@@ -363,7 +368,7 @@ export function Pattern() {
                           <Bubble className="max-w-full" variant="outline" data-align="start">
                             <BubbleContent className="flex-col gap-2.5">
                               <p className="leading-relaxed text-sm">
-                                Checked the day before answering:
+                                {"Checked the day before answering:"}
                               </p>
                               <div className="flex flex-col gap-1.5">
                                 <Marker variant="default">
@@ -374,11 +379,11 @@ export function Pattern() {
                                   </MarkerIcon>
                                   <MarkerContent className="flex gap-1.5 items-center">
                                     <span className="shrink-0 text-foreground">
-                                      Read the calendar
+                                      {"Read the calendar"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="min-w-0 truncate">
-                                      5 entries on Thursday
+                                      {"5 entries on Thursday"}
                                     </span>
                                   </MarkerContent>
                                 </Marker>
@@ -390,11 +395,11 @@ export function Pattern() {
                                   </MarkerIcon>
                                   <MarkerContent className="flex gap-1.5 items-center">
                                     <span className="shrink-0 text-foreground">
-                                      Found the clashes
+                                      {"Found the clashes"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="min-w-0 truncate">
-                                      2 sit on top of noon
+                                      {"2 sit on top of noon"}
                                     </span>
                                   </MarkerContent>
                                 </Marker>
@@ -406,17 +411,17 @@ export function Pattern() {
                                   </MarkerIcon>
                                   <MarkerContent className="flex gap-1.5 items-center">
                                     <span className="shrink-0 text-foreground">
-                                      Checked the guests
+                                      {"Checked the guests"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <span className="min-w-0 truncate">
-                                      Maya and Jonas are flexible
+                                      {"Maya and Jonas are flexible"}
                                     </span>
                                   </MarkerContent>
                                 </Marker>
                               </div>
                               <p className="leading-relaxed text-sm">
-                                Both clashes can move without asking anyone to give up a morning.
+                                {"Both clashes can move without asking anyone to give up a morning."}
                               </p>
                             </BubbleContent>
                           </Bubble>
@@ -447,7 +452,7 @@ export function Pattern() {
                           <Bubble className="max-w-full" variant="outline" data-align="start">
                             <BubbleContent className="flex-col gap-2.5">
                               <p className="leading-relaxed text-sm">
-                                Here is what I would move:
+                                {"Here is what I would move:"}
                               </p>
                               <ul className="flex flex-col gap-1.5">
                                 <li className="flex gap-2 items-center">
@@ -459,9 +464,9 @@ export function Pattern() {
                                   </svg>
                                   <span className="leading-relaxed min-w-0 text-sm">
                                     <button className="font-medium hover:text-primary underline underline-offset-2" type="button" aria-label="Ask about Lunch With Sarah">
-                                      Lunch With Sarah
+                                      {"Lunch With Sarah"}
                                     </button>
-                                    books at 12:00 PM.
+                                    {"books at 12:00 PM."}
                                   </span>
                                 </li>
                                 <li className="flex gap-2 items-center">
@@ -473,9 +478,9 @@ export function Pattern() {
                                   </svg>
                                   <span className="leading-relaxed min-w-0 text-sm">
                                     <button className="font-medium hover:text-primary underline underline-offset-2" type="button" aria-label="Ask about Sync With Maya">
-                                      Sync With Maya
+                                      {"Sync With Maya"}
                                     </button>
-                                    moves to 1:30 PM.
+                                    {"moves to 1:30 PM."}
                                   </span>
                                 </li>
                                 <li className="flex gap-2 items-center">
@@ -487,9 +492,9 @@ export function Pattern() {
                                   </svg>
                                   <span className="leading-relaxed min-w-0 text-sm">
                                     <button className="font-medium hover:text-primary underline underline-offset-2" type="button" aria-label="Ask about Strategy Session">
-                                      Strategy Session
+                                      {"Strategy Session"}
                                     </button>
-                                    moves to Friday, 3:00 PM.
+                                    {"moves to Friday, 3:00 PM."}
                                   </span>
                                 </li>
                               </ul>
@@ -506,11 +511,11 @@ export function Pattern() {
                                   </Avatar>
                                 </AvatarGroup>
                                 <span className="text-muted-foreground text-xs">
-                                  Will be notified
+                                  {"Will be notified"}
                                 </span>
                               </div>
                               <p className="leading-relaxed text-sm">
-                                Shall I update your calendar and let them know?
+                                {"Shall I update your calendar and let them know?"}
                               </p>
                             </BubbleContent>
                           </Bubble>
@@ -521,17 +526,17 @@ export function Pattern() {
                                   <path d="M18 6 6 18"></path>
                                   <path d="m6 6 12 12"></path>
                                 </svg>
-                                Not Now
+                                {"Not Now"}
                               </Button>
                               <Button className="gap-1.5" type="button" tabIndex="0">
                                 <svg className="lucide lucide-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
-                                Approve
+                                {"Approve"}
                               </Button>
                             </div>
                             <p className="text-muted-foreground text-xs">
-                              Need another option? Just ask.
+                              {"Need another option? Just ask."}
                             </p>
                           </div>
                         </div>
@@ -544,12 +549,13 @@ export function Pattern() {
                 <div className="absolute bg-linear-to-t bottom-0 data-[active=true]:opacity-100 duration-200 ease-out from-sidebar h-8 inset-x-0 motion-reduce:transition-none opacity-0 pointer-events-none to-transparent transition-opacity" aria-hidden="true" data-active="false"></div>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="gap-2 mt-2 pb-4 pt-2 px-4 relative shrink-0 z-10" sidebar="footer">
               <div className="flex flex-col gap-2">
                 <form>
                   <Field role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-8-composer">
-                      Message the assistant
+                      {"Message the assistant"}
                     </FieldLabel>
                     <InputGroup className="min-h-10" role="group">
                       <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-9 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-8-composer" placeholder="Ask me anything"></textarea>
@@ -571,11 +577,11 @@ export function Pattern() {
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-normal gap-1.5 group/button h-7 hover:text-foreground inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shrink text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Model Swift 2.4, mode Act" aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
                     <span className="min-w-0 text-xs truncate">
-                      Swift 2.4
+                      {"Swift 2.4"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="shrink-0 text-xs">
-                      Act
+                      {"Act"}
                     </span>
                     <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
@@ -590,7 +596,7 @@ export function Pattern() {
                         <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                       </svg>
                       <span className="max-sm:sr-only text-xs">
-                        Shortcuts
+                        {"Shortcuts"}
                       </span>
                     </PopoverTrigger>
                     </Popover>
@@ -600,7 +606,7 @@ export function Pattern() {
                         <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                       </svg>
                       <span className="max-sm:sr-only text-xs">
-                        Attach
+                        {"Attach"}
                       </span>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
@@ -609,8 +615,12 @@ export function Pattern() {
               </div>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
     </div>
+    </SidebarProvider>
   )
 }

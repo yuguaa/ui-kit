@@ -19,10 +19,10 @@ export function Pattern() {
       <div className="flex flex-col gap-4 max-w-2xl w-full">
         <div className="space-y-0.5">
           <h1 className="font-semibold text-xl">
-            Integrations
+            {"Integrations"}
           </h1>
           <p className="text-muted-foreground text-sm">
-            Connect your favorite apps to automate workflows and stay updated on events.
+            {"Connect your favorite apps to automate workflows and stay updated on events."}
           </p>
         </div>
         <div className="flex flex-col gap-4">
@@ -38,15 +38,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent>
                   <ItemTitle>
-                    n8n
+                    {"n8n"}
                   </ItemTitle>
                   <ItemDescription>
-                    Automate your workflows and integrate with thousands of apps.
+                    {"Automate your workflows and integrate with thousands of apps."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
                   <Button type="button" tabIndex="0" extracted="1">
-                    Connect
+                    {"Connect"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -69,15 +69,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent>
                   <ItemTitle>
-                    Slack
+                    {"Slack"}
                   </ItemTitle>
                   <ItemDescription>
-                    Send call and message logs to your Slack workspace.
+                    {"Send call and message logs to your Slack workspace."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
                   <Button type="button" tabIndex="0">
-                    Disconnect
+                    {"Disconnect"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -85,10 +85,10 @@ export function Pattern() {
                 <Item variant="muted" size="default">
                   <ItemContent>
                     <ItemTitle>
-                      Messages
+                      {"Messages"}
                     </ItemTitle>
                     <ItemDescription>
-                      Send incoming messages to my channel
+                      {"Send incoming messages to my channel"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
@@ -101,10 +101,10 @@ export function Pattern() {
                 <Item variant="muted" size="default">
                   <ItemContent>
                     <ItemTitle>
-                      Alerts
+                      {"Alerts"}
                     </ItemTitle>
                     <ItemDescription>
-                      Send system alerts to my channel
+                      {"Send system alerts to my channel"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
@@ -129,15 +129,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent>
                   <ItemTitle>
-                    Discord
+                    {"Discord"}
                   </ItemTitle>
                   <ItemDescription>
-                    Post event notifications to your Discord server channels.
+                    {"Post event notifications to your Discord server channels."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
                   <Button type="button" tabIndex="0">
-                    Disconnect
+                    {"Disconnect"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -145,10 +145,10 @@ export function Pattern() {
                 <Item variant="muted" size="default">
                   <ItemContent>
                     <ItemTitle>
-                      Deploys
+                      {"Deploys"}
                     </ItemTitle>
                     <ItemDescription>
-                      Notify on successful deployments
+                      {"Notify on successful deployments"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
@@ -161,10 +161,10 @@ export function Pattern() {
                 <Item variant="muted" size="default">
                   <ItemContent>
                     <ItemTitle>
-                      Errors
+                      {"Errors"}
                     </ItemTitle>
                     <ItemDescription>
-                      Forward error reports to a channel
+                      {"Forward error reports to a channel"}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
@@ -189,15 +189,15 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent>
                   <ItemTitle>
-                    Stripe
+                    {"Stripe"}
                   </ItemTitle>
                   <ItemDescription>
-                    Sync payment events and subscription lifecycle changes.
+                    {"Sync payment events and subscription lifecycle changes."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
                   <Button type="button" tabIndex="0">
-                    Connect
+                    {"Connect"}
                   </Button>
                 </ItemActions>
               </Item>

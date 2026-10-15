@@ -19,22 +19,22 @@ export function Pattern() {
             <FramePanel className="min-h-[204px] p-0!" style={{"--metric-segment-color": "var(--success)", "--metric-segment-track": "color-mix(in oklch, var(--muted-foreground) 12%, var(--card))"}}>
               <div className="border-b border-border/60 flex gap-3 h-14 items-center justify-between px-4">
                 <h3 className="font-medium text-foreground text-sm">
-                  Performance Metrics
+                  {"Performance Metrics"}
                 </h3>
                 <Button className="text-foreground" type="button" tabIndex="0" extracted="1">
-                  Details
+                  {"Details"}
                 </Button>
               </div>
               <div className="gap-3 grid grid-cols-[minmax(0,1fr)_auto] items-end max-sm:grid-cols-1 max-sm:items-start min-h-[144px] p-5">
                 <div className="flex flex-col gap-7 min-w-0">
                   <div className="space-y-1">
                     <p className="font-medium text-foreground text-sm">
-                      Stable
+                      {"Stable"}
                     </p>
                     <p className="text-muted-foreground text-xs">
-                      Server Uptime:
+                      {"Server Uptime:"}
                       <span className="font-medium text-foreground text-xs">
-                        99.7%
+                        {"99.7%"}
                       </span>
                     </p>
                   </div>
@@ -48,7 +48,7 @@ export function Pattern() {
                       </Avatar>
                       <Avatar className="size-6" size="default">
                         <AvatarFallback className="bg-background font-medium text-xs">
-                          K
+                          {"K"}
                         </AvatarFallback>
                       </Avatar>
                       <Avatar className="size-6" size="default">
@@ -56,7 +56,7 @@ export function Pattern() {
                       </Avatar>
                     </AvatarGroup>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      6 reviewers
+                      {"6 reviewers"}
                     </span>
                   </div>
                 </div>
@@ -147,22 +147,22 @@ export function Pattern() {
             <FramePanel className="min-h-[204px] p-0!" style={{"--metric-segment-color": "var(--warning)", "--metric-segment-track": "color-mix(in oklch, var(--muted-foreground) 12%, var(--card))"}}>
               <div className="border-b border-border/60 flex gap-3 h-14 items-center justify-between px-4">
                 <h3 className="font-medium text-foreground text-sm">
-                  Quality Metrics
+                  {"Quality Metrics"}
                 </h3>
                 <Button className="text-foreground" type="button" tabIndex="0">
-                  Details
+                  {"Details"}
                 </Button>
               </div>
               <div className="gap-3 grid grid-cols-[minmax(0,1fr)_auto] items-end max-sm:grid-cols-1 max-sm:items-start min-h-[144px] p-5">
                 <div className="flex flex-col gap-7 min-w-0">
                   <div className="space-y-1">
                     <p className="font-medium text-foreground text-sm">
-                      In Review
+                      {"In Review"}
                     </p>
                     <p className="text-muted-foreground text-xs">
-                      Code Coverage:
+                      {"Code Coverage:"}
                       <span className="font-medium text-foreground text-xs">
-                        48.2%
+                        {"48.2%"}
                       </span>
                     </p>
                   </div>
@@ -176,7 +176,7 @@ export function Pattern() {
                       </Avatar>
                       <Avatar className="size-6" size="default">
                         <AvatarFallback className="bg-background font-medium text-xs">
-                          K
+                          {"K"}
                         </AvatarFallback>
                       </Avatar>
                       <Avatar className="size-6" size="default">
@@ -184,7 +184,7 @@ export function Pattern() {
                       </Avatar>
                     </AvatarGroup>
                     <span className="text-muted-foreground text-xs whitespace-nowrap">
-                      9 testers
+                      {"9 testers"}
                     </span>
                   </div>
                 </div>

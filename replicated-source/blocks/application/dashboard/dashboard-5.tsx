@@ -22,14 +22,14 @@ export function Pattern() {
     <main className="bg-background lg:p-6 min-h-svh p-3 sm:p-4 w-full" aria-labelledby="page-heading">
       <div className="@container flex flex-col gap-4 max-w-7xl mx-auto text-foreground w-full">
         <h1 className="sr-only" id="page-heading">
-          Edge Security Telemetry
+          {"Edge Security Telemetry"}
         </h1>
         <header className="flex gap-2 items-center justify-between min-h-9 pb-1 shrink-0 w-full" aria-label="Security telemetry header">
           <Breadcrumb className="min-w-0" aria-label="breadcrumb">
             <BreadcrumbList className="flex-nowrap">
               <BreadcrumbItem className="hidden md:inline-flex">
                 <BreadcrumbLink href="#">
-                  Home
+                  {"Home"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:flex" role="presentation" aria-hidden="true">
@@ -39,7 +39,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem className="hidden md:inline-flex">
                 <BreadcrumbLink href="#">
-                  Security
+                  {"Security"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:flex" role="presentation" aria-hidden="true">
@@ -49,7 +49,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem className="min-w-0">
                 <BreadcrumbPage className="truncate" role="link" aria-disabled="true" aria-current="page">
-                  Telemetry
+                  {"Telemetry"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -58,7 +58,7 @@ export function Pattern() {
             <Popover>
             <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button group/pick-date inline-flex items-center justify-between leading-none max-w-full outline-none select-none shrink-0 tabular-nums transition-all w-[250px] whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false">
               <span className="truncate">
-                May 12, 2026 - Jun 10, 2026
+                {"May 12, 2026 - Jun 10, 2026"}
               </span>
               <svg className="group-hover/pick-date:text-foreground lucide lucide-calendar shrink-0 text-muted-foreground/80 transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                 <path d="M8 2v4"></path>
@@ -75,7 +75,7 @@ export function Pattern() {
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
               <span className="hidden sm:block">
-                Export
+                {"Export"}
               </span>
             </Button>
           </div>
@@ -88,23 +88,23 @@ export function Pattern() {
             <CardContent className="flex flex-col gap-5 justify-between min-h-[7.25rem] p-4 relative z-10">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <span className="font-semibold leading-4 text-foreground text-sm truncate">
-                  Signal Risk
+                  {"Signal Risk"}
                 </span>
                 <span className="leading-4 text-muted-foreground text-xs truncate">
-                  Threat Index
+                  {"Threat Index"}
                 </span>
               </div>
               <div className="flex gap-4 items-end justify-between">
                 <div className="min-w-0 space-y-2.5">
                   <div className="font-semibold leading-none text-2xl text-foreground tracking-tight">
-                    Elevated
+                    {"Elevated"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow">
-                      +12.5%
+                      {"+12.5%"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      5 cases
+                      {"5 cases"}
                     </span>
                   </div>
                 </div>
@@ -121,23 +121,23 @@ export function Pattern() {
             <CardContent className="flex flex-col gap-5 justify-between min-h-[7.25rem] p-4 relative z-10">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <span className="font-semibold leading-4 text-foreground text-sm truncate">
-                  Mesh Uptime
+                  {"Mesh Uptime"}
                 </span>
                 <span className="leading-4 text-muted-foreground text-xs truncate">
-                  Service Health
+                  {"Service Health"}
                 </span>
               </div>
               <div className="flex gap-4 items-end justify-between">
                 <div className="min-w-0 space-y-2.5">
                   <div className="font-semibold leading-none text-2xl text-foreground tracking-tight">
-                    99.98%
+                    {"99.98%"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                      +0.2%
+                      {"+0.2%"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      58 zones
+                      {"58 zones"}
                     </span>
                   </div>
                 </div>
@@ -154,23 +154,23 @@ export function Pattern() {
             <CardContent className="flex flex-col gap-5 justify-between min-h-[7.25rem] p-4 relative z-10">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <span className="font-semibold leading-4 text-foreground text-sm truncate">
-                  Edge Traffic
+                  {"Edge Traffic"}
                 </span>
                 <span className="leading-4 text-muted-foreground text-xs truncate">
-                  Scrubbed Load
+                  {"Scrubbed Load"}
                 </span>
               </div>
               <div className="flex gap-4 items-end justify-between">
                 <div className="min-w-0 space-y-2.5">
                   <div className="font-semibold leading-none text-2xl text-foreground tracking-tight">
-                    4.8 GB/s
+                    {"4.8 GB/s"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                      -3.1%
+                      {"-3.1%"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      clean flow
+                      {"clean flow"}
                     </span>
                   </div>
                 </div>
@@ -187,23 +187,23 @@ export function Pattern() {
             <CardContent className="flex flex-col gap-5 justify-between min-h-[7.25rem] p-4 relative z-10">
               <div className="flex flex-col gap-0.5 min-w-0">
                 <span className="font-semibold leading-4 text-foreground text-sm truncate">
-                  Sensor Reach
+                  {"Sensor Reach"}
                 </span>
                 <span className="leading-4 text-muted-foreground text-xs truncate">
-                  Global Nodes
+                  {"Global Nodes"}
                 </span>
               </div>
               <div className="flex gap-4 items-end justify-between">
                 <div className="min-w-0 space-y-2.5">
                   <div className="font-semibold leading-none text-2xl text-foreground tracking-tight">
-                    18,420
+                    {"18,420"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                      +6.8%
+                      {"+6.8%"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      93 regions
+                      {"93 regions"}
                     </span>
                   </div>
                 </div>
@@ -222,36 +222,26 @@ export function Pattern() {
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="space-y-0.5">
                   <h2 className="font-semibold leading-4 text-sm">
-                    Threat Vectors
+                    {"Threat Vectors"}
                   </h2>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Blocked Signals
+                    {"Blocked Signals"}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-4 items-center shrink-0 sm:justify-end text-muted-foreground text-xs">
                   <span className="flex gap-1.5 items-center">
                     <span className="bg-blue-600 rounded-full size-2" aria-hidden="true"></span>
-                    Blocked
+                    {"Blocked"}
                   </span>
                   <span className="flex gap-1.5 items-center">
                     <span className="bg-sky-300 rounded-full size-2" aria-hidden="true"></span>
-                    Watched
+                    {"Watched"}
                   </span>
                 </div>
               </div>
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-56 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_2_">
-                <style>{`
- [data-chart=chart-_r_2_] {
-  --color-blocked: var(--color-blue-600);
-  --color-watched: var(--color-sky-300);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-blocked: var(--color-blue-600);
-  --color-watched: var(--color-sky-300);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-blocked: var(--color-blue-600);\n  --color-watched: var(--color-sky-300);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-blocked: var(--color-blue-600);\n  --color-watched: var(--color-sky-300);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="576" height="224" style={{position: "relative", cursor: "default", width: "576px", height: "224px"}}>
@@ -416,63 +406,63 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="35.55555555555556" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="35.55555555555556" dy="0.71em">
-                                  Bot
+                                  {"Bot"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="98.66666666666667" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="98.66666666666667" dy="0.71em">
-                                  Phish
+                                  {"Phish"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="161.77777777777777" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="161.77777777777777" dy="0.71em">
-                                  DDoS
+                                  {"DDoS"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="224.8888888888889" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="224.8888888888889" dy="0.71em">
-                                  Inject
+                                  {"Inject"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="288" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="288" dy="0.71em">
-                                  Auth
+                                  {"Auth"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="351.1111111111111" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="351.1111111111111" dy="0.71em">
-                                  Probe
+                                  {"Probe"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="414.22222222222223" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="414.22222222222223" dy="0.71em">
-                                  Exfil
+                                  {"Exfil"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="477.33333333333337" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="477.33333333333337" dy="0.71em">
-                                  Beacon
+                                  {"Beacon"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="568" stroke="none" fontSize="10" x="540.4444444444445" y="210" textAnchor="middle" fill="#666">
                                 <tspan x="540.4444444444445" dy="0.71em">
-                                  Day0
+                                  {"Day0"}
                                 </tspan>
                               </text>
                             </g>
@@ -483,6 +473,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </CardContent>
           </Card>
           <Card className="overflow-hidden p-0 relative" size="default">
@@ -492,32 +483,22 @@ export function Pattern() {
               <div className="flex gap-3 items-start justify-between">
                 <div className="space-y-0.5">
                   <h2 className="font-semibold leading-4 text-sm">
-                    Network Flow
+                    {"Network Flow"}
                   </h2>
                   <p className="leading-4 text-muted-foreground text-xs">
-                    Daily API and webhooks
+                    {"Daily API and webhooks"}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-success-foreground text-xs transition-shadow">
-                  +5.3%
+                  {"+5.3%"}
                   <span className="sr-only">
-                    versus the previous period
+                    {"versus the previous period"}
                   </span>
                 </Badge>
               </div>
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-56 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_3_">
-                <style>{`
- [data-chart=chart-_r_3_] {
-  --color-api: var(--color-yellow-500);
-  --color-webhook: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-api: var(--color-yellow-500);
-  --color-webhook: var(--color-emerald-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-api: var(--color-yellow-500);\n  --color-webhook: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-api: var(--color-yellow-500);\n  --color-webhook: var(--color-emerald-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="576" height="224" style={{position: "relative", cursor: "default", width: "576px", height: "224px"}}>
@@ -603,63 +584,63 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="79.44827586206897" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="79.44827586206897" dy="0.71em">
-                                  May 16
+                                  {"May 16"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="139.0344827586207" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="139.0344827586207" dy="0.71em">
-                                  May 19
+                                  {"May 19"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="198.6206896551724" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="198.6206896551724" dy="0.71em">
-                                  May 22
+                                  {"May 22"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="258.2068965517241" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="258.2068965517241" dy="0.71em">
-                                  May 25
+                                  {"May 25"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="317.7931034482759" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="317.7931034482759" dy="0.71em">
-                                  May 28
+                                  {"May 28"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="377.3793103448276" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="377.3793103448276" dy="0.71em">
-                                  May 31
+                                  {"May 31"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="436.9655172413793" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="436.9655172413793" dy="0.71em">
-                                  Jun 3
+                                  {"Jun 3"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="496.55172413793105" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="496.55172413793105" dy="0.71em">
-                                  Jun 6
+                                  {"Jun 6"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="576" stroke="none" x="557.5625" y="208" textAnchor="middle" fill="#666">
                                 <tspan x="557.5625" dy="0.71em">
-                                  Jun 10
+                                  {"Jun 10"}
                                 </tspan>
                               </text>
                             </g>
@@ -670,6 +651,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </CardContent>
           </Card>
         </section>
@@ -681,46 +663,46 @@ export function Pattern() {
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div className="space-y-0.5">
                   <h2 className="font-semibold leading-4 text-sm">
-                    Cluster Load
+                    {"Cluster Load"}
                   </h2>
                   <div className="flex flex-wrap gap-3 items-center leading-4 text-muted-foreground text-xs">
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-zinc-300 rounded-full size-2" aria-hidden="true"></span>
-                      Normal
+                      {"Normal"}
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-amber-500 rounded-full size-2" aria-hidden="true"></span>
-                      Warm
+                      {"Warm"}
                     </span>
                     <span className="flex gap-1.5 items-center">
                       <span className="bg-red-500 rounded-full size-2" aria-hidden="true"></span>
-                      Critical
+                      {"Critical"}
                     </span>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2 items-center sm:justify-end">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-5 outline-none px-2 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
                     <span className="font-semibold tabular-nums">
-                      52
+                      {"52"}
                     </span>
                     <span>
-                      Nodes
+                      {"Nodes"}
                     </span>
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-5 outline-none px-2 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
                     <span className="font-semibold tabular-nums">
-                      2
+                      {"2"}
                     </span>
                     <span>
-                      Warm
+                      {"Warm"}
                     </span>
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-5 outline-none px-2 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow">
                     <span className="font-semibold tabular-nums">
-                      2
+                      {"2"}
                     </span>
                     <span>
-                      Critical
+                      {"Critical"}
                     </span>
                   </Badge>
                 </div>
@@ -1040,14 +1022,14 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="779" stroke="none" fontSize="10" x="7.490384615384615" y="206" textAnchor="middle" fill="#666">
                                 <tspan x="7.490384615384615" dy="0.71em">
-                                  N00
+                                  {"N00"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="779" stroke="none" fontSize="10" x="396.99038461538464" y="206" textAnchor="middle" fill="#666">
                                 <tspan x="396.99038461538464" dy="0.71em">
-                                  N26
+                                  {"N26"}
                                 </tspan>
                               </text>
                             </g>
@@ -1066,10 +1048,10 @@ export function Pattern() {
             <CardContent className="p-4 space-y-5">
               <div className="space-y-0.5">
                 <h2 className="font-semibold leading-4 text-sm">
-                  Active Lanes
+                  {"Active Lanes"}
                 </h2>
                 <p className="leading-4 text-muted-foreground text-xs">
-                  Threat Queue
+                  {"Threat Queue"}
                 </p>
               </div>
               <div className="space-y-4">
@@ -1079,21 +1061,21 @@ export function Pattern() {
                       <div className="flex gap-2 items-center min-w-0">
                         <span className="bg-red-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                         <span className="font-medium text-sm truncate">
-                          [00] API Flood
+                          {"[00] API Flood"}
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                         <span>
-                          Edge WAF
+                          {"Edge WAF"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Mitigating
+                          {"Mitigating"}
                         </span>
                       </div>
                     </div>
                     <div className="font-semibold tabular-nums text-right text-sm">
-                      4,521
+                      {"4,521"}
                     </div>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -1101,7 +1083,7 @@ export function Pattern() {
                       <div className="bg-red-500 h-full rounded-full" style={{width: "92%"}}></div>
                     </div>
                     <span className="leading-none tabular-nums text-[10px] text-muted-foreground text-right w-8">
-                      92%
+                      {"92%"}
                     </span>
                   </div>
                 </div>
@@ -1111,21 +1093,21 @@ export function Pattern() {
                       <div className="flex gap-2 items-center min-w-0">
                         <span className="bg-amber-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                         <span className="font-medium text-sm truncate">
-                          [01] Mail Spoof
+                          {"[01] Mail Spoof"}
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                         <span>
-                          Mail Relay
+                          {"Mail Relay"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Reviewing
+                          {"Reviewing"}
                         </span>
                       </div>
                     </div>
                     <div className="font-semibold tabular-nums text-right text-sm">
-                      3,102
+                      {"3,102"}
                     </div>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -1133,7 +1115,7 @@ export function Pattern() {
                       <div className="bg-amber-500 h-full rounded-full" style={{width: "64%"}}></div>
                     </div>
                     <span className="leading-none tabular-nums text-[10px] text-muted-foreground text-right w-8">
-                      64%
+                      {"64%"}
                     </span>
                   </div>
                 </div>
@@ -1143,21 +1125,21 @@ export function Pattern() {
                       <div className="flex gap-2 items-center min-w-0">
                         <span className="bg-blue-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                         <span className="font-medium text-sm truncate">
-                          [02] Cloud Probe
+                          {"[02] Cloud Probe"}
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                         <span>
-                          Cloud API
+                          {"Cloud API"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Queued
+                          {"Queued"}
                         </span>
                       </div>
                     </div>
                     <div className="font-semibold tabular-nums text-right text-sm">
-                      1,250
+                      {"1,250"}
                     </div>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -1165,7 +1147,7 @@ export function Pattern() {
                       <div className="bg-blue-500 h-full rounded-full" style={{width: "26%"}}></div>
                     </div>
                     <span className="leading-none tabular-nums text-[10px] text-muted-foreground text-right w-8">
-                      26%
+                      {"26%"}
                     </span>
                   </div>
                 </div>
@@ -1175,21 +1157,21 @@ export function Pattern() {
                       <div className="flex gap-2 items-center min-w-0">
                         <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                         <span className="font-medium text-sm truncate">
-                          [03] Mesh Beacon
+                          {"[03] Mesh Beacon"}
                         </span>
                       </div>
                       <div className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
                         <span>
-                          Int Node
+                          {"Int Node"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span>
-                          Watching
+                          {"Watching"}
                         </span>
                       </div>
                     </div>
                     <div className="font-semibold tabular-nums text-right text-sm">
-                      420
+                      {"420"}
                     </div>
                   </div>
                   <div className="flex gap-2 items-center">
@@ -1197,7 +1179,7 @@ export function Pattern() {
                       <div className="bg-emerald-500 h-full rounded-full" style={{width: "9%"}}></div>
                     </div>
                     <span className="leading-none tabular-nums text-[10px] text-muted-foreground text-right w-8">
-                      9%
+                      {"9%"}
                     </span>
                   </div>
                 </div>

@@ -18,16 +18,16 @@ export function Pattern() {
                   <path d="m7.5 4.27 9 5.15"></path>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Total Orders
+                  {"Total Orders"}
                 </span>
               </div>
             </header>
             <FramePanel>
               <a className="font-semibold hover:text-primary leading-tight text-sm" href="#">
-                Analytics
+                {"Analytics"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Track every order and monitor growth trends with real-time updates.
+                {"Track every order and monitor growth trends with real-time updates."}
               </p>
             </FramePanel>
           </Frame>
@@ -39,16 +39,16 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Revenue
+                  {"Revenue"}
                 </span>
               </div>
             </header>
             <FramePanel>
               <a className="font-semibold hover:text-primary leading-tight text-sm" href="#">
-                Financial Summary
+                {"Financial Summary"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Get instant insights into earnings and cash flow performance.
+                {"Get instant insights into earnings and cash flow performance."}
               </p>
             </FramePanel>
           </Frame>
@@ -60,16 +60,16 @@ export function Pattern() {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
                 <span className="font-medium text-foreground text-sm">
-                  Shipments
+                  {"Shipments"}
                 </span>
               </div>
             </header>
             <FramePanel>
               <a className="font-semibold hover:text-primary leading-tight text-sm" href="#">
-                Logistics
+                {"Logistics"}
               </a>
               <p className="leading-relaxed pt-1.5 text-muted-foreground text-xs">
-                Stay on top of deliveries and track shipment statuses efficiently.
+                {"Stay on top of deliveries and track shipment statuses efficiently."}
               </p>
             </FramePanel>
           </Frame>

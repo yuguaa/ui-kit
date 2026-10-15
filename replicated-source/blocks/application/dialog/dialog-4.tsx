@@ -40,11 +40,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Workspace launch dialog
+        {"Workspace launch dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[420px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open launch checklist
+          {"Open launch checklist"}
         </Button>
       </div>
     </main>
@@ -52,10 +52,10 @@ export function Pattern() {
     <DialogContent className="flex flex-col sm:max-w-[600px]" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" style={{"--nested-dialogs": "0"}} aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_">
       <DialogHeader>
         <DialogTitle id="base-ui-_r_2_">
-          Launch checklist
+          {"Launch checklist"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_3_">
-          Finalize routing, apps, and fallback rules before launch.
+          {"Finalize routing, apps, and fallback rules before launch."}
         </DialogDescription>
       </DialogHeader>
       <div className="flex-1 flex-col grid min-h-0">
@@ -76,16 +76,16 @@ export function Pattern() {
                         <div className="-mt-0.5 flex flex-col min-w-0">
                           <div className="flex gap-1.5 items-center mb-1">
                             <p className="font-medium text-foreground">
-                              Ownership & cadence
+                              {"Ownership & cadence"}
                             </p>
                           </div>
                           <p className="text-muted-foreground text-sm">
-                            Lock in the primary operator, workspace alias, and review window.
+                            {"Lock in the primary operator, workspace alias, and review window."}
                           </p>
                         </div>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        In progress
+                        {"In progress"}
                       </Badge>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -111,14 +111,14 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Launch owner
+                                  {"Launch owner"}
                                 </ItemTitle>
                               </ItemContent>
                               <ItemActions className="flex-1 min-w-0">
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Launch owner">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      Ari Mendoza
+                                      {"Ari Mendoza"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -161,14 +161,14 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Workspace alias
+                                  {"Workspace alias"}
                                 </ItemTitle>
                               </ItemContent>
                               <ItemActions className="flex-1 min-w-0">
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Workspace alias">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      growth-command
+                                      {"growth-command"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -213,14 +213,14 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Review window
+                                  {"Review window"}
                                 </ItemTitle>
                               </ItemContent>
                               <ItemActions className="flex-1 min-w-0">
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Review window">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      Tue, 10:00 UTC
+                                      {"Tue, 10:00 UTC"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -270,16 +270,16 @@ export function Pattern() {
                         <div className="-mt-0.5 flex flex-col min-w-0">
                           <div className="flex gap-1.5 items-center mb-1">
                             <p className="font-medium text-foreground">
-                              Connected apps
+                              {"Connected apps"}
                             </p>
                           </div>
                           <p className="text-muted-foreground text-sm">
-                            Choose the tools that can send events or receive rollout updates.
+                            {"Choose the tools that can send events or receive rollout updates."}
                           </p>
                         </div>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                        Pending
+                        {"Pending"}
                       </Badge>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -308,7 +308,7 @@ export function Pattern() {
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5v14"></path>
                               </svg>
-                              Add app
+                              {"Add app"}
                             </Button>
                           </ItemHeader>
                           <ItemGroup className="gap-2" role="list">
@@ -325,18 +325,18 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0.5 min-w-0 self-start">
                                 <ItemTitle className="font-medium leading-5 text-sm">
-                                  Slack
+                                  {"Slack"}
                                 </ItemTitle>
                                 <ItemDescription className="leading-5 text-muted-foreground text-sm">
-                                  Posts rollout handoffs to the release channel.
+                                  {"Posts rollout handoffs to the release channel."}
                                 </ItemDescription>
                               </ItemContent>
                               <ItemActions className="gap-2 self-center shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Connected
+                                  {"Connected"}
                                 </Badge>
                                 <Button type="button" tabIndex="0">
-                                  Manage
+                                  {"Manage"}
                                 </Button>
                               </ItemActions>
                             </Item>
@@ -362,18 +362,18 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0.5 min-w-0 self-start">
                                 <ItemTitle className="font-medium leading-5 text-sm">
-                                  Google Calendar
+                                  {"Google Calendar"}
                                 </ItemTitle>
                                 <ItemDescription className="leading-5 text-muted-foreground text-sm">
-                                  Adds freeze windows and review holds to the checklist.
+                                  {"Adds freeze windows and review holds to the checklist."}
                                 </ItemDescription>
                               </ItemContent>
                               <ItemActions className="gap-2 self-center shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                  Ready
+                                  {"Ready"}
                                 </Badge>
                                 <Button type="button" tabIndex="0">
-                                  Connect
+                                  {"Connect"}
                                 </Button>
                               </ItemActions>
                             </Item>
@@ -385,18 +385,18 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0.5 min-w-0 self-start">
                                 <ItemTitle className="font-medium leading-5 text-sm">
-                                  Loom
+                                  {"Loom"}
                                 </ItemTitle>
                                 <ItemDescription className="leading-5 text-muted-foreground text-sm">
-                                  Stores quick walkthroughs for launch operators.
+                                  {"Stores quick walkthroughs for launch operators."}
                                 </ItemDescription>
                               </ItemContent>
                               <ItemActions className="gap-2 self-center shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Connected
+                                  {"Connected"}
                                 </Badge>
                                 <Button type="button" tabIndex="0">
-                                  Manage
+                                  {"Manage"}
                                 </Button>
                               </ItemActions>
                             </Item>
@@ -421,7 +421,7 @@ export function Pattern() {
                         <div className="-mt-0.5 flex flex-col min-w-0">
                           <div className="flex gap-1.5 items-center mb-1">
                             <p className="font-medium text-foreground">
-                              Fallback rules
+                              {"Fallback rules"}
                             </p>
                             <Tooltip>
                             <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" aria-hidden="true" id="base-ui-_r_j_" baseUiTooltipTrigger="">
@@ -434,12 +434,12 @@ export function Pattern() {
                             </Tooltip>
                           </div>
                           <p className="text-muted-foreground text-sm">
-                            Set where alerts and digests land if the primary flow is paused.
+                            {"Set where alerts and digests land if the primary flow is paused."}
                           </p>
                         </div>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                        Pending
+                        {"Pending"}
                       </Badge>
                       <svg className="cn-accordion-trigger-icon group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                         <path d="m6 9 6 6 6-6"></path>
@@ -465,7 +465,7 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Escalation inbox
+                                  {"Escalation inbox"}
                                   <Tooltip>
                                   <TooltipTrigger className="hover:text-foreground text-muted-foreground" type="button" aria-label="Escalation inbox info" id="base-ui-_r_l_" baseUiTooltipTrigger="">
                                     <svg className="lucide lucide-info size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -481,7 +481,7 @@ export function Pattern() {
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Escalation inbox">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      launch-ops@neui.io
+                                      {"launch-ops@neui.io"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -522,14 +522,14 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Backup approver
+                                  {"Backup approver"}
                                 </ItemTitle>
                               </ItemContent>
                               <ItemActions className="flex-1 min-w-0">
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Backup approver">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      Sana Qureshi
+                                      {"Sana Qureshi"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -572,14 +572,14 @@ export function Pattern() {
                               </ItemMedia>
                               <ItemContent className="gap-0 justify-center min-w-0 sm:basis-[12rem] sm:flex-none sm:max-w-[12rem]">
                                 <ItemTitle className="font-normal gap-1.5 leading-5 text-muted-foreground text-sm whitespace-nowrap">
-                                  Digest cadence
+                                  {"Digest cadence"}
                                 </ItemTitle>
                               </ItemContent>
                               <ItemActions className="flex-1 min-w-0">
                                 <div className="min-h-8 relative w-full">
                                   <button className="absolute active:bg-muted/40 border border-transparent box-border duration-200 flex focus-visible:border-transparent! focus-visible:outline-none! focus-visible:ring-0! group/field-display hover:bg-muted/40 inset-0 items-center opacity-100 px-2.5 rounded-md text-left transition-[opacity,color,background-color] w-full" type="button" aria-label="Edit Digest cadence">
                                     <span className="block flex-1 font-medium min-w-0 pr-8 text-muted-foreground/70 text-sm truncate">
-                                      Every business day
+                                      {"Every business day"}
                                     </span>
                                     <span className="-translate-y-1/2 absolute duration-200 group-focus-visible/field-display:opacity-100 group-hover/field-display:opacity-100 opacity-0 pointer-events-none right-2 text-muted-foreground top-1/2 transition-opacity">
                                       <svg className="lucide lucide-pencil size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
@@ -623,10 +623,10 @@ export function Pattern() {
       <DialogFooter className="px-5 sm:items-center">
         <div className="flex gap-2 justify-end w-full">
           <Button type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </Button>
           <Button type="button" tabIndex="0">
-            Save
+            {"Save"}
           </Button>
         </div>
       </DialogFooter>
@@ -636,7 +636,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

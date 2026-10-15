@@ -45,19 +45,19 @@ export function Pattern() {
         <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="min-w-0 space-y-px">
             <h1 className="capitalize font-semibold text-2xl tracking-tight">
-              Admin Settings
+              {"Admin Settings"}
             </h1>
             <p className="leading-relaxed max-w-2xl text-muted-foreground text-sm">
-              Manage your profile, workspace defaults, access, and connected tools.
+              {"Manage your profile, workspace defaults, access, and connected tools."}
             </p>
           </div>
           <div className="shrink-0">
             <div className="flex gap-2 items-center shrink-0">
               <Button type="button" tabIndex="0" extracted="1">
-                Cancel
+                {"Cancel"}
               </Button>
               <Button type="button" tabIndex="0">
-                Update
+                {"Update"}
               </Button>
             </div>
           </div>
@@ -74,7 +74,7 @@ export function Pattern() {
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       <span>
-                        General
+                        {"General"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
@@ -83,7 +83,7 @@ export function Pattern() {
                         <circle cx="12" cy="7" r="4"></circle>
                       </svg>
                       <span>
-                        Profile
+                        {"Profile"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -94,7 +94,7 @@ export function Pattern() {
                         <circle cx="9" cy="7" r="4"></circle>
                       </svg>
                       <span>
-                        Members
+                        {"Members"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
@@ -102,7 +102,7 @@ export function Pattern() {
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                       </svg>
                       <span>
-                        Permissions
+                        {"Permissions"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
@@ -111,7 +111,7 @@ export function Pattern() {
                         <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                       </svg>
                       <span>
-                        Notifications
+                        {"Notifications"}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger className="flex-none gap-2 justify-start px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
@@ -119,7 +119,7 @@ export function Pattern() {
                         <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path>
                       </svg>
                       <span>
-                        Integrations
+                        {"Integrations"}
                       </span>
                     </TabsTrigger>
                   </TabsList>
@@ -134,10 +134,10 @@ export function Pattern() {
                   <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="min-w-0 space-y-px">
                       <h2 className="capitalize font-semibold text-lg tracking-tight">
-                        Workspace basics
+                        {"Workspace basics"}
                       </h2>
                       <p className="leading-relaxed text-muted-foreground text-sm">
-                        Keep your workspace identity and invite defaults tidy.
+                        {"Keep your workspace identity and invite defaults tidy."}
                       </p>
                     </div>
                   </header>
@@ -145,21 +145,21 @@ export function Pattern() {
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Workspace basics
+                          {"Workspace basics"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Workspace naming, routing, and invite domain settings.
+                          {"Workspace naming, routing, and invite domain settings."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="@md/field-group:gap-12 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-4 px-5 py-4" role="group" data-orientation="responsive">
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-workspace-name">
-                                  Workspace name
+                                  {"Workspace name"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Used in shared pages and invites.
+                                {"Used in shared pages and invites."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -167,7 +167,7 @@ export function Pattern() {
                                 <Field role="group" data-orientation="vertical">
                                   <Input id="profile-2-workspace-name" value="Harbor Ops"></Input>
                                   <FieldDescription>
-                                    Appears in invite flows and the workspace switcher.
+                                    {"Appears in invite flows and the workspace switcher."}
                                   </FieldDescription>
                                 </Field>
                               </div>
@@ -180,7 +180,7 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-workspace-domain">
-                                  Workspace domain
+                                  {"Workspace domain"}
                                 </FieldLabel>
                                 <Tooltip>
                                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-muted-foreground transition-colors" type="button" aria-label="Workspace domain info" id="base-ui-_r_a_" baseUiTooltipTrigger="">
@@ -192,11 +192,11 @@ export function Pattern() {
                                 </TooltipTrigger>
                                 </Tooltip>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Connected
+                                  {"Connected"}
                                 </Badge>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Keep the public URL short and clear.
+                                {"Keep the public URL short and clear."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -205,13 +205,13 @@ export function Pattern() {
                                   <InputGroup role="group">
                                     <InputGroupAddon role="group" data-align="inline-start">
                                       <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                        workspace.de/
+                                        {"workspace.de/"}
                                       </span>
                                     </InputGroupAddon>
                                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="profile-2-workspace-domain" value="harbor-ops" />
                                   </InputGroup>
                                   <FieldDescription>
-                                    New invite and share links will use this slug.
+                                    {"New invite and share links will use this slug."}
                                   </FieldDescription>
                                 </Field>
                               </div>
@@ -224,11 +224,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-field-title items-center">
-                                  Invite domains
+                                  {"Invite domains"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Allow signups from trusted company domains.
+                                {"Allow signups from trusted company domains."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -236,7 +236,7 @@ export function Pattern() {
                                 <Field className="gap-3" role="group" data-orientation="vertical">
                                   <div className="flex flex-wrap gap-2 items-center w-full">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                      harborops.app
+                                      {"harborops.app"}
                                       <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove harborops.app">
                                         <svg className="lucide lucide-x size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                           <path d="M18 6 6 18"></path>
@@ -245,7 +245,7 @@ export function Pattern() {
                                       </Button>
                                     </Badge>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                      clients.harborops.app
+                                      {"clients.harborops.app"}
                                       <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove clients.harborops.app">
                                         <svg className="lucide lucide-x size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                           <path d="M18 6 6 18"></path>
@@ -254,7 +254,7 @@ export function Pattern() {
                                       </Button>
                                     </Badge>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                                      partnermail.co
+                                      {"partnermail.co"}
                                       <Button className="hover:bg-transparent size-3" type="button" tabIndex="0" aria-label="Remove partnermail.co">
                                         <svg className="lucide lucide-x size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                           <path d="M18 6 6 18"></path>
@@ -267,11 +267,11 @@ export function Pattern() {
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5v14"></path>
                                       </svg>
-                                      Add domain
+                                      {"Add domain"}
                                     </Button>
                                   </div>
                                   <FieldDescription>
-                                    Only trusted company domains are auto-approved for invites.
+                                    {"Only trusted company domains are auto-approved for invites."}
                                   </FieldDescription>
                                 </Field>
                               </div>
@@ -284,11 +284,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-field-title items-center">
-                                  Accent color
+                                  {"Accent color"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Use one color for key status and links.
+                                {"Use one color for key status and links."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -331,10 +331,10 @@ export function Pattern() {
                   <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="min-w-0 space-y-px">
                       <h2 className="capitalize font-semibold text-lg tracking-tight">
-                        Regional preferences
+                        {"Regional preferences"}
                       </h2>
                       <p className="leading-relaxed text-muted-foreground text-sm">
-                        Choose how dates, language, and time are displayed.
+                        {"Choose how dates, language, and time are displayed."}
                       </p>
                     </div>
                   </header>
@@ -342,21 +342,21 @@ export function Pattern() {
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Regional preferences
+                          {"Regional preferences"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Localization and formatting preferences.
+                          {"Localization and formatting preferences."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="@md/field-group:gap-12 gap-4 px-5 py-4" role="group" data-orientation="responsive">
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-field-title items-center">
-                                  Language and timezone
+                                  {"Language and timezone"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Keep the workspace readable for the whole team.
+                                {"Keep the workspace readable for the whole team."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -364,7 +364,7 @@ export function Pattern() {
                                 <FieldGroup className="gap-3">
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-language">
-                                      Language
+                                      {"Language"}
                                     </FieldLabel>
                                     <Field role="group" data-orientation="vertical">
                                       <Select>
@@ -372,28 +372,28 @@ export function Pattern() {
                                         <SelectValue>
                                           <span className="flex flex-col gap-px items-start">
                                             <span className="font-medium">
-                                              English
+                                              {"English"}
                                             </span>
                                             <small className="text-muted-foreground text-sm">
-                                              Shared UI language
+                                              {"Shared UI language"}
                                             </small>
                                           </span>
                                         </SelectValue>
                                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                           <path d="m6 9 6 6 6-6"></path>
-                                          ▼
+                                          {"▼"}
                                         </svg>
                                       </SelectTrigger>
                                       </Select>
                                       <input id="base-ui-_r_c_-hidden-input" tabIndex="-1" aria-hidden="true" value="en" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                     </Field>
                                     <FieldDescription>
-                                      Sets shared UI copy for this workspace.
+                                      {"Sets shared UI copy for this workspace."}
                                     </FieldDescription>
                                   </Field>
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-timezone">
-                                      Timezone
+                                      {"Timezone"}
                                     </FieldLabel>
                                     <Field role="group" data-orientation="vertical">
                                       <InputGroup className="cn-combobox-input" role="group">
@@ -409,7 +409,7 @@ export function Pattern() {
                                       <input id="base-ui-_r_f_-hidden-input" tabIndex="-1" aria-hidden="true" value="(GMT+1) Berlin" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                     </Field>
                                     <FieldDescription>
-                                      Used in summaries, reviews, and scheduled digests.
+                                      {"Used in summaries, reviews, and scheduled digests."}
                                     </FieldDescription>
                                   </Field>
                                 </FieldGroup>
@@ -423,11 +423,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-field-title items-center">
-                                  Week start
+                                  {"Week start"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Match your planning cadence.
+                                {"Match your planning cadence."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -436,11 +436,11 @@ export function Pattern() {
                                   <Select>
                                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="profile-2-week-start" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                     <SelectValue>
-                                      Monday
+                                      {"Monday"}
                                     </SelectValue>
                                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
-                                      ▼
+                                      {"▼"}
                                     </svg>
                                   </SelectTrigger>
                                   </Select>
@@ -456,11 +456,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-field-title items-center">
-                                  Date format
+                                  {"Date format"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Keep reports and summaries consistent.
+                                {"Keep reports and summaries consistent."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -470,18 +470,18 @@ export function Pattern() {
                                     <Select>
                                     <SelectTrigger className="w-full" type="button" tabIndex="0" id="profile-2-date-format" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue>
-                                        MM/DD/YYYY
+                                        {"MM/DD/YYYY"}
                                       </SelectValue>
                                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
                                     <input id="base-ui-_r_n_-hidden-input" tabIndex="-1" aria-hidden="true" value="mdy" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                   </Field>
                                   <FieldDescription>
-                                    Applies to exports, reports, and activity tables.
+                                    {"Applies to exports, reports, and activity tables."}
                                   </FieldDescription>
                                 </Field>
                               </div>
@@ -496,10 +496,10 @@ export function Pattern() {
                   <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div className="min-w-0 space-y-px">
                       <h2 className="capitalize font-semibold text-lg tracking-tight">
-                        Editor behavior
+                        {"Editor behavior"}
                       </h2>
                       <p className="leading-relaxed text-muted-foreground text-sm">
-                        Tighten small workflow defaults for daily operations.
+                        {"Tighten small workflow defaults for daily operations."}
                       </p>
                     </div>
                     <div className="shrink-0">
@@ -509,7 +509,7 @@ export function Pattern() {
                           <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                           <path d="M12 17h.01"></path>
                         </svg>
-                        Help Center
+                        {"Help Center"}
                       </Button>
                     </div>
                   </header>
@@ -517,21 +517,21 @@ export function Pattern() {
                     <CardContent className="p-0">
                       <FieldSet className="gap-0">
                         <FieldLegend className="sr-only" variant="legend">
-                          Editor behavior
+                          {"Editor behavior"}
                         </FieldLegend>
                         <FieldDescription className="sr-only">
-                          Keyboard and editor defaults.
+                          {"Keyboard and editor defaults."}
                         </FieldDescription>
                         <FieldGroup className="gap-0">
                           <Field className="@md/field-group:gap-12 @md/field-group:has-[>[data-slot=field-content]]:items-center gap-4 px-5 py-4" role="group" data-orientation="responsive">
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-send-enter" id="profile-2-send-enter-label">
-                                  Send on Enter
+                                  {"Send on Enter"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Post updates without opening a composer.
+                                {"Post updates without opening a composer."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -550,11 +550,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-markdown" id="profile-2-markdown-label">
-                                  Markdown shortcuts
+                                  {"Markdown shortcuts"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Expand formatting while you type.
+                                {"Expand formatting while you type."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">
@@ -573,11 +573,11 @@ export function Pattern() {
                             <div className="@md/field-group:basis-1/2 @md/field-group:pr-6 @md/field-group:w-1/2 flex flex-col gap-0.5 min-w-0 w-full">
                               <div className="flex flex-wrap gap-2 items-center">
                                 <FieldLabel className="capitalize cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-2-compact-tables" id="profile-2-compact-tables-label">
-                                  Compact tables
+                                  {"Compact tables"}
                                 </FieldLabel>
                               </div>
                               <FieldDescription className="leading-6 text-sm">
-                                Fit more rows in planning views.
+                                {"Fit more rows in planning views."}
                               </FieldDescription>
                             </div>
                             <FieldContent className="@md/field-group:basis-1/2 @md/field-group:pl-2 @md/field-group:w-1/2 min-w-0 w-full">

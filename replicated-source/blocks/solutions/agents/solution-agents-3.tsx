@@ -63,7 +63,7 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-start justify-center max-w-[1320px] md:p-4 min-h-svh mx-auto p-3 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Run Detail
+        {"Run Detail"}
       </h1>
       <div className="@container flex flex-col gap-4 w-full">
         <header className="flex flex-wrap gap-3 items-center justify-between">
@@ -77,10 +77,10 @@ export function Pattern() {
             <div className="flex flex-col gap-0.5 min-w-0">
               <div className="flex flex-wrap gap-2 items-center min-w-0">
                 <span className="text-muted-foreground text-sm">
-                  Run Queue /
+                  {"Run Queue /"}
                 </span>
                 <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                  RUN-4822
+                  {"RUN-4822"}
                 </h2>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="AlertTriangleIcon" tabler="IconAlertTriangle" hugeicons="Alert01Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
@@ -88,11 +88,11 @@ export function Pattern() {
                     <path d="M12 9v4"></path>
                     <path d="M12 17h.01"></path>
                   </svg>
-                  Failed
+                  {"Failed"}
                 </Badge>
               </div>
               <p className="min-w-0 text-muted-foreground text-sm truncate">
-                Refund Resolver · Production
+                {"Refund Resolver · Production"}
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ export function Pattern() {
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
               <span className="hidden md:block">
-                Approve
+                {"Approve"}
               </span>
             </Button>
             <Button type="button" tabIndex="0">
@@ -123,7 +123,7 @@ export function Pattern() {
                 <path d="M8 16H3v5"></path>
               </svg>
               <span className="hidden md:block">
-                Retry Step
+                {"Retry Step"}
               </span>
             </Button>
             <Button type="button" tabIndex="0" aria-label="Pause the run">
@@ -149,10 +149,10 @@ export function Pattern() {
               <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <div className="font-semibold text-sm">
-                    Step Trace
+                    {"Step Trace"}
                   </div>
                   <div className="hidden sm:block text-muted-foreground text-sm truncate">
-                    Failed at step 3 of 6
+                    {"Failed at step 3 of 6"}
                   </div>
                 </div>
               </header>
@@ -163,10 +163,10 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Plan the refund approach
+                          {"Plan the refund approach"}
                         </TimelineTitle>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          14s
+                          {"14s"}
                         </span>
                       </div>
                       <TimelineIndicator className="bg-muted border-none flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -182,7 +182,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Plan the refund approach tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                2 tool calls
+                                {"2 tool calls"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -199,10 +199,10 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Validate the refund policy
+                          {"Validate the refund policy"}
                         </TimelineTitle>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          9s
+                          {"9s"}
                         </span>
                       </div>
                       <TimelineIndicator className="bg-muted border-none flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -218,7 +218,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Validate the refund policy tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                1 tool call
+                                {"1 tool call"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -235,10 +235,10 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Capture the partial refund
+                          {"Capture the partial refund"}
                         </TimelineTitle>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          12s
+                          {"12s"}
                         </span>
                       </div>
                       <TimelineIndicator className="bg-destructive/10 border-none dark:bg-destructive/20 flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-destructive" aria-hidden="true">
@@ -255,7 +255,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_7_" aria-expanded="true" aria-label="Toggle Capture the partial refund tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                2 tool calls
+                                {"2 tool calls"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -267,42 +267,42 @@ export function Pattern() {
                             <FramePanel className="space-y-3">
                               <div className="space-y-3">
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  The processor declined the partial capture on the original card.
+                                  {"The processor declined the partial capture on the original card."}
                                 </p>
                                 <div className="border-t pt-2.5 space-y-2.5">
                                   <div className="flex flex-wrap gap-x-3 gap-y-1 items-center justify-between min-w-0">
                                     <div className="flex flex-col gap-0.5 min-w-0">
                                       <span className="font-medium font-mono text-foreground text-xs truncate">
-                                        payments.refunds.create
+                                        {"payments.refunds.create"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        402 card_declined, attempt 1 of 3
+                                        {"402 card_declined, attempt 1 of 3"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center shrink-0">
                                       <span className="tabular-nums text-muted-foreground text-xs">
-                                        6.1s
+                                        {"6.1s"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                        Failed
+                                        {"Failed"}
                                       </Badge>
                                     </div>
                                   </div>
                                   <div className="flex flex-wrap gap-x-3 gap-y-1 items-center justify-between min-w-0">
                                     <div className="flex flex-col gap-0.5 min-w-0">
                                       <span className="font-medium font-mono text-foreground text-xs truncate">
-                                        payments.refunds.create
+                                        {"payments.refunds.create"}
                                       </span>
                                       <span className="text-muted-foreground text-xs truncate">
-                                        402 card_declined, attempt 2 of 3
+                                        {"402 card_declined, attempt 2 of 3"}
                                       </span>
                                     </div>
                                     <div className="flex gap-2 items-center shrink-0">
                                       <span className="tabular-nums text-muted-foreground text-xs">
-                                        5.8s
+                                        {"5.8s"}
                                       </span>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                        Failed
+                                        {"Failed"}
                                       </Badge>
                                     </div>
                                   </div>
@@ -314,15 +314,15 @@ export function Pattern() {
                                     <line x1="12" x2="12.01" y1="16" y2="16"></line>
                                   </svg>
                                   <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                                    Partial Capture Declined
+                                    {"Partial Capture Declined"}
                                   </AlertTitle>
                                   <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
                                     <Button type="button" tabIndex="0">
-                                      Retry Step
+                                      {"Retry Step"}
                                     </Button>
                                   </AlertAction>
                                   <AlertDescription className="[&_p]:leading-relaxed col-start-2 gap-1 grid justify-items-start text-muted-foreground text-sm">
-                                    payments.refunds.create returned 402 card_declined. Retry with a manual amount or credit the account instead.
+                                    {"payments.refunds.create returned 402 card_declined. Retry with a manual amount or credit the account instead."}
                                   </AlertDescription>
                                 </Alert>
                               </div>
@@ -337,7 +337,7 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Verify the refund landed
+                          {"Verify the refund landed"}
                         </TimelineTitle>
                       </div>
                       <TimelineIndicator className="bg-muted border-none flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -353,7 +353,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Verify the refund landed tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                0 tool calls
+                                {"0 tool calls"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -370,7 +370,7 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Notify the customer
+                          {"Notify the customer"}
                         </TimelineTitle>
                       </div>
                       <TimelineIndicator className="bg-muted border-none flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -386,7 +386,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Notify the customer tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                0 tool calls
+                                {"0 tool calls"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -403,7 +403,7 @@ export function Pattern() {
                       <TimelineSeparator className="bg-border group-data-[orientation=vertical]/timeline:h-[calc(100%-1.25rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-6" aria-hidden="true"></TimelineSeparator>
                       <div className="flex flex-wrap gap-2 items-center min-w-0">
                         <TimelineTitle className="font-semibold">
-                          Write back to the order record
+                          {"Write back to the order record"}
                         </TimelineTitle>
                       </div>
                       <TimelineIndicator className="bg-muted border-none flex group-data-completed/timeline-item:bg-primary group-data-completed/timeline-item:text-primary-foreground items-center justify-center size-5 text-muted-foreground" aria-hidden="true">
@@ -419,7 +419,7 @@ export function Pattern() {
                           <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Write back to the order record tool calls">
                             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                               <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                                0 tool calls
+                                {"0 tool calls"}
                               </span>
                               <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -441,10 +441,10 @@ export function Pattern() {
                 <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                   <div className="flex flex-col gap-0.5 min-w-0">
                     <div className="font-semibold text-sm">
-                      Run Settings
+                      {"Run Settings"}
                     </div>
                     <div className="hidden sm:block text-muted-foreground text-sm truncate">
-                      Applied to this run's retries and notifications.
+                      {"Applied to this run's retries and notifications."}
                     </div>
                   </div>
                 </header>
@@ -452,7 +452,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Status
+                        {"Status"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -464,7 +464,7 @@ export function Pattern() {
                               <path d="M12 9v4"></path>
                               <path d="M12 17h.01"></path>
                             </svg>
-                            Failed
+                            {"Failed"}
                           </Badge>
                         </span>
                         <Item className="ml-1.5 opacity-100 p-0 size-5 sm:group-focus-visible/value:opacity-100 sm:group-hover/row:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity" variant="default" size="default">
@@ -487,12 +487,12 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                Failed
+                                {"Failed"}
                               </Badge>
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -518,7 +518,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Priority
+                        {"Priority"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -531,7 +531,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 truncate">
-                              High
+                              {"High"}
                             </span>
                           </span>
                         </span>
@@ -556,13 +556,13 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  High
+                                  {"High"}
                                 </span>
                               </span>
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -588,7 +588,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-start" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 sm:min-h-8 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Owners
+                        {"Owners"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Owners info" id="base-ui-_r_i_" baseUiTooltipTrigger="">
@@ -609,7 +609,7 @@ export function Pattern() {
                                 <AvatarImage alt="Maya Perez" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="max-w-32 truncate">
-                                Maya Perez
+                                {"Maya Perez"}
                               </span>
                             </Badge>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
@@ -617,7 +617,7 @@ export function Pattern() {
                                 <AvatarImage alt="Noa Kim" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="max-w-32 truncate">
-                                Noa Kim
+                                {"Noa Kim"}
                               </span>
                             </Badge>
                           </span>
@@ -638,7 +638,7 @@ export function Pattern() {
                               <Avatar className="size-4" size="default">
                                 <AvatarImage alt="Maya Perez" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
-                              Maya Perez
+                              {"Maya Perez"}
                               <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                                 <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                                   <path d="M18 6 6 18"></path>
@@ -650,7 +650,7 @@ export function Pattern() {
                               <Avatar className="size-4" size="default">
                                 <AvatarImage alt="Noa Kim" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
-                              Noa Kim
+                              {"Noa Kim"}
                               <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                                 <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                                   <path d="M18 6 6 18"></path>
@@ -682,7 +682,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Retry Policy
+                        {"Retry Policy"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -698,7 +698,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 truncate">
-                              Exponential backoff
+                              {"Exponential backoff"}
                             </span>
                           </span>
                         </span>
@@ -726,13 +726,13 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Exponential backoff
+                                  {"Exponential backoff"}
                                 </span>
                               </span>
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -758,7 +758,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Max Retries
+                        {"Max Retries"}
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Max Retries info" id="base-ui-_r_q_" baseUiTooltipTrigger="">
@@ -783,7 +783,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 truncate">
-                              3 per step
+                              {"3 per step"}
                             </span>
                           </span>
                         </span>
@@ -830,7 +830,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        On Failure
+                        {"On Failure"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -844,7 +844,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 truncate">
-                              Notify owners
+                              {"Notify owners"}
                             </span>
                           </span>
                         </span>
@@ -869,7 +869,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="min-w-0 truncate">
-                                  Notify owners
+                                  {"Notify owners"}
                                 </span>
                               </span>
                             </FieldLabel>
@@ -899,7 +899,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Started
+                        {"Started"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 flex items-center min-h-8 min-w-0 px-2.5 row-start-2 sm:col-start-2 sm:row-start-1">
@@ -911,7 +911,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          Jun 10, 12:38
+                          {"Jun 10, 12:38"}
                         </span>
                       </span>
                     </div>
@@ -920,7 +920,7 @@ export function Pattern() {
                   <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Last Activity
+                        {"Last Activity"}
                       </span>
                     </FieldLabel>
                     <div className="col-start-1 flex items-center min-h-8 min-w-0 px-2.5 row-start-2 sm:col-start-2 sm:row-start-1">
@@ -932,7 +932,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0 truncate">
-                          8 min ago
+                          {"8 min ago"}
                         </span>
                       </span>
                     </div>

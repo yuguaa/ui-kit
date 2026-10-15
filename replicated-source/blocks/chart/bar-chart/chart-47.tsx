@@ -33,21 +33,21 @@ export function Pattern() {
             <div className="flex flex-col gap-px min-w-0">
               <div className="flex gap-2 h-5 items-center min-w-0">
                 <div className="[text-box:trim-both_cap_alphabetic] font-semibold overflow-x-clip text-ellipsis text-sm whitespace-nowrap">
-                  bank-settlement-files
+                  {"bank-settlement-files"}
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Healthy
+                    {"Healthy"}
                   </span>
                 </Badge>
               </div>
               <div className="flex gap-1.5 h-5 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                  Dropbox Files API
+                  {"Dropbox Files API"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic] whitespace-nowrap">
-                  Production
+                  {"Production"}
                 </span>
               </div>
             </div>
@@ -79,12 +79,12 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <span className="flex h-4 items-center text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Success Rate
+                  {"Success Rate"}
                 </span>
               </span>
               <span className="flex gap-3 h-7 items-center">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-foreground text-xl">
-                  96.7%
+                  {"96.7%"}
                 </span>
                 <span className="[&_svg]:size-3.5 flex font-medium gap-1 h-4 items-center tabular-nums text-success text-xs">
                   <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -92,67 +92,67 @@ export function Pattern() {
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    +2.2 pts
+                    {"+2.2 pts"}
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic] font-normal text-muted-foreground">
-                    vs prior 24h
+                    {"vs prior 24h"}
                   </span>
                   <span className="sr-only">
-                    , better
+                    {", better"}
                   </span>
                 </span>
               </span>
               <span className="flex h-4 items-center tabular-nums text-muted-foreground text-xs">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  89 of 92 runs in 24h completed
+                  {"89 of 92 runs in 24h completed"}
                 </span>
               </span>
             </div>
             <dl className="@lg:w-64 gap-x-6 gap-y-1.5 grid grid-cols-[auto_1fr] text-xs">
               <dt className="flex h-4 items-center text-muted-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Rows Synced
+                  {"Rows Synced"}
                 </span>
               </dt>
               <dd className="flex font-medium gap-1.5 h-4 items-center justify-end tabular-nums text-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  189.1K
+                  {"189.1K"}
                 </span>
               </dd>
               <dt className="flex h-4 items-center text-muted-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  p50 Duration
+                  {"p50 Duration"}
                 </span>
               </dt>
               <dd className="flex font-medium gap-1.5 h-4 items-center justify-end tabular-nums text-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  33s
+                  {"33s"}
                 </span>
               </dd>
               <dt className="flex h-4 items-center text-muted-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Freshness
+                  {"Freshness"}
                 </span>
               </dt>
               <dd className="flex font-medium gap-1.5 h-4 items-center justify-end tabular-nums text-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  1m
+                  {"1m"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] font-normal text-muted-foreground">
-                  within 30m SLO
+                  {"within 30m SLO"}
                 </span>
               </dd>
               <dt className="flex h-4 items-center text-muted-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Next Sync
+                  {"Next Sync"}
                 </span>
               </dt>
               <dd className="flex font-medium gap-1.5 h-4 items-center justify-end tabular-nums text-foreground">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  14:32
+                  {"14:32"}
                 </span>
                 <span className="[text-box:trim-both_cap_alphabetic] font-normal text-muted-foreground">
-                  in 12m
+                  {"in 12m"}
                 </span>
               </dd>
             </dl>
@@ -161,19 +161,19 @@ export function Pattern() {
             <div className="flex flex-wrap gap-x-3 gap-y-2 items-center justify-between min-w-0">
               <h3 className="flex font-medium h-5 items-center text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Last 24 Hours
+                  {"Last 24 Hours"}
                 </span>
               </h3>
               <div className="flex gap-2 items-center">
                 <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Plotted metric" style={{"--gap": "0"}}>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Rows
+                      {"Rows"}
                     </span>
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Runs
+                      {"Runs"}
                     </span>
                   </ToggleGroupItem>
                 </ToggleGroup>
@@ -193,6 +193,7 @@ export function Pattern() {
               </div>
             </div>
             <div className="[&_g]:outline-hidden [-webkit-tap-highlight-color:transparent] data-[tip=move]:[&_.recharts-tooltip-wrapper]:duration-150 data-[tip=move]:[&_.recharts-tooltip-wrapper]:ease-[cubic-bezier(0.23,1,0.32,1)] data-[tip=move]:[&_.recharts-tooltip-wrapper]:transition-transform h-52 has-[.recharts-surface:focus-visible]:outline-2 motion-reduce:[&_.recharts-tooltip-wrapper]:transition-none outline-offset-4 outline-ring/50 relative w-full" data-tip="rest">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-52 justify-center text-xs w-full" data-chart="chart-_r_21_">
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -201,7 +202,7 @@ export function Pattern() {
                       <svg className="recharts-surface" aria-label="Hourly rows for bank-settlement-files" role="application" tabIndex="0" width="726" height="208" viewBox="0 0 726 208" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc>
-                          Each hour stacks its runs by outcome; arrow keys move through the hours and the tooltip reads each one out.
+                          {"Each hour stacks its runs by outcome; arrow keys move through the hours and the tooltip reads each one out."}
                         </desc>
                         <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
                         <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
@@ -664,32 +665,32 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="136.625" y="196" dy="0.71em" textAnchor="middle">
-                                18:00
+                                {"18:00"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="251.625" y="196" dy="0.71em" textAnchor="middle">
-                                22:00
+                                {"22:00"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="366.625" y="196" dy="0.71em" textAnchor="middle">
-                                02:00
+                                {"02:00"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="481.625" y="196" dy="0.71em" textAnchor="middle">
-                                06:00
+                                {"06:00"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="596.625" y="196" dy="0.71em" textAnchor="middle">
-                                10:00
+                                {"10:00"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground tabular-nums" x="726" y="196" dy="0.71em" textAnchor="end">
-                                Now
+                                {"Now"}
                               </text>
                             </g>
                           </g>
@@ -697,35 +698,35 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="176" stroke="none" x="24" y="178" textAnchor="end" fill="#666">
                                 <tspan x="24" dy="0.355em">
-                                  0
+                                  {"0"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="176" stroke="none" x="24" y="134" textAnchor="end" fill="#666">
                                 <tspan x="24" dy="0.355em">
-                                  4K
+                                  {"4K"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="176" stroke="none" x="24" y="90" textAnchor="end" fill="#666">
                                 <tspan x="24" dy="0.355em">
-                                  8K
+                                  {"8K"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="176" stroke="none" x="24" y="46" textAnchor="end" fill="#666">
                                 <tspan x="24" dy="0.355em">
-                                  12K
+                                  {"12K"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="176" stroke="none" x="24" y="9" textAnchor="end" fill="#666">
                                 <tspan x="24" dy="0.355em">
-                                  16K
+                                  {"16K"}
                                 </tspan>
                               </text>
                             </g>
@@ -736,6 +737,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
             <ul className="flex gap-x-3 items-center text-muted-foreground text-xs" aria-label="Legend">
               <li className="flex gap-1.5 h-4 items-center">
@@ -749,7 +751,7 @@ export function Pattern() {
                   <rect width="12" height="12" rx="3" fill="url(#ri-succeeded)"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Succeeded
+                  {"Succeeded"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
@@ -763,7 +765,7 @@ export function Pattern() {
                   <rect width="12" height="12" rx="3" fill="url(#rj-partial)"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Partial
+                  {"Partial"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
@@ -771,7 +773,7 @@ export function Pattern() {
                   <rect data-fade="" x="0" y="4.5" width="12" height="3" rx="1.5" fill="var(--destructive)"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Failed
+                  {"Failed"}
                 </span>
               </li>
               <li className="flex gap-1.5 h-4 items-center">
@@ -785,7 +787,7 @@ export function Pattern() {
                   <rect width="12" height="12" rx="3" fill="url(#rk-maintenance)"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Paused
+                  {"Paused"}
                 </span>
               </li>
             </ul>
@@ -796,18 +798,18 @@ export function Pattern() {
             <div className="flex flex-wrap gap-x-3 gap-y-2 items-center justify-between min-w-0">
               <h3 className="flex font-medium h-5 items-center text-sm">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Recent Runs
+                  {"Recent Runs"}
                 </span>
               </h3>
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Runs shown" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    All
+                    {"All"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Issues
+                    {"Issues"}
                   </span>
                 </ToggleGroupItem>
               </ToggleGroup>
@@ -823,14 +825,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48303
+                          {"RUN-48303"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -842,29 +844,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          14:17
+                          {"14:17"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          2m ago
+                          {"2m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          2.9K rows
+                          {"2.9K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          47s
+                          {"47s"}
                         </span>
                       </span>
                     </div>
@@ -891,14 +893,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48302
+                          {"RUN-48302"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -910,29 +912,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          14:02
+                          {"14:02"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          17m ago
+                          {"17m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          3.7K rows
+                          {"3.7K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          55s
+                          {"55s"}
                         </span>
                       </span>
                     </div>
@@ -959,14 +961,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48301
+                          {"RUN-48301"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
@@ -974,29 +976,29 @@ export function Pattern() {
                             <circle cx="12" cy="7" r="4"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Manual
+                            {"Manual"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:55
+                          {"13:55"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          24m ago
+                          {"24m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          1.2K rows
+                          {"1.2K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          27s
+                          {"27s"}
                         </span>
                       </span>
                     </div>
@@ -1024,14 +1026,14 @@ export function Pattern() {
                           <path d="M12 17h.01"></path>
                         </svg>
                         <span className="sr-only">
-                          Partial
+                          {"Partial"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48300
+                          {"RUN-48300"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -1043,29 +1045,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:47
+                          {"13:47"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          32m ago
+                          {"32m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          1.8K rows
+                          {"1.8K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          1m 16s
+                          {"1m 16s"}
                         </span>
                       </span>
                     </div>
@@ -1073,9 +1075,9 @@ export function Pattern() {
                   </div>
                   <p className="ps-6.5 text-muted-foreground text-pretty text-xs">
                     <span className="font-medium font-mono text-foreground">
-                      W_RATE_LIMIT
+                      {"W_RATE_LIMIT"}
                     </span>
-                    HTTP 429, 3 files deferred
+                    {"HTTP 429, 3 files deferred"}
                   </p>
                   <div className="absolute end-0 top-3">
                     <DropdownMenu>
@@ -1100,14 +1102,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48299
+                          {"RUN-48299"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -1119,29 +1121,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:32
+                          {"13:32"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          47m ago
+                          {"47m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          3.3K rows
+                          {"3.3K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          49s
+                          {"49s"}
                         </span>
                       </span>
                     </div>
@@ -1168,14 +1170,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48298
+                          {"RUN-48298"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
@@ -1183,29 +1185,29 @@ export function Pattern() {
                             <path d="M3 3v5h5"></path>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Retry
+                            {"Retry"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:24
+                          {"13:24"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          55m ago
+                          {"55m ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          3.1K rows
+                          {"3.1K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          51s
+                          {"51s"}
                         </span>
                       </span>
                     </div>
@@ -1233,14 +1235,14 @@ export function Pattern() {
                           <path d="m9 9 6 6"></path>
                         </svg>
                         <span className="sr-only">
-                          Failed
+                          {"Failed"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48297
+                          {"RUN-48297"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -1252,29 +1254,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:17
+                          {"13:17"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          1h ago
+                          {"1h ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          0 rows
+                          {"0 rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          2m 00s
+                          {"2m 00s"}
                         </span>
                       </span>
                     </div>
@@ -1282,9 +1284,9 @@ export function Pattern() {
                   </div>
                   <p className="ps-6.5 text-muted-foreground text-pretty text-xs">
                     <span className="font-medium font-mono text-foreground">
-                      E_LIST_TIMEOUT
+                      {"E_LIST_TIMEOUT"}
                     </span>
-                    Folder listing timed out after 120s
+                    {"Folder listing timed out after 120s"}
                   </p>
                   <div className="absolute end-0 top-3">
                     <DropdownMenu>
@@ -1307,14 +1309,14 @@ export function Pattern() {
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                         <span className="sr-only">
-                          Succeeded
+                          {"Succeeded"}
                         </span>
                       </span>
                     </span>
                     <div className="flex flex-1 flex-col gap-1 min-w-0">
                       <span className="flex gap-2 h-4 items-center min-w-0">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium font-mono text-xs">
-                          RUN-48296
+                          {"RUN-48296"}
                         </span>
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 flex gap-1 h-4 items-center text-muted-foreground text-xs">
                           <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
@@ -1326,29 +1328,29 @@ export function Pattern() {
                             <circle cx="16" cy="16" r="6"></circle>
                           </svg>
                           <span className="[text-box:trim-both_cap_alphabetic]">
-                            Scheduled
+                            {"Scheduled"}
                           </span>
                         </span>
                       </span>
                       <span className="flex gap-1.5 h-4 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          13:02
+                          {"13:02"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                          1h ago
+                          {"1h ago"}
                         </span>
                       </span>
                     </div>
                     <div className="duration-150 flex flex-col gap-1 items-end motion-reduce:transition-none pointer-fine:group-has-[:focus-visible]/run:opacity-0 pointer-fine:group-has-[[aria-expanded=true]]/run:opacity-0 pointer-fine:group-hover/run:opacity-0 shrink-0 tabular-nums text-xs transition-opacity">
                       <span className="flex h-4 items-center">
                         <span className="[text-box:trim-both_cap_alphabetic] font-medium text-foreground">
-                          2.9K rows
+                          {"2.9K rows"}
                         </span>
                       </span>
                       <span className="flex h-4 items-center text-muted-foreground">
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          41s
+                          {"41s"}
                         </span>
                       </span>
                     </div>

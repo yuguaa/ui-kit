@@ -28,7 +28,7 @@ export function Pattern() {
                 </ItemMedia>
               </Item>
               <span className="font-semibold text-base">
-                Total Revenue
+                {"Total Revenue"}
               </span>
             </div>
             <DropdownMenu>
@@ -44,10 +44,10 @@ export function Pattern() {
           <div className="space-y-3.5">
             <div className="flex gap-2.5 items-start mb-2.5">
               <span className="font-bold leading-none text-3xl text-foreground tracking-tight">
-                $ 1,120,500
+                {"$ 1,120,500"}
               </span>
               <span className="font-medium mt-0.5 text-muted-foreground text-xs">
-                USD
+                {"USD"}
               </span>
             </div>
             <div className="flex gap-2 items-center mb-4">
@@ -56,28 +56,28 @@ export function Pattern() {
                   <path d="M12 5v14"></path>
                   <path d="m19 12-7 7-7-7"></path>
                 </svg>
-                -12.7%
+                {"-12.7%"}
               </Badge>
               <span className="text-muted-foreground text-sm">
-                decreased from last quarter
+                {"decreased from last quarter"}
               </span>
             </div>
           </div>
           <div className="space-y-1">
             <div className="bg-muted/70 flex items-center justify-between p-2.5 rounded-lg">
               <span className="text-accent-foreground text-sm">
-                Avg. Subscription Value:
+                {"Avg. Subscription Value:"}
               </span>
               <span className="font-semibold text-base text-foreground">
-                $320
+                {"$320"}
               </span>
             </div>
             <div className="bg-muted/70 flex items-center justify-between p-2.5 rounded-lg">
               <span className="text-accent-foreground text-sm">
-                Enterprise Clients:
+                {"Enterprise Clients:"}
               </span>
               <span className="font-semibold text-base text-foreground">
-                42
+                {"42"}
               </span>
             </div>
           </div>

@@ -32,9 +32,9 @@ export function Pattern() {
           <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
             <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
           </svg>
-          Filters
+          {"Filters"}
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 ml-1 outline-none px-1 py-0.25 relative rounded-full tabular-nums text-[0.625rem] text-secondary-foreground transition-shadow">
-            8
+            {"8"}
           </Badge>
         </SheetTrigger>
         </Sheet>
@@ -45,15 +45,15 @@ export function Pattern() {
       <SheetHeader className="flex-row gap-3 items-center justify-between px-5 py-4">
         <div className="min-w-0">
           <SheetTitle className="font-semibold text-foreground text-sm tracking-tight" id="base-ui-_r_3_">
-            Filters
+            {"Filters"}
           </SheetTitle>
           <SheetDescription className="sr-only" id="base-ui-_r_4_">
-            Refine the catalog by department, category, price, color, size, material, brand, rating, and availability.
+            {"Refine the catalog by department, category, price, color, size, material, brand, rating, and availability."}
           </SheetDescription>
         </div>
         <div className="flex gap-1 items-center">
           <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0">
-            Clear all
+            {"Clear all"}
           </Button>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 size-7 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close filters">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -69,21 +69,21 @@ export function Pattern() {
           <div className="flex flex-col py-5">
             <div className="flex flex-wrap gap-1.5 px-5" aria-label="Active filters">
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Women">
-                Women
+                {"Women"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Outerwear">
-                Outerwear
+                {"Outerwear"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Cotton">
-                Cotton
+                {"Cotton"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
@@ -91,35 +91,35 @@ export function Pattern() {
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Black">
                 <span className="border border-border/60 inline-block rounded-full shrink-0 size-2.5" aria-hidden="true" style={{backgroundColor: "oklch(0.205 0 0)"}}></span>
-                Black
+                {"Black"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Northline">
-                Northline
+                {"Northline"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter 4★ & up">
-                4★ & up
+                {"4★ & up"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter $40 − $180">
-                $40 − $180
+                {"$40 − $180"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center px-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter In stock">
-                In stock
+                {"In stock"}
                 <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
@@ -131,20 +131,20 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-department">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-department">
-                Department
+                {"Department"}
               </h3>
               <div className="-mx-0.5 flex flex-wrap gap-1.5 px-0.5" role="group" aria-label="Department">
                 <button className="bg-background border border-border font-medium hover:text-foreground px-3 py-1 rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-pressed="false">
-                  All
+                  {"All"}
                 </button>
                 <button className="bg-foreground font-medium px-3 py-1 rounded-full text-background text-xs transition-colors" type="button" aria-pressed="true">
-                  Women
+                  {"Women"}
                 </button>
                 <button className="bg-background border border-border font-medium hover:text-foreground px-3 py-1 rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-pressed="false">
-                  Men
+                  {"Men"}
                 </button>
                 <button className="bg-background border border-border font-medium hover:text-foreground px-3 py-1 rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-pressed="false">
-                  Kids
+                  {"Kids"}
                 </button>
               </div>
             </section>
@@ -153,7 +153,7 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-category">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-category">
-                Category
+                {"Category"}
               </h3>
               <ul className="flex flex-col gap-2.5">
                 <li className="flex gap-2.5 items-center">
@@ -167,10 +167,10 @@ export function Pattern() {
                   <input id="filter-5-category-outerwear" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-outerwear" id="filter-5-category-outerwear-label">
                     <span className="truncate">
-                      Outerwear
+                      {"Outerwear"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      128
+                      {"128"}
                     </span>
                   </Label>
                 </li>
@@ -179,10 +179,10 @@ export function Pattern() {
                   <input id="filter-5-category-knitwear" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-knitwear" id="filter-5-category-knitwear-label">
                     <span className="truncate">
-                      Knitwear
+                      {"Knitwear"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      84
+                      {"84"}
                     </span>
                   </Label>
                 </li>
@@ -191,10 +191,10 @@ export function Pattern() {
                   <input id="filter-5-category-tops" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-tops" id="filter-5-category-tops-label">
                     <span className="truncate">
-                      Tops
+                      {"Tops"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      156
+                      {"156"}
                     </span>
                   </Label>
                 </li>
@@ -203,10 +203,10 @@ export function Pattern() {
                   <input id="filter-5-category-bottoms" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-bottoms" id="filter-5-category-bottoms-label">
                     <span className="truncate">
-                      Bottoms
+                      {"Bottoms"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      92
+                      {"92"}
                     </span>
                   </Label>
                 </li>
@@ -215,10 +215,10 @@ export function Pattern() {
                   <input id="filter-5-category-dresses" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-dresses" id="filter-5-category-dresses-label">
                     <span className="truncate">
-                      Dresses
+                      {"Dresses"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      74
+                      {"74"}
                     </span>
                   </Label>
                 </li>
@@ -227,10 +227,10 @@ export function Pattern() {
                   <input id="filter-5-category-footwear" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-category-footwear" id="filter-5-category-footwear-label">
                     <span className="truncate">
-                      Footwear
+                      {"Footwear"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      67
+                      {"67"}
                     </span>
                   </Label>
                 </li>
@@ -242,15 +242,15 @@ export function Pattern() {
             <section className="flex flex-col gap-4 px-5" aria-labelledby="filter-5-price">
               <div className="flex gap-3 items-baseline justify-between">
                 <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-price">
-                  Price
+                  {"Price"}
                 </h3>
                 <span className="font-medium tabular-nums text-muted-foreground text-xs">
                   <span className="font-semibold text-foreground">
-                    $40
+                    {"$40"}
                   </span>
-                  −
+                  {"−"}
                   <span className="font-semibold text-foreground">
-                    $180
+                    {"$180"}
                   </span>
                 </span>
               </div>
@@ -273,7 +273,7 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-color">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-color">
-                Color
+                {"Color"}
               </h3>
               <ul className="flex flex-wrap gap-3" aria-label="Color swatches">
                 <li>
@@ -305,26 +305,26 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-size">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-size">
-                Size
+                {"Size"}
               </h3>
               <div className="flex flex-wrap gap-1.5" aria-label="Sizes">
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  XS
+                  {"XS"}
                 </Button>
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  S
+                  {"S"}
                 </Button>
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  M
+                  {"M"}
                 </Button>
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  L
+                  {"L"}
                 </Button>
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  XL
+                  {"XL"}
                 </Button>
                 <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
-                  XXL
+                  {"XXL"}
                 </Button>
               </div>
             </section>
@@ -333,7 +333,7 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-material">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-material">
-                Material
+                {"Material"}
               </h3>
               <ul className="flex flex-col gap-2.5">
                 <li className="flex gap-2.5 items-center">
@@ -347,10 +347,10 @@ export function Pattern() {
                   <input id="filter-5-material-cotton" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-cotton" id="filter-5-material-cotton-label">
                     <span className="truncate">
-                      Cotton
+                      {"Cotton"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      184
+                      {"184"}
                     </span>
                   </Label>
                 </li>
@@ -359,10 +359,10 @@ export function Pattern() {
                   <input id="filter-5-material-linen" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-linen" id="filter-5-material-linen-label">
                     <span className="truncate">
-                      Linen
+                      {"Linen"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      56
+                      {"56"}
                     </span>
                   </Label>
                 </li>
@@ -371,10 +371,10 @@ export function Pattern() {
                   <input id="filter-5-material-wool" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-wool" id="filter-5-material-wool-label">
                     <span className="truncate">
-                      Wool
+                      {"Wool"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      48
+                      {"48"}
                     </span>
                   </Label>
                 </li>
@@ -383,10 +383,10 @@ export function Pattern() {
                   <input id="filter-5-material-cashmere" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-cashmere" id="filter-5-material-cashmere-label">
                     <span className="truncate">
-                      Cashmere
+                      {"Cashmere"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      22
+                      {"22"}
                     </span>
                   </Label>
                 </li>
@@ -395,10 +395,10 @@ export function Pattern() {
                   <input id="filter-5-material-leather" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-leather" id="filter-5-material-leather-label">
                     <span className="truncate">
-                      Leather
+                      {"Leather"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      31
+                      {"31"}
                     </span>
                   </Label>
                 </li>
@@ -407,10 +407,10 @@ export function Pattern() {
                   <input id="filter-5-material-recycled" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-material-recycled" id="filter-5-material-recycled-label">
                     <span className="truncate">
-                      Recycled fibers
+                      {"Recycled fibers"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      64
+                      {"64"}
                     </span>
                   </Label>
                 </li>
@@ -421,7 +421,7 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-brand">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-brand">
-                Brand
+                {"Brand"}
               </h3>
               <ul className="flex flex-col gap-2.5">
                 <li className="flex gap-2.5 items-center">
@@ -435,10 +435,10 @@ export function Pattern() {
                   <input id="filter-5-brand-northline" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-brand-northline" id="filter-5-brand-northline-label">
                     <span className="truncate">
-                      Northline
+                      {"Northline"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      38
+                      {"38"}
                     </span>
                   </Label>
                 </li>
@@ -447,10 +447,10 @@ export function Pattern() {
                   <input id="filter-5-brand-aster" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-brand-aster" id="filter-5-brand-aster-label">
                     <span className="truncate">
-                      Aster Goods
+                      {"Aster Goods"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      24
+                      {"24"}
                     </span>
                   </Label>
                 </li>
@@ -459,10 +459,10 @@ export function Pattern() {
                   <input id="filter-5-brand-field" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-brand-field" id="filter-5-brand-field-label">
                     <span className="truncate">
-                      Field Supply
+                      {"Field Supply"}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      19
+                      {"19"}
                     </span>
                   </Label>
                 </li>
@@ -471,10 +471,10 @@ export function Pattern() {
                   <input id="filter-5-brand-maven" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-5-brand-maven" id="filter-5-brand-maven-label">
                     <span className="truncate">
-                      Maven & Co.
+                      {"Maven & Co."}
                     </span>
                     <span className="tabular-nums text-muted-foreground">
-                      31
+                      {"31"}
                     </span>
                   </Label>
                 </li>
@@ -485,7 +485,7 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-rating">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-rating">
-                Rating
+                {"Rating"}
               </h3>
               <RadioGroup className="flex flex-col gap-2" role="radiogroup">
                 <div className="flex gap-2.5 items-center">
@@ -551,7 +551,7 @@ export function Pattern() {
                       </div>
                     </Rating>
                     <span className="text-muted-foreground text-xs">
-                      4 & up
+                      {"4 & up"}
                     </span>
                   </Label>
                 </div>
@@ -614,7 +614,7 @@ export function Pattern() {
                       </div>
                     </Rating>
                     <span className="text-muted-foreground text-xs">
-                      3 & up
+                      {"3 & up"}
                     </span>
                   </Label>
                 </div>
@@ -677,7 +677,7 @@ export function Pattern() {
                       </div>
                     </Rating>
                     <span className="text-muted-foreground text-xs">
-                      2 & up
+                      {"2 & up"}
                     </span>
                   </Label>
                 </div>
@@ -688,12 +688,12 @@ export function Pattern() {
             </div>
             <section className="flex flex-col gap-3 px-5" aria-labelledby="filter-5-quick">
               <h3 className="font-semibold text-foreground text-sm tracking-tight" id="filter-5-quick">
-                Quick filters
+                {"Quick filters"}
               </h3>
               <div className="flex flex-col gap-3">
                 <div className="flex gap-3 items-center justify-between">
                   <Label className="font-normal text-foreground text-sm" htmlFor="filter-5-in-stock" id="filter-5-in-stock-label">
-                    In stock only
+                    {"In stock only"}
                   </Label>
                   <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_27_" aria-checked="true" size="sm" aria-labelledby="filter-5-in-stock-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -702,7 +702,7 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-3 items-center justify-between">
                   <Label className="font-normal text-foreground text-sm" htmlFor="filter-5-on-sale" id="filter-5-on-sale-label">
-                    On sale
+                    {"On sale"}
                   </Label>
                   <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2a_" aria-checked="false" size="sm" aria-labelledby="filter-5-on-sale-label">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -720,10 +720,10 @@ export function Pattern() {
       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
       <SheetFooter className="flex-row gap-2 items-center px-5 py-4">
         <Button className="flex-1" type="button" tabIndex="0">
-          Apply filters
+          {"Apply filters"}
         </Button>
         <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0">
-          Reset
+          {"Reset"}
         </Button>
       </SheetFooter>
     </SheetContent>

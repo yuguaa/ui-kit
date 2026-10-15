@@ -39,9 +39,10 @@ import {
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="bg-background flex flex-col group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-0 w-full" style={{"--sidebar-width": "16rem", "--sidebar-width-icon": "3rem"}}>
       <h1 className="sr-only">
-        Fleet console
+        {"Fleet console"}
       </h1>
       <header className="flex gap-4 items-center justify-between px-4 py-3 shrink-0 w-full">
         <div className="flex gap-2 items-center lg:gap-4 min-w-0">
@@ -69,7 +70,7 @@ export function Pattern() {
                 <path d="M15 13v2"></path>
                 <path d="M9 13v2"></path>
               </svg>
-              Fleet
+              {"Fleet"}
             </Button>
             <Button className="[&_svg]:text-ring border-0 gap-2 hover:[&_svg]:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
               <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
@@ -77,7 +78,7 @@ export function Pattern() {
                 <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
                 <circle cx="18" cy="5" r="3"></circle>
               </svg>
-              Missions
+              {"Missions"}
             </Button>
             <Button className="[&_svg]:text-ring border-0 gap-2 hover:[&_svg]:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
               <svg className="lucide lucide-radio-tower size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RadioTowerIcon" tabler="IconAntenna" hugeicons="AntennaIcon" phosphor="BroadcastIcon" remixicon="RiSignalTowerLine" aria-hidden="true">
@@ -89,13 +90,13 @@ export function Pattern() {
                 <path d="M9.5 18h5"></path>
                 <path d="m8 22 4-11 4 11"></path>
               </svg>
-              Stations
+              {"Stations"}
             </Button>
             <Button className="[&_svg]:text-ring border-0 gap-2 hover:[&_svg]:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
               <svg className="lucide lucide-wrench size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WrenchIcon" tabler="IconTool" hugeicons="Wrench01Icon" phosphor="WrenchIcon" remixicon="RiToolsLine" aria-hidden="true">
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>
               </svg>
-              Maintenance
+              {"Maintenance"}
             </Button>
             <Button className="[&_svg]:text-ring border-0 gap-2 hover:[&_svg]:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
               <svg className="lucide lucide-file-spreadsheet size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileSpreadsheetIcon" tabler="IconFileSpreadsheet" hugeicons="FileSpreadsheetIcon" phosphor="FileXlsIcon" remixicon="RiFileExcel2Line" aria-hidden="true">
@@ -106,7 +107,7 @@ export function Pattern() {
                 <path d="M8 17h2"></path>
                 <path d="M14 17h2"></path>
               </svg>
-              Reports
+              {"Reports"}
             </Button>
           </nav>
           <DropdownMenu>
@@ -120,7 +121,7 @@ export function Pattern() {
               <path d="M9 13v2"></path>
             </svg>
             <span className="truncate">
-              Fleet
+              {"Fleet"}
             </span>
             <svg className="lucide lucide-chevron-down size-3.5! text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
@@ -138,10 +139,10 @@ export function Pattern() {
             </Button>
             <DialogHeader className="sr-only">
               <DialogTitle id="base-ui-_r_9_">
-                Search Fleet
+                {"Search Fleet"}
               </DialogTitle>
               <DialogDescription id="base-ui-_r_a_">
-                Search across every robot, zone and mission.
+                {"Search across every robot, zone and mission."}
               </DialogDescription>
             </DialogHeader>
             <DropdownMenu>
@@ -166,24 +167,32 @@ export function Pattern() {
           </Avatar>
           <Button className="shadow-xs text-foreground text-xs" type="button" tabIndex="0">
             <span className="lg:hidden">
-              New
+              {"New"}
             </span>
             <span className="hidden lg:inline">
-              New Mission
+              {"New Mission"}
             </span>
           </Button>
         </div>
       </header>
       <div className="flex flex-1 min-h-0 pb-4 px-4">
         <div className="after:absolute after:border after:border-ring/30 after:inset-0 after:pointer-events-none after:rounded-xl flex min-w-0 overflow-clip relative rounded-xl w-full">
+          <SidebarProvider>
           <Sidebar className="after:absolute after:bg-ring/30 after:inset-y-0 after:right-0 after:w-px bg-accent/20 lg:flex px-4 py-4 w-52">
+            <SidebarProvider>
             <SidebarContent className="gap-4 scroll-fade-y scroll-py-10" sidebar="content">
+              <SidebarProvider>
               <SidebarGroup className="gap-0.5 p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="h-auto pb-1 text-ring" sidebar="group-label">
-                  Fleet Overview
+                  {"Fleet Overview"}
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarMenu className="gap-1.5" sidebar="menu">
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-foreground font-medium text-foreground text-xs" type="button" sidebar="menu-button" size="sm" data-active="" aria-current="page">
                       <svg className="lucide lucide-layout-dashboard size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutDashboardIcon" tabler="IconLayoutDashboard" hugeicons="DashboardSquare02Icon" phosphor="LayoutIcon" remixicon="RiDashboardLine" aria-hidden="true">
                         <rect width="7" height="9" x="3" y="3" rx="1"></rect>
@@ -192,11 +201,15 @@ export function Pattern() {
                         <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                       </svg>
                       <span>
-                        Overview
+                        {"Overview"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-map size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MapIcon" tabler="IconMap" hugeicons="Location01Icon" phosphor="MapTrifoldIcon" remixicon="RiMapLine" aria-hidden="true">
                         <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path>
@@ -204,11 +217,15 @@ export function Pattern() {
                         <path d="M9 3.236v15"></path>
                       </svg>
                       <span>
-                        Live Map
+                        {"Live Map"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-bot size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                         <path d="M12 8V4H8"></path>
@@ -219,11 +236,15 @@ export function Pattern() {
                         <path d="M9 13v2"></path>
                       </svg>
                       <span>
-                        All Robots
+                        {"All Robots"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-boxes size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BoxesIcon" tabler="IconBoxMultiple" hugeicons="BoxesIcon" phosphor="CubeIcon" remixicon="RiStackLine" aria-hidden="true">
                         <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path>
@@ -240,11 +261,15 @@ export function Pattern() {
                         <path d="M12 13.5V8"></path>
                       </svg>
                       <span>
-                        Robot Groups
+                        {"Robot Groups"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-map-pinned size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MapPinnedIcon" tabler="IconMapPin" hugeicons="MapPinIcon" phosphor="MapPinAreaIcon" remixicon="RiRoadMapLine" aria-hidden="true">
                         <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0"></path>
@@ -252,11 +277,15 @@ export function Pattern() {
                         <path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712"></path>
                       </svg>
                       <span>
-                        Zones
+                        {"Zones"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-clipboard-list size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClipboardListIcon" tabler="IconClipboardList" hugeicons="ClipboardIcon" phosphor="ClipboardTextIcon" remixicon="RiFileListLine" aria-hidden="true">
                         <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
@@ -267,40 +296,58 @@ export function Pattern() {
                         <path d="M8 16h.01"></path>
                       </svg>
                       <span>
-                        Assignments
+                        {"Assignments"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
                 </SidebarMenu>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
+              <SidebarProvider>
               <SidebarGroup className="gap-0.5 p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="h-auto pb-1 text-ring" sidebar="group-label">
-                  Fleet Activity
+                  {"Fleet Activity"}
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarMenu className="gap-1.5" sidebar="menu">
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-square-activity size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquareActivityIcon" tabler="IconActivityHeartbeat" hugeicons="PulseRectangle01Icon" phosphor="HeartbeatIcon" remixicon="RiPulseLine" aria-hidden="true">
                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                         <path d="M17 12h-2l-2 5-2-10-2 5H7"></path>
                       </svg>
                       <span>
-                        Live Status
+                        {"Live Status"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-key-round size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
                         <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
                         <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                       </svg>
                       <span>
-                        Access Requests
+                        {"Access Requests"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-circle-alert size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleAlertIcon" tabler="IconAlertCircle" hugeicons="Alert02Icon" phosphor="WarningCircleIcon" remixicon="RiErrorWarningLine" aria-hidden="true">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -308,11 +355,15 @@ export function Pattern() {
                         <line x1="12" x2="12.01" y1="16" y2="16"></line>
                       </svg>
                       <span>
-                        Alerts
+                        {"Alerts"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-bot size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                         <path d="M12 8V4H8"></path>
@@ -323,18 +374,28 @@ export function Pattern() {
                         <path d="M9 13v2"></path>
                       </svg>
                       <span>
-                        Event Feed
+                        {"Event Feed"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
                 </SidebarMenu>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
+              <SidebarProvider>
               <SidebarGroup className="gap-0.5 p-0" sidebar="group">
+                <SidebarProvider>
                 <SidebarGroupLabel className="h-auto pb-1 text-ring" sidebar="group-label">
-                  Fleet Settings
+                  {"Fleet Settings"}
                 </SidebarGroupLabel>
+                </SidebarProvider>
+                <SidebarProvider>
                 <SidebarMenu className="gap-1.5" sidebar="menu">
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-contact-round size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ContactRoundIcon" tabler="IconAddressBook" hugeicons="ContactRoundIcon" phosphor="AddressBookIcon" remixicon="RiContactsBook2Line" aria-hidden="true">
                         <path d="M16 2v2"></path>
@@ -344,11 +405,15 @@ export function Pattern() {
                         <rect x="3" y="4" width="18" height="18" rx="2"></rect>
                       </svg>
                       <span>
-                        Robot Profiles
+                        {"Robot Profiles"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-tags size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagsIcon" tabler="IconTags" hugeicons="TagsIcon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                         <path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"></path>
@@ -356,22 +421,30 @@ export function Pattern() {
                         <circle cx="10.5" cy="6.5" r=".5" fill="currentColor"></circle>
                       </svg>
                       <span>
-                        Tags & Labels
+                        {"Tags & Labels"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-shield-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                       <span>
-                        Access Rules
+                        {"Access Rules"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-square-dashed-mouse-pointer size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquareDashedMousePointerIcon" tabler="IconLayersSelected" hugeicons="SquareMousePointerIcon" phosphor="SelectionIcon" remixicon="RiCursorLine" aria-hidden="true">
                         <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"></path>
@@ -386,11 +459,15 @@ export function Pattern() {
                         <path d="M3 14v1"></path>
                       </svg>
                       <span>
-                        Data Sync
+                        {"Data Sync"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
+                    <SidebarProvider>
                     <SidebarMenuButton className="[&_svg]:text-ring font-medium hover:[&_svg]:text-foreground text-muted-foreground text-xs" type="button" sidebar="menu-button" size="sm">
                       <svg className="lucide lucide-sliders-horizontal size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SlidersHorizontalIcon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                         <path d="M10 5H3"></path>
@@ -404,15 +481,22 @@ export function Pattern() {
                         <path d="M8 12H3"></path>
                       </svg>
                       <span>
-                        Fleet Preferences
+                        {"Fleet Preferences"}
                       </span>
                     </SidebarMenuButton>
+                    </SidebarProvider>
                   </SidebarMenuItem>
+                  </SidebarProvider>
                 </SidebarMenu>
+                </SidebarProvider>
               </SidebarGroup>
+              </SidebarProvider>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="p-0" sidebar="footer">
+              <SidebarProvider>
               <SidebarMenu sidebar="menu">
+                <SidebarProvider>
                 <SidebarMenuItem sidebar="menu-item">
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 after:absolute after:border after:border-input/50 after:inset-0 after:pointer-events-none after:rounded-lg aria-disabled:opacity-50 aria-disabled:pointer-events-none bg-muted/50 cn-sidebar-menu-button cn-sidebar-menu-button-size-lg cn-sidebar-menu-button-variant-default disabled:opacity-50 disabled:pointer-events-none flex gap-2 group/menu-button h-10 items-center outline-hidden overflow-hidden p-2 peer/menu-button relative rounded-lg w-full" type="button" sidebar="menu-button" size="lg" aria-label="Open operator menu" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_o_" aria-expanded="false">
@@ -421,10 +505,10 @@ export function Pattern() {
                     </Avatar>
                     <span className="flex flex-1 flex-col gap-0.5 min-w-0 text-left">
                       <span className="font-medium leading-none text-accent-foreground text-xs truncate">
-                        Shadcn
+                        {"Shadcn"}
                       </span>
                       <span className="leading-none text-[10px] text-muted-foreground truncate">
-                        Author of Shadcn/ui
+                        {"Author of Shadcn/ui"}
                       </span>
                     </span>
                     <svg className="lucide lucide-chevrons-up-down size-3.5! text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
@@ -434,9 +518,12 @@ export function Pattern() {
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                 </SidebarMenuItem>
+                </SidebarProvider>
               </SidebarMenu>
+              </SidebarProvider>
             </SidebarFooter>
           </Sidebar>
+          </SidebarProvider>
           <SidebarInset className="bg-muted/10 min-w-0">
             <div className="@container flex flex-1 flex-col gap-6 min-h-0 overflow-y-auto p-6">
               <div className="@2xl:grid-cols-4 @lg:grid-cols-2 gap-6 grid shrink-0">
@@ -516,5 +603,6 @@ export function Pattern() {
         </div>
       </div>
     </div>
+    </SidebarProvider>
   )
 }

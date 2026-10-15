@@ -32,14 +32,14 @@ export function Pattern() {
   return (
     <main className="flex justify-center p-6 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Workflow Board
+        {"Workflow Board"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1180px] mx-auto w-full">
         <header className="px-1 py-1" aria-label="Workflow Board toolbar">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
               <h2 className="font-semibold text-base truncate">
-                Workflow Board
+                {"Workflow Board"}
               </h2>
             </div>
             <div className="flex flex-wrap gap-2.5 items-center sm:justify-end sm:w-auto w-full" role="group" aria-label="Board actions">
@@ -47,7 +47,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" data-icon="inline-start" aria-hidden="true">
@@ -55,14 +55,14 @@ export function Pattern() {
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
-                Columns
+                {"Columns"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New task
+                {"New task"}
               </Button>
             </div>
           </div>
@@ -84,12 +84,12 @@ export function Pattern() {
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
                             <span className="flex items-center leading-none">
-                              Backlog
+                              {"Backlog"}
                             </span>
                           </span>
                         </span>
                         <span className="font-medium h-6.5 inline-flex items-center leading-none self-center shrink-0 tabular-nums text-[0.6875rem] text-muted-foreground">
-                          3
+                          {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse Backlog">
@@ -116,16 +116,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Draft renewal checklist for strategic workspace rollouts">
-                                    Draft renewal checklist for strategic workspace rollouts
+                                    {"Draft renewal checklist for strategic workspace rollouts"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow" aria-label="Preparing">
-                                      Prep
+                                      {"Prep"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Confirmed">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Confirmed
+                                        {"Confirmed"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -138,17 +138,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Nora Lee
+                                      {"Nora Lee"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Ops
+                                      {"Ops"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-zinc-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-zinc-500" aria-label="61% complete" style={{background: "conic-gradient(currentcolor 219.6deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    61
+                                    {"61"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -160,7 +160,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      1
+                                      {"1"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
@@ -171,7 +171,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      4
+                                      {"4"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 comments">
@@ -179,7 +179,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -190,7 +190,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      22d
+                                      {"22d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -202,16 +202,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Collect admin feedback on workspace handoff notes">
-                                    Collect admin feedback on workspace handoff notes
+                                    {"Collect admin feedback on workspace handoff notes"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow" aria-label="Preparing">
-                                      Prep
+                                      {"Prep"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="At risk">
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Risk
+                                        {"Risk"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -224,17 +224,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Elena Torres
+                                      {"Elena Torres"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Review
+                                      {"Review"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-zinc-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-zinc-500" aria-label="56% complete" style={{background: "conic-gradient(currentcolor 201.6deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    56
+                                    {"56"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -246,7 +246,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 checklist items">
@@ -257,7 +257,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      3
+                                      {"3"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 comments">
@@ -265,7 +265,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      1
+                                      {"1"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -276,7 +276,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      20d
+                                      {"20d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -288,16 +288,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Prepare checklist template for regional launch teams">
-                                    Prepare checklist template for regional launch teams
+                                    {"Prepare checklist template for regional launch teams"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow" aria-label="Preparing">
-                                      Prep
+                                      {"Prep"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Ready">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Ready
+                                        {"Ready"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -310,17 +310,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Marcus Chen
+                                      {"Marcus Chen"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Finance
+                                      {"Finance"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-zinc-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-zinc-500" aria-label="69% complete" style={{background: "conic-gradient(currentcolor 248.4deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    69
+                                    {"69"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -332,7 +332,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      1
+                                      {"1"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 checklist items">
@@ -343,7 +343,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      5
+                                      {"5"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 comments">
@@ -351,7 +351,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -362,7 +362,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      18d
+                                      {"18d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -375,7 +375,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add task
+                          {"Add task"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -391,12 +391,12 @@ export function Pattern() {
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
                             <span className="flex items-center leading-none">
-                              Planned
+                              {"Planned"}
                             </span>
                           </span>
                         </span>
                         <span className="font-medium h-6.5 inline-flex items-center leading-none self-center shrink-0 tabular-nums text-[0.6875rem] text-muted-foreground">
-                          2
+                          {"2"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse Planned">
@@ -423,16 +423,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Estimate migration scope for enterprise tenant groups">
-                                    Estimate migration scope for enterprise tenant groups
+                                    {"Estimate migration scope for enterprise tenant groups"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow" aria-label="Commercial review">
-                                      Commercial
+                                      {"Commercial"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Ready">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Ready
+                                        {"Ready"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -445,17 +445,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Planning
+                                      {"Planning"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-foreground/70" aria-label="56% complete" style={{background: "conic-gradient(currentcolor 201.6deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    56
+                                    {"56"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -467,7 +467,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 checklist items">
@@ -478,7 +478,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      3
+                                      {"3"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 comments">
@@ -486,7 +486,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      1
+                                      {"1"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -497,7 +497,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      16d
+                                      {"16d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -509,16 +509,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Map reviewer roles for procurement policy updates">
-                                    Map reviewer roles for procurement policy updates
+                                    {"Map reviewer roles for procurement policy updates"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow" aria-label="Legal review">
-                                      Legal
+                                      {"Legal"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Confirmed">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Confirmed
+                                        {"Confirmed"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -531,17 +531,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Priya Shah
+                                      {"Priya Shah"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Product
+                                      {"Product"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-foreground/70" aria-label="61% complete" style={{background: "conic-gradient(currentcolor 219.6deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    61
+                                    {"61"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -553,7 +553,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      1
+                                      {"1"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
@@ -564,7 +564,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      4
+                                      {"4"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 comments">
@@ -572,7 +572,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      3
+                                      {"3"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -583,7 +583,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      13d
+                                      {"13d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -596,7 +596,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add task
+                          {"Add task"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -613,12 +613,12 @@ export function Pattern() {
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
                             <span className="flex items-center leading-none">
-                              In Progress
+                              {"In Progress"}
                             </span>
                           </span>
                         </span>
                         <span className="font-medium h-6.5 inline-flex items-center leading-none self-center shrink-0 tabular-nums text-[0.6875rem] text-muted-foreground">
-                          3
+                          {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
                           <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse In Progress">
@@ -645,16 +645,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Connect workspace audit stream to the activity timeline">
-                                    Connect workspace audit stream to the activity timeline
+                                    {"Connect workspace audit stream to the activity timeline"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow" aria-label="Commercial review">
-                                      Commercial
+                                      {"Commercial"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Finance review">
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Finance
+                                        {"Finance"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -667,17 +667,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Priya Shah
+                                      {"Priya Shah"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Product
+                                      {"Product"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-sky-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-sky-500" aria-label="83% complete" style={{background: "conic-gradient(currentcolor 298.8deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    83
+                                    {"83"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -689,7 +689,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      3
+                                      {"3"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="6 checklist items">
@@ -700,7 +700,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      6
+                                      {"6"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 comments">
@@ -708,7 +708,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      4
+                                      {"4"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -719,7 +719,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      8d
+                                      {"8d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -731,16 +731,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Tune procurement approval rules for finance reviewers">
-                                    Tune procurement approval rules for finance reviewers
+                                    {"Tune procurement approval rules for finance reviewers"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow" aria-label="Finance review">
-                                      Finance
+                                      {"Finance"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="At risk">
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Risk
+                                        {"Risk"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -753,17 +753,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Marcus Chen
+                                      {"Marcus Chen"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Finance
+                                      {"Finance"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-sky-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-sky-500" aria-label="72% complete" style={{background: "conic-gradient(currentcolor 259.2deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    72
+                                    {"72"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -775,7 +775,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 checklist items">
@@ -786,7 +786,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      5
+                                      {"5"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="6 comments">
@@ -794,7 +794,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      6
+                                      {"6"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -805,7 +805,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      5d
+                                      {"5d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -817,16 +817,16 @@ export function Pattern() {
                               <ItemHeader className="gap-3 items-start min-w-0">
                                 <ItemContent className="gap-1 min-w-0">
                                   <ItemTitle className="font-normal font-sans leading-[1.125rem] line-clamp-2 text-[0.8125rem] text-foreground w-full" title="Refine saved view permissions for partner workspaces">
-                                    Refine saved view permissions for partner workspaces
+                                    {"Refine saved view permissions for partner workspaces"}
                                   </ItemTitle>
                                   <ItemDescription className="flex flex-wrap gap-1.5 items-center line-clamp-none min-w-0 pt-0.5">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow" aria-label="Legal review">
-                                      Legal
+                                      {"Legal"}
                                     </Badge>
                                     <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground" aria-label="Ready">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="font-medium text-xs truncate">
-                                        Ready
+                                        {"Ready"}
                                       </span>
                                     </span>
                                   </ItemDescription>
@@ -839,17 +839,17 @@ export function Pattern() {
                                   </Avatar>
                                   <div className="min-w-0">
                                     <div className="font-medium text-foreground text-xs truncate">
-                                      Liam Carter
+                                      {"Liam Carter"}
                                     </div>
                                     <div className="text-[0.6875rem] text-muted-foreground truncate">
-                                      Quality
+                                      {"Quality"}
                                     </div>
                                   </div>
                                 </div>
                                 <span className="dark:text-sky-300 flex items-center justify-center ml-auto relative rounded-full shrink-0 size-7 text-sky-500" aria-label="64% complete" style={{background: "conic-gradient(currentcolor 230.4deg, color-mix(currentcolor 16%, transparent 84%) 0deg)"}}>
                                   <span className="absolute bg-card inset-0.5 rounded-full"></span>
                                   <span className="font-semibold leading-none relative tabular-nums text-[0.625rem]">
-                                    64
+                                    {"64"}
                                   </span>
                                 </span>
                               </ItemFooter>
@@ -861,7 +861,7 @@ export function Pattern() {
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      2
+                                      {"2"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
@@ -872,7 +872,7 @@ export function Pattern() {
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      4
+                                      {"4"}
                                     </span>
                                   </Button>
                                   <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 comments">
@@ -880,7 +880,7 @@ export function Pattern() {
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      5
+                                      {"5"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -891,7 +891,7 @@ export function Pattern() {
                                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
-                                      6d
+                                      {"6d"}
                                     </span>
                                   </Button>
                                 </ItemActions>
@@ -904,7 +904,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add task
+                          {"Add task"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -922,12 +922,12 @@ export function Pattern() {
                           </span>
                           <span className="flex items-center justify-center leading-none min-h-0">
                             <span className="[writing-mode:vertical-rl] font-semibold leading-none rotate-180 truncate">
-                              Paused
+                              {"Paused"}
                             </span>
                           </span>
                         </span>
                         <span className="font-semibold leading-none tabular-nums text-[0.625rem] text-muted-foreground">
-                          2
+                          {"2"}
                         </span>
                       </Button>
                     </Card>
@@ -944,12 +944,12 @@ export function Pattern() {
                           </span>
                           <span className="flex items-center justify-center leading-none min-h-0">
                             <span className="[writing-mode:vertical-rl] font-semibold leading-none rotate-180 truncate">
-                              Completed
+                              {"Completed"}
                             </span>
                           </span>
                         </span>
                         <span className="font-semibold leading-none tabular-nums text-[0.625rem] text-muted-foreground">
-                          3
+                          {"3"}
                         </span>
                       </Button>
                     </Card>
@@ -967,12 +967,12 @@ export function Pattern() {
                           </span>
                           <span className="flex items-center justify-center leading-none min-h-0">
                             <span className="[writing-mode:vertical-rl] font-semibold leading-none rotate-180 truncate">
-                              Cancelled
+                              {"Cancelled"}
                             </span>
                           </span>
                         </span>
                         <span className="font-semibold leading-none tabular-nums text-[0.625rem] text-muted-foreground">
-                          2
+                          {"2"}
                         </span>
                       </Button>
                     </Card>
@@ -983,9 +983,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

@@ -26,7 +26,7 @@ export function Pattern() {
             </svg>
           </Button>
           <span className="text-muted-foreground text-sm">
-            Blog Posts
+            {"Blog Posts"}
           </span>
         </div>
         <div className="flex gap-2 items-center shrink-0">
@@ -48,7 +48,7 @@ export function Pattern() {
               <circle cx="12" cy="12" r="3"></circle>
             </svg>
             <span className="hidden md:block">
-              Preview
+              {"Preview"}
             </span>
           </Button>
           <ButtonGroup className="**:data-[slot=button]:border-r-0" role="group">
@@ -57,7 +57,7 @@ export function Pattern() {
                 <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                 <path d="m21.854 2.147-10.94 10.939"></path>
               </svg>
-              Publish
+              {"Publish"}
             </Button>
             <ButtonGroupSeparator className="bg-primary/72 data-horizontal:h-px data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="vertical" role="separator" aria-orientation="vertical"></ButtonGroupSeparator>
             <DropdownMenu>

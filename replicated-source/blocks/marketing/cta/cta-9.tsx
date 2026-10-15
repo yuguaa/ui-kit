@@ -23,23 +23,23 @@ export function Pattern() {
               <div className="[border-radius:inherit] absolute border-r-white/31 border-white/22 border-x inset-0 pointer-events-none" aria-hidden="true"></div>
               <div className="@3xl:p-12 @max-3xl:pb-[40cqw] @max-sm:min-w-0 flex flex-col gap-6 items-start justify-center max-w-full min-w-72 p-6 relative w-[624px]">
                 <h2 className="@xl:text-4xl @xl:text-balance font-semibold leading-10 text-3xl" id="cta-9-title" style={{color: "oklch(0.928 0.006 264.5)"}}>
-                  Build Modern Apps
+                  {"Build Modern Apps"}
                   <span className="font-bold">
-                    Faster
+                    {"Faster"}
                   </span>
                   <span className="@xl:block">
-                    With NeUI Blocks
+                    {"With NeUI Blocks"}
                   </span>
                 </h2>
                 <p className="leading-6 text-base text-muted-foreground">
-                  Install production-ready components and templates from the NeUI registry, then customize them for your product.
+                  {"Install production-ready components and templates from the NeUI registry, then customize them for your product."}
                 </p>
                 <div className="flex flex-wrap gap-x-4 gap-y-2 items-center">
                   <Button href="#" role="button" tabIndex="0">
-                    Get Started
+                    {"Get Started"}
                   </Button>
                   <Button href="#" role="button" tabIndex="0">
-                    Read Docs
+                    {"Read Docs"}
                   </Button>
                 </div>
               </div>

@@ -19,7 +19,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -29,7 +29,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Catalog
+                  {"Catalog"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -37,14 +37,14 @@ export function Pattern() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div className="flex flex-col gap-1.5 min-w-0">
               <h2 className="font-semibold leading-tight md:text-3xl text-2xl text-balance tracking-tight" id="catalog-heading">
-                Catalog
+                {"Catalog"}
               </h2>
               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                9 catalog paths, 1498 catalog items
+                {"9 catalog paths, 1498 catalog items"}
               </span>
             </div>
             <Button href="#" aria-label="Browse all catalog paths" role="button" tabIndex="0">
-              Browse All
+              {"Browse All"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -59,7 +59,7 @@ export function Pattern() {
             </a>
             <div className="absolute left-3 top-3 z-10">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                Trending
+                {"Trending"}
               </Badge>
             </div>
             <div className="absolute bg-zinc-950/60 bottom-0 flex flex-col gap-4 inset-x-0 items-start p-4 pointer-events-none sm:p-5 text-zinc-50 z-10" data-feature-bar="true">
@@ -74,7 +74,7 @@ export function Pattern() {
                         <path d="m7.5 4.27 9 5.15"></path>
                       </svg>
                       <span className="tabular-nums truncate">
-                        286 items
+                        {"286 items"}
                       </span>
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -84,18 +84,18 @@ export function Pattern() {
                         <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                       </svg>
                       <span className="tabular-nums truncate">
-                        From $18
+                        {"From $18"}
                       </span>
                     </span>
                   </div>
                   <h3 className="font-semibold leading-tight text-2xl text-balance tracking-tight">
                     <a className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950 focus-visible:ring-zinc-50 hover:underline pointer-events-auto underline-offset-4" href="#">
-                      Living Room
+                      {"Living Room"}
                     </a>
                   </h3>
                 </div>
                 <Button className="pointer-events-auto" href="#" aria-label="Browse Living Room catalog" role="button" tabIndex="0">
-                  Browse Catalog
+                  {"Browse Catalog"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -103,17 +103,17 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="leading-6 max-w-xl text-pretty text-sm text-zinc-300">
-                Seating, side tables, storage, textiles, and room anchors. Entry prices start at $18.
+                {"Seating, side tables, storage, textiles, and room anchors. Entry prices start at $18."}
               </p>
             </div>
           </article>
           <aside className="border flex flex-col gap-5 lg:h-full lg:min-h-0 min-w-0 p-5 rounded-md">
             <div className="border-b border-dashed flex flex-col gap-1 min-w-0 pb-4">
               <h3 className="font-semibold text-base">
-                Browse by Catalog
+                {"Browse by Catalog"}
               </h3>
               <p className="leading-6 max-w-sm text-muted-foreground text-sm">
-                Smaller catalog paths stay visible without competing with the featured room.
+                {"Smaller catalog paths stay visible without competing with the featured room."}
               </p>
             </div>
             <ScrollArea className="-mr-2 flex-1 min-h-0 pr-2" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
@@ -133,7 +133,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            174 items
+                            {"174 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -143,14 +143,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $24
+                            {"From $24"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Bedroom
+                            {"Bedroom"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -159,7 +159,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Beds, soft lighting, storage, linens, and nightstand details.
+                        {"Beds, soft lighting, storage, linens, and nightstand details."}
                       </p>
                     </div>
                   </article>
@@ -177,7 +177,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            212 items
+                            {"212 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -187,14 +187,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $8
+                            {"From $8"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Kitchen
+                            {"Kitchen"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -203,7 +203,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Cookware, prep tools, pantry pieces, and table settings.
+                        {"Cookware, prep tools, pantry pieces, and table settings."}
                       </p>
                     </div>
                   </article>
@@ -221,7 +221,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            198 items
+                            {"198 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -231,14 +231,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $12
+                            {"From $12"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Storage
+                            {"Storage"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -247,7 +247,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Shelves, baskets, wardrobe helpers, and visible organization.
+                        {"Shelves, baskets, wardrobe helpers, and visible organization."}
                       </p>
                     </div>
                   </article>
@@ -265,7 +265,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            92 items
+                            {"92 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -275,14 +275,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $16
+                            {"From $16"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Lighting
+                            {"Lighting"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -291,7 +291,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Pendants, floor lamps, desk lamps, bulbs, and warm accents.
+                        {"Pendants, floor lamps, desk lamps, bulbs, and warm accents."}
                       </p>
                     </div>
                   </article>
@@ -309,7 +309,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            158 items
+                            {"158 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -319,14 +319,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $10
+                            {"From $10"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Dining
+                            {"Dining"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -335,7 +335,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Tables, chairs, serveware, linens, and hosting details.
+                        {"Tables, chairs, serveware, linens, and hosting details."}
                       </p>
                     </div>
                   </article>
@@ -353,7 +353,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            146 items
+                            {"146 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -363,14 +363,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $9
+                            {"From $9"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Bathroom
+                            {"Bathroom"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -379,7 +379,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Towels, mirrors, shelving, bath mats, and daily storage.
+                        {"Towels, mirrors, shelving, bath mats, and daily storage."}
                       </p>
                     </div>
                   </article>
@@ -397,7 +397,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            128 items
+                            {"128 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -407,14 +407,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $14
+                            {"From $14"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Workspace
+                            {"Workspace"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -423,7 +423,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Desks, task chairs, lamps, organizers, and cable control.
+                        {"Desks, task chairs, lamps, organizers, and cable control."}
                       </p>
                     </div>
                   </article>
@@ -441,7 +441,7 @@ export function Pattern() {
                             <path d="m7.5 4.27 9 5.15"></path>
                           </svg>
                           <span className="tabular-nums truncate">
-                            104 items
+                            {"104 items"}
                           </span>
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
@@ -451,14 +451,14 @@ export function Pattern() {
                             <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="tabular-nums truncate">
-                            From $20
+                            {"From $20"}
                           </span>
                         </span>
                       </div>
                       <h3 className="font-semibold min-w-0 text-base">
                         <a className="gap-1 hover:text-primary hover:underline inline-flex items-center max-w-full transition-colors underline-offset-4" href="#">
                           <span className="truncate">
-                            Outdoor
+                            {"Outdoor"}
                           </span>
                           <svg className="lucide lucide-arrow-right shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M5 12h14"></path>
@@ -467,7 +467,7 @@ export function Pattern() {
                         </a>
                       </h3>
                       <p className="leading-5 lg:line-clamp-1 line-clamp-2 text-muted-foreground text-sm">
-                        Patio seating, planters, lanterns, shade, and soft covers.
+                        {"Patio seating, planters, lanterns, shade, and soft covers."}
                       </p>
                     </div>
                   </article>

@@ -48,16 +48,16 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Renewals command data grid
+        {"Renewals command data grid"}
       </h1>
       <Card className="gap-0 p-0 w-full" size="default">
         <CardHeader className="border-b flex flex-row gap-4 items-center justify-between px-5 py-4">
           <div className="flex flex-1 flex-col gap-1 min-w-0">
             <CardTitle>
-              Renewals Review
+              {"Renewals Review"}
             </CardTitle>
             <CardDescription className="text-xs">
-              6 due in 30d, 13 blocked, $3.3M ARR at risk.
+              {"6 due in 30d, 13 blocked, $3.3M ARR at risk."}
             </CardDescription>
           </div>
           <CardAction className="self-center">
@@ -66,7 +66,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New transaction
+              {"New transaction"}
             </Button>
           </CardAction>
         </CardHeader>
@@ -86,18 +86,18 @@ export function Pattern() {
                       </svg>
                       <span className="flex items-center">
                         <span>
-                          Account
+                          {"Account"}
                         </span>
                       </span>
                     </div>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_3_" aria-haspopup="dialog" aria-expanded="false">
-                      contains
+                      {"contains"}
                     </PopoverTrigger>
                     </Popover>
                     <Popover>
                     <PopoverTrigger className="[&_svg]:pointer-events-none bg-background cn-button-group-text cursor-default dark:bg-input/30 flex hover:bg-accent items-center text-muted-foreground" type="button" aria-label="Search..." tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
-                      Search...
+                      {"Search..."}
                     </PopoverTrigger>
                     </Popover>
                     <DropdownMenu>
@@ -116,7 +116,7 @@ export function Pattern() {
                   <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                     <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                   </svg>
-                  Filters
+                  {"Filters"}
                 </PopoverTrigger>
                 </Popover>
                 <div className="sr-only" aria-live="polite" role="status">
@@ -124,7 +124,7 @@ export function Pattern() {
                 </div>
               </Filters>
               <Button type="button" tabIndex="0">
-                Clear filters
+                {"Clear filters"}
               </Button>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end">
@@ -136,17 +136,20 @@ export function Pattern() {
                   <circle cx="17" cy="17" r="3"></circle>
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
-                Settings
+                {"Settings"}
               </PopoverTrigger>
               </Popover>
             </div>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea className="h-135" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="" overflowVertical="true">
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_f_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "1327px"}} data-has-overflow-y="" data-overflow-y-end="">
                 <div role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-y="" data-overflow-y-end="">
+                  <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1216px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                    <DataGridProvider>
                     <DataGridTable style={{"--header-select-size": "36", "--col-select-size": "36", "--header-account-size": "400", "--col-account-size": "400", "--header-renewalWindow-size": "150", "--col-renewalWindow-size": "150", "--header-arr-size": "150", "--col-arr-size": "150", "--header-health-size": "140", "--col-health-size": "140", "--header-stage-size": "168", "--col-stage-size": "168", "--header-risk-size": "116", "--col-risk-size": "116", "--header-actions-size": "56", "--col-actions-size": "56", width: "calc(1216px + var(--data-grid-fill-size, 0px))"}}>
                       <colgroup>
                         <col style={{width: "calc(var(--col-select-size) * 1px)"}} />
@@ -169,7 +172,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_m_" aria-expanded="false">
-                                Account
+                                {"Account"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -183,7 +186,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_r_" aria-expanded="false">
-                                Renewal
+                                {"Renewal"}
                                 <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                   <path d="m5 12 7-7 7 7"></path>
                                   <path d="M12 19V5"></path>
@@ -197,7 +200,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
-                                ARR
+                                {"ARR"}
                                 <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                   <path d="M12 5v14"></path>
                                   <path d="m19 12-7 7-7-7"></path>
@@ -211,7 +214,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_15_" aria-expanded="false">
-                                Health
+                                {"Health"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -225,7 +228,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1a_" aria-expanded="false">
-                                Stage
+                                {"Stage"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -239,7 +242,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1f_" aria-expanded="false">
-                                Risk
+                                {"Risk"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -253,6 +256,7 @@ export function Pattern() {
                           <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="REN-1842">
                           <td className="align-middle ps-4! px-2 py-1.5" style={{width: "calc(var(--col-select-size) * 1px)"}}>
@@ -270,18 +274,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Stripe
+                                  {"Stripe"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -290,20 +294,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-destructive">
-                                Due in 7d
+                                {"Due in 7d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                May 12, 2026
+                                {"May 12, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $420,000
+                                {"$420,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$95,000 upside
+                                {"+$95,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -311,32 +315,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="46" aria-valuetext="46%" role="progressbar" aria-labelledby="base-ui-_r_1k_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1k_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  46%
+                                  {"46%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "46%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Legal review
+                              {"Legal review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Critical
+                              {"Critical"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -380,18 +384,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Supabase
+                                  {"Supabase"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -400,20 +404,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-destructive">
-                                Due in 12d
+                                {"Due in 12d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                May 17, 2026
+                                {"May 17, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $365,000
+                                {"$365,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$120,000 upside
+                                {"+$120,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -421,32 +425,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-labelledby="base-ui-_r_1u_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1u_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  58%
+                                  {"58%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -478,18 +482,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Stripe
+                                  {"Stripe"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -498,20 +502,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-warning">
-                                Due in 21d
+                                {"Due in 21d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                May 25, 2026
+                                {"May 25, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $420,000
+                                {"$420,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$95,000 upside
+                                {"+$95,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -519,32 +523,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="42" aria-valuetext="42%" role="progressbar" aria-labelledby="base-ui-_r_28_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_28_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  42%
+                                  {"42%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "42%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Legal review
+                              {"Legal review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Critical
+                              {"Critical"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -583,18 +587,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  OpenAI
+                                  {"OpenAI"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -603,20 +607,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-warning">
-                                Due in 24d
+                                {"Due in 24d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                May 29, 2026
+                                {"May 29, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $182,000
+                                {"$182,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$42,000 upside
+                                {"+$42,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -624,32 +628,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="63" aria-valuetext="63%" role="progressbar" aria-labelledby="base-ui-_r_2i_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2i_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  63%
+                                  {"63%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "63%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -693,18 +697,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Supabase
+                                  {"Supabase"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -713,20 +717,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-warning">
-                                Due in 29d
+                                {"Due in 29d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 2, 2026
+                                {"Jun 2, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $376,000
+                                {"$376,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$120,000 upside
+                                {"+$120,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -734,32 +738,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-labelledby="base-ui-_r_2s_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2s_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  58%
+                                  {"58%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -793,18 +797,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Mintlify
+                                  {"Mintlify"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -813,20 +817,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-warning">
-                                Due in 30d
+                                {"Due in 30d"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 4, 2026
+                                {"Jun 4, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $148,000
+                                {"$148,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$86,000 upside
+                                {"+$86,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -834,32 +838,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="74" aria-valuetext="74%" role="progressbar" aria-labelledby="base-ui-_r_36_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_36_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  74%
+                                  {"74%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "74%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -887,7 +891,7 @@ export function Pattern() {
                                   <span className="dark:hidden" aria-hidden="true">
                                     <svg className="size-5" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        Anthropic
+                                        {"Anthropic"}
                                       </title>
                                       <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                     </svg>
@@ -895,7 +899,7 @@ export function Pattern() {
                                   <span className="dark:block hidden" aria-hidden="true">
                                     <svg className="size-5" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        Anthropic
+                                        {"Anthropic"}
                                       </title>
                                       <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                     </svg>
@@ -904,18 +908,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Anthropic
+                                  {"Anthropic"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -924,20 +928,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                37d out
+                                {"37d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 11, 2026
+                                {"Jun 11, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $515,000
+                                {"$515,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -945,32 +949,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="54" aria-valuetext="54%" role="progressbar" aria-labelledby="base-ui-_r_3g_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_3g_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  54%
+                                  {"54%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "54%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1009,18 +1013,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  OpenAI
+                                  {"OpenAI"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -1029,20 +1033,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                44d out
+                                {"44d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 17, 2026
+                                {"Jun 17, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $193,000
+                                {"$193,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$42,000 upside
+                                {"+$42,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1050,32 +1054,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" aria-valuetext="67%" role="progressbar" aria-labelledby="base-ui-_r_3q_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_3q_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  67%
+                                  {"67%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "67%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1109,18 +1113,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Mintlify
+                                  {"Mintlify"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -1129,20 +1133,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                44d out
+                                {"44d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 17, 2026
+                                {"Jun 17, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $161,000
+                                {"$161,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$98,000 upside
+                                {"+$98,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1150,32 +1154,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="82" aria-valuetext="82%" role="progressbar" aria-labelledby="base-ui-_r_44_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_44_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  82%
+                                  {"82%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "82%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1209,18 +1213,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Convex
+                                  {"Convex"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -1229,20 +1233,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                44d out
+                                {"44d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 18, 2026
+                                {"Jun 18, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $92,000
+                                {"$92,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$18,000 upside
+                                {"+$18,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1250,32 +1254,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="71" aria-valuetext="71%" role="progressbar" aria-labelledby="base-ui-_r_4e_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_4e_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  71%
+                                  {"71%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "71%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1320,18 +1324,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Neon
+                                  {"Neon"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -1340,20 +1344,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                52d out
+                                {"52d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 26, 2026
+                                {"Jun 26, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $206,000
+                                {"$206,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$112,000 upside
+                                {"+$112,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1361,32 +1365,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" aria-valuetext="67%" role="progressbar" aria-labelledby="base-ui-_r_4o_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_4o_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  67%
+                                  {"67%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "67%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1414,7 +1418,7 @@ export function Pattern() {
                                   <span className="dark:hidden" aria-hidden="true">
                                     <svg className="size-5" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        Anthropic
+                                        {"Anthropic"}
                                       </title>
                                       <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                     </svg>
@@ -1422,7 +1426,7 @@ export function Pattern() {
                                   <span className="dark:block hidden" aria-hidden="true">
                                     <svg className="size-5" fill="#ffff" fillRule="evenodd" viewBox="0 0 24 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                                       <title>
-                                        Anthropic
+                                        {"Anthropic"}
                                       </title>
                                       <path d="M13.827 3.52h3.603L24 20h-3.603l-6.57-16.48zm-7.258 0h3.767L16.906 20h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 9.959L8.453 7.687 6.205 13.48H10.7z"></path>
                                     </svg>
@@ -1431,18 +1435,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Anthropic
+                                  {"Anthropic"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -1451,20 +1455,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                54d out
+                                {"54d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jun 27, 2026
+                                {"Jun 27, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $515,000
+                                {"$515,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -1472,32 +1476,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="46" aria-valuetext="46%" role="progressbar" aria-labelledby="base-ui-_r_52_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_52_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  46%
+                                  {"46%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "46%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Legal review
+                              {"Legal review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Critical
+                              {"Critical"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1536,18 +1540,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  PlanetScale
+                                  {"PlanetScale"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -1556,20 +1560,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                58d out
+                                {"58d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 2, 2026
+                                {"Jul 2, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $438,000
+                                {"$438,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$64,000 upside
+                                {"+$64,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1577,32 +1581,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="81" aria-valuetext="81%" role="progressbar" aria-labelledby="base-ui-_r_5c_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5c_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  81%
+                                  {"81%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "81%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1641,18 +1645,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Prisma
+                                  {"Prisma"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -1661,20 +1665,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                64d out
+                                {"64d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 8, 2026
+                                {"Jul 8, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $124,000
+                                {"$124,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$52,000 upside
+                                {"+$52,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1682,32 +1686,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="77" aria-valuetext="77%" role="progressbar" aria-labelledby="base-ui-_r_5m_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5m_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  77%
+                                  {"77%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "77%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1741,18 +1745,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Convex
+                                  {"Convex"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -1761,20 +1765,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                64d out
+                                {"64d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 7, 2026
+                                {"Jul 7, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $95,000
+                                {"$95,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$18,000 upside
+                                {"+$18,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1782,32 +1786,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" aria-valuetext="67%" role="progressbar" aria-labelledby="base-ui-_r_60_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_60_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  67%
+                                  {"67%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "67%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1852,18 +1856,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Neon
+                                  {"Neon"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -1872,20 +1876,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                66d out
+                                {"66d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 9, 2026
+                                {"Jul 9, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $218,000
+                                {"$218,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$112,000 upside
+                                {"+$112,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -1893,32 +1897,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" aria-valuetext="67%" role="progressbar" aria-labelledby="base-ui-_r_6a_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6a_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  67%
+                                  {"67%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "67%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -1957,18 +1961,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Resend
+                                  {"Resend"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -1977,20 +1981,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                69d out
+                                {"69d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 13, 2026
+                                {"Jul 13, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $164,000
+                                {"$164,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -1998,32 +2002,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="52" aria-valuetext="52%" role="progressbar" aria-labelledby="base-ui-_r_6k_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6k_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  52%
+                                  {"52%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "52%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              High
+                              {"High"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2060,18 +2064,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Slack
+                                  {"Slack"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -2080,20 +2084,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                74d out
+                                {"74d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 18, 2026
+                                {"Jul 18, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $88,000
+                                {"$88,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$24,000 upside
+                                {"+$24,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2101,32 +2105,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="69" aria-valuetext="69%" role="progressbar" aria-labelledby="base-ui-_r_6u_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6u_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  69%
+                                  {"69%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "69%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2165,18 +2169,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  PlanetScale
+                                  {"PlanetScale"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -2185,20 +2189,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                75d out
+                                {"75d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 18, 2026
+                                {"Jul 18, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $477,000
+                                {"$477,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$73,000 upside
+                                {"+$73,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2206,32 +2210,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="85%" role="progressbar" aria-labelledby="base-ui-_r_78_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_78_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  85%
+                                  {"85%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "85%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2277,18 +2281,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Zoom
+                                  {"Zoom"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -2297,20 +2301,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                80d out
+                                {"80d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 24, 2026
+                                {"Jul 24, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $212,000
+                                {"$212,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$135,000 upside
+                                {"+$135,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2318,32 +2322,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" aria-valuetext="83%" role="progressbar" aria-labelledby="base-ui-_r_7j_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_7j_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  83%
+                                  {"83%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2382,18 +2386,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Resend
+                                  {"Resend"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -2402,20 +2406,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                83d out
+                                {"83d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 26, 2026
+                                {"Jul 26, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $169,000
+                                {"$169,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -2423,32 +2427,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="44" aria-valuetext="44%" role="progressbar" aria-labelledby="base-ui-_r_7t_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_7t_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  44%
+                                  {"44%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "44%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Legal review
+                              {"Legal review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Critical
+                              {"Critical"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2487,18 +2491,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Prisma
+                                  {"Prisma"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -2507,20 +2511,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                84d out
+                                {"84d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 27, 2026
+                                {"Jul 27, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $124,000
+                                {"$124,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$59,000 upside
+                                {"+$59,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2528,32 +2532,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="85%" role="progressbar" aria-labelledby="base-ui-_r_87_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_87_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  85%
+                                  {"85%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "85%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2586,18 +2590,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Hono
+                                  {"Hono"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -2606,20 +2610,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                87d out
+                                {"87d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Jul 31, 2026
+                                {"Jul 31, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $610,000
+                                {"$610,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$180,000 upside
+                                {"+$180,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2627,32 +2631,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="79" aria-valuetext="79%" role="progressbar" aria-labelledby="base-ui-_r_8h_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8h_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  79%
+                                  {"79%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "79%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Commercial review
+                              {"Commercial review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2689,18 +2693,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Slack
+                                  {"Slack"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -2709,20 +2713,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                91d out
+                                {"91d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 3, 2026
+                                {"Aug 3, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $93,000
+                                {"$93,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$24,000 upside
+                                {"+$24,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2730,32 +2734,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" aria-valuetext="65%" role="progressbar" aria-labelledby="base-ui-_r_8r_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8r_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  65%
+                                  {"65%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "65%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2794,18 +2798,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Remix
+                                  {"Remix"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -2814,20 +2818,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                92d out
+                                {"92d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 5, 2026
+                                {"Aug 5, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $76,000
+                                {"$76,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$21,000 upside
+                                {"+$21,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -2835,32 +2839,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="72" aria-valuetext="72%" role="progressbar" aria-labelledby="base-ui-_r_95_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_95_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  72%
+                                  {"72%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "72%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -2892,18 +2896,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Paper
+                                  {"Paper"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -2912,20 +2916,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                98d out
+                                {"98d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 11, 2026
+                                {"Aug 11, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $154,000
+                                {"$154,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -2933,32 +2937,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="57" aria-valuetext="57%" role="progressbar" aria-labelledby="base-ui-_r_9f_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_9f_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  57%
+                                  {"57%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "57%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3004,18 +3008,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Zoom
+                                  {"Zoom"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -3024,20 +3028,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                100d out
+                                {"100d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 12, 2026
+                                {"Aug 12, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $231,000
+                                {"$231,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$154,000 upside
+                                {"+$154,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3045,32 +3049,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" aria-valuetext="83%" role="progressbar" aria-labelledby="base-ui-_r_9q_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_9q_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  83%
+                                  {"83%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3103,18 +3107,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Hono
+                                  {"Hono"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -3123,20 +3127,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                101d out
+                                {"101d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 13, 2026
+                                {"Aug 13, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $610,000
+                                {"$610,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$205,000 upside
+                                {"+$205,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3144,32 +3148,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="83" aria-valuetext="83%" role="progressbar" aria-labelledby="base-ui-_r_a4_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_a4_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  83%
+                                  {"83%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "83%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3201,18 +3205,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  n8n
+                                  {"n8n"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -3221,20 +3225,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                107d out
+                                {"107d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 20, 2026
+                                {"Aug 20, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $448,000
+                                {"$448,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$132,000 upside
+                                {"+$132,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3242,32 +3246,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="85%" role="progressbar" aria-labelledby="base-ui-_r_ae_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_ae_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  85%
+                                  {"85%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "85%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3306,18 +3310,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Remix
+                                  {"Remix"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -3326,20 +3330,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                109d out
+                                {"109d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 21, 2026
+                                {"Aug 21, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $78,000
+                                {"$78,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$24,000 upside
+                                {"+$24,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3347,32 +3351,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="80%" role="progressbar" aria-labelledby="base-ui-_r_ao_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_ao_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  80%
+                                  {"80%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "80%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3404,18 +3408,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Vercel
+                                  {"Vercel"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -3424,20 +3428,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                116d out
+                                {"116d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 29, 2026
+                                {"Aug 29, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $132,000
+                                {"$132,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$34,000 upside
+                                {"+$34,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3445,32 +3449,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="68" aria-valuetext="68%" role="progressbar" aria-labelledby="base-ui-_r_b2_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_b2_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  68%
+                                  {"68%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3502,18 +3506,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Paper
+                                  {"Paper"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1557296387-5358ad7997bb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Priya Menon
+                                    {"Priya Menon"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -3522,20 +3526,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                118d out
+                                {"118d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Aug 30, 2026
+                                {"Aug 30, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $163,000
+                                {"$163,000"}
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                $0 upside
+                                {"$0 upside"}
                               </span>
                             </div>
                           </td>
@@ -3543,32 +3547,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-red-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="49" aria-valuetext="49%" role="progressbar" aria-labelledby="base-ui-_r_bc_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_bc_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  49%
+                                  {"49%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "49%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                At risk
+                                {"At risk"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Legal review
+                              {"Legal review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Critical
+                              {"Critical"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3600,18 +3604,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  n8n
+                                  {"n8n"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Jonah Lee
+                                    {"Jonah Lee"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Scale
+                                    {"Scale"}
                                   </span>
                                 </div>
                               </div>
@@ -3620,20 +3624,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                121d out
+                                {"121d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Sep 2, 2026
+                                {"Sep 2, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $488,000
+                                {"$488,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$150,000 upside
+                                {"+$150,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3641,32 +3645,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="81" aria-valuetext="81%" role="progressbar" aria-labelledby="base-ui-_r_bm_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_bm_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  81%
+                                  {"81%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "81%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Healthy
+                                {"Healthy"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                              Low
+                              {"Low"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3701,18 +3705,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Google Cloud
+                                  {"Google Cloud"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Nina Santos
+                                    {"Nina Santos"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -3721,20 +3725,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                127d out
+                                {"127d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Sep 9, 2026
+                                {"Sep 9, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $388,000
+                                {"$388,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$74,000 upside
+                                {"+$74,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3742,32 +3746,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="64" aria-valuetext="64%" role="progressbar" aria-labelledby="base-ui-_r_c0_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_c0_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  64%
+                                  {"64%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "64%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3799,18 +3803,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Vercel
+                                  {"Vercel"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Omar Haddad
+                                    {"Omar Haddad"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Mid-market
+                                    {"Mid-market"}
                                   </span>
                                 </div>
                               </div>
@@ -3819,20 +3823,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                133d out
+                                {"133d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Sep 14, 2026
+                                {"Sep 14, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $132,000
+                                {"$132,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$34,000 upside
+                                {"+$34,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3840,32 +3844,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="68" aria-valuetext="68%" role="progressbar" aria-labelledby="base-ui-_r_ca_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_ca_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  68%
+                                  {"68%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3900,18 +3904,18 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <div className="font-medium text-foreground truncate">
-                                  Google Cloud
+                                  {"Google Cloud"}
                                 </div>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <Avatar className="size-4" size="default">
                                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                   </Avatar>
                                   <span className="truncate">
-                                    Maya Patel
+                                    {"Maya Patel"}
                                   </span>
                                   <span className="bg-input rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Enterprise
+                                    {"Enterprise"}
                                   </span>
                                 </div>
                               </div>
@@ -3920,20 +3924,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-renewalWindow-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                147d out
+                                {"147d out"}
                               </span>
                               <span className="text-muted-foreground text-xs">
-                                Sep 28, 2026
+                                {"Sep 28, 2026"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-arr-size) * 1px)"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="font-medium tabular-nums text-foreground">
-                                $400,000
+                                {"$400,000"}
                               </span>
                               <span className="dark:text-emerald-400 tabular-nums text-emerald-600 text-xs">
-                                +$74,000 upside
+                                {"+$74,000 upside"}
                               </span>
                             </div>
                           </td>
@@ -3941,32 +3945,32 @@ export function Pattern() {
                             <div className="flex flex-col gap-1 min-w-0">
                               <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:min-w-14 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-value]:order-2 flex-1 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="68" aria-valuetext="68%" role="progressbar" aria-labelledby="base-ui-_r_ck_">
                                 <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_ck_" role="presentation">
-                                  Health score
+                                  {"Health score"}
                                 </ProgressLabel>
                                 <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                                  68%
+                                  {"68%"}
                                 </ProgressValue>
                                 <ProgressTrack progressing="">
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "68%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-xs">
-                                Watchlist
+                                {"Watchlist"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                              Preparing
+                              {"Preparing"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-risk-size) * 1px)"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Medium
+                              {"Medium"}
                             </Badge>
                           </td>
                           <td className="align-middle pe-4! px-2 py-1.5" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
@@ -3983,11 +3987,15 @@ export function Pattern() {
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
             <div className="absolute h-(--data-grid-scrollbar-track-height) inset-e-px pointer-events-none top-(--data-grid-scrollbar-header-height) z-20" aria-hidden="true" style={{"--data-grid-scrollbar-header-height": "32px", "--data-grid-scrollbar-thumb-height": "140.63433242506812px", "--data-grid-scrollbar-thumb-top": "0px", "--data-grid-scrollbar-track-height": "508px"}}>
               <div className="h-full p-px pointer-events-auto relative touch-none w-[var(--data-grid-scrollbar-size,0.625rem)]">
                 <div className="absolute before:-inset-0.5 before:absolute bg-border end-px h-(--data-grid-scrollbar-thumb-height) rounded-full top-(--data-grid-scrollbar-thumb-top) w-[calc(var(--data-grid-scrollbar-size,0.625rem)-0.1875rem)]"></div>

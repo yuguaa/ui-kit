@@ -38,7 +38,7 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Fund transfer wizard
+        {"Fund transfer wizard"}
       </h1>
       <div className="bg-background flex flex-col min-h-svh w-full">
         <header className="backdrop-blur bg-background/95 border-b border-border shrink-0 sticky top-0 z-20">
@@ -46,66 +46,102 @@ export function Pattern() {
             <div className="flex items-center min-w-0">
               <div className="flex gap-2 items-center min-w-0">
                 <h1 className="font-medium leading-5 text-base text-foreground truncate">
-                  Fund Transfer
+                  {"Fund Transfer"}
                 </h1>
               </div>
             </div>
             <div className="-translate-x-1/2 absolute hidden left-1/2 max-w-md min-w-80 sm:block w-[44vw]">
+              <StepperItem>
               <Stepper className="max-w-md" role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Fund transfer steps">
+                <Stepper>
                 <StepperNav className="items-center" data-state="1" data-orientation="horizontal">
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="active">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false" extracted="1">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                         <div className="absolute">
-                          1
+                          {"1"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="active">
-                        Payee
+                        {"Payee"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="active"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          2
+                          {"2"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Amount
+                        {"Amount"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          3
+                          {"3"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Details
+                        {"Details"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          4
+                          {"4"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Authorize
+                        {"Authorize"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
                 </StepperNav>
+                </Stepper>
               </Stepper>
+              </StepperItem>
             </div>
             <div className="flex gap-2 items-center ml-auto shrink-0">
               <Button className="-me-2 size-8" type="button" tabIndex="0" aria-label="Close fund transfer">
@@ -117,85 +153,113 @@ export function Pattern() {
             </div>
           </div>
           <div className="pb-2 px-4 sm:hidden">
+            <StepperItem>
             <Stepper role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Fund transfer steps">
+              <Stepper>
               <StepperNav className="items-center" data-state="1" data-orientation="horizontal">
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="active">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                       <div className="absolute">
-                        1
+                        {"1"}
                         <span className="sr-only">
-                          Payee
+                          {"Payee"}
                         </span>
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="active"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
-                        2
+                        {"2"}
                         <span className="sr-only">
-                          Amount
+                          {"Amount"}
                         </span>
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
-                        3
+                        {"3"}
                         <span className="sr-only">
-                          Details
+                          {"Details"}
                         </span>
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:border-border data-[state=inactive]:text-muted-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
-                        4
+                        {"4"}
                         <span className="sr-only">
-                          Authorize
+                          {"Authorize"}
                         </span>
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                 </StepperItem>
+                </Stepper>
               </StepperNav>
+              </Stepper>
             </Stepper>
+            </StepperItem>
           </div>
         </header>
         <main className="flex flex-1 justify-center lg:px-10 min-h-0 overflow-y-auto px-4 py-8 sm:px-8 sm:py-10">
           <form className="flex flex-col gap-8 max-w-[34rem] w-full" id="payment-flow-wizard-form" aria-label="Fund transfer wizard">
             <FieldSet className="gap-0 min-h-[34rem]">
               <FieldLegend className="sr-only" variant="legend">
-                Fund transfer wizard
+                {"Fund transfer wizard"}
               </FieldLegend>
               <FieldDescription className="sr-only">
-                Select a payee, enter an amount, review funding, and authorize transfer.
+                {"Select a payee, enter an amount, review funding, and authorize transfer."}
               </FieldDescription>
               <div className="flex flex-col gap-7 min-w-0" style={{opacity: "1", transform: "none"}}>
                 <section className="flex flex-col gap-6 mx-auto w-full" aria-labelledby="wizard-7-recipient-title">
                   <FieldSet className="gap-0">
                     <FieldLegend className="sr-only" variant="legend" id="wizard-7-recipient-title">
-                      Recipient
+                      {"Recipient"}
                     </FieldLegend>
                     <FieldDescription className="sr-only">
-                      Select a payee for this fund transfer.
+                      {"Select a payee for this fund transfer."}
                     </FieldDescription>
                     <div className="flex flex-col gap-5">
                       <div className="flex flex-col gap-3">
                         <h3 className="font-medium text-sm">
-                          Recent payees
+                          {"Recent payees"}
                         </h3>
                         <div className="gap-2 grid grid-cols-3 min-w-0 sm:grid-cols-6">
                           <button className="flex flex-col focus-visible:ring-[3px] focus-visible:ring-ring/50 gap-2 h-full hover:bg-muted items-center justify-start min-h-26 min-w-0 outline-none p-2 rounded-md text-center transition-colors w-full" type="button">
@@ -211,10 +275,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Emma Clarke
+                                {"Emma Clarke"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Mercury Bank · Consulting ending 3508
+                                {"Mercury Bank · Consulting ending 3508"}
                               </span>
                             </span>
                           </button>
@@ -231,10 +295,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Mason Reed
+                                {"Mason Reed"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Aster Bank · Contractor ending 1184
+                                {"Aster Bank · Contractor ending 1184"}
                               </span>
                             </span>
                           </button>
@@ -243,7 +307,7 @@ export function Pattern() {
                             <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_7_" baseUiTooltipTrigger="">
                               <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-12" size="default">
                                 <AvatarFallback className="bg-muted font-medium text-foreground">
-                                  OB
+                                  {"OB"}
                                 </AvatarFallback>
                               </Avatar>
                               <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -253,10 +317,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Oliver Bennett
+                                {"Oliver Bennett"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Barclays Business · Supplier ending 7420
+                                {"Barclays Business · Supplier ending 7420"}
                               </span>
                             </span>
                           </button>
@@ -273,10 +337,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Helio Parts Co.
+                                {"Helio Parts Co."}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Commerzbank · Parts invoice ending 4318
+                                {"Commerzbank · Parts invoice ending 4318"}
                               </span>
                             </span>
                           </button>
@@ -285,7 +349,7 @@ export function Pattern() {
                             <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_b_" baseUiTooltipTrigger="">
                               <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-12" size="default">
                                 <AvatarFallback className="bg-muted font-medium text-foreground">
-                                  KS
+                                  {"KS"}
                                 </AvatarFallback>
                               </Avatar>
                               <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -295,10 +359,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Keystone Systems
+                                {"Keystone Systems"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Chase Business · Maintenance ending 1180
+                                {"Chase Business · Maintenance ending 1180"}
                               </span>
                             </span>
                           </button>
@@ -315,10 +379,10 @@ export function Pattern() {
                             </Tooltip>
                             <span className="flex flex-col min-w-0 w-full">
                               <span className="font-medium leading-5 text-sm truncate">
-                                Lauren Pierce
+                                {"Lauren Pierce"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Monzo Business · Studio ending 6672
+                                {"Monzo Business · Studio ending 6672"}
                               </span>
                             </span>
                           </button>
@@ -326,7 +390,7 @@ export function Pattern() {
                       </div>
                       <div className="flex flex-col gap-3">
                         <h3 className="font-medium text-sm">
-                          Saved accounts
+                          {"Saved accounts"}
                         </h3>
                         <div className="relative">
                           <svg className="-translate-y-1/2 absolute left-3 lucide lucide-search pointer-events-none size-4 text-muted-foreground top-1/2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
@@ -337,10 +401,10 @@ export function Pattern() {
                         </div>
                         <div className="flex flex-wrap gap-2">
                           <Button type="button" tabIndex="0">
-                            All
+                            {"All"}
                           </Button>
                           <Button type="button" tabIndex="0">
-                            My wallets
+                            {"My wallets"}
                           </Button>
                         </div>
                         <ScrollArea className="h-[clamp(13rem,calc(100svh-31rem),24rem)]" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
@@ -361,15 +425,15 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Emma Clarke
+                                    {"Emma Clarke"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Mercury Bank · Consulting ending 3508
+                                    {"Mercury Bank · Consulting ending 3508"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 sm:max-w-40 sm:min-w-28 text-muted-foreground text-right text-xs">
                                   <span className="hidden sm:block truncate">
-                                    Paid Apr 18
+                                    {"Paid Apr 18"}
                                   </span>
                                   <svg className="lucide lucide-chevron-right shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
@@ -391,15 +455,15 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Mason Reed
+                                    {"Mason Reed"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Aster Bank · Contractor ending 1184
+                                    {"Aster Bank · Contractor ending 1184"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 sm:max-w-40 sm:min-w-28 text-muted-foreground text-right text-xs">
                                   <span className="hidden sm:block truncate">
-                                    Paid May 03
+                                    {"Paid May 03"}
                                   </span>
                                   <svg className="lucide lucide-chevron-right shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
@@ -412,7 +476,7 @@ export function Pattern() {
                                   <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_l_" baseUiTooltipTrigger="">
                                     <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-10" size="default">
                                       <AvatarFallback className="bg-muted font-medium text-foreground">
-                                        OB
+                                        {"OB"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -423,10 +487,10 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Oliver Bennett
+                                    {"Oliver Bennett"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Barclays Business · Supplier ending 7420
+                                    {"Barclays Business · Supplier ending 7420"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 text-muted-foreground text-right text-xs">
@@ -450,10 +514,10 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Helio Parts Co.
+                                    {"Helio Parts Co."}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Commerzbank · Parts invoice ending 4318
+                                    {"Commerzbank · Parts invoice ending 4318"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 text-muted-foreground text-right text-xs">
@@ -468,7 +532,7 @@ export function Pattern() {
                                   <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_p_" baseUiTooltipTrigger="">
                                     <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-10" size="default">
                                       <AvatarFallback className="bg-muted font-medium text-foreground">
-                                        KS
+                                        {"KS"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -479,15 +543,15 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Keystone Systems
+                                    {"Keystone Systems"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Chase Business · Maintenance ending 1180
+                                    {"Chase Business · Maintenance ending 1180"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 sm:max-w-40 sm:min-w-28 text-muted-foreground text-right text-xs">
                                   <span className="hidden sm:block truncate">
-                                    New details
+                                    {"New details"}
                                   </span>
                                   <svg className="lucide lucide-chevron-right shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
@@ -509,10 +573,10 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Lauren Pierce
+                                    {"Lauren Pierce"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Monzo Business · Studio ending 6672
+                                    {"Monzo Business · Studio ending 6672"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 text-muted-foreground text-right text-xs">
@@ -527,7 +591,7 @@ export function Pattern() {
                                   <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_t_" baseUiTooltipTrigger="">
                                     <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-10" size="default">
                                       <AvatarFallback className="bg-muted font-medium text-foreground">
-                                        OS
+                                        {"OS"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -538,10 +602,10 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Oakridge Supply
+                                    {"Oakridge Supply"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Wells Fargo · Wholesale ending 2888
+                                    {"Wells Fargo · Wholesale ending 2888"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 text-muted-foreground text-right text-xs">
@@ -556,7 +620,7 @@ export function Pattern() {
                                   <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_v_" baseUiTooltipTrigger="">
                                     <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-10" size="default">
                                       <AvatarFallback className="bg-muted font-medium text-foreground">
-                                        AW
+                                        {"AW"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -567,15 +631,15 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Arden Wholesale
+                                    {"Arden Wholesale"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    First Century Bank · Warehouse ending 0400
+                                    {"First Century Bank · Warehouse ending 0400"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 sm:max-w-40 sm:min-w-28 text-muted-foreground text-right text-xs">
                                   <span className="hidden sm:block truncate">
-                                    Paid Apr 11
+                                    {"Paid Apr 11"}
                                   </span>
                                   <svg className="lucide lucide-chevron-right shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
@@ -588,7 +652,7 @@ export function Pattern() {
                                   <TooltipTrigger className="focus-visible:ring-[3px] focus-visible:ring-ring/50 inline-flex outline-none relative rounded-full shrink-0" id="base-ui-_r_11_" baseUiTooltipTrigger="">
                                     <Avatar className="after:rounded-full bg-muted overflow-hidden rounded-full size-10" size="default">
                                       <AvatarFallback className="bg-muted font-medium text-foreground">
-                                        SC
+                                        {"SC"}
                                       </AvatarFallback>
                                     </Avatar>
                                     <span className="-bottom-0.5 -end-0.5 absolute bg-background border border-background flex items-center justify-center overflow-hidden rounded-full size-5">
@@ -599,10 +663,10 @@ export function Pattern() {
                                 </ItemMedia>
                                 <ItemContent className="min-w-0">
                                   <ItemTitle className="max-w-full truncate">
-                                    Slate Courier
+                                    {"Slate Courier"}
                                   </ItemTitle>
                                   <ItemDescription className="truncate">
-                                    Westpac · Route account ending 8434
+                                    {"Westpac · Route account ending 8434"}
                                   </ItemDescription>
                                 </ItemContent>
                                 <ItemActions className="gap-2 justify-end min-w-8 shrink-0 text-muted-foreground text-right text-xs">
@@ -629,10 +693,10 @@ export function Pattern() {
                   <path d="m12 19-7-7 7-7"></path>
                   <path d="M19 12H5"></path>
                 </svg>
-                Back
+                {"Back"}
               </Button>
               <Button type="submit" tabIndex="0">
-                Continue
+                {"Continue"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>

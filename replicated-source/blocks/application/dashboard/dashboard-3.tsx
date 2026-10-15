@@ -69,7 +69,7 @@ export function Pattern() {
           <header className="bg-background border-b border-border flex flex-col gap-2.5 pb-2.5 shrink-0 w-full">
             <div className="flex flex-col gap-1.5 min-w-0">
               <h1 className="font-semibold sm:text-lg text-base text-foreground whitespace-nowrap">
-                Delivery Board
+                {"Delivery Board"}
               </h1>
               <div className="flex flex-wrap gap-x-4 gap-y-2 items-start justify-between min-w-0 sm:items-center">
                 <Breadcrumb aria-label="breadcrumb">
@@ -80,7 +80,7 @@ export function Pattern() {
                           <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                         </svg>
                         <span className="hidden md:inline">
-                          Accounts
+                          {"Accounts"}
                         </span>
                       </BreadcrumbLink>
                     </BreadcrumbItem>
@@ -95,7 +95,7 @@ export function Pattern() {
                           <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                         </svg>
                         <span className="hidden md:inline">
-                          Delivery
+                          {"Delivery"}
                         </span>
                       </BreadcrumbLink>
                     </BreadcrumbItem>
@@ -106,7 +106,7 @@ export function Pattern() {
                     </BreadcrumbSeparator>
                     <BreadcrumbItem>
                       <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                        Northstar Rollout
+                        {"Northstar Rollout"}
                       </BreadcrumbPage>
                     </BreadcrumbItem>
                   </BreadcrumbList>
@@ -135,16 +135,16 @@ export function Pattern() {
             <div className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-between min-h-9 min-w-0">
               <TabsList className="gap-0 h-9 hidden md:inline-flex p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                 <TabsTrigger className="first:pl-0 group-data-horizontal/tabs:after:bottom-[-1px] h-full last:pr-0" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_5_" compositeItemActive="">
-                  Overview
+                  {"Overview"}
                 </TabsTrigger>
                 <TabsTrigger className="first:pl-0 group-data-horizontal/tabs:after:bottom-[-1px] h-full last:pr-0" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
-                  Worklog
+                  {"Worklog"}
                 </TabsTrigger>
                 <TabsTrigger className="first:pl-0 group-data-horizontal/tabs:after:bottom-[-1px] h-full last:pr-0" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7_">
-                  Files
+                  {"Files"}
                 </TabsTrigger>
                 <TabsTrigger className="first:pl-0 group-data-horizontal/tabs:after:bottom-[-1px] h-full last:pr-0" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_">
-                  Reports
+                  {"Reports"}
                 </TabsTrigger>
               </TabsList>
               <DropdownMenu>
@@ -165,7 +165,7 @@ export function Pattern() {
                     <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                   </svg>
                   <span className="duration-300 group-hover/fab:opacity-100 ml-8 opacity-0 pr-2 transition-opacity whitespace-nowrap">
-                    New Brief
+                    {"New Brief"}
                   </span>
                 </Button>
                 <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
@@ -178,13 +178,13 @@ export function Pattern() {
                   </Avatar>
                   <Avatar size="sm">
                     <AvatarFallback className="text-[10px]">
-                      LH
+                      {"LH"}
                     </AvatarFallback>
                   </Avatar>
                   <AvatarGroupCount className="font-medium leading-none tabular-nums text-[13px]!">
                     <Popover>
                     <PopoverTrigger className="flex focus-visible:ring-3 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full transition-colors" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_f_" aria-haspopup="dialog" aria-expanded="false" aria-label="6 more: Iris Calder, Samir Vale, Nina Flores, Owen Hart, Cleo Warner, Jules Park">
-                      +6
+                      {"+6"}
                     </PopoverTrigger>
                     </Popover>
                   </AvatarGroupCount>
@@ -198,7 +198,7 @@ export function Pattern() {
                 <FramePanel className="space-y-10">
                   <div className="flex gap-2 grow items-center justify-between">
                     <span className="text-muted-foreground text-sm">
-                      Account
+                      {"Account"}
                     </span>
                     <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                       <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -209,10 +209,10 @@ export function Pattern() {
                   <div className="flex items-end justify-between">
                     <div className="flex flex-col gap-1.5">
                       <span className="font-medium leading-tight text-sm">
-                        Northstar Commerce
+                        {"Northstar Commerce"}
                       </span>
                       <p className="leading-none text-muted-foreground text-sm">
-                        Enterprise rollout
+                        {"Enterprise rollout"}
                       </p>
                     </div>
                     <div className="flex justify-end pt-1">
@@ -225,7 +225,7 @@ export function Pattern() {
                 <FramePanel className="space-y-10">
                   <div className="flex gap-2 grow items-center justify-between">
                     <span className="text-muted-foreground text-sm">
-                      Workspace
+                      {"Workspace"}
                     </span>
                     <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                       <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
@@ -236,15 +236,15 @@ export function Pattern() {
                   <div className="flex items-end justify-between">
                     <div className="flex flex-col gap-1.5">
                       <a className="font-medium hover:underline leading-tight text-primary text-sm" href="#">
-                        portal.northstar.io
+                        {"portal.northstar.io"}
                       </a>
                       <p className="leading-none text-muted-foreground text-sm">
-                        Requests: 124k/day
+                        {"Requests: 124k/day"}
                       </p>
                     </div>
                     <div className="flex justify-end pt-1">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                        Running
+                        {"Running"}
                       </Badge>
                     </div>
                   </div>
@@ -252,7 +252,7 @@ export function Pattern() {
                 <FramePanel className="space-y-10">
                   <div className="flex gap-2 grow items-center justify-between">
                     <span className="text-muted-foreground text-sm">
-                      Next Review
+                      {"Next Review"}
                     </span>
                     <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                       <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
@@ -263,10 +263,10 @@ export function Pattern() {
                   <div className="flex items-end justify-between">
                     <div className="flex flex-col gap-1.5">
                       <span className="font-medium leading-tight text-sm">
-                        Apr 3, 2026
+                        {"Apr 3, 2026"}
                       </span>
                       <p className="leading-none text-muted-foreground text-sm">
-                        Client steering
+                        {"Client steering"}
                       </p>
                     </div>
                     <div className="flex justify-end pt-1">
@@ -276,16 +276,16 @@ export function Pattern() {
                         </Avatar>
                         <Avatar className="size-5" size="default">
                           <AvatarFallback className="text-[9px]">
-                            B
+                            {"B"}
                           </AvatarFallback>
                         </Avatar>
                         <Avatar className="size-5" size="default">
                           <AvatarFallback className="text-[9px]">
-                            C
+                            {"C"}
                           </AvatarFallback>
                         </Avatar>
                         <AvatarGroupCount className="border size-5 text-[10px]">
-                          +1
+                          {"+1"}
                         </AvatarGroupCount>
                       </AvatarGroup>
                     </div>
@@ -294,7 +294,7 @@ export function Pattern() {
                 <FramePanel className="space-y-10">
                   <div className="flex gap-2 grow items-center justify-between">
                     <span className="text-muted-foreground text-sm">
-                      Owner
+                      {"Owner"}
                     </span>
                     <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                       <svg className="lucide lucide-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
@@ -305,10 +305,10 @@ export function Pattern() {
                   <div className="flex items-end justify-between">
                     <div className="flex flex-col gap-1.5">
                       <a className="font-medium hover:underline leading-tight text-primary text-sm" href="#">
-                        Amara Ortiz
+                        {"Amara Ortiz"}
                       </a>
                       <p className="leading-none text-muted-foreground text-sm">
-                        Delivery lead
+                        {"Delivery lead"}
                       </p>
                     </div>
                     <div className="flex justify-end pt-1">
@@ -324,15 +324,15 @@ export function Pattern() {
               <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex flex-col gap-px">
                   <div className="font-semibold text-balance text-sm">
-                    Worklogs
+                    {"Worklogs"}
                   </div>
                   <div className="text-muted-foreground text-pretty text-xs">
-                    Weekly client delivery hours
+                    {"Weekly client delivery hours"}
                   </div>
                 </div>
                 <Dialog>
                 <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 sm:w-auto transition-all w-full whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_i_" aria-haspopup="dialog" aria-expanded="false">
-                  New Log
+                  {"New Log"}
                 </DialogTrigger>
                 </Dialog>
               </header>
@@ -350,11 +350,11 @@ export function Pattern() {
                     <Select>
                     <SelectTrigger className="w-[180px]" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        People
+                        {"People"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-square pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -362,11 +362,11 @@ export function Pattern() {
                     <Select>
                     <SelectTrigger className="w-[180px]" type="button" tabIndex="0" id="base-ui-_r_n_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Tracked time
+                        {"Tracked time"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-square pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -374,11 +374,11 @@ export function Pattern() {
                     <Select>
                     <SelectTrigger className="w-[180px]" type="button" tabIndex="0" id="base-ui-_r_q_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
-                        Billable status
+                        {"Billable status"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-square pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -394,7 +394,7 @@ export function Pattern() {
                       <Popover>
                       <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 tabular-nums transition-all w-[168px] whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_u_" aria-haspopup="dialog" aria-expanded="false">
                         <span className="truncate">
-                          Mar 23 - 29
+                          {"Mar 23 - 29"}
                         </span>
                         <svg className="lucide lucide-square text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                           <rect width="18" height="18" x="3" y="3" rx="2"></rect>
@@ -411,10 +411,13 @@ export function Pattern() {
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="relative">
+                  <DataGridProvider>
                   <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                     <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_v_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                       <div role="presentation" style={{minWidth: "fit-content"}}>
+                        <DataGridProvider>
                         <DataGridTableViewport>
+                          <DataGridProvider>
                           <DataGridTable>
                             <colgroup>
                               <col style={{width: "240px"}} />
@@ -431,51 +434,52 @@ export function Pattern() {
                               <tr className="*:last:border-e-0 [&>th]:border-b bg-transparent">
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="person" data-header-id="person" data-header-depth="0" style={{width: "240px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                    People
+                                    {"People"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-23" data-header-id="2026-03-23" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Mon, Mar 23
+                                    {"Mon, Mar 23"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-24" data-header-id="2026-03-24" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Tue, Mar 24
+                                    {"Tue, Mar 24"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-25" data-header-id="2026-03-25" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Wed, Mar 25
+                                    {"Wed, Mar 25"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-26" data-header-id="2026-03-26" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Thu, Mar 26
+                                    {"Thu, Mar 26"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-27" data-header-id="2026-03-27" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Fri, Mar 27
+                                    {"Fri, Mar 27"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-28" data-header-id="2026-03-28" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Sat, Mar 28
+                                    {"Sat, Mar 28"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="2026-03-29" data-header-id="2026-03-29" data-header-depth="0" style={{width: "112px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center text-center text-secondary-foreground/80 text-xs w-full">
-                                    Sun, Mar 29
+                                    {"Sun, Mar 29"}
                                   </div>
                                 </th>
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle border-e font-medium h-8 px-2 relative rtl:text-right text-foreground text-right" scope="col" data-col-id="total" data-header-id="total" data-header-depth="0" style={{width: "120px"}}>
                                   <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                    Total
+                                    {"Total"}
                                   </div>
                                 </th>
                               </tr>
                             </thead>
+                            <DataGridProvider>
                             <DataGridTableBody>
                               <tr className="*:last:border-e-0 [&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="amara-ortiz">
                                 <td className="align-middle border-e px-2 py-1.5">
@@ -487,10 +491,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-col leading-tight min-w-0">
                                       <div className="font-medium text-foreground text-sm truncate">
-                                        Amara Ortiz
+                                        {"Amara Ortiz"}
                                       </div>
                                       <div className="pt-0.5 text-muted-foreground text-xs truncate" title="Client delivery lead">
-                                        Client delivery lead
+                                        {"Client delivery lead"}
                                       </div>
                                     </div>
                                   </div>
@@ -500,13 +504,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Monday, Mar 23: 6h 30m logged as client. Migration kickoff with Atlas Health" id="base-ui-_r_11_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h 30m
+                                        {"6h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "81.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -517,13 +521,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Tuesday, Mar 24: 5h 30m logged as internal. Weekly staffing and margin review" id="base-ui-_r_13_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        5h 30m
+                                        {"5h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-sky-500 block h-full rounded-full" style={{width: "68.75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Internal
+                                        {"Internal"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -534,13 +538,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Wednesday, Mar 25: 7h logged as client. Pilot implementation sync" id="base-ui-_r_15_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        7h
+                                        {"7h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "87.5%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -551,13 +555,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Thursday, Mar 26: 6h logged as client. Partner escalation planning" id="base-ui-_r_17_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h
+                                        {"6h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -568,13 +572,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Friday, Mar 27: 4h 30m logged as client. Renewal prep" id="base-ui-_r_19_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        4h 30m
+                                        {"4h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "56.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -585,13 +589,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Saturday, Mar 28: No weekend hours were logged for this day." id="base-ui-_r_1b_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -602,13 +606,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Sunday, Mar 29: No weekend hours were logged for this day." id="base-ui-_r_1d_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -617,13 +621,13 @@ export function Pattern() {
                                 <td className="align-middle border-e px-2 py-1.5 text-right">
                                   <div className="flex flex-col gap-1 items-end text-right">
                                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                                      29h 30m
+                                      {"29h 30m"}
                                     </span>
                                     <span className="gap-1 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                                       <svg className="lucide lucide-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                                       </svg>
-                                      92%
+                                      {"92%"}
                                     </span>
                                   </div>
                                 </td>
@@ -638,10 +642,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-col leading-tight min-w-0">
                                       <div className="font-medium text-foreground text-sm truncate">
-                                        Theo Mercer
+                                        {"Theo Mercer"}
                                       </div>
                                       <div className="pt-0.5 text-muted-foreground text-xs truncate" title="Platform engineer">
-                                        Platform engineer
+                                        {"Platform engineer"}
                                       </div>
                                     </div>
                                   </div>
@@ -651,13 +655,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Monday, Mar 23: 8h logged as client. Gateway failover validation" id="base-ui-_r_1f_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        8h
+                                        {"8h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "100%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -668,13 +672,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Tuesday, Mar 24: 8h logged as client. Webhook retries" id="base-ui-_r_1h_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        8h
+                                        {"8h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "100%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -685,13 +689,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Wednesday, Mar 25: 7h 30m logged as client. Tenant sync fixes" id="base-ui-_r_1j_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        7h 30m
+                                        {"7h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "93.75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -702,13 +706,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Thursday, Mar 26: 8h logged as client. SSO edge cases" id="base-ui-_r_1l_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        8h
+                                        {"8h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "100%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -719,13 +723,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Friday, Mar 27: 8h logged as client. Metrics rollout" id="base-ui-_r_1n_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        8h
+                                        {"8h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "100%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -736,13 +740,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Saturday, Mar 28: No weekend hours were logged for this day." id="base-ui-_r_1p_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -753,13 +757,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Sunday, Mar 29: No weekend hours were logged for this day." id="base-ui-_r_1r_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -768,13 +772,13 @@ export function Pattern() {
                                 <td className="align-middle border-e px-2 py-1.5 text-right">
                                   <div className="flex flex-col gap-1 items-end text-right">
                                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                                      39h 30m
+                                      {"39h 30m"}
                                     </span>
                                     <span className="gap-1 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                                       <svg className="lucide lucide-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                                       </svg>
-                                      99%
+                                      {"99%"}
                                     </span>
                                   </div>
                                 </td>
@@ -785,16 +789,16 @@ export function Pattern() {
                                     <div className="relative shrink-0">
                                       <Avatar className="size-8" size="default">
                                         <AvatarFallback>
-                                          LH
+                                          {"LH"}
                                         </AvatarFallback>
                                       </Avatar>
                                     </div>
                                     <div className="flex flex-col leading-tight min-w-0">
                                       <div className="font-medium text-foreground text-sm truncate">
-                                        Lena Hoffman
+                                        {"Lena Hoffman"}
                                       </div>
                                       <div className="pt-0.5 text-muted-foreground text-xs truncate" title="Content systems editor">
-                                        Content systems editor
+                                        {"Content systems editor"}
                                       </div>
                                     </div>
                                   </div>
@@ -804,13 +808,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Monday, Mar 23: 5h logged as internal. Publishing QA" id="base-ui-_r_1t_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        5h
+                                        {"5h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-sky-500 block h-full rounded-full" style={{width: "62.5%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Internal
+                                        {"Internal"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -821,13 +825,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Tuesday, Mar 24: 4h 30m logged as client. Implementation guide updates" id="base-ui-_r_1v_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        4h 30m
+                                        {"4h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "56.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -838,13 +842,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Wednesday, Mar 25: 5h logged as internal. Docs audit" id="base-ui-_r_21_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        5h
+                                        {"5h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-sky-500 block h-full rounded-full" style={{width: "62.5%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Internal
+                                        {"Internal"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -855,13 +859,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Thursday, Mar 26: 3h 30m logged as client. Admin walkthrough copy" id="base-ui-_r_23_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        3h 30m
+                                        {"3h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "43.75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -872,13 +876,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Friday, Mar 27: 4h logged as client. Email setup checklist" id="base-ui-_r_25_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        4h
+                                        {"4h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "50%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -889,13 +893,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Saturday, Mar 28: No weekend hours were logged for this day." id="base-ui-_r_27_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -906,13 +910,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Sunday, Mar 29: No weekend hours were logged for this day." id="base-ui-_r_29_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -921,13 +925,13 @@ export function Pattern() {
                                 <td className="align-middle border-e px-2 py-1.5 text-right">
                                   <div className="flex flex-col gap-1 items-end text-right">
                                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                                      22h
+                                      {"22h"}
                                     </span>
                                     <span className="gap-1 inline-flex items-center tabular-nums text-amber-600 text-xs">
                                       <svg className="lucide lucide-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                                       </svg>
-                                      73%
+                                      {"73%"}
                                     </span>
                                   </div>
                                 </td>
@@ -942,10 +946,10 @@ export function Pattern() {
                                     </div>
                                     <div className="flex flex-col leading-tight min-w-0">
                                       <div className="font-medium text-foreground text-sm truncate">
-                                        Iris Calder
+                                        {"Iris Calder"}
                                       </div>
                                       <div className="pt-0.5 text-muted-foreground text-xs truncate" title="Design systems lead">
-                                        Design systems lead
+                                        {"Design systems lead"}
                                       </div>
                                     </div>
                                   </div>
@@ -955,13 +959,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Monday, Mar 23: 6h logged as client. Timesheet explorations" id="base-ui-_r_2b_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h
+                                        {"6h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -972,13 +976,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Tuesday, Mar 24: 6h 30m logged as client. Usage analytics QA" id="base-ui-_r_2d_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h 30m
+                                        {"6h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "81.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -989,13 +993,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Wednesday, Mar 25: 6h logged as internal. Pattern inventory" id="base-ui-_r_2f_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h
+                                        {"6h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-sky-500 block h-full rounded-full" style={{width: "75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Internal
+                                        {"Internal"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1006,13 +1010,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Thursday, Mar 26: 6h 30m logged as client. Workspace theming" id="base-ui-_r_2h_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h 30m
+                                        {"6h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "81.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1023,13 +1027,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Friday, Mar 27: 4h logged as client. Review fixes" id="base-ui-_r_2j_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        4h
+                                        {"4h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "50%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1040,13 +1044,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Saturday, Mar 28: No weekend hours were logged for this day." id="base-ui-_r_2l_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1057,13 +1061,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Sunday, Mar 29: No weekend hours were logged for this day." id="base-ui-_r_2n_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1072,13 +1076,13 @@ export function Pattern() {
                                 <td className="align-middle border-e px-2 py-1.5 text-right">
                                   <div className="flex flex-col gap-1 items-end text-right">
                                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                                      29h
+                                      {"29h"}
                                     </span>
                                     <span className="gap-1 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                                       <svg className="lucide lucide-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                                       </svg>
-                                      91%
+                                      {"91%"}
                                     </span>
                                   </div>
                                 </td>
@@ -1089,16 +1093,16 @@ export function Pattern() {
                                     <div className="relative shrink-0">
                                       <Avatar className="size-8" size="default">
                                         <AvatarFallback>
-                                          SV
+                                          {"SV"}
                                         </AvatarFallback>
                                       </Avatar>
                                     </div>
                                     <div className="flex flex-col leading-tight min-w-0">
                                       <div className="font-medium text-foreground text-sm truncate">
-                                        Samir Vale
+                                        {"Samir Vale"}
                                       </div>
                                       <div className="pt-0.5 text-muted-foreground text-xs truncate" title="Partner success manager">
-                                        Partner success manager
+                                        {"Partner success manager"}
                                       </div>
                                     </div>
                                   </div>
@@ -1108,13 +1112,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Monday, Mar 23: 7h logged as support. Go-live triage" id="base-ui-_r_2p_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        7h
+                                        {"7h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-amber-500 block h-full rounded-full" style={{width: "87.5%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Support
+                                        {"Support"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1125,13 +1129,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Tuesday, Mar 24: 7h 30m logged as support. Partner QBR prep" id="base-ui-_r_2r_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        7h 30m
+                                        {"7h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-amber-500 block h-full rounded-full" style={{width: "93.75%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Support
+                                        {"Support"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1142,13 +1146,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Wednesday, Mar 25: 6h 30m logged as client. Migration playbook review" id="base-ui-_r_2t_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        6h 30m
+                                        {"6h 30m"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "81.25%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1159,13 +1163,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Thursday, Mar 26: 8h logged as client. Expansion scoping" id="base-ui-_r_2v_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        8h
+                                        {"8h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-emerald-500 block h-full rounded-full" style={{width: "100%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Client
+                                        {"Client"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1176,13 +1180,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Friday, Mar 27: 7h logged as support. Weekly care plan" id="base-ui-_r_31_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="font-medium leading-none tabular-nums text-foreground text-sm">
-                                        7h
+                                        {"7h"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-amber-500 block h-full rounded-full" style={{width: "87.5%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Support
+                                        {"Support"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1193,13 +1197,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Saturday, Mar 28: No weekend hours were logged for this day." id="base-ui-_r_33_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1210,13 +1214,13 @@ export function Pattern() {
                                   <TooltipTrigger className="cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:bg-muted/60 inline-flex justify-center px-1.5 py-1.5 rounded-md text-left transition-colors w-full" type="button" aria-label="Sunday, Mar 29: No weekend hours were logged for this day." id="base-ui-_r_35_" baseUiTooltipTrigger="">
                                     <div className="flex flex-col gap-1.5 items-center min-w-[76px] text-center w-full">
                                       <span className="leading-none opacity-80 tabular-nums text-muted-foreground text-sm">
-                                        -
+                                        {"-"}
                                       </span>
                                       <span className="bg-border block h-1 max-w-[56px] overflow-hidden rounded-full w-full">
                                         <span className="bg-transparent block h-full rounded-full" style={{width: "0%"}}></span>
                                       </span>
                                       <span className="leading-none text-[11px] text-muted-foreground">
-                                        Off
+                                        {"Off"}
                                       </span>
                                     </div>
                                   </TooltipTrigger>
@@ -1225,39 +1229,44 @@ export function Pattern() {
                                 <td className="align-middle border-e px-2 py-1.5 text-right">
                                   <div className="flex flex-col gap-1 items-end text-right">
                                     <span className="font-semibold tabular-nums text-foreground text-sm">
-                                      36h
+                                      {"36h"}
                                     </span>
                                     <span className="gap-1 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                                       <svg className="lucide lucide-square size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                                       </svg>
-                                      103%
+                                      {"103%"}
                                     </span>
                                   </div>
                                 </td>
                               </tr>
                             </DataGridTableBody>
+                            </DataGridProvider>
                           </DataGridTable>
+                          </DataGridProvider>
                         </DataGridTableViewport>
+                        </DataGridProvider>
                       </div>
                     </div>
                   </DataGridScrollArea>
+                  </DataGridProvider>
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+                  <DataGridProvider>
                   <DataGridPagination>
                     <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                       <div className="text-muted-foreground text-sm">
-                        Rows per page
+                        {"Rows per page"}
                       </div>
                       <Select>
                       <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_36_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                         <SelectValue>
-                          5
+                          {"5"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-square pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -1265,26 +1274,26 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                       <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                        1 - 5 of 9
+                        {"1 - 5 of 9"}
                       </div>
                       <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                         <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                           <span className="sr-only">
-                            Go to previous page
+                            {"Go to previous page"}
                           </span>
                           <svg className="lucide lucide-square size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                           </svg>
                         </Button>
                         <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                          1
+                          {"1"}
                         </Button>
                         <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                          2
+                          {"2"}
                         </Button>
                         <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                           <span className="sr-only">
-                            Go to next page
+                            {"Go to next page"}
                           </span>
                           <svg className="lucide lucide-square size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
@@ -1293,6 +1302,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </DataGridPagination>
+                  </DataGridProvider>
                 </footer>
               </FramePanel>
             </Frame>
@@ -1301,10 +1311,10 @@ export function Pattern() {
                 <header className="flex flex-row gap-3 items-start justify-between px-(--frame-panel-header-px) px-3! py-(--frame-panel-header-py) py-2.5!">
                   <div className="min-w-0 space-y-0.5">
                     <div className="font-semibold text-sm">
-                      Delivery Apps
+                      {"Delivery Apps"}
                     </div>
                     <div className="text-muted-foreground text-xs truncate">
-                      Live project connectors
+                      {"Live project connectors"}
                     </div>
                   </div>
                 </header>
@@ -1333,14 +1343,14 @@ export function Pattern() {
                         </div>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Zoom
+                            {"Zoom"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Client calls
+                            {"Client calls"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Connect Zoom">
-                          Connect
+                          {"Connect"}
                         </Button>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1359,14 +1369,14 @@ export function Pattern() {
                         </div>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Slack
+                            {"Slack"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Launch room
+                            {"Launch room"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Connect Slack">
-                          Connect
+                          {"Connect"}
                         </Button>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1392,14 +1402,14 @@ export function Pattern() {
                         </div>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Supabase
+                            {"Supabase"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Usage store
+                            {"Usage store"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Connect Supabase">
-                          Connect
+                          {"Connect"}
                         </Button>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1424,14 +1434,14 @@ export function Pattern() {
                         </div>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Clerk
+                            {"Clerk"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            SSO gate
+                            {"SSO gate"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Connect Clerk">
-                          Connect
+                          {"Connect"}
                         </Button>
                       </div>
                     </li>
@@ -1439,7 +1449,7 @@ export function Pattern() {
                 </FramePanel>
                 <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-3! py-(--frame-panel-footer-py) py-2.5!">
                   <Button className="w-full" type="button" tabIndex="0" aria-expanded="false" aria-controls="_r_39_">
-                    See All
+                    {"See All"}
                   </Button>
                 </footer>
               </Frame>
@@ -1447,10 +1457,10 @@ export function Pattern() {
                 <header className="flex flex-row gap-3 items-start justify-between px-(--frame-panel-header-px) px-3! py-(--frame-panel-header-py) py-2.5!">
                   <div className="min-w-0 space-y-0.5">
                     <div className="font-semibold text-sm">
-                      Manual Workflows
+                      {"Manual Workflows"}
                     </div>
                     <div className="text-muted-foreground text-xs truncate">
-                      Optional workflow add-ons
+                      {"Optional workflow add-ons"}
                     </div>
                   </div>
                 </header>
@@ -1467,10 +1477,10 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Data Audit
+                            {"Data Audit"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Clean rollout exports
+                            {"Clean rollout exports"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Add Data Audit workflow">
@@ -1492,10 +1502,10 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Risk Sweep
+                            {"Risk Sweep"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Flag delivery drift
+                            {"Flag delivery drift"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Add Risk Sweep workflow">
@@ -1517,10 +1527,10 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Launch Recap
+                            {"Launch Recap"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Draft client summary
+                            {"Draft client summary"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Add Launch Recap workflow">
@@ -1542,10 +1552,10 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Support Bot
+                            {"Support Bot"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Route handoff notes
+                            {"Route handoff notes"}
                           </p>
                         </div>
                         <Button type="button" tabIndex="0" aria-label="Add Support Bot workflow">
@@ -1559,7 +1569,7 @@ export function Pattern() {
                 </FramePanel>
                 <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-3! py-(--frame-panel-footer-py) py-2.5!">
                   <Button className="w-full" type="button" tabIndex="0" aria-expanded="false" aria-controls="_r_3b_">
-                    Browse More
+                    {"Browse More"}
                   </Button>
                 </footer>
               </Frame>
@@ -1567,10 +1577,10 @@ export function Pattern() {
                 <header className="flex flex-row gap-3 items-start justify-between px-(--frame-panel-header-px) px-3! py-(--frame-panel-header-py) py-2.5!">
                   <div className="min-w-0 space-y-0.5">
                     <div className="font-semibold text-sm">
-                      Delivery Checks
+                      {"Delivery Checks"}
                     </div>
                     <div className="text-muted-foreground text-xs truncate">
-                      Launch readiness tasks
+                      {"Launch readiness tasks"}
                     </div>
                   </div>
                 </header>
@@ -1587,14 +1597,14 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Scope Check
+                            {"Scope Check"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Confirm launch criteria
+                            {"Confirm launch criteria"}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Ready
+                          {"Ready"}
                         </Badge>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1610,14 +1620,14 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            QA Handoff
+                            {"QA Handoff"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Send tester notes
+                            {"Send tester notes"}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                          Due
+                          {"Due"}
                         </Badge>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1633,14 +1643,14 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Stakeholder Sync
+                            {"Stakeholder Sync"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Align decision owners
+                            {"Align decision owners"}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Review
+                          {"Review"}
                         </Badge>
                       </div>
                       <Separator className="bg-transparent border-dashed border-t my-2.5 w-auto" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -1656,14 +1666,14 @@ export function Pattern() {
                         </ItemMedia>
                         <div className="flex-1 min-w-0 space-y-0.5">
                           <p className="font-medium text-foreground text-sm truncate">
-                            Client Recap
+                            {"Client Recap"}
                           </p>
                           <p className="text-muted-foreground text-xs truncate">
-                            Queue weekly update
+                            {"Queue weekly update"}
                           </p>
                         </div>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
-                          Queued
+                          {"Queued"}
                         </Badge>
                       </div>
                     </li>
@@ -1671,7 +1681,7 @@ export function Pattern() {
                 </FramePanel>
                 <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-3! py-(--frame-panel-footer-py) py-2.5!">
                   <Button className="w-full" type="button" tabIndex="0" aria-expanded="false" aria-controls="_r_3c_">
-                    View Tasks
+                    {"View Tasks"}
                   </Button>
                 </footer>
               </Frame>

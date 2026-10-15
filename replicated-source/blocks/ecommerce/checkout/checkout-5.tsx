@@ -40,7 +40,7 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Ecommerce checkout
+        {"Ecommerce checkout"}
       </h1>
       <div className="flex flex-col gap-0 lg:px-8 max-w-6xl mx-auto px-4 py-6 sm:px-6 w-full">
         <header className="flex flex-col">
@@ -48,23 +48,23 @@ export function Pattern() {
             <div className="flex flex-col gap-3 min-w-0 sm:flex-row sm:items-center sm:justify-between">
               <nav className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-sm" aria-label="Breadcrumb">
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Store
+                  {"Store"}
                 </a>
                 <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Bag
+                  {"Bag"}
                 </a>
                 <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <span className="text-foreground">
-                  Checkout
+                  {"Checkout"}
                 </span>
               </nav>
               <Button className="-mr-2 hover:text-foreground text-muted-foreground w-fit" type="button" tabIndex="0" extracted="1">
-                Continue Shopping
+                {"Continue Shopping"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -73,127 +73,191 @@ export function Pattern() {
             </div>
             <div className="max-w-xl">
               <h1 className="font-semibold sm:text-2xl text-xl tracking-tight">
-                Checkout
+                {"Checkout"}
               </h1>
               <p className="leading-5 mt-0.5 text-muted-foreground text-sm">
-                Confirm shipping, payment, and order details.
+                {"Confirm shipping, payment, and order details."}
               </p>
             </div>
           </div>
           <div className="py-6 w-full">
             <div className="hidden sm:block">
+              <StepperItem>
               <Stepper role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Checkout steps">
+                <Stepper>
                 <StepperNav className="items-center" data-state="1" data-orientation="horizontal">
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="active">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                         <div className="absolute">
-                          1
+                          {"1"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="active">
-                        Customer
+                        {"Customer"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="active"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          2
+                          {"2"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Delivery
+                        {"Delivery"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          3
+                          {"3"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Payment
+                        {"Payment"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary md:mx-2.5" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          4
+                          {"4"}
                         </div>
                       </StepperIndicator>
+                      </Stepper>
+                      <Stepper>
                       <StepperTitle className="text-foreground truncate" data-state="inactive">
-                        Review
+                        {"Review"}
                       </StepperTitle>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
                 </StepperNav>
+                </Stepper>
               </Stepper>
+              </StepperItem>
             </div>
             <div className="sm:hidden">
+              <StepperItem>
               <Stepper role="tablist" aria-orientation="horizontal" data-orientation="horizontal" aria-label="Checkout steps">
+                <Stepper>
                 <StepperNav className="items-center" data-state="1" data-orientation="horizontal">
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="active">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                         <div className="absolute">
-                          1
+                          {"1"}
                           <span className="sr-only">
-                            Customer
+                            {"Customer"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="active"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          2
+                          {"2"}
                           <span className="sr-only">
-                            Delivery
+                            {"Delivery"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          3
+                          {"3"}
                           <span className="sr-only">
-                            Payment
+                            {"Payment"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                     <StepperSeparator className="bg-border group-data-[state=completed]/step:bg-primary mx-2" data-state="inactive"></StepperSeparator>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
-                          4
+                          {"4"}
                           <span className="sr-only">
-                            Review
+                            {"Review"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
                 </StepperNav>
+                </Stepper>
               </Stepper>
+              </StepperItem>
             </div>
           </div>
         </header>
@@ -201,62 +265,62 @@ export function Pattern() {
           <div className="min-w-0">
             <FieldSet className="gap-0">
               <FieldLegend className="sr-only" variant="legend">
-                Checkout Steps
+                {"Checkout Steps"}
               </FieldLegend>
               <FieldDescription className="sr-only">
-                Enter customer details, choose delivery, select payment, and review the order.
+                {"Enter customer details, choose delivery, select payment, and review the order."}
               </FieldDescription>
               <div className="flex flex-col gap-7 min-w-0" style={{opacity: "1", transform: "none"}}>
                 <section className="flex flex-col gap-5 min-w-0" aria-labelledby="checkout-5-contact-title">
                   <div className="flex flex-col gap-0.5 min-w-0">
                     <h2 className="font-semibold text-base" id="checkout-5-contact-title">
-                      Customer Details
+                      {"Customer Details"}
                     </h2>
                     <p className="leading-5 max-w-xl text-muted-foreground text-sm">
-                      Used for receipts and order updates.
+                      {"Used for receipts and order updates."}
                     </p>
                   </div>
                   <FieldSet className="gap-0">
                     <FieldLegend className="sr-only" variant="legend">
-                      Customer information
+                      {"Customer information"}
                     </FieldLegend>
                     <FieldDescription className="sr-only">
-                      Enter the buyer name, email, phone, and country.
+                      {"Enter the buyer name, email, phone, and country."}
                     </FieldDescription>
                     <FieldGroup className="gap-4 grid sm:grid-cols-2">
                       <Field role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-first-name">
-                          First Name
+                          {"First Name"}
                         </FieldLabel>
                         <Input id="checkout-5-first-name" autoComplete="given-name" aria-invalid="false" value="Morgan"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-last-name">
-                          Last Name
+                          {"Last Name"}
                         </FieldLabel>
                         <Input id="checkout-5-last-name" autoComplete="family-name" aria-invalid="false" value="Lee"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-email">
-                          Email
+                          {"Email"}
                         </FieldLabel>
                         <Input id="checkout-5-email" autoComplete="email" aria-invalid="false" type="email" value="morgan.lee@example.com"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-phone">
-                          Phone
+                          {"Phone"}
                         </FieldLabel>
                         <Input id="checkout-5-phone" autoComplete="tel" value="(415) 555-0148"></Input>
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-country">
-                          Country
+                          {"Country"}
                         </FieldLabel>
                         <ComboboxTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="checkout-5-country" role="combobox" aria-expanded="false" aria-haspopup="dialog">
                           <span className="flex gap-2 items-center min-w-0">
                             <img className="block h-3 object-cover rounded-xs shrink-0 w-4" alt="" width="16" height="12" loading="eager" src="https://flagcdn.com/w40/us.png" />
                             <span className="truncate">
-                              United States
+                              {"United States"}
                             </span>
                           </span>
                           <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
@@ -269,14 +333,14 @@ export function Pattern() {
                   </FieldSet>
                   <FieldSet className="border-t gap-4 pt-5" aria-labelledby="checkout-5-account-title">
                     <FieldLegend className="sr-only" variant="legend">
-                      Account options
+                      {"Account options"}
                     </FieldLegend>
                     <div className="flex flex-col gap-0.5 min-w-0">
                       <h2 className="font-semibold text-base" id="checkout-5-account-title">
-                        Account Options
+                        {"Account Options"}
                       </h2>
                       <p className="leading-5 max-w-xl text-muted-foreground text-sm">
-                        Sign in with saved details, or save this order for next time.
+                        {"Sign in with saved details, or save this order for next time."}
                       </p>
                     </div>
                     <ItemGroup className="gap-3 grid items-start xl:grid-cols-2" role="list">
@@ -284,33 +348,33 @@ export function Pattern() {
                         <ItemContent className="gap-4 min-w-0">
                           <div className="min-w-0">
                             <ItemTitle>
-                              Returning Customer
+                              {"Returning Customer"}
                             </ItemTitle>
                             <ItemDescription>
-                              Use saved checkout details.
+                              {"Use saved checkout details."}
                             </ItemDescription>
                           </div>
                           <FieldGroup className="gap-3">
                             <Field className="gap-2" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-login-email">
-                                Email
+                                {"Email"}
                               </FieldLabel>
                               <Input id="checkout-5-login-email" autoComplete="email" placeholder="you@example.com" type="email" value="morgan.lee@example.com"></Input>
                             </Field>
                             <Field className="gap-2" role="group" data-orientation="vertical">
                               <div className="flex gap-3 items-center justify-between">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-login-password">
-                                  Password
+                                  {"Password"}
                                 </FieldLabel>
                                 <Button className="font-normal h-auto hover:text-primary hover:underline p-0 text-sm underline-offset-4" type="button" tabIndex="0">
-                                  Reset Password
+                                  {"Reset Password"}
                                 </Button>
                               </div>
                               <Input id="checkout-5-login-password" autoComplete="current-password" placeholder="Enter password" type="password" value=""></Input>
                             </Field>
                           </FieldGroup>
                           <Button className="w-full" type="button" tabIndex="0">
-                            Sign In
+                            {"Sign In"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -322,10 +386,10 @@ export function Pattern() {
                         <ItemContent className="gap-4 min-w-0">
                           <div className="min-w-0">
                             <ItemTitle>
-                              Create Account
+                              {"Create Account"}
                             </ItemTitle>
                             <ItemDescription>
-                              Save details for next time.
+                              {"Save details for next time."}
                             </ItemDescription>
                           </div>
                           <Field className="gap-3 items-start" role="group" data-orientation="horizontal">
@@ -333,17 +397,17 @@ export function Pattern() {
                             <input id="checkout-5-create-account" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldContent className="gap-1">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-create-account" id="checkout-5-create-account-label">
-                                Create Account After Checkout
+                                {"Create Account After Checkout"}
                               </FieldLabel>
                               <FieldDescription>
-                                Uses morgan.lee@example.com.
+                                {"Uses morgan.lee@example.com."}
                               </FieldDescription>
                             </FieldContent>
                           </Field>
                           <FieldGroup className="gap-3">
                             <Field className="gap-2" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-create-password">
-                                New Password
+                                {"New Password"}
                               </FieldLabel>
                               <Input id="checkout-5-create-password" autoComplete="new-password" placeholder="8+ characters" type="password" value=""></Input>
                             </Field>
@@ -352,13 +416,13 @@ export function Pattern() {
                               <input id="checkout-5-email-offers" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldContent className="gap-1">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-email-offers" id="checkout-5-email-offers-label">
-                                  Email Order Perks
+                                  {"Email Order Perks"}
                                 </FieldLabel>
                               </FieldContent>
                             </Field>
                           </FieldGroup>
                           <Button className="w-full" type="button" tabIndex="0">
-                            Create Account
+                            {"Create Account"}
                             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
@@ -373,7 +437,7 @@ export function Pattern() {
             </FieldSet>
             <div className="border-t flex gap-3 items-center justify-end mt-7 pt-5">
               <Button type="submit" tabIndex="0">
-                Continue
+                {"Continue"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -385,10 +449,10 @@ export function Pattern() {
             <Frame spacing="sm">
               <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                 <div className="font-semibold text-base">
-                  Order Summary
+                  {"Order Summary"}
                 </div>
                 <div className="text-muted-foreground text-sm">
-                  2 items shipping to Home
+                  {"2 items shipping to Home"}
                 </div>
               </header>
               <FramePanel className="flex flex-col gap-5">
@@ -404,27 +468,27 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="max-w-full truncate">
                         <a className="block hover:text-primary hover:underline min-w-0 text-foreground transition-colors truncate underline-offset-4" href="#">
-                          Leather Biker Jacket
+                          {"Leather Biker Jacket"}
                         </a>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 overflow-hidden" aria-label="Black, M, quantity 1">
                         <span className="shrink-0">
-                          Black
+                          {"Black"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="shrink-0">
-                          M
+                          {"M"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="shrink-0">
-                          Qty 1
+                          {"Qty 1"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-col gap-1 items-end shrink-0">
                       <span className="flex gap-1.5 items-baseline justify-end tabular-nums">
                         <span className="font-medium text-sm">
-                          $248.00
+                          {"$248.00"}
                         </span>
                       </span>
                       <Button type="button" tabIndex="0" aria-label="Remove Leather Biker Jacket">
@@ -449,30 +513,30 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="max-w-full truncate">
                         <a className="block hover:text-primary hover:underline min-w-0 text-foreground transition-colors truncate underline-offset-4" href="#">
-                          Ribbed Tank Set
+                          {"Ribbed Tank Set"}
                         </a>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 overflow-hidden" aria-label="Chalk, S, quantity 1">
                         <span className="shrink-0">
-                          Chalk
+                          {"Chalk"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="shrink-0">
-                          S
+                          {"S"}
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="shrink-0">
-                          Qty 1
+                          {"Qty 1"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="flex-col gap-1 items-end shrink-0">
                       <span className="flex gap-1.5 items-baseline justify-end tabular-nums">
                         <span className="line-through text-muted-foreground text-xs">
-                          $118.00
+                          {"$118.00"}
                         </span>
                         <span className="font-medium text-sm">
-                          $86.00
+                          {"$86.00"}
                         </span>
                       </span>
                       <Button type="button" tabIndex="0" aria-label="Remove Ribbed Tank Set">
@@ -490,19 +554,19 @@ export function Pattern() {
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-5-promo">
-                    Promo Code
+                    {"Promo Code"}
                   </FieldLabel>
                   <div className="flex gap-2">
                     <Input id="checkout-5-promo" aria-invalid="false" value="SPRING15"></Input>
                     <Button type="button" tabIndex="0">
-                      Apply
+                      {"Apply"}
                     </Button>
                   </div>
                   <FieldDescription>
                     <strong>
-                      SPRING15
+                      {"SPRING15"}
                     </strong>
-                    applied for $18.00 off.
+                    {"applied for $18.00 off."}
                   </FieldDescription>
                 </Field>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -510,48 +574,48 @@ export function Pattern() {
                   <Item className="gap-3 min-h-7 px-0 py-1" variant="default" size="xs" role="listitem">
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="font-normal leading-5 text-sm">
-                        Subtotal
+                        {"Subtotal"}
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions className="shrink-0">
                       <span className="font-medium leading-5 tabular-nums text-sm">
-                        $334.00
+                        {"$334.00"}
                       </span>
                     </ItemActions>
                   </Item>
                   <Item className="gap-3 min-h-7 px-0 py-1" variant="default" size="xs" role="listitem">
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="font-normal leading-5 text-sm">
-                        Delivery
+                        {"Delivery"}
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions className="shrink-0">
                       <span className="font-medium leading-5 tabular-nums text-sm">
-                        $12.00
+                        {"$12.00"}
                       </span>
                     </ItemActions>
                   </Item>
                   <Item className="gap-3 min-h-7 px-0 py-1" variant="default" size="xs" role="listitem">
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="font-normal leading-5 text-sm">
-                        Estimated Tax
+                        {"Estimated Tax"}
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions className="shrink-0">
                       <span className="font-medium leading-5 tabular-nums text-sm">
-                        $28.70
+                        {"$28.70"}
                       </span>
                     </ItemActions>
                   </Item>
                   <Item className="gap-3 min-h-7 px-0 py-1" variant="default" size="xs" role="listitem">
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="font-semibold leading-5 text-sm text-success">
-                        Discount
+                        {"Discount"}
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions className="shrink-0">
                       <span className="font-semibold leading-5 tabular-nums text-sm text-success">
-                        -$18.00
+                        {"-$18.00"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -562,22 +626,22 @@ export function Pattern() {
                   <div className="flex gap-4 items-start justify-between min-w-0">
                     <div className="min-w-0">
                       <div className="font-semibold text-base">
-                        Total
+                        {"Total"}
                       </div>
                       <div className="leading-5 mt-0.5 text-muted-foreground text-sm">
-                        Delivery, promo, and tax included.
+                        {"Delivery, promo, and tax included."}
                       </div>
                     </div>
                     <span className="font-semibold leading-none shrink-0 tabular-nums text-2xl">
-                      $356.70
+                      {"$356.70"}
                     </span>
                   </div>
                   <div className="border-dashed border-t flex gap-3 items-center justify-between min-w-0 pt-3">
                     <span className="text-muted-foreground text-xs truncate">
-                      Total updates each step
+                      {"Total updates each step"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                      Step 1 of 4
+                      {"Step 1 of 4"}
                     </Badge>
                   </div>
                 </div>

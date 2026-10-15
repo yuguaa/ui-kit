@@ -13,13 +13,13 @@ export function Pattern() {
       <section className="flex flex-col gap-10 lg:gap-12 max-w-4xl w-full" aria-labelledby="cta-4-title">
         <div className="flex flex-col gap-5 items-center max-w-2xl mx-auto text-center">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5.5 min-w-5.5 outline-none px-1.5 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-            NeUI Pro
+            {"NeUI Pro"}
           </Badge>
           <h2 className="font-semibold leading-tight lg:text-5xl sm:text-4xl text-3xl text-balance text-foreground tracking-tight" id="cta-4-title">
-            Ship Finished Interfaces
+            {"Ship Finished Interfaces"}
           </h2>
           <p className="leading-7 max-w-xl sm:leading-8 sm:text-lg text-base text-muted-foreground text-pretty">
-            Drop production-grade NeUI sections into your product and ship a finished-looking interface without a redesign pass.
+            {"Drop production-grade NeUI sections into your product and ship a finished-looking interface without a redesign pass."}
           </p>
         </div>
         <Frame className="w-full">
@@ -37,10 +37,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold text-base text-foreground tracking-tight">
-                  900+ Blocks
+                  {"900+ Blocks"}
                 </h3>
                 <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                  Registry-ready sections for every surface you ship.
+                  {"Registry-ready sections for every surface you ship."}
                 </p>
               </div>
             </FramePanel>
@@ -54,10 +54,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold text-base text-foreground tracking-tight">
-                  shadcn Compatible
+                  {"shadcn Compatible"}
                 </h3>
                 <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                  Drop-in primitives that match your existing stack.
+                  {"Drop-in primitives that match your existing stack."}
                 </p>
               </div>
             </FramePanel>
@@ -75,10 +75,10 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold text-base text-foreground tracking-tight">
-                  Theme-Aware
+                  {"Theme-Aware"}
                 </h3>
                 <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                  Source code that adapts to your design tokens.
+                  {"Source code that adapts to your design tokens."}
                 </p>
               </div>
             </FramePanel>
@@ -86,14 +86,14 @@ export function Pattern() {
         </Frame>
         <div className="flex flex-wrap gap-3 items-center justify-center">
           <Button href="#" role="button" tabIndex="0">
-            Browse Blocks
+            {"Browse Blocks"}
             <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>
             </svg>
           </Button>
           <Button href="#" role="button" tabIndex="0">
-            View Documentation
+            {"View Documentation"}
           </Button>
         </div>
       </section>

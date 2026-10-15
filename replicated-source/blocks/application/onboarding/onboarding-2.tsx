@@ -56,195 +56,299 @@ export function Pattern() {
                 </ItemMedia>
               </Item>
               <span className="font-medium text-[0.9375rem]">
-                NeUI
+                {"NeUI"}
               </span>
             </div>
           </header>
           <div className="lg:hidden mt-4">
+            <StepperItem>
             <Stepper className="flex flex-col gap-2.5" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
               <div className="flex gap-3 items-baseline justify-between">
                 <p className="font-medium leading-4 min-w-0 text-[0.8125rem] text-foreground truncate">
-                  Profile
+                  {"Profile"}
                 </p>
                 <p className="leading-4 shrink-0 tabular-nums text-muted-foreground text-xs">
-                  Step 1 of 6
+                  {"Step 1 of 6"}
                 </p>
               </div>
+              <Stepper>
               <StepperNav className="w-full" data-state="1" data-orientation="horizontal">
+                <Stepper>
                 <StepperItem data-state="active">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false" aria-label="Step 1: Profile">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="active">
                       <div className="absolute">
-                        1
+                        {"1"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 mx-1.5" data-state="active"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" aria-label="Step 2: Role">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        2
+                        {"2"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 mx-1.5" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" aria-label="Step 3: Source">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        3
+                        {"3"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 mx-1.5" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false" aria-label="Step 4: Workspace">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        4
+                        {"4"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 mx-1.5" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-5" aria-selected="false" aria-controls="stepper-panel-5" tabIndex="-1" data-state="inactive" loading="false" aria-label="Step 5: Goals">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        5
+                        {"5"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 mx-1.5" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="-my-2 py-2 shrink-0" type="button" role="tab" id="stepper-tab-6" aria-selected="false" aria-controls="stepper-panel-6" tabIndex="-1" data-state="inactive" loading="false" aria-label="Step 6: Invite">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        6
+                        {"6"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                   </StepperTrigger>
+                  </Stepper>
                 </StepperItem>
+                </Stepper>
               </StepperNav>
+              </Stepper>
             </Stepper>
+            </StepperItem>
           </div>
           <div className="flex-1 hidden items-center justify-center lg:flex py-16">
+            <StepperItem>
             <Stepper className="flex flex-col gap-0 items-start justify-center" role="tablist" aria-orientation="vertical" data-orientation="vertical">
+              <Stepper>
               <StepperNav className="w-full" data-state="1" data-orientation="vertical">
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="active">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="active">
                       <div className="absolute">
-                        1
+                        {"1"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="active">
-                        Profile
+                        {"Profile"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="active">
-                        Basic profile details.
+                        {"Basic profile details."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="!h-[calc(100%-1.75rem)] -order-1 -translate-x-1/2 absolute bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 inset-y-0 left-2.5 m-0 top-6" data-state="active"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        2
+                        {"2"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="inactive">
-                        Role
+                        {"Role"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="inactive">
-                        Tune starter views.
+                        {"Tune starter views."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="!h-[calc(100%-1.75rem)] -order-1 -translate-x-1/2 absolute bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 inset-y-0 left-2.5 m-0 top-6" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        3
+                        {"3"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="inactive">
-                        Source
+                        {"Source"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="inactive">
-                        Optional discovery signal.
+                        {"Optional discovery signal."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="!h-[calc(100%-1.75rem)] -order-1 -translate-x-1/2 absolute bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 inset-y-0 left-2.5 m-0 top-6" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        4
+                        {"4"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="inactive">
-                        Workspace
+                        {"Workspace"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="inactive">
-                        Name the workspace.
+                        {"Name the workspace."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="!h-[calc(100%-1.75rem)] -order-1 -translate-x-1/2 absolute bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 inset-y-0 left-2.5 m-0 top-6" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-5" aria-selected="false" aria-controls="stepper-panel-5" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        5
+                        {"5"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="inactive">
-                        Goals
+                        {"Goals"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="inactive">
-                        Pick first workflows.
+                        {"Pick first workflows."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                   <StepperSeparator className="!h-[calc(100%-1.75rem)] -order-1 -translate-x-1/2 absolute bg-muted-foreground/12 dark:bg-muted-foreground/18 dark:group-data-[state=active]/step:bg-muted-foreground/18 dark:group-data-[state=inactive]/step:bg-muted-foreground/18 group-data-[state=active]/step:bg-muted-foreground/12 group-data-[state=completed]/step:bg-success group-data-[state=inactive]/step:bg-muted-foreground/12 inset-y-0 left-2.5 m-0 top-6" data-state="inactive"></StepperSeparator>
                 </StepperItem>
+                </Stepper>
+                <Stepper>
                 <StepperItem className="items-start relative" data-state="inactive">
+                  <Stepper>
                   <StepperTrigger className="items-start last:pb-0 pb-4 text-left w-full" type="button" role="tab" id="stepper-tab-6" aria-selected="false" aria-controls="stepper-panel-6" tabIndex="-1" data-state="inactive" loading="false">
+                    <Stepper>
                     <StepperIndicator className="bg-foreground dark:bg-foreground dark:data-[state=active]:bg-foreground dark:data-[state=active]:text-background dark:data-[state=inactive]:bg-muted-foreground/14 dark:data-[state=inactive]:ring-muted-foreground/12 dark:data-[state=inactive]:text-muted-foreground dark:ring-border/70 dark:text-background data-[state=active]:bg-foreground data-[state=active]:text-background data-[state=completed]:bg-success data-[state=completed]:text-white data-[state=inactive]:bg-muted-foreground/8 data-[state=inactive]:ring-muted-foreground/12 data-[state=inactive]:text-muted-foreground ring-1 ring-border/60 size-5 text-[0.6875rem] text-background" data-state="inactive">
                       <div className="absolute">
-                        6
+                        {"6"}
                       </div>
                     </StepperIndicator>
+                    </Stepper>
                     <div className="flex-1 min-w-0 mt-0.5 text-left">
+                      <Stepper>
                       <StepperTitle className="!leading-4 !text-[0.8125rem]" data-state="inactive">
-                        Invite
+                        {"Invite"}
                       </StepperTitle>
+                      </Stepper>
+                      <Stepper>
                       <StepperDescription className="!leading-4 !text-xs max-w-none mt-0.5" data-state="inactive">
-                        Add teammates.
+                        {"Add teammates."}
                       </StepperDescription>
+                      </Stepper>
                     </div>
                   </StepperTrigger>
+                  </Stepper>
                 </StepperItem>
+                </Stepper>
               </StepperNav>
+              </Stepper>
             </Stepper>
+            </StepperItem>
           </div>
           <div className="h-8 hidden lg:block shrink-0" aria-hidden="true"></div>
         </div>
@@ -257,15 +361,15 @@ export function Pattern() {
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-1.5 max-w-md" aria-live="polite">
                     <h1 className="font-semibold leading-7 sm:text-[1.375rem] text-balance text-foreground text-xl">
-                      Set up your profile
+                      {"Set up your profile"}
                     </h1>
                     <p className="leading-5 text-muted-foreground text-pretty text-sm">
-                      Add the details teammates will see across the workspace.
+                      {"Add the details teammates will see across the workspace."}
                     </p>
                   </div>
                   <FieldSet>
                     <FieldLegend className="sr-only" variant="legend">
-                      Profile details
+                      {"Profile details"}
                     </FieldLegend>
                     <FieldGroup className="gap-4">
                       <Field role="group" data-orientation="vertical">
@@ -283,13 +387,13 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center">
                               <div className="inline-flex relative">
                                 <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                                  Upload photo
+                                  {"Upload photo"}
                                 </Button>
                                 <input className="hidden" id="onboarding-2-profile-photo" accept="image/*" aria-hidden="true" tabIndex="-1" type="file" />
                               </div>
                             </div>
                             <p className="leading-4 text-muted-foreground text-xs">
-                              PNG or JPG, at least 400 x 400 px, up to 10 MB.
+                              {"PNG or JPG, at least 400 x 400 px, up to 10 MB."}
                             </p>
                           </div>
                         </div>
@@ -297,22 +401,22 @@ export function Pattern() {
                       <FieldGroup className="gap-4">
                         <Field className="gap-2" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-2-name">
-                            Full name
+                            {"Full name"}
                             <span className="text-destructive">
-                              *
+                              {"*"}
                             </span>
                           </FieldLabel>
                           <Input id="onboarding-2-name" autoComplete="name" value="Sam Rivera"></Input>
                         </Field>
                         <Field className="gap-2" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-2-title">
-                            Job title
+                            {"Job title"}
                           </FieldLabel>
                           <Input id="onboarding-2-title" autoComplete="organization-title" value="Product Lead"></Input>
                         </Field>
                         <Field className="gap-2" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-2-timezone">
-                            Timezone
+                            {"Timezone"}
                           </FieldLabel>
                           <InputGroup className="cn-combobox-input" role="group">
                             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="onboarding-2-timezone" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" placeholder="Select a timezone" type="text" value="" />
@@ -337,7 +441,7 @@ export function Pattern() {
                         </Checkbox>
                         <input id="onboarding-2-marketing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground" htmlFor="onboarding-2-marketing" id="onboarding-2-marketing-label">
-                          Send me product updates and workspace tips.
+                          {"Send me product updates and workspace tips."}
                         </FieldLabel>
                       </Field>
                     </FieldGroup>
@@ -345,7 +449,7 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2 mt-auto pt-8">
                   <Button className="w-full" type="submit" tabIndex="0">
-                    Continue
+                    {"Continue"}
                   </Button>
                 </div>
               </form>

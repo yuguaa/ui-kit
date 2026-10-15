@@ -12,41 +12,31 @@ export function Pattern() {
           <div className="flex flex-col gap-px">
             <div className="flex gap-2 items-center">
               <div className="font-semibold text-sm">
-                Latency
+                {"Latency"}
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                Over limit
+                {"Over limit"}
               </Badge>
             </div>
             <div className="text-muted-foreground text-xs">
-              p95 in milliseconds
+              {"p95 in milliseconds"}
             </div>
           </div>
           <div className="flex flex-wrap gap-x-3 gap-y-1 items-center text-muted-foreground text-xs">
             <span className="font-mono gap-1.5 inline-flex items-center">
               <span className="bg-sky-500 rounded-full size-2" aria-hidden="true"></span>
-              v2.3.2
+              {"v2.3.2"}
             </span>
             <span className="font-mono gap-1.5 inline-flex items-center">
               <span className="bg-slate-500 rounded-full size-2" aria-hidden="true"></span>
-              v2.3.1
+              {"v2.3.1"}
             </span>
           </div>
         </header>
         <FramePanel>
+          <ChartContainer>
           <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-40 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_1_">
-            <style>{`
- [data-chart=chart-_r_1_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n" }} />
             <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
               <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                 <div className="recharts-wrapper" width="630" height="160" style={{position: "relative", cursor: "default", width: "630px", height: "160px"}}>
@@ -134,59 +124,59 @@ export function Pattern() {
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="110.33333333333333" y="144" textAnchor="middle" fill="#666">
                             <tspan x="110.33333333333333" dy="0.71em">
-                              0:20
+                              {"0:20"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="212.66666666666666" y="144" textAnchor="middle" fill="#666">
                             <tspan x="212.66666666666666" dy="0.71em">
-                              0:40
+                              {"0:40"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="315" y="144" textAnchor="middle" fill="#666">
                             <tspan x="315" dy="0.71em">
-                              1:00
+                              {"1:00"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="417.3333333333333" y="144" textAnchor="middle" fill="#666">
                             <tspan x="417.3333333333333" dy="0.71em">
-                              1:20
+                              {"1:20"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="519.6666666666666" y="144" textAnchor="middle" fill="#666">
                             <tspan x="519.6666666666666" dy="0.71em">
-                              1:40
+                              {"1:40"}
                             </tspan>
                           </text>
                         </g>
                         <g className="recharts-cartesian-axis-tick-label recharts-layer">
                           <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="614" stroke="none" x="617.0390625" y="144" textAnchor="middle" fill="#666">
                             <tspan x="617.0390625" dy="0.71em">
-                              2:00
+                              {"2:00"}
                             </tspan>
                           </text>
                         </g>
                       </g>
                       <text className="recharts-label recharts-text" offset="5" x="617" y="78.80952380952381" textAnchor="end" fill="var(--destructive)">
                         <tspan x="617" dy="0.71em">
-                          Limit 120 ms
+                          {"Limit 120 ms"}
                         </tspan>
                       </text>
                       <text className="recharts-label recharts-text" offset="5" x="13" y="17" textAnchor="start" fill="var(--muted-foreground)">
                         <tspan x="13" dy="0.71em">
-                          25%
+                          {"25%"}
                         </tspan>
                       </text>
                       <text className="recharts-label recharts-text" offset="5" x="617" y="17" textAnchor="end" fill="var(--muted-foreground)">
                         <tspan x="617" dy="0.71em">
-                          Rolled back
+                          {"Rolled back"}
                         </tspan>
                       </text>
                     </g>
@@ -195,6 +185,7 @@ export function Pattern() {
               </div>
             </div>
           </div>
+          </ChartContainer>
         </FramePanel>
       </Frame>
     </div>

@@ -27,17 +27,17 @@ export function Pattern() {
                     <path d="M22 4h-4"></path>
                     <circle cx="4" cy="20" r="2"></circle>
                   </svg>
-                  How NeUI Works
+                  {"How NeUI Works"}
                   <svg className="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                     <path d="M7 7h10v10"></path>
                     <path d="M7 17 17 7"></path>
                   </svg>
                 </Badge>
                 <h2 className="@xl:text-4xl font-semibold text-3xl" id="how-it-works-1-title">
-                  From Idea to Interface
+                  {"From Idea to Interface"}
                 </h2>
                 <p className="max-w-[40rem] text-base text-muted-foreground">
-                  Discover production-ready components, install them through the NeUI registry, and customize every detail with tools designed for modern AI workflows.
+                  {"Discover production-ready components, install them through the NeUI registry, and customize every detail with tools designed for modern AI workflows."}
                 </p>
               </div>
               <div className="@3xl:justify-end @3xl:w-80 flex flex-wrap gap-x-2.5 gap-y-2 items-center">
@@ -46,7 +46,7 @@ export function Pattern() {
                     <path d="M12 7v14"></path>
                     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                   </svg>
-                  View Docs
+                  {"View Docs"}
                 </Button>
                 <Button href="#" role="button" tabIndex="0">
                   <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
@@ -55,7 +55,7 @@ export function Pattern() {
                     <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                     <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                   </svg>
-                  Browse Registry
+                  {"Browse Registry"}
                 </Button>
               </div>
             </CardHeader>
@@ -64,15 +64,15 @@ export function Pattern() {
                 <Item className="border-0" variant="default" size="default">
                   <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                     <span className="font-medium text-base" aria-hidden="true">
-                      1
+                      {"1"}
                     </span>
                   </IconTile>
                   <ItemContent className="gap-px">
                     <ItemTitle className="leading-5 line-clamp-none">
-                      Browse the Registry
+                      {"Browse the Registry"}
                     </ItemTitle>
                     <ItemDescription className="leading-5 line-clamp-none">
-                      Explore curated components, templates, and production-ready blocks.
+                      {"Explore curated components, templates, and production-ready blocks."}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -81,15 +81,15 @@ export function Pattern() {
                 <Item className="border-0" variant="default" size="default">
                   <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                     <span className="font-medium text-base" aria-hidden="true">
-                      2
+                      {"2"}
                     </span>
                   </IconTile>
                   <ItemContent className="gap-px">
                     <ItemTitle className="leading-5 line-clamp-none">
-                      Install with CLI
+                      {"Install with CLI"}
                     </ItemTitle>
                     <ItemDescription className="leading-5 line-clamp-none">
-                      Add components directly using the shadcn-compatible registry.
+                      {"Add components directly using the shadcn-compatible registry."}
                     </ItemDescription>
                   </ItemContent>
                 </Item>
@@ -98,15 +98,15 @@ export function Pattern() {
                 <Item className="border-0" variant="default" size="default">
                   <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
                     <span className="font-medium text-base" aria-hidden="true">
-                      3
+                      {"3"}
                     </span>
                   </IconTile>
                   <ItemContent className="gap-px">
                     <ItemTitle className="leading-5 line-clamp-none">
-                      Customize Everything
+                      {"Customize Everything"}
                     </ItemTitle>
                     <ItemDescription className="leading-5 line-clamp-none">
-                      Adapt styles, layouts, interactions, and behavior to match your product.
+                      {"Adapt styles, layouts, interactions, and behavior to match your product."}
                     </ItemDescription>
                   </ItemContent>
                 </Item>

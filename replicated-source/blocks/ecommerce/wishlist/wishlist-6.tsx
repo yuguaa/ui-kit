@@ -18,7 +18,7 @@ export function Pattern() {
             <BreadcrumbList className="sm:text-sm text-xs">
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-2" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -28,7 +28,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Collections
+                  {"Collections"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -36,10 +36,10 @@ export function Pattern() {
           <div className="flex flex-wrap gap-x-4 gap-y-2 items-end justify-between">
             <div className="flex flex-col gap-1 min-w-0">
               <h1 className="font-semibold leading-tight sm:text-[1.75rem] text-2xl text-foreground tracking-tight" id="wishlist-title">
-                My Collections
+                {"My Collections"}
               </h1>
               <p className="sm:text-sm text-muted-foreground text-xs">
-                4 collections · 12 saved items
+                {"4 collections · 12 saved items"}
               </p>
             </div>
             <Button type="button" tabIndex="0" extracted="1">
@@ -47,7 +47,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              New Collection
+              {"New Collection"}
             </Button>
           </div>
         </header>
@@ -68,15 +68,15 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-semibold text-foreground text-sm tracking-tight truncate">
-                    Capsule Wardrobe
+                    {"Capsule Wardrobe"}
                   </p>
                   <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center tabular-nums text-muted-foreground text-xs">
                     <span>
-                      4 items
+                      {"4 items"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      $939
+                      {"$939"}
                     </span>
                   </p>
                 </div>
@@ -100,15 +100,15 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-semibold text-foreground text-sm tracking-tight truncate">
-                    Gift Ideas
+                    {"Gift Ideas"}
                   </p>
                   <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center tabular-nums text-muted-foreground text-xs">
                     <span>
-                      3 items
+                      {"3 items"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      $238
+                      {"$238"}
                     </span>
                   </p>
                 </div>
@@ -129,15 +129,15 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-semibold text-foreground text-sm tracking-tight truncate">
-                    Office Looks
+                    {"Office Looks"}
                   </p>
                   <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center tabular-nums text-muted-foreground text-xs">
                     <span>
-                      2 items
+                      {"2 items"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      $473
+                      {"$473"}
                     </span>
                   </p>
                 </div>
@@ -161,15 +161,15 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-semibold text-foreground text-sm tracking-tight truncate">
-                    Travel Kit
+                    {"Travel Kit"}
                   </p>
                   <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center tabular-nums text-muted-foreground text-xs">
                     <span>
-                      3 items
+                      {"3 items"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      $793
+                      {"$793"}
                     </span>
                   </p>
                 </div>
@@ -183,18 +183,18 @@ export function Pattern() {
             <div className="border-b flex flex-wrap gap-x-4 gap-y-3 items-end justify-between pb-4">
               <div className="flex flex-col gap-1 min-w-0">
                 <h2 className="font-semibold sm:text-xl text-foreground text-lg tracking-tight">
-                  Capsule Wardrobe
+                  {"Capsule Wardrobe"}
                 </h2>
                 <p className="text-muted-foreground text-sm">
-                  Pieces that anchor a small, intentional closet.
+                  {"Pieces that anchor a small, intentional closet."}
                 </p>
                 <p className="flex flex-wrap gap-x-2 gap-y-0.5 items-center tabular-nums text-muted-foreground text-xs">
                   <span>
-                    4 items
+                    {"4 items"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="font-medium text-foreground">
-                    $939
+                    {"$939"}
                   </span>
                 </p>
               </div>
@@ -207,7 +207,7 @@ export function Pattern() {
                     <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
                     <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
                   </svg>
-                  Share
+                  {"Share"}
                 </Button>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
@@ -215,7 +215,7 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Add 4 To Cart
+                  {"Add 4 To Cart"}
                 </Button>
               </div>
             </div>
@@ -235,22 +235,22 @@ export function Pattern() {
                   </Item>
                   <div className="flex flex-col gap-1 min-w-0">
                     <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-2 w-fit" href="#" aria-label="View all Halden products">
-                      Halden
+                      {"Halden"}
                     </a>
                     <h3 className="font-semibold leading-tight min-w-0 text-foreground text-sm tracking-tight">
                       <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                        Storm Wool Coat
+                        {"Storm Wool Coat"}
                       </a>
                     </h3>
                     <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                       <span className="font-semibold tabular-nums text-foreground text-sm">
-                        $385
+                        {"$385"}
                       </span>
                       <span className="line-through tabular-nums text-muted-foreground text-xs">
-                        $420
+                        {"$420"}
                       </span>
                       <span className="font-semibold tabular-nums text-success text-xs">
-                        Save $35
+                        {"Save $35"}
                       </span>
                     </div>
                   </div>
@@ -260,7 +260,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add To Cart
+                    {"Add To Cart"}
                   </Button>
                 </article>
               </li>
@@ -279,16 +279,16 @@ export function Pattern() {
                   </Item>
                   <div className="flex flex-col gap-1 min-w-0">
                     <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-2 w-fit" href="#" aria-label="View all Wren & Field products">
-                      Wren & Field
+                      {"Wren & Field"}
                     </a>
                     <h3 className="font-semibold leading-tight min-w-0 text-foreground text-sm tracking-tight">
                       <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                        Cashmere V-Neck Sweater
+                        {"Cashmere V-Neck Sweater"}
                       </a>
                     </h3>
                     <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                       <span className="font-semibold tabular-nums text-foreground text-sm">
-                        $228
+                        {"$228"}
                       </span>
                     </div>
                   </div>
@@ -298,7 +298,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add To Cart
+                    {"Add To Cart"}
                   </Button>
                 </article>
               </li>
@@ -317,22 +317,22 @@ export function Pattern() {
                   </Item>
                   <div className="flex flex-col gap-1 min-w-0">
                     <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-2 w-fit" href="#" aria-label="View all Halden products">
-                      Halden
+                      {"Halden"}
                     </a>
                     <h3 className="font-semibold leading-tight min-w-0 text-foreground text-sm tracking-tight">
                       <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                        Linen Field Shirt
+                        {"Linen Field Shirt"}
                       </a>
                     </h3>
                     <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                       <span className="font-semibold tabular-nums text-foreground text-sm">
-                        $148
+                        {"$148"}
                       </span>
                       <span className="line-through tabular-nums text-muted-foreground text-xs">
-                        $165
+                        {"$165"}
                       </span>
                       <span className="font-semibold tabular-nums text-success text-xs">
-                        Save $17
+                        {"Save $17"}
                       </span>
                     </div>
                   </div>
@@ -342,7 +342,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add To Cart
+                    {"Add To Cart"}
                   </Button>
                 </article>
               </li>
@@ -361,16 +361,16 @@ export function Pattern() {
                   </Item>
                   <div className="flex flex-col gap-1 min-w-0">
                     <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs transition-colors underline-offset-2 w-fit" href="#" aria-label="View all Halden products">
-                      Halden
+                      {"Halden"}
                     </a>
                     <h3 className="font-semibold leading-tight min-w-0 text-foreground text-sm tracking-tight">
                       <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-2" href="#">
-                        Pleated Wide Trouser
+                        {"Pleated Wide Trouser"}
                       </a>
                     </h3>
                     <div className="flex flex-wrap gap-x-2 gap-y-0.5 items-baseline">
                       <span className="font-semibold tabular-nums text-foreground text-sm">
-                        $178
+                        {"$178"}
                       </span>
                     </div>
                   </div>
@@ -380,7 +380,7 @@ export function Pattern() {
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                     </svg>
-                    Add To Cart
+                    {"Add To Cart"}
                   </Button>
                 </article>
               </li>

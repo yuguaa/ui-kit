@@ -33,14 +33,14 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center p-4 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Support escalation kanban board
+        {"Support escalation kanban board"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1280px] mx-auto w-full">
         <header className="px-1 py-1" aria-label="Support escalation toolbar">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div className="min-w-0">
               <h2 className="font-semibold text-base truncate">
-                Support Escalations
+                {"Support Escalations"}
               </h2>
             </div>
             <div className="flex flex-wrap gap-2 items-center md:justify-end md:w-auto w-full" role="group" aria-label="Board actions">
@@ -48,14 +48,14 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Ticket
+                {"Ticket"}
               </Button>
             </div>
           </div>
@@ -76,10 +76,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="New">
-                            New
+                            {"New"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -109,22 +109,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10482
+                                      {"SUP-10482"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        High
+                                        {"High"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Export job stuck after regional data residency switch">
-                                      Export job stuck after regional data residency switch
+                                      {"Export job stuck after regional data residency switch"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Alicia Wong at Northstar Bio">
-                                        Alicia Wong at Northstar Bio
+                                        {"Alicia Wong at Northstar Bio"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -135,7 +135,7 @@ export function Pattern() {
                                       <AvatarImage alt="Maya Ito" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Maya Ito">
-                                      Maya Ito
+                                      {"Maya Ito"}
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 1h 45m" title="Response due in 1h 45m">
@@ -144,7 +144,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      1h 45m
+                                      {"1h 45m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -157,22 +157,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10483
+                                      {"SUP-10483"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Normal
+                                        {"Normal"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="SSO group mapping not applying to new finance workspace">
-                                      SSO group mapping not applying to new finance workspace
+                                      {"SSO group mapping not applying to new finance workspace"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Jon Bell at Meridian Works">
-                                        Jon Bell at Meridian Works
+                                        {"Jon Bell at Meridian Works"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -183,7 +183,7 @@ export function Pattern() {
                                       <AvatarImage alt="Omar Haddad" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Omar Haddad">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 3h 20m" title="Response due in 3h 20m">
@@ -192,7 +192,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      3h 20m
+                                      {"3h 20m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -205,7 +205,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -220,10 +220,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Needs Reply">
-                            Needs Reply
+                            {"Needs Reply"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            3
+                            {"3"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -253,22 +253,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10451
+                                      {"SUP-10451"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        High
+                                        {"High"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Workspace audit stream missing approval events">
-                                      Workspace audit stream missing approval events
+                                      {"Workspace audit stream missing approval events"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Sofia Klein at Aster Capital">
-                                        Sofia Klein at Aster Capital
+                                        {"Sofia Klein at Aster Capital"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -279,7 +279,7 @@ export function Pattern() {
                                       <AvatarImage alt="Priya Shah" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Priya Shah">
-                                      Priya Shah
+                                      {"Priya Shah"}
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 52m" title="Response due in 52m">
@@ -288,7 +288,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      52m
+                                      {"52m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -301,22 +301,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10459
+                                      {"SUP-10459"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Normal
+                                        {"Normal"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Billing contact cannot download April invoice bundle">
-                                      Billing contact cannot download April invoice bundle
+                                      {"Billing contact cannot download April invoice bundle"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Theo Martins at Civic Cloud">
-                                        Theo Martins at Civic Cloud
+                                        {"Theo Martins at Civic Cloud"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -327,7 +327,7 @@ export function Pattern() {
                                       <AvatarImage alt="Marcus Chen" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Marcus Chen">
-                                      Marcus Chen
+                                      {"Marcus Chen"}
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 4h 05m" title="Response due in 4h 05m">
@@ -336,7 +336,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      4h 05m
+                                      {"4h 05m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -349,22 +349,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10466
+                                      {"SUP-10466"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Low
+                                        {"Low"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Saved view permissions differ between parent and child teams">
-                                      Saved view permissions differ between parent and child teams
+                                      {"Saved view permissions differ between parent and child teams"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Nina Patel at Harbor Grid">
-                                        Nina Patel at Harbor Grid
+                                        {"Nina Patel at Harbor Grid"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -375,7 +375,7 @@ export function Pattern() {
                                       <AvatarImage alt="Elena Torres" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Elena Torres">
-                                      Elena Torres
+                                      {"Elena Torres"}
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 7h 10m" title="Response due in 7h 10m">
@@ -384,7 +384,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      7h 10m
+                                      {"7h 10m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -397,7 +397,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -412,10 +412,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Engineering">
-                            Engineering
+                            {"Engineering"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -445,22 +445,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10392
+                                      {"SUP-10392"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Urgent
+                                        {"Urgent"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Webhook retries duplicate seat change events">
-                                      Webhook retries duplicate seat change events
+                                      {"Webhook retries duplicate seat change events"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Iris Novak at LedgerPoint">
-                                        Iris Novak at LedgerPoint
+                                        {"Iris Novak at LedgerPoint"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -471,7 +471,7 @@ export function Pattern() {
                                       <AvatarImage alt="Priya Shah" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Priya Shah">
-                                      Priya Shah
+                                      {"Priya Shah"}
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 36m" title="Breach risk in 36m">
@@ -480,7 +480,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      36m
+                                      {"36m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -493,22 +493,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10410
+                                      {"SUP-10410"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        High
+                                        {"High"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="EU shard search results omit recently migrated projects">
-                                      EU shard search results omit recently migrated projects
+                                      {"EU shard search results omit recently migrated projects"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Mateo Ruiz at Atlas Legal">
-                                        Mateo Ruiz at Atlas Legal
+                                        {"Mateo Ruiz at Atlas Legal"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -519,7 +519,7 @@ export function Pattern() {
                                       <AvatarImage alt="Omar Haddad" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Omar Haddad">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 2h 15m" title="Response due in 2h 15m">
@@ -528,7 +528,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      2h 15m
+                                      {"2h 15m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -541,7 +541,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -557,10 +557,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Waiting Customer">
-                            Waiting Customer
+                            {"Waiting Customer"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -590,22 +590,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10437
+                                      {"SUP-10437"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Normal
+                                        {"Normal"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Confirm SCIM token rotation window for APAC tenant">
-                                      Confirm SCIM token rotation window for APAC tenant
+                                      {"Confirm SCIM token rotation window for APAC tenant"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Grace Liu at Quantix Bank">
-                                        Grace Liu at Quantix Bank
+                                        {"Grace Liu at Quantix Bank"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -616,7 +616,7 @@ export function Pattern() {
                                       <AvatarImage alt="Maya Ito" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Maya Ito">
-                                      Maya Ito
+                                      {"Maya Ito"}
                                     </div>
                                   </div>
                                   <span className="bg-zinc-50 border border-zinc-200 dark:bg-zinc-800/70 dark:border-zinc-700 dark:text-zinc-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-zinc-700" aria-label="Paused in Paused" title="Paused in Paused">
@@ -625,7 +625,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      Paused
+                                      {"Paused"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -638,22 +638,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10444
+                                      {"SUP-10444"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Low
+                                        {"Low"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Approve temporary allowlist for partner sandbox">
-                                      Approve temporary allowlist for partner sandbox
+                                      {"Approve temporary allowlist for partner sandbox"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Evan Brooks at Fieldstone Labs">
-                                        Evan Brooks at Fieldstone Labs
+                                        {"Evan Brooks at Fieldstone Labs"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -664,7 +664,7 @@ export function Pattern() {
                                       <AvatarImage alt="Elena Torres" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Elena Torres">
-                                      Elena Torres
+                                      {"Elena Torres"}
                                     </div>
                                   </div>
                                   <span className="bg-zinc-50 border border-zinc-200 dark:bg-zinc-800/70 dark:border-zinc-700 dark:text-zinc-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-zinc-700" aria-label="Paused in Paused" title="Paused in Paused">
@@ -673,7 +673,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      Paused
+                                      {"Paused"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -686,7 +686,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -703,10 +703,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="SLA Risk">
-                            SLA Risk
+                            {"SLA Risk"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -736,22 +736,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10472
+                                      {"SUP-10472"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Urgent
+                                        {"Urgent"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Production admins locked out after enforced SAML change">
-                                      Production admins locked out after enforced SAML change
+                                      {"Production admins locked out after enforced SAML change"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Noah Grant at Summit Health">
-                                        Noah Grant at Summit Health
+                                        {"Noah Grant at Summit Health"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -762,7 +762,7 @@ export function Pattern() {
                                       <AvatarImage alt="Marcus Chen" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Marcus Chen">
-                                      Marcus Chen
+                                      {"Marcus Chen"}
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 18m" title="Breach risk in 18m">
@@ -771,7 +771,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      18m
+                                      {"18m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -784,22 +784,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10476
+                                      {"SUP-10476"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        High
+                                        {"High"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Regional failover report not visible to compliance team">
-                                      Regional failover report not visible to compliance team
+                                      {"Regional failover report not visible to compliance team"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Leah Stern at BluePeak Energy">
-                                        Leah Stern at BluePeak Energy
+                                        {"Leah Stern at BluePeak Energy"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -810,7 +810,7 @@ export function Pattern() {
                                       <AvatarImage alt="Omar Haddad" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Omar Haddad">
-                                      Omar Haddad
+                                      {"Omar Haddad"}
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 41m" title="Breach risk in 41m">
@@ -819,7 +819,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      41m
+                                      {"41m"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -832,7 +832,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -848,10 +848,10 @@ export function Pattern() {
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
                           <span className="font-semibold leading-5 text-sm truncate" title="Resolved">
-                            Resolved
+                            {"Resolved"}
                           </span>
                           <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                            2
+                            {"2"}
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -881,22 +881,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10370
+                                      {"SUP-10370"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Normal
+                                        {"Normal"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Renewal dashboard showing stale workspace counts">
-                                      Renewal dashboard showing stale workspace counts
+                                      {"Renewal dashboard showing stale workspace counts"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Mira Stone at Oakline Retail">
-                                        Mira Stone at Oakline Retail
+                                        {"Mira Stone at Oakline Retail"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -907,7 +907,7 @@ export function Pattern() {
                                       <AvatarImage alt="Priya Shah" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Priya Shah">
-                                      Priya Shah
+                                      {"Priya Shah"}
                                     </div>
                                   </div>
                                   <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
@@ -916,7 +916,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      Met
+                                      {"Met"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -929,22 +929,22 @@ export function Pattern() {
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                   <div className="flex gap-2 items-center justify-between min-w-0">
                                     <ItemDescription className="font-medium leading-none tabular-nums text-[0.6875rem] text-muted-foreground">
-                                      SUP-10381
+                                      {"SUP-10381"}
                                     </ItemDescription>
                                     <ItemActions className="shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
                                         <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                        Low
+                                        {"Low"}
                                       </Badge>
                                     </ItemActions>
                                   </div>
                                   <ItemContent className="gap-1 min-w-0">
                                     <ItemTitle className="font-semibold leading-5 line-clamp-2 text-sm w-auto" title="Partner API key rotation reminder sent to wrong owner">
-                                      Partner API key rotation reminder sent to wrong owner
+                                      {"Partner API key rotation reminder sent to wrong owner"}
                                     </ItemTitle>
                                     <ItemDescription className="line-clamp-1 text-xs">
                                       <span className="min-w-0 truncate" title="Caleb Reed at Orbit Systems">
-                                        Caleb Reed at Orbit Systems
+                                        {"Caleb Reed at Orbit Systems"}
                                       </span>
                                     </ItemDescription>
                                   </ItemContent>
@@ -955,7 +955,7 @@ export function Pattern() {
                                       <AvatarImage alt="Maya Ito" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                     </Avatar>
                                     <div className="font-medium min-w-0 text-xs truncate" title="Maya Ito">
-                                      Maya Ito
+                                      {"Maya Ito"}
                                     </div>
                                   </div>
                                   <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
@@ -964,7 +964,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
-                                      Met
+                                      {"Met"}
                                     </span>
                                   </span>
                                 </ItemFooter>
@@ -977,7 +977,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add ticket
+                          {"Add ticket"}
                         </Button>
                       </CardContent>
                     </Card>
@@ -991,9 +991,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

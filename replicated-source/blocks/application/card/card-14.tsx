@@ -27,7 +27,7 @@ export function Pattern() {
               </ItemMedia>
             </Item>
             <div className="font-medium text-sm">
-              Delivery Details
+              {"Delivery Details"}
             </div>
           </div>
           <DropdownMenu>
@@ -47,10 +47,10 @@ export function Pattern() {
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
             <span className="text-sm">
-              Overtoom 135, 1054 HG Amsterdam
+              {"Overtoom 135, 1054 HG Amsterdam"}
             </span>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-              Home
+              {"Home"}
             </Badge>
           </div>
           <div className="flex gap-2 items-center">
@@ -59,10 +59,10 @@ export function Pattern() {
               <path d="M12 6v6l4 2"></path>
             </svg>
             <span className="text-sm">
-              37m 23s
+              {"37m 23s"}
             </span>
             <span className="text-muted-foreground text-sm">
-              24m ago
+              {"24m ago"}
             </span>
           </div>
           <div className="flex gap-2 items-center">
@@ -73,18 +73,18 @@ export function Pattern() {
               <path d="m7.5 4.27 9 5.15"></path>
             </svg>
             <span className="text-sm">
-              #NL-54321-AMST
+              {"#NL-54321-AMST"}
             </span>
             <span className="text-muted-foreground text-sm">
-              Live Tracking
+              {"Live Tracking"}
             </span>
           </div>
           <div className="flex flex-col gap-1.5">
             <h4 className="font-medium text-sm">
-              Delivery Notes
+              {"Delivery Notes"}
             </h4>
             <p className="text-muted-foreground text-sm">
-              Driver confirmed delivery at the main entrance; photo proof uploaded to the order.
+              {"Driver confirmed delivery at the main entrance; photo proof uploaded to the order."}
             </p>
           </div>
         </FramePanel>

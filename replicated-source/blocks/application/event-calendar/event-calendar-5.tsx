@@ -45,10 +45,10 @@ export function Pattern() {
           <div className="border-b flex gap-3 items-stretch justify-between pe-4 shrink-0">
             <TabsList className="gap-6 h-11! ps-4 py-0!" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
               <TabsTrigger className="after:-bottom-px! h-full! px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
-                Calendar
+                {"Calendar"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! h-full! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                Log History
+                {"Log History"}
               </TabsTrigger>
             </TabsList>
             <div className="flex gap-1.5 items-center shrink-0 text-muted-foreground text-xs">
@@ -59,10 +59,10 @@ export function Pattern() {
                 <path d="M3 10h18"></path>
               </svg>
               <span className="tabular-nums">
-                16
+                {"16"}
               </span>
               <span className="hidden sm:inline">
-                booked in view
+                {"booked in view"}
               </span>
             </div>
           </div>
@@ -71,7 +71,7 @@ export function Pattern() {
               <div className="flex flex-wrap gap-x-2 items-center pe-2">
                 <EventCalendarNav className="flex-nowrap lg:flex-1 lg:w-auto w-full">
                   <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_4_" baseUiTooltipTrigger="">
-                    Today
+                    {"Today"}
                   </EventCalendarNavToday>
                   <div className="flex items-center">
                     <EventCalendarNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous" id="base-ui-_r_6_" baseUiTooltipTrigger="">
@@ -86,17 +86,17 @@ export function Pattern() {
                     </EventCalendarNavNext>
                   </div>
                   <EventCalendarTitle className="ms-3" aria-live="polite">
-                    Thursday, May 14, 2026
+                    {"Thursday, May 14, 2026"}
                   </EventCalendarTitle>
                   <div className="grow"></div>
                 </EventCalendarNav>
                 <EventCalendarToolbar className="lg:pb-0 lg:ps-0 lg:w-auto max-sm:flex-wrap max-sm:gap-y-2 pb-2 ps-2 w-full">
                   <ToggleGroup className="shrink-0" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="default" spacing="0" aria-label="Board view" style={{"--gap": "0"}}>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="default" spacing="0">
-                      Day
+                      {"Day"}
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0">
-                      Week
+                      {"Week"}
                     </ToggleGroupItem>
                   </ToggleGroup>
                   <DropdownMenu>
@@ -110,7 +110,7 @@ export function Pattern() {
                       <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                     </svg>
                     <span className="truncate">
-                      5 of 9 Chairs
+                      {"5 of 9 Chairs"}
                     </span>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -120,10 +120,10 @@ export function Pattern() {
                       <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                     </svg>
                     <span className="hidden sm:inline">
-                      Filters
+                      {"Filters"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
-                      6
+                      {"6"}
                     </Badge>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -132,7 +132,7 @@ export function Pattern() {
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
-                    New Booking
+                    {"New Booking"}
                   </Button>
                 </EventCalendarToolbar>
               </div>
@@ -148,10 +148,10 @@ export function Pattern() {
                           </Avatar>
                           <div className="flex flex-col min-w-0">
                             <span className="font-semibold text-sm truncate">
-                              Dr. Amara Chen
+                              {"Dr. Amara Chen"}
                             </span>
                             <span className="font-normal text-muted-foreground text-xs truncate">
-                              5 patients
+                              {"5 patients"}
                             </span>
                           </div>
                         </div>
@@ -163,10 +163,10 @@ export function Pattern() {
                           </Avatar>
                           <div className="flex flex-col min-w-0">
                             <span className="font-semibold text-sm truncate">
-                              Dr. Ravi Menon
+                              {"Dr. Ravi Menon"}
                             </span>
                             <span className="font-normal text-muted-foreground text-xs truncate">
-                              3 patients
+                              {"3 patients"}
                             </span>
                           </div>
                         </div>
@@ -178,10 +178,10 @@ export function Pattern() {
                           </Avatar>
                           <div className="flex flex-col min-w-0">
                             <span className="font-semibold text-sm truncate">
-                              Dr. Elena Novak
+                              {"Dr. Elena Novak"}
                             </span>
                             <span className="font-normal text-muted-foreground text-xs truncate">
-                              3 patients
+                              {"3 patients"}
                             </span>
                           </div>
                         </div>
@@ -193,10 +193,10 @@ export function Pattern() {
                           </Avatar>
                           <div className="flex flex-col min-w-0">
                             <span className="font-semibold text-sm truncate">
-                              Dr. Tomas Reyes
+                              {"Dr. Tomas Reyes"}
                             </span>
                             <span className="font-normal text-muted-foreground text-xs truncate">
-                              2 patients
+                              {"2 patients"}
                             </span>
                           </div>
                         </div>
@@ -208,10 +208,10 @@ export function Pattern() {
                           </Avatar>
                           <div className="flex flex-col min-w-0">
                             <span className="font-semibold text-sm truncate">
-                              Dr. Hana Sato
+                              {"Dr. Hana Sato"}
                             </span>
                             <span className="font-normal text-muted-foreground text-xs truncate">
-                              3 patients
+                              {"3 patients"}
                             </span>
                           </div>
                         </div>
@@ -221,7 +221,7 @@ export function Pattern() {
                   <div className="border-b flex pe-(--ec-scrollbar-w,0px)">
                     <div className="border-e pe-2.5 ps-2 pt-1.5 shrink-0 text-muted-foreground w-(--ec-gutter-width,4.5rem)">
                       <span className="flex h-[calc(var(--ec-month-bar-h,1.625rem)-0.125rem)] items-center justify-end">
-                        All day
+                        {"All day"}
                       </span>
                     </div>
                     <div className="flex-1 grid min-w-0" style={{gridTemplateColumns: "repeat(5, minmax(var(--ec-resource-col-min,8rem), 1fr))"}}>
@@ -240,52 +240,52 @@ export function Pattern() {
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}></div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                9 AM
+                                {"9 AM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                10 AM
+                                {"10 AM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                11 AM
+                                {"11 AM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                12 PM
+                                {"12 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                1 PM
+                                {"1 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                2 PM
+                                {"2 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                3 PM
+                                {"3 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                4 PM
+                                {"4 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                5 PM
+                                {"5 PM"}
                               </span>
                             </div>
                             <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                               <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                                6 PM
+                                {"6 PM"}
                               </span>
                             </div>
                           </EventCalendarTimeGutter>
@@ -299,15 +299,15 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Ifeoma Okafor
+                                        {"Ifeoma Okafor"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Completed
+                                          {"Completed"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Completed
+                                        {"Completed"}
                                       </span>
                                     </span>
                                   </span>
@@ -327,24 +327,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Samir Haddad
+                                        {"Samir Haddad"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Completed
+                                          {"Completed"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Completed
+                                        {"Completed"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        9:30 AM
+                                        {"9:30 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Scaling
+                                        {"Scaling"}
                                       </span>
                                     </span>
                                   </span>
@@ -364,24 +364,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Elsa Lindqvist
+                                        {"Elsa Lindqvist"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-primary transition-shadow">
-                                          In Chair
+                                          {"In Chair"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        In Chair
+                                        {"In Chair"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        11:00 AM
+                                        {"11:00 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Crown Fitting
+                                        {"Crown Fitting"}
                                       </span>
                                     </span>
                                   </span>
@@ -401,7 +401,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Lunch
+                                      {"Lunch"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -414,24 +414,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Wei Ling Tan
+                                        {"Wei Ling Tan"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        2:15 PM
+                                        {"2:15 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Composite Filling
+                                        {"Composite Filling"}
                                       </span>
                                     </span>
                                   </span>
@@ -449,19 +449,19 @@ export function Pattern() {
                                     <span className="flex gap-1.5 items-center min-w-0">
                                       <Avatar className="size-4" size="default">
                                         <AvatarFallback className="bg-foreground! text-[8px] text-background!">
-                                          CN
+                                          {"CN"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Chiara Novello
+                                        {"Chiara Novello"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                   </span>
@@ -483,24 +483,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Mateo Santos
+                                        {"Mateo Santos"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Completed
+                                          {"Completed"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Completed
+                                        {"Completed"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        9:00 AM
+                                        {"9:00 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Root Canal
+                                        {"Root Canal"}
                                       </span>
                                     </span>
                                   </span>
@@ -520,24 +520,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Gregory Whitfield
+                                        {"Gregory Whitfield"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                                          Unpaid
+                                          {"Unpaid"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Unpaid
+                                        {"Unpaid"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        10:45 AM
+                                        {"10:45 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Root Canal
+                                        {"Root Canal"}
                                       </span>
                                     </span>
                                   </span>
@@ -557,7 +557,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Lunch
+                                      {"Lunch"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -570,24 +570,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Declan Brennan
+                                        {"Declan Brennan"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        3:00 PM
+                                        {"3:00 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Composite Filling
+                                        {"Composite Filling"}
                                       </span>
                                     </span>
                                   </span>
@@ -607,19 +607,19 @@ export function Pattern() {
                                     <span className="flex gap-1.5 items-center min-w-0">
                                       <Avatar className="size-4" size="default">
                                         <AvatarFallback className="bg-foreground! text-[8px] text-background!">
-                                          LA
+                                          {"LA"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Laila Abadi
+                                        {"Laila Abadi"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                          Arrived
+                                          {"Arrived"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Arrived
+                                        {"Arrived"}
                                       </span>
                                     </span>
                                   </span>
@@ -637,19 +637,19 @@ export function Pattern() {
                                     <span className="flex gap-1.5 items-center min-w-0">
                                       <Avatar className="size-4" size="default">
                                         <AvatarFallback className="bg-foreground! text-[8px] text-background!">
-                                          CN
+                                          {"CN"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Chiara Novello
+                                        {"Chiara Novello"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                   </span>
@@ -669,7 +669,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Lunch
+                                      {"Lunch"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -682,24 +682,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Ifeoma Okafor
+                                        {"Ifeoma Okafor"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        2:00 PM
+                                        {"2:00 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Implant Review
+                                        {"Implant Review"}
                                       </span>
                                     </span>
                                   </span>
@@ -719,15 +719,15 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Mateo Santos
+                                        {"Mateo Santos"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                                          Cancelled
+                                          {"Cancelled"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Cancelled
+                                        {"Cancelled"}
                                       </span>
                                     </span>
                                   </span>
@@ -747,7 +747,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Case Review
+                                      {"Case Review"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -762,7 +762,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Theatre List
+                                      {"Theatre List"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -775,7 +775,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Lunch
+                                      {"Lunch"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -788,24 +788,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Samir Haddad
+                                        {"Samir Haddad"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        2:00 PM
+                                        {"2:00 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Extraction
+                                        {"Extraction"}
                                       </span>
                                     </span>
                                   </span>
@@ -825,24 +825,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Elsa Lindqvist
+                                        {"Elsa Lindqvist"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-invert/10 border border-invert/15 dark:bg-invert/35 dark:border-invert/45 dark:text-invert-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-foreground transition-shadow">
-                                          Booked
+                                          {"Booked"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Booked
+                                        {"Booked"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        3:30 PM
+                                        {"3:30 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Extraction
+                                        {"Extraction"}
                                       </span>
                                     </span>
                                   </span>
@@ -864,24 +864,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Wei Ling Tan
+                                        {"Wei Ling Tan"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Completed
+                                          {"Completed"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Completed
+                                        {"Completed"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        8:00 AM
+                                        {"8:00 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Scaling
+                                        {"Scaling"}
                                       </span>
                                     </span>
                                   </span>
@@ -901,24 +901,24 @@ export function Pattern() {
                                         <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Declan Brennan
+                                        {"Declan Brennan"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Completed
+                                          {"Completed"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Completed
+                                        {"Completed"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        9:15 AM
+                                        {"9:15 AM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Whitening
+                                        {"Whitening"}
                                       </span>
                                     </span>
                                   </span>
@@ -938,7 +938,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Lunch
+                                      {"Lunch"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>
@@ -949,28 +949,28 @@ export function Pattern() {
                                     <span className="flex gap-1.5 items-center min-w-0">
                                       <Avatar className="size-4" size="default">
                                         <AvatarFallback className="bg-foreground! text-[8px] text-background!">
-                                          LA
+                                          {"LA"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="font-medium truncate">
-                                        Laila Abadi
+                                        {"Laila Abadi"}
                                       </span>
                                       <span className="@[9rem]:flex hidden items-center shrink-0" aria-hidden="true">
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                                          Arrived
+                                          {"Arrived"}
                                         </Badge>
                                       </span>
                                       <span className="sr-only">
-                                        Arrived
+                                        {"Arrived"}
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="shrink-0 tabular-nums">
-                                        12:30 PM
+                                        {"12:30 PM"}
                                       </span>
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Scaling
+                                        {"Scaling"}
                                       </span>
                                     </span>
                                   </span>
@@ -990,7 +990,7 @@ export function Pattern() {
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Sterilisation
+                                      {"Sterilisation"}
                                     </span>
                                   </span>
                                 </EventCalendarEvent>

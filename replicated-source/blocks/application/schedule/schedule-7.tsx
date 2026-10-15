@@ -27,7 +27,7 @@ export function Pattern() {
           <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_0_" aria-expanded="true" extracted="1">
             <header className="flex flex-row gap-(--frame-panel-header-gap) grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="font-semibold text-sm">
-                Wednesday, 4:00 PM
+                {"Wednesday, 4:00 PM"}
               </div>
               <div className="flex gap-2 shrink-0">
                 <AvatarGroup className="-space-x-1.5">
@@ -41,7 +41,7 @@ export function Pattern() {
                     <AvatarImage alt="Mila Torres" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="size-4! text-[10px]">
-                    +2
+                    {"+2"}
                   </AvatarGroupCount>
                 </AvatarGroup>
                 <svg className="in-data-open:rotate-180 lucide lucide-chevron-down size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
@@ -62,12 +62,12 @@ export function Pattern() {
                     <path d="M3 10h18"></path>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Date
+                    {"Date"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
                   <span className="text-muted-foreground text-sm">
-                    Wednesday, Jul 1, 2026
+                    {"Wednesday, Jul 1, 2026"}
                   </span>
                 </div>
               </div>
@@ -78,15 +78,15 @@ export function Pattern() {
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Time
+                    {"Time"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    90 min
+                    {"90 min"}
                   </Badge>
                   <span className="text-muted-foreground text-sm">
-                    4:00 PM - 5:30 PM
+                    {"4:00 PM - 5:30 PM"}
                   </span>
                 </div>
               </div>
@@ -97,12 +97,12 @@ export function Pattern() {
                     <rect x="2" y="6" width="14" height="12" rx="2"></rect>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Platform
+                    {"Platform"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
                   <span className="text-muted-foreground text-sm">
-                    Zoom Webinar
+                    {"Zoom Webinar"}
                   </span>
                 </div>
               </div>
@@ -116,12 +116,12 @@ export function Pattern() {
                     <path d="m9 16 2 2 4-4"></path>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Reminder
+                    {"Reminder"}
                   </span>
                 </div>
                 <div className="flex gap-1.5 items-center">
                   <span className="text-muted-foreground text-sm">
-                    1 hour before
+                    {"1 hour before"}
                   </span>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export function Pattern() {
                     <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Live stream
+                    {"Live stream"}
                   </span>
                 </div>
                 <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1_" aria-checked="false" size="sm">
@@ -146,7 +146,7 @@ export function Pattern() {
                     <circle cx="12" cy="12" r="1"></circle>
                   </svg>
                   <span className="text-foreground text-sm">
-                    Recording
+                    {"Recording"}
                   </span>
                 </div>
                 <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_4_" aria-checked="true" size="sm">
@@ -162,7 +162,7 @@ export function Pattern() {
           <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_7_" aria-expanded="true">
             <header className="flex flex-row gap-(--frame-panel-header-gap) grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="font-semibold text-sm">
-                Presenters
+                {"Presenters"}
               </div>
               <svg className="in-data-open:rotate-180 lucide lucide-chevron-down size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -180,11 +180,11 @@ export function Pattern() {
                   <div className="flex flex-col">
                     <div className="flex gap-1.5 items-center">
                       <span className="font-semibold text-sm">
-                        Sofia Reyes
+                        {"Sofia Reyes"}
                       </span>
                     </div>
                     <span className="text-muted-foreground text-xs">
-                      Product Lead
+                      {"Product Lead"}
                     </span>
                   </div>
                 </div>
@@ -201,11 +201,11 @@ export function Pattern() {
                   <div className="flex flex-col">
                     <div className="flex gap-1.5 items-center">
                       <span className="font-semibold text-sm">
-                        James Park
+                        {"James Park"}
                       </span>
                     </div>
                     <span className="text-muted-foreground text-xs">
-                      Engineering Lead
+                      {"Engineering Lead"}
                     </span>
                   </div>
                 </div>
@@ -222,11 +222,11 @@ export function Pattern() {
                   <div className="flex flex-col">
                     <div className="flex gap-1.5 items-center">
                       <span className="font-semibold text-sm">
-                        Mila Torres
+                        {"Mila Torres"}
                       </span>
                     </div>
                     <span className="text-muted-foreground text-xs">
-                      Design Lead
+                      {"Design Lead"}
                     </span>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export function Pattern() {
           <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_8_" aria-expanded="true">
             <header className="flex flex-row gap-(--frame-panel-header-gap) grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="font-semibold text-sm">
-                Agenda
+                {"Agenda"}
               </div>
               <svg className="in-data-open:rotate-180 lucide lucide-chevron-down size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -253,22 +253,22 @@ export function Pattern() {
           <CollapsibleContent data-open="" id="base-ui-_r_8_" style={{"--collapsible-panel-height": "auto", "--collapsible-panel-width": "auto", animationName: "none"}}>
             <FramePanel className="space-y-3">
               <p className="text-muted-foreground text-sm">
-                Live walkthrough of AI collaboration tools, redesigned workflow engine, and open Q&A with the team.
+                {"Live walkthrough of AI collaboration tools, redesigned workflow engine, and open Q&A with the team."}
               </p>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <div className="flex items-center justify-between">
                 <span className="font-semibold text-foreground text-sm">
-                  Joining?
+                  {"Joining?"}
                 </span>
                 <div className="flex gap-1.5 items-center">
                   <Button type="button" tabIndex="0">
-                    Yes
+                    {"Yes"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Skip
+                    {"Skip"}
                   </Button>
                   <Button type="button" tabIndex="0">
-                    Maybe
+                    {"Maybe"}
                   </Button>
                 </div>
               </div>

@@ -27,16 +27,16 @@ export function Pattern() {
                   <path d="M19 12H5"></path>
                 </svg>
                 <span className="sr-only">
-                  Back to cart
+                  {"Back to cart"}
                 </span>
               </Button>
               <span className="bg-border h-4 shrink-0 w-px" aria-hidden="true"></span>
               <div className="flex gap-2.5 items-center">
                 <div className="bg-foreground flex font-semibold items-center justify-center rounded-full size-7 text-background text-xs">
-                  N
+                  {"N"}
                 </div>
                 <span className="font-medium text-sm">
-                  Northline Goods
+                  {"Northline Goods"}
                 </span>
               </div>
             </div>
@@ -44,15 +44,15 @@ export function Pattern() {
               <a className="aspect-square bg-background block border group max-w-[220px] overflow-hidden relative rounded-xl shadow-sm w-full" href="#" aria-label="View Aero Wireless Headphones">
                 <img className="absolute duration-300 group-hover:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Aero Wireless Headphones product photo" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=640&h=640&q=85" />
                 <span className="absolute backdrop-blur-sm bg-background/95 font-medium px-2 py-0.5 right-2 ring-1 ring-border rounded-full tabular-nums text-[11px] text-foreground top-2">
-                  Qty 1
+                  {"Qty 1"}
                 </span>
               </a>
               <div className="flex flex-col gap-1.5 items-center text-center">
                 <a className="font-medium hover:text-primary hover:underline text-sm" href="#">
-                  Aero Wireless Headphones
+                  {"Aero Wireless Headphones"}
                 </a>
                 <p className="text-muted-foreground text-xs">
-                  Graphite · Personal Audio
+                  {"Graphite · Personal Audio"}
                 </p>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 mt-0.5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                   <svg className="lucide lucide-truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -62,7 +62,7 @@ export function Pattern() {
                     <circle cx="17" cy="18" r="2"></circle>
                     <circle cx="7" cy="18" r="2"></circle>
                   </svg>
-                  Arrives Thu, May 16
+                  {"Arrives Thu, May 16"}
                 </Badge>
               </div>
             </div>
@@ -70,39 +70,39 @@ export function Pattern() {
               <div className="space-y-2">
                 <div className="flex gap-4 items-baseline justify-between text-sm">
                   <span className="text-muted-foreground">
-                    Subtotal
+                    {"Subtotal"}
                   </span>
                   <span className="tabular-nums text-foreground">
-                    $118.00
+                    {"$118.00"}
                   </span>
                 </div>
                 <div className="flex gap-4 items-baseline justify-between text-sm">
                   <span className="text-muted-foreground">
-                    Delivery
+                    {"Delivery"}
                     <span className="font-normal ml-1.5 text-muted-foreground/80 text-xs">
-                      FedEx 2-day
+                      {"FedEx 2-day"}
                     </span>
                   </span>
                   <span className="tabular-nums text-foreground">
-                    $8.00
+                    {"$8.00"}
                   </span>
                 </div>
                 <div className="flex gap-4 items-baseline justify-between text-sm">
                   <span className="text-muted-foreground">
-                    Estimated Tax
+                    {"Estimated Tax"}
                   </span>
                   <span className="tabular-nums text-foreground">
-                    $10.32
+                    {"$10.32"}
                   </span>
                 </div>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <div className="flex gap-4 items-baseline justify-between">
                 <span className="font-medium text-foreground text-sm">
-                  Total Due
+                  {"Total Due"}
                 </span>
                 <span className="font-semibold tabular-nums text-2xl text-foreground">
-                  $136.32
+                  {"$136.32"}
                 </span>
               </div>
             </div>
@@ -111,13 +111,13 @@ export function Pattern() {
             <div className="max-w-md mx-auto space-y-5 w-full">
               <div className="space-y-1.5">
                 <p className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-                  Express Checkout
+                  {"Express Checkout"}
                 </p>
                 <h1 className="font-semibold sm:text-2xl text-xl tracking-tight">
-                  Confirm & Pay
+                  {"Confirm & Pay"}
                 </h1>
                 <p className="text-muted-foreground text-sm">
-                  Saved details are ready. Confirm the security code to place your order.
+                  {"Saved details are ready. Confirm the security code to place your order."}
                 </p>
               </div>
               <div className="bg-card border divide-y overflow-hidden rounded-xl">
@@ -132,17 +132,17 @@ export function Pattern() {
                   </Item>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-                      Contact
+                      {"Contact"}
                     </p>
                     <p className="font-medium text-foreground text-sm truncate">
-                      riley.soto@example.com
+                      {"riley.soto@example.com"}
                     </p>
                     <p className="text-muted-foreground text-xs truncate">
-                      Receipt and tracking updates
+                      {"Receipt and tracking updates"}
                     </p>
                   </div>
                   <Button className="-mr-1.5 font-medium h-7 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
-                    Edit
+                    {"Edit"}
                   </Button>
                 </div>
                 <div className="flex gap-3.5 items-center px-4 py-3">
@@ -156,17 +156,17 @@ export function Pattern() {
                   </Item>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-                      Deliver To
+                      {"Deliver To"}
                     </p>
                     <p className="font-medium text-foreground text-sm truncate">
-                      218 Ellis Street
+                      {"218 Ellis Street"}
                     </p>
                     <p className="text-muted-foreground text-xs truncate">
-                      Oakland, CA 94607
+                      {"Oakland, CA 94607"}
                     </p>
                   </div>
                   <Button className="-mr-1.5 font-medium h-7 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
-                    Edit
+                    {"Edit"}
                   </Button>
                 </div>
                 <div className="flex gap-3.5 items-center px-4 py-3">
@@ -180,17 +180,17 @@ export function Pattern() {
                   </Item>
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-                      Pay With
+                      {"Pay With"}
                     </p>
                     <p className="font-medium text-foreground text-sm truncate">
-                      Visa ending 1847
+                      {"Visa ending 1847"}
                     </p>
                     <p className="text-muted-foreground text-xs truncate">
-                      Verified on this device
+                      {"Verified on this device"}
                     </p>
                   </div>
                   <Button className="-mr-1.5 font-medium h-7 hover:text-foreground px-2 text-muted-foreground text-xs" type="button" tabIndex="0">
-                    Edit
+                    {"Edit"}
                   </Button>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export function Pattern() {
                 <div className="flex gap-2.5 items-end">
                   <Field className="gap-1.5 shrink-0 w-24" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-[11px] tracking-wider uppercase" htmlFor="checkout-4-cvv">
-                      CVV
+                      {"CVV"}
                     </FieldLabel>
                     <InputGroup role="group">
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground text-center tracking-widest w-full" id="checkout-4-cvv" placeholder="•••" inputmode="numeric" maxLength="4" autoComplete="cc-csc" aria-label="CVV for Visa ending 1847" title="3-digit security code on the back of your card" />
@@ -210,11 +210,11 @@ export function Pattern() {
                       <rect x="3" y="10" width="18" height="12" rx="2"></rect>
                       <path d="M7 10V7a5 5 0 0 1 10 0v3"></path>
                     </svg>
-                    Pay $136.32
+                    {"Pay $136.32"}
                   </Button>
                 </div>
                 <p className="text-center text-muted-foreground text-xs">
-                  Charges Visa ending 1847. CVV is verified on this device.
+                  {"Charges Visa ending 1847. CVV is verified on this device."}
                 </p>
               </div>
               <details className="[&_summary::-webkit-details-marker]:hidden bg-card border group overflow-hidden rounded-xl">
@@ -229,10 +229,10 @@ export function Pattern() {
                   </Item>
                   <span className="flex flex-1 flex-col min-w-0">
                     <span className="font-medium text-foreground text-sm">
-                      Use a different card
+                      {"Use a different card"}
                     </span>
                     <span className="text-muted-foreground text-xs">
-                      Pay this order with a new card instead
+                      {"Pay this order with a new card instead"}
                     </span>
                   </span>
                   <svg className="duration-200 group-open:rotate-180 lucide lucide-chevron-down size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
@@ -243,7 +243,7 @@ export function Pattern() {
                   <FieldGroup className="gap-3 grid grid-cols-1 sm:grid-cols-2">
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-4-name">
-                        Name on card
+                        {"Name on card"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="checkout-4-name" autoComplete="cc-name" value="Riley Soto" />
@@ -251,7 +251,7 @@ export function Pattern() {
                     </Field>
                     <Field className="gap-1.5" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-4-expiry">
-                        Expires
+                        {"Expires"}
                       </FieldLabel>
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="checkout-4-expiry" placeholder="MM / YY" inputmode="numeric" autoComplete="cc-exp" />
@@ -260,13 +260,13 @@ export function Pattern() {
                   </FieldGroup>
                   <Field className="gap-1.5" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-4-card">
-                      Card number
+                      {"Card number"}
                     </FieldLabel>
                     <InputGroup role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
                         <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
                           <span className="border font-semibold px-1.5 py-0.5 rounded-sm text-[0.625rem] text-foreground tracking-wide">
-                            VISA
+                            {"VISA"}
                           </span>
                         </span>
                       </InputGroupAddon>
@@ -282,7 +282,7 @@ export function Pattern() {
                       <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
-                    Encrypted checkout
+                    {"Encrypted checkout"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full size-1" aria-hidden="true"></span>
                   <span className="gap-1.5 inline-flex items-center text-muted-foreground">
@@ -290,11 +290,11 @@ export function Pattern() {
                       <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                       <path d="M3 3v5h5"></path>
                     </svg>
-                    30-day returns
+                    {"30-day returns"}
                   </span>
                 </div>
                 <a className="font-medium gap-1.5 hover:text-foreground hover:underline inline-flex items-center text-muted-foreground underline-offset-4" href="#">
-                  Order policy
+                  {"Order policy"}
                   <svg className="lucide lucide-external-link size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>

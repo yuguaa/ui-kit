@@ -15,7 +15,7 @@ export function Pattern() {
                 <span className="[background-image:radial-gradient(circle_at_center,var(--metric-dot-color)_0.8px,transparent_1.25px)] [background-size:6px_6px] [mask-image:radial-gradient(ellipse_at_82%_86%,black_0%,black_32%,transparent_70%)] absolute blur-sm dark:opacity-25 inset-0 opacity-45 pointer-events-none" aria-hidden="true"></span>
                 <div className="flex gap-3 items-center justify-between mb-7 relative z-10">
                   <h3 className="font-medium text-muted-foreground text-sm">
-                    API Response Time
+                    {"API Response Time"}
                   </h3>
                   <Button className="-mr-2 text-muted-foreground" type="button" tabIndex="0" aria-label="API Response Time actions" extracted="1">
                     <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
@@ -55,10 +55,10 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-baseline min-w-0">
                       <span className="font-medium text-2xl">
-                        132
+                        {"132"}
                       </span>
                       <span className="font-medium text-2xl">
-                        ms
+                        {"ms"}
                       </span>
                     </div>
                   </div>
@@ -70,10 +70,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="text-muted-foreground/70">
-                      up from
+                      {"up from"}
                     </span>
                     <span className="font-medium">
-                      148 ms
+                      {"148 ms"}
                     </span>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export function Pattern() {
                 <span className="[background-image:radial-gradient(circle_at_center,var(--metric-dot-color)_0.8px,transparent_1.25px)] [background-size:6px_6px] [mask-image:radial-gradient(ellipse_at_82%_86%,black_0%,black_32%,transparent_70%)] absolute blur-sm dark:opacity-25 inset-0 opacity-45 pointer-events-none" aria-hidden="true"></span>
                 <div className="flex gap-3 items-center justify-between mb-7 relative z-10">
                   <h3 className="font-medium text-muted-foreground text-sm">
-                    Error Rate
+                    {"Error Rate"}
                   </h3>
                   <Button className="-mr-2 text-muted-foreground" type="button" tabIndex="0" aria-label="Error Rate actions">
                     <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
@@ -122,10 +122,10 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-baseline min-w-0">
                       <span className="font-medium text-2xl">
-                        1.4
+                        {"1.4"}
                       </span>
                       <span className="font-medium text-2xl">
-                        %
+                        {"%"}
                       </span>
                     </div>
                   </div>
@@ -137,10 +137,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="text-muted-foreground/70">
-                      down from
+                      {"down from"}
                     </span>
                     <span className="font-medium">
-                      2.1%
+                      {"2.1%"}
                     </span>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export function Pattern() {
                 <span className="[background-image:radial-gradient(circle_at_center,var(--metric-dot-color)_0.8px,transparent_1.25px)] [background-size:6px_6px] [mask-image:radial-gradient(ellipse_at_82%_86%,black_0%,black_32%,transparent_70%)] absolute blur-sm dark:opacity-25 inset-0 opacity-45 pointer-events-none" aria-hidden="true"></span>
                 <div className="flex gap-3 items-center justify-between mb-7 relative z-10">
                   <h3 className="font-medium text-muted-foreground text-sm">
-                    Request Throughput
+                    {"Request Throughput"}
                   </h3>
                   <Button className="-mr-2 text-muted-foreground" type="button" tabIndex="0" aria-label="Request Throughput actions">
                     <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
@@ -189,10 +189,10 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-baseline min-w-0">
                       <span className="font-medium text-2xl">
-                        4.3k
+                        {"4.3k"}
                       </span>
                       <span className="font-medium text-2xl">
-                        req/s
+                        {"req/s"}
                       </span>
                     </div>
                   </div>
@@ -204,10 +204,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="text-muted-foreground/70">
-                      up from
+                      {"up from"}
                     </span>
                     <span className="font-medium">
-                      3.9k req/s
+                      {"3.9k req/s"}
                     </span>
                   </div>
                 </div>

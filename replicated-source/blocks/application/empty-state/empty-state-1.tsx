@@ -36,10 +36,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2 items-center">
               <EmptyTitle className="font-semibold text-2xl tracking-tight">
-                Your record space is empty
+                {"Your record space is empty"}
               </EmptyTitle>
               <EmptyDescription className="max-w-[24rem] text-sm/relaxed">
-                Connect a live source or upload a CSV to start organizing people, teams, and attributes in one place.
+                {"Connect a live source or upload a CSV to start organizing people, teams, and attributes in one place."}
               </EmptyDescription>
             </div>
           </EmptyHeader>
@@ -53,7 +53,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect source
+                {"Connect source"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" data-icon="inline-start" aria-hidden="true">
@@ -61,14 +61,14 @@ export function Pattern() {
                   <path d="m17 8-5-5-5 5"></path>
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 </svg>
-                Upload CSV
+                {"Upload CSV"}
               </Button>
             </div>
           </EmptyContent>
         </Empty>
         <div className="max-w-md sm:max-w-[34rem] space-y-3 w-full">
           <p className="text-muted-foreground text-sm">
-            Quick guides
+            {"Quick guides"}
           </p>
           <div className="gap-3 grid sm:grid-cols-2">
             <Item className="hover:bg-muted/30 min-w-0" href="#" aria-label="How records work" variant="outline" size="default">
@@ -80,7 +80,7 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent className="min-w-0">
                 <ItemTitle className="truncate">
-                  How records work
+                  {"How records work"}
                 </ItemTitle>
               </ItemContent>
               <ItemActions className="ml-auto text-muted-foreground">
@@ -101,7 +101,7 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent className="min-w-0">
                 <ItemTitle className="truncate">
-                  CSV setup
+                  {"CSV setup"}
                 </ItemTitle>
               </ItemContent>
               <ItemActions className="ml-auto text-muted-foreground">

@@ -66,13 +66,17 @@ import { SidebarMenuButton } from "@/registry/bases/radix/ui/sidebar"
 export function Pattern() {
   return (
     <div id="app">
+      <SidebarProvider>
       <div className="[--header-height:45px] [--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] flex group/sidebar-wrapper h-screen has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "63px", "--sidebar-width-icon": "3rem", "--sidebar-width-inner": "200px"}}>
         <a className="focus:bg-background focus:fixed focus:font-medium focus:not-sr-only focus:outline-none focus:px-3 focus:py-1.5 focus:ring-[3px] focus:ring-ring/50 focus:rounded-md focus:shadow-md focus:start-4 focus:text-foreground focus:text-sm focus:top-2.5 focus:z-100 sr-only" href="#main-content">
-          Skip to content
+          {"Skip to content"}
         </a>
+        <SidebarProvider>
         <Sidebar data-state="expanded" collapsible="" variant="inset" data-side="left">
           <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+          <SidebarProvider>
           <div className="bottom-0 data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 top-0 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+            <SidebarProvider>
             <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
               <SidebarHeader className="gap-2 items-center justify-center p-2 py-3" sidebar="header">
                 <a className="focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 rounded-md" aria-label="NeUI Drive, go to My Drive" href="/">
@@ -86,11 +90,17 @@ export function Pattern() {
                   </Item>
                 </a>
               </SidebarHeader>
+              <SidebarProvider>
               <SidebarContent className="gap-0 no-scrollbar" sidebar="content">
+                <SidebarProvider>
                 <SidebarGroup className="p-2" sidebar="group">
+                  <SidebarProvider>
                   <SidebarGroupContent className="justify-center text-sm" sidebar="group-content">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.5" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" aria-label="Drive" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/">
                           <svg className="lucide lucide-hard-drive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M10 16h.01"></path>
@@ -99,8 +109,12 @@ export function Pattern() {
                             <path d="M6 16h.01"></path>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" aria-label="Workspace" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/settings/workspace">
                           <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M10 12h4"></path>
@@ -110,27 +124,41 @@ export function Pattern() {
                             <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" aria-label="Pricing" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/pricing">
                           <svg className="lucide lucide-credit-card" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <rect width="20" height="14" x="2" y="5" rx="2"></rect>
                             <line x1="2" x2="22" y1="10" y2="10"></line>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" aria-label="Settings" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/settings" data-active="">
                           <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                           </svg>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarGroupContent>
+                  </SidebarProvider>
                 </SidebarGroup>
+                </SidebarProvider>
               </SidebarContent>
+              </SidebarProvider>
               <SidebarFooter className="gap-2 p-2" sidebar="footer">
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Alex Rivera" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
@@ -141,20 +169,25 @@ export function Pattern() {
                 </DropdownMenu>
               </SidebarFooter>
             </div>
+            </SidebarProvider>
           </div>
+          </SidebarProvider>
         </Sidebar>
+        </SidebarProvider>
         <SidebarInset className="bg-background border border-border md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm overflow-hidden shadow-none">
           <header className="[scrollbar-gutter:stable] bg-sidebar border-b border-border dark:bg-background flex gap-2 h-(--header-height) items-center lg:ps-2 overflow-y-hidden px-4 sticky top-0 w-full z-50">
             <div className="flex flex-1 gap-2 items-center md:flex-none min-w-0">
+              <SidebarProvider>
               <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center md:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
                 <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                   <path d="M9 3v18"></path>
                 </svg>
                 <span className="sr-only">
-                  Toggle Sidebar
+                  {"Toggle Sidebar"}
                 </span>
               </SidebarTrigger>
+              </SidebarProvider>
               <Breadcrumb className="flex-1 min-w-0" aria-label="breadcrumb">
                 <BreadcrumbList className="flex-nowrap gap-1 text-muted-foreground text-sm">
                   <BreadcrumbItem className="gap-1 min-w-9">
@@ -172,7 +205,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="max-w-24 sm:max-w-none truncate">
-                        Northwind Studio
+                        {"Northwind Studio"}
                       </span>
                       <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="m7 15 5 5 5-5"></path>
@@ -182,11 +215,11 @@ export function Pattern() {
                     </DropdownMenu>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="[&>svg]:size-3.5 opacity-60 shrink-0" role="presentation" aria-hidden="true">
-                    /
+                    {"/"}
                   </BreadcrumbSeparator>
                   <BreadcrumbItem className="gap-1 shrink-0">
                     <BreadcrumbPage className="font-normal px-2 text-foreground text-sm truncate" role="link" aria-disabled="true" aria-current="page">
-                      Profile
+                      {"Profile"}
                     </BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -218,10 +251,10 @@ export function Pattern() {
               <div className="max-w-4xl space-y-8 w-full">
                 <header>
                   <h1 className="font-semibold text-xl tracking-tight">
-                    Account Settings
+                    {"Account Settings"}
                   </h1>
                   <p className="leading-relaxed max-w-2xl text-muted-foreground text-sm">
-                    Update your account, workspace, team, and billing.
+                    {"Update your account, workspace, team, and billing."}
                   </p>
                 </header>
                 <div className="flex flex-col gap-5 lg:flex-row lg:gap-8 w-full">
@@ -233,7 +266,7 @@ export function Pattern() {
                           <circle cx="12" cy="7" r="4"></circle>
                         </svg>
                         <span className="truncate">
-                          Profile
+                          {"Profile"}
                         </span>
                       </a>
                       <a className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 border border-transparent focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-3 hover:text-foreground inline-flex items-center justify-start px-3 py-1.5 rounded-md text-foreground/60 text-sm transition-all w-full whitespace-nowrap" href="/settings/workspace">
@@ -245,7 +278,7 @@ export function Pattern() {
                           <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                         </svg>
                         <span className="truncate">
-                          Workspace
+                          {"Workspace"}
                         </span>
                       </a>
                       <a className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 border border-transparent focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-3 hover:text-foreground inline-flex items-center justify-start px-3 py-1.5 rounded-md text-foreground/60 text-sm transition-all w-full whitespace-nowrap" href="/settings/team">
@@ -256,7 +289,7 @@ export function Pattern() {
                           <circle cx="9" cy="7" r="4"></circle>
                         </svg>
                         <span className="truncate">
-                          Team
+                          {"Team"}
                         </span>
                       </a>
                       <a className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 border border-transparent focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-3 hover:text-foreground inline-flex items-center justify-start px-3 py-1.5 rounded-md text-foreground/60 text-sm transition-all w-full whitespace-nowrap" href="/settings/billing">
@@ -265,7 +298,7 @@ export function Pattern() {
                           <line x1="2" x2="22" y1="10" y2="10"></line>
                         </svg>
                         <span className="truncate">
-                          Billing
+                          {"Billing"}
                         </span>
                       </a>
                     </div>
@@ -275,10 +308,10 @@ export function Pattern() {
                       <Frame className="(--radius-2xl)] (--radius-lg)] (--radius-none)] (--radius-xl)] (0.5)] (1)] (1.25)] (1.5)] [--frame-panel-footer-px-adjust:--spacing(2)] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)_+_var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)_+_var(--frame-panel-footer-py-adjust))] [--frame-panel-header-px-adjust:--spacing(2)] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)_+_var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)_+_var(--frame-panel-header-py-adjust))] [--frame-panel-px-adjust:--spacing(2)] [--frame-panel-px:calc(var(--frame-panel-px-base)_+_var(--frame-panel-px-adjust))] [--frame-panel-py-adjust:--spacing(0.5)] [--frame-panel-py:calc(var(--frame-panel-py-base)_+_var(--frame-panel-py-adjust))] [--frame-radius:var(--radius-xl)]" spacing="sm">
                         <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="capitalize font-semibold text-sm">
-                            Profile details
+                            {"Profile details"}
                           </div>
                           <div className="text-muted-foreground text-sm">
-                            Personal account info.
+                            {"Personal account info."}
                           </div>
                         </header>
                         <FramePanel className="before:rounded-[calc(var(--frame-panel-radius)_-_1px)] p-0">
@@ -288,12 +321,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-photo">
                                     <span className="capitalize">
-                                      Profile photo
+                                      {"Profile photo"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Shown in comments and mentions.
+                                  {"Shown in comments and mentions."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] gap-0.5 min-w-0 w-full">
@@ -311,7 +344,7 @@ export function Pattern() {
                                           <path d="m17 8-5-5-5 5"></path>
                                           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                         </svg>
-                                        Change
+                                        {"Change"}
                                       </Button>
                                       <input className="sr-only" id="profile-photo" accept="image/*" aria-label="Upload profile photo" tabIndex="-1" type="file" />
                                     </div>
@@ -320,7 +353,7 @@ export function Pattern() {
                                         <path d="M18 6 6 18"></path>
                                         <path d="m6 6 12 12"></path>
                                       </svg>
-                                      Remove
+                                      {"Remove"}
                                     </Button>
                                   </div>
                                 </div>
@@ -334,12 +367,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-name">
                                     <span className="capitalize">
-                                      Full name
+                                      {"Full name"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Used across NeUI.
+                                  {"Used across NeUI."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] gap-0.5 min-w-0 w-full">
@@ -356,15 +389,15 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-email">
                                     <span className="capitalize">
-                                      Email address
+                                      {"Email address"}
                                     </span>
                                   </FieldLabel>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                    Verified
+                                    {"Verified"}
                                   </Badge>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Primary sign-in email.
+                                  {"Primary sign-in email."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] gap-0.5 min-w-0 w-full">
@@ -381,12 +414,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center leading-snug text-sm">
                                     <span className="capitalize">
-                                      Phone number
+                                      {"Phone number"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Recovery and urgent alerts.
+                                  {"Recovery and urgent alerts."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] gap-0.5 min-w-0 w-full">
@@ -394,12 +427,12 @@ export function Pattern() {
                                   <div className="PhoneInput flex w-full">
                                     <ComboboxTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border border-e-0 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 data-pressed:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus:z-10 font-medium gap-1 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-transparent hover:text-foreground items-center justify-center leading-none outline-none px-2.5 py-0 rounded-e-none rounded-lg rounded-s-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_3l_" role="combobox" aria-expanded="false" aria-haspopup="dialog">
                                       <span className="sr-only">
-                                        United States
+                                        {"United States"}
                                       </span>
                                       <span className="[&_svg:not([class*='size-'])]:rounded-[5px] [&_svg:not([class*='size-'])]:size-full! flex h-4 items-center justify-center w-4">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
                                           <title>
-                                            US
+                                            {"US"}
                                           </title>
                                           <path fill="#FFF" d="M0 0h513v342H0z"></path>
                                           <path d="M0 0h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513v26.3H0zm0 52.7h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513V342H0z" fill="#D80027"></path>
@@ -422,12 +455,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-username">
                                     <span className="capitalize">
-                                      Username
+                                      {"Username"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Used in mentions and links.
+                                  {"Used in mentions and links."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] gap-0.5 min-w-0 w-full">
@@ -435,7 +468,7 @@ export function Pattern() {
                                   <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
                                     <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
                                       <span className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none flex gap-2 items-center text-muted-foreground text-sm">
-                                        @
+                                        {"@"}
                                       </span>
                                     </InputGroupAddon>
                                     <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="profile-username" autoComplete="username" autocapitalize="none" spellCheck="false" value="alexrivera" />
@@ -451,36 +484,36 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center leading-snug text-sm">
                                     <span className="capitalize">
-                                      Public details
+                                      {"Public details"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Shown across NeUI.
+                                  {"Shown across NeUI."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[32rem] gap-0.5 min-w-0 w-full">
                                 <div className="@md/field-group:justify-end flex justify-start w-full">
                                   <FieldSet className="gap-3 has-[>[data-slot=checkbox-group]]:gap-3 has-[>[data-slot=radio-group]]:gap-3 w-full">
                                     <FieldLegend className="data-[variant=label]:text-sm data-[variant=legend]:text-base font-medium mb-1.5 sr-only" variant="legend">
-                                      Public details
+                                      {"Public details"}
                                     </FieldLegend>
                                     <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 sr-only text-left text-muted-foreground text-sm">
-                                      Public profile and workspace defaults.
+                                      {"Public profile and workspace defaults."}
                                     </FieldDescription>
                                     <FieldGroup className="*:data-[slot=field-group]:gap-4 data-[slot=checkbox-group]:gap-3 gap-3">
                                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                         <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-role">
-                                          Role
+                                          {"Role"}
                                         </FieldLabel>
                                         <Select>
                                         <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-full" type="button" tabIndex="0" id="profile-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                           <SelectValue className="flex flex-1 text-left">
-                                            Workspace Owner
+                                            {"Workspace Owner"}
                                           </SelectValue>
                                           <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                             <path d="m6 9 6 6 6-6"></path>
-                                            ▼
+                                            {"▼"}
                                           </svg>
                                         </SelectTrigger>
                                         </Select>
@@ -488,7 +521,7 @@ export function Pattern() {
                                       </Field>
                                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                         <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-timezone">
-                                          Time zone
+                                          {"Time zone"}
                                         </FieldLabel>
                                         <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                           <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
@@ -506,12 +539,12 @@ export function Pattern() {
                                       </Field>
                                       <Field className="data-[invalid=true]:text-destructive gap-2" role="group" data-orientation="vertical">
                                         <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-website">
-                                          Website
+                                          {"Website"}
                                         </FieldLabel>
                                         <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 rounded-lg transition-colors" role="group">
                                           <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
                                             <span className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none flex gap-2 items-center text-muted-foreground text-sm">
-                                              https://
+                                              {"https://"}
                                             </span>
                                           </InputGroupAddon>
                                           <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="profile-website" inputmode="url" autoComplete="url" autocapitalize="none" spellCheck="false" value="neui.io" />
@@ -530,18 +563,18 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-bio">
                                     <span className="capitalize">
-                                      Bio
+                                      {"Bio"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Short profile summary.
+                                  {"Short profile summary."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] @md/field-group:w-full gap-0.5 min-w-0 w-full">
                                 <div className="@md/field-group:justify-end flex justify-start w-full">
                                   <Textarea className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:disabled:bg-input/80 disabled:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm min-h-24 px-2.5 py-2 resize-none rounded-lg text-base transition-colors" id="profile-bio">
-                                    Runs the studio's shared drive: retention, sharing defaults, and who can reach what.
+                                    {"Runs the studio's shared drive: retention, sharing defaults, and who can reach what."}
                                   </Textarea>
                                 </div>
                               </FieldContent>
@@ -550,20 +583,20 @@ export function Pattern() {
                         </FramePanel>
                         <footer className="flex flex-row gap-2 justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
-                            Cancel
+                            {"Cancel"}
                           </Button>
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
-                            Save changes
+                            {"Save changes"}
                           </Button>
                         </footer>
                       </Frame>
                       <Frame className="(--radius-2xl)] (--radius-lg)] (--radius-none)] (--radius-xl)] (0.5)] (1)] (1.25)] (1.5)] [--frame-panel-footer-px-adjust:--spacing(2)] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)_+_var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)_+_var(--frame-panel-footer-py-adjust))] [--frame-panel-header-px-adjust:--spacing(2)] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)_+_var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)_+_var(--frame-panel-header-py-adjust))] [--frame-panel-px-adjust:--spacing(2)] [--frame-panel-px:calc(var(--frame-panel-px-base)_+_var(--frame-panel-px-adjust))] [--frame-panel-py-adjust:--spacing(0.5)] [--frame-panel-py:calc(var(--frame-panel-py-base)_+_var(--frame-panel-py-adjust))] [--frame-radius:var(--radius-xl)]" spacing="sm">
                         <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="capitalize font-semibold text-sm">
-                            Profile preferences
+                            {"Profile preferences"}
                           </div>
                           <div className="text-muted-foreground text-sm">
-                            Default workspace behavior.
+                            {"Default workspace behavior."}
                           </div>
                         </header>
                         <FramePanel className="before:rounded-[calc(var(--frame-panel-radius)_-_1px)] p-0">
@@ -573,7 +606,7 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center leading-snug text-sm">
                                     <span className="capitalize">
-                                      Language
+                                      {"Language"}
                                     </span>
                                   </FieldLabel>
                                 </div>
@@ -586,16 +619,16 @@ export function Pattern() {
                                       <SelectValue className="flex flex-1 text-left">
                                         <span className="flex flex-col gap-px items-start">
                                           <span className="font-medium">
-                                            English (US)
+                                            {"English (US)"}
                                           </span>
                                           <small className="text-muted-foreground text-sm">
-                                            Default product language
+                                            {"Default product language"}
                                           </small>
                                         </span>
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -612,12 +645,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center leading-snug text-sm">
                                     <span className="capitalize">
-                                      Landing view
+                                      {"Landing view"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Which view the drive opens on.
+                                  {"Which view the drive opens on."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[17rem] @md/field-group:shrink-0 gap-0.5 min-w-0 w-full">
@@ -628,16 +661,16 @@ export function Pattern() {
                                       <SelectValue className="flex flex-1 text-left">
                                         <span className="flex flex-col gap-px items-start">
                                           <span className="font-medium">
-                                            Favourites
+                                            {"Favourites"}
                                           </span>
                                           <small className="text-muted-foreground text-sm">
-                                            Only what you pinned
+                                            {"Only what you pinned"}
                                           </small>
                                         </span>
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -654,7 +687,7 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="font-medium gap-2 group-data-[disabled=true]/field:opacity-50 items-center leading-snug text-sm">
                                     <span className="capitalize">
-                                      Digest cadence
+                                      {"Digest cadence"}
                                     </span>
                                   </FieldLabel>
                                 </div>
@@ -667,16 +700,16 @@ export function Pattern() {
                                       <SelectValue className="flex flex-1 text-left">
                                         <span className="flex flex-col gap-px items-start">
                                           <span className="font-medium">
-                                            Weekly summary
+                                            {"Weekly summary"}
                                           </span>
                                           <small className="text-muted-foreground text-sm">
-                                            Monday planning recap
+                                            {"Monday planning recap"}
                                           </small>
                                         </span>
                                       </SelectValue>
                                       <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
-                                        ▼
+                                        {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
@@ -693,12 +726,12 @@ export function Pattern() {
                                 <div className="flex flex-wrap gap-2 items-center">
                                   <FieldLabel className="*:data-[slot=field]:p-2.5 dark:has-data-checked:bg-primary/10 dark:has-data-checked:border-primary/20 font-medium gap-2 group-data-[disabled=true]/field:opacity-50 group-data-[disabled=true]:opacity-50 group-data-[disabled=true]:pointer-events-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:rounded-lg has-data-checked:bg-primary/5 has-data-checked:border-primary/30 items-center leading-snug peer-disabled:cursor-not-allowed peer-disabled:opacity-50 select-none text-sm" htmlFor="profile-daily-briefing" id="profile-daily-briefing-label">
                                     <span className="capitalize">
-                                      Daily briefing
+                                      {"Daily briefing"}
                                     </span>
                                   </FieldLabel>
                                 </div>
                                 <FieldDescription className="[[data-variant=legend]+&]:-mt-1.5 text-left text-muted-foreground text-sm">
-                                  Morning recap before meetings.
+                                  {"Morning recap before meetings."}
                                 </FieldDescription>
                               </div>
                               <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[17rem] @md/field-group:shrink-0 gap-0.5 min-w-0 w-full">
@@ -714,10 +747,10 @@ export function Pattern() {
                         </FramePanel>
                         <footer className="flex flex-row gap-2 justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
-                            Cancel
+                            {"Cancel"}
                           </Button>
                           <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
-                            Save changes
+                            {"Save changes"}
                           </Button>
                         </footer>
                       </Frame>
@@ -729,6 +762,7 @@ export function Pattern() {
           </div>
         </SidebarInset>
       </div>
+      </SidebarProvider>
       <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
     </div>
   )

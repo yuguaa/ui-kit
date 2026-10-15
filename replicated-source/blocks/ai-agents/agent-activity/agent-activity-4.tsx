@@ -23,52 +23,52 @@ export function Pattern() {
           <span className="flex flex-wrap gap-2 items-center outline-none" tabIndex="-1" role="status" aria-live="polite" aria-busy="false">
             <span className="font-semibold text-foreground text-sm">
               <span className="tabular-nums">
-                6
+                {"6"}
               </span>
-              calls across
+              {"calls across"}
               <span className="tabular-nums">
-                5
+                {"5"}
               </span>
-              servers
+              {"servers"}
             </span>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
               <span className="tabular-nums">
-                1
+                {"1"}
               </span>
-              denied
+              {"denied"}
             </Badge>
           </span>
           <ToggleGroup className="ms-auto" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Filter calls" style={{"--gap": "0"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-2.5 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
-              All
+              {"All"}
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] font-normal group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-2.5 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-              Denied only
+              {"Denied only"}
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
         <div className="cn-table-container">
           <Table className="table-fixed w-full">
             <TableCaption className="sr-only">
-              MCP calls this run
+              {"MCP calls this run"}
             </TableCaption>
             <TableHeader>
               <TableRow>
                 <TableHead className="@2xl:w-1/4">
-                  Server
+                  {"Server"}
                 </TableHead>
                 <TableHead className="@max-2xl:hidden w-1/4">
-                  Tool
+                  {"Tool"}
                 </TableHead>
                 <TableHead className="@max-2xl:hidden">
-                  Result
+                  {"Result"}
                 </TableHead>
                 <TableHead className="@max-2xl:hidden text-end w-13">
-                  Time
+                  {"Time"}
                 </TableHead>
                 <TableHead className="w-16">
                   <span className="sr-only">
-                    Actions
+                    {"Actions"}
                   </span>
                 </TableHead>
               </TableRow>
@@ -80,10 +80,10 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        postgres-mcp
+                        {"postgres-mcp"}
                       </span>
                       <span className="sr-only">
-                        Connected
+                        {"Connected"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -95,21 +95,21 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                        execute
+                        {"execute"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:06
+                        {"14:06"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Denied
+                        {"Denied"}
                       </Badge>
                       <span className="flex-1 min-w-0 truncate">
-                        Needs
+                        {"Needs"}
                         <span className="font-mono">
-                          tables:write
+                          {"tables:write"}
                         </span>
                       </span>
                     </span>
@@ -125,30 +125,30 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                      execute
+                      {"execute"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                      Denied
+                      {"Denied"}
                     </Badge>
                     <span className="flex-1 min-w-0 truncate">
-                      Needs
+                      {"Needs"}
                       <span className="font-mono">
-                        tables:write
+                        {"tables:write"}
                       </span>
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:06
+                  {"14:06"}
                 </TableCell>
                 <TableCell className="text-end">
                   <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto group-hover/row:opacity-100 group-hover/row:pointer-events-auto justify-end max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-coarse:opacity-100 pointer-coarse:pointer-events-auto pointer-events-none transition-opacity">
                     <Button className="h-5 px-2 text-xs" type="button" tabIndex="0" action="grant">
-                      Grant
+                      {"Grant"}
                     </Button>
                   </span>
                 </TableCell>
@@ -159,7 +159,7 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-muted-foreground rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        mcp.sentry.dev
+                        {"mcp.sentry.dev"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -169,22 +169,22 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="sr-only">
-                        Completed
+                        {"Completed"}
                       </span>
                       <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                        list_issues
+                        {"list_issues"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:08
+                        {"14:08"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        Dropped 14:09
+                        {"Dropped 14:09"}
                       </Badge>
                       <span className="flex-1 min-w-0 truncate">
-                        3 issues kept
+                        {"3 issues kept"}
                       </span>
                     </span>
                   </span>
@@ -197,25 +197,25 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="sr-only">
-                      Completed
+                      {"Completed"}
                     </span>
                     <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                      list_issues
+                      {"list_issues"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                      Dropped 14:09
+                      {"Dropped 14:09"}
                     </Badge>
                     <span className="flex-1 min-w-0 truncate">
-                      3 issues kept
+                      {"3 issues kept"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:08
+                  {"14:08"}
                 </TableCell>
                 <TableCell className="text-end"></TableCell>
               </TableRow>
@@ -225,10 +225,10 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-info rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        mcp.linear.app
+                        {"mcp.linear.app"}
                       </span>
                       <span className="sr-only">
-                        Calling now
+                        {"Calling now"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -238,16 +238,16 @@ export function Pattern() {
                         </Spinner>
                       </span>
                       <span className="[--shimmer-duration:2.4s] font-medium font-mono leading-5 shimmer text-foreground text-xs truncate">
-                        create_issue
+                        {"create_issue"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:10
+                        {"14:10"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <span className="flex-1 min-w-0 truncate">
-                        In flight
+                        {"In flight"}
                       </span>
                     </span>
                   </span>
@@ -260,19 +260,19 @@ export function Pattern() {
                       </Spinner>
                     </span>
                     <span className="[--shimmer-duration:2.4s] font-medium font-mono leading-5 shimmer text-foreground text-xs truncate">
-                      create_issue
+                      {"create_issue"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <span className="flex-1 min-w-0 truncate">
-                      In flight
+                      {"In flight"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:10
+                  {"14:10"}
                 </TableCell>
                 <TableCell className="text-end"></TableCell>
               </TableRow>
@@ -282,10 +282,10 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        github-mcp-server
+                        {"github-mcp-server"}
                       </span>
                       <span className="sr-only">
-                        Connected
+                        {"Connected"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -295,19 +295,19 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="sr-only">
-                        Completed
+                        {"Completed"}
                       </span>
                       <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                        search_code
+                        {"search_code"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:02
+                        {"14:02"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <span className="flex-1 min-w-0 truncate">
-                        6 files matched charge.refunded
+                        {"6 files matched charge.refunded"}
                       </span>
                     </span>
                   </span>
@@ -320,22 +320,22 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="sr-only">
-                      Completed
+                      {"Completed"}
                     </span>
                     <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                      search_code
+                      {"search_code"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <span className="flex-1 min-w-0 truncate">
-                      6 files matched charge.refunded
+                      {"6 files matched charge.refunded"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:02
+                  {"14:02"}
                 </TableCell>
                 <TableCell className="text-end"></TableCell>
               </TableRow>
@@ -345,10 +345,10 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        github-mcp-server
+                        {"github-mcp-server"}
                       </span>
                       <span className="sr-only">
-                        Connected
+                        {"Connected"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -358,19 +358,19 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="sr-only">
-                        Completed
+                        {"Completed"}
                       </span>
                       <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                        get_file_contents
+                        {"get_file_contents"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:03
+                        {"14:03"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <span className="flex-1 min-w-0 truncate">
-                        src/api/stripe-webhook.ts, 412 lines
+                        {"src/api/stripe-webhook.ts, 412 lines"}
                       </span>
                     </span>
                   </span>
@@ -383,22 +383,22 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="sr-only">
-                      Completed
+                      {"Completed"}
                     </span>
                     <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                      get_file_contents
+                      {"get_file_contents"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <span className="flex-1 min-w-0 truncate">
-                      src/api/stripe-webhook.ts, 412 lines
+                      {"src/api/stripe-webhook.ts, 412 lines"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:03
+                  {"14:03"}
                 </TableCell>
                 <TableCell className="text-end"></TableCell>
               </TableRow>
@@ -408,10 +408,10 @@ export function Pattern() {
                     <span className="flex gap-2 items-center">
                       <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="font-mono leading-5 text-[13px] text-foreground truncate">
-                        postgres-mcp
+                        {"postgres-mcp"}
                       </span>
                       <span className="sr-only">
-                        Connected
+                        {"Connected"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center">
@@ -421,19 +421,19 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="sr-only">
-                        Completed
+                        {"Completed"}
                       </span>
                       <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                        query
+                        {"query"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        14:05
+                        {"14:05"}
                       </span>
                     </span>
                     <span className="@2xl:hidden flex gap-2 items-center min-h-5 text-muted-foreground text-xs">
                       <span className="flex-1 min-w-0 truncate">
-                        41 rows from events
+                        {"41 rows from events"}
                       </span>
                     </span>
                   </span>
@@ -446,22 +446,22 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="sr-only">
-                      Completed
+                      {"Completed"}
                     </span>
                     <span className="font-medium font-mono leading-5 text-foreground text-xs truncate">
-                      query
+                      {"query"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden text-muted-foreground text-xs">
                   <span className="flex gap-2 items-center">
                     <span className="flex-1 min-w-0 truncate">
-                      41 rows from events
+                      {"41 rows from events"}
                     </span>
                   </span>
                 </TableCell>
                 <TableCell className="@max-2xl:hidden tabular-nums text-end text-xs whitespace-nowrap">
-                  14:05
+                  {"14:05"}
                 </TableCell>
                 <TableCell className="text-end"></TableCell>
               </TableRow>
@@ -471,17 +471,17 @@ export function Pattern() {
         <p className="@max-2xl:flex-col @max-2xl:gap-1 @max-2xl:items-start flex flex-wrap gap-2 items-center mt-0.5 text-muted-foreground text-xs">
           <span>
             <span className="font-mono">
-              mcp.slack.com
+              {"mcp.slack.com"}
             </span>
-            received nothing
+            {"received nothing"}
           </span>
           <span className="@max-2xl:hidden bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span>
-            Timing lives in AI settings
+            {"Timing lives in AI settings"}
           </span>
           <span className="@max-2xl:hidden bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span>
-            Payloads open in the tool call view
+            {"Payloads open in the tool call view"}
           </span>
         </p>
       </div>

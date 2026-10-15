@@ -27,14 +27,14 @@ export function Pattern() {
             <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
               <div className="flex flex-col gap-px min-w-0">
                 <div className="font-semibold text-sm" id="environment-lanes-title">
-                  Environments
+                  {"Environments"}
                 </div>
                 <div className="tabular-nums text-muted-foreground text-xs">
-                  8 services across 3 environments
+                  {"8 services across 3 environments"}
                 </div>
               </div>
               <Button type="button" tabIndex="0" aria-expanded="false" aria-controls="environment-lanes-services-staging environment-lanes-services-sandbox environment-lanes-services-production" extracted="1">
-                Services
+                {"Services"}
                 <svg className="in-aria-expanded:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -47,10 +47,10 @@ export function Pattern() {
                     <div className="flex gap-3 items-center justify-between">
                       <div className="flex gap-2 items-center min-w-0">
                         <h3 className="font-medium min-w-0 text-foreground text-sm truncate">
-                          Staging
+                          {"Staging"}
                         </h3>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive-foreground text-xs transition-shadow">
-                          2 failed
+                          {"2 failed"}
                         </Badge>
                       </div>
                       <DropdownMenu>
@@ -65,11 +65,11 @@ export function Pattern() {
                     </div>
                     <p className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                       <span className="font-mono truncate">
-                        staging-us-east-1
+                        {"staging-us-east-1"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="truncate">
-                        On merge
+                        {"On merge"}
                       </span>
                     </p>
                   </div>
@@ -83,28 +83,28 @@ export function Pattern() {
                             <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
                           </svg>
                           <span className="truncate">
-                            webhook-dispatcher
+                            {"webhook-dispatcher"}
                           </span>
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Succeeded
+                        {"Succeeded"}
                       </Badge>
                     </div>
                     <div className="flex gap-2 items-baseline min-w-0">
                       <span className="font-semibold tabular-nums text-xl tracking-tight">
-                        v1.27.0
+                        {"v1.27.0"}
                       </span>
                       <span className="text-muted-foreground text-xs truncate">
-                        from v1.26.2
+                        {"from v1.26.2"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-w-0">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium font-mono gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        7c3e8b1
+                        {"7c3e8b1"}
                       </Badge>
                       <span className="min-w-0 text-muted-foreground text-sm truncate">
-                        Sign deliveries with the rotated whsec key
+                        {"Sign deliveries with the rotated whsec key"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-h-6 min-w-0">
@@ -117,7 +117,7 @@ export function Pattern() {
                         <span className="bg-success overflow-hidden relative rounded-full" aria-hidden="true"></span>
                       </span>
                       <span className="shrink-0 tabular-nums text-xs">
-                        6/6
+                        {"6/6"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
@@ -126,12 +126,12 @@ export function Pattern() {
                           <AvatarImage alt="" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="truncate">
-                          Omar Haddad
+                          {"Omar Haddad"}
                         </span>
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums whitespace-nowrap">
-                        1h ago
+                        {"1h ago"}
                       </span>
                     </div>
                   </div>
@@ -156,10 +156,10 @@ export function Pattern() {
                     <div className="flex gap-3 items-center justify-between">
                       <div className="flex gap-2 items-center min-w-0">
                         <h3 className="font-medium min-w-0 text-foreground text-sm truncate">
-                          Sandbox
+                          {"Sandbox"}
                         </h3>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Healthy
+                          {"Healthy"}
                         </Badge>
                       </div>
                       <DropdownMenu>
@@ -174,11 +174,11 @@ export function Pattern() {
                     </div>
                     <p className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                       <span className="font-mono truncate">
-                        staging-us-east-1
+                        {"staging-us-east-1"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="truncate">
-                        Partner testing
+                        {"Partner testing"}
                       </span>
                     </p>
                   </div>
@@ -194,28 +194,28 @@ export function Pattern() {
                             <path d="m3 7 2 2 4-4"></path>
                           </svg>
                           <span className="truncate">
-                            reconciliation
+                            {"reconciliation"}
                           </span>
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Succeeded
+                        {"Succeeded"}
                       </Badge>
                     </div>
                     <div className="flex gap-2 items-baseline min-w-0">
                       <span className="font-semibold tabular-nums text-xl tracking-tight">
-                        v2.7.1
+                        {"v2.7.1"}
                       </span>
                       <span className="text-muted-foreground text-xs truncate">
-                        from v2.7.0
+                        {"from v2.7.0"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-w-0">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium font-mono gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        f2a6c84
+                        {"f2a6c84"}
                       </Badge>
                       <span className="min-w-0 text-muted-foreground text-sm truncate">
-                        Parse CAMT.053 statements from EU banks
+                        {"Parse CAMT.053 statements from EU banks"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-h-6 min-w-0">
@@ -228,7 +228,7 @@ export function Pattern() {
                         <span className="bg-success overflow-hidden relative rounded-full" aria-hidden="true"></span>
                       </span>
                       <span className="shrink-0 tabular-nums text-xs">
-                        6/6
+                        {"6/6"}
                       </span>
                     </div>
                     <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
@@ -237,12 +237,12 @@ export function Pattern() {
                           <AvatarImage alt="" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="truncate">
-                          Sofia Romero
+                          {"Sofia Romero"}
                         </span>
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums whitespace-nowrap">
-                        4h ago
+                        {"4h ago"}
                       </span>
                     </div>
                   </div>
@@ -267,10 +267,10 @@ export function Pattern() {
                     <div className="flex gap-3 items-center justify-between">
                       <div className="flex gap-2 items-center min-w-0">
                         <h3 className="font-medium min-w-0 text-foreground text-sm truncate">
-                          Production
+                          {"Production"}
                         </h3>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Healthy
+                          {"Healthy"}
                         </Badge>
                       </div>
                       <DropdownMenu>
@@ -285,11 +285,11 @@ export function Pattern() {
                     </div>
                     <p className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                       <span className="font-mono truncate">
-                        prod-us-east-1
+                        {"prod-us-east-1"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="font-mono truncate">
-                        prod-eu-west-1
+                        {"prod-eu-west-1"}
                       </span>
                     </p>
                   </div>
@@ -302,28 +302,28 @@ export function Pattern() {
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                           <span className="truncate">
-                            fraud-scorer
+                            {"fraud-scorer"}
                           </span>
                         </span>
                       </span>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Waiting
+                        {"Waiting"}
                       </Badge>
                     </div>
                     <div className="flex gap-2 items-baseline min-w-0">
                       <span className="font-semibold tabular-nums text-xl tracking-tight">
-                        v3.9.0
+                        {"v3.9.0"}
                       </span>
                       <span className="text-muted-foreground text-xs truncate">
-                        from v3.8.2
+                        {"from v3.8.2"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-w-0">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium font-mono gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        d4a7c19
+                        {"d4a7c19"}
                       </Badge>
                       <span className="min-w-0 text-muted-foreground text-sm truncate">
-                        Serve fs-v7 features from the online store
+                        {"Serve fs-v7 features from the online store"}
                       </span>
                     </div>
                     <div className="flex gap-2 items-center min-h-6 min-w-0">
@@ -336,7 +336,7 @@ export function Pattern() {
                         <span className="bg-warning overflow-hidden relative rounded-full" aria-hidden="true"></span>
                       </span>
                       <Button className="aria-disabled:opacity-50 aria-disabled:pointer-events-none" type="button" tabIndex="0" aria-disabled="false">
-                        Promote
+                        {"Promote"}
                       </Button>
                     </div>
                     <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
@@ -345,12 +345,12 @@ export function Pattern() {
                           <AvatarImage alt="" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="truncate">
-                          Kenji Tan
+                          {"Kenji Tan"}
                         </span>
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="shrink-0 tabular-nums whitespace-nowrap">
-                        Waiting 0:21
+                        {"Waiting 0:21"}
                       </span>
                     </div>
                   </div>

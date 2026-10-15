@@ -16,16 +16,16 @@ export function Pattern() {
   return (
     <main className="bg-background flex items-start justify-center min-h-svh mx-auto text-foreground w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Labels
+        {"Labels"}
       </h1>
       <section className="flex flex-col gap-3 lg:px-8 max-w-4xl px-4 py-8 sm:px-6 w-full">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-0.5 min-w-0">
             <h2 className="font-semibold text-xl tracking-tight">
-              Labels
+              {"Labels"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Structure and organize project labels.
+              {"Structure and organize project labels."}
             </p>
           </div>
           <Button type="button" tabIndex="0" extracted="1">
@@ -33,7 +33,7 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add label
+            {"Add label"}
           </Button>
         </div>
         <div className="flex flex-col gap-2">
@@ -59,7 +59,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Customer impact
+                      {"Customer impact"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -103,7 +103,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Engineering
+                      {"Engineering"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -147,7 +147,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Release risk
+                      {"Release risk"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -191,7 +191,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Growth
+                      {"Growth"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -235,7 +235,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Documentation
+                      {"Documentation"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -279,7 +279,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Support
+                      {"Support"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -323,7 +323,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      UX polish
+                      {"UX polish"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -367,7 +367,7 @@ export function Pattern() {
                       <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
-                      Operations
+                      {"Operations"}
                     </span>
                   </ItemTitle>
                 </ItemContent>
@@ -392,9 +392,7 @@ export function Pattern() {
             </SortableItem>
           </Sortable>
           <div id="DndDescribedBy-0" style={{display: "none"}}>
-            To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+            {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
           </div>
           <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
         </div>

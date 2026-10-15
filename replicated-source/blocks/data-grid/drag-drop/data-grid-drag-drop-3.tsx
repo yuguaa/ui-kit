@@ -19,114 +19,117 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Dispatch layout data grid with drag-and-drop column ordering
+        {"Dispatch layout data grid with drag-and-drop column ordering"}
       </h1>
       <Frame className="bg-card! w-full" spacing="sm">
         <header className="flex flex-col gap-2 items-start px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:flex-wrap sm:items-center sm:justify-between text-foreground">
           <div className="flex flex-col gap-0.5 min-w-0 sm:flex-1">
             <div className="font-semibold text-sm">
-              Dispatch Layout
+              {"Dispatch Layout"}
             </div>
             <div className="flex flex-wrap gap-1.5 items-center text-muted-foreground text-xs">
-              Role review sequence
+              {"Role review sequence"}
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="whitespace-nowrap">
-                7 fields
+                {"7 fields"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="whitespace-nowrap">
-                8 waves
+                {"8 waves"}
               </span>
             </div>
           </div>
           <div className="flex flex-wrap gap-1 items-center sm:justify-end sm:shrink-0" role="toolbar" aria-label="Review layout actions">
             <Button type="button" tabIndex="0" aria-pressed="true" extracted="1">
-              Dispatch
+              {"Dispatch"}
             </Button>
             <Button type="button" tabIndex="0" aria-pressed="false">
-              Dock
+              {"Dock"}
             </Button>
             <Button type="button" tabIndex="0" aria-pressed="false">
-              Risk
+              {"Risk"}
             </Button>
             <Button type="button" disabled="" tabIndex="0" disabled>
               <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
-              Reset
+              {"Reset"}
             </Button>
           </div>
         </header>
         <FramePanel className="p-0">
           <div className="bg-muted/20 border-b border-border flex flex-col gap-2 px-3 py-2 sm:flex-row sm:items-center sm:justify-between">
             <span className="font-medium shrink-0 text-foreground text-xs">
-              Review Order
+              {"Review Order"}
             </span>
             <ol className="flex flex-wrap gap-1 min-w-0 sm:justify-end text-xs" aria-label="Current review order">
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  1
+                  {"1"}
                 </span>
                 <span>
-                  Wave
+                  {"Wave"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  2
+                  {"2"}
                 </span>
                 <span>
-                  Status
+                  {"Status"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  3
+                  {"3"}
                 </span>
                 <span>
-                  Dock
+                  {"Dock"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  4
+                  {"4"}
                 </span>
                 <span>
-                  Carrier
+                  {"Carrier"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  5
+                  {"5"}
                 </span>
                 <span>
-                  Orders
+                  {"Orders"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  6
+                  {"6"}
                 </span>
                 <span>
-                  Capacity
+                  {"Capacity"}
                 </span>
               </li>
               <li className="bg-card border border-border flex gap-1.5 h-6 items-center px-2 rounded-full text-muted-foreground">
                 <span className="font-medium tabular-nums text-foreground">
-                  7
+                  {"7"}
                 </span>
                 <span>
-                  Exceptions
+                  {"Exceptions"}
                 </span>
               </li>
             </ol>
           </div>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1204px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "10px", "--data-grid-fill": "10"}}>
+                    <DataGridProvider>
                     <DataGridTable style={{"--header-wave-size": "172", "--col-wave-size": "172", "--header-status-size": "172", "--col-status-size": "172", "--header-dock-size": "172", "--col-dock-size": "172", "--header-carrier-size": "172", "--col-carrier-size": "172", "--header-orders-size": "172", "--col-orders-size": "172", "--header-capacity-size": "172", "--col-capacity-size": "172", "--header-exceptions-size": "172", "--col-exceptions-size": "172", width: "calc(1204px + var(--data-grid-fill-size, 0px))"}}>
                       <colgroup>
                         <col style={{width: "calc(var(--col-wave-size) * 1px)"}} />
@@ -153,7 +156,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Wave
+                                {"Wave"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -171,7 +174,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Status
+                                {"Status"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -189,7 +192,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Dock
+                                {"Dock"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -207,7 +210,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Carrier
+                                {"Carrier"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -225,7 +228,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Orders
+                                {"Orders"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -243,7 +246,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Capacity
+                                {"Capacity"}
                               </div>
                               <span className="-end-2 absolute before:absolute before:bg-border before:end-2 before:inset-y-0 before:w-px cursor-col-resize flex h-full justify-center select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -261,7 +264,7 @@ export function Pattern() {
                                 </svg>
                               </Button>
                               <div className="grow">
-                                Exceptions
+                                {"Exceptions"}
                               </div>
                               <span className="absolute before:hidden cursor-col-resize end-0 flex h-full justify-end select-none top-0 touch-none w-5 z-10"></span>
                             </div>
@@ -269,30 +272,31 @@ export function Pattern() {
                           <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="WAV-4821">
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4821">
-                                WAV-4821
+                                {"WAV-4821"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Priority retail replenishment
+                                {"Priority retail replenishment"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              At Risk
+                              {"At Risk"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 4
+                                {"Dock 4"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Carrier check-in pending
+                                {"Carrier check-in pending"}
                               </span>
                             </div>
                           </td>
@@ -311,15 +315,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  Ryder
+                                  {"Ryder"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Same day
+                                    {"Same day"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    LTL
+                                    {"LTL"}
                                   </span>
                                 </div>
                               </div>
@@ -328,20 +332,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                128
+                                {"128"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                940 units
+                                {"940 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                91%
+                                {"91%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-warning h-full rounded-full" style={{width: "91%"}}></div>
@@ -355,7 +359,7 @@ export function Pattern() {
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
-                              5 open
+                              {"5 open"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -364,25 +368,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4822">
-                                WAV-4822
+                                {"WAV-4822"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Marketplace express
+                                {"Marketplace express"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Ready
+                              {"Ready"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 2
+                                {"Dock 2"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Ready to release
+                                {"Ready to release"}
                               </span>
                             </div>
                           </td>
@@ -400,15 +404,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  Shippo
+                                  {"Shippo"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    2 day
+                                    {"2 day"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Parcel
+                                    {"Parcel"}
                                   </span>
                                 </div>
                               </div>
@@ -417,20 +421,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                214
+                                {"214"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                512 units
+                                {"512 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                76%
+                                {"76%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-success h-full rounded-full" style={{width: "76%"}}></div>
@@ -443,7 +447,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Clear
+                              {"Clear"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -452,25 +456,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4823">
-                                WAV-4823
+                                {"WAV-4823"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Store transfer north
+                                {"Store transfer north"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              Locked
+                              {"Locked"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 7
+                                {"Dock 7"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Inventory locked
+                                {"Inventory locked"}
                               </span>
                             </div>
                           </td>
@@ -487,15 +491,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  Fleet 12
+                                  {"Fleet 12"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Milk run
+                                    {"Milk run"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Store Transfer
+                                    {"Store Transfer"}
                                   </span>
                                 </div>
                               </div>
@@ -504,20 +508,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                56
+                                {"56"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                1,240 units
+                                {"1,240 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                84%
+                                {"84%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-success h-full rounded-full" style={{width: "84%"}}></div>
@@ -531,7 +535,7 @@ export function Pattern() {
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
-                              1 open
+                              {"1 open"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -540,25 +544,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4824">
-                                WAV-4824
+                                {"WAV-4824"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Regional courier pickup
+                                {"Regional courier pickup"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Ready
+                              {"Ready"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 1
+                                {"Dock 1"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Courier staged
+                                {"Courier staged"}
                               </span>
                             </div>
                           </td>
@@ -575,15 +579,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  Quickline
+                                  {"Quickline"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Courier
+                                    {"Courier"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Courier
+                                    {"Courier"}
                                   </span>
                                 </div>
                               </div>
@@ -592,20 +596,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                88
+                                {"88"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                176 units
+                                {"176 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                63%
+                                {"63%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-success h-full rounded-full" style={{width: "63%"}}></div>
@@ -618,7 +622,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Clear
+                              {"Clear"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -627,25 +631,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4825">
-                                WAV-4825
+                                {"WAV-4825"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Wholesale pallets
+                                {"Wholesale pallets"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Hold
+                              {"Hold"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 5
+                                {"Dock 5"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Pallet audit open
+                                {"Pallet audit open"}
                               </span>
                             </div>
                           </td>
@@ -664,15 +668,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  ArcBest
+                                  {"ArcBest"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Freight
+                                    {"Freight"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    LTL
+                                    {"LTL"}
                                   </span>
                                 </div>
                               </div>
@@ -681,20 +685,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                34
+                                {"34"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                2,180 units
+                                {"2,180 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                98%
+                                {"98%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-destructive h-full rounded-full" style={{width: "98%"}}></div>
@@ -708,7 +712,7 @@ export function Pattern() {
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
-                              8 open
+                              {"8 open"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -717,25 +721,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4826">
-                                WAV-4826
+                                {"WAV-4826"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Subscription cartons
+                                {"Subscription cartons"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Ready
+                              {"Ready"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 3
+                                {"Dock 3"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Labels printed
+                                {"Labels printed"}
                               </span>
                             </div>
                           </td>
@@ -753,15 +757,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  DHL
+                                  {"DHL"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Ground
+                                    {"Ground"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Parcel
+                                    {"Parcel"}
                                   </span>
                                 </div>
                               </div>
@@ -770,20 +774,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                302
+                                {"302"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                604 units
+                                {"604 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                70%
+                                {"70%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-success h-full rounded-full" style={{width: "70%"}}></div>
@@ -796,7 +800,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Clear
+                              {"Clear"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -805,25 +809,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4827">
-                                WAV-4827
+                                {"WAV-4827"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Store transfer south
+                                {"Store transfer south"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              At Risk
+                              {"At Risk"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 6
+                                {"Dock 6"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Short pick review
+                                {"Short pick review"}
                               </span>
                             </div>
                           </td>
@@ -840,15 +844,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  Fleet 18
+                                  {"Fleet 18"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Milk run
+                                    {"Milk run"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Store Transfer
+                                    {"Store Transfer"}
                                   </span>
                                 </div>
                               </div>
@@ -857,20 +861,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                62
+                                {"62"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                1,348 units
+                                {"1,348 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                89%
+                                {"89%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-warning h-full rounded-full" style={{width: "89%"}}></div>
@@ -884,7 +888,7 @@ export function Pattern() {
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
-                              3 open
+                              {"3 open"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
@@ -893,25 +897,25 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-2" href="#" aria-label="View fulfillment wave WAV-4828">
-                                WAV-4828
+                                {"WAV-4828"}
                               </a>
                               <span className="text-muted-foreground text-xs truncate">
-                                Late parcel recovery
+                                {"Late parcel recovery"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Ready
+                              {"Ready"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="text-foreground text-sm truncate">
-                                Dock 2
+                                {"Dock 2"}
                               </span>
                               <span className="text-muted-foreground text-xs truncate">
-                                Recovery lane clear
+                                {"Recovery lane clear"}
                               </span>
                             </div>
                           </td>
@@ -929,15 +933,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="text-foreground text-sm truncate">
-                                  UPS
+                                  {"UPS"}
                                 </span>
                                 <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0 truncate">
-                                    Air saver
+                                    {"Air saver"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Parcel
+                                    {"Parcel"}
                                   </span>
                                 </div>
                               </div>
@@ -946,20 +950,20 @@ export function Pattern() {
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                119
+                                {"119"}
                                 <span className="ms-1 text-muted-foreground text-xs">
-                                  orders
+                                  {"orders"}
                                 </span>
                               </span>
                               <span className="tabular-nums text-muted-foreground text-xs">
-                                238 units
+                                {"238 units"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <div className="flex flex-col gap-1.5 min-w-0">
                               <span className="tabular-nums text-foreground text-sm">
-                                58%
+                                {"58%"}
                               </span>
                               <div className="bg-muted h-1.5 overflow-hidden rounded-full w-20" aria-hidden="true">
                                 <div className="bg-success h-full rounded-full" style={{width: "58%"}}></div>
@@ -972,28 +976,30 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
-                              Clear
+                              {"Clear"}
                             </span>
                           </td>
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                   <div id="_r_2_" style={{display: "none"}}>
-                    To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+                    {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
                   </div>
                   <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
         </FramePanel>
         <footer className="flex flex-row flex-wrap gap-2 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) text-muted-foreground text-xs">
           <span role="status">
-            3 waves need review, 17 exceptions open
+            {"3 waves need review, 17 exceptions open"}
           </span>
           <span className="flex gap-1.5 items-center">
             <svg className="lucide lucide-grip-vertical size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
@@ -1004,7 +1010,7 @@ export function Pattern() {
               <circle cx="15" cy="5" r="1"></circle>
               <circle cx="15" cy="19" r="1"></circle>
             </svg>
-            Column order drives handoff sequence
+            {"Column order drives handoff sequence"}
           </span>
         </footer>
       </Frame>

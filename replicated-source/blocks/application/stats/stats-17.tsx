@@ -31,7 +31,7 @@ export function Pattern() {
                 <div className="flex gap-2 items-center justify-between">
                   <div className="flex gap-1 items-center min-w-0">
                     <h3 className="font-medium text-sm truncate">
-                      Equities
+                      {"Equities"}
                     </h3>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Equities" id="base-ui-_r_1_" baseUiTooltipTrigger="" extracted="1">
@@ -45,23 +45,23 @@ export function Pattern() {
                   </div>
                   <TabsList className="shrink-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Week">
-                      1W
+                      {"1W"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_3_" compositeItemActive="" aria-label="Month" aria-controls="base-ui-_r_7_">
-                      1M
+                      {"1M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_" aria-label="Quarter">
-                      3M
+                      {"3M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_" aria-label="Year">
-                      1Y
+                      {"1Y"}
                     </TabsTrigger>
                   </TabsList>
                 </div>
                 <TabsContent className="flex flex-col gap-3" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_7_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_3_">
                   <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                     <span className="font-medium tabular-nums text-2xl tracking-tight">
-                      52%
+                      {"52%"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
@@ -69,11 +69,11 @@ export function Pattern() {
                         <path d="M12 19V5"></path>
                       </svg>
                       <span className="tabular-nums">
-                        +5.1%
+                        {"+5.1%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      vs last month
+                      {"vs last month"}
                     </span>
                   </div>
                   <div className="flex h-6 items-stretch justify-between w-full" aria-label="Equities allocation is 52%" role="img">
@@ -121,10 +121,10 @@ export function Pattern() {
                   <div className="@3xs:flex-row @3xs:gap-3 @3xs:items-center @3xs:justify-between flex flex-col gap-2 items-start mt-auto">
                     <p className="flex gap-1.5 items-baseline">
                       <span className="text-muted-foreground text-xs">
-                        Exposure
+                        {"Exposure"}
                       </span>
                       <span className="font-medium tabular-nums text-sm">
-                        $5.2M
+                        {"$5.2M"}
                       </span>
                     </p>
                     <div className="flex gap-2 items-center">
@@ -137,12 +137,12 @@ export function Pattern() {
                         </Avatar>
                         <Avatar size="sm">
                           <AvatarFallback>
-                            KP
+                            {"KP"}
                           </AvatarFallback>
                         </Avatar>
                       </AvatarGroup>
                       <span className="text-muted-foreground text-xs whitespace-nowrap">
-                        6 Managers
+                        {"6 Managers"}
                       </span>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export function Pattern() {
                 <div className="flex gap-2 items-center justify-between">
                   <div className="flex gap-1 items-center min-w-0">
                     <h3 className="font-medium text-sm truncate">
-                      Fixed Income
+                      {"Fixed Income"}
                     </h3>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Fixed Income" id="base-ui-_r_b_" baseUiTooltipTrigger="">
@@ -170,23 +170,23 @@ export function Pattern() {
                   </div>
                   <TabsList className="shrink-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_c_" aria-label="Week">
-                      1W
+                      {"1W"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_d_" compositeItemActive="" aria-label="Month" aria-controls="base-ui-_r_h_">
-                      1M
+                      {"1M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_e_" aria-label="Quarter">
-                      3M
+                      {"3M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_f_" aria-label="Year">
-                      1Y
+                      {"1Y"}
                     </TabsTrigger>
                   </TabsList>
                 </div>
                 <TabsContent className="flex flex-col gap-3" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_h_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_d_">
                   <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                     <span className="font-medium tabular-nums text-2xl tracking-tight">
-                      29%
+                      {"29%"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
@@ -194,11 +194,11 @@ export function Pattern() {
                         <path d="m19 12-7 7-7-7"></path>
                       </svg>
                       <span className="tabular-nums">
-                        -2.6%
+                        {"-2.6%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      vs last month
+                      {"vs last month"}
                     </span>
                   </div>
                   <div className="flex h-6 items-stretch justify-between w-full" aria-label="Fixed Income allocation is 29%" role="img">
@@ -246,10 +246,10 @@ export function Pattern() {
                   <div className="@3xs:flex-row @3xs:gap-3 @3xs:items-center @3xs:justify-between flex flex-col gap-2 items-start mt-auto">
                     <p className="flex gap-1.5 items-baseline">
                       <span className="text-muted-foreground text-xs">
-                        Exposure
+                        {"Exposure"}
                       </span>
                       <span className="font-medium tabular-nums text-sm">
-                        $2.9M
+                        {"$2.9M"}
                       </span>
                     </p>
                     <div className="flex gap-2 items-center">
@@ -262,7 +262,7 @@ export function Pattern() {
                         </Avatar>
                       </AvatarGroup>
                       <span className="text-muted-foreground text-xs whitespace-nowrap">
-                        2 Managers
+                        {"2 Managers"}
                       </span>
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export function Pattern() {
                 <div className="flex gap-2 items-center justify-between">
                   <div className="flex gap-1 items-center min-w-0">
                     <h3 className="font-medium text-sm truncate">
-                      Alternatives
+                      {"Alternatives"}
                     </h3>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="About Alternatives" id="base-ui-_r_l_" baseUiTooltipTrigger="">
@@ -290,23 +290,23 @@ export function Pattern() {
                   </div>
                   <TabsList className="shrink-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_m_" aria-label="Week">
-                      1W
+                      {"1W"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_n_" compositeItemActive="" aria-label="Month" aria-controls="base-ui-_r_r_">
-                      1M
+                      {"1M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_o_" aria-label="Quarter">
-                      3M
+                      {"3M"}
                     </TabsTrigger>
                     <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_p_" aria-label="Year">
-                      1Y
+                      {"1Y"}
                     </TabsTrigger>
                   </TabsList>
                 </div>
                 <TabsContent className="flex flex-col gap-3" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_r_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_n_">
                   <div className="flex flex-wrap gap-x-2 gap-y-1 items-center">
                     <span className="font-medium tabular-nums text-2xl tracking-tight">
-                      12%
+                      {"12%"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
@@ -314,11 +314,11 @@ export function Pattern() {
                         <path d="m19 12-7 7-7-7"></path>
                       </svg>
                       <span className="tabular-nums">
-                        -0.9%
+                        {"-0.9%"}
                       </span>
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      vs last month
+                      {"vs last month"}
                     </span>
                   </div>
                   <div className="flex h-6 items-stretch justify-between w-full" aria-label="Alternatives allocation is 12%" role="img">
@@ -366,10 +366,10 @@ export function Pattern() {
                   <div className="@3xs:flex-row @3xs:gap-3 @3xs:items-center @3xs:justify-between flex flex-col gap-2 items-start mt-auto">
                     <p className="flex gap-1.5 items-baseline">
                       <span className="text-muted-foreground text-xs">
-                        Exposure
+                        {"Exposure"}
                       </span>
                       <span className="font-medium tabular-nums text-sm">
-                        $1.2M
+                        {"$1.2M"}
                       </span>
                     </p>
                     <div className="flex gap-2 items-center">
@@ -385,7 +385,7 @@ export function Pattern() {
                         </Avatar>
                       </AvatarGroup>
                       <span className="text-muted-foreground text-xs whitespace-nowrap">
-                        5 Managers
+                        {"5 Managers"}
                       </span>
                     </div>
                   </div>

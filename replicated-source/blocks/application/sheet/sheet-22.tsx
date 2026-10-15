@@ -37,7 +37,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Connection detail
+        {"Connection detail"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -49,7 +49,7 @@ export function Pattern() {
             <path d="M10.5 16.5 13 14"></path>
             <path d="m18 3-4 4h6l-4 4"></path>
           </svg>
-          Open Connection
+          {"Open Connection"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -60,7 +60,7 @@ export function Pattern() {
         <div className="flex gap-2 items-center justify-between">
           <div className="flex gap-1 items-center min-w-0">
             <span className="font-mono min-w-0 text-muted-foreground text-xs truncate">
-              CON-101
+              {"CON-101"}
             </span>
             <Tooltip>
             <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy connection ID" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -81,7 +81,7 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-16 tabular-nums text-xs">
-                2 of 13
+                {"2 of 13"}
               </div>
               <Tooltip>
               <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next connection" id="base-ui-_r_b_" baseUiTooltipTrigger="">
@@ -130,24 +130,24 @@ export function Pattern() {
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex flex-wrap gap-2 items-center min-w-0">
               <SheetTitle className="min-w-0 truncate" id="base-ui-_r_h_">
-                ledger-primary
+                {"ledger-primary"}
               </SheetTitle>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Healthy
+                {"Healthy"}
               </Badge>
             </div>
             <SheetDescription id="base-ui-_r_i_">
               <span className="flex flex-wrap gap-1.5 items-center min-w-0">
                 <span>
-                  Neon Postgres
+                  {"Neon Postgres"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                  Production
+                  {"Production"}
                 </Badge>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  4 of 6 datasets linked
+                  {"4 of 6 datasets linked"}
                 </span>
               </span>
             </SheetDescription>
@@ -161,7 +161,7 @@ export function Pattern() {
               <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
               <path d="M8 16H3v5"></path>
             </svg>
-            Sync Now
+            {"Sync Now"}
           </Button>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
@@ -169,7 +169,7 @@ export function Pattern() {
               <line x1="10" x2="10" y1="15" y2="9"></line>
               <line x1="14" x2="14" y1="15" y2="9"></line>
             </svg>
-            Pause
+            {"Pause"}
           </Button>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-rows-3 lucide-rows3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Rows3Icon" tabler="IconLayoutRows" hugeicons="LayoutTable01Icon" phosphor="RowsIcon" remixicon="RiLayoutRowLine" aria-hidden="true">
@@ -177,7 +177,7 @@ export function Pattern() {
               <path d="M21 9H3"></path>
               <path d="M21 15H3"></path>
             </svg>
-            Preview
+            {"Preview"}
           </Button>
         </div>
       </div>
@@ -185,19 +185,19 @@ export function Pattern() {
         <div className="border-b px-5 shrink-0">
           <TabsList className="-mb-px gap-5 h-10! max-sm:gap-3 max-w-full no-scrollbar overflow-x-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_j_" compositeItemActive="" aria-controls="base-ui-_r_n_">
-              Overview
+              {"Overview"}
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_k_">
-              Datasets
+              {"Datasets"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                6
+                {"6"}
               </Badge>
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_l_">
-              Preview
+              {"Preview"}
             </TabsTrigger>
             <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_m_">
-              Settings
+              {"Settings"}
             </TabsTrigger>
           </TabsList>
         </div>
@@ -208,7 +208,7 @@ export function Pattern() {
                 <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                   <div className="flex gap-0.5 items-center min-w-0">
                     <div className="font-semibold text-sm truncate">
-                      Last 24 Hours
+                      {"Last 24 Hours"}
                     </div>
                     <Tooltip>
                     <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="94 runs, 861.5K rows synced" id="base-ui-_r_p_" baseUiTooltipTrigger="">
@@ -223,34 +223,22 @@ export function Pattern() {
                   <ul className="flex flex-wrap gap-x-3 gap-y-1 items-center text-muted-foreground text-xs">
                     <li className="flex gap-1.5 items-center">
                       <span className="bg-success rounded-full size-2" aria-hidden="true"></span>
-                      Succeeded
+                      {"Succeeded"}
                     </li>
                     <li className="flex gap-1.5 items-center">
                       <span className="bg-warning rounded-full size-2" aria-hidden="true"></span>
-                      Slow
+                      {"Slow"}
                     </li>
                     <li className="flex gap-1.5 items-center">
                       <span className="bg-destructive rounded-full size-2" aria-hidden="true"></span>
-                      Failed
+                      {"Failed"}
                     </li>
                   </ul>
                 </header>
                 <FramePanel>
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-36 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_r_">
-                    <style>{`
- [data-chart=chart-_r_r_] {
-  --color-succeeded: var(--success);
-  --color-partial: var(--warning);
-  --color-failed: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_r_] {
-  --color-succeeded: var(--success);
-  --color-partial: var(--warning);
-  --color-failed: var(--destructive);
-}
-`}</style>
+                    <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_r_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_r_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                         <div className="recharts-wrapper" width="557" height="144" style={{position: "relative", cursor: "default", width: "557px", height: "144px"}}>
@@ -768,42 +756,42 @@ export function Pattern() {
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="109.41666666666667" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="109.41666666666667" dy="0.71em">
-                                      18:00
+                                      {"18:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="196.74999999999997" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="196.74999999999997" dy="0.71em">
-                                      22:00
+                                      {"22:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="284.0833333333333" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="284.0833333333333" dy="0.71em">
-                                      02:00
+                                      {"02:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="371.4166666666667" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="371.4166666666667" dy="0.71em">
-                                      06:00
+                                      {"06:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="458.75" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="458.75" dy="0.71em">
-                                      10:00
+                                      {"10:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="524" stroke="none" x="544.078125" y="132" textAnchor="middle" fill="#666">
                                     <tspan x="544.078125" dy="0.71em">
-                                      Now
+                                      {"Now"}
                                     </tspan>
                                   </text>
                                 </g>
@@ -812,28 +800,28 @@ export function Pattern() {
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="114" stroke="none" x="23" y="118" textAnchor="end" fill="#666">
                                     <tspan x="23" dy="0.355em">
-                                      0
+                                      {"0"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="114" stroke="none" x="23" y="80" textAnchor="end" fill="#666">
                                     <tspan x="23" dy="0.355em">
-                                      15K
+                                      {"15K"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="114" stroke="none" x="23" y="42" textAnchor="end" fill="#666">
                                     <tspan x="23" dy="0.355em">
-                                      30K
+                                      {"30K"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                   <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="114" stroke="none" x="23" y="9" textAnchor="end" fill="#666">
                                     <tspan x="23" dy="0.355em">
-                                      45K
+                                      {"45K"}
                                     </tspan>
                                   </text>
                                 </g>
@@ -844,56 +832,57 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </FramePanel>
               </Frame>
               <section className="flex flex-col gap-2 min-w-0">
                 <div className="flex gap-3 items-center justify-between">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Sync
+                    {"Sync"}
                   </h3>
                 </div>
                 <dl className="gap-x-3 gap-y-1.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Frequency
+                      {"Frequency"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
-                      Every 15 minutes
+                      {"Every 15 minutes"}
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Last sync
-                    </dt>
-                    <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
-                      <span className="shrink-0 whitespace-nowrap">
-                        4m ago
-                      </span>
-                      <span className="text-muted-foreground truncate">
-                        Sep 29, 14:15 UTC
-                      </span>
-                    </dd>
-                  </div>
-                  <div className="contents">
-                    <dt className="text-muted-foreground">
-                      Next sync
+                      {"Last sync"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="shrink-0 whitespace-nowrap">
-                        in 10m
+                        {"4m ago"}
                       </span>
                       <span className="text-muted-foreground truncate">
-                        14:30 UTC
+                        {"Sep 29, 14:15 UTC"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Datasets
+                      {"Next sync"}
+                    </dt>
+                    <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
+                      <span className="shrink-0 whitespace-nowrap">
+                        {"in 10m"}
+                      </span>
+                      <span className="text-muted-foreground truncate">
+                        {"14:30 UTC"}
+                      </span>
+                    </dd>
+                  </div>
+                  <div className="contents">
+                    <dt className="text-muted-foreground">
+                      {"Datasets"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <button className="cursor-pointer hover:text-primary hover:underline underline-offset-2" type="button">
-                        4 of 6 linked
+                        {"4 of 6 linked"}
                       </button>
                     </dd>
                   </div>
@@ -902,20 +891,20 @@ export function Pattern() {
               <section className="flex flex-col gap-2 min-w-0">
                 <div className="flex gap-3 items-center justify-between">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Connection
+                    {"Connection"}
                   </h3>
                   <Button type="button" tabIndex="0">
                     <svg className="lucide lucide-key-round" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
                       <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
                       <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                     </svg>
-                    Rotate
+                    {"Rotate"}
                   </Button>
                 </div>
                 <dl className="gap-x-3 gap-y-1.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Integration
+                      {"Integration"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="flex gap-2 items-center min-w-0">
@@ -938,54 +927,54 @@ export function Pattern() {
                           </svg>
                         </IconTile>
                         <span className="truncate">
-                          Neon
+                          {"Neon"}
                         </span>
                         <span className="text-muted-foreground truncate">
-                          Postgres
+                          {"Postgres"}
                         </span>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Endpoint
+                      {"Endpoint"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="font-mono text-xs truncate">
-                        ep-quiet-harbor-41.us-east-1.aws.neon.tech
+                        {"ep-quiet-harbor-41.us-east-1.aws.neon.tech"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Environment
+                      {"Environment"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                        Production
+                        {"Production"}
                       </Badge>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Signs in as
+                      {"Signs in as"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="truncate">
-                        harbor_sync
+                        {"harbor_sync"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Password
+                      {"Password"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="font-mono text-xs">
-                        ••••a71c
+                        {"••••a71c"}
                       </span>
                       <span className="text-muted-foreground truncate">
-                        Sep 1 by JOB-290
+                        {"Sep 1 by JOB-290"}
                       </span>
                     </dd>
                   </div>
@@ -994,7 +983,7 @@ export function Pattern() {
               <section className="flex flex-col gap-2 min-w-0">
                 <div className="flex gap-3 items-center justify-between">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Recent Runs
+                    {"Recent Runs"}
                   </h3>
                 </div>
                 <ul className="-my-2 divide-border divide-y flex flex-col">
@@ -1008,19 +997,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          14:15
+                          {"14:15"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58494
+                          {"RUN-58494"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        7K rows
+                        {"7K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        41s
+                        {"41s"}
                       </span>
                     </div>
                   </li>
@@ -1034,19 +1023,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          14:00
+                          {"14:00"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58493
+                          {"RUN-58493"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        9.5K rows
+                        {"9.5K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        32s
+                        {"32s"}
                       </span>
                     </div>
                   </li>
@@ -1060,19 +1049,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          13:45
+                          {"13:45"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58492
+                          {"RUN-58492"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        11.8K rows
+                        {"11.8K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        40s
+                        {"40s"}
                       </span>
                     </div>
                   </li>
@@ -1086,19 +1075,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          13:30
+                          {"13:30"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58491
+                          {"RUN-58491"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        9.3K rows
+                        {"9.3K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        33s
+                        {"33s"}
                       </span>
                     </div>
                   </li>
@@ -1112,19 +1101,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          13:15
+                          {"13:15"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58490
+                          {"RUN-58490"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        7.1K rows
+                        {"7.1K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        37s
+                        {"37s"}
                       </span>
                     </div>
                   </li>
@@ -1138,19 +1127,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          13:00
+                          {"13:00"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58489
+                          {"RUN-58489"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        9.9K rows
+                        {"9.9K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        37s
+                        {"37s"}
                       </span>
                     </div>
                   </li>
@@ -1164,19 +1153,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          12:45
+                          {"12:45"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58488
+                          {"RUN-58488"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        9.7K rows
+                        {"9.7K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        34s
+                        {"34s"}
                       </span>
                     </div>
                   </li>
@@ -1190,19 +1179,19 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                       <span className="flex gap-2 items-center min-w-0 text-sm">
                         <span className="font-medium tabular-nums">
-                          12:30
+                          {"12:30"}
                         </span>
                         <span className="font-mono text-muted-foreground text-xs truncate">
-                          RUN-58487
+                          {"RUN-58487"}
                         </span>
                       </span>
                     </div>
                     <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-xs">
                       <span className="font-medium text-foreground">
-                        9.3K rows
+                        {"9.3K rows"}
                       </span>
                       <span className="text-muted-foreground">
-                        35s
+                        {"35s"}
                       </span>
                     </div>
                   </li>
@@ -1211,13 +1200,13 @@ export function Pattern() {
               <section className="flex flex-col gap-2 min-w-0">
                 <div className="flex gap-3 items-center justify-between">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Ownership
+                    {"Ownership"}
                   </h3>
                 </div>
                 <dl className="gap-x-3 gap-y-1.5 grid grid-cols-[7rem_minmax(0,1fr)] text-sm">
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Owner
+                      {"Owner"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span className="flex gap-2 items-center min-w-0">
@@ -1225,27 +1214,27 @@ export function Pattern() {
                           <AvatarImage alt="" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="truncate">
-                          Alex Johnson
+                          {"Alex Johnson"}
                         </span>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Failure alerts
+                      {"Failure alerts"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
                       <span>
-                        #data-platform
+                        {"#data-platform"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground">
-                      Created
+                      {"Created"}
                     </dt>
                     <dd className="flex gap-1.5 items-center leading-5 min-w-0 tabular-nums">
-                      Nov 4
+                      {"Nov 4"}
                     </dd>
                   </div>
                 </dl>

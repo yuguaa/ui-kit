@@ -26,11 +26,11 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Workspace invite dialog
+        {"Workspace invite dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
-          Open invite dialog
+          {"Open invite dialog"}
         </Button>
       </div>
     </main>
@@ -39,35 +39,35 @@ export function Pattern() {
       <DialogHeader>
         <div className="flex gap-2 items-center">
           <DialogTitle id="base-ui-_r_2_">
-            Invite teammates
+            {"Invite teammates"}
           </DialogTitle>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-            Workspace access
+            {"Workspace access"}
           </Badge>
         </div>
         <DialogDescription id="base-ui-_r_3_">
-          Add emails and choose the role they start with.
+          {"Add emails and choose the role they start with."}
         </DialogDescription>
       </DialogHeader>
       <FieldGroup className="gap-4 py-1">
         <Field role="group" data-orientation="vertical">
           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="workspace-invite-emails">
-            Invite by email
+            {"Invite by email"}
           </FieldLabel>
           <Input id="workspace-invite-emails" placeholder="name@company.com" autoComplete="off" value=""></Input>
         </Field>
         <Field role="group" data-orientation="vertical">
           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none">
-            Invite as
+            {"Invite as"}
           </FieldLabel>
           <Select>
           <SelectTrigger className="w-full" type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
             <SelectValue>
-              Core member
+              {"Core member"}
             </SelectValue>
             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
-              ▼
+              {"▼"}
             </svg>
           </SelectTrigger>
           </Select>
@@ -76,7 +76,7 @@ export function Pattern() {
       </FieldGroup>
       <DialogFooter>
         <Button type="button" tabIndex="0">
-          Cancel
+          {"Cancel"}
         </Button>
         <Button type="button" disabled="" tabIndex="0" disabled>
           <svg className="lucide lucide-user-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserPlusIcon" tabler="IconUserPlus" hugeicons="UserAdd01Icon" phosphor="UserPlusIcon" remixicon="RiUserAddLine" data-icon="inline-start" aria-hidden="true">
@@ -85,7 +85,7 @@ export function Pattern() {
             <line x1="19" x2="19" y1="8" y2="14"></line>
             <line x1="22" x2="16" y1="11" y2="11"></line>
           </svg>
-          Send invite
+          {"Send invite"}
         </Button>
       </DialogFooter>
       <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
@@ -94,7 +94,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

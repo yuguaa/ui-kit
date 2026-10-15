@@ -19,30 +19,30 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center md:p-12 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Integration settings
+        {"Integration settings"}
       </h1>
       <div className="flex flex-col gap-5 max-w-4xl w-full">
         <section className="flex flex-col gap-3">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div className="flex flex-col gap-1">
               <h3 className="font-semibold text-sm">
-                Connected Apps
+                {"Connected Apps"}
               </h3>
               <p className="text-muted-foreground text-sm">
-                Manage source systems for automation, scheduling, support, and AI workflows.
+                {"Manage source systems for automation, scheduling, support, and AI workflows."}
               </p>
             </div>
             <Button className="sm:w-auto w-full" type="button" tabIndex="0" extracted="1">
-              Build Connector
+              {"Build Connector"}
             </Button>
           </div>
           <Frame>
             <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py) sr-only">
               <div className="font-semibold text-sm">
-                Integration Apps
+                {"Integration Apps"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Available workspace apps and configuration actions.
+                {"Available workspace apps and configuration actions."}
               </div>
             </header>
             <FramePanel className="p-0!">
@@ -73,19 +73,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Supabase
+                          {"Supabase"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Connected
+                          {"Connected"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Sync workspace records, owners, and lifecycle events from your product database.
+                        {"Sync workspace records, owners, and lifecycle events from your product database."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Configure
+                        {"Configure"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -110,19 +110,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Slack
+                          {"Slack"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Connected
+                          {"Connected"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Route approvals, launch notes, and incident updates into selected team channels.
+                        {"Route approvals, launch notes, and incident updates into selected team channels."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Configure
+                        {"Configure"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -142,19 +142,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Stripe
+                          {"Stripe"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          Connected
+                          {"Connected"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Mirror subscription, invoice, and renewal signals into account reviews.
+                        {"Mirror subscription, invoice, and renewal signals into account reviews."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Configure
+                        {"Configure"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -188,19 +188,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Google Calendar
+                          {"Google Calendar"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                          Available
+                          {"Available"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Create planning reviews from milestones, customer dates, and release windows.
+                        {"Create planning reviews from milestones, customer dates, and release windows."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Install
+                        {"Install"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -227,19 +227,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Resend
+                          {"Resend"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                          Available
+                          {"Available"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Send branded transactional updates when workflows change status or ownership.
+                        {"Send branded transactional updates when workflows change status or ownership."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Install
+                        {"Install"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -266,19 +266,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Cursor
+                          {"Cursor"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Preview
+                          {"Preview"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Attach implementation context and AI coding notes to active product tasks.
+                        {"Attach implementation context and AI coding notes to active product tasks."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Configure
+                        {"Configure"}
                       </Button>
                     </ItemActions>
                   </Item>
@@ -298,19 +298,19 @@ export function Pattern() {
                     <ItemContent className="gap-0 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Claude
+                          {"Claude"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                          Preview
+                          {"Preview"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription className="line-clamp-1">
-                        Draft summaries, support notes, and rollout briefs from approved workspace data.
+                        {"Draft summaries, support notes, and rollout briefs from approved workspace data."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
                       <Button type="button" tabIndex="0">
-                        Install
+                        {"Install"}
                       </Button>
                     </ItemActions>
                   </Item>

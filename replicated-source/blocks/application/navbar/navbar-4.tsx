@@ -34,7 +34,7 @@ export function Pattern() {
             </ItemMedia>
           </Item>
           <span className="font-semibold hidden sm:inline text-sm">
-            NeUI Admin
+            {"NeUI Admin"}
           </span>
         </div>
         <div className="flex flex-1 items-center justify-center">
@@ -44,18 +44,18 @@ export function Pattern() {
               <circle cx="11" cy="11" r="8"></circle>
             </svg>
             <span className="hidden md:inline">
-              Search or jump to...
+              {"Search or jump to..."}
             </span>
             <Kbd className="ml-auto">
-              ⌘K
+              {"⌘K"}
             </Kbd>
           </Button>
           <DialogHeader className="sr-only">
             <DialogTitle id="base-ui-_r_1_">
-              Search
+              {"Search"}
             </DialogTitle>
             <DialogDescription id="base-ui-_r_2_">
-              Search or jump to anything in your workspace.
+              {"Search or jump to anything in your workspace."}
             </DialogDescription>
           </DialogHeader>
         </div>
@@ -66,7 +66,7 @@ export function Pattern() {
               <path d="M12 5v14"></path>
             </svg>
             <span>
-              New
+              {"New"}
             </span>
           </Button>
           <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>

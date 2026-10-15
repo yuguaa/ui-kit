@@ -18,33 +18,14 @@ export function Pattern() {
   return (
     <div className="flex items-center justify-center md:p-10 min-h-svh p-6 w-full">
       <Frame className="@container [--impressions-current:var(--impressions-accent,var(--color-indigo-500))] dark:[--impressions-current:var(--impressions-accent,var(--color-indigo-400))] max-w-5xl min-w-0 w-full" spacing="default" chart="chart-r0">
-        <style>{`
- [data-chart=chart-r0] {
-  --color-search: var(--color-sky-400);
-  --color-social: var(--color-violet-400);
-  --color-display: var(--color-pink-400);
-  --color-video: var(--color-amber-400);
-  --color-current: var(--impressions-current);
-  --color-prior: var(--color-zinc-400);
-}
-
-
-.dark [data-chart=chart-r0] {
-  --color-search: var(--color-sky-300);
-  --color-social: var(--color-violet-300);
-  --color-display: var(--color-pink-300);
-  --color-video: var(--color-amber-300);
-  --color-current: var(--impressions-current);
-  --color-prior: var(--color-zinc-500);
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-r0] {\n  --color-search: var(--color-sky-400);\n  --color-social: var(--color-violet-400);\n  --color-display: var(--color-pink-400);\n  --color-video: var(--color-amber-400);\n  --color-current: var(--impressions-current);\n  --color-prior: var(--color-zinc-400);\n}\n\n\n.dark [data-chart=chart-r0] {\n  --color-search: var(--color-sky-300);\n  --color-social: var(--color-violet-300);\n  --color-display: var(--color-pink-300);\n  --color-video: var(--color-amber-300);\n  --color-current: var(--impressions-current);\n  --color-prior: var(--color-zinc-500);\n}\n" }} />
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="font-semibold text-sm">
-              Campaign Impressions
+              {"Campaign Impressions"}
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Delivery by channel through Oct 11
+              {"Delivery by channel through Oct 11"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
@@ -57,7 +38,7 @@ export function Pattern() {
                 <path d="M3 10h18"></path>
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Last 30 days
+                {"Last 30 days"}
               </span>
               <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -71,10 +52,10 @@ export function Pattern() {
                 <path d="M12 3v18"></path>
               </svg>
               <span className="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">
-                Channels
+                {"Channels"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] font-normal tabular-nums text-muted-foreground">
-                4/4
+                {"4/4"}
               </span>
               <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -102,11 +83,11 @@ export function Pattern() {
           <dl className="@3xl:grid-cols-4 grid grid-cols-2">
             <div className="@3xl:not-first:border-s @3xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-2 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="text-muted-foreground text-sm">
-                Impressions
+                {"Impressions"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  14.3M
+                  {"14.3M"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 bg-success/10 border border-none border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
@@ -115,16 +96,16 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="sr-only">
-                      Up
+                      {"Up"}
                     </span>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      16.2%
+                      {"16.2%"}
                     </span>
                   </Badge>
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    vs 12.3M
+                    {"vs 12.3M"}
                     <span className="@max-sm:hidden">
-                      prior
+                      {"prior"}
                     </span>
                   </span>
                 </span>
@@ -132,46 +113,46 @@ export function Pattern() {
             </div>
             <div className="@3xl:not-first:border-s @3xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-2 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="text-muted-foreground text-sm">
-                Daily Average
+                {"Daily Average"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  477K
+                  {"477K"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    vs 410K prior
+                    {"vs 410K prior"}
                   </span>
                 </span>
               </dd>
             </div>
             <div className="@3xl:not-first:border-s @3xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-2 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="text-muted-foreground text-sm">
-                Peak
+                {"Peak"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  1.5M
+                  {"1.5M"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    Oct 6 to Oct 8
+                    {"Oct 6 to Oct 8"}
                   </span>
                 </span>
               </dd>
             </div>
             <div className="@3xl:not-first:border-s @3xl:nth-[n+3]:border-t-0 even:border-s flex flex-col gap-2 min-w-0 nth-[n+3]:border-t px-(--frame-panel-px) py-(--frame-panel-py)">
               <dt className="text-muted-foreground text-sm">
-                Top Channel
+                {"Top Channel"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  38%
+                  {"38%"}
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="bg-(--color-social) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">
-                    Social, 5.5M
+                    {"Social, 5.5M"}
                   </span>
                 </span>
               </dd>
@@ -188,7 +169,7 @@ export function Pattern() {
                     <circle cx="9" cy="4" r="2.5" fill="var(--color-current)"></circle>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    This period
+                    {"This period"}
                   </span>
                 </li>
                 <li className="flex gap-1.5 h-4 items-center text-muted-foreground">
@@ -197,33 +178,15 @@ export function Pattern() {
                     <circle cx="9" cy="4" r="2.5" fill="var(--color-prior)"></circle>
                   </svg>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Prior period
+                    {"Prior period"}
                   </span>
                 </li>
               </ul>
             </div>
             <div className="h-80 w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-80 justify-center text-xs w-full" data-chart="chart-_r_o_">
-                <style>{`
- [data-chart=chart-_r_o_] {
-  --color-search: var(--color-sky-400);
-  --color-social: var(--color-violet-400);
-  --color-display: var(--color-pink-400);
-  --color-video: var(--color-amber-400);
-  --color-current: var(--impressions-current);
-  --color-prior: var(--color-zinc-400);
-}
-
-
-.dark [data-chart=chart-_r_o_] {
-  --color-search: var(--color-sky-300);
-  --color-social: var(--color-violet-300);
-  --color-display: var(--color-pink-300);
-  --color-video: var(--color-amber-300);
-  --color-current: var(--impressions-current);
-  --color-prior: var(--color-zinc-500);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_o_] {\n  --color-search: var(--color-sky-400);\n  --color-social: var(--color-violet-400);\n  --color-display: var(--color-pink-400);\n  --color-video: var(--color-amber-400);\n  --color-current: var(--impressions-current);\n  --color-prior: var(--color-zinc-400);\n}\n\n\n.dark [data-chart=chart-_r_o_] {\n  --color-search: var(--color-sky-300);\n  --color-social: var(--color-violet-300);\n  --color-display: var(--color-pink-300);\n  --color-video: var(--color-amber-300);\n  --color-current: var(--impressions-current);\n  --color-prior: var(--color-zinc-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="982" height="320" style={{position: "relative", cursor: "default", width: "982px", height: "320px"}}>
@@ -363,7 +326,7 @@ export function Pattern() {
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="147.33333333333331" y="308" dy="0.71em" textAnchor="middle">
-                                Sep 15
+                                {"Sep 15"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -371,7 +334,7 @@ export function Pattern() {
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="354" y="308" dy="0.71em" textAnchor="middle">
-                                Sep 21
+                                {"Sep 21"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -379,7 +342,7 @@ export function Pattern() {
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="560.6666666666666" y="308" dy="0.71em" textAnchor="middle">
-                                Sep 27
+                                {"Sep 27"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -387,7 +350,7 @@ export function Pattern() {
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="767.3333333333333" y="308" dy="0.71em" textAnchor="middle">
-                                Oct 3
+                                {"Oct 3"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
@@ -395,7 +358,7 @@ export function Pattern() {
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="974" y="308" dy="0.71em" textAnchor="end">
-                                Oct 9
+                                {"Oct 9"}
                               </text>
                             </g>
                           </g>
@@ -403,28 +366,28 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="44" orientation="left" height="278" stroke="none" x="30" y="290" textAnchor="end" fill="#666">
                                 <tspan x="30" dy="0.355em">
-                                  1.0M
+                                  {"1.0M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="44" orientation="left" height="278" stroke="none" x="30" y="197.33333333333334" textAnchor="end" fill="#666">
                                 <tspan x="30" dy="0.355em">
-                                  1.2M
+                                  {"1.2M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="44" orientation="left" height="278" stroke="none" x="30" y="104.66666666666667" textAnchor="end" fill="#666">
                                 <tspan x="30" dy="0.355em">
-                                  1.4M
+                                  {"1.4M"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="44" orientation="left" height="278" stroke="none" x="30" y="12" textAnchor="end" fill="#666">
                                 <tspan x="30" dy="0.355em">
-                                  1.6M
+                                  {"1.6M"}
                                 </tspan>
                               </text>
                             </g>
@@ -435,38 +398,39 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              Sep 12 to Sep 14: 1.2M impressions
+              {"Sep 12 to Sep 14: 1.2M impressions"}
             </li>
             <li>
-              Sep 15 to Sep 17: 1.4M impressions
+              {"Sep 15 to Sep 17: 1.4M impressions"}
             </li>
             <li>
-              Sep 18 to Sep 20: 1.3M impressions
+              {"Sep 18 to Sep 20: 1.3M impressions"}
             </li>
             <li>
-              Sep 21 to Sep 23: 1.5M impressions
+              {"Sep 21 to Sep 23: 1.5M impressions"}
             </li>
             <li>
-              Sep 24 to Sep 26: 1.5M impressions
+              {"Sep 24 to Sep 26: 1.5M impressions"}
             </li>
             <li>
-              Sep 27 to Sep 29: 1.4M impressions
+              {"Sep 27 to Sep 29: 1.4M impressions"}
             </li>
             <li>
-              Sep 30 to Oct 2: 1.5M impressions
+              {"Sep 30 to Oct 2: 1.5M impressions"}
             </li>
             <li>
-              Oct 3 to Oct 5: 1.5M impressions
+              {"Oct 3 to Oct 5: 1.5M impressions"}
             </li>
             <li>
-              Oct 6 to Oct 8: 1.5M impressions
+              {"Oct 6 to Oct 8: 1.5M impressions"}
             </li>
             <li>
-              Oct 9 to Oct 11: 1.4M impressions
+              {"Oct 9 to Oct 11: 1.4M impressions"}
             </li>
           </ul>
         </FramePanel>
@@ -474,16 +438,16 @@ export function Pattern() {
           <span className="flex gap-2 h-4 items-center">
             <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Updated hourly
+              {"Updated hourly"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-              4 of 4 channels
+              {"4 of 4 channels"}
             </span>
           </span>
           <span className="flex h-4 items-center tabular-nums">
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Sep 12 to Oct 11 vs Aug 13 to Sep 11
+              {"Sep 12 to Oct 11 vs Aug 13 to Sep 11"}
             </span>
           </span>
         </footer>

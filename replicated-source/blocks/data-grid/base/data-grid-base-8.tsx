@@ -50,22 +50,22 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-4 pt-8 sm:p-8 sm:pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Rate Card
+        {"Rate Card"}
       </h1>
       <Frame className="w-full" spacing="default">
         <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Rate Card
+              {"Rate Card"}
             </div>
             <div className="text-muted-foreground text-xs">
               <span className="gap-1.5 inline-flex items-center whitespace-nowrap">
                 <span>
-                  16 SKUs
+                  {"16 SKUs"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  24.6% below list
+                  {"24.6% below list"}
                 </span>
               </span>
             </div>
@@ -75,7 +75,7 @@ export function Pattern() {
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Add rate
+            {"Add rate"}
           </Button>
         </header>
         <FramePanel className="p-0">
@@ -98,7 +98,7 @@ export function Pattern() {
                   <path d="M9 19h6"></path>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Filter
+                  {"Filter"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -111,7 +111,7 @@ export function Pattern() {
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Settings
+                  {"Settings"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -119,10 +119,13 @@ export function Pattern() {
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_7_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport>
+                    <DataGridProvider>
                     <DataGridTable>
                       <colgroup>
                         <col style={{width: "236px"}} />
@@ -142,7 +145,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
-                                Product
+                                {"Product"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -155,7 +158,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
-                                List
+                                {"List"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -168,7 +171,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_l_" aria-expanded="false">
-                                Discount
+                                {"Discount"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -181,7 +184,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-medium group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_q_" aria-expanded="false">
-                                Net / unit
+                                {"Net / unit"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -194,7 +197,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_v_" aria-expanded="false">
-                                Commit
+                                {"Commit"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -207,7 +210,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_14_" aria-expanded="false">
-                                Usage
+                                {"Usage"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -220,7 +223,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-medium group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_19_" aria-expanded="false">
-                                Monthly
+                                {"Monthly"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -233,7 +236,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1e_" aria-expanded="false">
-                                Renews
+                                {"Renews"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -246,7 +249,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1j_" aria-expanded="false">
-                                Status
+                                {"Status"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -258,6 +261,7 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-right" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" data-pinned="end" data-outer-pinned-col="end" data-last-col="end" style={{width: "44px", top: "0px"}}></th>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 group/rate-row hover:bg-muted/40" data-row-id="rate-1">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start">
@@ -282,23 +286,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Standard Compute" id="base-ui-_r_1m_">
-                                Standard Compute
+                                {"Standard Compute"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.0500
+                            {"$0.0500"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              28.0%
+                              {"28.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0360 per vCPU-hr, open breakdown" id="base-ui-_r_1o_">
-                              $0.0360
+                              {"$0.0360"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -313,7 +317,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              186,420
+                              {"186,420"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -324,11 +328,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "92.0019%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-right w-10">
-                                92%
+                                {"92%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -336,18 +340,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Standard Compute: $6,711.12" id="base-ui-_r_1u_">
-                              $6,711.12
+                              {"$6,711.12"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Mar 1, 2028
+                              {"Mar 1, 2028"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -385,23 +389,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Memory Optimized" id="base-ui-_r_25_">
-                                Memory Optimized
+                                {"Memory Optimized"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.0625
+                            {"$0.0625"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              28.0%
+                              {"28.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0486 per vCPU-hr, open breakdown" id="base-ui-_r_27_">
-                              $0.0486
+                              {"$0.0486"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -416,7 +420,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              64,000
+                              {"64,000"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -427,11 +431,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "91%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-right w-10">
-                                91%
+                                {"91%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -439,18 +443,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Memory Optimized: $3,110.40" id="base-ui-_r_2d_">
-                              $3,110.40
+                              {"$3,110.40"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Jun 15, 2027
+                              {"Jun 15, 2027"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -488,23 +492,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for GPU L4" id="base-ui-_r_2k_">
-                                GPU L4
+                                {"GPU L4"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.8000
+                            {"$0.8000"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              19.3%
+                              {"19.3%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.6460 per GPU-hr, open breakdown" id="base-ui-_r_2m_">
-                              $0.6460
+                              {"$0.6460"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -519,7 +523,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              3,612
+                              {"3,612"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -530,11 +534,11 @@ export function Pattern() {
                                   <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-destructive text-right w-10">
-                                108%
+                                {"108%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -542,18 +546,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for GPU L4: $2,333.35" id="base-ui-_r_2s_">
-                              $2,333.35
+                              {"$2,333.35"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Jan 31, 2027
+                              {"Jan 31, 2027"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -580,23 +584,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Block Storage SSD" id="base-ui-_r_33_">
-                                Block Storage SSD
+                                {"Block Storage SSD"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.1000
+                            {"$0.1000"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              23.5%
+                              {"23.5%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0765 per GB-mo, open breakdown" id="base-ui-_r_35_">
-                              $0.0765
+                              {"$0.0765"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -611,7 +615,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              48,000
+                              {"48,000"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -622,11 +626,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "96%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-right w-10">
-                                96%
+                                {"96%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -634,18 +638,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Block Storage SSD: $3,672.00" id="base-ui-_r_3b_">
-                              $3,672.00
+                              {"$3,672.00"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Mar 1, 2028
+                              {"Mar 1, 2028"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -672,23 +676,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Object Storage" id="base-ui-_r_3i_">
-                                Object Storage
+                                {"Object Storage"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.0250
+                            {"$0.0250"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              32.0%
+                              {"32.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0170 per GB-mo, open breakdown" id="base-ui-_r_3k_">
-                              $0.0170
+                              {"$0.0170"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -703,7 +707,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              418,600
+                              {"418,600"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -714,11 +718,11 @@ export function Pattern() {
                                   <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-destructive text-right w-10">
-                                108%
+                                {"108%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -726,18 +730,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Object Storage: $7,116.20" id="base-ui-_r_3q_">
-                              $7,116.20
+                              {"$7,116.20"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Mar 1, 2028
+                              {"Mar 1, 2028"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -766,23 +770,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Internet Egress" id="base-ui-_r_41_">
-                                Internet Egress
+                                {"Internet Egress"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.0900
+                            {"$0.0900"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              25.0%
+                              {"25.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0756 per GB, open breakdown" id="base-ui-_r_43_">
-                              $0.0756
+                              {"$0.0756"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -797,7 +801,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              36,480
+                              {"36,480"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -808,11 +812,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58.0044%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-right text-warning w-10">
-                                58%
+                                {"58%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -820,18 +824,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Internet Egress: $2,757.89" id="base-ui-_r_49_">
-                              $2,757.89
+                              {"$2,757.89"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Oct 15, 2026
+                              {"Oct 15, 2026"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              Expiring
+                              {"Expiring"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -858,23 +862,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Managed Postgres" id="base-ui-_r_4g_">
-                                Managed Postgres
+                                {"Managed Postgres"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.1250
+                            {"$0.1250"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              28.0%
+                              {"28.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0972 per vCPU-hr, open breakdown" id="base-ui-_r_4i_">
-                              $0.0972
+                              {"$0.0972"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -889,7 +893,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              21,900
+                              {"21,900"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -900,11 +904,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "90%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-right w-10">
-                                90%
+                                {"90%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -912,18 +916,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Managed Postgres: $2,128.68" id="base-ui-_r_4o_">
-                              $2,128.68
+                              {"$2,128.68"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Jun 15, 2027
+                              {"Jun 15, 2027"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -950,23 +954,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Redis Cache" id="base-ui-_r_4v_">
-                                Redis Cache
+                                {"Redis Cache"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.0200
+                            {"$0.0200"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              25.0%
+                              {"25.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.0150 per GB-hr, open breakdown" id="base-ui-_r_51_">
-                              $0.0150
+                              {"$0.0150"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -981,7 +985,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              146,000
+                              {"146,000"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -992,11 +996,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "60%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-muted-foreground text-right w-10">
-                                60%
+                                {"60%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -1004,18 +1008,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Redis Cache: $2,190.00" id="base-ui-_r_57_">
-                              $2,190.00
+                              {"$2,190.00"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Feb 28, 2027
+                              {"Feb 28, 2027"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -1043,23 +1047,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Inference Tokens" id="base-ui-_r_5e_">
-                                Inference Tokens
+                                {"Inference Tokens"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $3.0000
+                            {"$3.0000"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              23.5%
+                              {"23.5%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $2.2950 per 1M tokens, open breakdown" id="base-ui-_r_5g_">
-                              $2.2950
+                              {"$2.2950"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -1074,7 +1078,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              1,850
+                              {"1,850"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -1085,11 +1089,11 @@ export function Pattern() {
                                   <ProgressIndicator complete="" style={{insetInlineStart: "0px", height: "inherit", width: "100%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-destructive text-right w-10">
-                                116%
+                                {"116%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -1097,18 +1101,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Inference Tokens: $4,245.75" id="base-ui-_r_5m_">
-                              $4,245.75
+                              {"$4,245.75"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Jan 31, 2027
+                              {"Jan 31, 2027"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Active
+                              {"Active"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -1133,23 +1137,23 @@ export function Pattern() {
                               </IconTile>
                               <HoverCard>
                               <HoverCardTrigger className="cursor-pointer font-medium hover:text-primary hover:underline text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Price breakdown for Function Calls" id="base-ui-_r_5t_">
-                                Function Calls
+                                {"Function Calls"}
                               </HoverCardTrigger>
                               </HoverCard>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
-                            $0.2000
+                            {"$0.2000"}
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <span>
-                              5.0%
+                              {"5.0%"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help decoration-dotted decoration-muted-foreground/50 font-medium hover:decoration-foreground text-foreground underline underline-offset-4" type="button" aria-label="Net $0.2128 per 1M requests, open breakdown" id="base-ui-_r_5v_">
-                              $0.2128
+                              {"$0.2128"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
@@ -1164,7 +1168,7 @@ export function Pattern() {
                                 </svg>
                               </TooltipTrigger>
                               </Tooltip>
-                              5,400
+                              {"5,400"}
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5 tabular-nums text-right">
@@ -1175,11 +1179,11 @@ export function Pattern() {
                                   <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "55%"}}></ProgressIndicator>
                                 </ProgressTrack>
                                 <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                  x
+                                  {"x"}
                                 </span>
                               </Progress>
                               <span className="text-right text-warning w-10">
-                                55%
+                                {"55%"}
                               </span>
                             </HoverCardTrigger>
                             </HoverCard>
@@ -1187,18 +1191,18 @@ export function Pattern() {
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 px-2 py-1.5 tabular-nums text-right">
                             <HoverCard>
                             <HoverCardTrigger className="cursor-help focus-visible:outline-2 focus-visible:outline-ring/50 font-medium outline-offset-2 text-foreground" type="button" aria-label="Monthly cost for Function Calls: $1,149.12" id="base-ui-_r_65_">
-                              $1,149.12
+                              {"$1,149.12"}
                             </HoverCardTrigger>
                             </HoverCard>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums whitespace-nowrap">
-                              Nov 2, 2026
+                              {"Nov 2, 2026"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                              Expiring
+                              {"Expiring"}
                             </Badge>
                           </td>
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right" data-pinned="end" data-last-col="end">
@@ -1214,16 +1218,18 @@ export function Pattern() {
                           </td>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
+                      <DataGridProvider>
                       <DataGridTableFoot>
                         <DataGridTableFootRow>
                           <td className="align-middle font-medium ps-(--frame-panel-header-px) px-2 py-1.5 text-secondary-foreground/80">
                             <span className="gap-1.5 inline-flex items-center">
                               <span className="text-foreground">
-                                Total
+                                {"Total"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                16 SKUs
+                                {"16 SKUs"}
                               </span>
                             </span>
                           </td>
@@ -1233,34 +1239,39 @@ export function Pattern() {
                           <td className="align-middle font-medium px-2 py-1.5 text-secondary-foreground/80"></td>
                           <td className="align-middle font-medium px-2 py-1.5 text-secondary-foreground/80"></td>
                           <td className="align-middle bg-muted/60 border-x border-x-border dark:bg-muted/30 font-medium px-2 py-1.5 tabular-nums text-foreground text-right">
-                            $41,860.50
+                            {"$41,860.50"}
                           </td>
                           <td className="align-middle font-medium px-2 py-1.5 text-secondary-foreground/80"></td>
                           <td className="align-middle font-medium px-2 py-1.5 text-secondary-foreground/80"></td>
                           <td className="align-middle font-medium pe-(--frame-panel-header-px) px-2 py-1.5 text-secondary-foreground/80"></td>
                         </DataGridTableFootRow>
                       </DataGridTableFoot>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+            <DataGridProvider>
             <DataGridPagination>
               <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                 <div className="text-muted-foreground text-sm">
-                  Rows per page
+                  {"Rows per page"}
                 </div>
                 <Select>
                 <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_6b_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
-                    10
+                    {"10"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -1268,26 +1279,26 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                  1 - 10 of 16
+                  {"1 - 10 of 16"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                     <span className="sr-only">
-                      Go to previous page
+                      {"Go to previous page"}
                     </span>
                     <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
                   <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                    1
+                    {"1"}
                   </Button>
                   <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                    2
+                    {"2"}
                   </Button>
                   <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                     <span className="sr-only">
-                      Go to next page
+                      {"Go to next page"}
                     </span>
                     <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
@@ -1296,6 +1307,7 @@ export function Pattern() {
                 </div>
               </div>
             </DataGridPagination>
+            </DataGridProvider>
           </footer>
         </FramePanel>
       </Frame>

@@ -28,10 +28,10 @@ export function Pattern() {
             </Item>
             <div className="flex flex-col min-w-0">
               <span className="font-semibold text-foreground text-sm tracking-tight">
-                NeUI
+                {"NeUI"}
               </span>
               <span className="text-muted-foreground text-xs">
-                neui.io
+                {"neui.io"}
               </span>
             </div>
           </div>
@@ -42,14 +42,14 @@ export function Pattern() {
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
               </svg>
-              Download
+              {"Download"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Email receipt RCT-2026-018042">
               <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
               </svg>
-              Email
+              {"Email"}
             </Button>
             <Button type="button" tabIndex="0" aria-label="Print receipt RCT-2026-018042">
               <svg className="lucide lucide-printer size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PrinterIcon" tabler="IconPrinter" hugeicons="PrinterIcon" phosphor="PrinterIcon" remixicon="RiPrinterLine" aria-hidden="true">
@@ -69,44 +69,44 @@ export function Pattern() {
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
-                  Paid
+                  {"Paid"}
                 </Badge>
                 <CardTitle className="md:text-3xl text-2xl tracking-tight" id="receipt-heading">
-                  Thanks For Your Order
+                  {"Thanks For Your Order"}
                 </CardTitle>
                 <CardDescription className="text-pretty">
-                  A copy of this receipt was sent to
+                  {"A copy of this receipt was sent to"}
                   <span className="font-medium text-foreground">
-                    jordan@example.com
+                    {"jordan@example.com"}
                   </span>
-                  .
+                  {"."}
                 </CardDescription>
               </div>
               <dl className="gap-x-6 gap-y-1.5 grid grid-cols-2 sm:text-right sm:w-auto text-muted-foreground text-xs w-full">
                 <div className="contents">
                   <dt className="font-medium text-foreground">
-                    Order
+                    {"Order"}
                   </dt>
                   <dd className="font-mono tabular-nums">
                     <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#" aria-label="View order HLD-2026-18042 details">
-                      HLD-2026-18042
+                      {"HLD-2026-18042"}
                     </a>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="font-medium text-foreground">
-                    Receipt
+                    {"Receipt"}
                   </dt>
                   <dd className="font-mono tabular-nums">
-                    RCT-2026-018042
+                    {"RCT-2026-018042"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="font-medium text-foreground">
-                    Date
+                    {"Date"}
                   </dt>
                   <dd>
-                    May 18, 2026
+                    {"May 18, 2026"}
                   </dd>
                 </div>
               </dl>
@@ -116,51 +116,51 @@ export function Pattern() {
             <div className="gap-5 grid grid-cols-1 sm:grid-cols-3">
               <div className="flex flex-col gap-2 min-w-0">
                 <p className="font-medium text-muted-foreground text-xs tracking-[0.16em] uppercase">
-                  Ship To
+                  {"Ship To"}
                 </p>
                 <address className="leading-snug not-italic text-foreground text-sm">
                   <p className="font-medium">
-                    Jordan Reeves
+                    {"Jordan Reeves"}
                   </p>
                   <p className="text-muted-foreground">
-                    180 Bedford Avenue
+                    {"180 Bedford Avenue"}
                   </p>
                   <p className="text-muted-foreground">
-                    Apt 4F
+                    {"Apt 4F"}
                   </p>
                   <p className="text-muted-foreground">
-                    Brooklyn, NY 11211
+                    {"Brooklyn, NY 11211"}
                   </p>
                   <p className="text-muted-foreground">
-                    United States
+                    {"United States"}
                   </p>
                 </address>
               </div>
               <div className="flex flex-col gap-2 min-w-0">
                 <p className="font-medium text-muted-foreground text-xs tracking-[0.16em] uppercase">
-                  Bill To
+                  {"Bill To"}
                 </p>
                 <address className="leading-snug not-italic text-foreground text-sm">
                   <p className="font-medium">
-                    Jordan Reeves
+                    {"Jordan Reeves"}
                   </p>
                   <p className="text-muted-foreground">
-                    180 Bedford Avenue
+                    {"180 Bedford Avenue"}
                   </p>
                   <p className="text-muted-foreground">
-                    Apt 4F
+                    {"Apt 4F"}
                   </p>
                   <p className="text-muted-foreground">
-                    Brooklyn, NY 11211
+                    {"Brooklyn, NY 11211"}
                   </p>
                   <p className="text-muted-foreground">
-                    United States
+                    {"United States"}
                   </p>
                 </address>
               </div>
               <div className="flex flex-col gap-2 min-w-0">
                 <p className="font-medium text-muted-foreground text-xs tracking-[0.16em] uppercase">
-                  Payment
+                  {"Payment"}
                 </p>
                 <div className="flex flex-col gap-1 leading-snug text-sm">
                   <div className="flex gap-2 items-center">
@@ -172,15 +172,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-col min-w-0">
                       <span className="font-medium tabular-nums text-foreground">
-                        Visa · 4242
+                        {"Visa · 4242"}
                       </span>
                       <span className="text-muted-foreground text-xs">
-                        Expires 04 / 28
+                        {"Expires 04 / 28"}
                       </span>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-xs">
-                    Charged May 18, 2026 at 9:42 AM
+                    {"Charged May 18, 2026 at 9:42 AM"}
                   </p>
                 </div>
               </div>
@@ -195,20 +195,20 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                    Halden
+                    {"Halden"}
                   </p>
                   <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Field Shell Jacket
+                      {"Field Shell Jacket"}
                     </a>
                   </h3>
                   <p className="text-muted-foreground text-xs">
-                    Olive · M · Qty 1
+                    {"Olive · M · Qty 1"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                   <span className="font-semibold text-foreground">
-                    $185.00
+                    {"$185.00"}
                   </span>
                 </div>
               </article>
@@ -220,20 +220,20 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                    Halden
+                    {"Halden"}
                   </p>
                   <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Compass Down Vest
+                      {"Compass Down Vest"}
                     </a>
                   </h3>
                   <p className="text-muted-foreground text-xs">
-                    Slate · M · Qty 1
+                    {"Slate · M · Qty 1"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                   <span className="font-semibold text-foreground">
-                    $228.00
+                    {"$228.00"}
                   </span>
                 </div>
               </article>
@@ -245,23 +245,23 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-1 flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                    Halden
+                    {"Halden"}
                   </p>
                   <h3 className="font-medium leading-snug min-w-0 text-foreground text-sm">
                     <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                      Linen Field Shirt
+                      {"Linen Field Shirt"}
                     </a>
                   </h3>
                   <p className="text-muted-foreground text-xs">
-                    Sand · M · Qty 2
+                    {"Sand · M · Qty 2"}
                   </p>
                 </div>
                 <div className="flex flex-col gap-0.5 items-end shrink-0 tabular-nums text-sm">
                   <span className="font-semibold text-foreground">
-                    $256.00
+                    {"$256.00"}
                   </span>
                   <span className="text-muted-foreground text-xs">
-                    $128.00 each
+                    {"$128.00 each"}
                   </span>
                 </div>
               </article>
@@ -270,43 +270,43 @@ export function Pattern() {
             <dl className="flex flex-col gap-2 self-end sm:min-w-72 text-sm">
               <div className="flex gap-4 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Subtotal
+                  {"Subtotal"}
                 </dt>
                 <dd className="font-medium tabular-nums text-foreground">
-                  $669.00
+                  {"$669.00"}
                 </dd>
               </div>
               <div className="flex gap-4 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Shipping
+                  {"Shipping"}
                 </dt>
                 <dd className="font-medium tabular-nums text-foreground">
-                  $12.00
+                  {"$12.00"}
                 </dd>
               </div>
               <div className="flex gap-4 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Discount (WELCOME15)
+                  {"Discount (WELCOME15)"}
                 </dt>
                 <dd className="font-medium tabular-nums text-success">
-                  -$100.35
+                  {"-$100.35"}
                 </dd>
               </div>
               <div className="flex gap-4 items-baseline justify-between">
                 <dt className="text-muted-foreground">
-                  Estimated Tax
+                  {"Estimated Tax"}
                 </dt>
                 <dd className="font-medium tabular-nums text-foreground">
-                  $51.27
+                  {"$51.27"}
                 </dd>
               </div>
               <Separator className="my-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <div className="flex gap-4 items-baseline justify-between">
                 <dt className="font-semibold text-base text-foreground">
-                  Total
+                  {"Total"}
                 </dt>
                 <dd className="font-semibold tabular-nums text-base text-foreground">
-                  $631.92
+                  {"$631.92"}
                 </dd>
               </div>
             </dl>
@@ -322,13 +322,13 @@ export function Pattern() {
               </svg>
               <div className="flex flex-col gap-0.5 min-w-0">
                 <p className="font-medium leading-snug text-foreground text-sm">
-                  Arrives May 22, 2026 to May 25, 2026
+                  {"Arrives May 22, 2026 to May 25, 2026"}
                 </p>
                 <p className="leading-snug text-muted-foreground text-xs">
-                  UPS Ground · Standard, 3 - 5 business days
+                  {"UPS Ground · Standard, 3 - 5 business days"}
                 </p>
                 <a className="font-medium gap-1 hover:text-primary hover:underline inline-flex items-center mt-1 text-foreground text-xs transition-colors underline-offset-4 w-fit" href="#" aria-label="Track order HLD-2026-18042">
-                  Track Shipment
+                  {"Track Shipment"}
                   <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -345,7 +345,7 @@ export function Pattern() {
                 <path d="m9.17 14.83-4.24 4.24"></path>
                 <circle cx="12" cy="12" r="4"></circle>
               </svg>
-              Need help with this order?
+              {"Need help with this order?"}
             </a>
           </CardFooter>
         </Card>

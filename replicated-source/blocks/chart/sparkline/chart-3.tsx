@@ -42,29 +42,21 @@ export function Pattern() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="leading-none text-muted-foreground text-sm truncate">
-                      Main Wallet (USD)
+                      {"Main Wallet (USD)"}
                     </h3>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline mt-1">
                       <span className="font-medium text-base">
-                        $2,435,900
+                        {"$2,435,900"}
                       </span>
                       <span className="text-sm text-success">
-                        +18% ($214,356)
+                        {"+18% ($214,356)"}
                       </span>
                     </div>
                   </div>
                 </div>
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto bottom-0 cn-chart flex h-24 inset-x-0 justify-center text-xs w-full" data-chart="chart-_r_1_">
-                  <style>{`
- [data-chart=chart-_r_1_] {
-  --color-value: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-value: var(--color-emerald-500);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="307" height="96" style={{position: "relative", cursor: "default", width: "307px", height: "96px"}}>
@@ -99,6 +91,7 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </div>
             </FramePanel>
             <FramePanel className="min-h-[178px] p-0!">
@@ -135,29 +128,21 @@ export function Pattern() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="leading-none text-muted-foreground text-sm truncate">
-                      Reserve Fund (USD)
+                      {"Reserve Fund (USD)"}
                     </h3>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline mt-1">
                       <span className="font-medium text-base">
-                        $1,980,000
+                        {"$1,980,000"}
                       </span>
                       <span className="text-destructive text-sm">
-                        -3% ($58,000)
+                        {"-3% ($58,000)"}
                       </span>
                     </div>
                   </div>
                 </div>
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto bottom-0 cn-chart flex h-24 inset-x-0 justify-center text-xs w-full" data-chart="chart-_r_3_">
-                  <style>{`
- [data-chart=chart-_r_3_] {
-  --color-value: var(--color-rose-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-value: var(--color-rose-500);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--color-rose-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--color-rose-500);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="307" height="96" style={{position: "relative", cursor: "default", width: "307px", height: "96px"}}>
@@ -192,6 +177,7 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </div>
             </FramePanel>
             <FramePanel className="min-h-[178px] p-0!">
@@ -228,29 +214,21 @@ export function Pattern() {
                   </div>
                   <div className="min-w-0">
                     <h3 className="leading-none text-muted-foreground text-sm truncate">
-                      Growth Portfolio (USD)
+                      {"Growth Portfolio (USD)"}
                     </h3>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline mt-1">
                       <span className="font-medium text-base">
-                        $3,245,500
+                        {"$3,245,500"}
                       </span>
                       <span className="text-sm text-success">
-                        +10% ($295,000)
+                        {"+10% ($295,000)"}
                       </span>
                     </div>
                   </div>
                 </div>
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden absolute aspect-auto bottom-0 cn-chart flex h-24 inset-x-0 justify-center text-xs w-full" data-chart="chart-_r_5_">
-                  <style>{`
- [data-chart=chart-_r_5_] {
-  --color-value: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-_r_5_] {
-  --color-value: var(--color-emerald-500);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_5_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_5_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="307" height="96" style={{position: "relative", cursor: "default", width: "307px", height: "96px"}}>
@@ -285,6 +263,7 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </div>
             </FramePanel>
           </div>

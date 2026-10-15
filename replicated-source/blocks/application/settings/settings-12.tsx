@@ -32,10 +32,10 @@ export function Pattern() {
       <div className="flex flex-col gap-6 max-w-3xl w-full">
         <div className="space-y-0.5">
           <h1 className="font-semibold text-xl">
-            Notification settings
+            {"Notification settings"}
           </h1>
           <p className="text-muted-foreground text-sm">
-            Choose how workspace updates reach you.
+            {"Choose how workspace updates reach you."}
           </p>
         </div>
         <div className="space-y-3">
@@ -51,11 +51,11 @@ export function Pattern() {
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
                     <span className="min-w-0 truncate">
-                      Inbox
+                      {"Inbox"}
                     </span>
                   </ItemTitle>
                   <ItemDescription>
-                    Approvals, handoffs, and follow-ups.
+                    {"Approvals, handoffs, and follow-ups."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="sm:self-center sm:w-auto w-full">
@@ -65,16 +65,16 @@ export function Pattern() {
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
-                            Default
+                            {"Default"}
                           </span>
                           <small className="text-muted-foreground text-xs">
-                            Balanced everyday updates.
+                            {"Balanced everyday updates."}
                           </small>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -96,14 +96,14 @@ export function Pattern() {
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
                     <span className="min-w-0 truncate">
-                      Email
+                      {"Email"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                      Send sample
+                      {"Send sample"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Digests and direct alerts.
+                    {"Digests and direct alerts."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="sm:self-center sm:w-auto w-full">
@@ -113,16 +113,16 @@ export function Pattern() {
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
-                            Default
+                            {"Default"}
                           </span>
                           <small className="text-muted-foreground text-xs">
-                            Balanced everyday updates.
+                            {"Balanced everyday updates."}
                           </small>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -145,16 +145,16 @@ export function Pattern() {
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
                     <span className="min-w-0 truncate">
-                      Browser
+                      {"Browser"}
                     </span>
                   </ItemTitle>
                   <ItemDescription>
-                    Desktop banners stay off until enabled.
+                    {"Desktop banners stay off until enabled."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="sm:self-center sm:w-auto w-full">
                   <Button className="sm:w-auto w-full" type="button" tabIndex="0">
-                    Enable notifications
+                    {"Enable notifications"}
                   </Button>
                 </ItemActions>
               </Item>
@@ -172,14 +172,14 @@ export function Pattern() {
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
                     <span className="min-w-0 truncate">
-                      Mobile
+                      {"Mobile"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                      Show example
+                      {"Show example"}
                     </Badge>
                   </ItemTitle>
                   <ItemDescription>
-                    Away-from-desk delivery.
+                    {"Away-from-desk delivery."}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="sm:self-center sm:w-auto w-full">
@@ -189,16 +189,16 @@ export function Pattern() {
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
-                            Default
+                            {"Default"}
                           </span>
                           <small className="text-muted-foreground text-xs">
-                            Balanced everyday updates.
+                            {"Balanced everyday updates."}
                           </small>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -216,11 +216,11 @@ export function Pattern() {
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
                     <span className="min-w-0 truncate">
-                      Smart notifications
+                      {"Smart notifications"}
                     </span>
                   </ItemTitle>
                   <ItemDescription>
-                    Pause phone alerts while desktop stays active.
+                    {"Pause phone alerts while desktop stays active."}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -230,7 +230,7 @@ export function Pattern() {
         <section className="space-y-3">
           <div className="space-y-1">
             <h2 className="font-semibold text-base">
-              Integrations
+              {"Integrations"}
             </h2>
           </div>
           <div className="space-y-3">
@@ -250,16 +250,16 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <ItemTitle className="gap-2">
                       <span className="min-w-0 truncate">
-                        Slack
+                        {"Slack"}
                       </span>
                     </ItemTitle>
                     <ItemDescription>
-                      Send priority updates to a team channel.
+                      {"Send priority updates to a team channel."}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
                     <Button className="sm:w-auto w-full" type="button" tabIndex="0">
-                      Connect Slack
+                      {"Connect Slack"}
                     </Button>
                   </ItemActions>
                 </Item>
@@ -290,16 +290,16 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <ItemTitle className="gap-2">
                       <span className="min-w-0 truncate">
-                        Zoom
+                        {"Zoom"}
                       </span>
                     </ItemTitle>
                     <ItemDescription>
-                      Post meeting alerts and call follow-ups.
+                      {"Post meeting alerts and call follow-ups."}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
                     <Button className="sm:w-auto w-full" type="button" tabIndex="0">
-                      Connect Zoom
+                      {"Connect Zoom"}
                     </Button>
                   </ItemActions>
                 </Item>
@@ -329,16 +329,16 @@ export function Pattern() {
                   <ItemContent className="gap-1 min-w-0">
                     <ItemTitle className="gap-2">
                       <span className="min-w-0 truncate">
-                        Google Meet
+                        {"Google Meet"}
                       </span>
                     </ItemTitle>
                     <ItemDescription>
-                      Route calendar and live session updates.
+                      {"Route calendar and live session updates."}
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
                     <Button className="sm:w-auto w-full" type="button" tabIndex="0">
-                      Connect Meet
+                      {"Connect Meet"}
                     </Button>
                   </ItemActions>
                 </Item>
@@ -349,7 +349,7 @@ export function Pattern() {
         <section className="space-y-3">
           <div className="space-y-1">
             <h2 className="font-semibold text-base">
-              General settings
+              {"General settings"}
             </h2>
           </div>
           <div className="space-y-3">
@@ -366,11 +366,11 @@ export function Pattern() {
                     <ItemContent className="gap-1 min-w-0">
                       <ItemTitle className="gap-2">
                         <span className="min-w-0 truncate">
-                          Auto-follow active work
+                          {"Auto-follow active work"}
                         </span>
                       </ItemTitle>
                       <ItemDescription>
-                        Created work
+                        {"Created work"}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="self-start shrink-0 sm:self-center sm:w-auto w-auto">
@@ -397,11 +397,11 @@ export function Pattern() {
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">
                               <span className="min-w-0 truncate">
-                                Follow work you create
+                                {"Follow work you create"}
                               </span>
                             </ItemTitle>
                             <ItemDescription>
-                              Start tracking a task or thread the moment you open it.
+                              {"Start tracking a task or thread the moment you open it."}
                             </ItemDescription>
                           </ItemContent>
                         </Item>
@@ -418,11 +418,11 @@ export function Pattern() {
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">
                               <span className="min-w-0 truncate">
-                                Follow work you edit
+                                {"Follow work you edit"}
                               </span>
                             </ItemTitle>
                             <ItemDescription>
-                              Stay subscribed after changing status, owner, or due date.
+                              {"Stay subscribed after changing status, owner, or due date."}
                             </ItemDescription>
                           </ItemContent>
                         </Item>
@@ -439,11 +439,11 @@ export function Pattern() {
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">
                               <span className="min-w-0 truncate">
-                                Follow work you comment on
+                                {"Follow work you comment on"}
                               </span>
                             </ItemTitle>
                             <ItemDescription>
-                              Keep replies and follow-up decisions in view automatically.
+                              {"Keep replies and follow-up decisions in view automatically."}
                             </ItemDescription>
                           </ItemContent>
                         </Item>

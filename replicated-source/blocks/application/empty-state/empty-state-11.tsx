@@ -15,20 +15,20 @@ export function Pattern() {
   return (
     <main className="flex items-center justify-center md:p-12 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Signal routing empty state
+        {"Signal routing empty state"}
       </h1>
       <div className="flex flex-col gap-4 max-w-4xl w-full">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex flex-col gap-1">
             <h2 className="font-semibold text-xl tracking-tight">
-              Routing Signals
+              {"Routing Signals"}
             </h2>
             <p className="text-muted-foreground text-sm">
-              Shape incoming work before it reaches the roadmap.
+              {"Shape incoming work before it reaches the roadmap."}
             </p>
           </div>
           <Button className="sm:w-auto w-full" type="button" tabIndex="0">
-            Add signal
+            {"Add signal"}
           </Button>
         </div>
         <Card className="bg-muted min-h-[330px] p-0 shadow-none" size="default">
@@ -63,10 +63,10 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2 items-center">
                   <EmptyTitle className="font-semibold text-base tracking-tight">
-                    Create signals to route new work
+                    {"Create signals to route new work"}
                   </EmptyTitle>
                   <EmptyDescription className="max-w-sm text-sm/relaxed">
-                    Define signals so every intake item starts with context.
+                    {"Define signals so every intake item starts with context."}
                   </EmptyDescription>
                 </div>
               </EmptyHeader>

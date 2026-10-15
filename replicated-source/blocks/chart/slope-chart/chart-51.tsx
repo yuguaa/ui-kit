@@ -18,33 +18,28 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-(--frame-panel-header-gap) gap-x-6 gap-y-3 items-center min-w-0 px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="@3xl:basis-0 basis-full flex flex-col gap-0.5 grow min-w-0">
             <div className="flex font-semibold gap-2 items-center text-sm">
-              Retention Crossover
+              {"Retention Crossover"}
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                23,180 signups
+                {"23,180 signups"}
               </Badge>
             </div>
             <div className="text-muted-foreground text-sm">
-              Which channels keep the users they bring
+              {"Which channels keep the users they bring"}
             </div>
           </div>
           <div className="@3xl:flex-none @3xl:w-sm @5xl:w-md flex flex-1 gap-3 items-center min-w-0">
-            <style>{`
-@keyframes c51-settle { from { transform: translateY(3px); opacity: 0.3; } }
-.c51-settle { display: inline-block; animation: c51-settle 360ms cubic-bezier(0.22, 1, 0.36, 1); }
-@media (prefers-reduced-motion: reduce) { .c51-settle { animation: none; } }
-html[data-demo="frozen"] .c51-settle { animation: none; }
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c51-settle { from { transform: translateY(3px); opacity: 0.3; } }\n.c51-settle { display: inline-block; animation: c51-settle 360ms cubic-bezier(0.22, 1, 0.36, 1); }\n@media (prefers-reduced-motion: reduce) { .c51-settle { animation: none; } }\nhtml[data-demo=\"frozen\"] .c51-settle { animation: none; }\n" }} />
             <div className="flex flex-col shrink-0 w-18">
               <span className="flex gap-1 items-baseline leading-5 text-sm">
                 <span className="text-muted-foreground">
-                  Day
+                  {"Day"}
                 </span>
                 <span className="c51-settle font-medium tabular-nums">
-                  30
+                  {"30"}
                 </span>
               </span>
               <span className="leading-4 text-muted-foreground text-xs">
-                Habit
+                {"Habit"}
               </span>
             </div>
             <div className="flex-1 h-5 has-focus-visible:ring-[3px] has-focus-visible:ring-ring/50 min-w-0 relative rounded-full">
@@ -164,7 +159,7 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                 </div>
               </Slider>
               <output className="sr-only" aria-live="polite">
-                Retention at day 30, Habit stage
+                {"Retention at day 30, Habit stage"}
               </output>
             </div>
           </div>
@@ -173,7 +168,7 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
               <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
                 <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
               </svg>
-              Play
+              {"Play"}
             </Button>
             <DropdownMenu>
             <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Crossover options" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
@@ -191,31 +186,32 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
             <div className="flex flex-col gap-3 min-w-3xl py-3">
               <div className="flex items-center text-muted-foreground text-xs">
                 <span className="pe-2.5 shrink-0 text-end" style={{width: "232px"}}>
-                  Signups
+                  {"Signups"}
                 </span>
                 <span className="flex flex-1 gap-3 items-center justify-center">
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Climbs
+                    {"Climbs"}
                   </span>
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Falls
+                    {"Falls"}
                   </span>
                   <span className="gap-1.5 inline-flex items-center">
                     <span className="bg-muted-foreground rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                    Holds
+                    {"Holds"}
                   </span>
                 </span>
                 <span className="flex justify-between ps-2.5 shrink-0" style={{width: "156px"}}>
                   <span>
-                    Kept at Day 30
+                    {"Kept at Day 30"}
                   </span>
                   <span>
-                    Places
+                    {"Places"}
                   </span>
                 </span>
               </div>
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-104 justify-center text-xs w-full" data-chart="chart-_r_a_" role="img" aria-label="11 acquisition channels: signup order on the left, retention order on the right">
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -414,10 +410,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="116.54545454545453" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="134.54545454545453" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Direct
+                                  {"Direct"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  2,560
+                                  {"2,560"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="131.54545454545453" width="56" height="6" rx="3"></rect>
@@ -429,10 +425,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="131.54545454545453" width="56" height="6" rx="3"></rect>
                               <rect className="fill-muted-foreground" x="972" y="131.54545454545453" width="28" height="6" rx="3" fillOpacity="0.45"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="134.54545454545453" dominantBaseline="central">
-                                37%
+                                {"37%"}
                               </text>
                               <text className="fill-muted-foreground font-medium tabular-nums text-xs" x="1116" y="134.54545454545453" textAnchor="end" dominantBaseline="central">
-                                0
+                                {"0"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="134.54545454545453" r="4.108921161825727" fill="var(--background)" stroke="var(--muted-foreground)" strokeWidth="1.5"></circle>
                             </g>
@@ -442,10 +438,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="153.27272727272728" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="171.27272727272728" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Content
+                                  {"Content"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  2,150
+                                  {"2,150"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="168.27272727272728" width="56" height="6" rx="3"></rect>
@@ -457,10 +453,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="278.45454545454544" width="56" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="972" y="278.45454545454544" width="17" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="281.45454545454544" dominantBaseline="central">
-                                22%
+                                {"22%"}
                               </text>
                               <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="281.45454545454544" textAnchor="end" dominantBaseline="central">
-                                -3
+                                {"-3"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="281.45454545454544" r="3.8112033195020745" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
                             </g>
@@ -470,10 +466,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="263.45454545454544" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="281.45454545454544" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Newsletter
+                                  {"Newsletter"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  1,260
+                                  {"1,260"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="278.45454545454544" width="56" height="6" rx="3"></rect>
@@ -485,10 +481,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="168.27272727272728" width="56" height="6" rx="3"></rect>
                               <rect className="fill-success" x="972" y="168.27272727272728" width="24" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="171.27272727272728" dominantBaseline="central">
-                                32%
+                                {"32%"}
                               </text>
                               <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="171.27272727272728" textAnchor="end" dominantBaseline="central">
-                                +3
+                                {"+3"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="171.27272727272728" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
                             </g>
@@ -498,10 +494,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="79.81818181818181" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="97.81818181818181" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Organic Search
+                                  {"Organic Search"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  3,240
+                                  {"3,240"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="94.81818181818181" width="56" height="6" rx="3"></rect>
@@ -513,10 +509,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="241.72727272727275" width="56" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="972" y="241.72727272727275" width="21" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="244.72727272727275" dominantBaseline="central">
-                                28%
+                                {"28%"}
                               </text>
                               <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="244.72727272727275" textAnchor="end" dominantBaseline="central">
-                                -4
+                                {"-4"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="244.72727272727275" r="4.602697095435685" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
                             </g>
@@ -526,10 +522,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="190" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="208" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Affiliates
+                                  {"Affiliates"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  1,730
+                                  {"1,730"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="205" width="56" height="6" rx="3"></rect>
@@ -541,10 +537,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="351.90909090909093" width="56" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="972" y="351.90909090909093" width="7" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="354.90909090909093" dominantBaseline="central">
-                                10%
+                                {"10%"}
                               </text>
                               <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="354.90909090909093" textAnchor="end" dominantBaseline="central">
-                                -4
+                                {"-4"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="354.90909090909093" r="3.5062240663900415" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
                             </g>
@@ -554,10 +550,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="373.6363636363636" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="391.6363636363636" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Events
+                                  {"Events"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  410
+                                  {"410"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="388.6363636363636" width="56" height="6" rx="3"></rect>
@@ -569,10 +565,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="205" width="56" height="6" rx="3"></rect>
                               <rect className="fill-success" x="972" y="205" width="24" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="208" dominantBaseline="central">
-                                32%
+                                {"32%"}
                               </text>
                               <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="208" textAnchor="end" dominantBaseline="central">
-                                +5
+                                {"+5"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="208" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
                             </g>
@@ -582,10 +578,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="226.72727272727275" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="244.72727272727275" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Referrals
+                                  {"Referrals"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  1,480
+                                  {"1,480"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="241.72727272727275" width="56" height="6" rx="3"></rect>
@@ -597,10 +593,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="21.363636363636363" width="56" height="6" rx="3"></rect>
                               <rect className="fill-success" x="972" y="21.363636363636363" width="37" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="24.363636363636363" dominantBaseline="central">
-                                49%
+                                {"49%"}
                               </text>
                               <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="24.363636363636363" textAnchor="end" dominantBaseline="central">
-                                +6
+                                {"+6"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="24.363636363636363" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
                             </g>
@@ -610,10 +606,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="300.1818181818182" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="318.1818181818182" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Partner Directory
+                                  {"Partner Directory"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  980
+                                  {"980"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="315.1818181818182" width="56" height="6" rx="3"></rect>
@@ -625,10 +621,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="58.090909090909086" width="56" height="6" rx="3"></rect>
                               <rect className="fill-success" x="972" y="58.090909090909086" width="30" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="61.090909090909086" dominantBaseline="central">
-                                40%
+                                {"40%"}
                               </text>
                               <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="61.090909090909086" textAnchor="end" dominantBaseline="central">
-                                +7
+                                {"+7"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="61.090909090909086" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
                             </g>
@@ -638,10 +634,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="336.90909090909093" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="354.90909090909093" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Webinars
+                                  {"Webinars"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  640
+                                  {"640"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="351.90909090909093" width="56" height="6" rx="3"></rect>
@@ -653,10 +649,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="94.81818181818181" width="56" height="6" rx="3"></rect>
                               <rect className="fill-success" x="972" y="94.81818181818181" width="29" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="97.81818181818181" dominantBaseline="central">
-                                39%
+                                {"39%"}
                               </text>
                               <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="97.81818181818181" textAnchor="end" dominantBaseline="central">
-                                +7
+                                {"+7"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="97.81818181818181" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
                             </g>
@@ -666,10 +662,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="6.363636363636363" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="24.363636363636363" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Paid Search
+                                  {"Paid Search"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  4,820
+                                  {"4,820"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="21.363636363636363" width="56" height="6" rx="3"></rect>
@@ -681,10 +677,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="315.1818181818182" width="56" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="972" y="315.1818181818182" width="14" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="318.1818181818182" dominantBaseline="central">
-                                19%
+                                {"19%"}
                               </text>
                               <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="318.1818181818182" textAnchor="end" dominantBaseline="central">
-                                -8
+                                {"-8"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="318.1818181818182" r="5.75" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
                             </g>
@@ -694,10 +690,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect x="0" y="43.090909090909086" width="232" height="36" fill="transparent"></rect>
                               <text className="text-[13px]" x="156" y="61.090909090909086" textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
-                                  Paid Social
+                                  {"Paid Social"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  3,910
+                                  {"3,910"}
                                 </tspan>
                               </text>
                               <rect className="fill-muted" x="166" y="58.090909090909086" width="56" height="6" rx="3"></rect>
@@ -709,10 +705,10 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                               <rect className="fill-muted" x="972" y="388.6363636363636" width="56" height="6" rx="3"></rect>
                               <rect className="fill-destructive" x="972" y="388.6363636363636" width="5" height="6" rx="3" fillOpacity="0.85"></rect>
                               <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="391.6363636363636" dominantBaseline="central">
-                                7%
+                                {"7%"}
                               </text>
                               <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="391.6363636363636" textAnchor="end" dominantBaseline="central">
-                                -9
+                                {"-9"}
                               </text>
                               <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="391.6363636363636" r="5.089211618257261" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
                             </g>
@@ -727,41 +723,42 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              Referrals: 1,480 signups, rank 7; 49% kept at day 30, rank 1
+              {"Referrals: 1,480 signups, rank 7; 49% kept at day 30, rank 1"}
             </li>
             <li>
-              Partner Directory: 980 signups, rank 9; 40% kept at day 30, rank 2
+              {"Partner Directory: 980 signups, rank 9; 40% kept at day 30, rank 2"}
             </li>
             <li>
-              Webinars: 640 signups, rank 10; 39% kept at day 30, rank 3
+              {"Webinars: 640 signups, rank 10; 39% kept at day 30, rank 3"}
             </li>
             <li>
-              Direct: 2,560 signups, rank 4; 37% kept at day 30, rank 4
+              {"Direct: 2,560 signups, rank 4; 37% kept at day 30, rank 4"}
             </li>
             <li>
-              Newsletter: 1,260 signups, rank 8; 32% kept at day 30, rank 5
+              {"Newsletter: 1,260 signups, rank 8; 32% kept at day 30, rank 5"}
             </li>
             <li>
-              Events: 410 signups, rank 11; 32% kept at day 30, rank 6
+              {"Events: 410 signups, rank 11; 32% kept at day 30, rank 6"}
             </li>
             <li>
-              Organic Search: 3,240 signups, rank 3; 28% kept at day 30, rank 7
+              {"Organic Search: 3,240 signups, rank 3; 28% kept at day 30, rank 7"}
             </li>
             <li>
-              Content: 2,150 signups, rank 5; 22% kept at day 30, rank 8
+              {"Content: 2,150 signups, rank 5; 22% kept at day 30, rank 8"}
             </li>
             <li>
-              Paid Search: 4,820 signups, rank 1; 19% kept at day 30, rank 9
+              {"Paid Search: 4,820 signups, rank 1; 19% kept at day 30, rank 9"}
             </li>
             <li>
-              Affiliates: 1,730 signups, rank 6; 10% kept at day 30, rank 10
+              {"Affiliates: 1,730 signups, rank 6; 10% kept at day 30, rank 10"}
             </li>
             <li>
-              Paid Social: 3,910 signups, rank 2; 7% kept at day 30, rank 11
+              {"Paid Social: 3,910 signups, rank 2; 7% kept at day 30, rank 11"}
             </li>
           </ul>
         </FramePanel>
@@ -775,16 +772,16 @@ html[data-demo="frozen"] .c51-settle { animation: none; }
               </svg>
               <span className="tabular-nums truncate">
                 <span className="font-medium text-foreground">
-                  Referrals
+                  {"Referrals"}
                 </span>
-                keeps 49% of its users at Day 30
+                {"keeps 49% of its users at Day 30"}
                 <span className="@2xl:inline hidden">
-                  , Paid Search keeps 19%
+                  {", Paid Search keeps 19%"}
                 </span>
               </span>
             </p>
             <span className="@xl:inline hidden shrink-0 tabular-nums text-muted-foreground text-xs">
-              10 of 11 channels moved
+              {"10 of 11 channels moved"}
             </span>
           </div>
         </footer>

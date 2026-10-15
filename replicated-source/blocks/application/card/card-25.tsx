@@ -22,23 +22,23 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1">
                 <p className="leading-tight text-muted-foreground text-sm">
-                  Account
+                  {"Account"}
                 </p>
                 <h3 className="font-medium leading-tight text-sm">
-                  Main Wallet
+                  {"Main Wallet"}
                 </h3>
               </div>
             </div>
             <div className="mt-5 space-y-1.5">
               <p className="leading-tight text-muted-foreground text-sm">
-                Balance (USD)
+                {"Balance (USD)"}
               </p>
               <div className="flex flex-wrap gap-1.5 items-center">
                 <span className="font-medium text-xl tracking-tight">
-                  $2,435,900
+                  {"$2,435,900"}
                 </span>
                 <span className="font-medium text-sm text-teal-600">
-                  +18% ($214,356)
+                  {"+18% ($214,356)"}
                 </span>
               </div>
             </div>
@@ -57,23 +57,23 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1">
                 <p className="leading-tight text-muted-foreground text-sm">
-                  Account
+                  {"Account"}
                 </p>
                 <h3 className="font-medium leading-tight text-sm">
-                  Reserve Fund
+                  {"Reserve Fund"}
                 </h3>
               </div>
             </div>
             <div className="mt-5 space-y-1.5">
               <p className="leading-tight text-muted-foreground text-sm">
-                Balance (USD)
+                {"Balance (USD)"}
               </p>
               <div className="flex flex-wrap gap-1.5 items-center">
                 <span className="font-medium text-xl tracking-tight">
-                  $1,980,000
+                  {"$1,980,000"}
                 </span>
                 <span className="font-medium text-rose-600 text-sm">
-                  -3% ($58,000)
+                  {"-3% ($58,000)"}
                 </span>
               </div>
             </div>
@@ -90,23 +90,23 @@ export function Pattern() {
               </Item>
               <div className="flex flex-col gap-1">
                 <p className="leading-tight text-muted-foreground text-sm">
-                  Team
+                  {"Team"}
                 </p>
                 <h3 className="font-medium leading-tight text-sm">
-                  Growth Portfolio
+                  {"Growth Portfolio"}
                 </h3>
               </div>
             </div>
             <div className="mt-5 space-y-1.5">
               <p className="leading-tight text-muted-foreground text-sm">
-                Balance (USD)
+                {"Balance (USD)"}
               </p>
               <div className="flex flex-wrap gap-1.5 items-center">
                 <span className="font-medium text-xl tracking-tight">
-                  $3,245,500
+                  {"$3,245,500"}
                 </span>
                 <span className="font-medium text-sm text-teal-600">
-                  +10% ($295,000)
+                  {"+10% ($295,000)"}
                 </span>
               </div>
             </div>

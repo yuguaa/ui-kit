@@ -33,7 +33,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Help sheet
+        {"Help sheet"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -43,7 +43,7 @@ export function Pattern() {
             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
             <path d="M12 17h.01"></path>
           </svg>
-          Open help sheet
+          {"Open help sheet"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -55,11 +55,11 @@ export function Pattern() {
           <div className="min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <SheetTitle className="truncate" id="base-ui-_r_3_">
-                Help
+                {"Help"}
               </SheetTitle>
             </div>
             <SheetDescription className="sr-only" id="base-ui-_r_4_">
-              Find setup guides and support paths.
+              {"Find setup guides and support paths."}
             </SheetDescription>
           </div>
           <SheetClose className="-me-1.5 -mt-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close help sheet">
@@ -99,7 +99,7 @@ export function Pattern() {
               <section className="flex flex-col gap-2.5">
                 <div className="flex gap-2 items-center">
                   <h3 className="font-medium text-sm">
-                    Suggested
+                    {"Suggested"}
                   </h3>
                 </div>
                 <ItemGroup className="gap-2.5" role="list">
@@ -117,18 +117,18 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Workspace basics
+                          {"Workspace basics"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-ring inline-flex outline-none rounded-sm" id="base-ui-_r_a_" baseUiTooltipTrigger="">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                            New
+                            {"New"}
                           </Badge>
                         </TooltipTrigger>
                         </Tooltip>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Set up members, roles, and invite rules.
+                        {"Set up members, roles, and invite rules."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -145,11 +145,11 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Data model
+                          {"Data model"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Understand records, fields, and views.
+                        {"Understand records, fields, and views."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -165,11 +165,11 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Permissions
+                          {"Permissions"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Review access levels before inviting people.
+                        {"Review access levels before inviting people."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -178,7 +178,7 @@ export function Pattern() {
               <section className="flex flex-col gap-2.5">
                 <div className="flex gap-2 items-center">
                   <h3 className="font-medium text-sm">
-                    Getting started
+                    {"Getting started"}
                   </h3>
                 </div>
                 <ItemGroup className="gap-2.5" role="list">
@@ -194,18 +194,18 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Launch checklist
+                          {"Launch checklist"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-ring inline-flex outline-none rounded-sm" id="base-ui-_r_c_" baseUiTooltipTrigger="">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                            6 steps
+                            {"6 steps"}
                           </Badge>
                         </TooltipTrigger>
                         </Tooltip>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Finish the first workspace setup steps.
+                        {"Finish the first workspace setup steps."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -222,11 +222,11 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Import data
+                          {"Import data"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Bring contacts and tasks from CSV.
+                        {"Bring contacts and tasks from CSV."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -244,18 +244,18 @@ export function Pattern() {
                     <ItemContent className="gap-0.5 min-w-0">
                       <ItemTitle className="gap-2 min-w-0 w-full">
                         <span className="truncate">
-                          Automation guide
+                          {"Automation guide"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-ring inline-flex outline-none rounded-sm" id="base-ui-_r_e_" baseUiTooltipTrigger="">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                            Updated
+                            {"Updated"}
                           </Badge>
                         </TooltipTrigger>
                         </Tooltip>
                       </ItemTitle>
                       <ItemDescription className="text-xs">
-                        Connect routine work to triggers.
+                        {"Connect routine work to triggers."}
                       </ItemDescription>
                     </ItemContent>
                   </Item>
@@ -277,7 +277,7 @@ export function Pattern() {
               <path d="M12 17h.01"></path>
             </svg>
             <span className="truncate">
-              Help center
+              {"Help center"}
             </span>
           </Button>
           <Button className="font-normal gap-2 hover:no-underline justify-start max-w-full no-underline w-auto" href="#support" aria-label="Contact support" role="button" tabIndex="0" type="button">
@@ -290,7 +290,7 @@ export function Pattern() {
               <circle cx="12" cy="12" r="4"></circle>
             </svg>
             <span className="truncate">
-              Contact support
+              {"Contact support"}
             </span>
           </Button>
           <Button className="font-normal gap-2 hover:no-underline justify-start max-w-full no-underline w-auto" href="#shortcuts" aria-label="Shortcuts" role="button" tabIndex="0" type="button">
@@ -300,7 +300,7 @@ export function Pattern() {
               <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
             </svg>
             <span className="truncate">
-              Shortcuts
+              {"Shortcuts"}
             </span>
           </Button>
           <Button className="font-normal gap-2 hover:no-underline justify-start max-w-full no-underline w-auto" href="#terms" aria-label="Terms and privacy" role="button" tabIndex="0" type="button">
@@ -309,7 +309,7 @@ export function Pattern() {
               <path d="m9 12 2 2 4-4"></path>
             </svg>
             <span className="truncate">
-              Terms and privacy
+              {"Terms and privacy"}
             </span>
           </Button>
         </ItemGroup>

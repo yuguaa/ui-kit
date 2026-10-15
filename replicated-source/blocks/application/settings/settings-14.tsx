@@ -34,16 +34,16 @@ export function Pattern() {
         <header className="flex flex-row gap-(--frame-panel-header-gap) items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-2.5!">
           <div className="space-y-px">
             <div className="font-semibold text-sm">
-              API Integrations
+              {"API Integrations"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Oversee endpoints, key rotation, and traffic availability.
+              {"Oversee endpoints, key rotation, and traffic availability."}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <div className="flex gap-2 items-center">
               <span className="hidden md:inline text-muted-foreground text-sm">
-                Pause all
+                {"Pause all"}
               </span>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1_" aria-checked="false" size="default" aria-label="Pause all integrations">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -58,17 +58,20 @@ export function Pattern() {
                 <rect width="20" height="14" x="2" y="6" rx="2"></rect>
               </svg>
               <span className="hidden md:inline">
-                Positions
+                {"Positions"}
               </span>
             </Button>
           </div>
         </header>
         <FramePanel className="p-0!">
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_4_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1098px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "44px", "--data-grid-fill": "44"}}>
+                    <DataGridProvider>
                     <DataGridTable style={{"--header-select-size": "38", "--col-select-size": "38", "--header-name-size": "450", "--col-name-size": "450", "--header-apiKey-size": "300", "--col-apiKey-size": "300", "--header-dailyCalls-size": "140", "--col-dailyCalls-size": "140", "--header-enabled-size": "110", "--col-enabled-size": "110", "--header-actions-size": "60", "--col-actions-size": "60", width: "calc(1098px + var(--data-grid-fill-size, 0px))"}}>
                       <colgroup>
                         <col style={{width: "calc(var(--col-select-size) * 1px)"}} />
@@ -89,7 +92,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
-                                Integration
+                                {"Integration"}
                                 <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                   <path d="m5 12 7-7 7 7"></path>
                                   <path d="M12 19V5"></path>
@@ -103,7 +106,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
-                                API Key
+                                {"API Key"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -117,7 +120,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_l_" aria-expanded="false">
-                                Daily Calls
+                                {"Daily Calls"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -131,7 +134,7 @@ export function Pattern() {
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
                               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_q_" aria-expanded="false">
-                                Status
+                                {"Status"}
                                 <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
@@ -145,6 +148,7 @@ export function Pattern() {
                           <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="ai-summarizer">
                           <td className="align-middle ps-4! px-2 py-1.5" style={{width: "calc(var(--col-select-size) * 1px)"}}>
@@ -224,10 +228,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  AI Summarizer
+                                  {"AI Summarizer"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Gemini · Meeting transcript distillation and action extraction
+                                  {"Gemini · Meeting transcript distillation and action extraction"}
                                 </span>
                               </div>
                             </div>
@@ -236,7 +240,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="gem_live_r1m5q8v3p9x7n2c4">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  gem_live_r1m5q8v3p9x7n2c4
+                                  {"gem_live_r1m5q8v3p9x7n2c4"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -247,7 +251,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              4,100
+                              {"4,100"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -282,10 +286,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Async Reviews
+                                  {"Async Reviews"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Loom · Code review recordings and feedback collection
+                                  {"Loom · Code review recordings and feedback collection"}
                                 </span>
                               </div>
                             </div>
@@ -294,7 +298,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="lom_live_x5n2m8q4v1r9p7c3">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  lom_live_x5n2m8q4v1r9p7c3
+                                  {"lom_live_x5n2m8q4v1r9p7c3"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -305,7 +309,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              2,900
+                              {"2,900"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -340,10 +344,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Community Sync
+                                  {"Community Sync"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Discord · Community reports and moderation escalations
+                                  {"Discord · Community reports and moderation escalations"}
                                 </span>
                               </div>
                             </div>
@@ -352,7 +356,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="dsc_live_m3q9v2k7r5n1x8c4">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  dsc_live_m3q9v2k7r5n1x8c4
+                                  {"dsc_live_m3q9v2k7r5n1x8c4"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -363,7 +367,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              6,400
+                              {"6,400"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -460,10 +464,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Content Generator
+                                  {"Content Generator"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Gemini · Draft generation and content summarization
+                                  {"Gemini · Draft generation and content summarization"}
                                 </span>
                               </div>
                             </div>
@@ -472,7 +476,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="gem_live_k4r9m2q7v1p8x3n5">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  gem_live_k4r9m2q7v1p8x3n5
+                                  {"gem_live_k4r9m2q7v1p8x3n5"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -483,7 +487,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              8,200
+                              {"8,200"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -531,10 +535,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  DB Replication
+                                  {"DB Replication"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Neon · Cross-region read replica synchronization
+                                  {"Neon · Cross-region read replica synchronization"}
                                 </span>
                               </div>
                             </div>
@@ -543,7 +547,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="neo_live_p7x3m1q9v4r2n8c6">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  neo_live_p7x3m1q9v4r2n8c6
+                                  {"neo_live_p7x3m1q9v4r2n8c6"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -554,7 +558,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              22,100
+                              {"22,100"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -591,10 +595,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Docs Webhook
+                                  {"Docs Webhook"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Mintlify · Documentation deploy and page-view events
+                                  {"Mintlify · Documentation deploy and page-view events"}
                                 </span>
                               </div>
                             </div>
@@ -603,7 +607,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="mnt_live_v2q8m5r1p9x4n7c3">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  mnt_live_v2q8m5r1p9x4n7c3
+                                  {"mnt_live_v2q8m5r1p9x4n7c3"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -614,7 +618,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              4,300
+                              {"4,300"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -651,10 +655,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Edge Cache Sync
+                                  {"Edge Cache Sync"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Convex · State snapshots for frontend refreshes
+                                  {"Convex · State snapshots for frontend refreshes"}
                                 </span>
                               </div>
                             </div>
@@ -663,7 +667,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="cvx_live_t1p6m9q3r7v2x4c8">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  cvx_live_t1p6m9q3r7v2x4c8
+                                  {"cvx_live_t1p6m9q3r7v2x4c8"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -674,7 +678,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              15,400
+                              {"15,400"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -709,10 +713,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Incident Bot
+                                  {"Incident Bot"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Discord · Automated incident threads and status page sync
+                                  {"Discord · Automated incident threads and status page sync"}
                                 </span>
                               </div>
                             </div>
@@ -721,7 +725,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="dsc_live_r6n1m4q9v7p2x8c5">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  dsc_live_r6n1m4q9v7p2x8c5
+                                  {"dsc_live_r6n1m4q9v7p2x8c5"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -732,7 +736,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              3,200
+                              {"3,200"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -767,10 +771,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Invoice Relay
+                                  {"Invoice Relay"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Stripe · Automated invoice generation and delivery tracking
+                                  {"Stripe · Automated invoice generation and delivery tracking"}
                                 </span>
                               </div>
                             </div>
@@ -779,7 +783,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="stp_live_v3m8q1r6p9x2n4c7">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  stp_live_v3m8q1r6p9x2n4c7
+                                  {"stp_live_v3m8q1r6p9x2n4c7"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -790,7 +794,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              7,800
+                              {"7,800"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -839,10 +843,10 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Meeting Webhooks
+                                  {"Meeting Webhooks"}
                                 </span>
                                 <span className="text-muted-foreground text-xs truncate">
-                                  Zoom · Recording ready and host events
+                                  {"Zoom · Recording ready and host events"}
                                 </span>
                               </div>
                             </div>
@@ -851,7 +855,7 @@ export function Pattern() {
                             <Button type="button" tabIndex="0" aria-label="Copy API key" title="zom_live_q5n8r2m4v7c1p9d3">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 max-w-full min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                 <span className="font-mono min-w-0 tabular-nums truncate">
-                                  zom_live_q5n8r2m4v7c1p9d3
+                                  {"zom_live_q5n8r2m4v7c1p9d3"}
                                 </span>
                                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
@@ -862,7 +866,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-dailyCalls-size) * 1px)"}}>
                             <span className="tabular-nums text-sm">
-                              11,300
+                              {"11,300"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-enabled-size) * 1px)"}}>
@@ -882,27 +886,32 @@ export function Pattern() {
                           <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
         </FramePanel>
         <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-2! py-(--frame-panel-footer-py) py-2.5!">
+          <DataGridProvider>
           <DataGridPagination>
             <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
               <div className="text-muted-foreground text-sm">
-                Rows per page
+                {"Rows per page"}
               </div>
               <Select>
               <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_2p_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                 <SelectValue>
-                  10
+                  {"10"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -910,32 +919,32 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
               <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                1 - 10 of 31
+                {"1 - 10 of 31"}
               </div>
               <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                 <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                   <span className="sr-only">
-                    Go to previous page
+                    {"Go to previous page"}
                   </span>
                   <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                     <path d="m15 18-6-6 6-6"></path>
                   </svg>
                 </Button>
                 <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                  1
+                  {"1"}
                 </Button>
                 <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                  2
+                  {"2"}
                 </Button>
                 <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
-                  3
+                  {"3"}
                 </Button>
                 <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 4">
-                  4
+                  {"4"}
                 </Button>
                 <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                   <span className="sr-only">
-                    Go to next page
+                    {"Go to next page"}
                   </span>
                   <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                     <path d="m9 18 6-6-6-6"></path>
@@ -944,6 +953,7 @@ export function Pattern() {
               </div>
             </div>
           </DataGridPagination>
+          </DataGridProvider>
         </footer>
       </Frame>
     </div>

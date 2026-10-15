@@ -23,7 +23,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -33,7 +33,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Studio
+                  {"Studio"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -43,7 +43,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Fashion Drop
+                  {"Fashion Drop"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -51,14 +51,14 @@ export function Pattern() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
               <h2 className="font-semibold leading-tight md:text-3xl text-2xl text-balance" id="fashion-studio-heading">
-                Fashion Studio
+                {"Fashion Studio"}
               </h2>
               <p className="leading-5 max-w-2xl mt-1 text-muted-foreground text-pretty text-sm">
-                Studio-shot layers and off-duty essentials selected for sharp seasonal rotation.
+                {"Studio-shot layers and off-duty essentials selected for sharp seasonal rotation."}
               </p>
             </div>
             <Button className="hover:text-primary hover:underline sm:w-auto transition-colors underline-offset-4 w-full" href="#" aria-label="Browse all fashion studio looks" role="button" tabIndex="0">
-              Browse All
+              {"Browse All"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -76,16 +76,16 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="relaxed-studio-set-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Relaxed Studio Set">
                   <span className="block">
-                    Relaxed Studio
+                    {"Relaxed Studio"}
                   </span>
                   <span className="block">
-                    Set
+                    {"Set"}
                   </span>
                 </a>
               </CardTitle>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-4 rounded-full text-white text-xs top-4 transition-shadow z-20">
-              New
+              {"New"}
             </Badge>
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
@@ -96,40 +96,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">
-                      Tailoring
+                      {"Tailoring"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Studio">
-                      Studio
+                      {"Studio"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Low-slung set with relaxed studio drape and easy day-to-night volume
+                  {"Low-slung set with relaxed studio drape and easy day-to-night volume"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      s
+                      {"s"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      l
+                      {"l"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $132.00
+                      {"$132.00"}
                     </span>
                   </div>
                 </div>
@@ -145,16 +145,16 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="gloss-puffer-jacket-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Gloss Puffer Jacket">
                   <span className="block">
-                    Gloss Puffer
+                    {"Gloss Puffer"}
                   </span>
                   <span className="block">
-                    Jacket
+                    {"Jacket"}
                   </span>
                 </a>
               </CardTitle>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-4 rounded-full text-white text-xs top-4 transition-shadow z-20">
-              Trending
+              {"Trending"}
             </Badge>
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
@@ -165,40 +165,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Winter">
-                      Winter
+                      {"Winter"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Outerwear">
-                      Outerwear
+                      {"Outerwear"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  High-shine insulated shell with compact winter volume and clean street finish
+                  {"High-shine insulated shell with compact winter volume and clean street finish"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      l
+                      {"l"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $148.00
+                      {"$148.00"}
                     </span>
                     <span className="font-normal line-through min-w-0 text-muted-foreground text-xs truncate">
-                      $198.00
+                      {"$198.00"}
                     </span>
                   </div>
                 </div>
@@ -214,10 +214,10 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="ribbed-tank-set-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Ribbed Tank Set">
                   <span className="block">
-                    Ribbed Tank
+                    {"Ribbed Tank"}
                   </span>
                   <span className="block">
-                    Set
+                    {"Set"}
                   </span>
                 </a>
               </CardTitle>
@@ -231,40 +231,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Travel Set">
-                      Travel Set
+                      {"Travel Set"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Knits">
-                      Knits
+                      {"Knits"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Soft ribbed co-ord made for travel days, warm layers, and clean movement
+                  {"Soft ribbed co-ord made for travel days, warm layers, and clean movement"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      xs
+                      {"xs"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      s
+                      {"s"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $86.00
+                      {"$86.00"}
                     </span>
                   </div>
                 </div>
@@ -280,16 +280,16 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="black-studio-set-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Black Studio Set">
                   <span className="block">
-                    Black Studio
+                    {"Black Studio"}
                   </span>
                   <span className="block">
-                    Set
+                    {"Set"}
                   </span>
                 </a>
               </CardTitle>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-4 rounded-full text-white text-xs top-4 transition-shadow z-20">
-              Trending
+              {"Trending"}
             </Badge>
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
@@ -300,40 +300,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Studio">
-                      Studio
+                      {"Studio"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Monochrome">
-                      Monochrome
+                      {"Monochrome"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Clean monochrome layers with sculpted ease and a confident studio line
+                  {"Clean monochrome layers with sculpted ease and a confident studio line"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      xs
+                      {"xs"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      s
+                      {"s"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $168.00
+                      {"$168.00"}
                     </span>
                   </div>
                 </div>
@@ -349,16 +349,16 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="ivory-studio-coat-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Ivory Studio Coat">
                   <span className="block">
-                    Ivory Studio
+                    {"Ivory Studio"}
                   </span>
                   <span className="block">
-                    Coat
+                    {"Coat"}
                   </span>
                 </a>
               </CardTitle>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-4 rounded-full text-white text-xs top-4 transition-shadow z-20">
-              New
+              {"New"}
             </Badge>
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
@@ -369,37 +369,37 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Outerwear">
-                      Outerwear
+                      {"Outerwear"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">
-                      Tailoring
+                      {"Tailoring"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Tailored ivory layer with soft volume, clean drape, and quiet polish
+                  {"Tailored ivory layer with soft volume, clean drape, and quiet polish"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      xs
+                      {"xs"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $226.00
+                      {"$226.00"}
                     </span>
                   </div>
                 </div>
@@ -415,10 +415,10 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="leather-biker-jacket-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Leather Biker Jacket">
                   <span className="block">
-                    Leather Biker
+                    {"Leather Biker"}
                   </span>
                   <span className="block">
-                    Jacket
+                    {"Jacket"}
                   </span>
                 </a>
               </CardTitle>
@@ -432,34 +432,34 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Outerwear">
-                      Outerwear
+                      {"Outerwear"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Leather">
-                      Leather
+                      {"Leather"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Cropped leather shape with structured attitude and a sharper evening edge
+                  {"Cropped leather shape with structured attitude and a sharper evening edge"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $248.00
+                      {"$248.00"}
                     </span>
                   </div>
                 </div>
@@ -475,16 +475,16 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="side-slit-tank-set-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Side-Slit Tank Set">
                   <span className="block">
-                    Side-Slit Tank
+                    {"Side-Slit Tank"}
                   </span>
                   <span className="block">
-                    Set
+                    {"Set"}
                   </span>
                 </a>
               </CardTitle>
             </div>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-4 rounded-full text-white text-xs top-4 transition-shadow z-20">
-              New
+              {"New"}
             </Badge>
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
@@ -495,40 +495,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Travel Set">
-                      Travel Set
+                      {"Travel Set"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">
-                      Tailoring
+                      {"Tailoring"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Longline tank set with airy side movement and a light tailored finish
+                  {"Longline tank set with airy side movement and a light tailored finish"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      xs
+                      {"xs"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      s
+                      {"s"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $92.00
+                      {"$92.00"}
                     </span>
                   </div>
                 </div>
@@ -544,10 +544,10 @@ export function Pattern() {
               <CardTitle className="font-bold leading-snug max-w-[11rem] text-foreground text-lg" id="stone-studio-trouser-title">
                 <a className="hover:text-primary hover:underline inline-block pointer-events-auto relative transition-colors underline-offset-4 z-30" href="#" aria-label="Stone Studio Trouser">
                   <span className="block">
-                    Stone Studio
+                    {"Stone Studio"}
                   </span>
                   <span className="block">
-                    Trouser
+                    {"Trouser"}
                   </span>
                 </a>
               </CardTitle>
@@ -561,40 +561,40 @@ export function Pattern() {
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">
-                      Tailoring
+                      {"Tailoring"}
                     </a>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1 translate-y-px" aria-hidden="true"></span>
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Studio">
-                      Studio
+                      {"Studio"}
                     </a>
                   </div>
                 </div>
                 <p className="font-medium leading-5 line-clamp-2 min-h-10 min-w-0 text-foreground text-sm">
-                  Pleated stone trouser with relaxed drape and a refined studio fall
+                  {"Pleated stone trouser with relaxed drape and a refined studio fall"}
                 </p>
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </span>
                   <div className="flex flex-wrap gap-1.5 items-center justify-end min-w-0">
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      s
+                      {"s"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      m
+                      {"m"}
                     </span>
                     <span className="bg-background/70 border border-border/70 font-medium inline-flex items-center justify-center rounded-full size-7 text-[0.6875rem] text-muted-foreground">
-                      l
+                      {"l"}
                     </span>
                   </div>
                 </div>
                 <div className="border-border/70 border-t flex gap-3 items-baseline justify-between min-w-0 pt-2">
                   <span className="font-medium leading-5 shrink-0 text-muted-foreground text-xs">
-                    Price
+                    {"Price"}
                   </span>
                   <div className="flex font-semibold gap-2 items-baseline min-w-0 overflow-hidden tabular-nums text-right text-sm whitespace-nowrap">
                     <span className="shrink-0">
-                      $118.00
+                      {"$118.00"}
                     </span>
                   </div>
                 </div>

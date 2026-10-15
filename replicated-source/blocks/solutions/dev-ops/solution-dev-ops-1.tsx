@@ -66,7 +66,7 @@ export function Pattern() {
   return (
     <main className="bg-background min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Cron Jobs
+        {"Cron Jobs"}
       </h1>
       <div className="bg-background flex flex-col min-h-svh w-full">
         <div className="max-w-[1320px] md:p-4 mx-auto p-3 w-full">
@@ -74,25 +74,25 @@ export function Pattern() {
             <div className="flex flex-col gap-0.5 min-w-0">
               <div className="flex flex-wrap gap-2.5 items-center">
                 <h2 className="font-semibold leading-tight text-foreground text-lg tracking-tight">
-                  Cron Jobs
+                  {"Cron Jobs"}
                 </h2>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive-foreground text-xs transition-shadow">
-                  3 failing
+                  {"3 failing"}
                 </Badge>
               </div>
               <p className="text-muted-foreground text-sm">
-                32 jobs across 3 clusters, times in UTC
+                {"32 jobs across 3 clusters, times in UTC"}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center shrink-0">
               <Select>
               <SelectTrigger className="w-44" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Environment" extracted="1">
                 <SelectValue>
-                  All Environments
+                  {"All Environments"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -102,7 +102,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New Job
+                {"New Job"}
               </Button>
             </div>
           </div>
@@ -120,18 +120,18 @@ export function Pattern() {
                     </IconTile>
                     <div className="min-w-0 pt-0.5">
                       <span className="block font-medium text-sm truncate">
-                        Active Jobs
+                        {"Active Jobs"}
                       </span>
                       <span className="block text-muted-foreground text-xs truncate">
-                        5 paused
+                        {"5 paused"}
                       </span>
                     </div>
                   </div>
                   <div className="flex gap-2 items-center min-w-0">
                     <div className="font-semibold tabular-nums text-xl tracking-tight">
-                      27
+                      {"27"}
                       <span className="font-normal text-muted-foreground text-sm">
-                        of 32
+                        {"of 32"}
                       </span>
                     </div>
                   </div>
@@ -174,19 +174,19 @@ export function Pattern() {
                       <span className="flex gap-1 items-center">
                         <span className="bg-success h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          24 Healthy
+                          {"24 Healthy"}
                         </span>
                       </span>
                       <span className="flex gap-1 items-center">
                         <span className="bg-destructive h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          3 Failing
+                          {"3 Failing"}
                         </span>
                       </span>
                       <span className="flex gap-1 items-center">
                         <span className="bg-info h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          5 Paused
+                          {"5 Paused"}
                         </span>
                       </span>
                     </div>
@@ -203,34 +203,26 @@ export function Pattern() {
                     </IconTile>
                     <div className="min-w-0 pt-0.5">
                       <span className="block font-medium text-sm truncate">
-                        Success Rate
+                        {"Success Rate"}
                       </span>
                       <span className="block text-muted-foreground text-xs truncate">
-                        995 of 1,004 runs
+                        {"995 of 1,004 runs"}
                       </span>
                     </div>
                   </div>
                   <div className="flex gap-2 items-center min-w-0">
                     <div className="font-semibold tabular-nums text-xl tracking-tight">
-                      99.1%
+                      {"99.1%"}
                     </div>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      Below SLO
+                      {"Below SLO"}
                     </Badge>
                   </div>
                   <div className="flex flex-col gap-2 mt-auto">
                     <div className="min-w-0" role="img" aria-label="Success rate by hour, last 24 hours: 17 of 24 hours in SLO, lowest 86.7% at 14:00 UTC">
+                      <ChartContainer>
                       <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-11.5 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_4_">
-                        <style>{`
- [data-chart=chart-_r_4_] {
-  --color-rate: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_4_] {
-  --color-rate: var(--success);
-}
-`}</style>
+                        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_4_] {\n  --color-rate: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_4_] {\n  --color-rate: var(--success);\n}\n" }} />
                         <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                           <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                             <div className="recharts-wrapper" width="261" height="46" style={{position: "relative", cursor: "default", width: "261px", height: "46px"}}>
@@ -288,7 +280,7 @@ export function Pattern() {
                                 <g className="recharts-zIndex-layer_2000" tabIndex="-1">
                                   <text className="recharts-label recharts-text" offset="5" x="8" y="15.865743204640431" textAnchor="start" fill="var(--muted-foreground)">
                                     <tspan x="8" dy="0.71em">
-                                      SLO 99.5%
+                                      {"SLO 99.5%"}
                                     </tspan>
                                   </text>
                                 </g>
@@ -297,18 +289,19 @@ export function Pattern() {
                           </div>
                         </div>
                       </div>
+                      </ChartContainer>
                     </div>
                     <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
                       <span className="flex gap-1 items-center">
                         <span className="bg-success h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          17 of 24 hours in SLO
+                          {"17 of 24 hours in SLO"}
                         </span>
                       </span>
                       <span className="flex gap-1 items-center">
                         <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          7 below
+                          {"7 below"}
                         </span>
                       </span>
                     </div>
@@ -327,21 +320,21 @@ export function Pattern() {
                     </IconTile>
                     <div className="min-w-0 pt-0.5">
                       <span className="block font-medium text-sm truncate">
-                        Failed Runs
+                        {"Failed Runs"}
                       </span>
                       <span className="block text-muted-foreground text-xs truncate">
-                        across 5 jobs
+                        {"across 5 jobs"}
                       </span>
                     </div>
                   </div>
                   <div className="flex gap-2 items-center min-w-0">
                     <div className="font-semibold tabular-nums text-xl tracking-tight">
-                      9
+                      {"9"}
                     </div>
                   </div>
                   <div className="flex gap-2 h-5 items-center min-w-0">
                     <span className="shrink-0 text-muted-foreground text-xs">
-                      Worst
+                      {"Worst"}
                     </span>
                     <button className="[&_svg:not([class*=size-])]:size-3.5 cursor-pointer flex font-medium gap-1.5 hover:text-primary hover:underline items-center min-w-0 text-foreground text-left text-sm transition-colors underline-offset-2" type="button">
                       <span className="flex shrink-0 text-muted-foreground">
@@ -352,11 +345,11 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        Import bank settlement files
+                        {"Import bank settlement files"}
                       </span>
                     </button>
                     <span className="ml-auto shrink-0 tabular-nums text-muted-foreground text-xs">
-                      4 of 9
+                      {"4 of 9"}
                     </span>
                   </div>
                   <div className="flex flex-col gap-2 mt-auto">
@@ -368,13 +361,13 @@ export function Pattern() {
                       <span className="flex gap-1 items-center">
                         <span className="bg-destructive h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          7 Failed
+                          {"7 Failed"}
                         </span>
                       </span>
                       <span className="flex gap-1 items-center">
                         <span className="bg-warning h-2 rounded-full shrink-0 w-0.75" aria-hidden="true"></span>
                         <span className="font-medium tabular-nums text-muted-foreground text-xs">
-                          2 Timed Out
+                          {"2 Timed Out"}
                         </span>
                       </span>
                     </div>
@@ -396,18 +389,18 @@ export function Pattern() {
                     </IconTile>
                     <div className="min-w-0 pt-0.5">
                       <span className="block font-medium text-sm truncate">
-                        Next Run
+                        {"Next Run"}
                       </span>
                       <span className="block text-muted-foreground text-xs truncate">
-                        42 runs in the next hour
+                        {"42 runs in the next hour"}
                       </span>
                     </div>
                   </div>
                   <div className="flex gap-2 items-center min-w-0">
                     <div className="font-semibold tabular-nums text-xl tracking-tight">
-                      in 5m
+                      {"in 5m"}
                       <span className="font-normal text-muted-foreground text-sm">
-                        14:25 UTC
+                        {"14:25 UTC"}
                       </span>
                     </div>
                   </div>
@@ -421,11 +414,11 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="truncate">
-                        Drain webhook retry queue
+                        {"Drain webhook retry queue"}
                       </span>
                     </button>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                      Failing
+                      {"Failing"}
                     </Badge>
                   </div>
                   <div className="flex flex-col gap-2 mt-auto">
@@ -435,7 +428,7 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "50%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
@@ -449,14 +442,14 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="shrink-0">
-                          14:15
+                          {"14:15"}
                         </span>
                         <span className="text-destructive truncate">
-                          Failed
+                          {"Failed"}
                         </span>
                       </span>
                       <span className="shrink-0">
-                        14:25
+                        {"14:25"}
                       </span>
                     </div>
                   </div>
@@ -467,16 +460,16 @@ export function Pattern() {
               <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                 <div className="flex flex-col gap-px min-w-0">
                   <div className="font-semibold text-sm">
-                    Jobs
+                    {"Jobs"}
                   </div>
                   <div className="text-muted-foreground text-sm">
                     <span className="gap-1.5 inline-flex items-center tabular-nums whitespace-nowrap" role="status">
                       <span>
-                        32 jobs
+                        {"32 jobs"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span>
-                        3 failing
+                        {"3 failing"}
                       </span>
                     </span>
                   </div>
@@ -491,7 +484,7 @@ export function Pattern() {
                       <circle cx="7" cy="7" r="3"></circle>
                     </svg>
                     <span className="max-sm:sr-only">
-                      Display
+                      {"Display"}
                     </span>
                   </PopoverTrigger>
                   </Popover>
@@ -501,27 +494,27 @@ export function Pattern() {
                 <Tabs data-orientation="horizontal" activationDirection="none">
                   <TabsList className="border-b gap-3 h-10! justify-start no-scrollbar overflow-x-auto px-(--frame-panel-header-px) py-0! sm:gap-5 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                     <TabsTrigger className="after:-bottom-px! flex-none gap-1.5 h-full! px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_8_" compositeItemActive="">
-                      All
+                      {"All"}
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                        32
+                        {"32"}
                       </Badge>
                     </TabsTrigger>
                     <TabsTrigger className="after:-bottom-px! flex-none gap-1.5 h-full! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
-                      Healthy
+                      {"Healthy"}
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                        24
+                        {"24"}
                       </Badge>
                     </TabsTrigger>
                     <TabsTrigger className="after:-bottom-px! flex-none gap-1.5 h-full! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_a_">
-                      Failing
+                      {"Failing"}
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                        3
+                        {"3"}
                       </Badge>
                     </TabsTrigger>
                     <TabsTrigger className="after:-bottom-px! flex-none gap-1.5 h-full! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_b_">
-                      Paused
+                      {"Paused"}
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-xs transition-shadow">
-                        5
+                        {"5"}
                       </Badge>
                     </TabsTrigger>
                   </TabsList>
@@ -545,7 +538,7 @@ export function Pattern() {
                         <path d="M9 19h6"></path>
                       </svg>
                       <span className="max-sm:sr-only">
-                        Filter
+                        {"Filter"}
                       </span>
                     </PopoverTrigger>
                     </Popover>
@@ -553,10 +546,13 @@ export function Pattern() {
                 </div>
                 <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 <div className="relative">
+                  <DataGridProvider>
                   <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
                     <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_g_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "38px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
                       <div role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-overflow-x-end="">
+                        <DataGridProvider>
                         <DataGridTableViewport>
+                          <DataGridProvider>
                           <DataGridTable>
                             <colgroup>
                               <col style={{width: "36px"}} />
@@ -580,7 +576,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
-                                      Job
+                                      {"Job"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -593,7 +589,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_s_" aria-expanded="false">
-                                      Schedule
+                                      {"Schedule"}
                                     </DropdownMenuTrigger>
                                     </DropdownMenu>
                                   </div>
@@ -602,7 +598,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
-                                      Enabled
+                                      {"Enabled"}
                                     </DropdownMenuTrigger>
                                     </DropdownMenu>
                                   </div>
@@ -611,7 +607,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
-                                      Last Run
+                                      {"Last Run"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -624,7 +620,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1b_" aria-expanded="false">
-                                      Last 20 Runs
+                                      {"Last 20 Runs"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -637,7 +633,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1g_" aria-expanded="false">
-                                      Next Run
+                                      {"Next Run"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -650,7 +646,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1l_" aria-expanded="false">
-                                      Target
+                                      {"Target"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -663,7 +659,7 @@ export function Pattern() {
                                   <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                     <DropdownMenu>
                                     <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1q_" aria-expanded="false">
-                                      Owner
+                                      {"Owner"}
                                       <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                         <path d="m7 15 5 5 5-5"></path>
                                         <path d="m7 9 5-5 5 5"></path>
@@ -675,6 +671,7 @@ export function Pattern() {
                                 <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-right" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" data-pinned="end" data-outer-pinned-col="end" data-last-col="end" style={{width: "44px", top: "0px"}}></th>
                               </tr>
                             </thead>
+                            <DataGridProvider>
                             <DataGridTableBody>
                               <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/job-row hover:bg-muted/40" data-row-id="JOB-233">
                                 <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start">
@@ -686,21 +683,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Drain webhook retry queue">
-                                      Drain webhook retry queue
+                                      {"Drain webhook retry queue"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      retries:drain --max=5000
+                                      {"retries:drain --max=5000"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 5 minutes
+                                      {"Every 5 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */5 * * * *
+                                        {"*/5 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -716,12 +713,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      Failed
+                                      {"Failed"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      5m ago
+                                      {"5m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      52s
+                                      {"52s"}
                                     </span>
                                   </div>
                                 </td>
@@ -758,10 +755,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 5m
+                                      {"in 5m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:25 UTC
+                                      {"14:25 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -775,13 +772,13 @@ export function Pattern() {
                                           <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
                                         </svg>
                                         <span className="truncate">
-                                          webhook-dispatcher
+                                          {"webhook-dispatcher"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-eu-west-1
+                                        {"prod-eu-west-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -793,7 +790,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Omar Haddad
+                                        {"Omar Haddad"}
                                       </span>
                                     </span>
                                   </span>
@@ -820,21 +817,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Import bank settlement files">
-                                      Import bank settlement files
+                                      {"Import bank settlement files"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      settlements:import --banks=all
+                                      {"settlements:import --banks=all"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Hourly at :30
+                                      {"Hourly at :30"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        30 * * * *
+                                        {"30 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -850,12 +847,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      Failed
+                                      {"Failed"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      50m ago
+                                      {"50m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      4m 12s
+                                      {"4m 12s"}
                                     </span>
                                   </div>
                                 </td>
@@ -892,10 +889,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 10m
+                                      {"in 10m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:30 UTC
+                                      {"14:30 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -909,13 +906,13 @@ export function Pattern() {
                                           <path d="M3 12A9 3 0 0 0 21 12"></path>
                                         </svg>
                                         <span className="truncate">
-                                          ledger-worker
+                                          {"ledger-worker"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -927,7 +924,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </span>
                                     </span>
                                   </span>
@@ -954,21 +951,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Rebuild merchant search index">
-                                      Rebuild merchant search index
+                                      {"Rebuild merchant search index"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      reindex merchants --shards=12
+                                      {"reindex merchants --shards=12"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Daily at 03:30
+                                      {"Daily at 03:30"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        30 3 * * *
+                                        {"30 3 * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -984,12 +981,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Timed Out
+                                      {"Timed Out"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      10h 50m ago
+                                      {"10h 50m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      1h 00m
+                                      {"1h 00m"}
                                     </span>
                                   </div>
                                 </td>
@@ -1026,10 +1023,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 13h 10m
+                                      {"in 13h 10m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      Sep 30, 03:30
+                                      {"Sep 30, 03:30"}
                                     </span>
                                   </div>
                                 </td>
@@ -1042,13 +1039,13 @@ export function Pattern() {
                                           <circle cx="11" cy="11" r="8"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          search-indexer
+                                          {"search-indexer"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-eu-west-1
+                                        {"prod-eu-west-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1060,7 +1057,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Sofia Romero
+                                        {"Sofia Romero"}
                                       </span>
                                     </span>
                                   </span>
@@ -1087,21 +1084,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Send failed charge alerts">
-                                      Send failed charge alerts
+                                      {"Send failed charge alerts"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      alerts:failed-charges --batch=500
+                                      {"alerts:failed-charges --batch=500"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 5 minutes
+                                      {"Every 5 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */5 * * * *
+                                        {"*/5 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1117,12 +1114,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      5m ago
+                                      {"5m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      12s
+                                      {"12s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1159,10 +1156,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 5m
+                                      {"in 5m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:25 UTC
+                                      {"14:25 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1175,13 +1172,13 @@ export function Pattern() {
                                           <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                                         </svg>
                                         <span className="truncate">
-                                          notifications
+                                          {"notifications"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1193,7 +1190,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Michael Rodriguez
+                                        {"Michael Rodriguez"}
                                       </span>
                                     </span>
                                   </span>
@@ -1220,21 +1217,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Expire stale payout holds">
-                                      Expire stale payout holds
+                                      {"Expire stale payout holds"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      holds:expire --older-than=72h
+                                      {"holds:expire --older-than=72h"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 15 minutes
+                                      {"Every 15 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */15 * * * *
+                                        {"*/15 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1250,12 +1247,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      5m ago
+                                      {"5m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      20s
+                                      {"20s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1292,10 +1289,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 10m
+                                      {"in 10m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:30 UTC
+                                      {"14:30 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1308,13 +1305,13 @@ export function Pattern() {
                                           <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
                                         </svg>
                                         <span className="truncate">
-                                          payouts-scheduler
+                                          {"payouts-scheduler"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1326,7 +1323,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Priya Patel
+                                        {"Priya Patel"}
                                       </span>
                                     </span>
                                   </span>
@@ -1353,21 +1350,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Sync FX reference rates">
-                                      Sync FX reference rates
+                                      {"Sync FX reference rates"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      fx:sync --source=central-banks
+                                      {"fx:sync --source=central-banks"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 10 minutes
+                                      {"Every 10 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */10 * * * *
+                                        {"*/10 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1383,12 +1380,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      10m ago
+                                      {"10m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      11s
+                                      {"11s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1425,10 +1422,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 10m
+                                      {"in 10m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:30 UTC
+                                      {"14:30 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1442,13 +1439,13 @@ export function Pattern() {
                                           <path d="M6 12h.01M18 12h.01"></path>
                                         </svg>
                                         <span className="truncate">
-                                          payments-api
+                                          {"payments-api"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1460,7 +1457,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        David Kim
+                                        {"David Kim"}
                                       </span>
                                     </span>
                                   </span>
@@ -1487,21 +1484,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Retry failed payouts">
-                                      Retry failed payouts
+                                      {"Retry failed payouts"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      payouts:retry --max-attempts=3
+                                      {"payouts:retry --max-attempts=3"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 30 minutes
+                                      {"Every 30 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */30 * * * *
+                                        {"*/30 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1517,12 +1514,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      20m ago
+                                      {"20m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      1m 57s
+                                      {"1m 57s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1559,10 +1556,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 10m
+                                      {"in 10m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:30 UTC
+                                      {"14:30 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1575,13 +1572,13 @@ export function Pattern() {
                                           <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
                                         </svg>
                                         <span className="truncate">
-                                          payouts-scheduler
+                                          {"payouts-scheduler"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-eu-west-1
+                                        {"prod-eu-west-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1593,7 +1590,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Priya Patel
+                                        {"Priya Patel"}
                                       </span>
                                     </span>
                                   </span>
@@ -1620,21 +1617,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Warm merchant search cache">
-                                      Warm merchant search cache
+                                      {"Warm merchant search cache"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      cache:warm merchants
+                                      {"cache:warm merchants"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Every 20 minutes
+                                      {"Every 20 minutes"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        */20 * * * *
+                                        {"*/20 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1650,12 +1647,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      20m ago
+                                      {"20m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      38s
+                                      {"38s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1692,10 +1689,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 20m
+                                      {"in 20m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:40 UTC
+                                      {"14:40 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1708,13 +1705,13 @@ export function Pattern() {
                                           <circle cx="11" cy="11" r="8"></circle>
                                         </svg>
                                         <span className="truncate">
-                                          search-indexer
+                                          {"search-indexer"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-eu-west-1
+                                        {"prod-eu-west-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1726,7 +1723,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Sofia Romero
+                                        {"Sofia Romero"}
                                       </span>
                                     </span>
                                   </span>
@@ -1753,21 +1750,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Purge expired idempotency keys">
-                                      Purge expired idempotency keys
+                                      {"Purge expired idempotency keys"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      idempotency:purge --ttl=24h
+                                      {"idempotency:purge --ttl=24h"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Hourly at :45
+                                      {"Hourly at :45"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        45 * * * *
+                                        {"45 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1783,12 +1780,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      35m ago
+                                      {"35m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      1m 55s
+                                      {"1m 55s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1825,10 +1822,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 25m
+                                      {"in 25m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      14:45 UTC
+                                      {"14:45 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1842,13 +1839,13 @@ export function Pattern() {
                                           <path d="M6 12h.01M18 12h.01"></path>
                                         </svg>
                                         <span className="truncate">
-                                          payments-api
+                                          {"payments-api"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1860,7 +1857,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Nina Santos
+                                        {"Nina Santos"}
                                       </span>
                                     </span>
                                   </span>
@@ -1887,21 +1884,21 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5" data-pinned="start" data-last-col="start">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <button className="cursor-pointer font-medium hover:text-primary hover:underline max-w-full self-start text-foreground text-left transition-colors truncate underline-offset-2" type="button" aria-label="Open Refresh fraud model features">
-                                      Refresh fraud model features
+                                      {"Refresh fraud model features"}
                                     </button>
                                     <span className="font-mono text-muted-foreground text-xs truncate">
-                                      features:refresh --model=fs-v7
+                                      {"features:refresh --model=fs-v7"}
                                     </span>
                                   </div>
                                 </td>
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="text-sm truncate">
-                                      Hourly at :00
+                                      {"Hourly at :00"}
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        0 * * * *
+                                        {"0 * * * *"}
                                       </span>
                                     </span>
                                   </div>
@@ -1917,12 +1914,12 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 items-start min-w-0">
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                      Succeeded
+                                      {"Succeeded"}
                                     </Badge>
                                     <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground text-xs whitespace-nowrap">
-                                      20m ago
+                                      {"20m ago"}
                                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                                      5m 48s
+                                      {"5m 48s"}
                                     </span>
                                   </div>
                                 </td>
@@ -1959,10 +1956,10 @@ export function Pattern() {
                                 <td className="align-middle px-2 py-1.5">
                                   <div className="flex flex-col gap-0.5 min-w-0">
                                     <span className="tabular-nums text-sm">
-                                      in 40m
+                                      {"in 40m"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      15:00 UTC
+                                      {"15:00 UTC"}
                                     </span>
                                   </div>
                                 </td>
@@ -1975,13 +1972,13 @@ export function Pattern() {
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         <span className="truncate">
-                                          fraud-scorer
+                                          {"fraud-scorer"}
                                         </span>
                                       </span>
                                     </span>
                                     <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                       <span className="font-mono truncate">
-                                        prod-us-east-1
+                                        {"prod-us-east-1"}
                                       </span>
                                     </span>
                                   </div>
@@ -1993,7 +1990,7 @@ export function Pattern() {
                                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="truncate">
-                                        Kenji Tan
+                                        {"Kenji Tan"}
                                       </span>
                                     </span>
                                   </span>
@@ -2011,30 +2008,35 @@ export function Pattern() {
                                 </td>
                               </tr>
                             </DataGridTableBody>
+                            </DataGridProvider>
                           </DataGridTable>
+                          </DataGridProvider>
                         </DataGridTableViewport>
+                        </DataGridProvider>
                       </div>
                     </div>
                     <div className="data-[orientation=horizontal]:border-t data-[orientation=horizontal]:border-t-transparent data-[orientation=horizontal]:flex-col data-[orientation=horizontal]:h-[var(--data-grid-scrollbar-size,0.625rem)] data-[orientation=horizontal]:mb-px data-[orientation=vertical]:border-s data-[orientation=vertical]:border-s-transparent data-[orientation=vertical]:h-full data-[orientation=vertical]:me-px data-[orientation=vertical]:w-[var(--data-grid-scrollbar-size,0.625rem)] flex p-px select-none touch-none transition-colors" data-orientation="horizontal" data-has-overflow-x="" data-overflow-x-end="" data-id="base-ui-_r_g_-scrollbar" style={{position: "absolute", touchAction: "none", userSelect: "none", insetInlineStart: "0px", insetInlineEnd: "var(--scroll-area-corner-width)", bottom: "0px", "--scroll-area-thumb-width": "1199.191222570533px"}}>
                       <div className="before:-inset-0.5 before:absolute bg-border flex-1 relative rounded-full" data-orientation="horizontal" style={{width: "var(--scroll-area-thumb-width)", transform: "translate3d(0px, 0px, 0px)"}}></div>
                     </div>
                   </DataGridScrollArea>
+                  </DataGridProvider>
                 </div>
               </FramePanel>
               <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+                <DataGridProvider>
                 <DataGridPagination>
                   <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                     <div className="text-muted-foreground text-sm">
-                      Rows per page
+                      {"Rows per page"}
                     </div>
                     <Select>
                     <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_5u_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                       <SelectValue>
-                        10
+                        {"10"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -2042,32 +2044,32 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                     <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                      1 - 10 of 32 jobs
+                      {"1 - 10 of 32 jobs"}
                     </div>
                     <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                       <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                         <span className="sr-only">
-                          Go to previous page
+                          {"Go to previous page"}
                         </span>
                         <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                           <path d="m15 18-6-6 6-6"></path>
                         </svg>
                       </Button>
                       <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                        1
+                        {"1"}
                       </Button>
                       <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                        2
+                        {"2"}
                       </Button>
                       <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
-                        3
+                        {"3"}
                       </Button>
                       <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 4">
-                        4
+                        {"4"}
                       </Button>
                       <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                         <span className="sr-only">
-                          Go to next page
+                          {"Go to next page"}
                         </span>
                         <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                           <path d="m9 18 6-6-6-6"></path>
@@ -2076,6 +2078,7 @@ export function Pattern() {
                     </div>
                   </div>
                 </DataGridPagination>
+                </DataGridProvider>
               </footer>
             </Frame>
             <div className="gap-4 grid grid-cols-1 lg:grid-cols-3">
@@ -2083,32 +2086,32 @@ export function Pattern() {
                 <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                   <div className="flex flex-col gap-px min-w-0">
                     <div className="font-semibold text-sm">
-                      Run Time
+                      {"Run Time"}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      Runner time by start hour, UTC
+                      {"Runner time by start hour, UTC"}
                     </div>
                   </div>
                   <ToggleGroup className="flex-wrap" multiple="" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Outcomes in the chart" style={{"--gap": "2"}}>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2" aria-label="Succeeded, 14h 27m runner time">
                       <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                      Succeeded
+                      {"Succeeded"}
                       <span className="tabular-nums">
-                        14h 27m
+                        {"14h 27m"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2" aria-label="Timed Out, 1h 20m runner time">
                       <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                      Timed Out
+                      {"Timed Out"}
                       <span className="tabular-nums">
-                        1h 20m
+                        {"1h 20m"}
                       </span>
                     </ToggleGroupItem>
                     <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2" aria-label="Failed, 20m 12s runner time">
                       <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                      Failed
+                      {"Failed"}
                       <span className="tabular-nums">
-                        20m 12s
+                        {"20m 12s"}
                       </span>
                     </ToggleGroupItem>
                   </ToggleGroup>
@@ -2117,38 +2120,26 @@ export function Pattern() {
                   <div className="flex flex-wrap gap-x-3 gap-y-1 items-baseline min-w-0">
                     <div className="flex gap-1.5 items-baseline shrink-0">
                       <span className="font-semibold tabular-nums text-2xl tracking-tight">
-                        16h 07m
+                        {"16h 07m"}
                       </span>
                       <span className="text-muted-foreground text-sm">
-                        runner time
+                        {"runner time"}
                       </span>
                     </div>
                     <p className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 text-muted-foreground text-xs">
                       <span>
-                        -5% vs prior 24h
+                        {"-5% vs prior 24h"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        10.4% on failed or timed out runs
+                        {"10.4% on failed or timed out runs"}
                       </span>
                     </p>
                   </div>
                   <div className="@container flex flex-1 flex-col min-h-56 min-w-0 relative">
+                    <ChartContainer>
                     <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex flex-1 has-[.recharts-surface:focus-visible]:ring-[3px] has-[.recharts-surface:focus-visible]:ring-offset-2 has-[.recharts-surface:focus-visible]:ring-ring/50 justify-center min-w-0 ring-offset-card rounded-md text-xs w-full" data-chart="chart-_r_66_" role="group" aria-label="Runner time per hour, last 24 hours: Succeeded, Timed Out, and Failed. Arrow keys move between hours.">
-                      <style>{`
- [data-chart=chart-_r_66_] {
-  --color-succeededSec: var(--success);
-  --color-timedOutSec: var(--warning);
-  --color-failedSec: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_66_] {
-  --color-succeededSec: var(--success);
-  --color-timedOutSec: var(--warning);
-  --color-failedSec: var(--destructive);
-}
-`}</style>
+                      <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_66_] {\n  --color-succeededSec: var(--success);\n  --color-timedOutSec: var(--warning);\n  --color-failedSec: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_66_] {\n  --color-succeededSec: var(--success);\n  --color-timedOutSec: var(--warning);\n  --color-failedSec: var(--destructive);\n}\n" }} />
                       <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                         <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                           <div className="recharts-wrapper" width="785" height="280" style={{position: "relative", cursor: "default", width: "785px", height: "280px"}}>
@@ -2650,7 +2641,7 @@ export function Pattern() {
                                   <line x1="396.9375" x2="396.9375" y1="23" y2="32.44444444444447" stroke="var(--muted-foreground)" strokeOpacity="0.5" strokeDasharray="2 2"></line>
                                   <circle cx="396.9375" cy="37.44444444444447" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1.5"></circle>
                                   <text x="396.9375" y="18" textAnchor="middle" fill="var(--muted-foreground)" stroke="var(--card)" strokeWidth="3" strokeLinejoin="round" paint-order="stroke">
-                                    Timeout burn
+                                    {"Timeout burn"}
                                   </text>
                                 </g>
                               </g>
@@ -2689,56 +2680,56 @@ export function Pattern() {
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="50.4375" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="50.4375" dy="0.71em">
-                                        15:00
+                                        {"15:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="137.0625" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="137.0625" dy="0.71em">
-                                        18:00
+                                        {"18:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="223.6875" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="223.6875" dy="0.71em">
-                                        21:00
+                                        {"21:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="310.3125" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="310.3125" dy="0.71em">
-                                        00:00
+                                        {"00:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="396.9375" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="396.9375" dy="0.71em">
-                                        03:00
+                                        {"03:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="483.5625" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="483.5625" dy="0.71em">
-                                        06:00
+                                        {"06:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="570.1875" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="570.1875" dy="0.71em">
-                                        09:00
+                                        {"09:00"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="693" stroke="none" x="656.8125" y="266" textAnchor="middle" fill="#666">
                                       <tspan x="656.8125" dy="0.71em">
-                                        12:00
+                                        {"12:00"}
                                       </tspan>
                                     </text>
                                   </g>
@@ -2747,35 +2738,35 @@ export function Pattern() {
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="222" stroke="none" x="24" y="250" textAnchor="end" fill="#666">
                                       <tspan x="24" dy="0.355em">
-                                        0m
+                                        {"0m"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="222" stroke="none" x="24" y="183.53691395724806" textAnchor="end" fill="#666">
                                       <tspan x="24" dy="0.355em">
-                                        30m
+                                        {"30m"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="222" stroke="none" x="24" y="117.07382791449615" textAnchor="end" fill="#666">
                                       <tspan x="24" dy="0.355em">
-                                        60m
+                                        {"60m"}
                                       </tspan>
                                     </text>
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                     <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="222" stroke="none" x="24" y="50.610741871744224" textAnchor="end" fill="#666">
                                       <tspan x="24" dy="0.355em">
-                                        90m
+                                        {"90m"}
                                       </tspan>
                                     </text>
                                   </g>
                                 </g>
                                 <text className="recharts-label recharts-text" offset="6" x="735" y="160.6917666274142" textAnchor="start" fill="var(--muted-foreground)">
                                   <tspan x="735" dy="0.355em">
-                                    Avg 40m
+                                    {"Avg 40m"}
                                   </tspan>
                                 </text>
                               </g>
@@ -2784,6 +2775,7 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
+                    </ChartContainer>
                   </div>
                 </FramePanel>
               </Frame>
@@ -2791,10 +2783,10 @@ export function Pattern() {
                 <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                   <div className="flex flex-col gap-px min-w-0">
                     <div className="font-semibold text-sm">
-                      Up Next
+                      {"Up Next"}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      Next 30 minutes
+                      {"Next 30 minutes"}
                     </div>
                   </div>
                 </header>
@@ -2810,16 +2802,16 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Drain webhook retry queue
+                          {"Drain webhook retry queue"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                          Failing
+                          {"Failing"}
                         </Badge>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 5m
+                        {"in 5m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2833,13 +2825,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Send failed charge alerts
+                          {"Send failed charge alerts"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 5m
+                        {"in 5m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2854,16 +2846,16 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Import bank settlement files
+                          {"Import bank settlement files"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                          Failing
+                          {"Failing"}
                         </Badge>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 10m
+                        {"in 10m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2877,13 +2869,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Expire stale payout holds
+                          {"Expire stale payout holds"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 10m
+                        {"in 10m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2898,13 +2890,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Sync FX reference rates
+                          {"Sync FX reference rates"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 10m
+                        {"in 10m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2918,13 +2910,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Retry failed payouts
+                          {"Retry failed payouts"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 10m
+                        {"in 10m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2938,13 +2930,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Warm merchant search cache
+                          {"Warm merchant search cache"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 20m
+                        {"in 20m"}
                       </span>
                     </ItemActions>
                   </Item>
@@ -2959,13 +2951,13 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Purge expired idempotency keys
+                          {"Purge expired idempotency keys"}
                         </span>
                       </ItemTitle>
                     </ItemContent>
                     <ItemActions>
                       <span className="tabular-nums text-muted-foreground text-xs">
-                        in 25m
+                        {"in 25m"}
                       </span>
                     </ItemActions>
                   </Item>

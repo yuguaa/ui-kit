@@ -75,10 +75,10 @@ export function Pattern() {
     <div className="bg-background flex flex-col h-svh text-foreground w-full">
       <header className="border-b flex gap-2 h-14 items-center px-3 shrink-0 sm:px-4">
         <h1 className="font-medium shrink-0 text-sm">
-          Compare Models
+          {"Compare Models"}
         </h1>
         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-          2 exchanges
+          {"2 exchanges"}
         </Badge>
         <div className="flex gap-1 items-center ms-auto">
           <Tooltip>
@@ -95,7 +95,7 @@ export function Pattern() {
               <path d="M12 5v14"></path>
             </svg>
             <span className="max-sm:sr-only">
-              New comparison
+              {"New comparison"}
             </span>
           </Button>
         </div>
@@ -109,12 +109,12 @@ export function Pattern() {
                 <SelectTrigger className="font-medium max-w-56 min-w-0 w-full" type="button" tabIndex="0" id="base-ui-_r_4_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Model, Claude Sonnet 5">
                   <SelectValue>
                     <span className="truncate">
-                      Claude Sonnet 5
+                      {"Claude Sonnet 5"}
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -148,7 +148,7 @@ export function Pattern() {
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
@@ -157,14 +157,14 @@ export function Pattern() {
                           <ItemContent className="gap-1.5">
                             <ItemTitle className="font-normal line-clamp-2 text-pretty" title="attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig">
                               <span className="sr-only">
-                                Priya Nair asked:
+                                {"Priya Nair asked:"}
                               </span>
-                              attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig
+                              {"attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig"}
                             </ItemTitle>
                           </ItemContent>
                           <ItemActions>
                             <span className="tabular-nums text-muted-foreground/70 text-xs">
-                              10:52
+                              {"10:52"}
                             </span>
                           </ItemActions>
                         </Item>
@@ -173,38 +173,36 @@ export function Pattern() {
                             <Bubble className="w-full" variant="ghost" data-align="start">
                               <BubbleContent className="space-y-3" answerBody="true">
                                 <p className="whitespace-pre-wrap">
-                                  Confirmed at the account level: 21 cancellations against 517 team accounts active on Aug 1, so 4.06 percent.
-
-One thing to fix before Thursday. Three of the 21 rows are workspaces under one parent account,
+                                  {"Confirmed at the account level: 21 cancellations against 517 team accounts active on Aug 1, so 4.06 percent.\n\nOne thing to fix before Thursday. Three of the 21 rows are workspaces under one parent account,"}
                                   <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                                    acct_4f19c2
+                                    {"acct_4f19c2"}
                                   </code>
-                                  , which cancelled once. Counted by customer it is 19 of 517, or 3.7 percent. July has no duplicates, so 2.63 percent stands.
+                                  {", which cancelled once. Counted by customer it is 19 of 517, or 3.7 percent. July has no duplicates, so 2.63 percent stands."}
                                 </p>
                               </BubbleContent>
                               <BubbleReactions data-align="start" data-side="bottom" role="img" aria-label="Reactions: 🔥">
                                 <span>
-                                  🔥
+                                  {"🔥"}
                                 </span>
                               </BubbleReactions>
                             </Bubble>
                             <MessageFooter className="flex-wrap gap-1.5 mt-3 text-muted-foreground text-xs">
                               <span className="tabular-nums">
-                                2.1s
+                                {"2.1s"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                148 tokens
+                                {"148 tokens"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                94 tok/s
+                                {"94 tok/s"}
                               </span>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                                 <svg className="lucide lucide-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
-                                Preferred
+                                {"Preferred"}
                               </Badge>
                               <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto ms-auto opacity-0 pointer-events-none transition-opacity">
                                 <Button type="button" tabIndex="0" aria-label="Copy answer">
@@ -235,14 +233,14 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                           <ItemContent className="gap-1.5">
                             <ItemTitle className="font-normal line-clamp-2 text-pretty" title="ok, what's driving it? ranked drivers, not a summary. i present this thursday">
                               <span className="sr-only">
-                                Priya Nair asked:
+                                {"Priya Nair asked:"}
                               </span>
-                              ok, what's driving it? ranked drivers, not a summary. i present this thursday
+                              {"ok, what's driving it? ranked drivers, not a summary. i present this thursday"}
                             </ItemTitle>
                           </ItemContent>
                           <ItemActions>
                             <span className="tabular-nums text-muted-foreground/70 text-xs">
-                              10:56
+                              {"10:56"}
                             </span>
                           </ItemActions>
                         </Item>
@@ -251,18 +249,18 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                             <Bubble className="w-full" variant="ghost" data-align="start">
                               <BubbleContent className="space-y-3" answerBody="true">
                                 <p className="whitespace-pre-wrap">
-                                  Ranked by share of the 21 cancellations.
+                                  {"Ranked by share of the 21 cancellations."}
                                 </p>
                                 <div className="cn-table-container">
                                   <Table className="text-xs">
                                     <TableCaption className="sr-only">
-                                      August team plan cancellations by driver
+                                      {"August team plan cancellations by driver"}
                                     </TableCaption>
                                     <TableHeader>
                                       <TableRow>
                                         <TableHead aria-sort="none">
                                           <Button className="-mx-2 font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by Driver">
-                                            Driver
+                                            {"Driver"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -271,7 +269,7 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                         </TableHead>
                                         <TableHead className="text-end" aria-sort="none">
                                           <Button className="-mx-2 flex-row-reverse font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by Accounts">
-                                            Accounts
+                                            {"Accounts"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -280,7 +278,7 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                         </TableHead>
                                         <TableHead className="text-end" aria-sort="none">
                                           <Button className="-mx-2 flex-row-reverse font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by Median days">
-                                            Median days
+                                            {"Median days"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -292,56 +290,56 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                     <TableBody>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Promo renewal
+                                          {"Promo renewal"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          9
+                                          {"9"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          6
+                                          {"6"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Seat floor
+                                          {"Seat floor"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          5
+                                          {"5"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          11
+                                          {"11"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Missing SSO
+                                          {"Missing SSO"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          4
+                                          {"4"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          19
+                                          {"19"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          No signal
+                                          {"No signal"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          3
+                                          {"3"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          14
+                                          {"14"}
                                         </TableCell>
                                       </TableRow>
                                     </TableBody>
                                     <TableFooter>
                                       <TableRow>
                                         <TableCell>
-                                          Total
+                                          {"Total"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          21
+                                          {"21"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end"></TableCell>
                                       </TableRow>
@@ -349,12 +347,12 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                   </Table>
                                 </div>
                                 <p className="whitespace-pre-wrap">
-                                  All nine promo accounts signed in March on the six month discount and cancelled within days of the first full price invoice. The seat floor group dropped under five seats first, so the plan cancelled them rather than downgrading. Three of the four SSO accounts had opened a ticket in Q2.
+                                  {"All nine promo accounts signed in March on the six month discount and cancelled within days of the first full price invoice. The seat floor group dropped under five seats first, so the plan cancelled them rather than downgrading. Three of the four SSO accounts had opened a ticket in Q2."}
                                 </p>
                                 <CodeBlock className="[--code-block-bg:var(--card)] [--code-block-caret-color:var(--primary)] [--code-block-copy-inset:--spacing(2)] [--code-block-copy-top:var(--code-block-copy-inset)] [--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_8%,transparent)] [--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-error-bg:color-mix(in_oklch,var(--destructive)_8%,transparent)] [--code-block-expand-clearance:--spacing(9)] [--code-block-fold-width:--spacing(4.5)] [--code-block-font-size:0.8125rem] [--code-block-gutter-gap:--spacing(2.5)] [--code-block-gutter-width:--spacing(9)] [--code-block-header-height:--spacing(9)] [--code-block-highlight-bar:color-mix(in_oklch,var(--primary)_60%,transparent)] [--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_6%,transparent)] [--code-block-info-bg:color-mix(in_oklch,var(--info)_8%,transparent)] [--code-block-line-height:1.5rem] [--code-block-number-pad:var(--code-block-gutter-gap)] [--code-block-padding:--spacing(3)] [--code-block-warning-bg:color-mix(in_oklch,var(--warning)_10%,transparent)] bg-card bg-clip-padding border border-border dark:[--code-block-diff-add-bg:color-mix(in_oklch,var(--success)_12%,transparent)] dark:[--code-block-diff-remove-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-error-bg:color-mix(in_oklch,var(--destructive)_12%,transparent)] dark:[--code-block-highlight-bg:color-mix(in_oklch,var(--primary)_12%,transparent)] dark:[--code-block-info-bg:color-mix(in_oklch,var(--info)_12%,transparent)] dark:[--code-block-warning-bg:color-mix(in_oklch,var(--warning)_14%,transparent)] data-[gutter-channel]:[--code-block-number-pad:calc(var(--code-block-gutter-gap)+var(--code-block-fold-width))] data-[has-diff]:[--code-block-gutter-gap:--spacing(4)] data-[has-header]:[--code-block-copy-top:calc(var(--code-block-header-height)+1px+var(--code-block-copy-inset))] flex flex-col group/code-block min-w-0 relative rounded-(--code-block-radius) style-luma:[--code-block-radius:var(--radius-2xl)] style-lyra:[--code-block-radius:0px] style-maia:[--code-block-radius:var(--radius-2xl)] style-mira:[--code-block-radius:var(--radius-lg)] style-nova:[--code-block-radius:var(--radius-lg)] style-rhea:[--code-block-radius:var(--radius-xl)] style-sera:[--code-block-radius:0px] style-vega:[--code-block-radius:var(--radius-lg)] text-card-foreground text-left w-full" variant="default" hasHeader="true">
                                   <CodeBlockHeader>
                                     <CodeBlockTitle>
-                                      churn-cohorts.sql
+                                      {"churn-cohorts.sql"}
                                     </CodeBlockTitle>
                                     <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" data-position="inline" aria-label="Copy code">
                                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -367,7 +365,7 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                     <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_12_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "48px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-y="" data-overflow-y-start="">
                                       <CodeBlockContent className="min-w-0 relative rounded-[inherit]">
                                         <span className="sr-only" role="status" aria-live="polite">
-                                          Code generation complete, 13 lines.
+                                          {"Code generation complete, 13 lines."}
                                         </span>
                                         <div className="focus-visible:ring-[3px] focus-visible:ring-ring/50 min-w-0 outline-none relative rounded-[inherit]" id="_r_11_" role="region" aria-label="sql code" tabIndex="0">
                                           <pre className="[&_[data-slot=code-block-token]]:text-[color:var(--cb-c,currentColor)] dark:[&_[data-slot=code-block-token]]:text-[color:var(--cb-cd,currentColor)] font-mono min-w-full pl-(--code-block-gutter-width) py-(--code-block-padding) text-(length:--code-block-font-size) w-max" dir="ltr" data-code-line-numbers="true" style={{"--code-block-gutter-width": "calc(2ch + var(--code-block-gutter-gap) + var(--code-block-padding))", counterReset: "cb-line 0"}}>
@@ -375,221 +373,221 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="1" id="_r_11_-L1" style={{counterReset: "cb-line 0"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    select
+                                                    {"select"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="2" id="_r_11_-L2" style={{counterReset: "cb-line 1"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    case
+                                                    {"case"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="3" id="_r_11_-L3" style={{counterReset: "cb-line 2"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    when
+                                                    {"when"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    promo_code
+                                                    {"promo_code"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    =
+                                                    {"="}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'SPRING40'
+                                                    {"'SPRING40'"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    then
+                                                    {"then"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'promo_renewal'
+                                                    {"'promo_renewal'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="4" id="_r_11_-L4" style={{counterReset: "cb-line 3"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    when
+                                                    {"when"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    seats_at_cancel
+                                                    {"seats_at_cancel"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    &lt;
+                                                    {"<"}
                                                   </span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    5
+                                                    {"5"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    then
+                                                    {"then"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'seat_floor'
+                                                    {"'seat_floor'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="5" id="_r_11_-L5" style={{counterReset: "cb-line 4"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    when
+                                                    {"when"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    exit_reason ilike
+                                                    {"exit_reason ilike"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    '%sso%'
+                                                    {"'%sso%'"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    then
+                                                    {"then"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'sso_gap'
+                                                    {"'sso_gap'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="6" id="_r_11_-L6" style={{counterReset: "cb-line 5"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    else
+                                                    {"else"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'no_signal'
+                                                    {"'no_signal'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="7" id="_r_11_-L7" style={{counterReset: "cb-line 6"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    end
+                                                    {"end"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    as
+                                                    {"as"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    driver,
+                                                    {"driver,"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="8" id="_r_11_-L8" style={{counterReset: "cb-line 7"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    count
+                                                    {"count"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    (
+                                                    {"("}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    *
+                                                    {"*"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    )
+                                                    {")"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    as
+                                                    {"as"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    accounts,
+                                                    {"accounts,"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="9" id="_r_11_-L9" style={{counterReset: "cb-line 8"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    round
+                                                    {"round"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    (
+                                                    {"("}
                                                   </span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    avg
+                                                    {"avg"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    (days_since_seat_change),
+                                                    {"(days_since_seat_change),"}
                                                   </span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    1
+                                                    {"1"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    )
+                                                    {")"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    as
+                                                    {"as"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    days
+                                                    {"days"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="10" id="_r_11_-L10" style={{counterReset: "cb-line 9"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    from
+                                                    {"from"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    churn_aug
+                                                    {"churn_aug"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="11" id="_r_11_-L11" style={{counterReset: "cb-line 10"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    where
+                                                    {"where"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    plan_tier
+                                                    {"plan_tier"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    =
+                                                    {"="}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    'team'
+                                                    {"'team'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="12" id="_r_11_-L12" style={{counterReset: "cb-line 11"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    and
+                                                    {"and"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    cancelled_at
+                                                    {"cancelled_at"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    &gt;=
+                                                    {">="}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    date
+                                                    {"date"}
                                                   </span>
                                                   <span style={{"--cb-c": "#032F62", "--cb-cd": "#9ECBFF"}}>
-                                                    '2026-08-01'
+                                                    {"'2026-08-01'"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="13" id="_r_11_-L13" style={{counterReset: "cb-line 12"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    group by
+                                                    {"group by"}
                                                   </span>
                                                   <span style={{"--cb-c": "#005CC5", "--cb-cd": "#79B8FF"}}>
-                                                    1
+                                                    {"1"}
                                                   </span>
                                                 </span>
                                               </span>
                                               <span className="[[data-code-line-numbers]_&[data-gutter]]:before:content-[attr(data-gutter)] [[data-code-line-numbers]_&[data-gutter]]:before:whitespace-pre [[data-code-line-numbers]_&]:before:-ml-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:[counter-increment:cb-line] [[data-code-line-numbers]_&]:before:bg-(--code-block-bg) [[data-code-line-numbers]_&]:before:content-[counter(cb-line)] [[data-code-line-numbers]_&]:before:inline-block [[data-code-line-numbers]_&]:before:left-0 [[data-code-line-numbers]_&]:before:pl-(--code-block-padding) [[data-code-line-numbers]_&]:before:pointer-events-none [[data-code-line-numbers]_&]:before:pr-(--code-block-number-pad) [[data-code-line-numbers]_&]:before:select-none [[data-code-line-numbers]_&]:before:sticky [[data-code-line-numbers]_&]:before:tabular-nums [[data-code-line-numbers]_&]:before:text-muted-foreground/50 [[data-code-line-numbers]_&]:before:text-right [[data-code-line-numbers]_&]:before:w-(--code-block-gutter-width) [[data-code-line-numbers]_&]:before:z-10 [[data-code-line-numbers]_&]:data-[diff]:after:-left-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:data-[diff]:after:w-(--code-block-gutter-gap) [[data-code-line-numbers]_&]:pl-0 [[data-selectable]_&]:data-[active]:bg-muted/40 [[data-streaming]_&]:animate-in [[data-streaming]_&]:duration-150 [[data-streaming]_&]:ease-out [[data-streaming]_&]:fade-in-0 [[data-streaming]_&]:slide-in-from-bottom-1 block data-[blurred]:blur-[1.5px] data-[blurred]:opacity-40 data-[blurred]:transition-[opacity,filter] data-[diff=add]:after:content-['+'] data-[diff=add]:after:text-success data-[diff=add]:bg-(--code-block-diff-add-bg) data-[diff=remove]:after:content-['-'] data-[diff=remove]:after:text-destructive data-[diff=remove]:bg-(--code-block-diff-remove-bg) data-[diff]:after:absolute data-[diff]:after:left-0 data-[diff]:after:select-none data-[diff]:after:text-center data-[diff]:after:w-(--code-block-padding) data-[diff]:after:z-20 data-[highlighted]:bg-(--code-block-highlight-bg) data-[highlighted]:shadow-[inset_2px_0_0_0_var(--code-block-highlight-bar)] data-[level=error]:bg-(--code-block-error-bg) data-[level=info]:bg-(--code-block-info-bg) data-[level=warning]:bg-(--code-block-warning-bg) data-[selected]:bg-accent group-hover/code-block:data-[blurred]:blur-none group-hover/code-block:data-[blurred]:opacity-100 leading-(--code-block-line-height) min-h-(--code-block-line-height) motion-reduce:animate-none px-(--code-block-padding) relative w-full" data-code-line="14" id="_r_11_-L14" style={{counterReset: "cb-line 13"}}>
                                                 <span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    order by
+                                                    {"order by"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    accounts
+                                                    {"accounts"}
                                                   </span>
                                                   <span style={{"--cb-c": "#D73A49", "--cb-cd": "#F97583"}}>
-                                                    desc
+                                                    {"desc"}
                                                   </span>
                                                   <span style={{"--cb-c": "#24292E", "--cb-cd": "#E1E4E8"}}>
-                                                    ;
+                                                    {";"}
                                                   </span>
                                                 </span>
                                               </span>
@@ -604,21 +602,21 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                                   </ScrollArea>
                                 </CodeBlock>
                                 <p className="whitespace-pre-wrap">
-                                  Run it against the same file and you should get 9, 5, 4 and 3. The promo cohort is the only one you can act on before Q4.
+                                  {"Run it against the same file and you should get 9, 5, 4 and 3. The promo cohort is the only one you can act on before Q4."}
                                 </p>
                               </BubbleContent>
                             </Bubble>
                             <MessageFooter className="flex-wrap gap-1.5 text-muted-foreground text-xs">
                               <span className="tabular-nums">
-                                3.1s
+                                {"3.1s"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                612 tokens
+                                {"612 tokens"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                249 tok/s
+                                {"249 tok/s"}
                               </span>
                               <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto ms-auto opacity-0 pointer-events-none transition-opacity">
                                 <Button type="button" tabIndex="0" aria-label="Copy answer">
@@ -654,7 +652,7 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
                     <span className="sr-only">
-                      Scroll to end
+                      {"Scroll to end"}
                     </span>
                   </MessageScrollerButton>
                 </MessageScroller>
@@ -665,19 +663,19 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                     <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg>
-                  Copy
+                  {"Copy"}
                 </Button>
                 <span className="flex gap-1.5 items-center min-w-0 ms-auto text-muted-foreground text-xs">
                   <span className="shrink-0 tabular-nums">
-                    2 answers
+                    {"2 answers"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="tabular-nums truncate">
-                    760 tokens
+                    {"760 tokens"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0 tabular-nums">
-                    $0.018
+                    {"$0.018"}
                   </span>
                 </span>
               </div>
@@ -693,12 +691,12 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                 <SelectTrigger className="font-medium max-w-56 min-w-0 w-full" type="button" tabIndex="0" id="base-ui-_r_g_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Model, GPT-5.1">
                   <SelectValue>
                     <span className="truncate">
-                      GPT-5.1
+                      {"GPT-5.1"}
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -732,7 +730,7 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
@@ -741,14 +739,14 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                           <ItemContent className="gap-1.5">
                             <ItemTitle className="font-normal line-clamp-2 text-pretty" title="attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig">
                               <span className="sr-only">
-                                Priya Nair asked:
+                                {"Priya Nair asked:"}
                               </span>
-                              attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig
+                              {"attached churn-aug.csv, 18402 rows. team plan churn reads 4.1% for august vs 2.6 in july. confirm the number before we dig"}
                             </ItemTitle>
                           </ItemContent>
                           <ItemActions>
                             <span className="tabular-nums text-muted-foreground/70 text-xs">
-                              10:52
+                              {"10:52"}
                             </span>
                           </ItemActions>
                         </Item>
@@ -757,29 +755,25 @@ One thing to fix before Thursday. Three of the 21 rows are workspaces under one 
                             <Bubble className="w-full" variant="ghost" data-align="start">
                               <BubbleContent className="space-y-3" answerBody="true">
                                 <p className="whitespace-pre-wrap">
-                                  4.1 percent is right for the definition the file uses and wrong for the one the dashboard uses.
-
-The file counts accounts active on Aug 1, which is 517, giving 21 of 517 or 4.06 percent. The dashboard divides by the average account count across the month, which is 526, giving 3.99 percent. Both are defensible. They are not the same metric, so the slide should name which one it carries.
-
-Separately, 17 rows have a null
+                                  {"4.1 percent is right for the definition the file uses and wrong for the one the dashboard uses.\n\nThe file counts accounts active on Aug 1, which is 517, giving 21 of 517 or 4.06 percent. The dashboard divides by the average account count across the month, which is 526, giving 3.99 percent. Both are defensible. They are not the same metric, so the slide should name which one it carries.\n\nSeparately, 17 rows have a null"}
                                   <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                                    plan_tier
+                                    {"plan_tier"}
                                   </code>
-                                  and sit outside both. If four of those are team accounts the headline moves to 4.75 percent.
+                                  {"and sit outside both. If four of those are team accounts the headline moves to 4.75 percent."}
                                 </p>
                               </BubbleContent>
                             </Bubble>
                             <MessageFooter className="flex-wrap gap-1.5 text-muted-foreground text-xs">
                               <span className="tabular-nums">
-                                2.9s
+                                {"2.9s"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                172 tokens
+                                {"172 tokens"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                81 tok/s
+                                {"81 tok/s"}
                               </span>
                               <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto ms-auto opacity-0 pointer-events-none transition-opacity">
                                 <Button type="button" tabIndex="0" aria-label="Copy answer">
@@ -810,14 +804,14 @@ Separately, 17 rows have a null
                           <ItemContent className="gap-1.5">
                             <ItemTitle className="font-normal line-clamp-2 text-pretty" title="ok, what's driving it? ranked drivers, not a summary. i present this thursday">
                               <span className="sr-only">
-                                Priya Nair asked:
+                                {"Priya Nair asked:"}
                               </span>
-                              ok, what's driving it? ranked drivers, not a summary. i present this thursday
+                              {"ok, what's driving it? ranked drivers, not a summary. i present this thursday"}
                             </ItemTitle>
                           </ItemContent>
                           <ItemActions>
                             <span className="tabular-nums text-muted-foreground/70 text-xs">
-                              10:56
+                              {"10:56"}
                             </span>
                           </ItemActions>
                         </Item>
@@ -826,20 +820,18 @@ Separately, 17 rows have a null
                             <Bubble className="w-full" variant="ghost" data-align="start">
                               <BubbleContent className="space-y-3" answerBody="true">
                                 <p className="whitespace-pre-wrap">
-                                  Ranking raw counts puts the promo cohort on top, and I think that is the wrong lead. July already carried six SPRING40 cancellations, the February signups hitting the same six month renewal. August has nine, the March signups. The cohort is arriving in two waves, not failing at a new rate.
-
-Measured as excess over July, which is the only number that explains 2.6 becoming 4.1:
+                                  {"Ranking raw counts puts the promo cohort on top, and I think that is the wrong lead. July already carried six SPRING40 cancellations, the February signups hitting the same six month renewal. August has nine, the March signups. The cohort is arriving in two waves, not failing at a new rate.\n\nMeasured as excess over July, which is the only number that explains 2.6 becoming 4.1:"}
                                 </p>
                                 <div className="cn-table-container">
                                   <Table className="text-xs">
                                     <TableCaption className="sr-only">
-                                      Cancellations by driver, July against August
+                                      {"Cancellations by driver, July against August"}
                                     </TableCaption>
                                     <TableHeader>
                                       <TableRow>
                                         <TableHead aria-sort="none">
                                           <Button className="-mx-2 font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by Driver">
-                                            Driver
+                                            {"Driver"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -848,7 +840,7 @@ Measured as excess over July, which is the only number that explains 2.6 becomin
                                         </TableHead>
                                         <TableHead className="text-end" aria-sort="none">
                                           <Button className="-mx-2 flex-row-reverse font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by July">
-                                            July
+                                            {"July"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -857,7 +849,7 @@ Measured as excess over July, which is the only number that explains 2.6 becomin
                                         </TableHead>
                                         <TableHead className="text-end" aria-sort="none">
                                           <Button className="-mx-2 flex-row-reverse font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by August">
-                                            August
+                                            {"August"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -866,7 +858,7 @@ Measured as excess over July, which is the only number that explains 2.6 becomin
                                         </TableHead>
                                         <TableHead className="text-end" aria-sort="none">
                                           <Button className="-mx-2 flex-row-reverse font-medium gap-1 h-7 px-2 text-xs" type="button" tabIndex="0" aria-label="Sort by Change">
-                                            Change
+                                            {"Change"}
                                             <svg className="lucide lucide-chevrons-up-down opacity-40 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
@@ -878,103 +870,99 @@ Measured as excess over July, which is the only number that explains 2.6 becomin
                                     <TableBody>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Seat reductions
+                                          {"Seat reductions"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          1
+                                          {"1"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          5
+                                          {"5"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          4
+                                          {"4"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Promo renewals
+                                          {"Promo renewals"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          6
+                                          {"6"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          9
+                                          {"9"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          3
+                                          {"3"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          Missing SSO
+                                          {"Missing SSO"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          3
+                                          {"3"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          4
+                                          {"4"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          1
+                                          {"1"}
                                         </TableCell>
                                       </TableRow>
                                       <TableRow>
                                         <TableCell className="font-medium text-foreground">
-                                          No signal
+                                          {"No signal"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          3
+                                          {"3"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          3
+                                          {"3"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          0
+                                          {"0"}
                                         </TableCell>
                                       </TableRow>
                                     </TableBody>
                                     <TableFooter>
                                       <TableRow>
                                         <TableCell>
-                                          Total
+                                          {"Total"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          13
+                                          {"13"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          21
+                                          {"21"}
                                         </TableCell>
                                         <TableCell className="tabular-nums text-end">
-                                          8
+                                          {"8"}
                                         </TableCell>
                                       </TableRow>
                                     </TableFooter>
                                   </Table>
                                 </div>
                                 <p className="whitespace-pre-wrap">
-                                  Seat reductions are the actual change, and every one of the five fell below five seats first. The promo delta shrinks as the cohort empties in October, and plus one on SSO is noise at this sample size whatever the exit survey says.
-
-One caveat: the 17 null
+                                  {"Seat reductions are the actual change, and every one of the five fell below five seats first. The promo delta shrinks as the cohort empties in October, and plus one on SSO is noise at this sample size whatever the exit survey says.\n\nOne caveat: the 17 null"}
                                   <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                                    plan_tier
+                                    {"plan_tier"}
                                   </code>
-                                  rows are in none of these buckets. Worth resolving before the deck, because four team accounts in there move the headline past 4.7 percent.
-
-If the seat floor is the driver, the fix is a packaging change rather than a save play, and that is a longer conversation than Thursday.
+                                  {"rows are in none of these buckets. Worth resolving before the deck, because four team accounts in there move the headline past 4.7 percent.\n\nIf the seat floor is the driver, the fix is a packaging change rather than a save play, and that is a longer conversation than Thursday."}
                                 </p>
                               </BubbleContent>
                             </Bubble>
                             <MessageFooter className="flex-wrap gap-1.5 text-muted-foreground text-xs">
                               <span className="tabular-nums">
-                                4.6s
+                                {"4.6s"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                848 tokens
+                                {"848 tokens"}
                               </span>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="tabular-nums">
-                                230 tok/s
+                                {"230 tok/s"}
                               </span>
                               <span className="flex focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto ms-auto opacity-0 pointer-events-none transition-opacity">
                                 <Button type="button" tabIndex="0" aria-label="Copy answer">
@@ -1010,7 +998,7 @@ If the seat floor is the driver, the fix is a packaging change rather than a sav
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
                     <span className="sr-only">
-                      Scroll to end
+                      {"Scroll to end"}
                     </span>
                   </MessageScrollerButton>
                 </MessageScroller>
@@ -1021,19 +1009,19 @@ If the seat floor is the driver, the fix is a packaging change rather than a sav
                     <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg>
-                  Copy
+                  {"Copy"}
                 </Button>
                 <span className="flex gap-1.5 items-center min-w-0 ms-auto text-muted-foreground text-xs">
                   <span className="shrink-0 tabular-nums">
-                    2 answers
+                    {"2 answers"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="tabular-nums truncate">
-                    1,020 tokens
+                    {"1,020 tokens"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="shrink-0 tabular-nums">
-                    $0.013
+                    {"$0.013"}
                   </span>
                 </span>
               </div>
@@ -1043,22 +1031,22 @@ If the seat floor is the driver, the fix is a packaging change rather than a sav
       </ResizablePanelGroup>
       <div className="border-t flex flex-wrap gap-x-3 gap-y-2 items-center justify-center min-h-19 px-4 py-2 shrink-0">
         <p className="tabular-nums text-sm" role="status">
-          Claude Sonnet 5: 1.5s faster, $0.003 more
+          {"Claude Sonnet 5: 1.5s faster, $0.003 more"}
         </p>
         <span className="bg-muted-foreground/40 max-sm:hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
         <div className="flex gap-2 items-center min-w-0">
           <span className="text-muted-foreground text-xs">
-            Prefer
+            {"Prefer"}
           </span>
           <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Prefer an answer" style={{"--gap": "0"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0">
               <span className="max-w-36 truncate">
-                Claude Sonnet 5
+                {"Claude Sonnet 5"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
               <span className="max-w-36 truncate">
-                GPT-5.1
+                {"GPT-5.1"}
               </span>
             </ToggleGroupItem>
           </ToggleGroup>
@@ -1067,7 +1055,7 @@ If the seat floor is the driver, the fix is a packaging change rather than a sav
       <div className="border-t flex flex-col gap-2 px-3 py-3 shrink-0 sm:px-4">
         <form>
           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-7-prompt">
-            Prompt both models
+            {"Prompt both models"}
           </FieldLabel>
           <InputGroup role="group">
             <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-10 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-7-prompt" placeholder="Ask both models about this file..."></textarea>
@@ -1081,11 +1069,11 @@ If the seat floor is the driver, the fix is a packaging change rather than a sav
                   <path d="M16 17H8"></path>
                 </svg>
                 <span className="font-mono text-foreground truncate">
-                  churn-aug.csv
+                  {"churn-aug.csv"}
                 </span>
                 <span className="bg-muted-foreground/40 max-sm:hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="max-sm:hidden tabular-nums text-muted-foreground">
-                  18,402 rows
+                  {"18,402 rows"}
                 </span>
               </span>
               <DropdownMenu>

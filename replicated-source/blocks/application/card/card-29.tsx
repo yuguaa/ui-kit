@@ -22,11 +22,11 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <h3 className="leading-relaxed text-muted-foreground text-sm">
-                      Total Orders
+                      {"Total Orders"}
                     </h3>
                     <div className="flex gap-1.5 items-center">
                       <div className="font-semibold leading-tight text-xl">
-                        1,246
+                        {"1,246"}
                         <span className="font-semibold text-muted-foreground/40"></span>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -35,13 +35,13 @@ export function Pattern() {
                           <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                         </svg>
                         <span>
-                          239
+                          {"239"}
                         </span>
                       </Badge>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm">
-                    Tracks overall orders placed within the selected timeframe
+                    {"Tracks overall orders placed within the selected timeframe"}
                   </p>
                 </div>
                 <div className="-mb-4 -mx-4 h-36 mt-4 overflow-hidden relative" aria-hidden="true">
@@ -60,13 +60,13 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <h3 className="leading-relaxed text-muted-foreground text-sm">
-                      Cumulative Spend
+                      {"Cumulative Spend"}
                     </h3>
                     <div className="flex gap-1.5 items-center">
                       <div className="font-semibold leading-tight text-xl">
-                        $89,378
+                        {"$89,378"}
                         <span className="font-semibold text-muted-foreground/40">
-                          .02
+                          {".02"}
                         </span>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -75,13 +75,13 @@ export function Pattern() {
                           <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                         </svg>
                         <span>
-                          $4K
+                          {"$4K"}
                         </span>
                       </Badge>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm">
-                    Total amount spent across all transactions to date
+                    {"Total amount spent across all transactions to date"}
                   </p>
                 </div>
                 <div className="-mb-4 -mx-4 h-36 mt-4 overflow-hidden relative" aria-hidden="true">
@@ -101,13 +101,13 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <h3 className="leading-relaxed text-muted-foreground text-sm">
-                      Avg. Order Value(AOV)
+                      {"Avg. Order Value(AOV)"}
                     </h3>
                     <div className="flex gap-1.5 items-center">
                       <div className="font-semibold leading-tight text-xl">
-                        $68
+                        {"$68"}
                         <span className="font-semibold text-muted-foreground/40">
-                          .50
+                          {".50"}
                         </span>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -116,13 +116,13 @@ export function Pattern() {
                           <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                         </svg>
                         <span>
-                          $17
+                          {"$17"}
                         </span>
                       </Badge>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm">
-                    Average revenue earned per order during reporting period
+                    {"Average revenue earned per order during reporting period"}
                   </p>
                 </div>
                 <div className="-mb-4 -mx-4 h-36 mt-4 overflow-hidden relative" aria-hidden="true">
@@ -143,13 +143,13 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <h3 className="leading-relaxed text-muted-foreground text-sm">
-                      Account Balance
+                      {"Account Balance"}
                     </h3>
                     <div className="flex gap-1.5 items-center">
                       <div className="font-semibold leading-tight text-xl">
-                        $31,345
+                        {"$31,345"}
                         <span className="font-semibold text-muted-foreground/40">
-                          .21
+                          {".21"}
                         </span>
                       </div>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -158,13 +158,13 @@ export function Pattern() {
                           <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                         </svg>
                         <span>
-                          $3K
+                          {"$3K"}
                         </span>
                       </Badge>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm">
-                    Current available balance based on latest account activity
+                    {"Current available balance based on latest account activity"}
                   </p>
                 </div>
                 <div className="-mb-4 -mx-4 h-36 mt-4 overflow-hidden relative" aria-hidden="true">

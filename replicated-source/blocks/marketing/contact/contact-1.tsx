@@ -17,13 +17,13 @@ export function Pattern() {
       <section className="flex flex-col gap-8 items-center max-w-2xl mx-auto text-center w-full" aria-labelledby="contact-title">
         <div className="flex flex-col gap-3 items-center max-w-xl">
           <p className="font-semibold text-muted-foreground text-xs uppercase">
-            Help & Contact
+            {"Help & Contact"}
           </p>
           <h1 className="font-semibold leading-tight sm:text-4xl text-3xl text-balance text-foreground" id="contact-title">
-            We're here to help
+            {"We're here to help"}
           </h1>
           <p className="leading-7 text-base text-muted-foreground text-pretty">
-            Need assistance with your NeUI kit, have questions about licensing, or want to upgrade your plan? We'll guide you through the process.
+            {"Need assistance with your NeUI kit, have questions about licensing, or want to upgrade your plan? We'll guide you through the process."}
           </p>
         </div>
         <Frame className="max-w-md text-left w-full">
@@ -37,17 +37,17 @@ export function Pattern() {
               </ItemMedia>
               <ItemContent>
                 <ItemTitle>
-                  Contact us
+                  {"Contact us"}
                 </ItemTitle>
                 <ItemDescription>
-                  For all requests contact us directly via email.
+                  {"For all requests contact us directly via email."}
                 </ItemDescription>
               </ItemContent>
             </Item>
           </FramePanel>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <Button className="font-medium w-full" type="button" tabIndex="0" aria-label="Contact support at hello@neui.io" extracted="1">
-              hello@neui.io
+              {"hello@neui.io"}
             </Button>
           </footer>
         </Frame>

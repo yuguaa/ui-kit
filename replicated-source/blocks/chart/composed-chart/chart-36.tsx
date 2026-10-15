@@ -19,19 +19,19 @@ export function Pattern() {
               <div className="flex flex-col gap-1 min-w-0">
                 <div className="flex gap-2 items-center min-w-0">
                   <h2 className="font-medium min-w-0 text-base truncate">
-                    fraud-scorer
+                    {"fraud-scorer"}
                     <span className="font-mono font-normal text-muted-foreground">
-                      v3.9.0
+                      {"v3.9.0"}
                     </span>
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Waiting
+                    {"Waiting"}
                   </Badge>
                 </div>
                 <div className="flex flex-wrap gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="flex gap-1 items-center min-w-0">
                     <span className="font-mono min-w-0 text-foreground text-xs truncate">
-                      DEP-4128
+                      {"DEP-4128"}
                     </span>
                     <Button type="button" tabIndex="0" aria-label="Copy deploy ID" extracted="1">
                       <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -42,11 +42,11 @@ export function Pattern() {
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                    Production
+                    {"Production"}
                   </Badge>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="font-mono">
-                    prod-us-east-1
+                    {"prod-us-east-1"}
                   </span>
                 </div>
               </div>
@@ -58,14 +58,14 @@ export function Pattern() {
                     <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
                     <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
                   </svg>
-                  Promote
+                  {"Promote"}
                 </Button>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
                     <path d="M9 14 4 9l5-5"></path>
                     <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
                   </svg>
-                  Roll back
+                  {"Roll back"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
@@ -82,59 +82,59 @@ export function Pattern() {
               <div className="gap-3 grid grid-cols-2 sm:grid-cols-5">
                 <div className="col-span-2 flex flex-col gap-0.5 min-w-0 sm:col-span-1">
                   <span className="text-muted-foreground text-xs">
-                    Verdict
+                    {"Verdict"}
                   </span>
                   <span className="flex h-7 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      Within limits
+                      {"Within limits"}
                     </Badge>
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs truncate">
-                    vs v3.8.2 for 5:30
+                    {"vs v3.8.2 for 5:30"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="text-muted-foreground text-xs">
-                    Error rate
+                    {"Error rate"}
                   </span>
                   <span className="font-semibold tabular-nums text-lg">
-                    0.05%
+                    {"0.05%"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs truncate">
-                    Baseline 0.04%
+                    {"Baseline 0.04%"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="text-muted-foreground text-xs">
-                    p95 latency
+                    {"p95 latency"}
                   </span>
                   <span className="font-semibold tabular-nums text-lg">
-                    44 ms
+                    {"44 ms"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs truncate">
-                    Baseline 42 ms
+                    {"Baseline 42 ms"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="text-muted-foreground text-xs">
-                    p99 latency
+                    {"p99 latency"}
                   </span>
                   <span className="font-semibold tabular-nums text-lg">
-                    62 ms
+                    {"62 ms"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs truncate">
-                    Baseline 60 ms
+                    {"Baseline 60 ms"}
                   </span>
                 </div>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="text-muted-foreground text-xs">
-                    Requests (rpm)
+                    {"Requests (rpm)"}
                   </span>
                   <span className="font-semibold tabular-nums text-lg">
-                    3,676
+                    {"3,676"}
                   </span>
                   <span className="tabular-nums text-muted-foreground text-xs truncate">
-                    Baseline 3,680
+                    {"Baseline 3,680"}
                   </span>
                 </div>
               </div>
@@ -145,37 +145,27 @@ export function Pattern() {
               <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-px">
                   <div className="font-semibold text-sm">
-                    Error Rate
+                    {"Error Rate"}
                   </div>
                   <div className="text-muted-foreground text-xs">
-                    Share of failed requests
+                    {"Share of failed requests"}
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-x-3 gap-y-1 items-center text-muted-foreground text-xs">
                   <span className="font-mono gap-1.5 inline-flex items-center">
                     <span className="bg-sky-500 rounded-full size-2" aria-hidden="true"></span>
-                    v3.9.0
+                    {"v3.9.0"}
                   </span>
                   <span className="font-mono gap-1.5 inline-flex items-center">
                     <span className="bg-slate-500 rounded-full size-2" aria-hidden="true"></span>
-                    v3.8.2
+                    {"v3.8.2"}
                   </span>
                 </div>
               </header>
               <FramePanel>
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-video cn-chart flex h-40 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_7_">
-                  <style>{`
- [data-chart=chart-_r_7_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-
-
-.dark [data-chart=chart-_r_7_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_7_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n\n\n.dark [data-chart=chart-_r_7_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="462" height="160" style={{position: "relative", cursor: "default", width: "462px", height: "160px"}}>
@@ -260,66 +250,66 @@ export function Pattern() {
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="49.8125" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="49.8125" dy="0.71em">
-                                    0:30
+                                    {"0:30"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="105.5625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="105.5625" dy="0.71em">
-                                    1:10
+                                    {"1:10"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="175.25" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="175.25" dy="0.71em">
-                                    2:00
+                                    {"2:00"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="244.9375" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="244.9375" dy="0.71em">
-                                    2:50
+                                    {"2:50"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="314.625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="314.625" dy="0.71em">
-                                    3:40
+                                    {"3:40"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="384.3125" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="384.3125" dy="0.71em">
-                                    4:30
+                                    {"4:30"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="449.265625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="449.265625" dy="0.71em">
-                                    5:20
+                                    {"5:20"}
                                   </tspan>
                                 </text>
                               </g>
                             </g>
                             <text className="recharts-label recharts-text" offset="5" x="449" y="32.39130434782608" textAnchor="end" fill="var(--destructive)">
                               <tspan x="449" dy="0.71em">
-                                Limit 0.50%
+                                {"Limit 0.50%"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" offset="5" x="13" y="17" textAnchor="start" fill="var(--muted-foreground)">
                               <tspan x="13" dy="0.71em">
-                                25%
+                                {"25%"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" offset="5" x="222.0625" y="17" textAnchor="start" fill="var(--muted-foreground)">
                               <tspan x="222.0625" dy="0.71em">
-                                50%
+                                {"50%"}
                               </tspan>
                             </text>
                           </g>
@@ -328,43 +318,34 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </FramePanel>
             </Frame>
             <Frame className="min-w-0" spacing="default">
               <header className="flex flex-col gap-3 px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-px">
                   <div className="font-semibold text-sm">
-                    Latency
+                    {"Latency"}
                   </div>
                   <div className="text-muted-foreground text-xs">
-                    p95 in milliseconds
+                    {"p95 in milliseconds"}
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-x-3 gap-y-1 items-center text-muted-foreground text-xs">
                   <span className="font-mono gap-1.5 inline-flex items-center">
                     <span className="bg-sky-500 rounded-full size-2" aria-hidden="true"></span>
-                    v3.9.0
+                    {"v3.9.0"}
                   </span>
                   <span className="font-mono gap-1.5 inline-flex items-center">
                     <span className="bg-slate-500 rounded-full size-2" aria-hidden="true"></span>
-                    v3.8.2
+                    {"v3.8.2"}
                   </span>
                 </div>
               </header>
               <FramePanel>
+                <ChartContainer>
                 <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-video cn-chart flex h-40 justify-center min-w-0 text-xs w-full" data-chart="chart-_r_9_">
-                  <style>{`
- [data-chart=chart-_r_9_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-
-
-.dark [data-chart=chart-_r_9_] {
-  --color-release: var(--color-sky-500);
-  --color-baseline: var(--color-slate-500);
-}
-`}</style>
+                  <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_9_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n\n\n.dark [data-chart=chart-_r_9_] {\n  --color-release: var(--color-sky-500);\n  --color-baseline: var(--color-slate-500);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                       <div className="recharts-wrapper" width="462" height="160" style={{position: "relative", cursor: "default", width: "462px", height: "160px"}}>
@@ -449,66 +430,66 @@ export function Pattern() {
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="49.8125" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="49.8125" dy="0.71em">
-                                    0:30
+                                    {"0:30"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="105.5625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="105.5625" dy="0.71em">
-                                    1:10
+                                    {"1:10"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="175.25" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="175.25" dy="0.71em">
-                                    2:00
+                                    {"2:00"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="244.9375" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="244.9375" dy="0.71em">
-                                    2:50
+                                    {"2:50"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="314.625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="314.625" dy="0.71em">
-                                    3:40
+                                    {"3:40"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="384.3125" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="384.3125" dy="0.71em">
-                                    4:30
+                                    {"4:30"}
                                   </tspan>
                                 </text>
                               </g>
                               <g className="recharts-cartesian-axis-tick-label recharts-layer">
                                 <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="446" stroke="none" x="449.265625" y="144" textAnchor="middle" fill="#666">
                                   <tspan x="449.265625" dy="0.71em">
-                                    5:20
+                                    {"5:20"}
                                   </tspan>
                                 </text>
                               </g>
                             </g>
                             <text className="recharts-label recharts-text" offset="5" x="449" y="32.39130434782609" textAnchor="end" fill="var(--destructive)">
                               <tspan x="449" dy="0.71em">
-                                Limit 80 ms
+                                {"Limit 80 ms"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" offset="5" x="13" y="17" textAnchor="start" fill="var(--muted-foreground)">
                               <tspan x="13" dy="0.71em">
-                                25%
+                                {"25%"}
                               </tspan>
                             </text>
                             <text className="recharts-label recharts-text" offset="5" x="222.0625" y="17" textAnchor="start" fill="var(--muted-foreground)">
                               <tspan x="222.0625" dy="0.71em">
-                                50%
+                                {"50%"}
                               </tspan>
                             </text>
                           </g>
@@ -517,6 +498,7 @@ export function Pattern() {
                     </div>
                   </div>
                 </div>
+                </ChartContainer>
               </FramePanel>
             </Frame>
           </div>

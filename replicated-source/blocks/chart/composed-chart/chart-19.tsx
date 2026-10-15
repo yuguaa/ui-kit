@@ -18,29 +18,29 @@ export function Pattern() {
           <div className="flex flex-wrap gap-5 items-end">
             <div className="me-2.5 min-w-40 space-y-0.5">
               <div className="mb-1 text-sm text-zinc-400">
-                Total Value Locked
+                {"Total Value Locked"}
               </div>
               <div className="font-bold leading-none text-3xl">
-                $7,500.15
+                {"$7,500.15"}
               </div>
             </div>
             <div className="flex flex-wrap gap-2.5 items-center mb-1.5">
               <div className="pe-10 space-y-0.5">
                 <div className="flex font-normal gap-1.5 items-center text-[11px]" style={{color: "var(--color-emerald-500)"}}>
                   <div className="rounded-full size-1.5" style={{backgroundColor: "var(--color-emerald-500)"}}></div>
-                  Total Deposits
+                  {"Total Deposits"}
                 </div>
                 <div className="font-bold leading-none text-xl">
-                  $4,400.43
+                  {"$4,400.43"}
                 </div>
               </div>
               <div className="space-y-0.5">
                 <div className="flex font-normal gap-1.5 items-center text-[11px]" style={{color: "var(--color-fuchsia-500)"}}>
                   <div className="rounded-full size-1.5" style={{backgroundColor: "var(--color-fuchsia-500)"}}></div>
-                  Total Borrowed
+                  {"Total Borrowed"}
                 </div>
                 <div className="font-bold leading-none text-xl">
-                  $3,100.15
+                  {"$3,100.15"}
                 </div>
               </div>
             </div>
@@ -49,13 +49,13 @@ export function Pattern() {
             <Tabs data-orientation="horizontal" activationDirection="left">
               <TabsList className="bg-zinc-800 border-0 p-1 rounded-full" data-orientation="horizontal" activationDirection="left" role="tablist" variant="default">
                 <TabsTrigger className="border-0 data-active:bg-zinc-700 data-active:text-white hover:text-white px-4 py-2 rounded-full shadow-none text-sm text-zinc-400" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" extracted="1" data-active="" compositeItemActive="">
-                  Day
+                  {"Day"}
                 </TabsTrigger>
                 <TabsTrigger className="border-0 data-active:bg-zinc-700 data-active:text-white hover:text-white px-4 py-2 rounded-full shadow-none text-sm text-zinc-400" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                  Week
+                  {"Week"}
                 </TabsTrigger>
                 <TabsTrigger className="border-0 data-active:bg-zinc-700 data-active:text-white hover:text-white px-4 py-2 rounded-full shadow-none text-sm text-zinc-400" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                  Month
+                  {"Month"}
                 </TabsTrigger>
               </TabsList>
             </Tabs>
@@ -63,19 +63,9 @@ export function Pattern() {
         </CardHeader>
         <CardContent className="pe-4.5 ps-2.5">
           <div className="h-[300px] w-full">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-full justify-center overflow-visible text-xs w-full" data-chart="chart-_r_3_">
-              <style>{`
- [data-chart=chart-_r_3_] {
-  --color-totalDeposits: var(--color-emerald-500);
-  --color-totalBorrowed: var(--color-fuchsia-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-totalDeposits: var(--color-emerald-500);
-  --color-totalBorrowed: var(--color-fuchsia-500);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-totalDeposits: var(--color-emerald-500);\n  --color-totalBorrowed: var(--color-fuchsia-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-totalDeposits: var(--color-emerald-500);\n  --color-totalBorrowed: var(--color-fuchsia-500);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="740" height="300" style={{position: "relative", cursor: "default", width: "740px", height: "300px"}}>
@@ -179,42 +169,42 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="65" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="65" dy="0.71em">
-                                00:00
+                                {"00:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="199" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="199" dy="0.71em">
-                                04:00
+                                {"04:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="333" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="333" dy="0.71em">
-                                08:00
+                                {"08:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="467" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="467" dy="0.71em">
-                                12:00
+                                {"12:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="601" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="601" dy="0.71em">
-                                16:00
+                                {"16:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="670" stroke="none" fontSize="12" x="723.25" y="271" textAnchor="middle" fill="rgb(148 163 184)">
                               <tspan x="723.25" dy="0.71em">
-                                20:00
+                                {"20:00"}
                               </tspan>
                             </text>
                           </g>
@@ -223,35 +213,35 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="230" stroke="none" fontSize="12" x="44" y="250" textAnchor="end" fill="rgb(148 163 184)">
                               <tspan x="44" dy="0.355em">
-                                $0.0M
+                                {"$0.0M"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="230" stroke="none" fontSize="12" x="44" y="192.5" textAnchor="end" fill="rgb(148 163 184)">
                               <tspan x="44" dy="0.355em">
-                                $2.0M
+                                {"$2.0M"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="230" stroke="none" fontSize="12" x="44" y="135" textAnchor="end" fill="rgb(148 163 184)">
                               <tspan x="44" dy="0.355em">
-                                $4.0M
+                                {"$4.0M"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="230" stroke="none" fontSize="12" x="44" y="77.5" textAnchor="end" fill="rgb(148 163 184)">
                               <tspan x="44" dy="0.355em">
-                                $6.0M
+                                {"$6.0M"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" width="60" height="230" stroke="none" fontSize="12" x="44" y="20" textAnchor="end" fill="rgb(148 163 184)">
                               <tspan x="44" dy="0.355em">
-                                $8.0M
+                                {"$8.0M"}
                               </tspan>
                             </text>
                           </g>
@@ -262,6 +252,7 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
         </CardContent>
       </Card>

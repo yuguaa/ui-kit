@@ -29,38 +29,10 @@ import {
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="bg-muted flex group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar min-h-svh overflow-clip relative text-foreground w-full" style={{"--sidebar-width": "16rem", "--sidebar-width-icon": "3rem"}}>
       <div className="absolute h-[380px] inset-x-0 lg:h-[444px] overflow-hidden pointer-events-none sm:h-[420px] top-[-68px]" aria-hidden="true">
-        <style>{`
-@keyframes app-shell-22-slide {
-  0%, 11.667% { opacity: 0 }
-  16.667%, 33.333% { opacity: 1 }
-  33.367%, 100% { opacity: 0 }
-}
-@keyframes app-shell-22-slide-last {
-  0%, 11.667% { opacity: 0 }
-  16.667%, 28.333% { opacity: 1 }
-  33.333%, 100% { opacity: 0 }
-}
-.app-shell-22-slide {
-  opacity: 0;
-  animation: app-shell-22-slide 30s ease-in-out var(--app-shell-22-slide-delay) infinite;
-}
-.app-shell-22-slide[data-last] { animation-name: app-shell-22-slide-last }
-@keyframes app-shell-22-twinkle {
-  0%, 62% { opacity: 0 }
-  72%, 88% { opacity: 1 }
-  98%, 100% { opacity: 0 }
-}
-.app-shell-22-twinkle {
-  opacity: 0;
-  animation: app-shell-22-twinkle var(--app-shell-22-twinkle-duration) ease-in-out var(--app-shell-22-twinkle-delay) infinite;
-}
-.app-shell-22-twinkle[data-lit] { opacity: 1 }
-@media (prefers-reduced-motion: reduce) {
-  .app-shell-22-slide, .app-shell-22-twinkle { animation: none }
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n@keyframes app-shell-22-slide {\n  0%, 11.667% { opacity: 0 }\n  16.667%, 33.333% { opacity: 1 }\n  33.367%, 100% { opacity: 0 }\n}\n@keyframes app-shell-22-slide-last {\n  0%, 11.667% { opacity: 0 }\n  16.667%, 28.333% { opacity: 1 }\n  33.333%, 100% { opacity: 0 }\n}\n.app-shell-22-slide {\n  opacity: 0;\n  animation: app-shell-22-slide 30s ease-in-out var(--app-shell-22-slide-delay) infinite;\n}\n.app-shell-22-slide[data-last] { animation-name: app-shell-22-slide-last }\n@keyframes app-shell-22-twinkle {\n  0%, 62% { opacity: 0 }\n  72%, 88% { opacity: 1 }\n  98%, 100% { opacity: 0 }\n}\n.app-shell-22-twinkle {\n  opacity: 0;\n  animation: app-shell-22-twinkle var(--app-shell-22-twinkle-duration) ease-in-out var(--app-shell-22-twinkle-delay) infinite;\n}\n.app-shell-22-twinkle[data-lit] { opacity: 1 }\n@media (prefers-reduced-motion: reduce) {\n  .app-shell-22-slide, .app-shell-22-twinkle { animation: none }\n}\n" }} />
         <img className="absolute inset-0 object-cover size-full" sizes="100vw" alt="" width="1440" height="444" fetchpriority="high" srcSet="/blocks/app-shell-22/hero-768.webp 768w, /blocks/app-shell-22/hero-1152.webp 1152w, /blocks/app-shell-22/hero-1670.webp 1670w" src="/blocks/app-shell-22/hero-1670.webp" style={{objectPosition: "center 30%"}} />
         <img className="absolute app-shell-22-slide inset-0 object-cover size-full" sizes="100vw" alt="" width="1440" height="444" decoding="async" fetchpriority="low" srcSet="/blocks/app-shell-22/hero-reading-768.webp 768w, /blocks/app-shell-22/hero-reading-1152.webp 1152w, /blocks/app-shell-22/hero-reading-1536.webp 1536w" src="/blocks/app-shell-22/hero-reading-1536.webp" style={{objectPosition: "center 30%", "--app-shell-22-slide-delay": "0s"}} />
         <img className="absolute app-shell-22-slide inset-0 object-cover size-full" sizes="100vw" alt="" width="1440" height="444" decoding="async" fetchpriority="low" srcSet="/blocks/app-shell-22/hero-plane-768.webp 768w, /blocks/app-shell-22/hero-plane-1152.webp 1152w, /blocks/app-shell-22/hero-plane-1670.webp 1670w" src="/blocks/app-shell-22/hero-plane-1670.webp" style={{objectPosition: "center 30%", "--app-shell-22-slide-delay": "5s"}} />
@@ -191,10 +163,11 @@ export function Pattern() {
         </svg>
       </div>
       <h1 className="sr-only">
-        Fleet control overview
+        {"Fleet control overview"}
       </h1>
       <div className="flex gap-3 p-3 relative w-full">
         <div className="h-[calc(100svh-24px)] hidden lg:block self-start shrink-0 sticky top-3">
+          <SidebarProvider>
           <Sidebar className="backdrop-blur-xl bg-black/40 items-center rounded-full shadow-[0_24px_64px_0_rgb(0_0_0/0.04),inset_0_2px_2px_0_rgb(255_255_255/0.1)] shrink-0 w-12" role="navigation" aria-label="Workspace">
             <SidebarHeader className="items-center px-2 py-3 w-full" sidebar="header">
               <svg className="shrink-0 size-8 text-white" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -205,6 +178,7 @@ export function Pattern() {
                 </g>
               </svg>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="[scrollbar-color:rgb(255_255_255/0.35)_transparent] [scrollbar-width:thin] items-center w-full" sidebar="content">
               <div className="border border-white/15 flex flex-col gap-1.5 items-center py-[9px] rounded-[calc(var(--radius-xl)+4px)] w-full">
                 <Tooltip>
@@ -298,6 +272,7 @@ export function Pattern() {
                 </Tooltip>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="gap-0 items-center p-0 w-full" sidebar="footer">
               <div className="border border-white/15 dark:bg-white/2.5 dark:border-white/8 flex flex-col gap-1.5 items-center py-[9px] rounded-[calc(var(--radius-xl)+4px)] w-full">
                 <Tooltip>
@@ -337,6 +312,7 @@ export function Pattern() {
               </div>
             </SidebarFooter>
           </Sidebar>
+          </SidebarProvider>
         </div>
         <div className="flex flex-1 flex-col min-w-0">
           <header className="backdrop-blur-xl bg-black/40 flex gap-1 items-center lg:hidden p-1.5 rounded-full shadow-[0_24px_64px_0_rgb(0_0_0/0.04),inset_0_2px_2px_0_rgb(255_255_255/0.1)] sticky top-3 z-10">
@@ -368,19 +344,19 @@ export function Pattern() {
           <div className="-translate-x-1.5 flex-col hidden items-center lg:flex">
             <nav className="backdrop-blur-xl bg-black/40 flex gap-0.5 items-center pl-1 pr-2.5 py-1 rounded-full shadow-[0_24px_64px_0_rgb(0_0_0/0.04),inset_0_2px_2px_0_rgb(255_255_255/0.1)]" aria-label="Sections">
               <Button className="bg-white/10 hover:bg-white/10 hover:text-white px-3 rounded-full shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] text-white text-xs transition-colors" type="button" tabIndex="0" aria-current="page">
-                Overview
+                {"Overview"}
               </Button>
               <Button className="hidden hover:bg-white/10 hover:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] hover:text-white md:inline-flex px-3 rounded-full text-white/70 text-xs transition-colors" type="button" tabIndex="0">
-                Missions
+                {"Missions"}
               </Button>
               <Button className="hidden hover:bg-white/10 hover:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] hover:text-white md:inline-flex px-3 rounded-full text-white/70 text-xs transition-colors" type="button" tabIndex="0">
-                Stations
+                {"Stations"}
               </Button>
               <Button className="hidden hover:bg-white/10 hover:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] hover:text-white md:inline-flex px-3 rounded-full text-white/70 text-xs transition-colors" type="button" tabIndex="0">
-                Requests
+                {"Requests"}
               </Button>
               <Button className="hidden hover:bg-white/10 hover:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] hover:text-white md:inline-flex px-3 rounded-full text-white/70 text-xs transition-colors" type="button" tabIndex="0">
-                Maintenance
+                {"Maintenance"}
               </Button>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-expanded:bg-white/10 aria-expanded:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] aria-expanded:text-white cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-white/10 hover:shadow-[inset_1px_1px_0_0_rgb(255_255_255/0.45),inset_-1px_-1px_0_0_rgb(255_255_255/0.3)] hover:text-white inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 text-white/70 transition-colors whitespace-nowrap" type="button" tabIndex="0" aria-label="More sections" aria-haspopup="menu" id="base-ui-_r_1a_" aria-expanded="false">
@@ -498,5 +474,6 @@ export function Pattern() {
         </div>
       </div>
     </div>
+    </SidebarProvider>
   )
 }

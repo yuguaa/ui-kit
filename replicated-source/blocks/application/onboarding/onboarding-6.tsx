@@ -30,7 +30,7 @@ export function Pattern() {
   return (
     <main className="bg-background min-h-svh w-full" aria-labelledby="page-title">
       <h1 className="sr-only" id="page-title">
-        Workspace onboarding with API access
+        {"Workspace onboarding with API access"}
       </h1>
       <div className="bg-background flex flex-col h-svh max-h-svh overflow-hidden relative w-full">
         <header className="bg-background/95 border-b border-border shrink-0">
@@ -46,110 +46,162 @@ export function Pattern() {
                   </ItemMedia>
                 </Item>
                 <span className="font-medium text-[0.9375rem]">
-                  NeUI
+                  {"NeUI"}
                 </span>
               </div>
             </div>
             <div className="-translate-x-1/2 absolute left-1/2 max-w-72 min-w-28 w-[36vw]">
+              <StepperItem>
               <Stepper className="h-1.5 leading-none" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
+                <Stepper>
                 <StepperNav className="bg-muted flex h-1.5 overflow-hidden relative rounded-full" data-state="1" data-orientation="horizontal">
                   <span className="absolute bg-primary inset-y-0 left-0 origin-left overflow-hidden pointer-events-none w-full z-10" aria-hidden="true" style={{transform: "scaleX(0.125)"}}>
                     <span className="absolute bg-gradient-to-r from-transparent inset-y-0 opacity-70 right-0 to-transparent via-primary-foreground/50 w-16" style={{opacity: "0", transform: "translateX(120%)"}}></span>
                   </span>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="active">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="active">
                         <div className="absolute">
                           <span className="sr-only">
-                            Profile
+                            {"Profile"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Role
+                            {"Role"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Source
+                            {"Source"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Workspace
+                            {"Workspace"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-5" aria-selected="false" aria-controls="stepper-panel-5" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Goals
+                            {"Goals"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-6" aria-selected="false" aria-controls="stepper-panel-6" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Invite
+                            {"Invite"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-7" aria-selected="false" aria-controls="stepper-panel-7" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            Agent
+                            {"Agent"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
+                  <Stepper>
                   <StepperItem className="flex-1 h-1.5 overflow-hidden relative z-20" data-state="inactive">
+                    <Stepper>
                     <StepperTrigger className="flex-col gap-0 h-1.5 items-start w-full" type="button" role="tab" id="stepper-tab-8" aria-selected="false" aria-controls="stepper-panel-8" tabIndex="-1" data-state="inactive" loading="false">
+                      <Stepper>
                       <StepperIndicator className="bg-transparent! border-0 data-[state=active]:bg-transparent! data-[state=completed]:bg-transparent! h-1.5 p-0 w-full" data-state="inactive">
                         <div className="absolute">
                           <span className="sr-only">
-                            API access
+                            {"API access"}
                           </span>
                         </div>
                       </StepperIndicator>
+                      </Stepper>
                     </StepperTrigger>
+                    </Stepper>
                   </StepperItem>
+                  </Stepper>
                 </StepperNav>
+                </Stepper>
               </Stepper>
+              </StepperItem>
             </div>
             <div className="ml-auto">
               <span className="font-medium tabular-nums text-muted-foreground text-sm whitespace-nowrap">
-                1 / 8
+                {"1 / 8"}
               </span>
             </div>
           </div>
@@ -159,15 +211,15 @@ export function Pattern() {
             <form className="flex flex-col gap-8 min-w-0 mx-auto sm:gap-10 w-full" id="onboarding-6-form" style={{opacity: "1", transform: "none"}}>
               <div className="flex flex-col gap-2 items-start text-left w-full" aria-live="polite">
                 <h1 className="font-semibold leading-8 text-2xl text-balance text-foreground">
-                  Set Up Your Profile
+                  {"Set Up Your Profile"}
                 </h1>
                 <p className="leading-5 text-muted-foreground text-pretty text-sm">
-                  Add the details teammates will see across the workspace.
+                  {"Add the details teammates will see across the workspace."}
                 </p>
               </div>
               <FieldSet>
                 <FieldLegend className="sr-only" variant="legend">
-                  Profile details
+                  {"Profile details"}
                 </FieldLegend>
                 <FieldGroup className="gap-4">
                   <Field role="group" data-orientation="vertical">
@@ -185,13 +237,13 @@ export function Pattern() {
                         <div className="flex flex-wrap gap-2 items-center">
                           <div className="inline-flex relative">
                             <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                              Upload photo
+                              {"Upload photo"}
                             </Button>
                             <input className="hidden" id="onboarding-6-profile-photo" accept="image/*" aria-hidden="true" tabIndex="-1" type="file" />
                           </div>
                         </div>
                         <p className="leading-4 text-muted-foreground text-xs">
-                          PNG or JPG, at least 400 x 400 px, up to 10 MB.
+                          {"PNG or JPG, at least 400 x 400 px, up to 10 MB."}
                         </p>
                       </div>
                     </div>
@@ -199,22 +251,22 @@ export function Pattern() {
                   <FieldGroup className="gap-4">
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-6-name">
-                        Full name
+                        {"Full name"}
                         <span className="text-destructive">
-                          *
+                          {"*"}
                         </span>
                       </FieldLabel>
                       <Input id="onboarding-6-name" autoComplete="name" value="Sam Rivera"></Input>
                     </Field>
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-6-title">
-                        Job title
+                        {"Job title"}
                       </FieldLabel>
                       <Input id="onboarding-6-title" autoComplete="organization-title" value="Product Engineer"></Input>
                     </Field>
                     <Field className="gap-2" role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-6-timezone">
-                        Timezone
+                        {"Timezone"}
                       </FieldLabel>
                       <InputGroup className="cn-combobox-input" role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="onboarding-6-timezone" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" placeholder="Select a timezone" type="text" value="" />
@@ -239,7 +291,7 @@ export function Pattern() {
                     </Checkbox>
                     <input id="onboarding-6-marketing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground" htmlFor="onboarding-6-marketing" id="onboarding-6-marketing-label">
-                      Send me product updates and workspace tips.
+                      {"Send me product updates and workspace tips."}
                     </FieldLabel>
                   </Field>
                 </FieldGroup>
@@ -252,7 +304,7 @@ export function Pattern() {
             <div className="flex items-center min-w-0"></div>
             <div className="flex gap-2 items-center justify-end shrink-0">
               <Button className="min-w-0 px-3 sm:min-w-32 sm:px-4" type="submit" tabIndex="0" form="onboarding-6-form">
-                Next step
+                {"Next step"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>

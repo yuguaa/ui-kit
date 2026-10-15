@@ -19,15 +19,15 @@ export function Pattern() {
               <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
               <rect x="2" y="4" width="20" height="16" rx="2"></rect>
             </svg>
-            Free Weekly
+            {"Free Weekly"}
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-            5 Min Read
+            {"5 Min Read"}
           </Badge>
           <h2 className="font-semibold sm:text-5xl text-4xl text-balance text-foreground tracking-tight">
-            Field Notes For People Who Ship
+            {"Field Notes For People Who Ship"}
           </h2>
           <p className="max-w-xl sm:text-lg text-balance text-base text-muted-foreground">
-            Honest write-ups from founders, designers, and engineers building things that matter. One short read, every Sunday.
+            {"Honest write-ups from founders, designers, and engineers building things that matter. One short read, every Sunday."}
           </p>
           <form className="flex flex-col gap-2 max-w-md sm:flex-row w-full">
             <InputGroup className="flex-1" role="group">
@@ -40,7 +40,7 @@ export function Pattern() {
               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_0_" required autoComplete="email" placeholder="you@yourcompany.com" aria-label="Email address" type="email" />
             </InputGroup>
             <Button type="submit" tabIndex="0" extracted="1">
-              Subscribe
+              {"Subscribe"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -66,11 +66,11 @@ export function Pattern() {
               </Avatar>
             </div>
             <p className="text-muted-foreground text-sm">
-              Joined by
+              {"Joined by"}
               <span className="font-semibold text-foreground">
-                1,247
+                {"1,247"}
               </span>
-              builders this week.
+              {"builders this week."}
             </p>
           </div>
         </div>

@@ -43,10 +43,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2 items-center">
               <EmptyTitle className="font-semibold sm:text-3xl text-2xl tracking-tight">
-                Invite the first people in
+                {"Invite the first people in"}
               </EmptyTitle>
               <EmptyDescription className="max-w-104 text-sm/relaxed">
-                Bring owners, editors, and reviewers into the workspace with a fast email invite or one secure share link.
+                {"Bring owners, editors, and reviewers into the workspace with a fast email invite or one secure share link."}
               </EmptyDescription>
             </div>
           </EmptyHeader>
@@ -59,14 +59,14 @@ export function Pattern() {
                   <line x1="19" x2="19" y1="8" y2="14"></line>
                   <line x1="22" x2="16" y1="11" y2="11"></line>
                 </svg>
-                Invite members
+                {"Invite members"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" data-icon="inline-start" aria-hidden="true">
                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                 </svg>
-                Copy invite link
+                {"Copy invite link"}
               </Button>
             </div>
           </EmptyContent>

@@ -17,32 +17,32 @@ export function Pattern() {
             <div className="flex flex-col gap-6 lg:p-10 p-6 sm:p-8">
               <div className="flex flex-wrap gap-2 items-center">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                  Limited time
+                  {"Limited time"}
                 </Badge>
                 <span className="font-medium gap-1 inline-flex items-center text-muted-foreground text-xs">
                   <svg className="lucide lucide-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                     <circle cx="12" cy="12" r="10"></circle>
                     <path d="M12 6v6l4 2"></path>
                   </svg>
-                  Ends Sun, Jul 31
+                  {"Ends Sun, Jul 31"}
                 </span>
               </div>
               <div className="flex flex-col gap-3">
                 <h1 className="font-semibold sm:text-4xl text-3xl text-balance text-foreground tracking-tight" id="coupon-1-heading">
-                  Summer sale, 25% off everything
+                  {"Summer sale, 25% off everything"}
                 </h1>
                 <p className="leading-6 max-w-prose sm:text-base text-muted-foreground text-sm">
-                  Refresh your essentials with a quarter off the entire catalog. One code, no minimums, free returns inside 30 days.
+                  {"Refresh your essentials with a quarter off the entire catalog. One code, no minimums, free returns inside 30 days."}
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <Item className="bg-muted/25 border border-border border-dashed" variant="muted" size="sm">
                   <ItemContent className="gap-0.5 min-w-0">
                     <span className="font-semibold text-[0.625rem] text-muted-foreground tracking-wider uppercase">
-                      Promo code
+                      {"Promo code"}
                     </span>
                     <ItemTitle className="font-mono font-semibold select-all sm:text-2xl text-foreground text-xl tracking-[0.18em] uppercase">
-                      SUMMER25
+                      {"SUMMER25"}
                     </ItemTitle>
                   </ItemContent>
                   <ItemActions>
@@ -53,7 +53,7 @@ export function Pattern() {
                         <path d="m15 9-6 6"></path>
                         <path d="M15 15h.01"></path>
                       </svg>
-                      Copy
+                      {"Copy"}
                     </Button>
                   </ItemActions>
                 </Item>
@@ -63,7 +63,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      Applies sitewide, including new arrivals.
+                      {"Applies sitewide, including new arrivals."}
                     </span>
                   </li>
                   <li className="flex gap-2 items-start leading-snug">
@@ -71,7 +71,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      Stackable with free shipping over $50.
+                      {"Stackable with free shipping over $50."}
                     </span>
                   </li>
                   <li className="flex gap-2 items-start leading-snug">
@@ -79,21 +79,21 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      One use per customer. No code, no discount.
+                      {"One use per customer. No code, no discount."}
                     </span>
                   </li>
                 </ul>
               </div>
               <div className="flex flex-wrap gap-3 items-center">
                 <Button type="button" tabIndex="0">
-                  Shop the sale
+                  {"Shop the sale"}
                   <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
                 </Button>
                 <a className="hover:text-foreground hover:underline text-muted-foreground text-sm underline-offset-4" href="#terms">
-                  Full terms
+                  {"Full terms"}
                 </a>
               </div>
             </div>

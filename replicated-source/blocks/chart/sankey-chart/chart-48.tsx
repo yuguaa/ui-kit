@@ -25,25 +25,25 @@ export function Pattern() {
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold text-sm truncate">
-                Revenue Flow
+                {"Revenue Flow"}
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                Q3 FY26
+                {"Q3 FY26"}
               </Badge>
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Where each dollar of Fieldline revenue goes
+              {"Where each dollar of Fieldline revenue goes"}
             </div>
           </div>
           <div className="flex gap-2 items-center">
             <Select>
             <SelectTrigger className="w-32" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Quarter" extracted="1">
               <SelectValue>
-                Q3 FY2026
+                {"Q3 FY2026"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -60,131 +60,126 @@ export function Pattern() {
           </div>
         </header>
         <FramePanel>
-          <style>{`
-@keyframes c48-roll { from { transform: translateY(0); } }
-.c48-roll { animation: c48-roll 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--c48-delay, 0ms) backwards; }
-@media (prefers-reduced-motion: reduce) { .c48-roll { animation: none; } }
-html[data-demo="frozen"] .c48-roll { animation: none; }
-`}</style>
+          <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c48-roll { from { transform: translateY(0); } }\n.c48-roll { animation: c48-roll 900ms cubic-bezier(0.22, 1, 0.36, 1) var(--c48-delay, 0ms) backwards; }\n@media (prefers-reduced-motion: reduce) { .c48-roll { animation: none; } }\nhtml[data-demo=\"frozen\"] .c48-roll { animation: none; }\n" }} />
           <dl className="@2xl:grid-cols-4 gap-x-6 gap-y-4 grid grid-cols-2">
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-1.5 min-w-0">
               <dt className="flex font-medium gap-1.5 items-center text-muted-foreground text-xs">
                 <span className="bg-primary rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                Revenue
+                {"Revenue"}
               </dt>
               <dd className="flex flex-col gap-1.5 min-w-0">
                 <span className="font-semibold inline-flex leading-none tabular-nums text-xl tracking-tight">
                   <span className="sr-only">
-                    $649M
+                    {"$649M"}
                   </span>
                   <span className="inline-flex" aria-hidden="true">
                     <span>
-                      $
+                      {"$"}
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-60%)", "--c48-delay": "40ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-40%)", "--c48-delay": "80ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-90%)", "--c48-delay": "120ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      M
+                      {"M"}
                     </span>
                   </span>
                 </span>
@@ -195,11 +190,11 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="tabular-nums">
-                      +8.9%
+                      {"+8.9%"}
                     </span>
                   </Badge>
                   <span className="@3xl:inline hidden text-muted-foreground text-xs truncate">
-                    vs Q2 FY26
+                    {"vs Q2 FY26"}
                   </span>
                 </span>
               </dd>
@@ -207,121 +202,121 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-1.5 min-w-0">
               <dt className="flex font-medium gap-1.5 items-center text-muted-foreground text-xs">
                 <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                Gross Margin
+                {"Gross Margin"}
               </dt>
               <dd className="flex flex-col gap-1.5 min-w-0">
                 <span className="font-semibold inline-flex leading-none tabular-nums text-xl tracking-tight">
                   <span className="sr-only">
-                    73.0%
+                    {"73.0%"}
                   </span>
                   <span className="inline-flex" aria-hidden="true">
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-70%)", "--c48-delay": "0ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-30%)", "--c48-delay": "40ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      .
+                      {"."}
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(0%)", "--c48-delay": "120ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      %
+                      {"%"}
                     </span>
                   </span>
                 </span>
@@ -332,11 +327,11 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
                       <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                     </svg>
                     <span className="tabular-nums">
-                      -0.5 pts
+                      {"-0.5 pts"}
                     </span>
                   </Badge>
                   <span className="@3xl:inline hidden text-muted-foreground text-xs truncate">
-                    vs Q2 FY26
+                    {"vs Q2 FY26"}
                   </span>
                 </span>
               </dd>
@@ -344,121 +339,121 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-1.5 min-w-0">
               <dt className="flex font-medium gap-1.5 items-center text-muted-foreground text-xs">
                 <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                Operating Margin
+                {"Operating Margin"}
               </dt>
               <dd className="flex flex-col gap-1.5 min-w-0">
                 <span className="font-semibold inline-flex leading-none tabular-nums text-xl tracking-tight">
                   <span className="sr-only">
-                    21.9%
+                    {"21.9%"}
                   </span>
                   <span className="inline-flex" aria-hidden="true">
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-20%)", "--c48-delay": "0ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-10%)", "--c48-delay": "40ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      .
+                      {"."}
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-90%)", "--c48-delay": "120ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      %
+                      {"%"}
                     </span>
                   </span>
                 </span>
@@ -469,11 +464,11 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
                       <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                     </svg>
                     <span className="tabular-nums">
-                      -0.9 pts
+                      {"-0.9 pts"}
                     </span>
                   </Badge>
                   <span className="@3xl:inline hidden text-muted-foreground text-xs truncate">
-                    vs Q2 FY26
+                    {"vs Q2 FY26"}
                   </span>
                 </span>
               </dd>
@@ -481,121 +476,121 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
             <div className="@2xl:not-first:border-s @2xl:not-first:ps-6 flex flex-col gap-1.5 min-w-0">
               <dt className="flex font-medium gap-1.5 items-center text-muted-foreground text-xs">
                 <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-                Net Income
+                {"Net Income"}
               </dt>
               <dd className="flex flex-col gap-1.5 min-w-0">
                 <span className="font-semibold inline-flex leading-none tabular-nums text-xl tracking-tight">
                   <span className="sr-only">
-                    $111M
+                    {"$111M"}
                   </span>
                   <span className="inline-flex" aria-hidden="true">
                     <span>
-                      $
+                      {"$"}
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-10%)", "--c48-delay": "40ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-10%)", "--c48-delay": "80ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span className="h-[1em] inline-block overflow-hidden">
                       <span className="c48-roll duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col motion-reduce:transition-none transition-transform" style={{transform: "translateY(-10%)", "--c48-delay": "120ms"}}>
                         <span className="h-[1em]">
-                          0
+                          {"0"}
                         </span>
                         <span className="h-[1em]">
-                          1
+                          {"1"}
                         </span>
                         <span className="h-[1em]">
-                          2
+                          {"2"}
                         </span>
                         <span className="h-[1em]">
-                          3
+                          {"3"}
                         </span>
                         <span className="h-[1em]">
-                          4
+                          {"4"}
                         </span>
                         <span className="h-[1em]">
-                          5
+                          {"5"}
                         </span>
                         <span className="h-[1em]">
-                          6
+                          {"6"}
                         </span>
                         <span className="h-[1em]">
-                          7
+                          {"7"}
                         </span>
                         <span className="h-[1em]">
-                          8
+                          {"8"}
                         </span>
                         <span className="h-[1em]">
-                          9
+                          {"9"}
                         </span>
                       </span>
                     </span>
                     <span>
-                      M
+                      {"M"}
                     </span>
                   </span>
                 </span>
@@ -606,11 +601,11 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="tabular-nums">
-                      +3.7%
+                      {"+3.7%"}
                     </span>
                   </Badge>
                   <span className="@3xl:inline hidden text-muted-foreground text-xs truncate">
-                    vs Q2 FY26
+                    {"vs Q2 FY26"}
                   </span>
                 </span>
               </dd>
@@ -622,61 +617,38 @@ html[data-demo="frozen"] .c48-roll { animation: none; }
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Highlight flows" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  All
+                  {"All"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                 <span className="bg-primary rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Revenue
+                  {"Revenue"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                 <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Costs
+                  {"Costs"}
                 </span>
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
                 <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Profit
+                  {"Profit"}
                 </span>
               </ToggleGroupItem>
             </ToggleGroup>
             <span className="@lg:inline hidden text-muted-foreground text-xs">
-              Click a node to trace its flow
+              {"Click a node to trace its flow"}
             </span>
           </div>
           <div className="-mx-1 overflow-x-auto px-1">
             <div className="min-w-3xl overflow-hidden relative">
-              <style>{`
-@keyframes c48-wipe { from { transform: translateX(0); } to { transform: translateX(100%); } }
-@keyframes c48-ants { to { stroke-dashoffset: -4; } }
-.c48-wipe { animation: c48-wipe 1300ms cubic-bezier(0.65, 0, 0.35, 1) 100ms both; }
-.c48-ants { animation: c48-ants 800ms linear infinite; }
-@media (prefers-reduced-motion: reduce) {
-  .c48-wipe { display: none; }
-  .c48-ants { animation: none; }
-}
-html[data-demo="frozen"] .c48-wipe { display: none; }
-html[data-demo="frozen"] .c48-ants { animation: none; }
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c48-wipe { from { transform: translateX(0); } to { transform: translateX(100%); } }\n@keyframes c48-ants { to { stroke-dashoffset: -4; } }\n.c48-wipe { animation: c48-wipe 1300ms cubic-bezier(0.65, 0, 0.35, 1) 100ms both; }\n.c48-ants { animation: c48-ants 800ms linear infinite; }\n@media (prefers-reduced-motion: reduce) {\n  .c48-wipe { display: none; }\n  .c48-ants { animation: none; }\n}\nhtml[data-demo=\"frozen\"] .c48-wipe { display: none; }\nhtml[data-demo=\"frozen\"] .c48-ants { animation: none; }\n" }} />
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-96 justify-center text-xs w-full" data-chart="chart-_r_d_" role="img" aria-label="Income statement flow from $649M revenue to $111M net income">
-                <style>{`
- [data-chart=chart-_r_d_] {
-  --color-revenue: var(--primary);
-  --color-cost: var(--destructive);
-  --color-profit: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_d_] {
-  --color-revenue: var(--primary);
-  --color-cost: var(--destructive);
-  --color-profit: var(--success);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_d_] {\n  --color-revenue: var(--primary);\n  --color-cost: var(--destructive);\n  --color-profit: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_d_] {\n  --color-revenue: var(--primary);\n  --color-cost: var(--destructive);\n  --color-profit: var(--success);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="990" height="384" style={{position: "relative", cursor: "default", width: "990px", height: "384px"}}>
@@ -851,14 +823,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="104" y="109.45608628659477" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Subscriptions
+                                    {"Subscriptions"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="104" dy="15">
                                     <tspan className="fill-foreground">
-                                      $446M
+                                      {"$446M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      69%
+                                      {"69%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -873,14 +845,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="104" y="277.2773497688752" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Usage
+                                    {"Usage"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="104" dy="15">
                                     <tspan className="fill-foreground">
-                                      $151M
+                                      {"$151M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      23%
+                                      {"23%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -895,14 +867,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="104" y="352.8212634822805" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Services
+                                    {"Services"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="104" dy="15">
                                     <tspan className="fill-foreground">
-                                      $52M
+                                      {"$52M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      8%
+                                      {"8%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -917,11 +889,11 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="310" y="180.37700195483336" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Revenue
+                                    {"Revenue"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="310" dy="15">
                                     <tspan className="fill-foreground">
-                                      $649M
+                                      {"$649M"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -936,14 +908,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="490" y="144.01386748844376" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Gross Profit
+                                    {"Gross Profit"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="490" dy="15">
                                     <tspan className="fill-foreground">
-                                      $474M
+                                      {"$474M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      73%
+                                      {"73%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -958,14 +930,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="490" y="324.0138674884438" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Cost of Revenue
+                                    {"Cost of Revenue"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="490" dy="15">
                                     <tspan className="fill-foreground">
-                                      $175M
+                                      {"$175M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      27%
+                                      {"27%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -980,14 +952,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="670" y="148.22958397534669" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Operating Income
+                                    {"Operating Income"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="670" dy="15">
                                     <tspan className="fill-foreground">
-                                      $142M
+                                      {"$142M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      22%
+                                      {"22%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1002,14 +974,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="670" y="287.24345146379045" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Operating Expenses
+                                    {"Operating Expenses"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="670" dy="15">
                                     <tspan className="fill-foreground">
-                                      $332M
+                                      {"$332M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      51%
+                                      {"51%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1024,14 +996,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="850" y="56.96918335901387" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Net Income
+                                    {"Net Income"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="850" dy="15">
                                     <tspan className="fill-foreground">
-                                      $111M
+                                      {"$111M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      17%
+                                      {"17%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1046,14 +1018,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="850" y="118.22650231124808" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Income Tax
+                                    {"Income Tax"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="850" dy="15">
                                     <tspan className="fill-foreground">
-                                      $31M
+                                      {"$31M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      5%
+                                      {"5%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1068,14 +1040,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="850" y="184.63636363636363" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    R&D
+                                    {"R&D"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="850" dy="15">
                                     <tspan className="fill-foreground">
-                                      $133M
+                                      {"$133M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      20%
+                                      {"20%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1090,14 +1062,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="850" y="278.6825885978428" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    Sales & Marketing
+                                    {"Sales & Marketing"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="850" dy="15">
                                     <tspan className="fill-foreground">
-                                      $149M
+                                      {"$149M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      23%
+                                      {"23%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1112,14 +1084,14 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                               <g opacity="1" style={{transform: "none", transformOrigin: "50% 50%", transformBox: "fill-box"}}>
                                 <text className="pointer-events-none text-xs" x="850" y="353.28967642526965" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                   <tspan className="fill-foreground font-medium">
-                                    G&A
+                                    {"G&A"}
                                   </tspan>
                                   <tspan className="tabular-nums" x="850" dy="15">
                                     <tspan className="fill-foreground">
-                                      $50M
+                                      {"$50M"}
                                     </tspan>
                                     <tspan className="fill-muted-foreground" dx="5">
-                                      8%
+                                      {"8%"}
                                     </tspan>
                                   </tspan>
                                 </text>
@@ -1132,56 +1104,57 @@ html[data-demo="frozen"] .c48-ants { animation: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
               <div className="-left-32 absolute c48-wipe inset-y-0 pointer-events-none w-[calc(100%+8rem)]" aria-hidden="true" style={{background: "linear-gradient(to right, transparent, var(--frame-panel-bg, var(--background)) 8rem)"}}></div>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              Subscriptions to Revenue: $446M
+              {"Subscriptions to Revenue: $446M"}
             </li>
             <li>
-              Usage to Revenue: $151M
+              {"Usage to Revenue: $151M"}
             </li>
             <li>
-              Services to Revenue: $52M
+              {"Services to Revenue: $52M"}
             </li>
             <li>
-              Revenue to Gross Profit: $474M
+              {"Revenue to Gross Profit: $474M"}
             </li>
             <li>
-              Revenue to Cost of Revenue: $175M
+              {"Revenue to Cost of Revenue: $175M"}
             </li>
             <li>
-              Gross Profit to Operating Income: $142M
+              {"Gross Profit to Operating Income: $142M"}
             </li>
             <li>
-              Gross Profit to Operating Expenses: $332M
+              {"Gross Profit to Operating Expenses: $332M"}
             </li>
             <li>
-              Operating Income to Net Income: $111M
+              {"Operating Income to Net Income: $111M"}
             </li>
             <li>
-              Operating Income to Income Tax: $31M
+              {"Operating Income to Income Tax: $31M"}
             </li>
             <li>
-              Operating Expenses to R&D: $133M
+              {"Operating Expenses to R&D: $133M"}
             </li>
             <li>
-              Operating Expenses to Sales & Marketing: $149M
+              {"Operating Expenses to Sales & Marketing: $149M"}
             </li>
             <li>
-              Operating Expenses to G&A: $50M
+              {"Operating Expenses to G&A: $50M"}
             </li>
           </ul>
         </FramePanel>
         <footer className="flex flex-row flex-wrap gap-(--frame-panel-footer-gap) gap-x-4 gap-y-1 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) text-xs">
           <span className="flex gap-1.5 items-center text-muted-foreground">
-            USD millions
+            {"USD millions"}
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-            Demo figures, unaudited
+            {"Demo figures, unaudited"}
           </span>
           <span className="tabular-nums text-muted-foreground">
-            Updated Oct 9, 2026
+            {"Updated Oct 9, 2026"}
           </span>
         </footer>
       </Frame>

@@ -24,10 +24,10 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Orders Overview
+              {"Orders Overview"}
             </div>
             <div className="text-muted-foreground text-xs truncate">
-              Sep 30, compared with Sep 29
+              {"Sep 30, compared with Sep 29"}
             </div>
           </div>
           <div className="@2xl/orders:w-auto flex flex-wrap gap-2 items-center w-full">
@@ -43,7 +43,7 @@ export function Pattern() {
                   <circle cx="16" cy="16" r="6"></circle>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Day
+                  {"Day"}
                 </span>
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -66,7 +66,7 @@ export function Pattern() {
                   <path d="M8 12H3"></path>
                 </svg>
                 <span className="@max-md/orders:sr-only [text-box:trim-both_cap_alphabetic]">
-                  Display
+                  {"Display"}
                 </span>
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -112,11 +112,11 @@ export function Pattern() {
             <TabsList className="gap-4 h-auto! justify-start px-4 py-0 sm:gap-10 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Metric">
               <TabsTrigger className="after:-bottom-px! flex-col gap-1.5 h-auto! items-start justify-start min-w-0 px-0 py-3 sm:flex-none text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_l_">
                 <span className="font-medium text-muted-foreground text-xs truncate w-full">
-                  Orders
+                  {"Orders"}
                 </span>
                 <span className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline">
                   <span className="font-semibold leading-none tabular-nums text-lg">
-                    543
+                    {"543"}
                   </span>
                   <span className="[&_svg]:size-3.5 font-medium gap-0.5 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                     <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -124,19 +124,19 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="sr-only">
-                      Up
+                      {"Up"}
                     </span>
-                    6.5%
+                    {"6.5%"}
                   </span>
                 </span>
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! flex-col gap-1.5 h-auto! items-start justify-start min-w-0 px-0 py-3 sm:flex-none text-left" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_m_" compositeItemActive="">
                 <span className="font-medium text-muted-foreground text-xs truncate w-full">
-                  Revenue
+                  {"Revenue"}
                 </span>
                 <span className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline">
                   <span className="font-semibold leading-none tabular-nums text-lg">
-                    $33,770
+                    {"$33,770"}
                   </span>
                   <span className="[&_svg]:size-3.5 font-medium gap-0.5 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                     <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -144,19 +144,19 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="sr-only">
-                      Up
+                      {"Up"}
                     </span>
-                    7.7%
+                    {"7.7%"}
                   </span>
                 </span>
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! flex-col gap-1.5 h-auto! items-start justify-start min-w-0 px-0 py-3 sm:flex-none text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_n_">
                 <span className="font-medium text-muted-foreground text-xs truncate w-full">
-                  Avg. Order
+                  {"Avg. Order"}
                 </span>
                 <span className="flex flex-wrap gap-x-1.5 gap-y-1 items-baseline">
                   <span className="font-semibold leading-none tabular-nums text-lg">
-                    $62.19
+                    {"$62.19"}
                   </span>
                   <span className="[&_svg]:size-3.5 font-medium gap-0.5 inline-flex items-center tabular-nums text-emerald-600 text-xs">
                     <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
@@ -164,9 +164,9 @@ export function Pattern() {
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
                     <span className="sr-only">
-                      Up
+                      {"Up"}
                     </span>
-                    1.2%
+                    {"1.2%"}
                   </span>
                 </span>
               </TabsTrigger>
@@ -175,6 +175,7 @@ export function Pattern() {
         </FramePanel>
         <FramePanel>
           <div className="h-80 w-full">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-video cn-chart flex h-80 justify-center text-xs w-full" data-chart="chart-_r_q_">
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -187,16 +188,16 @@ export function Pattern() {
                               <div className="[&>svg]:h-2.5 [&>svg]:text-muted-foreground [&>svg]:w-2.5 flex flex-wrap gap-2 items-center w-full">
                                 <div className="gap-x-3 gap-y-1 grid grid-cols-[auto_auto] items-center">
                                   <span className="text-muted-foreground">
-                                    12:00
+                                    {"12:00"}
                                   </span>
                                   <span className="font-medium font-mono tabular-nums text-foreground text-right">
-                                    $3,500
+                                    {"$3,500"}
                                   </span>
                                   <span className="text-muted-foreground">
-                                    Sep 29
+                                    {"Sep 29"}
                                   </span>
                                   <span className="font-mono tabular-nums text-muted-foreground text-right">
-                                    $3,200
+                                    {"$3,200"}
                                   </span>
                                 </div>
                               </div>
@@ -317,62 +318,62 @@ export function Pattern() {
                         <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="0" y="308" dy="0.71em" textAnchor="start">
-                              00:00
+                              {"00:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="66" y="308" dy="0.71em" textAnchor="middle">
-                              02:00
+                              {"02:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="132" y="308" dy="0.71em" textAnchor="middle">
-                              04:00
+                              {"04:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="198" y="308" dy="0.71em" textAnchor="middle">
-                              06:00
+                              {"06:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="264" y="308" dy="0.71em" textAnchor="middle">
-                              08:00
+                              {"08:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="330" y="308" dy="0.71em" textAnchor="middle">
-                              10:00
+                              {"10:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="396" y="308" dy="0.71em" textAnchor="middle">
-                              12:00
+                              {"12:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="462" y="308" dy="0.71em" textAnchor="middle">
-                              14:00
+                              {"14:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="528" y="308" dy="0.71em" textAnchor="middle">
-                              16:00
+                              {"16:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="594" y="308" dy="0.71em" textAnchor="middle">
-                              18:00
+                              {"18:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="660" y="308" dy="0.71em" textAnchor="middle">
-                              20:00
+                              {"20:00"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground" x="726" y="308" dy="0.71em" textAnchor="end">
-                              22:00
+                              {"22:00"}
                             </text>
                           </g>
                         </g>
@@ -382,17 +383,17 @@ export function Pattern() {
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="0" y="210.66666666666669" dy="-6" stroke="var(--color-card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                              $2K
+                              {"$2K"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="0" y="129.33333333333334" dy="-6" stroke="var(--color-card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                              $4K
+                              {"$4K"}
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="fill-muted-foreground tabular-nums" x="0" y="48" dy="-6" stroke="var(--color-card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                              $6K
+                              {"$6K"}
                             </text>
                           </g>
                         </g>
@@ -402,18 +403,19 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
         </FramePanel>
         <footer className="flex flex-row flex-wrap gap-(--frame-panel-footer-gap) gap-x-4 gap-y-1 items-center justify-between px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) text-muted-foreground text-xs">
           <span className="flex gap-2 h-4 items-center">
             <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Updated 5 min ago
+              {"Updated 5 min ago"}
             </span>
           </span>
           <span className="flex h-4 items-center">
             <span className="[text-box:trim-both_cap_alphabetic]">
-              Revenue per 2 hours
+              {"Revenue per 2 hours"}
             </span>
           </span>
         </footer>

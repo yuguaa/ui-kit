@@ -33,7 +33,7 @@ export function Pattern() {
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
         <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-          Open Stock Planner
+          {"Open Stock Planner"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -43,7 +43,7 @@ export function Pattern() {
       <SheetHeader className="border-b gap-0 p-0 shrink-0">
         <div className="border-b flex gap-2 items-center justify-between min-h-11 px-4">
           <SheetTitle className="font-medium leading-5 text-sm truncate" id="base-ui-_r_3_">
-            Product Details & Analytics
+            {"Product Details & Analytics"}
           </SheetTitle>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close sheet">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -53,50 +53,50 @@ export function Pattern() {
           </SheetClose>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_4_">
-          Detailed inventory, analytics, and variant data for Cloud Shift Lightweight Runner.
+          {"Detailed inventory, analytics, and variant data for Cloud Shift Lightweight Runner."}
         </SheetDescription>
         <div className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1 min-w-0">
             <div className="flex flex-wrap gap-2 items-center">
               <h2 className="font-semibold text-foreground text-lg tracking-tight">
-                Cloud Shift Lightweight Runner
+                {"Cloud Shift Lightweight Runner"}
               </h2>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Live
+                {"Live"}
               </Badge>
             </div>
             <p className="flex-wrap gap-x-1.5 gap-y-0.5 inline-flex items-center text-muted-foreground text-xs">
               <span>
-                SKU
+                {"SKU"}
               </span>
               <span className="font-medium font-mono text-foreground">
-                WM-8421
+                {"WM-8421"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                Created
+                {"Created"}
               </span>
               <span className="font-medium text-foreground">
-                16 Jan, 2025
+                {"16 Jan, 2025"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                Last Updated
+                {"Last Updated"}
               </span>
               <span className="font-medium text-foreground">
-                2 days ago
+                {"2 days ago"}
               </span>
             </p>
           </div>
           <div className="flex gap-2 items-center shrink-0">
             <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#customer-view">
-              Customer View
+              {"Customer View"}
             </a>
             <Button type="button" tabIndex="0">
-              Remove
+              {"Remove"}
             </Button>
             <Button type="button" tabIndex="0">
-              Edit Product
+              {"Edit Product"}
             </Button>
           </div>
         </div>
@@ -108,58 +108,58 @@ export function Pattern() {
               <Frame className="w-full" spacing="sm">
                 <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                   <div className="font-semibold text-sm">
-                    Inventory
+                    {"Inventory"}
                   </div>
                 </header>
                 <FramePanel className="shadow-none!">
                   <div className="gap-x-4 gap-y-3 grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3">
                     <div className="flex flex-col gap-1 min-w-0">
                       <span className="text-muted-foreground text-xs">
-                        Status
+                        {"Status"}
                       </span>
                       <div className="flex items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          In Stock
+                          {"In Stock"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-1 min-w-0">
                       <span className="text-muted-foreground text-xs">
-                        In Stock
+                        {"In Stock"}
                       </span>
                       <div className="flex items-center min-w-0">
                         <span className="font-semibold tabular-nums text-foreground text-sm">
-                          1,263
+                          {"1,263"}
                         </span>
                       </div>
                     </div>
                     <div className="flex flex-col gap-1 min-w-0">
                       <span className="text-muted-foreground text-xs">
-                        Delta
+                        {"Delta"}
                       </span>
                       <div className="flex items-center min-w-0">
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-                          +289
+                          {"+289"}
                         </Badge>
                       </div>
                     </div>
                     <div className="flex flex-col gap-1 min-w-0">
                       <span className="text-muted-foreground text-xs">
-                        Velocity
+                        {"Velocity"}
                       </span>
                       <div className="flex items-center min-w-0">
                         <span className="tabular-nums text-foreground text-sm">
-                          0.24/day
+                          {"0.24/day"}
                         </span>
                       </div>
                     </div>
                     <div className="flex flex-col gap-1 min-w-0">
                       <span className="text-muted-foreground text-xs">
-                        Updated By
+                        {"Updated By"}
                       </span>
                       <div className="flex items-center min-w-0">
                         <span className="text-foreground text-sm">
-                          Jason Taytum
+                          {"Jason Taytum"}
                         </span>
                       </div>
                     </div>
@@ -169,7 +169,7 @@ export function Pattern() {
               <Frame className="w-full" spacing="sm">
                 <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                   <div className="font-semibold text-sm">
-                    Analytics
+                    {"Analytics"}
                   </div>
                 </header>
                 <FramePanel className="shadow-none!">
@@ -177,73 +177,59 @@ export function Pattern() {
                     <div className="flex flex-col gap-2">
                       <div className="flex flex-col gap-1">
                         <span className="text-muted-foreground text-xs">
-                          Sales price
+                          {"Sales price"}
                         </span>
                         <div className="flex gap-2 items-baseline">
                           <span className="font-semibold tabular-nums text-foreground text-lg">
-                            $96.23
+                            {"$96.23"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                             <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                               <path d="M16 7h6v6"></path>
                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                             </svg>
-                            3.5%
+                            {"3.5%"}
                           </Badge>
                         </div>
                       </div>
+                      <ChartContainer>
                       <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-[60px] justify-center text-xs w-full" data-chart="chart-_r_6_">
-                        <style>{`
- [data-chart=chart-_r_6_] {
-  --color-value: var(--color-purple-500);
-}
-
-
-.dark [data-chart=chart-_r_6_] {
-  --color-value: var(--color-purple-500);
-}
-`}</style>
+                        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_6_] {\n  --color-value: var(--color-purple-500);\n}\n\n\n.dark [data-chart=chart-_r_6_] {\n  --color-value: var(--color-purple-500);\n}\n" }} />
                         <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                           <div style={{width: "0px", height: "0px", overflow: "visible"}}></div>
                         </div>
                       </div>
+                      </ChartContainer>
                     </div>
                     <div className="flex flex-col gap-2">
                       <div className="flex flex-col gap-1">
                         <span className="text-muted-foreground text-xs">
-                          Sales
+                          {"Sales"}
                         </span>
                         <div className="flex flex-wrap gap-x-2 gap-y-1 items-baseline">
                           <span className="font-semibold tabular-nums text-foreground text-lg">
-                            6,346
+                            {"6,346"}
                           </span>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                             <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                               <path d="M16 7h6v6"></path>
                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                             </svg>
-                            18%
+                            {"18%"}
                           </Badge>
                           <span className="tabular-nums text-muted-foreground text-xs">
-                            $43,784.02
+                            {"$43,784.02"}
                           </span>
                         </div>
                       </div>
+                      <ChartContainer>
                       <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-[60px] justify-center text-xs w-full" data-chart="chart-_r_7_">
-                        <style>{`
- [data-chart=chart-_r_7_] {
-  --color-value: var(--color-purple-500);
-}
-
-
-.dark [data-chart=chart-_r_7_] {
-  --color-value: var(--color-purple-500);
-}
-`}</style>
+                        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_7_] {\n  --color-value: var(--color-purple-500);\n}\n\n\n.dark [data-chart=chart-_r_7_] {\n  --color-value: var(--color-purple-500);\n}\n" }} />
                         <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                           <div style={{width: "0px", height: "0px", overflow: "visible"}}></div>
                         </div>
                       </div>
+                      </ChartContainer>
                     </div>
                   </div>
                 </FramePanel>
@@ -251,10 +237,10 @@ export function Pattern() {
               <Frame className="w-full" spacing="sm">
                 <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                   <div className="font-semibold text-sm">
-                    Variants
+                    {"Variants"}
                   </div>
                   <Button href="#manage-variants" role="button" tabIndex="0">
-                    Manage Variants
+                    {"Manage Variants"}
                   </Button>
                 </header>
                 <FramePanel className="p-0! shadow-none!">
@@ -263,23 +249,23 @@ export function Pattern() {
                       <TableHeader>
                         <TableRow>
                           <TableHead className="text-xs">
-                            Size
+                            {"Size"}
                           </TableHead>
                           <TableHead className="text-xs">
-                            Color
+                            {"Color"}
                           </TableHead>
                           <TableHead className="text-xs">
-                            Price
+                            {"Price"}
                           </TableHead>
                           <TableHead className="text-xs">
-                            Available
+                            {"Available"}
                           </TableHead>
                           <TableHead className="text-xs">
-                            On Hand
+                            {"On Hand"}
                           </TableHead>
                           <TableHead className="text-right text-xs w-10">
                             <span className="sr-only">
-                              Edit
+                              {"Edit"}
                             </span>
                           </TableHead>
                         </TableRow>
@@ -287,19 +273,19 @@ export function Pattern() {
                       <TableBody>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 40
+                            {"EU 40"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            White
+                            {"White"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-foreground text-sm">
-                            Yes
+                            {"Yes"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            24
+                            {"24"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 40 White">
@@ -312,19 +298,19 @@ export function Pattern() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 39
+                            {"EU 39"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            White
+                            {"White"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-foreground text-sm">
-                            Yes
+                            {"Yes"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            18
+                            {"18"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 39 White">
@@ -337,19 +323,19 @@ export function Pattern() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 42
+                            {"EU 42"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            Black
+                            {"Black"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-foreground text-sm">
-                            Yes
+                            {"Yes"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            12
+                            {"12"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 42 Black">
@@ -362,19 +348,19 @@ export function Pattern() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 41
+                            {"EU 41"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            White
+                            {"White"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-muted-foreground text-sm">
-                            No
+                            {"No"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            30
+                            {"30"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 41 White">
@@ -387,19 +373,19 @@ export function Pattern() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 44
+                            {"EU 44"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            Red
+                            {"Red"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-foreground text-sm">
-                            Yes
+                            {"Yes"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            27
+                            {"27"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 44 Red">
@@ -412,19 +398,19 @@ export function Pattern() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium text-foreground text-sm">
-                            EU 43
+                            {"EU 43"}
                           </TableCell>
                           <TableCell className="text-sm">
-                            Black
+                            {"Black"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            $96.00
+                            {"$96.00"}
                           </TableCell>
                           <TableCell className="text-muted-foreground text-sm">
-                            No
+                            {"No"}
                           </TableCell>
                           <TableCell className="tabular-nums text-sm">
-                            15
+                            {"15"}
                           </TableCell>
                           <TableCell className="text-right">
                             <Button type="button" tabIndex="0" aria-label="Edit EU 43 Black">
@@ -466,30 +452,30 @@ export function Pattern() {
                 </div>
               </div>
               <p className="leading-5 text-foreground text-pretty text-xs">
-                Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh.
+                {"Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh."}
               </p>
               <dl className="gap-x-4 gap-y-2 grid grid-cols-[5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Category
+                    {"Category"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
                     <span className="flex-wrap gap-x-1.5 gap-y-1 inline-flex items-center">
                       <span className="gap-x-1.5 inline-flex items-center">
                         <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-sneakers">
-                          Sneakers
+                          {"Sneakers"}
                         </a>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-running">
-                          Running
+                          {"Running"}
                         </a>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-lifestyle">
-                          Lifestyle
+                          {"Lifestyle"}
                         </a>
                       </span>
                     </span>
@@ -497,15 +483,15 @@ export function Pattern() {
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Fit
+                    {"Fit"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
-                    True to size
+                    {"True to size"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Colors
+                    {"Colors"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
                     <span className="flex gap-1.5 items-center">
@@ -517,17 +503,17 @@ export function Pattern() {
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Sizes
+                    {"Sizes"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
                     <span className="tabular-nums text-foreground text-xs">
-                      EU: 39-45   US: 6-12   UK: 5.5-11.5
+                      {"EU: 39-45   US: 6-12   UK: 5.5-11.5"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Rating
+                    {"Rating"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
                     <span className="flex gap-2 items-center">
@@ -586,18 +572,18 @@ export function Pattern() {
                         </div>
                       </Rating>
                       <a className="hover:text-primary hover:underline text-primary text-xs transition-colors underline-offset-4" href="#reviews">
-                        834 reviews
+                        {"834 reviews"}
                       </a>
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-xs">
-                    Uploaded by
+                    {"Uploaded by"}
                   </dt>
                   <dd className="font-medium text-foreground text-xs">
                     <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#user-jtaytum">
-                      Jason Taytum
+                      {"Jason Taytum"}
                     </a>
                   </dd>
                 </div>
@@ -614,58 +600,58 @@ export function Pattern() {
                 <Frame className="w-full" spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                     <div className="font-semibold text-sm">
-                      Inventory
+                      {"Inventory"}
                     </div>
                   </header>
                   <FramePanel className="shadow-none!">
                     <div className="gap-x-4 gap-y-3 grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3">
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Status
+                          {"Status"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            In Stock
+                            {"In Stock"}
                           </Badge>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          In Stock
+                          {"In Stock"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <span className="font-semibold tabular-nums text-foreground text-sm">
-                            1,263
+                            {"1,263"}
                           </span>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Delta
+                          {"Delta"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-                            +289
+                            {"+289"}
                           </Badge>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Velocity
+                          {"Velocity"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <span className="tabular-nums text-foreground text-sm">
-                            0.24/day
+                            {"0.24/day"}
                           </span>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Updated By
+                          {"Updated By"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <span className="text-foreground text-sm">
-                            Jason Taytum
+                            {"Jason Taytum"}
                           </span>
                         </div>
                       </div>
@@ -675,7 +661,7 @@ export function Pattern() {
                 <Frame className="w-full" spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                     <div className="font-semibold text-sm">
-                      Analytics
+                      {"Analytics"}
                     </div>
                   </header>
                   <FramePanel className="shadow-none!">
@@ -683,32 +669,24 @@ export function Pattern() {
                       <div className="flex flex-col gap-2">
                         <div className="flex flex-col gap-1">
                           <span className="text-muted-foreground text-xs">
-                            Sales price
+                            {"Sales price"}
                           </span>
                           <div className="flex gap-2 items-baseline">
                             <span className="font-semibold tabular-nums text-foreground text-lg">
-                              $96.23
+                              {"$96.23"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                               <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                               </svg>
-                              3.5%
+                              {"3.5%"}
                             </Badge>
                           </div>
                         </div>
+                        <ChartContainer>
                         <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-[60px] justify-center text-xs w-full" data-chart="chart-_r_9_">
-                          <style>{`
- [data-chart=chart-_r_9_] {
-  --color-value: var(--color-purple-500);
-}
-
-
-.dark [data-chart=chart-_r_9_] {
-  --color-value: var(--color-purple-500);
-}
-`}</style>
+                          <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_9_] {\n  --color-value: var(--color-purple-500);\n}\n\n\n.dark [data-chart=chart-_r_9_] {\n  --color-value: var(--color-purple-500);\n}\n" }} />
                           <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                             <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                               <div className="recharts-wrapper" width="252" height="60" style={{position: "relative", cursor: "default", width: "252px", height: "60px"}}>
@@ -755,39 +733,32 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
+                        </ChartContainer>
                       </div>
                       <div className="flex flex-col gap-2">
                         <div className="flex flex-col gap-1">
                           <span className="text-muted-foreground text-xs">
-                            Sales
+                            {"Sales"}
                           </span>
                           <div className="flex flex-wrap gap-x-2 gap-y-1 items-baseline">
                             <span className="font-semibold tabular-nums text-foreground text-lg">
-                              6,346
+                              {"6,346"}
                             </span>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                               <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                 <path d="M16 7h6v6"></path>
                                 <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                               </svg>
-                              18%
+                              {"18%"}
                             </Badge>
                             <span className="tabular-nums text-muted-foreground text-xs">
-                              $43,784.02
+                              {"$43,784.02"}
                             </span>
                           </div>
                         </div>
+                        <ChartContainer>
                         <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-[60px] justify-center text-xs w-full" data-chart="chart-_r_a_">
-                          <style>{`
- [data-chart=chart-_r_a_] {
-  --color-value: var(--color-purple-500);
-}
-
-
-.dark [data-chart=chart-_r_a_] {
-  --color-value: var(--color-purple-500);
-}
-`}</style>
+                          <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_a_] {\n  --color-value: var(--color-purple-500);\n}\n\n\n.dark [data-chart=chart-_r_a_] {\n  --color-value: var(--color-purple-500);\n}\n" }} />
                           <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                             <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                               <div className="recharts-wrapper" width="252" height="60" style={{position: "relative", cursor: "default", width: "252px", height: "60px"}}>
@@ -834,6 +805,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
+                        </ChartContainer>
                       </div>
                     </div>
                   </FramePanel>
@@ -841,10 +813,10 @@ export function Pattern() {
                 <Frame className="w-full" spacing="sm">
                   <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-1.5!">
                     <div className="font-semibold text-sm">
-                      Variants
+                      {"Variants"}
                     </div>
                     <Button href="#manage-variants" role="button" tabIndex="0">
-                      Manage Variants
+                      {"Manage Variants"}
                     </Button>
                   </header>
                   <FramePanel className="p-0! shadow-none!">
@@ -853,23 +825,23 @@ export function Pattern() {
                         <TableHeader>
                           <TableRow>
                             <TableHead className="text-xs">
-                              Size
+                              {"Size"}
                             </TableHead>
                             <TableHead className="text-xs">
-                              Color
+                              {"Color"}
                             </TableHead>
                             <TableHead className="text-xs">
-                              Price
+                              {"Price"}
                             </TableHead>
                             <TableHead className="text-xs">
-                              Available
+                              {"Available"}
                             </TableHead>
                             <TableHead className="text-xs">
-                              On Hand
+                              {"On Hand"}
                             </TableHead>
                             <TableHead className="text-right text-xs w-10">
                               <span className="sr-only">
-                                Edit
+                                {"Edit"}
                               </span>
                             </TableHead>
                           </TableRow>
@@ -877,19 +849,19 @@ export function Pattern() {
                         <TableBody>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 40
+                              {"EU 40"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              White
+                              {"White"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-foreground text-sm">
-                              Yes
+                              {"Yes"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              24
+                              {"24"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 40 White">
@@ -902,19 +874,19 @@ export function Pattern() {
                           </TableRow>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 39
+                              {"EU 39"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              White
+                              {"White"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-foreground text-sm">
-                              Yes
+                              {"Yes"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              18
+                              {"18"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 39 White">
@@ -927,19 +899,19 @@ export function Pattern() {
                           </TableRow>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 42
+                              {"EU 42"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              Black
+                              {"Black"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-foreground text-sm">
-                              Yes
+                              {"Yes"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              12
+                              {"12"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 42 Black">
@@ -952,19 +924,19 @@ export function Pattern() {
                           </TableRow>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 41
+                              {"EU 41"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              White
+                              {"White"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-muted-foreground text-sm">
-                              No
+                              {"No"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              30
+                              {"30"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 41 White">
@@ -977,19 +949,19 @@ export function Pattern() {
                           </TableRow>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 44
+                              {"EU 44"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              Red
+                              {"Red"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-foreground text-sm">
-                              Yes
+                              {"Yes"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              27
+                              {"27"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 44 Red">
@@ -1002,19 +974,19 @@ export function Pattern() {
                           </TableRow>
                           <TableRow>
                             <TableCell className="font-medium text-foreground text-sm">
-                              EU 43
+                              {"EU 43"}
                             </TableCell>
                             <TableCell className="text-sm">
-                              Black
+                              {"Black"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              $96.00
+                              {"$96.00"}
                             </TableCell>
                             <TableCell className="text-muted-foreground text-sm">
-                              No
+                              {"No"}
                             </TableCell>
                             <TableCell className="tabular-nums text-sm">
-                              15
+                              {"15"}
                             </TableCell>
                             <TableCell className="text-right">
                               <Button type="button" tabIndex="0" aria-label="Edit EU 43 Black">
@@ -1065,30 +1037,30 @@ export function Pattern() {
                   </div>
                 </div>
                 <p className="leading-5 text-foreground text-pretty text-xs">
-                  Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh.
+                  {"Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh."}
                 </p>
                 <dl className="gap-x-4 gap-y-2 grid grid-cols-[5rem_1fr]">
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Category
+                      {"Category"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
                       <span className="flex-wrap gap-x-1.5 gap-y-1 inline-flex items-center">
                         <span className="gap-x-1.5 inline-flex items-center">
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-sneakers">
-                            Sneakers
+                            {"Sneakers"}
                           </a>
                         </span>
                         <span className="gap-x-1.5 inline-flex items-center">
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-running">
-                            Running
+                            {"Running"}
                           </a>
                         </span>
                         <span className="gap-x-1.5 inline-flex items-center">
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#category-lifestyle">
-                            Lifestyle
+                            {"Lifestyle"}
                           </a>
                         </span>
                       </span>
@@ -1096,15 +1068,15 @@ export function Pattern() {
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Fit
+                      {"Fit"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
-                      True to size
+                      {"True to size"}
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Colors
+                      {"Colors"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
                       <span className="flex gap-1.5 items-center">
@@ -1116,17 +1088,17 @@ export function Pattern() {
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Sizes
+                      {"Sizes"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
                       <span className="tabular-nums text-foreground text-xs">
-                        EU: 39-45   US: 6-12   UK: 5.5-11.5
+                        {"EU: 39-45   US: 6-12   UK: 5.5-11.5"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Rating
+                      {"Rating"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
                       <span className="flex gap-2 items-center">
@@ -1185,18 +1157,18 @@ export function Pattern() {
                           </div>
                         </Rating>
                         <a className="hover:text-primary hover:underline text-primary text-xs transition-colors underline-offset-4" href="#reviews">
-                          834 reviews
+                          {"834 reviews"}
                         </a>
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-xs">
-                      Uploaded by
+                      {"Uploaded by"}
                     </dt>
                     <dd className="font-medium text-foreground text-xs">
                       <a className="font-medium hover:text-primary hover:underline text-foreground text-xs transition-colors underline-offset-4" href="#user-jtaytum">
-                        Jason Taytum
+                        {"Jason Taytum"}
                       </a>
                     </dd>
                   </div>
@@ -1212,13 +1184,13 @@ export function Pattern() {
       <SheetFooter className="bg-muted/40 border-t flex-row gap-2 items-center justify-end px-4 py-2.5 shrink-0">
         <div className="flex gap-2 items-center shrink-0">
           <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#customer-view">
-            Customer View
+            {"Customer View"}
           </a>
           <Button type="button" tabIndex="0">
-            Remove
+            {"Remove"}
           </Button>
           <Button type="button" tabIndex="0">
-            Edit Product
+            {"Edit Product"}
           </Button>
         </div>
       </SheetFooter>

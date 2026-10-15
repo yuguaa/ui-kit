@@ -6,7 +6,7 @@ export function Pattern() {
   return (
     <main className="min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Ecommerce shop hero
+        {"Ecommerce shop hero"}
       </h1>
       <section className="lg:py-14 max-w-6xl md:py-12 mx-auto px-4 py-8 sm:px-6 w-full" aria-labelledby="shop-hero-3-title">
         <Item className="bg-transparent block border-0 md:mt-8 mt-6 overflow-hidden p-0 relative shadow-none" variant="default" size="default">
@@ -16,10 +16,10 @@ export function Pattern() {
           <div className="dark flex flex-col lg:min-h-[580px] md:min-h-[540px] min-h-[480px] relative">
             <header className="flex gap-3 items-center justify-between lg:p-8 md:p-6 p-5">
               <span className="font-semibold text-white/85 text-xs">
-                This Week's Top Deal
+                {"This Week's Top Deal"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow">
-                Live now
+                {"Live now"}
               </Badge>
             </header>
             <div className="flex-1" aria-hidden="true"></div>
@@ -27,26 +27,26 @@ export function Pattern() {
               <div className="flex flex-col gap-3">
                 <h2 className="flex flex-col gap-1 items-start" id="shop-hero-3-title">
                   <span className="font-bold leading-[0.92] lg:text-8xl md:text-7xl tabular-nums text-6xl text-balance text-white tracking-tight">
-                    40% Off
+                    {"40% Off"}
                   </span>
                   <span className="font-medium leading-tight lg:text-2xl md:text-xl text-lg text-white/90">
-                    The Outpost Collection
+                    {"The Outpost Collection"}
                   </span>
                 </h2>
                 <p className="leading-relaxed max-w-lg md:text-base text-sm text-white/75">
-                  Travel packs, weekenders, and our most-carried bag. All 40% off through Sunday.
+                  {"Travel packs, weekenders, and our most-carried bag. All 40% off through Sunday."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
                 <Button href="#shop-sale-outpost" aria-label="Shop The Sale" role="button" tabIndex="0">
-                  Shop The Sale
+                  {"Shop The Sale"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
                 </Button>
                 <a className="font-medium gap-1 hover:opacity-100 hover:underline inline-flex items-center text-sm text-white/90 transition-opacity underline-offset-4" href="#deal-includes">
-                  See What's Included
+                  {"See What's Included"}
                   <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -59,14 +59,14 @@ export function Pattern() {
                   <path d="M12 6v6l4 2"></path>
                 </svg>
                 <span>
-                  Ends in
+                  {"Ends in"}
                   <span className="font-semibold tabular-nums text-white">
-                    02d 14h 23m
+                    {"02d 14h 23m"}
                   </span>
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  2,847 saved this week
+                  {"2,847 saved this week"}
                 </span>
               </div>
             </div>
@@ -84,14 +84,14 @@ export function Pattern() {
               </svg>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold leading-snug text-base text-foreground">
-                  Free Shipping Over $75
+                  {"Free Shipping Over $75"}
                 </h3>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  No code needed. Continental US, ships in 24 hours.
+                  {"No code needed. Continental US, ships in 24 hours."}
                 </p>
               </div>
               <a className="font-medium gap-1 hover:text-primary hover:underline inline-flex items-center mt-auto text-foreground text-sm transition-colors underline-offset-4" href="#shop-all" aria-label="Shop the shop">
-                Shop the shop
+                {"Shop the shop"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -109,14 +109,14 @@ export function Pattern() {
               </svg>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold leading-snug text-base text-foreground">
-                  Save $30 On 2+ Pieces
+                  {"Save $30 On 2+ Pieces"}
                 </h3>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  Auto-applied at checkout. Mix and match across collections.
+                  {"Auto-applied at checkout. Mix and match across collections."}
                 </p>
               </div>
               <a className="font-medium gap-1 hover:text-primary hover:underline inline-flex items-center mt-auto text-foreground text-sm transition-colors underline-offset-4" href="#shop-bundle" aria-label="Build a bundle">
-                Build a bundle
+                {"Build a bundle"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
@@ -134,14 +134,14 @@ export function Pattern() {
               </svg>
               <div className="flex flex-col gap-1.5">
                 <h3 className="font-semibold leading-snug text-base text-foreground">
-                  Take 10% Off Your First Order
+                  {"Take 10% Off Your First Order"}
                 </h3>
                 <p className="leading-relaxed text-muted-foreground text-sm">
-                  Use code WELCOME10 at checkout. One redemption per customer.
+                  {"Use code WELCOME10 at checkout. One redemption per customer."}
                 </p>
               </div>
               <a className="font-medium gap-1 hover:text-primary hover:underline inline-flex items-center mt-auto text-foreground text-sm transition-colors underline-offset-4" href="#subscribe" aria-label="Subscribe to save">
-                Subscribe to save
+                {"Subscribe to save"}
                 <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>

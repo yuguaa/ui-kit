@@ -16,42 +16,23 @@ export function Pattern() {
   return (
     <div className="flex items-center justify-center min-h-svh p-6 w-full">
       <Frame className="max-w-4xl min-w-0 w-full" spacing="default" chart="chart-r0">
-        <style>{`
- [data-chart=chart-r0] {
-  --color-solar: var(--color-amber-500);
-  --color-wind: var(--color-sky-500);
-  --color-nuclear: var(--color-violet-500);
-  --color-gas: var(--color-rose-500);
-  --color-hydro: var(--color-blue-600);
-  --color-battery: var(--color-emerald-500);
-}
-
-
-.dark [data-chart=chart-r0] {
-  --color-solar: var(--color-amber-400);
-  --color-wind: var(--color-sky-400);
-  --color-nuclear: var(--color-violet-400);
-  --color-gas: var(--color-rose-400);
-  --color-hydro: var(--color-blue-500);
-  --color-battery: var(--color-emerald-400);
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-r0] {\n  --color-solar: var(--color-amber-500);\n  --color-wind: var(--color-sky-500);\n  --color-nuclear: var(--color-violet-500);\n  --color-gas: var(--color-rose-500);\n  --color-hydro: var(--color-blue-600);\n  --color-battery: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-r0] {\n  --color-solar: var(--color-amber-400);\n  --color-wind: var(--color-sky-400);\n  --color-nuclear: var(--color-violet-400);\n  --color-gas: var(--color-rose-400);\n  --color-hydro: var(--color-blue-500);\n  --color-battery: var(--color-emerald-400);\n}\n" }} />
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="font-semibold text-sm">
-              Generation Mix
+              {"Generation Mix"}
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Hourly output by source on Oct 10
+              {"Hourly output by source on Oct 10"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Chart view" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" extracted="1">
-                3D
+                {"3D"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:bg-card data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                2D
+                {"2D"}
               </ToggleGroupItem>
             </ToggleGroup>
             <ButtonGroup role="group" aria-label="Chart settings">
@@ -115,10 +96,10 @@ export function Pattern() {
             <div className="flex flex-col gap-1">
               <div className="flex gap-1.5 items-baseline">
                 <span className="font-semibold tabular-nums text-3xl tracking-tight">
-                  698.3
+                  {"698.3"}
                 </span>
                 <span className="text-muted-foreground text-sm">
-                  GWh generated
+                  {"GWh generated"}
                 </span>
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center text-muted-foreground text-xs">
@@ -127,79 +108,55 @@ export function Pattern() {
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
-                  +1.6%
+                  {"+1.6%"}
                 </span>
                 <span>
-                  vs last Saturday
+                  {"vs last Saturday"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  59% renewable
+                  {"59% renewable"}
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-1 min-w-0 sm:items-end sm:text-right" aria-live="polite">
               <span className="flex gap-1.5 items-center text-muted-foreground text-xs">
-                Peak load
+                {"Peak load"}
               </span>
               <span className="font-medium tabular-nums text-sm">
-                37.7 GW at 18:00
+                {"37.7 GW at 18:00"}
               </span>
             </div>
           </div>
           <div className="focus-visible:ring-3 focus-visible:ring-ring/50 h-64 outline-none relative sm:h-80 w-full" data-c52-stage="true" data-view="3d" role="group" aria-label="Hourly output by source in GW. Arrow keys read each hour." tabIndex="0" style={{"--c52-span": "3.1"}}>
-            <style>{`
-[data-c52-stage]{container-type:size;--c52-depth:4.4cqw}
-[data-c52-stage][data-view="3d"] [data-c52-camera]{--c52-gap:var(--c52-depth);--c52-rx:-14deg;--c52-ry:22deg;--c52-scale:0.74;--c52-x:0%;--c52-y:-3%;--c52-floor:1;--c52-lift:2cqw;--c52-fill:1;--c52-ink:0.2px}
-[data-c52-stage][data-view="flat"] [data-c52-camera]{--c52-gap:0.02px;--c52-rx:0deg;--c52-ry:0deg;--c52-scale:1;--c52-x:0%;--c52-y:0%;--c52-floor:0;--c52-lift:0px;--c52-fill:0.22;--c52-ink:1px}
-@container (max-width:560px){[data-c52-stage][data-view="3d"] [data-c52-camera]{--c52-depth:4.6cqw;--c52-rx:-12deg;--c52-ry:12deg;--c52-scale:0.88;--c52-x:1%;--c52-y:-2%}}
-[data-c52-stage] [data-c52-camera]{perspective:220cqw;perspective-origin:50% 40%}
-[data-c52-stage] :is([data-c52-rig],[data-c52-scene]){transform-style:preserve-3d}
-[data-c52-stage] [data-c52-scene]{transform:translate3d(var(--c52-x),var(--c52-y),0) rotateX(var(--c52-rx)) rotateY(var(--c52-ry)) scale3d(var(--c52-scale),var(--c52-scale),var(--c52-scale))}
-[data-c52-stage] [data-c52-plane]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap)))}
-[data-c52-stage] [data-c52-plane][data-ink]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap) + var(--c52-ink)))}
-[data-c52-stage] [data-c52-floor]{height:calc(2 * var(--c52-span) * var(--c52-depth));transform-origin:50% 0;transform:translateZ(calc(var(--c52-span) * var(--c52-gap) * -1)) rotateX(90deg) scaleY(var(--c52-floor))}
-[data-c52-stage] :is([data-c52-lift],[data-c52-reveal]){transform-origin:50% 100%}
-[data-c52-stage] [data-c52-fill]{opacity:var(--c52-fill)}
-[data-c52-stage][data-view="flat"] [data-lifted] [data-c52-fill]{opacity:0.7}
-[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:0}
-@media (prefers-reduced-motion:reduce){[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}}
-html[data-demo="frozen"] [data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}
-@media (prefers-reduced-motion:no-preference){html:not([data-demo="frozen"]) [data-c52-stage][data-revealing][data-view="3d"] [data-c52-rig]{transform:rotateX(5deg) rotateY(-8deg)}}
-[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor]){transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1)}
-[data-c52-stage] [data-c52-floor]{transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1),opacity 200ms ease-out}
-[data-c52-stage] [data-c52-floor][data-hidden]{opacity:0}
-[data-c52-stage] [data-c52-fill]{transition:opacity 320ms ease-out}
-[data-c52-stage] [data-c52-lift]{transition:transform 280ms cubic-bezier(0.22, 1, 0.36, 1),opacity 200ms ease-out}
-@media (prefers-reduced-motion:reduce){[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor],[data-c52-fill],[data-c52-lift]){transition:none}}
-`}</style>
+            <style dangerouslySetInnerHTML={{ __html: "\n[data-c52-stage]{container-type:size;--c52-depth:4.4cqw}\n[data-c52-stage][data-view=\"3d\"] [data-c52-camera]{--c52-gap:var(--c52-depth);--c52-rx:-14deg;--c52-ry:22deg;--c52-scale:0.74;--c52-x:0%;--c52-y:-3%;--c52-floor:1;--c52-lift:2cqw;--c52-fill:1;--c52-ink:0.2px}\n[data-c52-stage][data-view=\"flat\"] [data-c52-camera]{--c52-gap:0.02px;--c52-rx:0deg;--c52-ry:0deg;--c52-scale:1;--c52-x:0%;--c52-y:0%;--c52-floor:0;--c52-lift:0px;--c52-fill:0.22;--c52-ink:1px}\n@container (max-width:560px){[data-c52-stage][data-view=\"3d\"] [data-c52-camera]{--c52-depth:4.6cqw;--c52-rx:-12deg;--c52-ry:12deg;--c52-scale:0.88;--c52-x:1%;--c52-y:-2%}}\n[data-c52-stage] [data-c52-camera]{perspective:220cqw;perspective-origin:50% 40%}\n[data-c52-stage] :is([data-c52-rig],[data-c52-scene]){transform-style:preserve-3d}\n[data-c52-stage] [data-c52-scene]{transform:translate3d(var(--c52-x),var(--c52-y),0) rotateX(var(--c52-rx)) rotateY(var(--c52-ry)) scale3d(var(--c52-scale),var(--c52-scale),var(--c52-scale))}\n[data-c52-stage] [data-c52-plane]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap)))}\n[data-c52-stage] [data-c52-plane][data-ink]{transform:translateZ(calc(var(--c52-z) * var(--c52-gap) + var(--c52-ink)))}\n[data-c52-stage] [data-c52-floor]{height:calc(2 * var(--c52-span) * var(--c52-depth));transform-origin:50% 0;transform:translateZ(calc(var(--c52-span) * var(--c52-gap) * -1)) rotateX(90deg) scaleY(var(--c52-floor))}\n[data-c52-stage] :is([data-c52-lift],[data-c52-reveal]){transform-origin:50% 100%}\n[data-c52-stage] [data-c52-fill]{opacity:var(--c52-fill)}\n[data-c52-stage][data-view=\"flat\"] [data-lifted] [data-c52-fill]{opacity:0.7}\n[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:0}\n@media (prefers-reduced-motion:reduce){[data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}}\nhtml[data-demo=\"frozen\"] [data-c52-stage][data-revealing] [data-c52-reveal]{opacity:1}\n@media (prefers-reduced-motion:no-preference){html:not([data-demo=\"frozen\"]) [data-c52-stage][data-revealing][data-view=\"3d\"] [data-c52-rig]{transform:rotateX(5deg) rotateY(-8deg)}}\n[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor]){transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1)}\n[data-c52-stage] [data-c52-floor]{transition:transform 720ms cubic-bezier(0.65, 0, 0.35, 1),opacity 200ms ease-out}\n[data-c52-stage] [data-c52-floor][data-hidden]{opacity:0}\n[data-c52-stage] [data-c52-fill]{transition:opacity 320ms ease-out}\n[data-c52-stage] [data-c52-lift]{transition:transform 280ms cubic-bezier(0.22, 1, 0.36, 1),opacity 200ms ease-out}\n@media (prefers-reduced-motion:reduce){[data-c52-stage] :is([data-c52-scene],[data-c52-plane],[data-c52-floor],[data-c52-fill],[data-c52-lift]){transition:none}}\n" }} />
             <div className="absolute inset-0 pointer-events-none" data-c52-camera="true">
               <div className="absolute inset-0" data-c52-rig="true">
                 <div className="absolute bottom-7 left-11 right-0 top-3" data-c52-scene="true">
                   <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" aria-hidden="true" style={{"--c52-z": "-3.1"}}>
                     <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "0%"}}>
                       <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
-                        16 GW
+                        {"16 GW"}
                       </span>
                     </div>
                     <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "25%"}}>
                       <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
-                        12
+                        {"12"}
                       </span>
                     </div>
                     <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "50%"}}>
                       <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
-                        8
+                        {"8"}
                       </span>
                     </div>
                     <div className="absolute border-border border-dashed border-t inset-x-0" style={{top: "75%"}}>
                       <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
-                        4
+                        {"4"}
                       </span>
                     </div>
                     <div className="absolute border-border border-t inset-x-0" style={{top: "100%"}}>
                       <span className="-translate-y-1/2 absolute pr-2 right-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap">
-                        0
+                        {"0"}
                       </span>
                     </div>
                   </div>
@@ -572,19 +529,19 @@ html[data-demo="frozen"] [data-c52-stage][data-revealing] [data-c52-reveal]{opac
                   </div>
                   <div className="absolute inset-0 pointer-events-none" data-c52-plane="true" aria-hidden="true" style={{"--c52-z": "3.1"}}>
                     <span className="absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "0%"}}>
-                      00:00
+                      {"00:00"}
                     </span>
                     <span className="-translate-x-1/2 @max-sm:hidden absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "25%"}}>
-                      06:00
+                      {"06:00"}
                     </span>
                     <span className="-translate-x-1/2 absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "50%"}}>
-                      12:00
+                      {"12:00"}
                     </span>
                     <span className="-translate-x-1/2 @max-sm:hidden absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "75%"}}>
-                      18:00
+                      {"18:00"}
                     </span>
                     <span className="-translate-x-full absolute mt-2 tabular-nums text-muted-foreground text-xs top-full" style={{left: "100%"}}>
-                      24:00
+                      {"24:00"}
                     </span>
                   </div>
                 </div>
@@ -593,22 +550,22 @@ html[data-demo="frozen"] [data-c52-stage][data-revealing] [data-c52-reveal]{opac
           </div>
           <ul className="sr-only">
             <li>
-              Solar: 120.6 GWh, peak 15.8 GW at 13:00
+              {"Solar: 120.6 GWh, peak 15.8 GW at 13:00"}
             </li>
             <li>
-              Wind: 207.1 GWh, peak 12.3 GW at 02:00
+              {"Wind: 207.1 GWh, peak 12.3 GW at 02:00"}
             </li>
             <li>
-              Nuclear: 141.9 GWh, peak 6.4 GW at 00:00
+              {"Nuclear: 141.9 GWh, peak 6.4 GW at 00:00"}
             </li>
             <li>
-              Gas: 128.8 GWh, peak 10.8 GW at 19:00
+              {"Gas: 128.8 GWh, peak 10.8 GW at 19:00"}
             </li>
             <li>
-              Hydro: 80.0 GWh, peak 5.9 GW at 19:00
+              {"Hydro: 80.0 GWh, peak 5.9 GW at 19:00"}
             </li>
             <li>
-              Battery: 19.9 GWh, peak 3.6 GW at 19:00
+              {"Battery: 19.9 GWh, peak 3.6 GW at 19:00"}
             </li>
           </ul>
         </FramePanel>
@@ -616,62 +573,62 @@ html[data-demo="frozen"] [data-c52-stage][data-revealing] [data-c52-reveal]{opac
           <ToggleGroup className="flex-wrap" multiple="" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Sources in the chart" style={{"--gap": "2"}}>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-solar) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Solar
+              {"Solar"}
               <span className="tabular-nums text-muted-foreground">
-                17%
+                {"17%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-wind) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Wind
+              {"Wind"}
               <span className="tabular-nums text-muted-foreground">
-                30%
+                {"30%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-nuclear) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Nuclear
+              {"Nuclear"}
               <span className="tabular-nums text-muted-foreground">
-                20%
+                {"20%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-gas) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Gas
+              {"Gas"}
               <span className="tabular-nums text-muted-foreground">
-                18%
+                {"18%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-hydro) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Hydro
+              {"Hydro"}
               <span className="tabular-nums text-muted-foreground">
-                12%
+                {"12%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
             <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="2">
               <span className="bg-(--color-battery) rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Battery
+              {"Battery"}
               <span className="tabular-nums text-muted-foreground">
-                3%
+                {"3%"}
               </span>
               <span className="sr-only">
-                of output
+                {"of output"}
               </span>
             </ToggleGroupItem>
           </ToggleGroup>

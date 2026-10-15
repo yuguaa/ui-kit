@@ -33,13 +33,13 @@ export function Pattern() {
           </svg>
         </IconTile>
         <span className="font-medium shrink-0 text-sm">
-          NeUI Chat
+          {"NeUI Chat"}
         </span>
         <div className="flex gap-2 items-center ms-auto shrink-0">
           <DropdownMenu>
           <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none gap-1.5 group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Model, Claude Sonnet 5" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
             <span className="max-w-28 sm:max-w-none truncate">
-              Claude Sonnet 5
+              {"Claude Sonnet 5"}
             </span>
             <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
@@ -54,18 +54,18 @@ export function Pattern() {
             <EmptyHeader className="gap-2 max-w-none">
               <EmptyTitle className="font-semibold sm:text-3xl text-2xl tracking-tight">
                 <h1>
-                  Morning, Maya
+                  {"Morning, Maya"}
                 </h1>
               </EmptyTitle>
               <EmptyDescription className="text-sm">
-                Release 3.4 ships Thursday
+                {"Release 3.4 ships Thursday"}
               </EmptyDescription>
             </EmptyHeader>
           </Empty>
           <div className="flex flex-col gap-5 max-w-lg mx-auto w-full">
             <section className="flex flex-col gap-1">
               <h2 className="font-medium text-muted-foreground text-xs">
-                Start
+                {"Start"}
               </h2>
               <ul className="flex flex-col gap-2">
                 <li>
@@ -76,7 +76,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="min-w-0 text-sm truncate">
-                      Explain the webhook 500s
+                      {"Explain the webhook 500s"}
                     </span>
                   </Button>
                 </li>
@@ -92,7 +92,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="min-w-0 text-sm truncate">
-                      Draft Q3 release notes
+                      {"Draft Q3 release notes"}
                     </span>
                   </Button>
                 </li>
@@ -107,7 +107,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="min-w-0 text-sm truncate">
-                      Summarize churn by plan
+                      {"Summarize churn by plan"}
                     </span>
                   </Button>
                 </li>
@@ -122,7 +122,7 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="min-w-0 text-sm truncate">
-                      Plan the onboarding revamp
+                      {"Plan the onboarding revamp"}
                     </span>
                   </Button>
                 </li>
@@ -130,7 +130,7 @@ export function Pattern() {
             </section>
             <section className="flex flex-col gap-1">
               <h2 className="font-medium text-muted-foreground text-xs">
-                Resume
+                {"Resume"}
               </h2>
               <ul className="flex flex-col">
                 <li className="min-w-0">
@@ -141,10 +141,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="group-hover/resume:text-foreground group-hover/resume:underline min-w-0 text-muted-foreground text-sm transition-colors truncate underline-offset-4">
-                      p95 latency on eu-west
+                      {"p95 latency on eu-west"}
                     </span>
                     <span className="shrink-0 tabular-nums text-muted-foreground/70 text-xs">
-                      22m
+                      {"22m"}
                     </span>
                   </button>
                 </li>
@@ -157,10 +157,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="group-hover/resume:text-foreground group-hover/resume:underline min-w-0 text-muted-foreground text-sm transition-colors truncate underline-offset-4">
-                      Trial expiry email rewrite
+                      {"Trial expiry email rewrite"}
                     </span>
                     <span className="shrink-0 tabular-nums text-muted-foreground/70 text-xs">
-                      Yesterday
+                      {"Yesterday"}
                     </span>
                   </button>
                 </li>
@@ -173,10 +173,10 @@ export function Pattern() {
                       </svg>
                     </span>
                     <span className="group-hover/resume:text-foreground group-hover/resume:underline min-w-0 text-muted-foreground text-sm transition-colors truncate underline-offset-4">
-                      Audit log export scope
+                      {"Audit log export scope"}
                     </span>
                     <span className="shrink-0 tabular-nums text-muted-foreground/70 text-xs">
-                      Tue
+                      {"Tue"}
                     </span>
                   </button>
                 </li>
@@ -189,29 +189,29 @@ export function Pattern() {
         <div className="flex flex-col gap-2 max-w-3xl mx-auto w-full">
           <form className="flex flex-col gap-2">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-3-composer">
-              Message NeUI Chat
+              {"Message NeUI Chat"}
             </FieldLabel>
             <InputGroup className="bg-background h-auto px-2 rounded-full shadow-xs" role="group">
               <div className="flex-1 min-w-0 relative w-full">
                 <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-40 min-h-12 outline-none placeholder:text-muted-foreground px-0 py-3 resize-none w-full" id="ai-chat-3-composer" placeholder=""></textarea>
                 <span className="absolute data-[empty=true]:opacity-100 duration-200 ease-out end-0 group/placeholder inset-y-0 motion-reduce:transition-none opacity-0 overflow-hidden pointer-events-none start-0 text-muted-foreground text-sm transition-opacity" aria-hidden="true" data-empty="true">
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="below">
-                    Ask anything
+                    {"Ask anything"}
                   </span>
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="below">
-                    Explain the webhook 500s
+                    {"Explain the webhook 500s"}
                   </span>
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="below">
-                    Draft the 3.4 release notes
+                    {"Draft the 3.4 release notes"}
                   </span>
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="below">
-                    Summarize churn by plan
+                    {"Summarize churn by plan"}
                   </span>
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="above">
-                    Which numbers need verifying?
+                    {"Which numbers need verifying?"}
                   </span>
                   <span className="absolute data-[slot-position=above]:-translate-y-2.5 data-[slot-position=below]:translate-y-2.5 data-[slot-position=current-fade]:delay-150 data-[slot-position=current-fade]:duration-300 data-[slot-position=current-fade]:opacity-100 data-[slot-position=current]:delay-150 data-[slot-position=current]:duration-300 data-[slot-position=current]:opacity-100 duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] end-0 flex inset-y-0 items-center motion-reduce:transition-none motion-reduce:translate-y-0 opacity-0 start-0 transition-[opacity,translate] translate-y-0 truncate" data-slot-position="current">
-                    Plan the onboarding revamp
+                    {"Plan the onboarding revamp"}
                   </span>
                 </span>
               </div>
@@ -228,7 +228,7 @@ export function Pattern() {
               <InputGroupAddon className="gap-1" role="group" data-align="inline-end">
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center max-sm:hidden outline-none rounded-full select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="sm" aria-label="Reasoning, Instant" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
-                  Instant
+                  {"Instant"}
                   <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -246,7 +246,7 @@ export function Pattern() {
             </InputGroup>
           </form>
           <p className="text-center text-muted-foreground text-xs">
-            NeUI Chat can make mistakes. Check important info.
+            {"NeUI Chat can make mistakes. Check important info."}
           </p>
         </div>
       </div>

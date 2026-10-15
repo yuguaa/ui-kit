@@ -42,14 +42,14 @@ export function Pattern() {
                   </ItemMedia>
                 </Item>
                 <h1 className="font-semibold text-2xl tracking-tight">
-                  Welcome back to NeUI.
+                  {"Welcome back to NeUI."}
                 </h1>
               </div>
               <form className="flex flex-col gap-4">
                 <FieldGroup>
                   <Field className="gap-2" role="group" data-orientation="vertical">
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="auth-7-email">
-                      Work email
+                      {"Work email"}
                     </FieldLabel>
                     <InputGroup className="bg-background" role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
@@ -63,7 +63,7 @@ export function Pattern() {
                   </Field>
                 </FieldGroup>
                 <Button className="w-full" type="submit" tabIndex="0">
-                  Send sign-in link
+                  {"Send sign-in link"}
                   <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -72,7 +72,7 @@ export function Pattern() {
               </form>
               <div className="flex gap-3 items-center">
                 <span className="mx-auto text-muted-foreground text-sm">
-                  Or continue with
+                  {"Or continue with"}
                 </span>
               </div>
               <div className="gap-3 grid grid-cols-3">
@@ -180,7 +180,7 @@ export function Pattern() {
                     </g>
                   </svg>
                   <span className="truncate">
-                    Google
+                    {"Google"}
                   </span>
                 </Button>
                 <Button className="min-w-0 px-3 w-full" type="button" tabIndex="0">
@@ -195,7 +195,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    Apple
+                    {"Apple"}
                   </span>
                 </Button>
                 <Button className="min-w-0 px-3 w-full" type="button" tabIndex="0">
@@ -210,14 +210,14 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="truncate">
-                    GitHub
+                    {"GitHub"}
                   </span>
                 </Button>
               </div>
               <p className="text-center text-muted-foreground text-sm">
-                First time here?
+                {"First time here?"}
                 <a className="font-medium hover:text-primary text-foreground transition-colors" href="#">
-                  Start a free trial
+                  {"Start a free trial"}
                 </a>
               </p>
             </div>
@@ -231,7 +231,7 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-7 items-center pb-11 pt-9 px-8 sm:px-10">
               <p className="text-muted-foreground text-xs tracking-wide">
-                Shipping with teams at
+                {"Shipping with teams at"}
               </p>
               <ul className="gap-x-6 gap-y-6 grid grid-cols-4 items-center opacity-80 place-items-center w-full" aria-label="Customer logos">
                 <li className="flex h-6 items-center" aria-label="Stripe">
@@ -274,7 +274,7 @@ export function Pattern() {
                   <span className="dark:hidden" aria-hidden="true">
                     <svg className="h-[11px] w-auto" aria-hidden="true" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                       <title>
-                        Anthropic
+                        {"Anthropic"}
                       </title>
                       <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                     </svg>
@@ -282,7 +282,7 @@ export function Pattern() {
                   <span className="dark:block hidden" aria-hidden="true">
                     <svg className="h-[11px] w-auto" aria-hidden="true" fill="#ffff" fillRule="evenodd" viewBox="0 0 182 24" style={{flex: "0 0 auto", lineHeight: "1"}}>
                       <title>
-                        Anthropic
+                        {"Anthropic"}
                       </title>
                       <path d="M38.247 15.874L29.553 2.338H24.86v19.337h4.002V8.139l8.694 13.536h4.693V2.338h-4.003v13.536zm7.313-9.807h6.487v15.608h4.14V6.067h6.487v-3.73H45.56v3.73zm33.686 3.978h-9.109V2.338h-4.14v19.337h4.14v-7.9h9.109v7.9h4.14V2.338h-4.14v7.707zm13.39-3.978h5.108c2.043 0 3.12.746 3.12 2.155 0 1.408-1.077 2.154-3.12 2.154h-5.107v-4.31zm12.37 2.155c0-3.647-2.679-5.884-7.068-5.884h-9.443v19.337h4.142v-7.57h4.61l4.142 7.57h4.583l-4.586-8.146c2.302-.885 3.62-2.75 3.62-5.307zm12.686 9.91c-3.257 0-5.244-2.32-5.244-6.104 0-3.84 1.987-6.16 5.244-6.16 3.23 0 5.189 2.32 5.189 6.16 0 3.784-1.96 6.105-5.189 6.105zm0-16.132c-5.575 0-9.522 4.144-9.522 10.028 0 5.828 3.947 9.972 9.522 9.972 5.547 0 9.466-4.144 9.466-9.972C127.158 6.144 123.24 2 117.692 2zm22.59 8.929h-5.109V6.067h5.11c2.043 0 3.12.829 3.12 2.43 0 1.603-1.077 2.432-3.12 2.432zm.194-8.591h-9.445v19.337h4.142v-7.017h5.303c4.39 0 7.07-2.32 7.07-6.16 0-3.84-2.68-6.16-7.07-6.16zm35.108 12.839c-.718 1.878-2.153 2.956-4.113 2.956-3.257 0-5.244-2.32-5.244-6.105 0-3.84 1.987-6.16 5.244-6.16 1.96 0 3.395 1.077 4.113 2.955h4.388C178.896 4.68 175.667 2 171.472 2c-5.576 0-9.523 4.144-9.523 10.028 0 5.828 3.947 9.972 9.522 9.972 4.223 0 7.453-2.707 8.529-6.823h-4.416zm-26.39-12.84l7.705 19.338h4.225L153.42 2.338h-4.225zM9.277 14.024l2.636-6.796 2.637 6.796H9.276zm.428-11.685L2 21.675h4.307l1.576-4.06h8.06l1.575 4.06h4.307L14.121 2.338H9.704z"></path>
                     </svg>
@@ -402,15 +402,15 @@ export function Pattern() {
             </div>
           </div>
           <p className="leading-5 max-w-[22rem] text-center text-muted-foreground text-pretty text-xs">
-            By continuing you agree to NeUI's
+            {"By continuing you agree to NeUI's"}
             <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-              Terms of Service
+              {"Terms of Service"}
             </a>
-            and
+            {"and"}
             <a className="hover:text-primary text-foreground transition-colors underline underline-offset-4" href="#">
-              Privacy Policy
+              {"Privacy Policy"}
             </a>
-            .
+            {"."}
           </p>
         </div>
       </div>

@@ -13,14 +13,14 @@ export function Pattern() {
           <header className="gap-6 grid lg:grid-cols-[minmax(0,1.05fr)_minmax(20rem,0.72fr)] lg:items-end">
             <div className="flex flex-col gap-4 max-w-3xl">
               <span className="font-semibold text-foreground text-xs tracking-[0.12em] uppercase">
-                Field Journal
+                {"Field Journal"}
               </span>
               <h1 className="font-semibold leading-none max-w-[14ch] sm:text-5xl text-4xl text-balance text-foreground tracking-tight">
-                Insights & Field Notes.
+                {"Insights & Field Notes."}
               </h1>
             </div>
             <p className="leading-7 max-w-xl md:text-lg text-base text-foreground">
-              Original notes on UX, launch systems, and no-code strategy for durable web products.
+              {"Original notes on UX, launch systems, and no-code strategy for durable web products."}
             </p>
           </header>
           <div className="gap-6 grid md:grid-cols-3 sm:grid-cols-2">
@@ -32,14 +32,14 @@ export function Pattern() {
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/95 border border-transparent dark:bg-white/95 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-white min-w-5 outline-none px-3 py-1 relative rounded-full shadow-black/10 shadow-sm text-foreground text-sm transition-shadow">
                   <span className="bg-foreground rounded-full size-2" aria-hidden="true"></span>
-                  Experience Signals
+                  {"Experience Signals"}
                 </Badge>
                 <div className="flex flex-col gap-3 min-w-0">
                   <span className="font-medium text-white/72 text-xs tracking-[0.12em] uppercase">
-                    Clarity Layer
+                    {"Clarity Layer"}
                   </span>
                   <CardTitle className="font-semibold leading-tight sm:text-2xl text-white text-xl truncate">
-                    Interface Signals
+                    {"Interface Signals"}
                   </CardTitle>
                 </div>
               </CardContent>
@@ -52,14 +52,14 @@ export function Pattern() {
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/95 border border-transparent dark:bg-white/95 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-white min-w-5 outline-none px-3 py-1 relative rounded-full shadow-black/10 shadow-sm text-foreground text-sm transition-shadow">
                   <span className="bg-foreground rounded-full size-2" aria-hidden="true"></span>
-                  Launch Systems
+                  {"Launch Systems"}
                 </Badge>
                 <div className="flex flex-col gap-3 min-w-0">
                   <span className="font-medium text-white/72 text-xs tracking-[0.12em] uppercase">
-                    Build Room
+                    {"Build Room"}
                   </span>
                   <CardTitle className="font-semibold leading-tight sm:text-2xl text-white text-xl truncate">
-                    Shipping Rituals
+                    {"Shipping Rituals"}
                   </CardTitle>
                 </div>
               </CardContent>
@@ -72,14 +72,14 @@ export function Pattern() {
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white/95 border border-transparent dark:bg-white/95 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-white min-w-5 outline-none px-3 py-1 relative rounded-full shadow-black/10 shadow-sm text-foreground text-sm transition-shadow">
                   <span className="bg-foreground rounded-full size-2" aria-hidden="true"></span>
-                  Growth Loops
+                  {"Growth Loops"}
                 </Badge>
                 <div className="flex flex-col gap-3 min-w-0">
                   <span className="font-medium text-white/72 text-xs tracking-[0.12em] uppercase">
-                    Scale Map
+                    {"Scale Map"}
                   </span>
                   <CardTitle className="font-semibold leading-tight sm:text-2xl text-white text-xl truncate">
-                    No-Code Loops
+                    {"No-Code Loops"}
                   </CardTitle>
                 </div>
               </CardContent>

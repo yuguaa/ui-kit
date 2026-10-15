@@ -45,14 +45,14 @@ export function Pattern() {
           <div className="flex flex-col gap-1 max-w-xl">
             <div className="flex flex-wrap gap-2 items-center">
               <h1 className="font-semibold text-xl tracking-tight">
-                Notification Settings
+                {"Notification Settings"}
               </h1>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Synced
+                {"Synced"}
               </Badge>
             </div>
             <p className="leading-5 text-muted-foreground text-sm">
-              Set digest cadence and route collaboration alerts across email and in-app delivery.
+              {"Set digest cadence and route collaboration alerts across email and in-app delivery."}
             </p>
           </div>
           <Button className="self-start sm:self-center" type="button" tabIndex="0" extracted="1">
@@ -60,16 +60,16 @@ export function Pattern() {
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
-            Back to Profile
+            {"Back to Profile"}
           </Button>
         </div>
         <section className="flex flex-col gap-3.5 mt-1">
           <div className="flex flex-col gap-px">
             <h2 className="font-semibold text-base tracking-tight">
-              Daily Briefing
+              {"Daily Briefing"}
             </h2>
             <p className="leading-5 text-muted-foreground text-sm">
-              Batch open work into one calm morning summary.
+              {"Batch open work into one calm morning summary."}
             </p>
           </div>
           <div className="flex flex-col gap-3">
@@ -87,7 +87,7 @@ export function Pattern() {
                   <div className="flex flex-1 flex-col gap-2 min-w-0">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <p className="font-medium min-w-0 text-sm truncate">
-                        Time
+                        {"Time"}
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Time info" id="base-ui-_r_1_" baseUiTooltipTrigger="">
@@ -101,24 +101,24 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-baseline">
                       <p className="font-semibold leading-none tabular-nums text-base tracking-tight">
-                        8:30
+                        {"8:30"}
                       </p>
                       <p className="font-medium text-muted-foreground text-xs">
-                        AM local
+                        {"AM local"}
                       </p>
                     </div>
                     <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" aria-valuetext="92%" role="progressbar" aria-labelledby="base-ui-_r_2_">
                       <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2_" role="presentation">
-                        Time readiness
+                        {"Time readiness"}
                       </ProgressLabel>
                       <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                        92%
+                        {"92%"}
                       </ProgressValue>
                       <ProgressTrack progressing="">
                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "92%"}}></ProgressIndicator>
                       </ProgressTrack>
                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                        x
+                        {"x"}
                       </span>
                     </Progress>
                   </div>
@@ -135,7 +135,7 @@ export function Pattern() {
                   <div className="flex flex-1 flex-col gap-2 min-w-0">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <p className="font-medium min-w-0 text-sm truncate">
-                        Channel
+                        {"Channel"}
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Channel info" id="base-ui-_r_4_" baseUiTooltipTrigger="">
@@ -149,24 +149,24 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-baseline">
                       <p className="font-semibold leading-none text-base tracking-tight">
-                        Email
+                        {"Email"}
                       </p>
                       <p className="font-medium text-muted-foreground text-xs">
-                        Digest
+                        {"Digest"}
                       </p>
                     </div>
                     <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="97" aria-valuetext="97%" role="progressbar" aria-labelledby="base-ui-_r_5_">
                       <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5_" role="presentation">
-                        Channel readiness
+                        {"Channel readiness"}
                       </ProgressLabel>
                       <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                        97%
+                        {"97%"}
                       </ProgressValue>
                       <ProgressTrack progressing="">
                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "97%"}}></ProgressIndicator>
                       </ProgressTrack>
                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                        x
+                        {"x"}
                       </span>
                     </Progress>
                   </div>
@@ -186,7 +186,7 @@ export function Pattern() {
                   <div className="flex flex-1 flex-col gap-2 min-w-0">
                     <div className="flex gap-1.5 items-center min-w-0">
                       <p className="font-medium min-w-0 text-sm truncate">
-                        Scope
+                        {"Scope"}
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Scope info" id="base-ui-_r_7_" baseUiTooltipTrigger="">
@@ -200,24 +200,24 @@ export function Pattern() {
                     </div>
                     <div className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-baseline">
                       <p className="font-semibold leading-none text-base tracking-tight">
-                        Today
+                        {"Today"}
                       </p>
                       <p className="font-medium text-muted-foreground text-xs">
-                        + overdue
+                        {"+ overdue"}
                       </p>
                     </div>
                     <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-track]:bg-muted/80 **:data-[slot=progress-track]:flex-1 **:data-[slot=progress-track]:h-1 **:data-[slot=progress-track]:min-w-10 **:data-[slot=progress-track]:order-1 **:data-[slot=progress-track]:rounded-full **:data-[slot=progress-value]:order-2 flex-nowrap flex-row gap-2 items-center min-w-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" aria-valuetext="78%" role="progressbar" aria-labelledby="base-ui-_r_8_">
                       <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8_" role="presentation">
-                        Scope readiness
+                        {"Scope readiness"}
                       </ProgressLabel>
                       <ProgressValue className="leading-none shrink-0 tabular-nums text-[10px] text-muted-foreground" progressing="" aria-hidden="true">
-                        78%
+                        {"78%"}
                       </ProgressValue>
                       <ProgressTrack progressing="">
                         <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "78%"}}></ProgressIndicator>
                       </ProgressTrack>
                       <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                        x
+                        {"x"}
                       </span>
                     </Progress>
                   </div>
@@ -240,21 +240,21 @@ export function Pattern() {
                       <div className="flex flex-col gap-1 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-5-daily-briefing" id="profile-5-daily-briefing-label">
-                            Morning Digest
+                            {"Morning Digest"}
                           </FieldLabel>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                            Weekdays
+                            {"Weekdays"}
                           </Badge>
                         </div>
                         <FieldDescription className="leading-5">
-                          Bundle due-today work and overdue follow-ups into one calm summary.
+                          {"Bundle due-today work and overdue follow-ups into one calm summary."}
                         </FieldDescription>
                       </div>
                     </div>
                     <FieldContent className="@md/field-group:w-78 min-w-0">
                       <div className="@md/field-group:justify-end flex gap-3 items-center justify-between w-full">
                         <span className="@md/field-group:hidden text-muted-foreground text-sm">
-                          Enabled
+                          {"Enabled"}
                         </span>
                         <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default" aria-label="Morning Digest" aria-labelledby="profile-5-daily-briefing-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -271,10 +271,10 @@ export function Pattern() {
         <section className="flex flex-col gap-3.5">
           <div className="flex flex-col gap-px">
             <h2 className="font-semibold text-base tracking-tight">
-              Collaboration Alerts
+              {"Collaboration Alerts"}
             </h2>
             <p className="leading-5 text-muted-foreground text-sm">
-              Route shared-work events to email or in-app delivery.
+              {"Route shared-work events to email or in-app delivery."}
             </p>
           </div>
           <Card className="gap-0 p-0" size="default">
@@ -282,14 +282,14 @@ export function Pattern() {
               <div className="border-b flex gap-3 items-center justify-between px-5 py-3">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <p className="font-medium text-sm">
-                    Delivery Rules
+                    {"Delivery Rules"}
                   </p>
                   <p className="text-muted-foreground text-xs">
-                    Choose a channel for each collaboration event.
+                    {"Choose a channel for each collaboration event."}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                  6 types
+                  {"6 types"}
                 </Badge>
               </div>
               <ScrollArea className="[&>[data-slot=scroll-area-scrollbar][data-orientation=vertical]]:hidden w-full whitespace-nowrap" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
@@ -300,7 +300,7 @@ export function Pattern() {
                         <TableHeader>
                           <TableRow>
                             <TableHead className="font-semibold min-w-[27rem] pl-5 pr-6 py-3 w-[27rem]">
-                              Alert Type
+                              {"Alert Type"}
                             </TableHead>
                             <TableHead className="font-medium min-w-[8.5rem] px-0 py-3 text-center text-muted-foreground text-xs w-[8.5rem] whitespace-nowrap">
                               <div className="flex gap-1.5 items-center justify-center whitespace-nowrap">
@@ -311,7 +311,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span>
-                                  Email
+                                  {"Email"}
                                 </span>
                               </div>
                             </TableHead>
@@ -324,7 +324,7 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span>
-                                  In App
+                                  {"In App"}
                                 </span>
                               </div>
                             </TableHead>
@@ -335,10 +335,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Direct mentions
+                                  {"Direct mentions"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  When someone tags you in a note, comment, or shared handoff.
+                                  {"When someone tags you in a note, comment, or shared handoff."}
                                 </p>
                               </div>
                             </TableCell>
@@ -371,10 +371,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Thread replies
+                                  {"Thread replies"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  When a teammate replies to work you started or followed.
+                                  {"When a teammate replies to work you started or followed."}
                                 </p>
                               </div>
                             </TableCell>
@@ -407,10 +407,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Approval requests
+                                  {"Approval requests"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  Role reviews, access decisions, and requests waiting on you.
+                                  {"Role reviews, access decisions, and requests waiting on you."}
                                 </p>
                               </div>
                             </TableCell>
@@ -443,10 +443,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Ownership changes
+                                  {"Ownership changes"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  When work is assigned to you or handed back to your queue.
+                                  {"When work is assigned to you or handed back to your queue."}
                                 </p>
                               </div>
                             </TableCell>
@@ -473,10 +473,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Shared files
+                                  {"Shared files"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  When a teammate drops a brief, recap, or attachment into a thread.
+                                  {"When a teammate drops a brief, recap, or attachment into a thread."}
                                 </p>
                               </div>
                             </TableCell>
@@ -503,10 +503,10 @@ export function Pattern() {
                             <TableCell className="align-middle pl-5 pr-6 py-3.5">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <p className="font-medium leading-5 text-sm">
-                                  Workflow reviews
+                                  {"Workflow reviews"}
                                 </p>
                                 <p className="leading-5 text-muted-foreground text-xs">
-                                  When an automation request is approved, denied, or sent back.
+                                  {"When an automation request is approved, denied, or sent back."}
                                 </p>
                               </div>
                             </TableCell>
@@ -545,7 +545,7 @@ export function Pattern() {
             <CardFooter className="border-t px-5 py-4">
               <div className="flex gap-1.5 items-start w-full">
                 <p className="text-muted-foreground text-sm">
-                  Keep direct mentions and approval requests reachable.
+                  {"Keep direct mentions and approval requests reachable."}
                 </p>
                 <Tooltip>
                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Notification routing guidance" id="base-ui-_r_1i_" baseUiTooltipTrigger="">

@@ -7,21 +7,7 @@ export function Pattern() {
   return (
     <div className="flex items-center justify-center min-h-svh p-6 w-full">
       <div className="gap-2 grid lg:grid-cols-4 max-w-6xl sm:grid-cols-2 w-full xl:gap-3">
-        <style>{`
-@keyframes c46-rise-x { from { transform: scaleX(0); } }
-@keyframes c46-rise-y { from { transform: scaleY(0); } }
-@keyframes c46-fade { from { opacity: 0; } }
-[data-c46-step="0"] { --c46-delay: 0ms; }
-[data-c46-step="1"] { --c46-delay: 60ms; }
-[data-c46-step="2"] { --c46-delay: 120ms; }
-[data-c46-step="3"] { --c46-delay: 180ms; }
-[data-c46-rise="x"] { transform-origin: left; animation: c46-rise-x 480ms cubic-bezier(0.23, 1, 0.32, 1) var(--c46-delay) backwards; }
-[data-c46-rise="x"]:dir(rtl) { transform-origin: right; }
-[data-c46-rise="y"] .recharts-surface { transform-origin: bottom; animation: c46-rise-y 480ms cubic-bezier(0.23, 1, 0.32, 1) var(--c46-delay) backwards; }
-@media (prefers-reduced-motion: reduce) {
-  [data-c46-rise="x"], [data-c46-rise="y"] .recharts-surface { animation-name: c46-fade; animation-duration: 200ms; }
-}
-`}</style>
+        <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c46-rise-x { from { transform: scaleX(0); } }\n@keyframes c46-rise-y { from { transform: scaleY(0); } }\n@keyframes c46-fade { from { opacity: 0; } }\n[data-c46-step=\"0\"] { --c46-delay: 0ms; }\n[data-c46-step=\"1\"] { --c46-delay: 60ms; }\n[data-c46-step=\"2\"] { --c46-delay: 120ms; }\n[data-c46-step=\"3\"] { --c46-delay: 180ms; }\n[data-c46-rise=\"x\"] { transform-origin: left; animation: c46-rise-x 480ms cubic-bezier(0.23, 1, 0.32, 1) var(--c46-delay) backwards; }\n[data-c46-rise=\"x\"]:dir(rtl) { transform-origin: right; }\n[data-c46-rise=\"y\"] .recharts-surface { transform-origin: bottom; animation: c46-rise-y 480ms cubic-bezier(0.23, 1, 0.32, 1) var(--c46-delay) backwards; }\n@media (prefers-reduced-motion: reduce) {\n  [data-c46-rise=\"x\"], [data-c46-rise=\"y\"] .recharts-surface { animation-name: c46-fade; animation-duration: 200ms; }\n}\n" }} />
         <Frame className="h-full min-w-0" spacing="default">
           <FramePanel className="flex flex-col gap-3 overflow-visible">
             <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 h-5 items-center min-w-0 text-muted-foreground">
@@ -33,24 +19,24 @@ export function Pattern() {
                 <path d="m18 3-4 4h6l-4 4"></path>
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium min-w-0 overflow-x-clip text-ellipsis text-foreground text-sm whitespace-nowrap">
-                Connection Health
+                {"Connection Health"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] ms-auto shrink-0 text-xs">
-                Now
+                {"Now"}
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
               <div className="flex gap-2.5 h-8 items-center min-w-0">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                  10
+                  {"10"}
                   <span className="font-normal text-base text-muted-foreground">
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span className="sr-only">
-                      of
+                      {"of"}
                     </span>
-                    13
+                    {"13"}
                   </span>
                 </span>
                 <span className="[&_svg:not([class*=size-])]:size-3.5 font-medium font-mono gap-0.5 h-5 inline-flex items-center shrink-0 tabular-nums text-destructive text-sm">
@@ -61,15 +47,15 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    2
+                    {"2"}
                   </span>
                   <span className="sr-only">
-                    down against yesterday
+                    {"down against yesterday"}
                   </span>
                 </span>
               </div>
               <span className="tabular-nums text-muted-foreground text-xs">
-                12 healthy yesterday
+                {"12 healthy yesterday"}
               </span>
             </div>
             <div className="flex flex-col gap-2.5 mt-auto">
@@ -83,37 +69,37 @@ export function Pattern() {
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Healthy
+                    {"Healthy"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    10
+                    {"10"}
                   </dd>
                 </div>
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Degraded
+                    {"Degraded"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    1
+                    {"1"}
                   </dd>
                 </div>
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Failing
+                    {"Failing"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    1
+                    {"1"}
                   </dd>
                 </div>
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Paused
+                    {"Paused"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    1
+                    {"1"}
                   </dd>
                 </div>
               </dl>
@@ -128,24 +114,24 @@ export function Pattern() {
                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium min-w-0 overflow-x-clip text-ellipsis text-foreground text-sm whitespace-nowrap">
-                Linked Datasets
+                {"Linked Datasets"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] ms-auto shrink-0 text-xs">
-                Now
+                {"Now"}
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
               <div className="flex gap-2.5 h-8 items-center min-w-0">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                  33
+                  {"33"}
                   <span className="font-normal text-base text-muted-foreground">
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span className="sr-only">
-                      of
+                      {"of"}
                     </span>
-                    49
+                    {"49"}
                   </span>
                 </span>
                 <span className="[&_svg:not([class*=size-])]:size-3.5 font-medium font-mono gap-0.5 h-5 inline-flex items-center shrink-0 tabular-nums text-sm text-success">
@@ -156,15 +142,15 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    2
+                    {"2"}
                   </span>
                   <span className="sr-only">
-                    up against last week
+                    {"up against last week"}
                   </span>
                 </span>
               </div>
               <span className="tabular-nums text-muted-foreground text-xs">
-                31 linked last week
+                {"31 linked last week"}
               </span>
             </div>
             <div className="flex flex-col gap-2.5 mt-auto">
@@ -177,28 +163,28 @@ export function Pattern() {
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-info rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    In sync
+                    {"In sync"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    32
+                    {"32"}
                   </dd>
                 </div>
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Drifted
+                    {"Drifted"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    1
+                    {"1"}
                   </dd>
                 </div>
                 <div className="flex gap-1.5 h-4 items-center min-w-0 text-xs">
                   <span className="bg-muted-foreground/30 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <dt className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis text-muted-foreground whitespace-nowrap">
-                    Unlinked
+                    {"Unlinked"}
                   </dt>
                   <dd className="[text-box:trim-both_cap_alphabetic] font-medium ms-auto tabular-nums">
-                    16
+                    {"16"}
                   </dd>
                 </div>
               </dl>
@@ -215,16 +201,16 @@ export function Pattern() {
                 <path d="M20 17H4"></path>
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium min-w-0 overflow-x-clip text-ellipsis text-foreground text-sm whitespace-nowrap">
-                Rows Synced
+                {"Rows Synced"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] ms-auto shrink-0 text-xs">
-                14 days
+                {"14 days"}
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
               <div className="flex gap-2.5 h-8 items-center min-w-0">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                  8.4M
+                  {"8.4M"}
                 </span>
                 <span className="[&_svg:not([class*=size-])]:size-3.5 font-medium font-mono gap-0.5 h-5 inline-flex items-center shrink-0 tabular-nums text-sm text-success">
                   <span className="flex" aria-hidden="true">
@@ -234,39 +220,31 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    4.4%
+                    {"4.4%"}
                   </span>
                   <span className="sr-only">
-                    up against yesterday
+                    {"up against yesterday"}
                   </span>
                 </span>
               </div>
               <span className="tabular-nums text-muted-foreground text-xs">
-                8.1M yesterday
+                {"8.1M yesterday"}
               </span>
             </div>
             <div className="h-14 has-focus-visible:outline-2 has-focus-visible:outline-ring/50 has-focus-visible:outline-solid mt-auto outline-offset-2 w-full" data-c46-rise="y" data-c46-step="2">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-14 justify-center text-xs w-full" data-chart="chart-_r_1_">
-                <style>{`
- [data-chart=chart-_r_1_] {
-  --color-rows: var(--success);
-}
-
-
-.dark [data-chart=chart-_r_1_] {
-  --color-rows: var(--success);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-rows: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-rows: var(--success);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="237" height="56" style={{position: "relative", cursor: "default", width: "237px", height: "56px"}}>
                       <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px", zIndex: "50", width: "100%"}}></div>
                       <svg className="recharts-surface" role="application" tabIndex="0" width="237" height="56" viewBox="0 0 237 56" style={{width: "100%", height: "100%", display: "block"}}>
                         <title>
-                          Rows synced per day, last 14 days
+                          {"Rows synced per day, last 14 days"}
                         </title>
                         <desc>
-                          Wed, Sep 16: 7.1M, Thu, Sep 17: 7.5M, Fri, Sep 18: 6.9M, Sat, Sep 19: 7.8M, Sun, Sep 20: 8.2M, Mon, Sep 21: 6.4M, Tue, Sep 22: 6.1M, Wed, Sep 23: 7.7M, Thu, Sep 24: 8M, Fri, Sep 25: 7.9M, Sat, Sep 26: 8.3M, Sun, Sep 27: 7.6M, Mon, Sep 28: 8.1M, Tue, Sep 29: 8.4M
+                          {"Wed, Sep 16: 7.1M, Thu, Sep 17: 7.5M, Fri, Sep 18: 6.9M, Sat, Sep 19: 7.8M, Sun, Sep 20: 8.2M, Mon, Sep 21: 6.4M, Tue, Sep 22: 6.1M, Wed, Sep 23: 7.7M, Thu, Sep 24: 8M, Fri, Sep 25: 7.9M, Sat, Sep 26: 8.3M, Sun, Sep 27: 7.6M, Mon, Sep 28: 8.1M, Tue, Sep 29: 8.4M"}
                         </desc>
                         <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
                         <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
@@ -315,6 +293,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
         </Frame>
@@ -327,16 +306,16 @@ export function Pattern() {
                 <path d="M12 17h.01"></path>
               </svg>
               <span className="[text-box:trim-both_cap_alphabetic] font-medium min-w-0 overflow-x-clip text-ellipsis text-foreground text-sm whitespace-nowrap">
-                Failed Syncs
+                {"Failed Syncs"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] ms-auto shrink-0 text-xs">
-                14 days
+                {"14 days"}
               </span>
             </div>
             <div className="flex flex-col gap-0.5">
               <div className="flex gap-2.5 h-8 items-center min-w-0">
                 <span className="[text-box:trim-both_cap_alphabetic] font-semibold tabular-nums text-2xl tracking-tight">
-                  7
+                  {"7"}
                 </span>
                 <span className="[&_svg:not([class*=size-])]:size-3.5 font-medium font-mono gap-0.5 h-5 inline-flex items-center shrink-0 tabular-nums text-destructive text-sm">
                   <span className="flex" aria-hidden="true">
@@ -346,39 +325,31 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    5
+                    {"5"}
                   </span>
                   <span className="sr-only">
-                    up against yesterday
+                    {"up against yesterday"}
                   </span>
                 </span>
               </div>
               <span className="tabular-nums text-muted-foreground text-xs">
-                2 yesterday, 19 in 14 days
+                {"2 yesterday, 19 in 14 days"}
               </span>
             </div>
             <div className="h-14 has-focus-visible:outline-2 has-focus-visible:outline-ring/50 has-focus-visible:outline-solid mt-auto outline-offset-2 w-full" data-c46-rise="y" data-c46-step="3">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-14 justify-center text-xs w-full" data-chart="chart-_r_2_">
-                <style>{`
- [data-chart=chart-_r_2_] {
-  --color-failed: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_2_] {
-  --color-failed: var(--destructive);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-failed: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-failed: var(--destructive);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="237" height="56" style={{position: "relative", cursor: "default", width: "237px", height: "56px"}}>
                       <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px", zIndex: "50", width: "100%"}}></div>
                       <svg className="recharts-surface" role="application" tabIndex="0" width="237" height="56" viewBox="0 0 237 56" style={{width: "100%", height: "100%", display: "block"}}>
                         <title>
-                          Failed runs per day, last 14 days
+                          {"Failed runs per day, last 14 days"}
                         </title>
                         <desc>
-                          Wed, Sep 16: 0, Thu, Sep 17: 1, Fri, Sep 18: 0, Sat, Sep 19: 0, Sun, Sep 20: 2, Mon, Sep 21: 1, Tue, Sep 22: 0, Wed, Sep 23: 1, Thu, Sep 24: 0, Fri, Sep 25: 3, Sat, Sep 26: 2, Sun, Sep 27: 0, Mon, Sep 28: 2, Tue, Sep 29: 7
+                          {"Wed, Sep 16: 0, Thu, Sep 17: 1, Fri, Sep 18: 0, Sat, Sep 19: 0, Sun, Sep 20: 2, Mon, Sep 21: 1, Tue, Sep 22: 0, Wed, Sep 23: 1, Thu, Sep 24: 0, Fri, Sep 25: 3, Sat, Sep 26: 2, Sun, Sep 27: 0, Mon, Sep 28: 2, Tue, Sep 29: 7"}
                         </desc>
                         <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
                         <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
@@ -515,6 +486,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </FramePanel>
         </Frame>

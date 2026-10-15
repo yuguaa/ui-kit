@@ -59,16 +59,17 @@ import { Marker } from "@/registry/bases/radix/ui/marker"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "min(28rem, 45vw)", "--sidebar-width-icon": "3rem", "--sidebar": "var(--card)"}}>
       <SidebarInset className="min-h-0 overflow-hidden">
         <div className="flex-1 min-h-0 overflow-y-auto scrollbar">
           <header className="after:absolute after:bg-gradient-to-b after:from-background after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-background/70 flex gap-2 h-14 items-center px-4 sm:px-6 sticky supports-backdrop-filter:bg-background/60 top-0 z-10">
             <span className="font-medium min-w-0 text-sm truncate">
-              NeUI Labs
+              {"NeUI Labs"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="min-w-0 text-muted-foreground text-sm truncate">
-              Research
+              {"Research"}
             </span>
             <div className="flex gap-3 items-center ms-auto shrink-0">
               <Button className="gap-1.5" type="button" tabIndex="0" aria-pressed="true">
@@ -80,7 +81,7 @@ export function Pattern() {
                   <path d="M15 13v2"></path>
                   <path d="M9 13v2"></path>
                 </svg>
-                AI Assistant
+                {"AI Assistant"}
               </Button>
               <Avatar className="size-7" size="default">
                 <AvatarImage alt="Priya Nair" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -218,9 +219,12 @@ export function Pattern() {
           </div>
         </div>
       </SidebarInset>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="floating" data-side="right">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="right" aria-label="NeUI Chat">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="border-b gap-0 p-0 shrink-0" sidebar="header">
               <div className="flex gap-1 items-center min-h-12 px-3">
@@ -237,7 +241,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="min-w-0 text-sm text-start truncate">
-                    Trust in AI replies
+                    {"Trust in AI replies"}
                   </span>
                   <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -278,6 +282,7 @@ export function Pattern() {
                 </div>
               </div>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="overflow-hidden" sidebar="content">
               <div className="flex flex-1 flex-col min-h-0 relative">
                 <MessageScroller className="flex-1" scrollable="start">
@@ -286,7 +291,7 @@ export function Pattern() {
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
@@ -296,13 +301,13 @@ export function Pattern() {
                             <MessageContent className="gap-1 items-end">
                               <Bubble className="max-w-[88%]" variant="muted" data-align="end">
                                 <BubbleContent className="text-sm/6">
-                                  We keep hearing that the assistant sounds certain even when it is guessing. What should the reply itself do about that?
+                                  {"We keep hearing that the assistant sounds certain even when it is guessing. What should the reply itself do about that?"}
                                 </BubbleContent>
                               </Bubble>
                               <MessageFooter className="gap-0.5 pe-0">
                                 <span className="flex flex-wrap focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    11:02
+                                    {"11:02"}
                                   </span>
                                   <Button type="button" tabIndex="0" aria-label="Copy message">
                                     <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -329,14 +334,14 @@ export function Pattern() {
                               <div className="flex gap-2 items-center min-w-0">
                                 <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                 <h3 className="flex-1 font-medium min-w-0 text-sm truncate">
-                                  Confidence Signals
+                                  {"Confidence Signals"}
                                 </h3>
                                 <span className="flex gap-1 items-center shrink-0 tabular-nums text-[11px] text-muted-foreground">
                                   <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="M12 6v6l4 2"></path>
                                   </svg>
-                                  6s
+                                  {"6s"}
                                 </span>
                                 <button className="-me-1 flex focus-visible:ring-2 focus-visible:ring-ring group/section hover:text-foreground outline-none p-1 rounded-full shrink-0 text-muted-foreground" type="button" aria-expanded="true" aria-controls="_r_e_" aria-label="Collapse answer">
                                   <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
@@ -349,17 +354,17 @@ export function Pattern() {
                                   <div>
                                     <div className="selection:bg-primary/20 space-y-3 text-sm/6" id="_r_e_" data-answer-body="true">
                                       <p className="whitespace-pre-wrap">
-                                        Say the shape of the doubt, not the size of it. A reply that admits which part is thin reads as more reliable than one that prints a percentage nobody can audit.
+                                        {"Say the shape of the doubt, not the size of it. A reply that admits which part is thin reads as more reliable than one that prints a percentage nobody can audit."}
                                       </p>
                                       <p className="whitespace-pre-wrap">
-                                        Three moves carry most of it. Name the source before the claim, separate what was measured from what was inferred, and offer the cheapest next check instead of a hedge.
+                                        {"Three moves carry most of it. Name the source before the claim, separate what was measured from what was inferred, and offer the cheapest next check instead of a hedge."}
                                       </p>
                                       <p className="whitespace-pre-wrap">
-                                        The live region matters as much as the wording. A reply that announces itself through
+                                        {"The live region matters as much as the wording. A reply that announces itself through"}
                                         <code className="bg-muted font-mono px-1 py-0.5 rounded-sm text-[0.85em]">
-                                          role="status"
+                                          {"role=\"status\""}
                                         </code>
-                                        lets a screen reader hear the answer settle rather than guess at it.
+                                        {"lets a screen reader hear the answer settle rather than guess at it."}
                                       </p>
                                     </div>
                                   </div>
@@ -368,7 +373,7 @@ export function Pattern() {
                               <MessageFooter className="gap-0.5">
                                 <span className="flex flex-wrap focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    11:03
+                                    {"11:03"}
                                   </span>
                                   <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex="0" aria-label="Reply to this answer, quoting its first line">
                                     <span className="[&>svg]:size-3.5">
@@ -379,7 +384,7 @@ export function Pattern() {
                                         <path d="M7 7h8"></path>
                                       </svg>
                                     </span>
-                                    Reply
+                                    {"Reply"}
                                   </Button>
                                   <Button type="button" tabIndex="0" aria-label="Copy answer">
                                     <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -416,10 +421,10 @@ export function Pattern() {
                                   </Avatar>
                                   <AttachmentContent>
                                     <AttachmentTitle className="text-xs">
-                                      Design review, AI states
+                                      {"Design review, AI states"}
                                     </AttachmentTitle>
                                     <AttachmentDescription className="tabular-nums text-[11px]">
-                                      41 min, Aug 25
+                                      {"41 min, Aug 25"}
                                     </AttachmentDescription>
                                   </AttachmentContent>
                                   <span className="shrink-0 text-muted-foreground">
@@ -430,18 +435,18 @@ export function Pattern() {
                                   </span>
                                 </Attachment>
                                 <p className="pe-1 pt-1.5 tabular-nums text-[11px] text-muted-foreground">
-                                  2 recordings attached
+                                  {"2 recordings attached"}
                                 </p>
                               </div>
                               <Bubble className="max-w-[88%]" variant="muted" data-align="end">
                                 <BubbleContent className="text-sm/6">
-                                  Both sessions are attached. Pull out what people actually asked for, not what we assumed.
+                                  {"Both sessions are attached. Pull out what people actually asked for, not what we assumed."}
                                 </BubbleContent>
                               </Bubble>
                               <MessageFooter className="gap-0.5 pe-0">
                                 <span className="flex flex-wrap focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    11:05
+                                    {"11:05"}
                                   </span>
                                   <Button type="button" tabIndex="0" aria-label="Copy message">
                                     <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -468,14 +473,14 @@ export function Pattern() {
                               <div className="flex gap-2 items-center min-w-0">
                                 <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                 <h3 className="flex-1 font-medium min-w-0 text-sm truncate">
-                                  Session Findings
+                                  {"Session Findings"}
                                 </h3>
                                 <span className="flex gap-1 items-center shrink-0 tabular-nums text-[11px] text-muted-foreground">
                                   <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="M12 6v6l4 2"></path>
                                   </svg>
-                                  12s
+                                  {"12s"}
                                 </span>
                                 <button className="-me-1 flex focus-visible:ring-2 focus-visible:ring-ring group/section hover:text-foreground outline-none p-1 rounded-full shrink-0 text-muted-foreground" type="button" aria-expanded="true" aria-controls="_r_t_" aria-label="Collapse answer">
                                   <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
@@ -488,16 +493,16 @@ export function Pattern() {
                                   <div>
                                     <div className="selection:bg-primary/20 space-y-3 text-sm/6" id="_r_t_" data-answer-body="true">
                                       <p className="whitespace-pre-wrap">
-                                        Across both sessions the same three asks came up, and none of them was about accuracy.
+                                        {"Across both sessions the same three asks came up, and none of them was about accuracy."}
                                       </p>
                                       <p className="whitespace-pre-wrap">
-                                        People wanted to know where an answer came from before they read it. Nine of eleven scrolled to the sources first.
+                                        {"People wanted to know where an answer came from before they read it. Nine of eleven scrolled to the sources first."}
                                       </p>
                                       <p className="whitespace-pre-wrap">
-                                        They wanted the reply to hold still. Two participants lost their place when the text reflowed mid answer.
+                                        {"They wanted the reply to hold still. Two participants lost their place when the text reflowed mid answer."}
                                       </p>
                                       <p className="whitespace-pre-wrap">
-                                        And they wanted to argue with one sentence rather than the whole answer. That one is worth building.
+                                        {"And they wanted to argue with one sentence rather than the whole answer. That one is worth building."}
                                       </p>
                                     </div>
                                   </div>
@@ -513,7 +518,7 @@ export function Pattern() {
                                     <path d="M16 17H8"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Trust research sync
+                                    {"Trust research sync"}
                                   </span>
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-accent hover:text-foreground max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-label="Attach Design review, AI states to your next message">
@@ -525,14 +530,14 @@ export function Pattern() {
                                     <path d="M16 17H8"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Design review, AI states
+                                    {"Design review, AI states"}
                                   </span>
                                 </Badge>
                               </div>
                               <MessageFooter className="gap-0.5">
                                 <span className="flex flex-wrap focus-within:opacity-100 focus-within:pointer-events-auto gap-0.5 group-hover/turn:opacity-100 group-hover/turn:pointer-events-auto items-center max-md:opacity-100 max-md:pointer-events-auto opacity-0 pointer-events-none transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    11:07
+                                    {"11:07"}
                                   </span>
                                   <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex="0" aria-label="Reply to this answer, quoting its first line">
                                     <span className="[&>svg]:size-3.5">
@@ -543,7 +548,7 @@ export function Pattern() {
                                         <path d="M7 7h8"></path>
                                       </svg>
                                     </span>
-                                    Reply
+                                    {"Reply"}
                                   </Button>
                                   <Button type="button" tabIndex="0" aria-label="Copy answer">
                                     <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -581,7 +586,7 @@ export function Pattern() {
                         <div className="flex flex-col gap-2 items-end" role="group" aria-label="Quick replies">
                           <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex="0">
                             <span className="min-w-0 truncate">
-                              Draft the pattern note
+                              {"Draft the pattern note"}
                             </span>
                             <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                               <path d="m15 10 5 5-5 5"></path>
@@ -590,7 +595,7 @@ export function Pattern() {
                           </Button>
                           <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex="0">
                             <span className="min-w-0 truncate">
-                              What did they reject
+                              {"What did they reject"}
                             </span>
                             <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                               <path d="m15 10 5 5-5 5"></path>
@@ -611,28 +616,29 @@ export function Pattern() {
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
                     <span className="sr-only">
-                      Scroll to end
+                      {"Scroll to end"}
                     </span>
                   </MessageScrollerButton>
                 </MessageScroller>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="gap-2 pb-4 pt-2 px-4 relative shrink-0 z-10" sidebar="footer">
               <Card className="gap-1 p-1.5" size="sm" role="group" aria-label="Suggested prompts">
                 <div className="flex gap-1.5 items-center pb-1 pt-0.5 px-1.5 text-[11px] text-muted-foreground">
                   <Kbd>
-                    ↑
+                    {"↑"}
                   </Kbd>
                   <Kbd>
-                    ↓
+                    {"↓"}
                   </Kbd>
-                  navigate
+                  {"navigate"}
                   <Kbd className="ms-1.5">
-                    Enter
+                    {"Enter"}
                   </Kbd>
-                  select
+                  {"select"}
                   <Kbd className="ms-auto">
-                    Esc
+                    {"Esc"}
                   </Kbd>
                   <Tooltip>
                   <TooltipTrigger className="-me-0.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close suggestions" id="base-ui-_r_v_" baseUiTooltipTrigger="">
@@ -649,7 +655,7 @@ export function Pattern() {
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
                   <span className="flex-1 min-w-0 truncate">
-                    How should AI show uncertainty?
+                    {"How should AI show uncertainty?"}
                   </span>
                 </button>
                 <button className="flex focus-visible:bg-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:text-foreground gap-2 hover:bg-accent hover:text-foreground items-center outline-none px-2 py-1.5 rounded-full text-muted-foreground text-start text-xs w-full" type="button">
@@ -658,7 +664,7 @@ export function Pattern() {
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
                   <span className="flex-1 min-w-0 truncate">
-                    Which UI elements build trust in AI responses?
+                    {"Which UI elements build trust in AI responses?"}
                   </span>
                 </button>
                 <button className="flex focus-visible:bg-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:text-foreground gap-2 hover:bg-accent hover:text-foreground items-center outline-none px-2 py-1.5 rounded-full text-muted-foreground text-start text-xs w-full" type="button">
@@ -667,14 +673,14 @@ export function Pattern() {
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
                   <span className="flex-1 min-w-0 truncate">
-                    What signals make AI responses feel reliable?
+                    {"What signals make AI responses feel reliable?"}
                   </span>
                 </button>
               </Card>
               <form className="w-full">
                 <Field role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-4-composer">
-                    Message NeUI Chat
+                    {"Message NeUI Chat"}
                   </FieldLabel>
                   <InputGroup role="group">
                     <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-10 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-4-composer" placeholder="Ask AI anything"></textarea>
@@ -695,11 +701,11 @@ export function Pattern() {
                         <DropdownMenu>
                         <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex gap-1.5 group/button hover:text-foreground items-center justify-center min-w-0 outline-none px-1.5 select-none shadow-none shrink text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" size="sm" aria-label="Model Claude Sonnet 5, mode Auto" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
                           <span className="min-w-0 text-xs truncate">
-                            Claude Sonnet 5
+                            {"Claude Sonnet 5"}
                           </span>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="shrink-0 text-xs">
-                            Auto
+                            {"Auto"}
                           </span>
                           <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
@@ -730,12 +736,16 @@ export function Pattern() {
                 </Field>
               </form>
               <p className="text-[11px] text-center text-muted-foreground">
-                NeUI Chat can browse the web. Check important info.
+                {"NeUI Chat can browse the web. Check important info."}
               </p>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
     </div>
+    </SidebarProvider>
   )
 }

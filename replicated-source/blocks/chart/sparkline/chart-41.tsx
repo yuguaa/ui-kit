@@ -22,11 +22,11 @@ export function Pattern() {
               <div className="flex flex-col gap-px min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                   <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                    Meeting Objective
+                    {"Meeting Objective"}
                   </div>
                 </div>
                 <div className="text-muted-foreground text-xs truncate">
-                  SLOs with budget left
+                  {"SLOs with budget left"}
                 </div>
               </div>
             </div>
@@ -34,9 +34,9 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-2 items-center min-w-0">
               <span className="font-semibold shrink-0 tabular-nums text-2xl tracking-tight whitespace-nowrap">
-                16
+                {"16"}
                 <span className="font-normal ms-1 text-muted-foreground text-sm">
-                  of 18
+                  {"of 18"}
                 </span>
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:text-destructive bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
@@ -45,11 +45,11 @@ export function Pattern() {
                   <path d="m19 12-7 7-7-7"></path>
                 </svg>
                 <span className="sr-only">
-                  Down
+                  {"Down"}
                 </span>
-                1
+                {"1"}
                 <span className="sr-only">
-                  vs 7 days ago
+                  {"vs 7 days ago"}
                 </span>
               </Badge>
             </div>
@@ -57,6 +57,7 @@ export function Pattern() {
               <div className="flex flex-col h-10 min-w-0 relative">
                 <div className="absolute bg-linear-to-b bottom-0 from-foreground/2 left-0 pointer-events-none to-foreground/8 top-0" aria-hidden="true" style={{width: "12px", borderRadius: "6px", transform: "translateX(6.94444px)"}}></div>
                 <div className="flex-1 min-h-0 relative">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible aspect-auto cn-chart flex justify-center min-w-0 size-full text-xs" data-chart="chart-_r_0_">
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -248,6 +249,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
             </div>
@@ -256,28 +258,28 @@ export function Pattern() {
                 <span className="@max-[15.5rem]:sr-only flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    12
+                    {"12"}
                   </span>
                   <span>
-                    Healthy
+                    {"Healthy"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    4
+                    {"4"}
                   </span>
                   <span>
-                    At Risk
+                    {"At Risk"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    2
+                    {"2"}
                   </span>
                   <span>
-                    Exhausted
+                    {"Exhausted"}
                   </span>
                 </span>
               </div>
@@ -285,13 +287,13 @@ export function Pattern() {
           </FramePanel>
           <footer className="flex flex-nowrap flex-row gap-2 items-center justify-start min-h-10 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) tabular-nums text-muted-foreground text-xs" aria-live="off">
             <span className="shrink-0">
-              Newest miss
+              {"Newest miss"}
             </span>
             <span className="font-medium min-w-0 text-[13px] text-foreground truncate">
-              Ledger write success
+              {"Ledger write success"}
             </span>
             <span className="ms-auto shrink-0 tabular-nums">
-              Sep 25
+              {"Sep 25"}
             </span>
           </footer>
         </Frame>
@@ -307,11 +309,11 @@ export function Pattern() {
               <div className="flex flex-col gap-px min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                   <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                    Median Budget Left
+                    {"Median Budget Left"}
                   </div>
                 </div>
                 <div className="text-muted-foreground text-xs truncate">
-                  Fleet median, last 28 days
+                  {"Fleet median, last 28 days"}
                 </div>
               </div>
             </div>
@@ -319,7 +321,7 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-2 items-center min-w-0">
               <span className="font-semibold shrink-0 tabular-nums text-2xl text-foreground tracking-tight whitespace-nowrap">
-                64%
+                {"64%"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:text-destructive bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
                 <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
@@ -327,11 +329,11 @@ export function Pattern() {
                   <path d="m19 12-7 7-7-7"></path>
                 </svg>
                 <span className="sr-only">
-                  Down
+                  {"Down"}
                 </span>
-                9 pts
+                {"9 pts"}
                 <span className="sr-only">
-                  vs 7 days ago
+                  {"vs 7 days ago"}
                 </span>
               </Badge>
             </div>
@@ -339,6 +341,7 @@ export function Pattern() {
               <div className="flex flex-col h-10 min-w-0 relative">
                 <div className="absolute bg-linear-to-b bottom-0 from-foreground/2 left-0 pointer-events-none to-foreground/8 top-0" aria-hidden="true" style={{width: "12px", borderRadius: "6px", transform: "translateX(245.536px)"}}></div>
                 <div className="flex-1 min-h-0 relative">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible aspect-auto cn-chart flex justify-center min-w-0 size-full text-xs" data-chart="chart-_r_1_">
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -592,6 +595,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
             </div>
@@ -602,19 +606,19 @@ export function Pattern() {
                     <line x1="0" x2="12" y1="6" y2="6" stroke="var(--muted-foreground)" strokeWidth="1.5" strokeDasharray="3 1.5"></line>
                   </svg>
                   <span className="text-foreground">
-                    73%
+                    {"73%"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    on Sep 22
+                    {"on Sep 22"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{background: "var(--success)"}}></span>
                   <span className="text-foreground">
-                    64%
+                    {"64%"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    today
+                    {"today"}
                   </span>
                 </span>
               </div>
@@ -622,16 +626,16 @@ export function Pattern() {
           </FramePanel>
           <footer className="flex flex-nowrap flex-row gap-2 items-center justify-start min-h-10 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) tabular-nums text-muted-foreground text-xs" aria-live="off">
             <span className="shrink-0">
-              Lowest
+              {"Lowest"}
             </span>
             <span className="font-medium min-w-0 text-[13px] text-foreground truncate">
-              Ledger write success
+              {"Ledger write success"}
             </span>
             <span className="ms-auto shrink-0 tabular-nums">
               <span className="font-medium text-destructive">
-                42%
+                {"42%"}
               </span>
-              over
+              {"over"}
             </span>
           </footer>
         </Frame>
@@ -646,11 +650,11 @@ export function Pattern() {
               <div className="flex flex-col gap-px min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                   <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                    Burning Now
+                    {"Burning Now"}
                   </div>
                 </div>
                 <div className="text-muted-foreground text-xs truncate">
-                  Hourly fleet peak, last 24h
+                  {"Hourly fleet peak, last 24h"}
                 </div>
               </div>
             </div>
@@ -658,22 +662,23 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-2 items-center min-w-0">
               <span className="font-semibold shrink-0 tabular-nums text-2xl tracking-tight whitespace-nowrap">
-                2
+                {"2"}
                 <span className="font-normal ms-1 text-muted-foreground text-sm">
-                  alerting
+                  {"alerting"}
                 </span>
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive-foreground text-xs transition-shadow">
-                1 Paging
+                {"1 Paging"}
               </Badge>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-warning-foreground text-xs transition-shadow">
-                1 Ticket
+                {"1 Ticket"}
               </Badge>
             </div>
             <div className="[&_[class*=recharts-zIndex-layer]]:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring/50 focus-visible:outline-solid min-w-0 mt-auto outline-hidden" role="group" aria-label="Peak burn by hour, last 24 hours: 5 hours over the 14.4× page line. Peak Payout batch on time at 90×, 15:20. Hottest now Webhook delivery success at 18×" tabIndex="0">
               <div className="flex flex-col h-10 min-w-0 relative">
                 <div className="absolute bg-linear-to-b bottom-0 from-foreground/2 left-0 pointer-events-none to-foreground/8 top-0" aria-hidden="true" style={{width: "12px", borderRadius: "6px", transform: "translateX(244.792px)"}}></div>
                 <div className="flex-1 min-h-0 relative">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible aspect-auto cn-chart flex justify-center min-w-0 size-full text-xs" data-chart="chart-_r_2_">
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -859,6 +864,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
             </div>
@@ -867,19 +873,19 @@ export function Pattern() {
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    5h
+                    {"5h"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    over page
+                    {"over page"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    1h
+                    {"1h"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    over pace
+                    {"over pace"}
                   </span>
                 </span>
               </div>
@@ -887,13 +893,13 @@ export function Pattern() {
           </FramePanel>
           <footer className="flex flex-nowrap flex-row gap-2 items-center justify-start min-h-10 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) tabular-nums text-muted-foreground text-xs" aria-live="off">
             <span className="shrink-0">
-              Hottest
+              {"Hottest"}
             </span>
             <span className="font-medium min-w-0 text-[13px] text-foreground truncate">
-              Webhook delivery success
+              {"Webhook delivery success"}
             </span>
             <span className="font-medium ms-auto shrink-0 tabular-nums text-destructive">
-              18×
+              {"18×"}
             </span>
           </footer>
         </Frame>
@@ -913,11 +919,11 @@ export function Pattern() {
               <div className="flex flex-col gap-px min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                   <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                    Budget Events
+                    {"Budget Events"}
                   </div>
                 </div>
                 <div className="text-muted-foreground text-xs truncate">
-                  Incidents and changes, 28 days
+                  {"Incidents and changes, 28 days"}
                 </div>
               </div>
             </div>
@@ -925,16 +931,17 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-2 items-center min-w-0">
               <span className="font-semibold shrink-0 tabular-nums text-2xl tracking-tight whitespace-nowrap">
-                14
+                {"14"}
               </span>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                MTTR 1h 34m
+                {"MTTR 1h 34m"}
               </Badge>
             </div>
             <div className="[&_[class*=recharts-zIndex-layer]]:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring/50 focus-visible:outline-solid min-w-0 mt-auto outline-hidden" role="group" aria-label="14 events in 28 days, 5 incidents. Latest Webhook retry storm, ongoing" tabIndex="0">
               <div className="flex flex-col h-10 min-w-0 relative">
                 <div className="absolute bg-linear-to-b bottom-0 from-foreground/2 left-0 pointer-events-none to-foreground/8 top-0" aria-hidden="true" style={{width: "12px", borderRadius: "6px", transform: "translateX(245.536px)"}}></div>
                 <div className="flex-1 min-h-0 relative">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible aspect-auto cn-chart flex justify-center min-w-0 size-full text-xs" data-chart="chart-_r_3_">
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -1149,6 +1156,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
               </div>
             </div>
@@ -1157,19 +1165,19 @@ export function Pattern() {
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    5
+                    {"5"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    Incidents
+                    {"Incidents"}
                   </span>
                 </span>
                 <span className="flex gap-1 items-center tabular-nums whitespace-nowrap">
                   <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                   <span className="text-foreground">
-                    9
+                    {"9"}
                   </span>
                   <span className="@max-[9rem]:sr-only">
-                    Other
+                    {"Other"}
                   </span>
                 </span>
               </div>
@@ -1177,13 +1185,13 @@ export function Pattern() {
           </FramePanel>
           <footer className="flex flex-nowrap flex-row gap-2 items-center justify-start min-h-10 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) tabular-nums text-muted-foreground text-xs" aria-live="off">
             <span className="shrink-0">
-              Latest
+              {"Latest"}
             </span>
             <span className="font-medium min-w-0 text-[13px] text-foreground truncate">
-              Webhook retry storm
+              {"Webhook retry storm"}
             </span>
             <span className="dark:text-warning ms-auto shrink-0 text-warning-foreground">
-              Ongoing
+              {"Ongoing"}
             </span>
           </footer>
         </Frame>

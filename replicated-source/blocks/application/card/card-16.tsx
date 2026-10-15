@@ -191,7 +191,7 @@ export function Pattern() {
                 <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                   <path d="M20 6 9 17l-5-5"></path>
                 </svg>
-                Live
+                {"Live"}
               </Badge>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent! cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_4_" aria-expanded="false">
@@ -214,14 +214,14 @@ export function Pattern() {
         <FramePanel className="space-y-3.5">
           <div className="flex justify-between">
             <h3 className="font-medium leading-tight text-sm">
-              LeadForge CRM
+              {"LeadForge CRM"}
             </h3>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-              Installed
+              {"Installed"}
             </Badge>
           </div>
           <p className="text-muted-foreground text-sm">
-            Sync contacts, track opportunities, and forecast deals in one unified workspace.
+            {"Sync contacts, track opportunities, and forecast deals in one unified workspace."}
           </p>
           <AvatarGroup>
             <Avatar className="size-6" size="default">
@@ -234,13 +234,13 @@ export function Pattern() {
               <AvatarImage alt="Emma Wilson" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
             </Avatar>
             <AvatarGroupCount className="border size-6 text-[10px]">
-              +3
+              {"+3"}
             </AvatarGroupCount>
           </AvatarGroup>
         </FramePanel>
         <FramePanel className="py-2.5!">
           <Button className="w-full" type="button" tabIndex="0">
-            Integration Guide
+            {"Integration Guide"}
           </Button>
         </FramePanel>
       </Frame>

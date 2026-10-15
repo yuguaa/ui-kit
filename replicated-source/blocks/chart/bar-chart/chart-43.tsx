@@ -37,14 +37,14 @@ export function Pattern() {
               <div className="flex flex-col gap-px min-w-0">
                 <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                   <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                    Webhook delivery success
+                    {"Webhook delivery success"}
                   </div>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                    Paging
+                    {"Paging"}
                   </Badge>
                 </div>
                 <div className="text-muted-foreground text-sm truncate">
-                  99.9% target over 28 days
+                  {"99.9% target over 28 days"}
                 </div>
               </div>
             </div>
@@ -52,12 +52,12 @@ export function Pattern() {
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Chart range" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Last 24h" extracted="1">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    24h
+                    {"24h"}
                   </span>
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-pressed:bg-card aria-pressed:text-foreground cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Last 72h">
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    72h
+                    {"72h"}
                   </span>
                 </ToggleGroupItem>
               </ToggleGroup>
@@ -68,7 +68,7 @@ export function Pattern() {
                   <path d="m2 2 20 20"></path>
                   <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05"></path>
                 </svg>
-                Mute
+                {"Mute"}
               </Button>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_5_" aria-expanded="false">
@@ -86,32 +86,32 @@ export function Pattern() {
               <section className="@4xl/summary:pe-6 flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Last Hour
+                    {"Last Hour"}
                   </h4>
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="font-semibold tabular-nums text-4xl text-destructive tracking-tight">
-                    18×
+                    {"18×"}
                   </p>
                   <p className="text-muted-foreground text-pretty text-sm">
-                    Over the page line this hour.
+                    {"Over the page line this hour."}
                   </p>
                 </div>
                 <dl className="border-t gap-3 grid grid-cols-2 mt-auto pt-3">
                   <div className="flex flex-col gap-0.5 min-w-0">
                     <dt className="text-muted-foreground text-xs">
-                      Budget left
+                      {"Budget left"}
                     </dt>
                     <dd className="font-medium tabular-nums text-sm">
-                      74%
+                      {"74%"}
                     </dd>
                   </div>
                   <div className="flex flex-col gap-0.5 min-w-0">
                     <dt className="text-muted-foreground text-xs">
-                      Runs out in
+                      {"Runs out in"}
                     </dt>
                     <dd className="font-medium tabular-nums text-sm">
-                      1d 2h
+                      {"1d 2h"}
                     </dd>
                   </div>
                 </dl>
@@ -119,16 +119,16 @@ export function Pattern() {
               <section className="@4xl/summary:px-6 flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Windows
+                    {"Windows"}
                   </h4>
                   <span className="flex gap-1.5 items-center min-w-0 tabular-nums text-muted-foreground text-xs truncate">
-                    Log scale, 0.1× to 100×
+                    {"Log scale, 0.1× to 100×"}
                   </span>
                 </div>
                 <ul className="@4xl/summary:flex-1 @4xl/summary:justify-between flex flex-col gap-2.5">
                   <li className="gap-3 grid grid-cols-[2.5rem_minmax(0,1fr)_3rem] items-center text-sm">
                     <span className="text-muted-foreground" aria-hidden="true">
-                      5m
+                      {"5m"}
                     </span>
                     <svg className="block h-3.5 overflow-visible" width="100%" role="img" aria-label="5 minutes: 29×, over the page line">
                       <line x1="0" x2="100%" y1="50%" y2="50%" stroke="var(--muted-foreground)" strokeOpacity="0.12" strokeWidth="2" strokeLinecap="round"></line>
@@ -148,12 +148,12 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span className="font-medium tabular-nums text-right" aria-hidden="true">
-                      29×
+                      {"29×"}
                     </span>
                   </li>
                   <li className="gap-3 grid grid-cols-[2.5rem_minmax(0,1fr)_3rem] items-center text-sm">
                     <span className="text-muted-foreground" aria-hidden="true">
-                      30m
+                      {"30m"}
                     </span>
                     <svg className="block h-3.5 overflow-visible" width="100%" role="img" aria-label="30 minutes: 25×, over the page line">
                       <line x1="0" x2="100%" y1="50%" y2="50%" stroke="var(--muted-foreground)" strokeOpacity="0.12" strokeWidth="2" strokeLinecap="round"></line>
@@ -173,12 +173,12 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span className="font-medium tabular-nums text-right" aria-hidden="true">
-                      25×
+                      {"25×"}
                     </span>
                   </li>
                   <li className="gap-3 grid grid-cols-[2.5rem_minmax(0,1fr)_3rem] items-center text-sm">
                     <span className="text-muted-foreground" aria-hidden="true">
-                      1h
+                      {"1h"}
                     </span>
                     <svg className="block h-3.5 overflow-visible" width="100%" role="img" aria-label="1 hour: 18×, over the page line">
                       <line x1="0" x2="100%" y1="50%" y2="50%" stroke="var(--muted-foreground)" strokeOpacity="0.12" strokeWidth="2" strokeLinecap="round"></line>
@@ -198,12 +198,12 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span className="font-medium tabular-nums text-right" aria-hidden="true">
-                      18×
+                      {"18×"}
                     </span>
                   </li>
                   <li className="gap-3 grid grid-cols-[2.5rem_minmax(0,1fr)_3rem] items-center text-sm">
                     <span className="text-muted-foreground" aria-hidden="true">
-                      6h
+                      {"6h"}
                     </span>
                     <svg className="block h-3.5 overflow-visible" width="100%" role="img" aria-label="6 hours: 3.4×, over 1×">
                       <line x1="0" x2="100%" y1="50%" y2="50%" stroke="var(--muted-foreground)" strokeOpacity="0.12" strokeWidth="2" strokeLinecap="round"></line>
@@ -223,12 +223,12 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span className="font-medium tabular-nums text-right" aria-hidden="true">
-                      3.4×
+                      {"3.4×"}
                     </span>
                   </li>
                   <li className="gap-3 grid grid-cols-[2.5rem_minmax(0,1fr)_3rem] items-center text-sm">
                     <span className="text-muted-foreground" aria-hidden="true">
-                      3d
+                      {"3d"}
                     </span>
                     <svg className="block h-3.5 overflow-visible" width="100%" role="img" aria-label="3 days: 0.70×, under 1×">
                       <line x1="0" x2="100%" y1="50%" y2="50%" stroke="var(--muted-foreground)" strokeOpacity="0.12" strokeWidth="2" strokeLinecap="round"></line>
@@ -240,7 +240,7 @@ export function Pattern() {
                       </g>
                     </svg>
                     <span className="font-medium tabular-nums text-right" aria-hidden="true">
-                      0.70×
+                      {"0.70×"}
                     </span>
                   </li>
                 </ul>
@@ -248,10 +248,10 @@ export function Pattern() {
               <section className="@2xl/summary:col-span-2 @4xl/summary:col-span-1 @4xl/summary:ps-6 @container/rules flex flex-col gap-3 min-w-0">
                 <div className="flex gap-3 items-center justify-between min-w-0">
                   <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                    Alert Rules
+                    {"Alert Rules"}
                   </h4>
                   <span className="flex gap-1.5 items-center min-w-0 tabular-nums text-muted-foreground text-xs truncate">
-                    Notifies #sre-oncall
+                    {"Notifies #sre-oncall"}
                   </span>
                 </div>
                 <ItemGroup role="list">
@@ -259,22 +259,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Fast Burn
+                          {"Fast Burn"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="@md/rules:shrink-0 min-w-0 truncate">
-                          Pages when 1h and 5m pass 14.4×
+                          {"Pages when 1h and 5m pass 14.4×"}
                         </span>
                         <span className="@md/rules:block bg-muted-foreground/40 hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="@md/rules:inline hidden min-w-0 truncate">
-                          spends 2.1% in 1h
+                          {"spends 2.1% in 1h"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                        Firing
+                        {"Firing"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -282,22 +282,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Medium Burn
+                          {"Medium Burn"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="@md/rules:shrink-0 min-w-0 truncate">
-                          Pages when 6h and 30m pass 6×
+                          {"Pages when 6h and 30m pass 6×"}
                         </span>
                         <span className="@md/rules:block bg-muted-foreground/40 hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="@md/rules:inline hidden min-w-0 truncate">
-                          spends 5.4% in 6h
+                          {"spends 5.4% in 6h"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Clear
+                        {"Clear"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -305,22 +305,22 @@ export function Pattern() {
                     <ItemContent className="min-w-0">
                       <ItemTitle className="max-w-full min-w-0">
                         <span className="min-w-0 truncate">
-                          Slow Burn
+                          {"Slow Burn"}
                         </span>
                       </ItemTitle>
                       <ItemDescription className="flex gap-1.5 items-center min-w-0 tabular-nums">
                         <span className="@md/rules:shrink-0 min-w-0 truncate">
-                          Tickets when 3d and 6h pass 1×
+                          {"Tickets when 3d and 6h pass 1×"}
                         </span>
                         <span className="@md/rules:block bg-muted-foreground/40 hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="@md/rules:inline hidden min-w-0 truncate">
-                          spends 11% in 3d
+                          {"spends 11% in 3d"}
                         </span>
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Clear
+                        {"Clear"}
                       </Badge>
                     </ItemActions>
                   </Item>
@@ -332,15 +332,15 @@ export function Pattern() {
             <section className="flex flex-col gap-3 min-w-0">
               <div className="flex gap-3 items-center justify-between min-w-0">
                 <h4 className="font-medium shrink-0 text-muted-foreground text-xs">
-                  Hourly Burn
+                  {"Hourly Burn"}
                 </h4>
                 <span className="flex gap-1.5 items-center min-w-0 tabular-nums text-muted-foreground text-xs truncate">
                   <span className="shrink-0">
-                    Last 72 hours
+                    {"Last 72 hours"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    1 hour over the page line
+                    {"1 hour over the page line"}
                   </span>
                 </span>
               </div>
@@ -349,6 +349,7 @@ export function Pattern() {
                   <div className="-bottom-1.5 absolute bg-linear-to-b from-foreground/2 left-0 pointer-events-none to-foreground/8 top-3.5" aria-hidden="true" style={{width: "28px", borderRadius: "14px", transform: "translateX(1084.4px)"}}></div>
                   <div className="h-8 shrink-0" aria-hidden="true"></div>
                   <div className="flex-1 min-h-0 relative">
+                    <ChartContainer>
                     <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible [&_[class*=recharts-zIndex-layer]]:outline-hidden absolute aspect-auto cn-chart flex focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring/50 focus-visible:outline-solid h-auto inset-0 justify-center min-w-0 outline-hidden text-xs" data-chart="chart-_r_d_" role="group" aria-label="Webhook delivery success burn rate by hour, last 72 hours: peak 18×, 1 hour over the 14.4× page line. Arrow keys move by hour." tabIndex="0">
                       <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                         <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -777,10 +778,10 @@ export function Pattern() {
                               <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
                               <g className="recharts-zIndex-layer_2000" tabIndex="-1">
                                 <text className="fill-destructive font-medium text-xs" aria-hidden="true" x="12" y="20.658182018862796" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                  Page 14.4×
+                                  {"Page 14.4×"}
                                 </text>
                                 <text className="fill-muted-foreground font-medium text-xs" aria-hidden="true" x="12" y="149.20000000000002" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                  Pace 1×
+                                  {"Pace 1×"}
                                 </text>
                               </g>
                             </svg>
@@ -788,6 +789,7 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
+                    </ChartContainer>
                   </div>
                   <div className="@container h-6 mt-2 relative shrink-0" aria-hidden="true">
                     <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "65.1806px"}}></span>
@@ -800,28 +802,28 @@ export function Pattern() {
                     <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "976.847px"}}></span>
                     <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "1068.01px"}}></span>
                     <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-2 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 156.347px, -100% + 100cqw))"}}>
-                      Sep 27
+                      {"Sep 27"}
                     </span>
                     <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 521.014px, -100% + 100cqw))"}}>
-                      28
+                      {"28"}
                     </span>
                     <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 885.681px, -100% + 100cqw))"}}>
-                      29
+                      {"29"}
                     </span>
                     <span className="absolute bg-foreground flex font-semibold h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-background text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 1098.4px, -100% + 100cqw))"}}>
                       <span className="bg-background rounded-full size-1.5"></span>
                       <span className="sr-only">
-                        Now
+                        {"Now"}
                       </span>
                     </span>
                   </div>
                   <div className="@container absolute h-7 inset-x-0 pointer-events-none top-1" aria-hidden="true">
                     <div className="absolute flex left-0 top-0" style={{transform: "translateX(clamp(0px, -50% + 1098.4px, -100% + 100cqw))"}}>
                       <span className="bg-foreground font-semibold gap-1.5 h-7 inline-flex items-center px-3 rounded-full tabular-nums text-background text-xs whitespace-nowrap" aria-hidden="true">
-                        18×
+                        {"18×"}
                         <span className="bg-background/40 rounded-full size-1"></span>
                         <span className="font-medium text-background/65">
-                          Now
+                          {"Now"}
                         </span>
                       </span>
                     </div>
@@ -837,41 +839,41 @@ export function Pattern() {
                 <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="3" fill="var(--destructive)"></circle>
                 </svg>
-                Over page
+                {"Over page"}
               </span>
               <span className="flex gap-1.5 items-center">
                 <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="3" fill="var(--warning)"></circle>
                 </svg>
-                Over pace
+                {"Over pace"}
               </span>
               <span className="flex gap-1.5 items-center">
                 <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                   <circle cx="6" cy="6" r="3" fill="var(--muted-foreground)"></circle>
                 </svg>
-                Under pace
+                {"Under pace"}
               </span>
               <span className="flex gap-1.5 items-center">
                 <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                   <line x1="0" x2="12" y1="6" y2="6" stroke="var(--destructive)" strokeWidth="1.5" strokeDasharray="3 1.5"></line>
                 </svg>
-                Page line
+                {"Page line"}
               </span>
             </div>
             <div className="flex gap-1.5 items-center min-w-0 sm:ms-auto">
               <span className="font-medium shrink-0 text-foreground">
-                Sep 29, 14:20
+                {"Sep 29, 14:20"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="min-w-0 truncate">
                 <span className="font-mono text-foreground">
-                  INC-2209
+                  {"INC-2209"}
                 </span>
-                Webhook retry storm
+                {"Webhook retry storm"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="shrink-0">
-                2.7% of budget
+                {"2.7% of budget"}
               </span>
             </div>
           </footer>

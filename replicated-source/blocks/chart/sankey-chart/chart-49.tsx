@@ -17,26 +17,26 @@ export function Pattern() {
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold text-sm truncate">
-                Trial Journey
+                {"Trial Journey"}
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                20,400 trials
+                {"20,400 trials"}
               </Badge>
             </div>
             <div className="text-muted-foreground text-sm truncate">
-              Where new trials convert or drop off
+              {"Where new trials convert or drop off"}
             </div>
           </div>
           <div className="flex gap-2 items-center">
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Date range" style={{"--gap": "0"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Last 7D" extracted="1">
-                7D
+                {"7D"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Last 30D">
-                30D
+                {"30D"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="Last 90D">
-                90D
+                {"90D"}
               </ToggleGroupItem>
             </ToggleGroup>
             <Button className="motion-reduce:hidden" type="button" tabIndex="0" aria-label="Replay animation">
@@ -56,49 +56,10 @@ export function Pattern() {
         <FramePanel>
           <div className="overflow-x-auto">
             <div className="c49-sweep">
-              <style>{`
-@keyframes c49-sweep {
-  from { mask-image: linear-gradient(to right, #000 48%, transparent 52%); mask-size: 300% 100%; mask-repeat: no-repeat; mask-position: 78% 0; }
-  to { mask-image: linear-gradient(to right, #000 48%, transparent 52%); mask-size: 300% 100%; mask-repeat: no-repeat; mask-position: 22% 0; }
-}
-@keyframes c49-appear { from { opacity: 0; } }
-@keyframes c49-pulse {
-  0% { offset-distance: 0%; opacity: 0; }
-  12%, 88% { opacity: 1; }
-  100% { offset-distance: 100%; opacity: 0; }
-}
-@keyframes c49-leak {
-  0% { offset-distance: 0%; opacity: 0; }
-  14% { opacity: 1; }
-  100% { offset-distance: 64%; opacity: 0; }
-}
-.c49-sweep { animation: c49-sweep 1400ms cubic-bezier(0.3, 0, 0.2, 1) backwards; }
-.c49-pulses { animation: c49-appear 600ms ease-out backwards; }
-.c49-pulse { offset-rotate: 0deg; animation: c49-pulse var(--c49-dur) linear var(--c49-delay) infinite; }
-.c49-pulse[data-leak] { animation-name: c49-leak; }
-[data-c49-paused] .c49-pulse { animation-play-state: paused; }
-@media (prefers-reduced-motion: reduce) {
-  .c49-sweep, .c49-pulses { animation: none; }
-  .c49-pulse { display: none; }
-}
-html[data-demo="frozen"] :is(.c49-sweep, .c49-pulses) { animation: none; }
-html[data-demo="frozen"] .c49-pulse { display: none; }
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c49-sweep {\n  from { mask-image: linear-gradient(to right, #000 48%, transparent 52%); mask-size: 300% 100%; mask-repeat: no-repeat; mask-position: 78% 0; }\n  to { mask-image: linear-gradient(to right, #000 48%, transparent 52%); mask-size: 300% 100%; mask-repeat: no-repeat; mask-position: 22% 0; }\n}\n@keyframes c49-appear { from { opacity: 0; } }\n@keyframes c49-pulse {\n  0% { offset-distance: 0%; opacity: 0; }\n  12%, 88% { opacity: 1; }\n  100% { offset-distance: 100%; opacity: 0; }\n}\n@keyframes c49-leak {\n  0% { offset-distance: 0%; opacity: 0; }\n  14% { opacity: 1; }\n  100% { offset-distance: 64%; opacity: 0; }\n}\n.c49-sweep { animation: c49-sweep 1400ms cubic-bezier(0.3, 0, 0.2, 1) backwards; }\n.c49-pulses { animation: c49-appear 600ms ease-out backwards; }\n.c49-pulse { offset-rotate: 0deg; animation: c49-pulse var(--c49-dur) linear var(--c49-delay) infinite; }\n.c49-pulse[data-leak] { animation-name: c49-leak; }\n[data-c49-paused] .c49-pulse { animation-play-state: paused; }\n@media (prefers-reduced-motion: reduce) {\n  .c49-sweep, .c49-pulses { animation: none; }\n  .c49-pulse { display: none; }\n}\nhtml[data-demo=\"frozen\"] :is(.c49-sweep, .c49-pulses) { animation: none; }\nhtml[data-demo=\"frozen\"] .c49-pulse { display: none; }\n" }} />
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-104 justify-center min-w-3xl text-xs w-full" data-chart="chart-r3" role="img" aria-label="Trial journey: 20,400 signups, 2,940 upgraded">
-                <style>{`
- [data-chart=chart-r3] {
-  --color-journey: var(--foreground);
-  --color-upgraded: var(--success);
-  --color-dropped: var(--destructive);
-}
-
-
-.dark [data-chart=chart-r3] {
-  --color-journey: var(--foreground);
-  --color-upgraded: var(--success);
-  --color-dropped: var(--destructive);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-r3] {\n  --color-journey: var(--foreground);\n  --color-upgraded: var(--success);\n  --color-dropped: var(--destructive);\n}\n\n\n.dark [data-chart=chart-r3] {\n  --color-journey: var(--foreground);\n  --color-upgraded: var(--success);\n  --color-dropped: var(--destructive);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="990" height="416" style={{position: "relative", cursor: "default", width: "990px", height: "416px"}}>
@@ -220,20 +181,20 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                             <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none transition-opacity">
                               <text className="pointer-events-none" x="112" y="16" textAnchor="end">
                                 <tspan className="fill-muted-foreground text-xs">
-                                  Channels
+                                  {"Channels"}
                                 </tspan>
                                 <tspan className="fill-foreground font-semibold tabular-nums text-sm" x="112" dy="22">
-                                  4 sources
+                                  {"4 sources"}
                                 </tspan>
                               </text>
                               <rect className="cursor-pointer" x="108" y="64" width="4" height="109.79019607843136" rx="2" fill="var(--color-journey)"></rect>
                               <text className="pointer-events-none text-xs" x="98" y="111.89509803921568" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Docs
+                                  {"Docs"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="98" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    8,420
+                                    {"8,420"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -244,11 +205,11 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="108" y="199.79019607843136" width="4" height="77.71372549019607" rx="2" fill="var(--color-journey)"></rect>
                               <text className="pointer-events-none text-xs" x="98" y="231.6470588235294" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Referrals
+                                  {"Referrals"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="98" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    5,960
+                                    {"5,960"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -259,11 +220,11 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="108" y="303.50392156862745" width="4" height="50.46176470588235" rx="2" fill="var(--color-journey)"></rect>
                               <text className="pointer-events-none text-xs" x="98" y="321.73480392156864" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Newsletter
+                                  {"Newsletter"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="98" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    3,870
+                                    {"3,870"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -274,11 +235,11 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="108" y="379.96568627450984" width="4" height="28.034313725490193" rx="2" fill="var(--color-journey)"></rect>
                               <text className="pointer-events-none text-xs" x="98" y="386.9828431372549" textAnchor="end" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Marketplace
+                                  {"Marketplace"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="98" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    2,150
+                                    {"2,150"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -288,10 +249,10 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                             <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none transition-opacity">
                               <text className="pointer-events-none" x="294.5" y="16" textAnchor="start">
                                 <tspan className="fill-muted-foreground text-xs">
-                                  Signed Up
+                                  {"Signed Up"}
                                 </tspan>
                                 <tspan className="fill-foreground font-semibold tabular-nums text-sm" x="294.5" dy="22">
-                                  20,400
+                                  {"20,400"}
                                 </tspan>
                               </text>
                               <line x1="296.5" x2="296.5" y1="50" y2="58" stroke="var(--border)" strokeDasharray="2 3"></line>
@@ -302,13 +263,13 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                             <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none transition-opacity">
                               <text className="pointer-events-none" x="481" y="16" textAnchor="start">
                                 <tspan className="fill-muted-foreground text-xs">
-                                  Onboarded
+                                  {"Onboarded"}
                                 </tspan>
                                 <tspan className="fill-foreground font-semibold tabular-nums text-sm" x="481" dy="22">
-                                  13,260
+                                  {"13,260"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  65.0%
+                                  {"65.0%"}
                                 </tspan>
                               </text>
                               <line x1="483" x2="483" y1="50" y2="58" stroke="var(--border)" strokeDasharray="2 3"></line>
@@ -320,14 +281,14 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="481" y="262.9" width="4" height="93.1" rx="2" fill="var(--color-dropped)"></rect>
                               <text className="pointer-events-none text-xs" x="495" y="302.45" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Skipped Setup
+                                  {"Skipped Setup"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="495" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    7,140
+                                    {"7,140"}
                                   </tspan>
                                   <tspan className="fill-muted-foreground" dx="5">
-                                    35.0%
+                                    {"35.0%"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -337,13 +298,13 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                             <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none transition-opacity">
                               <text className="pointer-events-none" x="667.5" y="16" textAnchor="start">
                                 <tspan className="fill-muted-foreground text-xs">
-                                  Team Invited
+                                  {"Team Invited"}
                                 </tspan>
                                 <tspan className="fill-foreground font-semibold tabular-nums text-sm" x="667.5" dy="22">
-                                  7,830
+                                  {"7,830"}
                                 </tspan>
                                 <tspan className="fill-muted-foreground tabular-nums text-xs" dx="6">
-                                  59.0%
+                                  {"59.0%"}
                                 </tspan>
                               </text>
                               <line x1="669.5" x2="669.5" y1="50" y2="58" stroke="var(--border)" strokeDasharray="2 3"></line>
@@ -355,14 +316,14 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="667.5" y="192.0970588235294" width="4" height="70.80294117647058" rx="2" fill="var(--color-dropped)"></rect>
                               <text className="pointer-events-none text-xs" x="681.5" y="220.4985294117647" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Went Solo
+                                  {"Went Solo"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="681.5" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    5,430
+                                    {"5,430"}
                                   </tspan>
                                   <tspan className="fill-muted-foreground" dx="5">
-                                    41.0%
+                                    {"41.0%"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -372,24 +333,24 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                             <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none transition-opacity">
                               <text className="pointer-events-none" x="854" y="16" textAnchor="start">
                                 <tspan className="fill-muted-foreground text-xs">
-                                  Converted
+                                  {"Converted"}
                                 </tspan>
                                 <tspan className="fill-success font-semibold tabular-nums text-base" x="854" dy="22">
-                                  14.4%
+                                  {"14.4%"}
                                 </tspan>
                               </text>
                               <line x1="856" x2="856" y1="50" y2="58" stroke="var(--border)" strokeDasharray="2 3"></line>
                               <rect className="cursor-pointer" x="854" y="64" width="4" height="38.33529411764706" rx="2" fill="var(--color-upgraded)"></rect>
                               <text className="pointer-events-none text-xs" x="868" y="76.16764705882353" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Upgraded
+                                  {"Upgraded"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="868" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    2,940
+                                    {"2,940"}
                                   </tspan>
                                   <tspan className="fill-muted-foreground" dx="5">
-                                    37.5%
+                                    {"37.5%"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -400,14 +361,14 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                               <rect className="cursor-pointer" x="854" y="128.33529411764707" width="4" height="63.76176470588235" rx="2" fill="var(--color-dropped)"></rect>
                               <text className="pointer-events-none text-xs" x="868" y="153.21617647058824" textAnchor="start" dominantBaseline="middle" stroke="var(--frame-panel-bg, var(--background))" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
                                 <tspan className="fill-foreground font-medium">
-                                  Didn't Upgrade
+                                  {"Didn't Upgrade"}
                                 </tspan>
                                 <tspan className="tabular-nums" x="868" dy="15">
                                   <tspan className="fill-muted-foreground">
-                                    4,890
+                                    {"4,890"}
                                   </tspan>
                                   <tspan className="fill-muted-foreground" dx="5">
-                                    62.5%
+                                    {"62.5%"}
                                   </tspan>
                                 </tspan>
                               </text>
@@ -419,38 +380,39 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <ul className="sr-only">
             <li>
-              Docs to Signed Up: 8,420 trials
+              {"Docs to Signed Up: 8,420 trials"}
             </li>
             <li>
-              Referrals to Signed Up: 5,960 trials
+              {"Referrals to Signed Up: 5,960 trials"}
             </li>
             <li>
-              Newsletter to Signed Up: 3,870 trials
+              {"Newsletter to Signed Up: 3,870 trials"}
             </li>
             <li>
-              Marketplace to Signed Up: 2,150 trials
+              {"Marketplace to Signed Up: 2,150 trials"}
             </li>
             <li>
-              Signed Up to Onboarded: 13,260 trials
+              {"Signed Up to Onboarded: 13,260 trials"}
             </li>
             <li>
-              Signed Up to Skipped Setup: 7,140 trials
+              {"Signed Up to Skipped Setup: 7,140 trials"}
             </li>
             <li>
-              Onboarded to Team Invited: 7,830 trials
+              {"Onboarded to Team Invited: 7,830 trials"}
             </li>
             <li>
-              Onboarded to Went Solo: 5,430 trials
+              {"Onboarded to Went Solo: 5,430 trials"}
             </li>
             <li>
-              Team Invited to Upgraded: 2,940 trials
+              {"Team Invited to Upgraded: 2,940 trials"}
             </li>
             <li>
-              Team Invited to Didn't Upgrade: 4,890 trials
+              {"Team Invited to Didn't Upgrade: 4,890 trials"}
             </li>
           </ul>
         </FramePanel>
@@ -458,19 +420,19 @@ html[data-demo="frozen"] .c49-pulse { display: none; }
           <span className="flex flex-wrap gap-x-4 gap-y-1 items-center text-muted-foreground">
             <span className="gap-1.5 inline-flex items-center">
               <span className="bg-foreground rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              In Journey
+              {"In Journey"}
             </span>
             <span className="gap-1.5 inline-flex items-center">
               <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Upgraded
+              {"Upgraded"}
             </span>
             <span className="gap-1.5 inline-flex items-center">
               <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
-              Dropped Off
+              {"Dropped Off"}
             </span>
           </span>
           <span className="text-muted-foreground">
-            Pulse density follows trial volume
+            {"Pulse density follows trial volume"}
           </span>
         </footer>
       </Frame>

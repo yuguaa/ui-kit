@@ -16,16 +16,16 @@ export function Pattern() {
         <FramePanel className="space-y-8">
           <div className="flex gap-2 items-center justify-between p-2">
             <h3 className="font-semibold text-base">
-              E-commerce Sales
+              {"E-commerce Sales"}
             </h3>
             <Select>
             <SelectTrigger className="min-w-[140px]" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
               <SelectValue>
-                Last 30 days
+                {"Last 30 days"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -37,14 +37,14 @@ export function Pattern() {
                 <div className="bg-success rounded-full size-2"></div>
                 <div>
                   <div className="text-muted-foreground text-xs tracking-wide uppercase">
-                    Sales
+                    {"Sales"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <span className="font-bold text-xl">
-                      £37,600
+                      {"£37,600"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      +8%
+                      {"+8%"}
                     </Badge>
                   </div>
                 </div>
@@ -53,33 +53,23 @@ export function Pattern() {
                 <div className="bg-warning rounded-full size-2"></div>
                 <div>
                   <div className="text-muted-foreground text-xs tracking-wide uppercase">
-                    Views
+                    {"Views"}
                   </div>
                   <div className="flex gap-2 items-center">
                     <span className="font-bold text-xl">
-                      30,700
+                      {"30,700"}
                     </span>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      +5%
+                      {"+5%"}
                     </Badge>
                   </div>
                 </div>
               </div>
             </div>
             <div className="h-[300px] w-full">
+              <ChartContainer>
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-full justify-center text-xs w-full" data-chart="chart-_r_3_">
-                <style>{`
- [data-chart=chart-_r_3_] {
-  --color-sales: var(--color-success);
-  --color-views: var(--color-warning);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-sales: var(--color-success);
-  --color-views: var(--color-warning);
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-sales: var(--color-success);\n  --color-views: var(--color-warning);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-sales: var(--color-success);\n  --color-views: var(--color-warning);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="726" height="300" style={{position: "relative", cursor: "default", width: "726px", height: "300px"}}>
@@ -139,42 +129,42 @@ export function Pattern() {
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="30" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="30" dy="0.71em">
-                                  Week 1
+                                  {"Week 1"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="163.2" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="163.2" dy="0.71em">
-                                  Week 2
+                                  {"Week 2"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="296.4" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="296.4" dy="0.71em">
-                                  Week 3
+                                  {"Week 3"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="429.59999999999997" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="429.59999999999997" dy="0.71em">
-                                  Week 4
+                                  {"Week 4"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="562.8" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="562.8" dy="0.71em">
-                                  Week 5
+                                  {"Week 5"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="706" stroke="none" fontSize="11" x="696" y="276" textAnchor="middle" fill="#666">
                                 <tspan x="696" dy="0.71em">
-                                  Week 6
+                                  {"Week 6"}
                                 </tspan>
                               </text>
                             </g>
@@ -185,6 +175,7 @@ export function Pattern() {
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
         </FramePanel>

@@ -26,19 +26,19 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center max-w-7xl min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Sprint backlog data grid with drag-and-drop reordering
+        {"Sprint backlog data grid with drag-and-drop reordering"}
       </h1>
       <Frame className="bg-card! w-full" spacing="sm">
         <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) text-foreground">
           <div className="flex flex-col gap-0.5 min-w-0">
             <div className="font-semibold text-sm">
-              Sprint Backlog
+              {"Sprint Backlog"}
             </div>
             <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
-              Drag to prioritize
+              {"Drag to prioritize"}
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="whitespace-nowrap">
-                8 items
+                {"8 items"}
               </span>
             </div>
           </div>
@@ -47,15 +47,18 @@ export function Pattern() {
               <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
               <path d="M3 3v5h5"></path>
             </svg>
-            Reset order
+            {"Reset order"}
           </Button>
         </header>
         <FramePanel className="bg-card p-0! shadow-none!">
           <div className="relative">
+            <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
               <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
+                  <DataGridProvider>
                   <DataGridTableViewport>
+                    <DataGridProvider>
                     <DataGridTable>
                       <colgroup>
                         <col style={{width: "44px"}} />
@@ -73,40 +76,41 @@ export function Pattern() {
                         <tr className="[&>th]:border-b bg-transparent">
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="drag" data-header-id="drag" data-header-depth="0" style={{width: "44px"}}>
                             <span className="sr-only">
-                              Reorder
+                              {"Reorder"}
                             </span>
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 ps-0! px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="rank" data-header-id="rank" data-header-depth="0" style={{width: "40px"}}>
-                            #
+                            {"#"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="task" data-header-id="task" data-header-depth="0" style={{width: "260px"}}>
-                            Task
+                            {"Task"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "165px"}}>
-                            Owner
+                            {"Owner"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="team" data-header-id="team" data-header-depth="0" style={{width: "130px"}}>
-                            Team
+                            {"Team"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="cycle" data-header-id="cycle" data-header-depth="0" style={{width: "110px"}}>
-                            Cycle
+                            {"Cycle"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="dueDate" data-header-id="dueDate" data-header-depth="0" style={{width: "90px"}}>
-                            Due
+                            {"Due"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "125px"}}>
-                            Status
+                            {"Status"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="effort" data-header-id="effort" data-header-depth="0" style={{width: "80px"}}>
-                            Effort
+                            {"Effort"}
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 pe-4! px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" style={{width: "56px"}}>
                             <span className="sr-only">
-                              Actions
+                              {"Actions"}
                             </span>
                           </th>
                         </tr>
                       </thead>
+                      <DataGridProvider>
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 data-dragging:[&>td]:border-t hover:bg-muted/40" data-row-id="PLT-2041" style={{zIndex: "0", position: "relative"}}>
                           <td className="align-middle pe-0! px-2 py-1.5">
@@ -126,7 +130,7 @@ export function Pattern() {
                               <svg className="lucide lucide-flag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                 <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                               </svg>
-                              1
+                              {"1"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -143,15 +147,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Realtime presence
+                                  {"Realtime presence"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2041
+                                    {"PLT-2041"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Feature
+                                    {"Feature"}
                                   </span>
                                 </span>
                               </div>
@@ -163,35 +167,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Leo Grant
+                                {"Leo Grant"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Collaboration
+                              {"Collaboration"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 18
+                              {"Sprint 18"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 08
+                              {"Jul 08"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                              In Progress
+                              {"In Progress"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              8
+                              {"8"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -224,7 +228,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              2
+                              {"2"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -239,15 +243,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  SSO enforcement
+                                  {"SSO enforcement"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2042
+                                    {"PLT-2042"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Security
+                                    {"Security"}
                                   </span>
                                 </span>
                               </div>
@@ -259,35 +263,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Sana Qureshi
+                                {"Sana Qureshi"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Identity
+                              {"Identity"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 18
+                              {"Sprint 18"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 10
+                              {"Jul 10"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                              In Review
+                              {"In Review"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              5
+                              {"5"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -320,7 +324,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              3
+                              {"3"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -334,15 +338,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Webhook retries
+                                  {"Webhook retries"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2043
+                                    {"PLT-2043"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Improvement
+                                    {"Improvement"}
                                   </span>
                                 </span>
                               </div>
@@ -354,35 +358,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Alex Johnson
+                                {"Alex Johnson"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Platform
+                              {"Platform"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 18
+                              {"Sprint 18"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 09
+                              {"Jul 09"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              Ready
+                              {"Ready"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              2
+                              {"2"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -415,7 +419,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              4
+                              {"4"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -429,15 +433,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Audit log export
+                                  {"Audit log export"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2044
+                                    {"PLT-2044"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Improvement
+                                    {"Improvement"}
                                   </span>
                                 </span>
                               </div>
@@ -449,35 +453,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                David Kim
+                                {"David Kim"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Compliance
+                              {"Compliance"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 19
+                              {"Sprint 19"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 12
+                              {"Jul 12"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                              Blocked
+                              {"Blocked"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              3
+                              {"3"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -510,7 +514,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              5
+                              {"5"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -527,15 +531,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Billing usage meters
+                                  {"Billing usage meters"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2045
+                                    {"PLT-2045"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Feature
+                                    {"Feature"}
                                   </span>
                                 </span>
                               </div>
@@ -547,35 +551,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Mira Stone
+                                {"Mira Stone"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Revenue
+                              {"Revenue"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 19
+                              {"Sprint 19"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 16
+                              {"Jul 16"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Planned
+                              {"Planned"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              13
+                              {"13"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -608,7 +612,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              6
+                              {"6"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -624,15 +628,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Search relevance
+                                  {"Search relevance"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2046
+                                    {"PLT-2046"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Research
+                                    {"Research"}
                                   </span>
                                 </span>
                               </div>
@@ -644,35 +648,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Nora Vale
+                                {"Nora Vale"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Search
+                              {"Search"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Discovery
+                              {"Discovery"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 18
+                              {"Jul 18"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Planned
+                              {"Planned"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              8
+                              {"8"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -705,7 +709,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              7
+                              {"7"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -722,15 +726,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Mobile offline mode
+                                  {"Mobile offline mode"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2047
+                                    {"PLT-2047"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Feature
+                                    {"Feature"}
                                   </span>
                                 </span>
                               </div>
@@ -742,35 +746,35 @@ export function Pattern() {
                                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Theo Park
+                                {"Theo Park"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Mobile
+                              {"Mobile"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 20
+                              {"Sprint 20"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 22
+                              {"Jul 22"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Planned
+                              {"Planned"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              13
+                              {"13"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -803,7 +807,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle ps-0! px-2 py-1.5">
                             <span className="tabular-nums text-muted-foreground text-sm">
-                              8
+                              {"8"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
@@ -818,15 +822,15 @@ export function Pattern() {
                               </Item>
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Token rotation
+                                  {"Token rotation"}
                                 </span>
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    PLT-2048
+                                    {"PLT-2048"}
                                   </span>
                                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                   <span className="truncate">
-                                    Security
+                                    {"Security"}
                                   </span>
                                 </span>
                               </div>
@@ -836,39 +840,39 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Avatar className="size-6" size="default">
                                 <AvatarFallback className="text-[10px]">
-                                  RM
+                                  {"RM"}
                                 </AvatarFallback>
                               </Avatar>
                               <span className="min-w-0 text-foreground text-sm truncate">
-                                Ravi Menon
+                                {"Ravi Menon"}
                               </span>
                             </div>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-foreground text-sm truncate">
-                              Security
+                              {"Security"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="block min-w-0 text-muted-foreground text-sm truncate">
-                              Sprint 20
+                              {"Sprint 20"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              Jul 24
+                              {"Jul 24"}
                             </span>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              Planned
+                              {"Planned"}
                             </Badge>
                           </td>
                           <td className="align-middle px-2 py-1.5">
                             <span className="tabular-nums text-foreground text-sm">
-                              5
+                              {"5"}
                               <span className="ms-1 text-muted-foreground text-xs">
-                                pts
+                                {"pts"}
                               </span>
                             </span>
                           </td>
@@ -887,17 +891,19 @@ export function Pattern() {
                           </td>
                         </tr>
                       </DataGridTableBody>
+                      </DataGridProvider>
                     </DataGridTable>
+                    </DataGridProvider>
                   </DataGridTableViewport>
+                  </DataGridProvider>
                   <div id="_r_2_" style={{display: "none"}}>
-                    To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+                    {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
                   </div>
                   <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
                 </div>
               </div>
             </DataGridScrollArea>
+            </DataGridProvider>
           </div>
         </FramePanel>
       </Frame>

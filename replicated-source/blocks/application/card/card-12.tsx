@@ -14,7 +14,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Valuation
+                {"Valuation"}
               </h3>
             </FramePanel>
           </a>
@@ -24,7 +24,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Ledger
+                {"Ledger"}
               </h3>
             </FramePanel>
           </a>
@@ -34,7 +34,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Funding
+                {"Funding"}
               </h3>
             </FramePanel>
           </a>
@@ -44,7 +44,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Cash Flow
+                {"Cash Flow"}
               </h3>
             </FramePanel>
           </a>
@@ -54,7 +54,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Metrics
+                {"Metrics"}
               </h3>
             </FramePanel>
           </a>
@@ -64,7 +64,7 @@ export function Pattern() {
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               </svg>
               <h3 className="group-hover/card:text-primary leading-relaxed text-sm transition-colors">
-                Earnings
+                {"Earnings"}
               </h3>
             </FramePanel>
           </a>

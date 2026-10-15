@@ -42,7 +42,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Deal detail
+        {"Deal detail"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -51,7 +51,7 @@ export function Pattern() {
             <rect width="18" height="18" x="3" y="3" rx="2"></rect>
             <path d="M15 3v18"></path>
           </svg>
-          Open Deal
+          {"Open Deal"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -66,7 +66,7 @@ export function Pattern() {
               <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
               <path d="M12 18V6"></path>
             </svg>
-            DEAL-4821
+            {"DEAL-4821"}
           </span>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close deal detail">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -81,32 +81,32 @@ export function Pattern() {
               <span className="flex-nowrap gap-x-1.5 inline-flex items-center min-w-0">
                 <span className="gap-x-1.5 inline-flex items-center min-w-0">
                   <span className="min-w-0 truncate">
-                    Brightwave Media
+                    {"Brightwave Media"}
                   </span>
                 </span>
                 <span className="gap-x-1.5 inline-flex items-center min-w-0">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="min-w-0 truncate">
-                    Pro Annual
+                    {"Pro Annual"}
                   </span>
                 </span>
               </span>
             </SheetTitle>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-              Negotiation
+              {"Negotiation"}
             </Badge>
           </div>
           <SheetDescription className="text-muted-foreground text-xs" id="base-ui-_r_4_">
             <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
               <span className="gap-x-1.5 inline-flex items-center min-w-0">
                 <span className="min-w-0 truncate">
-                  Closes Jun 28
+                  {"Closes Jun 28"}
                 </span>
               </span>
               <span className="gap-x-1.5 inline-flex items-center min-w-0">
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="min-w-0 truncate">
-                  41 days in pipeline
+                  {"41 days in pipeline"}
                 </span>
               </span>
             </span>
@@ -116,10 +116,10 @@ export function Pattern() {
               <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M20 6 9 17l-5-5"></path>
               </svg>
-              Mark Won
+              {"Mark Won"}
             </Button>
             <Button type="button" tabIndex="0">
-              Mark Lost
+              {"Mark Lost"}
             </Button>
           </div>
         </div>
@@ -131,14 +131,14 @@ export function Pattern() {
               <div className="flex gap-3 items-end justify-between">
                 <div className="flex gap-2 items-baseline">
                   <span className="font-semibold tabular-nums text-4xl text-foreground tracking-tight">
-                    $48,000
+                    {"$48,000"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    +$6K
+                    {"+$6K"}
                   </Badge>
                 </div>
                 <span className="pb-1 text-muted-foreground text-xs">
-                  vs $42K at proposal
+                  {"vs $42K at proposal"}
                 </span>
               </div>
               <div className="bg-muted/55 h-1 mt-1.5 overflow-hidden relative rounded-full">
@@ -148,16 +148,16 @@ export function Pattern() {
                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "75%"}}></ProgressIndicator>
                   </ProgressTrack>
                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                    x
+                    {"x"}
                   </span>
                 </Progress>
               </div>
               <div className="flex gap-2 items-center justify-between text-muted-foreground text-xs">
                 <span>
-                  Win probability
+                  {"Win probability"}
                 </span>
                 <span className="tabular-nums">
-                  75%
+                  {"75%"}
                 </span>
               </div>
             </div>
@@ -165,18 +165,18 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Stage
+                  {"Stage"}
                 </h3>
               </div>
               <div className="flex gap-2 items-center">
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="deal-stage" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Change deal stage">
                   <SelectValue>
-                    Negotiation
+                    {"Negotiation"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -187,35 +187,35 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Key Fields
+                  {"Key Fields"}
                 </h3>
               </div>
               <dl className="gap-x-4 gap-y-2.5 grid grid-cols-[7.5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Account
+                    {"Account"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      Brightwave Media
+                      {"Brightwave Media"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Primary contact
+                    {"Primary contact"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="min-w-0 truncate">
-                          Daniel Cho
+                          {"Daniel Cho"}
                         </span>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="min-w-0 truncate">
-                          VP Marketing
+                          {"VP Marketing"}
                         </span>
                       </span>
                     </span>
@@ -223,29 +223,29 @@ export function Pattern() {
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Close date
+                    {"Close date"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      Jun 28, 2026
+                      {"Jun 28, 2026"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Plan
+                    {"Plan"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="min-w-0 truncate">
-                          Pro Annual
+                          {"Pro Annual"}
                         </span>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="min-w-0 truncate">
-                          45 seats
+                          {"45 seats"}
                         </span>
                       </span>
                     </span>
@@ -253,21 +253,21 @@ export function Pattern() {
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Source
+                    {"Source"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      Inbound
+                      {"Inbound"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Deal ID
+                    {"Deal ID"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      DEAL-4821
+                      {"DEAL-4821"}
                     </span>
                   </dd>
                 </div>
@@ -277,7 +277,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Deal Team
+                  {"Deal Team"}
                 </h3>
               </div>
               <div className="flex gap-3 items-center justify-between">
@@ -290,17 +290,17 @@ export function Pattern() {
                   </Avatar>
                   <Avatar className="size-6" size="default">
                     <AvatarFallback className="text-[10px]">
-                      EW
+                      {"EW"}
                     </AvatarFallback>
                   </Avatar>
                 </AvatarGroup>
                 <p className="flex-wrap gap-x-1.5 inline-flex items-center justify-end min-w-0 text-muted-foreground text-xs">
                   <span className="font-medium text-foreground">
-                    Mira Stone
+                    {"Mira Stone"}
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="truncate">
-                    owns
+                    {"owns"}
                   </span>
                 </p>
               </div>
@@ -309,14 +309,14 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Next Step
+                  {"Next Step"}
                 </h3>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Log activity
+                  {"Log activity"}
                 </Button>
               </div>
               <div className="flex gap-3 items-start">
@@ -334,27 +334,27 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex gap-2 items-start justify-between">
                     <p className="font-medium leading-5 min-w-0 text-foreground text-sm">
-                      Send revised order form
+                      {"Send revised order form"}
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                      Due today
+                      {"Due today"}
                     </Badge>
                   </div>
                   <p className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
                     <span>
-                      Email
+                      {"Email"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="min-w-0 truncate">
-                          Due today
+                          {"Due today"}
                         </span>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="min-w-0 truncate">
-                          4:00 PM
+                          {"4:00 PM"}
                         </span>
                       </span>
                     </span>
@@ -364,7 +364,7 @@ export function Pattern() {
                       <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
                     <span>
-                      Mira Stone
+                      {"Mira Stone"}
                     </span>
                   </div>
                 </div>
@@ -374,35 +374,35 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Financials
+                  {"Financials"}
                 </h3>
               </div>
               <div className="gap-x-4 gap-y-2.5 grid grid-cols-[7.5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Amount
+                    {"Amount"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      $48,000 ARR
+                      {"$48,000 ARR"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Forecast
+                    {"Forecast"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="min-w-0 truncate">
-                          Commit
+                          {"Commit"}
                         </span>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="min-w-0 truncate">
-                          $36K weighted
+                          {"$36K weighted"}
                         </span>
                       </span>
                     </span>
@@ -410,29 +410,29 @@ export function Pattern() {
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Discount
+                    {"Discount"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span>
-                      12% off list
+                      {"12% off list"}
                     </span>
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Term
+                    {"Term"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
                     <span className="flex-wrap gap-x-1.5 inline-flex items-center min-w-0">
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="min-w-0 truncate">
-                          12 months
+                          {"12 months"}
                         </span>
                       </span>
                       <span className="gap-x-1.5 inline-flex items-center min-w-0">
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="min-w-0 truncate">
-                          auto-renew
+                          {"auto-renew"}
                         </span>
                       </span>
                     </span>
@@ -444,26 +444,26 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Note
+                  {"Note"}
                 </h3>
                 <Button type="button" tabIndex="0">
                   <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="M12 5v14"></path>
                   </svg>
-                  Add note
+                  {"Add note"}
                 </Button>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="leading-5 text-foreground text-sm">
-                  Daniel confirmed budget for 45 seats. Legal reviewing the MSA, redlines back by Jun 24. Security questionnaire cleared on Jun 16.
+                  {"Daniel confirmed budget for 45 seats. Legal reviewing the MSA, redlines back by Jun 24. Security questionnaire cleared on Jun 16."}
                 </p>
                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                   <Avatar className="size-5" size="default">
                     <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <span>
-                    Mira Stone
+                    {"Mira Stone"}
                   </span>
                 </div>
               </div>
@@ -472,7 +472,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Activity
+                  {"Activity"}
                 </h3>
               </div>
               <Timeline data-orientation="vertical">
@@ -489,31 +489,31 @@ export function Pattern() {
                       <span className="flex-wrap font-medium gap-x-1.5 inline-flex items-center min-w-0 text-foreground">
                         <span className="gap-x-1.5 inline-flex items-center min-w-0">
                           <span className="min-w-0 truncate">
-                            Pricing call
+                            {"Pricing call"}
                           </span>
                         </span>
                         <span className="gap-x-1.5 inline-flex items-center min-w-0">
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="min-w-0 truncate">
-                            Connected
+                            {"Connected"}
                           </span>
                         </span>
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      2h ago
+                      {"2h ago"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Daniel Cho agreed to 45 seats at 12% off. Asked for revised order form by end of week.
+                      {"Daniel Cho agreed to 45 seats at 12% off. Asked for revised order form by end of week."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Mira Stone
+                        {"Mira Stone"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -529,23 +529,23 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Security questionnaire returned
+                        {"Security questionnaire returned"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Yesterday
+                      {"Yesterday"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      SOC 2 report and DPA sent to Brightwave legal. No open items.
+                      {"SOC 2 report and DPA sent to Brightwave legal. No open items."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Nora Vale
+                        {"Nora Vale"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -564,31 +564,31 @@ export function Pattern() {
                       <span className="flex-wrap font-medium gap-x-1.5 inline-flex items-center min-w-0 text-foreground">
                         <span className="gap-x-1.5 inline-flex items-center min-w-0">
                           <span className="min-w-0 truncate">
-                            Workflow demo
+                            {"Workflow demo"}
                           </span>
                         </span>
                         <span className="gap-x-1.5 inline-flex items-center min-w-0">
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span className="min-w-0 truncate">
-                            6 attendees
+                            {"6 attendees"}
                           </span>
                         </span>
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 11
+                      {"Jun 11"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Walked the Brightwave team through automations and reporting. Strong interest from ops.
+                      {"Walked the Brightwave team through automations and reporting. Strong interest from ops."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Mira Stone
+                        {"Mira Stone"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -606,25 +606,25 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Discovery with VP Marketing
+                        {"Discovery with VP Marketing"}
                       </span>
                     </TimelineTitle>
                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                      Jun 4
+                      {"Jun 4"}
                     </span>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Scoped 45 seats across two teams. Budget cycle closes end of Q2.
+                      {"Scoped 45 seats across two teams. Budget cycle closes end of Q2."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarFallback className="text-[9px]">
-                          EW
+                          {"EW"}
                         </AvatarFallback>
                       </Avatar>
                       <span>
-                        Emma Wilson
+                        {"Emma Wilson"}
                       </span>
                     </div>
                   </TimelineContent>

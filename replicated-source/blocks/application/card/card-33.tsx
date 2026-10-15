@@ -202,10 +202,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-0.5">
                 <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                  New Order
+                  {"New Order"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  143/pkg
+                  {"143/pkg"}
                 </p>
               </div>
             </div>
@@ -401,10 +401,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-0.5">
                 <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                  Low Stock Alerts
+                  {"Low Stock Alerts"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  27/items
+                  {"27/items"}
                 </p>
               </div>
             </div>
@@ -599,10 +599,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-0.5">
                 <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                  Restocked
+                  {"Restocked"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  320/items
+                  {"320/items"}
                 </p>
               </div>
             </div>
@@ -794,10 +794,10 @@ export function Pattern() {
               </div>
               <div className="flex flex-col gap-0.5">
                 <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                  Avg. Order Size
+                  {"Avg. Order Size"}
                 </a>
                 <p className="leading-relaxed text-muted-foreground text-xs">
-                  3.2/items
+                  {"3.2/items"}
                 </p>
               </div>
             </div>

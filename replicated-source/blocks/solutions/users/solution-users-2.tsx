@@ -40,19 +40,19 @@ export function Pattern() {
           <div className="flex-1 min-w-0 space-y-1">
             <div className="flex flex-wrap gap-2 items-center">
               <h1 className="font-semibold text-xl tracking-tight">
-                Nora Vale
+                {"Nora Vale"}
               </h1>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                Active
+                {"Active"}
               </Badge>
             </div>
             <p className="flex gap-1.5 items-center text-muted-foreground text-sm truncate">
               <span className="truncate">
-                nora.vale@acmecloud.com
+                {"nora.vale@acmecloud.com"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span className="truncate">
-                Product, Design
+                {"Product, Design"}
               </span>
             </p>
           </div>
@@ -68,7 +68,7 @@ export function Pattern() {
                   <circle cx="9" cy="7" r="4"></circle>
                 </svg>
                 <span className="truncate">
-                  Access
+                  {"Access"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
@@ -77,7 +77,7 @@ export function Pattern() {
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="truncate">
-                  Authentication
+                  {"Authentication"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
@@ -87,7 +87,7 @@ export function Pattern() {
                   <line x1="12" x2="12" y1="17" y2="21"></line>
                 </svg>
                 <span className="truncate">
-                  Sessions
+                  {"Sessions"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -99,7 +99,7 @@ export function Pattern() {
                   <path d="m3 7 2 2 4-4"></path>
                 </svg>
                 <span className="truncate">
-                  Activity
+                  {"Activity"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
@@ -111,7 +111,7 @@ export function Pattern() {
                   <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                 </svg>
                 <span className="truncate">
-                  Danger zone
+                  {"Danger zone"}
                 </span>
               </TabsTrigger>
             </TabsList>
@@ -122,15 +122,15 @@ export function Pattern() {
                 <Frame className="text-foreground" spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <div className="capitalize font-semibold text-sm">
-                      Roles & Teams
+                      {"Roles & Teams"}
                     </div>
                     <div className="dark:text-foreground/70 flex gap-1.5 items-center text-muted-foreground text-sm">
                       <span>
-                        2 roles
+                        {"2 roles"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span>
-                        2 teams assigned
+                        {"2 teams assigned"}
                       </span>
                     </div>
                   </header>
@@ -141,12 +141,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="access-role">
                               <span className="capitalize">
-                                Roles
+                                {"Roles"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Member plus a custom role.
+                            {"Member plus a custom role."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -154,11 +154,11 @@ export function Pattern() {
                             <Select>
                             <SelectTrigger className="w-full" type="button" tabIndex="0" id="access-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Member
+                                {"Member"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -174,22 +174,22 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Assigned roles
+                                {"Assigned roles"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Applied on every sign-in.
+                            {"Applied on every sign-in."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 max-w-none min-w-0 w-full">
                           <div className="flex justify-start w-full">
                             <div className="flex flex-wrap gap-1.5">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                Member
+                                {"Member"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                                Support Agent
+                                {"Support Agent"}
                               </Badge>
                             </div>
                           </div>
@@ -203,12 +203,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="access-team">
                               <span className="capitalize">
-                                Team
+                                {"Team"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Add Nora to a team.
+                            {"Add Nora to a team."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -216,11 +216,11 @@ export function Pattern() {
                             <Select>
                             <SelectTrigger className="w-full" type="button" tabIndex="0" id="access-team" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Product
+                                {"Product"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -236,22 +236,22 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Teams
+                                {"Teams"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Drives default access scopes.
+                            {"Drives default access scopes."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 max-w-none min-w-0 w-full">
                           <div className="flex justify-start w-full">
                             <div className="flex flex-wrap gap-1.5">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Product
+                                {"Product"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Design
+                                {"Design"}
                               </Badge>
                             </div>
                           </div>
@@ -265,28 +265,28 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Permission scopes
+                                {"Permission scopes"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Resolved from roles and teams.
+                            {"Resolved from roles and teams."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 max-w-none min-w-0 w-full">
                           <div className="flex justify-start w-full">
                             <div className="flex flex-wrap gap-1.5">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Members, Read
+                                {"Members, Read"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                Billing, None
+                                {"Billing, None"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                Audit log, Read
+                                {"Audit log, Read"}
                               </Badge>
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                Settings, Write
+                                {"Settings, Write"}
                               </Badge>
                             </div>
                           </div>
@@ -296,20 +296,20 @@ export function Pattern() {
                   </FramePanel>
                   <footer className="flex flex-row gap-2 items-center justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
                     <Button type="button" tabIndex="0">
-                      Add role
+                      {"Add role"}
                     </Button>
                     <Button type="button" disabled="" tabIndex="0" disabled>
-                      Save access
+                      {"Save access"}
                     </Button>
                   </footer>
                 </Frame>
                 <Frame className="text-foreground" spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <div className="capitalize font-semibold text-sm">
-                      Effective access
+                      {"Effective access"}
                     </div>
                     <div className="dark:text-foreground/70 text-muted-foreground text-sm">
-                      What this member can reach today.
+                      {"What this member can reach today."}
                     </div>
                   </header>
                   <FramePanel className="space-y-3">
@@ -318,17 +318,17 @@ export function Pattern() {
                         <div className="flex gap-3 items-start justify-between">
                           <div className="min-w-0">
                             <p className="text-muted-foreground text-xs">
-                              Effective access
+                              {"Effective access"}
                             </p>
                             <p className="font-medium mt-1 text-sm">
-                              Read across Members and Audit log
+                              {"Read across Members and Audit log"}
                             </p>
                             <p className="leading-5 mt-1 text-muted-foreground text-sm">
-                              Inherited from the Member role and the Product team.
+                              {"Inherited from the Member role and the Product team."}
                             </p>
                           </div>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                            Read
+                            {"Read"}
                           </Badge>
                         </div>
                       </div>
@@ -337,17 +337,17 @@ export function Pattern() {
                         <div className="flex gap-3 items-start justify-between">
                           <div className="min-w-0">
                             <p className="text-muted-foreground text-xs">
-                              Elevated scope
+                              {"Elevated scope"}
                             </p>
                             <p className="font-medium mt-1 text-sm">
-                              Write on Settings
+                              {"Write on Settings"}
                             </p>
                             <p className="leading-5 mt-1 text-muted-foreground text-sm">
-                              Granted by the custom Support Agent role. Expires in 7 days.
+                              {"Granted by the custom Support Agent role. Expires in 7 days."}
                             </p>
                           </div>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                            Write
+                            {"Write"}
                           </Badge>
                         </div>
                       </div>

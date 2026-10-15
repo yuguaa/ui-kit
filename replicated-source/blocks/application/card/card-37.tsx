@@ -10,7 +10,7 @@ export function Pattern() {
         <div className="gap-1 grid grid-cols-1 md:grid-cols-3 w-full">
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="MRR">
-              MRR
+              {"MRR"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -21,13 +21,13 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                $210.5k
+                {"$210.5k"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="TTM Gross Revenue">
-              TTM Gross Revenue
+              {"TTM Gross Revenue"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -37,13 +37,13 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                $2.4M
+                {"$2.4M"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="Customer Base">
-              Customer Base
+              {"Customer Base"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -55,13 +55,13 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                150-500
+                {"150-500"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="Annual Growth Rate">
-              Annual Growth Rate
+              {"Annual Growth Rate"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -71,13 +71,13 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                45%
+                {"45%"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="Avg. Order Value">
-              Avg. Order Value
+              {"Avg. Order Value"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -88,13 +88,13 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                $320
+                {"$320"}
               </span>
             </div>
           </FramePanel>
           <FramePanel className="rounded-md space-y-4.5 w-[180px]">
             <h3 className="leading-tight text-muted-foreground text-sm truncate" title="Date Founded">
-              Date Founded
+              {"Date Founded"}
             </h3>
             <div className="flex gap-2 items-center">
               <div className="[&_svg]:size-4.5 [&_svg]:text-green-600 flex items-center justify-center shrink-0">
@@ -106,7 +106,7 @@ export function Pattern() {
                 </svg>
               </div>
               <span className="font-medium leading-tight text-base text-foreground">
-                Nov 2018
+                {"Nov 2018"}
               </span>
             </div>
           </FramePanel>

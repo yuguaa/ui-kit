@@ -42,7 +42,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        New cron job
+        {"New cron job"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
@@ -51,7 +51,7 @@ export function Pattern() {
             <path d="M5 12h14"></path>
             <path d="M12 5v14"></path>
           </svg>
-          New Job
+          {"New Job"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -61,7 +61,7 @@ export function Pattern() {
       <div className="border-b flex flex-col px-5 py-3.5 shrink-0">
         <div className="flex gap-2 items-center justify-between">
           <SheetTitle className="min-w-0 text-lg" id="base-ui-_r_3_">
-            New Job
+            {"New Job"}
           </SheetTitle>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -71,7 +71,7 @@ export function Pattern() {
           </SheetClose>
         </div>
         <SheetDescription className="mt-1" id="base-ui-_r_4_">
-          Schedule a command on Harbor Ops.
+          {"Schedule a command on Harbor Ops."}
         </SheetDescription>
       </div>
       <form className="flex flex-1 flex-col min-h-0" id="sheet-13-new-job-form" novalidate="">
@@ -79,13 +79,13 @@ export function Pattern() {
           <div className="flex flex-col gap-5 px-5 py-5">
             <Field role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-name">
-                Name
+                {"Name"}
               </FieldLabel>
               <Input id="sheet-13-new-name" placeholder="Nightly ledger reconciliation" value=""></Input>
             </Field>
             <Field role="group" data-orientation="vertical">
               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-command">
-                Command
+                {"Command"}
               </FieldLabel>
               <InputGroup role="group">
                 <InputGroupAddon role="group" data-align="inline-start">
@@ -100,38 +100,38 @@ export function Pattern() {
             </Field>
             <FieldSet>
               <FieldLegend variant="label">
-                Schedule
+                {"Schedule"}
               </FieldLegend>
               <FieldGroup className="gap-4">
                 <ToggleGroup className="hidden sm:flex w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Schedule presets" style={{"--gap": "0"}}>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                    Every 5 min
+                    {"Every 5 min"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0">
-                    Hourly
+                    {"Hourly"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                    Daily
+                    {"Daily"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                    Weekdays
+                    {"Weekdays"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                    Weekly
+                    {"Weekly"}
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
-                    Monthly
+                    {"Monthly"}
                   </ToggleGroupItem>
                 </ToggleGroup>
                 <div className="sm:hidden">
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Schedule preset">
                     <SelectValue>
-                      Hourly
+                      {"Hourly"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -139,7 +139,7 @@ export function Pattern() {
                 </div>
                 <Field role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-cron">
-                    Cron Expression
+                    {"Cron Expression"}
                   </FieldLabel>
                   <InputGroup role="group">
                     <InputGroupAddon role="group" data-align="inline-start">
@@ -155,21 +155,21 @@ export function Pattern() {
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 font-mono min-w-0 outline-none placeholder:text-muted-foreground w-full" id="sheet-13-new-cron" spellCheck="false" autoComplete="off" aria-describedby="sheet-13-new-cron-line" placeholder="0 2 * * *" value="0 * * * *" />
                   </InputGroup>
                   <FieldDescription id="sheet-13-new-cron-line">
-                    Hourly at :00 UTC
+                    {"Hourly at :00 UTC"}
                   </FieldDescription>
                 </Field>
                 <Field role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-timezone">
-                    Timezone
+                    {"Timezone"}
                   </FieldLabel>
                   <Select>
                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-13-new-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
-                      UTC
+                      {"UTC"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -177,31 +177,31 @@ export function Pattern() {
                 </Field>
                 <section className="flex flex-col gap-2" aria-live="polite">
                   <h3 className="font-medium text-muted-foreground text-xs">
-                    Next 3 Runs
+                    {"Next 3 Runs"}
                   </h3>
                   <ol className="flex flex-col gap-1.5 text-sm">
                     <li className="flex gap-3 items-center justify-between">
                       <span className="min-w-0 tabular-nums truncate">
-                        Tue, Sep 29, 15:00 UTC
+                        {"Tue, Sep 29, 15:00 UTC"}
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        in 40m
+                        {"in 40m"}
                       </span>
                     </li>
                     <li className="flex gap-3 items-center justify-between">
                       <span className="min-w-0 tabular-nums truncate">
-                        Tue, Sep 29, 16:00 UTC
+                        {"Tue, Sep 29, 16:00 UTC"}
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        in 1h 40m
+                        {"in 1h 40m"}
                       </span>
                     </li>
                     <li className="flex gap-3 items-center justify-between">
                       <span className="min-w-0 tabular-nums truncate">
-                        Tue, Sep 29, 17:00 UTC
+                        {"Tue, Sep 29, 17:00 UTC"}
                       </span>
                       <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                        in 2h 40m
+                        {"in 2h 40m"}
                       </span>
                     </li>
                   </ol>
@@ -211,7 +211,7 @@ export function Pattern() {
             <div className="gap-4 grid min-[360px]:grid-cols-2">
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-service">
-                  Service
+                  {"Service"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-13-new-service" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -223,13 +223,13 @@ export function Pattern() {
                         <path d="M6 12h.01M18 12h.01"></path>
                       </svg>
                       <span className="truncate">
-                        payments-api
+                        {"payments-api"}
                       </span>
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -237,18 +237,18 @@ export function Pattern() {
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-cluster">
-                  Cluster
+                  {"Cluster"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-13-new-cluster" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
                     <span className="font-mono truncate">
-                      prod-us-east-1
+                      {"prod-us-east-1"}
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -256,18 +256,18 @@ export function Pattern() {
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-environment">
-                  Environment
+                  {"Environment"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-13-new-environment" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      Production
+                      {"Production"}
                     </Badge>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -275,7 +275,7 @@ export function Pattern() {
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-owner">
-                  Owner
+                  {"Owner"}
                 </FieldLabel>
                 <Select>
                 <SelectTrigger className="w-full" type="button" tabIndex="0" id="sheet-13-new-owner" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -285,13 +285,13 @@ export function Pattern() {
                         <AvatarImage alt="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span className="truncate">
-                        Nina Santos
+                        {"Nina Santos"}
                       </span>
                     </span>
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -301,10 +301,10 @@ export function Pattern() {
             <Field role="group" data-orientation="horizontal">
               <FieldContent>
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sheet-13-new-enabled" id="sheet-13-new-enabled-label">
-                  Start enabled
+                  {"Start enabled"}
                 </FieldLabel>
                 <FieldDescription>
-                  Runs on schedule once created.
+                  {"Runs on schedule once created."}
                 </FieldDescription>
               </FieldContent>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_10_" aria-checked="true" size="sm" aria-labelledby="sheet-13-new-enabled-label">
@@ -317,22 +317,22 @@ export function Pattern() {
         <div className="bg-muted border-t flex gap-2 items-center px-5 py-3 shrink-0">
           <p className="flex gap-1.5 items-center me-auto min-w-0 tabular-nums text-muted-foreground text-xs" aria-live="polite">
             <span className="truncate">
-              First run in 40m
+              {"First run in 40m"}
             </span>
             <span className="bg-muted-foreground/40 max-sm:hidden rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="max-sm:hidden shrink-0">
-              15:00 UTC
+              {"15:00 UTC"}
             </span>
           </p>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </SheetClose>
           <Button type="submit" tabIndex="0">
             <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            Create Job
+            {"Create Job"}
           </Button>
         </div>
       </form>

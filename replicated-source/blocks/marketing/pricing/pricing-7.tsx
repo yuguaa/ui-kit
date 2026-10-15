@@ -43,7 +43,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="pricing-7-page-heading">
       <h1 className="sr-only" id="pricing-7-page-heading">
-        Plan picker dialog
+        {"Plan picker dialog"}
       </h1>
       <Empty>
         <EmptyHeader>
@@ -56,16 +56,16 @@ export function Pattern() {
             </IconTile>
           </div>
           <EmptyTitle>
-            Upgrade Your Plan
+            {"Upgrade Your Plan"}
           </EmptyTitle>
           <EmptyDescription>
-            Compare plans and switch in a minute.
+            {"Compare plans and switch in a minute."}
           </EmptyDescription>
         </EmptyHeader>
         <EmptyContent>
           <Dialog>
           <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-            View Plans
+            {"View Plans"}
           </DialogTrigger>
           </Dialog>
         </EmptyContent>
@@ -75,10 +75,10 @@ export function Pattern() {
     <DialogContent className="flex flex-col gap-0 h-fit inset-0 lg:max-h-[min(86svh,41rem)] m-auto max-h-[min(86svh,44rem)] md:max-h-[min(86svh,55rem)] md:max-w-[min(60rem,calc(100%-2rem))] overflow-hidden p-0 sm:max-w-lg translate-x-0 translate-y-0" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="border-b px-5 py-4 shrink-0">
         <DialogTitle className="font-semibold text-lg" id="base-ui-_r_3_">
-          Choose Your Plan
+          {"Choose Your Plan"}
         </DialogTitle>
         <DialogDescription id="base-ui-_r_4_">
-          Basic and Team start with 14 days free.
+          {"Basic and Team start with 14 days free."}
         </DialogDescription>
       </DialogHeader>
       <div className="grid min-h-0">
@@ -87,7 +87,7 @@ export function Pattern() {
             <div className="flex flex-col md:grid md:grid-cols-[auto_minmax(0,1fr)] md:grid-rows-[auto_minmax(0,1fr)] md:h-full">
               <div className="flex items-center lg:min-w-80 md:border-r md:col-start-1 md:min-w-72 md:row-start-1 pt-4 px-5">
                 <p className="font-medium" id="_r_6_">
-                  Plans
+                  {"Plans"}
                 </p>
               </div>
               <ScrollArea className="[&>[data-slot=scroll-area-viewport]]:focus-visible:ring-inset border-b md:[&>[data-slot=scroll-area-viewport]]:scroll-fade-y md:border-b-0 md:border-r md:col-start-1 md:min-h-0 md:row-start-2" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
@@ -106,16 +106,16 @@ export function Pattern() {
                       </ItemMedia>
                       <ItemContent className="gap-0.5 min-w-0">
                         <ItemTitle>
-                          Basic
+                          {"Basic"}
                         </ItemTitle>
                         <ItemDescription className="text-xs truncate">
-                          For solo support
+                          {"For solo support"}
                         </ItemDescription>
                       </ItemContent>
                       <ItemActions className="font-medium tabular-nums text-foreground">
-                        $15
+                        {"$15"}
                         <span className="sr-only">
-                          per month
+                          {"per month"}
                         </span>
                       </ItemActions>
                     </Item>
@@ -138,16 +138,16 @@ export function Pattern() {
                       </ItemMedia>
                       <ItemContent className="gap-0.5 min-w-0">
                         <ItemTitle>
-                          Team
+                          {"Team"}
                         </ItemTitle>
                         <ItemDescription className="text-xs truncate">
-                          For growing teams
+                          {"For growing teams"}
                         </ItemDescription>
                       </ItemContent>
                       <ItemActions className="font-medium tabular-nums text-foreground">
-                        $45
+                        {"$45"}
                         <span className="sr-only">
-                          per month
+                          {"per month"}
                         </span>
                       </ItemActions>
                     </Item>
@@ -167,16 +167,16 @@ export function Pattern() {
                       </ItemMedia>
                       <ItemContent className="gap-0.5 min-w-0">
                         <ItemTitle>
-                          Enterprise
+                          {"Enterprise"}
                         </ItemTitle>
                         <ItemDescription className="text-xs truncate">
-                          For large companies
+                          {"For large companies"}
                         </ItemDescription>
                       </ItemContent>
                       <ItemActions className="font-medium tabular-nums text-foreground">
-                        $140
+                        {"$140"}
                         <span className="sr-only">
-                          per month
+                          {"per month"}
                         </span>
                       </ItemActions>
                     </Item>
@@ -187,12 +187,12 @@ export function Pattern() {
                 <Tabs data-orientation="horizontal" activationDirection="none">
                   <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Billing period">
                     <TabsTrigger className="scroll-my-9" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_i_">
-                      Monthly
+                      {"Monthly"}
                     </TabsTrigger>
                     <TabsTrigger className="scroll-my-9" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_j_" compositeItemActive="">
-                      Yearly
+                      {"Yearly"}
                       <Badge className="-mr-1 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        2 Months Free
+                        {"2 Months Free"}
                       </Badge>
                     </TabsTrigger>
                   </TabsList>
@@ -204,27 +204,27 @@ export function Pattern() {
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-wrap gap-2 items-center">
                         <h3 className="font-semibold text-lg">
-                          Basic
+                          {"Basic"}
                         </h3>
                       </div>
                       <div className="flex flex-col gap-1">
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <span className="font-semibold tabular-nums text-4xl tracking-tight">
-                            $15
+                            {"$15"}
                           </span>
                           <span className="text-muted-foreground">
-                            per month
+                            {"per month"}
                           </span>
                         </p>
                         <p className="tabular-nums text-muted-foreground">
-                          Yearly billing saves $36 a year
+                          {"Yearly billing saves $36 a year"}
                         </p>
                       </div>
                     </div>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
                     <div className="flex flex-col gap-3">
                       <p className="font-medium">
-                        Includes
+                        {"Includes"}
                       </p>
                       <ul className="*:break-inside-avoid @min-[30rem]/plan:columns-2 [&>li+li]:mt-3 gap-x-6" role="list">
                         <li className="flex gap-2 items-start">
@@ -235,9 +235,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              2
+                              {"2"}
                             </span>
-                            agent seats
+                            {"agent seats"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -248,9 +248,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              1
+                              {"1"}
                             </span>
-                            shared inbox
+                            {"shared inbox"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -261,9 +261,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              90 days
+                              {"90 days"}
                             </span>
-                            of ticket history
+                            {"of ticket history"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -274,9 +274,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              1 GB
+                              {"1 GB"}
                             </span>
-                            of attachment storage
+                            {"of attachment storage"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -287,9 +287,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              25
+                              {"25"}
                             </span>
-                            help center articles
+                            {"help center articles"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -299,7 +299,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Saved replies
+                            {"Saved replies"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -309,7 +309,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Ticket tags and filters
+                            {"Ticket tags and filters"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -319,7 +319,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Customer contact profiles
+                            {"Customer contact profiles"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -329,7 +329,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Website chat widget
+                            {"Website chat widget"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -339,7 +339,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Mobile apps for agents
+                            {"Mobile apps for agents"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -349,7 +349,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Email support
+                            {"Email support"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -361,9 +361,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="sr-only">
-                              Not included:
+                              {"Not included:"}
                             </span>
-                            Routing and assignment rules
+                            {"Routing and assignment rules"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -375,9 +375,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="sr-only">
-                              Not included:
+                              {"Not included:"}
                             </span>
-                            Team performance reports
+                            {"Team performance reports"}
                           </span>
                         </li>
                       </ul>
@@ -389,33 +389,33 @@ export function Pattern() {
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-wrap gap-2 items-center">
                         <h3 className="font-semibold text-lg">
-                          Team
+                          {"Team"}
                           <span className="sr-only">
-                            , Most Popular
+                            {", Most Popular"}
                           </span>
                         </h3>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow" aria-hidden="true">
-                          Most Popular
+                          {"Most Popular"}
                         </Badge>
                       </div>
                       <div className="flex flex-col gap-1">
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <span className="font-semibold tabular-nums text-4xl tracking-tight">
-                            $45
+                            {"$45"}
                           </span>
                           <span className="text-muted-foreground">
-                            per month
+                            {"per month"}
                           </span>
                         </p>
                         <p className="tabular-nums text-muted-foreground">
-                          Yearly billing saves $108 a year
+                          {"Yearly billing saves $108 a year"}
                         </p>
                       </div>
                     </div>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
                     <div className="flex flex-col gap-3">
                       <p className="font-medium">
-                        Everything in Basic, plus
+                        {"Everything in Basic, plus"}
                       </p>
                       <ul className="*:break-inside-avoid @min-[30rem]/plan:columns-2 [&>li+li]:mt-3 gap-x-6" role="list">
                         <li className="flex gap-2 items-start">
@@ -426,9 +426,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              10
+                              {"10"}
                             </span>
-                            agent seats
+                            {"agent seats"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -439,9 +439,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              5
+                              {"5"}
                             </span>
-                            shared inboxes
+                            {"shared inboxes"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -452,9 +452,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              Unlimited
+                              {"Unlimited"}
                             </span>
-                            ticket history
+                            {"ticket history"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -465,9 +465,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              25 GB
+                              {"25 GB"}
                             </span>
-                            of attachment storage
+                            {"of attachment storage"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -477,7 +477,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Routing and assignment rules
+                            {"Routing and assignment rules"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -487,7 +487,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Response time targets
+                            {"Response time targets"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -497,7 +497,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Agent collision alerts
+                            {"Agent collision alerts"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -507,7 +507,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Private notes and mentions
+                            {"Private notes and mentions"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -517,7 +517,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Customer satisfaction surveys
+                            {"Customer satisfaction surveys"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -527,7 +527,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Team performance reports
+                            {"Team performance reports"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -537,7 +537,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Business hours and holidays
+                            {"Business hours and holidays"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -547,7 +547,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Priority chat support
+                            {"Priority chat support"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -559,9 +559,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="sr-only">
-                              Not included:
+                              {"Not included:"}
                             </span>
-                            SAML single sign-on
+                            {"SAML single sign-on"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -573,9 +573,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="sr-only">
-                              Not included:
+                              {"Not included:"}
                             </span>
-                            Dedicated success manager
+                            {"Dedicated success manager"}
                           </span>
                         </li>
                       </ul>
@@ -587,27 +587,27 @@ export function Pattern() {
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-wrap gap-2 items-center">
                         <h3 className="font-semibold text-lg">
-                          Enterprise
+                          {"Enterprise"}
                         </h3>
                       </div>
                       <div className="flex flex-col gap-1">
                         <p className="flex flex-wrap gap-x-2 items-baseline">
                           <span className="font-semibold tabular-nums text-4xl tracking-tight">
-                            $140
+                            {"$140"}
                           </span>
                           <span className="text-muted-foreground">
-                            per month
+                            {"per month"}
                           </span>
                         </p>
                         <p className="tabular-nums text-muted-foreground">
-                          Yearly billing saves $336 a year
+                          {"Yearly billing saves $336 a year"}
                         </p>
                       </div>
                     </div>
                     <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
                     <div className="flex flex-col gap-3">
                       <p className="font-medium">
-                        Everything in Team, plus
+                        {"Everything in Team, plus"}
                       </p>
                       <ul className="*:break-inside-avoid @min-[30rem]/plan:columns-2 [&>li+li]:mt-3 gap-x-6" role="list">
                         <li className="flex gap-2 items-start">
@@ -618,9 +618,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              50
+                              {"50"}
                             </span>
-                            agent seats
+                            {"agent seats"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -631,9 +631,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              Unlimited
+                              {"Unlimited"}
                             </span>
-                            shared inboxes
+                            {"shared inboxes"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -644,9 +644,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              250 GB
+                              {"250 GB"}
                             </span>
-                            of attachment storage
+                            {"of attachment storage"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -657,9 +657,9 @@ export function Pattern() {
                           </span>
                           <span className="min-w-0 text-muted-foreground">
                             <span className="font-medium tabular-nums">
-                              99.9%
+                              {"99.9%"}
                             </span>
-                            uptime commitment
+                            {"uptime commitment"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -669,7 +669,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Custom roles and permissions
+                            {"Custom roles and permissions"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -679,7 +679,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            SAML single sign-on
+                            {"SAML single sign-on"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -689,7 +689,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Audit log export
+                            {"Audit log export"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -699,7 +699,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Custom data retention
+                            {"Custom data retention"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -709,7 +709,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Regional data hosting
+                            {"Regional data hosting"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -719,7 +719,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Sandbox workspace
+                            {"Sandbox workspace"}
                           </span>
                         </li>
                         <li className="flex gap-2 items-start">
@@ -729,7 +729,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 text-muted-foreground">
-                            Dedicated success manager
+                            {"Dedicated success manager"}
                           </span>
                         </li>
                       </ul>
@@ -744,33 +744,33 @@ export function Pattern() {
                       <div className="flex flex-col gap-3">
                         <div className="flex flex-wrap gap-2 items-center">
                           <h3 className="font-semibold text-lg">
-                            Team
+                            {"Team"}
                             <span className="sr-only">
-                              , Most Popular
+                              {", Most Popular"}
                             </span>
                           </h3>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow" aria-hidden="true">
-                            Most Popular
+                            {"Most Popular"}
                           </Badge>
                         </div>
                         <div className="flex flex-col gap-1">
                           <p className="flex flex-wrap gap-x-2 items-baseline">
                             <span className="font-semibold tabular-nums text-4xl tracking-tight">
-                              $45
+                              {"$45"}
                             </span>
                             <span className="text-muted-foreground">
-                              per month
+                              {"per month"}
                             </span>
                           </p>
                           <p className="tabular-nums text-muted-foreground">
-                            Yearly billing saves $108 a year
+                            {"Yearly billing saves $108 a year"}
                           </p>
                         </div>
                       </div>
                       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
                       <div className="flex flex-col gap-3">
                         <p className="font-medium">
-                          Everything in Basic, plus
+                          {"Everything in Basic, plus"}
                         </p>
                         <ul className="*:break-inside-avoid @min-[30rem]/plan:columns-2 [&>li+li]:mt-3 gap-x-6" role="list">
                           <li className="flex gap-2 items-start">
@@ -781,9 +781,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="font-medium tabular-nums">
-                                10
+                                {"10"}
                               </span>
-                              agent seats
+                              {"agent seats"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -794,9 +794,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="font-medium tabular-nums">
-                                5
+                                {"5"}
                               </span>
-                              shared inboxes
+                              {"shared inboxes"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -807,9 +807,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="font-medium tabular-nums">
-                                Unlimited
+                                {"Unlimited"}
                               </span>
-                              ticket history
+                              {"ticket history"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -820,9 +820,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="font-medium tabular-nums">
-                                25 GB
+                                {"25 GB"}
                               </span>
-                              of attachment storage
+                              {"of attachment storage"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -832,7 +832,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Routing and assignment rules
+                              {"Routing and assignment rules"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -842,7 +842,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Response time targets
+                              {"Response time targets"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -852,7 +852,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Agent collision alerts
+                              {"Agent collision alerts"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -862,7 +862,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Private notes and mentions
+                              {"Private notes and mentions"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -872,7 +872,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Customer satisfaction surveys
+                              {"Customer satisfaction surveys"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -882,7 +882,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Team performance reports
+                              {"Team performance reports"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -892,7 +892,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Business hours and holidays
+                              {"Business hours and holidays"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -902,7 +902,7 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="min-w-0 text-muted-foreground">
-                              Priority chat support
+                              {"Priority chat support"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -914,9 +914,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="sr-only">
-                                Not included:
+                                {"Not included:"}
                               </span>
-                              SAML single sign-on
+                              {"SAML single sign-on"}
                             </span>
                           </li>
                           <li className="flex gap-2 items-start">
@@ -928,9 +928,9 @@ export function Pattern() {
                             </span>
                             <span className="min-w-0 text-muted-foreground">
                               <span className="sr-only">
-                                Not included:
+                                {"Not included:"}
                               </span>
-                              Dedicated success manager
+                              {"Dedicated success manager"}
                             </span>
                           </li>
                         </ul>
@@ -949,15 +949,15 @@ export function Pattern() {
       <DialogFooter className="border-t flex-col gap-3 m-0 px-5 py-4 shrink-0 sm:items-center sm:justify-between">
         <p className="flex gap-2 items-center min-w-0 text-muted-foreground" role="status">
           <span className="font-medium shrink-0 text-foreground">
-            Team
+            {"Team"}
           </span>
           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
           <span className="min-w-0 tabular-nums truncate">
-            $540 billed yearly
+            {"$540 billed yearly"}
           </span>
         </p>
         <Button className="sm:w-auto w-full" href="#" aria-label="Start Trial for Team" role="button" tabIndex="0">
-          Start Trial
+          {"Start Trial"}
         </Button>
       </DialogFooter>
       <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
@@ -966,7 +966,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

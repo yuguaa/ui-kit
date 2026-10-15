@@ -41,10 +41,10 @@ export function Pattern() {
           <div className="flex flex-wrap gap-3 items-end justify-between">
             <div className="min-w-0 space-y-1">
               <h1 className="font-semibold text-xl tracking-tight" id="audit-log-title">
-                Audit Log
+                {"Audit Log"}
               </h1>
               <p className="leading-5 text-muted-foreground text-sm">
-                12 events in Acme Cloud workspace
+                {"12 events in Acme Cloud workspace"}
               </p>
             </div>
             <div className="flex gap-2 items-center shrink-0">
@@ -57,11 +57,11 @@ export function Pattern() {
                   <path d="M3 10h18"></path>
                 </svg>
                 <SelectValue>
-                  Last 24 hours
+                  {"Last 24 hours"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -73,7 +73,7 @@ export function Pattern() {
                   <path d="m7 10 5 5 5-5"></path>
                 </svg>
                 <span className="hidden sm:block">
-                  Export CSV
+                  {"Export CSV"}
                 </span>
               </Button>
             </div>
@@ -81,22 +81,22 @@ export function Pattern() {
           <Tabs data-orientation="horizontal" activationDirection="none">
             <TabsList className="border-b gap-6 h-10! justify-start overflow-x-auto pb-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Filter by event type">
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_3_" compositeItemActive="">
-                All
+                {"All"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
-                Auth
+                {"Auth"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
-                Roles
+                {"Roles"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
-                SSO/SCIM
+                {"SSO/SCIM"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7_">
-                Sessions
+                {"Sessions"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-px! px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_">
-                API
+                {"API"}
               </TabsTrigger>
             </TabsList>
           </Tabs>
@@ -104,7 +104,7 @@ export function Pattern() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-              Today, Jun 17
+              {"Today, Jun 17"}
             </h2>
             <Timeline data-orientation="vertical">
               <TimelineItem className="ms-10 pb-6" completed="true">
@@ -112,14 +112,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Login failed
+                      {"Login failed"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Critical
+                      {"Critical"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      2:14 PM
+                      {"2:14 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -141,7 +141,7 @@ export function Pattern() {
                               <AvatarImage alt="Kenji Tan" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Kenji Tan, Password rejected
+                              {"Kenji Tan, Password rejected"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -155,63 +155,63 @@ export function Pattern() {
                           <dl className="gap-2.5 grid grid-cols-1 sm:grid-cols-2">
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Target
+                                {"Target"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium text-foreground truncate">
-                                  kenji.tan@acmecloud.com
+                                  {"kenji.tan@acmecloud.com"}
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Actor
+                                {"Actor"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium text-foreground truncate">
-                                  kenji.tan@acmecloud.com
+                                  {"kenji.tan@acmecloud.com"}
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Source IP
+                                {"Source IP"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium gap-2 inline-flex items-center min-w-0 tabular-nums text-foreground">
                                   <span className="truncate">
-                                    192.0.2.51
+                                    {"192.0.2.51"}
                                   </span>
                                   <span className="text-muted-foreground truncate">
-                                    Berlin
+                                    {"Berlin"}
                                   </span>
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Session
+                                {"Session"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-mono text-foreground text-xs truncate">
-                                  sess_b71e0d44
+                                  {"sess_b71e0d44"}
                                 </span>
                               </dd>
                             </div>
                           </dl>
                           <p className="leading-5 text-muted-foreground text-xs">
-                            3 failed attempts in 5 minutes, account temporarily locked
+                            {"3 failed attempts in 5 minutes, account temporarily locked"}
                           </p>
                           <div className="border-t flex flex-wrap gap-2.5 items-center justify-between pt-2.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium font-mono gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              evt_9f3a21c8
+                              {"evt_9f3a21c8"}
                             </Badge>
                             <Button type="button" tabIndex="0">
                               <svg className="lucide lucide-copy opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                                 <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                               </svg>
-                              Copy reference
+                              {"Copy reference"}
                             </Button>
                           </div>
                         </FramePanel>
@@ -225,14 +225,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Role changed
+                      {"Role changed"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Notice
+                      {"Notice"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      1:02 PM
+                      {"1:02 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -255,7 +255,7 @@ export function Pattern() {
                               <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Leo Grant, Member to Admin
+                              {"Leo Grant, Member to Admin"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -269,63 +269,63 @@ export function Pattern() {
                           <dl className="gap-2.5 grid grid-cols-1 sm:grid-cols-2">
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Target
+                                {"Target"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium text-foreground truncate">
-                                  Sana Qureshi
+                                  {"Sana Qureshi"}
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Actor
+                                {"Actor"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium text-foreground truncate">
-                                  leo.grant@acmecloud.com
+                                  {"leo.grant@acmecloud.com"}
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Source IP
+                                {"Source IP"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-medium gap-2 inline-flex items-center min-w-0 tabular-nums text-foreground">
                                   <span className="truncate">
-                                    192.0.2.14
+                                    {"192.0.2.14"}
                                   </span>
                                   <span className="text-muted-foreground truncate">
-                                    San Francisco
+                                    {"San Francisco"}
                                   </span>
                                 </span>
                               </dd>
                             </div>
                             <div className="flex flex-col gap-0.5 min-w-0">
                               <dt className="text-muted-foreground text-xs">
-                                Session
+                                {"Session"}
                               </dt>
                               <dd className="flex items-center min-w-0 text-sm">
                                 <span className="font-mono text-foreground text-xs truncate">
-                                  sess_c98a2f10
+                                  {"sess_c98a2f10"}
                                 </span>
                               </dd>
                             </div>
                           </dl>
                           <p className="leading-5 text-muted-foreground text-xs">
-                            Promotion approved by Mira Stone, scope raised to Write
+                            {"Promotion approved by Mira Stone, scope raised to Write"}
                           </p>
                           <div className="border-t flex flex-wrap gap-2.5 items-center justify-between pt-2.5">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium font-mono gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                              evt_71b0a9d2
+                              {"evt_71b0a9d2"}
                             </Badge>
                             <Button type="button" tabIndex="0">
                               <svg className="lucide lucide-copy opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
                                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                                 <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                               </svg>
-                              Copy reference
+                              {"Copy reference"}
                             </Button>
                           </div>
                         </FramePanel>
@@ -339,14 +339,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Session revoked
+                      {"Session revoked"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Notice
+                      {"Notice"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      11:48 AM
+                      {"11:48 AM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -368,7 +368,7 @@ export function Pattern() {
                               <AvatarImage alt="Sarah Chen" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Sarah Chen, Chrome on Windows
+                              {"Sarah Chen, Chrome on Windows"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -386,14 +386,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Login success
+                      {"Login success"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Info
+                      {"Info"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      9:05 AM
+                      {"9:05 AM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -414,7 +414,7 @@ export function Pattern() {
                               <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Mira Stone, SSO via Okta
+                              {"Mira Stone, SSO via Okta"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -431,7 +431,7 @@ export function Pattern() {
           </div>
           <div className="space-y-4">
             <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-              Yesterday, Jun 16
+              {"Yesterday, Jun 16"}
             </h2>
             <Timeline data-orientation="vertical">
               <TimelineItem className="ms-10 pb-6" completed="true">
@@ -439,14 +439,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      API key created
+                      {"API key created"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Notice
+                      {"Notice"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      6:21 PM
+                      {"6:21 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -467,7 +467,7 @@ export function Pattern() {
                               <AvatarImage alt="David Kim" src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              David Kim, Production, ci-deploy
+                              {"David Kim, Production, ci-deploy"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -485,14 +485,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      SSO config changed
+                      {"SSO config changed"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                       <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Critical
+                      {"Critical"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      4:37 PM
+                      {"4:37 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -513,7 +513,7 @@ export function Pattern() {
                               <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Mira Stone, Okta to Microsoft Entra ID
+                              {"Mira Stone, Okta to Microsoft Entra ID"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -531,14 +531,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      SCIM provision
+                      {"SCIM provision"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Info
+                      {"Info"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      4:30 PM
+                      {"4:30 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -561,7 +561,7 @@ export function Pattern() {
                               <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Leo Grant, 4 members imported
+                              {"Leo Grant, 4 members imported"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -579,14 +579,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      MFA reset
+                      {"MFA reset"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Notice
+                      {"Notice"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      2:10 PM
+                      {"2:10 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -609,7 +609,7 @@ export function Pattern() {
                               <AvatarImage alt="Sarah Chen" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Sarah Chen, Authenticator re-enrolled
+                              {"Sarah Chen, Authenticator re-enrolled"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -627,14 +627,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Member invited
+                      {"Member invited"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Info
+                      {"Info"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      10:55 AM
+                      {"10:55 AM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -655,7 +655,7 @@ export function Pattern() {
                               <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Mira Stone, Guest, Support Agent
+                              {"Mira Stone, Guest, Support Agent"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -672,7 +672,7 @@ export function Pattern() {
           </div>
           <div className="space-y-4">
             <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-              Jun 15
+              {"Jun 15"}
             </h2>
             <Timeline data-orientation="vertical">
               <TimelineItem className="ms-10 pb-6" completed="true">
@@ -680,14 +680,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Data export
+                      {"Data export"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Notice
+                      {"Notice"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      5:42 PM
+                      {"5:42 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -709,7 +709,7 @@ export function Pattern() {
                               <AvatarImage alt="Omar Haddad" src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Omar Haddad, Audit log, CSV
+                              {"Omar Haddad, Audit log, CSV"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -727,14 +727,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Session revoked
+                      {"Session revoked"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Info
+                      {"Info"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      3:18 PM
+                      {"3:18 PM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -756,7 +756,7 @@ export function Pattern() {
                               <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Nora Vale, Safari on iOS
+                              {"Nora Vale, Safari on iOS"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
@@ -774,14 +774,14 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center">
                     <TimelineTitle className="font-semibold">
-                      Login success
+                      {"Login success"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Info
+                      {"Info"}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
-                      8:47 AM
+                      {"8:47 AM"}
                     </span>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center shadow-xs size-6 text-muted-foreground" aria-hidden="true">
@@ -802,7 +802,7 @@ export function Pattern() {
                               <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                             </Avatar>
                             <span className="font-medium min-w-0 text-muted-foreground text-sm truncate">
-                              Sana Qureshi, Password, 2FA passed
+                              {"Sana Qureshi, Password, 2FA passed"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">

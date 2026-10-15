@@ -34,26 +34,26 @@ export function Pattern() {
           <div className="flex flex-col gap-11 items-center text-center">
             <div className="flex flex-col gap-5 items-center">
               <h2 className="@2xl:text-4xl font-semibold text-3xl text-balance tracking-tight" id="pricing-1-title">
-                Pricing
+                {"Pricing"}
               </h2>
               <p className="@2xl:leading-6 @2xl:text-base leading-5 max-w-160 text-balance text-muted-foreground text-sm">
                 <span className="@2xl:block">
-                  Simple plans for growing teams. Start free, add seats
+                  {"Simple plans for growing teams. Start free, add seats"}
                 </span>
                 <span className="@2xl:block">
-                  as you grow, and cancel whenever you need to.
+                  {"as you grow, and cancel whenever you need to."}
                 </span>
               </p>
             </div>
             <Tabs data-orientation="horizontal" activationDirection="none">
               <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Billing period">
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_" extracted="1">
-                  Monthly
+                  {"Monthly"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
-                  Yearly
+                  {"Yearly"}
                   <Badge className="-mr-1 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Save 20%
+                    {"Save 20%"}
                   </Badge>
                 </TabsTrigger>
               </TabsList>
@@ -64,20 +64,20 @@ export function Pattern() {
               <li className="border-border border-l border-t gap-(--card-spacing) grid grid-rows-subgrid min-w-0 py-(--card-spacing) relative row-span-4">
                 <CardHeader>
                   <CardTitle role="heading" aria-level="3">
-                    Free
+                    {"Free"}
                   </CardTitle>
                   <CardDescription className="text-pretty">
-                    For side projects, learning and open source work.
+                    {"For side projects, learning and open source work."}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-1">
                   <p className="flex gap-1 items-baseline">
                     <span className="font-semibold tabular-nums text-3xl tracking-tight">
-                      Free
+                      {"Free"}
                     </span>
                   </p>
                   <p className="text-muted-foreground">
-                    Open source, MIT licensed
+                    {"Open source, MIT licensed"}
                   </p>
                 </CardContent>
                 <CardContent className="flex flex-col gap-3">
@@ -92,7 +92,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="">
-                        170 open primitives
+                        {"170 open primitives"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -106,7 +106,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="">
-                        shadcn CLI install
+                        {"shadcn CLI install"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -120,7 +120,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="">
-                        Base UI and Radix
+                        {"Base UI and Radix"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -136,7 +136,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="">
-                        8 theme styles
+                        {"8 theme styles"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -148,7 +148,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="">
-                        Community forum
+                        {"Community forum"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -156,38 +156,38 @@ export function Pattern() {
                 </CardContent>
                 <CardContent className="flex flex-col gap-2 self-end">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Start Free
+                    {"Start Free"}
                   </Button>
                 </CardContent>
               </li>
               <li className="bg-muted border-border border-l border-t gap-(--card-spacing) grid grid-rows-subgrid min-w-0 py-(--card-spacing) relative row-span-4">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-linear-to-r/oklch bg-origin-border bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium from-green-500 gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-(--card-spacing) rounded-t-none! shadow-emerald-900/25 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs to-emerald-700 top-0 transition-shadow" aria-hidden="true">
-                  Most Popular
+                  {"Most Popular"}
                 </Badge>
                 <CardHeader>
                   <CardTitle role="heading" aria-level="3">
-                    Pro
+                    {"Pro"}
                     <span className="sr-only">
-                      , Most Popular
+                      {", Most Popular"}
                     </span>
                   </CardTitle>
                   <CardDescription className="text-pretty">
-                    For one developer building production apps.
+                    {"For one developer building production apps."}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-1">
                   <p className="flex gap-1 items-baseline">
                     <span className="font-semibold tabular-nums text-3xl tracking-tight">
-                      $28
+                      {"$28"}
                     </span>
                   </p>
                   <p className="text-muted-foreground">
-                    a month, billed yearly
+                    {"a month, billed yearly"}
                   </p>
                 </CardContent>
                 <CardContent className="flex flex-col gap-3">
                   <p className="font-medium">
-                    Free, plus
+                    {"Free, plus"}
                   </p>
                   <ul className="flex flex-col gap-2.5" role="list">
                     <li className="flex gap-2 items-start">
@@ -201,7 +201,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="">
-                        485+ Pro blocks
+                        {"485+ Pro blocks"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -213,7 +213,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_f_" baseUiTooltipTrigger="">
-                        NeUI MCP server
+                        {"NeUI MCP server"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -227,7 +227,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_h_" baseUiTooltipTrigger="">
-                        Agent Skills
+                        {"Agent Skills"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -242,7 +242,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_j_" baseUiTooltipTrigger="">
-                        Future block updates
+                        {"Future block updates"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -255,7 +255,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_l_" baseUiTooltipTrigger="">
-                        Private registry token
+                        {"Private registry token"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -263,32 +263,32 @@ export function Pattern() {
                 </CardContent>
                 <CardContent className="flex flex-col gap-2 self-end">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Get Pro
+                    {"Get Pro"}
                   </Button>
                 </CardContent>
               </li>
               <li className="border-border border-l border-t gap-(--card-spacing) grid grid-rows-subgrid min-w-0 py-(--card-spacing) relative row-span-4">
                 <CardHeader>
                   <CardTitle role="heading" aria-level="3">
-                    Team
+                    {"Team"}
                   </CardTitle>
                   <CardDescription className="text-pretty">
-                    For product teams sharing one block library.
+                    {"For product teams sharing one block library."}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-1">
                   <p className="flex gap-1 items-baseline">
                     <span className="font-semibold tabular-nums text-3xl tracking-tight">
-                      $100
+                      {"$100"}
                     </span>
                   </p>
                   <p className="text-muted-foreground">
-                    a month, billed yearly
+                    {"a month, billed yearly"}
                   </p>
                 </CardContent>
                 <CardContent className="flex flex-col gap-3">
                   <p className="font-medium">
-                    Pro, plus
+                    {"Pro, plus"}
                   </p>
                   <ul className="flex flex-col gap-2.5" role="list">
                     <li className="flex gap-2 items-start">
@@ -302,7 +302,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_n_" baseUiTooltipTrigger="">
-                        5 team seats
+                        {"5 team seats"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -324,7 +324,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_p_" baseUiTooltipTrigger="">
-                        Seat management
+                        {"Seat management"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -339,7 +339,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_r_" baseUiTooltipTrigger="">
-                        Shared private registry
+                        {"Shared private registry"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -351,7 +351,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_t_" baseUiTooltipTrigger="">
-                        Priority support
+                        {"Priority support"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -361,7 +361,7 @@ export function Pattern() {
                   <NumberField className="flex-row items-center justify-between" size="default">
                     <NumberFieldScrubArea role="presentation" style={{touchAction: "none", userSelect: "none"}}>
                       <Label className="cursor-ew-resize" htmlFor="_r_u_">
-                        Seats
+                        {"Seats"}
                       </Label>
                     </NumberFieldScrubArea>
                     <NumberFieldGroup className="w-auto" role="group">
@@ -381,35 +381,35 @@ export function Pattern() {
                   </NumberField>
                   <input min="2" max="20" step="1" aria-hidden="true" tabIndex="-1" type="number" value="5" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Get Team
+                    {"Get Team"}
                   </Button>
                 </CardContent>
               </li>
               <li className="border-border border-l border-t gap-(--card-spacing) grid grid-rows-subgrid min-w-0 py-(--card-spacing) relative row-span-4">
                 <CardHeader>
                   <CardTitle role="heading" aria-level="3">
-                    Unlimited
+                    {"Unlimited"}
                   </CardTitle>
                   <CardDescription className="text-pretty">
-                    For companies rolling out NeUI across every team.
+                    {"For companies rolling out NeUI across every team."}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-1">
                   <p className="flex gap-1 items-baseline">
                     <span className="text-muted-foreground">
-                      From
+                      {"From"}
                     </span>
                     <span className="font-semibold tabular-nums text-3xl tracking-tight">
-                      $750
+                      {"$750"}
                     </span>
                   </p>
                   <p className="text-muted-foreground">
-                    a month, yearly contract
+                    {"a month, yearly contract"}
                   </p>
                 </CardContent>
                 <CardContent className="flex flex-col gap-3">
                   <p className="font-medium">
-                    Team, plus
+                    {"Team, plus"}
                   </p>
                   <ul className="flex flex-col gap-2.5" role="list">
                     <li className="flex gap-2 items-start">
@@ -421,7 +421,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_11_" baseUiTooltipTrigger="">
-                        Single sign-on
+                        {"Single sign-on"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -434,7 +434,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_13_" baseUiTooltipTrigger="">
-                        Security review
+                        {"Security review"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -448,7 +448,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_15_" baseUiTooltipTrigger="">
-                        Audit log
+                        {"Audit log"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -463,7 +463,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_17_" baseUiTooltipTrigger="">
-                        Invoice billing
+                        {"Invoice billing"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -476,7 +476,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_19_" baseUiTooltipTrigger="">
-                        Custom block requests
+                        {"Custom block requests"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -491,7 +491,7 @@ export function Pattern() {
                       </span>
                       <Tooltip>
                       <TooltipTrigger className="cursor-default focus-visible:ring-3 focus-visible:ring-ring/50 min-w-0 outline-none tabular-nums text-left" type="button" id="base-ui-_r_1b_" baseUiTooltipTrigger="">
-                        Onboarding workshop
+                        {"Onboarding workshop"}
                       </TooltipTrigger>
                       </Tooltip>
                     </li>
@@ -499,7 +499,7 @@ export function Pattern() {
                 </CardContent>
                 <CardContent className="flex flex-col gap-2 self-end">
                   <Button className="w-full" href="#" role="button" tabIndex="0">
-                    Contact Us
+                    {"Contact Us"}
                   </Button>
                 </CardContent>
               </li>

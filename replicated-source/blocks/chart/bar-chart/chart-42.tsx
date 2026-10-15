@@ -25,10 +25,10 @@ export function Pattern() {
             <div className="flex flex-col gap-px min-w-0">
               <div className="flex flex-wrap gap-x-2 gap-y-1 items-center min-w-0">
                 <div className="font-semibold text-sm truncate" role="heading" aria-level="3">
-                  Error Budget
+                  {"Error Budget"}
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                  Exhausted
+                  {"Exhausted"}
                 </Badge>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                   <svg className="lucide lucide-octagon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="OctagonXIcon" tabler="IconAlertOctagon" hugeicons="MultiplicationSignCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
@@ -36,12 +36,12 @@ export function Pattern() {
                     <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"></path>
                     <path d="m9 9 6 6"></path>
                   </svg>
-                  Deploys Frozen
+                  {"Deploys Frozen"}
                 </Badge>
               </div>
               <div className="text-muted-foreground text-sm truncate">
                 <span className="tabular-nums">
-                  99.99% over 30 days
+                  {"99.99% over 30 days"}
                 </span>
               </div>
             </div>
@@ -53,13 +53,13 @@ export function Pattern() {
                 <span className="flex gap-2 items-center min-w-0">
                   <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
                   <span className="truncate">
-                    Ledger write success
+                    {"Ledger write success"}
                   </span>
                 </span>
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -70,60 +70,60 @@ export function Pattern() {
           <dl className="bg-border border-b gap-px grid grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(4,minmax(0,1fr))] sm:grid-cols-4">
             <div className="bg-(--frame-panel-bg) col-span-2 flex flex-col gap-1 lg:col-span-1 min-w-0 px-(--frame-panel-px) py-3 sm:col-span-4">
               <dt className="text-muted-foreground text-xs truncate">
-                Budget
+                {"Budget"}
               </dt>
               <dd className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-2xl tracking-tight whitespace-nowrap">
-                42%
+                {"42%"}
                 <span className="font-medium text-destructive text-sm tracking-normal">
-                  over
+                  {"over"}
                 </span>
               </dd>
               <dd className="text-muted-foreground text-xs truncate">
-                Two incidents spent 112% in six days.
+                {"Two incidents spent 112% in six days."}
               </dd>
             </div>
             <div className="bg-(--frame-panel-bg) flex flex-col gap-1 min-w-0 px-(--frame-panel-px) py-3">
               <dt className="text-muted-foreground text-xs truncate">
-                Attained
+                {"Attained"}
               </dt>
               <dd className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-2xl tracking-tight whitespace-nowrap">
-                99.986%
+                {"99.986%"}
               </dd>
               <dd className="text-muted-foreground text-xs truncate">
-                Target 99.99%
+                {"Target 99.99%"}
               </dd>
             </div>
             <div className="bg-(--frame-panel-bg) flex flex-col gap-1 min-w-0 px-(--frame-panel-px) py-3">
               <dt className="text-muted-foreground text-xs truncate">
-                Burn 1h
+                {"Burn 1h"}
               </dt>
               <dd className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-2xl text-foreground tracking-tight whitespace-nowrap">
-                0.26×
+                {"0.26×"}
               </dd>
               <dd className="text-muted-foreground text-xs truncate">
-                0.32× over 6h
+                {"0.32× over 6h"}
               </dd>
             </div>
             <div className="bg-(--frame-panel-bg) flex flex-col gap-1 min-w-0 px-(--frame-panel-px) py-3">
               <dt className="text-muted-foreground text-xs truncate">
-                Daily pace
+                {"Daily pace"}
               </dt>
               <dd className="dark:text-warning flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-2xl text-warning-foreground tracking-tight whitespace-nowrap">
-                6.5%
+                {"6.5%"}
               </dd>
               <dd className="text-muted-foreground text-xs truncate">
-                Even pace 3.3%
+                {"Even pace 3.3%"}
               </dd>
             </div>
             <div className="bg-(--frame-panel-bg) flex flex-col gap-1 min-w-0 px-(--frame-panel-px) py-3">
               <dt className="text-muted-foreground text-xs truncate">
-                Ran out
+                {"Ran out"}
               </dt>
               <dd className="flex font-semibold gap-1.5 items-baseline min-w-0 tabular-nums text-2xl text-destructive tracking-tight whitespace-nowrap">
-                Sep 25
+                {"Sep 25"}
               </dd>
               <dd className="text-muted-foreground text-xs truncate">
-                4 days ago
+                {"4 days ago"}
               </dd>
             </div>
           </dl>
@@ -133,6 +133,7 @@ export function Pattern() {
                 <div className="-bottom-1.5 absolute bg-linear-to-b from-foreground/2 left-0 pointer-events-none to-foreground/8 top-3.5" aria-hidden="true" style={{width: "28px", borderRadius: "14px", transform: "translateX(870.243px)"}}></div>
                 <div className="h-8 shrink-0" aria-hidden="true"></div>
                 <div className="flex-1 min-h-0 relative">
+                  <ChartContainer>
                   <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_.recharts-surface]:overflow-visible [&_[class*=recharts-zIndex-layer]]:outline-hidden absolute aspect-auto cn-chart flex focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring/50 focus-visible:outline-solid h-auto inset-0 justify-center min-w-0 outline-hidden text-xs" data-chart="chart-_r_4_" role="group" aria-label="Ledger write success error budget, last 30 days: 42% over budget. Arrow keys move, Enter selects a day, Shift+Enter extends, Escape clears." tabIndex="0">
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
@@ -519,13 +520,13 @@ export function Pattern() {
                             <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
                             <g className="recharts-zIndex-layer_2000" tabIndex="-1">
                               <text className="dark:fill-warning fill-warning-foreground font-medium text-xs" aria-hidden="true" x="12" y="70.75" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                Warn 25%
+                                {"Warn 25%"}
                               </text>
                               <text className="fill-muted-foreground font-medium text-xs" aria-hidden="true" x="12" y="93" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                0%
+                                {"0%"}
                               </text>
                               <text className="fill-destructive font-medium text-xs" aria-hidden="true" x="12" y="114" textAnchor="start" stroke="var(--card)" strokeWidth="4" strokeLinejoin="round" paint-order="stroke">
-                                Over budget
+                                {"Over budget"}
                               </text>
                             </g>
                           </svg>
@@ -533,6 +534,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </div>
+                  </ChartContainer>
                 </div>
                 <div className="@container h-6 mt-2 relative shrink-0" aria-hidden="true">
                   <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "115.486px"}}></span>
@@ -562,37 +564,37 @@ export function Pattern() {
                   <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "1002.51px"}}></span>
                   <span className="-translate-1/2 absolute bg-muted-foreground/25 h-1.5 rounded-full top-1/2 w-px" style={{left: "1032.08px"}}></span>
                   <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-2 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 56.3514px, -100% + 100cqw))"}}>
-                    Sep 1
+                    {"Sep 1"}
                   </span>
                   <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 263.324px, -100% + 100cqw))"}}>
-                    8
+                    {"8"}
                   </span>
                   <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 470.297px, -100% + 100cqw))"}}>
-                    15
+                    {"15"}
                   </span>
                   <span className="absolute bg-destructive/10 flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 ring-1 ring-destructive/25 ring-inset rounded-full tabular-nums text-destructive text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 647.703px, -100% + 100cqw))"}}>
-                    21
+                    {"21"}
                   </span>
                   <span className="absolute bg-muted flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 677.27px, -100% + 100cqw))"}}>
-                    22
+                    {"22"}
                   </span>
                   <span className="absolute bg-destructive/10 flex font-medium h-6 items-center justify-center left-0 min-w-6 px-1 ring-1 ring-destructive/25 ring-inset rounded-full tabular-nums text-destructive text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 795.541px, -100% + 100cqw))"}}>
-                    26
+                    {"26"}
                   </span>
                   <span className="absolute bg-foreground flex font-semibold h-6 items-center justify-center left-0 min-w-6 px-1 rounded-full tabular-nums text-background text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 884.243px, -100% + 100cqw))"}}>
-                    29
+                    {"29"}
                   </span>
                   <span className="absolute flex font-medium h-6 items-center justify-center left-0 min-w-6 px-2 ring-1 ring-border ring-inset rounded-full tabular-nums text-muted-foreground text-xs top-0 whitespace-nowrap" style={{transform: "translateX(clamp(0px, -50% + 1091.22px, -100% + 100cqw))"}}>
-                    Oct 6
+                    {"Oct 6"}
                   </span>
                 </div>
                 <div className="@container absolute h-7 inset-x-0 pointer-events-none top-1" aria-hidden="true">
                   <div className="absolute flex left-0 top-0" style={{transform: "translateX(clamp(0px, -50% + 503.135px, -100% + 100cqw))"}}>
                     <span className="bg-foreground font-semibold gap-1.5 h-7 inline-flex items-center px-3 rounded-full tabular-nums text-background text-xs whitespace-nowrap" aria-hidden="true">
-                      42% over
+                      {"42% over"}
                       <span className="bg-background/40 rounded-full size-1"></span>
                       <span className="font-medium text-background/65">
-                        Today
+                        {"Today"}
                       </span>
                     </span>
                   </div>
@@ -608,22 +610,22 @@ export function Pattern() {
               <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                 <line x1="2.5" x2="9.5" y1="6" y2="6" stroke="var(--muted-foreground)" strokeOpacity="0.55" strokeWidth="1.5" strokeLinecap="round"></line>
               </svg>
-              Even burn
+              {"Even burn"}
             </span>
             <span className="flex gap-1.5 items-center">
               <svg className="shrink-0" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
                 <circle cx="6" cy="6" r="3.5" fill="var(--card)" stroke="var(--muted-foreground)" strokeWidth="1.5"></circle>
               </svg>
-              Forecast
+              {"Forecast"}
             </span>
             <span className="flex gap-1.5 items-center">
               <span className="bg-destructive/10 ring-1 ring-destructive/25 ring-inset rounded-full shrink-0 size-3" aria-hidden="true"></span>
-              Incident
+              {"Incident"}
             </span>
           </div>
           <div className="flex gap-1.5 items-center min-w-0 sm:ms-auto" aria-live="off" aria-busy="false">
             <span>
-              Drag across days to sum spend
+              {"Drag across days to sum spend"}
             </span>
           </div>
         </footer>

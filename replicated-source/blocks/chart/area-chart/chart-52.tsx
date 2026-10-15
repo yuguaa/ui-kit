@@ -28,7 +28,7 @@ export function Pattern() {
       <Card className="@container/leads [--leads-current:var(--leads-accent,var(--color-teal-600))] dark:[--leads-current:var(--leads-accent,var(--color-teal-400))] max-w-4xl min-w-0 w-full" size="default">
         <CardHeader>
           <CardTitle>
-            Inbound Leads
+            {"Inbound Leads"}
           </CardTitle>
           <CardDescription className="col-start-1">
             <span className="flex gap-1.5 items-center">
@@ -38,26 +38,26 @@ export function Pattern() {
                   <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                 </svg>
                 <span className="sr-only">
-                  Up
+                  {"Up"}
                 </span>
-                20.1%
+                {"20.1%"}
               </span>
-              vs 2024
+              {"vs 2024"}
             </span>
           </CardDescription>
           <CardAction className="@2xl/card-header:col-start-2 @2xl/card-header:justify-self-end @2xl/card-header:mt-0 @2xl/card-header:row-span-2 @2xl/card-header:row-start-1 col-start-1 justify-self-start mt-2 row-span-1 row-start-3">
             <div className="flex flex-wrap gap-2 items-center">
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Granularity" style={{"--gap": "0"}}>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="By month" extracted="1">
-                  Month
+                  {"Month"}
                 </ToggleGroupItem>
                 <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="By quarter">
-                  Quarter
+                  {"Quarter"}
                 </ToggleGroupItem>
               </ToggleGroup>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_5_" aria-expanded="false">
-                Display
+                {"Display"}
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -65,7 +65,7 @@ export function Pattern() {
               </DropdownMenu>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Trend line: Linear Trend" aria-haspopup="menu" id="base-ui-_r_a_" aria-expanded="false">
-                Linear Trend
+                {"Linear Trend"}
                 <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -112,34 +112,10 @@ export function Pattern() {
         <CardContent>
           <div className="mb-2 mt-3">
             <div className="@xl/leads:h-72 [&_.recharts-cartesian-grid]:duration-300 [&_.recharts-cartesian-grid]:transition-opacity [&_g]:outline-hidden [-webkit-tap-highlight-color:transparent] data-[grid=off]:[&_.recharts-cartesian-grid]:opacity-0 group/plot h-60 has-[.recharts-surface:focus-visible]:outline-2 motion-reduce:[&_*]:transition-none outline-offset-4 outline-ring/50 w-full" data-points="on" data-fill="on" data-grid="on" data-compare="on" data-trend="linear">
-              <style>{`
-@keyframes leads-particle-fall {
-  0% { transform: translateY(0); opacity: 0; }
-  20%, 75% { opacity: var(--leads-particle-peak); }
-  100% { transform: translateY(var(--leads-particle-fall)); opacity: 0; }
-}
-.leads-particle {
-  opacity: 0;
-  animation: leads-particle-fall var(--leads-particle-duration) linear var(--leads-particle-delay) infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .leads-particle { animation: none; }
-}
-html[data-demo="frozen"] .leads-particle { animation: none; }
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n@keyframes leads-particle-fall {\n  0% { transform: translateY(0); opacity: 0; }\n  20%, 75% { opacity: var(--leads-particle-peak); }\n  100% { transform: translateY(var(--leads-particle-fall)); opacity: 0; }\n}\n.leads-particle {\n  opacity: 0;\n  animation: leads-particle-fall var(--leads-particle-duration) linear var(--leads-particle-delay) infinite;\n}\n@media (prefers-reduced-motion: reduce) {\n  .leads-particle { animation: none; }\n}\nhtml[data-demo=\"frozen\"] .leads-particle { animation: none; }\n" }} />
+              <ChartContainer>
               <div className="@xl/leads:h-72 [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-60 justify-center text-xs w-full" data-chart="chart-_r_u_">
-                <style>{`
- [data-chart=chart-_r_u_] {
-  --color-current: var(--leads-current);
-  --color-prior: color-mix(in oklab, var(--muted-foreground) 50%, var(--card));
-}
-
-
-.dark [data-chart=chart-_r_u_] {
-  --color-current: var(--leads-current);
-  --color-prior: color-mix(in oklab, var(--muted-foreground) 50%, var(--card));
-}
-`}</style>
+                <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_u_] {\n  --color-current: var(--leads-current);\n  --color-prior: color-mix(in oklab, var(--muted-foreground) 50%, var(--card));\n}\n\n\n.dark [data-chart=chart-_r_u_] {\n  --color-current: var(--leads-current);\n  --color-prior: color-mix(in oklab, var(--muted-foreground) 50%, var(--card));\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                     <div className="recharts-wrapper" width="864" height="288" style={{position: "relative", cursor: "default", width: "864px", height: "288px"}}>
@@ -147,7 +123,7 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
                       <svg className="recharts-surface" aria-label="Inbound leads by period" role="application" tabIndex="0" width="864" height="288" viewBox="0 0 864 288" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc>
-                          This year against last year, period by period; arrow keys move through the periods.
+                          {"This year against last year, period by period; arrow keys move through the periods."}
                         </desc>
                         <g className="recharts-zIndex-layer_-100" tabIndex="-1">
                           <g className="recharts-cartesian-grid">
@@ -306,62 +282,62 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
                           <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="52" y="274" dy="0.71em" textAnchor="middle">
-                                Jan
+                                {"Jan"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="124" y="274" dy="0.71em" textAnchor="middle">
-                                Feb
+                                {"Feb"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="196" y="274" dy="0.71em" textAnchor="middle">
-                                Mar
+                                {"Mar"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="268" y="274" dy="0.71em" textAnchor="middle">
-                                Apr
+                                {"Apr"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="340" y="274" dy="0.71em" textAnchor="middle">
-                                May
+                                {"May"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="412" y="274" dy="0.71em" textAnchor="middle">
-                                Jun
+                                {"Jun"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="484" y="274" dy="0.71em" textAnchor="middle">
-                                Jul
+                                {"Jul"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="556" y="274" dy="0.71em" textAnchor="middle">
-                                Aug
+                                {"Aug"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="628" y="274" dy="0.71em" textAnchor="middle">
-                                Sep
+                                {"Sep"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="700" y="274" dy="0.71em" textAnchor="middle">
-                                Oct
+                                {"Oct"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="772" y="274" dy="0.71em" textAnchor="middle">
-                                Nov
+                                {"Nov"}
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="fill-muted-foreground" x="844" y="274" dy="0.71em" textAnchor="middle">
-                                Dec
+                                {"Dec"}
                               </text>
                             </g>
                           </g>
@@ -369,35 +345,35 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="238" stroke="none" x="22" y="258" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  0
+                                  {"0"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="238" stroke="none" x="22" y="198.5" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  200
+                                  {"200"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="238" stroke="none" x="22" y="139" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  400
+                                  {"400"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="238" stroke="none" x="22" y="79.5" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  600
+                                  {"600"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
                               <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="238" stroke="none" x="22" y="20" textAnchor="end" fill="#666">
                                 <tspan x="22" dy="0.355em">
-                                  800
+                                  {"800"}
                                 </tspan>
                               </text>
                             </g>
@@ -408,157 +384,158 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
                   </div>
                 </div>
               </div>
+              </ChartContainer>
             </div>
           </div>
           <div className="sr-only">
             <table>
               <caption>
-                Inbound leads per month, 2025 and 2024
+                {"Inbound leads per month, 2025 and 2024"}
               </caption>
               <thead>
                 <tr>
                   <th scope="col">
-                    Period
+                    {"Period"}
                   </th>
                   <th scope="col">
-                    2025
+                    {"2025"}
                   </th>
                   <th scope="col">
-                    2024
+                    {"2024"}
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">
-                    January
+                    {"January"}
                   </th>
                   <td>
-                    398
+                    {"398"}
                   </td>
                   <td>
-                    352
+                    {"352"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    February
+                    {"February"}
                   </th>
                   <td>
-                    431
+                    {"431"}
                   </td>
                   <td>
-                    381
+                    {"381"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    March
+                    {"March"}
                   </th>
                   <td>
-                    506
+                    {"506"}
                   </td>
                   <td>
-                    404
+                    {"404"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    April
+                    {"April"}
                   </th>
                   <td>
-                    488
+                    {"488"}
                   </td>
                   <td>
-                    436
+                    {"436"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    May
+                    {"May"}
                   </th>
                   <td>
-                    547
+                    {"547"}
                   </td>
                   <td>
-                    428
+                    {"428"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    June
+                    {"June"}
                   </th>
                   <td>
-                    529
+                    {"529"}
                   </td>
                   <td>
-                    459
+                    {"459"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    July
+                    {"July"}
                   </th>
                   <td>
-                    468
+                    {"468"}
                   </td>
                   <td>
-                    392
+                    {"392"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    August
+                    {"August"}
                   </th>
                   <td>
-                    452
+                    {"452"}
                   </td>
                   <td>
-                    371
+                    {"371"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    September
+                    {"September"}
                   </th>
                   <td>
-                    583
+                    {"583"}
                   </td>
                   <td>
-                    448
+                    {"448"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    October
+                    {"October"}
                   </th>
                   <td>
-                    641
+                    {"641"}
                   </td>
                   <td>
-                    497
+                    {"497"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    November
+                    {"November"}
                   </th>
                   <td>
-                    612
+                    {"612"}
                   </td>
                   <td>
-                    521
+                    {"521"}
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    December
+                    {"December"}
                   </th>
                   <td>
-                    503
+                    {"503"}
                   </td>
                   <td>
-                    437
+                    {"437"}
                   </td>
                 </tr>
               </tbody>
@@ -571,19 +548,19 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
               <li className="animate-in duration-300 fade-in-0 flex gap-1.5 items-center motion-reduce:animate-none">
                 <span className="bg-(--leads-current) rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="text-muted-foreground">
-                  2025
+                  {"2025"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  6,158
+                  {"6,158"}
                 </span>
               </li>
               <li className="animate-in duration-300 fade-in-0 flex gap-1.5 items-center motion-reduce:animate-none">
                 <span className="bg-muted-foreground/50 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                 <span className="text-muted-foreground">
-                  2024
+                  {"2024"}
                 </span>
                 <span className="font-medium tabular-nums text-foreground">
-                  5,126
+                  {"5,126"}
                 </span>
               </li>
             </ul>
@@ -594,16 +571,16 @@ html[data-demo="frozen"] .leads-particle { animation: none; }
                     <line x1="0" x2="16" y1="1" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 2"></line>
                   </svg>
                   <span className="text-muted-foreground">
-                    Linear trend
+                    {"Linear trend"}
                   </span>
                   <span className="font-medium tabular-nums text-foreground">
-                    +13 a month
+                    {"+13 a month"}
                   </span>
                 </li>
               </ul>
               <span className="bg-muted-foreground/40 rounded-full size-1" aria-hidden="true"></span>
               <span>
-                Updated Jan 6, 09:30
+                {"Updated Jan 6, 09:30"}
               </span>
             </div>
           </div>

@@ -29,22 +29,22 @@ export function Pattern() {
           <div className="flex flex-1 flex-col gap-px min-w-0">
             <div className="flex gap-2 items-center min-w-0">
               <div className="font-semibold text-sm truncate">
-                Loomwell 4.2
+                {"Loomwell 4.2"}
               </div>
             </div>
             <div className="text-muted-foreground text-xs">
               <span className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center">
                 <span>
-                  Launch brief
+                  {"Launch brief"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center max-sm:hidden">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-                  Edited Sep 26
+                  {"Edited Sep 26"}
                 </span>
                 <span className="gap-1.5 inline-flex items-center">
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span aria-live="polite">
-                    Saved
+                    {"Saved"}
                   </span>
                 </span>
               </span>
@@ -105,7 +105,7 @@ export function Pattern() {
                 </svg>
               </span>
               <span className="max-sm:hidden truncate">
-                Heading 1
+                {"Heading 1"}
               </span>
               <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
@@ -270,90 +270,90 @@ export function Pattern() {
             <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 flex flex-col max-w-3xl min-h-full mx-auto px-4 py-6 sm:px-8 sm:py-10 text-base/7 text-foreground w-full">
               <div className="ProseMirror tiptap" contentEditable="true" aria-label="Loomwell 4.2 launch brief" aria-multiline="true" translate="no" tabIndex="0">
                 <h1>
-                  Loomwell 4.2 Launch Brief
+                  {"Loomwell 4.2 Launch Brief"}
                 </h1>
                 <p>
-                  Loomwell 4.2 brings
+                  {"Loomwell 4.2 brings"}
                   <strong>
-                    scheduled replies
+                    {"scheduled replies"}
                   </strong>
-                  and a rebuilt
+                  {"and a rebuilt"}
                   <strong>
-                    inbox search
+                    {"inbox search"}
                   </strong>
-                  to every workspace on October 14. This brief is the source of truth for positioning, rollout and support readiness. Live numbers sit on the
+                  {"to every workspace on October 14. This brief is the source of truth for positioning, rollout and support readiness. Live numbers sit on the"}
                   <a target="_blank" rel="noopener noreferrer nofollow" href="https://loomwell.example/rollout">
-                    rollout dashboard
+                    {"rollout dashboard"}
                   </a>
-                  .
+                  {"."}
                 </p>
                 <h2>
-                  Goals
+                  {"Goals"}
                 </h2>
                 <ul>
                   <li>
                     <p>
-                      Cut median first reply time for teams over 50 seats by 20%.
+                      {"Cut median first reply time for teams over 50 seats by 20%."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Move inbox search from the Scale plan to every plan,
+                      {"Move inbox search from the Scale plan to every plan,"}
                       <em>
-                        including Free
+                        {"including Free"}
                       </em>
-                      .
+                      {"."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Keep launch week tickets under 1,200, down from 1,640 at the 4.0 launch.
+                      {"Keep launch week tickets under 1,200, down from 1,640 at the 4.0 launch."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Publish both help center articles before general availability.
+                      {"Publish both help center articles before general availability."}
                     </p>
                   </li>
                 </ul>
                 <h2>
-                  Rollout
+                  {"Rollout"}
                 </h2>
                 <ol>
                   <li>
                     <p>
-                      Dogfood with the support team from October 1.
+                      {"Dogfood with the support team from October 1."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Open to 10% of workspaces on October 7 while search latency is watched.
+                      {"Open to 10% of workspaces on October 7 while search latency is watched."}
                     </p>
                   </li>
                   <li>
                     <p>
-                      General availability on October 14, with the changelog and the customer email.
+                      {"General availability on October 14, with the changelog and the customer email."}
                     </p>
                   </li>
                 </ol>
                 <blockquote>
                   <p>
-                    Half my team works overnight. Scheduling replies means nobody sends a 3 a.m. apology again.
+                    {"Half my team works overnight. Scheduling replies means nobody sends a 3 a.m. apology again."}
                   </p>
                   <p>
                     <em>
-                      Priya Raman, support lead at Fieldnote
+                      {"Priya Raman, support lead at Fieldnote"}
                     </em>
                   </p>
                 </blockquote>
                 <p>
-                  Pricing does not change in 4.2.
+                  {"Pricing does not change in 4.2."}
                   <mark data-color="yellow">
-                    Leave the Q1 pricing review out of every piece of launch copy.
+                    {"Leave the Q1 pricing review out of every piece of launch copy."}
                   </mark>
                 </p>
                 <h2>
-                  Launch Checklist
+                  {"Launch Checklist"}
                 </h2>
                 <ul data-type="taskList">
                   <li className="node-taskItem react-renderer" data-checked="true">
@@ -371,7 +371,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Final copy for the in-app announcement
+                            {"Final copy for the in-app announcement"}
                           </p>
                         </div>
                       </div>
@@ -392,7 +392,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Search latency dashboard shared with the on-call rotation
+                            {"Search latency dashboard shared with the on-call rotation"}
                           </p>
                         </div>
                       </div>
@@ -407,9 +407,9 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Help center article for scheduled replies, owned by
+                            {"Help center article for scheduled replies, owned by"}
                             <strong>
-                              Daniel
+                              {"Daniel"}
                             </strong>
                           </p>
                         </div>
@@ -425,7 +425,7 @@ export function Pattern() {
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
                           <p>
-                            Support macros updated for the new search operators
+                            {"Support macros updated for the new search operators"}
                           </p>
                         </div>
                       </div>
@@ -433,26 +433,26 @@ export function Pattern() {
                   </li>
                 </ul>
                 <h3>
-                  Search Operators
+                  {"Search Operators"}
                 </h3>
                 <p>
-                  Search now reads
+                  {"Search now reads"}
                   <code>
-                    from:
+                    {"from:"}
                   </code>
-                  ,
+                  {","}
                   <code>
-                    status:
+                    {"status:"}
                   </code>
-                  and quoted phrases. Paste this into the macro as the example:
+                  {"and quoted phrases. Paste this into the macro as the example:"}
                 </p>
                 <pre>
                   <code>
-                    from:maya status:open "refund request"
+                    {"from:maya status:open \"refund request\""}
                   </code>
                 </pre>
                 <p>
-                  Questions go to Maya in #launch-loomwell.
+                  {"Questions go to Maya in #launch-loomwell."}
                 </p>
               </div>
             </div>
@@ -462,22 +462,22 @@ export function Pattern() {
           <p className="flex flex-wrap gap-x-1.5 gap-y-0.5 items-center min-w-0 tabular-nums text-muted-foreground text-xs">
             <span>
               <span className="font-medium text-foreground">
-                220
+                {"220"}
               </span>
-              words
+              {"words"}
             </span>
             <span className="gap-1.5 inline-flex items-center max-sm:hidden">
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
                 <span className="font-medium text-foreground">
-                  1,346
+                  {"1,346"}
                 </span>
-                characters
+                {"characters"}
               </span>
             </span>
             <span className="gap-1.5 inline-flex items-center">
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
-              1 min read
+              {"1 min read"}
             </span>
           </p>
           <Popover>
@@ -494,7 +494,7 @@ export function Pattern() {
               <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             </svg>
             <span className="max-sm:sr-only">
-              Shortcuts
+              {"Shortcuts"}
             </span>
           </PopoverTrigger>
           </Popover>

@@ -73,7 +73,7 @@ export function Pattern() {
             <BreadcrumbList className="flex-nowrap">
               <BreadcrumbItem>
                 <BreadcrumbLink href="#">
-                  Pipelines
+                  {"Pipelines"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -84,29 +84,29 @@ export function Pattern() {
             </BreadcrumbList>
           </Breadcrumb>
           <h1 className="font-semibold min-w-0 text-sm truncate">
-            Nightly Ledger Sync
+            {"Nightly Ledger Sync"}
           </h1>
           <Separator className="data-vertical:self-center h-4 max-xl:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <p className="flex gap-1.5 items-center max-xl:sr-only min-w-0 text-muted-foreground text-xs">
             <span className="font-mono shrink-0">
-              run_3f9a1c
+              {"run_3f9a1c"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="flex gap-1.5 items-center shrink-0">
               <span className="sr-only">
-                Started 02:00 UTC, owned by Tomas Lindqvist
+                {"Started 02:00 UTC, owned by Tomas Lindqvist"}
               </span>
               <Avatar className="size-4" size="default" aria-hidden="true">
                 <AvatarImage alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
               </Avatar>
               <span className="tabular-nums" aria-hidden="true">
-                02:00 UTC
+                {"02:00 UTC"}
               </span>
             </span>
           </p>
         </div>
         <p className="sr-only" role="status" aria-live="polite">
-          Run idle, 7 of 8 tasks settled
+          {"Run idle, 7 of 8 tasks settled"}
         </p>
         <div className="gap-2 items-center justify-center lg:flex max-lg:sr-only w-72">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
@@ -115,10 +115,10 @@ export function Pattern() {
               <path d="m6 6 12 12"></path>
             </svg>
             <span>
-              Failed
+              {"Failed"}
             </span>
             <span className="tabular-nums">
-              1
+              {"1"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -128,10 +128,10 @@ export function Pattern() {
               <line x1="14" x2="14" y1="15" y2="9"></line>
             </svg>
             <span className="sr-only">
-              Waiting
+              {"Waiting"}
             </span>
             <span className="tabular-nums">
-              2
+              {"2"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
@@ -140,10 +140,10 @@ export function Pattern() {
               <path d="M12 6v6l4 2"></path>
             </svg>
             <span className="sr-only">
-              Queued
+              {"Queued"}
             </span>
             <span className="tabular-nums">
-              1
+              {"1"}
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -151,10 +151,10 @@ export function Pattern() {
               <path d="M20 6 9 17l-5-5"></path>
             </svg>
             <span className="sr-only">
-              Succeeded
+              {"Succeeded"}
             </span>
             <span className="tabular-nums">
-              4
+              {"4"}
             </span>
           </Badge>
         </div>
@@ -175,7 +175,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Add task
+                {"Add task"}
               </Button>
             </div>
             <ButtonGroup role="group">
@@ -183,7 +183,7 @@ export function Pattern() {
                 <svg className="fill-current lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
                   <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                 </svg>
-                Run
+                {"Run"}
               </Button>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Run options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
@@ -286,17 +286,17 @@ export function Pattern() {
                   <div className="react-flow__edgelabel-renderer">
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(318.905px, 146.495px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        1.2M rows
+                        {"1.2M rows"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(318.905px, 301.981px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        384k rows
+                        {"384k rows"}
                       </Badge>
                     </div>
                     <div className="absolute" style={{transform: "translate(-50%, -50%) translate(536.797px, 146.495px)"}}>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
-                        1.5M rows
+                        {"1.5M rows"}
                       </Badge>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ export function Pattern() {
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Succeeded
+                                  {"Succeeded"}
                                 </span>
                               </Badge>
                             </span>
@@ -327,10 +327,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            Nightly
+                            {"Nightly"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            02:00 UTC
+                            {"02:00 UTC"}
                           </span>
                         </div>
                       </div>
@@ -352,7 +352,7 @@ export function Pattern() {
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Succeeded
+                                  {"Succeeded"}
                                 </span>
                               </Badge>
                             </span>
@@ -362,10 +362,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            extract_stripe
+                            {"extract_stripe"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            2m 10s
+                            {"2m 10s"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="extract_stripe" data-handlepos="bottom" data-id="1-extract_stripe-feeds-target"></div>
@@ -392,7 +392,7 @@ export function Pattern() {
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Succeeded
+                                  {"Succeeded"}
                                 </span>
                               </Badge>
                             </span>
@@ -402,10 +402,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            extract_paypal
+                            {"extract_paypal"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            1m 48s
+                            {"1m 48s"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="extract_paypal" data-handlepos="bottom" data-id="1-extract_paypal-feeds-target"></div>
@@ -436,7 +436,7 @@ export function Pattern() {
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Succeeded
+                                  {"Succeeded"}
                                 </span>
                               </Badge>
                             </span>
@@ -446,10 +446,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            dedupe_payments
+                            {"dedupe_payments"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            3m 12s
+                            {"3m 12s"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="dedupe_payments" data-handlepos="bottom" data-id="1-dedupe_payments-feeds-target"></div>
@@ -474,7 +474,7 @@ export function Pattern() {
                                   <path d="m6 6 12 12"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Failed
+                                  {"Failed"}
                                 </span>
                               </Badge>
                             </span>
@@ -484,10 +484,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            reconcile_ledger
+                            {"reconcile_ledger"}
                           </span>
                           <span className="tabular-nums text-destructive text-xs truncate w-full">
-                            Duplicate charge id
+                            {"Duplicate charge id"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="reconcile_ledger" data-handlepos="bottom" data-id="1-reconcile_ledger-feeds-target"></div>
@@ -514,7 +514,7 @@ export function Pattern() {
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
                                 <span className="sr-only">
-                                  Queued
+                                  {"Queued"}
                                 </span>
                               </Badge>
                             </span>
@@ -524,10 +524,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            build_invoices
+                            {"build_invoices"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            Blocked upstream
+                            {"Blocked upstream"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan opacity-0 pointer-events-none react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="build_invoices_daily" data-handlepos="bottom" data-id="1-build_invoices_daily-feeds-target"></div>
@@ -550,16 +550,16 @@ export function Pattern() {
                             <ItemContent className="gap-0 min-w-0">
                               <ItemTitle className="font-medium text-sm w-full">
                                 <span className="truncate">
-                                  publish_mrr
+                                  {"publish_mrr"}
                                 </span>
                               </ItemTitle>
                               <ItemDescription className="line-clamp-1 text-xs">
-                                Awaiting Approval
+                                {"Awaiting Approval"}
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions>
                               <Button className="nodrag nopan" type="button" tabIndex="0">
-                                Approve
+                                {"Approve"}
                               </Button>
                             </ItemActions>
                           </Item>
@@ -592,7 +592,7 @@ export function Pattern() {
                                   <line x1="14" x2="14" y1="15" y2="9"></line>
                                 </svg>
                                 <span className="sr-only">
-                                  Waiting
+                                  {"Waiting"}
                                 </span>
                               </Badge>
                             </span>
@@ -602,10 +602,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="font-medium text-sm truncate w-full">
-                            notify_finance
+                            {"notify_finance"}
                           </span>
                           <span className="tabular-nums text-muted-foreground text-xs truncate w-full">
-                            Holds for Approval
+                            {"Holds for Approval"}
                           </span>
                         </div>
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan opacity-0 pointer-events-none react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="notify_finance" data-handlepos="bottom" data-id="1-notify_finance-feeds-target"></div>
@@ -631,10 +631,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="text-sm truncate w-full">
-                            stripe_prod
+                            {"stripe_prod"}
                           </span>
                           <span className="text-muted-foreground text-xs truncate w-full">
-                            Connection
+                            {"Connection"}
                           </span>
                         </div>
                       </div>
@@ -659,10 +659,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="text-sm truncate w-full">
-                            paypal_eu
+                            {"paypal_eu"}
                           </span>
                           <span className="text-muted-foreground text-xs truncate w-full">
-                            Connection
+                            {"Connection"}
                           </span>
                         </div>
                       </div>
@@ -684,10 +684,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="text-sm truncate w-full">
-                            unique_charge
+                            {"unique_charge"}
                           </span>
                           <span className="text-muted-foreground text-xs truncate w-full">
-                            Test
+                            {"Test"}
                           </span>
                         </div>
                       </div>
@@ -711,10 +711,10 @@ export function Pattern() {
                         </ContextMenu>
                         <div className="flex flex-col items-center min-w-0 text-center w-full">
                           <span className="text-sm truncate w-full">
-                            ledger_v3
+                            {"ledger_v3"}
                           </span>
                           <span className="text-muted-foreground text-xs truncate w-full">
-                            Model
+                            {"Model"}
                           </span>
                         </div>
                       </div>
@@ -762,7 +762,7 @@ export function Pattern() {
                   </Tooltip>
                   <DropdownMenu>
                   <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 tabular-nums transition-all w-12 whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom level 95%" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
-                    95%
+                    {"95%"}
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <Tooltip>
@@ -788,14 +788,14 @@ export function Pattern() {
             </div>
             <div className="bottom center react-flow__attribution react-flow__panel" data-message="Please only hide this attribution when you are subscribed to React Flow Pro: https://reactflow.dev?utm_source=attribution">
               <a href="https://reactflow.dev?utm_source=attribution" target="_blank" rel="noopener noreferrer" aria-label="React Flow attribution">
-                React Flow
+                {"React Flow"}
               </a>
             </div>
             <div id="react-flow__node-desc-1" style={{display: "none"}}>
-              Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel.
+              {"Press enter or space to select a node. You can then use the arrow keys to move the node around. Press delete to remove it and escape to cancel."}
             </div>
             <div id="react-flow__edge-desc-1" style={{display: "none"}}>
-              Press enter or space to select an edge. You can then press delete to remove it or escape to cancel.
+              {"Press enter or space to select an edge. You can then press delete to remove it or escape to cancel."}
             </div>
             <div id="react-flow__aria-live-1" aria-live="assertive" aria-atomic="true" style={{position: "absolute", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)"}}></div>
           </div>
@@ -813,7 +813,7 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="truncate">
-                  publish_mrr
+                  {"publish_mrr"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                   <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
@@ -821,7 +821,7 @@ export function Pattern() {
                     <line x1="10" x2="10" y1="15" y2="9"></line>
                     <line x1="14" x2="14" y1="15" y2="9"></line>
                   </svg>
-                  Waiting
+                  {"Waiting"}
                 </Badge>
               </CardTitle>
               <Button className="-me-1.5" type="button" tabIndex="0" aria-label="Close task details">
@@ -834,10 +834,10 @@ export function Pattern() {
             <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
               <TabsList className="border-b gap-5 h-auto justify-start px-4 py-0 shrink-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                 <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2b_" compositeItemActive="" aria-controls="base-ui-_r_2d_">
-                  Settings
+                  {"Settings"}
                 </TabsTrigger>
                 <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2c_">
-                  Wiring
+                  {"Wiring"}
                 </TabsTrigger>
               </TabsList>
               <div className="flex flex-1 flex-col min-h-0 overflow-y-auto p-4">
@@ -845,13 +845,13 @@ export function Pattern() {
                   <FieldGroup className="flex-1">
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="task-title">
-                        Title
+                        {"Title"}
                       </FieldLabel>
                       <Input id="task-title" value="publish_mrr"></Input>
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="task-glyph">
-                        Service
+                        {"Service"}
                       </FieldLabel>
                       <Select>
                       <SelectTrigger className="w-full" type="button" tabIndex="0" id="task-glyph" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
@@ -865,12 +865,12 @@ export function Pattern() {
                                 <path fill="#FBBC05" d="M71.87 61.425C31.94 61.664-.237 94.228.001 134.159a72.301 72.301 0 0 0 28.222 56.88l32.248-32.246c-13.99-6.322-20.208-22.786-13.887-36.776 6.32-13.99 22.786-20.208 36.775-13.888a27.796 27.796 0 0 1 13.887 13.888l32.248-32.248A72.224 72.224 0 0 0 71.87 61.425"></path>
                               </svg>
                             </span>
-                            Google Cloud
+                            {"Google Cloud"}
                           </span>
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -878,13 +878,13 @@ export function Pattern() {
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="param-currency">
-                        currency
+                        {"currency"}
                       </FieldLabel>
                       <Input id="param-currency" type="text" value="USD"></Input>
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="param-approver">
-                        approver
+                        {"approver"}
                       </FieldLabel>
                       <Input id="param-approver" type="text" value="finance-lead"></Input>
                     </Field>
@@ -895,7 +895,7 @@ export function Pattern() {
                         <line x1="14" x2="14" y1="15" y2="9"></line>
                       </svg>
                       <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
-                        Awaiting Approval
+                        {"Awaiting Approval"}
                       </AlertTitle>
                     </Alert>
                   </FieldGroup>
@@ -905,10 +905,10 @@ export function Pattern() {
             <footer className="border-t p-4 shrink-0">
               <div className="gap-3 grid grid-cols-2 w-full">
                 <Button type="button" tabIndex="0">
-                  Cancel
+                  {"Cancel"}
                 </Button>
                 <Button type="button" disabled="" tabIndex="0" disabled>
-                  Save task
+                  {"Save task"}
                 </Button>
               </div>
             </footer>

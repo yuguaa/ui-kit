@@ -37,7 +37,7 @@ export function Pattern() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Shop
+                  {"Shop"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -47,7 +47,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                  Collections
+                  {"Collections"}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -57,7 +57,7 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem>
                 <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                  Curated Edits
+                  {"Curated Edits"}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -65,14 +65,14 @@ export function Pattern() {
           <div className="flex flex-col gap-5 items-start lg:flex-row lg:items-end lg:justify-between">
             <div className="flex flex-col gap-2 max-w-2xl">
               <h1 className="font-semibold leading-tight md:text-3xl text-2xl text-balance tracking-tight">
-                Curated Category Collections
+                {"Curated Category Collections"}
               </h1>
               <p className="leading-6 max-w-md text-muted-foreground text-pretty text-sm">
-                Curated edits for rooms, routines, and seasonal needs.
+                {"Curated edits for rooms, routines, and seasonal needs."}
               </p>
             </div>
             <Button href="#" aria-label="Browse all curated category collections" role="button" tabIndex="0">
-              Browse All
+              {"Browse All"}
               <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -105,20 +105,20 @@ export function Pattern() {
                   <path d="M8 10v4"></path>
                   <path d="M8 12H3"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </PopoverTrigger>
               </Popover>
               <Select>
               <SelectTrigger className="w-[166px]" type="button" tabIndex="0" id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                 <span className="text-muted-foreground">
-                  Sort by:
+                  {"Sort by:"}
                 </span>
                 <SelectValue>
-                  Featured
+                  {"Featured"}
                 </SelectValue>
                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
-                  ▼
+                  {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
@@ -151,7 +151,7 @@ export function Pattern() {
                   </div>
                   <div className="absolute left-3 top-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                      New Edit
+                      {"New Edit"}
                     </Badge>
                   </div>
                 </div>
@@ -165,11 +165,11 @@ export function Pattern() {
                         </svg>
                         <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Workspace
+                            {"Workspace"}
                           </a>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Home
+                            {"Home"}
                           </a>
                         </div>
                       </div>
@@ -181,26 +181,26 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="truncate">
-                          48 pieces
+                          {"48 pieces"}
                         </span>
                       </div>
                     </div>
                     <span className="font-medium shrink-0 tabular-nums text-foreground">
-                      From $24
+                      {"From $24"}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col gap-2 min-w-0 w-full">
                     <h2 className="font-semibold leading-tight text-balance text-lg tracking-tight" id="quiet-workbench-title">
                       <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                        Quiet Workbench
+                        {"Quiet Workbench"}
                       </a>
                     </h2>
                     <p className="leading-6 line-clamp-2 text-muted-foreground text-pretty text-sm">
-                      Desk tools, compact lighting, and organizers for focused rooms.
+                      {"Desk tools, compact lighting, and organizers for focused rooms."}
                     </p>
                   </div>
                   <Button href="#" role="button" tabIndex="0">
-                    Browse Collection
+                    {"Browse Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -235,11 +235,11 @@ export function Pattern() {
                         </svg>
                         <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Home
+                            {"Home"}
                           </a>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Wellness
+                            {"Wellness"}
                           </a>
                         </div>
                       </div>
@@ -251,26 +251,26 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="truncate">
-                          36 pieces
+                          {"36 pieces"}
                         </span>
                       </div>
                     </div>
                     <span className="font-medium shrink-0 tabular-nums text-foreground">
-                      From $32
+                      {"From $32"}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col gap-2 min-w-0 w-full">
                     <h2 className="font-semibold leading-tight text-balance text-lg tracking-tight" id="warm-lighting-title">
                       <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                        Warm Lighting
+                        {"Warm Lighting"}
                       </a>
                     </h2>
                     <p className="leading-6 line-clamp-2 text-muted-foreground text-pretty text-sm">
-                      Table lamps, pendants, and dimmable accents for softer evenings.
+                      {"Table lamps, pendants, and dimmable accents for softer evenings."}
                     </p>
                   </div>
                   <Button href="#" role="button" tabIndex="0">
-                    Browse Collection
+                    {"Browse Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -296,7 +296,7 @@ export function Pattern() {
                   </div>
                   <div className="absolute left-3 top-3">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                      Popular
+                      {"Popular"}
                     </Badge>
                   </div>
                 </div>
@@ -310,11 +310,11 @@ export function Pattern() {
                         </svg>
                         <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Travel
+                            {"Travel"}
                           </a>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Style
+                            {"Style"}
                           </a>
                         </div>
                       </div>
@@ -326,26 +326,26 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="truncate">
-                          29 pieces
+                          {"29 pieces"}
                         </span>
                       </div>
                     </div>
                     <span className="font-medium shrink-0 tabular-nums text-foreground">
-                      From $38
+                      {"From $38"}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col gap-2 min-w-0 w-full">
                     <h2 className="font-semibold leading-tight text-balance text-lg tracking-tight" id="carry-on-systems-title">
                       <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                        Carry-On Systems
+                        {"Carry-On Systems"}
                       </a>
                     </h2>
                     <p className="leading-6 line-clamp-2 text-muted-foreground text-pretty text-sm">
-                      Weekenders, slings, pouches, and cabin-ready organization.
+                      {"Weekenders, slings, pouches, and cabin-ready organization."}
                     </p>
                   </div>
                   <Button href="#" role="button" tabIndex="0">
-                    Browse Collection
+                    {"Browse Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -380,11 +380,11 @@ export function Pattern() {
                         </svg>
                         <div className="flex gap-1.5 items-center min-w-0 overflow-hidden">
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Home
+                            {"Home"}
                           </a>
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#">
-                            Workspace
+                            {"Workspace"}
                           </a>
                         </div>
                       </div>
@@ -396,26 +396,26 @@ export function Pattern() {
                           <path d="m7.5 4.27 9 5.15"></path>
                         </svg>
                         <span className="truncate">
-                          54 pieces
+                          {"54 pieces"}
                         </span>
                       </div>
                     </div>
                     <span className="font-medium shrink-0 tabular-nums text-foreground">
-                      From $18
+                      {"From $18"}
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col gap-2 min-w-0 w-full">
                     <h2 className="font-semibold leading-tight text-balance text-lg tracking-tight" id="open-storage-title">
                       <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
-                        Open Storage
+                        {"Open Storage"}
                       </a>
                     </h2>
                     <p className="leading-6 line-clamp-2 text-muted-foreground text-pretty text-sm">
-                      Shelving, woven bins, trays, and visible organization pieces.
+                      {"Shelving, woven bins, trays, and visible organization pieces."}
                     </p>
                   </div>
                   <Button href="#" role="button" tabIndex="0">
-                    Browse Collection
+                    {"Browse Collection"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -429,19 +429,19 @@ export function Pattern() {
         <div className="sm:px-6 xl:px-7">
           <div className="border-t flex flex-col gap-3 pt-5 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-muted-foreground text-sm">
-              Showing
+              {"Showing"}
               <span className="text-foreground">
-                1
+                {"1"}
               </span>
-              to
+              {"to"}
               <span className="text-foreground">
-                4
+                {"4"}
               </span>
-              of
+              {"of"}
               <span className="text-foreground">
-                11
+                {"11"}
               </span>
-              collections
+              {"collections"}
             </p>
             <Pagination className="mx-0 w-fit" role="navigation" aria-label="pagination">
               <PaginationContent className="gap-1">
@@ -451,29 +451,29 @@ export function Pattern() {
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                     <span className="cn-pagination-previous-text hidden sm:block">
-                      Previous
+                      {"Previous"}
                     </span>
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
                   <PaginationLink className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" aria-current="page" data-active="true" href="#" role="button" tabIndex="0">
-                    1
+                    {"1"}
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
                   <PaginationLink className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" data-active="false" href="#" role="button" tabIndex="0">
-                    2
+                    {"2"}
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
                   <PaginationLink className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" data-active="false" href="#" role="button" tabIndex="0">
-                    3
+                    {"3"}
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
                   <PaginationLink className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-pagination-next disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" aria-label="Go to next page" href="#" aria-disabled="false" role="button">
                     <span className="cn-pagination-next-text hidden sm:block">
-                      Next
+                      {"Next"}
                     </span>
                     <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" data-icon="inline-end">
                       <path d="m9 18 6-6-6-6"></path>

@@ -50,7 +50,7 @@ export function Pattern() {
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="/shop">
-                Shop
+                {"Shop"}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -60,7 +60,7 @@ export function Pattern() {
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="/shop/sneakers">
-                Sneakers
+                {"Sneakers"}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -70,7 +70,7 @@ export function Pattern() {
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbLink className="hover:text-primary hover:underline transition-colors underline-offset-4" href="/shop/sneakers/running">
-                Running
+                {"Running"}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator role="presentation" aria-hidden="true">
@@ -80,7 +80,7 @@ export function Pattern() {
             </BreadcrumbSeparator>
             <BreadcrumbItem>
               <BreadcrumbPage role="link" aria-disabled="true" aria-current="page">
-                Cloud Shift Runner
+                {"Cloud Shift Runner"}
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -134,17 +134,17 @@ export function Pattern() {
             <div className="flex flex-col gap-5 min-w-0">
               <nav className="flex flex-wrap gap-2 items-center text-sm" aria-label="Product categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-4" href="/shop/sneakers">
-                  Sneakers
+                  {"Sneakers"}
                 </a>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground transition-colors underline-offset-4" href="/shop/sneakers/running">
-                  Running
+                  {"Running"}
                 </a>
               </nav>
               <div className="flex flex-col gap-2 min-w-0">
                 <h1 className="font-semibold leading-tight md:text-2xl min-w-0 text-foreground text-xl tracking-tight">
                   <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#wm-8421">
-                    Cloud Shift Runner
+                    {"Cloud Shift Runner"}
                   </a>
                 </h1>
                 <div className="flex flex-wrap gap-2 items-center">
@@ -202,36 +202,36 @@ export function Pattern() {
                       </div>
                     </div>
                     <span className="text-muted-foreground text-xs w-5">
-                      4.5
+                      {"4.5"}
                     </span>
                   </Rating>
                   <a className="hover:text-primary hover:underline text-muted-foreground text-sm transition-colors underline-offset-4" href="#reviews" aria-label="Read 834 reviews for Cloud Shift Runner">
-                    (834 reviews)
+                    {"(834 reviews)"}
                   </a>
                 </div>
                 <p className="leading-relaxed line-clamp-2 text-muted-foreground text-sm">
-                  Daily road runner with breathable mesh, a single-density foam midsole, and a rubber outsole built for steady miles.
+                  {"Daily road runner with breathable mesh, a single-density foam midsole, and a rubber outsole built for steady miles."}
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 items-center">
                 <div className="flex font-semibold gap-2 items-baseline tabular-nums text-xl">
                   <span>
-                    $96.23
+                    {"$96.23"}
                   </span>
                   <span className="font-normal line-through text-muted-foreground">
-                    $128.00
+                    {"$128.00"}
                   </span>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  25% OFF
+                  {"25% OFF"}
                 </Badge>
               </div>
               <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
               <section className="flex flex-col gap-3" aria-label="Color">
                 <p className="font-medium text-foreground text-sm">
-                  Color:
+                  {"Color:"}
                   <span className="font-normal text-muted-foreground">
-                    Cherry
+                    {"Cherry"}
                   </span>
                 </p>
                 <div className="flex flex-wrap gap-2 items-center" role="radiogroup" aria-label="Color">
@@ -255,10 +255,10 @@ export function Pattern() {
               <section className="flex flex-col gap-3" aria-label="Size">
                 <div className="flex gap-3 items-center justify-between">
                   <p className="font-medium text-foreground text-sm">
-                    Select Size
+                    {"Select Size"}
                   </p>
                   <a className="hover:text-primary hover:underline text-muted-foreground text-sm transition-colors underline-offset-4" href="#size-guide">
-                    Size guide
+                    {"Size guide"}
                   </a>
                 </div>
                 <div className="@container/field-group cn-field-group flex-col gap-2 grid grid-cols-4 group/field-group pt-1 sm:grid-cols-7 w-full" role="group" aria-label="Select Size">
@@ -273,7 +273,7 @@ export function Pattern() {
                       </Checkbox>
                       <input id="pdp-size-eu-39" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        39
+                        {"39"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -282,7 +282,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" aria-label="Size EU 40, in stock" aria-labelledby="pdp-size-eu-40-label"></Checkbox>
                       <input id="pdp-size-eu-40" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        40
+                        {"40"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -291,7 +291,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" aria-label="Size EU 41, low stock" aria-labelledby="pdp-size-eu-41-label"></Checkbox>
                       <input id="pdp-size-eu-41" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        41
+                        {"41"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -300,7 +300,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-label="Size EU 42, in stock" aria-labelledby="pdp-size-eu-42-label"></Checkbox>
                       <input id="pdp-size-eu-42" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        42
+                        {"42"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -309,7 +309,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-label="Size EU 43, in stock" aria-labelledby="pdp-size-eu-43-label"></Checkbox>
                       <input id="pdp-size-eu-43" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        43
+                        {"43"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -318,7 +318,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" disabled="" unchecked="" role="checkbox" tabIndex="-1" aria-disabled="true" id="base-ui-_r_f_" aria-checked="false" aria-label="Size EU 44, out of stock" aria-labelledby="pdp-size-eu-44-label"></Checkbox>
                       <input disabled id="pdp-size-eu-44" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center line-through tabular-nums text-sm w-full">
-                        44
+                        {"44"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -327,7 +327,7 @@ export function Pattern() {
                       <Checkbox className="-right-2 -top-2 absolute border-none data-unchecked:opacity-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_i_" aria-checked="false" aria-label="Size EU 45, low stock" aria-labelledby="pdp-size-eu-45-label"></Checkbox>
                       <input id="pdp-size-eu-45" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-field-title font-medium items-center justify-center tabular-nums text-sm w-full">
-                        45
+                        {"45"}
                       </FieldLabel>
                     </Field>
                   </FieldLabel>
@@ -340,13 +340,13 @@ export function Pattern() {
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                   </svg>
-                  Add to Bag
+                  {"Add to Bag"}
                 </Button>
                 <Button className="w-full" type="button" tabIndex="0" aria-pressed="false" aria-label="Add Cloud Shift Runner to wishlist">
                   <svg className="lucide lucide-heart size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                     <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                   </svg>
-                  Wishlist
+                  {"Wishlist"}
                 </Button>
               </div>
               <ul className="gap-2 grid grid-cols-3" role="list">
@@ -363,7 +363,7 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0 items-center">
                       <ItemTitle className="font-medium leading-tight text-xs">
-                        Free shipping
+                        {"Free shipping"}
                       </ItemTitle>
                     </ItemContent>
                   </Item>
@@ -378,7 +378,7 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0 items-center">
                       <ItemTitle className="font-medium leading-tight text-xs">
-                        30-day returns
+                        {"30-day returns"}
                       </ItemTitle>
                     </ItemContent>
                   </Item>
@@ -393,7 +393,7 @@ export function Pattern() {
                     </ItemMedia>
                     <ItemContent className="gap-0 items-center">
                       <ItemTitle className="font-medium leading-tight text-xs">
-                        1-year warranty
+                        {"1-year warranty"}
                       </ItemTitle>
                     </ItemContent>
                   </Item>
@@ -404,25 +404,25 @@ export function Pattern() {
           <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
             <TabsList className="border-b gap-6 h-10! justify-start p-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
               <TabsTrigger className="after:-bottom-0.5! after:bg-primary font-medium pb-3 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_l_" compositeItemActive="" aria-controls="base-ui-_r_p_">
-                Description
+                {"Description"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-0.5! after:bg-primary font-medium pb-3 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_m_">
-                Specs
+                {"Specs"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-0.5! after:bg-primary font-medium pb-3 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_n_">
-                Shipping & Returns
+                {"Shipping & Returns"}
               </TabsTrigger>
               <TabsTrigger className="after:-bottom-0.5! after:bg-primary font-medium pb-3 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_o_">
-                Reviews
+                {"Reviews"}
               </TabsTrigger>
             </TabsList>
             <TabsContent className="max-w-3xl mt-6" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_p_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_l_">
               <div className="flex flex-col gap-4 leading-relaxed text-sm">
                 <p className="text-foreground">
-                  Cloud Shift Runner is built for daily mileage on roads and treadmills. The engineered mesh upper keeps weight low and airflow high, and a single-density EVA midsole delivers consistent cushion from the first mile to the last.
+                  {"Cloud Shift Runner is built for daily mileage on roads and treadmills. The engineered mesh upper keeps weight low and airflow high, and a single-density EVA midsole delivers consistent cushion from the first mile to the last."}
                 </p>
                 <p className="text-foreground">
-                  An exposed forefoot flex groove keeps each toe-off quick, and a padded heel collar reduces friction on long efforts. Light enough for tempo days, supportive enough for easy runs.
+                  {"An exposed forefoot flex groove keeps each toe-off quick, and a padded heel collar reduces friction on long efforts. Light enough for tempo days, supportive enough for easy runs."}
                 </p>
                 <ul className="flex flex-col gap-2 text-foreground">
                   <li className="flex gap-2 items-start">
@@ -430,7 +430,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      Engineered mesh upper with recycled yarn
+                      {"Engineered mesh upper with recycled yarn"}
                     </span>
                   </li>
                   <li className="flex gap-2 items-start">
@@ -438,7 +438,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      Single-density EVA midsole, 8 mm drop
+                      {"Single-density EVA midsole, 8 mm drop"}
                     </span>
                   </li>
                   <li className="flex gap-2 items-start">
@@ -446,7 +446,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      Rubber outsole with forefoot flex groove
+                      {"Rubber outsole with forefoot flex groove"}
                     </span>
                   </li>
                   <li className="flex gap-2 items-start">
@@ -454,7 +454,7 @@ export function Pattern() {
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
-                      248 g (US 9), true-to-size fit
+                      {"248 g (US 9), true-to-size fit"}
                     </span>
                   </li>
                 </ul>
@@ -467,33 +467,39 @@ export function Pattern() {
               <div className="flex gap-4 items-center justify-between mb-6">
                 <div className="flex gap-3 items-center min-w-0">
                   <h2 className="font-semibold text-balance text-xl tracking-tight" id="related-heading">
-                    You May Also Like
+                    {"You May Also Like"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full tabular-nums text-secondary-foreground text-xs transition-shadow" aria-label="Page 1 of 2">
-                    1 / 2
+                    {"1 / 2"}
                   </Badge>
                 </div>
                 <div className="flex gap-2 items-center shrink-0">
+                  <Carousel>
                   <CarouselPrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center left-auto outline-none select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Previous related products">
                     <svg className="cn-rtl-flip lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                     <span className="sr-only">
-                      Previous slide
+                      {"Previous slide"}
                     </span>
                   </CarouselPrevious>
+                  </Carousel>
+                  <Carousel>
                   <CarouselNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-auto select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" tabIndex="0" aria-label="Next related products">
                     <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                     <span className="sr-only">
-                      Next slide
+                      {"Next slide"}
                     </span>
                   </CarouselNext>
+                  </Carousel>
                 </div>
               </div>
+              <Carousel>
               <CarouselContent>
                 <div className="flex ml-0 py-1" style={{transform: "translate3d(0px, 0px, 0px)"}}>
+                  <Carousel>
                   <CarouselItem className="pl-0" role="group" aria-roledescription="slide">
                     <div className="gap-4 grid lg:grid-cols-4 px-1 sm:grid-cols-2">
                       <Card className="h-full pt-0" size="default">
@@ -513,30 +519,30 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Trail Runner Z2 categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/trail">
-                                Trail
+                                {"Trail"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/off-road">
-                                Off-road
+                                {"Off-road"}
                               </a>
                             </nav>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                              Trending
+                              {"Trending"}
                             </Badge>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/trail-runner-z2">
-                                Trail Runner Z2
+                                {"Trail Runner Z2"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Aggressive lug pattern for wet trails.
+                              {"Aggressive lug pattern for wet trails."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $142.00
+                              {"$142.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -549,7 +555,7 @@ export function Pattern() {
                             </a>
                             <div className="absolute left-2 top-2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                                -22%
+                                {"-22%"}
                               </Badge>
                             </div>
                             <Button className="absolute opacity-100 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Sport Performance Pro from wishlist" aria-pressed="true">
@@ -563,26 +569,26 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Sport Performance Pro categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/racing">
-                                Racing
+                                {"Racing"}
                               </a>
                             </nav>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/sport-performance-pro">
-                                Sport Performance Pro
+                                {"Sport Performance Pro"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Race-day cushioning with a snug knit upper.
+                              {"Race-day cushioning with a snug knit upper."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span className="font-normal line-through text-muted-foreground">
-                              $198.00
+                              {"$198.00"}
                             </span>
                             <span>
-                              $155.00
+                              {"$155.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -604,30 +610,30 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Heritage Court Low categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/lifestyle">
-                                Lifestyle
+                                {"Lifestyle"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/court">
-                                Court
+                                {"Court"}
                               </a>
                             </nav>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                              New
+                              {"New"}
                             </Badge>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/heritage-court-low">
-                                Heritage Court Low
+                                {"Heritage Court Low"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Classic court silhouette in tumbled leather.
+                              {"Classic court silhouette in tumbled leather."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $118.00
+                              {"$118.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -649,29 +655,31 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Modern Street Elite categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/lifestyle">
-                                Lifestyle
+                                {"Lifestyle"}
                               </a>
                             </nav>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/modern-street-elite">
-                                Modern Street Elite
+                                {"Modern Street Elite"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Chunky midsole, all-day street comfort.
+                              {"Chunky midsole, all-day street comfort."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $175.00
+                              {"$175.00"}
                             </span>
                           </div>
                         </CardContent>
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
+                  <Carousel>
                   <CarouselItem className="pl-0" role="group" aria-roledescription="slide">
                     <div className="gap-4 grid lg:grid-cols-4 px-1 sm:grid-cols-2">
                       <Card className="h-full pt-0" size="default">
@@ -691,27 +699,27 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Alpine Trekker Mid categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/trail">
-                                Trail
+                                {"Trail"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/hiking">
-                                Hiking
+                                {"Hiking"}
                               </a>
                             </nav>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/alpine-trekker-mid">
-                                Alpine Trekker Mid
+                                {"Alpine Trekker Mid"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Mid-cut hiker with a sticky rubber outsole.
+                              {"Mid-cut hiker with a sticky rubber outsole."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $168.00
+                              {"$168.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -733,26 +741,26 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Pulse Sensor Trainer categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/training">
-                                Training
+                                {"Training"}
                               </a>
                             </nav>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                              4 left
+                              {"4 left"}
                             </Badge>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/pulse-sensor-trainer">
-                                Pulse Sensor Trainer
+                                {"Pulse Sensor Trainer"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Foot-strike sensor in a low-profile trainer.
+                              {"Foot-strike sensor in a low-profile trainer."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $199.00
+                              {"$199.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -774,27 +782,27 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Cloud Stride 2 categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/road">
-                                Road
+                                {"Road"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/daily">
-                                Daily
+                                {"Daily"}
                               </a>
                             </nav>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/cloud-stride-2">
-                                Cloud Stride 2
+                                {"Cloud Stride 2"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Second-gen daily trainer, lighter midsole.
+                              {"Second-gen daily trainer, lighter midsole."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $145.00
+                              {"$145.00"}
                             </span>
                           </div>
                         </CardContent>
@@ -816,31 +824,33 @@ export function Pattern() {
                           <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                             <nav className="flex flex-wrap gap-1.5 items-center min-w-0" aria-label="Studio Knit Slip-On categories">
                               <a className="font-medium hover:text-primary hover:underline min-w-0 text-muted-foreground text-xs transition-colors truncate underline-offset-2" href="/shop/sneakers/lifestyle">
-                                Lifestyle
+                                {"Lifestyle"}
                               </a>
                             </nav>
                           </div>
                           <div className="flex flex-col gap-0.5 min-w-0">
                             <CardTitle className="min-w-0 text-base">
                               <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="/products/studio-knit-slip-on">
-                                Studio Knit Slip-On
+                                {"Studio Knit Slip-On"}
                               </a>
                             </CardTitle>
                             <CardDescription className="text-xs truncate">
-                              Knit slip-on with cushioned insole.
+                              {"Knit slip-on with cushioned insole."}
                             </CardDescription>
                           </div>
                           <div className="flex font-semibold gap-2 items-center min-w-0 mt-auto pt-1 tabular-nums text-sm">
                             <span>
-                              $88.00
+                              {"$88.00"}
                             </span>
                           </div>
                         </CardContent>
                       </Card>
                     </div>
                   </CarouselItem>
+                  </Carousel>
                 </div>
               </CarouselContent>
+              </Carousel>
             </Carousel>
           </section>
         </div>

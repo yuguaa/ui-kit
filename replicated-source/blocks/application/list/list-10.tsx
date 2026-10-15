@@ -24,7 +24,7 @@ export function Pattern() {
       <Frame className="@container max-w-xl w-full">
         <FramePanel className="flex items-center justify-between p-3.5!">
           <h2 className="font-medium text-foreground text-sm">
-            Recent Investments
+            {"Recent Investments"}
           </h2>
           <InputGroup className="w-46" role="group">
             <InputGroupAddon role="group" data-align="inline-start">
@@ -36,7 +36,7 @@ export function Pattern() {
             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_0_" placeholder="Search" />
             <InputGroupAddon role="group" data-align="inline-end">
               <Kbd>
-                ⌘ K
+                {"⌘ K"}
               </Kbd>
             </InputGroupAddon>
           </InputGroup>
@@ -47,13 +47,13 @@ export function Pattern() {
               <TableHeader className="bg-muted/50">
                 <TableRow>
                   <TableHead className="ps-3.5 text-muted-foreground text-sm w-[44%]">
-                    Company
+                    {"Company"}
                   </TableHead>
                   <TableHead className="text-muted-foreground text-sm w-[28%]">
-                    Sector
+                    {"Sector"}
                   </TableHead>
                   <TableHead className="pe-3.5 text-muted-foreground text-right text-sm w-[28%]">
-                    Value Change
+                    {"Value Change"}
                   </TableHead>
                 </TableRow>
               </TableHeader>
@@ -78,19 +78,19 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <div className="font-medium text-foreground text-sm truncate">
-                          Ironclad Metals
+                          {"Ironclad Metals"}
                         </div>
                         <div className="text-muted-foreground text-sm truncate">
-                          Feb 8, 2025
+                          {"Feb 8, 2025"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-2 py-3 sm:p-3.5 text-foreground text-sm truncate">
-                    Industrial Materials
+                    {"Industrial Materials"}
                   </TableCell>
                   <TableCell className="font-medium pe-3.5 px-2 py-3 sm:p-3.5 text-[#0B5C22] text-right text-sm">
-                    + $ 420,000
+                    {"+ $ 420,000"}
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -105,19 +105,19 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <div className="font-medium text-foreground text-sm truncate">
-                          BluePeak Realty
+                          {"BluePeak Realty"}
                         </div>
                         <div className="text-muted-foreground text-sm truncate">
-                          Feb 7, 2025
+                          {"Feb 7, 2025"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-2 py-3 sm:p-3.5 text-foreground text-sm truncate">
-                    Real Estate
+                    {"Real Estate"}
                   </TableCell>
                   <TableCell className="font-medium pe-3.5 px-2 py-3 sm:p-3.5 text-[#0B5C22] text-right text-sm">
-                    + $ 310,000
+                    {"+ $ 310,000"}
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -135,19 +135,19 @@ export function Pattern() {
                       </Item>
                       <div className="min-w-0">
                         <div className="font-medium text-foreground text-sm truncate">
-                          Ditz Logistics
+                          {"Ditz Logistics"}
                         </div>
                         <div className="text-muted-foreground text-sm truncate">
-                          Feb 6, 2025
+                          {"Feb 6, 2025"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-2 py-3 sm:p-3.5 text-foreground text-sm truncate">
-                    Transportation
+                    {"Transportation"}
                   </TableCell>
                   <TableCell className="font-medium pe-3.5 px-2 py-3 sm:p-3.5 text-[#0B5C22] text-right text-sm">
-                    + $ 185,000
+                    {"+ $ 185,000"}
                   </TableCell>
                 </TableRow>
                 <TableRow>
@@ -157,26 +157,26 @@ export function Pattern() {
                         <ItemMedia className="size-auto" variant="icon">
                           <svg className="brightness-0 invert size-5.5" aria-hidden="true" viewBox="0 0 64 40">
                             <text x="1" y="29" fill="#0061D5" fontFamily="Arial, Helvetica, sans-serif" fontSize="30" fontWeight="700" letter-spacing="0">
-                              box
+                              {"box"}
                             </text>
                           </svg>
                         </ItemMedia>
                       </Item>
                       <div className="min-w-0">
                         <div className="font-medium text-foreground text-sm truncate">
-                          WaveMark Capital
+                          {"WaveMark Capital"}
                         </div>
                         <div className="text-muted-foreground text-sm truncate">
-                          Feb 5, 2025
+                          {"Feb 5, 2025"}
                         </div>
                       </div>
                     </div>
                   </TableCell>
                   <TableCell className="px-2 py-3 sm:p-3.5 text-foreground text-sm truncate">
-                    Finances
+                    {"Finances"}
                   </TableCell>
                   <TableCell className="font-medium pe-3.5 px-2 py-3 sm:p-3.5 text-[#991930] text-right text-sm">
-                    - $ 92,000
+                    {"- $ 92,000"}
                   </TableCell>
                 </TableRow>
               </TableBody>

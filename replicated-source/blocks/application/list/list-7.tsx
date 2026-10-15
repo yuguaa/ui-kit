@@ -20,14 +20,14 @@ export function Pattern() {
         <Frame className="@container w-full">
           <FramePanel className="flex gap-4 items-center justify-between p-3.5!">
             <h2 className="font-medium text-base text-foreground">
-              Transactions
+              {"Transactions"}
             </h2>
             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
-                Weekly
+                {"Weekly"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                All Time
+                {"All Time"}
               </TabsTrigger>
             </TabsList>
           </FramePanel>
@@ -47,15 +47,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        One-time Deposit
+                        {"One-time Deposit"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        June 16
+                        {"June 16"}
                       </p>
                     </div>
                     <div className="flex flex-col items-end shrink-0 space-y-1 text-right">
                       <span className="font-medium text-base text-success">
-                        + $3,100.00
+                        {"+ $3,100.00"}
                       </span>
                     </div>
                   </div>
@@ -74,15 +74,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Grocery Shopping
+                        {"Grocery Shopping"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        June 14
+                        {"June 14"}
                       </p>
                     </div>
                     <div className="flex flex-col items-end shrink-0 space-y-1 text-right">
                       <span className="font-medium text-base text-destructive">
-                        - $312.40
+                        {"- $312.40"}
                       </span>
                     </div>
                   </div>
@@ -99,15 +99,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Electricity Bill
+                        {"Electricity Bill"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        June 12
+                        {"June 12"}
                       </p>
                     </div>
                     <div className="flex flex-col items-end shrink-0 space-y-1 text-right">
                       <span className="font-medium text-base text-destructive">
-                        - $84.20
+                        {"- $84.20"}
                       </span>
                     </div>
                   </div>
@@ -126,15 +126,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Dining Out
+                        {"Dining Out"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        June 11
+                        {"June 11"}
                       </p>
                     </div>
                     <div className="flex flex-col items-end shrink-0 space-y-1 text-right">
                       <span className="font-medium text-base text-destructive">
-                        - $189.00
+                        {"- $189.00"}
                       </span>
                     </div>
                   </div>
@@ -152,15 +152,15 @@ export function Pattern() {
                     </Item>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
                       <p className="font-medium leading-5 text-base text-foreground">
-                        Interest Payout
+                        {"Interest Payout"}
                       </p>
                       <p className="leading-4 text-muted-foreground text-sm">
-                        June 9
+                        {"June 9"}
                       </p>
                     </div>
                     <div className="flex flex-col items-end shrink-0 space-y-1 text-right">
                       <span className="font-medium text-base text-success">
-                        + $28.90
+                        {"+ $28.90"}
                       </span>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ export function Pattern() {
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               </svg>
-              View More
+              {"View More"}
             </Button>
           </FramePanel>
         </Frame>

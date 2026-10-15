@@ -42,17 +42,17 @@ export function Pattern() {
   return (
     <main className="flex items-center justify-center min-h-svh px-4 py-6 sm:px-8 sm:py-10 w-full">
       <h1 className="sr-only">
-        Inline editable ticket details form
+        {"Inline editable ticket details form"}
       </h1>
       <form className="max-w-lg w-full" id="form-7-ticket-details">
         <Frame className="group w-full" spacing="sm">
           <header className="flex flex-row gap-3 items-start justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) sm:items-center">
             <div className="flex flex-col gap-0.5 min-w-0">
               <div className="font-semibold text-sm">
-                Ticket Details
+                {"Ticket Details"}
               </div>
               <div className="hidden sm:block text-muted-foreground text-sm truncate">
-                Operational fields for triage.
+                {"Operational fields for triage."}
               </div>
             </div>
             <Tooltip>
@@ -61,7 +61,7 @@ export function Pattern() {
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
-              Add note
+              {"Add note"}
             </TooltipTrigger>
             </Tooltip>
           </header>
@@ -69,7 +69,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Due Date
+                  {"Due Date"}
                 </span>
                 <Tooltip>
                 <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Due Date info" id="base-ui-_r_3_" baseUiTooltipTrigger="">
@@ -94,7 +94,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        Apr 30, 2026
+                        {"Apr 30, 2026"}
                       </span>
                     </span>
                   </span>
@@ -119,7 +119,7 @@ export function Pattern() {
                           <path d="M3 10h18"></path>
                         </svg>
                         <span className="truncate">
-                          Apr 30, 2026
+                          {"Apr 30, 2026"}
                         </span>
                       </span>
                     </PopoverTrigger>
@@ -145,7 +145,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Status
+                  {"Status"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -156,7 +156,7 @@ export function Pattern() {
                         <circle cx="12" cy="12" r="10"></circle>
                         <circle cx="12" cy="12" r="1"></circle>
                       </svg>
-                      Open
+                      {"Open"}
                     </Badge>
                   </span>
                   <Item className="ml-1.5 opacity-100 p-0 size-5 sm:group-focus-visible/value:opacity-100 sm:group-hover/row:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity" variant="default" size="default">
@@ -178,12 +178,12 @@ export function Pattern() {
                             <circle cx="12" cy="12" r="10"></circle>
                             <circle cx="12" cy="12" r="1"></circle>
                           </svg>
-                          Open
+                          {"Open"}
                         </Badge>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -209,7 +209,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  SLA
+                  {"SLA"}
                 </span>
                 <Tooltip>
                 <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="SLA info" id="base-ui-_r_a_" baseUiTooltipTrigger="">
@@ -229,7 +229,7 @@ export function Pattern() {
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      SLA Met
+                      {"SLA Met"}
                     </Badge>
                   </span>
                   <Item className="ml-1.5 opacity-100 p-0 size-5 sm:group-focus-visible/value:opacity-100 sm:group-hover/row:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity" variant="default" size="default">
@@ -250,7 +250,7 @@ export function Pattern() {
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
-                          SLA Met
+                          {"SLA Met"}
                         </Badge>
                       </FieldLabel>
                       <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_b_" aria-checked="true" size="sm" aria-labelledby="form-7-sla-label">
@@ -279,7 +279,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Priority
+                  {"Priority"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -292,7 +292,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        Medium
+                        {"Medium"}
                       </span>
                     </span>
                   </span>
@@ -317,13 +317,13 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Medium
+                            {"Medium"}
                           </span>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -349,7 +349,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Source
+                  {"Source"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -363,7 +363,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        Customer Portal
+                        {"Customer Portal"}
                       </span>
                     </span>
                   </span>
@@ -389,13 +389,13 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Customer Portal
+                            {"Customer Portal"}
                           </span>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -421,7 +421,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Channel
+                  {"Channel"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -437,7 +437,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        identity-access
+                        {"identity-access"}
                       </span>
                     </span>
                   </span>
@@ -484,7 +484,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Form
+                  {"Form"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -501,7 +501,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        Workspace Access
+                        {"Workspace Access"}
                       </span>
                     </span>
                   </span>
@@ -548,7 +548,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Category
+                  {"Category"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -556,7 +556,7 @@ export function Pattern() {
                   <span className="flex items-center min-w-0">
                     <span className="flex font-medium gap-2 items-center min-h-8 min-w-0 text-foreground text-sm">
                       <span className="min-w-0 truncate">
-                        Access Request
+                        {"Access Request"}
                       </span>
                     </span>
                   </span>
@@ -576,13 +576,13 @@ export function Pattern() {
                       <SelectValue>
                         <span className="flex font-medium gap-2 items-center min-h-8 min-w-0 text-foreground text-sm">
                           <span className="min-w-0 truncate">
-                            Access Request
+                            {"Access Request"}
                           </span>
                         </span>
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -608,7 +608,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-start" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 sm:min-h-8 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Tags
+                  {"Tags"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-start min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -616,10 +616,10 @@ export function Pattern() {
                   <span className="flex items-start min-w-0">
                     <span className="flex flex-wrap gap-1.5 items-center min-h-6 min-w-0 overflow-visible">
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                        Feature
+                        {"Feature"}
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                        Security
+                        {"Security"}
                       </Badge>
                     </span>
                   </span>
@@ -636,7 +636,7 @@ export function Pattern() {
                   <InputGroup className="box-border h-auto! has-[[data-slot=input-group-control]:focus-visible]:border-input! has-[[data-slot=input-group-control]:focus-visible]:ring-0! has-[[data-slot=input-group-control]:focus-visible]:shadow-none! items-start min-h-8!" role="group">
                     <ComboboxChips className="bg-transparent border-0 flex-1 flex-wrap! focus-within:ring-0 gap-1.5 h-auto! has-data-[slot=combobox-chip]:pl-1 items-center min-h-8! overflow-visible px-2 py-1! ring-0 shadow-none" role="toolbar">
                       <ComboboxChip className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 inline-flex items-center justify-center min-w-5 outline-none px-1.25 py-0.5 relative rounded-full shrink-0 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow w-fit whitespace-nowrap" tabIndex="-1">
-                        Feature
+                        {"Feature"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -645,7 +645,7 @@ export function Pattern() {
                         </button>
                       </ComboboxChip>
                       <ComboboxChip className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 inline-flex items-center justify-center min-w-5 outline-none px-1.25 py-0.5 relative rounded-full shrink-0 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow w-fit whitespace-nowrap" tabIndex="-1">
-                        Security
+                        {"Security"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -677,7 +677,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-start" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 sm:min-h-8 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Owners
+                  {"Owners"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-start min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -689,7 +689,7 @@ export function Pattern() {
                           <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="max-w-32 truncate">
-                          Mira Stone
+                          {"Mira Stone"}
                         </span>
                       </Badge>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-0 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
@@ -697,7 +697,7 @@ export function Pattern() {
                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
                         <span className="max-w-32 truncate">
-                          Leo Grant
+                          {"Leo Grant"}
                         </span>
                       </Badge>
                     </span>
@@ -718,7 +718,7 @@ export function Pattern() {
                         <Avatar className="size-4" size="default">
                           <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
-                        Mira Stone
+                        {"Mira Stone"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -730,7 +730,7 @@ export function Pattern() {
                         <Avatar className="size-4" size="default">
                           <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                         </Avatar>
-                        Leo Grant
+                        {"Leo Grant"}
                         <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
                           <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
@@ -762,7 +762,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Updates
+                  {"Updates"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 items-center min-h-8 min-w-0 relative row-start-2 sm:col-start-2 sm:row-start-1">
@@ -776,7 +776,7 @@ export function Pattern() {
                         </svg>
                       </span>
                       <span className="min-w-0 truncate">
-                        Requester notified
+                        {"Requester notified"}
                       </span>
                     </span>
                   </span>
@@ -801,7 +801,7 @@ export function Pattern() {
                             </svg>
                           </span>
                           <span className="min-w-0 truncate">
-                            Requester notified
+                            {"Requester notified"}
                           </span>
                         </span>
                       </FieldLabel>
@@ -831,7 +831,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Created
+                  {"Created"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 flex items-center min-h-8 min-w-0 px-2.5 row-start-2 sm:col-start-2 sm:row-start-1">
@@ -843,7 +843,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="min-w-0 truncate">
-                    Jan 21, 2026 at 10:16 PM
+                    {"Jan 21, 2026 at 10:16 PM"}
                   </span>
                 </span>
               </div>
@@ -852,7 +852,7 @@ export function Pattern() {
             <Field className="gap-x-2 gap-y-1 grid group/row px-4 py-1.5 sm:gap-4 sm:grid-cols-[minmax(7.75rem,0.5fr)_minmax(0,1.5fr)] sm:items-center" role="group" data-orientation="vertical">
               <FieldLabel className="cn-field-title font-normal gap-1 items-center min-w-0 text-muted-foreground text-sm">
                 <span className="min-w-0 truncate">
-                  Updated
+                  {"Updated"}
                 </span>
               </FieldLabel>
               <div className="col-start-1 flex items-center min-h-8 min-w-0 px-2.5 row-start-2 sm:col-start-2 sm:row-start-1">
@@ -864,7 +864,7 @@ export function Pattern() {
                     </svg>
                   </span>
                   <span className="min-w-0 truncate">
-                    Just now
+                    {"Just now"}
                   </span>
                 </span>
               </div>

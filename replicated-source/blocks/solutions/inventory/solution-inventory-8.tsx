@@ -49,7 +49,7 @@ export function Pattern() {
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
         <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-          Open Per Product Stock
+          {"Open Per Product Stock"}
         </SheetTrigger>
         </Sheet>
       </div>
@@ -59,7 +59,7 @@ export function Pattern() {
       <SheetHeader className="border-b gap-0 p-0 shrink-0">
         <div className="border-b flex gap-2 items-center justify-between min-h-11 px-4">
           <SheetTitle className="font-medium leading-5 text-sm truncate" id="base-ui-_r_3_">
-            Per Product Stock
+            {"Per Product Stock"}
           </SheetTitle>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close sheet">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -69,32 +69,32 @@ export function Pattern() {
           </SheetClose>
         </div>
         <SheetDescription className="sr-only" id="base-ui-_r_4_">
-          Per-product stock rules, shipping configuration and reorder controls for Air Max 270 React Engine.
+          {"Per-product stock rules, shipping configuration and reorder controls for Air Max 270 React Engine."}
         </SheetDescription>
         <div className="flex flex-col gap-1 min-w-0 px-4 py-3">
           <h2 className="font-semibold text-foreground text-xl tracking-tight truncate">
-            Air Max 270 React Eng…
+            {"Air Max 270 React Eng…"}
           </h2>
           <p className="flex-wrap gap-x-1.5 gap-y-0.5 inline-flex items-center text-muted-foreground text-xs">
             <span>
-              SKU
+              {"SKU"}
             </span>
             <span className="font-medium font-mono text-foreground">
-              WM-8421
+              {"WM-8421"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              Created
+              {"Created"}
             </span>
             <span className="font-medium text-foreground">
-              16 Jan, 2025
+              {"16 Jan, 2025"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              Last Updated
+              {"Last Updated"}
             </span>
             <span className="font-medium text-foreground">
-              2 days ago
+              {"2 days ago"}
             </span>
           </p>
         </div>
@@ -105,23 +105,23 @@ export function Pattern() {
             <div className="flex flex-col gap-4 px-4 py-4">
               <div className="flex flex-col gap-1.5">
                 <Label className="text-xs" htmlFor="current-stock">
-                  Current Stock
+                  {"Current Stock"}
                 </Label>
                 <div className="flex gap-2 items-center">
                   <Input className="flex-1" id="current-stock" type="number" value="10"></Input>
                   <Button type="button" tabIndex="0">
-                    Reorder Now
+                    {"Reorder Now"}
                   </Button>
                 </div>
               </div>
               <Frame className="w-full" spacing="sm">
                 <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                   <div className="font-semibold text-sm">
-                    Inventory Rules
+                    {"Inventory Rules"}
                   </div>
                   <Field className="gap-2 m-0 p-0 w-auto" role="group" data-orientation="horizontal">
                     <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground text-xs" htmlFor="auto-reorder" id="auto-reorder-label">
-                      Auto Reorder
+                      {"Auto Reorder"}
                     </FieldLabel>
                     <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_7_" aria-checked="true" size="sm" aria-labelledby="auto-reorder-label">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -134,31 +134,31 @@ export function Pattern() {
                     <div className="gap-4 grid grid-cols-1 sm:grid-cols-2">
                       <Field className="gap-1.5" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="threshold-qty">
-                          Threshold Qty
+                          {"Threshold Qty"}
                         </FieldLabel>
                         <Input id="threshold-qty" type="number" value="200"></Input>
                       </Field>
                       <Field className="gap-1.5" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="safe-stock-qty">
-                          Safe Stock Qty
+                          {"Safe Stock Qty"}
                         </FieldLabel>
                         <Input id="safe-stock-qty" type="number" value="320"></Input>
                       </Field>
                       <Field className="gap-1.5" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="reorder-qty">
-                          Reorder Qty
+                          {"Reorder Qty"}
                         </FieldLabel>
                         <Input id="reorder-qty" type="number" value="400"></Input>
                       </Field>
                       <Field className="gap-1.5" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="lead-time">
-                          Lead Time
+                          {"Lead Time"}
                         </FieldLabel>
                         <InputGroup role="group">
                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="lead-time" type="number" value="3" />
                           <InputGroupAddon role="group" data-align="inline-end">
                             <span className="text-muted-foreground text-xs">
-                              days
+                              {"days"}
                             </span>
                           </InputGroupAddon>
                         </InputGroup>
@@ -167,51 +167,51 @@ export function Pattern() {
                     <div className="gap-x-4 gap-y-3 grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3">
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Status
+                          {"Status"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            In Stock
+                            {"In Stock"}
                           </Badge>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Delta
+                          {"Delta"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-                            +289
+                            {"+289"}
                           </Badge>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Velocity
+                          {"Velocity"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <span className="tabular-nums text-foreground text-sm">
-                            0.24 items/day
+                            {"0.24 items/day"}
                           </span>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Next Reorder
+                          {"Next Reorder"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <span className="text-foreground text-sm">
-                            14 Sep, 2025
+                            {"14 Sep, 2025"}
                           </span>
                         </div>
                       </div>
                       <div className="flex flex-col gap-1 min-w-0">
                         <span className="text-muted-foreground text-xs">
-                          Updated By
+                          {"Updated By"}
                         </span>
                         <div className="flex items-center min-w-0">
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#user-jtaytum">
-                            Jason Taytum
+                            {"Jason Taytum"}
                           </a>
                         </div>
                       </div>
@@ -223,14 +223,14 @@ export function Pattern() {
                 <Frame className="w-full" spacing="sm">
                   <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-0!">
                     <div className="font-semibold py-2.5 text-sm">
-                      Shipping
+                      {"Shipping"}
                     </div>
                     <TabsList className="gap-4 p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                       <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_e_" compositeItemActive="" aria-controls="base-ui-_r_g_">
-                        Custom Package
+                        {"Custom Package"}
                       </TabsTrigger>
                       <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_f_">
-                        Carrier Package
+                        {"Carrier Package"}
                       </TabsTrigger>
                     </TabsList>
                   </header>
@@ -239,23 +239,23 @@ export function Pattern() {
                       <FieldGroup className="gap-4">
                         <Field className="gap-1.5" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-name">
-                            Package Name
+                            {"Package Name"}
                           </FieldLabel>
                           <Input id="package-name" value="Mike Anderson - Medium Box"></Input>
                         </Field>
                         <div className="gap-4 grid grid-cols-1 sm:grid-cols-2">
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-type">
-                              Package Type
+                              {"Package Type"}
                             </FieldLabel>
                             <Select>
                             <SelectTrigger type="button" tabIndex="0" id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                               <SelectValue>
-                                Medium Box
+                                {"Medium Box"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -263,13 +263,13 @@ export function Pattern() {
                           </Field>
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="total-weight">
-                              Total Weight
+                              {"Total Weight"}
                             </FieldLabel>
                             <InputGroup role="group">
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="total-weight" step="0.1" type="number" value="2.1" />
                               <InputGroupAddon role="group" data-align="inline-end">
                                 <span className="text-muted-foreground text-xs">
-                                  kg
+                                  {"kg"}
                                 </span>
                               </InputGroupAddon>
                             </InputGroup>
@@ -278,30 +278,30 @@ export function Pattern() {
                         <div className="gap-4 grid grid-cols-2 items-end sm:grid-cols-[1fr_1fr_1fr_5rem]">
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="length">
-                              Length
+                              {"Length"}
                             </FieldLabel>
                             <Input id="length" type="number" value="48"></Input>
                           </Field>
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="width">
-                              Width
+                              {"Width"}
                             </FieldLabel>
                             <Input id="width" type="number" value="36"></Input>
                           </Field>
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="height">
-                              Height
+                              {"Height"}
                             </FieldLabel>
                             <Input id="height" type="number" value="20"></Input>
                           </Field>
                           <Select>
                           <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_p_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Dimension unit">
                             <SelectValue>
-                              sm
+                              {"sm"}
                             </SelectValue>
                             <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
-                              ▼
+                              {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
@@ -317,7 +317,7 @@ export function Pattern() {
                           </Checkbox>
                           <input id="save-package" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldLabel className="cn-label cursor-pointer font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm" htmlFor="save-package" id="save-package-label">
-                            Save package for future orders
+                            {"Save package for future orders"}
                           </FieldLabel>
                         </Field>
                       </FieldGroup>
@@ -334,38 +334,38 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="font-semibold text-base text-foreground">
-                    Air Max 270 React Eng…
+                    {"Air Max 270 React Eng…"}
                   </h3>
                   <p className="leading-5 text-muted-foreground text-pretty text-xs">
-                    Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh.
+                    {"Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh."}
                   </p>
                 </div>
                 <dl className="gap-x-4 gap-y-2.5 grid grid-cols-[5rem_1fr]">
                   <div className="contents">
                     <dt className="text-muted-foreground text-sm">
-                      SKU
+                      {"SKU"}
                     </dt>
                     <dd className="text-foreground">
                       <span className="font-medium font-mono text-foreground text-sm">
-                        SH-001-BLK-42
+                        {"SH-001-BLK-42"}
                       </span>
                     </dd>
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-sm">
-                      Category
+                      {"Category"}
                     </dt>
                     <dd className="text-foreground">
                       <span className="flex-wrap gap-x-1.5 gap-y-1 inline-flex items-center">
                         <span className="gap-x-1.5 inline-flex items-center">
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#category-sneakers">
-                            Sneakers
+                            {"Sneakers"}
                           </a>
                         </span>
                         <span className="gap-x-1.5 inline-flex items-center">
                           <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#category-running">
-                            Running
+                            {"Running"}
                           </a>
                         </span>
                       </span>
@@ -373,7 +373,7 @@ export function Pattern() {
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-sm">
-                      Rating
+                      {"Rating"}
                     </dt>
                     <dd className="text-foreground">
                       <Rating className="gap-0.5">
@@ -434,11 +434,11 @@ export function Pattern() {
                   </div>
                   <div className="contents">
                     <dt className="text-muted-foreground text-sm">
-                      Price
+                      {"Price"}
                     </dt>
                     <dd className="text-foreground">
                       <span className="font-medium tabular-nums text-foreground text-sm">
-                        $99.00
+                        {"$99.00"}
                       </span>
                     </dd>
                   </div>
@@ -455,23 +455,23 @@ export function Pattern() {
               <div className="flex flex-col gap-4 px-4 py-4">
                 <div className="flex flex-col gap-1.5">
                   <Label className="text-xs" htmlFor="current-stock">
-                    Current Stock
+                    {"Current Stock"}
                   </Label>
                   <div className="flex gap-2 items-center">
                     <Input className="flex-1" id="current-stock" type="number" value="10"></Input>
                     <Button type="button" tabIndex="0">
-                      Reorder Now
+                      {"Reorder Now"}
                     </Button>
                   </div>
                 </div>
                 <Frame className="w-full" spacing="sm">
                   <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <div className="font-semibold text-sm">
-                      Inventory Rules
+                      {"Inventory Rules"}
                     </div>
                     <Field className="gap-2 m-0 p-0 w-auto" role="group" data-orientation="horizontal">
                       <FieldLabel className="cn-label cursor-pointer font-medium group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground text-xs" htmlFor="auto-reorder">
-                        Auto Reorder
+                        {"Auto Reorder"}
                       </FieldLabel>
                       <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_12_" aria-checked="true" size="sm">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -484,31 +484,31 @@ export function Pattern() {
                       <div className="gap-4 grid grid-cols-1 sm:grid-cols-2">
                         <Field className="gap-1.5" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="threshold-qty">
-                            Threshold Qty
+                            {"Threshold Qty"}
                           </FieldLabel>
                           <Input id="threshold-qty" type="number" value="200"></Input>
                         </Field>
                         <Field className="gap-1.5" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="safe-stock-qty">
-                            Safe Stock Qty
+                            {"Safe Stock Qty"}
                           </FieldLabel>
                           <Input id="safe-stock-qty" type="number" value="320"></Input>
                         </Field>
                         <Field className="gap-1.5" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="reorder-qty">
-                            Reorder Qty
+                            {"Reorder Qty"}
                           </FieldLabel>
                           <Input id="reorder-qty" type="number" value="400"></Input>
                         </Field>
                         <Field className="gap-1.5" role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="lead-time">
-                            Lead Time
+                            {"Lead Time"}
                           </FieldLabel>
                           <InputGroup role="group">
                             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="lead-time" type="number" value="3" />
                             <InputGroupAddon role="group" data-align="inline-end">
                               <span className="text-muted-foreground text-xs">
-                                days
+                                {"days"}
                               </span>
                             </InputGroupAddon>
                           </InputGroup>
@@ -517,51 +517,51 @@ export function Pattern() {
                       <div className="gap-x-4 gap-y-3 grid grid-cols-2 lg:grid-cols-5 sm:grid-cols-3">
                         <div className="flex flex-col gap-1 min-w-0">
                           <span className="text-muted-foreground text-xs">
-                            Status
+                            {"Status"}
                           </span>
                           <div className="flex items-center min-w-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                              In Stock
+                              {"In Stock"}
                             </Badge>
                           </div>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <span className="text-muted-foreground text-xs">
-                            Delta
+                            {"Delta"}
                           </span>
                           <div className="flex items-center min-w-0">
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-                              +289
+                              {"+289"}
                             </Badge>
                           </div>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <span className="text-muted-foreground text-xs">
-                            Velocity
+                            {"Velocity"}
                           </span>
                           <div className="flex items-center min-w-0">
                             <span className="tabular-nums text-foreground text-sm">
-                              0.24 items/day
+                              {"0.24 items/day"}
                             </span>
                           </div>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <span className="text-muted-foreground text-xs">
-                            Next Reorder
+                            {"Next Reorder"}
                           </span>
                           <div className="flex items-center min-w-0">
                             <span className="text-foreground text-sm">
-                              14 Sep, 2025
+                              {"14 Sep, 2025"}
                             </span>
                           </div>
                         </div>
                         <div className="flex flex-col gap-1 min-w-0">
                           <span className="text-muted-foreground text-xs">
-                            Updated By
+                            {"Updated By"}
                           </span>
                           <div className="flex items-center min-w-0">
                             <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#user-jtaytum">
-                              Jason Taytum
+                              {"Jason Taytum"}
                             </a>
                           </div>
                         </div>
@@ -573,14 +573,14 @@ export function Pattern() {
                   <Frame className="w-full" spacing="sm">
                     <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py) py-0!">
                       <div className="font-semibold py-2.5 text-sm">
-                        Shipping
+                        {"Shipping"}
                       </div>
                       <TabsList className="gap-4 p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
                         <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_19_" compositeItemActive="" aria-controls="base-ui-_r_1b_">
-                          Custom Package
+                          {"Custom Package"}
                         </TabsTrigger>
                         <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1a_">
-                          Carrier Package
+                          {"Carrier Package"}
                         </TabsTrigger>
                       </TabsList>
                     </header>
@@ -589,23 +589,23 @@ export function Pattern() {
                         <FieldGroup className="gap-4">
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-name">
-                              Package Name
+                              {"Package Name"}
                             </FieldLabel>
                             <Input id="package-name" value="Mike Anderson - Medium Box"></Input>
                           </Field>
                           <div className="gap-4 grid grid-cols-1 sm:grid-cols-2">
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-type">
-                                Package Type
+                                {"Package Type"}
                               </FieldLabel>
                               <Select>
                               <SelectTrigger type="button" tabIndex="0" id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                 <SelectValue>
-                                  Medium Box
+                                  {"Medium Box"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -613,13 +613,13 @@ export function Pattern() {
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="total-weight">
-                                Total Weight
+                                {"Total Weight"}
                               </FieldLabel>
                               <InputGroup role="group">
                                 <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="total-weight" step="0.1" type="number" value="2.1" />
                                 <InputGroupAddon role="group" data-align="inline-end">
                                   <span className="text-muted-foreground text-xs">
-                                    kg
+                                    {"kg"}
                                   </span>
                                 </InputGroupAddon>
                               </InputGroup>
@@ -628,30 +628,30 @@ export function Pattern() {
                           <div className="gap-4 grid grid-cols-2 items-end sm:grid-cols-[1fr_1fr_1fr_5rem]">
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="length">
-                                Length
+                                {"Length"}
                               </FieldLabel>
                               <Input id="length" type="number" value="48"></Input>
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="width">
-                                Width
+                                {"Width"}
                               </FieldLabel>
                               <Input id="width" type="number" value="36"></Input>
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="height">
-                                Height
+                                {"Height"}
                               </FieldLabel>
                               <Input id="height" type="number" value="20"></Input>
                             </Field>
                             <Select>
                             <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_1k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Dimension unit">
                               <SelectValue>
-                                sm
+                                {"sm"}
                               </SelectValue>
                               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                 <path d="m6 9 6 6 6-6"></path>
-                                ▼
+                                {"▼"}
                               </svg>
                             </SelectTrigger>
                             </Select>
@@ -667,7 +667,7 @@ export function Pattern() {
                             </Checkbox>
                             <input id="save-package" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-label cursor-pointer font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-sm" htmlFor="save-package" id="save-package-label">
-                              Save package for future orders
+                              {"Save package for future orders"}
                             </FieldLabel>
                           </Field>
                         </FieldGroup>
@@ -693,38 +693,38 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <h3 className="font-semibold text-base text-foreground">
-                      Air Max 270 React Eng…
+                      {"Air Max 270 React Eng…"}
                     </h3>
                     <p className="leading-5 text-muted-foreground text-pretty text-xs">
-                      Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh.
+                      {"Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh."}
                     </p>
                   </div>
                   <dl className="gap-x-4 gap-y-2.5 grid grid-cols-[5rem_1fr]">
                     <div className="contents">
                       <dt className="text-muted-foreground text-sm">
-                        SKU
+                        {"SKU"}
                       </dt>
                       <dd className="text-foreground">
                         <span className="font-medium font-mono text-foreground text-sm">
-                          SH-001-BLK-42
+                          {"SH-001-BLK-42"}
                         </span>
                       </dd>
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground text-sm">
-                        Category
+                        {"Category"}
                       </dt>
                       <dd className="text-foreground">
                         <span className="flex-wrap gap-x-1.5 gap-y-1 inline-flex items-center">
                           <span className="gap-x-1.5 inline-flex items-center">
                             <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#category-sneakers">
-                              Sneakers
+                              {"Sneakers"}
                             </a>
                           </span>
                           <span className="gap-x-1.5 inline-flex items-center">
                             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                             <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors underline-offset-4" href="#category-running">
-                              Running
+                              {"Running"}
                             </a>
                           </span>
                         </span>
@@ -732,7 +732,7 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground text-sm">
-                        Rating
+                        {"Rating"}
                       </dt>
                       <dd className="text-foreground">
                         <Rating className="gap-0.5">
@@ -793,11 +793,11 @@ export function Pattern() {
                     </div>
                     <div className="contents">
                       <dt className="text-muted-foreground text-sm">
-                        Price
+                        {"Price"}
                       </dt>
                       <dd className="text-foreground">
                         <span className="font-medium tabular-nums text-foreground text-sm">
-                          $99.00
+                          {"$99.00"}
                         </span>
                       </dd>
                     </div>
@@ -818,14 +818,14 @@ export function Pattern() {
             <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
             <rect x="6" y="14" width="12" height="8" rx="1"></rect>
           </svg>
-          Print Label
+          {"Print Label"}
         </Button>
         <div className="flex gap-2 items-center">
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-            Cancel
+            {"Cancel"}
           </SheetClose>
           <Button type="button" tabIndex="0">
-            Save
+            {"Save"}
           </Button>
         </div>
       </SheetFooter>

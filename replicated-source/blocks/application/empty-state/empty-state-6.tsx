@@ -21,14 +21,14 @@ export function Pattern() {
         <Empty className="border-0 flex-none gap-6 md:p-0 p-0 rounded-none">
           <EmptyHeader className="gap-3 max-w-[31rem] text-center">
             <EmptyTitle className="font-semibold text-2xl tracking-tight">
-              Launch the Team Workspace
+              {"Launch the Team Workspace"}
             </EmptyTitle>
             <EmptyDescription className="max-w-[31rem] text-sm/relaxed">
               <span className="block">
-                Bring the core team together and sync the roster,
+                {"Bring the core team together and sync the roster,"}
               </span>
               <span className="block">
-                so plans and follow-ups stay visible.
+                {"so plans and follow-ups stay visible."}
               </span>
             </EmptyDescription>
           </EmptyHeader>
@@ -41,7 +41,7 @@ export function Pattern() {
                   <line x1="19" x2="19" y1="8" y2="14"></line>
                   <line x1="22" x2="16" y1="11" y2="11"></line>
                 </svg>
-                Add Core Team
+                {"Add Core Team"}
               </Button>
               <Button className="w-full" type="button" tabIndex="0">
                 <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" data-icon="inline-start" aria-hidden="true">
@@ -49,7 +49,7 @@ export function Pattern() {
                   <path d="m17 8-5-5-5 5"></path>
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 </svg>
-                Sync Directory
+                {"Sync Directory"}
               </Button>
             </div>
             <div className="gap-3 grid max-w-[26rem] w-full">
@@ -63,10 +63,10 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="truncate">
-                    Link Deliverables
+                    {"Link Deliverables"}
                   </ItemTitle>
                   <ItemDescription className="text-sm truncate">
-                    Keep milestones, owners, and blockers in view.
+                    {"Keep milestones, owners, and blockers in view."}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -82,10 +82,10 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="truncate">
-                    Open Brief
+                    {"Open Brief"}
                   </ItemTitle>
                   <ItemDescription className="text-sm truncate">
-                    Capture context, decisions, and handoff notes.
+                    {"Capture context, decisions, and handoff notes."}
                   </ItemDescription>
                 </ItemContent>
               </Item>
@@ -100,10 +100,10 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="truncate">
-                    Start Check-In
+                    {"Start Check-In"}
                   </ItemTitle>
                   <ItemDescription className="text-sm truncate">
-                    Gather the team when a thread needs answers.
+                    {"Gather the team when a thread needs answers."}
                   </ItemDescription>
                 </ItemContent>
               </Item>

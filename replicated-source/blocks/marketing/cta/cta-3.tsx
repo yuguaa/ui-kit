@@ -64,23 +64,23 @@ export function Pattern() {
                     <path d="M16 13H8"></path>
                     <path d="M16 17H8"></path>
                   </svg>
-                  Release Brief
+                  {"Release Brief"}
                 </Badge>
                 <h2 className="font-semibold leading-tight md:text-5xl sm:text-4xl text-3xl text-balance text-foreground tracking-tight" id="cta-3-title">
-                  Close The Launch Gap
+                  {"Close The Launch Gap"}
                 </h2>
                 <p className="leading-7 max-w-[34rem] sm:leading-8 sm:text-lg text-base text-muted-foreground text-pretty">
-                  Send the surface you are shipping. We map the risky handoffs across pricing, checkout, and onboarding before your team builds.
+                  {"Send the surface you are shipping. We map the risky handoffs across pricing, checkout, and onboarding before your team builds."}
                 </p>
               </div>
               <div className="flex flex-col gap-3 items-center max-w-md w-full">
                 <form className="gap-2.5 grid sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center w-full" id="cta-3-waitlist" action="#">
                   <label className="sr-only" htmlFor="cta-3-email">
-                    Work Email
+                    {"Work Email"}
                   </label>
                   <Input className="bg-background/90 shadow-xs" id="cta-3-email" required autoComplete="email" placeholder="team@company.com" type="email" name="email"></Input>
                   <Button className="sm:w-auto w-full" type="submit" tabIndex="0" extracted="1">
-                    Request Brief
+                    {"Request Brief"}
                     <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
@@ -88,7 +88,7 @@ export function Pattern() {
                   </Button>
                 </form>
                 <p className="leading-6 text-muted-foreground text-sm">
-                  One focused reply. No generic audit or drip campaign.
+                  {"One focused reply. No generic audit or drip campaign."}
                 </p>
               </div>
             </div>

@@ -26,29 +26,29 @@ export function Pattern() {
           <div className="flex flex-col gap-11 items-center text-center">
             <div className="flex flex-col gap-5 items-center">
               <h2 className="@2xl:text-4xl font-semibold text-3xl text-balance tracking-tight" id="pricing-2-title">
-                Compare Plans
+                {"Compare Plans"}
               </h2>
               <p className="@2xl:leading-6 @2xl:text-base leading-5 max-w-160 text-balance text-muted-foreground text-sm">
                 <span className="@2xl:block">
-                  Prices are per month, billed yearly. Plans differ in
+                  {"Prices are per month, billed yearly. Plans differ in"}
                 </span>
                 <span className="@2xl:block">
-                  how many events you send and how long you keep them.
+                  {"how many events you send and how long you keep them."}
                 </span>
               </p>
             </div>
             <ToggleGroup className="@3xl:hidden" data-orientation="horizontal" aria-orientation="horizontal" role="group" spacing="2" aria-label="Plan to show" style={{"--gap": "2"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="default" spacing="2" extracted="1">
-                Free
+                {"Free"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="default" size="default" spacing="2">
-                Pro
+                {"Pro"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="2">
-                Team
+                {"Team"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="2">
-                Unlimited
+                {"Unlimited"}
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
@@ -59,46 +59,46 @@ export function Pattern() {
                   <TableRow className="border-b-0 hover:bg-transparent">
                     <TableHead className="@3xl:w-auto leading-[inherit] normal-case pe-3 ps-(--card-spacing) text-[length:inherit] text-foreground tracking-normal w-[55%] whitespace-normal" scope="col">
                       <span className="sr-only">
-                        Feature
+                        {"Feature"}
                       </span>
                     </TableHead>
                     <TableHead className="@3xl:box-content @3xl:w-[min(15cqw,11rem)] @4xl:pe-3 @4xl:ps-3 @max-3xl:hidden font-semibold h-auto normal-case pb-0 pe-2 ps-2 pt-(--card-spacing) shadow-[inset_1px_0_0_var(--border)] text-base text-foreground tracking-normal whitespace-normal" scope="col">
                       <span className="@6xl:flex-row @6xl:gap-2 @6xl:items-baseline @6xl:justify-between @max-3xl:flex-row @max-3xl:flex-wrap @max-3xl:gap-x-2 @max-3xl:items-baseline @max-3xl:justify-between flex flex-col gap-0.5">
                         <span>
-                          Free
+                          {"Free"}
                         </span>
                         <span className="font-medium tabular-nums text-sm">
-                          $0
+                          {"$0"}
                         </span>
                       </span>
                     </TableHead>
                     <TableHead className="@3xl:box-content @3xl:w-[min(15cqw,11rem)] @4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) font-semibold h-auto normal-case pb-0 pe-2 ps-2 pt-(--card-spacing) shadow-[inset_1px_0_0_var(--border)] text-base text-foreground tracking-normal whitespace-normal" scope="col">
                       <span className="@6xl:flex-row @6xl:gap-2 @6xl:items-baseline @6xl:justify-between @max-3xl:flex-row @max-3xl:flex-wrap @max-3xl:gap-x-2 @max-3xl:items-baseline @max-3xl:justify-between flex flex-col gap-0.5">
                         <span>
-                          Pro
+                          {"Pro"}
                         </span>
                         <span className="font-medium tabular-nums text-sm">
-                          $28
+                          {"$28"}
                         </span>
                       </span>
                     </TableHead>
                     <TableHead className="@3xl:box-content @3xl:w-[min(15cqw,11rem)] @4xl:pe-3 @4xl:ps-3 @max-3xl:hidden font-semibold h-auto normal-case pb-0 pe-2 ps-2 pt-(--card-spacing) shadow-[inset_1px_0_0_var(--border)] text-base text-foreground tracking-normal whitespace-normal" scope="col">
                       <span className="@6xl:flex-row @6xl:gap-2 @6xl:items-baseline @6xl:justify-between @max-3xl:flex-row @max-3xl:flex-wrap @max-3xl:gap-x-2 @max-3xl:items-baseline @max-3xl:justify-between flex flex-col gap-0.5">
                         <span>
-                          Team
+                          {"Team"}
                         </span>
                         <span className="font-medium tabular-nums text-sm">
-                          $40+
+                          {"$40+"}
                         </span>
                       </span>
                     </TableHead>
                     <TableHead className="@3xl:box-content @3xl:w-[min(15cqw,11rem)] @4xl:ps-3 @max-3xl:hidden font-semibold h-auto normal-case pb-0 pe-(--card-spacing) ps-2 pt-(--card-spacing) shadow-[inset_1px_0_0_var(--border)] text-base text-foreground tracking-normal whitespace-normal" scope="col">
                       <span className="@6xl:flex-row @6xl:gap-2 @6xl:items-baseline @6xl:justify-between @max-3xl:flex-row @max-3xl:flex-wrap @max-3xl:gap-x-2 @max-3xl:items-baseline @max-3xl:justify-between flex flex-col gap-0.5">
                         <span>
-                          Unlimited
+                          {"Unlimited"}
                         </span>
                         <span className="font-medium tabular-nums text-sm">
-                          $750+
+                          {"$750+"}
                         </span>
                       </span>
                     </TableHead>
@@ -106,27 +106,27 @@ export function Pattern() {
                   <TableRow className="border-b-0 hover:bg-transparent">
                     <TableHead className="h-auto leading-[inherit] normal-case pe-3 ps-(--card-spacing) shadow-[inset_0_-1px_0_var(--border)] text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <span className="sr-only">
-                        Get started
+                        {"Get started"}
                       </span>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
                       <Button className="w-full" href="#" role="button" tabIndex="0">
-                        Start Free
+                        {"Start Free"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
                       <Button className="w-full" href="#" role="button" tabIndex="0">
-                        Get Pro
+                        {"Get Pro"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
                       <Button className="w-full" href="#" role="button" tabIndex="0">
-                        Get Team
+                        {"Get Team"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-(--card-spacing) ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
                       <Button className="w-full" href="#" aria-label="Contact us about Unlimited" role="button" tabIndex="0">
-                        Contact Us
+                        {"Contact Us"}
                       </Button>
                     </TableCell>
                   </TableRow>
@@ -143,10 +143,10 @@ export function Pattern() {
                         </IconTile>
                         <span className="flex flex-col gap-0.5">
                           <span className="font-semibold text-base text-foreground tracking-tight">
-                            Collection
+                            {"Collection"}
                           </span>
                           <span className="font-normal text-muted-foreground text-xs tracking-normal">
-                            Events in, from any source.
+                            {"Events in, from any source."}
                           </span>
                         </span>
                       </span>
@@ -160,38 +160,38 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
-                        Monthly events
+                        {"Monthly events"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        50,000
+                        {"50,000"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex flex-col">
                         <span className="tabular-nums">
-                          2 million
+                          {"2 million"}
                         </span>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          $0.30 per 10,000
+                          {"$0.30 per 10,000"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex flex-col">
                         <span className="tabular-nums">
-                          10 million
+                          {"10 million"}
                         </span>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          $0.22 per 10,000
+                          {"$0.22 per 10,000"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Custom volume
+                        {"Custom volume"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -199,28 +199,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false">
-                        Past the allowance
+                        {"Past the allowance"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Events pause
+                        {"Events pause"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Billed next month
+                        {"Billed next month"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Billed next month
+                        {"Billed next month"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Set by contract
+                        {"Set by contract"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -228,28 +228,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_9_" aria-haspopup="dialog" aria-expanded="false">
-                        Connected sources
+                        {"Connected sources"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        2
+                        {"2"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        10
+                        {"10"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        50
+                        {"50"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -257,34 +257,34 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_b_" aria-haspopup="dialog" aria-expanded="false">
-                        Schema validation
+                        {"Schema validation"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Off
+                        {"Off"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Warn
+                        {"Warn"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Warn or block
+                        {"Warn or block"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Warn or block
+                        {"Warn or block"}
                       </span>
                     </TableCell>
                   </TableRow>
                   <TableRow className="border-b-0 hover:bg-transparent">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
-                      Volume controls
+                      {"Volume controls"}
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
@@ -295,7 +295,7 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_d_" aria-haspopup="dialog" aria-expanded="false">
-                        Per source caps
+                        {"Per source caps"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -305,7 +305,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -315,7 +315,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -325,7 +325,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -335,7 +335,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -344,7 +344,7 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_f_" aria-haspopup="dialog" aria-expanded="false">
-                        Sampling rules
+                        {"Sampling rules"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -354,7 +354,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -364,7 +364,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -374,7 +374,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -384,7 +384,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -393,28 +393,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_h_" aria-haspopup="dialog" aria-expanded="false">
-                        Historic backfill
+                        {"Historic backfill"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        None
+                        {"None"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        12 months
+                        {"12 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        36 months
+                        {"36 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Full history
+                        {"Full history"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -422,28 +422,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_j_" aria-haspopup="dialog" aria-expanded="false">
-                        Data freshness
+                        {"Data freshness"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1 hour
+                        {"1 hour"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        5 minutes
+                        {"5 minutes"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1 minute
+                        {"1 minute"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Live
+                        {"Live"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -461,10 +461,10 @@ export function Pattern() {
                         </IconTile>
                         <span className="flex flex-col gap-0.5">
                           <span className="font-semibold text-base text-foreground tracking-tight">
-                            Retention
+                            {"Retention"}
                           </span>
                           <span className="font-normal text-muted-foreground text-xs tracking-normal">
-                            How far back you can look.
+                            {"How far back you can look."}
                           </span>
                         </span>
                       </span>
@@ -478,34 +478,34 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_l_" aria-haspopup="dialog" aria-expanded="false">
-                        Event retention
+                        {"Event retention"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        30 days
+                        {"30 days"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        12 months
+                        {"12 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        36 months
+                        {"36 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
                   <TableRow className="border-b-0 hover:bg-transparent">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
-                      Retention by record
+                      {"Retention by record"}
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
@@ -516,28 +516,28 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_n_" aria-haspopup="dialog" aria-expanded="false">
-                        Daily summaries
+                        {"Daily summaries"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        90 days
+                        {"90 days"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        3 years
+                        {"3 years"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        7 years
+                        {"7 years"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -545,28 +545,28 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_p_" aria-haspopup="dialog" aria-expanded="false">
-                        User profiles
+                        {"User profiles"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        60 days
+                        {"60 days"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        18 months
+                        {"18 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        5 years
+                        {"5 years"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -574,28 +574,28 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_r_" aria-haspopup="dialog" aria-expanded="false">
-                        Cold archive
+                        {"Cold archive"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        60 days
+                        {"60 days"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        24 months
+                        {"24 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        7 years
+                        {"7 years"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -603,38 +603,38 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
-                        Archive restore
+                        {"Archive restore"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        25,000
+                        {"25,000"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex flex-col">
                         <span className="tabular-nums">
-                          2 million
+                          {"2 million"}
                         </span>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          $5 per million
+                          {"$5 per million"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex flex-col">
                         <span className="tabular-nums">
-                          20 million
+                          {"20 million"}
                         </span>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          $3 per million
+                          {"$3 per million"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Custom volume
+                        {"Custom volume"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -642,28 +642,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_v_" aria-haspopup="dialog" aria-expanded="false">
-                        Retention holds
+                        {"Retention holds"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        None
+                        {"None"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1 hold
+                        {"1 hold"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        25 holds
+                        {"25 holds"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -682,10 +682,10 @@ export function Pattern() {
                         </IconTile>
                         <span className="flex flex-col gap-0.5">
                           <span className="font-semibold text-base text-foreground tracking-tight">
-                            Reporting
+                            {"Reporting"}
                           </span>
                           <span className="font-normal text-muted-foreground text-xs tracking-normal">
-                            Dashboards, alerts and answers.
+                            {"Dashboards, alerts and answers."}
                           </span>
                         </span>
                       </span>
@@ -699,28 +699,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_11_" aria-haspopup="dialog" aria-expanded="false">
-                        Saved dashboards
+                        {"Saved dashboards"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        3
+                        {"3"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        50
+                        {"50"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        500
+                        {"500"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -728,28 +728,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
-                        Scheduled reports
+                        {"Scheduled reports"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1 a week
+                        {"1 a week"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        25 a week
+                        {"25 a week"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        250 a week
+                        {"250 a week"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -757,28 +757,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_15_" aria-haspopup="dialog" aria-expanded="false">
-                        Funnel steps
+                        {"Funnel steps"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        3
+                        {"3"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        10
+                        {"10"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        25
+                        {"25"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -786,28 +786,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_17_" aria-haspopup="dialog" aria-expanded="false">
-                        Alert checks
+                        {"Alert checks"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Daily
+                        {"Daily"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Hourly
+                        {"Hourly"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Every 15 minutes
+                        {"Every 15 minutes"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Every minute
+                        {"Every minute"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -815,7 +815,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_19_" aria-haspopup="dialog" aria-expanded="false">
-                        Embedded charts
+                        {"Embedded charts"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -825,7 +825,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -835,7 +835,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -845,7 +845,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -855,7 +855,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -873,10 +873,10 @@ export function Pattern() {
                         </IconTile>
                         <span className="flex flex-col gap-0.5">
                           <span className="font-semibold text-base text-foreground tracking-tight">
-                            Team and Access
+                            {"Team and Access"}
                           </span>
                           <span className="font-normal text-muted-foreground text-xs tracking-normal">
-                            Seats, access and billing.
+                            {"Seats, access and billing."}
                           </span>
                         </span>
                       </span>
@@ -890,33 +890,33 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1b_" aria-haspopup="dialog" aria-expanded="false">
-                        Team seats
+                        {"Team seats"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1
+                        {"1"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1
+                        {"1"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex flex-col">
                         <span className="tabular-nums">
-                          2 to 20
+                          {"2 to 20"}
                         </span>
                         <span className="tabular-nums text-muted-foreground text-xs">
-                          $20 per seat
+                          {"$20 per seat"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Unlimited
+                        {"Unlimited"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -924,7 +924,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1d_" aria-haspopup="dialog" aria-expanded="false">
-                        Single sign-on
+                        {"Single sign-on"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -934,7 +934,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -944,7 +944,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -954,7 +954,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -964,7 +964,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -973,28 +973,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1f_" aria-haspopup="dialog" aria-expanded="false">
-                        Data residency
+                        {"Data residency"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        US
+                        {"US"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        US or EU
+                        {"US or EU"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        US, EU or AU
+                        {"US, EU or AU"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Your choice
+                        {"Your choice"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -1002,28 +1002,28 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1h_" aria-haspopup="dialog" aria-expanded="false">
-                        Support reply time
+                        {"Support reply time"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Community
+                        {"Community"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        2 days
+                        {"2 days"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        1 day
+                        {"1 day"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        4 hours
+                        {"4 hours"}
                       </span>
                     </TableCell>
                   </TableRow>
@@ -1031,7 +1031,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1j_" aria-haspopup="dialog" aria-expanded="false">
-                        Uptime target
+                        {"Uptime target"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -1041,29 +1041,29 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        99.5%
+                        {"99.5%"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        99.9%
+                        {"99.9%"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        99.99%
+                        {"99.99%"}
                       </span>
                     </TableCell>
                   </TableRow>
                   <TableRow className="border-b-0 hover:bg-transparent">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
-                      Billing
+                      {"Billing"}
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 shadow-[inset_1px_0_0_var(--border)] whitespace-normal"></TableCell>
@@ -1074,7 +1074,7 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1l_" aria-haspopup="dialog" aria-expanded="false">
-                        Invoice billing
+                        {"Invoice billing"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -1084,7 +1084,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -1094,7 +1094,7 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
@@ -1104,7 +1104,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -1114,7 +1114,7 @@ export function Pattern() {
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
-                          Included
+                          {"Included"}
                         </span>
                       </span>
                     </TableCell>
@@ -1123,7 +1123,7 @@ export function Pattern() {
                     <TableHead className="font-normal leading-[inherit] normal-case pb-(--card-spacing) pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
                       <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1n_" aria-haspopup="dialog" aria-expanded="false">
-                        Price lock
+                        {"Price lock"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
@@ -1133,23 +1133,23 @@ export function Pattern() {
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
-                          Not included
+                          {"Not included"}
                         </span>
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pb-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        12 months
+                        {"12 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        24 months
+                        {"24 months"}
                       </span>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="tabular-nums">
-                        Contract term
+                        {"Contract term"}
                       </span>
                     </TableCell>
                   </TableRow>

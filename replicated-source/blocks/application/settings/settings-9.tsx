@@ -29,10 +29,10 @@ export function Pattern() {
       <div className="max-w-2xl space-y-5 w-full">
         <div className="space-y-0.5">
           <h1 className="font-semibold text-xl">
-            Workspace Preferences
+            {"Workspace Preferences"}
           </h1>
           <p className="text-muted-foreground text-sm">
-            Adjust defaults that apply across your entire workspace.
+            {"Adjust defaults that apply across your entire workspace."}
           </p>
         </div>
         <Frame spacing="sm">
@@ -41,7 +41,7 @@ export function Pattern() {
             <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_0_" aria-expanded="true" extracted="1">
               <header className="flex flex-row gap-2 grow items-center justify-between px-4 py-2">
                 <div className="font-semibold text-sm">
-                  General
+                  {"General"}
                 </div>
                 <svg className="in-data-open:rotate-90 lucide lucide-chevron-right mr-2 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
@@ -55,21 +55,21 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Default view
+                        {"Default view"}
                       </ItemTitle>
                       <ItemDescription>
-                        Choose which layout opens on launch.
+                        {"Choose which layout opens on launch."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Select>
                       <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_1_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Default view">
                         <SelectValue>
-                          Board
+                          {"Board"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -82,21 +82,21 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Date format
+                        {"Date format"}
                       </ItemTitle>
                       <ItemDescription>
-                        Set how dates appear across the app.
+                        {"Set how dates appear across the app."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Select>
                       <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_4_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Date format">
                         <SelectValue>
-                          MM/DD/YYYY
+                          {"MM/DD/YYYY"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -109,21 +109,21 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        First day of week
+                        {"First day of week"}
                       </ItemTitle>
                       <ItemDescription>
-                        Used for calendars and date pickers.
+                        {"Used for calendars and date pickers."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Select>
                       <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_7_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="First day of week">
                         <SelectValue>
-                          Monday
+                          {"Monday"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -136,13 +136,13 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Auto-save drafts
+                        {"Auto-save drafts"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                          Recommended
+                          {"Recommended"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription>
-                        Automatically save unsaved changes.
+                        {"Automatically save unsaved changes."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
@@ -158,13 +158,13 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Rich text editing
+                        {"Rich text editing"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-focus/10 border border-focus/15 dark:bg-focus/15 dark:border-focus/25 dark:text-focus disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-focus-foreground transition-shadow">
-                          Editor
+                          {"Editor"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription>
-                        Enable formatting toolbar in text fields.
+                        {"Enable formatting toolbar in text fields."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
@@ -185,7 +185,7 @@ export function Pattern() {
             <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_g_" aria-expanded="true">
               <header className="flex flex-row gap-2 grow items-center justify-between px-4 py-2">
                 <div className="font-semibold text-sm">
-                  Display
+                  {"Display"}
                 </div>
                 <svg className="in-data-open:rotate-90 lucide lucide-chevron-right mr-2 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
@@ -199,24 +199,24 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Color theme
+                        {"Color theme"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                          Shared
+                          {"Shared"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription>
-                        Choose your preferred color scheme.
+                        {"Choose your preferred color scheme."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Select>
                       <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_h_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Color theme">
                         <SelectValue>
-                          System
+                          {"System"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -229,21 +229,21 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Sidebar position
+                        {"Sidebar position"}
                       </ItemTitle>
                       <ItemDescription>
-                        Set the navigation sidebar placement.
+                        {"Set the navigation sidebar placement."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <Select>
                       <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Sidebar position">
                         <SelectValue>
-                          Left
+                          {"Left"}
                         </SelectValue>
                         <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
-                          ▼
+                          {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
@@ -256,13 +256,13 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Reduce animations
+                        {"Reduce animations"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                          Accessibility
+                          {"Accessibility"}
                         </Badge>
                       </ItemTitle>
                       <ItemDescription>
-                        Minimize motion for accessibility.
+                        {"Minimize motion for accessibility."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>
@@ -278,10 +278,10 @@ export function Pattern() {
                   <Item className="px-4" variant="default" size="default">
                     <ItemContent>
                       <ItemTitle className="gap-2">
-                        Show tooltips
+                        {"Show tooltips"}
                       </ItemTitle>
                       <ItemDescription>
-                        Display helpful hints on hover.
+                        {"Display helpful hints on hover."}
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions>

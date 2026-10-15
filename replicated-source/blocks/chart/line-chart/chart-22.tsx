@@ -20,11 +20,11 @@ export function Pattern() {
       <Card className="max-w-md p-6 rounded-2xl shadow-sm w-full" size="default">
         <CardHeader className="border-0 mb-6 p-0 pb-6">
           <CardTitle className="font-semibold text-lg">
-            Revenue Performance
+            {"Revenue Performance"}
           </CardTitle>
           <CardAction>
             <Button type="button" tabIndex="0" extracted="1">
-              Export
+              {"Export"}
             </Button>
           </CardAction>
         </CardHeader>
@@ -39,38 +39,30 @@ export function Pattern() {
             </Item>
             <div>
               <div className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                Total Revenue
+                {"Total Revenue"}
               </div>
               <div className="font-bold text-2xl">
-                $307k
+                {"$307k"}
               </div>
             </div>
           </div>
           <Tabs className="w-full" data-orientation="horizontal" activationDirection="none">
             <TabsList className="w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
               <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
-                5D
+                {"5D"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                2W
+                {"2W"}
               </TabsTrigger>
               <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                1M
+                {"1M"}
               </TabsTrigger>
             </TabsList>
           </Tabs>
           <div className="h-40 w-full">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-video cn-chart flex h-full justify-center text-xs w-full" data-chart="chart-_r_3_">
-              <style>{`
- [data-chart=chart-_r_3_] {
-  --color-revenue: var(--color-violet-500);
-}
-
-
-.dark [data-chart=chart-_r_3_] {
-  --color-revenue: var(--color-violet-500);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-revenue: var(--color-violet-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-revenue: var(--color-violet-500);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="400" height="160" style={{position: "relative", cursor: "default", width: "400px", height: "160px"}}>
@@ -118,6 +110,7 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
           <div className="flex gap-2 items-center text-muted-foreground text-xs">
             <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -126,7 +119,7 @@ export function Pattern() {
               <path d="M12 8h.01"></path>
             </svg>
             <span>
-              Revenue includes subscription and one-time payments.
+              {"Revenue includes subscription and one-time payments."}
             </span>
           </div>
         </CardContent>

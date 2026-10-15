@@ -7,7 +7,7 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Account rollout timeline dropdown
+        {"Account rollout timeline dropdown"}
       </h1>
       <DropdownMenu>
       <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false" extracted="1">
@@ -18,7 +18,7 @@ export function Pattern() {
           <path d="m3 17 2 2 4-4"></path>
           <path d="m3 7 2 2 4-4"></path>
         </svg>
-        Open timeline
+        {"Open timeline"}
       </DropdownMenuTrigger>
       </DropdownMenu>
     </main>

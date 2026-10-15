@@ -31,17 +31,17 @@ export function Pattern() {
   return (
     <main className="bg-background flex justify-center p-4 sm:p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Recruiting pipeline kanban board
+        {"Recruiting pipeline kanban board"}
       </h1>
       <section className="flex flex-col gap-4 max-w-[1480px] mx-auto w-full">
         <header className="px-1" aria-label="Recruiting pipeline toolbar">
           <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
             <div className="min-w-0">
               <h2 className="font-semibold leading-5 text-sm truncate">
-                Recruiting Pipeline
+                {"Recruiting Pipeline"}
               </h2>
               <p className="leading-4 line-clamp-1 text-muted-foreground text-xs">
-                Track candidate fit, interviews, scorecards, and offer readiness.
+                {"Track candidate fit, interviews, scorecards, and offer readiness."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full" role="group" aria-label="Recruiting pipeline actions">
@@ -49,7 +49,7 @@ export function Pattern() {
                 <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
-                Filters
+                {"Filters"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-user-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserPlusIcon" tabler="IconUserPlus" hugeicons="UserAdd01Icon" phosphor="UserPlusIcon" remixicon="RiUserAddLine" data-icon="inline-start" aria-hidden="true">
@@ -58,7 +58,7 @@ export function Pattern() {
                   <line x1="19" x2="19" y1="8" y2="14"></line>
                   <line x1="22" x2="16" y1="11" y2="11"></line>
                 </svg>
-                Add candidate
+                {"Add candidate"}
               </Button>
             </div>
           </div>
@@ -75,10 +75,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Sourced">
-                              Sourced
+                              {"Sourced"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              3
+                              {"3"}
                             </span>
                           </div>
                         </div>
@@ -111,31 +111,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Mina Calder">
-                                    Mina Calder
+                                    {"Mina Calder"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Staff Product Designer">
-                                    Staff Product Designer
+                                    {"Staff Product Designer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-sky-400 font-semibold leading-none tabular-nums text-sky-600 text-sm">
-                                    46%
+                                    {"46%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-sky-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="46" aria-valuetext="46%" role="progressbar" aria-labelledby="base-ui-_r_1_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_1_" role="presentation">
-                                    Mina Calder match score
+                                    {"Mina Calder match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "46%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -152,10 +152,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Toronto, CA">
-                                        Toronto, CA
+                                        {"Toronto, CA"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        ET
+                                        {"ET"}
                                       </span>
                                     </div>
                                   </div>
@@ -175,7 +175,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 7, 2026">
-                                      May 7, 2026
+                                      {"May 7, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -191,7 +191,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$178k-$204k">
-                                      $178k-$204k
+                                      {"$178k-$204k"}
                                     </span>
                                   </div>
                                 </div>
@@ -199,10 +199,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Not started">
                                   <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Not started
+                                  {"Not started"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -217,31 +217,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Jon Bell">
-                                    Jon Bell
+                                    {"Jon Bell"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Senior Data Engineer">
-                                    Senior Data Engineer
+                                    {"Senior Data Engineer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-sky-400 font-semibold leading-none tabular-nums text-sky-600 text-sm">
-                                    38%
+                                    {"38%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-sky-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="38" aria-valuetext="38%" role="progressbar" aria-labelledby="base-ui-_r_2_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_2_" role="presentation">
-                                    Jon Bell match score
+                                    {"Jon Bell match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "38%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -258,10 +258,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Austin, US">
-                                        Austin, US
+                                        {"Austin, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        CT
+                                        {"CT"}
                                       </span>
                                     </div>
                                   </div>
@@ -281,7 +281,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 8, 2026">
-                                      May 8, 2026
+                                      {"May 8, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -297,7 +297,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$164k-$188k">
-                                      $164k-$188k
+                                      {"$164k-$188k"}
                                     </span>
                                   </div>
                                 </div>
@@ -305,10 +305,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Draft">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Draft
+                                  {"Draft"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -323,31 +323,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Amara Finch">
-                                    Amara Finch
+                                    {"Amara Finch"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Senior UX Researcher">
-                                    Senior UX Researcher
+                                    {"Senior UX Researcher"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-violet-400 font-semibold leading-none tabular-nums text-sm text-violet-600">
-                                    31%
+                                    {"31%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-violet-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="31" aria-valuetext="31%" role="progressbar" aria-labelledby="base-ui-_r_3_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_3_" role="presentation">
-                                    Amara Finch match score
+                                    {"Amara Finch match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "31%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -364,10 +364,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Portland, US">
-                                        Portland, US
+                                        {"Portland, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        PT
+                                        {"PT"}
                                       </span>
                                     </div>
                                   </div>
@@ -387,7 +387,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 10, 2026">
-                                      May 10, 2026
+                                      {"May 10, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -403,7 +403,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$132k-$150k">
-                                      $132k-$150k
+                                      {"$132k-$150k"}
                                     </span>
                                   </div>
                                 </div>
@@ -411,10 +411,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Not started">
                                   <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Not started
+                                  {"Not started"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -430,10 +430,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Screen">
-                              Screen
+                              {"Screen"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              2
+                              {"2"}
                             </span>
                           </div>
                         </div>
@@ -466,31 +466,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Priya Rao">
-                                    Priya Rao
+                                    {"Priya Rao"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Principal Frontend Engineer">
-                                    Principal Frontend Engineer
+                                    {"Principal Frontend Engineer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-emerald-400 font-semibold leading-none tabular-nums text-emerald-600 text-sm">
-                                    58%
+                                    {"58%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="58" aria-valuetext="58%" role="progressbar" aria-labelledby="base-ui-_r_4_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_4_" role="presentation">
-                                    Priya Rao match score
+                                    {"Priya Rao match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "58%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -507,10 +507,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Seattle, US">
-                                        Seattle, US
+                                        {"Seattle, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        PT
+                                        {"PT"}
                                       </span>
                                     </div>
                                   </div>
@@ -530,7 +530,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 6, 2026">
-                                      May 6, 2026
+                                      {"May 6, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -546,7 +546,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$196k-$224k">
-                                      $196k-$224k
+                                      {"$196k-$224k"}
                                     </span>
                                   </div>
                                 </div>
@@ -554,10 +554,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Ready">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Ready
+                                  {"Ready"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -572,31 +572,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Luca Marin">
-                                    Luca Marin
+                                    {"Luca Marin"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Lifecycle Marketing Lead">
-                                    Lifecycle Marketing Lead
+                                    {"Lifecycle Marketing Lead"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-violet-400 font-semibold leading-none tabular-nums text-sm text-violet-600">
-                                    34%
+                                    {"34%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-violet-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="34" aria-valuetext="34%" role="progressbar" aria-labelledby="base-ui-_r_5_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_5_" role="presentation">
-                                    Luca Marin match score
+                                    {"Luca Marin match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "34%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -613,10 +613,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Madrid, ES">
-                                        Madrid, ES
+                                        {"Madrid, ES"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        CET
+                                        {"CET"}
                                       </span>
                                     </div>
                                   </div>
@@ -636,7 +636,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 9, 2026">
-                                      May 9, 2026
+                                      {"May 9, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -652,7 +652,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="EUR120k-EUR138k">
-                                      EUR120k-EUR138k
+                                      {"EUR120k-EUR138k"}
                                     </span>
                                   </div>
                                 </div>
@@ -660,10 +660,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Draft">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Draft
+                                  {"Draft"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -679,10 +679,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Hiring Manager">
-                              Hiring Manager
+                              {"Hiring Manager"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              3
+                              {"3"}
                             </span>
                           </div>
                         </div>
@@ -715,31 +715,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Nadia Ellis">
-                                    Nadia Ellis
+                                    {"Nadia Ellis"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Product Operations Manager">
-                                    Product Operations Manager
+                                    {"Product Operations Manager"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-emerald-400 font-semibold leading-none tabular-nums text-emerald-600 text-sm">
-                                    54%
+                                    {"54%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="54" aria-valuetext="54%" role="progressbar" aria-labelledby="base-ui-_r_6_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_6_" role="presentation">
-                                    Nadia Ellis match score
+                                    {"Nadia Ellis match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "54%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -756,10 +756,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Brooklyn, US">
-                                        Brooklyn, US
+                                        {"Brooklyn, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        ET
+                                        {"ET"}
                                       </span>
                                     </div>
                                   </div>
@@ -779,7 +779,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 10, 2026">
-                                      May 10, 2026
+                                      {"May 10, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -795,7 +795,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$142k-$164k">
-                                      $142k-$164k
+                                      {"$142k-$164k"}
                                     </span>
                                   </div>
                                 </div>
@@ -803,10 +803,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Ready">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Ready
+                                  {"Ready"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -821,31 +821,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Theo Grant">
-                                    Theo Grant
+                                    {"Theo Grant"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Security Engineering Manager">
-                                    Security Engineering Manager
+                                    {"Security Engineering Manager"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-violet-400 font-semibold leading-none tabular-nums text-sm text-violet-600">
-                                    41%
+                                    {"41%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-violet-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="41" aria-valuetext="41%" role="progressbar" aria-labelledby="base-ui-_r_7_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_7_" role="presentation">
-                                    Theo Grant match score
+                                    {"Theo Grant match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "41%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -862,10 +862,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Dublin, IE">
-                                        Dublin, IE
+                                        {"Dublin, IE"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        GMT
+                                        {"GMT"}
                                       </span>
                                     </div>
                                   </div>
@@ -885,7 +885,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 11, 2026">
-                                      May 11, 2026
+                                      {"May 11, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -901,7 +901,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="EUR154k-EUR176k">
-                                      EUR154k-EUR176k
+                                      {"EUR154k-EUR176k"}
                                     </span>
                                   </div>
                                 </div>
@@ -909,10 +909,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Ready">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Ready
+                                  {"Ready"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -927,31 +927,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Keon Wallace">
-                                    Keon Wallace
+                                    {"Keon Wallace"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="GTM Systems Lead">
-                                    GTM Systems Lead
+                                    {"GTM Systems Lead"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-violet-400 font-semibold leading-none tabular-nums text-sm text-violet-600">
-                                    45%
+                                    {"45%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-violet-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" aria-valuetext="45%" role="progressbar" aria-labelledby="base-ui-_r_8_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_8_" role="presentation">
-                                    Keon Wallace match score
+                                    {"Keon Wallace match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "45%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -968,10 +968,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Atlanta, US">
-                                        Atlanta, US
+                                        {"Atlanta, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        ET
+                                        {"ET"}
                                       </span>
                                     </div>
                                   </div>
@@ -991,7 +991,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 14, 2026">
-                                      May 14, 2026
+                                      {"May 14, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1007,7 +1007,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$138k-$158k">
-                                      $138k-$158k
+                                      {"$138k-$158k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1015,10 +1015,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Draft">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Draft
+                                  {"Draft"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -1034,10 +1034,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Panel">
-                              Panel
+                              {"Panel"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              2
+                              {"2"}
                             </span>
                           </div>
                         </div>
@@ -1070,31 +1070,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Sara Okafor">
-                                    Sara Okafor
+                                    {"Sara Okafor"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Design Systems Engineer">
-                                    Design Systems Engineer
+                                    {"Design Systems Engineer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-sky-400 font-semibold leading-none tabular-nums text-sky-600 text-sm">
-                                    48%
+                                    {"48%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-sky-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="48" aria-valuetext="48%" role="progressbar" aria-labelledby="base-ui-_r_9_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_9_" role="presentation">
-                                    Sara Okafor match score
+                                    {"Sara Okafor match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "48%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1111,10 +1111,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="London, UK">
-                                        London, UK
+                                        {"London, UK"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        GMT
+                                        {"GMT"}
                                       </span>
                                     </div>
                                   </div>
@@ -1134,7 +1134,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 12, 2026">
-                                      May 12, 2026
+                                      {"May 12, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1150,7 +1150,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="GBP118k-GBP136k">
-                                      GBP118k-GBP136k
+                                      {"GBP118k-GBP136k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1158,10 +1158,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Ready">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Ready
+                                  {"Ready"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -1176,31 +1176,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Arun Mehta">
-                                    Arun Mehta
+                                    {"Arun Mehta"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Senior Platform Engineer">
-                                    Senior Platform Engineer
+                                    {"Senior Platform Engineer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-amber-400 font-semibold leading-none tabular-nums text-amber-600 text-sm">
-                                    26%
+                                    {"26%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="26" aria-valuetext="26%" role="progressbar" aria-labelledby="base-ui-_r_a_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_a_" role="presentation">
-                                    Arun Mehta match score
+                                    {"Arun Mehta match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "26%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1217,10 +1217,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Vancouver, CA">
-                                        Vancouver, CA
+                                        {"Vancouver, CA"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        PT
+                                        {"PT"}
                                       </span>
                                     </div>
                                   </div>
@@ -1240,7 +1240,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 13, 2026">
-                                      May 13, 2026
+                                      {"May 13, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1256,7 +1256,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$170k-$192k">
-                                      $170k-$192k
+                                      {"$170k-$192k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1264,10 +1264,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Needs calibration">
                                   <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Needs calibration
+                                  {"Needs calibration"}
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow truncate" title="Panel reschedule">
-                                  Panel reschedule
+                                  {"Panel reschedule"}
                                 </Badge>
                               </div>
                             </FramePanel>
@@ -1283,10 +1283,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Scorecard">
-                              Scorecard
+                              {"Scorecard"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              3
+                              {"3"}
                             </span>
                           </div>
                         </div>
@@ -1319,31 +1319,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Elena Torres">
-                                    Elena Torres
+                                    {"Elena Torres"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Senior Recruiter">
-                                    Senior Recruiter
+                                    {"Senior Recruiter"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-sky-400 font-semibold leading-none tabular-nums text-sky-600 text-sm">
-                                    44%
+                                    {"44%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-sky-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="44" aria-valuetext="44%" role="progressbar" aria-labelledby="base-ui-_r_b_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_b_" role="presentation">
-                                    Elena Torres match score
+                                    {"Elena Torres match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "44%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1360,10 +1360,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Chicago, US">
-                                        Chicago, US
+                                        {"Chicago, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        CT
+                                        {"CT"}
                                       </span>
                                     </div>
                                   </div>
@@ -1383,7 +1383,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 5, 2026">
-                                      May 5, 2026
+                                      {"May 5, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1399,7 +1399,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$126k-$146k">
-                                      $126k-$146k
+                                      {"$126k-$146k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1407,10 +1407,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Needs calibration">
                                   <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Needs calibration
+                                  {"Needs calibration"}
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow truncate" title="Feedback due">
-                                  Feedback due
+                                  {"Feedback due"}
                                 </Badge>
                               </div>
                             </FramePanel>
@@ -1425,31 +1425,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Marco Silva">
-                                    Marco Silva
+                                    {"Marco Silva"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Revenue Systems Analyst">
-                                    Revenue Systems Analyst
+                                    {"Revenue Systems Analyst"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-violet-400 font-semibold leading-none tabular-nums text-sm text-violet-600">
-                                    36%
+                                    {"36%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-violet-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="36" aria-valuetext="36%" role="progressbar" aria-labelledby="base-ui-_r_c_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_c_" role="presentation">
-                                    Marco Silva match score
+                                    {"Marco Silva match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "36%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1466,10 +1466,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Lisbon, PT">
-                                        Lisbon, PT
+                                        {"Lisbon, PT"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        WEST
+                                        {"WEST"}
                                       </span>
                                     </div>
                                   </div>
@@ -1489,7 +1489,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 6, 2026">
-                                      May 6, 2026
+                                      {"May 6, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1505,7 +1505,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="EUR88k-EUR102k">
-                                      EUR88k-EUR102k
+                                      {"EUR88k-EUR102k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1513,10 +1513,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Draft">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Draft
+                                  {"Draft"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -1531,31 +1531,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Mei Watanabe">
-                                    Mei Watanabe
+                                    {"Mei Watanabe"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="People Analytics Manager">
-                                    People Analytics Manager
+                                    {"People Analytics Manager"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-amber-400 font-semibold leading-none tabular-nums text-amber-600 text-sm">
-                                    29%
+                                    {"29%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-amber-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="29" aria-valuetext="29%" role="progressbar" aria-labelledby="base-ui-_r_d_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_d_" role="presentation">
-                                    Mei Watanabe match score
+                                    {"Mei Watanabe match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "29%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1572,10 +1572,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Tokyo, JP">
-                                        Tokyo, JP
+                                        {"Tokyo, JP"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        JST
+                                        {"JST"}
                                       </span>
                                     </div>
                                   </div>
@@ -1595,7 +1595,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 8, 2026">
-                                      May 8, 2026
+                                      {"May 8, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1611,7 +1611,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="JPY16m-JPY19m">
-                                      JPY16m-JPY19m
+                                      {"JPY16m-JPY19m"}
                                     </span>
                                   </div>
                                 </div>
@@ -1619,10 +1619,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Needs calibration">
                                   <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Needs calibration
+                                  {"Needs calibration"}
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow truncate" title="Late feedback">
-                                  Late feedback
+                                  {"Late feedback"}
                                 </Badge>
                               </div>
                             </FramePanel>
@@ -1638,10 +1638,10 @@ export function Pattern() {
                         <div className="flex-1 min-w-0">
                           <div className="flex gap-1.5 items-center min-w-0">
                             <div className="font-semibold leading-5 text-sm truncate" title="Offer">
-                              Offer
+                              {"Offer"}
                             </div>
                             <span className="font-medium leading-none shrink-0 tabular-nums text-muted-foreground text-xs">
-                              2
+                              {"2"}
                             </span>
                           </div>
                         </div>
@@ -1674,31 +1674,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Iris Chen">
-                                    Iris Chen
+                                    {"Iris Chen"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Director of Product Design">
-                                    Director of Product Design
+                                    {"Director of Product Design"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-emerald-400 font-semibold leading-none tabular-nums text-emerald-600 text-sm">
-                                    56%
+                                    {"56%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="56" aria-valuetext="56%" role="progressbar" aria-labelledby="base-ui-_r_e_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_e_" role="presentation">
-                                    Iris Chen match score
+                                    {"Iris Chen match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "56%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1715,10 +1715,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="San Francisco, US">
-                                        San Francisco, US
+                                        {"San Francisco, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        PT
+                                        {"PT"}
                                       </span>
                                     </div>
                                   </div>
@@ -1738,7 +1738,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="May 14, 2026">
-                                      May 14, 2026
+                                      {"May 14, 2026"}
                                     </span>
                                   </div>
                                 </div>
@@ -1754,7 +1754,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$242k-$286k">
-                                      $242k-$286k
+                                      {"$242k-$286k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1762,10 +1762,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Complete">
                                   <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Complete
+                                  {"Complete"}
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow truncate" title="Comp gap">
-                                  Comp gap
+                                  {"Comp gap"}
                                 </Badge>
                               </div>
                             </FramePanel>
@@ -1780,31 +1780,31 @@ export function Pattern() {
                                 </Avatar>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-semibold leading-5 text-base truncate" title="Owen Price">
-                                    Owen Price
+                                    {"Owen Price"}
                                   </div>
                                   <div className="leading-5 text-muted-foreground text-sm truncate" title="Staff Infrastructure Engineer">
-                                    Staff Infrastructure Engineer
+                                    {"Staff Infrastructure Engineer"}
                                   </div>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-1.5">
                                 <div className="flex gap-2 items-center justify-between min-w-0">
                                   <span className="font-medium leading-none text-muted-foreground text-sm">
-                                    Match score
+                                    {"Match score"}
                                   </span>
                                   <span className="dark:text-emerald-400 font-semibold leading-none tabular-nums text-emerald-600 text-sm">
-                                    62%
+                                    {"62%"}
                                   </span>
                                 </div>
                                 <Progress className="**:data-[slot=progress-indicator]:bg-emerald-500 **:data-[slot=progress-indicator]:rounded-full **:data-[slot=progress-track]:bg-muted **:data-[slot=progress-track]:h-1.5 **:data-[slot=progress-track]:rounded-full gap-0" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" aria-valuetext="62%" role="progressbar" aria-labelledby="base-ui-_r_f_">
                                   <ProgressLabel className="sr-only" progressing="" id="base-ui-_r_f_" role="presentation">
-                                    Owen Price match score
+                                    {"Owen Price match score"}
                                   </ProgressLabel>
                                   <ProgressTrack progressing="">
                                     <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "62%"}}></ProgressIndicator>
                                   </ProgressTrack>
                                   <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                    x
+                                    {"x"}
                                   </span>
                                 </Progress>
                               </div>
@@ -1821,10 +1821,10 @@ export function Pattern() {
                                   <div className="min-w-0">
                                     <div className="flex gap-1.5 items-center min-w-0">
                                       <span className="truncate" title="Denver, US">
-                                        Denver, US
+                                        {"Denver, US"}
                                       </span>
                                       <span className="shrink-0 text-muted-foreground">
-                                        MT
+                                        {"MT"}
                                       </span>
                                     </div>
                                   </div>
@@ -1844,7 +1844,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="truncate" title="Starts Jun 1">
-                                      Starts Jun 1
+                                      {"Starts Jun 1"}
                                     </span>
                                   </div>
                                 </div>
@@ -1860,7 +1860,7 @@ export function Pattern() {
                                   </Item>
                                   <div className="min-w-0">
                                     <span className="tabular-nums truncate" title="$214k-$238k">
-                                      $214k-$238k
+                                      {"$214k-$238k"}
                                     </span>
                                   </div>
                                 </div>
@@ -1868,10 +1868,10 @@ export function Pattern() {
                               <div className="flex gap-2 items-center justify-between min-w-0 mt-auto">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-0 outline-none px-1.25 py-0.5 relative shrink style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow truncate" title="Complete">
                                   <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Complete
+                                  {"Complete"}
                                 </Badge>
                                 <span className="leading-5 text-muted-foreground text-sm truncate" title="Scorecard tracked">
-                                  Scorecard tracked
+                                  {"Scorecard tracked"}
                                 </span>
                               </div>
                             </FramePanel>
@@ -1889,9 +1889,7 @@ export function Pattern() {
           </ScrollArea>
         </Kanban>
         <div id="DndDescribedBy-0" style={{display: "none"}}>
-          To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+          {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
         </div>
         <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
       </section>

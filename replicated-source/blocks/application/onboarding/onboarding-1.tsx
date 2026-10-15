@@ -34,83 +34,123 @@ export function Pattern() {
   return (
     <main className="bg-background min-h-svh w-full" aria-labelledby="page-title">
       <h1 className="sr-only" id="page-title">
-        Workspace onboarding
+        {"Workspace onboarding"}
       </h1>
       <div className="min-h-svh relative w-full">
         <div className="fixed h-1 inset-x-0 overflow-visible top-0 w-full z-50">
+          <StepperItem>
           <Stepper className="h-1 leading-none overflow-visible relative rounded-none!" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
+            <Stepper>
             <StepperNav className="flex h-1 rounded-none!" data-state="1" data-orientation="horizontal">
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="active">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="active">
                     <div className="absolute">
                       <span className="sr-only">
-                        Profile
+                        {"Profile"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Role
+                        {"Role"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Source
+                        {"Source"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Workspace
+                        {"Workspace"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-5" aria-selected="false" aria-controls="stepper-panel-5" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Goals
+                        {"Goals"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-6" aria-selected="false" aria-controls="stepper-panel-6" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Invite
+                        {"Invite"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
             </StepperNav>
+            </Stepper>
             <div className="absolute bg-primary inset-y-0 left-0 origin-left pointer-events-none w-full z-10" aria-hidden="true" style={{transform: "scaleX(0.166667)"}}>
               <span className="-translate-y-1/2 absolute bg-gradient-to-r blur-sm from-primary/0 h-5 right-0 to-primary/0 top-1/2 translate-x-1/2 via-primary-foreground/65 w-44" style={{opacity: "0", transform: "translateX(64px)"}}></span>
             </div>
           </Stepper>
+          </StepperItem>
         </div>
         <div className="absolute inset-x-0 top-0 z-40">
           <header className="flex items-center justify-between lg:px-20 px-12 py-5 shrink-0 sm:px-16 sm:py-6">
@@ -131,12 +171,12 @@ export function Pattern() {
                   </ItemMedia>
                 </Item>
                 <span className="font-medium text-[0.9375rem]">
-                  NeUI
+                  {"NeUI"}
                 </span>
               </div>
             </div>
             <span className="font-medium text-muted-foreground text-sm">
-              Step 1 of 6
+              {"Step 1 of 6"}
             </span>
           </header>
         </div>
@@ -148,15 +188,15 @@ export function Pattern() {
                   <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-2 max-w-[30rem]" aria-live="polite">
                       <h1 className="font-semibold leading-7 sm:text-[1.375rem] text-foreground text-xl">
-                        Set up your profile
+                        {"Set up your profile"}
                       </h1>
                       <p className="leading-5 text-muted-foreground text-sm">
-                        Add the details teammates will see across the workspace.
+                        {"Add the details teammates will see across the workspace."}
                       </p>
                     </div>
                     <FieldSet>
                       <FieldLegend className="sr-only" variant="legend">
-                        Profile details
+                        {"Profile details"}
                       </FieldLegend>
                       <FieldGroup className="gap-4">
                         <Field role="group" data-orientation="vertical">
@@ -174,13 +214,13 @@ export function Pattern() {
                               <div className="flex flex-wrap gap-2 items-center">
                                 <div className="inline-flex relative">
                                   <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                                    Upload photo
+                                    {"Upload photo"}
                                   </Button>
                                   <input className="hidden" id="onboarding-1-profile-photo" accept="image/*" aria-hidden="true" tabIndex="-1" type="file" />
                                 </div>
                               </div>
                               <p className="leading-4 text-muted-foreground text-xs">
-                                PNG or JPG, at least 400 x 400 px, up to 10 MB.
+                                {"PNG or JPG, at least 400 x 400 px, up to 10 MB."}
                               </p>
                             </div>
                           </div>
@@ -188,22 +228,22 @@ export function Pattern() {
                         <FieldGroup className="gap-4">
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-1-name">
-                              Full name
+                              {"Full name"}
                               <span className="text-destructive">
-                                *
+                                {"*"}
                               </span>
                             </FieldLabel>
                             <Input id="onboarding-1-name" autoComplete="name" value="Sam Rivera"></Input>
                           </Field>
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-1-title">
-                              Job title
+                              {"Job title"}
                             </FieldLabel>
                             <Input id="onboarding-1-title" autoComplete="organization-title" value="Product Engineer"></Input>
                           </Field>
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-1-timezone">
-                              Timezone
+                              {"Timezone"}
                             </FieldLabel>
                             <InputGroup className="cn-combobox-input" role="group">
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="onboarding-1-timezone" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" placeholder="Select a timezone" type="text" value="" />
@@ -228,7 +268,7 @@ export function Pattern() {
                           </Checkbox>
                           <input id="onboarding-1-marketing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground" htmlFor="onboarding-1-marketing" id="onboarding-1-marketing-label">
-                            Send me product updates and workspace tips.
+                            {"Send me product updates and workspace tips."}
                           </FieldLabel>
                         </Field>
                       </FieldGroup>
@@ -236,7 +276,7 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-2 mt-auto pt-8">
                     <Button className="w-full" type="submit" tabIndex="0">
-                      Continue
+                      {"Continue"}
                     </Button>
                   </div>
                 </form>
@@ -251,7 +291,7 @@ export function Pattern() {
                           <nav className="bg-background border-border/45 border-r flex flex-col items-center">
                             <span className="bg-foreground/85 flex font-semibold items-center justify-center mt-3 rounded-lg size-7 text-background text-sm">
                               <span style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                R
+                                {"R"}
                               </span>
                             </span>
                             <div className="flex flex-1 flex-col gap-3 items-center mt-5">
@@ -311,12 +351,12 @@ export function Pattern() {
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <h2 className="font-semibold min-w-0 text-[0.95rem]" aria-live="polite">
                                   <span className="block max-w-40 truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                    Sam Rivera
+                                    {"Sam Rivera"}
                                   </span>
                                 </h2>
                                 <span className="border border-border/50 flex h-5 items-center justify-center leading-none max-w-20 min-w-5 overflow-hidden px-1.5 rounded-full text-muted-foreground text-xs">
                                   <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                    4
+                                    {"4"}
                                   </span>
                                 </span>
                               </div>
@@ -348,7 +388,7 @@ export function Pattern() {
                             <div className="border-b border-border/45 flex gap-4 h-9 items-center px-2">
                               <div className="bg-foreground/85 flex gap-2 h-6 items-center px-3 rounded-full text-background text-xs">
                                 <span>
-                                  All
+                                  {"All"}
                                 </span>
                               </div>
                               <div className="flex gap-2 h-6 items-center rounded-full text-muted-foreground text-xs">
@@ -381,7 +421,7 @@ export function Pattern() {
                                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                       </svg>
                                       <span>
-                                        10:42 AM
+                                        {"10:42 AM"}
                                       </span>
                                     </div>
                                   </div>
@@ -393,7 +433,7 @@ export function Pattern() {
                                     <span className="-ml-1 bg-accent block blur-[0.4px] first:ml-0 ring-2 ring-background rounded-full size-5" aria-hidden="true"></span>
                                     <span className="bg-primary/10 font-medium h-5 inline-flex items-center leading-none max-w-28 ml-2 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-primary">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        Developer
+                                        {"Developer"}
                                       </span>
                                     </span>
                                   </div>
@@ -414,7 +454,7 @@ export function Pattern() {
                                         <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                       </svg>
                                       <span>
-                                        9:15 AM
+                                        {"9:15 AM"}
                                       </span>
                                     </div>
                                   </div>
@@ -423,7 +463,7 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-purple-100 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-purple-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        Work
+                                        {"Work"}
                                       </span>
                                     </span>
                                   </div>
@@ -445,7 +485,7 @@ export function Pattern() {
                                     <span className="bg-accent blur-[0.4px] h-3 rounded-full w-24" aria-hidden="true"></span>
                                     <div className="flex gap-1 items-center shrink-0 text-muted-foreground text-xs">
                                       <span>
-                                        Yesterday
+                                        {"Yesterday"}
                                       </span>
                                     </div>
                                   </div>
@@ -454,7 +494,7 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-amber-100 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-amber-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        Business
+                                        {"Business"}
                                       </span>
                                     </span>
                                     <span className="bg-muted blur-[0.4px] h-5 rounded-md w-20" aria-hidden="true"></span>
@@ -474,7 +514,7 @@ export function Pattern() {
                                     <span className="bg-accent blur-[0.4px] h-3 rounded-full w-20" aria-hidden="true"></span>
                                     <div className="flex gap-1 items-center shrink-0 text-muted-foreground text-xs">
                                       <span>
-                                        Yesterday
+                                        {"Yesterday"}
                                       </span>
                                     </div>
                                   </div>
@@ -500,7 +540,7 @@ export function Pattern() {
                                     <span className="bg-accent blur-[0.4px] h-3 rounded-full w-16" aria-hidden="true"></span>
                                     <div className="flex gap-1 items-center shrink-0 text-muted-foreground text-xs">
                                       <span>
-                                        Mon
+                                        {"Mon"}
                                       </span>
                                     </div>
                                   </div>
@@ -509,7 +549,7 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-emerald-100 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-emerald-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        Finance
+                                        {"Finance"}
                                       </span>
                                     </span>
                                   </div>
@@ -530,7 +570,7 @@ export function Pattern() {
                                         <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                       </svg>
                                       <span>
-                                        Mon
+                                        {"Mon"}
                                       </span>
                                     </div>
                                   </div>
@@ -539,12 +579,12 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-background font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 ring-1 ring-border rounded-md text-[0.65rem] text-foreground">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        #
+                                        {"#"}
                                       </span>
                                     </span>
                                     <span className="bg-yellow-50 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-yellow-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        1024
+                                        {"1024"}
                                       </span>
                                     </span>
                                   </div>
@@ -566,7 +606,7 @@ export function Pattern() {
                                     <span className="bg-accent blur-[0.4px] h-3 rounded-full w-18" aria-hidden="true"></span>
                                     <div className="flex gap-1 items-center shrink-0 text-muted-foreground text-xs">
                                       <span>
-                                        Sun
+                                        {"Sun"}
                                       </span>
                                     </div>
                                   </div>
@@ -575,22 +615,22 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-muted font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-foreground">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        env
+                                        {"env"}
                                       </span>
                                     </span>
                                     <span className="bg-emerald-50 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-emerald-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        production
+                                        {"production"}
                                       </span>
                                     </span>
                                     <span className="bg-muted font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-foreground">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        build
+                                        {"build"}
                                       </span>
                                     </span>
                                     <span className="bg-muted font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-foreground">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        47s
+                                        {"47s"}
                                       </span>
                                     </span>
                                   </div>
@@ -611,7 +651,7 @@ export function Pattern() {
                                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                       </svg>
                                       <span>
-                                        Nov 23
+                                        {"Nov 23"}
                                       </span>
                                     </div>
                                   </div>
@@ -620,7 +660,7 @@ export function Pattern() {
                                   <div className="flex flex-wrap gap-1.5 items-center mt-3">
                                     <span className="bg-blue-100 font-medium h-5 inline-flex items-center leading-none max-w-28 overflow-hidden px-1.5 rounded-md text-[0.65rem] text-blue-700">
                                       <span className="truncate" style={{opacity: "1", filter: "blur(0px)", transform: "none"}}>
-                                        Legal
+                                        {"Legal"}
                                       </span>
                                     </span>
                                   </div>
@@ -643,16 +683,16 @@ export function Pattern() {
         <div className="absolute bottom-0 inset-x-0 z-30">
           <footer className="flex-wrap gap-x-5 gap-y-2 hidden items-center justify-center pb-6 px-6 sm:flex text-muted-foreground">
             <span className="text-xs">
-              2026 NeUI
+              {"2026 NeUI"}
             </span>
             <a className="hover:text-primary hover:underline text-sm transition-colors underline-offset-4" href="#">
-              Privacy Policy
+              {"Privacy Policy"}
             </a>
             <a className="hover:text-primary hover:underline text-sm transition-colors underline-offset-4" href="#">
-              Support
+              {"Support"}
             </a>
             <a className="hover:text-primary hover:underline text-sm transition-colors underline-offset-4" href="#">
-              Sign out
+              {"Sign out"}
             </a>
           </footer>
         </div>

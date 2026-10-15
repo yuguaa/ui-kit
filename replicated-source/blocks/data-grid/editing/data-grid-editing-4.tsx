@@ -24,17 +24,17 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center min-h-svh mx-auto p-8 pt-12 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Pricing plan editor data grid with per-row edit mode
+        {"Pricing plan editor data grid with per-row edit mode"}
       </h1>
       <section className="flex flex-col lg:px-8 max-w-7xl px-4 py-8 sm:px-6 w-full">
         <Frame spacing="default">
           <header className="flex flex-col gap-2 items-start lg:flex-row lg:items-center lg:justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="flex flex-col min-w-0">
               <div className="font-semibold text-base text-foreground tracking-tight">
-                Plans
+                {"Plans"}
               </div>
               <div className="text-muted-foreground text-sm">
-                Edit one plan at a time.
+                {"Edit one plan at a time."}
               </div>
             </div>
             <div className="flex gap-1.5 items-center">
@@ -44,7 +44,7 @@ export function Pattern() {
                   <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
-                Visibility
+                {"Visibility"}
               </DropdownMenuTrigger>
               </DropdownMenu>
               <Button type="button" tabIndex="0">
@@ -52,17 +52,20 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                Add plan
+                {"Add plan"}
               </Button>
             </div>
           </header>
           <FramePanel className="p-0">
             <DataGrid>
               <div className="relative">
+                <DataGridProvider>
                 <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                   <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_6_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                     <div role="presentation" style={{minWidth: "fit-content"}}>
+                      <DataGridProvider>
                       <DataGridTableViewport>
+                        <DataGridProvider>
                         <DataGridTable>
                           <colgroup>
                             <col style={{width: "200px"}} />
@@ -78,52 +81,53 @@ export function Pattern() {
                             <tr className="[&>th]:border-b bg-transparent">
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-4 font-medium h-10 last:pe-4 px-3 relative rtl:text-right sm:first:ps-5 sm:last:pe-5 text-foreground text-left" scope="col" data-col-id="plan" data-header-id="plan" data-header-depth="0" style={{width: "200px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Plan
+                                  {"Plan"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="audience" data-header-id="audience" data-header-depth="0" style={{width: "140px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Audience
+                                  {"Audience"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left text-right!" scope="col" data-col-id="price" data-header-id="price" data-header-depth="0" style={{width: "128px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                  Price
+                                  {"Price"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left text-right!" scope="col" data-col-id="seats" data-header-id="seats" data-header-depth="0" style={{width: "96px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                  Seats
+                                  {"Seats"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left text-right!" scope="col" data-col-id="trial" data-header-id="trial" data-header-depth="0" style={{width: "110px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-end leading-[calc(1.125/0.8125)] text-[0.8125rem] text-right text-secondary-foreground/80 w-full">
-                                  Trial
+                                  {"Trial"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="visibility" data-header-id="visibility" data-header-depth="0" style={{width: "138px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-secondary-foreground/80">
-                                  Visibility
+                                  {"Visibility"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="featured" data-header-id="featured" data-header-depth="0" style={{width: "112px"}}>
                                 <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-normal gap-1.5 h-full inline-flex items-center justify-center leading-[calc(1.125/0.8125)] text-[0.8125rem] text-center text-secondary-foreground/80 w-full">
-                                  Featured
+                                  {"Featured"}
                                 </div>
                               </th>
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-4 font-medium h-10 last:pe-4 px-3 relative rtl:text-right sm:first:ps-5 sm:last:pe-5 text-foreground text-left" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" style={{width: "120px"}}></th>
                             </tr>
                           </thead>
+                          <DataGridProvider>
                           <DataGridTableBody>
                             <tr className="[&:not(:last-child)>td]:border-b [&>td]:h-14 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="plan-free">
                               <td className="align-middle first:ps-4 last:pe-4 px-3 py-2 sm:first:ps-5 sm:last:pe-5">
                                 <div className="relative">
                                   <div className="flex flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Free
+                                      {"Free"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      plan_free
+                                      {"plan_free"}
                                     </span>
                                   </div>
                                 </div>
@@ -131,38 +135,38 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Individuals
+                                  {"Individuals"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="flex gap-1 items-baseline justify-end">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $0
+                                    {"$0"}
                                   </span>
                                   <span className="text-muted-foreground text-xs">
-                                    /mo
+                                    {"/mo"}
                                   </span>
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  1
+                                  {"1"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-muted-foreground text-right text-sm">
-                                  No trial
+                                  {"No trial"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Public
+                                  {"Public"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <div className="flex justify-center">
                                   <span className="text-muted-foreground text-sm">
-                                    Off
+                                    {"Off"}
                                   </span>
                                 </div>
                               </td>
@@ -203,10 +207,10 @@ export function Pattern() {
                                 <div className="relative">
                                   <div className="flex flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Starter
+                                      {"Starter"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      plan_starter
+                                      {"plan_starter"}
                                     </span>
                                   </div>
                                 </div>
@@ -214,38 +218,38 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                   <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Individuals
+                                  {"Individuals"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="flex gap-1 items-baseline justify-end">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $12
+                                    {"$12"}
                                   </span>
                                   <span className="text-muted-foreground text-xs">
-                                    /mo
+                                    {"/mo"}
                                   </span>
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  3
+                                  {"3"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  14-day
+                                  {"14-day"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Public
+                                  {"Public"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <div className="flex justify-center">
                                   <span className="text-muted-foreground text-sm">
-                                    Off
+                                    {"Off"}
                                   </span>
                                 </div>
                               </td>
@@ -286,10 +290,10 @@ export function Pattern() {
                                 <div className="relative">
                                   <div className="flex flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Pro
+                                      {"Pro"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      plan_pro
+                                      {"plan_pro"}
                                     </span>
                                   </div>
                                 </div>
@@ -297,38 +301,38 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Teams
+                                  {"Teams"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="flex gap-1 items-baseline justify-end">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $29
+                                    {"$29"}
                                   </span>
                                   <span className="text-muted-foreground text-xs">
-                                    /mo
+                                    {"/mo"}
                                   </span>
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  10
+                                  {"10"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  14-day
+                                  {"14-day"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Public
+                                  {"Public"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <div className="flex justify-center">
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                                    Featured
+                                    {"Featured"}
                                   </Badge>
                                 </div>
                               </td>
@@ -369,10 +373,10 @@ export function Pattern() {
                                 <div className="relative">
                                   <div className="flex flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Business
+                                      {"Business"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      plan_business
+                                      {"plan_business"}
                                     </span>
                                   </div>
                                 </div>
@@ -380,38 +384,38 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                   <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Teams
+                                  {"Teams"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="flex gap-1 items-baseline justify-end">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $79
+                                    {"$79"}
                                   </span>
                                   <span className="text-muted-foreground text-xs">
-                                    /mo
+                                    {"/mo"}
                                   </span>
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  25
+                                  {"25"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  30-day
+                                  {"30-day"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                                  Public
+                                  {"Public"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <div className="flex justify-center">
                                   <span className="text-muted-foreground text-sm">
-                                    Off
+                                    {"Off"}
                                   </span>
                                 </div>
                               </td>
@@ -452,10 +456,10 @@ export function Pattern() {
                                 <div className="relative">
                                   <div className="flex flex-col min-w-0">
                                     <span className="font-medium text-foreground text-sm truncate">
-                                      Enterprise
+                                      {"Enterprise"}
                                     </span>
                                     <span className="tabular-nums text-muted-foreground text-xs truncate">
-                                      plan_enterprise
+                                      {"plan_enterprise"}
                                     </span>
                                   </div>
                                 </div>
@@ -463,38 +467,38 @@ export function Pattern() {
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                                   <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                  Companies
+                                  {"Companies"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="flex gap-1 items-baseline justify-end">
                                   <span className="tabular-nums text-foreground text-sm">
-                                    $299
+                                    {"$299"}
                                   </span>
                                   <span className="text-muted-foreground text-xs">
-                                    /mo
+                                    {"/mo"}
                                   </span>
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  100
+                                  {"100"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <span className="block tabular-nums text-foreground text-right text-sm">
-                                  30-day
+                                  {"30-day"}
                                 </span>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                                  Private
+                                  {"Private"}
                                 </Badge>
                               </td>
                               <td className="align-middle px-3 py-2">
                                 <div className="flex justify-center">
                                   <span className="text-muted-foreground text-sm">
-                                    Off
+                                    {"Off"}
                                   </span>
                                 </div>
                               </td>
@@ -531,22 +535,26 @@ export function Pattern() {
                               </td>
                             </tr>
                           </DataGridTableBody>
+                          </DataGridProvider>
                         </DataGridTable>
+                        </DataGridProvider>
                       </DataGridTableViewport>
+                      </DataGridProvider>
                     </div>
                   </div>
                 </DataGridScrollArea>
+                </DataGridProvider>
               </div>
             </DataGrid>
           </FramePanel>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
             <span className="flex gap-1.5 items-center text-muted-foreground text-xs">
               <span>
-                5 plans
+                {"5 plans"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
               <span>
-                4 public
+                {"4 public"}
               </span>
             </span>
           </footer>

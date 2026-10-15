@@ -18,7 +18,7 @@ export function Pattern() {
           <FramePanel className="space-y-10">
             <div className="flex gap-2 grow items-center justify-between">
               <span className="text-muted-foreground text-sm">
-                Company
+                {"Company"}
               </span>
               <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                 <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -30,10 +30,10 @@ export function Pattern() {
             <div className="flex items-end justify-between">
               <div className="flex flex-col gap-1.5">
                 <span className="font-medium leading-tight text-sm">
-                  NeUI Inc.
+                  {"NeUI Inc."}
                 </span>
                 <p className="leading-none text-muted-foreground text-sm">
-                  Amsterdam, NL
+                  {"Amsterdam, NL"}
                 </p>
               </div>
               <div className="flex justify-end pt-1">
@@ -46,7 +46,7 @@ export function Pattern() {
           <FramePanel className="space-y-10">
             <div className="flex gap-2 grow items-center justify-between">
               <span className="text-muted-foreground text-sm">
-                API Endpoint
+                {"API Endpoint"}
               </span>
               <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                 <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
@@ -59,15 +59,15 @@ export function Pattern() {
             <div className="flex items-end justify-between">
               <div className="flex flex-col gap-1.5">
                 <a className="font-medium hover:underline leading-tight text-primary text-sm" href="#">
-                  api.neui.io
+                  {"api.neui.io"}
                 </a>
                 <p className="leading-none text-muted-foreground text-sm">
-                  Requests: 124k/day
+                  {"Requests: 124k/day"}
                 </p>
               </div>
               <div className="flex justify-end pt-1">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-info-foreground transition-shadow">
-                  Running
+                  {"Running"}
                 </Badge>
               </div>
             </div>
@@ -75,7 +75,7 @@ export function Pattern() {
           <FramePanel className="space-y-10">
             <div className="flex gap-2 grow items-center justify-between">
               <span className="text-muted-foreground text-sm">
-                Next Session
+                {"Next Session"}
               </span>
               <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                 <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
@@ -89,10 +89,10 @@ export function Pattern() {
             <div className="flex items-end justify-between">
               <div className="flex flex-col gap-1.5">
                 <span className="font-medium leading-tight text-sm">
-                  26 Dec, 2025
+                  {"26 Dec, 2025"}
                 </span>
                 <p className="leading-none text-muted-foreground text-sm">
-                  RAI Amsterdam
+                  {"RAI Amsterdam"}
                 </p>
               </div>
               <div className="flex justify-end pt-1">
@@ -107,7 +107,7 @@ export function Pattern() {
                     <AvatarImage alt="" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="border size-5 text-[10px]">
-                    +1
+                    {"+1"}
                   </AvatarGroupCount>
                 </AvatarGroup>
               </div>
@@ -116,7 +116,7 @@ export function Pattern() {
           <FramePanel className="space-y-10">
             <div className="flex gap-2 grow items-center justify-between">
               <span className="text-muted-foreground text-sm">
-                Social Profile
+                {"Social Profile"}
               </span>
               <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground">
                 <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
@@ -128,10 +128,10 @@ export function Pattern() {
             <div className="flex items-end justify-between">
               <div className="flex flex-col gap-1.5">
                 <a className="font-medium hover:underline leading-tight text-primary text-sm" href="#">
-                  @neui_io
+                  {"@neui_io"}
                 </a>
                 <p className="leading-none text-muted-foreground text-sm">
-                  2,468 Members
+                  {"2,468 Members"}
                 </p>
               </div>
             </div>

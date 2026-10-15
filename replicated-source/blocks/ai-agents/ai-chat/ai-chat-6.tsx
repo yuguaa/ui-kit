@@ -68,16 +68,17 @@ import { Marker } from "@/registry/bases/radix/ui/marker"
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "min(28rem, 45vw)", "--sidebar-width-icon": "3rem", "--sidebar": "var(--card)"}}>
       <SidebarInset className="min-h-0 overflow-hidden">
         <div className="flex-1 min-h-0 overflow-y-auto scrollbar">
           <header className="after:absolute after:bg-gradient-to-b after:from-background after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-background/70 flex gap-2 h-14 items-center px-4 sm:px-6 sticky supports-backdrop-filter:bg-background/60 top-0 z-10">
             <span className="font-medium min-w-0 text-sm truncate">
-              NeUI Labs
+              {"NeUI Labs"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="min-w-0 text-muted-foreground text-sm truncate">
-              Signups
+              {"Signups"}
             </span>
             <div className="flex gap-3 items-center ms-auto shrink-0">
               <Button className="gap-1.5" type="button" tabIndex="0" aria-pressed="true">
@@ -89,7 +90,7 @@ export function Pattern() {
                   <path d="M15 13v2"></path>
                   <path d="M9 13v2"></path>
                 </svg>
-                AI Assistant
+                {"AI Assistant"}
               </Button>
               <Avatar className="size-7" size="default">
                 <AvatarImage alt="Priya Nair" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -203,9 +204,12 @@ export function Pattern() {
           </div>
         </div>
       </SidebarInset>
+      <SidebarProvider>
       <Sidebar data-state="expanded" collapsible="" variant="floating" data-side="right">
         <div className="bg-transparent cn-sidebar-gap group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))] group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative w-(--sidebar-width)"></div>
+        <SidebarProvider>
         <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)] h-svh hidden inset-y-0 md:flex p-2 transition-[left,right,width] w-(--sidebar-width) z-10" data-side="right" aria-label="NeUI Chat">
+          <SidebarProvider>
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="border-b gap-0 p-0 shrink-0" sidebar="header">
               <div className="flex gap-2 items-center min-h-12 px-4">
@@ -222,7 +226,7 @@ export function Pattern() {
                 <DropdownMenu>
                 <DropdownMenuTrigger className="-ms-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-medium gap-1.5 group/button h-8 inline-flex items-center justify-start min-w-0 outline-none px-1.5 select-none shrink-0 text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Model, Claude Sonnet 5" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
                   <span className="min-w-0 text-sm truncate">
-                    Claude Sonnet 5
+                    {"Claude Sonnet 5"}
                   </span>
                   <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
@@ -250,6 +254,7 @@ export function Pattern() {
                 </div>
               </div>
             </SidebarHeader>
+            <SidebarProvider>
             <SidebarContent className="overflow-hidden" sidebar="content">
               <div className="flex flex-1 flex-col min-h-0 relative">
                 <MessageScroller className="flex-1" scrollable="start">
@@ -258,7 +263,7 @@ export function Pattern() {
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
                           <MarkerContent>
-                            Today
+                            {"Today"}
                           </MarkerContent>
                         </Marker>
                       </MessageScrollerItem>
@@ -278,23 +283,23 @@ export function Pattern() {
                                   </AttachmentMedia>
                                   <AttachmentContent>
                                     <AttachmentTitle className="text-xs">
-                                      funnel-export.csv
+                                      {"funnel-export.csv"}
                                     </AttachmentTitle>
                                     <AttachmentDescription className="tabular-nums text-xs">
-                                      CSV, 1,204 rows
+                                      {"CSV, 1,204 rows"}
                                     </AttachmentDescription>
                                   </AttachmentContent>
                                 </Attachment>
                               </AttachmentGroup>
                               <Bubble className="max-w-[88%]" variant="muted" data-align="end">
                                 <BubbleContent className="text-sm/6">
-                                  Signup completion dropped 12% after 4.2 shipped on Tuesday. Work out what changed and get a fix moving before Thursday's review.
+                                  {"Signup completion dropped 12% after 4.2 shipped on Tuesday. Work out what changed and get a fix moving before Thursday's review."}
                                 </BubbleContent>
                               </Bubble>
                               <MessageFooter className="gap-0.5 pe-0">
                                 <span className="duration-150 flex group-focus-within/turn:opacity-100 group-hover/turn:opacity-100 items-center motion-reduce:transition-none opacity-0 transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    09:41
+                                    {"09:41"}
                                   </span>
                                   <Button type="button" tabIndex="0" aria-label="Copy message">
                                     <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -320,11 +325,11 @@ export function Pattern() {
                             <MessageContent className="gap-2">
                               <div className="flex gap-2 items-baseline min-w-0">
                                 <h3 className="flex-1 font-semibold min-w-0 text-base tracking-tight truncate">
-                                  Scoping the Drop
+                                  {"Scoping the Drop"}
                                 </h3>
                                 <span className="flex gap-1.5 items-center shrink-0 text-muted-foreground text-xs">
                                   <span className="tabular-nums">
-                                    4s
+                                    {"4s"}
                                   </span>
                                 </span>
                               </div>
@@ -332,10 +337,10 @@ export function Pattern() {
                                 <BubbleContent className="p-0">
                                   <div className="selection:bg-primary/20 space-y-3 tabular-nums text-sm/6">
                                     <p className="whitespace-pre-wrap">
-                                      Your export agrees with the funnel: completion fell from 71% to 59% between Monday and Wednesday, and all of it sits on the email verification step.
+                                      {"Your export agrees with the funnel: completion fell from 71% to 59% between Monday and Wednesday, and all of it sits on the email verification step."}
                                     </p>
                                     <p className="whitespace-pre-wrap">
-                                      Three questions before I start. I have pre-picked what I would choose, so confirming is enough.
+                                      {"Three questions before I start. I have pre-picked what I would choose, so confirming is enough."}
                                     </p>
                                   </div>
                                 </BubbleContent>
@@ -343,7 +348,7 @@ export function Pattern() {
                               <div className="pt-1">
                                 <div className="flex flex-col gap-3" role="group" aria-labelledby="_r_l_">
                                   <h4 className="font-medium text-muted-foreground text-xs tracking-wide uppercase" id="_r_l_">
-                                    Brief
+                                    {"Brief"}
                                   </h4>
                                   <Questionnaire className="gap-3" current="1" first="" total="3" shortcuts="letters" novalidate="">
                                     <QuestionnaireProgress className="w-full" current="1" first="" total="3" aria-label="Questionnaire progress" aria-live="polite" aria-valuemax="3" aria-valuemin="1" aria-valuenow="1" aria-valuetext="Question 1 of 3" role="progressbar">
@@ -353,12 +358,12 @@ export function Pattern() {
                                         <span className="bg-muted flex-1 h-1 rounded-full"></span>
                                       </div>
                                       <span className="tabular-nums text-muted-foreground text-xs">
-                                        Question 1 of 3
+                                        {"Question 1 of 3"}
                                       </span>
                                     </QuestionnaireProgress>
                                     <QuestionnaireItem className="gap-2.5" data-active="" multiple="" required="" status="answered" aria-keyshortcuts="Meta+Enter Control+Enter ArrowUp ArrowDown ArrowRight" tabIndex="-1">
                                       <QuestionnaireTitle className="font-medium text-sm">
-                                        What may I read?
+                                        {"What may I read?"}
                                       </QuestionnaireTitle>
                                       <QuestionnaireChoices shortcuts="letters">
                                         <QuestionnaireChoice shortcut="A" type="checkbox" checked="">
@@ -371,14 +376,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              funnel-export.csv
+                                              {"funnel-export.csv"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Attached, CSV, 1,204 rows
+                                              {"Attached, CSV, 1,204 rows"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="A" aria-hidden="true">
-                                            A
+                                            {"A"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice shortcut="B" type="checkbox" checked="">
@@ -391,14 +396,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Signup funnel
+                                              {"Signup funnel"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Analytics, last 14 days
+                                              {"Analytics, last 14 days"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="B" aria-hidden="true">
-                                            B
+                                            {"B"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice shortcut="C" type="checkbox" checked="">
@@ -411,14 +416,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Support queue
+                                              {"Support queue"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              14 tickets tagged signup
+                                              {"14 tickets tagged signup"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="C" aria-hidden="true">
-                                            C
+                                            {"C"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice unchecked="" shortcut="D" type="checkbox">
@@ -431,24 +436,24 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Session replay
+                                              {"Session replay"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              18 signups, Aug 25
+                                              {"18 signups, Aug 25"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="D" aria-hidden="true">
-                                            D
+                                            {"D"}
                                           </span>
                                         </QuestionnaireChoice>
                                       </QuestionnaireChoices>
                                       <QuestionnaireError hidden id="_r_q_">
-                                        Choose an answer to continue.
+                                        {"Choose an answer to continue."}
                                       </QuestionnaireError>
                                     </QuestionnaireItem>
                                     <QuestionnaireItem className="gap-2.5" required="" status="answered" hidden inert="" tabIndex="-1">
                                       <QuestionnaireTitle className="font-medium text-sm">
-                                        How far should I take it?
+                                        {"How far should I take it?"}
                                       </QuestionnaireTitle>
                                       <QuestionnaireChoices shortcuts="letters">
                                         <QuestionnaireChoice unchecked="" shortcut="A" type="radio">
@@ -461,14 +466,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Find the cause
+                                              {"Find the cause"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Read and report back
+                                              {"Read and report back"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="A" aria-hidden="true">
-                                            A
+                                            {"A"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice unchecked="" shortcut="B" type="radio">
@@ -481,14 +486,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Find it and draft a fix
+                                              {"Find it and draft a fix"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Adds the drafting steps
+                                              {"Adds the drafting steps"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="B" aria-hidden="true">
-                                            B
+                                            {"B"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice shortcut="C" type="radio" checked="">
@@ -501,24 +506,24 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Draft it and hand it off
+                                              {"Draft it and hand it off"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Adds the review note
+                                              {"Adds the review note"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="C" aria-hidden="true">
-                                            C
+                                            {"C"}
                                           </span>
                                         </QuestionnaireChoice>
                                       </QuestionnaireChoices>
                                       <QuestionnaireError hidden id="_r_u_">
-                                        Choose an answer to continue.
+                                        {"Choose an answer to continue."}
                                       </QuestionnaireError>
                                     </QuestionnaireItem>
                                     <QuestionnaireItem className="gap-2.5" required="" status="answered" hidden inert="" tabIndex="-1">
                                       <QuestionnaireTitle className="font-medium text-sm">
-                                        When is this needed?
+                                        {"When is this needed?"}
                                       </QuestionnaireTitle>
                                       <QuestionnaireChoices shortcuts="letters">
                                         <QuestionnaireChoice shortcut="A" type="radio" checked="">
@@ -531,14 +536,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Before Thursday's review
+                                              {"Before Thursday's review"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Aug 27
+                                              {"Aug 27"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="A" aria-hidden="true">
-                                            A
+                                            {"A"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice unchecked="" shortcut="B" type="radio">
@@ -551,14 +556,14 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              End of the week
+                                              {"End of the week"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Aug 28
+                                              {"Aug 28"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="B" aria-hidden="true">
-                                            B
+                                            {"B"}
                                           </span>
                                         </QuestionnaireChoice>
                                         <QuestionnaireChoice unchecked="" shortcut="C" type="radio">
@@ -571,30 +576,30 @@ export function Pattern() {
                                           </span>
                                           <span className="cn-questionnaire-choice-content cn-questionnaire-choice-label flex flex-1 flex-col leading-snug min-w-0">
                                             <span className="text-sm">
-                                              Early next week
+                                              {"Early next week"}
                                             </span>
                                             <QuestionnaireChoiceDescription className="text-xs">
-                                              Aug 31
+                                              {"Aug 31"}
                                             </QuestionnaireChoiceDescription>
                                           </span>
                                           <span className="cn-questionnaire-choice-shortcut cn-questionnaire-shortcut group-data-[shortcut]/questionnaire-choice:inline-flex hidden ms-auto pointer-events-none shrink-0" data-shortcut="C" aria-hidden="true">
-                                            C
+                                            {"C"}
                                           </span>
                                         </QuestionnaireChoice>
                                       </QuestionnaireChoices>
                                       <QuestionnaireError hidden id="_r_12_">
-                                        Choose an answer to continue.
+                                        {"Choose an answer to continue."}
                                       </QuestionnaireError>
                                     </QuestionnaireItem>
                                     <QuestionnaireActions>
                                       <QuestionnairePrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" status="answered" hidden="" aria-hidden="true" hidden inert="" tabIndex="-1" type="button" size="sm" variant="outline">
-                                        Previous
+                                        {"Previous"}
                                       </QuestionnairePrevious>
                                       <QuestionnaireNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" shortcut="Enter" status="answered" visible="" aria-keyshortcuts="Enter" type="button" size="sm" variant="default">
-                                        Next
+                                        {"Next"}
                                       </QuestionnaireNext>
                                       <QuestionnaireSubmit className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" status="answered" hidden="" aria-hidden="true" hidden inert="" tabIndex="-1" type="submit" size="sm" variant="default">
-                                        Start Work
+                                        {"Start Work"}
                                       </QuestionnaireSubmit>
                                     </QuestionnaireActions>
                                   </Questionnaire>
@@ -603,7 +608,7 @@ export function Pattern() {
                               <MessageFooter className="gap-0.5">
                                 <span className="duration-150 flex group-focus-within/turn:opacity-100 group-hover/turn:opacity-100 items-center motion-reduce:transition-none opacity-0 transition-opacity">
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
-                                    09:41
+                                    {"09:41"}
                                   </span>
                                   <Button type="button" tabIndex="0" aria-label="Copy answer">
                                     <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
@@ -636,17 +641,18 @@ export function Pattern() {
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
                     <span className="sr-only">
-                      Scroll to end
+                      {"Scroll to end"}
                     </span>
                   </MessageScrollerButton>
                 </MessageScroller>
               </div>
             </SidebarContent>
+            </SidebarProvider>
             <SidebarFooter className="border-t gap-2 pb-4 pt-3 px-4 relative shrink-0 z-10" sidebar="footer">
               <form className="w-full">
                 <Field role="group" data-orientation="vertical">
                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-6-composer">
-                    Message NeUI Chat
+                    {"Message NeUI Chat"}
                   </FieldLabel>
                   <InputGroup role="group">
                     <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-32 min-h-10 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-6-composer" placeholder="Ask about the signup drop"></textarea>
@@ -671,7 +677,7 @@ export function Pattern() {
                             <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
                           </svg>
                           <span className="tabular-nums text-xs truncate">
-                            3
+                            {"3"}
                           </span>
                           <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
@@ -693,8 +699,12 @@ export function Pattern() {
               </form>
             </SidebarFooter>
           </div>
+          </SidebarProvider>
         </div>
+        </SidebarProvider>
       </Sidebar>
+      </SidebarProvider>
     </div>
+    </SidebarProvider>
   )
 }

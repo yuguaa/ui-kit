@@ -60,10 +60,10 @@ export function Pattern() {
           <Separator className="h-4 ml-2 mr-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <div className="flex gap-2 items-center min-w-0">
             <h1 className="font-medium leading-5 text-base text-foreground truncate">
-              Create invoice
+              {"Create invoice"}
             </h1>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative self-center sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow translate-y-px">
-              Draft
+              {"Draft"}
             </Badge>
           </div>
         </div>
@@ -74,7 +74,7 @@ export function Pattern() {
               <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path>
               <path d="M8 6v8"></path>
             </svg>
-            Feedback
+            {"Feedback"}
           </Button>
           <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
             <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" aria-hidden="true">
@@ -82,14 +82,14 @@ export function Pattern() {
               <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
               <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
             </svg>
-            Save draft
+            {"Save draft"}
           </Button>
           <Button type="submit" tabIndex="0" form="form-3-invoice-creator">
             <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
               <path d="m21.854 2.147-10.94 10.939"></path>
             </svg>
-            Send invoice
+            {"Send invoice"}
           </Button>
         </div>
       </header>
@@ -98,10 +98,10 @@ export function Pattern() {
           <Card className="gap-0 p-0" size="default">
             <CardHeader className="gap-1 px-5 py-5 sm:px-6">
               <CardTitle>
-                Invoice Details
+                {"Invoice Details"}
               </CardTitle>
               <CardDescription>
-                Customer, terms, items, and payment notes.
+                {"Customer, terms, items, and payment notes."}
               </CardDescription>
               <CardAction className="flex gap-1.5 items-center self-center">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
@@ -110,10 +110,10 @@ export function Pattern() {
                     <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path>
                     <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path>
                   </svg>
-                  Draft
+                  {"Draft"}
                 </Badge>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-background border border-border dark:bg-input/30 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hidden min-w-5 outline-none px-1.25 py-0.5 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                  USD
+                  {"USD"}
                 </Badge>
               </CardAction>
             </CardHeader>
@@ -121,10 +121,10 @@ export function Pattern() {
             <CardContent className="flex flex-col gap-7 px-5 py-5 sm:px-6 sm:py-6">
               <FieldSet className="gap-0">
                 <FieldLegend className="sr-only" variant="legend">
-                  Invoice creation form
+                  {"Invoice creation form"}
                 </FieldLegend>
                 <FieldDescription className="sr-only">
-                  Create a customer invoice with billing terms, line items, and payment notes.
+                  {"Create a customer invoice with billing terms, line items, and payment notes."}
                 </FieldDescription>
                 <FieldGroup className="gap-7">
                   <section className="flex flex-col gap-4 sm:gap-5">
@@ -132,14 +132,14 @@ export function Pattern() {
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center">
                           <h2 className="font-semibold leading-6 text-base text-foreground">
-                            Customer
+                            {"Customer"}
                           </h2>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                            Required
+                            {"Required"}
                           </Badge>
                         </div>
                         <p className="text-muted-foreground text-sm">
-                          Billable account and invoice reference.
+                          {"Billable account and invoice reference."}
                         </p>
                       </div>
                     </div>
@@ -147,7 +147,7 @@ export function Pattern() {
                       <Field role="group" data-orientation="vertical">
                         <div className="flex gap-1.5 items-center">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-customer">
-                            Customer
+                            {"Customer"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Customer info" id="base-ui-_r_1_" baseUiTooltipTrigger="">
@@ -180,7 +180,7 @@ export function Pattern() {
                       <Field role="group" data-orientation="vertical">
                         <div className="flex gap-1.5 items-center">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-tax-id">
-                            Tax ID
+                            {"Tax ID"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Tax ID info" id="base-ui-_r_8_" baseUiTooltipTrigger="">
@@ -208,7 +208,7 @@ export function Pattern() {
                       <Field role="group" data-orientation="vertical">
                         <div className="flex gap-1.5 items-center">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-invoice-number">
-                            Invoice Number
+                            {"Invoice Number"}
                           </FieldLabel>
                           <Tooltip>
                           <TooltipTrigger className="-my-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Invoice Number info" id="base-ui-_r_b_" baseUiTooltipTrigger="">
@@ -234,7 +234,7 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-po-number">
-                          PO Reference
+                          {"PO Reference"}
                         </FieldLabel>
                         <Input id="form-3-po-number" value="PO-7418"></Input>
                       </Field>
@@ -246,26 +246,26 @@ export function Pattern() {
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center">
                           <h2 className="font-semibold leading-6 text-base text-foreground">
-                            Terms
+                            {"Terms"}
                           </h2>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                            Net 14
+                            {"Net 14"}
                           </Badge>
                         </div>
                         <p className="text-muted-foreground text-sm">
-                          Dates, currency, and collection method.
+                          {"Dates, currency, and collection method."}
                         </p>
                       </div>
                     </div>
                     <FieldGroup className="gap-4 grid md:grid-cols-3">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-issue-date">
-                          Issue Date
+                          {"Issue Date"}
                         </FieldLabel>
                         <Popover>
                         <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="form-3-issue-date" aria-label="Choose issue date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                           <span className="truncate">
-                            Apr 24, 2026
+                            {"Apr 24, 2026"}
                           </span>
                           <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M8 2v4"></path>
@@ -278,12 +278,12 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-due-date">
-                          Due Date
+                          {"Due Date"}
                         </FieldLabel>
                         <Popover>
                         <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="form-3-due-date" aria-label="Choose due date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                           <span className="truncate">
-                            May 08, 2026
+                            {"May 08, 2026"}
                           </span>
                           <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M8 2v4"></path>
@@ -296,16 +296,16 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-currency">
-                          Currency
+                          {"Currency"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="form-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            USD
+                            {"USD"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -313,16 +313,16 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-payment-terms">
-                          Payment Terms
+                          {"Payment Terms"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="form-3-payment-terms" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            Net 14
+                            {"Net 14"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -330,16 +330,16 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-collection-method">
-                          Collection
+                          {"Collection"}
                         </FieldLabel>
                         <Select>
                         <SelectTrigger className="w-full" type="button" tabIndex="0" id="form-3-collection-method" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
-                            ACH transfer
+                            {"ACH transfer"}
                           </SelectValue>
                           <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
-                            ▼
+                            {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
@@ -347,7 +347,7 @@ export function Pattern() {
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-billing-address">
-                          Billing Address
+                          {"Billing Address"}
                         </FieldLabel>
                         <Input id="form-3-billing-address" value="14 Warren Street, Suite 620, New York, NY"></Input>
                       </Field>
@@ -359,14 +359,14 @@ export function Pattern() {
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center">
                           <h2 className="font-semibold leading-6 text-base text-foreground">
-                            Line Items
+                            {"Line Items"}
                           </h2>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                            2 items
+                            {"2 items"}
                           </Badge>
                         </div>
                         <p className="text-muted-foreground text-sm">
-                          Products, services, quantity, tax, and amount.
+                          {"Products, services, quantity, tax, and amount."}
                         </p>
                       </div>
                       <div className="shrink-0">
@@ -375,7 +375,7 @@ export function Pattern() {
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
-                          Add item
+                          {"Add item"}
                         </Button>
                       </div>
                     </div>
@@ -384,19 +384,19 @@ export function Pattern() {
                         <TableHeader>
                           <TableRow>
                             <TableHead className="w-[42%]">
-                              Item
+                              {"Item"}
                             </TableHead>
                             <TableHead className="w-24">
-                              Qty
+                              {"Qty"}
                             </TableHead>
                             <TableHead className="w-36">
-                              Rate
+                              {"Rate"}
                             </TableHead>
                             <TableHead className="w-32">
-                              Tax
+                              {"Tax"}
                             </TableHead>
                             <TableHead className="text-right w-32">
-                              Amount
+                              {"Amount"}
                             </TableHead>
                             <TableHead className="w-10"></TableHead>
                           </TableRow>
@@ -408,11 +408,11 @@ export function Pattern() {
                                 <Select>
                                 <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_s_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-1">
                                   <SelectValue>
-                                    Implementation retainer
+                                    {"Implementation retainer"}
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
@@ -434,7 +434,7 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <InputGroup className="min-w-28" role="group">
                                 <InputGroupAddon role="group" data-align="inline-start">
-                                  $
+                                  {"$"}
                                 </InputGroupAddon>
                                 <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_12_" min="0" step="50" aria-label="Rate for Implementation retainer" type="number" value="4800" />
                               </InputGroup>
@@ -443,11 +443,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="min-w-24" type="button" tabIndex="0" id="base-ui-_r_13_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Tax rate for Implementation retainer">
                                 <SelectValue>
-                                  8.25%
+                                  {"8.25%"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -455,7 +455,7 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
                               <span className="inline-flex items-center justify-end min-h-9">
-                                $4,800.00
+                                {"$4,800.00"}
                               </span>
                             </TableCell>
                             <TableCell className="align-middle">
@@ -476,11 +476,11 @@ export function Pattern() {
                                 <Select>
                                 <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_16_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-2">
                                   <SelectValue>
-                                    Priority support block
+                                    {"Priority support block"}
                                   </SelectValue>
                                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
-                                    ▼
+                                    {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
@@ -502,7 +502,7 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <InputGroup className="min-w-28" role="group">
                                 <InputGroupAddon role="group" data-align="inline-start">
-                                  $
+                                  {"$"}
                                 </InputGroupAddon>
                                 <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_1c_" min="0" step="50" aria-label="Rate for Priority support block" type="number" value="950" />
                               </InputGroup>
@@ -511,11 +511,11 @@ export function Pattern() {
                               <Select>
                               <SelectTrigger className="min-w-24" type="button" tabIndex="0" id="base-ui-_r_1d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Tax rate for Priority support block">
                                 <SelectValue>
-                                  No tax
+                                  {"No tax"}
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -523,7 +523,7 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
                               <span className="inline-flex items-center justify-end min-h-9">
-                                $1,900.00
+                                {"$1,900.00"}
                               </span>
                             </TableCell>
                             <TableCell className="align-middle">
@@ -548,32 +548,32 @@ export function Pattern() {
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <div className="flex flex-wrap gap-2 items-center">
                           <h2 className="font-semibold leading-6 text-base text-foreground">
-                            Notes
+                            {"Notes"}
                           </h2>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                            Optional
+                            {"Optional"}
                           </Badge>
                         </div>
                         <p className="text-muted-foreground text-sm">
-                          Customer-facing memo and payment footer.
+                          {"Customer-facing memo and payment footer."}
                         </p>
                       </div>
                     </div>
                     <FieldGroup className="gap-4 grid md:grid-cols-2">
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-memo">
-                          Memo
+                          {"Memo"}
                         </FieldLabel>
                         <Textarea id="form-3-memo">
-                          Thanks for partnering with us. Please include the invoice number with payment.
+                          {"Thanks for partnering with us. Please include the invoice number with payment."}
                         </Textarea>
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-3-footer-note">
-                          Footer Note
+                          {"Footer Note"}
                         </FieldLabel>
                         <Textarea id="form-3-footer-note">
-                          Bank transfer and card payment are both supported.
+                          {"Bank transfer and card payment are both supported."}
                         </Textarea>
                       </Field>
                     </FieldGroup>
@@ -590,18 +590,18 @@ export function Pattern() {
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
-                      Payment link queued
+                      {"Payment link queued"}
                     </Badge>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-                      PDF preview ready
+                      {"PDF preview ready"}
                     </Badge>
                   </div>
                   <div className="flex flex-col gap-1 min-w-0 text-muted-foreground text-sm">
                     <p>
-                      Payment link and PDF preview are prepared after sending.
+                      {"Payment link and PDF preview are prepared after sending."}
                     </p>
                     <p>
-                      Totals update as items, taxes, and discounts change.
+                      {"Totals update as items, taxes, and discounts change."}
                     </p>
                   </div>
                 </div>
@@ -631,50 +631,50 @@ export function Pattern() {
                     <div className="gap-3 grid sm:grid-cols-[1fr_8rem] sm:items-center">
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <span className="font-medium text-sm">
-                          Invoice Discount
+                          {"Invoice Discount"}
                         </span>
                         <span className="text-muted-foreground text-xs">
-                          Applied before tax calculation.
+                          {"Applied before tax calculation."}
                         </span>
                       </div>
                       <InputGroup className="bg-background/85" role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_1g_" min="0" max="100" step="0.5" aria-label="Invoice discount percentage" type="number" value="3" />
                         <InputGroupAddon role="group" data-align="inline-end">
-                          %
+                          {"%"}
                         </InputGroupAddon>
                       </InputGroup>
                     </div>
                     <dl className="backdrop-blur-sm bg-background/70 border gap-2.5 grid p-3 rounded-md text-sm">
                       <div className="flex gap-4 items-center justify-between">
                         <dt>
-                          Subtotal
+                          {"Subtotal"}
                         </dt>
                         <dd className="tabular-nums text-foreground">
-                          $6,700.00
+                          {"$6,700.00"}
                         </dd>
                       </div>
                       <div className="flex gap-4 items-center justify-between">
                         <dt>
-                          Discount
+                          {"Discount"}
                         </dt>
                         <dd className="tabular-nums text-foreground">
-                          -$201.00
+                          {"-$201.00"}
                         </dd>
                       </div>
                       <div className="flex gap-4 items-center justify-between">
                         <dt>
-                          Tax
+                          {"Tax"}
                         </dt>
                         <dd className="tabular-nums text-foreground">
-                          $396.00
+                          {"$396.00"}
                         </dd>
                       </div>
                       <div className="flex gap-4 items-center justify-between">
                         <dt className="font-medium text-foreground">
-                          Total Due
+                          {"Total Due"}
                         </dt>
                         <dd className="font-semibold tabular-nums text-base text-foreground">
-                          $6,895.00
+                          {"$6,895.00"}
                         </dd>
                       </div>
                     </dl>

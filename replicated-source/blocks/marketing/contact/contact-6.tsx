@@ -14,10 +14,10 @@ export function Pattern() {
         <section className="flex flex-col gap-10 lg:gap-12 w-full" aria-labelledby="contact-6-title">
           <div className="flex flex-col gap-4 items-center max-w-2xl mx-auto text-center">
             <h2 className="font-semibold lg:text-5xl text-4xl text-balance text-foreground tracking-tight" id="contact-6-title">
-              Talk To The Team
+              {"Talk To The Team"}
             </h2>
             <p className="leading-8 text-lg text-muted-foreground text-pretty">
-              Reach us however works best for you. A real person is always glad to help.
+              {"Reach us however works best for you. A real person is always glad to help."}
             </p>
           </div>
           <Frame className="w-full">
@@ -32,14 +32,14 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-col gap-1.5">
                   <h3 className="font-semibold text-base text-foreground tracking-tight">
-                    Live Chat
+                    {"Live Chat"}
                   </h3>
                   <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                    Chat with the team in real time, Monday to Friday.
+                    {"Chat with the team in real time, Monday to Friday."}
                   </p>
                 </div>
                 <a className="after:absolute after:inset-0 focus-visible:outline-none focus-visible:underline font-medium gap-1.5 hover:underline inline-flex items-center mt-auto text-primary text-sm underline-offset-4 w-fit" href="#" aria-label="Start a live chat with the NeUI team">
-                  Start a chat
+                  {"Start a chat"}
                   <svg className="duration-200 group-hover:translate-x-0.5 lucide lucide-arrow-right size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -57,14 +57,14 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-col gap-1.5">
                   <h3 className="font-semibold text-base text-foreground tracking-tight">
-                    Email Us
+                    {"Email Us"}
                   </h3>
                   <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                    Send a note and a real person replies within a business day.
+                    {"Send a note and a real person replies within a business day."}
                   </p>
                 </div>
                 <a className="after:absolute after:inset-0 focus-visible:outline-none focus-visible:underline font-medium gap-1.5 hover:underline inline-flex items-center mt-auto text-primary text-sm underline-offset-4 w-fit" href="#" aria-label="Email the NeUI team at hello@neui.io">
-                  hello@neui.io
+                  {"hello@neui.io"}
                   <svg className="duration-200 group-hover:translate-x-0.5 lucide lucide-arrow-right size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -77,14 +77,14 @@ export function Pattern() {
                 </Item>
                 <div className="flex flex-col gap-1.5">
                   <h3 className="font-semibold text-base text-foreground tracking-tight">
-                    Community
+                    {"Community"}
                   </h3>
                   <p className="leading-6 text-muted-foreground text-pretty text-sm">
-                    Ask questions and share what you build with other developers.
+                    {"Ask questions and share what you build with other developers."}
                   </p>
                 </div>
                 <a className="after:absolute after:inset-0 focus-visible:outline-none focus-visible:underline font-medium gap-1.5 hover:underline inline-flex items-center mt-auto text-primary text-sm underline-offset-4 w-fit" href="#" aria-label="Join the NeUI community on GitHub">
-                  Join the discussion
+                  {"Join the discussion"}
                   <svg className="duration-200 group-hover:translate-x-0.5 lucide lucide-arrow-right size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
@@ -96,22 +96,22 @@ export function Pattern() {
           <Card className="bg-muted border-0 gap-5 items-center p-8 ring-0 shadow-none sm:p-10 text-center" size="default">
             <div className="flex flex-col gap-2 max-w-xl mx-auto">
               <h3 className="font-semibold text-2xl text-balance text-foreground tracking-tight">
-                Still Have Questions?
+                {"Still Have Questions?"}
               </h3>
               <p className="leading-7 text-muted-foreground text-pretty">
-                The docs and FAQ cover installation, theming, and every block in the library.
+                {"The docs and FAQ cover installation, theming, and every block in the library."}
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:w-auto w-full">
               <Button href="#" role="button" tabIndex="0">
-                Read the Docs
+                {"Read the Docs"}
                 <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
               </Button>
               <Button href="#" role="button" tabIndex="0">
-                Browse the FAQ
+                {"Browse the FAQ"}
               </Button>
             </div>
           </Card>

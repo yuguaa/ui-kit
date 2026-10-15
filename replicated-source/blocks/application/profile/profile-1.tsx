@@ -45,10 +45,10 @@ export function Pattern() {
       <div className="max-w-4xl space-y-8 w-full">
         <header className="px-1">
           <h1 className="font-semibold text-xl tracking-tight">
-            Account Settings
+            {"Account Settings"}
           </h1>
           <p className="leading-relaxed max-w-2xl text-muted-foreground text-sm">
-            Update your account, workspace, team, and billing.
+            {"Update your account, workspace, team, and billing."}
           </p>
         </header>
         <Tabs className="gap-5 lg:gap-8 w-full" data-orientation="vertical" activationDirection="none">
@@ -60,7 +60,7 @@ export function Pattern() {
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
                 <span className="truncate">
-                  Profile
+                  {"Profile"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
@@ -72,7 +72,7 @@ export function Pattern() {
                   <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                 </svg>
                 <span className="truncate">
-                  Workspace
+                  {"Workspace"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
@@ -83,7 +83,7 @@ export function Pattern() {
                   <circle cx="9" cy="7" r="4"></circle>
                 </svg>
                 <span className="truncate">
-                  Team
+                  {"Team"}
                 </span>
               </TabsTrigger>
               <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -92,7 +92,7 @@ export function Pattern() {
                   <line x1="2" x2="22" y1="10" y2="10"></line>
                 </svg>
                 <span className="truncate">
-                  Billing
+                  {"Billing"}
                 </span>
               </TabsTrigger>
             </TabsList>
@@ -103,10 +103,10 @@ export function Pattern() {
                 <Frame spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <div className="capitalize font-semibold text-sm">
-                      Profile details
+                      {"Profile details"}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      Personal account info.
+                      {"Personal account info."}
                     </div>
                   </header>
                   <FramePanel className="p-0">
@@ -116,12 +116,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-photo">
                               <span className="capitalize">
-                                Profile photo
+                                {"Profile photo"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Shown in comments and mentions.
+                            {"Shown in comments and mentions."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -139,7 +139,7 @@ export function Pattern() {
                                     <path d="m17 8-5-5-5 5"></path>
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                   </svg>
-                                  Change
+                                  {"Change"}
                                 </Button>
                                 <input className="sr-only" id="profile-photo" accept="image/*" aria-label="Upload profile photo" tabIndex="-1" type="file" />
                               </div>
@@ -148,7 +148,7 @@ export function Pattern() {
                                   <path d="M18 6 6 18"></path>
                                   <path d="m6 6 12 12"></path>
                                 </svg>
-                                Remove
+                                {"Remove"}
                               </Button>
                             </div>
                           </div>
@@ -162,12 +162,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-name">
                               <span className="capitalize">
-                                Full name
+                                {"Full name"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Used across Atlas.
+                            {"Used across Atlas."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -184,15 +184,15 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-email">
                               <span className="capitalize">
-                                Email address
+                                {"Email address"}
                               </span>
                             </FieldLabel>
                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                              Verified
+                              {"Verified"}
                             </Badge>
                           </div>
                           <FieldDescription className="text-sm">
-                            Primary sign-in email.
+                            {"Primary sign-in email."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -209,12 +209,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Phone number
+                                {"Phone number"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Recovery and urgent alerts.
+                            {"Recovery and urgent alerts."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -222,12 +222,12 @@ export function Pattern() {
                             <div className="PhoneInput flex w-full">
                               <ComboboxTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 border-e-0 cn-button cn-button-size-sm cn-button-variant-outline data-pressed:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex focus:z-10 gap-1 group/button hover:bg-transparent items-center justify-center leading-none outline-none px-2.5 py-0 rounded-e-none select-none shrink-0 style-luma:rounded-s-3xl style-lyra:rounded-s-none style-maia:rounded-s-4xl style-mira:rounded-s-md style-nova:rounded-s-lg style-rhea:rounded-s-2xl style-sera:rounded-s-none style-vega:rounded-s-md transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_7_" role="combobox" aria-expanded="false" aria-haspopup="dialog">
                                 <span className="sr-only">
-                                  United States
+                                  {"United States"}
                                 </span>
                                 <span className="[&_svg:not([class*='size-'])]:rounded-[5px] [&_svg:not([class*='size-'])]:size-full! flex h-4 items-center justify-center w-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 342">
                                     <title>
-                                      US
+                                      {"US"}
                                     </title>
                                     <path fill="#FFF" d="M0 0h513v342H0z"></path>
                                     <path d="M0 0h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513v26.3H0zm0 52.7h513v26.3H0zm0 52.6h513v26.3H0zm0 52.6h513V342H0z" fill="#D80027"></path>
@@ -250,12 +250,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-username">
                               <span className="capitalize">
-                                Username
+                                {"Username"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Used in mentions and links.
+                            {"Used in mentions and links."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] min-w-0 w-full">
@@ -263,7 +263,7 @@ export function Pattern() {
                             <InputGroup role="group">
                               <InputGroupAddon role="group" data-align="inline-start">
                                 <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                  @
+                                  {"@"}
                                 </span>
                               </InputGroupAddon>
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="profile-username" value="avachen" />
@@ -279,36 +279,36 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Public details
+                                {"Public details"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Shown across Atlas.
+                            {"Shown across Atlas."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[32rem] min-w-0 w-full">
                           <div className="@md/field-group:justify-end flex justify-start w-full">
                             <FieldSet className="gap-3 w-full">
                               <FieldLegend className="sr-only" variant="legend">
-                                Public details
+                                {"Public details"}
                               </FieldLegend>
                               <FieldDescription className="sr-only">
-                                Public profile and workspace defaults.
+                                {"Public profile and workspace defaults."}
                               </FieldDescription>
                               <FieldGroup className="gap-3">
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-role">
-                                    Role
+                                    {"Role"}
                                   </FieldLabel>
                                   <Select>
                                   <SelectTrigger className="w-full" type="button" tabIndex="0" id="profile-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                     <SelectValue>
-                                      Staff Product Lead
+                                      {"Staff Product Lead"}
                                     </SelectValue>
                                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
-                                      ▼
+                                      {"▼"}
                                     </svg>
                                   </SelectTrigger>
                                   </Select>
@@ -316,7 +316,7 @@ export function Pattern() {
                                 </Field>
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-timezone">
-                                    Time zone
+                                    {"Time zone"}
                                   </FieldLabel>
                                   <Field role="group" data-orientation="vertical">
                                     <InputGroup className="cn-combobox-input" role="group">
@@ -334,12 +334,12 @@ export function Pattern() {
                                 </Field>
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-website">
-                                    Website
+                                    {"Website"}
                                   </FieldLabel>
                                   <InputGroup role="group">
                                     <InputGroupAddon role="group" data-align="inline-start">
                                       <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                        https://
+                                        {"https://"}
                                       </span>
                                     </InputGroupAddon>
                                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="profile-website" value="ava.atlashq.app" />
@@ -358,18 +358,18 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-bio">
                               <span className="capitalize">
-                                Bio
+                                {"Bio"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Short profile summary.
+                            {"Short profile summary."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[34rem] @md/field-group:w-full min-w-0 w-full">
                           <div className="@md/field-group:justify-end flex justify-start w-full">
                             <Textarea className="min-h-24 resize-none" id="profile-bio">
-                              Leading launch systems, product operations, and internal tooling across the Atlas workspace.
+                              {"Leading launch systems, product operations, and internal tooling across the Atlas workspace."}
                             </Textarea>
                           </div>
                         </FieldContent>
@@ -378,20 +378,20 @@ export function Pattern() {
                   </FramePanel>
                   <footer className="flex flex-row gap-2 justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
                     <Button type="button" tabIndex="0">
-                      Cancel
+                      {"Cancel"}
                     </Button>
                     <Button type="button" tabIndex="0">
-                      Save changes
+                      {"Save changes"}
                     </Button>
                   </footer>
                 </Frame>
                 <Frame spacing="sm">
                   <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <div className="capitalize font-semibold text-sm">
-                      Profile preferences
+                      {"Profile preferences"}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      Default workspace behavior.
+                      {"Default workspace behavior."}
                     </div>
                   </header>
                   <FramePanel className="p-0">
@@ -401,7 +401,7 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Language
+                                {"Language"}
                               </span>
                             </FieldLabel>
                           </div>
@@ -414,16 +414,16 @@ export function Pattern() {
                                 <SelectValue>
                                   <span className="flex flex-col gap-px items-start">
                                     <span className="font-medium">
-                                      English (US)
+                                      {"English (US)"}
                                     </span>
                                     <small className="text-muted-foreground text-sm">
-                                      Default product language
+                                      {"Default product language"}
                                     </small>
                                   </span>
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -440,7 +440,7 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Landing view
+                                {"Landing view"}
                               </span>
                             </FieldLabel>
                           </div>
@@ -453,16 +453,16 @@ export function Pattern() {
                                 <SelectValue>
                                   <span className="flex flex-col gap-px items-start">
                                     <span className="font-medium">
-                                      Priority inbox
+                                      {"Priority inbox"}
                                     </span>
                                     <small className="text-muted-foreground text-sm">
-                                      Focus on approvals
+                                      {"Focus on approvals"}
                                     </small>
                                   </span>
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -479,7 +479,7 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Digest cadence
+                                {"Digest cadence"}
                               </span>
                             </FieldLabel>
                           </div>
@@ -492,16 +492,16 @@ export function Pattern() {
                                 <SelectValue>
                                   <span className="flex flex-col gap-px items-start">
                                     <span className="font-medium">
-                                      Weekly summary
+                                      {"Weekly summary"}
                                     </span>
                                     <small className="text-muted-foreground text-sm">
-                                      Monday planning recap
+                                      {"Monday planning recap"}
                                     </small>
                                   </span>
                                 </SelectValue>
                                 <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
-                                  ▼
+                                  {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
@@ -518,12 +518,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-daily-briefing" id="profile-daily-briefing-label">
                               <span className="capitalize">
-                                Daily briefing
+                                {"Daily briefing"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Morning recap before meetings.
+                            {"Morning recap before meetings."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="@md/field-group:flex-1 @md/field-group:max-w-[17rem] @md/field-group:shrink-0 min-w-0 w-full">

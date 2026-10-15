@@ -19,7 +19,7 @@ export function Pattern() {
   return (
     <main className="md:h-svh min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Match Tickets
+        {"Match Tickets"}
       </h1>
       <div className="bg-background dark isolate md:h-svh min-h-svh overflow-hidden relative text-foreground w-full">
         <div className="hidden" aria-hidden="true">
@@ -55,10 +55,10 @@ export function Pattern() {
               <FramePanel className="@xl/stage:flex-row @xl/stage:gap-4 @xl/stage:items-stretch flex flex-col gap-3">
                 <div className="@xl/stage:flex-col @xl/stage:items-start @xl/stage:justify-center @xl/stage:w-28 flex gap-2 items-center justify-between shrink-0">
                   <div className="text-muted-foreground text-xs">
-                    Price Range
+                    {"Price Range"}
                   </div>
                   <div className="font-medium tabular-nums text-sm">
-                    €38 to €236
+                    {"€38 to €236"}
                   </div>
                 </div>
                 <div className="flex-1 min-w-0 relative">
@@ -339,34 +339,34 @@ export function Pattern() {
                   <div className="h-3 mt-1.5 relative text-muted-foreground text-xs" aria-hidden="true">
                     <span className="absolute border-l border-zinc-950/10 dark:border-white/15 flex gap-1.5 h-3 items-center pl-1.5 whitespace-nowrap" style={{left: "0%"}}>
                       <span className="@xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        Main
+                        {"Main"}
                       </span>
                       <span className="@max-xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        Main Stand
+                        {"Main Stand"}
                       </span>
                     </span>
                     <span className="absolute border-l border-zinc-950/10 dark:border-white/15 flex gap-1.5 h-3 items-center pl-1.5 whitespace-nowrap" style={{left: "21.4286%"}}>
                       <span className="@xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        North
+                        {"North"}
                       </span>
                       <span className="@max-xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        North End
+                        {"North End"}
                       </span>
                     </span>
                     <span className="absolute border-l border-zinc-950/10 dark:border-white/15 flex gap-1.5 h-3 items-center pl-1.5 whitespace-nowrap" style={{left: "50%"}}>
                       <span className="@xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        East
+                        {"East"}
                       </span>
                       <span className="@max-xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        East Stand
+                        {"East Stand"}
                       </span>
                     </span>
                     <span className="absolute border-l border-zinc-950/10 dark:border-white/15 flex gap-1.5 h-3 items-center pl-1.5 whitespace-nowrap" style={{left: "71.4286%"}}>
                       <span className="@xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        South
+                        {"South"}
                       </span>
                       <span className="@max-xl/stage:hidden [text-box:trim-both_cap_alphabetic]">
-                        South End
+                        {"South End"}
                       </span>
                     </span>
                   </div>
@@ -378,12 +378,12 @@ export function Pattern() {
                 <ToggleGroup className="backdrop-blur-xl bg-zinc-950/[0.06] dark:bg-white/10 p-0.5 pointer-events-auto" data-orientation="horizontal" aria-orientation="horizontal" role="group" spacing="1" aria-label="Map view" style={{"--gap": "1"}}>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="default" size="default" spacing="1">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      3D
+                      {"3D"}
                     </span>
                   </ToggleGroupItem>
                   <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="1">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      2D
+                      {"2D"}
                     </span>
                   </ToggleGroupItem>
                 </ToggleGroup>
@@ -412,15 +412,15 @@ export function Pattern() {
               <div className="flex flex-1 items-center justify-center"></div>
               <p className="flex gap-1.5 items-center max-md:hidden self-start text-muted-foreground text-xs">
                 <span>
-                  Drag to orbit
+                  {"Drag to orbit"}
                 </span>
                 <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Right drag to pan
+                  {"Right drag to pan"}
                 </span>
                 <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Scroll to zoom
+                  {"Scroll to zoom"}
                 </span>
               </p>
             </div>
@@ -428,10 +428,10 @@ export function Pattern() {
               <FramePanel className="@3xl/stage:flex-row @3xl/stage:items-center flex flex-col gap-4" aria-live="polite">
                 <div className="flex flex-1 flex-col gap-1.5 min-w-0">
                   <span className="font-medium text-sm">
-                    No seats selected
+                    {"No seats selected"}
                   </span>
                   <span className="text-muted-foreground text-xs">
-                    Pick a sector on the bowl or the price bar.
+                    {"Pick a sector on the bowl or the price bar."}
                   </span>
                 </div>
                 <ul className="flex flex-wrap gap-x-4 gap-y-2 items-center text-muted-foreground text-xs" aria-label="Price bands">
@@ -439,7 +439,7 @@ export function Pattern() {
                     <span className="gap-1.5 h-4 inline-flex items-center">
                       <span className="bg-amber-400 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Premium
+                        {"Premium"}
                       </span>
                     </span>
                   </li>
@@ -447,7 +447,7 @@ export function Pattern() {
                     <span className="gap-1.5 h-4 inline-flex items-center">
                       <span className="bg-pink-700 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Standard
+                        {"Standard"}
                       </span>
                     </span>
                   </li>
@@ -455,20 +455,20 @@ export function Pattern() {
                     <span className="gap-1.5 h-4 inline-flex items-center">
                       <span className="bg-blue-700 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Value
+                        {"Value"}
                       </span>
                     </span>
                   </li>
                   <li className="gap-1.5 h-4 inline-flex items-center">
                     <span className="bg-zinc-600 rounded-full size-2" aria-hidden="true"></span>
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      Sold Out
+                      {"Sold Out"}
                     </span>
                   </li>
                 </ul>
                 <Button type="button" disabled="" tabIndex="0" disabled>
                   <span className="[text-box:trim-both_cap_alphabetic]">
-                    Checkout
+                    {"Checkout"}
                   </span>
                 </Button>
               </FramePanel>
@@ -481,34 +481,34 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Matchday 9
+                        {"Matchday 9"}
                       </span>
                     </h2>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        On Sale
+                        {"On Sale"}
                       </span>
                     </Badge>
                   </div>
                   <div className="flex flex-col gap-1">
                     <div className="font-medium leading-tight text-lg tracking-tight">
-                      Mirador
+                      {"Mirador"}
                       <span className="font-normal text-muted-foreground">
-                        vs
+                        {"vs"}
                       </span>
-                      Delta Atletic
+                      {"Delta Atletic"}
                     </div>
                     <div className="flex gap-1.5 h-5 items-center min-w-0 tabular-nums text-[13px] text-muted-foreground">
                       <span className="[text-box:trim-both_cap_alphabetic] shrink-0">
-                        Sun 25 Oct
+                        {"Sun 25 Oct"}
                       </span>
                       <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="[text-box:trim-both_cap_alphabetic] shrink-0">
-                        21:00
+                        {"21:00"}
                       </span>
                       <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="[text-box:trim-both_cap_alphabetic] min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap">
-                        Estadi Mirador
+                        {"Estadi Mirador"}
                       </span>
                     </div>
                   </div>
@@ -518,7 +518,7 @@ export function Pattern() {
                       <path d="M12 6v6l4 2"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      Gates open 19:30
+                      {"Gates open 19:30"}
                     </span>
                   </div>
                 </FramePanel>
@@ -528,15 +528,15 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Seats Left
+                        {"Seats Left"}
                       </span>
                     </h2>
                   </div>
                   <span className="font-light leading-none tabular-nums text-3xl tracking-tight">
-                    6,684
+                    {"6,684"}
                   </span>
                   <div className="tabular-nums text-muted-foreground text-xs">
-                    of 77,800
+                    {"of 77,800"}
                   </div>
                 </FramePanel>
               </Frame>
@@ -545,18 +545,18 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Sold
+                        {"Sold"}
                       </span>
                     </h2>
                   </div>
                   <span className="font-light leading-none tabular-nums text-3xl tracking-tight">
-                    91
+                    {"91"}
                     <span className="text-muted-foreground text-xl">
-                      .4%
+                      {".4%"}
                     </span>
                   </span>
                   <div className="tabular-nums text-muted-foreground text-xs">
-                    8 sectors full
+                    {"8 sectors full"}
                   </div>
                 </FramePanel>
               </Frame>
@@ -565,19 +565,19 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Daily Sales
+                        {"Daily Sales"}
                       </span>
                     </h2>
                     <span className="dark:text-amber-400 tabular-nums text-amber-600 text-xs">
-                      +23% this week
+                      {"+23% this week"}
                     </span>
                   </div>
                   <div className="flex gap-1 items-end justify-between">
                     <span className="font-light leading-none tabular-nums text-3xl tracking-tight">
-                      28,090
+                      {"28,090"}
                     </span>
                     <span className="pb-0.5 text-muted-foreground text-xs">
-                      last 7 days
+                      {"last 7 days"}
                     </span>
                   </div>
                   <div className="flex gap-px h-16 items-end justify-between" role="img" aria-label="Tickets sold per day, peak 6,940">
@@ -605,10 +605,10 @@ export function Pattern() {
                   </div>
                   <div className="flex justify-between tabular-nums text-muted-foreground text-xs">
                     <span>
-                      1 Oct
+                      {"1 Oct"}
                     </span>
                     <span>
-                      21 Oct
+                      {"21 Oct"}
                     </span>
                   </div>
                 </FramePanel>
@@ -618,15 +618,15 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        From
+                        {"From"}
                       </span>
                     </h2>
                   </div>
                   <span className="font-light leading-none tabular-nums text-3xl tracking-tight">
-                    €43
+                    {"€43"}
                   </span>
                   <div className="text-muted-foreground text-xs">
-                    per seat
+                    {"per seat"}
                   </div>
                 </FramePanel>
               </Frame>
@@ -635,15 +635,15 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Average
+                        {"Average"}
                       </span>
                     </h2>
                   </div>
                   <span className="font-light leading-none tabular-nums text-3xl tracking-tight">
-                    €89
+                    {"€89"}
                   </span>
                   <div className="text-muted-foreground text-xs">
-                    open seats
+                    {"open seats"}
                   </div>
                 </FramePanel>
               </Frame>
@@ -652,38 +652,38 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Best Value
+                        {"Best Value"}
                       </span>
                     </h2>
                     <Button type="button" tabIndex="0">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Select
+                        {"Select"}
                       </span>
                     </Button>
                   </div>
                   <div className="flex gap-3 items-end justify-between">
                     <div className="flex flex-col gap-1.5 min-w-0">
                       <div className="font-medium text-sm">
-                        Sector 314
+                        {"Sector 314"}
                       </div>
                       <div className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                         <span className="truncate">
-                          Upper Tier
+                          {"Upper Tier"}
                         </span>
                         <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="truncate">
-                          East Stand
+                          {"East Stand"}
                         </span>
                       </div>
                     </div>
                     <div className="flex flex-col gap-1.5 items-end">
                       <div className="font-medium tabular-nums text-sm">
-                        €77
+                        {"€77"}
                       </div>
                       <span className="gap-1.5 h-4 inline-flex items-center text-muted-foreground text-xs">
                         <span className="bg-blue-700 rounded-full shrink-0 size-2" aria-hidden="true"></span>
                         <span className="[text-box:trim-both_cap_alphabetic]">
-                          Value
+                          {"Value"}
                         </span>
                       </span>
                     </div>
@@ -695,7 +695,7 @@ export function Pattern() {
                   <div className="flex gap-2 h-6 items-center justify-between">
                     <h2 className="font-medium text-muted-foreground text-xs">
                       <span className="[text-box:trim-both_cap_alphabetic]">
-                        Tier Mix
+                        {"Tier Mix"}
                       </span>
                     </h2>
                   </div>
@@ -703,15 +703,15 @@ export function Pattern() {
                     <div className="flex flex-col gap-1.5">
                       <div className="flex justify-between text-xs">
                         <span>
-                          Lower Tier
+                          {"Lower Tier"}
                         </span>
                         <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground">
                           <span>
-                            92% sold
+                            {"92% sold"}
                           </span>
                           <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span>
-                            1,998 left
+                            {"1,998 left"}
                           </span>
                         </span>
                       </div>
@@ -720,22 +720,22 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "92%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-col gap-1.5">
                       <div className="flex justify-between text-xs">
                         <span>
-                          Middle Tier
+                          {"Middle Tier"}
                         </span>
                         <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground">
                           <span>
-                            93% sold
+                            {"93% sold"}
                           </span>
                           <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span>
-                            1,465 left
+                            {"1,465 left"}
                           </span>
                         </span>
                       </div>
@@ -744,22 +744,22 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "93%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>
                     <div className="flex flex-col gap-1.5">
                       <div className="flex justify-between text-xs">
                         <span>
-                          Upper Tier
+                          {"Upper Tier"}
                         </span>
                         <span className="flex gap-1.5 items-center tabular-nums text-muted-foreground">
                           <span>
-                            90% sold
+                            {"90% sold"}
                           </span>
                           <span className="bg-muted-foreground/50 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                           <span>
-                            3,221 left
+                            {"3,221 left"}
                           </span>
                         </span>
                       </div>
@@ -768,7 +768,7 @@ export function Pattern() {
                           <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "90%"}}></ProgressIndicator>
                         </ProgressTrack>
                         <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                          x
+                          {"x"}
                         </span>
                       </Progress>
                     </div>

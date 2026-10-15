@@ -28,17 +28,17 @@ export function Pattern() {
   return (
     <main className="flex items-start justify-center md:p-12 min-h-svh p-4 sm:p-8 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Provider settings
+        {"Provider settings"}
       </h1>
       <div className="flex flex-col gap-3 max-w-4xl w-full">
         <Frame className="text-foreground w-full">
           <FramePanel className="flex flex-col gap-3 items-start p-3.5! sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0 space-y-px">
               <div className="font-semibold text-sm">
-                Provider Settings
+                {"Provider Settings"}
               </div>
               <div className="text-muted-foreground text-sm">
-                ROUTE-318 priority, fallback, and endpoint health
+                {"ROUTE-318 priority, fallback, and endpoint health"}
               </div>
             </div>
             <div className="flex flex-wrap gap-2 items-center sm:justify-end sm:w-auto w-full">
@@ -46,11 +46,11 @@ export function Pattern() {
                 <Select>
                 <SelectTrigger className="w-[11rem]" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Route" extracted="1">
                   <SelectValue>
-                    ROUTE-318
+                    {"ROUTE-318"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -60,7 +60,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test All
+                  {"Test All"}
                 </Button>
               </ButtonGroup>
               <ButtonGroup role="group">
@@ -71,7 +71,7 @@ export function Pattern() {
                     <path d="M12 18v-6"></path>
                     <path d="m9 15 3 3 3-3"></path>
                   </svg>
-                  Export
+                  {"Export"}
                 </Button>
                 <Button type="button" tabIndex="0" aria-label="Save">
                   <svg className="lucide lucide-save size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" data-icon="inline-start" aria-hidden="true">
@@ -79,7 +79,7 @@ export function Pattern() {
                     <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                     <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
                   </svg>
-                  Save
+                  {"Save"}
                 </Button>
               </ButtonGroup>
             </div>
@@ -99,10 +99,10 @@ export function Pattern() {
                   </Item>
                   <div className="min-w-0 space-y-0.5">
                     <div className="font-medium text-foreground text-sm truncate">
-                      Ready Providers
+                      {"Ready Providers"}
                     </div>
                     <div className="text-muted-foreground text-xs truncate">
-                      Connected or degraded endpoints
+                      {"Connected or degraded endpoints"}
                     </div>
                   </div>
                 </div>
@@ -111,19 +111,19 @@ export function Pattern() {
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
-                  +2
+                  {"+2"}
                 </Badge>
               </div>
               <div className="flex gap-3 items-end justify-between">
                 <div className="font-semibold text-2xl text-foreground tracking-tight">
-                  6 / 8
+                  {"6 / 8"}
                 </div>
                 <div className="flex gap-1 items-center min-w-0 text-muted-foreground text-right text-xs">
                   <span>
-                    Needs key
+                    {"Needs key"}
                   </span>
                   <span className="font-medium text-foreground">
-                    2 providers
+                    {"2 providers"}
                   </span>
                 </div>
               </div>
@@ -143,10 +143,10 @@ export function Pattern() {
                   </Item>
                   <div className="min-w-0 space-y-0.5">
                     <div className="font-medium text-foreground text-sm truncate">
-                      Guarded Fallbacks
+                      {"Guarded Fallbacks"}
                     </div>
                     <div className="text-muted-foreground text-xs truncate">
-                      Safety routes with fallback owners
+                      {"Safety routes with fallback owners"}
                     </div>
                   </div>
                 </div>
@@ -156,19 +156,19 @@ export function Pattern() {
                     <path d="M12 8v4"></path>
                     <path d="M12 16h.01"></path>
                   </svg>
-                  2 Gaps
+                  {"2 Gaps"}
                 </Badge>
               </div>
               <div className="flex gap-3 items-end justify-between">
                 <div className="font-semibold text-2xl text-foreground tracking-tight">
-                  4
+                  {"4"}
                 </div>
                 <div className="flex gap-1 items-center min-w-0 text-muted-foreground text-right text-xs">
                   <span>
-                    Open gaps
+                    {"Open gaps"}
                   </span>
                   <span className="font-medium text-foreground">
-                    2 routes
+                    {"2 routes"}
                   </span>
                 </div>
               </div>
@@ -192,31 +192,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    OpenRoute Primary
+                    {"OpenRoute Primary"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                    Connected
+                    {"Connected"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    420ms p95
+                    {"420ms p95"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2041
+                      {"PROV-2041"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      ROUTE-318
+                      {"ROUTE-318"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Primary low-latency route
+                      {"Primary low-latency route"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -227,7 +227,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 1" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
@@ -237,7 +237,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P1
+                  {"P1"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -276,31 +276,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Northstar Claude Pool
+                    {"Northstar Claude Pool"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                    Degraded
+                    {"Degraded"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    12s p95 review
+                    {"12s p95 review"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2042
+                      {"PROV-2042"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      ROUTE-319
+                      {"ROUTE-319"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Fallback for long context
+                      {"Fallback for long context"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -311,7 +311,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 2" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
@@ -321,7 +321,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P2
+                  {"P2"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -360,31 +360,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    VectorEdge Small
+                    {"VectorEdge Small"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                    Connected
+                    {"Connected"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    180ms p95
+                    {"180ms p95"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2043
+                      {"PROV-2043"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      ROUTE-320
+                      {"ROUTE-320"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Cost saver for triage
+                      {"Cost saver for triage"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -395,7 +395,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 3" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
@@ -405,7 +405,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P3
+                  {"P3"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -442,31 +442,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Local Guardrail Runner
+                    {"Local Guardrail Runner"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                    Missing Key
+                    {"Missing Key"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    6h safety SLA
+                    {"6h safety SLA"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2044
+                      {"PROV-2044"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      SAFE-0914
+                      {"SAFE-0914"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Safety gate before tools
+                      {"Safety gate before tools"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -477,7 +477,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 4" aria-haspopup="menu" id="base-ui-_r_1d_" aria-expanded="false">
@@ -487,7 +487,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P4
+                  {"P4"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -501,7 +501,7 @@ export function Pattern() {
                     <path d="M10.5 16.5 13 14"></path>
                     <path d="m18 3-4 4h6l-4 4"></path>
                   </svg>
-                  Connect
+                  {"Connect"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Local Guardrail Runner actions" aria-haspopup="menu" id="base-ui-_r_1i_" aria-expanded="false">
@@ -531,31 +531,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Batch Summarizer Fleet
+                    {"Batch Summarizer Fleet"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    Paused
+                    {"Paused"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    $11.40 per 1M tokens
+                    {"$11.40 per 1M tokens"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2045
+                      {"PROV-2045"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      BUD-2210
+                      {"BUD-2210"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Batch fallback lane
+                      {"Batch fallback lane"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -566,7 +566,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 5" aria-haspopup="menu" id="base-ui-_r_1n_" aria-expanded="false">
@@ -576,7 +576,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P5
+                  {"P5"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -613,31 +613,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Atlas Vision Proxy
+                    {"Atlas Vision Proxy"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                    Connected
+                    {"Connected"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    910ms p95
+                    {"910ms p95"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2046
+                      {"PROV-2046"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      ROUTE-452
+                      {"ROUTE-452"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Vision overflow route
+                      {"Vision overflow route"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -648,7 +648,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 6" aria-haspopup="menu" id="base-ui-_r_24_" aria-expanded="false">
@@ -658,7 +658,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P6
+                  {"P6"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -698,31 +698,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Embedding Gateway
+                    {"Embedding Gateway"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-warning-foreground transition-shadow">
-                    Degraded
+                    {"Degraded"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    260ms p95
+                    {"260ms p95"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2047
+                      {"PROV-2047"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      ROUTE-487
+                      {"ROUTE-487"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Context recall fallback
+                      {"Context recall fallback"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -733,7 +733,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 7" aria-haspopup="menu" id="base-ui-_r_2h_" aria-expanded="false">
@@ -743,7 +743,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P7
+                  {"P7"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -781,31 +781,31 @@ export function Pattern() {
               <ItemContent className="gap-1 min-w-0">
                 <ItemTitle className="gap-2 min-w-0">
                   <span className="min-w-0 truncate">
-                    Canary Replay Pool
+                    {"Canary Replay Pool"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive-foreground transition-shadow">
-                    Missing Key
+                    {"Missing Key"}
                   </Badge>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 hidden leading-none min-w-4.5 outline-none px-1 py-0.25 relative sm:inline-flex style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] transition-shadow">
-                    4h eval SLA
+                    {"4h eval SLA"}
                   </Badge>
                 </ItemTitle>
                 <ItemDescription className="min-w-0">
                   <span className="block max-w-full truncate">
                     <span className="font-mono text-[13px]">
-                      PROV-2048
+                      {"PROV-2048"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      SAFE-1042
+                      {"SAFE-1042"}
                     </span>
                     <span aria-hidden="true">
-                      /
+                      {"/"}
                     </span>
                     <span>
-                      Redteam replay before rollout
+                      {"Redteam replay before rollout"}
                     </span>
                   </span>
                 </ItemDescription>
@@ -816,7 +816,7 @@ export function Pattern() {
                     <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                     <path d="M3 3v5h5"></path>
                   </svg>
-                  Test
+                  {"Test"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Priority 8" aria-haspopup="menu" id="base-ui-_r_2u_" aria-expanded="false">
@@ -826,7 +826,7 @@ export function Pattern() {
                     <path d="m3 8 4-4 4 4"></path>
                     <path d="M7 4v16"></path>
                   </svg>
-                  P8
+                  {"P8"}
                   <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
@@ -840,7 +840,7 @@ export function Pattern() {
                     <path d="M10.5 16.5 13 14"></path>
                     <path d="m18 3-4 4h6l-4 4"></path>
                   </svg>
-                  Connect
+                  {"Connect"}
                 </Button>
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Canary Replay Pool actions" aria-haspopup="menu" id="base-ui-_r_33_" aria-expanded="false">

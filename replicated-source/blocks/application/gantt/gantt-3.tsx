@@ -35,7 +35,7 @@ export function Pattern() {
         <Gantt className="flex-1">
           <GanttNav>
             <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-              Today
+              {"Today"}
             </GanttNavToday>
             <GanttNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous" id="base-ui-_r_3_" baseUiTooltipTrigger="">
               <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
@@ -48,7 +48,7 @@ export function Pattern() {
               </svg>
             </GanttNavNext>
             <GanttTitle aria-live="polite">
-              Wednesday, July 22, 2026
+              {"Wednesday, July 22, 2026"}
             </GanttTitle>
             <div className="flex-1" aria-hidden="true"></div>
             <GanttToolbar>
@@ -61,7 +61,7 @@ export function Pattern() {
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
                 <span className="max-sm:sr-only">
-                  Settings
+                  {"Settings"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -71,7 +71,7 @@ export function Pattern() {
                   <path d="M12 5v14"></path>
                 </svg>
                 <span className="max-sm:sr-only">
-                  New Stage
+                  {"New Stage"}
                 </span>
               </Button>
             </GanttToolbar>
@@ -88,22 +88,22 @@ export function Pattern() {
                             <div className="flex flex-1 h-full min-w-0">
                               <div className="flex h-full items-center shrink-0" style={{width: "264px", paddingInlineStart: "2.25rem"}}>
                                 <span className="font-medium text-muted-foreground truncate">
-                                  Stage
+                                  {"Stage"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="status" style={{width: "92px"}}>
                                 <span className="truncate">
-                                  Status
+                                  {"Status"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center justify-end px-2 shrink-0 text-muted-foreground" data-column="slack" style={{width: "92px"}}>
                                 <span className="truncate">
-                                  Slack
+                                  {"Slack"}
                                 </span>
                               </div>
                               <div className="flex font-medium h-full items-center px-2 shrink-0 text-muted-foreground" data-column="actions" style={{width: "32px"}}>
                                 <span className="truncate">
-                                  actions
+                                  {"actions"}
                                 </span>
                               </div>
                               <div className="flex-1 min-w-0"></div>
@@ -137,10 +137,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium min-w-0 text-sm truncate">
-                                      Refund Escalation
+                                      {"Refund Escalation"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      PB-31
+                                      {"PB-31"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -149,14 +149,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-rose-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Failed
+                                    {"Failed"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="font-medium tabular-nums text-destructive text-xs">
-                                    0m
+                                    {"0m"}
                                   </span>
                                 </div>
                               </div>
@@ -184,7 +184,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Intake & Classify
+                                      {"Intake & Classify"}
                                     </span>
                                   </span>
                                 </div>
@@ -193,14 +193,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="font-medium tabular-nums text-destructive text-xs">
-                                    0m
+                                    {"0m"}
                                   </span>
                                 </div>
                               </div>
@@ -233,7 +233,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Policy Check
+                                      {"Policy Check"}
                                     </span>
                                   </span>
                                 </div>
@@ -242,14 +242,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="font-medium tabular-nums text-destructive text-xs">
-                                    0m
+                                    {"0m"}
                                   </span>
                                 </div>
                               </div>
@@ -283,10 +283,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Finance Approval
+                                      {"Finance Approval"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      Gate
+                                      {"Gate"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -295,14 +295,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="font-medium tabular-nums text-destructive text-xs">
-                                    0m
+                                    {"0m"}
                                   </span>
                                 </div>
                               </div>
@@ -335,7 +335,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Capture Refund
+                                      {"Capture Refund"}
                                     </span>
                                   </span>
                                 </div>
@@ -344,14 +344,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-rose-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Failed
+                                    {"Failed"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="font-medium tabular-nums text-destructive text-xs">
-                                    0m
+                                    {"0m"}
                                   </span>
                                 </div>
                               </div>
@@ -389,7 +389,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Notify Customer
+                                      {"Notify Customer"}
                                     </span>
                                   </span>
                                 </div>
@@ -398,14 +398,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-zinc-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Queued
+                                    {"Queued"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="font-medium text-destructive text-xs">
-                                    Blocked
+                                    {"Blocked"}
                                   </span>
                                 </div>
                               </div>
@@ -439,10 +439,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium min-w-0 text-sm truncate">
-                                      Contract Ingest
+                                      {"Contract Ingest"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      PB-44
+                                      {"PB-44"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -451,14 +451,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Running
+                                    {"Running"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    30m
+                                    {"30m"}
                                   </span>
                                 </div>
                               </div>
@@ -481,7 +481,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Fetch Documents
+                                      {"Fetch Documents"}
                                     </span>
                                   </span>
                                 </div>
@@ -490,14 +490,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    30m
+                                    {"30m"}
                                   </span>
                                 </div>
                               </div>
@@ -535,7 +535,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Parse Batch
+                                      {"Parse Batch"}
                                     </span>
                                   </span>
                                 </div>
@@ -544,14 +544,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Running
+                                    {"Running"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.25rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    30m
+                                    {"30m"}
                                   </span>
                                 </div>
                               </div>
@@ -589,7 +589,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Summarize
+                                      {"Summarize"}
                                     </span>
                                   </span>
                                 </div>
@@ -598,14 +598,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-zinc-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Queued
+                                    {"Queued"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    30m
+                                    {"30m"}
                                   </span>
                                 </div>
                               </div>
@@ -639,10 +639,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Risk Review
+                                      {"Risk Review"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      Gate
+                                      {"Gate"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -651,14 +651,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-zinc-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Queued
+                                    {"Queued"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    30m
+                                    {"30m"}
                                   </span>
                                 </div>
                               </div>
@@ -692,10 +692,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium min-w-0 text-sm truncate">
-                                      Data Steward Sweep
+                                      {"Data Steward Sweep"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      PB-19
+                                      {"PB-19"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -704,14 +704,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Waiting
+                                    {"Waiting"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    3h
+                                    {"3h"}
                                   </span>
                                 </div>
                               </div>
@@ -734,7 +734,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Snapshot
+                                      {"Snapshot"}
                                     </span>
                                   </span>
                                 </div>
@@ -743,14 +743,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    6h
+                                    {"6h"}
                                   </span>
                                 </div>
                               </div>
@@ -788,7 +788,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Dedupe & Enrich
+                                      {"Dedupe & Enrich"}
                                     </span>
                                   </span>
                                 </div>
@@ -797,14 +797,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    6h
+                                    {"6h"}
                                   </span>
                                 </div>
                               </div>
@@ -837,7 +837,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Purge Stale
+                                      {"Purge Stale"}
                                     </span>
                                     <svg className="lucide lucide-lock shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-label="Fixed compliance window">
                                       <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
@@ -850,14 +850,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Waiting
+                                    {"Waiting"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="text-muted-foreground text-xs">
-                                    Fixed
+                                    {"Fixed"}
                                   </span>
                                 </div>
                               </div>
@@ -890,7 +890,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 min-w-0 text-sm truncate">
-                                      Reindex
+                                      {"Reindex"}
                                     </span>
                                   </span>
                                 </div>
@@ -899,14 +899,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-zinc-400 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Queued
+                                    {"Queued"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    3h
+                                    {"3h"}
                                   </span>
                                 </div>
                               </div>
@@ -940,10 +940,10 @@ export function Pattern() {
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="font-medium min-w-0 text-sm truncate">
-                                      Nightly Evaluation
+                                      {"Nightly Evaluation"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-secondary-foreground text-xs transition-shadow">
-                                      PB-52
+                                      {"PB-52"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -952,14 +952,14 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-xs transition-shadow">
                                     <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                    Succeeded
+                                    {"Succeeded"}
                                   </Badge>
                                 </div>
                               </div>
                               <div className="flex items-start px-2 shrink-0" data-column="slack" style={{width: "92px"}}>
                                 <div className="flex items-center justify-end min-w-0 w-full" style={{height: "2.5rem"}}>
                                   <span className="tabular-nums text-muted-foreground text-xs">
-                                    3h 15m
+                                    {"3h 15m"}
                                   </span>
                                 </div>
                               </div>
@@ -1013,7 +1013,7 @@ export function Pattern() {
                             <div className="flex h-full">
                               <div className="flex items-center min-w-0 pe-2 ps-3 text-muted-foreground" style={{flex: "24 0 0px"}}>
                                 <span className="max-w-full start-3 sticky truncate">
-                                  Wednesday, July 22, 2026
+                                  {"Wednesday, July 22, 2026"}
                                 </span>
                               </div>
                             </div>
@@ -1022,76 +1022,76 @@ export function Pattern() {
                             <div className="absolute inset-0" aria-hidden="true"></div>
                             <div className="flex h-full">
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                12 AM
+                                {"12 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                1 AM
+                                {"1 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                2 AM
+                                {"2 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                3 AM
+                                {"3 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                4 AM
+                                {"4 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                5 AM
+                                {"5 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                6 AM
+                                {"6 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                7 AM
+                                {"7 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                8 AM
+                                {"8 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                9 AM
+                                {"9 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                10 AM
+                                {"10 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                11 AM
+                                {"11 AM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                12 PM
+                                {"12 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                1 PM
+                                {"1 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                2 PM
+                                {"2 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                3 PM
+                                {"3 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                4 PM
+                                {"4 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                5 PM
+                                {"5 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                6 PM
+                                {"6 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                7 PM
+                                {"7 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                8 PM
+                                {"8 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                9 PM
+                                {"9 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                10 PM
+                                {"10 PM"}
                               </div>
                               <div className="flex items-center justify-center min-w-0 px-1.5 text-center text-muted-foreground truncate" style={{flex: "1 0 0px"}}>
-                                11 PM
+                                {"11 PM"}
                               </div>
                             </div>
                             <span className="absolute bg-border inset-y-0 w-px" aria-hidden="true" data-axis="vertical" style={{insetInlineStart: "calc(4.16667% - 1px)"}}></span>
@@ -1220,7 +1220,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "60%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  60%
+                                  {"60%"}
                                 </span>
                               </div>
                             </div>
@@ -1237,7 +1237,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Intake & Classify
+                                      {"Intake & Classify"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1262,7 +1262,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Policy Check
+                                      {"Policy Check"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1287,7 +1287,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Finance Approval
+                                      {"Finance Approval"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1310,7 +1310,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Finance Approval
+                                      {"Finance Approval"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1337,10 +1337,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Capture Refund
+                                      {"Capture Refund"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Try 3 of 3
+                                      {"Try 3 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1363,10 +1363,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Capture Refund
+                                      {"Capture Refund"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Try 2 of 3
+                                      {"Try 2 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1389,10 +1389,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Capture Refund
+                                      {"Capture Refund"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Try 1 of 3
+                                      {"Try 1 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1417,7 +1417,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Notify Customer
+                                      {"Notify Customer"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1439,7 +1439,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "25%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  25%
+                                  {"25%"}
                                 </span>
                               </div>
                             </div>
@@ -1456,7 +1456,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Fetch Documents
+                                      {"Fetch Documents"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1481,10 +1481,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Parse Batch
+                                      {"Parse Batch"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Shard 3 of 3
+                                      {"Shard 3 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1505,10 +1505,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Parse Batch
+                                      {"Parse Batch"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Shard 2 of 3
+                                      {"Shard 2 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1529,10 +1529,10 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Parse Batch
+                                      {"Parse Batch"}
                                     </span>
                                     <span className="@[11rem]:inline hidden shrink-0 tabular-nums text-foreground/70">
-                                      Shard 1 of 3
+                                      {"Shard 1 of 3"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1557,7 +1557,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Summarize
+                                      {"Summarize"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1582,7 +1582,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Risk Review
+                                      {"Risk Review"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1604,7 +1604,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "50%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  50%
+                                  {"50%"}
                                 </span>
                               </div>
                             </div>
@@ -1621,7 +1621,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Snapshot
+                                      {"Snapshot"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1646,7 +1646,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Dedupe & Enrich
+                                      {"Dedupe & Enrich"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1676,7 +1676,7 @@ export function Pattern() {
                                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                     </svg>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Purge Stale
+                                      {"Purge Stale"}
                                     </span>
                                   </span>
                                 </GanttBar>
@@ -1695,7 +1695,7 @@ export function Pattern() {
                                       </svg>
                                     </span>
                                     <span className="flex-1 font-medium min-w-0 truncate">
-                                      Reindex
+                                      {"Reindex"}
                                     </span>
                                   </span>
                                   <span className="absolute cursor-ew-resize flex group-hover/gantt-bar-group:opacity-100 inset-y-0 items-center justify-start opacity-0 pointer-coarse:opacity-100 start-0.5 w-2" data-edge="start">
@@ -1717,7 +1717,7 @@ export function Pattern() {
                                   <div className="absolute bg-muted-foreground/50 inset-y-0 rounded-full start-0" style={{width: "100%"}}></div>
                                 </div>
                                 <span className="-translate-y-1/2 absolute ms-2 start-full text-muted-foreground top-1/2 whitespace-nowrap">
-                                  100%
+                                  {"100%"}
                                 </span>
                               </div>
                             </div>

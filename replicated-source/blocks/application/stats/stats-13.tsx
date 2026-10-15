@@ -21,7 +21,7 @@ export function Pattern() {
                 </svg>
               </span>
               <div className="font-semibold text-sm">
-                Compliance Checks
+                {"Compliance Checks"}
               </div>
             </div>
             <DropdownMenu>
@@ -69,10 +69,10 @@ export function Pattern() {
             </div>
             <div className="flex items-center justify-between mt-1 text-muted-foreground text-xs">
               <span>
-                20/16 checks passing
+                {"20/16 checks passing"}
               </span>
               <span className="font-semibold text-foreground">
-                67% assigned
+                {"67% assigned"}
               </span>
             </div>
           </div>

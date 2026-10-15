@@ -39,31 +39,31 @@ export function Pattern() {
         <div className="mb-6 space-y-4">
           <div className="space-y-0.5">
             <h1 className="font-semibold text-xl tracking-tight" id="activity-timeline-title">
-              Activity
+              {"Activity"}
             </h1>
             <p className="leading-5 text-muted-foreground text-sm">
-              12 activities in view.
+              {"12 activities in view."}
             </p>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <ToggleGroup className="flex-wrap" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Filter by activity type" style={{"--gap": "2"}}>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2" extracted="1">
-                All
+                {"All"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                Calls
+                {"Calls"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                Emails
+                {"Emails"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                Meetings
+                {"Meetings"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                Notes
+                {"Notes"}
               </ToggleGroupItem>
               <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
-                Tasks
+                {"Tasks"}
               </ToggleGroupItem>
             </ToggleGroup>
             <Select>
@@ -75,11 +75,11 @@ export function Pattern() {
                 <circle cx="9" cy="7" r="4"></circle>
               </svg>
               <SelectValue>
-                All owners
+                {"All owners"}
               </SelectValue>
               <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
-                ▼
+                {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
@@ -90,11 +90,11 @@ export function Pattern() {
           <div>
             <div className="flex gap-3 items-center mb-4">
               <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-                Today
+                {"Today"}
               </h2>
               <span className="bg-border grow h-px" aria-hidden="true"></span>
               <span className="tabular-nums text-muted-foreground text-xs">
-                4
+                {"4"}
               </span>
             </div>
             <Timeline data-orientation="vertical">
@@ -103,11 +103,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Budget Call
+                      {"Budget Call"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Connected
+                      {"Connected"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -125,10 +125,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Brightwave Media
+                              {"Brightwave Media"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              9:12 AM
+                              {"9:12 AM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -141,7 +141,7 @@ export function Pattern() {
                         <FramePanel className="space-y-2.5">
                           <div className="space-y-2.5">
                             <p className="leading-5 text-muted-foreground text-xs">
-                              Budget approved and RevOps joined security review.
+                              {"Budget approved and RevOps joined security review."}
                             </p>
                             <div className="border-t flex flex-wrap gap-2.5 items-center justify-between pt-2">
                               <div className="flex gap-2 items-center min-w-0">
@@ -150,10 +150,10 @@ export function Pattern() {
                                 </Avatar>
                                 <span className="flex flex-col min-w-0">
                                   <span className="font-medium text-foreground text-xs truncate">
-                                    Mira Stone
+                                    {"Mira Stone"}
                                   </span>
                                   <span className="text-[11px] text-muted-foreground truncate">
-                                    Account Executive
+                                    {"Account Executive"}
                                   </span>
                                 </span>
                               </div>
@@ -162,7 +162,7 @@ export function Pattern() {
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                                   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                 </svg>
-                                ACT-2841
+                                {"ACT-2841"}
                               </Button>
                             </div>
                           </div>
@@ -177,11 +177,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Pricing Reply
+                      {"Pricing Reply"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Replied
+                      {"Replied"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -199,10 +199,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Apex Manufacturing
+                              {"Apex Manufacturing"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              8:47 AM
+                              {"8:47 AM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -215,7 +215,7 @@ export function Pattern() {
                         <FramePanel className="space-y-2.5">
                           <div className="space-y-2.5">
                             <p className="leading-5 text-muted-foreground text-xs">
-                              Apex requested net-45 and three seats.
+                              {"Apex requested net-45 and three seats."}
                             </p>
                             <div className="border-t flex flex-wrap gap-2.5 items-center justify-between pt-2">
                               <div className="flex gap-2 items-center min-w-0">
@@ -224,10 +224,10 @@ export function Pattern() {
                                 </Avatar>
                                 <span className="flex flex-col min-w-0">
                                   <span className="font-medium text-foreground text-xs truncate">
-                                    Leo Grant
+                                    {"Leo Grant"}
                                   </span>
                                   <span className="text-[11px] text-muted-foreground truncate">
-                                    Account Executive
+                                    {"Account Executive"}
                                   </span>
                                 </span>
                               </div>
@@ -236,7 +236,7 @@ export function Pattern() {
                                   <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                                   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                 </svg>
-                                ACT-2840
+                                {"ACT-2840"}
                               </Button>
                             </div>
                           </div>
@@ -251,11 +251,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Closed Won
+                      {"Closed Won"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Won
+                      {"Won"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -273,10 +273,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Cobalt Logistics
+                              {"Cobalt Logistics"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              8:05 AM
+                              {"8:05 AM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -294,11 +294,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Risk Note
+                      {"Risk Note"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
                       <span className="bg-muted-foreground/60 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Logged
+                      {"Logged"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -319,10 +319,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Cedar & Co
+                              {"Cedar & Co"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              7:40 AM
+                              {"7:40 AM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -340,11 +340,11 @@ export function Pattern() {
           <div>
             <div className="flex gap-3 items-center mb-4">
               <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-                Yesterday
+                {"Yesterday"}
               </h2>
               <span className="bg-border grow h-px" aria-hidden="true"></span>
               <span className="tabular-nums text-muted-foreground text-xs">
-                2
+                {"2"}
               </span>
             </div>
             <Timeline data-orientation="vertical">
@@ -353,11 +353,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Vertex Demo
+                      {"Vertex Demo"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                       <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Moved
+                      {"Moved"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -377,10 +377,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Vertex Health
+                              {"Vertex Health"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              4:30 PM
+                              {"4:30 PM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -398,11 +398,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Voicemail Left
+                      {"Voicemail Left"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
                       <span className="bg-muted-foreground/60 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Voicemail
+                      {"Voicemail"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -420,10 +420,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Meridian Retail
+                              {"Meridian Retail"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              2:18 PM
+                              {"2:18 PM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -441,11 +441,11 @@ export function Pattern() {
           <div>
             <div className="flex gap-3 items-center mb-4">
               <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-                This week
+                {"This week"}
               </h2>
               <span className="bg-border grow h-px" aria-hidden="true"></span>
               <span className="tabular-nums text-muted-foreground text-xs">
-                3
+                {"3"}
               </span>
             </div>
             <Timeline data-orientation="vertical">
@@ -454,11 +454,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Quote Accepted
+                      {"Quote Accepted"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Replied
+                      {"Replied"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -476,10 +476,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Atlas Freight
+                              {"Atlas Freight"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Tue 5:02 PM
+                              {"Tue 5:02 PM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -497,11 +497,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Renewal Review
+                      {"Renewal Review"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                       <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Scheduled
+                      {"Scheduled"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -519,10 +519,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Orbit Software
+                              {"Orbit Software"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Tue 10:15 AM
+                              {"Tue 10:15 AM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -540,11 +540,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Call Missed
+                      {"Call Missed"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                       <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      No answer
+                      {"No answer"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -562,10 +562,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Quanta Devices
+                              {"Quanta Devices"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Mon 3:44 PM
+                              {"Mon 3:44 PM"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -583,11 +583,11 @@ export function Pattern() {
           <div>
             <div className="flex gap-3 items-center mb-4">
               <h2 className="font-semibold text-muted-foreground text-xs tracking-wide uppercase">
-                Earlier
+                {"Earlier"}
               </h2>
               <span className="bg-border grow h-px" aria-hidden="true"></span>
               <span className="tabular-nums text-muted-foreground text-xs">
-                3
+                {"3"}
               </span>
             </div>
             <Timeline data-orientation="vertical">
@@ -596,11 +596,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Procurement Call
+                      {"Procurement Call"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
                       <span className="bg-primary rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Moved
+                      {"Moved"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -620,10 +620,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Ridgeline Energy
+                              {"Ridgeline Energy"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Jun 11
+                              {"Jun 11"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -641,11 +641,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Intro Reply
+                      {"Intro Reply"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                       <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Replied
+                      {"Replied"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -663,10 +663,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Summit Financial
+                              {"Summit Financial"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Jun 10
+                              {"Jun 10"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -684,11 +684,11 @@ export function Pattern() {
                   <TimelineSeparator className="bg-border! group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.5rem)] group-data-[orientation=vertical]/timeline:translate-y-7" aria-hidden="true"></TimelineSeparator>
                   <div className="flex flex-wrap gap-2 items-center min-w-0">
                     <TimelineTitle className="font-semibold">
-                      Discovery Note
+                      {"Discovery Note"}
                     </TimelineTitle>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
                       <span className="bg-muted-foreground/60 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                      Logged
+                      {"Logged"}
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
@@ -709,10 +709,10 @@ export function Pattern() {
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
-                              Harbor Labs
+                              {"Harbor Labs"}
                             </span>
                             <span className="min-w-0 text-muted-foreground text-xs truncate">
-                              Jun 9
+                              {"Jun 9"}
                             </span>
                           </div>
                           <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

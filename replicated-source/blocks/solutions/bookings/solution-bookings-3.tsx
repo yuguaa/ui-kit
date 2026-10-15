@@ -47,17 +47,17 @@ export function Pattern() {
   <>
     <main className="bg-background flex items-start justify-center md:p-12 min-h-svh overflow-x-hidden p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Appointment detail
+        {"Appointment detail"}
       </h1>
       <div className="flex flex-col gap-2 h-[calc(100svh-4rem)] max-w-md min-h-[360px] mx-auto py-6 w-full">
         <div className="flex gap-2 items-center justify-between px-1">
           <h2 className="font-semibold gap-1.5 inline-flex items-center text-foreground text-sm">
             <span>
-              Today
+              {"Today"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              14 appointments
+              {"14 appointments"}
             </span>
           </h2>
           <Sheet>
@@ -66,7 +66,7 @@ export function Pattern() {
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M15 3v18"></path>
             </svg>
-            Open Detail
+            {"Open Detail"}
           </SheetTrigger>
           </Sheet>
         </div>
@@ -81,18 +81,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Hannah Brooks
+                    {"Hannah Brooks"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Gloss Refresh
+                    {"Gloss Refresh"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    9:00 AM
+                    {"9:00 AM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -100,24 +100,24 @@ export function Pattern() {
                 <ItemMedia variant="default">
                   <Avatar className="size-8" size="default">
                     <AvatarFallback className="text-[10px]">
-                      SC
+                      {"SC"}
                     </AvatarFallback>
                   </Avatar>
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Sarah Chen
+                    {"Sarah Chen"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Brow Shaping
+                    {"Brow Shaping"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    9:30 AM
+                    {"9:30 AM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -129,18 +129,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Mira Stone
+                    {"Mira Stone"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Cut and Blow-Dry
+                    {"Cut and Blow-Dry"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    10:00 AM
+                    {"10:00 AM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -152,18 +152,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Nora Vale
+                    {"Nora Vale"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Root Touch-Up
+                    {"Root Touch-Up"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    10:30 AM
+                    {"10:30 AM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -175,18 +175,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Mira Stone
+                    {"Mira Stone"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Cut and Blow-Dry
+                    {"Cut and Blow-Dry"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    11:00 AM
+                    {"11:00 AM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                    Completed
+                    {"Completed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -198,18 +198,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Hannah Brooks
+                    {"Hannah Brooks"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Deep-Tissue Massage
+                    {"Deep-Tissue Massage"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    12:00 PM
+                    {"12:00 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -217,24 +217,24 @@ export function Pattern() {
                 <ItemMedia variant="default">
                   <Avatar className="size-8" size="default">
                     <AvatarFallback className="text-[10px]">
-                      SC
+                      {"SC"}
                     </AvatarFallback>
                   </Avatar>
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Sarah Chen
+                    {"Sarah Chen"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Gel Manicure
+                    {"Gel Manicure"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    1:15 PM
+                    {"1:15 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Pending
+                    {"Pending"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -246,18 +246,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Hannah Brooks
+                    {"Hannah Brooks"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Balayage
+                    {"Balayage"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    2:30 PM
+                    {"2:30 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -269,18 +269,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Mira Stone
+                    {"Mira Stone"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Blowout
+                    {"Blowout"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    3:15 PM
+                    {"3:15 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -292,18 +292,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Nora Vale
+                    {"Nora Vale"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Signature Facial
+                    {"Signature Facial"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    4:00 PM
+                    {"4:00 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -311,24 +311,24 @@ export function Pattern() {
                 <ItemMedia variant="default">
                   <Avatar className="size-8" size="default">
                     <AvatarFallback className="text-[10px]">
-                      SC
+                      {"SC"}
                     </AvatarFallback>
                   </Avatar>
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Sarah Chen
+                    {"Sarah Chen"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Lash Lift
+                    {"Lash Lift"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    4:45 PM
+                    {"4:45 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Pending
+                    {"Pending"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -340,18 +340,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Hannah Brooks
+                    {"Hannah Brooks"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Toner Refresh
+                    {"Toner Refresh"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    5:15 PM
+                    {"5:15 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Confirmed
+                    {"Confirmed"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -363,18 +363,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Mira Stone
+                    {"Mira Stone"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Scalp Treatment
+                    {"Scalp Treatment"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    6:00 PM
+                    {"6:00 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                    Pending
+                    {"Pending"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -386,18 +386,18 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="gap-0 min-w-0">
                   <ItemTitle className="font-medium text-sm truncate">
-                    Nora Vale
+                    {"Nora Vale"}
                   </ItemTitle>
                   <ItemDescription className="text-xs truncate">
-                    Color Consultation
+                    {"Color Consultation"}
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
                   <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                    6:30 PM
+                    {"6:30 PM"}
                   </span>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                    Cancelled
+                    {"Cancelled"}
                   </Badge>
                 </ItemActions>
               </Item>
@@ -420,7 +420,7 @@ export function Pattern() {
               <rect width="18" height="18" x="3" y="4" rx="2"></rect>
               <path d="M3 10h18"></path>
             </svg>
-            APT-4821
+            {"APT-4821"}
           </span>
           <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close appointment detail">
             <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
@@ -433,24 +433,24 @@ export function Pattern() {
           <div className="flex gap-2 items-center min-w-0">
             <SheetTitle className="flex flex-1 font-semibold gap-2 items-center min-w-0 text-lg tracking-tight" id="base-ui-_r_4_">
               <span>
-                Tue, Jun 17
+                {"Tue, Jun 17"}
               </span>
               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
               <span>
-                2:30 PM
+                {"2:30 PM"}
               </span>
             </SheetTitle>
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-              Confirmed
+              {"Confirmed"}
             </Badge>
           </div>
           <SheetDescription className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs" id="base-ui-_r_5_">
             <span>
-              Balayage with Nora Vale · color station 3
+              {"Balayage with Nora Vale · color station 3"}
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span>
-              120 min
+              {"120 min"}
             </span>
           </SheetDescription>
         </div>
@@ -461,7 +461,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Client
+                  {"Client"}
                 </h3>
               </div>
               <div className="flex gap-3 items-start">
@@ -471,10 +471,10 @@ export function Pattern() {
                 <div className="flex flex-1 flex-col gap-1 min-w-0">
                   <div className="flex gap-2 items-start justify-between">
                     <p className="font-medium leading-5 min-w-0 text-foreground text-sm">
-                      Hannah Brooks
+                      {"Hannah Brooks"}
                     </p>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary/10 border border-primary/10 dark:bg-primary/15 dark:border-primary/25 dark:text-primary disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary text-xs transition-shadow">
-                      VIP
+                      {"VIP"}
                     </Badge>
                   </div>
                   <p className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
@@ -483,11 +483,11 @@ export function Pattern() {
                         <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
                         <path d="M12 18h.01"></path>
                       </svg>
-                      (415) 555-0148
+                      {"(415) 555-0148"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      9 visits
+                      {"9 visits"}
                     </span>
                   </p>
                 </div>
@@ -497,26 +497,26 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Service
+                  {"Service"}
                 </h3>
               </div>
               <div className="flex gap-3 items-end justify-between">
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="font-medium text-foreground text-sm">
-                    Balayage
+                    {"Balayage"}
                   </span>
                   <span className="gap-1.5 inline-flex items-center text-muted-foreground text-xs">
                     <span>
-                      Color
+                      {"Color"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      150 min
+                      {"150 min"}
                     </span>
                   </span>
                 </div>
                 <span className="font-semibold tabular-nums text-foreground text-sm">
-                  $165
+                  {"$165"}
                 </span>
               </div>
               <div className="flex gap-1.5 items-center mt-1 text-muted-foreground text-xs">
@@ -524,11 +524,11 @@ export function Pattern() {
                   <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                 </Avatar>
                 <span className="font-medium text-foreground">
-                  Nora Vale
+                  {"Nora Vale"}
                 </span>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span>
-                  Colorist
+                  {"Colorist"}
                 </span>
               </div>
             </div>
@@ -536,7 +536,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Payment
+                  {"Payment"}
                 </h3>
               </div>
               <div className="flex flex-col gap-3">
@@ -552,19 +552,19 @@ export function Pattern() {
                   <div className="flex flex-1 flex-col gap-1 min-w-0">
                     <div className="flex gap-2 items-start justify-between">
                       <p className="font-medium leading-5 min-w-0 text-foreground text-sm">
-                        $165 total
+                        {"$165 total"}
                       </p>
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                        Deposit paid
+                        {"Deposit paid"}
                       </Badge>
                     </div>
                     <p className="flex-wrap gap-x-1.5 inline-flex items-center text-muted-foreground text-xs">
                       <span>
-                        Visa ending 4821
+                        {"Visa ending 4821"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="font-mono">
-                        RCP-2210
+                        {"RCP-2210"}
                       </span>
                     </p>
                   </div>
@@ -576,22 +576,22 @@ export function Pattern() {
                       <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "30%"}}></ProgressIndicator>
                     </ProgressTrack>
                     <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                      x
+                      {"x"}
                     </span>
                   </Progress>
                 </div>
                 <div className="flex gap-2 items-center justify-between text-muted-foreground text-xs">
                   <span className="gap-1.5 inline-flex items-center">
                     <span>
-                      Deposit $50
+                      {"Deposit $50"}
                     </span>
                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                     <span>
-                      30%
+                      {"30%"}
                     </span>
                   </span>
                   <span className="tabular-nums">
-                    Balance $115 due
+                    {"Balance $115 due"}
                   </span>
                 </div>
               </div>
@@ -600,40 +600,40 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Details
+                  {"Details"}
                 </h3>
               </div>
               <dl className="gap-x-4 gap-y-2.5 grid grid-cols-[7.5rem_1fr]">
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Booked via
+                    {"Booked via"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Online · lumenstudio.app
+                    {"Online · lumenstudio.app"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Chair
+                    {"Chair"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Color station 3
+                    {"Color station 3"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    First visit
+                    {"First visit"}
                   </dt>
                   <dd className="min-w-0 text-foreground text-sm">
-                    Mar 4, 2024
+                    {"Mar 4, 2024"}
                   </dd>
                 </div>
                 <div className="contents">
                   <dt className="text-muted-foreground text-sm">
-                    Reference
+                    {"Reference"}
                   </dt>
                   <dd className="font-mono min-w-0 text-foreground text-xs">
-                    APT-4821
+                    {"APT-4821"}
                   </dd>
                 </div>
               </dl>
@@ -642,16 +642,16 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Internal Note
+                  {"Internal Note"}
                 </h3>
               </div>
               <Textarea className="border min-h-20 px-3 py-2 resize-none rounded-lg" id="appointment-internal-note" placeholder="Add a staff-only note, e.g. prefers low-ammonia color."></Textarea>
               <div className="flex gap-2 items-center justify-between">
                 <p className="text-muted-foreground text-xs">
-                  Visible to Lumen Studio staff only.
+                  {"Visible to Lumen Studio staff only."}
                 </p>
                 <Button type="button" tabIndex="0">
-                  Save Note
+                  {"Save Note"}
                 </Button>
               </div>
             </div>
@@ -659,7 +659,7 @@ export function Pattern() {
             <div className="flex flex-col gap-3 px-5 py-4">
               <div className="flex gap-2 items-center justify-between">
                 <h3 className="font-medium text-muted-foreground text-xs tracking-wide uppercase">
-                  Activity
+                  {"Activity"}
                 </h3>
               </div>
               <Timeline data-orientation="vertical">
@@ -676,24 +676,24 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Appointment booked
+                        {"Appointment booked"}
                       </span>
                     </TimelineTitle>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Hannah Brooks booked Balayage online for the 2:30 PM color slot.
+                      {"Hannah Brooks booked Balayage online for the 2:30 PM color slot."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Hannah Brooks" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Hannah Brooks
+                        {"Hannah Brooks"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        Jun 12
+                        {"Jun 12"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -709,26 +709,26 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Reminder sent
+                        {"Reminder sent"}
                       </span>
                     </TimelineTitle>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Automated SMS reminder went out 24 hours ahead to (415) 555-0148.
+                      {"Automated SMS reminder went out 24 hours ahead to (415) 555-0148."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarFallback className="text-[9px]">
-                          SC
+                          {"SC"}
                         </AvatarFallback>
                       </Avatar>
                       <span>
-                        Sarah Chen
+                        {"Sarah Chen"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        Jun 16, 2:30 PM
+                        {"Jun 16, 2:30 PM"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -744,24 +744,24 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Confirmed by client
+                        {"Confirmed by client"}
                       </span>
                     </TimelineTitle>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Hannah replied YES to the reminder and kept the 2:30 PM slot.
+                      {"Hannah replied YES to the reminder and kept the 2:30 PM slot."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarImage alt="Hannah Brooks" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
                       </Avatar>
                       <span>
-                        Hannah Brooks
+                        {"Hannah Brooks"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        Jun 16, 3:08 PM
+                        {"Jun 16, 3:08 PM"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -778,26 +778,26 @@ export function Pattern() {
                     </TimelineIndicator>
                     <TimelineTitle className="leading-5 min-w-0">
                       <span className="font-medium text-foreground">
-                        Checked in at front desk
+                        {"Checked in at front desk"}
                       </span>
                     </TimelineTitle>
                   </TimelineHeader>
                   <TimelineContent className="flex flex-col gap-2 items-start min-w-0 pb-1">
                     <p className="leading-5 max-w-[52ch] text-muted-foreground text-sm">
-                      Sarah Chen seated Hannah at color station 3 with Nora Vale.
+                      {"Sarah Chen seated Hannah at color station 3 with Nora Vale."}
                     </p>
                     <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
                       <Avatar className="size-5" size="default">
                         <AvatarFallback className="text-[9px]">
-                          SC
+                          {"SC"}
                         </AvatarFallback>
                       </Avatar>
                       <span>
-                        Sarah Chen
+                        {"Sarah Chen"}
                       </span>
                       <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                       <span className="tabular-nums">
-                        2:24 PM
+                        {"2:24 PM"}
                       </span>
                     </div>
                   </TimelineContent>
@@ -820,10 +820,10 @@ export function Pattern() {
             <path d="M8 2v4"></path>
             <circle cx="16" cy="16" r="6"></circle>
           </svg>
-          Reschedule
+          {"Reschedule"}
         </Button>
         <Button className="ms-auto" type="button" tabIndex="0">
-          Mark No-show
+          {"Mark No-show"}
         </Button>
         <Button type="button" tabIndex="0">
           <svg className="lucide lucide-user-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserCheckIcon" tabler="IconUserCheck" hugeicons="UserCheck01Icon" phosphor="UserCheckIcon" remixicon="RiUserFollowLine" data-icon="inline-start" aria-hidden="true">
@@ -831,7 +831,7 @@ export function Pattern() {
             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
             <circle cx="9" cy="7" r="4"></circle>
           </svg>
-          Check-in
+          {"Check-in"}
         </Button>
       </SheetFooter>
     </SheetContent>

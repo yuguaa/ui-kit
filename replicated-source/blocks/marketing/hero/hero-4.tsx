@@ -13,7 +13,7 @@ export function Pattern() {
           <div className="@container flex flex-col gap-6 items-start justify-center">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-foreground text-sm transition-shadow">
               <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-              Neui Pro is LIVE!
+              {"Neui Pro is LIVE!"}
               <svg className="lucide lucide-arrow-up-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
@@ -21,14 +21,14 @@ export function Pattern() {
             </Badge>
             <h1 className="@md:text-5xl @xl:leading-none @xl:text-6xl font-semibold leading-tight text-4xl text-foreground tracking-tight" id="hero-4-title">
               <span className="@xl:block">
-                Modern shadcn/ui
+                {"Modern shadcn/ui"}
               </span>
               <span className="@xl:block text-muted-foreground">
-                built for agents
+                {"built for agents"}
               </span>
             </h1>
             <p className="leading-6 text-base text-muted-foreground">
-              A design-led platform with 485+ production-ready blocks, MCP tools, reusable patterns, and a curated registry for building polished interfaces faster.
+              {"A design-led platform with 485+ production-ready blocks, MCP tools, reusable patterns, and a curated registry for building polished interfaces faster."}
             </p>
             <ul className="flex flex-col gap-3">
               <li className="flex gap-2 items-center">
@@ -53,7 +53,7 @@ export function Pattern() {
                   </defs>
                 </svg>
                 <span className="leading-6 text-base text-muted-foreground">
-                  Next.js native
+                  {"Next.js native"}
                 </span>
               </li>
               <li className="flex gap-2 items-center">
@@ -64,16 +64,16 @@ export function Pattern() {
                   <path clipRule="evenodd" d="M9.50321 5.5H13.2532C13.3123 5.5 13.3704 5.5041 13.4273 5.51203L9.51242 9.42692C9.50424 9.36912 9.5 9.31006 9.5 9.25L9.5 5.5L8 5.5L8 9.25C8 10.7688 9.23122 12 10.75 12H14.5V10.5L10.75 10.5C10.6899 10.5 10.6309 10.4958 10.5731 10.4876L14.4904 6.57028C14.4988 6.62897 14.5032 6.68897 14.5032 6.75V10.5H16.0032V6.75C16.0032 5.23122 14.772 4 13.2532 4H9.50321V5.5ZM0 5V5.00405L5.12525 11.5307C5.74119 12.3151 7.00106 11.8795 7.00106 10.8822V5H5.50106V9.58056L1.90404 5H0Z" fill="white" fillRule="evenodd"></path>
                 </svg>
                 <span className="leading-6 text-base text-muted-foreground">
-                  v0 compatible
+                  {"v0 compatible"}
                 </span>
               </li>
             </ul>
             <div className="flex flex-wrap gap-2 items-center">
               <Button href="#" role="button" tabIndex="0">
-                Get All-access
+                {"Get All-access"}
               </Button>
               <Button href="#" role="button" tabIndex="0">
-                Browse Blocks
+                {"Browse Blocks"}
               </Button>
             </div>
           </div>
@@ -95,82 +95,15 @@ export function Pattern() {
                   <div className="overflow-hidden relative rounded-lg size-full">
                     <div className="absolute h-[1080px] left-0 origin-top-left top-0 w-[1440px]" style={{transform: "scale(calc(100cqw / 1440px))"}}>
                       <div className="bg-neutral-50 dark:bg-neutral-950 dark:text-neutral-50 flex overflow-hidden size-full text-neutral-900" role="img" aria-label="Roster HR people dashboard: workforce overview, review cycle, and headcount trend">
-                        <style>{`
-@keyframes rf-sheen { 0% { transform: translateX(-80%) } 58%, 100% { transform: translateX(360%) } }
-@keyframes rf-pulse { 0%, 100% { opacity: 0.45 } 50% { opacity: 1 } }
-@keyframes rf-ping { 0% { transform: scale(0.7); opacity: 0.55 } 72%, 100% { transform: scale(2); opacity: 0 } }
-/* Three-slot cross-fade: each period is shown for its third of a 9s loop, with a
-   short overlap so the value, delta, trend and the active tab hand off together. */
-@keyframes rf-cyc-0 { 0% { opacity: 1 } 31% { opacity: 1 } 35% { opacity: 0 } 97% { opacity: 0 } 100% { opacity: 1 } }
-@keyframes rf-cyc-1 { 0% { opacity: 0 } 31% { opacity: 0 } 35% { opacity: 1 } 64% { opacity: 1 } 68% { opacity: 0 } 100% { opacity: 0 } }
-@keyframes rf-cyc-2 { 0% { opacity: 0 } 64% { opacity: 0 } 68% { opacity: 1 } 97% { opacity: 1 } 100% { opacity: 0 } }
-
-/* Trend chart. One clip wipes across the plot, so the line and the fill under
-   it arrive together rather than a filled area under a missing line. */
-@keyframes rf-draw {
-  0%, 8% { transform: scaleX(0) }
-  58%, 100% { transform: scaleX(1) }
-}
-/* Under the wipe each dot waits for the edge to reach it, then lands. Fill mode
-   holds frame 0, so a dot stays hidden until its own delay elapses. */
-@keyframes rf-dot-land {
-  0% { opacity: 0; transform: scale(0.3) }
-  7% { opacity: 1; transform: scale(1.7) }
-  16%, 100% { opacity: 1; transform: scale(1) }
-}
-
-.rf-draw { transform-origin: left; animation: rf-draw 7.2s cubic-bezier(0.33, 1, 0.68, 1) infinite; }
-.rf-dot-land {
-  animation: rf-dot-land 7.2s cubic-bezier(0.22, 1, 0.36, 1) infinite both;
-  animation-delay: calc(0.55s + var(--rf-d) * 0.235s);
-}
-
-/* Calendar. The events land across the month, or a week lights at a time. */
-/* A light running the length of one event, then the next. The travel is inside
-   the pill rather than over the grid, so nothing sweeps and nothing tints. */
-@keyframes rf-evt-shimmer {
-  0% { transform: translateX(-120%) }
-  100% { transform: translateX(320%) }
-}
-
-.rf-evt-shimmer { position: relative; overflow: hidden; }
-.rf-evt-shimmer::after {
-  content: ""; position: absolute; inset-block: 0; inset-inline-start: 0;
-  width: 45%; pointer-events: none;
-  background: linear-gradient(90deg, transparent, currentColor, transparent);
-  opacity: 0.22;
-  animation: rf-evt-shimmer 7.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  animation-delay: calc(var(--rf-i) * 0.16s);
-}
-
-.rf-sheen { animation: rf-sheen 4.4s ease-in-out infinite; }
-.rf-pulse { animation: rf-pulse 3.4s ease-in-out infinite; }
-.rf-ping { animation: rf-ping 2.6s cubic-bezier(0,0,0.2,1) infinite; }
-.rf-cyc-0 { animation: rf-cyc-0 9s ease-in-out infinite; }
-.rf-cyc-1 { animation: rf-cyc-1 9s ease-in-out infinite; }
-.rf-cyc-2 { animation: rf-cyc-2 9s ease-in-out infinite; }
-
-@media (prefers-reduced-motion: reduce) {
-  .rf-sheen, .rf-pulse, .rf-ping, .rf-draw, .rf-dot-land,
-  .rf-evt-shimmer::after,
-  .rf-cyc-0, .rf-cyc-1, .rf-cyc-2 { animation: none; }
-  /* Rest at the finished chart, never at a half-drawn one. */
-  .rf-draw { transform: none }
-  .rf-dot-land { opacity: 1; transform: none }
-  .rf-evt-shimmer::after { opacity: 0 }
-  /* Settle on the Year view (the default read) when motion is off. */
-  .rf-cyc-0, .rf-cyc-1 { opacity: 0; }
-  .rf-cyc-2 { opacity: 1; }
-}
-`}</style>
+                        <style dangerouslySetInnerHTML={{ __html: "\n@keyframes rf-sheen { 0% { transform: translateX(-80%) } 58%, 100% { transform: translateX(360%) } }\n@keyframes rf-pulse { 0%, 100% { opacity: 0.45 } 50% { opacity: 1 } }\n@keyframes rf-ping { 0% { transform: scale(0.7); opacity: 0.55 } 72%, 100% { transform: scale(2); opacity: 0 } }\n/* Three-slot cross-fade: each period is shown for its third of a 9s loop, with a\n   short overlap so the value, delta, trend and the active tab hand off together. */\n@keyframes rf-cyc-0 { 0% { opacity: 1 } 31% { opacity: 1 } 35% { opacity: 0 } 97% { opacity: 0 } 100% { opacity: 1 } }\n@keyframes rf-cyc-1 { 0% { opacity: 0 } 31% { opacity: 0 } 35% { opacity: 1 } 64% { opacity: 1 } 68% { opacity: 0 } 100% { opacity: 0 } }\n@keyframes rf-cyc-2 { 0% { opacity: 0 } 64% { opacity: 0 } 68% { opacity: 1 } 97% { opacity: 1 } 100% { opacity: 0 } }\n\n/* Trend chart. One clip wipes across the plot, so the line and the fill under\n   it arrive together rather than a filled area under a missing line. */\n@keyframes rf-draw {\n  0%, 8% { transform: scaleX(0) }\n  58%, 100% { transform: scaleX(1) }\n}\n/* Under the wipe each dot waits for the edge to reach it, then lands. Fill mode\n   holds frame 0, so a dot stays hidden until its own delay elapses. */\n@keyframes rf-dot-land {\n  0% { opacity: 0; transform: scale(0.3) }\n  7% { opacity: 1; transform: scale(1.7) }\n  16%, 100% { opacity: 1; transform: scale(1) }\n}\n\n.rf-draw { transform-origin: left; animation: rf-draw 7.2s cubic-bezier(0.33, 1, 0.68, 1) infinite; }\n.rf-dot-land {\n  animation: rf-dot-land 7.2s cubic-bezier(0.22, 1, 0.36, 1) infinite both;\n  animation-delay: calc(0.55s + var(--rf-d) * 0.235s);\n}\n\n/* Calendar. The events land across the month, or a week lights at a time. */\n/* A light running the length of one event, then the next. The travel is inside\n   the pill rather than over the grid, so nothing sweeps and nothing tints. */\n@keyframes rf-evt-shimmer {\n  0% { transform: translateX(-120%) }\n  100% { transform: translateX(320%) }\n}\n\n.rf-evt-shimmer { position: relative; overflow: hidden; }\n.rf-evt-shimmer::after {\n  content: \"\"; position: absolute; inset-block: 0; inset-inline-start: 0;\n  width: 45%; pointer-events: none;\n  background: linear-gradient(90deg, transparent, currentColor, transparent);\n  opacity: 0.22;\n  animation: rf-evt-shimmer 7.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  animation-delay: calc(var(--rf-i) * 0.16s);\n}\n\n.rf-sheen { animation: rf-sheen 4.4s ease-in-out infinite; }\n.rf-pulse { animation: rf-pulse 3.4s ease-in-out infinite; }\n.rf-ping { animation: rf-ping 2.6s cubic-bezier(0,0,0.2,1) infinite; }\n.rf-cyc-0 { animation: rf-cyc-0 9s ease-in-out infinite; }\n.rf-cyc-1 { animation: rf-cyc-1 9s ease-in-out infinite; }\n.rf-cyc-2 { animation: rf-cyc-2 9s ease-in-out infinite; }\n\n@media (prefers-reduced-motion: reduce) {\n  .rf-sheen, .rf-pulse, .rf-ping, .rf-draw, .rf-dot-land,\n  .rf-evt-shimmer::after,\n  .rf-cyc-0, .rf-cyc-1, .rf-cyc-2 { animation: none; }\n  /* Rest at the finished chart, never at a half-drawn one. */\n  .rf-draw { transform: none }\n  .rf-dot-land { opacity: 1; transform: none }\n  .rf-evt-shimmer::after { opacity: 0 }\n  /* Settle on the Year view (the default read) when motion is off. */\n  .rf-cyc-0, .rf-cyc-1 { opacity: 0; }\n  .rf-cyc-2 { opacity: 1; }\n}\n" }} />
                         <aside className="bg-white border-neutral-300 border-r dark:bg-neutral-900 dark:border-neutral-800 flex flex-col px-4 py-5 shrink-0 w-[264px]">
                           <div className="flex items-center justify-between px-1">
                             <div className="flex gap-2 items-center">
                               <span className="bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 flex font-bold items-center justify-center rounded-md size-7 text-sm text-white">
-                                U
+                                {"U"}
                               </span>
                               <span className="font-semibold text-[17px]">
-                                Roster
+                                {"Roster"}
                               </span>
                             </div>
                             <div className="dark:text-neutral-400 flex gap-2 items-center text-neutral-500">
@@ -193,14 +126,14 @@ export function Pattern() {
                               <circle cx="11" cy="11" r="8"></circle>
                             </svg>
                             <span>
-                              Search...
+                              {"Search..."}
                             </span>
                             <span className="dark:text-neutral-500 ml-auto text-neutral-400 text-xs">
-                              ⌘K
+                              {"⌘K"}
                             </span>
                           </div>
                           <p className="dark:text-neutral-400 font-medium mt-5 px-1 text-neutral-500 text-xs tracking-wide">
-                            Workspace
+                            {"Workspace"}
                           </p>
                           <nav className="flex flex-col gap-0.5 mt-1.5">
                             <div className="bg-neutral-100 dark:bg-neutral-800 dark:text-neutral-50 flex font-medium gap-2.5 items-center px-2.5 py-2 rounded-md text-neutral-900 text-sm">
@@ -211,7 +144,7 @@ export function Pattern() {
                                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                               </svg>
                               <span>
-                                Dashboard
+                                {"Dashboard"}
                               </span>
                             </div>
                             <div className="dark:text-neutral-300 flex font-medium gap-2.5 items-center px-2.5 py-2 rounded-md text-neutral-600 text-sm">
@@ -220,7 +153,7 @@ export function Pattern() {
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                               <span>
-                                Approvals
+                                {"Approvals"}
                               </span>
                             </div>
                             <div className="dark:text-neutral-300 flex font-medium gap-2.5 items-center px-2.5 py-2 rounded-md text-neutral-600 text-sm">
@@ -231,7 +164,7 @@ export function Pattern() {
                                 <circle cx="9" cy="7" r="4"></circle>
                               </svg>
                               <span>
-                                People
+                                {"People"}
                               </span>
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ml-auto size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -245,7 +178,7 @@ export function Pattern() {
                                 <line x1="22" x2="16" y1="11" y2="11"></line>
                               </svg>
                               <span>
-                                Hiring
+                                {"Hiring"}
                               </span>
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ml-auto size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -257,7 +190,7 @@ export function Pattern() {
                                 <path d="M12 6v6l4 2"></path>
                               </svg>
                               <span>
-                                Time
+                                {"Time"}
                               </span>
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ml-auto size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -269,7 +202,7 @@ export function Pattern() {
                                 <circle cx="12" cy="12" r="3"></circle>
                               </svg>
                               <span>
-                                Settings
+                                {"Settings"}
                               </span>
                               <svg className="dark:text-neutral-500 lucide lucide-chevron-right ml-auto size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                 <path d="m9 18 6-6-6-6"></path>
@@ -278,7 +211,7 @@ export function Pattern() {
                           </nav>
                           <div className="flex items-center justify-between mt-5 px-1">
                             <p className="dark:text-neutral-400 font-medium text-neutral-500 text-xs tracking-wide">
-                              Headcount by department
+                              {"Headcount by department"}
                             </p>
                             <svg className="dark:text-neutral-500 lucide lucide-chevron-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
@@ -288,41 +221,41 @@ export function Pattern() {
                             <div className="flex gap-2.5 items-center text-sm">
                               <span className="ring-2 ring-inset rounded-full size-2.5" style={{color: "rgb(43, 127, 255)", boxShadow: "rgb(43, 127, 255) 0px 0px 0px 2px inset"}}></span>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                Engineering
+                                {"Engineering"}
                               </span>
                             </div>
                             <div className="flex gap-2.5 items-center text-sm">
                               <span className="ring-2 ring-inset rounded-full size-2.5" style={{color: "rgb(142, 81, 255)", boxShadow: "rgb(142, 81, 255) 0px 0px 0px 2px inset"}}></span>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                People
+                                {"People"}
                               </span>
                             </div>
                             <div className="flex gap-2.5 items-center text-sm">
                               <span className="ring-2 ring-inset rounded-full size-2.5" style={{color: "rgb(0, 166, 62)", boxShadow: "rgb(0, 166, 62) 0px 0px 0px 2px inset"}}></span>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                Sales
+                                {"Sales"}
                               </span>
                             </div>
                             <div className="flex gap-2.5 items-center text-sm">
                               <span className="ring-2 ring-inset rounded-full size-2.5" style={{color: "rgb(245, 73, 0)", boxShadow: "rgb(245, 73, 0) 0px 0px 0px 2px inset"}}></span>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                Customer Success
+                                {"Customer Success"}
                               </span>
                             </div>
                             <div className="flex gap-2.5 items-center text-sm">
                               <span className="ring-2 ring-inset rounded-full size-2.5" style={{color: "rgb(246, 51, 154)", boxShadow: "rgb(246, 51, 154) 0px 0px 0px 2px inset"}}></span>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                Design
+                                {"Design"}
                               </span>
                             </div>
                           </div>
                           <div className="bg-amber-50/80 dark:bg-amber-500/15 mt-auto p-2 rounded-xl">
                             <p className="dark:text-amber-400 font-semibold pb-2 pt-1 px-2 text-[13px] text-amber-600">
-                              Headcount plan
+                              {"Headcount plan"}
                             </p>
                             <div className="bg-white border border-neutral-300 dark:bg-neutral-900 dark:border-neutral-800 p-3 rounded-lg">
                               <p className="dark:text-neutral-300 leading-4 text-neutral-600 text-xs">
-                                Approved headcount for FY26. Resets when the plan is re-baselined.
+                                {"Approved headcount for FY26. Resets when the plan is re-baselined."}
                               </p>
                               <div className="bg-[repeating-linear-gradient(45deg,#e2e8f0_0_2px,#f1f5f9_2px_4px)] dark:bg-[repeating-linear-gradient(45deg,var(--color-neutral-700)_0_2px,var(--color-neutral-800)_2px_4px)] h-1.5 mt-3 overflow-hidden rounded-full">
                                 <div className="bg-emerald-500 h-full overflow-hidden relative rounded-full w-[92%]">
@@ -332,15 +265,15 @@ export function Pattern() {
                               <div className="dark:text-neutral-300 flex items-center justify-between mt-2 text-neutral-600 text-xs">
                                 <span>
                                   <span className="dark:text-neutral-100 font-semibold text-neutral-800">
-                                    92%
+                                    {"92%"}
                                   </span>
-                                  Filled
+                                  {"Filled"}
                                 </span>
                                 <span>
                                   <span className="dark:text-neutral-100 font-semibold text-neutral-800">
-                                    8%
+                                    {"8%"}
                                   </span>
-                                  Open
+                                  {"Open"}
                                 </span>
                               </div>
                             </div>
@@ -351,11 +284,11 @@ export function Pattern() {
                             </Avatar>
                             <div className="leading-tight">
                               <p className="font-semibold text-sm">
-                                Bruno Duarte
+                                {"Bruno Duarte"}
                               </p>
                               <p className="dark:text-neutral-400 flex gap-1 items-center text-neutral-500 text-xs">
                                 <span className="bg-emerald-500 rounded-full size-1.5"></span>
-                                Roster UK
+                                {"Roster UK"}
                               </p>
                             </div>
                             <svg className="dark:text-neutral-400 lucide lucide-ellipsis ml-auto size-4 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalIcon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
@@ -373,17 +306,17 @@ export function Pattern() {
                                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                               </svg>
                               <span className="dark:text-neutral-300 text-neutral-600">
-                                People
+                                {"People"}
                               </span>
                               <span className="bg-neutral-400/70 dark:bg-neutral-600 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <span className="font-semibold">
-                                Dashboard
+                                {"Dashboard"}
                               </span>
                             </div>
                             <div className="flex gap-2.5 items-center">
                               <div className="bg-white border border-neutral-300 dark:bg-neutral-800 dark:border-neutral-700 flex gap-2 items-center px-3 py-1.5 rounded-lg text-sm">
                                 <span>
-                                  Jul 1, 2026 - Jul 30, 2026
+                                  {"Jul 1, 2026 - Jul 30, 2026"}
                                 </span>
                                 <svg className="dark:text-neutral-400 lucide lucide-calendar size-4 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendar" hugeicons="Calendar03Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                   <path d="M8 2v4"></path>
@@ -398,7 +331,7 @@ export function Pattern() {
                                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                   <path d="m7 10 5 5 5-5"></path>
                                 </svg>
-                                Export
+                                {"Export"}
                               </div>
                             </div>
                           </header>
@@ -407,29 +340,29 @@ export function Pattern() {
                               <div className="flex items-start justify-between">
                                 <div>
                                   <h3 className="font-semibold text-[15px]">
-                                    Workforce overview
+                                    {"Workforce overview"}
                                   </h3>
                                   <p className="dark:text-neutral-400 text-neutral-500 text-sm">
-                                    Headcount, hiring pressure and absence in one pass.
+                                    {"Headcount, hiring pressure and absence in one pass."}
                                   </p>
                                 </div>
                                 <div className="bg-neutral-100 dark:bg-neutral-800 flex font-medium gap-0.5 items-center p-[3px] rounded-lg text-xs">
                                   <span className="dark:text-neutral-300 px-2.5 py-1 relative rounded-md text-neutral-600">
                                     <span className="absolute bg-white dark:bg-neutral-700 dark:shadow-none inset-0 rf-cyc-0 rounded-md shadow-sm" aria-hidden="true"></span>
                                     <span className="relative">
-                                      Week
+                                      {"Week"}
                                     </span>
                                   </span>
                                   <span className="dark:text-neutral-300 px-2.5 py-1 relative rounded-md text-neutral-600">
                                     <span className="absolute bg-white dark:bg-neutral-700 dark:shadow-none inset-0 rf-cyc-1 rounded-md shadow-sm" aria-hidden="true"></span>
                                     <span className="relative">
-                                      Month
+                                      {"Month"}
                                     </span>
                                   </span>
                                   <span className="dark:text-neutral-300 px-2.5 py-1 relative rounded-md text-neutral-600">
                                     <span className="absolute bg-white dark:bg-neutral-700 dark:shadow-none inset-0 rf-cyc-2 rounded-md shadow-sm" aria-hidden="true"></span>
                                     <span className="relative">
-                                      Year
+                                      {"Year"}
                                     </span>
                                   </span>
                                 </div>
@@ -446,16 +379,16 @@ export function Pattern() {
                                           <circle cx="9" cy="7" r="4"></circle>
                                         </svg>
                                       </span>
-                                      Headcount
+                                      {"Headcount"}
                                     </div>
                                     <div className="grid">
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-0 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            198
+                                            {"198"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +1
+                                            {"↗ +1"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -467,10 +400,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-1 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            198
+                                            {"198"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +2
+                                            {"↗ +2"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -482,10 +415,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-2 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            198
+                                            {"198"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +3
+                                            {"↗ +3"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -509,16 +442,16 @@ export function Pattern() {
                                           <line x1="22" x2="16" y1="11" y2="11"></line>
                                         </svg>
                                       </span>
-                                      Open roles
+                                      {"Open roles"}
                                     </div>
                                     <div className="grid">
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-0 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            4
+                                            {"4"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +1
+                                            {"↗ +1"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -530,10 +463,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-1 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            5
+                                            {"5"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +2
+                                            {"↗ +2"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -545,10 +478,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-2 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            5
+                                            {"5"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +2
+                                            {"↗ +2"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -571,16 +504,16 @@ export function Pattern() {
                                           <line x1="22" x2="16" y1="11" y2="11"></line>
                                         </svg>
                                       </span>
-                                      Voluntary attrition
+                                      {"Voluntary attrition"}
                                     </div>
                                     <div className="grid">
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-0 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            12.1%
+                                            {"12.1%"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +0.2
+                                            {"↗ +0.2"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -592,10 +525,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-1 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            12.5%
+                                            {"12.5%"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +0.6
+                                            {"↗ +0.6"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -607,10 +540,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-2 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            12.8%
+                                            {"12.8%"}
                                           </span>
                                           <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-emerald-600 text-xs">
-                                            ↗ +0.9
+                                            {"↗ +0.9"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -636,16 +569,16 @@ export function Pattern() {
                                           <path d="m2 2 20 20"></path>
                                         </svg>
                                       </span>
-                                      Absence rate
+                                      {"Absence rate"}
                                     </div>
                                     <div className="grid">
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-0 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            1.7%
+                                            {"1.7%"}
                                           </span>
                                           <span className="bg-rose-50 dark:bg-rose-500/15 dark:text-rose-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-rose-600 text-xs">
-                                            ↘ -0.2
+                                            {"↘ -0.2"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -657,10 +590,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-1 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            1.6%
+                                            {"1.6%"}
                                           </span>
                                           <span className="bg-rose-50 dark:bg-rose-500/15 dark:text-rose-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-rose-600 text-xs">
-                                            ↘ -0.4
+                                            {"↘ -0.4"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -672,10 +605,10 @@ export function Pattern() {
                                       <div className="col-start-1 flex flex-col gap-2.5 rf-cyc-2 row-start-1">
                                         <div className="flex gap-2 items-center">
                                           <span className="font-semibold leading-none tabular-nums text-[30px]">
-                                            1.5%
+                                            {"1.5%"}
                                           </span>
                                           <span className="bg-rose-50 dark:bg-rose-500/15 dark:text-rose-400 font-medium gap-0.5 inline-flex items-center px-1.5 py-0.5 rounded text-rose-600 text-xs">
-                                            ↘ -0.6
+                                            {"↘ -0.6"}
                                           </span>
                                         </div>
                                         <div className="h-12 w-full">
@@ -696,10 +629,10 @@ export function Pattern() {
                                   <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                28 hires, 25 exits, now 198.
+                                {"28 hires, 25 exits, now 198."}
                               </span>
                               <span className="dark:text-neutral-200 flex font-medium gap-1 items-center text-neutral-700">
-                                View the directory
+                                {"View the directory"}
                                 <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                                   <path d="M5 12h14"></path>
                                   <path d="m12 5 7 7-7 7"></path>
@@ -712,10 +645,10 @@ export function Pattern() {
                               <div className="bg-neutral-100/50 dark:bg-neutral-800/50 flex items-center justify-between pb-6 pt-3 px-4">
                                 <div className="flex gap-3 items-center text-sm">
                                   <span className="bg-white border border-neutral-300 dark:bg-neutral-800 dark:border-neutral-700 font-medium px-2.5 py-1 rounded-md">
-                                    Today
+                                    {"Today"}
                                   </span>
                                   <span className="bg-white border border-neutral-300 dark:bg-neutral-800 dark:border-neutral-700 flex gap-1 items-center px-2.5 py-1 rounded-md">
-                                    Month
+                                    {"Month"}
                                     <svg className="dark:text-neutral-400 lucide lucide-chevron-down size-3.5 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
                                     </svg>
@@ -729,12 +662,12 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="font-semibold ml-1">
-                                    July 2026
+                                    {"July 2026"}
                                   </span>
                                 </div>
                                 <span className="bg-white border border-neutral-300 dark:bg-neutral-800 dark:border-neutral-700 flex gap-1.5 items-center px-2.5 py-1 rounded-md text-sm">
                                   <span className="bg-amber-400 rounded-full size-2.5"></span>
-                                  Streams
+                                  {"Streams"}
                                   <svg className="dark:text-neutral-400 lucide lucide-chevron-down size-3.5 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                   </svg>
@@ -743,239 +676,239 @@ export function Pattern() {
                               <div className="-mt-3.5 bg-white border-neutral-300 border-t dark:bg-neutral-900 dark:border-neutral-800 flex flex-1 flex-col min-h-0 overflow-hidden pt-2.5 relative rounded-t-xl z-10">
                                 <div className="border-b border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 grid grid-cols-7 text-neutral-500 text-xs">
                                   <span className="px-2 py-1.5">
-                                    Mon
+                                    {"Mon"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Tue
+                                    {"Tue"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Wed
+                                    {"Wed"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Thu
+                                    {"Thu"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Fri
+                                    {"Fri"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Sat
+                                    {"Sat"}
                                   </span>
                                   <span className="px-2 py-1.5">
-                                    Sun
+                                    {"Sun"}
                                   </span>
                                 </div>
                                 <div className="grid grid-cols-7 text-xs">
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      29
+                                      {"29"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      30
+                                      {"30"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      1
+                                      {"1"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      2
+                                      {"2"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-amber-50 dark:bg-amber-500/15 dark:text-amber-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-amber-700" style={{"--rf-i": "0"}}>
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Aisha Rahman
+                                        {"Aisha Rahman"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      3
+                                      {"3"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      4
+                                      {"4"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      5
+                                      {"5"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      6
+                                      {"6"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      7
+                                      {"7"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-0.5 flex items-center justify-center right-1 size-5">
                                       <span className="absolute bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 inset-0 rf-ping rounded-full text-white"></span>
                                       <span className="bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 flex font-semibold items-center justify-center relative rounded-full size-5 tabular-nums text-[11px] text-white">
-                                        8
+                                        {"8"}
                                       </span>
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      9
+                                      {"9"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      10
+                                      {"10"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      11
+                                      {"11"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      12
+                                      {"12"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-amber-50 dark:bg-amber-500/15 dark:text-amber-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-amber-700" style={{"--rf-i": "1"}}>
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Ingrid: leave
+                                        {"Ingrid: leave"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      13
+                                      {"13"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      14
+                                      {"14"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "2"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Weekly 1:1
+                                        {"Weekly 1:1"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      15
+                                      {"15"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      16
+                                      {"16"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      17
+                                      {"17"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      18
+                                      {"18"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      19
+                                      {"19"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "3"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Weekly sync
+                                        {"Weekly sync"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      20
+                                      {"20"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "4"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Screening
+                                        {"Screening"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      21
+                                      {"21"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "5"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Weekly 1:1
+                                        {"Weekly 1:1"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      22
+                                      {"22"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "6"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Panel: Sup.
+                                        {"Panel: Sup."}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      23
+                                      {"23"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      24
+                                      {"24"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      25
+                                      {"25"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      26
+                                      {"26"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "7"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Week 3 sync
+                                        {"Week 3 sync"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&dpr=2&q=80"></AvatarImage>
@@ -984,115 +917,115 @@ export function Pattern() {
                                     <span className="bg-amber-50 dark:bg-amber-500/15 dark:text-amber-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-amber-700" style={{"--rf-i": "12"}}>
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Marco: leave
+                                        {"Marco: leave"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      27
+                                      {"27"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "8"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        H2 calibration
+                                        {"H2 calibration"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      28
+                                      {"28"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      29
+                                      {"29"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-amber-50 dark:bg-amber-500/15 dark:text-amber-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-amber-700" style={{"--rf-i": "9"}}>
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Priya: leave
+                                        {"Priya: leave"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      30
+                                      {"30"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-300 right-1.5 tabular-nums text-neutral-600">
-                                      31
+                                      {"31"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      1
+                                      {"1"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      2
+                                      {"2"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "10"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        First day: Jo
+                                        {"First day: Jo"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      3
+                                      {"3"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      4
+                                      {"4"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="bg-emerald-50 dark:bg-emerald-500/15 dark:text-emerald-300 flex font-medium gap-1 items-center mb-0.5 px-1 py-0.5 relative rf-evt-shimmer rounded text-[10px] text-emerald-700" style={{"--rf-i": "11"}}>
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1"></span>
                                       <span className="truncate">
-                                        Screening
+                                        {"Screening"}
                                       </span>
                                       <Avatar className="dark:ring-neutral-900 ml-auto ring-2 ring-white size-4" size="default">
                                         <AvatarImage alt="" width="48" height="48" loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=48&h=48&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                     </span>
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      5
+                                      {"5"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      6
+                                      {"6"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      7
+                                      {"7"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      8
+                                      {"8"}
                                     </span>
                                   </div>
                                   <div className="aspect-square border-b border-neutral-200 border-r dark:border-neutral-800 p-1 relative">
                                     <span className="absolute bottom-1 dark:text-neutral-500 right-1.5 tabular-nums text-neutral-400">
-                                      9
+                                      {"9"}
                                     </span>
                                   </div>
                                 </div>
@@ -1103,14 +1036,14 @@ export function Pattern() {
                                 <div className="bg-neutral-100/50 dark:bg-neutral-800/50 flex items-start justify-between pb-6 pt-4 px-4">
                                   <div>
                                     <h4 className="font-semibold text-sm">
-                                      H2 review cycle
+                                      {"H2 review cycle"}
                                     </h4>
                                     <p className="dark:text-neutral-400 text-neutral-500 text-xs">
-                                      Where reviews stand.
+                                      {"Where reviews stand."}
                                     </p>
                                   </div>
                                   <span className="bg-white border border-neutral-300 dark:bg-neutral-800 dark:border-neutral-700 flex gap-1 items-center px-2 py-1 rounded-lg text-xs">
-                                    All teams
+                                    {"All teams"}
                                     <svg className="dark:text-neutral-400 lucide lucide-chevrons-up-down size-3 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -1120,10 +1053,10 @@ export function Pattern() {
                                 <div className="-mt-3.5 bg-white border-neutral-300 border-t dark:bg-neutral-900 dark:border-neutral-800 pb-4 pt-4 px-4 relative rounded-t-xl z-10">
                                   <div className="flex items-center justify-between text-sm">
                                     <span className="font-medium">
-                                      Reviews complete
+                                      {"Reviews complete"}
                                     </span>
                                     <span className="dark:text-neutral-300 tabular-nums text-neutral-600">
-                                      9 / 21
+                                      {"9 / 21"}
                                     </span>
                                   </div>
                                   <div className="bg-neutral-100 h-1.5 mt-4 overflow-hidden rounded-full">
@@ -1134,33 +1067,33 @@ export function Pattern() {
                                   <div className="gap-2 grid grid-cols-3 mt-6">
                                     <div className="bg-neutral-100/60 dark:bg-neutral-800/60 px-2 py-5 rounded-lg text-center">
                                       <div className="font-semibold tabular-nums text-lg" style={{color: "rgb(0, 166, 62)"}}>
-                                        4
+                                        {"4"}
                                       </div>
                                       <div className="dark:text-neutral-300 leading-tight mt-0.5 text-[11px] text-neutral-600">
-                                        Not started
+                                        {"Not started"}
                                       </div>
                                     </div>
                                     <div className="bg-neutral-100/60 dark:bg-neutral-800/60 px-2 py-5 rounded-lg text-center">
                                       <div className="font-semibold tabular-nums text-lg" style={{color: "rgb(225, 113, 0)"}}>
-                                        4
+                                        {"4"}
                                       </div>
                                       <div className="dark:text-neutral-300 leading-tight mt-0.5 text-[11px] text-neutral-600">
-                                        Self review
+                                        {"Self review"}
                                       </div>
                                     </div>
                                     <div className="bg-neutral-100/60 dark:bg-neutral-800/60 px-2 py-5 rounded-lg text-center">
                                       <div className="font-semibold tabular-nums text-lg" style={{color: "rgb(142, 81, 255)"}}>
-                                        4
+                                        {"4"}
                                       </div>
                                       <div className="dark:text-neutral-300 leading-tight mt-0.5 text-[11px] text-neutral-600">
-                                        Manager review
+                                        {"Manager review"}
                                       </div>
                                     </div>
                                   </div>
                                   <p className="dark:text-neutral-400 mt-6 text-center text-neutral-500 text-xs">
-                                    Cycle closes in
+                                    {"Cycle closes in"}
                                     <span className="dark:text-neutral-300 font-semibold text-neutral-600">
-                                      32 days
+                                      {"32 days"}
                                     </span>
                                   </p>
                                 </div>
@@ -1169,10 +1102,10 @@ export function Pattern() {
                                 <div className="bg-neutral-100/50 dark:bg-neutral-800/50 flex items-start justify-between pb-6 pt-4 px-4">
                                   <div>
                                     <h4 className="font-semibold text-sm">
-                                      Headcount
+                                      {"Headcount"}
                                     </h4>
                                     <p className="dark:text-neutral-400 text-neutral-500 text-xs">
-                                      Starters against leavers.
+                                      {"Starters against leavers."}
                                     </p>
                                   </div>
                                   <svg className="dark:text-neutral-500 lucide lucide-info size-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
@@ -1184,13 +1117,13 @@ export function Pattern() {
                                 <div className="-mt-3.5 bg-white border-neutral-300 border-t dark:bg-neutral-900 dark:border-neutral-800 flex flex-col pb-5 pt-2.5 px-4 relative rounded-t-xl z-10">
                                   <div className="flex gap-2 items-center">
                                     <span className="font-semibold tabular-nums text-2xl">
-                                      198
+                                      {"198"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center text-emerald-600 text-xs">
-                                      ↗ +3
+                                      {"↗ +3"}
                                     </span>
                                     <span className="dark:text-neutral-400 text-neutral-500 text-xs">
-                                      net over 12M
+                                      {"net over 12M"}
                                     </span>
                                   </div>
                                   <div className="h-52 mt-4 relative">
@@ -1257,13 +1190,13 @@ export function Pattern() {
                                   </div>
                                   <div className="bg-neutral-100 dark:bg-neutral-800 flex font-medium gap-1 items-center mt-5 p-1 rounded-lg text-xs">
                                     <span className="dark:text-neutral-300 flex-1 px-2 py-1 rounded-md text-center text-neutral-600">
-                                      3M
+                                      {"3M"}
                                     </span>
                                     <span className="dark:text-neutral-300 flex-1 px-2 py-1 rounded-md text-center text-neutral-600">
-                                      6M
+                                      {"6M"}
                                     </span>
                                     <span className="bg-white dark:bg-neutral-700 dark:shadow-none flex-1 px-2 py-1 rounded-md shadow-sm text-center">
-                                      12M
+                                      {"12M"}
                                     </span>
                                   </div>
                                 </div>

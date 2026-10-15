@@ -81,18 +81,21 @@ import {
 export function Pattern() {
   return (
   <>
+    <SidebarProvider>
     <div className="[--sidebar-accent-foreground:var(--color-primary)] [--sidebar-accent:color-mix(in_oklab,var(--color-primary)_5%,transparent)] [--sidebar:var(--color-background)] flex flex-col group/sidebar-wrapper has-data-[variant=inset]:bg-sidebar min-h-svh w-full" style={{"--sidebar-width": "260px", "--sidebar-width-icon": "62px", "--header-height": "50px"}}>
       <header className="bg-background border-b flex items-center sticky top-0 w-full z-50">
         <div className="flex gap-2 h-(--header-height) items-center px-4 w-full">
+          <SidebarProvider>
           <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center md:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
             <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <rect width="18" height="18" x="3" y="3" rx="2"></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
-              Toggle Sidebar
+              {"Toggle Sidebar"}
             </span>
           </SidebarTrigger>
+          </SidebarProvider>
           <div className="-mx-0.5 flex items-center">
             <Item className="[a]:hover:bg-muted bg-primary border border-primary gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" variant="default" size="default" aria-hidden="true">
               <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
@@ -120,7 +123,7 @@ export function Pattern() {
                     <circle cx="14" cy="14" r="14" fill="url(#ws-acme)"></circle>
                   </svg>
                   <span className="sm:not-sr-only sr-only truncate">
-                    Help Desk
+                    {"Help Desk"}
                   </span>
                   <svg className="hidden lucide lucide-chevrons-up-down opacity-60 size-3.5 sm:inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
@@ -130,16 +133,16 @@ export function Pattern() {
                 </DropdownMenu>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="[&>svg]:size-3.5 opacity-60 shrink-0 text-xs" role="presentation" aria-hidden="true">
-                /
+                {"/"}
               </BreadcrumbSeparator>
               <BreadcrumbItem className="gap-1 min-w-0 shrink">
                 <DropdownMenu>
                 <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center min-w-0 outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink text-[0.8rem] text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_R_3er5cq_" aria-expanded="false">
                   <span className="sm:hidden truncate">
-                    All
+                    {"All"}
                   </span>
                   <span className="hidden sm:inline truncate">
-                    All products
+                    {"All products"}
                   </span>
                   <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
@@ -158,7 +161,7 @@ export function Pattern() {
                   <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-8" size="sm">
                     <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" src="/avatars/mira-stone.jpg" alt=""></AvatarImage>
                     <AvatarFallback className="bg-muted rounded-full text-muted-foreground">
-                      MS
+                      {"MS"}
                     </AvatarFallback>
                   </Avatar>
                 </TooltipTrigger>
@@ -168,7 +171,7 @@ export function Pattern() {
                   <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-8" size="sm">
                     <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" src="/avatars/leo-grant.jpg" alt=""></AvatarImage>
                     <AvatarFallback className="bg-muted rounded-full text-muted-foreground">
-                      LG
+                      {"LG"}
                     </AvatarFallback>
                   </Avatar>
                 </TooltipTrigger>
@@ -178,7 +181,7 @@ export function Pattern() {
                   <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-8" size="sm">
                     <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" src="/avatars/sarah-chen.jpg" alt=""></AvatarImage>
                     <AvatarFallback className="bg-muted rounded-full text-muted-foreground">
-                      SC
+                      {"SC"}
                     </AvatarFallback>
                   </Avatar>
                 </TooltipTrigger>
@@ -188,7 +191,7 @@ export function Pattern() {
                   <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-8" size="sm">
                     <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" src="/avatars/nora-vale.jpg" alt=""></AvatarImage>
                     <AvatarFallback className="bg-muted rounded-full text-muted-foreground">
-                      NV
+                      {"NV"}
                     </AvatarFallback>
                   </Avatar>
                 </TooltipTrigger>
@@ -196,16 +199,16 @@ export function Pattern() {
                 <Tooltip>
                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-ring outline-none rounded-full sm:hidden" aria-label="10 more agents on shift" id="base-ui-_R_fj35cq_" baseUiTooltipTrigger="" href="/team">
                   <AvatarGroupCount className="[&>svg]:size-4 bg-muted group-has-data-[size=lg]/avatar-group:[&>svg]:size-5 group-has-data-[size=lg]/avatar-group:size-10 group-has-data-[size=sm]/avatar-group:[&>svg]:size-3 group-has-data-[size=sm]/avatar-group:size-6 rounded-full size-8 text-muted-foreground text-sm">
-                    +
-                    10
+                    {"+"}
+                    {"10"}
                   </AvatarGroupCount>
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-ring hidden outline-none rounded-full sm:block" aria-label="7 more agents on shift" id="base-ui-_R_fr35cq_" baseUiTooltipTrigger="" href="/team">
                   <AvatarGroupCount className="[&>svg]:size-4 bg-muted group-has-data-[size=lg]/avatar-group:[&>svg]:size-5 group-has-data-[size=lg]/avatar-group:size-10 group-has-data-[size=sm]/avatar-group:[&>svg]:size-3 group-has-data-[size=sm]/avatar-group:size-6 rounded-full size-8 text-muted-foreground text-sm">
-                    +
-                    7
+                    {"+"}
+                    {"7"}
                   </AvatarGroupCount>
                 </TooltipTrigger>
                 </Tooltip>
@@ -220,7 +223,7 @@ export function Pattern() {
                   <line x1="22" x2="16" y1="11" y2="11"></line>
                 </svg>
                 <span className="hidden md:block">
-                  Invite
+                  {"Invite"}
                 </span>
               </PopoverTrigger>
               </Popover>
@@ -229,46 +232,61 @@ export function Pattern() {
         </div>
       </header>
       <div className="flex flex-1 min-w-0">
+        <SidebarProvider>
         <Sidebar data-state="expanded" collapsible="" variant="sidebar" data-side="left">
           <div className="bg-transparent duration-200 ease-linear group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 relative transition-[width] w-(--sidebar-width)"></div>
+          <SidebarProvider>
           <div className="data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=left]:left-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 duration-200 ease-linear fixed group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l h-[calc(100svh-var(--header-height))]! h-svh hidden inset-y-0 md:flex top-(--header-height) transition-[left,right,width] w-(--sidebar-width) z-10" data-side="left">
+            <SidebarProvider>
             <div className="bg-sidebar flex flex-col group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm size-full" data-sidebar="sidebar">
               <SidebarHeader className="flex-row gap-2 in-data-[state=collapsed]:flex-col in-data-[state=collapsed]:items-start in-data-[state=collapsed]:justify-center items-center p-2 px-4" sidebar="header">
                 <div className="flex-1 pt-2 w-full">
                   <form novalidate="">
+                    <SidebarProvider>
                     <SidebarGroup className="p-0" sidebar="group">
+                      <SidebarProvider>
                       <SidebarGroupContent className="relative text-sm" sidebar="group-content">
                         <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 duration-200 ease-linear focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-background hover:text-foreground in-data-[state=collapsed]:pl-4! in-data-[state=collapsed]:text-transparent in-data-[state=collapsed]:w-8! justify-start pl-7 px-2.5 rounded-lg text-sm transition-[width] w-full" type="button" tabIndex="0" id="search">
-                          Search...
+                          {"Search..."}
                         </Button>
                         <svg className="-translate-y-1/2 absolute left-2 lucide lucide-search opacity-50 pointer-events-none select-none size-3.5 top-1/2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="m21 21-4.34-4.34"></path>
                           <circle cx="11" cy="11" r="8"></circle>
                         </svg>
                         <Kbd className="-translate-y-1/2 [&_svg:not([class*='size-'])]:size-3 absolute bg-muted dark:in-data-[slot=tooltip-content]:bg-background/10 font-medium font-sans gap-1 h-5 in-data-[slot=tooltip-content]:bg-background/20 in-data-[slot=tooltip-content]:text-background in-data-[state=collapsed]:hidden min-w-5 px-1 right-2 rounded-sm text-muted-foreground text-xs top-1/2 w-fit">
-                          ⌘K
+                          {"⌘K"}
                         </Kbd>
                       </SidebarGroupContent>
+                      </SidebarProvider>
                     </SidebarGroup>
+                    </SidebarProvider>
                     <DialogHeader className="gap-2 sr-only">
                       <DialogTitle className="font-heading font-medium leading-none text-base" id="base-ui-_R_bt6d5cq_">
-                        Search
+                        {"Search"}
                       </DialogTitle>
                       <DialogDescription className="*:[a]:hover:text-foreground *:[a]:underline *:[a]:underline-offset-3 text-muted-foreground text-sm" id="base-ui-_R_jt6d5cq_">
-                        Search your workspace content.
+                        {"Search your workspace content."}
                       </DialogDescription>
                     </DialogHeader>
                   </form>
                 </div>
               </SidebarHeader>
+              <SidebarProvider>
               <SidebarContent className="gap-2 no-scrollbar px-2" sidebar="content">
+                <SidebarProvider>
                 <SidebarGroup className="p-2" sidebar="group">
+                  <SidebarProvider>
                   <SidebarGroupLabel className="[&>svg]:size-4 duration-200 ease-linear focus-visible:ring-2 font-medium group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 h-8 in-data-[state=collapsed]:hidden px-2 ring-sidebar-ring rounded-md text-sidebar-foreground/70 text-xs transition-[margin,opacity]" sidebar="group-label">
-                    Platform
+                    {"Platform"}
                   </SidebarGroupLabel>
+                  </SidebarProvider>
+                  <SidebarProvider>
                   <SidebarGroupContent className="text-sm" sidebar="group-content">
+                    <SidebarProvider>
                     <SidebarMenu className="gap-0.25" sidebar="menu">
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1spad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/">
                           <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <rect width="7" height="9" x="3" y="3" rx="1"></rect>
@@ -277,11 +295,15 @@ export function Pattern() {
                             <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                           </svg>
                           <span>
-                            Dashboard
+                            {"Dashboard"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1t9ad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/tickets" status="active" aria-current="page" data-active="">
                           <svg className="lucide lucide-ticket" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
@@ -290,14 +312,18 @@ export function Pattern() {
                             <path d="M13 11v2"></path>
                           </svg>
                           <span>
-                            Tickets
+                            {"Tickets"}
                           </span>
                           <SidebarMenuBadge className="absolute font-medium h-5 min-w-5 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 peer-data-[size=sm]/menu-button:top-1 peer-data-active/menu-button:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground pointer-events-none px-1 right-1 rounded-md text-sidebar-foreground text-xs" sidebar="menu-badge">
-                            24
+                            {"24"}
                           </SidebarMenuBadge>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1tpad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/contacts">
                           <svg className="lucide lucide-contact" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M16 2v2"></path>
@@ -307,11 +333,15 @@ export function Pattern() {
                             <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                           </svg>
                           <span>
-                            Contacts
+                            {"Contacts"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1u9ad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/team">
                           <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -320,22 +350,30 @@ export function Pattern() {
                             <circle cx="9" cy="7" r="4"></circle>
                           </svg>
                           <span>
-                            Team
+                            {"Team"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1upad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/knowledge-base">
                           <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M12 5v16"></path>
                             <path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path>
                           </svg>
                           <span>
-                            Knowledge Base
+                            {"Knowledge Base"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1v9ad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/reports">
                           <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
@@ -344,24 +382,33 @@ export function Pattern() {
                             <path d="M8 17v-3"></path>
                           </svg>
                           <span>
-                            Reports
+                            {"Reports"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarMenuItem sidebar="menu-item">
+                        <SidebarProvider>
                         <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_1vpad5cq_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" href="/settings">
                           <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
                             <circle cx="12" cy="12" r="3"></circle>
                           </svg>
                           <span>
-                            Settings
+                            {"Settings"}
                           </span>
                         </SidebarMenuButton>
+                        </SidebarProvider>
                       </SidebarMenuItem>
+                      </SidebarProvider>
                     </SidebarMenu>
+                    </SidebarProvider>
                   </SidebarGroupContent>
+                  </SidebarProvider>
                 </SidebarGroup>
+                </SidebarProvider>
                 <div className="mt-auto">
                   <div className="group in-data-[state=collapsed]:hidden px-2" data-active="true">
                     <div className="relative size-full">
@@ -370,10 +417,10 @@ export function Pattern() {
                           <div className="invisible">
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                August scorecard is out
+                                {"August scorecard is out"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Resolution rate, handle time and CSAT, agent by agent.
+                                {"Resolution rate, handle time and CSAT, agent by agent."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -383,10 +430,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="/reports">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -399,10 +446,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Security runbooks published
+                                {"Security runbooks published"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Access reviews, two-factor and caller verification.
+                                {"Access reviews, two-factor and caller verification."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -412,10 +459,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="/knowledge-base">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -428,10 +475,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                SLA clock pauses on waits
+                                {"SLA clock pauses on waits"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Waiting Customer holds a ticket's clock until the reply.
+                                {"Waiting Customer holds a ticket's clock until the reply."}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full">
@@ -441,10 +488,10 @@ export function Pattern() {
                               <div className="min-h-0">
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <a className="active duration-75 font-medium hover:text-foreground text-muted-foreground transition-colors" href="/tickets" data-status="active" aria-current="page">
-                                    Read more
+                                    {"Read more"}
                                   </a>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -457,10 +504,10 @@ export function Pattern() {
                           <div>
                             <div className="flex flex-col gap-1">
                               <span className="font-medium line-clamp-1 text-foreground">
-                                Title
+                                {"Title"}
                               </span>
                               <p className="h-10 leading-5 line-clamp-2 text-muted-foreground">
-                                Description
+                                {"Description"}
                               </p>
                             </div>
                             <div className="aspect-video bg-muted border border-border/40 mt-3 overflow-hidden relative rounded-md shrink-0 w-full"></div>
@@ -469,7 +516,7 @@ export function Pattern() {
                                 <div className="flex items-center justify-between pt-3 text-xs">
                                   <span></span>
                                   <button className="duration-75 hover:text-foreground text-muted-foreground transition-colors" type="button">
-                                    Dismiss
+                                    {"Dismiss"}
                                   </button>
                                 </div>
                               </div>
@@ -481,24 +528,27 @@ export function Pattern() {
                   </div>
                 </div>
               </SidebarContent>
+              </SidebarProvider>
               <SidebarFooter className="gap-2 mt-2 p-2 pb-4 px-4" sidebar="footer">
+                <SidebarProvider>
                 <SidebarMenu className="gap-0" sidebar="menu">
+                  <SidebarProvider>
                   <SidebarMenuItem sidebar="menu-item">
                     <DropdownMenu>
                     <DropdownMenuTrigger className="[&>span:last-child]:truncate [&_svg]:shrink-0 [&_svg]:size-4 active:bg-sidebar-accent active:text-sidebar-accent-foreground aria-disabled:opacity-50 aria-disabled:pointer-events-none bg-card border border-border/60 data-[state=open]:bg-accent data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground disabled:opacity-50 disabled:pointer-events-none flex focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:bg-transparent group-data-[collapsible=icon]:border-0 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:p-0! group-data-[collapsible=icon]:shadow-none group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 group/menu-button h-auto hover:bg-accent/50 hover:text-sidebar-accent-foreground items-center outline-hidden overflow-hidden p-2 peer/menu-button ring-sidebar-ring rounded-md shadow-black/5 shadow-sm shrink-0 text-left text-sm transition-colors w-full" type="button" sidebar="menu-button" size="lg" aria-label="Open user menu" tabIndex="0" aria-haspopup="menu" id="base-ui-_R_ded5cq_" aria-expanded="false">
                       <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 group-data-[collapsible=icon]:size-6 ring-1 ring-success rounded-full size-7" size="default">
                         <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" src="/avatars/nick-bold.jpg" alt="Nick Bold"></AvatarImage>
                         <AvatarFallback className="bg-muted font-semibold rounded-full text-muted-foreground text-xs">
-                          NB
+                          {"NB"}
                         </AvatarFallback>
                         <AvatarBadge className="bg-success ring-background text-primary-foreground" aria-label="Nick Bold is online"></AvatarBadge>
                       </Avatar>
                       <div className="flex-1 grid group-data-[collapsible=icon]:hidden leading-tight min-w-0 text-left">
                         <span className="font-semibold text-sm truncate">
-                          Nick Bold
+                          {"Nick Bold"}
                         </span>
                         <span className="text-muted-foreground text-xs truncate">
-                          nick.bold@pulse.io
+                          {"nick.bold@pulse.io"}
                         </span>
                       </div>
                       <svg className="group-data-[collapsible=icon]:hidden lucide lucide-chevron-down opacity-50 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -507,7 +557,9 @@ export function Pattern() {
                     </DropdownMenuTrigger>
                     </DropdownMenu>
                   </SidebarMenuItem>
+                  </SidebarProvider>
                 </SidebarMenu>
+                </SidebarProvider>
               </SidebarFooter>
               <button className="-translate-y-1/2 cursor-pointer duration-200 ease-linear fixed flex focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-ring focus-visible:rounded-sm group/rail h-12 items-center outline-none pl-2 top-[calc(var(--header-height)+50%)] transition-[left] w-7 z-30" type="button" aria-label="Collapse sidebar" style={{left: "var(--sidebar-width)"}}>
                 <span className="flex flex-col items-center">
@@ -515,19 +567,22 @@ export function Pattern() {
                   <span className="bg-border block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/50 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
                 </span>
                 <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-                  Collapse
+                  {"Collapse"}
                 </span>
               </button>
             </div>
+            </SidebarProvider>
           </div>
+          </SidebarProvider>
         </Sidebar>
+        </SidebarProvider>
         <SidebarInset className="bg-background md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm min-w-0">
           <div className="flex flex-1 flex-col gap-4 min-w-0 p-4">
             <section className="flex flex-col gap-4 min-w-0 w-full">
               <header className="-mb-1 flex flex-col gap-3 items-start min-[450px]:flex-row min-[450px]:gap-4 min-[450px]:items-center min-[450px]:justify-between">
                 <div className="min-w-0 w-full">
                   <h1 className="sr-only">
-                    Tickets
+                    {"Tickets"}
                   </h1>
                   <Breadcrumb aria-label="breadcrumb">
                     <BreadcrumbList className="gap-1.5 text-muted-foreground text-sm">
@@ -537,21 +592,21 @@ export function Pattern() {
                             <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                             <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                           </svg>
-                          Home
+                          {"Home"}
                         </BreadcrumbLink>
                       </BreadcrumbItem>
                       <BreadcrumbSeparator className="[&>svg]:size-3.5 opacity-60 shrink-0" role="presentation" aria-hidden="true">
-                        /
+                        {"/"}
                       </BreadcrumbSeparator>
                       <BreadcrumbItem className="gap-1 min-w-0">
                         <BreadcrumbPage className="font-medium text-foreground truncate" role="link" aria-disabled="true" aria-current="page">
-                          Tickets
+                          {"Tickets"}
                         </BreadcrumbPage>
                       </BreadcrumbItem>
                     </BreadcrumbList>
                   </Breadcrumb>
                   <p className="mt-1 text-muted-foreground text-pretty text-sm">
-                    Every open ticket, by stage.
+                    {"Every open ticket, by stage."}
                   </p>
                 </div>
                 <div className="shrink-0">
@@ -561,7 +616,7 @@ export function Pattern() {
                       <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                         <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                       </svg>
-                      Filters
+                      {"Filters"}
                     </DropdownMenuTrigger>
                     </DropdownMenu>
                     <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
@@ -569,7 +624,7 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      New ticket
+                      {"New ticket"}
                     </Button>
                   </div>
                 </div>
@@ -590,10 +645,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="New">
-                                  New
+                                  {"New"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  3
+                                  {"3"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -623,22 +678,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5012
+                                            {"TCK-5012"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Checkout fails with a card error the bank cannot see">
-                                            Checkout fails with a card error the bank cannot see
+                                            {"Checkout fails with a card error the bank cannot see"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Aisha Bello at Atlas Freight">
-                                              Aisha Bello at Atlas Freight
+                                              {"Aisha Bello at Atlas Freight"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -648,11 +703,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Priya Patel" src="/avatars/priya-patel.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              PP
+                                              {"PP"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Priya Patel">
-                                            Priya Patel
+                                            {"Priya Patel"}
                                           </div>
                                         </div>
                                         <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 3h 40m" title="Response due in 3h 40m">
@@ -661,7 +716,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            3h 40m
+                                            {"3h 40m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -674,22 +729,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5019
+                                            {"TCK-5019"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Normal
+                                              {"Normal"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Push notifications stopped after the 4.2 release">
-                                            Push notifications stopped after the 4.2 release
+                                            {"Push notifications stopped after the 4.2 release"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Ryan Mercer at Orbit Software">
-                                              Ryan Mercer at Orbit Software
+                                              {"Ryan Mercer at Orbit Software"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -699,11 +754,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Diego Ramos" src="/avatars/diego-ramos.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              DR
+                                              {"DR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Diego Ramos">
-                                            Diego Ramos
+                                            {"Diego Ramos"}
                                           </div>
                                         </div>
                                         <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 5h 10m" title="Response due in 5h 10m">
@@ -712,7 +767,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            5h 10m
+                                            {"5h 10m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -725,22 +780,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5024
+                                            {"TCK-5024"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="App signs staff out mid-shift on iOS 19">
-                                            App signs staff out mid-shift on iOS 19
+                                            {"App signs staff out mid-shift on iOS 19"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Hana Kim at Meridian Retail">
-                                              Hana Kim at Meridian Retail
+                                              {"Hana Kim at Meridian Retail"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -750,11 +805,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Sana Qureshi" src="/avatars/sana-qureshi.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              SQ
+                                              {"SQ"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Sana Qureshi">
-                                            Sana Qureshi
+                                            {"Sana Qureshi"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 2h 15m" title="Response due in 2h 15m">
@@ -763,7 +818,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            2h 15m
+                                            {"2h 15m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -776,7 +831,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -791,10 +846,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="Needs Reply">
-                                  Needs Reply
+                                  {"Needs Reply"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  4
+                                  {"4"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -824,22 +879,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5031
+                                            {"TCK-5031"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Offline orders never sync once the phone reconnects">
-                                            Offline orders never sync once the phone reconnects
+                                            {"Offline orders never sync once the phone reconnects"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Marcus Hale at Apex Manufacturing">
-                                              Marcus Hale at Apex Manufacturing
+                                              {"Marcus Hale at Apex Manufacturing"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -849,11 +904,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Diego Ramos" src="/avatars/diego-ramos.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              DR
+                                              {"DR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Diego Ramos">
-                                            Diego Ramos
+                                            {"Diego Ramos"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 1h 40m" title="Response due in 1h 40m">
@@ -862,7 +917,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            1h 40m
+                                            {"1h 40m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -875,22 +930,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5003
+                                            {"TCK-5003"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Low
+                                              {"Low"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Weekly digest email arrives with an empty ticket list">
-                                            Weekly digest email arrives with an empty ticket list
+                                            {"Weekly digest email arrives with an empty ticket list"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Priya Raman at Brightwave Media">
-                                              Priya Raman at Brightwave Media
+                                              {"Priya Raman at Brightwave Media"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -900,11 +955,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Sana Qureshi" src="/avatars/sana-qureshi.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              SQ
+                                              {"SQ"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Sana Qureshi">
-                                            Sana Qureshi
+                                            {"Sana Qureshi"}
                                           </div>
                                         </div>
                                         <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 6h 05m" title="Response due in 6h 05m">
@@ -913,7 +968,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            6h 05m
+                                            {"6h 05m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -926,22 +981,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4988
+                                            {"TCK-4988"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Normal
+                                              {"Normal"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Bulk import maps the wrong column to customer email">
-                                            Bulk import maps the wrong column to customer email
+                                            {"Bulk import maps the wrong column to customer email"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Tom Whitfield at Cedar & Co">
-                                              Tom Whitfield at Cedar & Co
+                                              {"Tom Whitfield at Cedar & Co"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -951,11 +1006,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Diego Ramos" src="/avatars/diego-ramos.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              DR
+                                              {"DR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Diego Ramos">
-                                            Diego Ramos
+                                            {"Diego Ramos"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 1h 25m" title="Response due in 1h 25m">
@@ -964,7 +1019,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            1h 25m
+                                            {"1h 25m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -977,22 +1032,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4995
+                                            {"TCK-4995"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Invoice total still wrong after the plan downgrade">
-                                            Invoice total still wrong after the plan downgrade
+                                            {"Invoice total still wrong after the plan downgrade"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="David Okafor at Vertex Health">
-                                              David Okafor at Vertex Health
+                                              {"David Okafor at Vertex Health"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1002,11 +1057,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Priya Patel" src="/avatars/priya-patel.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              PP
+                                              {"PP"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Priya Patel">
-                                            Priya Patel
+                                            {"Priya Patel"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 48m" title="Response due in 48m">
@@ -1015,7 +1070,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            48m
+                                            {"48m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1028,7 +1083,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -1043,10 +1098,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="Escalated">
-                                  Escalated
+                                  {"Escalated"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  3
+                                  {"3"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1076,22 +1131,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4966
+                                            {"TCK-4966"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Webhook retries stop after the first 5xx from our endpoint">
-                                            Webhook retries stop after the first 5xx from our endpoint
+                                            {"Webhook retries stop after the first 5xx from our endpoint"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Carla Ferreira at Quanta Devices">
-                                              Carla Ferreira at Quanta Devices
+                                              {"Carla Ferreira at Quanta Devices"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1101,11 +1156,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Jamal Reid" src="/avatars/jamal-reid.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              JR
+                                              {"JR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Jamal Reid">
-                                            Jamal Reid
+                                            {"Jamal Reid"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 1h 05m" title="Response due in 1h 05m">
@@ -1114,7 +1169,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            1h 05m
+                                            {"1h 05m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1127,22 +1182,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4960
+                                            {"TCK-4960"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Urgent
+                                              {"Urgent"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Data export has failed on three consecutive nightly runs">
-                                            Data export has failed on three consecutive nightly runs
+                                            {"Data export has failed on three consecutive nightly runs"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Elena Sokolova at Cobalt Logistics">
-                                              Elena Sokolova at Cobalt Logistics
+                                              {"Elena Sokolova at Cobalt Logistics"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1152,11 +1207,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Jamal Reid" src="/avatars/jamal-reid.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              JR
+                                              {"JR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Jamal Reid">
-                                            Jamal Reid
+                                            {"Jamal Reid"}
                                           </div>
                                         </div>
                                         <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 36m" title="Breach risk in 36m">
@@ -1165,7 +1220,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            36m
+                                            {"36m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1178,22 +1233,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4971
+                                            {"TCK-4971"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Search omits projects migrated in the last 24 hours">
-                                            Search omits projects migrated in the last 24 hours
+                                            {"Search omits projects migrated in the last 24 hours"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Ben Travers at Ridgeline Energy">
-                                              Ben Travers at Ridgeline Energy
+                                              {"Ben Travers at Ridgeline Energy"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1203,11 +1258,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Sana Qureshi" src="/avatars/sana-qureshi.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              SQ
+                                              {"SQ"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Sana Qureshi">
-                                            Sana Qureshi
+                                            {"Sana Qureshi"}
                                           </div>
                                         </div>
                                         <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 2h 15m" title="Response due in 2h 15m">
@@ -1216,7 +1271,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            2h 15m
+                                            {"2h 15m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1229,7 +1284,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -1245,10 +1300,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="Waiting Customer">
-                                  Waiting Customer
+                                  {"Waiting Customer"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  3
+                                  {"3"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1278,22 +1333,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-5038
+                                            {"TCK-5038"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Normal
+                                              {"Normal"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Barcode scanner opens the camera but never reads a code">
-                                            Barcode scanner opens the camera but never reads a code
+                                            {"Barcode scanner opens the camera but never reads a code"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Hana Kim at Meridian Retail">
-                                              Hana Kim at Meridian Retail
+                                              {"Hana Kim at Meridian Retail"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1303,11 +1358,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Jamal Reid" src="/avatars/jamal-reid.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              JR
+                                              {"JR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Jamal Reid">
-                                            Jamal Reid
+                                            {"Jamal Reid"}
                                           </div>
                                         </div>
                                         <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 6h 05m" title="Response due in 6h 05m">
@@ -1316,7 +1371,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            6h 05m
+                                            {"6h 05m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1329,22 +1384,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4937
+                                            {"TCK-4937"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Normal
+                                              {"Normal"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Confirm the maintenance window before we rotate the API key">
-                                            Confirm the maintenance window before we rotate the API key
+                                            {"Confirm the maintenance window before we rotate the API key"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Elena Sokolova at Cobalt Logistics">
-                                              Elena Sokolova at Cobalt Logistics
+                                              {"Elena Sokolova at Cobalt Logistics"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1354,11 +1409,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Sana Qureshi" src="/avatars/sana-qureshi.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              SQ
+                                              {"SQ"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Sana Qureshi">
-                                            Sana Qureshi
+                                            {"Sana Qureshi"}
                                           </div>
                                         </div>
                                         <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="Paused in Paused" title="Paused in Paused">
@@ -1367,7 +1422,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            Paused
+                                            {"Paused"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1380,22 +1435,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4944
+                                            {"TCK-4944"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Low
+                                              {"Low"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Approve the temporary allowlist for the partner sandbox">
-                                            Approve the temporary allowlist for the partner sandbox
+                                            {"Approve the temporary allowlist for the partner sandbox"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Carla Ferreira at Quanta Devices">
-                                              Carla Ferreira at Quanta Devices
+                                              {"Carla Ferreira at Quanta Devices"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1405,11 +1460,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Omar Haddad" src="/avatars/omar-haddad.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              OH
+                                              {"OH"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Omar Haddad">
-                                            Omar Haddad
+                                            {"Omar Haddad"}
                                           </div>
                                         </div>
                                         <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="Paused in Paused" title="Paused in Paused">
@@ -1418,7 +1473,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            Paused
+                                            {"Paused"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1431,7 +1486,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -1448,10 +1503,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="SLA Risk">
-                                  SLA Risk
+                                  {"SLA Risk"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  3
+                                  {"3"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1481,22 +1536,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4979
+                                            {"TCK-4979"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Urgent
+                                              {"Urgent"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Refund still not visible three days after approval">
-                                            Refund still not visible three days after approval
+                                            {"Refund still not visible three days after approval"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="David Okafor at Vertex Health">
-                                              David Okafor at Vertex Health
+                                              {"David Okafor at Vertex Health"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1506,11 +1561,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Priya Patel" src="/avatars/priya-patel.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              PP
+                                              {"PP"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Priya Patel">
-                                            Priya Patel
+                                            {"Priya Patel"}
                                           </div>
                                         </div>
                                         <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 12m" title="Breach risk in 12m">
@@ -1519,7 +1574,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            12m
+                                            {"12m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1532,22 +1587,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4972
+                                            {"TCK-4972"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-red-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Urgent
+                                              {"Urgent"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Admins locked out after the enforced SSO change">
-                                            Admins locked out after the enforced SSO change
+                                            {"Admins locked out after the enforced SSO change"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Aisha Bello at Atlas Freight">
-                                              Aisha Bello at Atlas Freight
+                                              {"Aisha Bello at Atlas Freight"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1557,11 +1612,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Jamal Reid" src="/avatars/jamal-reid.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              JR
+                                              {"JR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Jamal Reid">
-                                            Jamal Reid
+                                            {"Jamal Reid"}
                                           </div>
                                         </div>
                                         <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 18m" title="Breach risk in 18m">
@@ -1570,7 +1625,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            18m
+                                            {"18m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1583,22 +1638,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4976
+                                            {"TCK-4976"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              High
+                                              {"High"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="First response missed on a Business Critical account">
-                                            First response missed on a Business Critical account
+                                            {"First response missed on a Business Critical account"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Sofia Marchetti at Summit Financial">
-                                              Sofia Marchetti at Summit Financial
+                                              {"Sofia Marchetti at Summit Financial"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1608,11 +1663,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Omar Haddad" src="/avatars/omar-haddad.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              OH
+                                              {"OH"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Omar Haddad">
-                                            Omar Haddad
+                                            {"Omar Haddad"}
                                           </div>
                                         </div>
                                         <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 41m" title="Breach risk in 41m">
@@ -1621,7 +1676,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            41m
+                                            {"41m"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1634,7 +1689,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -1650,10 +1705,10 @@ export function Pattern() {
                               </span>
                               <div className="flex flex-1 gap-2 items-center min-w-0">
                                 <span className="font-semibold leading-5 text-sm truncate" title="Resolved">
-                                  Resolved
+                                  {"Resolved"}
                                 </span>
                                 <span className="font-medium inline-flex items-center leading-none self-center shrink-0 tabular-nums text-muted-foreground text-xs">
-                                  2
+                                  {"2"}
                                 </span>
                               </div>
                               <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
@@ -1683,22 +1738,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4870
+                                            {"TCK-4870"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Normal
+                                              {"Normal"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Seat count was wrong after the workspace merge">
-                                            Seat count was wrong after the workspace merge
+                                            {"Seat count was wrong after the workspace merge"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Ben Travers at Ridgeline Energy">
-                                              Ben Travers at Ridgeline Energy
+                                              {"Ben Travers at Ridgeline Energy"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1708,11 +1763,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Priya Patel" src="/avatars/priya-patel.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              PP
+                                              {"PP"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Priya Patel">
-                                            Priya Patel
+                                            {"Priya Patel"}
                                           </div>
                                         </div>
                                         <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
@@ -1721,7 +1776,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            Met
+                                            {"Met"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1734,22 +1789,22 @@ export function Pattern() {
                                       <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
                                         <div className="flex gap-2 items-center justify-between min-w-0">
                                           <ItemDescription className="font-medium group-data-[size=xs]/item:text-xs leading-none tabular-nums text-[0.6875rem] text-left text-muted-foreground">
-                                            TCK-4881
+                                            {"TCK-4881"}
                                           </ItemDescription>
                                           <ItemActions className="gap-2 shrink-0">
                                             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
                                               <span className="bg-muted-foreground rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                                              Low
+                                              {"Low"}
                                             </Badge>
                                           </ItemActions>
                                         </div>
                                         <ItemContent className="gap-1 group-data-[size=xs]/item:gap-0 min-w-0">
                                           <ItemTitle className="font-medium gap-2 leading-5 line-clamp-2 text-sm underline-offset-4 w-auto" title="Password reset email landed in the spam folder">
-                                            Password reset email landed in the spam folder
+                                            {"Password reset email landed in the spam folder"}
                                           </ItemTitle>
                                           <ItemDescription className="group-data-[size=xs]/item:text-xs line-clamp-1 text-left text-muted-foreground text-xs">
                                             <span className="min-w-0 truncate" title="Tom Whitfield at Cedar & Co">
-                                              Tom Whitfield at Cedar & Co
+                                              {"Tom Whitfield at Cedar & Co"}
                                             </span>
                                           </ItemDescription>
                                         </ItemContent>
@@ -1759,11 +1814,11 @@ export function Pattern() {
                                           <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-full size-5" size="default">
                                             <AvatarImage className="[&~[data-slot=avatar-fallback]]:invisible absolute inset-0 rounded-full" alt="Diego Ramos" src="/avatars/diego-ramos.jpg"></AvatarImage>
                                             <AvatarFallback className="bg-muted font-semibold rounded-full text-[0.5625rem] text-muted-foreground">
-                                              DR
+                                              {"DR"}
                                             </AvatarFallback>
                                           </Avatar>
                                           <div className="font-medium min-w-0 text-xs truncate" title="Diego Ramos">
-                                            Diego Ramos
+                                            {"Diego Ramos"}
                                           </div>
                                         </div>
                                         <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
@@ -1772,7 +1827,7 @@ export function Pattern() {
                                             <path d="M12 6v6l4 2"></path>
                                           </svg>
                                           <span className="font-semibold shrink-0 tabular-nums">
-                                            Met
+                                            {"Met"}
                                           </span>
                                         </span>
                                       </ItemFooter>
@@ -1785,7 +1840,7 @@ export function Pattern() {
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
-                                Add ticket
+                                {"Add ticket"}
                               </Button>
                             </CardContent>
                           </Card>
@@ -1799,9 +1854,7 @@ export function Pattern() {
                 </ScrollArea>
               </Kanban>
               <div id="DndDescribedBy-0" style={{display: "none"}}>
-                To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+                {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
               </div>
               <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
             </section>
@@ -1809,9 +1862,10 @@ export function Pattern() {
         </SidebarInset>
       </div>
     </div>
+    </SidebarProvider>
     <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
     <span id="recharts_measurement_span" aria-hidden="true" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "11px", letterSpacing: "normal"}}>
-      Mar 31
+      {"Mar 31"}
     </span>
   </>
   )

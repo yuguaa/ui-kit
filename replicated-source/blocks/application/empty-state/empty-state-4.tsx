@@ -30,14 +30,14 @@ export function Pattern() {
                   </div>
                   <div className="flex flex-col gap-2">
                     <EmptyTitle className="font-semibold sm:text-2xl text-xl tracking-tight">
-                      No reports for this workspace
+                      {"No reports for this workspace"}
                     </EmptyTitle>
                     <EmptyDescription className="text-sm/relaxed">
                       <span className="block">
-                        Create your first report to turn tracked companies
+                        {"Create your first report to turn tracked companies"}
                       </span>
                       <span className="block">
-                        into one clear view your team can share.
+                        {"into one clear view your team can share."}
                       </span>
                     </EmptyDescription>
                   </div>
@@ -49,14 +49,14 @@ export function Pattern() {
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
-                      Add report
+                      {"Add report"}
                     </Button>
                     <Button type="button" tabIndex="0">
                       <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" data-icon="inline-start" aria-hidden="true">
                         <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
-                      View sample
+                      {"View sample"}
                     </Button>
                   </div>
                 </EmptyContent>

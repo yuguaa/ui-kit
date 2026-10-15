@@ -55,6 +55,7 @@ import {
 
 export function Pattern() {
   return (
+    <SidebarProvider>
     <div className="bg-background flex group/sidebar-wrapper h-svh has-data-[variant=inset]:bg-sidebar min-h-0 overflow-hidden text-foreground w-full" style={{"--sidebar-width": "19rem", "--sidebar-width-icon": "3rem"}}>
       <div className="hidden md:flex">
         <nav className="after:absolute after:bg-input/50 after:inset-y-0 after:right-0 after:w-px flex flex-col h-full items-center justify-between relative shrink-0 w-12" aria-label="Sections">
@@ -230,25 +231,27 @@ export function Pattern() {
                 </svg>
               </a>
             </span>
+            <SidebarProvider>
             <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
               <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
-                Toggle Sidebar
+                {"Toggle Sidebar"}
               </span>
             </SidebarTrigger>
+            </SidebarProvider>
             <h1 className="font-medium text-sm truncate">
-              Fleet Protection
+              {"Fleet Protection"}
             </h1>
             <Separator className="bg-input data-vertical:self-center h-3 max-sm:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             <div className="flex gap-1.5 items-center max-sm:hidden">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                248 Endpoints
+                {"248 Endpoints"}
               </Badge>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                12 Threats
+                {"12 Threats"}
               </Badge>
             </div>
           </div>
@@ -261,10 +264,10 @@ export function Pattern() {
                 <circle cx="18" cy="5" r="3"></circle>
               </svg>
               <span className="sm:hidden">
-                New
+                {"New"}
               </span>
               <span className="max-sm:hidden">
-                New Mission
+                {"New Mission"}
               </span>
             </DialogTrigger>
             </Dialog>
@@ -275,7 +278,7 @@ export function Pattern() {
                 <path d="M22 4h-4"></path>
                 <circle cx="4" cy="20" r="2"></circle>
               </svg>
-              Open Chat
+              {"Open Chat"}
             </Button>
             <Button className="dark:bg-clip-border shadow-xs sm:hidden" type="button" tabIndex="0" aria-label="Open chat" aria-expanded="false">
               <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
@@ -304,24 +307,30 @@ export function Pattern() {
                 <div className="pt-3 px-3 shrink-0">
                   <TabsList className="bg-input/40 h-7 p-0 rounded-md w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
                     <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.5 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_12_" compositeItemActive="" aria-controls="base-ui-_r_15_">
-                      Security
+                      {"Security"}
                     </TabsTrigger>
                     <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_13_">
-                      Assets
+                      {"Assets"}
                     </TabsTrigger>
                     <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.5 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_14_">
-                      Events
+                      {"Events"}
                     </TabsTrigger>
                   </TabsList>
                 </div>
                 <div className="[--scroll-fade-reveal:--spacing(8)] flex-1 min-h-0 no-scrollbar overflow-y-auto p-3 scroll-fade-y scroll-py-10">
                   <TabsContent data-orientation="horizontal" activationDirection="none" id="base-ui-_r_15_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_12_">
+                    <SidebarProvider>
                     <SidebarGroup className="p-0" sidebar="group">
+                      <SidebarProvider>
                       <SidebarGroupLabel className="h-6 px-0 text-ring" sidebar="group-label">
-                        Security Scope
+                        {"Security Scope"}
                       </SidebarGroupLabel>
+                      </SidebarProvider>
+                      <SidebarProvider>
                       <SidebarGroupContent sidebar="group-content">
+                        <SidebarProvider>
                         <SidebarMenu sidebar="menu">
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
                             <Collapsible data-open="">
                               <Collapsible>
@@ -344,14 +353,14 @@ export function Pattern() {
                                   <circle cx="18" cy="6" r="3"></circle>
                                 </svg>
                                 <span className="min-w-0 truncate">
-                                  Endpoints
+                                  {"Endpoints"}
                                 </span>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/20 border-0 border-success/15 dark:bg-success/20 dark:border-success/25 dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-0.75 h-4.5 min-w-4.5 ml-auto outline-none pr-1.5 px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
                                   <svg className="lucide lucide-shield-check size-2.5!" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                     <path d="m9 12 2 2 4-4"></path>
                                   </svg>
-                                  Stable
+                                  {"Stable"}
                                 </Badge>
                               </CollapsibleTrigger>
                               </Collapsible>
@@ -366,10 +375,10 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Devices
+                                          {"Devices"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          248
+                                          {"248"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -400,10 +409,10 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Threats
+                                          {"Threats"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          12
+                                          {"12"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -418,7 +427,7 @@ export function Pattern() {
                                                 <rect width="7" height="5" x="3" y="16" rx="1"></rect>
                                               </svg>
                                               <span className="min-w-0 truncate">
-                                                Overview
+                                                {"Overview"}
                                               </span>
                                             </SidebarMenuSubButton>
                                           </SidebarMenuSubItem>
@@ -433,7 +442,7 @@ export function Pattern() {
                                                 <path d="m16 16-1.9-1.9"></path>
                                               </svg>
                                               <span className="min-w-0 truncate">
-                                                Suspicious Activity
+                                                {"Suspicious Activity"}
                                               </span>
                                             </SidebarMenuSubButton>
                                           </SidebarMenuSubItem>
@@ -445,7 +454,7 @@ export function Pattern() {
                                                 <path d="M12 16h.01"></path>
                                               </svg>
                                               <span className="min-w-0 truncate">
-                                                Incidents
+                                                {"Incidents"}
                                               </span>
                                             </SidebarMenuSubButton>
                                           </SidebarMenuSubItem>
@@ -456,7 +465,7 @@ export function Pattern() {
                                                 <path d="M17 12h-2l-2 5-2-10-2 5H7"></path>
                                               </svg>
                                               <span className="min-w-0 truncate">
-                                                Anomalies
+                                                {"Anomalies"}
                                               </span>
                                             </SidebarMenuSubButton>
                                           </SidebarMenuSubItem>
@@ -474,7 +483,7 @@ export function Pattern() {
                                       </svg>
                                     </SortableItemHandle>
                                     <a className="[&_svg]:pointer-events-none [&_svg]:shrink-0 absolute active:translate-y-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-5 hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none px-0 right-0 select-none shrink-0 text-muted-foreground text-xs top-1.5 transition-all w-auto whitespace-nowrap" href="#" aria-label="Review Threats">
-                                      Review
+                                      {"Review"}
                                     </a>
                                   </SortableItem>
                                   <SortableItem className="data-[dragging=true]:bg-background data-[dragging=true]:pointer-events-none group/menu-sub-item relative rounded-md text-sidebar-foreground" sidebar="menu-sub-item" value="risks" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
@@ -486,13 +495,13 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Risks
+                                          {"Risks"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          37
+                                          {"37"}
                                         </Badge>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-0 border-destructive/15 dark:bg-destructive/10 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 min-w-4 ml-auto outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-destructive transition-shadow">
-                                          High
+                                          {"High"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -517,10 +526,10 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Policies
+                                          {"Policies"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          8
+                                          {"8"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -551,10 +560,10 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Quarantined
+                                          {"Quarantined"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          5
+                                          {"5"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -579,13 +588,13 @@ export function Pattern() {
                                         </svg>
                                         <span className="shrink-0 size-4" aria-hidden="true"></span>
                                         <span className="min-w-0 truncate">
-                                          Tasks
+                                          {"Tasks"}
                                         </span>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border-0 border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1.5 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                                          7
+                                          {"7"}
                                         </Badge>
                                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/20 border-0 border-success/15 dark:bg-success/20 dark:border-success/25 dark:text-success-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 min-w-4 ml-auto outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                          Active
+                                          {"Active"}
                                         </Badge>
                                       </CollapsibleTrigger>
                                       </Collapsible>
@@ -603,14 +612,14 @@ export function Pattern() {
                                   </SortableItem>
                                 </Sortable>
                                 <div id="DndDescribedBy-0" style={{display: "none"}}>
-                                  To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
+                                  {"To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel."}
                                 </div>
                                 <div id="DndLiveRegion-0" role="status" aria-live="assertive" aria-atomic="true" style={{position: "fixed", top: "0px", left: "0px", width: "1px", height: "1px", margin: "-1px", border: "0px", padding: "0px", overflow: "hidden", clip: "rect(0px, 0px, 0px, 0px)", clipPath: "inset(100%)", whiteSpace: "nowrap"}}></div>
                               </CollapsibleContent>
                             </Collapsible>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
                             <Collapsible data-closed="">
                               <Collapsible>
@@ -625,15 +634,17 @@ export function Pattern() {
                                   <path d="M16 12h.01"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
-                                  Identity & Access
+                                  {"Identity & Access"}
                                 </span>
                               </CollapsibleTrigger>
                               </Collapsible>
                               <Button className="absolute dark:bg-clip-border right-0 shadow-xs top-1" type="button" tabIndex="0" aria-label="Add to Identity & Access">
-                                Add
+                                {"Add"}
                               </Button>
                             </Collapsible>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
                             <Collapsible data-closed="">
                               <Collapsible>
@@ -646,12 +657,14 @@ export function Pattern() {
                                   <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
-                                  Application Security
+                                  {"Application Security"}
                                 </span>
                               </CollapsibleTrigger>
                               </Collapsible>
                             </Collapsible>
                           </SidebarMenuItem>
+                          </SidebarProvider>
+                          <SidebarProvider>
                           <SidebarMenuItem sidebar="menu-item">
                             <Collapsible data-closed="">
                               <Collapsible>
@@ -667,18 +680,22 @@ export function Pattern() {
                                   <path d="M3 12A9 3 0 0 0 14.59 14.87"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
-                                  Data Protection
+                                  {"Data Protection"}
                                 </span>
                               </CollapsibleTrigger>
                               </Collapsible>
                               <a className="[&_svg]:pointer-events-none [&_svg]:shrink-0 absolute cn-button cn-button-size-xs cn-button-variant-outline dark:bg-clip-border disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-0 select-none shadow-xs shrink-0 top-1 transition-all whitespace-nowrap" href="#" aria-label="Review Data Protection">
-                                Review
+                                {"Review"}
                               </a>
                             </Collapsible>
                           </SidebarMenuItem>
+                          </SidebarProvider>
                         </SidebarMenu>
+                        </SidebarProvider>
                       </SidebarGroupContent>
+                      </SidebarProvider>
                     </SidebarGroup>
+                    </SidebarProvider>
                   </TabsContent>
                 </div>
               </Tabs>
@@ -862,9 +879,10 @@ export function Pattern() {
           <span className="bg-foreground/40 block duration-100 ease-linear group-hover/rail:-rotate-40 group-hover/rail:bg-foreground/60 h-2 origin-top rounded-b-full transition-all w-0.5" aria-hidden="true"></span>
         </span>
         <span className="-ml-2 -translate-x-0.5 absolute bg-foreground border border-border duration-200 ease-out font-medium group-hover/rail:opacity-100 group-hover/rail:translate-x-0 left-full opacity-0 pointer-events-none px-2 py-0.5 rounded-md shadow-black/5 shadow-xs text-[11px] text-background transition-all whitespace-nowrap">
-          Collapse
+          {"Collapse"}
         </span>
       </button>
     </div>
+    </SidebarProvider>
   )
 }

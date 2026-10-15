@@ -14,10 +14,10 @@ export function Pattern() {
         <div className="flex flex-col gap-4">
           <div className="space-y-0.5">
             <h1 className="font-semibold text-xl">
-              Integrations
+              {"Integrations"}
             </h1>
             <p className="text-muted-foreground text-sm">
-              Enhance your workspace by linking external tools for communication, payments, and automation.
+              {"Enhance your workspace by linking external tools for communication, payments, and automation."}
             </p>
           </div>
         </div>
@@ -46,12 +46,12 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Releases, on-call alerts, and approvals in your channels.
+                {"Releases, on-call alerts, and approvals in your channels."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
               <Button type="button" tabIndex="0" aria-pressed="true">
-                Disconnect
+                {"Disconnect"}
               </Button>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -78,7 +78,7 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Charges, retries, and payouts across connected tools.
+                {"Charges, retries, and payouts across connected tools."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
@@ -90,7 +90,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect
+                {"Connect"}
               </Button>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -129,12 +129,12 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                DB and auth events for live dashboards.
+                {"DB and auth events for live dashboards."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
               <Button type="button" tabIndex="0" aria-pressed="true">
-                Disconnect
+                {"Disconnect"}
               </Button>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -161,12 +161,12 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Automation runs: successes and failures in one place.
+                {"Automation runs: successes and failures in one place."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
               <Button type="button" tabIndex="0" aria-pressed="true">
-                Disconnect
+                {"Disconnect"}
               </Button>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -207,7 +207,7 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Recordings, attendance, and follow-ups synced.
+                {"Recordings, attendance, and follow-ups synced."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
@@ -219,7 +219,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect
+                {"Connect"}
               </Button>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_d_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -246,12 +246,12 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Async walkthroughs and feedback in one queue.
+                {"Async walkthroughs and feedback in one queue."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
               <Button type="button" tabIndex="0" aria-pressed="true">
-                Disconnect
+                {"Disconnect"}
               </Button>
               <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_g_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
@@ -278,7 +278,7 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Community signals and mod flags to internal channels.
+                {"Community signals and mod flags to internal channels."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
@@ -290,7 +290,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect
+                {"Connect"}
               </Button>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_j_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -379,7 +379,7 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                AI for documents and content workflows.
+                {"AI for documents and content workflows."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
@@ -391,7 +391,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect
+                {"Connect"}
               </Button>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_m_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
@@ -418,7 +418,7 @@ export function Pattern() {
                 </Button>
               </div>
               <p className="text-muted-foreground text-sm">
-                Playlists and listening data for workspace apps.
+                {"Playlists and listening data for workspace apps."}
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
@@ -430,7 +430,7 @@ export function Pattern() {
                   <path d="M10.5 16.5 13 14"></path>
                   <path d="m18 3-4 4h6l-4 4"></path>
                 </svg>
-                Connect
+                {"Connect"}
               </Button>
               <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_p_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>

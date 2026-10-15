@@ -13,10 +13,10 @@ export function Pattern() {
           <FramePanel className="space-y-5">
             <div className="flex flex-col gap-3">
               <a className="font-medium hover:text-primary leading-tight text-foreground text-sm" href="">
-                Sponsors
+                {"Sponsors"}
               </a>
               <p className="leading-relaxed text-muted-foreground text-sm">
-                Checkout built for speed and consistent transaction high performance.
+                {"Checkout built for speed and consistent transaction high performance."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5">
@@ -62,10 +62,10 @@ export function Pattern() {
           <FramePanel className="space-y-5">
             <div className="flex flex-col gap-3">
               <a className="font-medium hover:text-primary leading-tight text-foreground text-sm" href="">
-                Affiliates
+                {"Affiliates"}
               </a>
               <p className="leading-relaxed text-muted-foreground text-sm">
-                Authorized partners promoting our services in multiple regions.
+                {"Authorized partners promoting our services in multiple regions."}
               </p>
             </div>
             <div className="flex flex-wrap gap-2.5">

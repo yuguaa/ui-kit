@@ -20,25 +20,25 @@ export function Pattern() {
       <div className="max-w-3xl space-y-4 w-full">
         <div className="space-y-0.5">
           <h1 className="font-semibold text-xl">
-            Notification Channels
+            {"Notification Channels"}
           </h1>
           <p className="text-muted-foreground text-sm">
-            Pick where each type of update lands so nothing important gets missed.
+            {"Pick where each type of update lands so nothing important gets missed."}
           </p>
         </div>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList className="mb-3.5 p-0!" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
             <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_4_" extracted="1">
-              Projects
+              {"Projects"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-              Messages
+              {"Messages"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-              Reports
+              {"Reports"}
             </TabsTrigger>
             <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-              System
+              {"System"}
             </TabsTrigger>
           </TabsList>
           <TabsContent className="space-y-5" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_4_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
@@ -47,23 +47,23 @@ export function Pattern() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="font-semibold w-full">
-                      Task activity
+                      {"Task activity"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      Email
+                      {"Email"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      Slack
+                      {"Slack"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      In-app
+                      {"In-app"}
                     </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Task assigned to you
+                      {"Task assigned to you"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -98,7 +98,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Due date approaching
+                      {"Due date approaching"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -127,7 +127,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Status changed
+                      {"Status changed"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -156,7 +156,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Mentioned in a comment
+                      {"Mentioned in a comment"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -197,7 +197,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      File attachment added
+                      {"File attachment added"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -226,23 +226,23 @@ export function Pattern() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="font-semibold w-full">
-                      Project updates
+                      {"Project updates"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      Email
+                      {"Email"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      Slack
+                      {"Slack"}
                     </TableHead>
                     <TableHead className="text-muted-foreground text-xs">
-                      In-app
+                      {"In-app"}
                     </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Milestone completed
+                      {"Milestone completed"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -277,7 +277,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Sprint ended
+                      {"Sprint ended"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -306,7 +306,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      New member added to project
+                      {"New member added to project"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
@@ -335,7 +335,7 @@ export function Pattern() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-sm">
-                      Project archived
+                      {"Project archived"}
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">

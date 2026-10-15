@@ -50,7 +50,7 @@ export function Pattern() {
   <>
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        User profile settings dialog
+        {"User profile settings dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
         <Button type="button" tabIndex="0" extracted="1">
@@ -67,7 +67,7 @@ export function Pattern() {
             <circle cx="10" cy="8" r="5"></circle>
             <circle cx="18" cy="18" r="3"></circle>
           </svg>
-          Open profile settings
+          {"Open profile settings"}
         </Button>
       </div>
     </main>
@@ -84,7 +84,7 @@ export function Pattern() {
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                   <span className="truncate">
-                    Profile
+                    {"Profile"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
@@ -96,7 +96,7 @@ export function Pattern() {
                     <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                   </svg>
                   <span className="truncate">
-                    Workspace
+                    {"Workspace"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
@@ -107,7 +107,7 @@ export function Pattern() {
                     <circle cx="9" cy="7" r="4"></circle>
                   </svg>
                   <span className="truncate">
-                    Team
+                    {"Team"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
@@ -116,7 +116,7 @@ export function Pattern() {
                     <line x1="2" x2="22" y1="10" y2="10"></line>
                   </svg>
                   <span className="truncate">
-                    Billing
+                    {"Billing"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
@@ -132,7 +132,7 @@ export function Pattern() {
                     <path d="M8 12H3"></path>
                   </svg>
                   <span className="truncate">
-                    Preferences
+                    {"Preferences"}
                   </span>
                 </TabsTrigger>
               </TabsList>
@@ -142,10 +142,10 @@ export function Pattern() {
             <DialogHeader className="gap-0 px-6 py-0 shrink-0 text-left">
               <div className="border-b border-border flex flex-col gap-1.5 pr-12 py-4 w-full">
                 <DialogTitle className="leading-6 text-lg" id="base-ui-_r_7_">
-                  Profile
+                  {"Profile"}
                 </DialogTitle>
                 <DialogDescription id="base-ui-_r_8_">
-                  Manage your account identity.
+                  {"Manage your account identity."}
                 </DialogDescription>
               </div>
             </DialogHeader>
@@ -159,12 +159,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-avatar">
                               <span className="capitalize">
-                                Profile photo
+                                {"Profile photo"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Shown in comments and mentions.
+                            {"Shown in comments and mentions."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
@@ -181,7 +181,7 @@ export function Pattern() {
                                     <path d="m17 8-5-5-5 5"></path>
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                   </svg>
-                                  Change
+                                  {"Change"}
                                 </TooltipTrigger>
                                 </Tooltip>
                                 <input className="sr-only" id="profile-avatar" accept="image/*" aria-label="Upload profile avatar" tabIndex="-1" type="file" />
@@ -192,7 +192,7 @@ export function Pattern() {
                                   <path d="M18 6 6 18"></path>
                                   <path d="m6 6 12 12"></path>
                                 </svg>
-                                Remove
+                                {"Remove"}
                               </TooltipTrigger>
                               </Tooltip>
                             </div>
@@ -204,12 +204,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-name">
                               <span className="capitalize">
-                                Full name
+                                {"Full name"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Used across Atlas.
+                            {"Used across Atlas."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
@@ -223,19 +223,19 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-email">
                               <span className="capitalize">
-                                Email address
+                                {"Email address"}
                               </span>
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="cursor-help focus-visible:ring-2 focus-visible:ring-ring inline-flex outline-none rounded-sm" id="base-ui-_r_h_" baseUiTooltipTrigger="">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-success-foreground transition-shadow">
-                                Verified
+                                {"Verified"}
                               </Badge>
                             </TooltipTrigger>
                             </Tooltip>
                           </div>
                           <FieldDescription className="text-sm">
-                            Primary sign-in email.
+                            {"Primary sign-in email."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
@@ -249,12 +249,12 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-username">
                               <span className="capitalize">
-                                Username
+                                {"Username"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Used in mentions and links.
+                            {"Used in mentions and links."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
@@ -262,7 +262,7 @@ export function Pattern() {
                             <InputGroup role="group">
                               <InputGroupAddon role="group" data-align="inline-start">
                                 <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                  @
+                                  {"@"}
                                 </span>
                               </InputGroupAddon>
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="profile-username" value="avachen" />
@@ -275,7 +275,7 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-field-title items-center">
                               <span className="capitalize">
-                                Public details
+                                {"Public details"}
                               </span>
                             </FieldLabel>
                             <Tooltip>
@@ -289,28 +289,28 @@ export function Pattern() {
                             </Tooltip>
                           </div>
                           <FieldDescription className="text-sm">
-                            Shown across Atlas.
+                            {"Shown across Atlas."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
                           <div className="flex items-start justify-start min-w-0 w-full">
                             <FieldSet className="gap-4! w-full">
                               <FieldLegend className="sr-only" variant="legend">
-                                Public details
+                                {"Public details"}
                               </FieldLegend>
                               <FieldGroup className="gap-4!">
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-role">
-                                    Role
+                                    {"Role"}
                                   </FieldLabel>
                                   <Select>
                                   <SelectTrigger className="border border-input font-normal gap-2 px-4 py-2 rounded-lg shadow-none text-foreground text-sm w-full" type="button" tabIndex="0" id="profile-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                     <SelectValue>
-                                      Staff Product Lead
+                                      {"Staff Product Lead"}
                                     </SelectValue>
                                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
-                                      ▼
+                                      {"▼"}
                                     </svg>
                                   </SelectTrigger>
                                   </Select>
@@ -318,16 +318,16 @@ export function Pattern() {
                                 </Field>
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-timezone">
-                                    Time zone
+                                    {"Time zone"}
                                   </FieldLabel>
                                   <Select>
                                   <SelectTrigger className="border border-input font-normal gap-2 px-4 py-2 rounded-lg shadow-none text-foreground text-sm w-full" type="button" tabIndex="0" id="profile-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                     <SelectValue>
-                                      (GMT-5) New York
+                                      {"(GMT-5) New York"}
                                     </SelectValue>
                                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                       <path d="m6 9 6 6 6-6"></path>
-                                      ▼
+                                      {"▼"}
                                     </svg>
                                   </SelectTrigger>
                                   </Select>
@@ -335,12 +335,12 @@ export function Pattern() {
                                 </Field>
                                 <Field role="group" data-orientation="vertical">
                                   <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-website">
-                                    Website
+                                    {"Website"}
                                   </FieldLabel>
                                   <InputGroup role="group">
                                     <InputGroupAddon role="group" data-align="inline-start">
                                       <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                                        https://
+                                        {"https://"}
                                       </span>
                                     </InputGroupAddon>
                                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="profile-website" value="ava.atlashq.app" />
@@ -356,18 +356,18 @@ export function Pattern() {
                           <div className="flex flex-wrap gap-2 items-center">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="profile-bio">
                               <span className="capitalize">
-                                Bio
+                                {"Bio"}
                               </span>
                             </FieldLabel>
                           </div>
                           <FieldDescription className="text-sm">
-                            Short profile summary.
+                            {"Short profile summary."}
                           </FieldDescription>
                         </div>
                         <FieldContent className="max-w-none min-w-0 w-full">
                           <div className="flex items-start justify-start min-w-0 w-full">
                             <Textarea className="field-sizing-fixed min-h-0 mt-2" id="profile-bio" rows="4">
-                              Leading launch systems, product operations, and internal tooling across the Atlas workspace.
+                              {"Leading launch systems, product operations, and internal tooling across the Atlas workspace."}
                             </Textarea>
                           </div>
                         </FieldContent>
@@ -383,10 +383,10 @@ export function Pattern() {
             <DialogFooter className="bg-transparent! border-0 m-0 px-6 py-0">
               <div className="border-border border-t flex gap-2 items-center justify-end py-4 shrink-0 w-full">
                 <Button type="button" tabIndex="0">
-                  Cancel
+                  {"Cancel"}
                 </Button>
                 <Button type="submit" tabIndex="0">
-                  Save changes
+                  {"Save changes"}
                 </Button>
               </div>
             </DialogFooter>
@@ -399,7 +399,7 @@ export function Pattern() {
           <path d="m6 6 12 12"></path>
         </svg>
         <span className="sr-only">
-          Close
+          {"Close"}
         </span>
       </DialogClose>
     </DialogContent>

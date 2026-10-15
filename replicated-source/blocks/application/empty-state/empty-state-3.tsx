@@ -50,10 +50,10 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2 items-center">
               <EmptyTitle className="font-semibold text-2xl tracking-tight">
-                No projects to show
+                {"No projects to show"}
               </EmptyTitle>
               <EmptyDescription className="max-w-[25rem] text-sm/relaxed">
-                Start a project from scratch or pick a template to launch your first workspace and begin tracking tasks, goals, and progress.
+                {"Start a project from scratch or pick a template to launch your first workspace and begin tracking tasks, goals, and progress."}
               </EmptyDescription>
             </div>
           </EmptyHeader>
@@ -64,7 +64,7 @@ export function Pattern() {
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
-                New project
+                {"New project"}
               </Button>
               <Button type="button" tabIndex="0">
                 <svg className="lucide lucide-layout-template" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutTemplateIcon" tabler="IconTemplate" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiLayout2Line" data-icon="inline-start" aria-hidden="true">
@@ -72,7 +72,7 @@ export function Pattern() {
                   <rect width="9" height="7" x="3" y="14" rx="1"></rect>
                   <rect width="5" height="7" x="16" y="14" rx="1"></rect>
                 </svg>
-                Explore templates
+                {"Explore templates"}
               </Button>
             </div>
           </EmptyContent>
@@ -80,7 +80,7 @@ export function Pattern() {
         <div className="max-w-md w-full">
           <div className="flex flex-col gap-3 items-center w-full">
             <p className="text-muted-foreground text-sm">
-              Quick starts
+              {"Quick starts"}
             </p>
             <div className="gap-3 grid sm:grid-cols-2 w-full">
               <Item className="hover:bg-muted/30 min-w-0" href="#" aria-label="Task board" variant="outline" size="default">
@@ -93,7 +93,7 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="truncate">
-                    Task board
+                    {"Task board"}
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="ml-auto text-muted-foreground">
@@ -112,7 +112,7 @@ export function Pattern() {
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="truncate">
-                    Sprint tracker
+                    {"Sprint tracker"}
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="ml-auto text-muted-foreground">

@@ -45,24 +45,24 @@ export function Pattern() {
       <Card className="flex-1 gap-0 min-h-0 overflow-hidden p-0!" size="default">
         <div className="border-b flex gap-3 items-center px-4 py-3 shrink-0">
           <h1 className="flex-1 font-semibold min-w-0 text-base truncate">
-            Deal Calendar
+            {"Deal Calendar"}
           </h1>
           <Button type="button" tabIndex="0">
             <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
-            New event
+            {"New event"}
           </Button>
         </div>
         <EventCalendar className="flex-1">
           <div className="flex flex-wrap gap-x-2 items-center pe-2">
             <EventCalendarNav className="flex-1 flex-nowrap">
               <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                Today
+                {"Today"}
               </EventCalendarNavToday>
               <EventCalendarViewSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
-                Week
+                {"Week"}
                 <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
@@ -80,16 +80,16 @@ export function Pattern() {
                 </EventCalendarNavNext>
               </div>
               <EventCalendarTitle className="ms-3" aria-live="polite">
-                January 12 - 18, 2026
+                {"January 12 - 18, 2026"}
               </EventCalendarTitle>
               <div className="grow"></div>
             </EventCalendarNav>
             <EventCalendarToolbar className="max-sm:pb-2 max-sm:w-full">
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
-                Category
+                {"Category"}
                 <span className="tabular-nums text-muted-foreground">
-                  6
+                  {"6"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -98,9 +98,9 @@ export function Pattern() {
               </DropdownMenu>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_l_" aria-expanded="false">
-                Ownership
+                {"Ownership"}
                 <span className="tabular-nums text-muted-foreground">
-                  6
+                  {"6"}
                 </span>
                 <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -115,32 +115,32 @@ export function Pattern() {
                 <div className="border-e shrink-0 w-(--ec-gutter-width,4.5rem)"></div>
                 <div className="flex-1 grid min-w-0" style={{gridTemplateColumns: "repeat(7, minmax(var(--ec-day-col-min,0px), 1fr))"}}>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Mon 12
+                    {"Mon 12"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Tue 13
+                    {"Tue 13"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Wed 14
+                    {"Wed 14"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Thu 15
+                    {"Thu 15"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Fri 16
+                    {"Fri 16"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Sat 17
+                    {"Sat 17"}
                   </div>
                   <div className="border-e data-today:text-primary font-medium last:border-e-0 min-w-0 px-2 py-1.5 truncate">
-                    Sun 18
+                    {"Sun 18"}
                   </div>
                 </div>
               </div>
               <div className="[--ec-month-bar-h:6.25rem] border-b flex pe-(--ec-scrollbar-w,0px)">
                 <div className="border-e pe-2.5 ps-2 pt-1.5 shrink-0 text-muted-foreground w-(--ec-gutter-width,4.5rem)">
                   <span className="flex h-[calc(var(--ec-month-bar-h,1.625rem)-0.125rem)] items-center justify-end">
-                    All day
+                    {"All day"}
                   </span>
                 </div>
                 <div className="flex-1 min-w-0 relative">
@@ -169,18 +169,18 @@ export function Pattern() {
                                     <line x1="16" x2="14" y1="3" y2="21"></line>
                                   </svg>
                                   <span className="font-medium truncate">
-                                    LN-40218
+                                    {"LN-40218"}
                                   </span>
                                 </span>
                               </span>
                               <span className="ms-auto shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-amber-700)", "--kind-tag-dark": "var(--color-amber-400)"}}>
-                                  Deal Closing
+                                  {"Deal Closing"}
                                 </Badge>
                               </span>
                             </span>
                             <span className="font-medium line-clamp-2 min-w-0 text-foreground w-full">
-                              Harbour Point Logistics (Term Loan)
+                              {"Harbour Point Logistics (Term Loan)"}
                             </span>
                             <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                               <svg className="lucide lucide-list-checks shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
@@ -191,10 +191,10 @@ export function Pattern() {
                                 <path d="m3 7 2 2 4-4"></path>
                               </svg>
                               <span className="truncate">
-                                Tasks
+                                {"Tasks"}
                               </span>
                               <span className="ms-auto shrink-0 tabular-nums">
-                                7/8
+                                {"7/8"}
                               </span>
                             </span>
                             <Progress className="h-1 w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="88" aria-valuetext="88%" role="progressbar" aria-label="Tasks progress">
@@ -202,7 +202,7 @@ export function Pattern() {
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "88%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </span>
@@ -231,18 +231,18 @@ export function Pattern() {
                                     <path d="M3 10h18"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Jan 14
+                                    {"Jan 14"}
                                   </span>
                                 </span>
                               </span>
                               <span className="ms-auto shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-slate-700)", "--kind-tag-dark": "var(--color-slate-400)"}}>
-                                  Task
+                                  {"Task"}
                                 </Badge>
                               </span>
                             </span>
                             <span className="font-medium line-clamp-2 min-w-0 text-foreground w-full">
-                              Send data room for Calder Row
+                              {"Send data room for Calder Row"}
                             </span>
                             <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                               <svg className="lucide lucide-layout-grid shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
@@ -252,10 +252,10 @@ export function Pattern() {
                                 <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                               </svg>
                               <span className="truncate">
-                                Deal Pipeline
+                                {"Deal Pipeline"}
                               </span>
                               <span className="ms-auto shrink-0 tabular-nums">
-                                1/5
+                                {"1/5"}
                               </span>
                             </span>
                             <Progress className="h-1 w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" aria-valuetext="20%" role="progressbar" aria-label="Deal Pipeline progress">
@@ -263,7 +263,7 @@ export function Pattern() {
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "20%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </span>
@@ -292,18 +292,18 @@ export function Pattern() {
                                     <path d="M3 10h18"></path>
                                   </svg>
                                   <span className="truncate">
-                                    Jan 15
+                                    {"Jan 15"}
                                   </span>
                                 </span>
                               </span>
                               <span className="ms-auto shrink-0">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-indigo-700)", "--kind-tag-dark": "var(--color-indigo-400)"}}>
-                                  Compliance
+                                  {"Compliance"}
                                 </Badge>
                               </span>
                             </span>
                             <span className="font-medium line-clamp-2 min-w-0 text-foreground w-full">
-                              Ashgrove Medical insurance certificates
+                              {"Ashgrove Medical insurance certificates"}
                             </span>
                             <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                               <svg className="lucide lucide-package shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
@@ -313,10 +313,10 @@ export function Pattern() {
                                 <path d="m7.5 4.27 9 5.15"></path>
                               </svg>
                               <span className="truncate">
-                                Deliverables
+                                {"Deliverables"}
                               </span>
                               <span className="ms-auto shrink-0 tabular-nums">
-                                4/9
+                                {"4/9"}
                               </span>
                             </span>
                             <Progress className="h-1 w-full" progressing="" aria-valuemax="100" aria-valuemin="0" aria-valuenow="44" aria-valuetext="44%" role="progressbar" aria-label="Deliverables progress">
@@ -324,7 +324,7 @@ export function Pattern() {
                                 <ProgressIndicator progressing="" style={{insetInlineStart: "0px", height: "inherit", width: "44%"}}></ProgressIndicator>
                               </ProgressTrack>
                               <span role="presentation" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}}>
-                                x
+                                {"x"}
                               </span>
                             </Progress>
                           </span>
@@ -349,62 +349,62 @@ export function Pattern() {
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}></div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            8 AM
+                            {"8 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            9 AM
+                            {"9 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            10 AM
+                            {"10 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            11 AM
+                            {"11 AM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            12 PM
+                            {"12 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            1 PM
+                            {"1 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            2 PM
+                            {"2 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            3 PM
+                            {"3 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            4 PM
+                            {"4 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            5 PM
+                            {"5 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            6 PM
+                            {"6 PM"}
                           </span>
                         </div>
                         <div className="relative" style={{height: "calc(var(--ec-hour-height) * 1)"}}>
                           <span className="-top-2 absolute end-2.5 text-muted-foreground">
-                            7 PM
+                            {"7 PM"}
                           </span>
                         </div>
                       </EventCalendarTimeGutter>
@@ -418,17 +418,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        9:00 AM, 90 min
+                                        {"9:00 AM, 90 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-indigo-700)", "--kind-tag-dark": "var(--color-indigo-400)"}}>
-                                        Compliance
+                                        {"Compliance"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Funding Conditions Review
+                                    {"Funding Conditions Review"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                                     <svg className="lucide lucide-package shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
@@ -438,10 +438,10 @@ export function Pattern() {
                                       <path d="m7.5 4.27 9 5.15"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Deliverables
+                                      {"Deliverables"}
                                     </span>
                                     <span className="ms-auto shrink-0 tabular-nums">
-                                      5/6
+                                      {"5/6"}
                                     </span>
                                   </span>
                                 </span>
@@ -463,17 +463,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        1:00 PM, 60 min
+                                        {"1:00 PM, 60 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-violet-700)", "--kind-tag-dark": "var(--color-violet-400)"}}>
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Weekly Credit Standup
+                                    {"Weekly Credit Standup"}
                                   </span>
                                 </span>
                               </HoverCardTrigger>
@@ -496,17 +496,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        10:00 AM, 60 min
+                                        {"10:00 AM, 60 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-sky-700)", "--kind-tag-dark": "var(--color-sky-400)"}}>
-                                        Call
+                                        {"Call"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Introductory Call
+                                    {"Introductory Call"}
                                   </span>
                                 </span>
                               </HoverCardTrigger>
@@ -527,17 +527,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        10:30 AM, 90 min
+                                        {"10:30 AM, 90 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-sky-700)", "--kind-tag-dark": "var(--color-sky-400)"}}>
-                                        Call
+                                        {"Call"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Kestrel Terms Review
+                                    {"Kestrel Terms Review"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
@@ -548,7 +548,7 @@ export function Pattern() {
                                       <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Kestrel Cold Storage
+                                      {"Kestrel Cold Storage"}
                                     </span>
                                     <span className="@[9rem]:flex hidden ms-auto shrink-0">
                                       <AvatarGroup>
@@ -582,17 +582,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        9:00 AM, 60 min
+                                        {"9:00 AM, 60 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-emerald-700)", "--kind-tag-dark": "var(--color-emerald-400)"}}>
-                                        Email
+                                        {"Email"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Certificate Chase
+                                    {"Certificate Chase"}
                                   </span>
                                 </span>
                               </HoverCardTrigger>
@@ -613,17 +613,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        3:00 PM, 105 min
+                                        {"3:00 PM, 105 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-sky-700)", "--kind-tag-dark": "var(--color-sky-400)"}}>
-                                        Call
+                                        {"Call"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium line-clamp-2 min-w-0 text-foreground w-full">
-                                    Site Visit Debrief
+                                    {"Site Visit Debrief"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
@@ -634,7 +634,7 @@ export function Pattern() {
                                       <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Kestrel Cold Storage
+                                      {"Kestrel Cold Storage"}
                                     </span>
                                     <span className="@[9rem]:flex hidden ms-auto shrink-0">
                                       <AvatarGroup>
@@ -668,17 +668,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        10:00 AM, 75 min
+                                        {"10:00 AM, 75 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-slate-700)", "--kind-tag-dark": "var(--color-slate-400)"}}>
-                                        Task
+                                        {"Task"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Watchlist Prep
+                                    {"Watchlist Prep"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                                     <svg className="lucide lucide-list-checks shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
@@ -689,10 +689,10 @@ export function Pattern() {
                                       <path d="m3 7 2 2 4-4"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Tasks
+                                      {"Tasks"}
                                     </span>
                                     <span className="ms-auto shrink-0 tabular-nums">
-                                      3/6
+                                      {"3/6"}
                                     </span>
                                   </span>
                                 </span>
@@ -714,17 +714,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        1:30 PM, 120 min
+                                        {"1:30 PM, 120 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-violet-700)", "--kind-tag-dark": "var(--color-violet-400)"}}>
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium line-clamp-2 min-w-0 text-foreground w-full">
-                                    Portfolio Review
+                                    {"Portfolio Review"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
@@ -735,7 +735,7 @@ export function Pattern() {
                                       <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Internal
+                                      {"Internal"}
                                     </span>
                                     <span className="@[9rem]:flex hidden ms-auto shrink-0">
                                       <AvatarGroup>
@@ -749,7 +749,7 @@ export function Pattern() {
                                           <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
                                         <AvatarGroupCount className="bg-muted size-4 text-[9px] text-muted-foreground">
-                                          +11
+                                          {"+11"}
                                         </AvatarGroupCount>
                                       </AvatarGroup>
                                     </span>
@@ -775,17 +775,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        9:00 AM, 75 min
+                                        {"9:00 AM, 75 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-violet-700)", "--kind-tag-dark": "var(--color-violet-400)"}}>
-                                        Meeting
+                                        {"Meeting"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Calder Row Kickoff
+                                    {"Calder Row Kickoff"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
@@ -796,7 +796,7 @@ export function Pattern() {
                                       <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Calder Row Residences
+                                      {"Calder Row Residences"}
                                     </span>
                                     <span className="@[9rem]:flex hidden ms-auto shrink-0">
                                       <AvatarGroup>
@@ -810,7 +810,7 @@ export function Pattern() {
                                           <AvatarImage alt="" loading="lazy" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                         </Avatar>
                                         <AvatarGroupCount className="bg-muted size-4 text-[9px] text-muted-foreground">
-                                          +3
+                                          {"+3"}
                                         </AvatarGroupCount>
                                       </AvatarGroup>
                                     </span>
@@ -834,17 +834,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        11:30 AM, 75 min
+                                        {"11:30 AM, 75 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-emerald-700)", "--kind-tag-dark": "var(--color-emerald-400)"}}>
-                                        Email
+                                        {"Email"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Closing Docs Follow Up
+                                    {"Closing Docs Follow Up"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
@@ -855,7 +855,7 @@ export function Pattern() {
                                       <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Orchard Line Retail
+                                      {"Orchard Line Retail"}
                                     </span>
                                     <span className="@[9rem]:flex hidden ms-auto shrink-0">
                                       <AvatarGroup>
@@ -864,16 +864,16 @@ export function Pattern() {
                                         </Avatar>
                                         <Avatar className="size-4" size="default">
                                           <AvatarFallback className="text-[8px]">
-                                            RC
+                                            {"RC"}
                                           </AvatarFallback>
                                         </Avatar>
                                         <Avatar className="size-4" size="default">
                                           <AvatarFallback className="text-[8px]">
-                                            DA
+                                            {"DA"}
                                           </AvatarFallback>
                                         </Avatar>
                                         <AvatarGroupCount className="bg-muted size-4 text-[9px] text-muted-foreground">
-                                          +4
+                                          {"+4"}
                                         </AvatarGroupCount>
                                       </AvatarGroup>
                                     </span>
@@ -897,17 +897,17 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0 w-full">
                                     <span className="@[7rem]:flex hidden min-w-0">
                                       <span className="text-muted-foreground truncate">
-                                        3:00 PM, 75 min
+                                        {"3:00 PM, 75 min"}
                                       </span>
                                     </span>
                                     <span className="ms-auto shrink-0">
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-(--kind-tag) border border-transparent dark:bg-(--kind-tag-dark) dark:text-neutral-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs transition-shadow" style={{"--kind-tag": "var(--color-indigo-700)", "--kind-tag-dark": "var(--color-indigo-400)"}}>
-                                        Compliance
+                                        {"Compliance"}
                                       </Badge>
                                     </span>
                                   </span>
                                   <span className="font-medium min-w-0 text-foreground truncate w-full">
-                                    Servicing Handover
+                                    {"Servicing Handover"}
                                   </span>
                                   <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground w-full">
                                     <svg className="lucide lucide-package shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
@@ -917,10 +917,10 @@ export function Pattern() {
                                       <path d="m7.5 4.27 9 5.15"></path>
                                     </svg>
                                     <span className="truncate">
-                                      Deliverables
+                                      {"Deliverables"}
                                     </span>
                                     <span className="ms-auto shrink-0 tabular-nums">
-                                      2/4
+                                      {"2/4"}
                                     </span>
                                   </span>
                                 </span>

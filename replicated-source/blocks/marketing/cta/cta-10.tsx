@@ -17,14 +17,14 @@ export function Pattern() {
               <path transform="translate(3.5238 3.5)" fillRule="evenodd" clipRule="evenodd" d="M0 4.46307V0.657716C0 0.294471 0.294471 0 0.657708 0C1.02097 0 1.31544 0.294471 1.31544 0.657716V4.46307C1.31544 5.13768 1.86229 5.68457 2.5369 5.68457H4.41613C5.09069 5.68457 5.63759 5.13768 5.63759 4.46307V2.60267C5.63759 2.23944 5.93205 1.94498 6.29531 1.94498C6.65854 1.94498 6.953 2.23944 6.953 2.60267V4.46307C6.953 5.8642 5.81721 6.99999 4.41613 6.99999H2.5369C1.13581 6.99999 0 5.8642 0 4.46307Z" fill="currentColor"></path>
               <circle cx="9.81932" cy="4.15772" r="0.65772" fill="currentColor"></circle>
             </svg>
-            Ready to Build?
+            {"Ready to Build?"}
           </Badge>
           <h2 className="@xl:text-4xl font-semibold leading-10 text-3xl text-balance text-center" id="cta-10-title">
-            Start Building Faster
+            {"Start Building Faster"}
           </h2>
           <div className="flex flex-col gap-6 items-center max-w-[40rem] w-full">
             <p className="leading-5 text-center text-muted-foreground text-sm">
-              Everything you need to build polished interfaces with NeUI, from reusable components and templates to MCP tools and Agent Skills for AI-powered workflows.
+              {"Everything you need to build polished interfaces with NeUI, from reusable components and templates to MCP tools and Agent Skills for AI-powered workflows."}
             </p>
             <AvatarGroup role="group" aria-label="Teams building with NeUI">
               <Avatar className="size-8" size="default">
@@ -65,13 +65,13 @@ export function Pattern() {
                 <path d="M4.88889 0H7.33332C8.68265 0 9.77777 1.09511 9.77777 2.44444C9.77777 3.79378 8.68265 4.88889 7.33332 4.88889L4.88889 4.88886V0Z" fill="#FF7262"></path>
                 <path d="M9.77777 7.3333C9.77777 8.68263 8.68265 9.77774 7.33332 9.77774C5.98398 9.77774 4.88887 8.68263 4.88887 7.3333C4.88887 5.98397 5.98398 4.88889 7.33332 4.88889C8.68265 4.88889 9.77777 5.98397 9.77777 7.3333Z" fill="#1ABCFE"></path>
               </svg>
-              Preview in Figma
+              {"Preview in Figma"}
             </Button>
             <Button href="#" role="button" tabIndex="0">
               <svg className="fill-current size-4" aria-hidden="true" focusable="false" id="Ebene_1" version="1.1" viewBox="0 0 466.73 532.09">
                 <path d="M457.43,125.94L244.42,2.96c-6.84-3.95-15.28-3.95-22.12,0L9.3,125.94c-5.75,3.32-9.3,9.46-9.3,16.11v247.99c0,6.65,3.55,12.79,9.3,16.11l213.01,122.98c6.84,3.95,15.28,3.95,22.12,0l213.01-122.98c5.75-3.32,9.3-9.46,9.3-16.11v-247.99c0-6.65-3.55-12.79-9.3-16.11h-.01ZM444.05,151.99l-205.63,356.16c-1.39,2.4-5.06,1.42-5.06-1.36v-233.21c0-4.66-2.49-8.97-6.53-11.31L24.87,145.67c-2.4-1.39-1.42-5.06,1.36-5.06h411.26c5.84,0,9.49,6.33,6.57,11.39h-.01Z"></path>
               </svg>
-              Start with Cursor
+              {"Start with Cursor"}
             </Button>
           </div>
         </div>

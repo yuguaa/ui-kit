@@ -35,7 +35,7 @@ export function Pattern() {
   return (
     <main className="flex justify-center md:p-10 min-h-svh overflow-x-hidden p-6 w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Low stock reorder queue
+        {"Low stock reorder queue"}
       </h1>
       <div className="@container flex flex-col gap-6 max-w-7xl mx-auto w-full">
         <Frame className="w-full">
@@ -43,20 +43,20 @@ export function Pattern() {
             <div className="flex flex-col items-stretch sm:flex-row">
               <div className="flex flex-col justify-center shrink-0 sm:basis-1/3 sm:pe-6">
                 <span className="text-muted-foreground text-xs">
-                  At-risk inventory value
+                  {"At-risk inventory value"}
                 </span>
                 <span className="font-semibold mt-1 tabular-nums text-2xl text-foreground">
-                  $84,120
+                  {"$84,120"}
                 </span>
               </div>
               <Separator className="hidden self-stretch sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <div className="flex flex-1 flex-col gap-2 justify-center sm:ps-6">
                 <div>
                   <span className="font-semibold tabular-nums text-2xl text-foreground">
-                    58
+                    {"58"}
                   </span>
                   <span className="text-muted-foreground text-xs">
-                    SKUs needing action
+                    {"SKUs needing action"}
                   </span>
                 </div>
                 <div className="bg-muted flex gap-0.5 h-1.5 items-center overflow-hidden rounded-full w-full" role="img" aria-label="Reorder queue: 37 below reorder, 12 out of stock, 9 on order">
@@ -68,27 +68,27 @@ export function Pattern() {
                   <div className="gap-1.5 inline-flex items-center text-muted-foreground">
                     <span className="bg-amber-400 inline-block rounded-full size-2" aria-hidden="true"></span>
                     <span>
-                      Below reorder:
+                      {"Below reorder:"}
                       <span className="font-semibold tabular-nums text-foreground">
-                        37
+                        {"37"}
                       </span>
                     </span>
                   </div>
                   <div className="gap-1.5 inline-flex items-center text-muted-foreground">
                     <span className="bg-destructive inline-block rounded-full size-2" aria-hidden="true"></span>
                     <span>
-                      Out of stock:
+                      {"Out of stock:"}
                       <span className="font-semibold tabular-nums text-foreground">
-                        12
+                        {"12"}
                       </span>
                     </span>
                   </div>
                   <div className="gap-1.5 inline-flex items-center text-muted-foreground">
                     <span className="bg-emerald-500 inline-block rounded-full size-2" aria-hidden="true"></span>
                     <span>
-                      Open POs covering:
+                      {"Open POs covering:"}
                       <span className="font-semibold tabular-nums text-foreground">
-                        9
+                        {"9"}
                       </span>
                     </span>
                   </div>
@@ -101,10 +101,10 @@ export function Pattern() {
           <header className="flex flex-row gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="flex flex-col gap-px">
               <div className="font-semibold text-balance text-sm">
-                Reorder Queue
+                {"Reorder Queue"}
               </div>
               <div className="text-muted-foreground text-pretty text-xs">
-                12 SKUs below reorder point
+                {"12 SKUs below reorder point"}
               </div>
             </div>
             <Button type="button" tabIndex="0" extracted="1">
@@ -114,7 +114,7 @@ export function Pattern() {
                 <path d="M12 18v-6"></path>
                 <path d="m9 15 3 3 3-3"></path>
               </svg>
-              Export
+              {"Export"}
             </Button>
           </header>
           <FramePanel className="p-0 shadow-none!">
@@ -132,11 +132,11 @@ export function Pattern() {
                 <Select>
                 <SelectTrigger className="w-[150px]" type="button" tabIndex="0" id="base-ui-_r_2_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    All urgency
+                    {"All urgency"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -144,11 +144,11 @@ export function Pattern() {
                 <Select>
                 <SelectTrigger className="w-[180px]" type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                   <SelectValue>
-                    Supplier
+                    {"Supplier"}
                   </SelectValue>
                   <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
-                    ▼
+                    {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
@@ -160,15 +160,18 @@ export function Pattern() {
                   <circle cx="19" cy="21" r="1"></circle>
                   <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                 </svg>
-                Create PO
+                {"Create PO"}
               </Button>
             </div>
             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="relative">
+              <DataGridProvider>
               <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                 <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_8_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                   <div role="presentation" style={{minWidth: "fit-content"}}>
+                    <DataGridProvider>
                     <DataGridTableViewport>
+                      <DataGridProvider>
                       <DataGridTable>
                         <colgroup>
                           <col style={{width: "36px"}} />
@@ -190,7 +193,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="product" data-header-id="product" data-header-depth="0" style={{width: "260px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Product
+                                  {"Product"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -201,7 +204,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="available" data-header-id="available" data-header-depth="0" style={{width: "110px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Available
+                                  {"Available"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -212,7 +215,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="reorderPoint" data-header-id="reorderPoint" data-header-depth="0" style={{width: "130px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Reorder point
+                                  {"Reorder point"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -223,7 +226,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="descending" data-col-id="deficit" data-header-id="deficit" data-header-depth="0" style={{width: "110px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Deficit
+                                  {"Deficit"}
                                   <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                     <path d="M12 5v14"></path>
                                     <path d="m19 12-7 7-7-7"></path>
@@ -234,7 +237,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="suggestedPo" data-header-id="suggestedPo" data-header-depth="0" style={{width: "130px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Suggested PO
+                                  {"Suggested PO"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -245,7 +248,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="supplier" data-header-id="supplier" data-header-depth="0" style={{width: "190px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Supplier
+                                  {"Supplier"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -256,7 +259,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 px-3 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="daysOfCover" data-header-id="daysOfCover" data-header-depth="0" style={{width: "140px"}}>
                               <div className="-ms-2 flex h-full items-center">
                                 <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                  Days of cover
+                                  {"Days of cover"}
                                   <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
@@ -267,6 +270,7 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-10 pr-(--frame-panel-px) px-3 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="actions" data-header-id="actions" data-header-depth="0" style={{width: "50px"}}></th>
                           </tr>
                         </thead>
+                        <DataGridProvider>
                         <DataGridTableBody>
                           <tr className="[&:not(:last-child)>td]:border-b data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="sku-00533">
                             <td className="align-middle ps-(--frame-panel-px) px-3 py-2">
@@ -280,15 +284,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-sku-00533">
-                                    Signal Orange Edition
+                                    {"Signal Orange Edition"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      SKU-00533
+                                      {"SKU-00533"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      Out of stock
+                                      {"Out of stock"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -296,12 +300,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                0
+                                {"0"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                120
+                                {"120"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -312,7 +316,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                120
+                                {"120"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -324,13 +328,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                240
+                                {"240"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Apex Manufacturing
+                                  {"Apex Manufacturing"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -340,7 +344,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  28d lead
+                                  {"28d lead"}
                                 </span>
                               </div>
                             </td>
@@ -351,7 +355,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                0 days
+                                {"0 days"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -383,15 +387,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-acc-cbl-usbc">
-                                    Charging Cable USB-C
+                                    {"Charging Cable USB-C"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      ACC-CBL-USBC
+                                      {"ACC-CBL-USBC"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                                      On order
+                                      {"On order"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -399,12 +403,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                120
+                                {"120"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                200
+                                {"200"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -415,7 +419,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                80
+                                {"80"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -427,13 +431,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                300
+                                {"300"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Harbor Electronics
+                                  {"Harbor Electronics"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -443,7 +447,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  7d lead
+                                  {"7d lead"}
                                 </span>
                               </div>
                             </td>
@@ -453,7 +457,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                11 days
+                                {"11 days"}
                               </span>
                             </td>
                             <td className="align-middle pr-(--frame-panel-px) px-3 py-2">
@@ -480,15 +484,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-sku-00482">
-                                    Auralite Studio Pro
+                                    {"Auralite Studio Pro"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      SKU-00482
+                                      {"SKU-00482"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Low stock
+                                      {"Low stock"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -496,12 +500,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                32
+                                {"32"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                110
+                                {"110"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -512,7 +516,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                78
+                                {"78"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -524,13 +528,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                200
+                                {"200"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Acme Components
+                                  {"Acme Components"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -540,7 +544,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  14d lead
+                                  {"14d lead"}
                                 </span>
                               </div>
                             </td>
@@ -551,7 +555,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                5 days
+                                {"5 days"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -579,15 +583,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-sku-00518">
-                                    Countertop Wireless Max
+                                    {"Countertop Wireless Max"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      SKU-00518
+                                      {"SKU-00518"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Low stock
+                                      {"Low stock"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -595,12 +599,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                14
+                                {"14"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                90
+                                {"90"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -611,7 +615,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                76
+                                {"76"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -623,13 +627,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                180
+                                {"180"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Acme Components
+                                  {"Acme Components"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -639,7 +643,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  12d lead
+                                  {"12d lead"}
                                 </span>
                               </div>
                             </td>
@@ -650,7 +654,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                3 days
+                                {"3 days"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -682,15 +686,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-acc-tip-mf">
-                                    Memory Foam Ear Tips
+                                    {"Memory Foam Ear Tips"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      ACC-TIP-MF
+                                      {"ACC-TIP-MF"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                                      Low stock
+                                      {"Low stock"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -698,12 +702,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                8
+                                {"8"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                80
+                                {"80"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -714,7 +718,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                72
+                                {"72"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -726,13 +730,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                150
+                                {"150"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Cobalt Supply Co
+                                  {"Cobalt Supply Co"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -742,7 +746,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  9d lead
+                                  {"9d lead"}
                                 </span>
                               </div>
                             </td>
@@ -753,7 +757,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                2 days
+                                {"2 days"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -781,15 +785,15 @@ export function Pattern() {
                                 </div>
                                 <div className="flex flex-col gap-0.5 min-w-0">
                                   <a className="font-medium hover:text-primary hover:underline text-foreground text-sm transition-colors truncate underline-offset-4" href="#sku-sku-00604">
-                                    Whiteout Wireless
+                                    {"Whiteout Wireless"}
                                   </a>
                                   <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
                                     <span className="font-mono truncate">
-                                      SKU-00604
+                                      {"SKU-00604"}
                                     </span>
                                     <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                      Out of stock
+                                      {"Out of stock"}
                                     </Badge>
                                   </span>
                                 </div>
@@ -797,12 +801,12 @@ export function Pattern() {
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-foreground text-sm">
-                                0
+                                {"0"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <span className="font-medium tabular-nums text-muted-foreground text-sm">
-                                70
+                                {"70"}
                               </span>
                             </td>
                             <td className="align-middle px-3 py-2">
@@ -813,7 +817,7 @@ export function Pattern() {
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
                                 </svg>
-                                70
+                                {"70"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -825,13 +829,13 @@ export function Pattern() {
                                   <polyline points="3.29 7 12 12 20.71 7"></polyline>
                                   <path d="m7.5 4.27 9 5.15"></path>
                                 </svg>
-                                140
+                                {"140"}
                               </Badge>
                             </td>
                             <td className="align-middle px-3 py-2">
                               <div className="flex flex-col gap-0.5 min-w-0">
                                 <span className="font-medium text-foreground text-sm truncate">
-                                  Northwind Logistics
+                                  {"Northwind Logistics"}
                                 </span>
                                 <span className="gap-1 inline-flex items-center text-muted-foreground text-xs">
                                   <svg className="lucide lucide-truck size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
@@ -841,7 +845,7 @@ export function Pattern() {
                                     <circle cx="17" cy="18" r="2"></circle>
                                     <circle cx="7" cy="18" r="2"></circle>
                                   </svg>
-                                  21d lead
+                                  {"21d lead"}
                                 </span>
                               </div>
                             </td>
@@ -852,7 +856,7 @@ export function Pattern() {
                                   <circle cx="12" cy="12" r="10"></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
-                                0 days
+                                {"0 days"}
                               </TooltipTrigger>
                               </Tooltip>
                             </td>
@@ -869,27 +873,32 @@ export function Pattern() {
                             </td>
                           </tr>
                         </DataGridTableBody>
+                        </DataGridProvider>
                       </DataGridTable>
+                      </DataGridProvider>
                     </DataGridTableViewport>
+                    </DataGridProvider>
                   </div>
                 </div>
               </DataGridScrollArea>
+              </DataGridProvider>
             </div>
             <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
+              <DataGridProvider>
               <DataGridPagination>
                 <div className="flex flex-wrap gap-x-2.5 items-center order-2 pb-2.5 sm:order-1 sm:pb-0">
                   <div className="text-muted-foreground text-sm">
-                    Rows per page
+                    {"Rows per page"}
                   </div>
                   <Select>
                   <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_2i_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                     <SelectValue>
-                      6
+                      {"6"}
                     </SelectValue>
                     <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
-                      ▼
+                      {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
@@ -897,26 +906,26 @@ export function Pattern() {
                 </div>
                 <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                   <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
-                    1 - 6 of 12
+                    {"1 - 6 of 12"}
                   </div>
                   <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
                     <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
                       <span className="sr-only">
-                        Go to previous page
+                        {"Go to previous page"}
                       </span>
                       <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                         <path d="m15 18-6-6 6-6"></path>
                       </svg>
                     </Button>
                     <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
-                      1
+                      {"1"}
                     </Button>
                     <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
-                      2
+                      {"2"}
                     </Button>
                     <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
                       <span className="sr-only">
-                        Go to next page
+                        {"Go to next page"}
                       </span>
                       <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                         <path d="m9 18 6-6-6-6"></path>
@@ -925,6 +934,7 @@ export function Pattern() {
                   </div>
                 </div>
               </DataGridPagination>
+              </DataGridProvider>
             </footer>
           </FramePanel>
         </Frame>

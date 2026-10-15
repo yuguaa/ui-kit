@@ -24,7 +24,7 @@ export function Pattern() {
           <Frame>
             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-1!">
               <div className="font-medium text-sm">
-                Meeting
+                {"Meeting"}
               </div>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent! cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
@@ -40,18 +40,18 @@ export function Pattern() {
               <div className="flex justify-between">
                 <div className="flex flex-col gap-1">
                   <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                    Apollo CRM - Sprint Planning
+                    {"Apollo CRM - Sprint Planning"}
                   </a>
                   <p className="leading-relaxed text-muted-foreground text-xs">
-                    09:00 AM CET
+                    {"09:00 AM CET"}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                  30 min
+                  {"30 min"}
                 </Badge>
               </div>
               <p className="text-muted-foreground text-sm">
-                Collaborative sprint planning to address blockers, assign tasks, and refine deliverables for the upcoming development phase.
+                {"Collaborative sprint planning to address blockers, assign tasks, and refine deliverables for the upcoming development phase."}
               </p>
               <div className="flex flex-wrap gap-2 items-center">
                 <AvatarGroup>
@@ -65,11 +65,11 @@ export function Pattern() {
                     <AvatarImage alt="Emma Wilson" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="border size-6 text-[10px]">
-                    +3
+                    {"+3"}
                   </AvatarGroupCount>
                 </AvatarGroup>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                  Client Meeting
+                  {"Client Meeting"}
                 </Badge>
               </div>
             </FramePanel>
@@ -91,14 +91,14 @@ export function Pattern() {
                     </clippath>
                   </defs>
                 </svg>
-                Join Meeting
+                {"Join Meeting"}
               </a>
             </FramePanel>
           </Frame>
           <Frame>
             <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) px-2! py-(--frame-panel-header-py) py-1!">
               <div className="font-medium text-sm">
-                Meeting
+                {"Meeting"}
               </div>
               <DropdownMenu>
               <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent! cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
@@ -114,18 +114,18 @@ export function Pattern() {
               <div className="flex justify-between">
                 <div className="flex flex-col gap-1">
                   <a className="font-medium hover:text-primary leading-tight text-sm" href="#">
-                    Delta Finance - Budget Alignment
+                    {"Delta Finance - Budget Alignment"}
                   </a>
                   <p className="leading-relaxed text-muted-foreground text-xs">
-                    11:30 AM CET
+                    {"11:30 AM CET"}
                   </p>
                 </div>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                  90 min
+                  {"90 min"}
                 </Badge>
               </div>
               <p className="text-muted-foreground text-sm">
-                Reviewing quarterly spend, adjusting forecasts, and aligning budgets across departments with finance and operations teams.
+                {"Reviewing quarterly spend, adjusting forecasts, and aligning budgets across departments with finance and operations teams."}
               </p>
               <div className="flex flex-wrap gap-2 items-center">
                 <AvatarGroup>
@@ -139,11 +139,11 @@ export function Pattern() {
                     <AvatarImage alt="Emma Wilson" src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=96&h=96&dpr=2&q=80"></AvatarImage>
                   </Avatar>
                   <AvatarGroupCount className="border size-6 text-[10px]">
-                    +3
+                    {"+3"}
                   </AvatarGroupCount>
                 </AvatarGroup>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4.5 leading-none min-w-4.5 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.625rem] text-secondary-foreground transition-shadow">
-                  Internal
+                  {"Internal"}
                 </Badge>
               </div>
             </FramePanel>
@@ -157,7 +157,7 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                Join Meeting
+                {"Join Meeting"}
               </a>
             </FramePanel>
           </Frame>

@@ -30,26 +30,26 @@ export function Pattern() {
           <div className="flex flex-col gap-10 items-center text-center">
             <div className="flex flex-col gap-5 items-center">
               <h2 className="@2xl:text-4xl font-semibold text-3xl text-balance tracking-tight" id="pricing-5-title">
-                Pricing on Your Terms
+                {"Pricing on Your Terms"}
               </h2>
               <p className="@2xl:leading-6 @2xl:text-base leading-5 max-w-160 text-balance text-muted-foreground text-sm">
                 <span className="@2xl:block">
-                  Start free with a million events a month and core analytics,
+                  {"Start free with a million events a month and core analytics,"}
                 </span>
                 <span className="@2xl:block">
-                  then pay per seat as your team grows.
+                  {"then pay per seat as your team grows."}
                 </span>
               </p>
             </div>
             <Tabs data-orientation="horizontal" activationDirection="none">
               <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Billing period">
                 <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_" extracted="1">
-                  Monthly
+                  {"Monthly"}
                 </TabsTrigger>
                 <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
-                  Yearly
+                  {"Yearly"}
                   <Badge className="-mr-1 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    Save 25%
+                    {"Save 25%"}
                   </Badge>
                 </TabsTrigger>
               </TabsList>
@@ -61,30 +61,30 @@ export function Pattern() {
                 <Card className="@2xl:grid @2xl:grid-rows-subgrid @2xl:row-span-4 overflow-visible relative ring-border ring-inset" size="default">
                   <CardHeader>
                     <CardTitle className="font-semibold text-lg" role="heading" aria-level="3">
-                      Free
+                      {"Free"}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
                     <p className="flex flex-wrap gap-x-2 items-baseline">
                       <span className="@6xl:text-4xl font-semibold tabular-nums text-5xl tracking-tight">
-                        $0
+                        {"$0"}
                       </span>
                       <span className="text-muted-foreground">
-                        USD
+                        {"USD"}
                       </span>
                     </p>
                     <div>
                       <p className="font-semibold">
-                        For side projects and demos
+                        {"For side projects and demos"}
                       </p>
                       <p className="text-balance text-muted-foreground">
-                        No credit card required
+                        {"No credit card required"}
                       </p>
                     </div>
                   </CardContent>
                   <CardContent>
                     <Button className="w-full" href="#" role="button" tabIndex="0">
-                      Start Free
+                      {"Start Free"}
                     </Button>
                   </CardContent>
                   <CardContent>
@@ -98,9 +98,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            1 million
+                            {"1 million"}
                           </span>
-                          events a month
+                          {"events a month"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -112,9 +112,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            5
+                            {"5"}
                           </span>
-                          saved dashboards
+                          {"saved dashboards"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -126,9 +126,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            30 days
+                            {"30 days"}
                           </span>
-                          of event history
+                          {"of event history"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -140,9 +140,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            2
+                            {"2"}
                           </span>
-                          team seats
+                          {"team seats"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -154,9 +154,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          Email support
+                          {"Email support"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -168,9 +168,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          Session replays
+                          {"Session replays"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -182,9 +182,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          Warehouse sync
+                          {"Warehouse sync"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -196,9 +196,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          SAML single sign-on
+                          {"SAML single sign-on"}
                         </span>
                       </li>
                     </ul>
@@ -209,30 +209,30 @@ export function Pattern() {
                 <Card className="@2xl:grid @2xl:grid-rows-subgrid @2xl:row-span-4 overflow-visible relative ring-border ring-inset" size="default">
                   <CardHeader>
                     <CardTitle className="font-semibold text-lg" role="heading" aria-level="3">
-                      Team
+                      {"Team"}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
                     <p className="flex flex-wrap gap-x-2 items-baseline">
                       <span className="@6xl:text-4xl font-semibold tabular-nums text-5xl tracking-tight">
-                        $9
+                        {"$9"}
                       </span>
                       <span className="text-muted-foreground">
-                        USD
+                        {"USD"}
                       </span>
                     </p>
                     <div>
                       <p className="font-semibold">
-                        For startups shipping fast
+                        {"For startups shipping fast"}
                       </p>
                       <p className="text-balance text-muted-foreground">
-                        Per seat a month, billed yearly
+                        {"Per seat a month, billed yearly"}
                       </p>
                     </div>
                   </CardContent>
                   <CardContent>
                     <Button className="w-full" href="#" role="button" tabIndex="0">
-                      Choose Team
+                      {"Choose Team"}
                     </Button>
                   </CardContent>
                   <CardContent>
@@ -246,9 +246,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            10 million
+                            {"10 million"}
                           </span>
-                          events a month
+                          {"events a month"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -260,9 +260,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          dashboards
+                          {"dashboards"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -274,9 +274,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            1 year
+                            {"1 year"}
                           </span>
-                          of event history
+                          {"of event history"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -288,9 +288,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Up to 10
+                            {"Up to 10"}
                           </span>
-                          team seats
+                          {"team seats"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -301,7 +301,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Email support
+                          {"Email support"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -313,9 +313,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          Session replays
+                          {"Session replays"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -327,9 +327,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          Warehouse sync
+                          {"Warehouse sync"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -341,9 +341,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          SAML single sign-on
+                          {"SAML single sign-on"}
                         </span>
                       </li>
                     </ul>
@@ -354,36 +354,36 @@ export function Pattern() {
                 <Card className="@2xl:grid @2xl:grid-rows-subgrid @2xl:row-span-4 overflow-visible relative ring-border ring-inset" size="default">
                   <CardHeader>
                     <CardTitle className="font-semibold text-lg" role="heading" aria-level="3">
-                      Growth
+                      {"Growth"}
                       <span className="sr-only">
-                        , Most Popular
+                        {", Most Popular"}
                       </span>
                     </CardTitle>
                   </CardHeader>
                   <Badge className="-translate-y-1/2 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-linear-to-r/oklch bg-origin-border bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium from-green-500 gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 right-(--card-spacing) shadow-emerald-900/25 shadow-sm style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs to-emerald-700 top-0 transition-shadow" aria-hidden="true">
-                    Most Popular
+                    {"Most Popular"}
                   </Badge>
                   <CardContent className="flex flex-col gap-3">
                     <p className="flex flex-wrap gap-x-2 items-baseline">
                       <span className="@6xl:text-4xl font-semibold tabular-nums text-5xl tracking-tight">
-                        $18
+                        {"$18"}
                       </span>
                       <span className="text-muted-foreground">
-                        USD
+                        {"USD"}
                       </span>
                     </p>
                     <div>
                       <p className="font-semibold">
-                        For teams that experiment
+                        {"For teams that experiment"}
                       </p>
                       <p className="text-balance text-muted-foreground">
-                        Per seat a month, billed yearly
+                        {"Per seat a month, billed yearly"}
                       </p>
                     </div>
                   </CardContent>
                   <CardContent>
                     <Button className="w-full" href="#" role="button" tabIndex="0">
-                      Choose Growth
+                      {"Choose Growth"}
                     </Button>
                   </CardContent>
                   <CardContent>
@@ -397,9 +397,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            50 million
+                            {"50 million"}
                           </span>
-                          events a month
+                          {"events a month"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -411,9 +411,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          dashboards
+                          {"dashboards"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -425,9 +425,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            3 years
+                            {"3 years"}
                           </span>
-                          of event history
+                          {"of event history"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -439,9 +439,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          team seats
+                          {"team seats"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -452,7 +452,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Live chat support
+                          {"Live chat support"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -463,7 +463,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Session replays
+                          {"Session replays"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -474,7 +474,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Warehouse sync
+                          {"Warehouse sync"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -486,9 +486,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="sr-only">
-                            Not included:
+                            {"Not included:"}
                           </span>
-                          SAML single sign-on
+                          {"SAML single sign-on"}
                         </span>
                       </li>
                     </ul>
@@ -499,30 +499,30 @@ export function Pattern() {
                 <Card className="@2xl:grid @2xl:grid-rows-subgrid @2xl:row-span-4 overflow-visible relative ring-border ring-inset" size="default">
                   <CardHeader>
                     <CardTitle className="font-semibold text-lg" role="heading" aria-level="3">
-                      Enterprise
+                      {"Enterprise"}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
                     <p className="flex flex-wrap gap-x-2 items-baseline">
                       <span className="@6xl:text-4xl font-semibold tabular-nums text-5xl tracking-tight">
-                        $36
+                        {"$36"}
                       </span>
                       <span className="text-muted-foreground">
-                        USD
+                        {"USD"}
                       </span>
                     </p>
                     <div>
                       <p className="font-semibold">
-                        For regulated companies
+                        {"For regulated companies"}
                       </p>
                       <p className="text-balance text-muted-foreground">
-                        Per seat a month, billed yearly
+                        {"Per seat a month, billed yearly"}
                       </p>
                     </div>
                   </CardContent>
                   <CardContent>
                     <Button className="w-full" href="#" aria-label="Contact us about Enterprise" role="button" tabIndex="0">
-                      Contact Us
+                      {"Contact Us"}
                     </Button>
                   </CardContent>
                   <CardContent>
@@ -536,9 +536,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Custom
+                            {"Custom"}
                           </span>
-                          event volume
+                          {"event volume"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -550,9 +550,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          dashboards
+                          {"dashboards"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -564,9 +564,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          event history
+                          {"event history"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -578,9 +578,9 @@ export function Pattern() {
                         </span>
                         <span className="min-w-0">
                           <span className="font-medium tabular-nums">
-                            Unlimited
+                            {"Unlimited"}
                           </span>
-                          team seats
+                          {"team seats"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -591,7 +591,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Named account manager
+                          {"Named account manager"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -602,7 +602,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Session replays
+                          {"Session replays"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -613,7 +613,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          Warehouse sync
+                          {"Warehouse sync"}
                         </span>
                       </li>
                       <li className="flex gap-2 items-start">
@@ -624,7 +624,7 @@ export function Pattern() {
                           </svg>
                         </span>
                         <span className="min-w-0">
-                          SAML single sign-on
+                          {"SAML single sign-on"}
                         </span>
                       </li>
                     </ul>
@@ -815,10 +815,10 @@ export function Pattern() {
                       </ItemMedia>
                       <ItemContent className="gap-0.5">
                         <ItemTitle>
-                          Compare Features
+                          {"Compare Features"}
                         </ItemTitle>
                         <ItemDescription>
-                          Every plan limit, side by side
+                          {"Every plan limit, side by side"}
                         </ItemDescription>
                       </ItemContent>
                       <ItemActions>
@@ -845,10 +845,10 @@ export function Pattern() {
                       </ItemMedia>
                       <ItemContent className="gap-0.5">
                         <ItemTitle>
-                          Pricing FAQ
+                          {"Pricing FAQ"}
                         </ItemTitle>
                         <ItemDescription>
-                          Seats, invoices and refunds
+                          {"Seats, invoices and refunds"}
                         </ItemDescription>
                       </ItemContent>
                       <ItemActions>

@@ -45,7 +45,7 @@ export function Pattern() {
   return (
     <main className="bg-background min-h-svh w-full" aria-labelledby="page-heading">
       <h1 className="sr-only" id="page-heading">
-        Deal pipeline
+        {"Deal pipeline"}
       </h1>
       <div className="bg-background flex flex-col h-full min-h-0 min-w-0 w-full">
         <header className="flex gap-3 items-center justify-between lg:pt-4 lg:px-4 pt-3 px-3 shrink-0">
@@ -60,19 +60,19 @@ export function Pattern() {
             <div className="min-w-0">
               <div className="flex gap-2 items-center min-w-0">
                 <h2 className="font-semibold text-base truncate">
-                  Pipeline
+                  {"Pipeline"}
                 </h2>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 max-sm:sr-only min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                  2 overdue
+                  {"2 overdue"}
                 </Badge>
               </div>
               <p className="flex flex-col mt-0.5 sm:flex-row sm:items-center text-muted-foreground text-xs">
                 <span className="tabular-nums">
-                  48 deals
+                  {"48 deals"}
                 </span>
                 <span className="bg-muted-foreground/40 max-sm:hidden mx-1.5 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <span className="tabular-nums">
-                  $1.43M open, $727K weighted
+                  {"$1.43M open, $727K weighted"}
                 </span>
               </p>
             </div>
@@ -85,7 +85,7 @@ export function Pattern() {
                 <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
               </svg>
               <span className="max-sm:sr-only">
-                Undo
+                {"Undo"}
               </span>
             </TooltipTrigger>
             </Tooltip>
@@ -95,7 +95,7 @@ export function Pattern() {
                 <path d="M12 5v14"></path>
               </svg>
               <span className="max-sm:sr-only">
-                New deal
+                {"New deal"}
               </span>
             </Button>
           </div>
@@ -111,7 +111,7 @@ export function Pattern() {
                     <rect x="3" y="3" width="18" height="18" rx="2"></rect>
                   </svg>
                   <span className="max-md:sr-only">
-                    Table
+                    {"Table"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="after:-bottom-px! flex-none focus-visible:bg-muted! focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 gap-2 h-full! px-2.5 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="view-tab-board">
@@ -121,7 +121,7 @@ export function Pattern() {
                     <path d="M19 3v18"></path>
                   </svg>
                   <span className="max-md:sr-only">
-                    Board
+                    {"Board"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="after:-bottom-px! flex-none focus-visible:bg-muted! focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 gap-2 h-full! px-2.5 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="view-tab-calendar">
@@ -132,7 +132,7 @@ export function Pattern() {
                     <path d="M3 10h18"></path>
                   </svg>
                   <span className="max-md:sr-only">
-                    Calendar
+                    {"Calendar"}
                   </span>
                 </TabsTrigger>
                 <TabsTrigger className="after:-bottom-px! flex-none focus-visible:bg-muted! focus-visible:border-transparent focus-visible:outline-none focus-visible:ring-0 gap-2 h-full! px-2.5 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="view-tab-timeline">
@@ -141,7 +141,7 @@ export function Pattern() {
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span className="max-md:sr-only">
-                    Timeline
+                    {"Timeline"}
                   </span>
                 </TabsTrigger>
               </TabsList>
@@ -163,7 +163,7 @@ export function Pattern() {
                     <path d="M9 19h6"></path>
                   </svg>
                   <span className="max-md:sr-only">
-                    Filter
+                    {"Filter"}
                   </span>
                 </PopoverTrigger>
                 </Popover>
@@ -176,7 +176,7 @@ export function Pattern() {
                     <circle cx="7" cy="7" r="3"></circle>
                   </svg>
                   <span className="max-md:sr-only">
-                    Display
+                    {"Display"}
                   </span>
                 </PopoverTrigger>
                 </Popover>
@@ -199,10 +199,13 @@ export function Pattern() {
           <div className="flex flex-1 flex-col min-h-0 min-w-0 w-full">
             <DataGrid className="[&>div]:flex [&>div]:flex-1 [&>div]:flex-col [&>div]:min-h-0 flex flex-1 flex-col min-h-0">
               <div className="relative">
+                <DataGridProvider>
                 <DataGridScrollArea className="flex-1 min-h-0" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
                   <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_e_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                     <div role="presentation" style={{minWidth: "fit-content"}}>
+                      <DataGridProvider>
                       <DataGridTableViewport style={{width: "calc(1280px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
+                        <DataGridProvider>
                         <DataGridTable className="[&_tfoot_td]:bg-background [&_tfoot_td]:bottom-0 [&_tfoot_td]:sticky [&_tfoot_td]:z-30" role="grid" aria-multiselectable="true" aria-rowcount="49" style={{"--header-select-size": "48", "--col-select-size": "48", "--header-title-size": "458", "--col-title-size": "458", "--header-stage-size": "140", "--col-stage-size": "140", "--header-amount-size": "140", "--col-amount-size": "140", "--header-confidence-size": "148", "--col-confidence-size": "148", "--header-closeDate-size": "140", "--col-closeDate-size": "140", "--header-ownerId-size": "150", "--col-ownerId-size": "150", "--header-actions-size": "56", "--col-actions-size": "56", width: "calc(1280px + var(--data-grid-fill-size, 0px))", outline: "none"}} tabIndex="0">
                           <colgroup>
                             <col style={{width: "calc(var(--col-select-size) * 1px)"}} />
@@ -226,7 +229,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" aria-colindex="2" data-col-id="title" data-header-id="title" data-header-depth="0" style={{width: "calc(var(--header-title-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                    Deal
+                                    {"Deal"}
                                     <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -238,7 +241,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" aria-colindex="3" data-col-id="stage" data-header-id="stage" data-header-depth="0" style={{width: "calc(var(--header-stage-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                    Stage
+                                    {"Stage"}
                                     <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -250,7 +253,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left text-right!" scope="col" aria-sort="none" aria-colindex="4" data-col-id="amount" data-header-id="amount" data-header-depth="0" style={{width: "calc(var(--header-amount-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground justify-end px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-right text-secondary-foreground/80 w-full" type="button" tabIndex="0">
-                                    Amount
+                                    {"Amount"}
                                     <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -262,7 +265,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left text-right!" scope="col" aria-sort="none" aria-colindex="5" data-col-id="confidence" data-header-id="confidence" data-header-depth="0" style={{width: "calc(var(--header-confidence-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground justify-end px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-right text-secondary-foreground/80 w-full" type="button" tabIndex="0">
-                                    Confidence
+                                    {"Confidence"}
                                     <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -274,7 +277,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="ascending" aria-colindex="6" data-col-id="closeDate" data-header-id="closeDate" data-header-depth="0" style={{width: "calc(var(--header-closeDate-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                    Close date
+                                    {"Close date"}
                                     <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                       <path d="m5 12 7-7 7 7"></path>
                                       <path d="M12 19V5"></path>
@@ -286,7 +289,7 @@ export function Pattern() {
                               <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" aria-colindex="7" data-col-id="ownerId" data-header-id="ownerId" data-header-depth="0" style={{width: "calc(var(--header-ownerId-size) * 1px)"}}>
                                 <div className="-ms-2 flex h-full items-center">
                                   <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
-                                    Owner
+                                    {"Owner"}
                                     <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                       <path d="m7 15 5 5 5-5"></path>
                                       <path d="m7 9 5-5 5 5"></path>
@@ -299,6 +302,7 @@ export function Pattern() {
                               <DataGridTableFillHeadCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillHeadCell>
                             </tr>
                           </thead>
+                          <DataGridProvider>
                           <DataGridTableBody>
                             <tr className="[&:has([data-group-row])>td]:h-10 [&:has([data-group-row])]:bg-muted/50 [&:has([data-group-row])]:border-y [&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 group/row hover:bg-muted/40" data-row-id="grp-acc-01" aria-rowindex="2">
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] first:ps-3 in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] last:pe-3 lg:first:ps-4 lg:last:pe-4 lg:ps-3! pe-0! ps-2! px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-01-select" aria-colindex="1" aria-selected="false" data-col-id="select" style={{width: "calc(var(--col-select-size) * 1px)"}}>
@@ -316,15 +320,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Brightwave Media
+                                      {"Brightwave Media"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      4
+                                      {"4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -333,7 +337,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-01-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Brightwave Media
+                                    {"Brightwave Media"}
                                   </span>
                                 </div>
                               </td>
@@ -342,10 +346,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $84,600
+                                        {"$84,600"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -356,11 +360,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        60%
+                                        {"60%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      60% Weighted
+                                      {"60% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -370,11 +374,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 31 Next close
+                                      {"Jul 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -387,7 +391,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </span>
@@ -409,7 +413,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-emerald-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Pilot, 10 seats
+                                      {"Pilot, 10 seats"}
                                     </span>
                                     <Tooltip>
                                     <TooltipTrigger className="[&_svg]:size-3.5 focus-visible:ring-2 focus-visible:ring-ring/50 inline-flex items-center outline-none rounded-sm shrink-0 text-muted-foreground" tabIndex="0" id="base-ui-_r_m_" baseUiTooltipTrigger="">
@@ -418,7 +422,7 @@ export function Pattern() {
                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                       </svg>
                                       <span className="sr-only">
-                                        Countersigned. Locked by finance.
+                                        {"Countersigned. Locked by finance."}
                                       </span>
                                     </TooltipTrigger>
                                     </Tooltip>
@@ -432,7 +436,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Closed won
+                                        {"Closed won"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -441,14 +445,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4903-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $4,800
+                                    {"$4,800"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4903-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    100%
+                                    {"100%"}
                                   </span>
                                 </div>
                               </td>
@@ -457,7 +461,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="flex h-6 items-center px-1">
                                       <span className="tabular-nums text-muted-foreground text-sm truncate">
-                                        Jul 5
+                                        {"Jul 5"}
                                       </span>
                                     </span>
                                   </span>
@@ -471,7 +475,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </span>
@@ -503,7 +507,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-blue-600)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Growth Plan, 60 seats
+                                      {"Growth Plan, 60 seats"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -515,7 +519,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-blue-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Negotiation
+                                        {"Negotiation"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -524,14 +528,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4901-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $57,600
+                                    {"$57,600"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4901-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    75%
+                                    {"75%"}
                                   </span>
                                 </div>
                               </td>
@@ -540,13 +544,13 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </button>
                                     <Tooltip>
                                     <TooltipTrigger className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 inline-flex items-center justify-center min-w-5 outline-none px-1.25 py-0.5 relative shrink-0 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow w-fit whitespace-nowrap" id="base-ui-_r_10_" baseUiTooltipTrigger="">
                                       <span className="tabular-nums">
-                                        +14d
+                                        {"+14d"}
                                       </span>
                                     </TooltipTrigger>
                                     </Tooltip>
@@ -561,7 +565,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </button>
@@ -593,7 +597,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-amber-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Onboarding services
+                                      {"Onboarding services"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -605,7 +609,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Proposal
+                                        {"Proposal"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -614,14 +618,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4902-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $6,000
+                                    {"$6,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4902-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    55%
+                                    {"55%"}
                                   </span>
                                 </div>
                               </td>
@@ -630,7 +634,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </button>
                                   </span>
@@ -644,7 +648,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </button>
@@ -676,7 +680,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Media team, 20 seats
+                                      {"Media team, 20 seats"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -688,7 +692,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Qualified
+                                        {"Qualified"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -697,14 +701,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4904-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $21,000
+                                    {"$21,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4904-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    20%
+                                    {"20%"}
                                   </span>
                                 </div>
                               </td>
@@ -713,7 +717,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Sep 30
+                                        {"Sep 30"}
                                       </span>
                                     </button>
                                   </span>
@@ -725,11 +729,11 @@ export function Pattern() {
                                     <span className="flex gap-2 items-center min-w-0">
                                       <Avatar className="size-5" size="default">
                                         <AvatarFallback className="text-[9px]">
-                                          EW
+                                          {"EW"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Emma Wilson
+                                        {"Emma Wilson"}
                                       </span>
                                     </span>
                                   </button>
@@ -764,15 +768,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Cobalt Logistics
+                                      {"Cobalt Logistics"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      6
+                                      {"6"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Customer
+                                        {"Customer"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -781,7 +785,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-02-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Cobalt Logistics
+                                    {"Cobalt Logistics"}
                                   </span>
                                 </div>
                               </td>
@@ -790,10 +794,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $212,400
+                                        {"$212,400"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -804,11 +808,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        61%
+                                        {"61%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      61% Weighted
+                                      {"61% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -818,11 +822,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 31 Next close
+                                      {"Jul 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -835,7 +839,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </span>
@@ -857,7 +861,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-rose-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Driver app, 150 seats
+                                      {"Driver app, 150 seats"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -869,7 +873,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
                                       <span className="bg-rose-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Closed lost
+                                        {"Closed lost"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -878,14 +882,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4909-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $54,000
+                                    {"$54,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4909-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    0%
+                                    {"0%"}
                                   </span>
                                 </div>
                               </td>
@@ -894,7 +898,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="flex h-6 items-center px-1">
                                       <span className="tabular-nums text-muted-foreground text-sm truncate">
-                                        Jul 6
+                                        {"Jul 6"}
                                       </span>
                                     </span>
                                   </span>
@@ -908,7 +912,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </button>
@@ -940,7 +944,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-emerald-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Support upgrade
+                                      {"Support upgrade"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -952,7 +956,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Closed won
+                                        {"Closed won"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -961,14 +965,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4908-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $9,600
+                                    {"$9,600"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4908-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    100%
+                                    {"100%"}
                                   </span>
                                 </div>
                               </td>
@@ -977,7 +981,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <span className="flex h-6 items-center px-1">
                                       <span className="tabular-nums text-muted-foreground text-sm truncate">
-                                        Jul 8
+                                        {"Jul 8"}
                                       </span>
                                     </span>
                                   </span>
@@ -991,7 +995,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </button>
@@ -1023,7 +1027,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-blue-600)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Enterprise Plan renewal
+                                      {"Enterprise Plan renewal"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -1035,7 +1039,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-blue-600 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Negotiation
+                                        {"Negotiation"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -1044,14 +1048,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4905-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $132,000
+                                    {"$132,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4905-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    75%
+                                    {"75%"}
                                   </span>
                                 </div>
                               </td>
@@ -1060,7 +1064,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </button>
                                   </span>
@@ -1074,7 +1078,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </button>
@@ -1106,7 +1110,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-amber-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      EU region add-on
+                                      {"EU region add-on"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -1118,7 +1122,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-amber-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Proposal
+                                        {"Proposal"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -1127,14 +1131,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4906-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $24,000
+                                    {"$24,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4906-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    55%
+                                    {"55%"}
                                   </span>
                                 </div>
                               </td>
@@ -1143,7 +1147,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Aug 31
+                                        {"Aug 31"}
                                       </span>
                                     </button>
                                   </span>
@@ -1157,7 +1161,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </button>
@@ -1189,7 +1193,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Fleet analytics, 80 seats
+                                      {"Fleet analytics, 80 seats"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -1201,7 +1205,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-violet-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Discovery
+                                        {"Discovery"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -1210,14 +1214,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4907-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $38,400
+                                    {"$38,400"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4907-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    35%
+                                    {"35%"}
                                   </span>
                                 </div>
                               </td>
@@ -1226,7 +1230,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Sep 30
+                                        {"Sep 30"}
                                       </span>
                                     </button>
                                   </span>
@@ -1240,7 +1244,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </button>
@@ -1272,7 +1276,7 @@ export function Pattern() {
                                     <span className="-me-2 shrink-0 w-5" aria-hidden="true"></span>
                                     <span className="rounded-full shrink-0 size-1.5" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
                                     <span className="font-medium min-w-0 text-foreground truncate">
-                                      Warehouse module
+                                      {"Warehouse module"}
                                     </span>
                                     <span className="absolute bg-gradient-to-l end-0 flex from-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] gap-0.5 group-hover/row:opacity-100 group-hover/row:pointer-events-auto in-data-[cell-editing]:hidden in-data-[cell-focused]:opacity-0! in-data-[cell-selected]:opacity-0! inset-y-0 items-center opacity-0 pe-1 pointer-events-none ps-8 to-transparent transition-opacity via-[color-mix(in_oklab,var(--color-muted)_40%,var(--color-background))] z-10" data-cell-interactive=""></span>
                                   </span>
@@ -1284,7 +1288,7 @@ export function Pattern() {
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Qualified
+                                        {"Qualified"}
                                       </span>
                                     </Badge>
                                   </button>
@@ -1293,14 +1297,14 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4910-amount" aria-colindex="4" aria-selected="false" data-col-id="amount" style={{width: "calc(var(--col-amount-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="font-medium tabular-nums text-foreground text-sm">
-                                    $18,000
+                                    {"$18,000"}
                                   </span>
                                 </div>
                               </td>
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] px-2 py-1.5 relative select-none text-right!" id="_r_d_c-DEAL-4910-confidence" aria-colindex="5" aria-selected="false" data-col-id="confidence" style={{width: "calc(var(--col-confidence-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="block tabular-nums text-muted-foreground text-sm truncate">
-                                    20%
+                                    {"20%"}
                                   </span>
                                 </div>
                               </td>
@@ -1309,7 +1313,7 @@ export function Pattern() {
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <button className="[&>svg]:opacity-0 [&>svg]:transition-opacity bg-transparent border-0 flex focus-visible:ring-0 h-6 in-data-[cell-focused]:[&>svg]:opacity-100 items-center px-1 shadow-none text-start w-full" type="button" data-cell-control="" aria-label="Close date">
                                       <span className="tabular-nums text-sm truncate">
-                                        Oct 30
+                                        {"Oct 30"}
                                       </span>
                                     </button>
                                   </span>
@@ -1323,7 +1327,7 @@ export function Pattern() {
                                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                     </span>
                                   </button>
@@ -1358,15 +1362,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Orbit Software
+                                      {"Orbit Software"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      5
+                                      {"5"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Customer
+                                        {"Customer"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1375,7 +1379,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-03-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Orbit Software
+                                    {"Orbit Software"}
                                   </span>
                                 </div>
                               </td>
@@ -1384,10 +1388,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $74,400
+                                        {"$74,400"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1398,11 +1402,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        46%
+                                        {"46%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      46% Weighted
+                                      {"46% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1412,11 +1416,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 24
+                                        {"Jul 24"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 24 Next close
+                                      {"Jul 24 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -1429,7 +1433,7 @@ export function Pattern() {
                                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                     </span>
                                   </span>
@@ -1454,15 +1458,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Apex Manufacturing
+                                      {"Apex Manufacturing"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      5
+                                      {"5"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Customer
+                                        {"Customer"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1471,7 +1475,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-04-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Apex Manufacturing
+                                    {"Apex Manufacturing"}
                                   </span>
                                 </div>
                               </td>
@@ -1480,10 +1484,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $228,000
+                                        {"$228,000"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1494,11 +1498,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        53%
+                                        {"53%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      53% Weighted
+                                      {"53% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1508,11 +1512,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="1 overdue" aria-hidden="true">
                                       <span className="font-medium text-destructive">
-                                        Jul 10
+                                        {"Jul 10"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 10 1 overdue
+                                      {"Jul 10 1 overdue"}
                                     </span>
                                   </span>
                                 </div>
@@ -1525,7 +1529,7 @@ export function Pattern() {
                                         <AvatarImage alt="Alex Johnson" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </span>
                                     </span>
                                   </span>
@@ -1550,15 +1554,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Vertex Health
+                                      {"Vertex Health"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      4
+                                      {"4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1567,7 +1571,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-05-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Vertex Health
+                                    {"Vertex Health"}
                                   </span>
                                 </div>
                               </td>
@@ -1576,10 +1580,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $77,400
+                                        {"$77,400"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1590,11 +1594,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        37%
+                                        {"37%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      37% Weighted
+                                      {"37% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1604,11 +1608,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 15
+                                        {"Jul 15"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 15 Next close
+                                      {"Jul 15 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -1621,7 +1625,7 @@ export function Pattern() {
                                         <AvatarImage alt="Nora Vale" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Nora Vale
+                                        {"Nora Vale"}
                                       </span>
                                     </span>
                                   </span>
@@ -1646,15 +1650,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Meridian Retail
+                                      {"Meridian Retail"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      4
+                                      {"4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1663,7 +1667,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-06-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Meridian Retail
+                                    {"Meridian Retail"}
                                   </span>
                                 </div>
                               </td>
@@ -1672,10 +1676,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $270,000
+                                        {"$270,000"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1686,11 +1690,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        50%
+                                        {"50%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      50% Weighted
+                                      {"50% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1700,11 +1704,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Sep 30
+                                        {"Sep 30"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Sep 30 Next close
+                                      {"Sep 30 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -1717,7 +1721,7 @@ export function Pattern() {
                                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                     </span>
                                   </span>
@@ -1742,15 +1746,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Atlas Freight
+                                      {"Atlas Freight"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      4
+                                      {"4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-emerald-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Customer
+                                        {"Customer"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1759,7 +1763,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-07-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Atlas Freight
+                                    {"Atlas Freight"}
                                   </span>
                                 </div>
                               </td>
@@ -1768,10 +1772,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $57,600
+                                        {"$57,600"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1782,11 +1786,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        51%
+                                        {"51%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      51% Weighted
+                                      {"51% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1796,11 +1800,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 31 Next close
+                                      {"Jul 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -1813,7 +1817,7 @@ export function Pattern() {
                                         <AvatarImage alt="Sana Qureshi" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Sana Qureshi
+                                        {"Sana Qureshi"}
                                       </span>
                                     </span>
                                   </span>
@@ -1838,15 +1842,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Ridgeline Energy
+                                      {"Ridgeline Energy"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      4
+                                      {"4"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1855,7 +1859,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-08-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Ridgeline Energy
+                                    {"Ridgeline Energy"}
                                   </span>
                                 </div>
                               </td>
@@ -1864,10 +1868,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $232,800
+                                        {"$232,800"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1878,11 +1882,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        56%
+                                        {"56%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      56% Weighted
+                                      {"56% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1892,11 +1896,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 31 Next close
+                                      {"Jul 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -1909,7 +1913,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </span>
@@ -1934,15 +1938,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Cedar & Co
+                                      {"Cedar & Co"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      3
+                                      {"3"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -1951,7 +1955,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-09-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Cedar & Co
+                                    {"Cedar & Co"}
                                   </span>
                                 </div>
                               </td>
@@ -1960,10 +1964,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $17,760
+                                        {"$17,760"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -1974,11 +1978,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        20%
+                                        {"20%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      20% Weighted
+                                      {"20% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -1988,11 +1992,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Aug 14
+                                        {"Aug 14"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Aug 14 Next close
+                                      {"Aug 14 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -2003,11 +2007,11 @@ export function Pattern() {
                                     <span className="flex gap-2 items-center min-w-0">
                                       <Avatar className="size-5" size="default">
                                         <AvatarFallback className="text-[9px]">
-                                          EW
+                                          {"EW"}
                                         </AvatarFallback>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Emma Wilson
+                                        {"Emma Wilson"}
                                       </span>
                                     </span>
                                   </span>
@@ -2032,15 +2036,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Quanta Devices
+                                      {"Quanta Devices"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      3
+                                      {"3"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -2049,7 +2053,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-10-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Quanta Devices
+                                    {"Quanta Devices"}
                                   </span>
                                 </div>
                               </td>
@@ -2058,10 +2062,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $46,800
+                                        {"$46,800"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -2072,11 +2076,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        47%
+                                        {"47%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      47% Weighted
+                                      {"47% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -2086,11 +2090,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Jul 31
+                                        {"Jul 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 31 Next close
+                                      {"Jul 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -2103,7 +2107,7 @@ export function Pattern() {
                                         <AvatarImage alt="Alex Johnson" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Alex Johnson
+                                        {"Alex Johnson"}
                                       </span>
                                     </span>
                                   </span>
@@ -2128,15 +2132,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Summit Financial
+                                      {"Summit Financial"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      3
+                                      {"3"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -2145,7 +2149,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-11-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Summit Financial
+                                    {"Summit Financial"}
                                   </span>
                                 </div>
                               </td>
@@ -2154,10 +2158,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $95,400
+                                        {"$95,400"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -2168,11 +2172,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        34%
+                                        {"34%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      34% Weighted
+                                      {"34% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -2182,11 +2186,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Next close" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        Aug 31
+                                        {"Aug 31"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Aug 31 Next close
+                                      {"Aug 31 Next close"}
                                     </span>
                                   </span>
                                 </div>
@@ -2199,7 +2203,7 @@ export function Pattern() {
                                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Mira Stone
+                                        {"Mira Stone"}
                                       </span>
                                     </span>
                                   </span>
@@ -2224,15 +2228,15 @@ export function Pattern() {
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="flex gap-2 items-center min-w-0" data-group-row="">
                                     <span className="font-medium min-w-0 shrink text-foreground text-sm truncate">
-                                      Northstar Clinics
+                                      {"Northstar Clinics"}
                                     </span>
                                     <span className="shrink-0 tabular-nums text-muted-foreground text-xs">
-                                      3
+                                      {"3"}
                                     </span>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-foreground text-xs transition-shadow">
                                       <span className="bg-sky-500 rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                       <span className="truncate">
-                                        Prospect
+                                        {"Prospect"}
                                       </span>
                                     </Badge>
                                   </span>
@@ -2241,7 +2245,7 @@ export function Pattern() {
                               <td className="[&:has(+[data-slot=data-grid-table-fill-body-cell]+td[data-pinned])]:[--data-grid-overlay-end:0px] [&:has(+[data-slot=data-grid-table-fill-body-cell]:last-child)]:[--data-grid-overlay-end:0px] [&:has(+td[data-pinned])]:[--data-grid-overlay-end:0px] [td[data-pinned]+&]:[--data-grid-overlay-start:0px] align-middle data-[cell-edge-bottom]:before:border-b data-[cell-edge-left]:before:border-s data-[cell-edge-right]:before:border-e data-[cell-edge-top]:before:border-t data-[cell-fill-target]:bg-primary/4 data-[cell-fill-target]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-focused]:before:absolute data-[cell-focused]:before:border-primary data-[cell-focused]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-focused]:before:content-[''] data-[cell-focused]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-focused]:before:pointer-events-none data-[cell-focused]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-focused]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-focused]:bg-transparent! data-[cell-focused]:data-pinned:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))]! data-[cell-focused]:not-data-[cell-selected]:before:border data-[cell-selected]:before:absolute data-[cell-selected]:before:border-b data-[cell-selected]:before:border-e data-[cell-selected]:before:border-primary data-[cell-selected]:before:bottom-[var(--data-grid-overlay-bottom,-1px)] data-[cell-selected]:before:content-[''] data-[cell-selected]:before:end-[var(--data-grid-overlay-end,-1px)] data-[cell-selected]:before:pointer-events-none data-[cell-selected]:before:start-[var(--data-grid-overlay-start,-1px)] data-[cell-selected]:before:top-[var(--data-grid-overlay-top,-1px)] data-[cell-selected]:bg-primary/4 data-[cell-selected]:data-pinned:bg-[color-mix(in_oklab,var(--primary)_4%,var(--data-grid-surface,var(--data-grid-card-surface,var(--background))))] data-[cell-selected]:not-data-[cell-edge-bottom]:before:border-b-border data-[cell-selected]:not-data-[cell-edge-right]:before:border-e-border data-[cell-status=dirty]:after:border-t-amber-500 data-[cell-status=invalid]:after:border-t-destructive data-[cell-status]:after:absolute data-[cell-status]:after:border-s-[5px] data-[cell-status]:after:border-s-transparent data-[cell-status]:after:border-t-[5px] data-[cell-status]:after:content-[''] data-[cell-status]:after:end-0 data-[cell-status]:after:size-0 data-[cell-status]:after:top-0 data-[cell-status]:relative first:[--data-grid-overlay-start:0px] in-[tr:first-child]:[--data-grid-overlay-top:0px] in-[tr:last-child]:[--data-grid-overlay-bottom:0px] in-data-[cell-editing]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-focused]:before:hidden in-data-[cell-filling]:data-[cell-selected]:before:hidden last:[--data-grid-overlay-end:0px] min-w-0 px-2 py-1.5 relative select-none" id="_r_d_c-grp-acc-12-stage" aria-colindex="3" aria-selected="false" data-col-id="stage" style={{width: "calc(var(--col-stage-size) * 1px)"}}>
                                 <div className="-mx-2 -my-1.5 px-2 py-1.5 truncate">
                                   <span className="sr-only">
-                                    Northstar Clinics
+                                    {"Northstar Clinics"}
                                   </span>
                                 </div>
                               </td>
@@ -2250,10 +2254,10 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                       <span className="font-medium text-foreground">
-                                        $34,200
+                                        {"$34,200"}
                                       </span>
                                       <span className="text-muted-foreground truncate">
-                                        open
+                                        {"open"}
                                       </span>
                                     </span>
                                   </span>
@@ -2264,11 +2268,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                       <span className="font-medium text-foreground">
-                                        39%
+                                        {"39%"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      39% Weighted
+                                      {"39% Weighted"}
                                     </span>
                                   </span>
                                 </div>
@@ -2278,11 +2282,11 @@ export function Pattern() {
                                   <span className="align-middle inline-flex items-baseline max-w-full min-w-0 px-1 tabular-nums text-sm truncate">
                                     <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="1 overdue" aria-hidden="true">
                                       <span className="font-medium text-destructive">
-                                        Jul 10
+                                        {"Jul 10"}
                                       </span>
                                     </span>
                                     <span className="sr-only">
-                                      Jul 10 1 overdue
+                                      {"Jul 10 1 overdue"}
                                     </span>
                                   </span>
                                 </div>
@@ -2295,7 +2299,7 @@ export function Pattern() {
                                         <AvatarImage alt="Leo Grant" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
                                       </Avatar>
                                       <span className="min-w-0 text-sm truncate">
-                                        Leo Grant
+                                        {"Leo Grant"}
                                       </span>
                                     </span>
                                   </span>
@@ -2305,16 +2309,18 @@ export function Pattern() {
                               <DataGridTableFillBodyCell aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></DataGridTableFillBodyCell>
                             </tr>
                           </DataGridTableBody>
+                          </DataGridProvider>
+                          <DataGridProvider>
                           <DataGridTableFoot>
                             <DataGridTableFootRow>
                               <td className="align-middle bg-muted/40 dark:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] font-medium px-2 py-1.5 text-secondary-foreground/80"></td>
                               <td className="align-middle bg-muted/40 dark:bg-[color:var(--data-grid-surface,var(--data-grid-card-surface,var(--background)))] font-medium px-2 py-1.5 text-secondary-foreground/80">
                                 <span className="flex gap-1.5 items-baseline min-w-0 text-sm truncate">
                                   <span className="font-semibold text-foreground">
-                                    All deals
+                                    {"All deals"}
                                   </span>
                                   <span className="tabular-nums text-muted-foreground truncate">
-                                    48
+                                    {"48"}
                                   </span>
                                 </span>
                               </td>
@@ -2323,10 +2329,10 @@ export function Pattern() {
                                 <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                   <span className="gap-1 inline-flex items-baseline min-w-0 truncate">
                                     <span className="font-semibold text-foreground">
-                                      $1.43M
+                                      {"$1.43M"}
                                     </span>
                                     <span className="text-muted-foreground truncate">
-                                      open
+                                      {"open"}
                                     </span>
                                   </span>
                                 </span>
@@ -2335,11 +2341,11 @@ export function Pattern() {
                                 <span className="align-middle inline-flex items-baseline max-w-full min-w-0 tabular-nums text-sm truncate">
                                   <span className="gap-1 inline-flex items-baseline min-w-0 truncate" title="Weighted" aria-hidden="true">
                                     <span className="font-semibold text-foreground">
-                                      51%
+                                      {"51%"}
                                     </span>
                                   </span>
                                   <span className="sr-only">
-                                    51% Weighted
+                                    {"51% Weighted"}
                                   </span>
                                 </span>
                               </td>
@@ -2349,11 +2355,15 @@ export function Pattern() {
                               <td className="p-0" aria-hidden="true" style={{width: "var(--data-grid-fill-size, 0px)"}}></td>
                             </DataGridTableFootRow>
                           </DataGridTableFoot>
+                          </DataGridProvider>
                         </DataGridTable>
+                        </DataGridProvider>
                       </DataGridTableViewport>
+                      </DataGridProvider>
                     </div>
                   </div>
                 </DataGridScrollArea>
+                </DataGridProvider>
               </div>
               <DataGridCellSelection hidden></DataGridCellSelection>
             </DataGrid>

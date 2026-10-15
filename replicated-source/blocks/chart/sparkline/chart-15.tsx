@@ -19,16 +19,16 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="font-semibold text-sm">
-                  Revenue
+                  {"Revenue"}
                 </span>
               </div>
               <div className="flex gap-2.5 items-end justify-between">
                 <div className="flex flex-col gap-px pb-2">
                   <div className="text-muted-foreground text-xs whitespace-nowrap">
-                    Last 28 days
+                    {"Last 28 days"}
                   </div>
                   <div className="font-semibold text-foreground text-xl tracking-tight">
-                    6.238$
+                    {"6.238$"}
                   </div>
                 </div>
                 <div className="h-16 max-w-40 relative w-full">
@@ -89,16 +89,16 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="font-semibold text-sm">
-                  New Customers
+                  {"New Customers"}
                 </span>
               </div>
               <div className="flex gap-2.5 items-end justify-between">
                 <div className="flex flex-col gap-px pb-2">
                   <div className="text-muted-foreground text-xs whitespace-nowrap">
-                    Last 28 days
+                    {"Last 28 days"}
                   </div>
                   <div className="font-semibold text-foreground text-xl tracking-tight">
-                    6.202
+                    {"6.202"}
                   </div>
                 </div>
                 <div className="h-16 max-w-40 relative w-full">
@@ -157,16 +157,16 @@ export function Pattern() {
                   </svg>
                 </span>
                 <span className="font-semibold text-sm">
-                  Active Users
+                  {"Active Users"}
                 </span>
               </div>
               <div className="flex gap-2.5 items-end justify-between">
                 <div className="flex flex-col gap-px pb-2">
                   <div className="text-muted-foreground text-xs whitespace-nowrap">
-                    Last 28 days
+                    {"Last 28 days"}
                   </div>
                   <div className="font-semibold text-foreground text-xl tracking-tight">
-                    18.945
+                    {"18.945"}
                   </div>
                 </div>
                 <div className="h-16 max-w-40 relative w-full">

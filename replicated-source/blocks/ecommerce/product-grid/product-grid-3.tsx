@@ -15,7 +15,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  20% Off
+                  {"20% Off"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Wayfarer Daypack to wishlist" aria-pressed="false" extracted="1">
@@ -27,16 +27,16 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Daypacks">
-                  Daypacks
+                  {"Daypacks"}
                 </a>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Everyday">
-                  Everyday
+                  {"Everyday"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Wayfarer Daypack
+                  {"Wayfarer Daypack"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -94,19 +94,19 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.8
+                    {"4.8"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 412 reviews for Wayfarer Daypack">
-                  (412)
+                  {"(412)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $148
+                  {"$148"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $185
+                  {"$185"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Wayfarer Daypack to cart">
@@ -115,7 +115,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -126,7 +126,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-primary-foreground text-xs transition-shadow">
-                  New
+                  {"New"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Sundown Weekender to wishlist" aria-pressed="false">
@@ -138,12 +138,12 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Weekenders">
-                  Weekenders
+                  {"Weekenders"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Sundown Weekender
+                  {"Sundown Weekender"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -201,16 +201,16 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.7
+                    {"4.7"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 218 reviews for Sundown Weekender">
-                  (218)
+                  {"(218)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $224
+                  {"$224"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Sundown Weekender to cart">
@@ -219,7 +219,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -230,7 +230,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Bestseller
+                  {"Bestseller"}
                 </Badge>
               </div>
               <Button className="absolute right-3 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Remove Saddle Tote from wishlist" aria-pressed="true">
@@ -242,16 +242,16 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Totes">
-                  Totes
+                  {"Totes"}
                 </a>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Canvas">
-                  Canvas
+                  {"Canvas"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Saddle Tote
+                  {"Saddle Tote"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -309,19 +309,19 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.9
+                    {"4.9"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 564 reviews for Saddle Tote">
-                  (564)
+                  {"(564)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $98
+                  {"$98"}
                 </span>
                 <span className="font-normal line-through text-muted-foreground">
-                  $128
+                  {"$128"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Saddle Tote to cart">
@@ -330,7 +330,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -348,12 +348,12 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Travel Packs">
-                  Travel Packs
+                  {"Travel Packs"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Outpost 45L Pack
+                  {"Outpost 45L Pack"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -411,16 +411,16 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.9
+                    {"4.9"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 1,124 reviews for Outpost 45L Pack">
-                  (1,124)
+                  {"(1,124)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $268
+                  {"$268"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Outpost 45L Pack to cart">
@@ -429,7 +429,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -447,12 +447,12 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Slings">
-                  Slings
+                  {"Slings"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Compass Sling 6L
+                  {"Compass Sling 6L"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -510,16 +510,16 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.6
+                    {"4.6"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 89 reviews for Compass Sling 6L">
-                  (89)
+                  {"(89)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $58
+                  {"$58"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Compass Sling 6L to cart">
@@ -528,7 +528,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>
@@ -539,7 +539,7 @@ export function Pattern() {
               </a>
               <div className="absolute left-3 top-3">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-full text-white text-xs transition-shadow">
-                  Hot
+                  {"Hot"}
                 </Badge>
               </div>
               <Button className="absolute right-3 sm:focus-visible:opacity-100 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-3 transition-opacity" type="button" tabIndex="0" aria-label="Add Field Crossbody to wishlist" aria-pressed="false">
@@ -551,16 +551,16 @@ export function Pattern() {
             <div className="flex flex-col gap-2 min-w-0">
               <nav className="flex flex-wrap gap-x-2 gap-y-1 items-center" aria-label="Categories">
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Crossbody">
-                  Crossbody
+                  {"Crossbody"}
                 </a>
                 <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                 <a className="font-medium hover:text-primary hover:underline text-muted-foreground text-xs tracking-wide transition-colors underline-offset-4 uppercase" href="#" aria-label="View all Field">
-                  Field
+                  {"Field"}
                 </a>
               </nav>
               <h3 className="font-medium leading-snug min-w-0 text-base text-foreground tracking-tight">
                 <a className="block hover:text-primary hover:underline transition-colors truncate underline-offset-4" href="#">
-                  Field Crossbody
+                  {"Field Crossbody"}
                 </a>
               </h3>
               <div className="flex flex-wrap gap-1.5 items-center">
@@ -618,16 +618,16 @@ export function Pattern() {
                     </div>
                   </div>
                   <span className="text-muted-foreground text-xs w-5">
-                    4.8
+                    {"4.8"}
                   </span>
                 </Rating>
                 <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground text-xs transition-colors underline-offset-4" href="##reviews" aria-label="Read 312 reviews for Field Crossbody">
-                  (312)
+                  {"(312)"}
                 </a>
               </div>
               <div className="flex font-semibold gap-2 items-baseline min-w-0 tabular-nums text-base">
                 <span className="text-foreground">
-                  $128
+                  {"$128"}
                 </span>
               </div>
               <Button className="mt-1 w-full" type="button" tabIndex="0" aria-label="Add Field Crossbody to cart">
@@ -636,7 +636,7 @@ export function Pattern() {
                   <path d="M3.103 6.034h17.794"></path>
                   <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                 </svg>
-                Add to Cart
+                {"Add to Cart"}
               </Button>
             </div>
           </article>

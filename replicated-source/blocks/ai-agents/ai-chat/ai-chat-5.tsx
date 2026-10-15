@@ -53,13 +53,13 @@ export function Pattern() {
               </Item>
             </div>
             <EmptyTitle className="text-2xl tracking-tight">
-              What should I look through?
+              {"What should I look through?"}
             </EmptyTitle>
           </EmptyHeader>
         </Empty>
         <form>
           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="ai-chat-5-composer">
-            Message NeUI Chat
+            {"Message NeUI Chat"}
           </FieldLabel>
           <Frame spacing="sm">
             <FramePanel className="p-0">
@@ -77,11 +77,11 @@ export function Pattern() {
                     <Select>
                     <SelectTrigger className="border-transparent dark:bg-transparent dark:hover:bg-accent focus-visible:ring-0 gap-1 h-7 hover:bg-accent hover:text-foreground min-w-0 px-1.5 shadow-none text-muted-foreground w-auto" type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Answer depth">
                       <SelectValue className="text-xs truncate">
-                        Auto
+                        {"Auto"}
                       </SelectValue>
                       <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
-                        ▼
+                        {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
@@ -101,7 +101,7 @@ export function Pattern() {
             <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
               <div className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-between">
                 <p className="min-w-0 text-muted-foreground text-xs truncate">
-                  Reading 4 of 9 apps
+                  {"Reading 4 of 9 apps"}
                 </p>
                 <div className="flex flex-wrap gap-2 items-center min-w-0">
                   <ul className="flex flex-wrap gap-0.5 items-center" aria-label="Connected apps">
@@ -209,7 +209,7 @@ export function Pattern() {
                     <path d="m3 17 2 2 4-4"></path>
                     <path d="m3 7 2 2 4-4"></path>
                   </svg>
-                  Digest
+                  {"Digest"}
                 </FieldLabel>
               </Field>
             </FieldLabel>
@@ -222,7 +222,7 @@ export function Pattern() {
                     <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                     <path d="m15 5 4 4"></path>
                   </svg>
-                  Draft
+                  {"Draft"}
                 </FieldLabel>
               </Field>
             </FieldLabel>
@@ -235,7 +235,7 @@ export function Pattern() {
                     <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
                     <rect x="2" y="6" width="14" height="12" rx="2"></rect>
                   </svg>
-                  Recap
+                  {"Recap"}
                 </FieldLabel>
               </Field>
             </FieldLabel>
@@ -248,7 +248,7 @@ export function Pattern() {
                     <path d="m21 21-4.34-4.34"></path>
                     <circle cx="11" cy="11" r="8"></circle>
                   </svg>
-                  Audit
+                  {"Audit"}
                 </FieldLabel>
               </Field>
             </FieldLabel>

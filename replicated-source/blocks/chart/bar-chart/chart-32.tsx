@@ -21,10 +21,10 @@ export function Pattern() {
         <header className="flex flex-row flex-wrap gap-3 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
           <div className="flex flex-col gap-px min-w-0">
             <div className="font-semibold text-sm">
-              Run Time
+              {"Run Time"}
             </div>
             <div className="text-muted-foreground text-sm">
-              Runner time by start hour, UTC
+              {"Runner time by start hour, UTC"}
             </div>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
@@ -36,7 +36,7 @@ export function Pattern() {
                   <path d="M12 6v6l4 2"></path>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Last 24 Hours
+                  {"Last 24 Hours"}
                 </span>
                 <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -50,7 +50,7 @@ export function Pattern() {
                   <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  All Jobs
+                  {"All Jobs"}
                 </span>
                 <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                   <path d="m6 9 6 6 6-6"></path>
@@ -67,7 +67,7 @@ export function Pattern() {
                   <path d="M9 19h6"></path>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  All Outcomes
+                  {"All Outcomes"}
                 </span>
                 <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -83,7 +83,7 @@ export function Pattern() {
                   <circle cx="7" cy="7" r="3"></circle>
                 </svg>
                 <span className="[text-box:trim-both_cap_alphabetic]">
-                  Display
+                  {"Display"}
                 </span>
                 <svg className="lucide lucide-chevron-down text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
@@ -118,11 +118,11 @@ export function Pattern() {
           <dl className="@3xl:-my-(--frame-panel-py) @3xl:gap-0 @3xl:grid-cols-4 gap-x-6 gap-y-5 grid grid-cols-2">
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Runner Time
+                {"Runner Time"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  16h 07m
+                  {"16h 07m"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
@@ -131,12 +131,12 @@ export function Pattern() {
                       <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                     </svg>
                     <span className="[text-box:trim-both_cap_alphabetic] tabular-nums">
-                      -5%
+                      {"-5%"}
                     </span>
                   </Badge>
                   <span className="flex h-4 items-center">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      vs prior 24h
+                      {"vs prior 24h"}
                     </span>
                   </span>
                 </span>
@@ -144,16 +144,16 @@ export function Pattern() {
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Runs
+                {"Runs"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  1,004
+                  {"1,004"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="flex h-4 items-center tabular-nums">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      42 per hour
+                      {"42 per hour"}
                     </span>
                   </span>
                 </span>
@@ -161,16 +161,16 @@ export function Pattern() {
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Failure Time
+                {"Failure Time"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  1h 40m
+                  {"1h 40m"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="flex h-4 items-center tabular-nums">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      10.4% of runner time
+                      {"10.4% of runner time"}
                     </span>
                   </span>
                 </span>
@@ -178,16 +178,16 @@ export function Pattern() {
             </div>
             <div className="@3xl:not-first:border-s @3xl:not-first:ps-6 @3xl:not-last:pe-6 @3xl:py-(--frame-panel-py) flex flex-col gap-2 min-w-0">
               <dt className="text-muted-foreground text-sm">
-                Peak Hour
+                {"Peak Hour"}
               </dt>
               <dd className="flex flex-col gap-2 min-w-0">
                 <span className="font-semibold leading-none tabular-nums text-2xl tracking-tight">
-                  03:00
+                  {"03:00"}
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-muted-foreground text-xs">
                   <span className="flex h-4 items-center tabular-nums">
                     <span className="[text-box:trim-both_cap_alphabetic]">
-                      1h 32m runner time
+                      {"1h 32m runner time"}
                     </span>
                   </span>
                 </span>
@@ -196,37 +196,11 @@ export function Pattern() {
           </dl>
         </FramePanel>
         <FramePanel className="flex flex-1 flex-col gap-4 min-h-0">
-          <style>{`
-@keyframes c32-rise { from { transform: scaleY(0); } }
-@keyframes c32-fade { from { opacity: 0; } }
-[data-c32-rise] { animation: c32-rise 400ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }
-[data-c32-fade] { animation: c32-fade 200ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }
-@media (prefers-reduced-motion: reduce) {
-  [data-c32-rise] { animation-name: c32-fade; animation-duration: 200ms; }
-}
-`}</style>
+          <style dangerouslySetInnerHTML={{ __html: "\n@keyframes c32-rise { from { transform: scaleY(0); } }\n@keyframes c32-fade { from { opacity: 0; } }\n[data-c32-rise] { animation: c32-rise 400ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }\n[data-c32-fade] { animation: c32-fade 200ms cubic-bezier(0.23, 1, 0.32, 1) backwards; }\n@media (prefers-reduced-motion: reduce) {\n  [data-c32-rise] { animation-name: c32-fade; animation-duration: 200ms; }\n}\n" }} />
           <div className="@container min-w-0 relative">
+            <ChartContainer>
             <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-72 has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-ring/50 justify-center min-w-0 ring-offset-card text-xs w-full" data-chart="chart-_r_r_" role="group" aria-label="Runner time per hour, last 24 hours: Succeeded, Timed Out, and Failed. Arrow keys move between hours.">
-              <style>{`
- [data-chart=chart-_r_r_] {
-  --color-succeededSec: var(--success);
-  --color-timedOutSec: var(--warning);
-  --color-failedSec: var(--destructive);
-  --color-succeeded: var(--success);
-  --color-timedOut: var(--warning);
-  --color-failed: var(--destructive);
-}
-
-
-.dark [data-chart=chart-_r_r_] {
-  --color-succeededSec: var(--success);
-  --color-timedOutSec: var(--warning);
-  --color-failedSec: var(--destructive);
-  --color-succeeded: var(--success);
-  --color-timedOut: var(--warning);
-  --color-failed: var(--destructive);
-}
-`}</style>
+              <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_r_] {\n  --color-succeededSec: var(--success);\n  --color-timedOutSec: var(--warning);\n  --color-failedSec: var(--destructive);\n  --color-succeeded: var(--success);\n  --color-timedOut: var(--warning);\n  --color-failed: var(--destructive);\n}\n\n\n.dark [data-chart=chart-_r_r_] {\n  --color-succeededSec: var(--success);\n  --color-timedOutSec: var(--warning);\n  --color-failedSec: var(--destructive);\n  --color-succeeded: var(--success);\n  --color-timedOut: var(--warning);\n  --color-failed: var(--destructive);\n}\n" }} />
               <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                 <div style={{width: "0px", height: "0px", overflow: "visible"}}>
                   <div className="recharts-wrapper" width="982" height="288" style={{position: "relative", cursor: "default", width: "982px", height: "288px"}}>
@@ -723,7 +697,7 @@ export function Pattern() {
                           <line x1="524.5416666666666" x2="524.5416666666666" y1="23" y2="33.03703703703707" stroke="var(--muted-foreground)" strokeOpacity="0.5" strokeDasharray="2 2"></line>
                           <circle cx="524.5416666666666" cy="38.03703703703707" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1.5"></circle>
                           <text x="524.5416666666666" y="18" textAnchor="middle" fill="var(--muted-foreground)" stroke="var(--card)" strokeWidth="3" strokeLinejoin="round" paint-order="stroke">
-                            Timeout burn
+                            {"Timeout burn"}
                           </text>
                         </g>
                       </g>
@@ -762,56 +736,56 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="55.54166666666667" y="274" textAnchor="middle" fill="#666">
                               <tspan x="55.54166666666667" dy="0.71em">
-                                15:00
+                                {"15:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="172.79166666666666" y="274" textAnchor="middle" fill="#666">
                               <tspan x="172.79166666666666" dy="0.71em">
-                                18:00
+                                {"18:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="290.0416666666667" y="274" textAnchor="middle" fill="#666">
                               <tspan x="290.0416666666667" dy="0.71em">
-                                21:00
+                                {"21:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="407.2916666666667" y="274" textAnchor="middle" fill="#666">
                               <tspan x="407.2916666666667" dy="0.71em">
-                                00:00
+                                {"00:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="524.5416666666666" y="274" textAnchor="middle" fill="#666">
                               <tspan x="524.5416666666666" dy="0.71em">
-                                03:00
+                                {"03:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="641.7916666666666" y="274" textAnchor="middle" fill="#666">
                               <tspan x="641.7916666666666" dy="0.71em">
-                                06:00
+                                {"06:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="759.0416666666666" y="274" textAnchor="middle" fill="#666">
                               <tspan x="759.0416666666666" dy="0.71em">
-                                09:00
+                                {"09:00"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="938" stroke="none" x="876.2916666666666" y="274" textAnchor="middle" fill="#666">
                               <tspan x="876.2916666666666" dy="0.71em">
-                                12:00
+                                {"12:00"}
                               </tspan>
                             </text>
                           </g>
@@ -820,28 +794,28 @@ export function Pattern() {
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="230" stroke="none" x="24" y="258" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                0m
+                                {"0m"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="230" stroke="none" x="24" y="189.1418477935453" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                30m
+                                {"30m"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="230" stroke="none" x="24" y="120.28369558709059" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                60m
+                                {"60m"}
                               </tspan>
                             </text>
                           </g>
                           <g className="recharts-cartesian-axis-tick-label recharts-layer">
                             <text className="recharts-cartesian-axis-tick-value recharts-text" width="36" orientation="left" height="230" stroke="none" x="24" y="51.4255433806359" textAnchor="end" fill="#666">
                               <tspan x="24" dy="0.355em">
-                                90m
+                                {"90m"}
                               </tspan>
                             </text>
                           </g>
@@ -852,33 +826,34 @@ export function Pattern() {
                 </div>
               </div>
             </div>
+            </ChartContainer>
           </div>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 items-center justify-center pe-2 ps-9" aria-label="Legend">
             <li className="flex gap-1.5 h-4 items-center text-xs">
               <span className="bg-success rounded-full shrink-0 size-2" aria-hidden="true"></span>
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Succeeded
+                {"Succeeded"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                14h 27m
+                {"14h 27m"}
               </span>
             </li>
             <li className="flex gap-1.5 h-4 items-center text-xs">
               <span className="bg-warning rounded-full shrink-0 size-2" aria-hidden="true"></span>
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Timed Out
+                {"Timed Out"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                1h 20m
+                {"1h 20m"}
               </span>
             </li>
             <li className="flex gap-1.5 h-4 items-center text-xs">
               <span className="bg-destructive rounded-full shrink-0 size-2" aria-hidden="true"></span>
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Failed
+                {"Failed"}
               </span>
               <span className="[text-box:trim-both_cap_alphabetic] tabular-nums text-muted-foreground">
-                20m 12s
+                {"20m 12s"}
               </span>
             </li>
           </ul>
@@ -887,20 +862,20 @@ export function Pattern() {
           <span className="flex gap-1.5 items-center min-w-0">
             <span className="flex h-4 items-center">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                All 32 jobs
+                {"All 32 jobs"}
               </span>
             </span>
             <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
             <span className="flex h-4 items-center tabular-nums">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                As of 14:20 UTC
+                {"As of 14:20 UTC"}
               </span>
             </span>
           </span>
           <span className="flex gap-1.5 items-center min-w-0">
             <span className="flex h-4 items-center tabular-nums">
               <span className="[text-box:trim-both_cap_alphabetic]">
-                Synced 4m ago
+                {"Synced 4m ago"}
               </span>
             </span>
           </span>

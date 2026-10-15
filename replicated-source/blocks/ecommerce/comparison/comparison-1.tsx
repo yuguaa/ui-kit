@@ -13,14 +13,14 @@ export function Pattern() {
         <header className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div className="min-w-0">
             <h1 className="font-semibold sm:text-3xl text-2xl tracking-tight" id="comparison-1-heading">
-              Compare Products
+              {"Compare Products"}
             </h1>
             <p className="leading-5 mt-1 text-muted-foreground text-sm">
-              Side-by-side specs and features to help you decide.
+              {"Side-by-side specs and features to help you decide."}
             </p>
           </div>
           <span className="text-muted-foreground text-sm">
-            6 of 6 products
+            {"6 of 6 products"}
           </span>
         </header>
         <div className="border border-border mt-8 overflow-hidden rounded-md">
@@ -40,7 +40,7 @@ export function Pattern() {
                   <tr className="border-b border-border">
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-bottom bg-muted left-0 p-4 sticky text-left z-20" scope="col">
                       <span className="sr-only">
-                        Product
+                        {"Product"}
                       </span>
                     </th>
                     <th className="align-top border-border text-left" scope="col">
@@ -64,16 +64,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#wired" aria-label="View Wired products">
-                                Wired
+                                {"Wired"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#on-ear" aria-label="View On ear products">
-                                On ear
+                                {"On ear"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#lite">
-                            Lite Wireless
+                            {"Lite Wireless"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="3.9 out of 5">
@@ -115,15 +115,15 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              3.9
+                              {"3.9"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#lite#reviews" aria-label="Read 72 reviews for Lite Wireless">
-                              (72)
+                              {"(72)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $79
+                              {"$79"}
                             </span>
                           </div>
                         </div>
@@ -133,7 +133,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -158,16 +158,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#wireless" aria-label="View Wireless products">
-                                Wireless
+                                {"Wireless"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#on-ear" aria-label="View On ear products">
-                                On ear
+                                {"On ear"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#essential">
-                            Essential Wireless
+                            {"Essential Wireless"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="4.2 out of 5">
@@ -209,15 +209,15 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              4.2
+                              {"4.2"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#essential#reviews" aria-label="Read 184 reviews for Essential Wireless">
-                              (184)
+                              {"(184)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $129
+                              {"$129"}
                             </span>
                           </div>
                         </div>
@@ -227,7 +227,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -244,7 +244,7 @@ export function Pattern() {
                         <a className="aspect-square bg-muted block group/image max-w-[10rem] mx-auto overflow-hidden relative rounded-md w-full" href="#studio" aria-label="View Studio Wireless">
                           <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio wireless headphones product shot" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=480&h=480&q=80" />
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 left-2 min-w-5 outline-none px-1.25 py-0.5 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary-foreground text-xs top-2 transition-shadow">
-                            Best value
+                            {"Best value"}
                           </Badge>
                         </a>
                         <div className="flex flex-col gap-1.5 min-w-0">
@@ -255,16 +255,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#wireless" aria-label="View Wireless products">
-                                Wireless
+                                {"Wireless"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#noise-cancelling" aria-label="View Noise cancelling products">
-                                Noise cancelling
+                                {"Noise cancelling"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#studio">
-                            Studio Wireless
+                            {"Studio Wireless"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="4.6 out of 5">
@@ -306,18 +306,18 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              4.6
+                              {"4.6"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#studio#reviews" aria-label="Read 412 reviews for Studio Wireless">
-                              (412)
+                              {"(412)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $249
+                              {"$249"}
                             </span>
                             <span className="line-through tabular-nums text-muted-foreground text-xs">
-                              $299
+                              {"$299"}
                             </span>
                           </div>
                         </div>
@@ -327,7 +327,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -344,7 +344,7 @@ export function Pattern() {
                         <a className="aspect-square bg-muted block group/image max-w-[10rem] mx-auto overflow-hidden relative rounded-md w-full" href="#studio-pro" aria-label="View Studio Pro">
                           <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio Pro headphones product shot" src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=480&h=480&q=80" />
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 left-2 min-w-5 outline-none px-1.25 py-0.5 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-white text-xs top-2 transition-shadow">
-                            New
+                            {"New"}
                           </Badge>
                         </a>
                         <div className="flex flex-col gap-1.5 min-w-0">
@@ -355,16 +355,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                                Studio
+                                {"Studio"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#audiophile" aria-label="View Audiophile products">
-                                Audiophile
+                                {"Audiophile"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#studio-pro">
-                            Studio Pro
+                            {"Studio Pro"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="4.8 out of 5">
@@ -406,15 +406,15 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              4.8
+                              {"4.8"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#studio-pro#reviews" aria-label="Read 96 reviews for Studio Pro">
-                              (96)
+                              {"(96)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $399
+                              {"$399"}
                             </span>
                           </div>
                         </div>
@@ -424,7 +424,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -449,16 +449,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                                Studio
+                                {"Studio"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#spatial" aria-label="View Spatial products">
-                                Spatial
+                                {"Spatial"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#studio-max">
-                            Studio Max
+                            {"Studio Max"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="4.7 out of 5">
@@ -500,15 +500,15 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              4.7
+                              {"4.7"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#studio-max#reviews" aria-label="Read 58 reviews for Studio Max">
-                              (58)
+                              {"(58)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $499
+                              {"$499"}
                             </span>
                           </div>
                         </div>
@@ -518,7 +518,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -535,7 +535,7 @@ export function Pattern() {
                         <a className="aspect-square bg-muted block group/image max-w-[10rem] mx-auto overflow-hidden relative rounded-md w-full" href="#studio-elite" aria-label="View Studio Elite">
                           <img className="absolute duration-300 group-hover/image:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Studio Elite headphones product shot" src="https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?auto=format&fit=crop&w=480&h=480&q=80" />
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 absolute bg-primary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 left-2 min-w-5 outline-none px-1.25 py-0.5 style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-primary-foreground text-xs top-2 transition-shadow">
-                            Flagship
+                            {"Flagship"}
                           </Badge>
                         </a>
                         <div className="flex flex-col gap-1.5 min-w-0">
@@ -546,16 +546,16 @@ export function Pattern() {
                             </svg>
                             <div className="flex flex-wrap gap-x-1.5 gap-y-1 items-center min-w-0 overflow-hidden">
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#studio" aria-label="View Studio products">
-                                Studio
+                                {"Studio"}
                               </a>
                               <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                               <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#premium" aria-label="View Premium products">
-                                Premium
+                                {"Premium"}
                               </a>
                             </div>
                           </div>
                           <a className="block font-semibold hover:text-primary hover:underline min-w-0 text-foreground text-sm transition-colors truncate underline-offset-2" href="#studio-elite">
-                            Studio Elite
+                            {"Studio Elite"}
                           </a>
                           <div className="flex gap-1.5 items-center min-w-0 text-xs">
                             <span className="inline-flex relative shrink-0" role="img" aria-label="4.9 out of 5">
@@ -597,15 +597,15 @@ export function Pattern() {
                               </span>
                             </span>
                             <span className="tabular-nums text-muted-foreground">
-                              4.9
+                              {"4.9"}
                             </span>
                             <a className="hover:text-primary hover:underline tabular-nums text-muted-foreground transition-colors underline-offset-4" href="#studio-elite#reviews" aria-label="Read 32 reviews for Studio Elite">
-                              (32)
+                              {"(32)"}
                             </a>
                           </div>
                           <div className="flex gap-1.5 items-baseline min-w-0 mt-1">
                             <span className="font-semibold tabular-nums text-base text-foreground">
-                              $649
+                              {"$649"}
                             </span>
                           </div>
                         </div>
@@ -615,7 +615,7 @@ export function Pattern() {
                             <path d="M3.103 6.034h17.794"></path>
                             <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
                           </svg>
-                          Add to cart
+                          {"Add to cart"}
                         </Button>
                       </div>
                     </th>
@@ -625,7 +625,7 @@ export function Pattern() {
                   <tr>
                     <th className="bg-muted border-b border-border font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="7">
                       <span className="inline-block left-0 px-4 py-2 sticky">
-                        Overview
+                        {"Overview"}
                       </span>
                     </th>
                   </tr>
@@ -633,38 +633,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Type
+                          {"Type"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        On ear
+                        {"On ear"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        On ear
+                        {"On ear"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Over ear
+                        {"Over ear"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Over ear
+                        {"Over ear"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Over ear
+                        {"Over ear"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Over ear
+                        {"Over ear"}
                       </span>
                     </td>
                   </tr>
@@ -672,38 +672,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Color options
+                          {"Color options"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        1 color
+                        {"1 color"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        2 colors
+                        {"2 colors"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        4 colors
+                        {"4 colors"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        6 colors
+                        {"6 colors"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5 colors
+                        {"5 colors"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        3 colors
+                        {"3 colors"}
                       </span>
                     </td>
                   </tr>
@@ -711,45 +711,45 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Weight
+                          {"Weight"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        180 g
+                        {"180 g"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        210 g
+                        {"210 g"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        265 g
+                        {"265 g"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        295 g
+                        {"295 g"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        310 g
+                        {"310 g"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        340 g
+                        {"340 g"}
                       </span>
                     </td>
                   </tr>
                   <tr>
                     <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="7">
                       <span className="inline-block left-0 px-4 py-2 sticky">
-                        Audio
+                        {"Audio"}
                       </span>
                     </th>
                   </tr>
@@ -757,7 +757,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Active noise cancellation
+                          {"Active noise cancellation"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_2_" baseUiTooltipTrigger="" aria-label="About Active noise cancellation">
@@ -817,7 +817,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Spatial audio
+                          {"Spatial audio"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_4_" baseUiTooltipTrigger="" aria-label="About Spatial audio">
@@ -877,38 +877,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Driver size
+                          {"Driver size"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        30 mm
+                        {"30 mm"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        32 mm
+                        {"32 mm"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        40 mm
+                        {"40 mm"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        40 mm planar
+                        {"40 mm planar"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        40 mm planar
+                        {"40 mm planar"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        45 mm planar
+                        {"45 mm planar"}
                       </span>
                     </td>
                   </tr>
@@ -916,7 +916,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Hi-res codec
+                          {"Hi-res codec"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-label="About Hi-res codec">
@@ -931,39 +931,39 @@ export function Pattern() {
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        SBC
+                        {"SBC"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        SBC, AAC
+                        {"SBC, AAC"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        SBC, AAC, aptX
+                        {"SBC, AAC, aptX"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        LDAC, aptX HD
+                        {"LDAC, aptX HD"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        LDAC, aptX HD
+                        {"LDAC, aptX HD"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        LDAC, aptX HD, AAC
+                        {"LDAC, aptX HD, AAC"}
                       </span>
                     </td>
                   </tr>
                   <tr>
                     <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="7">
                       <span className="inline-block left-0 px-4 py-2 sticky">
-                        Connectivity
+                        {"Connectivity"}
                       </span>
                     </th>
                   </tr>
@@ -971,38 +971,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Bluetooth version
+                          {"Bluetooth version"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.0
+                        {"5.0"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.0
+                        {"5.0"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.2
+                        {"5.2"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.3
+                        {"5.3"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.3
+                        {"5.3"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5.3 LE
+                        {"5.3 LE"}
                       </span>
                     </td>
                   </tr>
@@ -1010,7 +1010,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Multi-device pairing
+                          {"Multi-device pairing"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_8_" baseUiTooltipTrigger="" aria-label="About Multi-device pairing">
@@ -1070,7 +1070,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Wired (3.5 mm)
+                          {"Wired (3.5 mm)"}
                         </span>
                       </span>
                     </th>
@@ -1120,7 +1120,7 @@ export function Pattern() {
                   <tr>
                     <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="7">
                       <span className="inline-block left-0 px-4 py-2 sticky">
-                        Battery
+                        {"Battery"}
                       </span>
                     </th>
                   </tr>
@@ -1128,38 +1128,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Playback time
+                          {"Playback time"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 18 h
+                        {"Up to 18 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 24 h
+                        {"Up to 24 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 38 h
+                        {"Up to 38 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 50 h
+                        {"Up to 50 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 55 h
+                        {"Up to 55 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        Up to 60 h
+                        {"Up to 60 h"}
                       </span>
                     </td>
                   </tr>
@@ -1167,7 +1167,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Fast charge
+                          {"Fast charge"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_a_" baseUiTooltipTrigger="" aria-label="About Fast charge">
@@ -1182,32 +1182,32 @@ export function Pattern() {
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        -
+                        {"-"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        10 min → 2 h
+                        {"10 min → 2 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        10 min → 5 h
+                        {"10 min → 5 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        10 min → 8 h
+                        {"10 min → 8 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        10 min → 10 h
+                        {"10 min → 10 h"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        10 min → 12 h
+                        {"10 min → 12 h"}
                       </span>
                     </td>
                   </tr>
@@ -1215,7 +1215,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Wireless charging
+                          {"Wireless charging"}
                         </span>
                       </span>
                     </th>
@@ -1265,7 +1265,7 @@ export function Pattern() {
                   <tr>
                     <th className="bg-muted border-b border-border border-t font-semibold p-0 text-left text-muted-foreground text-xs tracking-wide uppercase" scope="colgroup" colSpan="7">
                       <span className="inline-block left-0 px-4 py-2 sticky">
-                        Support
+                        {"Support"}
                       </span>
                     </th>
                   </tr>
@@ -1273,38 +1273,38 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Warranty
+                          {"Warranty"}
                         </span>
                       </span>
                     </th>
                     <td className="align-middle border-border px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        6 months
+                        {"6 months"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        1 year
+                        {"1 year"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        2 years
+                        {"2 years"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        3 years
+                        {"3 years"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        3 years
+                        {"3 years"}
                       </span>
                     </td>
                     <td className="align-middle border-border border-l px-4 py-2">
                       <span className="tabular-nums text-sm">
-                        5 years
+                        {"5 years"}
                       </span>
                     </td>
                   </tr>
@@ -1312,7 +1312,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Free returns
+                          {"Free returns"}
                         </span>
                       </span>
                     </th>
@@ -1363,7 +1363,7 @@ export function Pattern() {
                     <th className="after:absolute after:bg-border after:content-[''] after:inset-y-0 after:pointer-events-none after:right-0 after:w-px align-middle bg-background font-medium left-0 px-4 py-2 sticky text-left text-sm z-20" scope="row">
                       <span className="gap-1.5 inline-flex items-center">
                         <span>
-                          Priority support
+                          {"Priority support"}
                         </span>
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_c_" baseUiTooltipTrigger="" aria-label="About Priority support">
@@ -1434,7 +1434,7 @@ export function Pattern() {
             <path d="M12 8h.01"></path>
           </svg>
           <span>
-            Specs are accurate at publish time. Confirm details on each product page before purchase.
+            {"Specs are accurate at publish time. Confirm details on each product page before purchase."}
           </span>
         </p>
       </section>

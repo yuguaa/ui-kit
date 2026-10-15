@@ -35,7 +35,7 @@ export function Pattern() {
   return (
     <main className="bg-background min-h-svh w-full" aria-labelledby="page-title">
       <h1 className="sr-only" id="page-title">
-        Marketing-led workspace onboarding
+        {"Marketing-led workspace onboarding"}
       </h1>
       <div className="bg-background isolate min-h-svh overflow-hidden relative w-full">
         <div className="auth18-wave" aria-hidden="true">
@@ -44,137 +44,122 @@ export function Pattern() {
           <div className="auth18-blob auth18-blob-3"></div>
           <div className="auth18-blob auth18-blob-4"></div>
           <div className="auth18-grain"></div>
-          <style>{`
-  .auth18-wave { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-  .auth18-blob { position: absolute; border-radius: 9999px; filter: blur(110px); will-change: transform; }
-  .auth18-blob-1 {
-    top: -18%; right: -12%;
-    width: 64vw; height: 64vw; max-width: 780px; max-height: 780px;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.78), rgba(255, 138, 61, 0) 70%);
-    animation: auth18-drift-1 22s ease-in-out infinite;
-  }
-  .auth18-blob-2 {
-    top: 6%; right: 18%;
-    width: 52vw; height: 52vw; max-width: 640px; max-height: 640px;
-    background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.6), rgba(236, 72, 153, 0) 70%);
-    animation: auth18-drift-2 30s ease-in-out infinite;
-  }
-  .auth18-blob-3 {
-    top: 32%; right: -6%;
-    width: 48vw; height: 48vw; max-width: 600px; max-height: 600px;
-    background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.55), rgba(139, 92, 246, 0) 70%);
-    animation: auth18-drift-3 26s ease-in-out infinite;
-  }
-  .auth18-blob-4 {
-    top: 58%; right: 12%;
-    width: 44vw; height: 44vw; max-width: 560px; max-height: 560px;
-    background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.45), rgba(59, 130, 246, 0) 70%);
-    animation: auth18-drift-4 34s ease-in-out infinite;
-  }
-  .auth18-grain {
-    position: absolute; inset: 0; opacity: 0.35; mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
-  }
-  .dark .auth18-blob-1 { background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.55), rgba(255, 138, 61, 0) 70%); }
-  .dark .auth18-blob-2 { background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.45), rgba(236, 72, 153, 0) 70%); }
-  .dark .auth18-blob-3 { background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.45), rgba(139, 92, 246, 0) 70%); }
-  .dark .auth18-blob-4 { background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.38), rgba(59, 130, 246, 0) 70%); }
-  .dark .auth18-grain { opacity: 0.18; }
-  @keyframes auth18-drift-1 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(-5%, 7%, 0) scale(1.08); }
-  }
-  @keyframes auth18-drift-2 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(7%, -5%, 0) scale(1.12); }
-  }
-  @keyframes auth18-drift-3 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(-7%, -7%, 0) scale(1.1); }
-  }
-  @keyframes auth18-drift-4 {
-    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(9%, 5%, 0) scale(1.14); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .auth18-blob { animation: none !important; }
-  }
-`}</style>
+          <style dangerouslySetInnerHTML={{ __html: "\n  .auth18-wave { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }\n  .auth18-blob { position: absolute; border-radius: 9999px; filter: blur(110px); will-change: transform; }\n  .auth18-blob-1 {\n    top: -18%; right: -12%;\n    width: 64vw; height: 64vw; max-width: 780px; max-height: 780px;\n    background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.78), rgba(255, 138, 61, 0) 70%);\n    animation: auth18-drift-1 22s ease-in-out infinite;\n  }\n  .auth18-blob-2 {\n    top: 6%; right: 18%;\n    width: 52vw; height: 52vw; max-width: 640px; max-height: 640px;\n    background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.6), rgba(236, 72, 153, 0) 70%);\n    animation: auth18-drift-2 30s ease-in-out infinite;\n  }\n  .auth18-blob-3 {\n    top: 32%; right: -6%;\n    width: 48vw; height: 48vw; max-width: 600px; max-height: 600px;\n    background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.55), rgba(139, 92, 246, 0) 70%);\n    animation: auth18-drift-3 26s ease-in-out infinite;\n  }\n  .auth18-blob-4 {\n    top: 58%; right: 12%;\n    width: 44vw; height: 44vw; max-width: 560px; max-height: 560px;\n    background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.45), rgba(59, 130, 246, 0) 70%);\n    animation: auth18-drift-4 34s ease-in-out infinite;\n  }\n  .auth18-grain {\n    position: absolute; inset: 0; opacity: 0.35; mix-blend-mode: overlay;\n    background-image: url(\"data:image/svg+xml;utf8,\u003csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'>\u003cfilter id='n'>\u003cfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/>\u003cfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/>\u003c/filter>\u003crect width='100%' height='100%' filter='url(%23n)'/>\u003c/svg>\");\n  }\n  .dark .auth18-blob-1 { background: radial-gradient(circle at 30% 30%, rgba(255, 138, 61, 0.55), rgba(255, 138, 61, 0) 70%); }\n  .dark .auth18-blob-2 { background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.45), rgba(236, 72, 153, 0) 70%); }\n  .dark .auth18-blob-3 { background: radial-gradient(circle at 60% 40%, rgba(139, 92, 246, 0.45), rgba(139, 92, 246, 0) 70%); }\n  .dark .auth18-blob-4 { background: radial-gradient(circle at 40% 60%, rgba(59, 130, 246, 0.38), rgba(59, 130, 246, 0) 70%); }\n  .dark .auth18-grain { opacity: 0.18; }\n  @keyframes auth18-drift-1 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(-5%, 7%, 0) scale(1.08); }\n  }\n  @keyframes auth18-drift-2 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(7%, -5%, 0) scale(1.12); }\n  }\n  @keyframes auth18-drift-3 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(-7%, -7%, 0) scale(1.1); }\n  }\n  @keyframes auth18-drift-4 {\n    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }\n    50% { transform: translate3d(9%, 5%, 0) scale(1.14); }\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .auth18-blob { animation: none !important; }\n  }\n" }} />
         </div>
         <div className="fixed h-1 inset-x-0 overflow-visible top-0 w-full z-50">
+          <StepperItem>
           <Stepper className="h-1 leading-none overflow-visible relative rounded-none!" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
+            <Stepper>
             <StepperNav className="flex h-1 rounded-none!" data-state="1" data-orientation="horizontal">
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="active">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false" extracted="1">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="active">
                     <div className="absolute">
                       <span className="sr-only">
-                        Profile
+                        {"Profile"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Role
+                        {"Role"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Source
+                        {"Source"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Workspace
+                        {"Workspace"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-5" aria-selected="false" aria-controls="stepper-panel-5" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Goals
+                        {"Goals"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
+              <Stepper>
               <StepperItem className="duration-300 flex-1 h-1 overflow-hidden rounded-none! transition-all" data-state="inactive">
+                <Stepper>
                 <StepperTrigger className="flex-col gap-0 h-1 items-start rounded-none! w-full" type="button" role="tab" id="stepper-tab-6" aria-selected="false" aria-controls="stepper-panel-6" tabIndex="-1" data-state="inactive" loading="false">
+                  <Stepper>
                   <StepperIndicator className="bg-muted border-0 data-[state=active]:bg-muted data-[state=completed]:bg-muted h-1 p-0 rounded-none! w-full" data-state="inactive">
                     <div className="absolute">
                       <span className="sr-only">
-                        Invite
+                        {"Invite"}
                       </span>
                     </div>
                   </StepperIndicator>
+                  </Stepper>
                 </StepperTrigger>
+                </Stepper>
               </StepperItem>
+              </Stepper>
             </StepperNav>
+            </Stepper>
             <div className="absolute bg-primary inset-y-0 left-0 origin-left pointer-events-none w-full z-10" aria-hidden="true" style={{transform: "scaleX(0.166667)"}}>
               <span className="-translate-y-1/2 absolute bg-gradient-to-r blur-sm from-primary/0 h-5 right-0 to-primary/0 top-1/2 translate-x-1/2 via-primary-foreground/65 w-44" style={{opacity: "0", transform: "translateX(64px)"}}></span>
             </div>
           </Stepper>
+          </StepperItem>
         </div>
         <div className="flex flex-col lg:px-14 lg:py-12 min-h-svh px-6 py-7 relative sm:px-12 sm:py-10">
           <header className="flex gap-4 items-center justify-between">
@@ -188,11 +173,11 @@ export function Pattern() {
                 </ItemMedia>
               </Item>
               <span className="font-medium text-[0.9375rem]">
-                NeUI
+                {"NeUI"}
               </span>
             </div>
             <p className="font-medium tabular-nums text-muted-foreground text-sm">
-              Step 1 of 6
+              {"Step 1 of 6"}
             </p>
           </header>
           <main className="flex flex-1 items-center lg:py-16 max-w-6xl mx-auto py-10 sm:py-14 w-full" id="onboarding-9-content">
@@ -201,15 +186,15 @@ export function Pattern() {
                 <div className="bg-background/85 border border-border/60 font-medium gap-2 inline-flex items-center px-3 py-1 rounded-full text-foreground/75 text-sm tracking-tight w-fit">
                   <span className="bg-primary rounded-full size-1.5" aria-hidden="true"></span>
                   <span>
-                    Guided workspace launch
+                    {"Guided workspace launch"}
                   </span>
                 </div>
                 <div className="space-y-5">
                   <h1 className="font-semibold leading-[1.12] lg:leading-[1.04] lg:text-[3.5rem] max-w-xl sm:leading-[1.06] text-[clamp(1.75rem,1.1rem+3.25vw,3rem)] text-balance text-foreground tracking-tight">
-                    Shape the workspace before the first project.
+                    {"Shape the workspace before the first project."}
                   </h1>
                   <p className="leading-relaxed max-w-lg sm:text-lg text-base text-muted-foreground text-pretty">
-                    A focused first-run flow for profile, team, goals, and invites, wrapped in the calmer marketing shell from the trial signup.
+                    {"A focused first-run flow for profile, team, goals, and invites, wrapped in the calmer marketing shell from the trial signup."}
                   </p>
                 </div>
               </section>
@@ -218,15 +203,15 @@ export function Pattern() {
                   <form className="flex flex-col gap-8 max-w-lg min-h-[26.25rem] min-w-0 mx-auto w-full" id="onboarding-9-form" style={{opacity: "1", transform: "none"}}>
                     <div className="flex flex-col gap-2 items-start text-left w-full" aria-live="polite">
                       <h2 className="font-semibold leading-7 sm:leading-8 sm:text-2xl text-balance text-foreground text-xl">
-                        Set Up Your Profile
+                        {"Set Up Your Profile"}
                       </h2>
                       <p className="leading-5 text-muted-foreground text-pretty text-sm">
-                        Add the details teammates will see across the workspace.
+                        {"Add the details teammates will see across the workspace."}
                       </p>
                     </div>
                     <FieldSet>
                       <FieldLegend className="sr-only" variant="legend">
-                        Profile details
+                        {"Profile details"}
                       </FieldLegend>
                       <FieldGroup className="gap-4">
                         <Field role="group" data-orientation="vertical">
@@ -244,13 +229,13 @@ export function Pattern() {
                               <div className="flex flex-wrap gap-2 items-center">
                                 <div className="inline-flex relative">
                                   <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                                    Upload photo
+                                    {"Upload photo"}
                                   </Button>
                                   <input className="hidden" id="onboarding-9-profile-photo" accept="image/*" aria-hidden="true" tabIndex="-1" type="file" />
                                 </div>
                               </div>
                               <p className="leading-4 text-muted-foreground text-xs">
-                                PNG or JPG, at least 400 x 400 px, up to 10 MB.
+                                {"PNG or JPG, at least 400 x 400 px, up to 10 MB."}
                               </p>
                             </div>
                           </div>
@@ -258,22 +243,22 @@ export function Pattern() {
                         <FieldGroup className="gap-4">
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-9-name">
-                              Full name
+                              {"Full name"}
                               <span className="text-destructive">
-                                *
+                                {"*"}
                               </span>
                             </FieldLabel>
                             <Input id="onboarding-9-name" autoComplete="name" value="Sam Rivera"></Input>
                           </Field>
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-9-title">
-                              Job title
+                              {"Job title"}
                             </FieldLabel>
                             <Input id="onboarding-9-title" autoComplete="organization-title" value="Product Engineer"></Input>
                           </Field>
                           <Field className="gap-2" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="onboarding-9-timezone">
-                              Timezone
+                              {"Timezone"}
                             </FieldLabel>
                             <InputGroup className="cn-combobox-input" role="group">
                               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="onboarding-9-timezone" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" placeholder="Select a timezone" type="text" value="" />
@@ -298,7 +283,7 @@ export function Pattern() {
                           </Checkbox>
                           <input id="onboarding-9-marketing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-muted-foreground" htmlFor="onboarding-9-marketing" id="onboarding-9-marketing-label">
-                            Send me product updates and workspace tips.
+                            {"Send me product updates and workspace tips."}
                           </FieldLabel>
                         </Field>
                       </FieldGroup>
@@ -310,7 +295,7 @@ export function Pattern() {
                     <div className="flex items-center min-w-0"></div>
                     <div className="flex gap-2 items-center justify-end shrink-0">
                       <Button className="min-w-0 px-3 sm:min-w-32 sm:px-4" type="submit" tabIndex="0" form="onboarding-9-form">
-                        Next step
+                        {"Next step"}
                         <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                           <path d="M5 12h14"></path>
                           <path d="m12 5 7 7-7 7"></path>
